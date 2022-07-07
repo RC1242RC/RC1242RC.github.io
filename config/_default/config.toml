@@ -87,3 +87,17 @@ rel  = "sitemap"
   [[module.mounts]]
     source = "node_modules/mermaid"
     target = "assets/js/vendor/mermaid"
+
+[security]   
+  enableInlineShortcodes = false   
+  
+[security.exec]     
+  allow = ['^dart-sass-embedded$', '^go$', '^npx$', '^postcss$', '^python$']     
+  osEnv = ['(?i)^(PATH|PATHEXT|APPDATA|TMP|TEMP|TERM)$']    
+  
+[security.funcs]     
+  getenv = ['^HUGO_']    
+  
+[security.http]     
+  methods = ['(?i)GET|POST']     
+  urls = ['.*']

@@ -1,23 +1,31 @@
 # Meta Data for SEO
 
 ## Homepage
-title = "Doks"
+title = "GAMBIT"
 titleSeparator = "-"
-titleAddition = "Modern Documentation Theme"
-description = "Doks is a Hugo theme for building secure, fast, and SEO-ready documentation websites, which you can easily update and customize."
+titleAddition = "Tutorials and Documentation"
+description = "Documentation for the Global And Modular BSM Inference Tool"
 
 ## Documentation
 # docsVersion = "0.3"
 
+# Logo
+siteLogoLight = "/images/gambit_logo.png"
+siteLogoDark = "/images/gambit_logo.png"
+siteLogoWidth = "50px"
+
+# Search
+mainSections = ["tutorials", "community"]
+
 ## Open Graph
-images = ["doks.png"]
+images = ["gambit_logo.png"]
 ogLocale = "en_US"
-domainTLD = "doks.netlify.app"
-titleHome = "Doks Theme"
+#domainTLD = "doks.netlify.app"
+titleHome = "GAMBIT"
 
 ## Twitter Cards
-twitterSite = "@getdoks"
-twitterCreator = "@henkverlinde"
+#twitterSite = "@getdoks"
+#twitterCreator = "@henkverlinde"
 
 ## JSON-LD
 # schemaType = "Person"
@@ -29,14 +37,14 @@ schemaAuthorLinkedIn = "https://www.linkedin.com/in/henkverlinde/"
 schemaAuthorGitHub = "https://github.com/h-enk"
 schemaLocale = "en-US"
 schemaLogo = "logo-doks.png"
-schemaLogoWidth = 512
-schemaLogoHeight = 512
-schemaImage = "doks.png"
-schemaImageWidth = 1280
-schemaImageHeight = 640
-schemaTwitter = "https://twitter.com/getdoks"
+schemaLogoWidth = 450
+schemaLogoHeight = 416
+schemaImage = "gambit_logo.png"
+schemaImageWidth = 450
+schemaImageHeight = 416
+schemaTwitter = ""
 schemaLinkedIn = ""
-schemaGitHub = "https://github.com/h-enk/doks"
+schemaGitHub = "https://github.com/GambitBSM"
 schemaSection = "blog"
 
 ## Sitelinks Search Box
@@ -69,10 +77,10 @@ alertText = "Introducing the Doks child theme, several DX + UX updates, and more
 # repoHost [Github | Gitea | GitLab | Bitbucket | BitbucketServer ] is used for building the edit link based on git hoster
 repoHost = "GitHub"
 #repoHost = "Gitea"
-docsRepo = "https://github.com/h-enk/doks"
+docsRepo = "https://github.com/RC1242RC/gambit_gh_pages"
 docsRepoBranch = "master"
 docsRepoSubPath = ""
-editPage = false
+editPage = true
 lastMod = false
 
 [sections]
@@ -85,7 +93,7 @@ lastMod = false
   flexSearch = true
   darkMode = true
   bootStrapJs = true
-  breadCrumb = false
+  breadCrumb = true
   highLight = true
   kaTex = false
   multilingualMode = false
