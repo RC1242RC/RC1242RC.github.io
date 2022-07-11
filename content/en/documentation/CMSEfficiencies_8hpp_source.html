@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -45,6 +49,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('CMSEfficiencies_8hpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -59,11 +80,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e33afb057d1d4a1228c8c4d05c43b8ff.html">ColliderBit</a></li><li class="navelem"><a class="el" href="dir_86971f7a3e033a44fdd79643f3070191.html">include</a></li><li class="navelem"><a class="el" href="dir_23cb615865cdef5cc6f1be63d4618712.html">gambit</a></li><li class="navelem"><a class="el" href="dir_18844a962068c5ffc5567e7b65967bca.html">ColliderBit</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">CMSEfficiencies.hpp</div>  </div>
@@ -367,6 +383,7 @@ $(function() {
 <div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;  }</div>
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <div class="ttc" id="anamespaceGambit_1_1ColliderBit_1_1CMS_html_ac1abbb95c9de02059ac9b59bfdea20a2"><div class="ttname"><a href="namespaceGambit_1_1ColliderBit_1_1CMS.html#ac1abbb95c9de02059ac9b59bfdea20a2">Gambit::ColliderBit::CMS::smearTaus</a></div><div class="ttdeci">void smearTaus(std::vector&lt; HEPUtils::Particle * &gt; &amp;taus)</div><div class="ttdoc">Randomly smear the supplied hadronic taus' momenta by parameterised resolutions.</div><div class="ttdef"><b>Definition:</b> CMSEfficiencies.hpp:223</div></div>
 <div class="ttc" id="aUtils_8hpp_html_a878e042861c7e3c817f85f0678954ecc"><div class="ttname"><a href="Utils_8hpp.html#a878e042861c7e3c817f85f0678954ecc">Gambit::ColliderBit::filtereff</a></div><div class="ttdeci">void filtereff(std::vector&lt; const HEPUtils::Particle * &gt; &amp;particles, double eff, bool do_delete=false)</div><div class="ttdoc">Utility function for filtering a supplied particle vector by sampling wrt an efficiency scalar.</div><div class="ttdef"><b>Definition:</b> Utils.cpp:16</div></div>
 <div class="ttc" id="anamespaceGambit_1_1ColliderBit_1_1CMS_html_a89a3847d536a96d290b7d4c81c00372d"><div class="ttname"><a href="namespaceGambit_1_1ColliderBit_1_1CMS.html#a89a3847d536a96d290b7d4c81c00372d">Gambit::ColliderBit::CMS::applyElectronTrackingEff</a></div><div class="ttdeci">void applyElectronTrackingEff(std::vector&lt; const HEPUtils::Particle * &gt; &amp;electrons)</div><div class="ttdoc">Randomly filter the supplied particle list by parameterised electron tracking efficiency.</div><div class="ttdef"><b>Definition:</b> CMSEfficiencies.hpp:50</div></div>
@@ -389,10 +406,13 @@ $(function() {
 <div class="ttc" id="anamespaceGambit_1_1ColliderBit_1_1CMS_html_adbbc313338a5a9746f6f1e1c05e1a200"><div class="ttname"><a href="namespaceGambit_1_1ColliderBit_1_1CMS.html#adbbc313338a5a9746f6f1e1c05e1a200">Gambit::ColliderBit::CMS::applyBtagMisId</a></div><div class="ttdeci">void applyBtagMisId(double mis_id_prob, std::vector&lt; const HEPUtils::Jet * &gt; &amp;jets, std::vector&lt; const HEPUtils::Jet * &gt; &amp;bjets)</div><div class="ttdoc">Apply user-specified b-tag misidentification rate (flat)</div><div class="ttdef"><b>Definition:</b> CMSEfficiencies.hpp:288</div></div>
 <div class="ttc" id="anamespaceGambit_1_1ColliderBit_1_1CMS_html_adb68a1df2dfc3f8a8b30b95127834cb8"><div class="ttname"><a href="namespaceGambit_1_1ColliderBit_1_1CMS.html#adb68a1df2dfc3f8a8b30b95127834cb8">Gambit::ColliderBit::CMS::applyTauEfficiency</a></div><div class="ttdeci">void applyTauEfficiency(std::vector&lt; const HEPUtils::Particle * &gt; &amp;taus)</div><div class="ttdoc">Randomly filter the supplied particle list by parameterised tau efficiency.</div><div class="ttdef"><b>Definition:</b> CMSEfficiencies.hpp:104</div></div>
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.17
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_e33afb057d1d4a1228c8c4d05c43b8ff.html">ColliderBit</a></li><li class="navelem"><a class="el" href="dir_86971f7a3e033a44fdd79643f3070191.html">include</a></li><li class="navelem"><a class="el" href="dir_23cb615865cdef5cc6f1be63d4618712.html">gambit</a></li><li class="navelem"><a class="el" href="dir_18844a962068c5ffc5567e7b65967bca.html">ColliderBit</a></li><li class="navelem"><a class="el" href="CMSEfficiencies_8hpp.html">CMSEfficiencies.hpp</a></li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
 </body>
 </html>

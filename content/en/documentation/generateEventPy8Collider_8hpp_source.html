@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -45,6 +49,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('generateEventPy8Collider_8hpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -59,11 +80,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e33afb057d1d4a1228c8c4d05c43b8ff.html">ColliderBit</a></li><li class="navelem"><a class="el" href="dir_86971f7a3e033a44fdd79643f3070191.html">include</a></li><li class="navelem"><a class="el" href="dir_23cb615865cdef5cc6f1be63d4618712.html">gambit</a></li><li class="navelem"><a class="el" href="dir_18844a962068c5ffc5567e7b65967bca.html">ColliderBit</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">generateEventPy8Collider.hpp</div>  </div>
@@ -239,6 +255,7 @@ $(function() {
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160; </div>
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <div class="ttc" id="astructGambit_1_1ColliderBit_1_1MCLoopInfo_html_a4a3512bd3e45fcc26cba88ae8dfff3bd"><div class="ttname"><a href="structGambit_1_1ColliderBit_1_1MCLoopInfo.html#a4a3512bd3e45fcc26cba88ae8dfff3bd">Gambit::ColliderBit::MCLoopInfo::report_exceeded_maxFailedEvents</a></div><div class="ttdeci">void report_exceeded_maxFailedEvents() const</div><div class="ttdoc">Set exceeded_maxFailedEvents = true and decrement event counter by 1.</div><div class="ttdef"><b>Definition:</b> MCLoopInfo.cpp:29</div></div>
 <div class="ttc" id="aColliderBit__eventloop_8hpp_html"><div class="ttname"><a href="ColliderBit__eventloop_8hpp.html">ColliderBit_eventloop.hpp</a></div></div>
 <div class="ttc" id="agenerateEventPy8Collider_8hpp_html_a15297fb2b1580bb766aa4aa1dab3435c"><div class="ttname"><a href="generateEventPy8Collider_8hpp.html#a15297fb2b1580bb766aa4aa1dab3435c">Gambit::ColliderBit::generateEventPy8Collider</a></div><div class="ttdeci">void generateEventPy8Collider(HEPUtils::Event &amp;event, const MCLoopInfo &amp;RunMC, const Py8Collider&lt; PythiaT, EventT, hepmc_writerT &gt; &amp;HardScatteringSim, const EventWeighterFunctionType &amp;EventWeighterFunction, const int iteration, void(*wrapup)(), const safe_ptr&lt; Options &gt; &amp;runOptions)</div><div class="ttdoc">Generate a hard scattering event with Pythia.</div><div class="ttdef"><b>Definition:</b> generateEventPy8Collider.hpp:89</div></div>
@@ -257,10 +274,13 @@ $(function() {
 <div class="ttc" id="astructGambit_1_1ColliderBit_1_1MCLoopInfo_html_a79d4344da65671c3a9bd88a927b8aba8"><div class="ttname"><a href="structGambit_1_1ColliderBit_1_1MCLoopInfo.html#a79d4344da65671c3a9bd88a927b8aba8">Gambit::ColliderBit::MCLoopInfo::current_maxFailedEvents</a></div><div class="ttdeci">const int &amp; current_maxFailedEvents() const</div><div class="ttdoc">Get maximum allowable number of failed events before MC loop is terminated for the current collider.</div><div class="ttdef"><b>Definition:</b> MCLoopInfo.cpp:129</div></div>
 <div class="ttc" id="aPy8EventConversions_8hpp_html_a42e166b5bdf2ffb8544b4a65edc89976"><div class="ttname"><a href="Py8EventConversions_8hpp.html#a42e166b5bdf2ffb8544b4a65edc89976">Gambit::ColliderBit::convertPartonEvent</a></div><div class="ttdeci">void convertPartonEvent(const EventT &amp;pevt, HEPUtils::Event &amp;result, double antiktR, double jet_pt_min)</div><div class="ttdoc">Convert a partonic (no hadrons) EventT into an unsmeared HEPUtils::Event.</div><div class="ttdef"><b>Definition:</b> Py8EventConversions.hpp:239</div></div>
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.17
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_e33afb057d1d4a1228c8c4d05c43b8ff.html">ColliderBit</a></li><li class="navelem"><a class="el" href="dir_86971f7a3e033a44fdd79643f3070191.html">include</a></li><li class="navelem"><a class="el" href="dir_23cb615865cdef5cc6f1be63d4618712.html">gambit</a></li><li class="navelem"><a class="el" href="dir_18844a962068c5ffc5567e7b65967bca.html">ColliderBit</a></li><li class="navelem"><a class="el" href="generateEventPy8Collider_8hpp.html">generateEventPy8Collider.hpp</a></li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
 </body>
 </html>
