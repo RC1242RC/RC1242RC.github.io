@@ -1,4 +1,4 @@
-baseurl = "https://doks.netlify.app/"
+baseurl = "https://rc1242rc.github.io/gambit_gh_pages/"
 canonifyURLs = false
 disableAliases = true
 disableHugoGeneratorInject = true
