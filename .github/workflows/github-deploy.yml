@@ -1,19 +1,24 @@
-name: GitHub Pages
+name: Build and deploy site
 
 on:
+  repository_dispatch:
+    types: [documentation_rebuilt]
   workflow_dispatch:
 
 jobs:
   deploy:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
+
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+
+      - name: Cache npm packages
+        uses: actions/setup-node@v2
         with:
           node-version: '16'
           cache: 'npm'
 
-      - name: Install dependencies
+      - name: Install npm dependencies
         run: npm install
 
       # - name: Check for linting errors
