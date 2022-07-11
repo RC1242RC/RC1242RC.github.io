@@ -1,4 +1,4 @@
-baseurl = "https://rc1242rc.github.io/gambit_gh_pages/"
+baseurl = "https://rc1242rc.github.io/"
 canonifyURLs = false
 disableAliases = true
 disableHugoGeneratorInject = true
