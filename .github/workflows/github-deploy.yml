@@ -19,7 +19,7 @@ jobs:
           cache: 'npm'
 
       - name: Remove license.md
-        run: cd content/en/documentation/collapsible-lists
+        run: cd content/en/documentation/_static/collapsible-lists
           && rm LICENSE.md
 
       - name: Install npm dependencies
