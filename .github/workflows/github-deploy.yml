@@ -18,6 +18,10 @@ jobs:
           node-version: '16'
           cache: 'npm'
 
+      - name: Remove license.md
+        run: cd content/en/documentation/collapsible-lists
+          && rm LICENSE.md
+
       - name: Install npm dependencies
         run: npm install
 
