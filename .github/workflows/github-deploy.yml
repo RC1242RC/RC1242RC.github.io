@@ -18,16 +18,16 @@ jobs:
           node-version: '16'
           cache: 'npm'
 
-      - name: Remove license.md
-        run: cd content/en/documentation/_static/collapsible-lists
-          && rm LICENSE.md
+      #- name: Remove license.md
+      #  run: cd content/en/documentation/_static/collapsible-lists
+      #    && rm LICENSE.md
 
-      - name: Commit changes
-        run: git config --local user.email "test@github.com"
-          && git config --local user.name "GitHub Action test"
-          && git add --all
-          && git commit -m "Deleted problematic LICENSE.md"
-          && git push
+      #- name: Commit changes
+      #  run: git config --local user.email "test@github.com"
+      #    && git config --local user.name "GitHub Action test"
+      #    && git add --all
+      #    && git commit -m "Deleted problematic LICENSE.md"
+      #    && git push
 
       - name: Install npm dependencies
         run: npm install
