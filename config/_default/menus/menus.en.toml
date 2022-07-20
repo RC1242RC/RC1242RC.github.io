@@ -1,8 +1,8 @@
-[[main]]
-  name = "Tutorials"
-  identifier = "tutorials"
-  url = "/tutorials/help/introduction/"
-  weight = 10
+#[[main]]
+#  name = "Tutorials"
+#  identifier = "tutorials"
+#  url = "/tutorials/help/introduction/"
+#  weight = 10
 
 [[tutorials]]
   name = "Examples"
@@ -10,12 +10,12 @@
   url = "/tutorials/examples/colliderbit"
   weight = 30
 
-[[main]]
-  name = "Examples"
-  identifier = "examples"
-  url = "/tutorials/examples/colliderbit"
-  parent = "tutorials"
-  weight = 30
+#[[main]]
+#  name = "Examples"
+#  identifier = "examples"
+#  url = "/tutorials/examples/colliderbit"
+#  parent = "tutorials"
+#  weight = 30
 
 [[tutorials]]
   name = "Installation"
@@ -23,12 +23,12 @@
   url = "/tutorials/installation/introduction/"
   weight = 20
 
-[[main]]
-  name = "Installation"
-  identifier = "installation"
-  url = "/tutorials/installation/introduction/"
-  parent = "tutorials"
-  weight = 20
+#[[main]]
+#  name = "Installation"
+#  identifier = "installation"
+#  url = "/tutorials/installation/introduction/"
+#  parent = "tutorials"
+#  weight = 20
 
 [[tutorials]]
   name = "Help"
@@ -36,17 +36,70 @@
   url = "/tutorials/help/faqs/"
   weight = 40
 
-[[main]]
-  name = "Help"
-  identifier = "help"
-  url = "/tutorials/help/faqs/"
-  parent = "tutorials"
-  weight = 40
+#[[main]]
+#  name = "Help"
+#  identifier = "help"
+#  url = "/tutorials/help/faqs/"
+#  parent = "tutorials"
+#  weight = 40
 
 [[main]]
   name = "Documentation"
+  identifier = "documentation"
   url = "/documentation/"
   weight = 20
+
+[[main]]
+  name = "Code Reference"
+  identifier = "code"
+  url = "/documentation/code/index_files"
+  parent = "documentation"
+  weight = 40
+
+[[documentation]]
+  name = "Code Reference"
+  identifier = "code"
+  url = "/documentation/code/index_files"
+  weight = 40
+
+[[documentation]]
+  name = "Examples"
+  identifier = "examples"
+  url = "/documentation/examples/colliderbit"
+  weight = 20
+
+[[main]]
+  name = "Examples"
+  identifier = "examples"
+  url = "/documentation/examples/colliderbit"
+  parent = "documentation"
+  weight = 20
+
+[[documentation]]
+  name = "Installation"
+  identifier = "installation"
+  url = "/documentation/installation/introduction/"
+  weight = 10
+
+[[main]]
+  name = "Installation"
+  identifier = "installation"
+  url = "/documentation/installation/introduction/"
+  parent = "documentation"
+  weight = 10
+
+[[documentation]]
+  name = "Help"
+  identifier = "help"
+  url = "/documentation/help/faqs/"
+  weight = 30
+
+[[main]]
+  name = "Help"
+  identifier = "help"
+  url = "/documentation/help/faqs/"
+  parent = "documentation"
+  weight = 30
 
 [[main]]
   name = "Community"
@@ -82,6 +135,8 @@
   url = "/community/contact/"
   parent = "community"
   weight = 50
+
+
 
 [[social]]
   name = "GitHub"

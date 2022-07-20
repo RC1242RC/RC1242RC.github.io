@@ -1,17 +1,12 @@
 ---
-title: "Introduction to GAMBIT"
+title: "Installation for MacOS"
 description: ""
 date: 2022-07-01T22:31:46+01:00
 lastmod: 2022-07-01T22:31:46+01:00
 draft: false
 images: []
 menu:
-  tutorials:
+  documentation:
     parent: "installation"
-weight: 5
+weight: 50
 ---
-
-```
-print(yes)
-import numpy as np
-```

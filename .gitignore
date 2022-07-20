@@ -3,3 +3,6 @@ public
 resources
 .netlify
 .hugo_build.lock
+
+# Ignore generated documentation
+content/en/documentation/code/*

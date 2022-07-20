@@ -15,7 +15,7 @@ siteLogoDark = "/images/gambit_logo.png"
 siteLogoWidth = "50px"
 
 # Search
-mainSections = ["tutorials", "community"]
+mainSections = ["tutorials", "community", "documentation"]
 
 ## Open Graph
 images = ["gambit_logo.png"]
@@ -93,7 +93,7 @@ lastMod = false
   flexSearch = true
   darkMode = true
   bootStrapJs = true
-  breadCrumb = true
+  breadCrumb = false
   highLight = true
   kaTex = false
   multilingualMode = false

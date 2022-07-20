@@ -68,8 +68,8 @@
 
 @include media-breakpoint-up(lg) {
   #suggestions {
-    width: 31.125rem;
-    max-width: 31.125rem;
+    width: 70rem;
+    max-width: 70rem;
   }
 
   #suggestions a {
@@ -77,7 +77,7 @@
   }
 
   .suggestion__title {
-    width: 9rem;
+    width: 34rem;
     padding-right: 1rem;
     border-right: 1px solid $gray-200;
     display: inline-block;
@@ -85,7 +85,7 @@
   }
 
   .suggestion__description {
-    width: 19rem;
+    width: 34rem;
     padding-left: 1rem;
   }
 }
