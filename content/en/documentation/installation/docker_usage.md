@@ -29,7 +29,7 @@ The Docker Engine is available for Windows, macOS and Linux. Follow [Docker's in
 
 ##### Download the Docker image
 
-{{< alert icon="ⓘ" context="info" text="The Docker image download is around 6GB>}}
+{{< alert icon="ⓘ" context="info" text="The Docker image download is around 6GB" >}}
 
 To download the Docker image, from the command line run:
 
