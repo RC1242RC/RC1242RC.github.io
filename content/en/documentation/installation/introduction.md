@@ -1,5 +1,5 @@
 ---
-title: "Getting Started with GAMBIT"
+title: "Getting Started"
 description: "General introduction to GAMBIT and guide for new users."
 date: 2022-07-01T22:31:46+01:00
 lastmod: 2022-07-01T22:31:46+01:00
@@ -11,7 +11,7 @@ menu:
 weight: 5
 ---
 
-### Introduction
+### Introduction to GAMBIT
 
 Evidence for new physics Beyond the Standard Model (BSM) could appear in any observable in particle, astroparticle or nuclear physics. This means that if a BSM model is to be proven or disproven it is necessary to analyse the data from many different experimental sources simultaneously. Global fits attempt to tackle this problem, combining theoretical observable predictions with targeted searches of experimental data.
 
@@ -35,6 +35,6 @@ A detailed discussion of the motivation, philosophy, and design of GAMBIT can be
 
 ### How do I run GAMBIT?
 
-The easiest way to get GAMBIT running is via Docker. A pre-built version of GAMBIT is available as a Docker image which can be downloaded and run locally.
+**To run a limited version of GAMBIT quickly and easily, use the Docker image.** A pre-built version of GAMBIT is available as a Docker image which can be downloaded and run locally. For detailed instructions please see the [Docker Usage](/documentation/docker_usage/) page.
 
-GAMBIT builds and runs under Linux and Mac OS X. 
+**To access and use all features of GAMBIT, build from source.** GAMBIT builds and runs under Linux and macOS. For detailed instructions please see the [Installation for Linux](/documentation/installation_for_linux/) or [Installation for macOS](/documentation/installation_for_macos) pages. Although Windows is not directly supported, it is possible to run 
