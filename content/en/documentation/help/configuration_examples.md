@@ -39,21 +39,26 @@ The native SL6 compiler (GCC 4.4) and Boost library (1.41) are very old and not 
 <p>
 Dependencies:<br>
 </p>
+
 ```
 wget http://bitbucket.org/eigen/eigen/get/3.3.3.tar.gz -O- | tar xz
 ln -s eigen-eigen-* eigen-3.3.3
 wget http://pyyaml.org/download/pyyaml/PyYAML-3.11.tar.gz -O- | tar xz
 ```
+
 <p>
 Environment setup (for compile and runtime):<br>
 </p>
+
 ```
 source /cvmfs/sft.cern.ch/lcg/releases/LCG_88/gcc/6.2.0/x86_64-slc6/setup.sh
 export PYTHONPATH="$PWD/PyYAML-3.11/lib:$PYTHONPATH"
 ```
+
 <p>
 Check out gambit and then do CMake config:<br>
 </p>
+
 ```
 cd gambit/
 mkdir build &amp;&amp; cd build/
@@ -68,21 +73,26 @@ The native CentOS 7 compiler is sufficient, but the Boost library version (1.41)
 <p>
 Get dependencies:<br>
 </p>
+
 ```
 wget http://bitbucket.org/eigen/eigen/get/3.3.3.tar.gz -O- | tar xz
 ln -s eigen-eigen-* eigen-3.3.3
 wget http://pyyaml.org/download/pyyaml/PyYAML-3.11.tar.gz -O- | tar xz
 ```
+
 <p>
 Environment setup (for compile and runtime):<br>
 </p>
+
 ```
 source /cvmfs/sft.cern.ch/lcg/releases/LCG_88/gcc/6.2.0/x86_64-centos7/setup.sh
 export PYTHONPATH="$PWD/PyYAML-3.11/lib:$PYTHONPATH"
 ```
+
 <p>
 Check out gambit and then do CMake config:<br>
 </p>
+
 ```
 cd gambit/
 mkdir build &amp;&amp; cd build/
@@ -99,11 +109,13 @@ cmake -DCMAKE_BUILD_TYPE=Release ..
 ### Cartesius (Amsterdam)
 
 With GNU compilers:<br>
+
 ```
 module load python root gsl blas lapack gcc cmake/3.2.2 boost
 export PATH=$PATH:$SURFSARA_BIN_PATH
 CMAKE_PREFIX_PATH=$SURFSARA_GSL_ROOT CMAKE_LIBRARY_PATH=$SURFSARA_LIBRARY_PATH cmake -D CMAKE_CXX_COMPILER=g++ -D CMAKE_C_COMPILER=gcc -D CMAKE_Fortran_COMPILER=gfortran ../
 ```
+
 <!--
 With Intel compilers (GAMBIT doesn't compile, last time I checked (Jonathan)):
 <pre>
@@ -122,12 +134,15 @@ cmake -Ditch="Delphes" -DCMAKE_Fortran_COMPILER=mpiifort -DCMAKE_C_COMPILER=icc 
 ### Zeus (Poland)
 
 GNU:
+
 ```
 module load el6/tools/python libs/hdf5
 cmake -D CMAKE_CXX_COMPILER=g++ -D CMAKE_C_COMPILER=gcc -D CMAKE_Fortran_COMPILER=gfortran ../
 cmake ../
 ```
+
 Intel:
+
 ```
 module load intel/16.0.1 impi libs/hdf5 el6/tools/python
 # Get rid of the other MPI lib (loaded as a dependency of el6/tools/python)
@@ -138,11 +153,14 @@ cmake -D CMAKE_CXX_COMPILER=icpc -D CMAKE_C_COMPILER=icc -D CMAKE_Fortran_COMPIL
 ### Prometheus (Poland) with Intel 2016 compilers
 
 Get Eigen and put it in your home directory:<br>
+
 ```
 wget http://bitbucket.org/eigen/eigen/get/3.3.3.tar.gz
 tar xvzf 3.3.3.tar.gz
 ```
+
 Build:<br>
+
 ```
 module load plgrid/tools/python/2.7.9 plgrid/tools/cmake/3.3.2 plgrid/libs/boost/1.58.0 plgrid/libs/gsl/1.16 plgrid/libs/hdf5/1.8.16 plgrid/tools/intel/16.0.1 plgrid/libs/mkl/11.3.3
 cmake -D EIGEN3_INCLUDE_DIR=~/eigen-eigen-67e894c6cd8f -D CMAKE_CXX_COMPILER=icpc -D CMAKE_C_COMPILER=icc -D CMAKE_Fortran_COMPILER=ifort -D CMAKE_BUILD_TYPE=Release .. 
@@ -152,10 +170,12 @@ make -j
 make -j backends
 make -j backends-nonfree
 ```
+
 <h4>Saga (Oslo) with gcc compilers</h4>
 Saga runs 64 bit CentOS 7.
 To compile you need to have a python environment with pyaml installed. We suggest using virtualenv.<br>
 To start compiling, first load a consistent set of libraries:
+
 ```
 module purge
 module load foss/2019b
@@ -166,8 +186,11 @@ module load GSL/2.6-GCC-8.3.0
 module load Python/3.7.4-GCCcore-8.3.0
 module load Eigen/3.3.7
 ```
+
 Then do the usual compile as per the manual, but Saga needs to be told where to find Eigen:
+
 ```
 cmake -DWITH_MPI=ON -DEIGEN3_INCLUDE_DIR=/cluster/software/Eigen/3.3.7/include -DBUILD_FS_MODELS="MSSM" -Ditch="Delphes" ..
 ```
+
 </div>
