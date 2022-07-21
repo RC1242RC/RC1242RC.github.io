@@ -23,7 +23,7 @@ modules or `Bits`, along with various Core components and utilities. GAMBIT's `B
 | Name | Description |
 | --- | --- |
 | `ColliderBit` | Calculates particle collider observables and likelihoods. Includes detailed implementations of LEP, ATLAS and CMS searches for new particle production, and measurements of the Higgs boson. |
-| `FlavorBit` | Calculates observables and likelihoods from flavor physics, in particular B, D, and K meson decays as observed by LHCb, including angular observables and correlations. |
+| `FlavBit` | Calculates observables and likelihoods from flavor physics, in particular B, D, and K meson decays as observed by LHCb, including angular observables and correlations. |
 | `DarkBit` | Calculates Dark Matter observables and likelihoods, from the relic abundance to direct and indirect searches. |
 | `SpecBit` | Interfaces to one of a number of possible external spectrum generators in order to determine pole masses and running parameters, and provides them to the rest of GAMBIT in a standardised spectrum container format. |
 | `DecayBit` | Calculates decay rates of all relevant particles in the BSM theory under investigation, and contains decay data for all Standard Model particles. |

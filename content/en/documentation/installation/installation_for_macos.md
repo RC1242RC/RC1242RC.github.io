@@ -8,5 +8,5 @@ images: []
 menu:
   documentation:
     parent: "installation"
-weight: 50
+weight: 50 
 ---
