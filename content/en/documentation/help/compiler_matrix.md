@@ -13,7 +13,7 @@ weight: 20
 
 Below is a list of compilers compatible with GAMBIT and different backends and scanners. 
 
-{{< alert icon="🛈" context="info" text="The backend and scanner entries refer to the form used in GAMBIT, i.e. after any patching or BOSSing applied by the GAMBIT build system." />}}
+{{< alert icon="ⓘ" context="info" text="The backend and scanner entries refer to the form used in GAMBIT, i.e. after any patching or BOSSing applied by the GAMBIT build system." />}}
 
 We have also tested various earlier compilers, but not in as much detail. Please let us know if you have information on presently untested combinations (marked with ?, or missing entirely).<br>
 <br>
