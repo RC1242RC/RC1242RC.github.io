@@ -18,6 +18,23 @@ Evidence for new physics Beyond the Standard Model (BSM) could appear in any obs
 GAMBIT, the Global And Modular BSM Inference Tool, is one of a number of global fitting software frameworks. However, GAMBIT is designed to offer a number of advantages over existing solutions including theory flexibility, straightforward extension to new observables and external interfaces, code availability, statistical secularism and computational speed.
 
 Gambit consists of a number of 
-modules or `Bits`, along with various Core components and utilities
+modules or `Bits`, along with various Core components and utilities. GAMBIT's `Bits` are:
+
+| Name | Description |
+| --- | --- |
+| `ColliderBit` | Calculates particle collider observables and likelihoods. Includes detailed implementations of LEP, ATLAS and CMS searches for new particle production, and measurements of the Higgs boson. |
+| `FlavorBit` | Calculates observables and likelihoods from flavor physics, in particular B, D, and K meson decays as observed by LHCb, including angular observables and correlations. |
+| `DarkBit` | Calculates Dark Matter observables and likelihoods, from the relic abundance to direct and indirect searches. |
+| `SpecBit` | Interfaces to one of a number of possible external spectrum generators in order to determine pole masses and running parameters, and provides them to the rest of GAMBIT in a standardised spectrum container format. |
+| `DecayBit` | Calculates decay rates of all relevant particles in the BSM theory under investigation, and contains decay data for all Standard Model particles. |
+| `ScannerBit` | The sampling module for Gambit. Implements various scanners which are programmed as plugins. |
+
+{{< alert icon="ⓘ" context="info">}}
+A detailed discussion of the motivation, philosophy, and design of GAMBIT can be found in [the original paper](https://arxiv.org/abs/1705.07908)
+{{< /alert >}}
 
 ### How do I run GAMBIT?
+
+The easiest way to get GAMBIT running is via Docker. A pre-built version of GAMBIT is available as a Docker image which can be downloaded and run locally.
+
+GAMBIT builds and runs under Linux and Mac OS X. 
