@@ -35,6 +35,6 @@ A detailed discussion of the motivation, philosophy, and design of GAMBIT can be
 
 ### How do I run GAMBIT?
 
-**To run a limited version of GAMBIT quickly and easily, use the Docker image.** A pre-built version of GAMBIT is available as a Docker image which can be downloaded and run locally. For detailed instructions please see the [Docker Usage](/documentation/docker_usage/) page.
+**To run a limited version of GAMBIT quickly and easily, use the Docker image.** A pre-built version of GAMBIT is available as a Docker image which can be downloaded and run locally. For detailed instructions please see the [Docker Usage](/documentation/installation/docker_usage/) page.
 
-**To access and use all features of GAMBIT, build from source.** GAMBIT builds and runs under Linux and macOS. For detailed instructions please see the [Installation for Linux](/documentation/installation_for_linux/) or [Installation for macOS](/documentation/installation_for_macos) pages. Although Windows is not directly supported, it is possible to run 
+**To access and use all features of GAMBIT, build from source.** GAMBIT builds and runs under Linux and macOS. For detailed instructions please see the [Installation for Linux](/documentation/installation/installation_for_linux/) or [Installation for macOS](/documentation/installation/installation_for_macos) pages. Although Windows is not directly supported, it is possible to run 
