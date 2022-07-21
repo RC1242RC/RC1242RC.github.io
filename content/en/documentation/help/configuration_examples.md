@@ -12,7 +12,7 @@ weight: 40
 ---
 
 <p>
-{{< alert icon="🛈" context="info"}}
+{{< alert icon="🛈" context="info">}}
 Instructions for configuring and compiling GAMBIT can be found in the original paper describing the code <a href="http://arxiv.org/abs/1705.07908">arXiv:1705.07908</a>.
 {{< /alert >}}
 </p>
@@ -24,11 +24,15 @@ For building the entirety of GAMBIT without optimisation, at least 10 GB of RAM 
 <p>
 The remainder of this page contains specific cmake tweaks and environment variable hacks that have been useful for configuring and building GAMBIT in more restricted environments, such as large clusters.
 </p>
-<h4>Aaron Vincent's OSX laptop</h4>
+
+### Aaron Vincent's OSX laptop
+
 <p>
 Instructions available <a href="https://www.physics.queensu.ca/facultysites/vincent/getting-gambit-to-run-on-osx-mojave/">here</a>.
 </p>
-<h4>lxplus6 (CERN) with LCG compilers</h4>
+
+### lxplus6 (CERN) with LCG compilers
+
 <p>
 The native SL6 compiler (GCC 4.4) and Boost library (1.41) are very old and not sufficient to build Gambit. Rather than manually install a full build chain, which is full of extra pitfalls, it's easiest to use the LCG package bundles like the LHC experiments do.
 </p>
@@ -55,7 +59,9 @@ cd gambit/
 mkdir build &amp;&amp; cd build/
 cmake .. -DCMAKE_BUILD_TYPE=Release -Ditch=delphes -DEIGEN3_INCLUDE_DIR=$PWD/../../eigen-3.3.3 -DBOOST_INCLUDEDIR=/cvmfs/sft.cern.ch/lcg/releases/LCG_88/Boost/1.62.0/x86_64-slc6-gcc62-opt/include/boost-1_62/  -DBOOST_LIBRARYDIR=/cvmfs/sft.cern.ch/lcg/releases/LCG_88/Boost/1.62.0/x86_64-slc6-gcc62-opt/lib/  -DCMAKE_CXX_COMPILER=$(which g++) -DCMAKE_C_COMPILER=$(which gcc) -DCMAKE_Fortran_COMPILER=$(which gfortran)
 </pre>
-<h4>lxplus7 (CERN) with LCG compilers</h4>
+
+### lxplus7 (CERN) with LCG compilers
+
 <p>
 The native CentOS 7 compiler is sufficient, but the Boost library version (1.41) is not, hence an LCG environment is again needed.
 </p>
@@ -82,12 +88,16 @@ cd gambit/
 mkdir build &amp;&amp; cd build/
 cmake .. -DCMAKE_BUILD_TYPE=Release -Ditch=delphes -DEIGEN3_INCLUDE_DIR=$PWD/../../eigen-3.3.3 -DBOOST_INCLUDEDIR=/cvmfs/sft.cern.ch/lcg/releases/LCG_88/Boost/1.62.0/x86_64-centos7-gcc62-opt/include/boost-1_62/  -DBOOST_LIBRARYDIR=/cvmfs/sft.cern.ch/lcg/releases/LCG_88/Boost/1.62.0/x86_64-centos7-gcc62-opt/lib/  -DCMAKE_CXX_COMPILER=$(which g++) -DCMAKE_C_COMPILER=$(which gcc) -DCMAKE_Fortran_COMPILER=$(which gfortran)
 </pre>
-<h4>cx-2/helen (Imperial)</h4>
+
+### cx-2/helen (Imperial)
+
 <pre>
 module load git gcc/4.9.1 gsl cmake/2.8.12.2 boost anaconda intel-suite/2016 mpi/mpt-2.12 hdf5/1.8.14-serial
 cmake -DCMAKE_BUILD_TYPE=Release ..
 </pre>
-<h4>Cartesius (Amsterdam)</h4>
+
+### Cartesius (Amsterdam)
+
 With GNU compilers:<br>
 <pre>
 module load python root gsl blas lapack gcc cmake/3.2.2 boost
@@ -102,11 +112,15 @@ export PATH=$PATH:$SURFSARA_BIN_PATH
 CMAKE_PREFIX_PATH=$SURFSARA_GSL_ROOT CMAKE_LIBRARY_PATH=$SURFSARA_LIBRARY_PATH cmake -D CMAKE_CXX_COMPILER=icpc -D CMAKE_C_COMPILER=icc -D CMAKE_Fortran_COMPILER=ifort ../
 </pre>
 -->
-<h4>Phoenix (Adelaide)</h4>
+
+### Phoenix (Adelaide)
+
 <pre>
 cmake -Ditch="Delphes" -DCMAKE_Fortran_COMPILER=mpiifort -DCMAKE_C_COMPILER=icc -DCMAKE_CXX_COMPILER=icpc -DCMAKE_BUILD_TYPE=Release ..
 </pre>
-<h4>Zeus (Poland)</h4>
+
+### Zeus (Poland)
+
 GNU:
 <pre>
 module load el6/tools/python libs/hdf5
@@ -120,7 +134,9 @@ module load intel/16.0.1 impi libs/hdf5 el6/tools/python
 module unload tools/openmpi/1.6.5-gnu-4.8.2-ib
 cmake -D CMAKE_CXX_COMPILER=icpc -D CMAKE_C_COMPILER=icc -D CMAKE_Fortran_COMPILER=ifort ..
 </pre>
-<h4>Prometheus (Poland) with Intel 2016 compilers</h4>
+
+### Prometheus (Poland) with Intel 2016 compilers
+
 Get Eigen and put it in your home directory:<br>
 <pre>
 wget http://bitbucket.org/eigen/eigen/get/3.3.3.tar.gz
