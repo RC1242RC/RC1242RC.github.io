@@ -17,11 +17,11 @@
 #  parent = "tutorials"
 #  weight = 30
 
-[[tutorials]]
-  name = "Installation"
-  identifier = "installation"
-  url = "/tutorials/installation/introduction/"
-  weight = 20
+#[[tutorials]]
+#  name = "Installation"
+#  identifier = "installation"
+#  url = "/tutorials/installation/introduction/"
+#  weight = 20
 
 #[[main]]
 #  name = "Installation"
@@ -52,14 +52,14 @@
 [[main]]
   name = "Code Reference"
   identifier = "code"
-  url = "/documentation/code/index_files"
+  url = "/documentation/code/index_classes"
   parent = "documentation"
   weight = 40
 
 [[documentation]]
   name = "Code Reference"
   identifier = "code"
-  url = "/documentation/code/index_files"
+  url = "/documentation/code/index_classes"
   weight = 40
 
 [[documentation]]

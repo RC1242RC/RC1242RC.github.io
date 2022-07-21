@@ -1,5 +1,5 @@
 ---
-title: "Introduction to GAMBIT"
+title: "Getting Started with GAMBIT"
 description: ""
 date: 2022-07-01T22:31:46+01:00
 lastmod: 2022-07-01T22:31:46+01:00

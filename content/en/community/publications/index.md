@@ -1,13 +1,13 @@
 ---
 title: "Publications"
-description: ""
+description: "A collection of recent papers related to GAMBIT."
 date: 2022-07-01T22:31:22+01:00
 lastmod: 2022-07-01T22:31:22+01:00
 draft: false
 images: []
 ---
 
-{{< alert icon="🛈" context="info" >}}
+{{< alert icon="ⓘ" context="info" >}}
 A full list of GAMBIT publications and proceedings can be found <a href="https://inspirehep.net/literature?sort=mostrecent&amp;size=25&amp;page=1&amp;q=find%20report%20%2Agambit%2A">here</a>.
 {{< /alert >}}
 
