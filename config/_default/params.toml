@@ -15,7 +15,7 @@ siteLogoDark = "/images/gambit_logo.png"
 siteLogoWidth = "50px"
 
 # Search
-mainSections = ["tutorials", "community", "documentation"]
+mainSections = ["community", "documentation"]
 
 ## Open Graph
 images = ["gambit_logo.png"]
