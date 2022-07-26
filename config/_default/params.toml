@@ -7,7 +7,7 @@ titleAddition = "Tutorials and Documentation"
 description = "Documentation for the Global And Modular BSM Inference Tool"
 
 ## Documentation
-# docsVersion = "0.3"
+# docsVersion = "Development"
 
 # Logo
 siteLogoLight = "/images/gambit_logo.png"
@@ -97,7 +97,7 @@ lastMod = false
   highLight = true
   kaTex = false
   multilingualMode = false
-  docsVersioning = false
+  docsVersioning = true
   fullWidth = false
   navbarSticky = true
 
