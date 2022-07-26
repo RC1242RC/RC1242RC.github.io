@@ -1,1 +1,2 @@
-versionsList = ["Development", "TestBit"]
+[params]
+  versionsList = ["Development", "TestBit"]
