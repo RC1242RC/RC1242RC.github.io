@@ -7,7 +7,7 @@ titleAddition = "Tutorials and Documentation"
 description = "Documentation for the Global And Modular BSM Inference Tool"
 
 ## Documentation
-# docsVersion = "Development"
+docsVersion = "Development"
 
 # Logo
 siteLogoLight = "/images/gambit_logo.png"
