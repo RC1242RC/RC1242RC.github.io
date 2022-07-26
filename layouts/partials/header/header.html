@@ -146,7 +146,8 @@
           </button>
           <ul class="dropdown-menu dropdown-menu-lg-end me-lg-2 shadow rounded border-0" aria-labelledby="doks-versions">
             {{ range $version, $.Site.versions.versionsList }}
-            <li><a class="dropdown-item" href="{{ $version }}/documentation/code/index_classes/">{{ $version }}</a></li>
+              <li><a class="dropdown-item" href="{{ $version }}/documentation/code/index_classes/">{{ $version }}</a></li>
+            {{ end }}
             <!-- <li><a class="dropdown-item current" aria-current="true" href="/docs/{{ .Site.Params.docsVersion }}/prologue/introduction/">Latest ({{ .Site.Params.docsVersion }}.x)</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="/documentation/code/development/index_classes/">Development</a></li>
