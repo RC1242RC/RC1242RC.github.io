@@ -8,6 +8,7 @@ description = "Documentation for the Global And Modular BSM Inference Tool"
 
 ## Documentation
 docsVersion = "Development"
+versionsList = ["Development", "TestBit"]
 
 # Logo
 siteLogoLight = "/images/gambit_logo.png"
