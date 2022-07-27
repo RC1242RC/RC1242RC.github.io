@@ -4,11 +4,11 @@
 #  url = "/tutorials/help/introduction/"
 #  weight = 10
 
-[[tutorials]]
-  name = "Examples"
-  identifier = "examples"
-  url = "/tutorials/examples/colliderbit"
-  weight = 30
+#[[tutorials]]
+#  name = "Examples"
+#  identifier = "examples"
+#  url = "/tutorials/examples/colliderbit"
+#  weight = 30
 
 #[[main]]
 #  name = "Examples"
@@ -30,11 +30,11 @@
 #  parent = "tutorials"
 #  weight = 20
 
-[[tutorials]]
-  name = "Help"
-  identifier = "help"
-  url = "/tutorials/help/faqs/"
-  weight = 40
+#[[tutorials]]
+#  name = "Help"
+#  identifier = "help"
+#  url = "/tutorials/help/faqs/"
+#  weight = 40
 
 #[[main]]
 #  name = "Help"
@@ -46,58 +46,58 @@
 [[main]]
   name = "Documentation"
   identifier = "documentation"
-  url = "/documentation/"
+  url = "Main_Development/documentation/"
   weight = 20
 
 [[main]]
   name = "Code Reference"
   identifier = "code"
-  url = "/documentation/code/index_classes"
+  url = "Main_Development/documentation/code/index_classes"
   parent = "documentation"
   weight = 40
 
 [[documentation]]
   name = "Code Reference"
   identifier = "code"
-  url = "/documentation/code/index_classes"
+  url = "Main_Development/documentation/code/index_classes"
   weight = 40
 
 [[documentation]]
   name = "Examples"
   identifier = "examples"
-  url = "/documentation/examples/colliderbit"
+  url = "Main_Development/documentation/examples/colliderbit"
   weight = 20
 
 [[main]]
   name = "Examples"
   identifier = "examples"
-  url = "/documentation/examples/colliderbit"
+  url = "Main_Development/documentation/examples/colliderbit"
   parent = "documentation"
   weight = 20
 
 [[documentation]]
   name = "Installation"
   identifier = "installation"
-  url = "/documentation/installation/introduction/"
+  url = "Main_Development/documentation/installation/introduction/"
   weight = 10
 
 [[main]]
   name = "Installation"
   identifier = "installation"
-  url = "/documentation/installation/introduction/"
+  url = "Main_Development/documentation/installation/introduction/"
   parent = "documentation"
   weight = 10
 
 [[documentation]]
   name = "Help"
   identifier = "help"
-  url = "/documentation/help/faqs/"
+  url = "Main_Development/documentation/help/faqs/"
   weight = 30
 
 [[main]]
   name = "Help"
   identifier = "help"
-  url = "/documentation/help/faqs/"
+  url = "Main_Development/documentation/help/faqs/"
   parent = "documentation"
   weight = 30
 
@@ -108,31 +108,31 @@
 
 [[main]]
   name = "Publications"
-  url = "/community/publications/"
+  url = "Main_Development/community/publications/"
   parent = "community"
   weight = 10
 
 [[main]]
   name = "Talks"
-  url = "/community/talks/"
+  url = "Main_Development/community/talks/"
   parent = "community"
   weight = 20
 
 [[main]]
   name = "Members"
-  url = "/community/members/"
+  url = "Main_Development/community/members/"
   parent = "community"
   weight = 30
 
 [[main]]
   name = "Code of Conduct"
-  url = "/community/code_of_conduct/"
+  url = "Main_Development/community/code_of_conduct/"
   parent = "community"
   weight = 40
 
 [[main]]
   name = "Contact"
-  url = "/community/contact/"
+  url = "Main_Development/community/contact/"
   parent = "community"
   weight = 50
 
@@ -147,5 +147,5 @@
 
 [[footer]]
    name = "License"
-   url = "/license/"
+   url = "Main_Development/license/"
    weight = 10
