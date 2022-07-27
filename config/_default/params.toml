@@ -1,6 +1,8 @@
 ## Documentation
 docsVersion = "MainDevelopment"
 versionsList = ["MainDevelopment", "TestBit"]
+versionURL = "https://rc1242rc.github.io/maindevelopment"
+persistentVersionURL = "https://rc1242rc.github.io/maindevelopment"
 
 ## Homepage
 title = "GAMBIT"
