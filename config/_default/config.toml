@@ -1,5 +1,5 @@
-baseurl = "https://rc1242rc.github.io/main_development"
-canonifyURLs = false
+baseurl = "https://rc1242rc.github.io/maindevelopment"
+canonifyURLs = true
 disableAliases = true
 disableHugoGeneratorInject = true
 enableEmoji = true
