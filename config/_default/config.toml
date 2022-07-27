@@ -1,5 +1,6 @@
 baseurl = "https://rc1242rc.github.io/maindevelopment"
 canonifyURLs = true
+enableInlineShortcodes = true
 disableAliases = true
 disableHugoGeneratorInject = true
 enableEmoji = true
