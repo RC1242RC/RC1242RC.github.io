@@ -31,18 +31,26 @@ jobs:
           branches_temp: ${{ inputs.dev_branches_to_document }}
           repos_temp: ${{ inputs.repos_to_document }}
 
-  deploy:
+  deploy_branches:
+    needs: setup
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        branches: ${{ fromJson(needs.setup.outputs.branches )}}
+    steps:
+      - name: Print 1
+        run: echo ${{ matrix.branches }}
+      - name: Print 2
+        run: echo ${{ matrix.repos }}
+        
+  deploy_repos:
     needs: setup
     runs-on: ubuntu-latest
     strategy:
       matrix:
         branches: ${{ fromJson(needs.setup.outputs.branches )}}
         repos: ${{ fromJson(needs.setup.outputs.repos )}}
-    steps:
-      - name: Print 1
-        run: echo ${{ matrix.branches }}
-      - name: Print 2
-        run: echo ${{ matrix.repos }}
+  
       #- name: Checkout code
       #  uses: actions/checkout@v2
       #- name: Cache npm packages
