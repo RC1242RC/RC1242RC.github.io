@@ -10,11 +10,11 @@ on:
       dev_branches_to_document:
         description: 'Branches of the GAMBIT dev repo to document'
         required: true
-        default: "['master', 'ColliderBit_development', 'DarkBit_development']"
+        default: "{['master', 'ColliderBit_development', 'DarkBit_development']}"
       repos_to_document:
         description: 'Standalone repos (e.g. releases) to document'
         required: true
-        default: "['none']"
+        default: "{['none']}"
 
 jobs:
   
