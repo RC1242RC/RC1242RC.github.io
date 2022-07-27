@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://rc1242rc.github.io/main_development/sitemap.xml
+Sitemap: https://rc1242rc.github.io/maindevelopment/sitemap.xml
