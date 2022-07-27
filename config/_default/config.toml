@@ -1,4 +1,4 @@
-baseurl = "https://rc1242rc.github.io/Main_Development"
+baseurl = "https://rc1242rc.github.io/main_development"
 canonifyURLs = false
 disableAliases = true
 disableHugoGeneratorInject = true

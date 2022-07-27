@@ -46,58 +46,58 @@
 [[main]]
   name = "Documentation"
   identifier = "documentation"
-  url = "Main_Development/documentation/"
+  url = "/documentation/"
   weight = 20
 
 [[main]]
   name = "Code Reference"
   identifier = "code"
-  url = "Main_Development/documentation/code/index_classes"
+  url = "/documentation/code/index_classes"
   parent = "documentation"
   weight = 40
 
 [[documentation]]
   name = "Code Reference"
   identifier = "code"
-  url = "Main_Development/documentation/code/index_classes"
+  url = "/documentation/code/index_classes"
   weight = 40
 
 [[documentation]]
   name = "Examples"
   identifier = "examples"
-  url = "Main_Development/documentation/examples/colliderbit"
+  url = "/documentation/examples/colliderbit"
   weight = 20
 
 [[main]]
   name = "Examples"
   identifier = "examples"
-  url = "Main_Development/documentation/examples/colliderbit"
+  url = "/documentation/examples/colliderbit"
   parent = "documentation"
   weight = 20
 
 [[documentation]]
   name = "Installation"
   identifier = "installation"
-  url = "Main_Development/documentation/installation/introduction/"
+  url = "/documentation/installation/introduction/"
   weight = 10
 
 [[main]]
   name = "Installation"
   identifier = "installation"
-  url = "Main_Development/documentation/installation/introduction/"
+  url = "/documentation/installation/introduction/"
   parent = "documentation"
   weight = 10
 
 [[documentation]]
   name = "Help"
   identifier = "help"
-  url = "Main_Development/documentation/help/faqs/"
+  url = "/documentation/help/faqs/"
   weight = 30
 
 [[main]]
   name = "Help"
   identifier = "help"
-  url = "Main_Development/documentation/help/faqs/"
+  url = "/documentation/help/faqs/"
   parent = "documentation"
   weight = 30
 
@@ -108,31 +108,31 @@
 
 [[main]]
   name = "Publications"
-  url = "Main_Development/community/publications/"
+  url = "/community/publications/"
   parent = "community"
   weight = 10
 
 [[main]]
   name = "Talks"
-  url = "Main_Development/community/talks/"
+  url = "/community/talks/"
   parent = "community"
   weight = 20
 
 [[main]]
   name = "Members"
-  url = "Main_Development/community/members/"
+  url = "/community/members/"
   parent = "community"
   weight = 30
 
 [[main]]
   name = "Code of Conduct"
-  url = "Main_Development/community/code_of_conduct/"
+  url = "/community/code_of_conduct/"
   parent = "community"
   weight = 40
 
 [[main]]
   name = "Contact"
-  url = "Main_Development/community/contact/"
+  url = "/community/contact/"
   parent = "community"
   weight = 50
 
@@ -147,5 +147,5 @@
 
 [[footer]]
    name = "License"
-   url = "Main_Development/license/"
+   url = "/license/"
    weight = 10
