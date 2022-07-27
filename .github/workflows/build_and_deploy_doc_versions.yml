@@ -28,8 +28,8 @@ jobs:
         run: echo "::set-output name=branches::$branches_temp"
           && echo "::set-output name=repos::$repos_temp"
         env:
-          branches_temp: ${{ github.event.inputs.dev_branches_to_document }}
-          repos_temp: ${{ github.event.inputs.repos_to_document }}
+          branches_temp: ${{ inputs.dev_branches_to_document }}
+          repos_temp: ${{ inputs.repos_to_document }}
 
   deploy:
     runs-on: ubuntu-latest
