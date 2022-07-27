@@ -9,8 +9,8 @@ titleAddition = "Tutorials and Documentation"
 description = "Documentation for the Global And Modular BSM Inference Tool"
 
 # Logo
-siteLogoLight = "/images/gambit_logo.png"
-siteLogoDark = "/images/gambit_logo.png"
+siteLogoLight = "gambit_logo.png"
+siteLogoDark = "gambit_logo.png"
 siteLogoWidth = "50px"
 
 # Search
