@@ -1,0 +1,80 @@
+name: Build and deploy documentation versions from various sources
+
+on:
+  workflow_dispatch:
+    inputs:
+      dev_repo:
+        description: 'Dev repo'
+        required: true
+        default: 'https://github.com/RC1242RC/gambit_sphinx.git'
+      dev_branches_to_document:
+        description: 'Branches of the GAMBIT dev repo to document'
+        required: true
+        default: "['master', 'ColliderBit_development', 'DarkBit_development']"
+      repos_to_document:
+        description: 'Standalone repos (e.g. releases) to document'
+        required: true
+        default: "['none']"
+
+jobs:
+  
+  setup:
+    runs-on: ubuntu-latest
+    outputs:
+      branches: ${{ steps.setVariables.outputs.branches }}
+      repos: ${{ steps.setVariables.outputs.repos }}
+    steps:
+      - id: setVariables
+        run: |
+          echo "::set-output name=branches::$branches_temp"
+          echo "::set-output name=repos::$repos_temp"
+        env:
+          branches_temp: ${{ github.event.inputs.dev_branches_to_document }}
+          repos_temp: ${{ github.event.inputs.repos_to_document }}
+
+  deploy:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        branches: ${{ fromJson(needs.setup.outputs.branches )}}
+        repos: ${{ fromJson(needs.setup.outputs.repos )}}
+    steps:
+      - name: Print 1
+        run: echo ${{ matrix.branches }}
+      - name: Print 2
+        run: echo ${{ matrix.repos }}
+      #- name: Checkout code
+      #  uses: actions/checkout@v2
+      #- name: Cache npm packages
+      #  uses: actions/setup-node@v2
+      #  with:
+      #    node-version: '16'
+      #    cache: 'npm'
+
+      #- name: Remove license.md
+      #  run: cd content/en/documentation/_static/collapsible-lists
+      #    && rm LICENSE.md
+
+      #- name: Commit changes
+      #  run: git config --local user.email "test@github.com"
+      #    && git config --local user.name "GitHub Action test"
+      #    && git add --all
+      #    && git commit -m "Deleted problematic LICENSE.md"
+      #    && git push
+
+      #- name: Install npm dependencies
+      #  run: npm install
+      #- name: Build production website
+      #  run: npm run build
+      #- name: Deploy to GitHub Pages
+      #  uses: peaceiris/actions-gh-pages@v3
+      #  with:
+      #    github_token: ${{ secrets.GITHUB_TOKEN }}
+      #    publish_dir: ./public
+      #    destination_dir: testbit
+      #- name: Deploy redirect
+      #  uses: peaceiris/actions-gh-pages@v3
+      #  with:
+      #    github_token: ${{ secrets.GITHUB_TOKEN }}
+      #    publish_dir: ./redirect
+      #    keep_files: true
