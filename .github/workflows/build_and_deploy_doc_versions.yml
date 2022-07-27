@@ -25,9 +25,8 @@ jobs:
       repos: ${{ steps.setVariables.outputs.repos }}
     steps:
       - id: setVariables
-        run: |
-          echo "::set-output name=branches::$branches_temp"
-          echo "::set-output name=repos::$repos_temp"
+        run: echo "::set-output name=branches::$branches_temp"
+          && echo "::set-output name=repos::$repos_temp"
         env:
           branches_temp: ${{ github.event.inputs.dev_branches_to_document }}
           repos_temp: ${{ github.event.inputs.repos_to_document }}
