@@ -1,0 +1,926 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="ie=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><link rel=preload as=font href=https://rc1242rc.github.io/testbit/fonts/vendor/jost/jost-v4-latin-regular.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://rc1242rc.github.io/testbit/fonts/vendor/jost/jost-v4-latin-500.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://rc1242rc.github.io/testbit/fonts/vendor/jost/jost-v4-latin-700.woff2 type=font/woff2 crossorigin><script>(()=>{var e=localStorage.getItem("theme");e==="dark"&&document.documentElement.setAttribute("data-dark-mode","")})()</script><link rel=stylesheet href=https://rc1242rc.github.io/testbit/main.1fa2debdf0a1b20e7268d11906902449af896197928a5bdae9dca95b629cdd73746db3d8c6afacb7320d9deb149a318c764669d08a1ddfd34a657ab2aeab866a.css integrity="sha512-H6LevfChsg5yaNEZBpAkSa+JYZeSilva6dypW2Kc3XN0bbPYxq+stzINnesUmjGMdkZp0Iod39NKZXqyrquGag==" crossorigin=anonymous><noscript><style>img.lazyload{display:none}</style></noscript><meta name=robots content="index, follow"><meta name=googlebot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><meta name=bingbot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><title>file analyses/Analysis_ATLAS_8TeV_2LEPEW_20invfb.cpp - GAMBIT</title><meta name=description content="[No description available]"><link rel=canonical href=https://rc1242rc.github.io/testbit/documentation/code/files/analysis__atlas__8tev__2lepew__20invfb_8cpp/><meta property="og:locale" content="en_US"><meta property="og:type" content="article"><meta property="og:title" content="file analyses/Analysis_ATLAS_8TeV_2LEPEW_20invfb.cpp"><meta property="og:description" content="[No description available]"><meta property="og:url" content="https://rc1242rc.github.io/testbit/documentation/code/files/analysis__atlas__8tev__2lepew__20invfb_8cpp/"><meta property="og:site_name" content="GAMBIT"><meta property="og:image" content="https://rc1242rc.github.io/testbit/gambit_logo.png"><meta property="og:image:alt" content="GAMBIT"><meta name=twitter:card content="summary_large_image"><meta name=twitter:site content><meta name=twitter:creator content><meta name=twitter:title content="file analyses/Analysis_ATLAS_8TeV_2LEPEW_20invfb.cpp"><meta name=twitter:description content="[No description available]"><meta name=twitter:image content="https://rc1242rc.github.io/testbit/gambit_logo.png"><meta name=twitter:image:alt content="file analyses/Analysis_ATLAS_8TeV_2LEPEW_20invfb.cpp"><script type=application/ld+json>{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://rc1242rc.github.io/#/schema/organization/1","name":"Doks","url":"https://rc1242rc.github.io/","sameAs":["https://github.com/GambitBSM"],"logo":{"@type":"ImageObject","@id":"https://rc1242rc.github.io/#/schema/image/1","url":"https://rc1242rc.github.io/logo-doks.png","width":450,"height":416,"caption":"Doks"},"image":{"@id":"https://rc1242rc.github.io/#/schema/image/1"}},{"@type":"WebSite","@id":"https://rc1242rc.github.io/#/schema/website/1","url":"https://rc1242rc.github.io/","name":"GAMBIT","description":"Documentation for the Global And Modular BSM Inference Tool","publisher":{"@id":"https://rc1242rc.github.io/#/schema/organization/1"}},{"@type":"WebPage","@id":"https://rc1242rc.github.io/testbit/documentation/code/files/analysis__atlas__8tev__2lepew__20invfb_8cpp/","url":"https://rc1242rc.github.io/testbit/documentation/code/files/analysis__atlas__8tev__2lepew__20invfb_8cpp/","name":"file analyses\/Analysis_ATLAS_8TeV_2LEPEW_20invfb.cpp","description":"[No description available]","isPartOf":{"@id":"https://rc1242rc.github.io/#/schema/website/1"},"about":{"@id":"https://rc1242rc.github.io/#/schema/organization/1"},"datePublished":"0001-01-01T00:00:00CET","dateModified":"0001-01-01T00:00:00CET","breadcrumb":{"@id":"https://rc1242rc.github.io/testbit/documentation/code/files/analysis__atlas__8tev__2lepew__20invfb_8cpp/#/schema/breadcrumb/1"},"primaryImageOfPage":{"@id":"https://rc1242rc.github.io/testbit/documentation/code/files/analysis__atlas__8tev__2lepew__20invfb_8cpp/#/schema/image/2"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://rc1242rc.github.io/testbit/documentation/code/files/analysis__atlas__8tev__2lepew__20invfb_8cpp/"]}]},{"@type":"BreadcrumbList","@id":"https://rc1242rc.github.io/testbit/documentation/code/files/analysis__atlas__8tev__2lepew__20invfb_8cpp/#/schema/breadcrumb/1","name":"Breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/testbit","url":"https://rc1242rc.github.io/testbit","name":"Home"}},{"@type":"ListItem","position":3,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/testbit/documentation/","url":"https://rc1242rc.github.io/testbit/documentation/","name":"Documentation"}},{"@type":"ListItem","position":4,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/testbit/documentation/code/","url":"https://rc1242rc.github.io/testbit/documentation/code/","name":"Code"}},{"@type":"ListItem","position":5,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/testbit/documentation/code/files/","url":"https://rc1242rc.github.io/testbit/documentation/code/files/","name":"Files"}},{"@type":"ListItem","position":6,"item":{"@id":"https://rc1242rc.github.io/testbit/documentation/code/files/analysis__atlas__8tev__2lepew__20invfb_8cpp/"}}]},{"@context":"https://schema.org","@graph":[{"@type":"ImageObject","@id":"https://rc1242rc.github.io/testbit/documentation/code/files/analysis__atlas__8tev__2lepew__20invfb_8cpp/#/schema/image/2","url":"https://rc1242rc.github.io/testbit/gambit_logo.png","contentUrl":"https://rc1242rc.github.io/testbit/gambit_logo.png","caption":"file analyses\/Analysis_ATLAS_8TeV_2LEPEW_20invfb.cpp"}]}]}</script><meta name=theme-color content="#fff"><link rel=icon href=https://rc1242rc.github.io/testbit/favicon.ico sizes=any><link rel=icon type=image/svg+xml href=https://rc1242rc.github.io/testbit/favicon.svg><link rel=apple-touch-icon sizes=180x180 href=https://rc1242rc.github.io/testbit/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=https://rc1242rc.github.io/testbit/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=https://rc1242rc.github.io/testbit/favicon-16x16.png><link rel=manifest crossorigin=use-credentials href=https://rc1242rc.github.io/testbit/site.webmanifest></head><body class="documentation single light"><div class=sticky-top><div class=header-bar></div><header class="navbar navbar-expand-md navbar-light doks-navbar"><nav class="container-xxl flex-wrap flex-md-nowrap" aria-label="Main navigation"><a class="navbar-brand p-0 me-auto" href=/ aria-label=GAMBIT><img class=logo-light src=https://rc1242rc.github.io/testbit/images/gambit_logo.png width=50px>
+<img class="logo-dark d-none" src=https://rc1242rc.github.io/testbit/images/gambit_logo.png width=50px>
+GAMBIT</a>
+<button class="btn btn-menu order-2 d-block d-lg-none" type=button data-bs-toggle=offcanvas data-bs-target=#offcanvasDoks aria-controls=offcanvasDoks aria-label="Open main menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button><div class="offcanvas offcanvas-end border-0 py-lg-1" tabindex=-1 id=offcanvasDoks data-bs-backdrop=true aria-labelledby=offcanvasDoksLabel><div class="header-bar d-lg-none"></div><div class="offcanvas-header d-lg-none"><h2 class="h5 offcanvas-title ps-2" id=offcanvasDoksLabel><a class=text-dark href=/>GAMBIT</a></h2><button type=button class="btn-close text-reset me-2" data-bs-dismiss=offcanvas aria-label="Close main menu"></button></div><div class="offcanvas-body p-4 p-lg-0"><ul class="nav flex-column flex-lg-row align-items-lg-center mt-2 mt-lg-0 ms-lg-2 me-lg-auto"><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Documentation
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=/testbit/documentation/installation/introduction/>Installation</a></li><li><a class=dropdown-item href=/testbit/documentation/examples/colliderbit>Examples</a></li><li><a class=dropdown-item href=/testbit/documentation/help/faqs/>Help</a></li><li><a class=dropdown-item href=/testbit/documentation/code/index_classes>Code Reference</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Community
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=/testbit/community/publications/>Publications</a></li><li><a class=dropdown-item href=/testbit/community/talks/>Talks</a></li><li><a class=dropdown-item href=/testbit/community/members/>Members</a></li><li><a class=dropdown-item href=/testbit/community/code_of_conduct/>Code of Conduct</a></li><li><a class=dropdown-item href=/testbit/community/contact/>Contact</a></li></ul></li></ul><hr class="text-black-50 my-4 d-lg-none"><form class="doks-search position-relative flex-grow-1 ms-lg-auto me-lg-2"><input id=search class="form-control is-search" type=search placeholder="Search site..." aria-label="Search site..." autocomplete=off><div id=suggestions class="shadow bg-white rounded d-none"></div></form><hr class="text-black-50 my-4 d-lg-none"><ul class="nav flex-column flex-lg-row"><li class=nav-item><a class="nav-link social-link" href=https://github.com/GambitBSM><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37.0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44.0 0020 4.77 5.07 5.07.0 0019.91 1S18.73.65 16 2.48a13.38 13.38.0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07.0 005 4.77 5.44 5.44.0 003.5 8.55c0 5.42 3.3 6.61 6.44 7A3.37 3.37.0 009 18.13V22"/></svg><small class="ms-2 d-lg-none">GitHub</small></a></li></ul><hr class="text-black-50 my-4 d-lg-none"><div class=dropdown><button class="btn btn-doks-light dropdown-toggle" id=doks-versions data-bs-toggle=dropdown aria-expanded=false data-bs-display=static aria-label="Toggle version menu">
+<span class=d-none>Doks</span> TestBit
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></button><ul class="dropdown-menu dropdown-menu-lg-end me-lg-2 shadow rounded border-0" aria-labelledby=doks-versions><li><a class=dropdown-item href=/maindevelopment/documentation/code/index_classes/>MainDevelopment</a></li><li><a class=dropdown-item href=/testbit/documentation/code/index_classes/>TestBit</a></li></ul></div></div></div></nav></header></div><div class="wrap container-xxl" role=document><div class=content><div class="row flex-xl-nowrap"><div class="col-lg-5 col-xl-4 docs-sidebar"><nav class=docs-links aria-label="Main navigation"><ul class="list-unstyled collapsible-sidebar"><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-installation aria-expanded=false>
+Installation</button><div class=collapse id=section-installation><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/testbit/documentation/installation/introduction/>Getting Started</a></li><li><a class="docs-link rounded" href=/testbit/documentation/installation/docker_usage/>Docker Usage</a></li><li><a class="docs-link rounded" href=/testbit/documentation/installation/installation_for_linux/>Installation for Linux</a></li><li><a class="docs-link rounded" href=/testbit/documentation/installation/installation_for_windows/>Installation for Windows</a></li><li><a class="docs-link rounded" href=/testbit/documentation/installation/installation_for_macos/>Installation for macOS</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-examples aria-expanded=false>
+Examples</button><div class=collapse id=section-examples><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/testbit/documentation/examples/colliderbit/>ColliderBit</a></li><li><a class="docs-link rounded" href=/testbit/documentation/examples/anotherbit/>AnotherBit</a></li><li><a class="docs-link rounded" href=/testbit/documentation/examples/anotherbit2/>AnotherBit2</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-help aria-expanded=false>
+Help</button><div class=collapse id=section-help><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/testbit/documentation/help/faqs/>FAQs</a></li><li><a class="docs-link rounded" href=/testbit/documentation/help/compiler_matrix/>Compiler Matrix</a></li><li><a class="docs-link rounded" href=/testbit/documentation/help/known_issues/>Known Issues</a></li><li><a class="docs-link rounded" href=/testbit/documentation/help/configuration_examples/>Configuration Examples</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-code aria-expanded=false>
+Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/testbit/documentation/code/index_classes/>Classes</a></li><li><a class="docs-link rounded" href=/testbit/documentation/code/index_files/>Files</a></li><li><a class="docs-link rounded" href=/testbit/documentation/code/index_pages/>Pages</a></li><li><a class="docs-link rounded" href=/testbit/documentation/code/index_namespaces/>Namespaces</a></li></ul></div></li></ul></nav></div><nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation"><div class=d-xl-none><button class="btn btn-outline-primary btn-sm doks-toc-toggle collapsed" type=button data-bs-toggle=collapse data-bs-target=#onThisPage aria-controls=doks-docs-nav aria-expanded=false aria-label="Toggle On this page navigation">
+<span>On this page</span>
+<span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg></span></button><div class=collapse id=onThisPage><div class="card card-body mt-3 py-1"><div class=page-links><nav id=TableOfContents><ul><li><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#classes>Classes</a></li><li><a href=#source-code>Source code</a></li></ul></li></ul></nav></div></div></div></div><div class="page-links d-none d-xl-block"><h3>On this page</h3><nav id=TableOfContents><ul><li><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#classes>Classes</a></li><li><a href=#source-code>Source code</a></li></ul></li></ul></nav></div></nav><main class="docs-content col-lg-11 col-xl-9 mx-xl-auto"><h1>file analyses/Analysis_ATLAS_8TeV_2LEPEW_20invfb.cpp</h1><p class=lead></p><p>[No description available]</p><h2 id=namespaces>Namespaces <a href=#namespaces class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th>Name</th></tr></thead><tbody><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit/>Gambit</a></strong><br>TODO: see if we can use this one:</td></tr><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit_1_1colliderbit/>Gambit::ColliderBit</a></strong></td></tr></tbody></table><h2 id=classes>Classes <a href=#classes class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th></th><th>Name</th></tr></thead><tbody><tr><td>class</td><td><strong><a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__8tev__2lepew__20invfb/>Gambit::ColliderBit::Analysis_ATLAS_8TeV_2LEPEW_20invfb</a></strong></td></tr></tbody></table><h2 id=source-code>Source code <a href=#source-code class=anchor aria-hidden=true>#</a></h2><pre><code>#include &lt;vector&gt;
+#include &lt;cmath&gt;
+#include &lt;memory&gt;
+#include &lt;iomanip&gt;
+
+#include &quot;gambit/ColliderBit/analyses/Analysis.hpp&quot;
+#include &quot;gambit/ColliderBit/ATLASEfficiencies.hpp&quot;
+#include &quot;gambit/ColliderBit/mt2_bisect.h&quot;
+
+/* The ATLAS 2 lepton EW analysis (20fb^-1)
+
+   based on: arXiv: 1403.5294
+
+   Code by Martin White
+
+   Known features: Signal leptons in the paper have certain isolation plus ID cuts (these are ignored here by default)
+
+   a) The trigger efficiencies are important! We need to multiply by these to get the correct yields (after which the cutflows agree rather well).
+
+*/
+
+namespace Gambit {
+  namespace ColliderBit {
+
+    using namespace std;
+
+    // double phi_mpi_pi_2lep(double x){
+    //   while (x &gt;= pi) x -= 2*M_PI;
+    //   while (x &lt; -pi) x += 2*M_PI;
+    // }
+
+
+    bool sortByPT_2lep(const HEPUtils::Particle* lep1, const HEPUtils::Particle* lep2) { return (lep1-&gt;pT() &gt; lep2-&gt;pT()); }
+
+    class Analysis_ATLAS_8TeV_2LEPEW_20invfb : public Analysis {
+    private:
+
+      // Numbers passing cuts (doubles because we will use the trigger eff)
+      double _num_MT2_90_SF;
+      double _num_MT2_90_DF;
+      double _num_MT2_120_SF;
+      double _num_MT2_120_DF;
+      double _num_MT2_150_SF;
+      double _num_MT2_150_DF;
+      double _num_WWa_SF;
+      double _num_WWa_DF;
+      double _num_WWb_SF;
+      double _num_WWb_DF;
+      double _num_WWc_SF;
+      double _num_WWc_DF;
+      double _num_Zjets;
+
+      vector&lt;double&gt; cutFlowVector;
+      vector&lt;double&gt; cutFlowIncrements;
+      vector&lt;string&gt; cutFlowVector_str;
+      const static int NCUTS=90;
+
+    public:
+
+      // Required detector sim
+      static constexpr const char* detector = &quot;ATLAS&quot;;
+
+      Analysis_ATLAS_8TeV_2LEPEW_20invfb() {
+
+        set_analysis_name(&quot;ATLAS_8TeV_2LEPEW_20invfb&quot;);
+        set_luminosity(20.3);
+
+        _num_MT2_90_SF=0;
+        _num_MT2_90_DF=0;
+        _num_MT2_120_SF=0;
+        _num_MT2_120_DF=0;
+        _num_MT2_150_SF=0;
+        _num_MT2_150_DF=0;
+        _num_WWa_SF=0;
+        _num_WWa_DF=0;
+        _num_WWb_SF=0;
+        _num_WWb_DF=0;
+        _num_WWc_SF=0;
+        _num_WWc_DF=0;
+        _num_Zjets=0;
+
+        for(int i=0;i&lt;NCUTS;i++){
+          cutFlowVector.push_back(0);
+          cutFlowVector_str.push_back(&quot;&quot;);
+          cutFlowIncrements.push_back(0.);
+        }
+
+      }
+
+      void EleEleOverlapRemoval(vector&lt;const HEPUtils::Particle*&gt; &amp;vec1, vector&lt;const HEPUtils::Particle*&gt; &amp;vec2, double DeltaRMax) {
+        //Routine to do electron-electron overlap check
+        //Discard lowest energy electron if two are found overlapping
+        vector&lt;const HEPUtils::Particle*&gt; Survivors;
+
+        for(unsigned int it1 = 0; it1 &lt; vec1.size(); it1++) {
+          bool overlap = false;
+          HEPUtils::P4 lep1mom=vec1.at(it1)-&gt;mom();
+          for(unsigned int it2 = 0; it2 &lt; vec2.size(); it2++) {
+            if(it1==it2)continue;
+            HEPUtils::P4 lep2mom=vec2.at(it2)-&gt;mom();
+            double dR;
+
+            dR=lep1mom.deltaR_eta(lep2mom);
+
+            if(fabs(dR) &lt;= DeltaRMax &amp;&amp; lep1mom.E()&lt;lep2mom.E()) overlap=true;
+          }
+          if(overlap) continue;
+          Survivors.push_back(vec1.at(it1));
+        }
+        vec1=Survivors;
+
+        return;
+      }
+
+      void LepLepOverlapRemoval(vector&lt;const HEPUtils::Particle*&gt; &amp;vec1, vector&lt;const HEPUtils::Particle*&gt; &amp;vec2, double DeltaRMax) {
+        //Routine to do lepton-lepton overlap check
+        //Discard first lepton if overlap is found
+        vector&lt;const HEPUtils::Particle*&gt; Survivors;
+
+        for(unsigned int it1 = 0; it1 &lt; vec1.size(); it1++) {
+          bool overlap = false;
+          HEPUtils::P4 lep1mom=vec1.at(it1)-&gt;mom();
+          for(unsigned int it2 = 0; it2 &lt; vec2.size(); it2++) {
+            if(it1==it2)continue;
+            HEPUtils::P4 lep2mom=vec2.at(it2)-&gt;mom();
+            double dR;
+
+            dR=lep1mom.deltaR_eta(lep2mom);
+
+            if(fabs(dR) &lt;= DeltaRMax)overlap=true;
+          }
+          if(overlap) continue;
+          Survivors.push_back(vec1.at(it1));
+        }
+        vec1=Survivors;
+
+        return;
+      }
+
+      void JetLeptonOverlapRemoval(vector&lt;const HEPUtils::Jet*&gt; &amp;jetvec, vector&lt;const HEPUtils::Particle*&gt; &amp;lepvec, double DeltaRMax) {
+        //Routine to do jet-lepton check
+        //Discards jets if they are within DeltaRMax of a lepton
+
+        vector&lt;const HEPUtils::Jet*&gt; Survivors;
+
+        for(unsigned int itjet = 0; itjet &lt; jetvec.size(); itjet++) {
+          bool overlap = false;
+          HEPUtils::P4 jetmom=jetvec.at(itjet)-&gt;mom();
+          for(unsigned int itlep = 0; itlep &lt; lepvec.size(); itlep++) {
+            HEPUtils::P4 lepmom=lepvec.at(itlep)-&gt;mom();
+            double dR=jetmom.deltaR_eta(lepmom);
+
+            if(fabs(dR) &lt;= DeltaRMax) overlap=true;
+          }
+          if(overlap) continue;
+          Survivors.push_back(jetvec.at(itjet));
+        }
+        jetvec=Survivors;
+
+        return;
+      }
+
+      void LeptonJetOverlapRemoval(vector&lt;const HEPUtils::Particle*&gt; &amp;lepvec, vector&lt;const HEPUtils::Jet*&gt; &amp;jetvec, double DeltaRMax) {
+        //Routine to do lepton-jet check
+        //Discards leptons if they are within DeltaRMax of a jet
+
+        vector&lt;const HEPUtils::Particle*&gt; Survivors;
+
+        for(unsigned int itlep = 0; itlep &lt; lepvec.size(); itlep++) {
+          bool overlap = false;
+          HEPUtils::P4 lepmom=lepvec.at(itlep)-&gt;mom();
+          for(unsigned int itjet= 0; itjet &lt; jetvec.size(); itjet++) {
+            HEPUtils::P4 jetmom=jetvec.at(itjet)-&gt;mom();
+            double dR;
+
+            dR=jetmom.deltaR_eta(lepmom);
+
+            if(fabs(dR) &lt;= DeltaRMax) overlap=true;
+          }
+          if(overlap) continue;
+          Survivors.push_back(lepvec.at(itlep));
+        }
+        lepvec=Survivors;
+
+        return;
+      }
+
+      void RemoveLeptonsMllLt12(vector&lt;const HEPUtils::Particle*&gt; &amp;lepvec){
+
+        ssize_t removeLep1=-1;
+        ssize_t removeLep2=-1;
+        vector&lt;const HEPUtils::Particle*&gt; Survivors;
+
+        //Function removes SF lepton pairs with m_ll &lt; 12 GeV
+        for(unsigned int itlep1 = 0; itlep1 &lt; lepvec.size(); itlep1++) {
+          HEPUtils::P4 lepmom1=lepvec.at(itlep1)-&gt;mom();
+          for(unsigned int itlep2= itlep1; itlep2 &lt; lepvec.size(); itlep2++) {
+            if(itlep1!=itlep2){
+              HEPUtils::P4 lepmom2=lepvec.at(itlep2)-&gt;mom();
+              double mass=(lepmom1+lepmom2).m();
+              if(mass&lt;12.){
+                removeLep1=itlep1;
+                removeLep2=itlep2;
+              }
+            }
+          }
+        }
+        for(unsigned int itlep = 0; itlep &lt; lepvec.size(); itlep++) {
+          if(itlep!=removeLep1 &amp;&amp; itlep!=removeLep2) Survivors.push_back(lepvec.at(itlep));
+        }
+
+        lepvec=Survivors;
+      }
+
+      void run(const HEPUtils::Event* event) {
+
+        // Missing energy
+        HEPUtils::P4 ptot = event-&gt;missingmom();
+        double met = event-&gt;met();
+
+        // Now define vector of baseline electrons
+        vector&lt;const HEPUtils::Particle*&gt; signalElectrons;
+        for (const HEPUtils::Particle* electron : event-&gt;electrons()) {
+          if (electron-&gt;pT() &gt; 10. &amp;&amp; fabs(electron-&gt;eta()) &lt; 2.47) signalElectrons.push_back(electron);
+        }
+
+        // Apply electron efficiency
+        ATLAS::applyElectronEff(signalElectrons);
+
+        // Now define vector of baseline muons
+        vector&lt;const HEPUtils::Particle*&gt; signalMuons;
+        for (const HEPUtils::Particle* muon : event-&gt;muons()) {
+          if (muon-&gt;pT() &gt; 10. &amp;&amp; fabs(muon-&gt;eta()) &lt; 2.4) signalMuons.push_back(muon);
+        }
+
+        // Apply muon efficiency
+        ATLAS::applyMuonEff(signalMuons);
+
+        vector&lt;const HEPUtils::Jet*&gt; signalJets;
+        for (const HEPUtils::Jet* jet : event-&gt;jets()) {
+          if (jet-&gt;pT() &gt; 20. &amp;&amp; fabs(jet-&gt;eta()) &lt; 4.5) signalJets.push_back(jet);
+          //if(jet-&gt;btag() &amp;&amp; fabs(jet-&gt;eta()) &lt; 2.5 &amp;&amp; jet-&gt;pT() &gt; 20.) bJets.push_back(jet);
+        }
+
+        vector&lt;const HEPUtils::Particle*&gt; signalTaus;
+        for (const HEPUtils::Particle* tau : event-&gt;taus()) {
+          if (tau-&gt;pT() &gt; 20. &amp;&amp; tau-&gt;abseta() &lt; 2.5) signalTaus.push_back(tau);
+        }
+        ATLAS::applyTauEfficiencyR1(signalTaus);
+
+        // Overlap removal
+
+        //Note that ATLAS use |eta|&lt;10 for removing jets close to electrons
+        //Then 2.8 is used for the rest of the overlap process
+        //Then the signal cut is applied for signal jets
+
+        EleEleOverlapRemoval(signalElectrons,signalElectrons,0.05);
+        JetLeptonOverlapRemoval(signalJets,signalElectrons,0.2);
+        LepLepOverlapRemoval(signalTaus,signalElectrons,0.2);
+        LepLepOverlapRemoval(signalTaus,signalMuons,0.2);
+        LeptonJetOverlapRemoval(signalElectrons,signalJets,0.4);
+        LeptonJetOverlapRemoval(signalMuons,signalJets,0.4);
+        //Note have not bothered with close-by electron and muon pairs (bremsstrahlung probably not significant in signal MC)
+
+        RemoveLeptonsMllLt12(signalElectrons);
+        RemoveLeptonsMllLt12(signalMuons);
+        JetLeptonOverlapRemoval(signalJets,signalTaus,0.2);
+
+        ATLAS::applyTightIDElectronSelection(signalElectrons);
+
+        int numElectrons=signalElectrons.size();
+        int numMuons=signalMuons.size();
+        int numTaus=signalTaus.size();
+
+        //Search for at least one SFOS pair
+        //m_SFOS must be &gt; 12 GeV
+
+
+        //Classify jets into various categories
+        vector&lt;const HEPUtils::Jet*&gt; centralBJets;
+        vector&lt;const HEPUtils::Jet*&gt; centralNonBJets;
+        vector&lt;const HEPUtils::Jet*&gt; forwardJets;
+
+        const std::vector&lt;double&gt; a = {0,10.};
+        const std::vector&lt;double&gt; b = {0,10000.};
+        const std::vector&lt;double&gt; c = {0.8};
+        HEPUtils::BinnedFn2D&lt;double&gt; _eff2d(a,b,c);
+
+        for (const HEPUtils::Jet* jet : signalJets) {
+          bool hasTag=has_tag(_eff2d, jet-&gt;abseta(), jet-&gt;pT());
+          if(fabs(jet-&gt;eta()) &lt; 2.4){
+            if(jet-&gt;btag() &amp;&amp; hasTag){
+              centralBJets.push_back(jet);
+            }
+            else {
+              centralNonBJets.push_back(jet);
+            }
+          }
+          if(fabs(jet-&gt;eta()) &gt; 2.4 &amp;&amp; jet-&gt;pT()&gt;30.)forwardJets.push_back(jet);
+        }
+
+        //Common cuts for all signal regions
+
+        bool leptonPTCut=false;
+        vector&lt;const HEPUtils::Particle*&gt; signalLeptons;
+        for (const HEPUtils::Particle* ele : signalElectrons) {
+          signalLeptons.push_back(ele);
+        }
+
+        for (const HEPUtils::Particle* muo : signalMuons) {
+          signalLeptons.push_back(muo);
+        }
+
+        std::sort(signalLeptons.begin(), signalLeptons.end(), sortByPT_2lep);
+
+
+        if(signalLeptons.size()==2 &amp;&amp; signalLeptons[0]-&gt;pT()&gt;35. &amp;&amp; signalLeptons[1]-&gt;pT()&gt;20.)leptonPTCut=true;
+
+        bool mllCut=false;
+        if(signalLeptons.size()==2 &amp;&amp; (signalLeptons[0]-&gt;mom()+signalLeptons[1]-&gt;mom()).m() &gt; 20.)mllCut=true;
+
+        bool isOS=false;
+        if(signalLeptons.size()==2 &amp;&amp; (signalLeptons[0]-&gt;pid()*signalLeptons[1]-&gt;pid()&lt;0))isOS=true;
+
+        bool passZVeto=true;
+        double mLepLep=0.;
+        if(signalLeptons.size()==2)mLepLep=(signalLeptons[0]-&gt;mom()+signalLeptons[1]-&gt;mom()).m();
+        if(mLepLep&gt;81.2 &amp;&amp; mLepLep&lt;101.2)passZVeto=false;
+
+        bool cut_SRMT290=false;
+        bool cut_SRMT2120=false;
+        bool cut_SRMT2150=false;
+
+        bool tauVeto=false;
+        if(numTaus==0)tauVeto=true;
+
+        int numCentralNonBJets=centralNonBJets.size();
+        int numCentralBJets=centralBJets.size();
+        int numForwardJets=forwardJets.size();
+
+        //Now do the MT2 signal regions
+
+        if(leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; tauVeto &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0){
+
+          //Calculate MT2
+          double pa[3] = { 0, signalLeptons[0]-&gt;mom().px(), signalLeptons[0]-&gt;mom().py() };
+          double pb[3] = { 0, signalLeptons[1]-&gt;mom().px(), signalLeptons[1]-&gt;mom().py() };
+          double pmiss[3] = { 0, ptot.px(), ptot.py() };
+          double mn = 0.;
+
+          mt2_bisect::mt2 mt2_calc;
+
+          mt2_calc.set_momenta(pa,pb,pmiss);
+          mt2_calc.set_mn(mn);
+          double mt2 = mt2_calc.get_mt2();
+
+          double mll=(signalLeptons[0]-&gt;mom() + signalLeptons[1]-&gt;mom()).m();
+
+
+          if(mt2&gt;90.)cut_SRMT290=true;
+          if(mt2&gt;120.)cut_SRMT2120=true;
+          if(mt2&gt;150.)cut_SRMT2150=true;
+
+          //Signal region increments use the trigger efficiencies for ee, emu and mumu triggers
+          if(mt2 &gt; 90. &amp;&amp; (numElectrons==1 &amp;&amp; numMuons==1)) _num_MT2_90_DF += event-&gt;weight() * 0.89;
+          if(passZVeto &amp;&amp; mt2 &gt; 90. &amp;&amp; (numElectrons==2 &amp;&amp; fabs(mll-91.)&gt;10)) _num_MT2_90_SF += event-&gt;weight() * 0.97;
+          if(passZVeto &amp;&amp; mt2 &gt; 90. &amp;&amp; (numMuons==2 &amp;&amp; fabs(mll-91.)&gt;10)) _num_MT2_90_SF += event-&gt;weight() * 0.75;
+
+          if(mt2 &gt; 120. &amp;&amp; (numElectrons==1 &amp;&amp; numMuons==1)) _num_MT2_120_DF += event-&gt;weight() * 0.89;
+          if(passZVeto &amp;&amp; mt2 &gt; 120. &amp;&amp; (numElectrons==2 &amp;&amp; fabs(mll-91.)&gt;10)) _num_MT2_120_SF += event-&gt;weight() * 0.97;
+          if(passZVeto &amp;&amp; mt2 &gt; 120. &amp;&amp;  (numMuons==2 &amp;&amp; fabs(mll-91.)&gt;10)) _num_MT2_120_SF += event-&gt;weight() * 0.75;
+
+          if(mt2 &gt; 150. &amp;&amp; (numElectrons==1 &amp;&amp; numMuons==1)) _num_MT2_150_DF += event-&gt;weight() * 0.89;
+          if(passZVeto &amp;&amp; mt2 &gt; 150. &amp;&amp; (numElectrons==2 &amp;&amp; fabs(mll-91.)&gt;10)) _num_MT2_150_SF += event-&gt;weight() * 0.97;
+          if(passZVeto &amp;&amp; mt2 &gt; 150. &amp;&amp; (numMuons==2 &amp;&amp; fabs(mll-91.)&gt;10)) _num_MT2_150_SF += event-&gt;weight() * 0.75;
+
+        }
+
+        //Now do the WW channels
+        bool passZVeto_WWa=false;
+        bool passPTll_WWa=false;
+        bool passMetRel_WWa=false;
+        bool passMll_WWa=false;
+
+        bool passMT2_WWb=false;
+        bool passMT2_WWc=false;
+        bool passMll_WWb=false;
+
+        if(leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; tauVeto &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0){
+
+          //Calculate ETmiss_rel
+          double dPhiMin=9999;
+          for(const HEPUtils::Jet* jet : centralBJets){
+            double dphi=fabs(jet-&gt;mom().deltaPhi(ptot));
+            if(fabs(dphi)&lt;dPhiMin)dPhiMin=dphi;
+          }
+
+          for(const HEPUtils::Jet* jet : centralNonBJets){
+            double dphi=fabs(jet-&gt;mom().deltaPhi(ptot));
+            if(fabs(dphi)&lt;dPhiMin)dPhiMin=dphi;
+          }
+
+          for(const HEPUtils::Particle* lep : signalLeptons){
+            double dphi=fabs(lep-&gt;mom().deltaPhi(ptot));
+            if(fabs(dphi)&lt;dPhiMin)dPhiMin=dphi;
+          }
+
+          double ETmiss_rel=0;
+          if(dPhiMin&lt;(3.14/2)){
+            ETmiss_rel=met*sin(dPhiMin);
+          }
+          else {
+            ETmiss_rel=met;
+          }
+
+          //Calculate MT2
+          double pa[3] = { 0, signalLeptons[0]-&gt;mom().px(), signalLeptons[0]-&gt;mom().py() };
+          double pb[3] = { 0, signalLeptons[1]-&gt;mom().px(), signalLeptons[1]-&gt;mom().py() };
+          double pmiss[3] = { 0, ptot.px(), ptot.py() };
+          double mn = 0.;
+
+          mt2_bisect::mt2 mt2_calc;
+
+          mt2_calc.set_momenta(pa,pb,pmiss);
+          mt2_calc.set_mn(mn);
+          double mt2 = mt2_calc.get_mt2();
+
+          double mll=(signalLeptons[0]-&gt;mom() + signalLeptons[1]-&gt;mom()).m();
+
+          //Variables for cutflow debugging
+
+          if(fabs(mll-91.)&gt;10.)passZVeto_WWa=true;
+          if((signalLeptons[0]-&gt;mom() + signalLeptons[1]-&gt;mom()).pT() &gt; 80.)passPTll_WWa=true;
+          if(ETmiss_rel &gt; 80.)passMetRel_WWa=true;
+          if(mll &lt; 120.) passMll_WWa=true;
+
+          if(mt2 &gt; 90.)passMT2_WWb=true;
+          if(mll &lt; 170.)passMll_WWb=true;
+
+          if(mt2 &gt; 100.)passMT2_WWc=true;
+
+
+          if((signalLeptons[0]-&gt;mom() + signalLeptons[1]-&gt;mom()).pT() &gt; 80. &amp;&amp;
+             ETmiss_rel &gt; 80. &amp;&amp;
+             mll &lt; 120. &amp;&amp;
+             (numElectrons==1 &amp;&amp; numMuons==1)) _num_WWa_DF += event-&gt;weight() * 0.89;
+
+          if((signalLeptons[0]-&gt;mom() + signalLeptons[1]-&gt;mom()).pT() &gt; 80. &amp;&amp;
+             ETmiss_rel &gt; 80. &amp;&amp;
+             mll &lt; 120. &amp;&amp;
+             (numElectrons==2 &amp;&amp; fabs(mll-91.)&gt;10.)) _num_WWa_SF += event-&gt;weight() * 0.97;
+
+          if((signalLeptons[0]-&gt;mom() + signalLeptons[1]-&gt;mom()).pT() &gt; 80. &amp;&amp;
+             ETmiss_rel &gt; 80. &amp;&amp;
+             mll &lt; 120. &amp;&amp;
+             (numMuons==2 &amp;&amp; fabs(mll-91.)&gt;10.)) _num_WWa_SF += event-&gt;weight() * 0.75;
+
+          if(mt2 &gt; 90. &amp;&amp;
+             mll &lt; 170. &amp;&amp;
+             (numElectrons==1 &amp;&amp; numMuons==1)) _num_WWb_DF += event-&gt;weight() * 0.89;
+
+          if(mt2 &gt; 90. &amp;&amp;
+             mll &lt; 170. &amp;&amp;
+             (numElectrons==2 &amp;&amp; fabs(mll-91.)&gt;10.)) _num_WWb_SF += event-&gt;weight() * 0.97;
+
+
+          if(mt2 &gt; 90. &amp;&amp;
+             mll &lt; 170. &amp;&amp;
+             (numMuons==2 &amp;&amp; fabs(mll-91.)&gt;10.)) _num_WWb_SF += event-&gt;weight() * 0.75;
+
+          if(mt2 &gt; 100. &amp;&amp; (numElectrons==1 &amp;&amp; numMuons==1)) _num_WWc_DF += event-&gt;weight() * 0.89;
+
+          if(mt2 &gt; 100. &amp;&amp; (numElectrons==2 &amp;&amp; fabs(mll-91.)&gt;10.)) _num_WWc_SF += event-&gt;weight() * 0.97;
+
+          if(mt2 &gt; 100. &amp;&amp; (numMuons==2 &amp;&amp; fabs(mll-91.)&gt;10.)) _num_WWc_SF += event-&gt;weight() * 0.75;
+
+        }
+
+        //Finally, do the Z+jets signal region
+
+        bool passZWindow=true;
+        bool passPTll=true;
+        bool passETmissRel=true;
+        bool passdRll=true;
+        bool passMjj=true;
+        bool passJetPT=true;
+
+        if(leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; tauVeto &amp;&amp; numCentralNonBJets&gt;=2 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0){
+
+          double mll=(signalLeptons[0]-&gt;mom() + signalLeptons[1]-&gt;mom()).m();
+
+          //Calculate ETmiss_rel
+          double dPhiMin=9999;
+          for(const HEPUtils::Jet* jet : centralBJets){
+            double dphi=jet-&gt;mom().deltaPhi(ptot);
+            if(dphi&lt;dPhiMin)dPhiMin=dphi;
+          }
+
+          for(const HEPUtils::Jet* jet : centralNonBJets){
+            double dphi=jet-&gt;mom().deltaPhi(ptot);
+            if(dphi&lt;dPhiMin)dPhiMin=dphi;
+          }
+
+          for(const HEPUtils::Particle* lep : signalLeptons){
+            double dphi=lep-&gt;mom().deltaPhi(ptot);
+            if(dphi&lt;dPhiMin)dPhiMin=dphi;
+          }
+
+          double ETmiss_rel=0;
+          if(dPhiMin&lt;(3.14/2)){
+            ETmiss_rel=met*sin(dPhiMin);
+          }
+          else {
+            ETmiss_rel=met;
+          }
+
+
+          double dRll = signalLeptons[0]-&gt;mom().deltaR_eta(signalLeptons[1]-&gt;mom());
+
+          double mjj = (centralNonBJets[0]-&gt;mom()+centralNonBJets[1]-&gt;mom()).m();
+
+
+          //Cuts for cutflow debugging
+          if(ETmiss_rel&lt;=80.)passETmissRel=false;
+          if(fabs(mll-91.)&gt;10.)passZWindow=false;
+          if((signalLeptons[0]-&gt;mom()+signalLeptons[1]-&gt;mom()).pT()&lt;=80.)passPTll=false;
+          if(!(dRll &gt; 0.3 &amp;&amp; dRll &lt; 1.5))passdRll=false;
+          if(!(mjj &gt; 50. &amp;&amp; mjj&lt;100.))passMjj=false;
+          if(!(centralNonBJets[0]-&gt;pT()&gt;45. &amp;&amp; centralNonBJets[1]-&gt;pT()&gt;45.))passJetPT=false;
+
+          if(fabs(mll-91.)&lt;10 &amp;&amp; ETmiss_rel&gt;80. &amp;&amp; (signalLeptons[0]-&gt;mom()+signalLeptons[1]-&gt;mom()).pT()&gt;80. &amp;&amp; dRll &gt; 0.3 &amp;&amp; dRll &lt; 1.5 &amp;&amp; mjj &gt; 50. &amp;&amp; mjj&lt;100. &amp;&amp; passJetPT &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0)) _num_Zjets += event-&gt;weight() * 0.97;
+
+          if(fabs(mll-91.)&lt;10 &amp;&amp; ETmiss_rel&gt;80. &amp;&amp; (signalLeptons[0]-&gt;mom()+signalLeptons[1]-&gt;mom()).pT()&gt;80. &amp;&amp; dRll &gt; 0.3 &amp;&amp; dRll &lt; 1.5 &amp;&amp; mjj &gt; 50. &amp;&amp; mjj&lt;100. &amp;&amp; passJetPT &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2)) _num_Zjets += event-&gt;weight() * 0.75;
+
+        }
+
+        cutFlowVector_str[0] = &quot;No cuts &quot;;
+        cutFlowVector_str[1] = &quot;2 electrons &quot;;
+        cutFlowVector_str[2] = &quot;Lepton pT cuts (trigger) &quot;;
+        cutFlowVector_str[3] = &quot;mll cuts &quot;;
+        cutFlowVector_str[4] = &quot;OS leptons &quot;;
+        cutFlowVector_str[5] = &quot;tau veto &quot;;
+        cutFlowVector_str[6] = &quot;e+e-: Jet veto &quot;;
+        cutFlowVector_str[7] = &quot;e+e-: Z veto &quot;;
+        cutFlowVector_str[8] = &quot;e+e-: SR-MT290 &quot;;
+        cutFlowVector_str[9] = &quot;e+e-: SR-MT2120 &quot;;
+        cutFlowVector_str[10] = &quot;e+e-: SR-MT2150 &quot;;
+        cutFlowVector_str[11] = &quot;mu+mu-: 2 signal leptons &quot;;
+        cutFlowVector_str[12] = &quot;mu+mu-: Jet veto &quot;;
+        cutFlowVector_str[13] = &quot;mu+mu-: Z veto &quot;;
+        cutFlowVector_str[14] = &quot;mu+mu-: SR-MT290 &quot;;
+        cutFlowVector_str[15] = &quot;mu+mu-: SR-MT2120 &quot;;
+        cutFlowVector_str[16] = &quot;mu+mu-: SR-MT2150 &quot;;
+        cutFlowVector_str[17] = &quot;e+-mu-+: 2 signal leptons &quot;;
+        cutFlowVector_str[18] = &quot;e+-mu-+: Jet veto &quot;;
+        cutFlowVector_str[19] = &quot;e+-mu-+: Z veto &quot;;
+        cutFlowVector_str[20] = &quot;e+-mu-+: SR-MT290 &quot;;
+        cutFlowVector_str[21] = &quot;e+-mu-+: SR-MT2120 &quot;;
+        cutFlowVector_str[22] = &quot;e+-mu-+: SR-MT2150 &quot;;
+        cutFlowVector_str[23] = &quot;SRZjets e+e-: 2 signal leptons &quot;;
+        cutFlowVector_str[24] = &quot;SRZjets e+e-: &gt;=2 light jets &quot;;
+        cutFlowVector_str[25] = &quot;SRZjets e+e-: No b and forward jets &quot;;
+        cutFlowVector_str[26] = &quot;SRZjets e+e-: Z window &quot;;
+        cutFlowVector_str[27] = &quot;SRZjets e+e-: pTll &gt; 80 &quot;;
+        cutFlowVector_str[28] = &quot;SRZjets e+e-: ETmissrel &quot;;
+        cutFlowVector_str[29] = &quot;SRZjets e+e-: dRll &quot;;
+        cutFlowVector_str[30] = &quot;SRZjets e+e-: mjj &quot;;
+        cutFlowVector_str[31] = &quot;SRZjets e+e-: jet pT &quot;;
+        cutFlowVector_str[32] = &quot;SRZjets mu+mu-: 2 signal leptons &quot;;
+        cutFlowVector_str[33] = &quot;SRZjets mu+mu-: &gt;=2 light jets &quot;;
+        cutFlowVector_str[34] = &quot;SRZjets mu+mu-: No b and forward jets &quot;;
+        cutFlowVector_str[35] = &quot;SRZjets mu+mu-: Z window &quot;;
+        cutFlowVector_str[36] = &quot;SRZjets mu+mu-: pTll &gt; 80 &quot;;
+        cutFlowVector_str[37] = &quot;SRZjets mu+mu-: ETmissrel &quot;;
+        cutFlowVector_str[38] = &quot;SRZjets mu+mu-: dRll &quot;;
+        cutFlowVector_str[39] = &quot;SRZjets mu+mu-: mjj &quot;;
+        cutFlowVector_str[40] = &quot;SRZjets mu+mu-: jet pT &quot;;
+        cutFlowVector_str[41] = &quot;SRWWa e+e-: 2 leptons &quot;;
+        cutFlowVector_str[42] = &quot;SRWWa e+e-: Jet veto &quot;;
+        cutFlowVector_str[43] = &quot;SRWWa e+e-: Z veto &quot;;
+        cutFlowVector_str[44] = &quot;SRWWa e+e-: pTll &quot;;
+        cutFlowVector_str[45] = &quot;SRWWa e+e-: ETmissrel &quot;;
+        cutFlowVector_str[46] = &quot;SRWWa e+e-: mll &quot;;
+        cutFlowVector_str[47] = &quot;SRWWa mu+mu-: 2 leptons &quot;;
+        cutFlowVector_str[48] = &quot;SRWWa mu+mu-: Jet veto &quot;;
+        cutFlowVector_str[49] = &quot;SRWWa mu+mu-: Z veto &quot;;
+        cutFlowVector_str[50] = &quot;SRWWa mu+mu-: pTll &quot;;
+        cutFlowVector_str[51] = &quot;SRWWa mu+mu-: ETmissrel &quot;;
+        cutFlowVector_str[52] = &quot;SRWWa mu+mu-: mll &quot;;
+        cutFlowVector_str[53] = &quot;SRWWa e+mu-: 2 leptons &quot;;
+        cutFlowVector_str[54] = &quot;SRWWa e+mu-: Jet veto &quot;;
+        cutFlowVector_str[55] = &quot;SRWWa e+mu-: pTll &quot;;
+        cutFlowVector_str[56] = &quot;SRWWa e+mu-: ETmissrel &quot;;
+        cutFlowVector_str[57] = &quot;SRWWa e+mu-: mll &quot;;
+        cutFlowVector_str[58] = &quot;SRWWb e+e-: 2 leptons &quot;;
+        cutFlowVector_str[59] = &quot;SRWWb e+e-: Jet veto &quot;;
+        cutFlowVector_str[60] = &quot;SRWWb e+e-: Z veto &quot;;
+        cutFlowVector_str[61] = &quot;SRWWb e+e-: mT2 &gt; 90 &quot;;
+        cutFlowVector_str[62] = &quot;SRWWb e+e-: mll &lt; 170 &quot;;
+        cutFlowVector_str[63] = &quot;SRWWb mu+mu-: 2 leptons &quot;;
+        cutFlowVector_str[64] = &quot;SRWWb mu+mu-: Jet veto &quot;;
+        cutFlowVector_str[65] = &quot;SRWWb mu+mu-: Z veto &quot;;
+        cutFlowVector_str[66] = &quot;SRWWb mu+mu-: mT2 &gt; 90 &quot;;
+        cutFlowVector_str[67] = &quot;SRWWb mu+mu-: mll &lt; 170 &quot;;
+        cutFlowVector_str[68] = &quot;SRWWb e+mu-: 2 leptons &quot;;
+        cutFlowVector_str[69] = &quot;SRWWb e+mu-: Jet veto &quot;;
+        cutFlowVector_str[70] = &quot;SRWWb e+mu-: mT2 &gt; 90 &quot;;
+        cutFlowVector_str[71] = &quot;SRWWb e+mu-: mll &lt; 170 &quot;;
+        cutFlowVector_str[72] = &quot;SRWWc e+e-: 2 leptons &quot;;
+        cutFlowVector_str[73] = &quot;SRWWc e+e-: Jet veto &quot;;
+        cutFlowVector_str[74] = &quot;SRWWc e+e-: Z veto &quot;;
+        cutFlowVector_str[75] = &quot;SRWWc e+e-: mT2 &gt; 100 &quot;;
+        cutFlowVector_str[76] = &quot;SRWWc mu+mu-: 2 leptons &quot;;
+        cutFlowVector_str[77] = &quot;SRWWc mu+mu-: Jet veto &quot;;
+        cutFlowVector_str[78] = &quot;SRWWc mu+mu-: Z veto &quot;;
+        cutFlowVector_str[79] = &quot;SRWWc mu+mu-: mT2 &gt; 100 &quot;;
+        cutFlowVector_str[80] = &quot;SRWWc e+mu-: 2 leptons &quot;;
+        cutFlowVector_str[81] = &quot;SRWWc e+mu-: Jet veto &quot;;
+        cutFlowVector_str[82] = &quot;SRWWc e+mu-: mT2 &gt; 100 &quot;;
+
+        for(int j=0;j&lt;NCUTS;j++){
+          if(j&gt;=0 &amp;&amp; j&lt;=10)cutFlowIncrements[j]=0.97;
+          if(j&gt;=11 &amp;&amp; j&lt;=16)cutFlowIncrements[j]=0.75;
+          if(j&gt;=17 &amp;&amp; j&lt;=22)cutFlowIncrements[j]=0.89;
+
+          if(j&gt;=23 &amp;&amp; j&lt;=31)cutFlowIncrements[j]=0.97;
+          if(j&gt;=32 &amp;&amp; j&lt;=40)cutFlowIncrements[j]=0.75;
+
+          if(j&gt;=41 &amp;&amp; j&lt;=46)cutFlowIncrements[j]=0.97;
+          if(j&gt;=47 &amp;&amp; j&lt;=52)cutFlowIncrements[j]=0.75;
+          if(j&gt;=53 &amp;&amp; j&lt;=57)cutFlowIncrements[j]=0.89;
+
+          if(j&gt;=58 &amp;&amp; j&lt;=62)cutFlowIncrements[j]=0.97;
+          if(j&gt;=63 &amp;&amp; j&lt;=67)cutFlowIncrements[j]=0.75;
+          if(j&gt;=68 &amp;&amp; j&lt;=71)cutFlowIncrements[j]=0.89;
+
+          if(j&gt;=72 &amp;&amp; j&lt;=75)cutFlowIncrements[j]=0.97;
+          if(j&gt;=76 &amp;&amp; j&lt;=79)cutFlowIncrements[j]=0.75;
+          if(j&gt;=80 &amp;&amp; j&lt;=82)cutFlowIncrements[j]=0.89;
+        }
+
+
+        for(int j=0;j&lt;NCUTS;j++){
+          if( (j==0) ||
+
+              (j==1 &amp;&amp; signalElectrons.size()==2) ||
+
+              (j==2 &amp;&amp; signalElectrons.size()==2 &amp;&amp; leptonPTCut) ||
+
+              (j==3 &amp;&amp; signalElectrons.size()==2 &amp;&amp; leptonPTCut &amp;&amp; mllCut) ||
+
+              (j==4 &amp;&amp; signalElectrons.size()==2 &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS) ||
+
+              (j==5 &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; signalElectrons.size()==2 &amp;&amp; tauVeto) ||
+
+              (j==6 &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; signalElectrons.size()==2 &amp;&amp; tauVeto &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0) ||
+
+              (j==7 &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; signalElectrons.size()==2 &amp;&amp; tauVeto &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto) ||
+
+              (j==8 &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; signalElectrons.size()==2 &amp;&amp; tauVeto &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto &amp;&amp; cut_SRMT290) ||
+
+              (j==9 &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; signalElectrons.size()==2 &amp;&amp; tauVeto &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto &amp;&amp; cut_SRMT2120) ||
+
+              (j==10 &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; signalElectrons.size()==2 &amp;&amp; tauVeto &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto &amp;&amp; cut_SRMT2150) ||
+
+              //mumu MT2 regions
+
+              (j==11 &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; signalMuons.size()==2 &amp;&amp; tauVeto) ||
+
+              (j==12 &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; tauVeto &amp;&amp; signalMuons.size()==2 &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0) ||
+
+              (j==13 &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; tauVeto &amp;&amp; signalMuons.size()==2 &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto) ||
+
+              (j==14 &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; tauVeto &amp;&amp; signalMuons.size()==2 &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto &amp;&amp; cut_SRMT290) ||
+
+              (j==15 &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; tauVeto &amp;&amp; signalMuons.size()==2 &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto &amp;&amp; cut_SRMT2120) ||
+
+              (j==16 &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; tauVeto &amp;&amp; signalMuons.size()==2 &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto &amp;&amp; cut_SRMT2150) ||
+
+              //emu MT2 regions
+
+              (j==17 &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; tauVeto &amp;&amp; signalElectrons.size()==1 &amp;&amp; signalMuons.size()==1 &amp;&amp; (signalElectrons[0]-&gt;pid()*signalMuons[0]-&gt;pid())&lt;0 &amp;&amp; tauVeto) ||
+
+              (j==18 &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; tauVeto &amp;&amp; signalElectrons.size()==1 &amp;&amp; signalMuons.size()==1 &amp;&amp; (signalElectrons[0]-&gt;pid()*signalMuons[0]-&gt;pid())&lt;0 &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0) ||
+
+              (j==19 &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; tauVeto &amp;&amp; signalElectrons.size()==1 &amp;&amp; signalMuons.size()==1 &amp;&amp; (signalElectrons[0]-&gt;pid()*signalMuons[0]-&gt;pid())&lt;0 &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto) ||
+
+              (j==20 &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; tauVeto &amp;&amp; signalElectrons.size()==1 &amp;&amp; signalMuons.size()==1 &amp;&amp; (signalElectrons[0]-&gt;pid()*signalMuons[0]-&gt;pid())&lt;0 &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto &amp;&amp; cut_SRMT290) ||
+
+              (j==21 &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; tauVeto &amp;&amp; signalElectrons.size()==1 &amp;&amp; signalMuons.size()==1 &amp;&amp; (signalElectrons[0]-&gt;pid()*signalMuons[0]-&gt;pid())&lt;0 &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto &amp;&amp; cut_SRMT2120) ||
+
+              (j==22 &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; tauVeto &amp;&amp; signalElectrons.size()==1 &amp;&amp; signalMuons.size()==1 &amp;&amp; (signalElectrons[0]-&gt;pid()*signalMuons[0]-&gt;pid())&lt;0 &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto &amp;&amp; cut_SRMT2150) ||
+
+              //Start SR Z jets e+e-
+              (j==23 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0)) ||
+
+              (j==24 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; numCentralNonBJets&gt;=2) ||
+
+              (j==25 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; numCentralNonBJets&gt;=2 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0) ||
+
+              (j==26 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; numCentralNonBJets&gt;=2 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZWindow) ||
+
+              (j==27 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; numCentralNonBJets&gt;=2 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZWindow &amp;&amp; passPTll) ||
+
+              (j==28 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; numCentralNonBJets&gt;=2 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZWindow &amp;&amp; passPTll &amp;&amp; passETmissRel) ||
+
+              (j==29 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; numCentralNonBJets&gt;=2 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZWindow &amp;&amp; passPTll &amp;&amp; passETmissRel &amp;&amp; passdRll) ||
+
+              (j==30 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; numCentralNonBJets&gt;=2 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZWindow &amp;&amp; passPTll &amp;&amp; passETmissRel &amp;&amp; passdRll &amp;&amp; passMjj) ||
+
+              (j==31 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; numCentralNonBJets&gt;=2 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZWindow &amp;&amp; passPTll &amp;&amp; passETmissRel &amp;&amp; passdRll &amp;&amp; passMjj &amp;&amp; passJetPT) ||
+
+              //Start SR Z jets mu+mu-
+              (j==32 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2)) ||
+
+              (j==33 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2) &amp;&amp; numCentralNonBJets&gt;=2) ||
+
+              (j==34 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2) &amp;&amp; numCentralNonBJets&gt;=2 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0) ||
+
+              (j==35 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2) &amp;&amp; numCentralNonBJets&gt;=2 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZWindow) ||
+
+              (j==36 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2) &amp;&amp; numCentralNonBJets&gt;=2 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZWindow &amp;&amp; passPTll) ||
+
+              (j==37 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2) &amp;&amp; numCentralNonBJets&gt;=2 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZWindow &amp;&amp; passPTll &amp;&amp; passETmissRel) ||
+
+              (j==38 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2) &amp;&amp; numCentralNonBJets&gt;=2 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZWindow &amp;&amp; passPTll &amp;&amp; passETmissRel &amp;&amp; passdRll) ||
+
+              (j==39 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2) &amp;&amp; numCentralNonBJets&gt;=2 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZWindow &amp;&amp; passPTll &amp;&amp; passETmissRel &amp;&amp; passdRll &amp;&amp; passMjj) ||
+
+              (j==40 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2) &amp;&amp; numCentralNonBJets&gt;=2 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZWindow &amp;&amp; passPTll &amp;&amp; passETmissRel &amp;&amp; passdRll &amp;&amp; passMjj &amp;&amp; passJetPT) ||
+
+              //Now start WWa e+e-
+              (j==41 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0)) ||
+
+              (j==42 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0) ||
+
+              (j==43 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa) ||
+
+              (j==44 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa &amp;&amp; passPTll_WWa) ||
+
+              (j==45 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa &amp;&amp; passPTll_WWa &amp;&amp; passMetRel_WWa) ||
+
+              (j==46 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa &amp;&amp; passPTll_WWa &amp;&amp; passMetRel_WWa &amp;&amp; passMll_WWa) ||
+
+              //Now start WWa mu+mu-
+              (j==47 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2)) ||
+
+              (j==48 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0) ||
+
+              (j==49 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa) ||
+
+              (j==50 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa &amp;&amp; passPTll_WWa) ||
+
+              (j==51 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa &amp;&amp; passPTll_WWa &amp;&amp; passMetRel_WWa) ||
+
+              (j==52 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa &amp;&amp; passPTll_WWa &amp;&amp; passMetRel_WWa &amp;&amp; passMll_WWa) ||
+
+              //Now start WWa e+mu-
+              (j==53 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==1 &amp;&amp; numMuons==1)) ||
+
+              (j==54 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==1 &amp;&amp; numMuons==1) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0) ||
+
+              (j==55 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==1 &amp;&amp; numMuons==1) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa &amp;&amp; passPTll_WWa) ||
+
+              (j==56 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==1 &amp;&amp; numMuons==1) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa &amp;&amp; passPTll_WWa &amp;&amp; passMetRel_WWa) ||
+
+              (j==57 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==1 &amp;&amp; numMuons==1) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa &amp;&amp; passPTll_WWa &amp;&amp; passMetRel_WWa &amp;&amp; passMll_WWa) ||
+
+              //WWb e+ e-
+              (j==58 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0)) ||
+
+              (j==59 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0) ||
+
+              (j==60 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa) ||
+
+              (j==61 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa &amp;&amp; passMT2_WWb) ||
+
+              (j==62 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa &amp;&amp; passMT2_WWb &amp;&amp; passMll_WWb) ||
+
+              //WWb mu+ mu-
+              (j==63 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2)) ||
+
+              (j==64 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0) ||
+
+              (j==65 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa) ||
+
+              (j==66 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa &amp;&amp; passMT2_WWb) ||
+
+              (j==67 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa &amp;&amp; passMT2_WWb &amp;&amp; passMll_WWb) ||
+
+              //WWb e+mu-
+
+              (j==68 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==1 &amp;&amp; numMuons==1)) ||
+
+              (j==69 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==1 &amp;&amp; numMuons==1) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0) ||
+
+              (j==70 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==1 &amp;&amp; numMuons==1) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa &amp;&amp; passMT2_WWb) ||
+
+              (j==71 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==1 &amp;&amp; numMuons==1) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa &amp;&amp; passMT2_WWb &amp;&amp; passMll_WWb) ||
+
+              //WWc e+ e-
+              (j==72 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0)) ||
+
+              (j==73 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0) ||
+
+              (j==74 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa) ||
+
+              (j==75 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa &amp;&amp; passMT2_WWc) ||
+
+              //WWc mu+ mu-
+              (j==76 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2)) ||
+
+              (j==77 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0) ||
+
+              (j==78 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa) ||
+
+              (j==79 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa &amp;&amp; passMT2_WWc) ||
+
+              //WWc e+mu-
+
+              (j==80 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==1 &amp;&amp; numMuons==1)) ||
+
+              (j==81 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==1 &amp;&amp; numMuons==1) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0) ||
+
+              (j==82 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==1 &amp;&amp; numMuons==1) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa &amp;&amp; passMT2_WWc)
+
+              )cutFlowVector[j]=cutFlowVector[j]+cutFlowIncrements[j];
+
+        }
+        return;
+      }
+
+      void combine(const Analysis* other)
+      {
+        const Analysis_ATLAS_8TeV_2LEPEW_20invfb* specificOther
+                = dynamic_cast&lt;const Analysis_ATLAS_8TeV_2LEPEW_20invfb*&gt;(other);
+
+        for (int j=0; j&lt;NCUTS; j++)
+        {
+          cutFlowVector[j] += specificOther-&gt;cutFlowVector[j];
+          cutFlowIncrements[j] += specificOther-&gt;cutFlowIncrements[j];
+          cutFlowVector_str[j] = specificOther-&gt;cutFlowVector_str[j];
+        }
+
+        _num_MT2_90_SF += specificOther-&gt;_num_MT2_90_SF;
+        _num_MT2_90_DF += specificOther-&gt;_num_MT2_90_DF;
+        _num_MT2_120_SF += specificOther-&gt;_num_MT2_120_SF;
+        _num_MT2_120_DF += specificOther-&gt;_num_MT2_120_DF;
+        _num_MT2_150_SF += specificOther-&gt;_num_MT2_150_SF;
+        _num_MT2_150_DF += specificOther-&gt;_num_MT2_150_DF;
+        _num_WWa_SF += specificOther-&gt;_num_WWa_SF;
+        _num_WWa_DF += specificOther-&gt;_num_WWa_DF;
+        _num_WWb_SF += specificOther-&gt;_num_WWb_SF;
+        _num_WWb_DF += specificOther-&gt;_num_WWb_DF;
+        _num_WWc_SF += specificOther-&gt;_num_WWc_SF;
+        _num_WWc_DF += specificOther-&gt;_num_WWc_DF;
+        _num_Zjets += specificOther-&gt;_num_Zjets;
+      }
+
+
+      void collect_results() {
+
+        // add_result(SignalRegionData(&quot;SR label&quot;, n_obs, {n_sig_MC, n_sig_MC_sys}, {n_bkg, n_bkg_err}));
+
+        add_result(SignalRegionData(&quot;MT2_90_SF&quot;, 33., {_num_MT2_90_SF, 0.}, {38.2, 5.1}));
+        add_result(SignalRegionData(&quot;MT2_90_DF&quot;, 21., {_num_MT2_90_DF, 0.}, {23.3, 3.7}));
+        add_result(SignalRegionData(&quot;MT2_120_SF&quot;, 5., {_num_MT2_120_SF, 0.}, {8.9, 2.1}));
+        add_result(SignalRegionData(&quot;MT2_120_DF&quot;, 5., {_num_MT2_120_DF, 0.}, {3.6, 1.2}));
+        add_result(SignalRegionData(&quot;MT2_150_SF&quot;, 3., {_num_MT2_150_SF, 0.}, {3.2, 0.7}));
+        add_result(SignalRegionData(&quot;MT2_150_DF&quot;, 2., {_num_MT2_150_DF, 0.}, {1.0, 0.5}));
+        add_result(SignalRegionData(&quot;WWa_SF&quot;, 73., {_num_WWa_SF, 0.}, {86.5, 7.4}));
+        add_result(SignalRegionData(&quot;WWa_DF&quot;, 70., {_num_WWa_DF, 0.}, {73.6, 7.9}));
+        add_result(SignalRegionData(&quot;WWb_SF&quot;, 26., {_num_WWb_SF, 0.}, {30.2, 3.5}));
+        add_result(SignalRegionData(&quot;WWb_DF&quot;, 17., {_num_WWb_DF, 0.}, {18.1, 2.6}));
+        add_result(SignalRegionData(&quot;WWc_SF&quot;, 10., {_num_WWc_SF, 0.}, {20.3, 3.5}));
+        add_result(SignalRegionData(&quot;WWc_DF&quot;, 11., {_num_WWc_DF, 0.}, {9.0, 2.2}));
+        add_result(SignalRegionData(&quot;Zjets&quot;, 1., {_num_Zjets, 0.}, {1.4, 0.6}));
+
+        return;
+      }
+
+
+    protected:
+      void analysis_specific_reset() {
+        _num_MT2_90_SF=0;
+        _num_MT2_90_DF=0;
+        _num_MT2_120_SF=0;
+        _num_MT2_120_DF=0;
+        _num_MT2_150_SF=0;
+        _num_MT2_150_DF=0;
+        _num_WWa_SF=0;
+        _num_WWa_DF=0;
+        _num_WWb_SF=0;
+        _num_WWb_DF=0;
+        _num_WWc_SF=0;
+        _num_WWc_DF=0;
+        _num_Zjets=0;
+
+        std::fill(cutFlowVector.begin(), cutFlowVector.end(), 0);
+      }
+
+    };
+
+
+    DEFINE_ANALYSIS_FACTORY(ATLAS_8TeV_2LEPEW_20invfb)
+
+
+  }
+}
+</code></pre><hr><p>Updated on 2022-07-20 at 17:18:46 +0000</p><div class=edit-page><a href=https://github.com/RC1242RC/gambit_gh_pages/blob/master/content/en/documentation/code/Files/Analysis__ATLAS__8TeV__2LEPEW__20invfb_8cpp.md><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2"><path d="M17 3a2.828 2.828.0 114 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></svg>Edit this page on GitHub</a></div></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a class=text-muted href=https://www.netlify.com/>Netlify</a>, <a class=text-muted href=https://gohugo.io/>Hugo</a>, and <a class=text-muted href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/testbit/license/>License</a></li></ul></div></div></div></footer><script src=/testbit/js/bootstrap.min.54bf0932b8a36d0e152b1635b099a6ef1394d35327e2437550a075c9c8ed1bd8aed5847c21b36fc02ed24014c031d9ca24017b0c78b1639d7e2fa8329898b842.js integrity="sha512-VL8JMrijbQ4VKxY1sJmm7xOU01Mn4kN1UKB1ycjtG9iu1YR8IbNvwC7SQBTAMdnKJAF7DHixY51+L6gymJi4Qg==" crossorigin=anonymous defer></script>
+<script src=/testbit/js/highlight.min.5b48bc253dc75aeea5fb366ecf700f4925e2b6eb1a1466f2124b722d68148d67bc0a9365d2b8ad9c585161b46372d23b08509a16f1fd518542b894756d4752d0.js integrity="sha512-W0i8JT3HWu6l+zZuz3APSSXitusaFGbyEktyLWgUjWe8CpNl0ritnFhRYbRjctI7CFCaFvH9UYVCuJR1bUdS0A==" crossorigin=anonymous defer></script>
+<script src=/testbit/main.min.40265e9a032aeba5eaf67baac3cbbc22667a7533215d326eeb3e9f4d5e4be40f9ff4dcd22949db73ae527ca26a19d7998091a8973c82af760b2c0daa335190ed.js integrity="sha512-QCZemgMq66Xq9nuqw8u8ImZ6dTMhXTJu6z6fTV5L5A+f9NzSKUnbc65SfKJqGdeZgJGolzyCr3YLLA2qM1GQ7Q==" crossorigin=anonymous defer></script>
+<script src=https://rc1242rc.github.io/testbit/index.min.a9e8ad821b751fa50133c3aa34a59cd35272c1cf2c5998ff27d4feca4a0d22445ae367b71bd8ea9be1e28558292ba08731585d275b00c18a8364fce62bfdcbd6.js integrity="sha512-qeitght1H6UBM8OqNKWc01Jywc8sWZj/J9T+ykoNIkRa42e3G9jqm+HihVgpK6CHMVhdJ1sAwYqDZPzmK/3L1g==" crossorigin=anonymous defer></script></body></html>

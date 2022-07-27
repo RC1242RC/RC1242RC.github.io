@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rc1242rc.github.io/testbit/sitemap.xml

@@ -1,0 +1,1078 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="ie=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><link rel=preload as=font href=https://rc1242rc.github.io/testbit/fonts/vendor/jost/jost-v4-latin-regular.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://rc1242rc.github.io/testbit/fonts/vendor/jost/jost-v4-latin-500.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://rc1242rc.github.io/testbit/fonts/vendor/jost/jost-v4-latin-700.woff2 type=font/woff2 crossorigin><script>(()=>{var e=localStorage.getItem("theme");e==="dark"&&document.documentElement.setAttribute("data-dark-mode","")})()</script><link rel=stylesheet href=https://rc1242rc.github.io/testbit/main.1fa2debdf0a1b20e7268d11906902449af896197928a5bdae9dca95b629cdd73746db3d8c6afacb7320d9deb149a318c764669d08a1ddfd34a657ab2aeab866a.css integrity="sha512-H6LevfChsg5yaNEZBpAkSa+JYZeSilva6dypW2Kc3XN0bbPYxq+stzINnesUmjGMdkZp0Iod39NKZXqyrquGag==" crossorigin=anonymous><noscript><style>img.lazyload{display:none}</style></noscript><meta name=robots content="index, follow"><meta name=googlebot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><meta name=bingbot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><title>file src/RelicDensity.cpp - GAMBIT</title><meta name=description content="[No description available]"><link rel=canonical href=https://rc1242rc.github.io/testbit/documentation/code/files/relicdensity_8cpp/><meta property="og:locale" content="en_US"><meta property="og:type" content="article"><meta property="og:title" content="file src/RelicDensity.cpp"><meta property="og:description" content="[No description available]"><meta property="og:url" content="https://rc1242rc.github.io/testbit/documentation/code/files/relicdensity_8cpp/"><meta property="og:site_name" content="GAMBIT"><meta property="og:image" content="https://rc1242rc.github.io/testbit/gambit_logo.png"><meta property="og:image:alt" content="GAMBIT"><meta name=twitter:card content="summary_large_image"><meta name=twitter:site content><meta name=twitter:creator content><meta name=twitter:title content="file src/RelicDensity.cpp"><meta name=twitter:description content="[No description available]"><meta name=twitter:image content="https://rc1242rc.github.io/testbit/gambit_logo.png"><meta name=twitter:image:alt content="file src/RelicDensity.cpp"><script type=application/ld+json>{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://rc1242rc.github.io/#/schema/organization/1","name":"Doks","url":"https://rc1242rc.github.io/","sameAs":["https://github.com/GambitBSM"],"logo":{"@type":"ImageObject","@id":"https://rc1242rc.github.io/#/schema/image/1","url":"https://rc1242rc.github.io/logo-doks.png","width":450,"height":416,"caption":"Doks"},"image":{"@id":"https://rc1242rc.github.io/#/schema/image/1"}},{"@type":"WebSite","@id":"https://rc1242rc.github.io/#/schema/website/1","url":"https://rc1242rc.github.io/","name":"GAMBIT","description":"Documentation for the Global And Modular BSM Inference Tool","publisher":{"@id":"https://rc1242rc.github.io/#/schema/organization/1"}},{"@type":"WebPage","@id":"https://rc1242rc.github.io/testbit/documentation/code/files/relicdensity_8cpp/","url":"https://rc1242rc.github.io/testbit/documentation/code/files/relicdensity_8cpp/","name":"file src\/RelicDensity.cpp","description":"[No description available]","isPartOf":{"@id":"https://rc1242rc.github.io/#/schema/website/1"},"about":{"@id":"https://rc1242rc.github.io/#/schema/organization/1"},"datePublished":"0001-01-01T00:00:00CET","dateModified":"0001-01-01T00:00:00CET","breadcrumb":{"@id":"https://rc1242rc.github.io/testbit/documentation/code/files/relicdensity_8cpp/#/schema/breadcrumb/1"},"primaryImageOfPage":{"@id":"https://rc1242rc.github.io/testbit/documentation/code/files/relicdensity_8cpp/#/schema/image/2"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://rc1242rc.github.io/testbit/documentation/code/files/relicdensity_8cpp/"]}]},{"@type":"BreadcrumbList","@id":"https://rc1242rc.github.io/testbit/documentation/code/files/relicdensity_8cpp/#/schema/breadcrumb/1","name":"Breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/testbit","url":"https://rc1242rc.github.io/testbit","name":"Home"}},{"@type":"ListItem","position":3,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/testbit/documentation/","url":"https://rc1242rc.github.io/testbit/documentation/","name":"Documentation"}},{"@type":"ListItem","position":4,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/testbit/documentation/code/","url":"https://rc1242rc.github.io/testbit/documentation/code/","name":"Code"}},{"@type":"ListItem","position":5,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/testbit/documentation/code/files/","url":"https://rc1242rc.github.io/testbit/documentation/code/files/","name":"Files"}},{"@type":"ListItem","position":6,"item":{"@id":"https://rc1242rc.github.io/testbit/documentation/code/files/relicdensity_8cpp/"}}]},{"@context":"https://schema.org","@graph":[{"@type":"ImageObject","@id":"https://rc1242rc.github.io/testbit/documentation/code/files/relicdensity_8cpp/#/schema/image/2","url":"https://rc1242rc.github.io/testbit/gambit_logo.png","contentUrl":"https://rc1242rc.github.io/testbit/gambit_logo.png","caption":"file src\/RelicDensity.cpp"}]}]}</script><meta name=theme-color content="#fff"><link rel=icon href=https://rc1242rc.github.io/testbit/favicon.ico sizes=any><link rel=icon type=image/svg+xml href=https://rc1242rc.github.io/testbit/favicon.svg><link rel=apple-touch-icon sizes=180x180 href=https://rc1242rc.github.io/testbit/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=https://rc1242rc.github.io/testbit/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=https://rc1242rc.github.io/testbit/favicon-16x16.png><link rel=manifest crossorigin=use-credentials href=https://rc1242rc.github.io/testbit/site.webmanifest></head><body class="documentation single light"><div class=sticky-top><div class=header-bar></div><header class="navbar navbar-expand-md navbar-light doks-navbar"><nav class="container-xxl flex-wrap flex-md-nowrap" aria-label="Main navigation"><a class="navbar-brand p-0 me-auto" href=/ aria-label=GAMBIT><img class=logo-light src=https://rc1242rc.github.io/testbit/images/gambit_logo.png width=50px>
+<img class="logo-dark d-none" src=https://rc1242rc.github.io/testbit/images/gambit_logo.png width=50px>
+GAMBIT</a>
+<button class="btn btn-menu order-2 d-block d-lg-none" type=button data-bs-toggle=offcanvas data-bs-target=#offcanvasDoks aria-controls=offcanvasDoks aria-label="Open main menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button><div class="offcanvas offcanvas-end border-0 py-lg-1" tabindex=-1 id=offcanvasDoks data-bs-backdrop=true aria-labelledby=offcanvasDoksLabel><div class="header-bar d-lg-none"></div><div class="offcanvas-header d-lg-none"><h2 class="h5 offcanvas-title ps-2" id=offcanvasDoksLabel><a class=text-dark href=/>GAMBIT</a></h2><button type=button class="btn-close text-reset me-2" data-bs-dismiss=offcanvas aria-label="Close main menu"></button></div><div class="offcanvas-body p-4 p-lg-0"><ul class="nav flex-column flex-lg-row align-items-lg-center mt-2 mt-lg-0 ms-lg-2 me-lg-auto"><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Documentation
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=/testbit/documentation/installation/introduction/>Installation</a></li><li><a class=dropdown-item href=/testbit/documentation/examples/colliderbit>Examples</a></li><li><a class=dropdown-item href=/testbit/documentation/help/faqs/>Help</a></li><li><a class=dropdown-item href=/testbit/documentation/code/index_classes>Code Reference</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Community
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=/testbit/community/publications/>Publications</a></li><li><a class=dropdown-item href=/testbit/community/talks/>Talks</a></li><li><a class=dropdown-item href=/testbit/community/members/>Members</a></li><li><a class=dropdown-item href=/testbit/community/code_of_conduct/>Code of Conduct</a></li><li><a class=dropdown-item href=/testbit/community/contact/>Contact</a></li></ul></li></ul><hr class="text-black-50 my-4 d-lg-none"><form class="doks-search position-relative flex-grow-1 ms-lg-auto me-lg-2"><input id=search class="form-control is-search" type=search placeholder="Search site..." aria-label="Search site..." autocomplete=off><div id=suggestions class="shadow bg-white rounded d-none"></div></form><hr class="text-black-50 my-4 d-lg-none"><ul class="nav flex-column flex-lg-row"><li class=nav-item><a class="nav-link social-link" href=https://github.com/GambitBSM><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37.0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44.0 0020 4.77 5.07 5.07.0 0019.91 1S18.73.65 16 2.48a13.38 13.38.0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07.0 005 4.77 5.44 5.44.0 003.5 8.55c0 5.42 3.3 6.61 6.44 7A3.37 3.37.0 009 18.13V22"/></svg><small class="ms-2 d-lg-none">GitHub</small></a></li></ul><hr class="text-black-50 my-4 d-lg-none"><div class=dropdown><button class="btn btn-doks-light dropdown-toggle" id=doks-versions data-bs-toggle=dropdown aria-expanded=false data-bs-display=static aria-label="Toggle version menu">
+<span class=d-none>Doks</span> TestBit
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></button><ul class="dropdown-menu dropdown-menu-lg-end me-lg-2 shadow rounded border-0" aria-labelledby=doks-versions><li><a class=dropdown-item href=/maindevelopment/documentation/code/index_classes/>MainDevelopment</a></li><li><a class=dropdown-item href=/testbit/documentation/code/index_classes/>TestBit</a></li></ul></div></div></div></nav></header></div><div class="wrap container-xxl" role=document><div class=content><div class="row flex-xl-nowrap"><div class="col-lg-5 col-xl-4 docs-sidebar"><nav class=docs-links aria-label="Main navigation"><ul class="list-unstyled collapsible-sidebar"><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-installation aria-expanded=false>
+Installation</button><div class=collapse id=section-installation><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/testbit/documentation/installation/introduction/>Getting Started</a></li><li><a class="docs-link rounded" href=/testbit/documentation/installation/docker_usage/>Docker Usage</a></li><li><a class="docs-link rounded" href=/testbit/documentation/installation/installation_for_linux/>Installation for Linux</a></li><li><a class="docs-link rounded" href=/testbit/documentation/installation/installation_for_windows/>Installation for Windows</a></li><li><a class="docs-link rounded" href=/testbit/documentation/installation/installation_for_macos/>Installation for macOS</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-examples aria-expanded=false>
+Examples</button><div class=collapse id=section-examples><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/testbit/documentation/examples/colliderbit/>ColliderBit</a></li><li><a class="docs-link rounded" href=/testbit/documentation/examples/anotherbit/>AnotherBit</a></li><li><a class="docs-link rounded" href=/testbit/documentation/examples/anotherbit2/>AnotherBit2</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-help aria-expanded=false>
+Help</button><div class=collapse id=section-help><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/testbit/documentation/help/faqs/>FAQs</a></li><li><a class="docs-link rounded" href=/testbit/documentation/help/compiler_matrix/>Compiler Matrix</a></li><li><a class="docs-link rounded" href=/testbit/documentation/help/known_issues/>Known Issues</a></li><li><a class="docs-link rounded" href=/testbit/documentation/help/configuration_examples/>Configuration Examples</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-code aria-expanded=false>
+Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/testbit/documentation/code/index_classes/>Classes</a></li><li><a class="docs-link rounded" href=/testbit/documentation/code/index_files/>Files</a></li><li><a class="docs-link rounded" href=/testbit/documentation/code/index_pages/>Pages</a></li><li><a class="docs-link rounded" href=/testbit/documentation/code/index_namespaces/>Namespaces</a></li></ul></div></li></ul></nav></div><nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation"><div class=d-xl-none><button class="btn btn-outline-primary btn-sm doks-toc-toggle collapsed" type=button data-bs-toggle=collapse data-bs-target=#onThisPage aria-controls=doks-docs-nav aria-expanded=false aria-label="Toggle On this page navigation">
+<span>On this page</span>
+<span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg></span></button><div class=collapse id=onThisPage><div class="card card-body mt-3 py-1"><div class=page-links><nav id=TableOfContents><ul><li><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#source-code>Source code</a></li></ul></li></ul></nav></div></div></div></div><div class="page-links d-none d-xl-block"><h3>On this page</h3><nav id=TableOfContents><ul><li><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#source-code>Source code</a></li></ul></li></ul></nav></div></nav><main class="docs-content col-lg-11 col-xl-9 mx-xl-auto"><h1>file src/RelicDensity.cpp</h1><p class=lead></p><p>[No description available] <a href=#detailed-description>More&mldr;</a></p><h2 id=namespaces>Namespaces <a href=#namespaces class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th>Name</th></tr></thead><tbody><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit/>Gambit</a></strong><br>TODO: see if we can use this one:</td></tr><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit_1_1darkbit/>Gambit::DarkBit</a></strong></td></tr></tbody></table><h2 id=detailed-description>Detailed Description <a href=#detailed-description class=anchor aria-hidden=true>#</a></h2><p><strong>Author</strong>:</p><ul><li>Torsten Bringmann (<a href=mailto:torsten.bringmann@desy.de>torsten.bringmann@desy.de</a>)</li><li>Christoph Weniger (<a href=mailto:c.weniger@uva.nl>c.weniger@uva.nl</a>)</li></ul><p><strong>Date</strong>:</p><ul><li>2013 Jun – 2016 May, 2019</li><li>2013 Jul - 2015 May</li></ul><p>Relic density calculations.</p><hr><p>Authors (add name and date if you modify):</p><hr><h2 id=source-code>Source code <a href=#source-code class=anchor aria-hidden=true>#</a></h2><pre><code>//   GAMBIT: Global and Modular BSM Inference Tool
+//   *********************************************
+
+#include &lt;chrono&gt;
+
+#include &quot;gambit/Elements/gambit_module_headers.hpp&quot;
+#include &quot;gambit/DarkBit/DarkBit_rollcall.hpp&quot;
+#include &quot;gambit/DarkBit/DarkBit_utils.hpp&quot;
+#include &quot;gambit/Utils/util_functions.hpp&quot;
+
+
+namespace Gambit
+{
+  namespace DarkBit
+  {
+
+//#define DARKBIT_DEBUG
+//#define DARKBIT_RD_DEBUG
+
+    //
+    //                    DarkSUSY Relic density routines
+    //
+
+
+    void RD_spectrum_MSSM(RD_spectrum_type &amp;result)
+    {
+      using namespace Pipes::RD_spectrum_MSSM;
+
+      std::string DMid = *Dep::DarkMatter_ID;
+      if ( DMid != &quot;~chi0_1&quot; )
+      {
+        invalid_point().raise(
+            &quot;RD_spectrum_MSSM requires DMid to be ~chi0_1.&quot;);
+      }
+      // Neutralino DM is self-conjugate
+      result.isSelfConj = true;
+      // This function reports particle IDs in terms of PDG codes
+      result.particle_index_type = &quot;PDG&quot;;
+
+      // Import based on Spectrum objects
+      const Spectrum&amp; matched_spectra = *Dep::MSSM_spectrum;
+      const SubSpectrum&amp; spec = matched_spectra.get_HE();
+      const SubSpectrum&amp; SMspec = matched_spectra.get_LE();
+      // Import based on decay table from DecayBit
+      const DecayTable* myDecays = &amp;(*Dep::decay_rates);
+
+      result.coannihilatingParticles.clear();
+      result.resonances.clear();
+      result.threshold_energy.clear();
+
+      bool CoannCharginosNeutralinos = runOptions-&gt;getValueOrDef&lt;bool&gt;(true,
+          &quot;CoannCharginosNeutralinos&quot;);
+
+      bool CoannSfermions = runOptions-&gt;getValueOrDef&lt;bool&gt;(true,
+          &quot;CoannSfermions&quot;);
+
+      double CoannMaxMass = runOptions-&gt;getValueOrDef&lt;double&gt;(1.6,
+          &quot;CoannMaxMass&quot;);
+
+      // first add neutralino=WIMP=least massive 'coannihilating particle'
+      // Note: translation from PDG codes assumes context integer = 0 here and
+      // in the following (essentially &quot;mass ordering&quot;). For consistency the same
+      // has to be done when retrieving information from the RD_spectrum_type result
+      int ContInt = 0;
+      int PDGwimp = 1000022;
+      double mWIMP = std::abs(spec.get(Par::Pole_Mass,Models::ParticleDB().long_name(PDGwimp,ContInt)));
+      result.coannihilatingParticles.push_back(RD_coannihilating_particle(PDGwimp, 2, mWIMP));
+
+      #ifdef DARKBIT_DEBUG
+        std::cout &lt;&lt; &quot;WIMP mass : &quot;&lt;&lt; mWIMP &lt;&lt; std::endl;
+      #endif
+
+      // add all sparticles that are not too heavy
+      double msp;
+      auto addCoannParticle = [&amp;](int pdg0, int dof)
+      {
+        msp = std::abs(spec.get(Par::Pole_Mass,Models::ParticleDB().long_name(pdg0,ContInt)));
+        if (msp/mWIMP &lt; CoannMaxMass)
+        {
+           result.coannihilatingParticles.push_back(RD_coannihilating_particle(pdg0, dof, msp));
+        }
+      };
+
+      if(CoannCharginosNeutralinos) // include  neutralino &amp; chargino coannihilation
+      {
+        addCoannParticle(1000023, 2);        // &quot;~chi0_2&quot;
+        addCoannParticle(1000025, 2);        // &quot;~chi0_3&quot;
+        addCoannParticle(1000035, 2);        // &quot;~chi0_4&quot;
+        addCoannParticle(1000024, 4);        // &quot;~chi+_1&quot;
+        addCoannParticle(1000037, 4);        // &quot;~chi+_2&quot;
+      }
+      if(CoannSfermions) // include sfermion coannihilation
+      {
+        addCoannParticle(1000011, 2);        // &quot;~e-_1&quot;
+        addCoannParticle(1000013, 2);        // &quot;~e-_2&quot;
+        addCoannParticle(1000015, 2);        // &quot;~e-_3&quot;
+        addCoannParticle(2000011, 2);        // &quot;~e-_4&quot;
+        addCoannParticle(2000013, 2);        // &quot;~e-_5&quot;
+        addCoannParticle(2000015, 2);        // &quot;~e-_6&quot;
+        addCoannParticle(1000012, 1);        // &quot;~nu_1&quot;
+        addCoannParticle(1000014, 1);        // &quot;~nu_2&quot;
+        addCoannParticle(1000016, 1);        // &quot;~nu_3&quot;
+        addCoannParticle(1000001, 6);        // &quot;~d_1&quot;
+        addCoannParticle(1000003, 6);        // &quot;~d_2&quot;
+        addCoannParticle(1000005, 6);        // &quot;~d_3&quot;
+        addCoannParticle(2000001, 6);        // &quot;~d_4&quot;
+        addCoannParticle(2000003, 6);        // &quot;~d_5&quot;
+        addCoannParticle(2000005, 6);        // &quot;~d_6&quot;
+        addCoannParticle(1000002, 6);        // &quot;~u_1&quot;
+        addCoannParticle(1000004, 6);        // &quot;~u_2&quot;
+        addCoannParticle(1000006, 6);        // &quot;~u_3&quot;
+        addCoannParticle(2000002, 6);        // &quot;~u_4&quot;
+        addCoannParticle(2000004, 6);        // &quot;~u_5&quot;
+        addCoannParticle(2000006, 6);        // &quot;~u_6&quot;
+      }
+
+      // determine resonances for LSP annihilation
+      std::string SMreslist[] = {&quot;Z0&quot;,&quot;W+&quot;};
+      std::string reslist[] = {&quot;h0_2&quot;,&quot;h0_1&quot;,&quot;A0&quot;,&quot;H+&quot;};
+      int resSMmax=sizeof(SMreslist) / sizeof(SMreslist[0]);
+      int resmax=sizeof(reslist) / sizeof(reslist[0]);
+      // Charged resonances (last items in the lists) can only appear for coannihilations
+      if (result.coannihilatingParticles.size() == 1)
+      {
+        resSMmax -= 1;
+        resmax -= 1;
+      }
+      double mres,Gammares;
+      for (int i=0; i&lt;resSMmax; i++)
+      {
+          mres = std::abs(SMspec.get(Par::Pole_Mass,SMreslist[i]));
+          Gammares = myDecays-&gt;at(SMreslist[i]).width_in_GeV;
+          result.resonances.push_back(TH_Resonance(mres,Gammares));
+      }
+      for (int i=0; i&lt;resmax; i++)
+      {
+        mres = std::abs(spec.get(Par::Pole_Mass,reslist[i]));
+        Gammares = myDecays-&gt;at(reslist[i]).width_in_GeV;
+        result.resonances.push_back(TH_Resonance(mres,Gammares));
+      }
+
+      // determine thresholds (coannihilation thresholds will be added later);
+      //   lowest threshold = 2*WIMP rest mass  (unlike DS convention!)
+      result.threshold_energy.push_back(2*mWIMP);
+      std::string thrlist[] = {&quot;W+&quot;,&quot;Z0&quot;,&quot;t&quot;};
+      int thrmax=sizeof(thrlist) / sizeof(thrlist[0]);
+      double mthr;
+      for (int i=0; i&lt;thrmax; i++)
+      {
+        mthr = std::abs(SMspec.get(Par::Pole_Mass,thrlist[i]));
+        if (mthr &gt; mWIMP)
+        {
+          result.threshold_energy.push_back(2*mthr);
+        }
+      }
+
+    } // function RD_spectrum_MSSM
+
+
+
+    void RD_spectrum_SUSY_DS5(RD_spectrum_type &amp;result)
+    {
+      using namespace Pipes::RD_spectrum_SUSY_DS5;
+
+      std::vector&lt;int&gt; colist; //potential coannihilating particles (indices)
+      colist.clear();
+
+      // Neutralino DM is self-conjugate
+      result.isSelfConj = true;
+      // This function reports particle IDs in terms of internal DarkSUSY codes
+      result.particle_index_type = &quot;DarkSUSY&quot;;
+
+      result.coannihilatingParticles.clear();
+      result.resonances.clear();
+      result.threshold_energy.clear();
+
+      bool CoannCharginosNeutralinos = runOptions-&gt;getValueOrDef&lt;bool&gt;(true,
+          &quot;CoannCharginosNeutralinos&quot;);
+
+      bool CoannSfermions = runOptions-&gt;getValueOrDef&lt;bool&gt;(true,
+          &quot;CoannSfermions&quot;);
+
+      double CoannMaxMass = runOptions-&gt;getValueOrDef&lt;double&gt;(1.6,
+          &quot;CoannMaxMass&quot;);
+
+      // introduce pointers to DS mass spectrum and relevant particle info
+      DS5_PACODES *DSpart = BEreq::pacodes.pointer();
+      DS5_MSPCTM *mymspctm= BEreq::mspctm.pointer();
+      DS_INTDOF *myintdof= BEreq::intdof.pointer();
+
+      // first add neutralino=WIMP=least massive 'coannihilating particle'
+      result.coannihilatingParticles.push_back(
+          RD_coannihilating_particle(DSpart-&gt;kn(1),
+          myintdof-&gt;kdof(DSpart-&gt;kn(1)),mymspctm-&gt;mass(DSpart-&gt;kn(1))));
+
+      #ifdef DARKBIT_DEBUG
+        std::cout &lt;&lt; &quot;WIMP : &quot;&lt;&lt; DSpart-&gt;kn(1) &lt;&lt; &quot; &quot; &lt;&lt;
+            myintdof-&gt;kdof(DSpart-&gt;kn(1)) &lt;&lt; &quot; &quot; &lt;&lt; mymspctm-&gt;mass(DSpart-&gt;kn(1))
+            &lt;&lt; std::endl;
+      #endif
+
+      // include  neutralino &amp; chargino coannihilation
+      if(CoannCharginosNeutralinos)
+      {
+        for (int i=2; i&lt;=4; i++)
+          colist.push_back(DSpart-&gt;kn(i));
+        colist.push_back(DSpart-&gt;kcha(1));
+        colist.push_back(DSpart-&gt;kcha(2));
+      }
+
+      // include sfermion coannihilation
+      if(CoannSfermions)
+      {
+        for (int i=1; i&lt;=6; i++)
+          colist.push_back(DSpart-&gt;ksl(i));
+        for (int i=1; i&lt;=3; i++)
+          colist.push_back(DSpart-&gt;ksnu(i));
+        for (int i=1; i&lt;=6; i++)
+          colist.push_back(DSpart-&gt;ksqu(i));
+        for (int i=1; i&lt;=6; i++)
+          colist.push_back(DSpart-&gt;ksqd(i));
+      }
+
+      // only keep sparticles that are not too heavy
+      for (size_t i=0; i&lt;colist.size(); i++)
+        if (mymspctm-&gt;mass(colist[i])/mymspctm-&gt;mass(DSpart-&gt;kn(1))
+            &lt; CoannMaxMass)
+          result.coannihilatingParticles.push_back(
+              RD_coannihilating_particle(colist[i], myintdof-&gt;kdof(colist[i]),
+              mymspctm-&gt;mass(colist[i])));
+
+
+      // determine resonances for LSP annihilation
+      //int reslist[] = {BEreq::DS5particle_code(&quot;Z0&quot;),
+      //                 BEreq::DS5particle_code(&quot;h0_2&quot;),
+      //                 BEreq::DS5particle_code(&quot;h0_1&quot;),
+      //                 BEreq::DS5particle_code(&quot;A0&quot;),
+      //                 BEreq::DS5particle_code(&quot;W+&quot;),
+      //                 BEreq::DS5particle_code(&quot;H+&quot;)}; (Unused)
+      //int resmax=sizeof(reslist) / sizeof(reslist[0]); (Unused)
+      // the last 2 resonances in the list can only appear for coannihilations
+      //if (result.coannihilatingParticles.size() == 1) (Unused)
+      //  resmax -= 2; (Unused)
+      // (Turns out resonances are never returned with DS5)
+
+      // determine thresholds; lowest threshold = 2*WIMP rest mass  (unlike DS
+      // convention!)
+      result.threshold_energy.push_back(
+          2*result.coannihilatingParticles[0].mass);
+      int thrlist[] = {BEreq::DS5particle_code(&quot;W+&quot;),
+                       BEreq::DS5particle_code(&quot;Z0&quot;),
+                       BEreq::DS5particle_code(&quot;u_3&quot;)};
+      int thrmax=sizeof(thrlist) / sizeof(thrlist[0]);
+      for (int i=0; i&lt;thrmax; i++)
+        if (mymspctm-&gt;mass(thrlist[i])&gt;result.coannihilatingParticles[0].mass)
+          result.threshold_energy.push_back(2*mymspctm-&gt;mass(thrlist[i]));
+
+    } // function RD_spectrum_SUSY_DS5
+
+
+    void RD_spectrum_from_ProcessCatalog(RD_spectrum_type &amp;result)
+    {
+      using namespace Pipes::RD_spectrum_from_ProcessCatalog;
+
+      // retrieve annihilation processes and DM properties
+      std::string DMid= *Dep::DarkMatter_ID;
+      std::string DMbarid = *Dep::DarkMatterConj_ID;
+      TH_Process annihilation =
+              (*Dep::TH_ProcessCatalog).getProcess(DMid, DMbarid);
+      TH_ParticleProperty DMproperty =
+              (*Dep::TH_ProcessCatalog).getParticleProperty(DMid);
+
+      // Is DM self-conjugate ?
+      result.isSelfConj = annihilation.isSelfConj;
+      // This function reports particle IDs in terms of internal DarkSUSY codes
+      // NB: This should eventually be changed to PDG, which however requires updating
+      //     all existing examples where the invariant rate (entering in the relic density)
+      //     is calculated directly from the ProcessCatalogue!
+      result.particle_index_type = &quot;DarkSUSY&quot;;
+
+
+      // get thresholds &amp; resonances from process catalog
+      result.resonances = annihilation.resonances_thresholds.resonances;
+      result.threshold_energy = annihilation.resonances_thresholds.threshold_energy;
+
+      result.coannihilatingParticles.clear();
+      // add WIMP=least massive 'coannihilating particle'
+      // NB: particle code (1st entry) is irrelevant (unless Weff is obtained from DS)
+      result.coannihilatingParticles.push_back(
+          RD_coannihilating_particle(100,1+DMproperty.spin2,DMproperty.mass));
+
+      #ifdef DARKBIT_DEBUG
+        std::cout &lt;&lt; &quot;DM dof = &quot; &lt;&lt; 1+ DMproperty.spin2 &lt;&lt; std::endl;
+        // std::cout &lt;&lt; &quot;Test : &quot; &lt;&lt; BEreq::particle_code(&quot;d_3&quot;)
+        //           &lt;&lt; &quot; &quot; &lt;&lt; BEreq::particle_code(&quot;u_3&quot;) &lt;&lt; std::endl;
+      #endif
+
+
+    } // function RD_spectrum_from_ProcessCatalog
+
+
+    void RD_spectrum_ordered_func(RD_spectrum_type &amp;result)
+    {
+      using namespace Pipes::RD_spectrum_ordered_func;
+
+      result = *Dep::RD_spectrum;
+
+      // NB: coannihilatingParticles does not necessarily have to be ordered,
+      // but it is assumed that coannihilatingParticles[0] is the DM particle
+      RD_coannihilating_particle tmp_co;
+      if (result.coannihilatingParticles.size() &gt; 1)
+        for (std::size_t i=0; i&lt;result.coannihilatingParticles.size()-1; i++)
+        {
+          for (std::size_t j=i+1; j&lt;result.coannihilatingParticles.size(); j++)
+          {
+          if (result.coannihilatingParticles[j].mass&lt;result.coannihilatingParticles[i].mass)
+            {
+              tmp_co=result.coannihilatingParticles[i];
+              result.coannihilatingParticles[i]=result.coannihilatingParticles[j];
+              result.coannihilatingParticles[j]=tmp_co;
+            }
+          }
+        }
+
+
+      // add coannihilation thresholds
+      if (result.coannihilatingParticles.size() &gt; 1)
+      {
+        for (int i=0; i&lt;(int)result.coannihilatingParticles.size(); i++)
+        {
+          for (int j=std::max(1,i); j&lt;(int)result.coannihilatingParticles.size(); j++)
+          {
+            result.threshold_energy.push_back(
+             result.coannihilatingParticles[i].mass+result.coannihilatingParticles[j].mass);
+          }
+        }
+      }
+      //and order all thresholds
+      double tmp;
+      for (std::size_t i=0; i&lt;result.threshold_energy.size()-1; i++)
+      {
+        for (std::size_t j=i+1; j&lt;result.threshold_energy.size(); j++)
+        {
+          if (result.threshold_energy[j]&lt;result.threshold_energy[i])
+          {
+            tmp=result.threshold_energy[i];
+            result.threshold_energy[i]=result.threshold_energy[j];
+            result.threshold_energy[j]=tmp;
+          }
+        }
+      }
+
+      if (!result.resonances.empty()){
+        TH_Resonance tmp2;
+        for (std::size_t i=0; i&lt;result.resonances.size()-1; i++)
+        {
+          for (std::size_t j=i+1; j&lt;result.resonances.size(); j++)
+          {
+            if (result.resonances[j].energy &lt; result.resonances[i].energy)
+            {
+              tmp2=result.resonances[i];
+              result.resonances[i]=result.resonances[j];
+              result.resonances[j]=tmp2;
+            }
+          }
+        }
+      }
+    } // function RD_spectrum_ordered_func
+
+
+    void RD_annrate_DS5prep_func(int &amp;result)
+    {
+      using namespace Pipes::RD_annrate_DS5prep_func;
+
+      // Read out coannihilating particles from RDspectrum.
+      RD_spectrum_type specres = *Dep::RD_spectrum;
+
+      if ( specres.particle_index_type != &quot;DarkSUSY&quot; )
+      {
+        invalid_point().raise(&quot;RD_annrate_DS5prep_func is only optimized for use with &quot;
+         &quot;DarkSUSY5 and requires internal particle IDs. Try RD_annrate_DSprep_MSSM_func instead!&quot;);
+      }
+
+      //write model-dependent info about coannihilating particles to DS common blocks
+      DS5_RDMGEV myrdmgev;
+      myrdmgev.nco = specres.coannihilatingParticles.size();
+      for (int i=1; i&lt;=myrdmgev.nco; i++)
+      {
+        myrdmgev.mco(i)=fabs(specres.coannihilatingParticles[i-1].mass);
+        myrdmgev.mdof(i)=specres.coannihilatingParticles[i-1].degreesOfFreedom;
+        myrdmgev.kcoann(i)=specres.coannihilatingParticles[i-1].index;
+      }
+
+      double tmp; int itmp;
+      for (int i=1; i&lt;=myrdmgev.nco-1; i++)
+      {
+        for (int j=i+1; j&lt;=myrdmgev.nco; j++)
+        {
+          if (myrdmgev.mco(j)&lt;myrdmgev.mco(i))
+          {
+            tmp=myrdmgev.mco(i);
+            myrdmgev.mco(i)=myrdmgev.mco(j);
+            myrdmgev.mco(j)=tmp;
+            itmp=myrdmgev.mdof(i);
+            myrdmgev.mdof(i)=myrdmgev.mdof(j);
+            myrdmgev.mdof(j)=itmp;
+            itmp=myrdmgev.kcoann(i);
+            myrdmgev.kcoann(i)=myrdmgev.kcoann(j);
+            myrdmgev.kcoann(j)=itmp;
+          }
+        }
+      #ifdef DARKBIT_RD_DEBUG
+        std::cout &lt;&lt; &quot;DS5prep - co : &quot;&lt;&lt; myrdmgev.kcoann(i) &lt;&lt; &quot; &quot; &lt;&lt;
+            myrdmgev.mco(i) &lt;&lt; &quot; &quot; &lt;&lt; myrdmgev.mdof(i)
+            &lt;&lt; std::endl;
+      #endif
+      }
+      #ifdef DARKBIT_RD_DEBUG
+        std::cout &lt;&lt; &quot;DS5prep - co : &quot;&lt;&lt; myrdmgev.kcoann(myrdmgev.nco) &lt;&lt; &quot; &quot; &lt;&lt;
+            myrdmgev.mco(myrdmgev.nco) &lt;&lt; &quot; &quot; &lt;&lt; myrdmgev.mdof(myrdmgev.nco)
+            &lt;&lt; std::endl;
+      #endif
+
+      *BEreq::rdmgev = myrdmgev;
+
+      result=1; // everything OK
+
+    } // function RD_annrate_DS5prep_func
+
+
+    void RD_annrate_DSprep_MSSM_func(int &amp;result)
+    {
+      using namespace Pipes::RD_annrate_DSprep_MSSM_func;
+
+      // Read out coannihilating particles from RDspectrum_ordered.
+      RD_spectrum_type specres = *Dep::RD_spectrum_ordered;
+
+      if (specres.particle_index_type != &quot;DarkSUSY&quot; &amp;&amp; specres.particle_index_type != &quot;PDG&quot;)
+      {
+        invalid_point().raise(&quot;RD_annrate_DSprep_MSSM_func requires PDG or internal DS codes!&quot;);
+      }
+
+      //write model-dependent info about coannihilating particles to DS common blocks
+      // Note: translation from PDG codes assumes for consistency context integer = 0 here
+      // (as done in RD_spectrum_MSSM)
+      int ContInt = 0;
+      DS_DSANCOANN mydsancoann;
+      mydsancoann.nco = specres.coannihilatingParticles.size();
+      int partID;
+      for (int i=1; i&lt;=mydsancoann.nco; i++)
+      {
+        mydsancoann.mco(i)=fabs(specres.coannihilatingParticles[i-1].mass);
+        mydsancoann.mdof(i)=specres.coannihilatingParticles[i-1].degreesOfFreedom;
+        partID = specres.coannihilatingParticles[i-1].index;
+        mydsancoann.kco(i) = partID;
+        if (specres.particle_index_type == &quot;PDG&quot;)
+        {
+           mydsancoann.kco(i) = BEreq::DSparticle_code(Models::ParticleDB().long_name(partID,ContInt));
+        };
+        #ifdef DARKBIT_RD_DEBUG
+          std::cout &lt;&lt; &quot;DS6prep_MSSM - co : &quot;&lt;&lt; partID &lt;&lt; &quot; &quot; &lt;&lt; mydsancoann.kco(i) &lt;&lt; &quot; &quot; &lt;&lt;
+              mydsancoann.mco(i) &lt;&lt; &quot; &quot; &lt;&lt; mydsancoann.mdof(i)
+              &lt;&lt; std::endl;
+        #endif
+      }
+
+      *BEreq::dsancoann = mydsancoann;
+
+      result=1; // everything OK
+
+    } // function RD_eff_annrate_DSprep_MSSM_func
+
+
+    void RD_eff_annrate_DS_MSSM(double(*&amp;result)(double&amp;))
+    {
+      using namespace Pipes::RD_eff_annrate_DS_MSSM;
+
+      if (BEreq::dsanwx.origin() == &quot;DarkSUSY_MSSM&quot;)
+      {
+        result=BEreq::dsanwx.pointer();
+      }
+      else DarkBit_error().raise(LOCAL_INFO, &quot;Wrong DarkSUSY backend initialized?&quot;);
+    } // function RD_eff_annrate_DS_MSSM
+
+    void RD_eff_annrate_DS5_MSSM(double(*&amp;result)(double&amp;))
+    {
+      using namespace Pipes::RD_eff_annrate_DS5_MSSM;
+
+      if (BEreq::dsanwx.origin() == &quot;DarkSUSY&quot;)
+      {
+        result=BEreq::dsanwx.pointer();
+      }
+      else DarkBit_error().raise(LOCAL_INFO, &quot;Wrong DarkSUSY backend initialized?&quot;);
+    } // function RD_eff_annrate_DS5_MSSM
+
+
+
+    // Carries pointer to Weff
+    DEF_FUNKTRAIT(RD_EFF_ANNRATE_FROM_PROCESSCATALOG_TRAIT)
+      void RD_eff_annrate_from_ProcessCatalog(double(*&amp;result)(double&amp;))
+      {
+        using namespace Pipes::RD_eff_annrate_from_ProcessCatalog;
+
+        std::string DMid= *Dep::DarkMatter_ID;
+        std::string DMbarid = *Dep::DarkMatterConj_ID;
+        TH_Process annProc = (*Dep::TH_ProcessCatalog).getProcess(DMid, DMbarid);
+        double mDM = (*Dep::TH_ProcessCatalog).getParticleProperty(DMid).mass;
+
+        auto Weff = daFunk::zero(&quot;peff&quot;);
+        auto peff = daFunk::var(&quot;peff&quot;);
+        auto s = 4*(peff*peff + mDM*mDM);
+
+        // Individual contributions to the invariant rate Weff. Note that no
+        // symmetry factor of 1/2 for non-identical initial state particles
+        // (non-self-conjugate DM) should appear here. This factor does explicitly
+        // enter, however, when calculating the relic density in RD_oh2_DS_general.
+        for (std::vector&lt;TH_Channel&gt;::iterator it = annProc.channelList.begin();
+            it != annProc.channelList.end(); ++it)
+        {
+          Weff = Weff +
+            it-&gt;genRate-&gt;set(&quot;v&quot;, 2*peff/sqrt(mDM*mDM+peff*peff))*s/gev2tocm3s1;
+        }
+        // Add genRateMisc to Weff
+        Weff = Weff + annProc.genRateMisc-&gt;set(&quot;v&quot;, 2*peff/sqrt(mDM*mDM+peff*peff))*s/gev2tocm3s1;
+        if ( Weff-&gt;getNArgs() != 1 )
+          DarkBit_error().raise(LOCAL_INFO,
+              &quot;RD_eff_annrate_from_ProcessCatalog: Wrong number of arguments.\n&quot;
+              &quot;The probable cause are three-body final states, which are not supported for this function.&quot;
+              );
+        result = Weff-&gt;plain&lt;RD_EFF_ANNRATE_FROM_PROCESSCATALOG_TRAIT&gt;(&quot;peff&quot;);
+      } // function RD_eff_annrate_from_ProcessCatalog
+
+
+    void RD_oh2_DS_general(double &amp;result)
+    {
+      using namespace Pipes::RD_oh2_DS_general;
+
+      // Retrieve ordered list of resonances and thresholds from
+      // RD_thresholds_resonances.
+      RD_spectrum_type myRDspec = *Dep::RD_spectrum_ordered;
+      if (myRDspec.coannihilatingParticles.empty())
+      {
+        DarkBit_error().raise(LOCAL_INFO, &quot;RD_oh2_DS_general: No DM particle!&quot;);
+      }
+      double mwimp=myRDspec.coannihilatingParticles[0].mass;
+
+      // What follows below implements dsrdomega from DarkSUSY 6+
+      //We start by setting some general common block settings
+      BEreq::dsrdcom();
+      DS_RDPARS *myrdpars = BEreq::rdpars.pointer();
+
+      int fast = runOptions-&gt;getValueOrDef&lt;int&gt;(1, &quot;fast&quot;);
+
+      BEreq::rdtime-&gt;rdt_max = runOptions-&gt;getValueOrDef&lt;double&gt;(600, &quot;timeout&quot;);
+
+      switch (fast)
+      {
+        case 0:
+          myrdpars-&gt;cosmin=0.996195;myrdpars-&gt;waccd=0.005;myrdpars-&gt;dpminr=1.0e-4;
+          myrdpars-&gt;dpthr=5.0e-4;myrdpars-&gt;wdiffr=0.05;myrdpars-&gt;wdifft=0.02;
+          break;
+        case 1:
+          myrdpars-&gt;cosmin=0.996195;myrdpars-&gt;waccd=0.05;myrdpars-&gt;dpminr=5.0e-4;
+          myrdpars-&gt;dpthr=2.5e-3;myrdpars-&gt;wdiffr=0.5;myrdpars-&gt;wdifft=0.1;
+          break;
+        default:
+          DarkBit_error().raise(LOCAL_INFO, &quot;Invalid fast flag (should be 0 or 1). Fast &gt; 1 not yet &quot;
+           &quot;supported in DarkBit::RD_oh2_DS_general.  Please add relevant settings to this routine.&quot;);
+      }
+
+      // now transfer information from myRDspec to DS common blocks
+      int tnco=myRDspec.coannihilatingParticles.size();
+      int tnrs=myRDspec.resonances.size();
+      int tnthr=myRDspec.threshold_energy.size();
+      double tmco[1000], tdof[1000], trm[1000], trw[1000], ttm[1000];
+      for (std::size_t i=0; i&lt;((unsigned int)tnco); i++)
+      {
+        tmco[i] = myRDspec.coannihilatingParticles[i].mass;
+        tdof[i] = myRDspec.coannihilatingParticles[i].degreesOfFreedom;
+        #ifdef DARKBIT_RD_DEBUG
+          std::cout &lt;&lt; &quot;RD_oh2_DS_general - co : &quot;&lt;&lt; tmco[i]  &lt;&lt; &quot; &quot; &lt;&lt; tdof[i] &lt;&lt; std::endl;
+        #endif
+      }
+      for (std::size_t i=0; i&lt;((unsigned int)tnrs); i++)
+      {
+        trm[i] = myRDspec.resonances[i].energy;
+        trw[i] = myRDspec.resonances[i].width;
+        #ifdef DARKBIT_RD_DEBUG
+          std::cout &lt;&lt; &quot;RD_oh2_DS_general - res : &quot;&lt;&lt; trm[i]  &lt;&lt; &quot; &quot; &lt;&lt; trw[i] &lt;&lt; std::endl;
+        #endif
+      }
+      //DS does not count 2* WIMP rest mass as thr, hence we start at i=1
+      tnthr -=tnthr;
+      for (std::size_t i=1; i&lt;((unsigned int)tnthr+1); i++)
+      {
+        ttm[i] = myRDspec.threshold_energy[i];
+        #ifdef DARKBIT_RD_DEBUG
+          std::cout &lt;&lt; &quot;RD_oh2_DS_general - thr : &quot;&lt;&lt; ttm[i] &lt;&lt; std::endl;
+        #endif
+      }
+      #ifdef DARKBIT_RD_DEBUG
+        std::cout &lt;&lt; &quot;RD_oh2_DS_general - tnco,tnrs,tnthr : &quot;&lt;&lt; tnco &lt;&lt; &quot; &quot; &lt;&lt; tnrs &lt;&lt; &quot; &quot;
+                  &lt;&lt; tnthr &lt;&lt; std::endl;
+      #endif
+      BEreq::dsrdstart(tnco,tmco,tdof,tnrs,trm,trw,tnthr,ttm);
+
+      // always check that invariant rate is OK at least at one point
+      double peff = mwimp/100;
+      double weff = (*Dep::RD_eff_annrate)(peff);
+
+      if (Utils::isnan(weff))
+            DarkBit_error().raise(LOCAL_INFO, &quot;Weff is NaN in RD_oh2_DS_general. This means that the function\n&quot;
+                                            &quot;pointed to by RD_eff_annrate returned NaN for the invariant rate\n&quot;
+                                            &quot;entering the relic density calculation.&quot;);
+
+      // Finally use DS Boltzmann solver with invariant rate
+      double oh2, xf;
+      int ierr=0; int iwar=0;
+      BEreq::dsrdens(byVal(*Dep::RD_eff_annrate),oh2,xf,fast,ierr,iwar);
+
+      //Check for NAN result.
+      if ( Utils::isnan(oh2) ) DarkBit_error().raise(LOCAL_INFO, &quot;DarkSUSY returned NaN for relic density!&quot;);
+
+      // Check whether DarkSUSY threw an error
+      if (ierr == 1024)
+      {
+        invalid_point().raise(&quot;DarkSUSY invariant rate tabulation timed out.&quot;);
+      }
+      else if(ierr != 0)
+      {
+        DarkBit_error().raise(LOCAL_INFO, &quot;DarkSUSY Boltzmann solver failed.&quot;);
+      }
+
+      // If the DM particles are not their own antiparticles we need to add the relic
+      // density of anti-DM particles as well
+      result = (myRDspec.isSelfConj) ? oh2 : 2*oh2;
+
+      logger() &lt;&lt; LogTags::debug &lt;&lt; &quot;RD_oh2_DS_general: oh2 =&quot; &lt;&lt; result &lt;&lt; EOM;
+
+      #ifdef DARKBIT_DEBUG
+        std::cout &lt;&lt; std::endl &lt;&lt; &quot;DM mass = &quot; &lt;&lt; mwimp&lt;&lt; std::endl;
+        std::cout &lt;&lt; &quot;Oh2     = &quot; &lt;&lt; result &lt;&lt; std::endl &lt;&lt; std::endl;
+      #endif
+
+    } // function RD_oh2_DS_general
+
+
+
+    void RD_oh2_DS5_general(double &amp;result)
+    {
+      using namespace Pipes::RD_oh2_DS5_general;
+
+      // Retrieve ordered list of resonances and thresholds from
+      // RD_thresholds_resonances.
+      RD_spectrum_type myRDspec = *Dep::RD_spectrum_ordered;
+      if (myRDspec.coannihilatingParticles.empty())
+      {
+        DarkBit_error().raise(LOCAL_INFO, &quot;RD_oh2_DS5_general: No DM particle!&quot;);
+      }
+      double mwimp=myRDspec.coannihilatingParticles[0].mass;
+
+      #ifdef DARKBIT_RD_DEBUG
+        bool tbtest=false;
+      #endif
+
+      BEreq::rdtime-&gt;rdt_max = runOptions-&gt;getValueOrDef&lt;double&gt;(600, &quot;timeout&quot;);
+
+      // What follows below is the standard accurate calculation of oh2 in DS, in one of the
+      // following modes:
+      //   fast =   0 - standard accurate calculation (accuracy better than 1%)
+      //            1 - faster calculation: sets parameters for when to add
+      //                extra points less tough to avoid excessively
+      //                adding extra points, expected accurarcy: 1% or better
+      //            2 - faster calculation: compared to fast=1, this option
+      //                adds less points in Weff tabulation in general and
+      //                is more elaborate in deciding when to include points
+      //                close to thresholds and resonances
+      //                expected accuracy: around 1%
+      //            3 - even more aggressive on trying minimize the number
+      //                of tabulated points
+      //                expected accuracy: 5-10%
+      //            9 - superfast. This method still makes sure to include
+      //                resonances and threholds, but does not attempt to sample
+      //                them very well. Should give an order of magnitude estimate
+      //                expected accuracy: order of magnitude
+      //           10 - quick and dirty method, i.e. expand the annihilation
+      //                cross section in x (not recommended)
+      //                expected accuracy: can be orders of magnitude wrong
+      //                for models with strong resonances or thresholds
+
+      DS_RDPARS myrdpars;
+      int fast = runOptions-&gt;getValueOrDef&lt;int&gt;(1, &quot;fast&quot;);
+      switch (fast)
+      {
+        case 0:
+          myrdpars.cosmin=0.996195;myrdpars.waccd=0.005;myrdpars.dpminr=1.0e-4;
+          myrdpars.dpthr=5.0e-4;myrdpars.wdiffr=0.05;myrdpars.wdifft=0.02;
+          break;
+        case 1:
+          myrdpars.cosmin=0.996195;myrdpars.waccd=0.05;myrdpars.dpminr=5.0e-4;
+          myrdpars.dpthr=2.5e-3;myrdpars.wdiffr=0.5;myrdpars.wdifft=0.1;
+          break;
+        default:
+          DarkBit_error().raise(LOCAL_INFO, &quot;Invalid fast flag (should be 0 or 1). Fast &gt; 1 not yet &quot;
+           &quot;supported in DarkBit::RD_oh2_DS5_general.  Please add relevant settings to this routine.&quot;);
+      }
+
+      myrdpars.hstep=0.01;myrdpars.hmin=1.0e-9;myrdpars.compeps=0.01;
+      myrdpars.xinit=2.0;myrdpars.xfinal=200.0;myrdpars.umax=10.0;
+      myrdpars.cfr=0.5;
+      *BEreq::rdpars = myrdpars;
+      DS_RDSWITCH myrdswitch;
+      myrdswitch.thavint=1;myrdswitch.rdprt=0;
+      *BEreq::rdswitch = myrdswitch;
+      DS_RDLUN myrdlun;
+      myrdlun.rdlulog=6;myrdlun.rdluerr=6;
+      *BEreq::rdlun = myrdlun;
+      DS_RDPADD myrdpadd;
+      myrdpadd.pdivr=2.0;myrdpadd.dpres=0.5;myrdpadd.nlow=20;
+      myrdpadd.nhigh=10;
+      myrdpadd.npres=4;myrdpadd.nthup=4;myrdpadd.cthtest=0;myrdpadd.spltest=1;
+      *BEreq::rdpadd = myrdpadd;
+
+      DS_RDERRORS myrderrors;
+      myrderrors.rderr=0;myrderrors.rdwar=0;myrderrors.rdinit=1234;
+      *BEreq::rderrors = myrderrors;
+
+      // write mass and dof of DM &amp; coannihilating particle to DS common blocks
+      DS5_RDMGEV *myrdmgev = BEreq::rdmgev.pointer();
+
+      myrdmgev-&gt;nco=myRDspec.coannihilatingParticles.size();
+      for (std::size_t i=1; i&lt;=((unsigned int)myrdmgev-&gt;nco); i++)
+      {
+        myrdmgev-&gt;mco(i)=myRDspec.coannihilatingParticles[i-1].mass;
+        myrdmgev-&gt;mdof(i)=myRDspec.coannihilatingParticles[i-1].degreesOfFreedom;
+        myrdmgev-&gt;kcoann(i)=myRDspec.coannihilatingParticles[i-1].index;
+        #ifdef DARKBIT_RD_DEBUG
+          std::cout &lt;&lt; &quot;kcoann, mco, mdof: &quot; &lt;&lt; myrdmgev-&gt;kcoann(i) &lt;&lt; &quot;  &quot; &lt;&lt; myrdmgev-&gt;mco(i)
+                    &lt;&lt; &quot;  &quot; &lt;&lt; myrdmgev-&gt;mdof(i) &lt;&lt; std::endl;
+        #endif
+      }
+
+      // write information about thresholds and resonances to DS common blocks
+      // [this is the model-independent part of dsrdstart]
+      myrdmgev-&gt;nres=0;
+      if (!myRDspec.resonances.empty())
+      {
+        myrdmgev-&gt;nres=myRDspec.resonances.size();
+        for (std::size_t i=1; i&lt;=myRDspec.resonances.size(); i++)
+        {
+          myrdmgev-&gt;rgev(i)=myRDspec.resonances[i-1].energy;
+          myrdmgev-&gt;rwid(i)=myRDspec.resonances[i-1].width;
+          #ifdef DARKBIT_RD_DEBUG
+            std::cout &lt;&lt; &quot;rgev, rwid: &quot; &lt;&lt; myrdmgev-&gt;rgev(i) &lt;&lt; &quot;  &quot; &lt;&lt; myrdmgev-&gt;rwid(i) &lt;&lt; std::endl;
+          #endif
+        }
+      }
+      // convert to momenta and write to DS common blocks
+      DS_RDPTH myrdpth;
+      // NB: DS does not count 2* WIMP rest mass as thr
+      myrdpth.nth=myRDspec.threshold_energy.size()-1;
+      myrdpth.pth(0)=0; myrdpth.incth(0)=1;
+      for (std::size_t i=1; i&lt;myRDspec.threshold_energy.size(); i++)
+      {
+        myrdpth.pth(i)=sqrt(pow(myRDspec.threshold_energy[i],2)/4-pow(mwimp,2));
+        myrdpth.incth(i)=1;
+        #ifdef DARKBIT_RD_DEBUG
+          std::cout &lt;&lt; &quot;pth, incth: &quot; &lt;&lt; myrdpth.pth(i) &lt;&lt; &quot;  &quot; &lt;&lt; myrdpth.incth(i) &lt;&lt; std::endl;
+        #endif
+      }
+      *BEreq::rdpth = myrdpth;
+
+      // determine starting point for integration of Boltzmann eq and write
+      // to DS common blocks
+      DS_RDDOF *myrddof = BEreq::rddof.pointer();
+      double xstart=std::max(myrdpars.xinit,1.0001*mwimp/myrddof-&gt;tgev(1));
+      double tstart=mwimp/xstart;
+      int k; myrddof-&gt;khi=myrddof-&gt;nf; myrddof-&gt;klo=1;
+      while (myrddof-&gt;khi &gt; myrddof-&gt;klo+1)
+      {
+        k=(myrddof-&gt;khi+myrddof-&gt;klo)/2;
+        if (myrddof-&gt;tgev(k) &lt; tstart)
+        {
+          myrddof-&gt;khi=k;
+        }
+        else {
+          myrddof-&gt;klo=k;
+        }
+      }
+
+      // follow wide res treatment for heavy Higgs adopted in DS
+      double widthheavyHiggs = BEreq::widths-&gt;width(BEreq::DS5particle_code(&quot;h0_2&quot;));
+      if (widthheavyHiggs&lt;0.1) BEreq::widths-&gt;width(BEreq::DS5particle_code(&quot;h0_2&quot;))=0.1;
+
+      // always check that invariant rate is OK at least at one point
+      double peff = mwimp/100;
+      double weff = (*Dep::RD_eff_annrate)(peff);
+      if (Utils::isnan(weff))
+            DarkBit_error().raise(LOCAL_INFO, &quot;Weff is NaN in RD_oh2_DS5_general. This means that the function\n&quot;
+                                            &quot;pointed to by RD_eff_annrate returned NaN for the invariant rate\n&quot;
+                                            &quot;entering the relic density calculation.&quot;);
+
+      #ifdef DARKBIT_RD_DEBUG
+        // Dump Weff info on screen
+        std::cout &lt;&lt; &quot;xstart = &quot; &lt;&lt; xstart &lt;&lt; std::endl;
+        for ( peff = mwimp/1000;  peff &lt; mwimp; peff = peff*1.5 )
+        {
+          weff = (*Dep::RD_eff_annrate)(peff);
+          std::cout &lt;&lt; &quot;Weff(&quot; &lt;&lt; peff &lt;&lt; &quot;) = &quot; &lt;&lt; weff &lt;&lt; std::endl;
+          // Check that the invariant rate is OK.
+          if (Utils::isnan(weff))
+            DarkBit_error().raise(LOCAL_INFO, &quot;RD debug: Weff is NaN in RD_oh2_DS5_general.&quot;);
+        }
+        // Set up timing
+        std::chrono::time_point&lt;std::chrono::system_clock&gt; start, end;
+        start = std::chrono::system_clock::now();
+        logger() &lt;&lt; &quot;Tabulating RD_eff_annrate...&quot; &lt;&lt; EOM;
+        std::cout &lt;&lt; &quot;Starting dsrdtab...&quot; &lt;&lt; std::endl;
+      #endif
+
+      // Tabulate the invariant rate
+      BEreq::dsrdtab(byVal(*Dep::RD_eff_annrate),xstart,fast);
+
+      #ifdef DARKBIT_RD_DEBUG
+        logger() &lt;&lt; LogTags::repeat_to_cout &lt;&lt; &quot;...done!&quot; &lt;&lt; EOM;
+
+        // Get runtime
+        end = std::chrono::system_clock::now();
+        double runtime = std::chrono::duration_cast&lt;std::chrono::milliseconds&gt;(end - start).count();
+
+        // Check if runtime too long
+        if ( runtime &gt; 30. )
+        {
+          std::cout &lt;&lt; &quot;Duration [ms]: &quot; &lt;&lt; runtime &lt;&lt; std::endl;
+          //SLHAstruct mySLHA = Dep::MSSM_spectrum-&gt;getSLHAea(2);
+          //std::ofstream ofs(&quot;RelicDensity_debug.slha&quot;);
+          //ofs &lt;&lt; mySLHA;
+          //ofs.close();
+          tbtest=true;
+        }
+      #endif
+
+      // Check whether DarkSUSY threw an error
+      if (BEreq::rderrors-&gt;rderr != 0)
+      {
+        if (BEreq::rderrors-&gt;rderr == 1024) invalid_point().raise(&quot;DarkSUSY invariant rate tabulation timed out.&quot;);
+        else DarkBit_error().raise(LOCAL_INFO, &quot;DarkSUSY invariant rate tabulation failed.&quot;);
+      }
+
+      // determine integration limit
+      BEreq::dsrdthlim();
+
+      // now solve Boltzmann eqn using tabulated rate
+      double xend, yend, xf; int nfcn;
+      BEreq::dsrdeqn(byVal(BEreq::dsrdwintp.pointer()), xstart,xend,yend,xf,nfcn);
+      // using the untabulated rate gives the same result but is usually
+      // slower:
+      // BEreq::dsrdeqn(byVal(*Dep::RD_eff_annrate),xstart,xend,yend,xf,nfcn);
+
+      // change heavy Higgs width in DS back to standard value
+      BEreq::widths-&gt;width(BEreq::DS5particle_code(&quot;h0_2&quot;)) = widthheavyHiggs;
+
+      //Check for NAN result.
+      if ( Utils::isnan(yend) ) DarkBit_error().raise(LOCAL_INFO, &quot;DarkSUSY returned NaN for relic density!&quot;);
+
+      // Check whether DarkSUSY threw some other error
+      if (BEreq::rderrors-&gt;rderr != 0) DarkBit_error().raise(LOCAL_INFO, &quot;DarkSUSY Boltzmann solver failed.&quot;);
+
+      result = 0.70365e8*myrddof-&gt;fh(myrddof-&gt;nf)*mwimp*yend;
+
+      // If the DM particles are not their own antiparticles we need to add the relic
+      // density of anti-DM particles as well
+      result = (myRDspec.isSelfConj) ? result : 2*result;
+
+      logger() &lt;&lt; LogTags::debug &lt;&lt; &quot;RD_oh2_DS5_general: oh2 =&quot; &lt;&lt; result &lt;&lt; EOM;
+
+      #ifdef DARKBIT_DEBUG
+        std::cout &lt;&lt; std::endl &lt;&lt; &quot;DM mass = &quot; &lt;&lt; mwimp&lt;&lt; std::endl;
+        std::cout &lt;&lt; &quot;Oh2     = &quot; &lt;&lt; result &lt;&lt; std::endl &lt;&lt; std::endl;
+      #endif
+
+      #ifdef DARKBIT_RD_DEBUG
+        if (tbtest) exit(1);
+      #endif
+
+    } // function RD_oh2_DS5_general
+
+
+
+
+    //
+    //             Simple relic density routines for cross-checks
+    //                      (MicrOmegas vs DarkSUSY)
+    //
+
+    void RD_oh2_Xf_MicrOmegas(ddpair &amp;result)
+    {
+      using namespace Pipes::RD_oh2_Xf_MicrOmegas;
+      // Input
+      int fast;     // fast: 1, accurate: 0
+      double Beps;  // Beps=1e-5 recommended, Beps=1 switches coannihilation off
+
+      // Set options via ini-file (MicrOmegas-specific performance options)
+      fast = runOptions-&gt;getValueOrDef&lt;int&gt;(0, &quot;fast&quot;);
+      Beps = runOptions-&gt;getValueOrDef&lt;double&gt;(1e-5, &quot;Beps&quot;);
+
+      logger() &lt;&lt; LogTags::debug &lt;&lt; &quot;Using fast: &quot; &lt;&lt; fast &lt;&lt; &quot; Beps: &quot; &lt;&lt; Beps;
+
+      // Output
+      double Xf;
+      double oh2 = BEreq::oh2(&amp;Xf,byVal(fast), byVal(Beps));
+
+      result.first = oh2;
+      result.second = Xf;
+
+      logger() &lt;&lt; LogTags::debug &lt;&lt; &quot;X_f = &quot; &lt;&lt; Xf &lt;&lt; &quot; Omega h^2 = &quot; &lt;&lt; oh2 &lt;&lt; EOM;
+    }
+
+    void RD_oh2_DarkSUSY_DS5(double &amp;result)
+    {
+      using namespace Pipes::RD_oh2_DarkSUSY_DS5;
+      // Input
+      int omtype;  // 0: no coann; 1: all coann
+      int fast;  // 0: standard; 1: fast; 2: dirty
+
+      // Set options via ini-file
+      omtype = runOptions-&gt;getValueOrDef&lt;int&gt;(1, &quot;omtype&quot;);
+      fast = runOptions-&gt;getValueOrDef&lt;int&gt;(0, &quot;fast&quot;);
+      BEreq::rdtime-&gt;rdt_max = runOptions-&gt;getValueOrDef&lt;double&gt;(600, &quot;timeout&quot;);
+
+      // Output
+      double xf;  // freeze-out temperature
+      int ierr;  // error flag
+      int iwar;  // warming flag
+      int nfc;  // number of fnct calls to effective annihilation cross section
+      logger() &lt;&lt; LogTags::debug &lt;&lt; &quot;Starting DarkSUSY relic density calculation...&quot; &lt;&lt; EOM;
+      double oh2 = BEreq::dsrdomega(omtype,fast,xf,ierr,iwar,nfc);
+
+      // Check whether DarkSUSY threw an error
+      if (BEreq::rderrors-&gt;rderr != 0)
+      {
+        if (BEreq::rderrors-&gt;rderr == 1024) invalid_point().raise(&quot;DarkSUSY invariant rate tabulation timed out.&quot;);
+        else DarkBit_error().raise(LOCAL_INFO, &quot;DarkSUSY relic density calculation failed.&quot;);
+      }
+
+      result = oh2;
+      logger() &lt;&lt; LogTags::debug &lt;&lt; &quot;RD_oh2_DarkSUSY_DS5: oh2 is &quot; &lt;&lt; oh2 &lt;&lt; EOM;
+    }
+
+
+
+    void RD_oh2_MicrOmegas(double &amp;result)
+    {
+      using namespace Pipes::RD_oh2_MicrOmegas;
+
+      ddpair oh2_Xf = *Dep::RD_oh2_Xf;
+      result = oh2_Xf.first;
+    }
+
+    void Xf_MicrOmegas(double &amp;result)
+    {
+      using namespace Pipes::Xf_MicrOmegas;
+
+      ddpair oh2_Xf = *Dep::RD_oh2_Xf;
+      result = oh2_Xf.second;
+    }
+
+
+    void print_channel_contributions_MicrOmegas(double &amp;result)
+    {
+      using namespace Pipes::print_channel_contributions_MicrOmegas;
+
+      double Beps;  // Beps=1e-5 recommended, Beps=1 switches coannihilation off
+      Beps = runOptions-&gt;getValueOrDef&lt;double&gt;(1e-5, &quot;Beps&quot;);
+
+      double Xf = *Dep::Xf;
+
+      double cut = runOptions-&gt;getValueOrDef&lt;double&gt;(1e-5, &quot;cut&quot;);
+
+      result = BEreq::momegas_print_channels(byVal(Xf),byVal(cut),byVal(Beps),byVal(1),byVal(stdout));
+    }
+
+
+    void get_semi_ann_MicrOmegas(double &amp;result)
+    {
+      using namespace Pipes::get_semi_ann_MicrOmegas;
+
+      double Beps;  // Beps=1e-5 recommended, Beps=1 switches coannihilation off
+      Beps = runOptions-&gt;getValueOrDef&lt;double&gt;(1e-5, &quot;Beps&quot;);
+
+      double Xf = *Dep::Xf;
+
+      char*n1 =  (char *)&quot;~SS&quot;;
+      char*n2 = (char *)&quot;~SS&quot;;
+      char*n3 = (char *)&quot;h&quot;;
+      char*n4 = (char *)&quot;~ss&quot;;
+
+      result = BEreq::get_oneChannel(byVal(Xf),byVal(Beps),byVal(n1),byVal(n2),byVal(n3),byVal(n4));
+
+    }
+
+    void vSigma_freezeout_MicrOmegas(double &amp;result)
+    {
+      using namespace Pipes::vSigma_freezeout_MicrOmegas;
+
+      // Beps=1e-5 recommended, Beps=1 switches coannihilation off
+      double Beps = runOptions-&gt;getValueOrDef&lt;double&gt;(1e-5, &quot;Beps&quot;);
+
+      // Xf = m_WIMP/T_freezeout
+      double Xf = *Dep::Xf;
+      double mwimp = *Dep::mwimp;
+
+      // Get sigma*v at T_freezeout [pb]
+      double sigmav = BEreq::vSigma(byVal(Xf/mwimp), byVal(Beps), byVal(1));
+
+      result = sigmav*1e-36*s2cm;
+    }
+
+
+
+    //
+    //   Infer fraction of Dark matter that is made up by scanned DM particles
+    //
+
+    void RD_fraction_one(double &amp;result)
+    {
+      result = 1.0;
+      logger() &lt;&lt; LogTags::debug &lt;&lt; &quot;Fraction of dark matter that the scanned model accounts for: &quot; &lt;&lt; result &lt;&lt; EOM;
+    }
+
+    void RD_fraction_leq_one(double &amp;result)
+    {
+      using namespace Pipes::RD_fraction_leq_one;
+      double oh2_obs = runOptions-&gt;getValueOrDef&lt;double&gt;(0.1188, &quot;oh2_obs&quot;);
+      double oh2_theory = *Dep::RD_oh2;
+      result = std::min(1., oh2_theory/oh2_obs);
+      logger() &lt;&lt; LogTags::debug &lt;&lt; &quot;Fraction of dark matter that the scanned model accounts for: &quot; &lt;&lt; result &lt;&lt; EOM;
+    }
+
+    void RD_fraction_rescaled(double &amp;result)
+    {
+      using namespace Pipes::RD_fraction_rescaled;
+      double oh2_obs = runOptions-&gt;getValueOrDef&lt;double&gt;(0.1188, &quot;oh2_obs&quot;);
+      double oh2_theory = *Dep::RD_oh2;
+      result = oh2_theory/oh2_obs;
+      logger() &lt;&lt; LogTags::debug &lt;&lt; &quot;Fraction of dark matter that the scanned model accounts for: &quot; &lt;&lt; result &lt;&lt; EOM;
+    }
+
+    void RD_fraction_rescaled_LCDM(double &amp;result)
+    {
+      using namespace Pipes::RD_fraction_rescaled_LCDM;
+
+      double oh2_obs = *Param[&quot;omega_b&quot;];
+      double oh2_theory = *Dep::RD_oh2;
+
+      result = oh2_theory/oh2_obs;
+      logger() &lt;&lt; LogTags::debug &lt;&lt; &quot;Fraction of dark matter that the scanned model accounts for: &quot; &lt;&lt; result &lt;&lt; EOM;
+    }
+
+  }
+}
+</code></pre><hr><p>Updated on 2022-07-20 at 17:18:45 +0000</p><div class=edit-page><a href=https://github.com/RC1242RC/gambit_gh_pages/blob/master/content/en/documentation/code/Files/RelicDensity_8cpp.md><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2"><path d="M17 3a2.828 2.828.0 114 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></svg>Edit this page on GitHub</a></div></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a class=text-muted href=https://www.netlify.com/>Netlify</a>, <a class=text-muted href=https://gohugo.io/>Hugo</a>, and <a class=text-muted href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/testbit/license/>License</a></li></ul></div></div></div></footer><script src=/testbit/js/bootstrap.min.54bf0932b8a36d0e152b1635b099a6ef1394d35327e2437550a075c9c8ed1bd8aed5847c21b36fc02ed24014c031d9ca24017b0c78b1639d7e2fa8329898b842.js integrity="sha512-VL8JMrijbQ4VKxY1sJmm7xOU01Mn4kN1UKB1ycjtG9iu1YR8IbNvwC7SQBTAMdnKJAF7DHixY51+L6gymJi4Qg==" crossorigin=anonymous defer></script>
+<script src=/testbit/js/highlight.min.5b48bc253dc75aeea5fb366ecf700f4925e2b6eb1a1466f2124b722d68148d67bc0a9365d2b8ad9c585161b46372d23b08509a16f1fd518542b894756d4752d0.js integrity="sha512-W0i8JT3HWu6l+zZuz3APSSXitusaFGbyEktyLWgUjWe8CpNl0ritnFhRYbRjctI7CFCaFvH9UYVCuJR1bUdS0A==" crossorigin=anonymous defer></script>
+<script src=/testbit/main.min.40265e9a032aeba5eaf67baac3cbbc22667a7533215d326eeb3e9f4d5e4be40f9ff4dcd22949db73ae527ca26a19d7998091a8973c82af760b2c0daa335190ed.js integrity="sha512-QCZemgMq66Xq9nuqw8u8ImZ6dTMhXTJu6z6fTV5L5A+f9NzSKUnbc65SfKJqGdeZgJGolzyCr3YLLA2qM1GQ7Q==" crossorigin=anonymous defer></script>
+<script src=https://rc1242rc.github.io/testbit/index.min.a9e8ad821b751fa50133c3aa34a59cd35272c1cf2c5998ff27d4feca4a0d22445ae367b71bd8ea9be1e28558292ba08731585d275b00c18a8364fce62bfdcbd6.js integrity="sha512-qeitght1H6UBM8OqNKWc01Jywc8sWZj/J9T+ykoNIkRa42e3G9jqm+HihVgpK6CHMVhdJ1sAwYqDZPzmK/3L1g==" crossorigin=anonymous defer></script></body></html>
