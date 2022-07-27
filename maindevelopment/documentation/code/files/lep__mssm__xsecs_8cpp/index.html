@@ -1,0 +1,784 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="ie=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><link rel=preload as=font href=https://rc1242rc.github.io/main_development/fonts/vendor/jost/jost-v4-latin-regular.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://rc1242rc.github.io/main_development/fonts/vendor/jost/jost-v4-latin-500.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://rc1242rc.github.io/main_development/fonts/vendor/jost/jost-v4-latin-700.woff2 type=font/woff2 crossorigin><script>(()=>{var e=localStorage.getItem("theme");e==="dark"&&document.documentElement.setAttribute("data-dark-mode","")})()</script><link rel=stylesheet href=https://rc1242rc.github.io/main_development/main.1fa2debdf0a1b20e7268d11906902449af896197928a5bdae9dca95b629cdd73746db3d8c6afacb7320d9deb149a318c764669d08a1ddfd34a657ab2aeab866a.css integrity="sha512-H6LevfChsg5yaNEZBpAkSa+JYZeSilva6dypW2Kc3XN0bbPYxq+stzINnesUmjGMdkZp0Iod39NKZXqyrquGag==" crossorigin=anonymous><noscript><style>img.lazyload{display:none}</style></noscript><meta name=robots content="index, follow"><meta name=googlebot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><meta name=bingbot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><title>file src/lep_mssm_xsecs.cpp - GAMBIT</title><meta name=description content="[No description available]"><link rel=canonical href=https://rc1242rc.github.io/main_development/documentation/code/files/lep__mssm__xsecs_8cpp/><meta property="og:locale" content="en_US"><meta property="og:type" content="article"><meta property="og:title" content="file src/lep_mssm_xsecs.cpp"><meta property="og:description" content="[No description available]"><meta property="og:url" content="https://rc1242rc.github.io/main_development/documentation/code/files/lep__mssm__xsecs_8cpp/"><meta property="og:site_name" content="GAMBIT"><meta property="og:image" content="https://rc1242rc.github.io/main_development/gambit_logo.png"><meta property="og:image:alt" content="GAMBIT"><meta name=twitter:card content="summary_large_image"><meta name=twitter:site content><meta name=twitter:creator content><meta name=twitter:title content="file src/lep_mssm_xsecs.cpp"><meta name=twitter:description content="[No description available]"><meta name=twitter:image content="https://rc1242rc.github.io/main_development/gambit_logo.png"><meta name=twitter:image:alt content="file src/lep_mssm_xsecs.cpp"><script type=application/ld+json>{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://rc1242rc.github.io/#/schema/organization/1","name":"Doks","url":"https://rc1242rc.github.io/","sameAs":["https://github.com/GambitBSM"],"logo":{"@type":"ImageObject","@id":"https://rc1242rc.github.io/#/schema/image/1","url":"https://rc1242rc.github.io/logo-doks.png","width":450,"height":416,"caption":"Doks"},"image":{"@id":"https://rc1242rc.github.io/#/schema/image/1"}},{"@type":"WebSite","@id":"https://rc1242rc.github.io/#/schema/website/1","url":"https://rc1242rc.github.io/","name":"GAMBIT","description":"Documentation for the Global And Modular BSM Inference Tool","publisher":{"@id":"https://rc1242rc.github.io/#/schema/organization/1"}},{"@type":"WebPage","@id":"https://rc1242rc.github.io/main_development/documentation/code/files/lep__mssm__xsecs_8cpp/","url":"https://rc1242rc.github.io/main_development/documentation/code/files/lep__mssm__xsecs_8cpp/","name":"file src\/lep_mssm_xsecs.cpp","description":"[No description available]","isPartOf":{"@id":"https://rc1242rc.github.io/#/schema/website/1"},"about":{"@id":"https://rc1242rc.github.io/#/schema/organization/1"},"datePublished":"0001-01-01T00:00:00CET","dateModified":"0001-01-01T00:00:00CET","breadcrumb":{"@id":"https://rc1242rc.github.io/main_development/documentation/code/files/lep__mssm__xsecs_8cpp/#/schema/breadcrumb/1"},"primaryImageOfPage":{"@id":"https://rc1242rc.github.io/main_development/documentation/code/files/lep__mssm__xsecs_8cpp/#/schema/image/2"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://rc1242rc.github.io/main_development/documentation/code/files/lep__mssm__xsecs_8cpp/"]}]},{"@type":"BreadcrumbList","@id":"https://rc1242rc.github.io/main_development/documentation/code/files/lep__mssm__xsecs_8cpp/#/schema/breadcrumb/1","name":"Breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/main_development","url":"https://rc1242rc.github.io/main_development","name":"Home"}},{"@type":"ListItem","position":3,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/main_development/documentation/","url":"https://rc1242rc.github.io/main_development/documentation/","name":"Documentation"}},{"@type":"ListItem","position":4,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/main_development/documentation/code/","url":"https://rc1242rc.github.io/main_development/documentation/code/","name":"Code"}},{"@type":"ListItem","position":5,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/main_development/documentation/code/files/","url":"https://rc1242rc.github.io/main_development/documentation/code/files/","name":"Files"}},{"@type":"ListItem","position":6,"item":{"@id":"https://rc1242rc.github.io/main_development/documentation/code/files/lep__mssm__xsecs_8cpp/"}}]},{"@context":"https://schema.org","@graph":[{"@type":"ImageObject","@id":"https://rc1242rc.github.io/main_development/documentation/code/files/lep__mssm__xsecs_8cpp/#/schema/image/2","url":"https://rc1242rc.github.io/main_development/gambit_logo.png","contentUrl":"https://rc1242rc.github.io/main_development/gambit_logo.png","caption":"file src\/lep_mssm_xsecs.cpp"}]}]}</script><meta name=theme-color content="#fff"><link rel=icon href=https://rc1242rc.github.io/main_development/favicon.ico sizes=any><link rel=icon type=image/svg+xml href=https://rc1242rc.github.io/main_development/favicon.svg><link rel=apple-touch-icon sizes=180x180 href=https://rc1242rc.github.io/main_development/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=https://rc1242rc.github.io/main_development/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=https://rc1242rc.github.io/main_development/favicon-16x16.png><link rel=manifest crossorigin=use-credentials href=https://rc1242rc.github.io/main_development/site.webmanifest></head><body class="documentation single light"><div class=sticky-top><div class=header-bar></div><header class="navbar navbar-expand-md navbar-light doks-navbar"><nav class="container-xxl flex-wrap flex-md-nowrap" aria-label="Main navigation"><a class="navbar-brand p-0 me-auto" href=/ aria-label=GAMBIT><img class=logo-light src=https://rc1242rc.github.io/main_development/images/gambit_logo.png width=50px>
+<img class="logo-dark d-none" src=https://rc1242rc.github.io/main_development/images/gambit_logo.png width=50px>
+GAMBIT</a>
+<button class="btn btn-menu order-2 d-block d-lg-none" type=button data-bs-toggle=offcanvas data-bs-target=#offcanvasDoks aria-controls=offcanvasDoks aria-label="Open main menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button><div class="offcanvas offcanvas-end border-0 py-lg-1" tabindex=-1 id=offcanvasDoks data-bs-backdrop=true aria-labelledby=offcanvasDoksLabel><div class="header-bar d-lg-none"></div><div class="offcanvas-header d-lg-none"><h2 class="h5 offcanvas-title ps-2" id=offcanvasDoksLabel><a class=text-dark href=/>GAMBIT</a></h2><button type=button class="btn-close text-reset me-2" data-bs-dismiss=offcanvas aria-label="Close main menu"></button></div><div class="offcanvas-body p-4 p-lg-0"><ul class="nav flex-column flex-lg-row align-items-lg-center mt-2 mt-lg-0 ms-lg-2 me-lg-auto"><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Documentation
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=/main_development/documentation/installation/introduction/>Installation</a></li><li><a class=dropdown-item href=/main_development/documentation/examples/colliderbit>Examples</a></li><li><a class=dropdown-item href=/main_development/documentation/help/faqs/>Help</a></li><li><a class=dropdown-item href=/main_development/documentation/code/index_classes>Code Reference</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Community
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=/main_development/community/publications/>Publications</a></li><li><a class=dropdown-item href=/main_development/community/talks/>Talks</a></li><li><a class=dropdown-item href=/main_development/community/members/>Members</a></li><li><a class=dropdown-item href=/main_development/community/code_of_conduct/>Code of Conduct</a></li><li><a class=dropdown-item href=/main_development/community/contact/>Contact</a></li></ul></li></ul><hr class="text-black-50 my-4 d-lg-none"><form class="doks-search position-relative flex-grow-1 ms-lg-auto me-lg-2"><input id=search class="form-control is-search" type=search placeholder="Search site..." aria-label="Search site..." autocomplete=off><div id=suggestions class="shadow bg-white rounded d-none"></div></form><hr class="text-black-50 my-4 d-lg-none"><ul class="nav flex-column flex-lg-row"><li class=nav-item><a class="nav-link social-link" href=https://github.com/GambitBSM><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37.0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44.0 0020 4.77 5.07 5.07.0 0019.91 1S18.73.65 16 2.48a13.38 13.38.0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07.0 005 4.77 5.44 5.44.0 003.5 8.55c0 5.42 3.3 6.61 6.44 7A3.37 3.37.0 009 18.13V22"/></svg><small class="ms-2 d-lg-none">GitHub</small></a></li></ul><hr class="text-black-50 my-4 d-lg-none"><div class=dropdown><button class="btn btn-doks-light dropdown-toggle" id=doks-versions data-bs-toggle=dropdown aria-expanded=false data-bs-display=static aria-label="Toggle version menu">
+<span class=d-none>Doks</span> MainDevelopment
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></button><ul class="dropdown-menu dropdown-menu-lg-end me-lg-2 shadow rounded border-0" aria-labelledby=doks-versions><li><a class=dropdown-item href=/maindevelopment/documentation/code/index_classes/>MainDevelopment</a></li><li><a class=dropdown-item href=/testbit/documentation/code/index_classes/>TestBit</a></li></ul></div></div></div></nav></header></div><div class="wrap container-xxl" role=document><div class=content><div class="row flex-xl-nowrap"><div class="col-lg-5 col-xl-4 docs-sidebar"><nav class=docs-links aria-label="Main navigation"><ul class="list-unstyled collapsible-sidebar"><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-installation aria-expanded=false>
+Installation</button><div class=collapse id=section-installation><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/main_development/documentation/installation/introduction/>Getting Started</a></li><li><a class="docs-link rounded" href=/main_development/documentation/installation/docker_usage/>Docker Usage</a></li><li><a class="docs-link rounded" href=/main_development/documentation/installation/installation_for_linux/>Installation for Linux</a></li><li><a class="docs-link rounded" href=/main_development/documentation/installation/installation_for_windows/>Installation for Windows</a></li><li><a class="docs-link rounded" href=/main_development/documentation/installation/installation_for_macos/>Installation for macOS</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-examples aria-expanded=false>
+Examples</button><div class=collapse id=section-examples><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/main_development/documentation/examples/colliderbit/>ColliderBit</a></li><li><a class="docs-link rounded" href=/main_development/documentation/examples/anotherbit/>AnotherBit</a></li><li><a class="docs-link rounded" href=/main_development/documentation/examples/anotherbit2/>AnotherBit2</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-help aria-expanded=false>
+Help</button><div class=collapse id=section-help><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/main_development/documentation/help/faqs/>FAQs</a></li><li><a class="docs-link rounded" href=/main_development/documentation/help/compiler_matrix/>Compiler Matrix</a></li><li><a class="docs-link rounded" href=/main_development/documentation/help/known_issues/>Known Issues</a></li><li><a class="docs-link rounded" href=/main_development/documentation/help/configuration_examples/>Configuration Examples</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-code aria-expanded=false>
+Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/main_development/documentation/code/index_classes/>Classes</a></li><li><a class="docs-link rounded" href=/main_development/documentation/code/index_files/>Files</a></li><li><a class="docs-link rounded" href=/main_development/documentation/code/index_pages/>Pages</a></li><li><a class="docs-link rounded" href=/main_development/documentation/code/index_namespaces/>Namespaces</a></li></ul></div></li></ul></nav></div><nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation"><div class=d-xl-none><button class="btn btn-outline-primary btn-sm doks-toc-toggle collapsed" type=button data-bs-toggle=collapse data-bs-target=#onThisPage aria-controls=doks-docs-nav aria-expanded=false aria-label="Toggle On this page navigation">
+<span>On this page</span>
+<span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg></span></button><div class=collapse id=onThisPage><div class="card card-body mt-3 py-1"><div class=page-links><nav id=TableOfContents><ul><li><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#defines>Defines</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#macros-documentation>Macros Documentation</a><ul><li><a href=#define-pow2>define pow2</a></li></ul></li><li><a href=#source-code>Source code</a></li></ul></li></ul></nav></div></div></div></div><div class="page-links d-none d-xl-block"><h3>On this page</h3><nav id=TableOfContents><ul><li><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#defines>Defines</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#macros-documentation>Macros Documentation</a><ul><li><a href=#define-pow2>define pow2</a></li></ul></li><li><a href=#source-code>Source code</a></li></ul></li></ul></nav></div></nav><main class="docs-content col-lg-11 col-xl-9 mx-xl-auto"><h1>file src/lep_mssm_xsecs.cpp</h1><p class=lead></p><p>[No description available] <a href=#detailed-description>More&mldr;</a></p><h2 id=namespaces>Namespaces <a href=#namespaces class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th>Name</th></tr></thead><tbody><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit/>Gambit</a></strong><br>TODO: see if we can use this one:</td></tr><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit_1_1colliderbit/>Gambit::ColliderBit</a></strong></td></tr></tbody></table><h2 id=defines>Defines <a href=#defines class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th></th><th>Name</th></tr></thead><tbody><tr><td></td><td><strong><a href=/documentation/code/files/lep__mssm__xsecs_8cpp/#define-pow2>pow2</a></strong>(a)</td></tr></tbody></table><h2 id=detailed-description>Detailed Description <a href=#detailed-description class=anchor aria-hidden=true>#</a></h2><p><strong>Author</strong>:</p><ul><li>Are Raklev (<a href=mailto:ahye@fys.uio.no>ahye@fys.uio.no</a>)</li><li>Pat Scott (<a href=mailto:p.scott@imperial.ac.uk>p.scott@imperial.ac.uk</a>)</li></ul><p><strong>Date</strong>:</p><ul><li>2015 Jun</li><li>2015 Jul</li></ul><p>Sparticle production cross-section calculators for LEP.</p><p>Usage details are in the corresponding header file.</p><hr><p>Authors</p><hr><h2 id=macros-documentation>Macros Documentation <a href=#macros-documentation class=anchor aria-hidden=true>#</a></h2><h3 id=define-pow2>define pow2 <a href=#define-pow2 class=anchor aria-hidden=true>#</a></h3><pre><code>#define pow2(
+    a
+)
+((a)*(a))
+</code></pre><h2 id=source-code>Source code <a href=#source-code class=anchor aria-hidden=true>#</a></h2><pre><code>//   GAMBIT: Global and Modular BSM Inference Tool
+//   *********************************************
+
+
+#include &lt;iostream&gt;
+#include &lt;fstream&gt;
+#include &lt;math.h&gt;
+
+#include &quot;gambit/Elements/gambit_module_headers.hpp&quot;
+#include &quot;gambit/Elements/mssm_slhahelp.hpp&quot;
+#include &quot;gambit/ColliderBit/ColliderBit_rollcall.hpp&quot;
+#include &quot;gambit/ColliderBit/lep_mssm_xsecs.hpp&quot;
+
+
+#define pow2(a) ((a)*(a)) // Get speedy
+
+namespace Gambit
+{
+
+  namespace ColliderBit
+  {
+
+    void get_sigma_ee_ll(triplet&lt;double&gt;&amp; result, const double sqrts, const int generation, const int l_chirality,
+                         const int lbar_chirality, const double gtol, const double ftol, const bool gpt_error,
+                         const bool fpt_error, const Spectrum&amp; spec, const double gammaZ, const bool l_are_gauge_es)
+    {
+      static const str genmap[3][2] =
+      {
+        {&quot;~e_L&quot;,   &quot;~e_R&quot;  },
+        {&quot;~mu_L&quot;,  &quot;~mu_R&quot; },
+        {&quot;~tau_L&quot;, &quot;~tau_R&quot;}
+      };
+
+      // Subspectrum
+      const SubSpectrum&amp; mssm = spec.get_HE();
+      // PDG codes
+      const int id1 = 1000000*l_chirality + 11 +2*(generation-1);
+      const int id2 = -(1000000*lbar_chirality + 11 +2*(generation-1));
+
+      // SM parameters
+      const double mZ = spec.safeget(Par::Pole_Mass,23,0);
+      const double g2 = mssm.safeget(Par::dimensionless,&quot;g2&quot;);
+      const double sinW2 = mssm.safeget(Par::dimensionless,&quot;sinW2&quot;);
+      const double alpha = 0.25*sinW2*g2*g2/pi;
+      // MSSM parameters
+      const double tanb = mssm.safeget(Par::dimensionless,&quot;tanbeta&quot;);
+
+      // Get the mass eigenstate strings and 2x2 slepton generation mass mixing matrix
+      str mass_es1, mass_es2;
+      MixMatrix sleptonmix(2,std::vector&lt;double&gt;(2));
+
+      if (l_are_gauge_es)
+      {
+        // Requested final states are gauge eigenstates.  Pass diagonal mixing matrix to low-level routine.
+        sleptonmix[0][0] = 1.0;
+        sleptonmix[0][1] = 0.0;
+        sleptonmix[1][0] = 0.0;
+        sleptonmix[1][1] = 1.0;
+        mass_es1 = slhahelp::mass_es_from_gauge_es(genmap[generation-1][l_chirality-1],    mssm, gtol, LOCAL_INFO, gpt_error);
+        mass_es2 = slhahelp::mass_es_from_gauge_es(genmap[generation-1][lbar_chirality-1], mssm, gtol, LOCAL_INFO, gpt_error);
+      }
+      else
+      {
+        // Requested final states are family mass eigenstates.  Pass 2x2 family mass mixing matrix to low-level routine.
+        str m_light, m_heavy;
+        std::vector&lt;double&gt; slepton4vec = slhahelp::family_state_mix_matrix(&quot;~e-&quot;, generation, m_light, m_heavy, mssm, ftol, LOCAL_INFO, fpt_error);
+        mass_es1 = (l_chirality    == 1) ? m_light : m_heavy;
+        mass_es2 = (lbar_chirality == 1) ? m_light : m_heavy;
+        sleptonmix[0][0] = slepton4vec[0];
+        sleptonmix[0][1] = slepton4vec[1];
+        sleptonmix[1][0] = slepton4vec[2];
+        sleptonmix[1][1] = slepton4vec[3];
+      }
+      const double m1 = spec.safeget(Par::Pole_Mass,mass_es1);
+      // FIXME when spectrum object has separate pole mass getters for antiparticles
+      //const double m2 = spec.safeget(Par::Pole_Mass,Models::ParticleDB().get_antiparticle(mass_es2));
+      // until then
+      const double m2 = spec.safeget(Par::Pole_Mass,mass_es2);
+      std::pair&lt;double,double&gt; m1_uncerts(mssm.safeget(Par::Pole_Mass_1srd_high, mass_es1),
+                                          mssm.safeget(Par::Pole_Mass_1srd_low,  mass_es1));
+      std::pair&lt;double,double&gt; m2_uncerts(mssm.safeget(Par::Pole_Mass_1srd_high, mass_es2),
+                                          mssm.safeget(Par::Pole_Mass_1srd_low,  mass_es2));
+
+      // If the final state is kinematically inaccessible *even* if both masses
+      // are 2simga lower than their central values, then return zero.
+      if (m1*(1.0-2.0*m1_uncerts.second) + m2*(1.0-2.0*m2_uncerts.second) &gt; sqrts)
+      {
+        result.central = 0.0;
+        result.upper = 0.0;
+        result.lower = 0.0;
+        return;
+      }
+
+      // Get the neutralino masses
+      const double neutmass[4] = { spec.safeget(Par::Pole_Mass,1000022,0), spec.safeget(Par::Pole_Mass,1000023,0),
+                                   spec.safeget(Par::Pole_Mass,1000025,0), spec.safeget(Par::Pole_Mass,1000035,0) };
+      // Get the 4x4 neutralino mixing matrix
+      MixMatrix neutmix(4,std::vector&lt;double&gt;(4));
+      for (int i=0; i&lt;4; i++) for (int j=0; j&lt;4; j++) neutmix[i][j] = mssm.safeget(Par::Pole_Mixing,&quot;~chi0&quot;,i+1,j+1);
+
+      // Convert neutralino mixing matrix to BFM convention
+      SLHA2BFM_NN(neutmix, tanb, sinW2);
+
+      // Calculate the cross-section
+      result.central = xsec_sleislej(id1, id2, sqrts, m1, m2, sleptonmix, neutmix, neutmass, alpha, mZ, gammaZ, sinW2);
+
+      // Calculate the uncertainty on the cross-section due to final state masses varying by +/- 1 sigma
+      std::vector&lt;double&gt; xsecs;
+      xsecs.push_back(result.central);
+      xsecs.push_back(xsec_sleislej(id1, id2, sqrts, m1*(1.+m1_uncerts.first), m2*(1.+m2_uncerts.first), sleptonmix, neutmix,
+                                   neutmass, alpha, mZ, gammaZ, sinW2, false));
+      xsecs.push_back(xsec_sleislej(id1, id2, sqrts, m1*(1.-m1_uncerts.second), m2*(1.+m2_uncerts.first), sleptonmix, neutmix,
+                                   neutmass, alpha, mZ, gammaZ, sinW2, false));
+      xsecs.push_back(xsec_sleislej(id1, id2, sqrts, m1*(1.+m1_uncerts.first), m2*(1.-m2_uncerts.second), sleptonmix, neutmix,
+                                   neutmass, alpha, mZ, gammaZ, sinW2, false));
+      xsecs.push_back(xsec_sleislej(id1, id2, sqrts, m1*(1.-m1_uncerts.second), m2*(1.-m2_uncerts.second), sleptonmix, neutmix,
+                                   neutmass, alpha, mZ, gammaZ, sinW2, false));
+      result.upper = *std::max_element(xsecs.begin(), xsecs.end());
+      result.lower = *std::min_element(xsecs.begin(), xsecs.end());
+
+    }
+
+
+    void get_sigma_ee_chi00(triplet&lt;double&gt;&amp; result, const double sqrts, const int chi_first, const int chi_second,
+                            const double tol, const bool pt_error, const Spectrum&amp; spec, const double gammaZ)
+    {
+      // Subspectrum
+      const SubSpectrum&amp; mssm = spec.get_HE();
+
+      // PDG codes
+      const int id1 = 1000021 + chi_first  + (chi_first  &gt; 2 ? 1 + (chi_first -3)*9 : 0);
+      const int id2 = 1000021 + chi_second + (chi_second &gt; 2 ? 1 + (chi_second-3)*9 : 0);
+
+      // SM parameters
+      const double mZ = spec.safeget(Par::Pole_Mass,23,0);
+      const double g2 = mssm.safeget(Par::dimensionless,&quot;g2&quot;);
+      const double sinW2 = mssm.safeget(Par::dimensionless,&quot;sinW2&quot;);
+      const double alpha = 0.25*sinW2*g2*g2/pi;
+
+      // MSSM parameters
+      const double tanb = mssm.safeget(Par::dimensionless,&quot;tanbeta&quot;);
+      // Get the mass eigenstates best corresponding to ~eL and ~eR.
+      const str mass_esL = slhahelp::mass_es_from_gauge_es(&quot;~e_L&quot;, mssm, tol, LOCAL_INFO, pt_error);
+      const str mass_esR = slhahelp::mass_es_from_gauge_es(&quot;~e_R&quot;, mssm, tol, LOCAL_INFO, pt_error);
+      // Get the slepton masses
+      const double mS[2] = {spec.safeget(Par::Pole_Mass,mass_esL), spec.safeget(Par::Pole_Mass,mass_esR)};
+      // Get the neutralino masses
+      const double m1 = spec.safeget(Par::Pole_Mass,id1,0);
+      const double m2 = spec.safeget(Par::Pole_Mass,id2,0);
+      std::pair&lt;double,double&gt; m1_uncerts(mssm.safeget(Par::Pole_Mass_1srd_high, id1, 0),
+                                          mssm.safeget(Par::Pole_Mass_1srd_low,  id1, 0));
+      std::pair&lt;double,double&gt; m2_uncerts(mssm.safeget(Par::Pole_Mass_1srd_high, id2, 0),
+                                          mssm.safeget(Par::Pole_Mass_1srd_low,  id2, 0));
+
+      // Just return zero if the final state is kinematically inaccessible
+      // *even* if both masses are 2simga lower than their central values
+      if (std::abs(m1)*(1.0-2.0*m1_uncerts.second) + std::abs(m2)*(1.0-2.0*m2_uncerts.second) &gt; sqrts)
+      {
+        result.central = 0.0;
+        result.upper = 0.0;
+        result.lower = 0.0;
+        return;
+      }
+
+      // Get the 4x4 neutralino mixing matrix
+      MixMatrix neutmix(4,std::vector&lt;double&gt;(4));
+      for (int i=0; i&lt;4; i++) for (int j=0; j&lt;4; j++) neutmix[i][j] = mssm.safeget(Par::Pole_Mixing,&quot;~chi0&quot;,i+1,j+1);
+
+      // Convert neutralino mixing matrix to BFM convention
+      SLHA2BFM_NN(neutmix, tanb, sinW2);
+
+      // Calculate the cross-section
+      result.central = xsec_neuineuj(id1, id2, sqrts, m1, m2, neutmix, mS, 1./tanb, alpha, mZ, gammaZ, sinW2);
+
+      // Calculate the uncertainty on the cross-section due to final state masses varying by +/- 1 sigma
+      std::vector&lt;double&gt; xsecs;
+      xsecs.push_back(result.central);
+      xsecs.push_back(xsec_neuineuj(id1, id2, sqrts, m1*(1.+m1_uncerts.first), m2*(1.+m2_uncerts.first),
+                                    neutmix, mS, 1./tanb, alpha, mZ, gammaZ, sinW2));
+      xsecs.push_back(xsec_neuineuj(id1, id2, sqrts, m1*(1.+m1_uncerts.first), m2*(1.-m2_uncerts.second),
+                                    neutmix, mS, 1./tanb, alpha, mZ, gammaZ, sinW2));
+      xsecs.push_back(xsec_neuineuj(id1, id2, sqrts, m1*(1.-m1_uncerts.second), m2*(1.+m2_uncerts.first),
+                                    neutmix, mS, 1./tanb, alpha, mZ, gammaZ, sinW2));
+      xsecs.push_back(xsec_neuineuj(id1, id2, sqrts, m1*(1.-m1_uncerts.second), m2*(1.-m2_uncerts.second),
+                                    neutmix, mS, 1./tanb, alpha, mZ, gammaZ, sinW2));
+      result.upper = *std::max_element(xsecs.begin(), xsecs.end());
+      result.lower = *std::min_element(xsecs.begin(), xsecs.end());
+
+    }
+
+    void get_sigma_ee_chipm(triplet&lt;double&gt;&amp; result, const double sqrts, const int chi_plus, const int chi_minus,
+                            const double tol, const bool pt_error, const Spectrum&amp; spec, const double gammaZ)
+    {
+      // Subspectrum
+      const SubSpectrum&amp; mssm = spec.get_HE();
+
+      // PDG codes
+      const int id1 = 1000023 + chi_plus + (chi_plus - 1)*12;
+      const int id2 = -(1000023 + chi_minus + (chi_minus - 1)*12);
+
+      // SM parameters
+      const double mZ = spec.safeget(Par::Pole_Mass,23,0);
+      const double g2 = mssm.safeget(Par::dimensionless,&quot;g2&quot;);
+      const double sinW2 = mssm.safeget(Par::dimensionless,&quot;sinW2&quot;);
+      const double alpha = 0.25*sinW2*g2*g2/pi;
+
+      // MSSM parameters
+      // Get the mass eigenstate best corresponding to ~nu_e_L.
+      const str mass_snue = slhahelp::mass_es_from_gauge_es(&quot;~nu_e_L&quot;, mssm, tol, LOCAL_INFO, pt_error);
+      // Get the electron sneutrino mass
+      const double msn = spec.safeget(Par::Pole_Mass,mass_snue);
+      // Get the chargino masses
+      const double m1 = spec.safeget(Par::Pole_Mass,id1,0);
+      const double m2 = spec.safeget(Par::Pole_Mass,id2,0);
+      std::pair&lt;double,double&gt; m1_uncerts(mssm.safeget(Par::Pole_Mass_1srd_high, id1, 0),
+                                          mssm.safeget(Par::Pole_Mass_1srd_low,  id1, 0));
+      std::pair&lt;double,double&gt; m2_uncerts(mssm.safeget(Par::Pole_Mass_1srd_high, id2, 0),
+                                          mssm.safeget(Par::Pole_Mass_1srd_low,  id2, 0));
+
+      // Just return zero if the final state is kinematically inaccessible
+      // *even* if both masses are 2simga lower than their central values
+      if (std::abs(m1)*(1.0-2.0*m1_uncerts.second) + std::abs(m2)*(1.0-2.0*m2_uncerts.second) &gt; sqrts)
+      {
+        result.central = 0.0;
+        result.upper = 0.0;
+        result.lower = 0.0;
+        return;
+      }
+
+      // Get the 2x2 chargino mixing matrices
+      MixMatrix charginomixV(2,std::vector&lt;double&gt;(2));
+      MixMatrix charginomixU(2,std::vector&lt;double&gt;(2));
+      for (int i=0; i&lt;2; i++) for (int j=0; j&lt;2; j++)
+      {
+        charginomixV[i][j] = mssm.safeget(Par::Pole_Mixing,&quot;~chi+&quot;,i+1,j+1);
+        charginomixU[i][j] = mssm.safeget(Par::Pole_Mixing,&quot;~chi-&quot;,i+1,j+1);
+      }
+
+      // Convert chargino mixing matrices to BFM convention
+      SLHA2BFM_VV(charginomixV);
+      SLHA2BFM_VV(charginomixU);
+
+      // Calculate the cross-section
+      result.central = xsec_chaichaj(id1, id2, sqrts, m1, m2, charginomixV, charginomixU,
+                                     msn, alpha, mZ, gammaZ, sinW2);
+
+      // Calculate the uncertainty on the cross-section due to final state masses varying by +/- 1 sigma
+      std::vector&lt;double&gt; xsecs;
+      xsecs.push_back(result.central);
+      xsecs.push_back(xsec_chaichaj(id1, id2, sqrts, m1*(1.+m1_uncerts.first), m2*(1.+m2_uncerts.first), charginomixV, charginomixU,
+                                     msn, alpha, mZ, gammaZ, sinW2));
+      xsecs.push_back(xsec_chaichaj(id1, id2, sqrts, m1*(1.+m1_uncerts.first), m2*(1.-m2_uncerts.second), charginomixV, charginomixU,
+                                     msn, alpha, mZ, gammaZ, sinW2));
+      xsecs.push_back(xsec_chaichaj(id1, id2, sqrts, m1*(1.-m1_uncerts.second), m2*(1.+m2_uncerts.first), charginomixV, charginomixU,
+                                     msn, alpha, mZ, gammaZ, sinW2));
+      xsecs.push_back(xsec_chaichaj(id1, id2, sqrts, m1*(1.-m1_uncerts.second), m2*(1.-m2_uncerts.second), charginomixV, charginomixU,
+                                     msn, alpha, mZ, gammaZ, sinW2));
+      result.upper = *std::max_element(xsecs.begin(), xsecs.end());
+      result.lower = *std::min_element(xsecs.begin(), xsecs.end());
+
+    }
+
+    double I1(double s, double m1, double m2, double mk, double ml)
+    {
+      double S = sqrt(s-pow2(m1+m2))*sqrt(s-pow2(m1-m2));
+      double m1sq = pow2(m1);
+      double m2sq = pow2(m2);
+      double mksq = pow2(mk);
+      double mlsq = pow2(ml);
+
+      double I1 = 0;
+      // Careful with degenerate masses!
+      if( fabs(mksq-mlsq) &lt; 0.1 ){
+        I1 = (m1sq+m2sq-2.*mksq-s)*log((m1sq+m2sq-2.*mksq-s+S)/(m1sq+m2sq-2.*mksq-s-S))-4*S*((m1sq-mksq)*(m2sq-mksq)+mksq*s)/(m1sq+m2sq-2.*mksq-s-S)/(m1sq+m2sq-2.*mksq-s+S)-S;
+      }
+      else{
+        I1 = (m1sq*(m2sq-mksq)+mksq*(mksq-m2sq+s))/(mksq-mlsq)*log((m1sq+m2sq-2.*mksq-s-S)/(m1sq+m2sq-2.*mksq-s+S));
+        I1 += (m1sq*(m2sq-mlsq)+mlsq*(mlsq-m2sq+s))/(mlsq-mksq)*log((m1sq+m2sq-2.*mlsq-s-S)/(m1sq+m2sq-2.*mlsq-s+S));
+        I1 -= S;
+      }
+      return I1;
+    }
+    double I2(double s, double m1, double m2, double mk, double ml)
+    {
+      double S = sqrt(s-pow2(m1+m2))*sqrt(s-pow2(m1-m2));
+      double m1sq = pow2(m1);
+      double m2sq = pow2(m2);
+      double mksq = pow2(mk);
+      double mlsq = pow2(ml);
+
+      double I2 = 0;
+      // Careful with degenerate masses!
+      if( fabs(mksq-mlsq) &lt; 0.1 )
+      {
+        I2 = S/(m1sq*(m2sq-mksq)+mksq*(-m2sq+mksq+s));
+      }
+      else
+      {
+        I2 = log((m1sq+m2sq-2.*mksq-(s-S))/(m1sq+m2sq-2.*mksq-(s+S)));
+        I2 += log((m1sq+m2sq-2.*mlsq-(s+S))/(m1sq+m2sq-2.*mlsq-(s-S)));
+        I2 *= 1./(mksq-mlsq);
+      }
+      return I2;
+    }
+    double I3(double s, double m1, double m2, double mk)
+    {
+      double S = sqrt(s-pow2(m1+m2))*sqrt(s-pow2(m1-m2));
+      double m1sq = pow2(m1);
+      double m2sq = pow2(m2);
+      double mksq = pow2(mk);
+
+      double I3 = 0;
+      I3 = log((m1sq+m2sq-2.*mksq-(s+S))/(m1sq+m2sq-2.*mksq-(s-S)));
+      I3 *= m1sq*(m2sq-mksq)+mksq*(-m2sq+mksq+s);
+      I3 += (m1sq+m2sq-2.*mksq-s)*S/2.;
+      return I3;
+    }
+
+
+    double xsec_sleislej(int pid1, int pid2, double sqrts, double m1, double m2, MixMatrix F,
+                         MixMatrix N, const double mN[4], double alpha, double mZ, double gZ,
+                         double sin2thetaW, bool CP_lock)
+    {
+
+      // Just return zero if the final state isn't kinematically accessible
+      if (m1+m2 &gt; sqrts) return 0.0;
+
+      // Slepton mixing
+      double cosphi = F[0][0];
+      double sinphi = F[0][1];
+
+      // Figure out what we are calculating
+      double tempphi;
+      bool bMixed = false;
+      bool bSelectron = false;
+      // ~e_L ~e_L^*
+      if((pid1 == 1000011 &amp;&amp; pid2 == -1000011) || (pid1 == -1000011 &amp;&amp; pid2 == 1000011)){
+        bSelectron = true;
+        if(m1 != m2 and CP_lock) ColliderBit_warning().raise(LOCAL_INFO, &quot;You are using a different mass for antiparticle!&quot;);
+      }
+      // ~e_L ~e_R^*
+      else if((pid1 == 1000011 &amp;&amp; pid2 == -2000011) || (pid1 == -2000011 &amp;&amp; pid2 == 1000011)){
+        bSelectron = true;
+        bMixed = true;
+      }
+      // ~e_R ~e_L^*
+      else if((pid1 == 2000011 &amp;&amp; pid2 == -1000011) || (pid1 == -1000011 &amp;&amp; pid2 == 2000011)){
+        bSelectron = true;
+        bMixed = true;
+      }
+      // ~e_R ~e_R^*
+      else if((pid1 == 2000011 &amp;&amp; pid2 == -2000011) || (pid1 == -2000011 &amp;&amp; pid2 == 2000011)){
+        bSelectron = true;
+        tempphi = cosphi; cosphi = sinphi; sinphi = tempphi;
+        if(m1 != m2 and CP_lock) ColliderBit_warning().raise(LOCAL_INFO, &quot;You are using a different mass for antiparticle!&quot;);
+      }
+      // ~mu_L ~mu_L^*
+      else if((pid1 == 1000013 &amp;&amp; pid2 == -1000013) || (pid1 == -1000013 &amp;&amp; pid2 == 1000013)){
+        if(m1 != m2 and CP_lock) ColliderBit_warning().raise(LOCAL_INFO, &quot;You are using a different mass for antiparticle!&quot;);
+      }
+      // ~mu_L ~mu_R^*
+      else if((pid1 == 1000013 &amp;&amp; pid2 == -2000013) || (pid1 == -2000013 &amp;&amp; pid2 == 1000013)){
+        bMixed = true;
+        ColliderBit_warning().raise(LOCAL_INFO, &quot;Will give zero cross section unless there is left-right smuon mixing!&quot;);
+      }
+      // ~mu_R ~mu_L^*
+      else if((pid1 == 2000013 &amp;&amp; pid2 == -1000013) || (pid1 == -1000013 &amp;&amp; pid2 == 2000013)){
+        bMixed = true;
+        ColliderBit_warning().raise(LOCAL_INFO, &quot;Will give zero cross section unless there is left-right smuon mixing!&quot;);
+      }
+      // ~mu_R ~mu_R^*
+      else if((pid1 == 2000013 &amp;&amp; pid2 == -2000013) || (pid1 == -2000013 &amp;&amp; pid2 == 2000013)){
+        tempphi = cosphi; cosphi = sinphi; sinphi = tempphi;
+        if(m1 != m2 and CP_lock) ColliderBit_warning().raise(LOCAL_INFO, &quot;You are using a different mass for antiparticle!&quot;);
+      }
+      // ~tau_1 ~tau_1^*
+      else if((pid1 == 1000015 &amp;&amp; pid2 == -1000015) || (pid1 == -1000015 &amp;&amp; pid2 == 1000015)){
+        if(m1 != m2 and CP_lock) ColliderBit_warning().raise(LOCAL_INFO, &quot;You are using a different mass for antiparticle!&quot;);
+      }
+      // ~tau_1 ~tau_2^*
+      else if((pid1 == 1000015 &amp;&amp; pid2 == -2000015) || (pid1 == -2000015 &amp;&amp; pid2 == 1000015)){
+        bMixed = true;
+      }
+      // ~tau_2 ~tau_1^*
+      else if((pid1 == 2000015 &amp;&amp; pid2 == -1000015) || (pid1 == -1000015 &amp;&amp; pid2 == 2000015)){
+        bMixed = true;
+      }
+      // ~tau_2 ~tau_2^*
+      else if((pid1 == 2000015 &amp;&amp; pid2 == -2000015) || (pid1 == -2000015 &amp;&amp; pid2 == 2000015)){
+        tempphi = cosphi; cosphi = sinphi; sinphi = tempphi;
+        if(m1 != m2 and CP_lock) ColliderBit_warning().raise(LOCAL_INFO, &quot;You are using a different mass for antiparticle!&quot;);
+      }
+      else
+      {
+        std::stringstream ss;
+        ss &lt;&lt; &quot;I don't know that process!&quot; &lt;&lt; endl
+           &lt;&lt; &quot;You asked me to calculate slepton cross section with final states&quot;
+           &lt;&lt; &quot;PID1 &quot; &lt;&lt; pid1 &lt;&lt; &quot; PID2 &quot; &lt;&lt; pid2;
+        ColliderBit_warning().raise(LOCAL_INFO, ss.str());
+        return -1;
+      }
+
+      // Couplings
+      double T3l = -0.5;
+      double Le = T3l+sin2thetaW;
+      double Re = sin2thetaW;
+      // Left-right mixing
+      double cos2phi = pow2(cosphi);
+      double sin2phi = pow2(sinphi);
+
+      double fL[4], fR[4];
+      for(int k = 0; k &lt; 4; k++){
+        fL[k] = -sqrt(2.) * (1./sqrt(1.-sin2thetaW)*(T3l+sin2thetaW)*N[k][1]-sqrt(sin2thetaW)*N[k][0]);
+        fR[k] = sqrt(2.) * sqrt(sin2thetaW) * (sqrt(sin2thetaW/(1.-sin2thetaW))*N[k][1]-N[k][0]);
+      }
+
+      // Kinematics
+      double s, S, DZ2, ReDZ;
+      s = pow2(sqrts);
+      S = sqrt(s-pow2(m1+m2))*sqrt(s-pow2(m1-m2));
+      DZ2 = 1./(pow2(s-pow2(mZ))+pow2(mZ*gZ)); // Breit-Wigner for Z
+      ReDZ = (s-pow2(mZ))*DZ2;
+
+      // Cross sections per diagram and interference terms
+      double sigma, sigma_Z, sigma_Z_mix, sigma_g, sigma_gZ, sigma_N, sigma_N_mix, sigma_gN, sigma_ZN, sigma_ZN_mix;
+      // gamma
+      sigma_g = 2.*pi*pow2(alpha)/pow(s,4) * pow(S,3)/6.;
+      // Z
+      sigma_Z = pi*pow2(alpha)/pow2(s)/pow2(sin2thetaW)/pow2(1.-sin2thetaW) *  DZ2 * pow(S,3)/6.;
+      sigma_Z *= (pow2(Le)+pow2(Re))*pow2(Le*cos2phi+Re*sin2phi);
+      sigma_Z_mix = sigma_Z/pow2(Le*cos2phi+Re*sin2phi)*pow2(Le-Re)*cos2phi*sin2phi;
+      // Interference
+      sigma_gZ = 2*pi*pow2(alpha)/pow(s,3)/sin2thetaW/(1.-sin2thetaW) * ReDZ;
+      sigma_gZ *= (Le+Re)*(Le*cos2phi+Re*sin2phi) * pow(S,3)/6.;
+      // Neutralino
+      // Loop over neutralinos
+      sigma_N = 0;
+      for(int k = 0; k &lt; 4; k++){
+        for(int l = 0; l &lt; 4; l++){
+          sigma_N += pow2(cos2phi)*I1(s,m1,m2,mN[k],mN[l])*pow2(fL[k]*fL[l]);
+          sigma_N += pow2(sin2phi)*I1(s,m1,m2,mN[k],mN[l])*pow2(fR[k]*fR[l]);
+          sigma_N += 2.*cos2phi*sin2phi*s*mN[k]*mN[l]*I2(s,m1,m2,mN[k],mN[l])*fL[k]*fL[l]*fR[k]*fR[l];
+        }
+      }
+      sigma_N *= pi*pow2(alpha)/4./pow2(sin2thetaW)/pow2(s);
+      sigma_N_mix = 0;
+      for(int k = 0; k &lt; 4; k++)
+      {
+        for(int l = 0; l &lt; 4; l++)
+        {
+          sigma_N_mix += cos2phi*sin2phi*I1(s,m1,m2,mN[k],mN[l])*pow2(fL[k]*fL[l]);
+          sigma_N_mix += cos2phi*sin2phi*I1(s,m1,m2,mN[k],mN[l])*pow2(fR[k]*fR[l]);
+          sigma_N_mix += (pow2(cos2phi)+pow2(sin2phi))*s*mN[k]*mN[l]*I2(s,m1,m2,mN[k],mN[l])*fL[k]*fL[l]*fR[k]*fR[l];
+        }
+      }
+      sigma_N_mix *= pi*pow2(alpha)/4./pow2(sin2thetaW)/pow2(s);
+      // Neutralino interference terms
+      sigma_gN = 0;
+      for(int k = 0; k &lt; 4; k++){
+        sigma_gN += I3(s,m1,m2,mN[k])*(cos2phi*pow2(fL[k])+sin2phi*pow2(fR[k]));
+      }
+      sigma_gN *= pi*pow2(alpha)/sin2thetaW/pow(s,3);
+      sigma_ZN = 0;
+      for(int k = 0; k &lt; 4; k++){
+        sigma_ZN += I3(s,m1,m2,mN[k])*(Le*cos2phi*pow2(fL[k])+Re*sin2phi*pow2(fR[k]));
+      }
+      sigma_ZN *= pi*pow2(alpha)/pow2(sin2thetaW)/(1.-sin2thetaW)/pow2(s)*(Le*cos2phi+Re*sin2phi)*ReDZ;
+      sigma_ZN_mix = 0;
+      for(int k = 0; k &lt; 4; k++){
+        sigma_ZN_mix += I3(s,m1,m2,mN[k])*(Le*pow2(fL[k])-Re*pow2(fR[k]));
+      }
+      sigma_ZN_mix *= pi*pow2(alpha)/pow2(sin2thetaW)/(1.-sin2thetaW)/pow2(s)*sin2phi*cos2phi*(Le-Re)*ReDZ;
+
+      // Total cross section
+      if( bMixed ) { sigma = sigma_Z_mix; }
+      else { sigma = sigma_g + sigma_Z + sigma_gZ; }
+      if( bSelectron &amp;&amp; !bMixed ) { sigma += sigma_N + sigma_gN + sigma_ZN; }
+      else if( bSelectron &amp;&amp; bMixed ) { sigma += sigma_N_mix + sigma_ZN_mix; }
+
+      // Fix units
+      sigma *= gev2pb;
+
+      // Return zero in corner cases where numerical roundoff has sent sigma negative.
+      return std::max(sigma, 0.0);
+
+    }
+
+    double xsec_neuineuj(int pid1, int pid2, double sqrts, double mi, double mj, MixMatrix N,
+                         const double mS[2], double tanb, double alpha, double mZ, double gZ, double sin2thetaW)
+    {
+
+      // Just return zero if the final state isn't kinematically accessible
+      if (std::abs(mi)+std::abs(mj) &gt; sqrts) return 0.0;
+
+      // Translate from PDG codes to neutralino indices (starting at zero)
+      int i, j;
+      if(pid1 == 1000022) i = 0;
+      else if(pid1 == 1000023) i = 1;
+      else if(pid1 == 1000025) i = 2;
+      else if(pid1 == 1000035) i = 3;
+      else
+      {
+        std::stringstream ss;
+        ss &lt;&lt; &quot;Invalid final state neutralino PDG code &quot; &lt;&lt; pid1;
+        ColliderBit_error().raise(LOCAL_INFO, ss.str());
+        return -1;
+      }
+      if(pid2 == 1000022) j = 0;
+      else if(pid2 == 1000023) j = 1;
+      else if(pid2 == 1000025) j = 2;
+      else if(pid2 == 1000035) j = 3;
+      else
+      {
+        std::stringstream ss;
+        ss &lt;&lt; &quot;Invalid final state neutralino PDG code &quot; &lt;&lt; pid2;
+        ColliderBit_error().raise(LOCAL_INFO, ss.str());
+        return -1;
+      }
+
+      // Set slepton masses
+      double msL = mS[0];
+      double msR = mS[1];
+
+      // Couplings
+      // e = g \sin\theta_W = g' \cos\theta_W
+      // alpha = e^2 / 4\pi
+      int deltaij = 0;
+      if (i == j) deltaij = 1;
+      double cos2b = (1.-pow2(tanb))/(1.+pow2(tanb));
+      double sin2b = 2.*tanb/(1.+pow2(tanb));
+      double T3l = -0.5;
+      double Le = T3l+sin2thetaW;
+      double Re = sin2thetaW;
+      double OL[4][4];
+      for(int k = 0; k &lt; 4; k++){
+        for(int l = 0; l &lt; 4; l++){
+          OL[k][l] = 0.5*(N[k][2]*N[l][2]-N[k][3]*N[l][3])*cos2b-0.5*(N[k][2]*N[l][3]+N[k][3]*N[l][2])*sin2b;
+        }
+      }
+      double fL[4], fR[4];
+      for(int k = 0; k &lt; 4; k++){
+        fL[k] = -sqrt(2.) * (Le*N[k][1]/sqrt(1.-sin2thetaW)+sqrt(sin2thetaW)*N[k][0]);
+        fR[k] = sqrt(2.) * sqrt(sin2thetaW) * (sqrt(sin2thetaW/(1.-sin2thetaW))*N[k][1]-N[k][0]);
+      }
+
+      // Kinematics
+      double s, q, Ei, Ej, DZ2, ReDZ;
+      s = pow2(sqrts);
+      DZ2 = 1./(pow2(s-pow2(mZ))+pow2(mZ*gZ)); // Breit-Wigner for Z
+      ReDZ = (s-pow2(mZ))*DZ2;
+      Ei = (s+pow2(mi)-pow2(mj))/2./sqrts;  // Energy of \tilde\chi^0_i in e+e- CoM system
+      q = sqrt(pow2(Ei)-pow2(mi));          // Momentum of \tilde\chi^0_i in e+e- CoM system
+      Ej = sqrt(pow2(q)+pow2(mj));
+
+      double dL, dR;
+      dL = 0.5/s * (s + 2*pow2(msL) - pow2(mi) - pow2(mj));
+      dR = 0.5/s * (s + 2*pow2(msR) - pow2(mi) - pow2(mj));
+
+      // Cross sections per diagram and interference terms
+      double sigma, sigma_Z, sigma_s, sigma_Zs;
+      // Z
+      sigma_Z = 4.*pi*pow2(alpha)/pow2(sin2thetaW)/pow2(1.-sin2thetaW) * DZ2 * q/sqrts * pow2(OL[i][j]) * (pow2(Le)+pow2(Re));
+      sigma_Z *=  Ei*Ej + 1/3.*pow2(q)-mi*mj;
+      // selectrons
+      sigma_s  = pow2(fL[i]*fL[j]) * ((Ei*Ej-s*dL+pow2(q))/(s*pow2(dL)-pow2(q)) + 2. + 0.5*sqrts/q*(1.-2.*dL-mi*mj/s/dL)*log(fabs((dL+q/sqrts)/(dL-q/sqrts))));
+      sigma_s += pow2(fR[i]*fR[j]) * ((Ei*Ej-s*dR+pow2(q))/(s*pow2(dR)-pow2(q)) + 2. + 0.5*sqrts/q*(1.-2.*dR-mi*mj/s/dR)*log(fabs((dR+q/sqrts)/(dR-q/sqrts))));
+      sigma_s *= pi*pow2(alpha)/pow2(sin2thetaW) * q/s/sqrts;
+      // Interference
+      sigma_Zs  =  Le*fL[i]*fL[j] * (1./q/sqrts*(Ei*Ej-s*dL*(1.-dL)-mi*mj)*log(fabs((dL+q/sqrts)/(dL-q/sqrts)))+2.*(1-dL));
+      sigma_Zs += -Re*fR[i]*fR[j] * (1./q/sqrts*(Ei*Ej-s*dR*(1.-dR)-mi*mj)*log(fabs((dR+q/sqrts)/(dR-q/sqrts)))+2.*(1-dR));
+      sigma_Zs *= -2.*pi*pow2(alpha)/pow2(sin2thetaW)/(1.-sin2thetaW) * q/sqrts * ReDZ * OL[i][j];
+
+      // Total cross section
+      sigma = 0.5*(sigma_Z + sigma_s + sigma_Zs)*(2.-deltaij);
+
+      // Fix units
+      sigma *= gev2pb;
+
+      // Return zero in corner cases where numerical roundoff has sent sigma negative.
+      return std::max(sigma, 0.0);
+    }
+
+
+    double xsec_chaichaj(int pid1, int pid2, double sqrts, double mi, double mj, MixMatrix V,
+                         MixMatrix U, double ms, double alpha, double mZ, double gZ, double sin2thetaW)
+    {
+      // Just return zero if the final state isn't kinematically accessible
+      if (std::abs(mi)+std::abs(mj) &gt; sqrts) return 0.0;
+
+      // Translate from PDG codes to chargino indices (silly paper convention that i=2 lighter than i=1!)
+      int i, j;
+      pid1 = abs(pid1); pid2 = abs(pid2);
+      if(pid1 == 1000024) i = 1;
+      else if(pid1 == 1000037) i = 0;
+      else
+      {
+        std::stringstream ss;
+        ss &lt;&lt; &quot;Invalid final state chargino PDG code &quot; &lt;&lt; pid1;
+        ColliderBit_error().raise(LOCAL_INFO, ss.str());
+        return -1;
+      }
+      if(pid2 == 1000024) j = 1;
+      else if(pid2 == 1000037) j = 0;
+      else
+      {
+        std::stringstream ss;
+        ss &lt;&lt; &quot;Invalid final state chargino PDG code &quot; &lt;&lt; pid2;
+        ColliderBit_error().raise(LOCAL_INFO, ss.str());
+        return -1;
+      }
+
+      // Couplings
+      int deltaij = 0;
+      if (i == j) deltaij = 1;
+      // e = g \sin\theta_W = g' \cos\theta_W
+      double T3l = -0.5;
+      double Le = T3l+sin2thetaW;
+      double Re = sin2thetaW;
+      double OL[2][2], OR[2][2];
+      for(int k = 0; k &lt; 2; k++){
+        for(int l = 0; l &lt; 2; l++){
+          OL[k][l] = -V[k][0]*V[l][0]-0.5*V[k][1]*V[l][1]+deltaij*sin2thetaW;
+          OR[k][l] = -U[k][0]*U[l][0]-0.5*U[k][1]*U[l][1]+deltaij*sin2thetaW;
+        }
+      }
+
+      // Kinematics
+      double s, q, Ei, Ej, DZ2, ReDZ;
+      s = pow2(sqrts);
+      Ei = (s+pow2(mi)-pow2(mj))/2./sqrts;  // Energy of \tilde\chi^+_i in e+e- CoM system
+      q = sqrt(pow2(Ei)-pow2(mi));          // Momentum of \tilde\chi^+_i in e+e- CoM system
+      Ej = sqrt(pow2(q)+pow2(mj));
+      DZ2 = 1./(pow2(s-pow2(mZ))+pow2(mZ*gZ)); // Breit-Wigner for Z
+      ReDZ = (s-pow2(mZ))*DZ2;
+
+      double aL, bL, h;
+      aL = 0.5/pow2(ms)*(2*pow2(ms)+s-pow2(mi)-pow2(mj));
+      bL = q*sqrts/pow2(ms);
+      h = 2.*q*sqrts-2.*pow2(q)*aL/bL+(Ei*Ej+pow2(q*aL/bL)-q*sqrts*aL/bL)*log(fabs((aL+bL)/(aL-bL)));
+
+      // Cross sections per diagram and interference terms
+      double sigma, sigma_g, sigma_Z, sigma_s, sigma_gZ, sigma_gs, sigma_Zs;
+      // Gamma
+      sigma_g = 8*pi*pow2(alpha) * q*sqrts/pow(s,3) * deltaij * (Ei*Ej+pow2(q)/3.+fabs(mi*mj));
+      // Z
+      sigma_Z = 2.*pi*pow2(alpha)/pow2(sin2thetaW)/pow2(1.-sin2thetaW) * q/sqrts * DZ2;
+      sigma_Z *= (pow2(OL[i][j])+pow2(OR[i][j]))*(pow2(Le)+pow2(Re))*(Ei*Ej+pow2(q)/3.)+2.*(pow2(Le)+pow2(Re))*OL[i][j]*OR[i][j]*mi*mj;
+      // Sneutrino
+      sigma_s = pi*pow2(alpha)/2./pow2(sin2thetaW)*pow2(V[i][0]*V[j][0])/pow(ms,4) * q/sqrts;
+      sigma_s *= (Ei*Ej+pow2(q)-q*sqrts*aL/bL)/(pow2(aL)-pow2(bL)) + 2.*pow2(q/bL) + 0.5/pow2(bL)*(q*sqrts-2.*pow2(q)*aL/bL)*log(fabs((aL+bL)/(aL-bL)));
+      // Interference
+      sigma_gZ = 4*pi*pow2(alpha)/(1.-sin2thetaW)/sin2thetaW * q*sqrts/pow2(s)*ReDZ*deltaij*(Le+Re);
+      sigma_gZ *= (OL[i][j]+OR[i][j])*(Ei*Ej+pow2(q)/3.+fabs(mi*mj));
+      sigma_gs = -pi*pow2(alpha)/sin2thetaW*pow2(V[i][0]) * deltaij/pow2(s);
+      sigma_gs *= h + fabs(mi*mj)*log(fabs((aL+bL)/(aL-bL)));
+      sigma_Zs = -pi*pow2(alpha)/pow2(sin2thetaW)/(1.-sin2thetaW)*V[i][0]*V[j][0] * ReDZ/s * Le;
+      sigma_Zs *= OL[i][j]*h + OR[i][j]*mi*mj*log(fabs((aL+bL)/(aL-bL)));
+
+      // Total cross section with interference terms
+      sigma = sigma_g + sigma_Z + sigma_s+ sigma_gZ + sigma_gs + sigma_Zs;
+
+      // Units
+      sigma *= gev2pb;
+
+      // Return zero in corner cases where numerical roundoff has sent sigma negative.
+      return std::max(sigma, 0.0);
+
+    }
+
+
+
+    void SLHA2BFM_NN(MixMatrix &amp;NN, double tanb, double sin2thetaW)
+    {
+      // Define conversion matrix
+      double sinthetaW = sqrt(sin2thetaW);
+      double costhetaW = sqrt(1.-sin2thetaW);
+      double tanv = 1./tanb;       // Needed because of convention difference
+      double sinv = sin(atan(tanv));
+      double cosv = cos(atan(tanv));
+      MixMatrix T(4,std::vector&lt;double&gt;(4));
+      T[0][0] = costhetaW; T[0][1] = -sinthetaW;
+      T[1][0] = sinthetaW; T[1][1] = costhetaW;
+      T[2][2] = sinv;   T[2][3] = cosv;
+      T[3][2] = -cosv;  T[3][3] = sinv;
+      // Multiply N_{BFM} = N_{SLHA} T
+      NN = multiply(NN,T);
+    }
+
+    void SLHA2BFM_VV(MixMatrix &amp;VV)
+    {
+      // Define conversion matrix (\sigma_3)
+      MixMatrix T(2,std::vector&lt;double&gt;(2));
+      T[0][0] = 1; T[0][1] =  0;
+      T[1][0] = 0; T[1][1] = -1;
+      // Multiply V_{BFM} = \sigma_3 V_{SLHA}
+      VV = multiply(T,VV);
+    }
+
+    void BFM2SLHA_NN(MixMatrix &amp;NN, double tanb, double sin2thetaW)
+    {
+      // Define conversion matrix
+      double sinthetaW = sqrt(sin2thetaW);
+      double costhetaW = sqrt(1.-sin2thetaW);
+      double tanv = 1./tanb;       // Needed because of convention difference
+      double sinv = sin(atan(tanv));
+      double cosv = cos(atan(tanv));
+      MixMatrix T(4,std::vector&lt;double&gt;(4));
+      T[0][0] = costhetaW; T[0][1] = -sinthetaW;
+      T[1][0] = sinthetaW; T[1][1] = costhetaW;
+      T[2][2] = sinv;   T[2][3] = cosv;
+      T[3][2] = -cosv;  T[3][3] = sinv;
+      // Multiply N_{SLHA} = N_{BFM} T^T
+      NN = multiply(NN,transpose(T));
+    }
+
+    void BFM2SLHA_VV(MixMatrix &amp;VV)
+    {
+      SLHA2BFM_VV(VV);
+    }
+
+    MixMatrix multiply(MixMatrix A, MixMatrix B)
+    {
+      int dim = A.size();
+      MixMatrix C(dim,std::vector&lt;double&gt;(dim));
+      for(int i = 0; i &lt; dim; i++){
+        for(int j = 0; j &lt; dim; j++){
+          for(int k = 0; k &lt; dim; k++){
+            C[i][j] += A[i][k] * B[k][j];
+          }
+        }
+      }
+      return C;
+    }
+
+    MixMatrix transpose(MixMatrix A)
+    {
+      double temp;
+      int dim = A.size();
+      for(int i = 0; i &lt; dim; i++){
+        for(int j = i+1; j &lt; dim; j++){
+          temp = A[i][j];
+          A[i][j] = A[j][i];
+          A[j][i] = temp;
+        }
+      }
+      return A;
+    }
+
+    void print(MixMatrix A)
+    {
+      int dim = A.size();
+      cout &lt;&lt; &quot;Matrix dimension: &quot; &lt;&lt; dim &lt;&lt; endl;
+      for(int i = 0; i &lt; dim; i++){
+        for(int j = 0; j &lt; dim; j++){
+          cout &lt;&lt; A[i][j] &lt;&lt; &quot; &quot;;
+          if(j == dim-1) cout &lt;&lt; endl;
+        }
+      }
+    }
+
+
+  }
+}
+</code></pre><hr><p>Updated on 2022-07-20 at 17:18:46 +0000</p><div class=edit-page><a href=https://github.com/RC1242RC/gambit_gh_pages/blob/master/content/en/documentation/code/Files/lep__mssm__xsecs_8cpp.md><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2"><path d="M17 3a2.828 2.828.0 114 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></svg>Edit this page on GitHub</a></div></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a class=text-muted href=https://www.netlify.com/>Netlify</a>, <a class=text-muted href=https://gohugo.io/>Hugo</a>, and <a class=text-muted href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/main_development/license/>License</a></li></ul></div></div></div></footer><script src=/main_development/js/bootstrap.min.54bf0932b8a36d0e152b1635b099a6ef1394d35327e2437550a075c9c8ed1bd8aed5847c21b36fc02ed24014c031d9ca24017b0c78b1639d7e2fa8329898b842.js integrity="sha512-VL8JMrijbQ4VKxY1sJmm7xOU01Mn4kN1UKB1ycjtG9iu1YR8IbNvwC7SQBTAMdnKJAF7DHixY51+L6gymJi4Qg==" crossorigin=anonymous defer></script>
+<script src=/main_development/js/highlight.min.5b48bc253dc75aeea5fb366ecf700f4925e2b6eb1a1466f2124b722d68148d67bc0a9365d2b8ad9c585161b46372d23b08509a16f1fd518542b894756d4752d0.js integrity="sha512-W0i8JT3HWu6l+zZuz3APSSXitusaFGbyEktyLWgUjWe8CpNl0ritnFhRYbRjctI7CFCaFvH9UYVCuJR1bUdS0A==" crossorigin=anonymous defer></script>
+<script src=/main_development/main.min.40265e9a032aeba5eaf67baac3cbbc22667a7533215d326eeb3e9f4d5e4be40f9ff4dcd22949db73ae527ca26a19d7998091a8973c82af760b2c0daa335190ed.js integrity="sha512-QCZemgMq66Xq9nuqw8u8ImZ6dTMhXTJu6z6fTV5L5A+f9NzSKUnbc65SfKJqGdeZgJGolzyCr3YLLA2qM1GQ7Q==" crossorigin=anonymous defer></script>
+<script src=https://rc1242rc.github.io/main_development/index.min.2e958d3be0c5b27cae804290be7a3d5ff0b6d3ca87ab76eeeeb88dbe22b3f251bcc80b638457f7977802ccdc9ff51bd15b8e424e00a8ab3a22c4c1ab6824d4ad.js integrity="sha512-LpWNO+DFsnyugEKQvno9X/C208qHq3bu7riNviKz8lG8yAtjhFf3l3gCzNyf9RvRW45CTgCoqzoixMGraCTUrQ==" crossorigin=anonymous defer></script></body></html>
