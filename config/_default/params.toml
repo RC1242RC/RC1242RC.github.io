@@ -1,7 +1,7 @@
 ## Documentation
-docsVersion = "MainDevelopment"
+docsVersion = "TestBit"
 versionsList = ["MainDevelopment", "TestBit"]
-versionURL = "https://rc1242rc.github.io/maindevelopment"
+versionURL = "https://rc1242rc.github.io/testbit"
 persistentVersionURL = "https://rc1242rc.github.io/maindevelopment"
 
 ## Homepage

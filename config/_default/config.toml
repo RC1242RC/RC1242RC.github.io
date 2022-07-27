@@ -1,4 +1,4 @@
-baseurl = "https://rc1242rc.github.io/maindevelopment"
+baseurl = "https://rc1242rc.github.io/testbit"
 canonifyURLs = true
 enableInlineShortcodes = true
 disableAliases = true
