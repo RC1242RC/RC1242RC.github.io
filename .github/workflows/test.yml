@@ -16,7 +16,7 @@ jobs:
     steps:
       - name: Set the value
         run: |
-          echo "action_state=yellow" >> $GITHUB_ENV
+          echo "action_state=${{ inputs.test }}" >> $GITHUB_ENV
       - name: Use the value
         run: |
           echo "${{ env.action_state }}"
