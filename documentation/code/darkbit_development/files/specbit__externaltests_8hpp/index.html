@@ -1,0 +1,1332 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="ie=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><link rel=preload as=font href=https://rc1242rc.github.io/fonts/vendor/jost/jost-v4-latin-regular.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://rc1242rc.github.io/fonts/vendor/jost/jost-v4-latin-500.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://rc1242rc.github.io/fonts/vendor/jost/jost-v4-latin-700.woff2 type=font/woff2 crossorigin><script>(()=>{var e=localStorage.getItem("theme");e==="dark"&&document.documentElement.setAttribute("data-dark-mode","")})()</script><link rel=stylesheet href=https://rc1242rc.github.io/main.1fa2debdf0a1b20e7268d11906902449af896197928a5bdae9dca95b629cdd73746db3d8c6afacb7320d9deb149a318c764669d08a1ddfd34a657ab2aeab866a.css integrity="sha512-H6LevfChsg5yaNEZBpAkSa+JYZeSilva6dypW2Kc3XN0bbPYxq+stzINnesUmjGMdkZp0Iod39NKZXqyrquGag==" crossorigin=anonymous><noscript><style>img.lazyload{display:none}</style></noscript><meta name=robots content="index, follow"><meta name=googlebot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><meta name=bingbot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><title>file SpecBit/SpecBit_externaltests.hpp - GAMBIT</title><meta name=description content="[No description available]"><link rel=canonical href=https://rc1242rc.github.io/documentation/code/darkbit_development/files/specbit__externaltests_8hpp/><meta property="og:locale" content="en_US"><meta property="og:type" content="article"><meta property="og:title" content="file SpecBit/SpecBit_externaltests.hpp"><meta property="og:description" content="[No description available]"><meta property="og:url" content="https://rc1242rc.github.io/documentation/code/darkbit_development/files/specbit__externaltests_8hpp/"><meta property="og:site_name" content="GAMBIT"><meta property="og:image" content="https://rc1242rc.github.io/gambit_logo.png"><meta property="og:image:alt" content="GAMBIT"><meta name=twitter:card content="summary_large_image"><meta name=twitter:site content><meta name=twitter:creator content><meta name=twitter:title content="file SpecBit/SpecBit_externaltests.hpp"><meta name=twitter:description content="[No description available]"><meta name=twitter:image content="https://rc1242rc.github.io/gambit_logo.png"><meta name=twitter:image:alt content="file SpecBit/SpecBit_externaltests.hpp"><script type=application/ld+json>{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://rc1242rc.github.io/#/schema/organization/1","name":"Doks","url":"https://rc1242rc.github.io/","sameAs":["https://github.com/GambitBSM"],"logo":{"@type":"ImageObject","@id":"https://rc1242rc.github.io/#/schema/image/1","url":"https://rc1242rc.github.io/logo-doks.png","width":450,"height":416,"caption":"Doks"},"image":{"@id":"https://rc1242rc.github.io/#/schema/image/1"}},{"@type":"WebSite","@id":"https://rc1242rc.github.io/#/schema/website/1","url":"https://rc1242rc.github.io/","name":"GAMBIT","description":"Documentation for the Global And Modular BSM Inference Tool","publisher":{"@id":"https://rc1242rc.github.io/#/schema/organization/1"}},{"@type":"WebPage","@id":"https://rc1242rc.github.io/documentation/code/darkbit_development/files/specbit__externaltests_8hpp/","url":"https://rc1242rc.github.io/documentation/code/darkbit_development/files/specbit__externaltests_8hpp/","name":"file SpecBit\/SpecBit_externaltests.hpp","description":"[No description available]","isPartOf":{"@id":"https://rc1242rc.github.io/#/schema/website/1"},"about":{"@id":"https://rc1242rc.github.io/#/schema/organization/1"},"datePublished":"0001-01-01T00:00:00CET","dateModified":"0001-01-01T00:00:00CET","breadcrumb":{"@id":"https://rc1242rc.github.io/documentation/code/darkbit_development/files/specbit__externaltests_8hpp/#/schema/breadcrumb/1"},"primaryImageOfPage":{"@id":"https://rc1242rc.github.io/documentation/code/darkbit_development/files/specbit__externaltests_8hpp/#/schema/image/2"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://rc1242rc.github.io/documentation/code/darkbit_development/files/specbit__externaltests_8hpp/"]}]},{"@type":"BreadcrumbList","@id":"https://rc1242rc.github.io/documentation/code/darkbit_development/files/specbit__externaltests_8hpp/#/schema/breadcrumb/1","name":"Breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/","url":"https://rc1242rc.github.io/","name":"Home"}},{"@type":"ListItem","position":2,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/documentation/","url":"https://rc1242rc.github.io/documentation/","name":"Documentation"}},{"@type":"ListItem","position":3,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/documentation/code/","url":"https://rc1242rc.github.io/documentation/code/","name":"Code"}},{"@type":"ListItem","position":4,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/documentation/code/darkbit_development/","url":"https://rc1242rc.github.io/documentation/code/darkbit_development/","name":"Darkbit Development"}},{"@type":"ListItem","position":5,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/documentation/code/darkbit_development/files/","url":"https://rc1242rc.github.io/documentation/code/darkbit_development/files/","name":"Files"}},{"@type":"ListItem","position":6,"item":{"@id":"https://rc1242rc.github.io/documentation/code/darkbit_development/files/specbit__externaltests_8hpp/"}}]},{"@context":"https://schema.org","@graph":[{"@type":"ImageObject","@id":"https://rc1242rc.github.io/documentation/code/darkbit_development/files/specbit__externaltests_8hpp/#/schema/image/2","url":"https://rc1242rc.github.io/gambit_logo.png","contentUrl":"https://rc1242rc.github.io/gambit_logo.png","caption":"file SpecBit\/SpecBit_externaltests.hpp"}]}]}</script><meta name=theme-color content="#fff"><link rel=icon href=https://rc1242rc.github.io/favicon.ico sizes=any><link rel=icon type=image/svg+xml href=https://rc1242rc.github.io/favicon.svg><link rel=apple-touch-icon sizes=180x180 href=https://rc1242rc.github.io/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=https://rc1242rc.github.io/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=https://rc1242rc.github.io/favicon-16x16.png><link rel=manifest crossorigin=use-credentials href=https://rc1242rc.github.io/site.webmanifest></head><body class="documentation single light"><div class=sticky-top><div class=header-bar></div><header class="navbar navbar-expand-md navbar-light doks-navbar"><nav class="container-xxl flex-wrap flex-md-nowrap" aria-label="Main navigation"><a class="navbar-brand p-0 me-auto" href=https://rc1242rc.github.io/ aria-label=GAMBIT><img class=logo-light src=https://rc1242rc.github.io//images/gambit_logo.png width=50px>
+<img class="logo-dark d-none" src=https://rc1242rc.github.io//images/gambit_logo.png width=50px>
+GAMBIT</a>
+<button class="btn btn-menu order-2 d-block d-lg-none" type=button data-bs-toggle=offcanvas data-bs-target=#offcanvasDoks aria-controls=offcanvasDoks aria-label="Open main menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button><div class="offcanvas offcanvas-end border-0 py-lg-1" tabindex=-1 id=offcanvasDoks data-bs-backdrop=true aria-labelledby=offcanvasDoksLabel><div class="header-bar d-lg-none"></div><div class="offcanvas-header d-lg-none"><h2 class="h5 offcanvas-title ps-2" id=offcanvasDoksLabel><a class=text-dark href=/>GAMBIT</a></h2><button type=button class="btn-close text-reset me-2" data-bs-dismiss=offcanvas aria-label="Close main menu"></button></div><div class="offcanvas-body p-4 p-lg-0"><ul class="nav flex-column flex-lg-row align-items-lg-center mt-2 mt-lg-0 ms-lg-2 me-lg-auto"><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Documentation
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=/documentation/installation/introduction/>Installation</a></li><li><a class=dropdown-item href=/documentation/examples/colliderbit>Examples</a></li><li><a class=dropdown-item href=/documentation/help/faqs/>Help</a></li><li><a class=dropdown-item href=/documentation/code/index_classes>Code Reference</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Community
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=/community/publications/>Publications</a></li><li><a class=dropdown-item href=/community/talks/>Talks</a></li><li><a class=dropdown-item href=/community/members/>Members</a></li><li><a class=dropdown-item href=/community/code_of_conduct/>Code of Conduct</a></li><li><a class=dropdown-item href=/community/contact/>Contact</a></li></ul></li></ul><hr class="text-black-50 my-4 d-lg-none"><form class="doks-search position-relative flex-grow-1 ms-lg-auto me-lg-2"><input id=search class="form-control is-search" type=search placeholder="Search site..." aria-label="Search site..." autocomplete=off><div id=suggestions class="shadow bg-white rounded d-none"></div></form><hr class="text-black-50 my-4 d-lg-none"><ul class="nav flex-column flex-lg-row"><li class=nav-item><a class="nav-link social-link" href=https://github.com/GambitBSM><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37.0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44.0 0020 4.77 5.07 5.07.0 0019.91 1S18.73.65 16 2.48a13.38 13.38.0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07.0 005 4.77 5.44 5.44.0 003.5 8.55c0 5.42 3.3 6.61 6.44 7A3.37 3.37.0 009 18.13V22"/></svg><small class="ms-2 d-lg-none">GitHub</small></a></li></ul><hr class="text-black-50 my-4 d-lg-none"><div class=dropdown><button class="btn btn-doks-light dropdown-toggle" id=doks-versions data-bs-toggle=dropdown aria-expanded=false data-bs-display=static aria-label="Toggle version menu">
+<span class=d-none>Doks</span>
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></button><ul class="dropdown-menu dropdown-menu-lg-end me-lg-2 shadow rounded border-0" aria-labelledby=doks-versions></ul></div></div></div></nav></header></div><div class="wrap container-xxl" role=document><div class=content><div class="row flex-xl-nowrap"><div class="col-lg-5 col-xl-4 docs-sidebar"><nav class=docs-links aria-label="Main navigation"><ul class="list-unstyled collapsible-sidebar"><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-installation aria-expanded=false>
+Installation</button><div class=collapse id=section-installation><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/installation/introduction/>Getting Started</a></li><li><a class="docs-link rounded" href=/documentation/installation/docker_usage/>Docker Usage</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_linux/>Installation for Linux</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_windows/>Installation for Windows</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_macos/>Installation for macOS</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-examples aria-expanded=false>
+Examples</button><div class=collapse id=section-examples><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/examples/colliderbit/>ColliderBit</a></li><li><a class="docs-link rounded" href=/documentation/examples/anotherbit/>AnotherBit</a></li><li><a class="docs-link rounded" href=/documentation/examples/anotherbit2/>AnotherBit2</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-help aria-expanded=false>
+Help</button><div class=collapse id=section-help><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/help/faqs/>FAQs</a></li><li><a class="docs-link rounded" href=/documentation/help/compiler_matrix/>Compiler Matrix</a></li><li><a class="docs-link rounded" href=/documentation/help/known_issues/>Known Issues</a></li><li><a class="docs-link rounded" href=/documentation/help/configuration_examples/>Configuration Examples</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-code aria-expanded=false>
+Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/code/darkbit_development/index_classes/>Classes</a></li><li><a class="docs-link rounded" href=/documentation/code/darkbit_development/index_files/>Files</a></li><li><a class="docs-link rounded" href=/documentation/code/darkbit_development/index_pages/>Pages</a></li><li><a class="docs-link rounded" href=/documentation/code/darkbit_development/index_namespaces/>Namespaces</a></li></ul></div></li></ul></nav></div><nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation"><div class=d-xl-none><button class="btn btn-outline-primary btn-sm doks-toc-toggle collapsed" type=button data-bs-toggle=collapse data-bs-target=#onThisPage aria-controls=doks-docs-nav aria-expanded=false aria-label="Toggle On this page navigation">
+<span>On this page</span>
+<span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg></span></button><div class=collapse id=onThisPage><div class="card card-body mt-3 py-1"><div class=page-links><nav id=TableOfContents><ul><li><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#defines>Defines</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#macros-documentation>Macros Documentation</a><ul><li><a href=#define-output>define OUTPUT</a></li><li><a href=#define-tagerr>define TAGerr</a></li><li><a href=#define-tagfatal>define TAGfatal</a></li><li><a href=#define-tageom>define TAGeom</a></li></ul></li><li><a href=#source-code>Source code</a></li></ul></li></ul></nav></div></div></div></div><div class="page-links d-none d-xl-block"><h3>On this page</h3><nav id=TableOfContents><ul><li><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#defines>Defines</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#macros-documentation>Macros Documentation</a><ul><li><a href=#define-output>define OUTPUT</a></li><li><a href=#define-tagerr>define TAGerr</a></li><li><a href=#define-tagfatal>define TAGfatal</a></li><li><a href=#define-tageom>define TAGeom</a></li></ul></li><li><a href=#source-code>Source code</a></li></ul></li></ul></nav></div></nav><main class="docs-content col-lg-11 col-xl-9 mx-xl-auto"><h1>file SpecBit/SpecBit_externaltests.hpp</h1><p class=lead></p><p>[No description available] <a href=#detailed-description>More&mldr;</a></p><h2 id=namespaces>Namespaces <a href=#namespaces class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th>Name</th></tr></thead><tbody><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit/>Gambit</a></strong><br>TODO: see if we can use this one:</td></tr><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit_1_1specbit/>Gambit::SpecBit</a></strong></td></tr></tbody></table><h2 id=defines>Defines <a href=#defines class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th></th><th>Name</th></tr></thead><tbody><tr><td></td><td><strong><a href=/documentation/code/files/specbit__externaltests_8hpp/#define-output>OUTPUT</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/files/specbit__externaltests_8hpp/#define-tagerr>TAGerr</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/files/specbit__externaltests_8hpp/#define-tagfatal>TAGfatal</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/files/specbit__externaltests_8hpp/#define-tageom>TAGeom</a></strong></td></tr></tbody></table><h2 id=detailed-description>Detailed Description <a href=#detailed-description class=anchor aria-hidden=true>#</a></h2><p><strong>Author</strong>: Ben Farmer (<a href=mailto:benjamin.farmer@fysik.su.se>benjamin.farmer@fysik.su.se</a>)</p><p><strong>Date</strong>: 2014 Dec, 2015 Jan - Mar</p><p>Test functions for Spectrum object</p><p>These functions test various aspects of the Spectrum class and related classes. They are not dependent on any other parts of <a href=/documentation/code/namespaces/namespacegambit/>Gambit</a>, so that Spectrum object test code can be compiled and run seperately from <a href=/documentation/code/namespaces/namespacegambit/>Gambit</a>, but but also be run from inside <a href=/documentation/code/namespaces/namespacegambit/>Gambit</a>.</p><hr><p>Authors (add name and date if you modify):</p><hr><h2 id=macros-documentation>Macros Documentation <a href=#macros-documentation class=anchor aria-hidden=true>#</a></h2><h3 id=define-output>define OUTPUT <a href=#define-output class=anchor aria-hidden=true>#</a></h3><pre><code>#define OUTPUT std::cerr
+</code></pre><h3 id=define-tagerr>define TAGerr <a href=#define-tagerr class=anchor aria-hidden=true>#</a></h3><pre><code>#define TAGerr &quot;&quot;
+</code></pre><h3 id=define-tagfatal>define TAGfatal <a href=#define-tagfatal class=anchor aria-hidden=true>#</a></h3><pre><code>#define TAGfatal &quot;&quot;
+</code></pre><h3 id=define-tageom>define TAGeom <a href=#define-tageom class=anchor aria-hidden=true>#</a></h3><pre><code>#define TAGeom &quot;&quot;
+</code></pre><h2 id=source-code>Source code <a href=#source-code class=anchor aria-hidden=true>#</a></h2><pre><code>//   GAMBIT: Global and Modular BSM Inference Tool
+//   *********************************************
+
+#ifndef __SpecBit_tests_hpp__
+#define __SpecBit_tests_hpp__
+
+#include &quot;gambit/SpecBit/MSSMSpec.hpp&quot;
+#include &quot;gambit/SpecBit/model_files_and_boxes.hpp&quot;
+
+// Flexible SUSY stuff (should not be needed by the rest of gambit)
+#include &quot;flexiblesusy/src/ew_input.hpp&quot;
+#include &quot;flexiblesusy/src/numerics2.hpp&quot;
+#include &quot;flexiblesusy/src/wrappers.hpp&quot;
+
+// Switch test output depending on where this is being compiled
+#ifdef IN_SPECBIT
+  #define OUTPUT logger()
+  #define TAGerr LogTags::err
+  #define TAGfatal LogTags::fatal
+  #define TAGeom EOM
+#else
+  #define OUTPUT std::cerr
+  #define TAGerr &quot;&quot;
+  #define TAGfatal &quot;&quot;
+  #define TAGeom &quot;&quot;
+#endif
+
+
+
+namespace Gambit
+{
+
+   namespace SpecBit
+   {
+
+      bool print_error(bool pass, std::string get_type, std::string data,
+                       double sting_get_out, double data_member,
+                       int i = -1, int j = -1)
+      {
+         OUTPUT &lt;&lt; &quot; returning fail on test for: &quot; &lt;&lt; std::endl;
+         if (i &gt; -1) OUTPUT &lt;&lt; &quot;with first index = &quot; &lt;&lt; i &lt;&lt; std::endl;
+         if (j &gt; -1) OUTPUT &lt;&lt; &quot;with second index = &quot; &lt;&lt; j &lt;&lt; std::endl;
+         OUTPUT &lt;&lt; get_type &lt;&lt; &quot; with &quot; &lt;&lt; data &lt;&lt; &quot; string arg.&quot;  &lt;&lt;std::endl;
+         OUTPUT &lt;&lt; &quot;string getter gives = &quot;
+                &lt;&lt;sting_get_out  &lt;&lt; std::endl;
+         OUTPUT &lt;&lt; &quot;data member is = &quot;
+                &lt;&lt; data_member  &lt;&lt; std::endl;
+         OUTPUT &lt;&lt; TAGerr &lt;&lt; TAGfatal &lt;&lt; TAGeom;
+         return pass;
+
+      }
+
+      void print_error(std::string get_type, std::string name,
+                       double sting_get_out, double data_member,
+                       int i = -1, int j = -1)
+      {
+         OUTPUT &lt;&lt; &quot; returning fail on test for: &quot; &lt;&lt; std::endl;
+         if (i &gt; -1) OUTPUT &lt;&lt; &quot;with first index = &quot; &lt;&lt; i &lt;&lt; std::endl;
+         if (j &gt; -1) OUTPUT &lt;&lt; &quot;with second index = &quot; &lt;&lt; j &lt;&lt; std::endl;
+         OUTPUT &lt;&lt; get_type &lt;&lt; &quot; with &quot; &lt;&lt; name &lt;&lt; &quot; string arg.&quot;
+                &lt;&lt;std::endl;
+         OUTPUT &lt;&lt; &quot;string getter gives = &quot; &lt;&lt;sting_get_out  &lt;&lt; std::endl;
+         OUTPUT &lt;&lt; &quot;data member is = &quot;
+                &lt;&lt; data_member  &lt;&lt; std::endl;
+         OUTPUT &lt;&lt; TAGerr &lt;&lt; TAGfatal &lt;&lt; TAGeom;
+      }
+
+      bool test_getters(std::string get_type,
+                        std::string name, double getter_output,
+                        double data_member, int i = -1, int j = -1)
+      {
+         bool pass = flexiblesusy::is_equal(getter_output,data_member);
+         // if(pass == false) return pass;
+         if(pass == false)
+            print_error(get_type, name, getter_output, data_member,i,j);
+         return pass;
+      }
+
+
+      // These are not known to Gambit
+
+      template &lt;class M&gt;
+      bool TestMssmParMass2_0(SubSpectrum * spec, M FSmssm,
+                              bool immediate_exit = true)
+      {
+         bool pass = false;
+         //do all in loop
+
+         // Ben: No initializer lists allowed; changing all these.
+         //std::set&lt;std::pair&lt;std::string,double&gt;&gt; name_value = {
+         //   {&quot;BMu&quot;, FSmssm.get_BMu()},
+         //   {&quot;mHd2&quot;, FSmssm.get_mHd2()},
+         //   {&quot;mHu2&quot;, FSmssm.get_mHu2()}
+         //};
+
+         std::set&lt;std::pair&lt;std::string,double&gt;&gt; name_value;
+         name_value.insert(std::make_pair( &quot;BMu&quot; , FSmssm.get_BMu()  ));
+         name_value.insert(std::make_pair( &quot;mHd2&quot;, FSmssm.get_mHd2() ));
+         name_value.insert(std::make_pair( &quot;mHu2&quot;, FSmssm.get_mHu2() ));
+
+         std::set&lt;std::pair&lt;std::string, double&gt;&gt;::iterator iter;
+         for(iter=name_value.begin(); iter != name_value.end(); ++iter)
+            {
+               pass = test_getters(&quot;get_mass2_parameter&quot;, iter-&gt;first,
+                                   spec-&gt;
+                                   get_mass2_parameter(iter-&gt;first),
+                                   iter-&gt;second);
+               if(immediate_exit == true &amp;&amp; pass == false) return pass;
+            }
+
+         return pass;
+      }
+
+
+      template &lt;class MI&gt;
+      bool TestMssmParMass2_0(MSSMSpec&lt;MI&gt;&amp; mssm, typename MI::Model&amp; FSmssm,
+                              bool immediate_exit = true)
+      {
+         bool pass = false;
+         //do all in loop
+         std::set&lt;std::pair&lt;std::string,double&gt;&gt; name_value;
+         name_value.insert(std::make_pair( &quot;BMu&quot; , FSmssm.get_BMu()  ));
+         name_value.insert(std::make_pair( &quot;mHd2&quot;, FSmssm.get_mHd2() ));
+         name_value.insert(std::make_pair( &quot;mHu2&quot;, FSmssm.get_mHu2() ));
+
+         std::set&lt;std::pair&lt;std::string, double&gt;&gt;::iterator iter;
+         for(iter=name_value.begin(); iter != name_value.end(); ++iter)
+            {
+               pass = test_getters(&quot;get_mass2_parameter&quot;, iter-&gt;first,
+                                   mssm.
+                                   get_mass2_parameter(iter-&gt;first),
+                                   iter-&gt;second);
+               if(immediate_exit == true &amp;&amp; pass == false) return pass;
+            }
+
+         return pass;
+      }
+
+
+
+
+    template &lt;class M&gt;
+    bool TestMssmParMass2_2(SubSpectrum * spec, M FSmssm,
+                            bool immediate_exit=true)
+    {
+       bool pass = false;
+
+       for(int i=1; i&lt;=3; i++){
+          for(int j=1; j&lt;=3; j++){
+             //Would be smarter to take these out of for loop and
+             // use function pointers, but I won't.
+             std::set&lt;std::pair&lt;std::string,double&gt;&gt; name_value;
+             name_value.insert(std::make_pair( &quot;mq2&quot;, FSmssm.get_mq2(i-1,j-1) ));
+             name_value.insert(std::make_pair( &quot;mu2&quot;, FSmssm.get_mu2(i-1,j-1) ));
+             name_value.insert(std::make_pair( &quot;md2&quot;, FSmssm.get_md2(i-1,j-1) ));
+             name_value.insert(std::make_pair( &quot;ml2&quot;, FSmssm.get_ml2(i-1,j-1) ));
+             name_value.insert(std::make_pair( &quot;me2&quot;, FSmssm.get_me2(i-1,j-1) ));
+
+             std::set&lt;std::pair&lt;std::string, double&gt;&gt;::iterator iter;
+             for(iter=name_value.begin(); iter != name_value.end(); ++iter)
+                {
+                   pass = test_getters(&quot;get_mass2_parameter&quot;, iter-&gt;first,
+                                       spec-&gt;
+                                       get_mass2_parameter(iter-&gt;first,i,j),
+                                       iter-&gt;second, i, j);
+                   if(immediate_exit == true &amp;&amp; pass == false) return pass;
+                }
+          }
+       }
+       return pass;
+    }
+
+
+      template &lt;class MI&gt;
+    bool TestMssmParMass2_2(MSSMSpec&lt;MI&gt;&amp; mssm, typename MI::Model&amp; FSmssm,
+                            bool immediate_exit=true)
+    {
+       bool pass = false;
+
+       for(int i=1; i&lt;=3; i++){
+          for(int j=1; j&lt;=3; j++){
+             //Would be smarter to take these out of for loop and
+             // use function pointers, but I won't.
+             std::set&lt;std::pair&lt;std::string,double&gt;&gt; name_value;
+             name_value.insert(std::make_pair( &quot;mq2&quot;, FSmssm.get_mq2(i-1,j-1) ));
+             name_value.insert(std::make_pair( &quot;mu2&quot;, FSmssm.get_mu2(i-1,j-1) ));
+             name_value.insert(std::make_pair( &quot;md2&quot;, FSmssm.get_md2(i-1,j-1) ));
+             name_value.insert(std::make_pair( &quot;ml2&quot;, FSmssm.get_ml2(i-1,j-1) ));
+             name_value.insert(std::make_pair( &quot;me2&quot;, FSmssm.get_me2(i-1,j-1) ));
+
+             std::set&lt;std::pair&lt;std::string, double&gt;&gt;::iterator iter;
+             for(iter=name_value.begin(); iter != name_value.end(); ++iter)
+                {
+                   pass = test_getters(&quot;get_mass2_parameter&quot;, iter-&gt;first,
+                                       mssm.
+                                       get_mass2_parameter(iter-&gt;first,i,j),
+                                       iter-&gt;second, i, j);
+                   if(immediate_exit == true &amp;&amp; pass == false) return pass;
+                }
+          }
+       }
+       return pass;
+    }
+
+
+      template &lt;class M&gt;
+      bool TestMssmParMass1_0(SubSpectrum * spec, M FSmssm,
+                              bool immediate_exit=true)
+      {
+         bool pass = false;
+
+         std::set&lt;std::pair&lt;std::string,double&gt;&gt; name_value;
+         name_value.insert(std::make_pair( &quot;M1&quot;, FSmssm.get_MassB()  ));
+         name_value.insert(std::make_pair( &quot;M2&quot;, FSmssm.get_MassWB() ));
+         name_value.insert(std::make_pair( &quot;M3&quot;, FSmssm.get_MassG()  ));
+         name_value.insert(std::make_pair( &quot;vu&quot;, FSmssm.get_vu()     ));
+         name_value.insert(std::make_pair( &quot;vd&quot;, FSmssm.get_vd()     ));
+
+         std::set&lt;std::pair&lt;std::string, double&gt;&gt;::iterator iter;
+         for(iter=name_value.begin(); iter != name_value.end(); ++iter)
+            {
+               pass = test_getters(&quot;get_mass_parameter&quot;, iter-&gt;first,
+                                   spec-&gt;
+                                   get_mass_parameter(iter-&gt;first),
+                                   iter-&gt;second);
+               if(immediate_exit == true &amp;&amp; pass == false) return pass;
+            }
+
+         return pass;
+      }
+
+      template &lt;class MI&gt;
+      bool TestMssmParMass1_0(MSSMSpec&lt;MI&gt;&amp; mssm, typename MI::Model&amp; FSmssm,
+                              bool immediate_exit=true)
+      {
+         bool pass = false;
+
+         std::set&lt;std::pair&lt;std::string,double&gt;&gt; name_value;
+         name_value.insert(std::make_pair( &quot;M1&quot;, FSmssm.get_MassB()  ));
+         name_value.insert(std::make_pair( &quot;M2&quot;, FSmssm.get_MassWB() ));
+         name_value.insert(std::make_pair( &quot;M3&quot;, FSmssm.get_MassG()  ));
+         name_value.insert(std::make_pair( &quot;vu&quot;, FSmssm.get_vu()     ));
+         name_value.insert(std::make_pair( &quot;vd&quot;, FSmssm.get_vd()     ));
+
+         std::set&lt;std::pair&lt;std::string, double&gt;&gt;::iterator iter;
+         for(iter=name_value.begin(); iter != name_value.end(); ++iter)
+            {
+               pass = test_getters(&quot;get_mass_parameter&quot;, iter-&gt;first,
+                                   mssm.
+                                   get_mass_parameter(iter-&gt;first),
+                                   iter-&gt;second);
+               if(immediate_exit == true &amp;&amp; pass == false) return pass;
+            }
+
+         return pass;
+      }
+
+
+
+      template &lt;class M&gt;
+      bool TestMssmParMass1_2(SubSpectrum * spec, M FSmssm,
+                              bool immediate_exit =true)
+      {
+         bool pass = false;
+         for(int i=1; i&lt;=3; i++){
+            for(int j=1; j&lt;=3; j++){
+                std::set&lt;std::pair&lt;std::string,double&gt;&gt; name_value;
+                name_value.insert(std::make_pair( &quot;TYd&quot;, FSmssm.get_TYd(i-1,j-1) ));
+                name_value.insert(std::make_pair( &quot;TYu&quot;, FSmssm.get_TYu(i-1,j-1) ));
+                name_value.insert(std::make_pair( &quot;TYe&quot;, FSmssm.get_TYe(i-1,j-1) ));
+
+                std::set&lt;std::pair&lt;std::string, double&gt;&gt;::iterator iter;
+                for(iter=name_value.begin(); iter != name_value.end(); ++iter)
+                {
+                   pass = test_getters(&quot;get_mass_parameter&quot;, iter-&gt;first,
+                                       spec-&gt;
+                                       get_mass_parameter(iter-&gt;first,i,j),
+                                       iter-&gt;second, i, j);
+                   if(immediate_exit == true &amp;&amp; pass == false) return pass;
+                }
+             }
+          }
+          return pass;
+       }
+
+
+      template &lt;class MI&gt;
+      bool TestMssmParMass1_2(MSSMSpec&lt;MI&gt;&amp; mssm, typename MI::Model&amp; FSmssm,
+                              bool immediate_exit =true)
+      {
+         bool pass = false;
+         for(int i=1; i&lt;=3; i++){
+            for(int j=1; j&lt;=3; j++){
+                std::set&lt;std::pair&lt;std::string,double&gt;&gt; name_value;
+                name_value.insert(std::make_pair( &quot;TYd&quot;, FSmssm.get_TYd(i-1,j-1) ));
+                name_value.insert(std::make_pair( &quot;TYu&quot;, FSmssm.get_TYu(i-1,j-1) ));
+                name_value.insert(std::make_pair( &quot;TYe&quot;, FSmssm.get_TYe(i-1,j-1) ));
+
+                std::set&lt;std::pair&lt;std::string, double&gt;&gt;::iterator iter;
+                for(iter=name_value.begin(); iter != name_value.end(); ++iter)
+                {
+                   pass = test_getters(&quot;get_mass_parameter&quot;, iter-&gt;first,
+                                       mssm.
+                                       get_mass_parameter(iter-&gt;first,i,j),
+                                       iter-&gt;second, i, j);
+                   if(immediate_exit == true &amp;&amp; pass == false) return pass;
+                }
+            }
+         }
+         return pass;
+      }
+
+    template &lt;class M&gt;
+    bool TestMssmParMass0_0(SubSpectrum * spec, M FSmssm,
+                            bool immediate_exit =true )
+    {
+       bool pass = false;
+       std::set&lt;std::pair&lt;std::string,double&gt;&gt; name_value;
+       name_value.insert(std::make_pair( &quot;g1&quot;, FSmssm.get_g1() ));
+       name_value.insert(std::make_pair( &quot;g2&quot;, FSmssm.get_g2() ));
+       name_value.insert(std::make_pair( &quot;g3&quot;, FSmssm.get_g3() ));
+
+       std::set&lt;std::pair&lt;std::string, double&gt;&gt;::iterator iter;
+       for(iter=name_value.begin(); iter != name_value.end(); ++iter)
+       {
+          pass = test_getters(&quot;get_dimensionless_parameter&quot;, iter-&gt;first,
+                              spec-&gt;
+                              get_dimensionless_parameter(iter-&gt;first),
+                              iter-&gt;second);
+          if(immediate_exit == true &amp;&amp; pass == false) return pass;
+       }
+
+       return pass;
+    }
+
+
+    template &lt;class MI&gt;
+    bool TestMssmParMass0_0(MSSMSpec&lt;MI&gt;&amp; mssm, typename MI::Model&amp; FSmssm,
+                               bool immediate_exit =true )
+    {
+       bool pass = false;
+       std::set&lt;std::pair&lt;std::string,double&gt;&gt; name_value;
+       name_value.insert(std::make_pair( &quot;g1&quot;, FSmssm.get_g1() ));
+       name_value.insert(std::make_pair( &quot;g2&quot;, FSmssm.get_g2() ));
+       name_value.insert(std::make_pair( &quot;g3&quot;, FSmssm.get_g3() ));
+
+       std::set&lt;std::pair&lt;std::string, double&gt;&gt;::iterator iter;
+       for(iter=name_value.begin(); iter != name_value.end(); ++iter)
+       {
+          pass = test_getters(&quot;get_dimensionless_parameter&quot;, iter-&gt;first,
+                              mssm.
+                              get_dimensionless_parameter(iter-&gt;first),
+                              iter-&gt;second);
+          if(immediate_exit == true &amp;&amp; pass == false) return pass;
+       }
+
+       return pass;
+    }
+
+    template &lt;class M&gt;
+    bool TestMssmParMass0_2(SubSpectrum * spec, M FSmssm,
+                               bool immediate_exit = true)
+    {
+       bool pass = false;
+       for(int i=1; i&lt;=3; i++){
+          for(int j=1; j&lt;=3; j++){
+
+             std::set&lt;std::pair&lt;std::string,double&gt;&gt; name_value;
+             name_value.insert(std::make_pair( &quot;Yd&quot;, FSmssm.get_Yd(i-1,j-1) ));
+             name_value.insert(std::make_pair( &quot;Yu&quot;, FSmssm.get_Yu(i-1,j-1) ));
+             name_value.insert(std::make_pair( &quot;Ye&quot;, FSmssm.get_Ye(i-1,j-1) ));
+
+             std::set&lt;std::pair&lt;std::string, double&gt;&gt;::iterator iter;
+             for(iter=name_value.begin(); iter != name_value.end(); ++iter)
+             {
+                pass = test_getters(&quot;get_dimensionless_parameter&quot;,
+                                    iter-&gt;first,
+                                    spec-&gt;
+                                    get_dimensionless_parameter(iter-&gt;first,
+                                                                i,j),
+                                    iter-&gt;second, i, j);
+                if(immediate_exit == true &amp;&amp; pass == false) return pass;
+             }
+          }
+       }
+       return pass;
+    }
+
+
+      template &lt;class MI&gt;
+      bool TestMssmParMass0_2(MSSMSpec&lt;MI&gt;&amp; mssm, typename MI::Model&amp; FSmssm,
+                               bool immediate_exit = true)
+      {
+       bool pass = false;
+       for(int i=1; i&lt;=3; i++){
+          for(int j=1; j&lt;=3; j++){
+
+             std::set&lt;std::pair&lt;std::string,double&gt;&gt; name_value;
+             name_value.insert(std::make_pair( &quot;Yd&quot;, FSmssm.get_Yd(i-1,j-1) ));
+             name_value.insert(std::make_pair( &quot;Yu&quot;, FSmssm.get_Yu(i-1,j-1) ));
+             name_value.insert(std::make_pair( &quot;Ye&quot;, FSmssm.get_Ye(i-1,j-1) ));
+
+             std::set&lt;std::pair&lt;std::string, double&gt;&gt;::iterator iter;
+             for(iter=name_value.begin(); iter != name_value.end(); ++iter)
+             {
+                pass = test_getters(&quot;get_dimensionless_parameter&quot;,
+                                    iter-&gt;first,
+                                    mssm.
+                                    get_dimensionless_parameter(iter-&gt;first,
+                                                                i,j),
+                                    iter-&gt;second, i, j);
+                if(immediate_exit == true &amp;&amp; pass == false) return pass;
+             }
+          }
+       }
+       return pass;
+    }
+
+    template &lt;class M&gt;
+    bool TestMssmPoleGets0(SubSpectrum * spec, M FSmssm,
+                           bool immediate_exit = true)
+    {
+       bool pass = false;
+       //do all in loop
+       std::set&lt;std::pair&lt;std::string,double&gt;&gt; name_value;
+       name_value.insert(std::make_pair( &quot;MZ&quot;, FSmssm.get_physical().MVZ       ));
+       name_value.insert(std::make_pair( &quot;MW&quot;, FSmssm.get_physical().MVWm      ));
+       name_value.insert(std::make_pair( &quot;MGluino&quot;, FSmssm.get_physical().MGlu ));
+       name_value.insert(std::make_pair( &quot;MGluon&quot;, FSmssm.get_physical().MVG   ));
+       name_value.insert(std::make_pair( &quot;MPhoton&quot;, FSmssm.get_physical().MVP  ));
+
+       std::set&lt;std::pair&lt;std::string, double&gt;&gt;::iterator iter;
+       for(iter=name_value.begin(); iter != name_value.end(); ++iter)
+       {
+          pass = test_getters(&quot;get_Pole_Mass&quot;, iter-&gt;first,
+                              spec-&gt;get_Pole_Mass(iter-&gt;first),
+                              iter-&gt;second);
+          if(immediate_exit == true &amp;&amp; pass == false) return pass;
+       }
+       return pass;
+    }
+
+
+    template &lt;class MI&gt;
+    bool TestMssmPoleGets0(MSSMSpec&lt;MI&gt;&amp; mssm, typename MI::Model&amp; FSmssm,
+                           bool immediate_exit = true)
+    {
+       bool pass = false;
+       //do all in loop
+       std::set&lt;std::pair&lt;std::string,double&gt;&gt; name_value;
+       name_value.insert(std::make_pair( &quot;MZ&quot;, FSmssm.get_physical().MVZ       ));
+       name_value.insert(std::make_pair( &quot;MW&quot;, FSmssm.get_physical().MVWm      ));
+       name_value.insert(std::make_pair( &quot;MGluino&quot;, FSmssm.get_physical().MGlu ));
+       name_value.insert(std::make_pair( &quot;MGluon&quot;, FSmssm.get_physical().MVG   ));
+       name_value.insert(std::make_pair( &quot;MPhoton&quot;, FSmssm.get_physical().MVP  ));
+
+       std::set&lt;std::pair&lt;std::string, double&gt;&gt;::iterator iter;
+       for(iter=name_value.begin(); iter != name_value.end(); ++iter)
+       {
+          pass = test_getters(&quot;get_Pole_Mass&quot;, iter-&gt;first,
+                              mssm.get_Pole_Mass(iter-&gt;first),
+                              iter-&gt;second);
+          if(immediate_exit == true &amp;&amp; pass == false) return pass;
+       }
+       return pass;
+    }
+
+
+    template &lt;class M&gt;
+    bool TestMssmPoleGets1(SubSpectrum * spec, M FSmssm,
+                           bool immediate_exit = true)
+    {
+       bool pass = false;
+
+       for(int i=1; i&lt;=6; i++){
+         std::set&lt;std::pair&lt;std::string,double&gt;&gt; name_value;
+         name_value.insert(std::make_pair( &quot;MSd&quot;, FSmssm.get_physical().MSd(i-1) ));
+         name_value.insert(std::make_pair( &quot;MSu&quot;, FSmssm.get_physical().MSu(i-1) ));
+         name_value.insert(std::make_pair( &quot;MSe&quot;, FSmssm.get_physical().MSe(i-1) ));
+
+
+         std::set&lt;std::pair&lt;std::string, double&gt;&gt;::iterator iter;
+         for(iter=name_value.begin(); iter != name_value.end(); ++iter)
+         {
+            pass = test_getters(&quot;get_Pole_Mass&quot;, iter-&gt;first,
+                                spec-&gt;get_Pole_Mass(iter-&gt;first,i),
+                                iter-&gt;second, i);
+            if(immediate_exit == true &amp;&amp; pass == false) return pass;
+         }
+
+       }
+       for(int i=1; i&lt;=3; i++){
+
+          std::set&lt;std::pair&lt;std::string,double&gt;&gt; name_value;
+          name_value.insert(std::make_pair( &quot;MSv&quot;, FSmssm.get_physical().MSv(i-1) ));
+          name_value.insert(std::make_pair( &quot;MFd&quot;, FSmssm.get_physical().MFd(i-1) ));
+          name_value.insert(std::make_pair( &quot;MFu&quot;, FSmssm.get_physical().MFu(i-1) ));
+          name_value.insert(std::make_pair( &quot;MFe&quot;, FSmssm.get_physical().MFe(i-1) ));
+
+          std::set&lt;std::pair&lt;std::string, double&gt;&gt;::iterator iter;
+          for(iter=name_value.begin(); iter != name_value.end(); ++iter)
+          {
+             pass = test_getters(&quot;get_Pole_Mass&quot;, iter-&gt;first,
+                                 spec-&gt;get_Pole_Mass(iter-&gt;first,i),
+                                 iter-&gt;second, i);
+             if(immediate_exit == true &amp;&amp; pass == false) return pass;
+          }
+
+       }
+       for(int i=1; i&lt;=2; i++){
+          std::string name = &quot;Mh0&quot;;
+          pass = test_getters(&quot;get_Pole_Mass&quot;, name,
+                                      spec-&gt;get_Pole_Mass(name,i),
+                                      FSmssm.get_physical().Mhh(i-1), i);
+          if(immediate_exit == true &amp;&amp; pass == false) return pass;
+          name = &quot;MCha&quot;;
+          pass = test_getters(&quot;get_Pole_Mass&quot;, name,
+                              spec-&gt;get_Pole_Mass(name,i),
+                              FSmssm.get_physical_slha().MCha(i-1), i);
+          if(immediate_exit == true &amp;&amp; pass == false) return pass;
+       }
+       //In the the neutralino and chargino tests I compare against
+       // value in physical_slha struct since the value in
+       // physical may differ by a sign since it stores positive masses
+       // and a complex mixing matrix.
+       for(int i=1; i&lt;=4; i++){
+          std::string name = &quot;MChi&quot;;
+          pass = test_getters(&quot;get_Pole_Mass&quot;, name,
+                              spec-&gt;get_Pole_Mass(name,i),
+                              FSmssm.get_physical_slha().MChi(i-1), i);
+          if(immediate_exit == true &amp;&amp; pass == false) return pass;
+       }
+       return pass;
+    }
+
+
+     template &lt;class MI&gt;
+    bool TestMssmPoleGets1(MSSMSpec&lt;MI&gt;&amp; mssm, typename MI::Model&amp; FSmssm,
+                           bool immediate_exit = true)
+    {
+       bool pass = false;
+
+       for(int i=1; i&lt;=6; i++){
+         std::set&lt;std::pair&lt;std::string,double&gt;&gt; name_value;
+         name_value.insert(std::make_pair( &quot;MSd&quot;, FSmssm.get_physical().MSd(i-1) ));
+         name_value.insert(std::make_pair( &quot;MSu&quot;, FSmssm.get_physical().MSu(i-1) ));
+         name_value.insert(std::make_pair( &quot;MSe&quot;, FSmssm.get_physical().MSe(i-1) ));
+
+         std::set&lt;std::pair&lt;std::string, double&gt;&gt;::iterator iter;
+         for(iter=name_value.begin(); iter != name_value.end(); ++iter)
+         {
+            pass = test_getters(&quot;get_Pole_Mass&quot;, iter-&gt;first,
+                                mssm.get_Pole_Mass(iter-&gt;first,i),
+                                iter-&gt;second, i);
+            if(immediate_exit == true &amp;&amp; pass == false) return pass;
+         }
+
+       }
+       for(int i=1; i&lt;=3; i++){
+
+          std::set&lt;std::pair&lt;std::string,double&gt;&gt; name_value;
+          name_value.insert(std::make_pair( &quot;MSv&quot;, FSmssm.get_physical().MSv(i-1) ));
+          name_value.insert(std::make_pair( &quot;MFd&quot;, FSmssm.get_physical().MFd(i-1) ));
+          name_value.insert(std::make_pair( &quot;MFu&quot;, FSmssm.get_physical().MFu(i-1) ));
+          name_value.insert(std::make_pair( &quot;MFe&quot;, FSmssm.get_physical().MFe(i-1) ));
+
+          std::set&lt;std::pair&lt;std::string, double&gt;&gt;::iterator iter;
+          for(iter=name_value.begin(); iter != name_value.end(); ++iter)
+          {
+             pass = test_getters(&quot;get_Pole_Mass&quot;, iter-&gt;first,
+                                 mssm.get_Pole_Mass(iter-&gt;first,i),
+                                 iter-&gt;second, i);
+             if(immediate_exit == true &amp;&amp; pass == false) return pass;
+          }
+
+       }
+       for(int i=1; i&lt;=2; i++){
+          std::string name = &quot;Mh0&quot;;
+          pass = test_getters(&quot;get_Pole_Mass&quot;, name,
+                                      mssm.get_Pole_Mass(name,i),
+                                      FSmssm.get_physical().Mhh(i-1), i);
+          if(immediate_exit == true &amp;&amp; pass == false) return pass;
+          name = &quot;MCha&quot;;
+          pass = test_getters(&quot;get_Pole_Mass&quot;, name,
+                              mssm.get_Pole_Mass(name,i),
+                              FSmssm.get_physical_slha().MCha(i-1), i);
+          if(immediate_exit == true &amp;&amp; pass == false) return pass;
+       }
+       //In the the neutralino and chargino tests I compare against
+       // value in physical_slha struct since the value in
+       // physical may differ by a sign since it stores positive masses
+       // and a complex mixing matrix.
+       for(int i=1; i&lt;=4; i++){
+          std::string name = &quot;MChi&quot;;
+          pass = test_getters(&quot;get_Pole_Mass&quot;, name,
+                              mssm.get_Pole_Mass(name,i),
+                              FSmssm.get_physical_slha().MChi(i-1), i);
+          if(immediate_exit == true &amp;&amp; pass == false) return pass;
+       }
+       return pass;
+    }
+
+
+     template &lt;class M&gt;
+     bool TestMssmPoleMixingGets2(SubSpectrum * spec, M FSmssm,
+                                  bool immediate_exit = true)
+     {
+        bool pass = false;
+        for(int i=1; i&lt;=6; i++){
+           for(int j=1; j&lt;=6; j++){
+              std::set&lt;std::pair&lt;std::string,double&gt;&gt; name_value;
+              name_value.insert(std::make_pair( &quot;~d&quot;, FSmssm.get_physical_slha().ZD(i-1,j-1) ));
+              name_value.insert(std::make_pair( &quot;~u&quot;, FSmssm.get_physical_slha().ZU(i-1,j-1) ));
+              name_value.insert(std::make_pair( &quot;~e-&quot;, FSmssm.get_physical_slha().ZE(i-1,j-1) ));
+
+              std::set&lt;std::pair&lt;std::string, double&gt;&gt;::iterator iter;
+              for(iter=name_value.begin(); iter != name_value.end(); ++iter)
+              {
+                 pass = test_getters(&quot;get_Pole_Mixing&quot;, iter-&gt;first,
+                                     spec-&gt;
+                                     get_Pole_Mixing(iter-&gt;first,i,j),
+                                     iter-&gt;second, i, j);
+                 if(immediate_exit == true &amp;&amp; pass == false) return pass;
+              }
+           }
+        }
+
+
+        for(int i=1; i&lt;=3; i++){
+           for(int j=1; j&lt;=3; j++){
+              string name = &quot;~nu&quot;;
+              pass = test_getters(&quot;get_Pole_Mixing&quot;, name,
+                                  spec-&gt;get_Pole_Mixing(name,i,j),
+                                  FSmssm.get_physical_slha().ZV(i-1, j-1), i,j);
+              if(immediate_exit == true &amp;&amp; pass == false) return pass;
+
+              }
+           }
+
+
+        for(int i=1; i&lt;=2; i++){
+           for(int j=1; j&lt;=2; j++){
+              std::set&lt;std::pair&lt;std::string,double&gt;&gt; name_value;
+              name_value.insert(std::make_pair( &quot;h0&quot;,   FSmssm.get_physical_slha().ZH(i-1,j-1) ));
+              name_value.insert(std::make_pair( &quot;A0&quot;,   FSmssm.get_physical_slha().ZA(i-1,j-1) ));
+              name_value.insert(std::make_pair( &quot;H+&quot;, FSmssm.get_physical_slha().ZP(i-1,j-1) ));
+              name_value.insert(std::make_pair( &quot;~chi-&quot;, flexiblesusy::Re(FSmssm.get_physical_slha()
+                                     .UM(i-1,j-1)) ));
+              name_value.insert(std::make_pair( &quot;~chi+&quot;, flexiblesusy::Re(FSmssm.get_physical_slha()
+                                     .UP(i-1,j-1)) ));
+
+
+              std::set&lt;std::pair&lt;std::string, double&gt;&gt;::iterator iter;
+              for(iter=name_value.begin(); iter != name_value.end(); ++iter)
+              {
+                 pass = test_getters(&quot;get_Pole_Mixing&quot;, iter-&gt;first,
+                                     spec-&gt;
+                                     get_Pole_Mixing(iter-&gt;first,i,j),
+                                     iter-&gt;second, i, j);
+                 if(immediate_exit == true &amp;&amp; pass == false) return pass;
+              }
+           }
+       }
+
+        return pass;
+    }
+
+
+       template &lt;class MI&gt;
+     bool TestMssmPoleMixingGets2(MSSMSpec&lt;MI&gt;&amp; mssm, typename MI::Model&amp; FSmssm,
+                                  bool immediate_exit = true)
+     {
+        bool pass = false;
+        for(int i=1; i&lt;=6; i++){
+           for(int j=1; j&lt;=6; j++){
+              std::set&lt;std::pair&lt;std::string,double&gt;&gt; name_value;
+              name_value.insert(std::make_pair( &quot;~d&quot;, FSmssm.get_physical_slha().ZD(i-1,j-1) ));
+              name_value.insert(std::make_pair( &quot;~u&quot;, FSmssm.get_physical_slha().ZU(i-1,j-1) ));
+              name_value.insert(std::make_pair( &quot;~e-&quot;, FSmssm.get_physical_slha().ZE(i-1,j-1) ));
+
+              std::set&lt;std::pair&lt;std::string, double&gt;&gt;::iterator iter;
+              for(iter=name_value.begin(); iter != name_value.end(); ++iter)
+              {
+                 pass = test_getters(&quot;get_Pole_Mixing&quot;, iter-&gt;first,
+                                     mssm.
+                                     get_Pole_Mixing(iter-&gt;first,i,j),
+                                     iter-&gt;second, i, j);
+                 if(immediate_exit == true &amp;&amp; pass == false) return pass;
+              }
+           }
+        }
+
+
+        for(int i=1; i&lt;=3; i++){
+           for(int j=1; j&lt;=3; j++){
+              string name = &quot;~nu&quot;;
+              pass = test_getters(&quot;get_Pole_Mixing&quot;, name,
+                                  mssm.get_Pole_Mixing(name,i,j),
+                                  FSmssm.get_physical_slha().ZV(i-1, j-1), i,j);
+              if(immediate_exit == true &amp;&amp; pass == false) return pass;
+
+              }
+           }
+
+
+        for(int i=1; i&lt;=2; i++){
+           for(int j=1; j&lt;=2; j++){
+              std::set&lt;std::pair&lt;std::string,double&gt;&gt; name_value;
+              name_value.insert(std::make_pair( &quot;h0&quot;,   FSmssm.get_physical_slha().ZH(i-1,j-1) ));
+              name_value.insert(std::make_pair( &quot;A0&quot;,   FSmssm.get_physical_slha().ZA(i-1,j-1) ));
+              name_value.insert(std::make_pair( &quot;H+&quot;, FSmssm.get_physical_slha().ZP(i-1,j-1) ));
+              name_value.insert(std::make_pair( &quot;~chi-&quot;, flexiblesusy::Re(FSmssm.get_physical_slha()
+                                     .UM(i-1,j-1)) ));
+              name_value.insert(std::make_pair( &quot;~chi+&quot;, flexiblesusy::Re(FSmssm.get_physical_slha()
+                                     .UP(i-1,j-1)) ));
+
+              std::set&lt;std::pair&lt;std::string, double&gt;&gt;::iterator iter;
+              for(iter=name_value.begin(); iter != name_value.end(); ++iter)
+              {
+                 pass = test_getters(&quot;get_Pole_Mixing&quot;, iter-&gt;first,
+                                     mssm.
+                                     get_Pole_Mixing(iter-&gt;first,i,j),
+                                     iter-&gt;second, i, j);
+                 if(immediate_exit == true &amp;&amp; pass == false) return pass;
+              }
+           }
+       }
+
+       return pass;
+    }
+
+
+    template &lt;class M&gt;
+    bool TestMssmPoleGets(SubSpectrum * spec, M FSmssm)
+    {
+       bool pass = false;
+       pass = TestMssmPoleGets0(spec,FSmssm);
+       if(pass == false) return pass;
+        pass = TestMssmPoleGets1(spec,FSmssm);
+       if(pass == false) return pass;
+       pass = TestMssmPoleMixingGets2(spec,FSmssm);
+       if(pass == false) return pass;
+       return pass;
+    }
+
+    template &lt;class MI&gt;
+    bool TestMssmPoleGets(MSSMSpec&lt;MI&gt;&amp; mssm, typename MI::Model&amp; FSmssm)
+    {
+       bool pass = false;
+       pass = TestMssmPoleGets0(mssm,FSmssm);
+       if(pass == false) return pass;
+        pass = TestMssmPoleGets1(mssm,FSmssm);
+       if(pass == false) return pass;
+       pass = TestMssmPoleMixingGets2(mssm,FSmssm);
+       if(pass == false) return pass;
+       return pass;
+    }
+
+    template &lt;class M&gt;
+    bool TestMssmParGets(SubSpectrum * spec, M FSmssm)
+    {
+       bool pass = false;
+       pass = TestMssmParMass2_0(spec,FSmssm);
+       if(pass == false) return pass;
+       pass = TestMssmParMass2_2(spec,FSmssm);
+       if(pass == false) return pass;
+       pass = TestMssmParMass1_0(spec,FSmssm);
+       if(pass == false) return pass;
+       pass = TestMssmParMass1_2(spec,FSmssm);
+       if(pass == false) return pass;
+       pass = TestMssmParMass0_0(spec,FSmssm);
+       if(pass == false) return pass;
+       pass = TestMssmParMass0_2(spec,FSmssm);
+       if(pass == false) return pass;
+
+       return pass;
+
+    }
+
+     template &lt;class MI&gt;
+    bool TestMssmParGets(MSSMSpec&lt;MI&gt;&amp; mssm, typename MI::Model&amp; FSmssm)
+    {
+       bool pass = false;
+       pass = TestMssmParMass2_0(mssm,FSmssm);
+       if(pass == false) return pass;
+       pass = TestMssmParMass2_2(mssm,FSmssm);
+       if(pass == false) return pass;
+       pass = TestMssmParMass1_0(mssm,FSmssm);
+       if(pass == false) return pass;
+       pass = TestMssmParMass1_2(mssm,FSmssm);
+       if(pass == false) return pass;
+       pass = TestMssmParMass0_0(mssm,FSmssm);
+       if(pass == false) return pass;
+       pass = TestMssmParMass0_2(mssm,FSmssm);
+       if(pass == false) return pass;
+
+       return pass;
+
+    }
+
+    template &lt;class Model&gt;
+    void setup(Model&amp; mssm)
+    {
+       Eigen::Matrix&lt;double,3,3&gt; Yu;
+       Eigen::Matrix&lt;double,3,3&gt; Yd;
+       Eigen::Matrix&lt;double,3,3&gt; Ye;
+       double Mu;
+       double g1;
+       double g2;
+       double g3;
+       double vd;
+       double vu;
+       Eigen::Matrix&lt;double,3,3&gt; TYu;
+       Eigen::Matrix&lt;double,3,3&gt; TYd;
+       Eigen::Matrix&lt;double,3,3&gt; TYe;
+       double BMu;
+       Eigen::Matrix&lt;double,3,3&gt; mq2;
+       Eigen::Matrix&lt;double,3,3&gt; ml2;
+       double mHd2;
+       double mHu2;
+       Eigen::Matrix&lt;double,3,3&gt; md2;
+       Eigen::Matrix&lt;double,3,3&gt; mu2;
+       Eigen::Matrix&lt;double,3,3&gt; me2;
+       double MassB;
+       double MassWB;
+       double MassG;
+
+       // susy parameters
+       Yu &lt;&lt; 1.26136e-05, 0, 0,
+                       0, 0.00667469, 0,
+                       0, 0, 0.857849;
+
+       Yd &lt;&lt; 0.000242026, 0, 0,
+                       0, 0.00529911, 0,
+                       0, 0, 0.193602;
+
+       Ye &lt;&lt; 2.84161e-05, 0, 0,
+                       0, 0.00587557, 0,
+                       0, 0, 0.10199;
+
+       Mu = 627.164;
+       g1 = 0.468171;
+       g2 = 0.642353;
+       g3 = 1.06459;
+       vd = 25.0944;
+       vu = 242.968;
+
+       // soft parameters
+       TYu &lt;&lt; -0.0144387, 0, 0,
+                       0, -7.64037, 0,
+                       0, 0, -759.305;
+
+       TYd &lt;&lt; -0.336207, 0, 0,
+                      0, -7.36109, 0,
+                      0, 0, -250.124;
+
+       TYe &lt;&lt; -0.00825134, 0, 0,
+                        0, -1.70609, 0,
+                        0, 0, -29.4466;
+
+       BMu = 52140.8;
+
+       mq2 &lt;&lt; 1.03883e+06, 0, 0,
+                        0, 1.03881e+06, 0,
+                        0, 0, 879135;
+
+       ml2 &lt;&lt; 124856, 0, 0,
+                   0, 124853, 0,
+                   0, 0, 124142;
+
+       mHd2 = 92436.9;
+       mHu2 = -380337;
+
+       md2 &lt;&lt; 954454, 0, 0,
+                   0, 954439, 0,
+                   0, 0, 934727;
+
+       mu2 &lt;&lt; 963422, 0, 0,
+                   0, 963400, 0,
+                   0, 0, 656621;
+
+       me2 &lt;&lt; 49215.8, 0, 0,
+                    0, 49210.9, 0,
+                    0, 0, 47759.2;
+
+       MassB = 210.328;
+       MassWB = 389.189;
+       MassG = 1114.45;
+
+       // set parameters
+       mssm.set_scale(flexiblesusy::Electroweak_constants::MZ);
+       mssm.set_Yu(Yu);
+       mssm.set_Yd(Yd);
+       mssm.set_Ye(Ye);
+       mssm.set_Mu(Mu);
+       mssm.set_g1(g1);
+       mssm.set_g2(g2);
+       mssm.set_g3(g3);
+       mssm.set_vd(vd);
+       mssm.set_vu(vu);
+       mssm.set_TYu(TYu);
+       mssm.set_TYd(TYd);
+       mssm.set_TYe(TYe);
+       mssm.set_BMu(BMu);
+       mssm.set_mq2(mq2);
+       mssm.set_ml2(ml2);
+       mssm.set_mHd2(mHd2);
+       mssm.set_mHu2(mHu2);
+       mssm.set_md2(md2);
+       mssm.set_mu2(mu2);
+       mssm.set_me2(me2);
+       mssm.set_MassB(MassB);
+       mssm.set_MassWB(MassWB);
+       mssm.set_MassG(MassG);
+    }
+
+
+      template &lt;class MI&gt;
+      bool test_exact(MSSMSpec&lt;MI&gt;&amp; mssm, typename MI::Model&amp; FS_model_slha)
+      {
+         bool pass = TestMssmParGets(mssm,FS_model_slha);
+         if(pass == false)
+            {
+               OUTPUT &lt;&lt; &quot;TestMssmParGets failing.&quot;  &lt;&lt;std::endl;
+               return pass;
+            }
+         pass = TestMssmPoleGets(mssm,FS_model_slha);
+         if(pass == false)
+            {
+               OUTPUT &lt;&lt; &quot;TestMssmParGets failing.&quot;  &lt;&lt;std::endl;
+               return pass;
+            }
+
+
+         return pass;
+      }
+
+      template &lt;class M&gt;
+      double test_exact(SubSpectrum * spec, M FS_model_slha)
+      {
+         bool pass = TestMssmParGets(spec,FS_model_slha);
+         if(pass == false)
+            {
+               OUTPUT &lt;&lt; &quot;TestMssmParGets failing.&quot;  &lt;&lt;std::endl;
+               return pass;
+            }
+         pass = TestMssmPoleGets(spec,FS_model_slha);
+         if(pass == false)
+            {
+               OUTPUT &lt;&lt; &quot;TestMssmParGets failing.&quot;  &lt;&lt;std::endl;
+               return pass;
+            }
+
+         return pass;
+
+      }
+      //This gives identical results after running up, so don't need messy
+      // Test_close
+      template &lt;class MI&gt;
+       bool running_test(MSSMSpec&lt;MI&gt; &amp; mssm, typename MI::Model &amp; FS_model_slha, double tol)
+      {
+         double highscale = 1e+16;
+         double lowscale = mssm.GetScale();
+         double lowscale2 = FS_model_slha.get_scale();
+         bool pass = flexiblesusy::is_equal(lowscale,lowscale2);
+         if(!pass) {
+            OUTPUT &lt;&lt; &quot;test fail: &quot;
+                   &lt;&lt; &quot;objects not at same scale at start of runtest.&quot;
+                   &lt;&lt; std::endl;
+            return pass;
+         }
+
+         mssm.RunToScale(highscale);
+         FS_model_slha.run_to(highscale);
+         pass = test_exact(mssm, FS_model_slha);
+          if(!pass) {
+            OUTPUT &lt;&lt; &quot;test fail: &quot;
+                   &lt;&lt; &quot;objects not the same after running to MGUT.&quot;
+                   &lt;&lt; std::endl;
+            return pass;
+         }
+         mssm.RunToScale(lowscale);
+         FS_model_slha.run_to(lowscale);
+         pass = test_exact(mssm, FS_model_slha);
+          if(!pass) {
+            OUTPUT &lt;&lt; &quot;test fail: &quot;
+                   &lt;&lt; &quot;objects not the same after running to lowscale.&quot;
+                   &lt;&lt; std::endl;
+            return pass;
+         }
+
+
+         return pass;
+      }
+
+      template &lt;class Model&gt;
+      bool running_test(SubSpectrum * spec, Model &amp; FS_model_slha,
+                   double tol)
+      {
+         double highscale = 1e+16;
+         double lowscale = spec-&gt;GetScale();
+         double lowscale2 = FS_model_slha.get_scale();
+         bool pass = flexiblesusy::is_equal(lowscale,lowscale2);
+         if(!pass) {
+            OUTPUT &lt;&lt; &quot;test fail: &quot;
+                   &lt;&lt; &quot;objects not at same scale at start of runtest.&quot;
+                   &lt;&lt; std::endl;
+            return pass;
+         }
+
+         spec-&gt;RunToScale(highscale);
+         FS_model_slha.run_to(highscale);
+         pass = test_exact(spec, FS_model_slha);
+          if(!pass) {
+            OUTPUT &lt;&lt; &quot;test fail: &quot;
+                   &lt;&lt; &quot;objects not the same after running to MGUT.&quot;
+                   &lt;&lt; std::endl;
+            return pass;
+         }
+         spec-&gt;RunToScale(lowscale);
+         FS_model_slha.run_to(lowscale);
+         pass = test_exact(spec, FS_model_slha);
+          if(!pass) {
+            OUTPUT &lt;&lt; &quot;test fail: &quot;
+                   &lt;&lt; &quot;objects not the same after running to lowscale.&quot;
+                   &lt;&lt; std::endl;
+            return pass;
+         }
+
+         return pass;
+      }
+
+      // Helper function for tests in Spectrum_test
+      bool test_within_tol(double a, double b, double tol, std::string label)
+      {
+         // Tol is considered as a fraction of a
+         bool pass = std::abs(a - b) &lt;= std::abs(a*tol);  // pass == true
+         OUTPUT &lt;&lt; &quot;TESTING: &quot; &lt;&lt; label &lt;&lt; std::endl;
+         if(!pass)
+         {
+            OUTPUT &lt;&lt; &quot;  ******FAIL******&quot; &lt;&lt; std::endl
+                   &lt;&lt; &quot;  Inputs do not match within requested relative tolerance (&quot; &lt;&lt; tol &lt;&lt; &quot;)&quot;
+                   &lt;&lt; std::endl
+                   &lt;&lt; &quot;  a = &quot; &lt;&lt; a &lt;&lt; std::endl
+                   &lt;&lt; &quot;  b = &quot; &lt;&lt; b &lt;&lt; std::endl
+                   &lt;&lt; &quot;  |(a - b)/a| = &quot; &lt;&lt; std::abs((a-b)/a) &lt;&lt; &quot; (greater than tol = &quot; &lt;&lt; tol &lt;&lt; &quot;)&quot;
+                   &lt;&lt; std::endl;
+         }
+         else
+         {
+            OUTPUT &lt;&lt; &quot;  Pass: (a=&quot;&lt;&lt;a&lt;&lt;&quot;, b=&quot;&lt;&lt;b&lt;&lt;&quot;)&quot; &lt;&lt; std::endl
+                   &lt;&lt; &quot;  |(a - b)/a| = &quot; &lt;&lt; std::abs((a-b)/a) &lt;&lt; &quot; (less than tol = &quot; &lt;&lt; tol &lt;&lt; &quot;)&quot;
+                   &lt;&lt; std::endl;
+         }
+         return pass;
+      }
+
+      // Test that output of Standard Model wrapper (e.g. QedQcdWrapper) matches
+      // SMINPUTS sufficiently accurately
+      // Set flag SLHAonly=1 if SMskeleton and/or MSSMskeleton are being used.
+      void Spectrum_test(Spectrum matched_spectra, const SubSpectrum* smin, bool SLHAonly=0)
+      {
+         // Extract pieces of Spectrum to make it clear what they are supposed to be
+         SMInputs sminputs = matched_spectra-&gt;get_SMInputs();
+         std::unique_ptr&lt;SubSpectrum&gt; SM = matched_spectra-&gt;clone_LE(); // COPIES Spectrum object
+         // const SubSpectrum* SM = matched_spectra-&gt;get_LE(); // Cannot do running on original object.
+
+         double tol     = 1e-9; // Demanding matching to 1 part in a billion (pole masses, things that don't change)
+         double tolg    = 1e-4; // Seem to get about this level of precision recovering running couplings from QedQcd object.
+         double tolm    = 1e-3; //      &quot;         &quot;              &quot;             &quot;                masses     &quot;        &quot;
+
+         // // SLHA1
+         // double alphainv;  // 1: Inverse electromagnetic coupling at the Z pole in the MSbar scheme (with 5 active flavours)
+         // double GF;        // 2: Fermi constant (in units of GeV^-2)
+         // double alphaS;    // 3: Strong coupling at the Z pole in the MSbar scheme (with 5 active flavours).
+         // double mZ;        // 4: Z pole mass
+         // double mBmB;      // 5: b quark running mass in the MSbar scheme (at mB)
+         // double mT;        // 6: Top quark pole mass
+         // double mTau;      // 7: Tau pole mass
+
+         // // SLHA2
+         // double mNu3;      // 8: Heaviest neutrino pole mass
+
+         // double mE;        // 11: Electron pole mass
+         // double mNu1;      // 12: Lightest neutrino pole mass
+         // double mMu;       // 13: Muon pole mass
+         // double mNu2;      // 14: Second lightest neutrino pole mass
+
+         // double mD;        // 21: d quark running mass in the MSbar scheme at 2 GeV
+         // double mU;        // 21: u quark running mass in the MSbar scheme at 2 GeV
+         // double mS;        // 21: s quark running mass in the MSbar scheme at 2 GeV
+         // double mC;        // 21: c quark running mass in the MSbar scheme at mC
+
+         // First check pole masses
+         test_within_tol( sminputs.mZ,   SM-&gt;get_Pole_Mass(&quot;Z&quot;), tol, &quot;Z pole&quot; );
+         //test_within_tol( sminputs.mW,   SM-&gt;get_Pole_Mass(&quot;W&quot;), tol, &quot;W pole&quot; ); // Whoops, no mW in sminputs.
+         test_within_tol( sminputs.mT,   SM-&gt;get_Pole_Mass(&quot;t&quot;), tol, &quot;top pole&quot; );
+         test_within_tol( sminputs.mTau, SM-&gt;get_Pole_Mass(&quot;tau&quot;), tol, &quot;tau pole&quot; );
+         test_within_tol( sminputs.mMu,  SM-&gt;get_Pole_Mass(&quot;mu&quot;), tol, &quot;mu pole&quot; );
+         test_within_tol( sminputs.mE,   SM-&gt;get_Pole_Mass(&quot;e&quot;), tol, &quot;e pole&quot; );
+         //test_within_tol( sminputs.mNu3, SM-&gt;get_Pole_Mass(&quot;&quot;), tol );
+         //test_within_tol( sminputs.mNu2, SM-&gt;get_Pole_Mass(&quot;&quot;), tol );
+         //test_within_tol( sminputs.mNu1, SM-&gt;get_Pole_Mass(&quot;&quot;), tol );
+
+         // Next check running quantities evaluated at Z pole
+         // Note, numerical errors might creep in depending on how we do the running
+         // back and forth. Might need to consider some method to &quot;reset&quot; object back
+         // to original condition (keep a copy of itself inside?)
+         //SM-&gt;RunToScale(sminputs.mZ);
+         OUTPUT &lt;&lt; &quot;Current scale: &quot; &lt;&lt; SM-&gt;GetScale() &lt;&lt; std::endl;
+         OUTPUT &lt;&lt; &quot;Z pole mass  : &quot; &lt;&lt; SM-&gt;get_Pole_Mass(&quot;Z&quot;) &lt;&lt; std::endl;
+         if(not SLHAonly) test_within_tol( sminputs.alphainv, 1./ SM-&gt;get_dimensionless_parameter(&quot;alpha&quot;), tol, &quot;1/alpha(mZ)&quot; );
+         if(not SLHAonly) test_within_tol( sminputs.alphaS,       SM-&gt;get_dimensionless_parameter(&quot;alphaS&quot;), tol, &quot;alphaS(mZ)&quot; );
+
+         // Check running quantities evaluated at 2 GeV
+         if(not SLHAonly) SM-&gt;RunToScale(2);
+         OUTPUT &lt;&lt; &quot;Current scale: &quot; &lt;&lt; SM-&gt;GetScale() &lt;&lt; std::endl;
+         test_within_tol( sminputs.mU, SM-&gt;get_mass_parameter(&quot;u&quot;), tolm, &quot;mu(2)&quot; );
+         test_within_tol( sminputs.mD, SM-&gt;get_mass_parameter(&quot;d&quot;), tolm, &quot;md(2)&quot; );
+         test_within_tol( sminputs.mS, SM-&gt;get_mass_parameter(&quot;s&quot;), tolm, &quot;ms(2)&quot; );
+
+         // Check mC(mC) and mB(mB)
+         if(not SLHAonly){
+           SM-&gt;RunToScale(sminputs.mCmC);
+           OUTPUT &lt;&lt; &quot;Current scale: &quot; &lt;&lt; SM-&gt;GetScale() &lt;&lt; std::endl;
+           OUTPUT &lt;&lt; &quot;mC (MSbar)   : &quot; &lt;&lt; SM-&gt;get_mass_parameter(&quot;c&quot;) &lt;&lt; std::endl;
+           test_within_tol( sminputs.mCmC, SM-&gt;get_mass_parameter(&quot;c&quot;), tolm, &quot;mc(mc)&quot; );
+           SM-&gt;RunToScale(sminputs.mBmB);
+           OUTPUT &lt;&lt; &quot;Current scale: &quot; &lt;&lt; SM-&gt;GetScale() &lt;&lt; std::endl;
+           OUTPUT &lt;&lt; &quot;mB (MSbar)   : &quot; &lt;&lt; SM-&gt;get_mass_parameter(&quot;b&quot;) &lt;&lt; std::endl;
+           test_within_tol( sminputs.mBmB, SM-&gt;get_mass_parameter(&quot;b&quot;), tolm, &quot;mb(mb)&quot; );
+           OUTPUT &lt;&lt; EOM;
+         }
+
+         // Check that pre-extracted SM SubSpectrum* and the one from Spectrum object match
+         if(not SLHAonly) SM-&gt;RunToScale(sminputs.mZ);
+         if(not SLHAonly) smin-&gt;RunToScale(sminputs.mZ);
+         OUTPUT &lt;&lt; &quot;Checking match between SM SubSpectrum* retrieved in different ways...&quot; &lt;&lt; std::endl;
+         test_within_tol(SM-&gt;get_Pole_Mass(&quot;Z&quot;),
+                         smin-&gt;get_Pole_Mass(&quot;Z&quot;),                          tol, &quot;Z pole&quot; );
+         test_within_tol(SM-&gt;get_Pole_Mass(&quot;W&quot;),
+                         smin-&gt;get_Pole_Mass(&quot;W&quot;),                          tol, &quot;W pole&quot; );
+         test_within_tol(SM-&gt;get_Pole_Mass(&quot;t&quot;),
+                         smin-&gt;get_Pole_Mass(&quot;t&quot;),                          tol, &quot;top pole&quot; );
+         test_within_tol(SM-&gt;get_Pole_Mass(&quot;tau&quot;),
+                         smin-&gt;get_Pole_Mass(&quot;tau&quot;),                        tol, &quot;tau pole&quot; );
+         test_within_tol(SM-&gt;get_Pole_Mass(&quot;mu&quot;),
+                         smin-&gt;get_Pole_Mass(&quot;mu&quot;),                         tol, &quot;mu pole&quot; );
+         test_within_tol(SM-&gt;get_Pole_Mass(&quot;e&quot;),
+                         smin-&gt;get_Pole_Mass(&quot;e&quot;),                          tol, &quot;e pole&quot; );
+         if(not SLHAonly) test_within_tol(SM-&gt;get_dimensionless_parameter(&quot;alpha&quot;),
+                         smin-&gt;get_dimensionless_parameter(&quot;alpha&quot;), tol, &quot;1/alpha(mZ)&quot; );
+         if(not SLHAonly) test_within_tol(SM-&gt;get_dimensionless_parameter(&quot;alphaS&quot;),
+                         smin-&gt;get_dimensionless_parameter(&quot;alphaS&quot;),tol, &quot;alphaS(mZ)&quot; );
+         test_within_tol(SM-&gt;get_mass_parameter(&quot;u&quot;),
+                         smin-&gt;get_mass_parameter(&quot;u&quot;),              tolm, &quot;mu(2)&quot; );
+         test_within_tol(SM-&gt;get_mass_parameter(&quot;d&quot;),
+                         smin-&gt;get_mass_parameter(&quot;d&quot;),              tolm, &quot;md(2)&quot; );
+         test_within_tol(SM-&gt;get_mass_parameter(&quot;s&quot;),
+                         smin-&gt;get_mass_parameter(&quot;s&quot;),              tolm, &quot;ms(2)&quot; );
+         if(not SLHAonly) test_within_tol(SM-&gt;get_mass_parameter(&quot;c&quot;),
+                         smin-&gt;get_mass_parameter(&quot;c&quot;),              tolm, &quot;mc(mc)&quot; );
+         if(not SLHAonly) test_within_tol(SM-&gt;get_mass_parameter(&quot;b&quot;),
+                         smin-&gt;get_mass_parameter(&quot;b&quot;),              tolm, &quot;mb(mb)&quot; );
+
+
+         // Check light quark mass ratios
+         OUTPUT &lt;&lt; &quot;Checking light quark mass ratios:&quot; &lt;&lt; std::endl;
+
+         std::vector&lt;double&gt; scales;
+         scales.push_back(10);
+         if(not SLHAonly) scales.push_back(2);
+         if(not SLHAonly) scales.push_back(1);
+         if(not SLHAonly) scales.push_back(0.5);
+         if(not SLHAonly) scales.push_back(0.1);
+
+         for(std::vector&lt;double&gt;::iterator it = scales.begin(); it != scales.end(); ++it)
+         {
+            if(not SLHAonly) SM-&gt;RunToScale(*it);
+            double Q = SM-&gt;GetScale();
+            double mu = SM-&gt;get_mass_parameter(&quot;u&quot;);
+            double md = SM-&gt;get_mass_parameter(&quot;d&quot;);
+            double ms = SM-&gt;get_mass_parameter(&quot;s&quot;);
+
+            OUTPUT &lt;&lt; &quot;---------------------------------&quot; &lt;&lt; std::endl;
+            OUTPUT &lt;&lt; &quot;Current scale: &quot; &lt;&lt; Q &lt;&lt; std::endl;
+            OUTPUT &lt;&lt; &quot;mu(&quot;&lt;&lt;Q&lt;&lt;&quot;) = &quot; &lt;&lt; mu &lt;&lt; std::endl;
+            OUTPUT &lt;&lt; &quot;md(&quot;&lt;&lt;Q&lt;&lt;&quot;) = &quot; &lt;&lt; md &lt;&lt; std::endl;
+            OUTPUT &lt;&lt; &quot;ms(&quot;&lt;&lt;Q&lt;&lt;&quot;) = &quot; &lt;&lt; ms &lt;&lt; std::endl;
+            OUTPUT &lt;&lt; &quot;mu/md = &quot; &lt;&lt; mu/md &lt;&lt; std::endl;
+            OUTPUT &lt;&lt; &quot;ms/md = &quot; &lt;&lt; ms/md &lt;&lt; std::endl;
+         }
+         OUTPUT &lt;&lt; EOM;
+
+         if(not SLHAonly) {
+
+         double Qs[] = {
+         1.00000000e-02,   1.25892541e-02,   1.58489319e-02,
+         1.99526231e-02,   2.51188643e-02,   3.16227766e-02,
+         3.98107171e-02,   5.01187234e-02,   6.30957344e-02,
+         7.94328235e-02,   1.00000000e-01,   1.25892541e-01,
+         1.58489319e-01,   1.99526231e-01,   2.51188643e-01,
+         3.16227766e-01,   3.98107171e-01,   5.01187234e-01,
+         6.30957344e-01,   7.94328235e-01,   1.00000000e+00,
+         1.25892541e+00,   1.58489319e+00,   1.99526231e+00,
+         2.51188643e+00,   3.16227766e+00,   3.98107171e+00,
+         5.01187234e+00,   6.30957344e+00,   7.94328235e+00,
+         1.00000000e+01,   1.25892541e+01,   1.58489319e+01,
+         1.99526231e+01,   2.51188643e+01,   3.16227766e+01,
+         3.98107171e+01,   5.01187234e+01,   6.30957344e+01,
+         7.94328235e+01,   1.00000000e+02,   1.25892541e+02,
+         1.58489319e+02,   1.99526231e+02,   2.51188643e+02,
+         3.16227766e+02,   3.98107171e+02,   5.01187234e+02,
+         6.30957344e+02,   7.94328235e+02,   1.00000000e+03,
+         1.25892541e+03,   1.58489319e+03,   1.99526231e+03,
+         2.51188643e+03,   3.16227766e+03,   3.98107171e+03,
+         5.01187234e+03,   6.30957344e+03,   7.94328235e+03,
+         1.00000000e+04,   1.25892541e+04,   1.58489319e+04,
+         1.99526231e+04,   2.51188643e+04,   3.16227766e+04,
+         3.98107171e+04,   5.01187234e+04,   6.30957344e+04,
+         7.94328235e+04
+         };
+
+         std::vector&lt;double&gt; Qvec(Qs, Utils::endA(Qs));
+
+         std::ofstream Qout;
+         Qout.open(&quot;SpecBit/light_quark_txt&quot;);
+
+         for(std::vector&lt;double&gt;::iterator it = Qvec.begin(); it != Qvec.end(); ++it)
+         {
+            // Clone to avoid buildup of errors
+            std::unique_ptr&lt;SubSpectrum&gt; SMloop = matched_spectra-&gt;clone_LE();
+
+            SMloop-&gt;RunToScale(*it);
+            double Q = SMloop-&gt;GetScale();
+            double mu = SMloop-&gt;get_mass_parameter(&quot;u&quot;);
+            double md = SMloop-&gt;get_mass_parameter(&quot;d&quot;);
+            double ms = SMloop-&gt;get_mass_parameter(&quot;s&quot;);
+
+            // Write to file
+            Qout &lt;&lt; Q &lt;&lt; &quot;, &quot; &lt;&lt; md &lt;&lt; &quot;, &quot; &lt;&lt; mu &lt;&lt; &quot;, &quot; &lt;&lt; ms &lt;&lt; std::endl;
+         }
+
+         Qout.close();
+
+         } // endif
+
+         // Copy to object to clone the hosted SubSpectrum objects.
+         // i.e. all copies are deep copies.
+         Spectrum nonconst_spectra(*matched_spectra);
+
+         // Try to access non-const member functions
+         OUTPUT &lt;&lt; std::endl;
+         OUTPUT &lt;&lt; &quot;Testing non-const access to Spectrum object:&quot; &lt;&lt; std::endl;
+         if(not SLHAonly) nonconst_spectra.RunBothToScale(sminputs.mT); // This is the only non-const function atm.
+         OUTPUT &lt;&lt; &quot;Current SM SubSpectrum* scale: &quot; &lt;&lt; nonconst_spectra.get_LE()-&gt;GetScale() &lt;&lt; std::endl;
+         OUTPUT &lt;&lt; &quot;Current UV SubSpectrum* scale: &quot; &lt;&lt; nonconst_spectra.get_UV()-&gt;GetScale() &lt;&lt; std::endl;
+         // Make sure nothing happened to the original objects
+         OUTPUT &lt;&lt; &quot;Old SM SubSpectrum* scale: &quot; &lt;&lt; matched_spectra-&gt;get_LE()-&gt;GetScale() &lt;&lt; std::endl;
+         OUTPUT &lt;&lt; &quot;Old UV SubSpectrum* scale: &quot; &lt;&lt; matched_spectra-&gt;get_UV()-&gt;GetScale() &lt;&lt; std::endl;
+         // Check some other numbers
+         OUTPUT &lt;&lt; &quot;Current SM SubSpectrum* mu :&quot; &lt;&lt; nonconst_spectra.get_LE()-&gt;get_mass_parameter(&quot;u&quot;) &lt;&lt; std::endl;
+         OUTPUT &lt;&lt; &quot;Current SM Spectrum* md :&quot; &lt;&lt; nonconst_spectra.get_LE()-&gt;get_mass_parameter(&quot;d&quot;) &lt;&lt; std::endl;
+         OUTPUT &lt;&lt; &quot;Current SM Spectrum* ms :&quot; &lt;&lt; nonconst_spectra.get_LE()-&gt;get_mass_parameter(&quot;s&quot;) &lt;&lt; std::endl;
+         OUTPUT &lt;&lt; &quot;Old SM Spectrum* mu :&quot; &lt;&lt; matched_spectra-&gt;get_LE()-&gt;get_mass_parameter(&quot;u&quot;) &lt;&lt; std::endl;
+         OUTPUT &lt;&lt; &quot;Old SM Spectrum* md :&quot; &lt;&lt; matched_spectra-&gt;get_LE()-&gt;get_mass_parameter(&quot;d&quot;) &lt;&lt; std::endl;
+         OUTPUT &lt;&lt; &quot;Old SM Spectrum* ms :&quot; &lt;&lt; matched_spectra-&gt;get_LE()-&gt;get_mass_parameter(&quot;s&quot;) &lt;&lt; std::endl;
+         OUTPUT &lt;&lt; EOM;
+
+         // Check running beyond soft and hard limits (assumes QedQcdWrapper for SM)
+         // behave = 0  -- If running beyond soft limit requested, halt at soft limit
+         //                (assumes hard limits outside of soft limits; but this is not enforced)
+         // behave = 1  -- If running beyond soft limit requested, throw warning
+         //                  &quot;           &quot;   hard limit     &quot;    , throw error
+         // behave = anything else -- Ignore limits and attempt running to requested scale
+         if(not SLHAonly) {
+           OUTPUT &lt;&lt; &quot;Testing QedQcdWrapper running limits:&quot; &lt;&lt; std::endl;
+           // behave=0 (default)
+           // Running halted at soft limit
+           OUTPUT &lt;&lt; &quot;behave=0&quot; &lt;&lt; std::endl;
+           SM-&gt;RunToScale(sminputs.mT);   // Soft limit (and hard limit)
+           OUTPUT &lt;&lt; &quot;Current scale: &quot; &lt;&lt; SM-&gt;GetScale() &lt;&lt; std::endl;
+           SM-&gt;RunToScale(1.5*sminputs.mT);
+           OUTPUT &lt;&lt; &quot;Current scale: &quot; &lt;&lt; SM-&gt;GetScale() &lt;&lt; std::endl;
+           OUTPUT &lt;&lt; EOM;
+
+           // behave=2
+           // Should be no errors, just potentially inaccurate running
+           // EDIT: Whoops, so QedQcd object itself will throw an error if you try
+           // to run above mT. Remove comments to observe this behaviour.
+           OUTPUT &lt;&lt; &quot;behave=2&quot; &lt;&lt; std::endl;
+           SM-&gt;RunToScale(sminputs.mT,2);   // Soft limit (and hard limit)
+           OUTPUT &lt;&lt; &quot;Current scale: &quot; &lt;&lt; SM-&gt;GetScale() &lt;&lt; std::endl;
+           //SM-&gt;RunToScale(1.5*sminputs.mT,2);
+           //OUTPUT &lt;&lt; &quot;Current scale: &quot; &lt;&lt; SM-&gt;GetScale() &lt;&lt; std::endl;
+           OUTPUT &lt;&lt; EOM;
+
+           // behave=1
+           OUTPUT &lt;&lt; &quot;behave=1&quot; &lt;&lt; std::endl;
+           SM-&gt;RunToScale(sminputs.mT,1);   // Soft limit (and hard limit)
+           OUTPUT &lt;&lt; &quot;Current scale: &quot; &lt;&lt; SM-&gt;GetScale() &lt;&lt; std::endl;
+           SM-&gt;RunToScale(1.5*sminputs.mT,1); // Beyond hard limit (error)
+           OUTPUT &lt;&lt; &quot;Current scale: &quot; &lt;&lt; SM-&gt;GetScale() &lt;&lt; std::endl;
+           OUTPUT &lt;&lt; EOM;
+         }
+      }
+
+   }  // end namespace SpecBit
+}  // end namespace Gambit
+
+#endif
+</code></pre><hr><p>Updated on 2022-08-01 at 17:02:23 +0000</p><div class=edit-page><a href=https://github.com/RC1242RC/gambit_gh_pages/blob/master/content/en/documentation/code/DarkBit_development/Files/SpecBit__externaltests_8hpp.md><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2"><path d="M17 3a2.828 2.828.0 114 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></svg>Edit this page on GitHub</a></div></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a class=text-muted href=https://www.netlify.com/>Netlify</a>, <a class=text-muted href=https://gohugo.io/>Hugo</a>, and <a class=text-muted href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.54bf0932b8a36d0e152b1635b099a6ef1394d35327e2437550a075c9c8ed1bd8aed5847c21b36fc02ed24014c031d9ca24017b0c78b1639d7e2fa8329898b842.js integrity="sha512-VL8JMrijbQ4VKxY1sJmm7xOU01Mn4kN1UKB1ycjtG9iu1YR8IbNvwC7SQBTAMdnKJAF7DHixY51+L6gymJi4Qg==" crossorigin=anonymous defer></script>
+<script src=/js/highlight.min.5b48bc253dc75aeea5fb366ecf700f4925e2b6eb1a1466f2124b722d68148d67bc0a9365d2b8ad9c585161b46372d23b08509a16f1fd518542b894756d4752d0.js integrity="sha512-W0i8JT3HWu6l+zZuz3APSSXitusaFGbyEktyLWgUjWe8CpNl0ritnFhRYbRjctI7CFCaFvH9UYVCuJR1bUdS0A==" crossorigin=anonymous defer></script>
+<script src=/main.min.40265e9a032aeba5eaf67baac3cbbc22667a7533215d326eeb3e9f4d5e4be40f9ff4dcd22949db73ae527ca26a19d7998091a8973c82af760b2c0daa335190ed.js integrity="sha512-QCZemgMq66Xq9nuqw8u8ImZ6dTMhXTJu6z6fTV5L5A+f9NzSKUnbc65SfKJqGdeZgJGolzyCr3YLLA2qM1GQ7Q==" crossorigin=anonymous defer></script>
+<script src=https://rc1242rc.github.io/index.min.8de8ea9ff8c668ecf31dbf247b94193c399781a13d3aec3324d2fb783797867753dc1c4a2bfbe668bc6f3d6dc508842b1ae16a71c1bf62d0434771ba31cc559b.js integrity="sha512-jejqn/jGaOzzHb8ke5QZPDmXgaE9OuwzJNL7eDeXhndT3BxKK/vmaLxvPW3FCIQrGuFqccG/YtBDR3G6McxVmw==" crossorigin=anonymous defer></script></body></html>

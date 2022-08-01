@@ -1,0 +1,1018 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="ie=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><link rel=preload as=font href=https://rc1242rc.github.io/fonts/vendor/jost/jost-v4-latin-regular.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://rc1242rc.github.io/fonts/vendor/jost/jost-v4-latin-500.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://rc1242rc.github.io/fonts/vendor/jost/jost-v4-latin-700.woff2 type=font/woff2 crossorigin><script>(()=>{var e=localStorage.getItem("theme");e==="dark"&&document.documentElement.setAttribute("data-dark-mode","")})()</script><link rel=stylesheet href=https://rc1242rc.github.io/main.1fa2debdf0a1b20e7268d11906902449af896197928a5bdae9dca95b629cdd73746db3d8c6afacb7320d9deb149a318c764669d08a1ddfd34a657ab2aeab866a.css integrity="sha512-H6LevfChsg5yaNEZBpAkSa+JYZeSilva6dypW2Kc3XN0bbPYxq+stzINnesUmjGMdkZp0Iod39NKZXqyrquGag==" crossorigin=anonymous><noscript><style>img.lazyload{display:none}</style></noscript><meta name=robots content="index, follow"><meta name=googlebot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><meta name=bingbot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><title>file src/LHC_likelihoods.cpp - GAMBIT</title><meta name=description content="[No description available]"><link rel=canonical href=https://rc1242rc.github.io/documentation/code/darkbit_development/files/lhc__likelihoods_8cpp/><meta property="og:locale" content="en_US"><meta property="og:type" content="article"><meta property="og:title" content="file src/LHC_likelihoods.cpp"><meta property="og:description" content="[No description available]"><meta property="og:url" content="https://rc1242rc.github.io/documentation/code/darkbit_development/files/lhc__likelihoods_8cpp/"><meta property="og:site_name" content="GAMBIT"><meta property="og:image" content="https://rc1242rc.github.io/gambit_logo.png"><meta property="og:image:alt" content="GAMBIT"><meta name=twitter:card content="summary_large_image"><meta name=twitter:site content><meta name=twitter:creator content><meta name=twitter:title content="file src/LHC_likelihoods.cpp"><meta name=twitter:description content="[No description available]"><meta name=twitter:image content="https://rc1242rc.github.io/gambit_logo.png"><meta name=twitter:image:alt content="file src/LHC_likelihoods.cpp"><script type=application/ld+json>{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://rc1242rc.github.io/#/schema/organization/1","name":"Doks","url":"https://rc1242rc.github.io/","sameAs":["https://github.com/GambitBSM"],"logo":{"@type":"ImageObject","@id":"https://rc1242rc.github.io/#/schema/image/1","url":"https://rc1242rc.github.io/logo-doks.png","width":450,"height":416,"caption":"Doks"},"image":{"@id":"https://rc1242rc.github.io/#/schema/image/1"}},{"@type":"WebSite","@id":"https://rc1242rc.github.io/#/schema/website/1","url":"https://rc1242rc.github.io/","name":"GAMBIT","description":"Documentation for the Global And Modular BSM Inference Tool","publisher":{"@id":"https://rc1242rc.github.io/#/schema/organization/1"}},{"@type":"WebPage","@id":"https://rc1242rc.github.io/documentation/code/darkbit_development/files/lhc__likelihoods_8cpp/","url":"https://rc1242rc.github.io/documentation/code/darkbit_development/files/lhc__likelihoods_8cpp/","name":"file src\/LHC_likelihoods.cpp","description":"[No description available]","isPartOf":{"@id":"https://rc1242rc.github.io/#/schema/website/1"},"about":{"@id":"https://rc1242rc.github.io/#/schema/organization/1"},"datePublished":"0001-01-01T00:00:00CET","dateModified":"0001-01-01T00:00:00CET","breadcrumb":{"@id":"https://rc1242rc.github.io/documentation/code/darkbit_development/files/lhc__likelihoods_8cpp/#/schema/breadcrumb/1"},"primaryImageOfPage":{"@id":"https://rc1242rc.github.io/documentation/code/darkbit_development/files/lhc__likelihoods_8cpp/#/schema/image/2"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://rc1242rc.github.io/documentation/code/darkbit_development/files/lhc__likelihoods_8cpp/"]}]},{"@type":"BreadcrumbList","@id":"https://rc1242rc.github.io/documentation/code/darkbit_development/files/lhc__likelihoods_8cpp/#/schema/breadcrumb/1","name":"Breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/","url":"https://rc1242rc.github.io/","name":"Home"}},{"@type":"ListItem","position":2,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/documentation/","url":"https://rc1242rc.github.io/documentation/","name":"Documentation"}},{"@type":"ListItem","position":3,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/documentation/code/","url":"https://rc1242rc.github.io/documentation/code/","name":"Code"}},{"@type":"ListItem","position":4,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/documentation/code/darkbit_development/","url":"https://rc1242rc.github.io/documentation/code/darkbit_development/","name":"Darkbit Development"}},{"@type":"ListItem","position":5,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/documentation/code/darkbit_development/files/","url":"https://rc1242rc.github.io/documentation/code/darkbit_development/files/","name":"Files"}},{"@type":"ListItem","position":6,"item":{"@id":"https://rc1242rc.github.io/documentation/code/darkbit_development/files/lhc__likelihoods_8cpp/"}}]},{"@context":"https://schema.org","@graph":[{"@type":"ImageObject","@id":"https://rc1242rc.github.io/documentation/code/darkbit_development/files/lhc__likelihoods_8cpp/#/schema/image/2","url":"https://rc1242rc.github.io/gambit_logo.png","contentUrl":"https://rc1242rc.github.io/gambit_logo.png","caption":"file src\/LHC_likelihoods.cpp"}]}]}</script><meta name=theme-color content="#fff"><link rel=icon href=https://rc1242rc.github.io/favicon.ico sizes=any><link rel=icon type=image/svg+xml href=https://rc1242rc.github.io/favicon.svg><link rel=apple-touch-icon sizes=180x180 href=https://rc1242rc.github.io/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=https://rc1242rc.github.io/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=https://rc1242rc.github.io/favicon-16x16.png><link rel=manifest crossorigin=use-credentials href=https://rc1242rc.github.io/site.webmanifest></head><body class="documentation single light"><div class=sticky-top><div class=header-bar></div><header class="navbar navbar-expand-md navbar-light doks-navbar"><nav class="container-xxl flex-wrap flex-md-nowrap" aria-label="Main navigation"><a class="navbar-brand p-0 me-auto" href=https://rc1242rc.github.io/ aria-label=GAMBIT><img class=logo-light src=https://rc1242rc.github.io//images/gambit_logo.png width=50px>
+<img class="logo-dark d-none" src=https://rc1242rc.github.io//images/gambit_logo.png width=50px>
+GAMBIT</a>
+<button class="btn btn-menu order-2 d-block d-lg-none" type=button data-bs-toggle=offcanvas data-bs-target=#offcanvasDoks aria-controls=offcanvasDoks aria-label="Open main menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button><div class="offcanvas offcanvas-end border-0 py-lg-1" tabindex=-1 id=offcanvasDoks data-bs-backdrop=true aria-labelledby=offcanvasDoksLabel><div class="header-bar d-lg-none"></div><div class="offcanvas-header d-lg-none"><h2 class="h5 offcanvas-title ps-2" id=offcanvasDoksLabel><a class=text-dark href=/>GAMBIT</a></h2><button type=button class="btn-close text-reset me-2" data-bs-dismiss=offcanvas aria-label="Close main menu"></button></div><div class="offcanvas-body p-4 p-lg-0"><ul class="nav flex-column flex-lg-row align-items-lg-center mt-2 mt-lg-0 ms-lg-2 me-lg-auto"><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Documentation
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=/documentation/installation/introduction/>Installation</a></li><li><a class=dropdown-item href=/documentation/examples/colliderbit>Examples</a></li><li><a class=dropdown-item href=/documentation/help/faqs/>Help</a></li><li><a class=dropdown-item href=/documentation/code/index_classes>Code Reference</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Community
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=/community/publications/>Publications</a></li><li><a class=dropdown-item href=/community/talks/>Talks</a></li><li><a class=dropdown-item href=/community/members/>Members</a></li><li><a class=dropdown-item href=/community/code_of_conduct/>Code of Conduct</a></li><li><a class=dropdown-item href=/community/contact/>Contact</a></li></ul></li></ul><hr class="text-black-50 my-4 d-lg-none"><form class="doks-search position-relative flex-grow-1 ms-lg-auto me-lg-2"><input id=search class="form-control is-search" type=search placeholder="Search site..." aria-label="Search site..." autocomplete=off><div id=suggestions class="shadow bg-white rounded d-none"></div></form><hr class="text-black-50 my-4 d-lg-none"><ul class="nav flex-column flex-lg-row"><li class=nav-item><a class="nav-link social-link" href=https://github.com/GambitBSM><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37.0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44.0 0020 4.77 5.07 5.07.0 0019.91 1S18.73.65 16 2.48a13.38 13.38.0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07.0 005 4.77 5.44 5.44.0 003.5 8.55c0 5.42 3.3 6.61 6.44 7A3.37 3.37.0 009 18.13V22"/></svg><small class="ms-2 d-lg-none">GitHub</small></a></li></ul><hr class="text-black-50 my-4 d-lg-none"><div class=dropdown><button class="btn btn-doks-light dropdown-toggle" id=doks-versions data-bs-toggle=dropdown aria-expanded=false data-bs-display=static aria-label="Toggle version menu">
+<span class=d-none>Doks</span>
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></button><ul class="dropdown-menu dropdown-menu-lg-end me-lg-2 shadow rounded border-0" aria-labelledby=doks-versions></ul></div></div></div></nav></header></div><div class="wrap container-xxl" role=document><div class=content><div class="row flex-xl-nowrap"><div class="col-lg-5 col-xl-4 docs-sidebar"><nav class=docs-links aria-label="Main navigation"><ul class="list-unstyled collapsible-sidebar"><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-installation aria-expanded=false>
+Installation</button><div class=collapse id=section-installation><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/installation/introduction/>Getting Started</a></li><li><a class="docs-link rounded" href=/documentation/installation/docker_usage/>Docker Usage</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_linux/>Installation for Linux</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_windows/>Installation for Windows</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_macos/>Installation for macOS</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-examples aria-expanded=false>
+Examples</button><div class=collapse id=section-examples><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/examples/colliderbit/>ColliderBit</a></li><li><a class="docs-link rounded" href=/documentation/examples/anotherbit/>AnotherBit</a></li><li><a class="docs-link rounded" href=/documentation/examples/anotherbit2/>AnotherBit2</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-help aria-expanded=false>
+Help</button><div class=collapse id=section-help><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/help/faqs/>FAQs</a></li><li><a class="docs-link rounded" href=/documentation/help/compiler_matrix/>Compiler Matrix</a></li><li><a class="docs-link rounded" href=/documentation/help/known_issues/>Known Issues</a></li><li><a class="docs-link rounded" href=/documentation/help/configuration_examples/>Configuration Examples</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-code aria-expanded=false>
+Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/code/darkbit_development/index_classes/>Classes</a></li><li><a class="docs-link rounded" href=/documentation/code/darkbit_development/index_files/>Files</a></li><li><a class="docs-link rounded" href=/documentation/code/darkbit_development/index_pages/>Pages</a></li><li><a class="docs-link rounded" href=/documentation/code/darkbit_development/index_namespaces/>Namespaces</a></li></ul></div></li></ul></nav></div><nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation"><div class=d-xl-none><button class="btn btn-outline-primary btn-sm doks-toc-toggle collapsed" type=button data-bs-toggle=collapse data-bs-target=#onThisPage aria-controls=doks-docs-nav aria-expanded=false aria-label="Toggle On this page navigation">
+<span>On this page</span>
+<span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg></span></button><div class=collapse id=onThisPage><div class="card card-body mt-3 py-1"><div class=page-links><nav id=TableOfContents><ul><li><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#defines>Defines</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#macros-documentation>Macros Documentation</a><ul><li><a href=#define-debug_prefix>define DEBUG_PREFIX</a></li></ul></li><li><a href=#source-code>Source code</a></li></ul></li></ul></nav></div></div></div></div><div class="page-links d-none d-xl-block"><h3>On this page</h3><nav id=TableOfContents><ul><li><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#defines>Defines</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#macros-documentation>Macros Documentation</a><ul><li><a href=#define-debug_prefix>define DEBUG_PREFIX</a></li></ul></li><li><a href=#source-code>Source code</a></li></ul></li></ul></nav></div></nav><main class="docs-content col-lg-11 col-xl-9 mx-xl-auto"><h1>file src/LHC_likelihoods.cpp</h1><p class=lead></p><p>[No description available] <a href=#detailed-description>More&mldr;</a></p><h2 id=namespaces>Namespaces <a href=#namespaces class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th>Name</th></tr></thead><tbody><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit/>Gambit</a></strong><br>TODO: see if we can use this one:</td></tr><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit_1_1colliderbit/>Gambit::ColliderBit</a></strong></td></tr></tbody></table><h2 id=defines>Defines <a href=#defines class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th></th><th>Name</th></tr></thead><tbody><tr><td></td><td><strong><a href=/documentation/code/files/lhc__likelihoods_8cpp/#define-debug-prefix>DEBUG_PREFIX</a></strong></td></tr></tbody></table><h2 id=detailed-description>Detailed Description <a href=#detailed-description class=anchor aria-hidden=true>#</a></h2><p><strong>Author</strong>:</p><ul><li>Abram Krislock (<a href=mailto:a.m.b.krislock@fys.uio.no>a.m.b.krislock@fys.uio.no</a>)</li><li>Aldo Saavedra</li><li>Andy Buckley</li><li>Chris Rogan (<a href=mailto:crogan@cern.ch>crogan@cern.ch</a>)</li><li>Pat Scott (<a href=mailto:p.scott@imperial.ac.uk>p.scott@imperial.ac.uk</a>)</li><li>Anders Kvellestad (<a href=mailto:anders.kvellestad@fys.uio.no>anders.kvellestad@fys.uio.no</a>)</li></ul><p><strong>Date</strong>:</p><ul><li>2014 Aug</li><li>2015 May</li><li>2015 Jul</li><li>2018 Jan</li><li>2019 Jan</li><li>2017 March</li><li>2018 Jan</li><li>2018 May</li></ul><p>ColliderBit LHC signal and likelihood functions.</p><hr><p>Authors (add name and date if you modify):</p><hr><h2 id=macros-documentation>Macros Documentation <a href=#macros-documentation class=anchor aria-hidden=true>#</a></h2><h3 id=define-debug_prefix>define DEBUG_PREFIX <a href=#define-debug_prefix class=anchor aria-hidden=true>#</a></h3><pre><code>#define DEBUG_PREFIX &quot;DEBUG: OMP thread &quot; &lt;&lt; omp_get_thread_num() &lt;&lt; &quot;:  &quot;
+</code></pre><h2 id=source-code>Source code <a href=#source-code class=anchor aria-hidden=true>#</a></h2><pre><code>//   GAMBIT: Global and Modular BSM Inference Tool
+//   *********************************************
+
+#include &lt;string&gt;
+#include &lt;sstream&gt;
+
+#include &quot;gambit/Elements/gambit_module_headers.hpp&quot;
+#include &quot;gambit/ColliderBit/ColliderBit_rollcall.hpp&quot;
+#include &quot;gambit/Utils/statistics.hpp&quot; 
+#include &quot;gambit/Utils/util_macros.hpp&quot;
+#include &quot;gambit/ColliderBit/Utils.hpp&quot;
+
+#include &quot;multimin/multimin.hpp&quot;
+
+#include &quot;gambit/Utils/begin_ignore_warnings_eigen.hpp&quot;
+#include &quot;Eigen/Eigenvalues&quot;
+#include &quot;gambit/Utils/end_ignore_warnings.hpp&quot;
+
+#include &lt;gsl/gsl_sf_gamma.h&gt;
+
+//#define COLLIDERBIT_DEBUG
+#define DEBUG_PREFIX &quot;DEBUG: OMP thread &quot; &lt;&lt; omp_get_thread_num() &lt;&lt; &quot;:  &quot;
+
+namespace Gambit
+{
+
+  namespace ColliderBit
+  {
+
+
+    void calc_LHC_signals(map_str_dbl&amp; result)
+    {
+      using namespace Pipes::calc_LHC_signals;
+
+      // Clear the result map
+      result.clear();
+
+      std::stringstream summary_line;
+      summary_line &lt;&lt; &quot;LHC signals per SR: &quot;;
+
+      // Loop over analyses and collect the predicted events into the map
+      for (size_t analysis = 0; analysis &lt; Dep::AllAnalysisNumbers-&gt;size(); ++analysis)
+      {
+        // AnalysisData for this analysis
+        const AnalysisData&amp; adata = *(Dep::AllAnalysisNumbers-&gt;at(analysis));
+
+        summary_line &lt;&lt; adata.analysis_name &lt;&lt; &quot;: &quot;;
+
+        // Loop over the signal regions inside the analysis, and save the predicted number of events for each.
+        for (size_t SR = 0; SR &lt; adata.size(); ++SR)
+        {
+          // Save SR numbers and absolute uncertainties
+          const SignalRegionData srData = adata[SR];
+          const str key = adata.analysis_name + &quot;__&quot; + srData.sr_label + &quot;__i&quot; + std::to_string(SR) + &quot;__signal&quot;;
+          result[key] = srData.n_sig_scaled;
+          const double n_sig_scaled_err = srData.calc_n_sig_scaled_err();
+          result[key + &quot;_uncert&quot;] = n_sig_scaled_err;
+
+          summary_line &lt;&lt; srData.sr_label + &quot;__i&quot; + std::to_string(SR) &lt;&lt; &quot;:&quot; &lt;&lt; srData.n_sig_scaled &lt;&lt; &quot;+-&quot; &lt;&lt; n_sig_scaled_err &lt;&lt; &quot;, &quot;;
+        }
+      }
+      logger() &lt;&lt; LogTags::debug &lt;&lt; summary_line.str() &lt;&lt; EOM;
+    }
+
+
+
+
+    void _gsl_calc_Analysis_MinusLogLike(const size_t n, const double* unit_nuisances_dbl,
+                                         void* fixedparamspack, double* fval)
+    {
+      // Convert the array of doubles into an &quot;Eigen view&quot; of the nuisance params
+      Eigen::Map&lt;const Eigen::ArrayXd&gt; unit_nuisances(&amp;unit_nuisances_dbl[0], n);
+
+      // Convert the linearised array of doubles into &quot;Eigen views&quot; of the fixed params
+      double *fixedparamspack_dbl = (double*) fixedparamspack;
+      Eigen::Map&lt;const Eigen::VectorXd&gt; n_preds_nominal(&amp;fixedparamspack_dbl[0], n);
+      Eigen::Map&lt;const Eigen::ArrayXd&gt; n_obss(&amp;fixedparamspack_dbl[n], n);
+      Eigen::Map&lt;const Eigen::ArrayXd&gt; sqrtevals(&amp;fixedparamspack_dbl[2*n], n);
+      Eigen::Map&lt;const Eigen::MatrixXd&gt; evecs(&amp;fixedparamspack_dbl[3*n], n, n);
+
+      // Rotate rate deltas into the SR basis and shift by SR mean rates
+      const Eigen::VectorXd n_preds = n_preds_nominal + evecs*(sqrtevals*unit_nuisances).matrix();
+
+      // Calculate each SR's Poisson likelihood and add to composite likelihood calculation
+      double loglike_tot = n * log(1/sqrt(2*M_PI)); //&lt; could also drop this, but it costs ~nothing
+      for (size_t j = 0; j &lt; n; ++j)
+      {
+        // First the multivariate Gaussian bit (j = nuisance)
+        const double pnorm_j = -pow(unit_nuisances(j), 2)/2.;
+        loglike_tot += pnorm_j;
+
+        // Then the Poisson bit (j = SR)
+        const double lambda_j = std::max(n_preds(j), 1e-3); //&lt; manually avoid &lt;= 0 rates
+        const double logfact_n_obs = 0; // gsl_sf_lngamma(n_obss(j) + 1); //&lt; skipping log(n_obs!) computation
+        const double loglike_j = n_obss(j)*log(lambda_j) - lambda_j - logfact_n_obs;
+
+        loglike_tot += loglike_j;
+      }
+
+      // Output via argument (times -1 to return -LL for minimisation)
+      *fval = -loglike_tot;
+    }
+
+
+    void _gsl_calc_Analysis_MinusLogLikeGrad(const size_t n, const double* unit_nuisances_dbl,
+                                             void* fixedparamspack, double* fgrad)
+    {
+      // Convert the array of doubles into an &quot;Eigen view&quot; of the nuisance params
+      Eigen::Map&lt;const Eigen::ArrayXd&gt; unit_nuisances(&amp;unit_nuisances_dbl[0], n);
+
+      // Convert the linearised array of doubles into &quot;Eigen views&quot; of the fixed params
+      double *fixedparamspack_dbl = (double*) fixedparamspack;
+      Eigen::Map&lt;const Eigen::VectorXd&gt; n_preds_nominal(&amp;fixedparamspack_dbl[0], n);
+      Eigen::Map&lt;const Eigen::ArrayXd&gt; n_obss(&amp;fixedparamspack_dbl[n], n);
+      Eigen::Map&lt;const Eigen::ArrayXd&gt; sqrtevals(&amp;fixedparamspack_dbl[2*n], n);
+      Eigen::Map&lt;const Eigen::MatrixXd&gt; evecs(&amp;fixedparamspack_dbl[3*n], n, n);
+
+      // Rotate rate deltas into the SR basis and shift by SR mean rates
+      const Eigen::VectorXd n_preds = n_preds_nominal + evecs*(sqrtevals*unit_nuisances).matrix();
+
+      // Compute gradient elements
+      for (int j = 0; j &lt; unit_nuisances.size(); ++j)
+      {
+        double llgrad = 0;
+        for (int k = 0; k &lt; unit_nuisances.size(); ++k)
+        {
+          llgrad += (n_obss(k)/n_preds(k) - 1) * evecs(k,j);
+        }
+        llgrad = llgrad * sqrtevals(j) - unit_nuisances(j);
+        // Output via argument (times -1 to return -dLL for minimisation)
+        fgrad[j] = -llgrad;
+      }
+    }
+
+
+    void _gsl_calc_Analysis_MinusLogLikeAndGrad(const size_t n, const double* unit_nuisances_dbl,
+                                                void* fixedparamspack,
+                                                double* fval, double* fgrad)
+    {
+      _gsl_calc_Analysis_MinusLogLike(n, unit_nuisances_dbl, fixedparamspack, fval);
+      _gsl_calc_Analysis_MinusLogLikeGrad(n, unit_nuisances_dbl, fixedparamspack, fgrad);
+    }
+
+
+    std::vector&lt;double&gt; _gsl_mkpackedarray(const Eigen::ArrayXd&amp; n_preds,
+                                           const Eigen::ArrayXd&amp; n_obss,
+                                           const Eigen::ArrayXd&amp; sqrtevals,
+                                           const Eigen::MatrixXd&amp; evecs)
+    {
+      const size_t nSR = n_obss.size();
+      std::vector&lt;double&gt; fixeds(3*nSR + 2*nSR*nSR, 0.0);
+      for (size_t i = 0; i &lt; nSR; ++i)
+      {
+        fixeds[0+i] = n_preds(i);
+        fixeds[nSR+i] = n_obss(i);
+        fixeds[2*nSR+i] = sqrtevals(i);
+        for (size_t j = 0; j &lt; nSR; ++j)
+        {
+          fixeds[3*nSR+i*nSR+j] = evecs(j,i);
+        }
+      }
+
+      return fixeds;
+    }
+
+
+    double profile_loglike_cov(const Eigen::ArrayXd&amp; n_preds,
+                               const Eigen::ArrayXd&amp; n_obss,
+                               const Eigen::ArrayXd&amp; sqrtevals,
+                               const Eigen::MatrixXd&amp; evecs)
+    {
+      // Number of signal regions
+      const size_t nSR = n_obss.size();
+
+      // Set initial guess for nuisances to zero
+      std::vector&lt;double&gt; nuisances(nSR, 0.0);
+
+      // // Set nuisances to an informed starting position
+      // const Eigen::ArrayXd&amp; err_n_preds = (evecs*sqrtevals.matrix()).array(); //&lt; @todo CHECK
+      // std::vector&lt;double&gt; nuisances(nSR, 0.0);
+      // for (size_t j = 0; j &lt; nSR; ++j) 
+      // {
+      //   // Calculate the max-L starting position, ignoring correlations
+      //   const double obs = n_obss(j);
+      //   const double rate = n_preds(j);
+      //   const double delta = err_n_preds(j);
+      //   const double a = delta;
+      //   const double b = rate + delta*delta;
+      //   const double c = delta * (rate - obs);
+      //   const double d = b*b - 4*a*c;
+      //   const double sqrtd = (d &lt; 0) ? 0 : sqrt(d);
+      //   if (sqrtd == 0)
+      //   {
+      //     nuisances[j] = -b / (2*a);
+      //   }
+      //   else
+      //   {
+      //     const double th0_a = (-b + sqrtd) / (2*a);
+      //     const double th0_b = (-b - sqrtd) / (2*a);
+      //     nuisances[j] = (fabs(th0_a) &lt; fabs(th0_b)) ? th0_a : th0_b;
+      //   }
+      // }
+
+
+      // Optimiser parameters
+      // Params: step1size, tol, maxiter, epsabs, simplex maxsize, method, verbosity
+      // Methods:
+      //  0: Fletcher-Reeves conjugate gradient
+      //  1: Polak-Ribiere conjugate gradient
+      //  2: Vector Broyden-Fletcher-Goldfarb-Shanno method
+      //  3: Steepest descent algorithm
+      //  4: Nelder-Mead simplex
+      //  5: Vector Broyden-Fletcher-Goldfarb-Shanno method ver. 2
+      //  6: Simplex algorithm of Nelder and Mead ver. 2
+      //  7: Simplex algorithm of Nelder and Mead: random initialization
+      using namespace Pipes::calc_LHC_LogLikes;
+      static const double INITIAL_STEP = runOptions-&gt;getValueOrDef&lt;double&gt;(0.1, &quot;nuisance_prof_initstep&quot;);
+      static const double CONV_TOL = runOptions-&gt;getValueOrDef&lt;double&gt;(0.01, &quot;nuisance_prof_convtol&quot;);
+      static const unsigned MAXSTEPS = runOptions-&gt;getValueOrDef&lt;unsigned&gt;(10000, &quot;nuisance_prof_maxsteps&quot;);
+      static const double CONV_ACC = runOptions-&gt;getValueOrDef&lt;double&gt;(0.01, &quot;nuisance_prof_convacc&quot;);
+      static const double SIMPLEX_SIZE = runOptions-&gt;getValueOrDef&lt;double&gt;(1e-5, &quot;nuisance_prof_simplexsize&quot;);
+      static const unsigned METHOD = runOptions-&gt;getValueOrDef&lt;unsigned&gt;(6, &quot;nuisance_prof_method&quot;);
+      static const unsigned VERBOSITY = runOptions-&gt;getValueOrDef&lt;unsigned&gt;(0, &quot;nuisance_prof_verbosity&quot;);
+      static const struct multimin::multimin_params oparams = {INITIAL_STEP, CONV_TOL, MAXSTEPS, CONV_ACC, SIMPLEX_SIZE, METHOD, VERBOSITY};
+
+      // Convert the linearised array of doubles into &quot;Eigen views&quot; of the fixed params
+      std::vector&lt;double&gt; fixeds = _gsl_mkpackedarray(n_preds, n_obss, sqrtevals, evecs);
+
+      // Pass to the minimiser
+      double minusbestll = 999;
+
+      // Call minimizer with stderr temporarily silenced (due to gsl output)?
+      static bool silence_multimin = runOptions-&gt;getValueOrDef&lt;bool&gt;(true, &quot;silence_multimin&quot;);
+
+      // Call the minimizer
+      if (silence_multimin)
+      {
+        CALL_WITH_SILENCED_STDERR(
+          multimin::multimin(nSR, &amp;nuisances[0], &amp;minusbestll,
+                   nullptr, nullptr, nullptr,
+                   _gsl_calc_Analysis_MinusLogLike,
+                   _gsl_calc_Analysis_MinusLogLikeGrad,
+                   _gsl_calc_Analysis_MinusLogLikeAndGrad,
+                   &amp;fixeds[0], oparams) 
+        )
+      }
+      else
+      {
+        multimin::multimin(nSR, &amp;nuisances[0], &amp;minusbestll,
+                 nullptr, nullptr, nullptr,
+                 _gsl_calc_Analysis_MinusLogLike,
+                 _gsl_calc_Analysis_MinusLogLikeGrad,
+                 _gsl_calc_Analysis_MinusLogLikeAndGrad,
+                 &amp;fixeds[0], oparams);
+      }
+
+      return -minusbestll;
+    }
+
+
+    double marg_loglike_nulike1sr(const Eigen::ArrayXd&amp; n_preds,
+                                  const Eigen::ArrayXd&amp; n_obss,
+                                  const Eigen::ArrayXd&amp; sqrtevals)
+    {
+      assert(n_preds.size() == 1);
+      assert(n_obss.size() == 1);
+      assert(sqrtevals.size() == 1);
+
+      using namespace Pipes::calc_LHC_LogLikes;
+      auto marginaliser = (*BEgroup::lnlike_marg_poisson == &quot;lnlike_marg_poisson_lognormal_error&quot;)
+        ? BEreq::lnlike_marg_poisson_lognormal_error : BEreq::lnlike_marg_poisson_gaussian_error;
+
+      // Setting bkg above zero to avoid nulike special cases
+      const double sr_margll = marginaliser((int) n_obss(0), 0.001, n_preds(0), sqrtevals(0)/n_preds(0));
+      return sr_margll;
+    }
+
+
+    double marg_loglike_cov(const Eigen::ArrayXd&amp; n_preds,
+                            const Eigen::ArrayXd&amp; n_obss,
+                            const Eigen::ArrayXd&amp; sqrtevals,
+                            const Eigen::MatrixXd&amp; evecs)
+    {
+      // Number of signal regions
+      const size_t nSR = n_obss.size();
+
+      // Sample correlated SR rates from a rotated Gaussian defined by the covariance matrix and offset by the mean rates
+      using namespace Pipes::calc_LHC_LogLikes;
+      static const double CONVERGENCE_TOLERANCE_ABS = runOptions-&gt;getValueOrDef&lt;double&gt;(0.05, &quot;nuisance_marg_convthres_abs&quot;);
+      static const double CONVERGENCE_TOLERANCE_REL = runOptions-&gt;getValueOrDef&lt;double&gt;(0.05, &quot;nuisance_marg_convthres_rel&quot;);
+      static const size_t NSAMPLE_INPUT = runOptions-&gt;getValueOrDef&lt;size_t&gt;(100000, &quot;nuisance_marg_nsamples_start&quot;);
+      static const bool   NULIKE1SR = runOptions-&gt;getValueOrDef&lt;bool&gt;(false, &quot;nuisance_marg_nulike1sr&quot;);
+
+      // Optionally use nulike's more careful 1D marginalisation for one-SR cases
+      if (NULIKE1SR &amp;&amp; nSR == 1) return marg_loglike_nulike1sr(n_preds, n_obss, sqrtevals);
+
+      // Dynamic convergence control &amp; test variables
+      size_t nsample = NSAMPLE_INPUT;
+      bool first_iteration = true;
+      double diff_abs = 9999;
+      double diff_rel = 1;
+
+      // Likelihood variables (note use of long double to guard against blow-up of L as opposed to log(L1/L0))
+      long double ana_like_prev = 1;
+      long double ana_like = 1;
+      long double lsum_prev = 0;
+
+      // Sampler for unit-normal nuisances
+      std::normal_distribution&lt;double&gt; unitnormdbn(0,1);
+
+      // Log factorial of observed number of events.
+      // Currently use the ln(Gamma(x)) function gsl_sf_lngamma from GSL. (Need continuous function.)
+      // We may want to switch to using Stirling's approximation: ln(n!) ~ n*ln(n) - n
+      Eigen::ArrayXd logfact_n_obss(nSR);
+      for (size_t j = 0; j &lt; nSR; ++j)
+        logfact_n_obss(j) = gsl_sf_lngamma(n_obss(j) + 1);
+
+      // Check absolute difference between independent estimates
+      while ((diff_abs &gt; CONVERGENCE_TOLERANCE_ABS &amp;&amp; diff_rel &gt; CONVERGENCE_TOLERANCE_REL) || 1.0/sqrt(nsample) &gt; CONVERGENCE_TOLERANCE_ABS)
+      {
+        long double lsum = 0;
+
+
+        #pragma omp parallel
+        {
+          // Sample correlated SR rates from a rotated Gaussian defined by the covariance matrix and offset by the mean rates
+          double lsum_private  = 0;
+          #pragma omp for nowait
+          for (size_t i = 0; i &lt; nsample; ++i)
+          {
+            Eigen::VectorXd norm_samples(nSR);
+            for (size_t j = 0; j &lt; nSR; ++j)
+              norm_samples(j) = sqrtevals(j) * unitnormdbn(Random::rng());
+
+            // Rotate rate deltas into the SR basis and shift by SR mean rates
+            const Eigen::VectorXd n_pred_samples  = n_preds + (evecs*norm_samples).array();
+
+            // Calculate Poisson likelihood and add to composite likelihood calculation
+            double combined_loglike = 0;
+            for (size_t j = 0; j &lt; nSR; ++j)
+            {
+              const double lambda_j = std::max(n_pred_samples(j), 1e-3); //&lt; manually avoid &lt;= 0 rates
+              const double loglike_j  = n_obss(j)*log(lambda_j) - lambda_j - logfact_n_obss(j);
+              combined_loglike += loglike_j;
+            }
+            // Add combined likelihood to running sums (to later calculate averages)
+            lsum_private += exp(combined_loglike);
+          }
+
+          #pragma omp critical
+          {
+            lsum  += lsum_private;
+          }
+        } // End omp parallel
+
+        // Compare convergence to previous independent batch
+        if (first_iteration)  // The first round must be generated twice
+        {
+          lsum_prev = lsum;
+          first_iteration = false;
+        }
+        else
+        {
+          ana_like_prev = lsum_prev / (double)nsample;
+          ana_like = lsum / (double)nsample;
+          diff_abs = fabs(ana_like_prev - ana_like);
+          diff_rel = diff_abs/ana_like;
+
+          // Update variables
+          lsum_prev += lsum;  // Aggregate result. This doubles the effective batch size for lsum_prev.
+          nsample *=2;  // This ensures that the next batch for lsum is as big as the current batch size for lsum_prev, so they can be compared directly.
+        }
+
+        #ifdef COLLIDERBIT_DEBUG
+        cout &lt;&lt; DEBUG_PREFIX
+             &lt;&lt; &quot;diff_rel: &quot; &lt;&lt; diff_rel &lt;&lt; endl
+             &lt;&lt; &quot;   diff_abs: &quot; &lt;&lt; diff_abs &lt;&lt; endl
+             &lt;&lt; &quot;   logl: &quot; &lt;&lt; log(ana_like) &lt;&lt; endl;
+        cout &lt;&lt; DEBUG_PREFIX &lt;&lt; &quot;nsample for the next iteration is: &quot; &lt;&lt; nsample &lt;&lt; endl;
+        cout &lt;&lt; DEBUG_PREFIX &lt;&lt; endl;
+        #endif
+      }
+      // End convergence while-loop
+
+      // Combine the independent estimates ana_like and ana_like_prev.
+      // Use equal weights since the estimates are based on equal batch sizes.
+      ana_like = 0.5*(ana_like + ana_like_prev);
+      const double ana_margll = log(ana_like);
+      #ifdef COLLIDERBIT_DEBUG
+      cout &lt;&lt; DEBUG_PREFIX &lt;&lt; &quot;Combined estimate: ana_loglike: &quot; &lt;&lt; ana_margll &lt;&lt; &quot;   (based on 2*nsample=&quot; &lt;&lt; 2*nsample &lt;&lt; &quot; samples)&quot; &lt;&lt; endl;
+      #endif
+
+      return ana_margll;
+    }
+
+
+    AnalysisLogLikes calc_loglikes_for_analysis(const AnalysisData&amp; adata, bool USE_COVAR, bool USE_MARG,
+                                                bool combine_nocovar_SRs, bool set_zero_loglike=false)
+    {
+      AnalysisLogLikes result;
+
+      // Fix the profiling/marginalising function according to the option
+      auto marg_prof_fn = USE_MARG ? marg_loglike_cov : profile_loglike_cov;
+
+      // Extract analysis info from the AnalysisData instance
+      const std::string ananame = adata.analysis_name;
+      const size_t nSR = adata.size();
+      const bool has_covar = adata.srcov.rows() &gt; 0;
+
+
+      // Shortcut #1: 
+      // We've been told to set all SR loglikes to zero for this analysis
+      if (set_zero_loglike)
+      {
+        // If this is an analysis with covariance info, only add a single 0-entry in the map
+        if (USE_COVAR &amp;&amp; has_covar)
+        {
+          result.combination_sr_label = &quot;none&quot;;
+          result.combination_sr_index = -1;
+          result.combination_loglike = 0.0;
+        }
+        // If this is an analysis without covariance info, add 0-entries for all SRs plus
+        // one for the combined LogLike
+        else
+        {
+          for (size_t SR = 0; SR &lt; adata.size(); ++SR)
+          {
+            result.sr_indices[adata[SR].sr_label] = SR;
+            result.sr_loglikes[adata[SR].sr_label] = 0.0;
+          }
+          result.combination_sr_label = &quot;none&quot;;
+          result.combination_sr_index = -1;
+          result.combination_loglike = 0.0;
+        }
+
+        #ifdef COLLIDERBIT_DEBUG
+        cout &lt;&lt; DEBUG_PREFIX &lt;&lt; &quot;calc_LHC_LogLikes: &quot; &lt;&lt; ananame &lt;&lt; &quot;_LogLike : &quot; &lt;&lt; 0.0 &lt;&lt; &quot; (due to set_zero_loglike = true)&quot; &lt;&lt; endl;
+        #endif
+
+        return result;
+      }
+
+
+      // Shortcut #2
+      // If all SRs have 0 signal prediction, we know the delta log-likelihood is 0.
+      bool all_zero_signal = true;
+      for (size_t SR = 0; SR &lt; nSR; ++SR)
+      {
+        if (adata[SR].n_sig_MC != 0)
+        {
+          all_zero_signal = false;
+          break;
+        }
+      }
+      if (all_zero_signal)
+      {
+        // Store result
+        if (!(USE_COVAR &amp;&amp; has_covar))
+        {
+          for (size_t SR = 0; SR &lt; adata.size(); ++SR)
+          {
+            result.sr_indices[adata[SR].sr_label] = SR;
+            result.sr_loglikes[adata[SR].sr_label] = 0.0;
+          }
+        }
+        result.combination_sr_label = &quot;any&quot;;
+        result.combination_sr_index = -1;
+        result.combination_loglike = 0.0;
+
+        #ifdef COLLIDERBIT_DEBUG
+        cout &lt;&lt; DEBUG_PREFIX &lt;&lt; &quot;calc_LHC_LogLikes: &quot; &lt;&lt; ananame &lt;&lt; &quot;_LogLike : &quot; &lt;&lt; 0.0 &lt;&lt; &quot; (No signal predicted. Skipped full calculation.)&quot; &lt;&lt; endl;
+        #endif
+
+        // Continue to next analysis
+        return result;
+      }
+
+
+      // Work out the total (delta) log likelihood for this analysis, with correlations as available/instructed
+      double ana_dll = NAN;
+      if (USE_COVAR &amp;&amp; has_covar)
+      {
+        #ifdef COLLIDERBIT_DEBUG
+        cout &lt;&lt; DEBUG_PREFIX &lt;&lt; &quot;calc_LHC_LogLikes: Analysis &quot; &lt;&lt; analysis &lt;&lt; &quot; has a covariance matrix: computing composite loglike.&quot; &lt;&lt; endl;
+        #endif
+
+
+        // Construct vectors of SR numbers
+        Eigen::ArrayXd n_obs(nSR); // logfact_n_obs(nSR);
+        Eigen::ArrayXd n_pred_b(nSR), n_pred_sb(nSR), abs_unc_s(nSR);
+        for (size_t SR = 0; SR &lt; nSR; ++SR)
+        {
+          const SignalRegionData&amp; srData = adata[SR];
+
+          // Actual observed number of events
+          n_obs(SR) = srData.n_obs;
+
+          // Log factorial of observed number of events.
+          // Currently use the ln(Gamma(x)) function gsl_sf_lngamma from GSL. (Need continuous function.)
+          // We may want to switch to using Stirling's approximation: ln(n!) ~ n*ln(n) - n
+          //logfact_n_obs(SR) = gsl_sf_lngamma(n_obs(SR) + 1.);
+
+          // A contribution to the predicted number of events that is not known exactly
+          n_pred_b(SR) = std::max(srData.n_bkg, 0.001); // &lt;-- Avoid trouble with b==0
+          n_pred_sb(SR) = srData.n_sig_scaled + srData.n_bkg;
+
+          // Absolute errors for n_predicted_uncertain_*
+          abs_unc_s(SR) = srData.calc_n_sig_scaled_err();
+        }
+
+        // Diagonalise the background-only covariance matrix, extracting the correlation and rotation matrices
+        const Eigen::MatrixXd&amp; srcov_b = adata.srcov;
+        Eigen::MatrixXd srcorr_b = srcov_b; // start with cov, then make corr
+        for (size_t SR = 0; SR &lt; nSR; ++SR)
+        {
+          const double diagsd = sqrt(srcov_b(SR,SR));
+          srcorr_b.row(SR) /= diagsd;
+          srcorr_b.col(SR) /= diagsd;
+        }
+        const Eigen::SelfAdjointEigenSolver&lt;Eigen::MatrixXd&gt; eig_b(adata.srcov);
+        const Eigen::ArrayXd Eb = eig_b.eigenvalues();
+        const Eigen::ArrayXd sqrtEb = Eb.sqrt();
+        const Eigen::MatrixXd Vb = eig_b.eigenvectors();
+
+        // Construct and diagonalise the s+b covariance matrix, adding the diagonal signal uncertainties in quadrature
+        const Eigen::MatrixXd srcov_s = abs_unc_s.array().square().matrix().asDiagonal();
+        const Eigen::MatrixXd srcov_sb = srcov_b + srcov_s;
+        Eigen::MatrixXd srcorr_sb = srcov_sb;
+        for (size_t SR = 0; SR &lt; nSR; ++SR)
+        {
+          const double diagsd = sqrt(srcov_sb(SR,SR));
+          srcorr_sb.row(SR) /= diagsd;
+          srcorr_sb.col(SR) /= diagsd;
+        }
+        const Eigen::SelfAdjointEigenSolver&lt;Eigen::MatrixXd&gt; eig_sb(srcov_sb);
+        const Eigen::ArrayXd Esb = eig_sb.eigenvalues();
+        const Eigen::ArrayXd sqrtEsb = Esb.sqrt();
+        const Eigen::MatrixXd Vsb = eig_sb.eigenvectors();
+
+        // cout &lt;&lt; &quot;B: &quot; &lt;&lt; srcorr_b &lt;&lt; &quot; &quot; &lt;&lt; srcov_b &lt;&lt; endl;
+        // cout &lt;&lt; &quot;SB: &quot; &lt;&lt; srcorr_sb &lt;&lt; &quot; &quot; &lt;&lt; srcov_sb &lt;&lt; endl;
+
+        // Compute the single, correlated analysis-level DLL as the difference of s+b and b (partial) LLs
+        const double ll_b = marg_prof_fn(n_pred_b, n_obs, sqrtEb, Vb);
+        const double ll_sb = marg_prof_fn(n_pred_sb, n_obs, sqrtEsb, Vsb);
+        const double dll = ll_sb - ll_b;
+
+        // Store result
+        ana_dll = dll;
+        result.combination_sr_label = &quot;all&quot;;
+        result.combination_sr_index = -1;
+        result.combination_loglike = ana_dll;
+
+        #ifdef COLLIDERBIT_DEBUG
+        cout &lt;&lt; DEBUG_PREFIX &lt;&lt; &quot;calc_LHC_LogLikes: &quot; &lt;&lt; ananame &lt;&lt; &quot;_LogLike : &quot; &lt;&lt; ana_dll &lt;&lt; endl;
+        #endif
+
+
+      }
+      else
+      { // NO SR-CORRELATION INFO, OR USER CHOSE NOT TO USE IT:
+
+
+        // We either take the result from the SR *expected* to be most
+        // constraining under the s=0 assumption (default), or naively combine
+        // the loglikes for all SRs (if combine_SRs_without_covariances=true).
+        #ifdef COLLIDERBIT_DEBUG
+        cout &lt;&lt; DEBUG_PREFIX &lt;&lt; &quot;calc_LHC_LogLikes: Analysis &quot; &lt;&lt; analysis &lt;&lt; &quot; has no covariance matrix: computing single best-expected loglike.&quot; &lt;&lt; endl;
+        #endif
+
+        double bestexp_dll_exp = 0, bestexp_dll_obs = NAN;
+        str bestexp_sr_label;
+        int bestexp_sr_index;
+        double nocovar_srsum_dll_obs = 0;
+
+        for (size_t SR = 0; SR &lt; nSR; ++SR)
+        {
+          const SignalRegionData&amp; srData = adata[SR];
+
+          // Shortcut: If n_sig_MC == 0, we know the delta log-likelihood is 0.
+          if(srData.n_sig_MC == 0)
+          {
+            // Store (obs) result for this SR
+            result.sr_indices[srData.sr_label] = SR;
+            result.sr_loglikes[srData.sr_label] = 0.0;
+
+            // Update the running best-expected-exclusion detail
+            if (0.0 &lt; bestexp_dll_exp || SR == 0)
+            {
+              bestexp_dll_exp = 0.0;
+              bestexp_dll_obs = 0.0;
+              bestexp_sr_label = srData.sr_label;
+              bestexp_sr_index = SR;
+            }
+
+            // Skip to next SR
+            continue;
+          }
+
+          // A contribution to the predicted number of events that is not known exactly
+          const double n_pred_b = std::max(srData.n_bkg, 0.001); // &lt;-- Avoid trouble with b==0
+          const double n_pred_sb = n_pred_b + srData.n_sig_scaled;
+
+          // Actual observed number of events and predicted background, as integers cf. Poisson stats
+          const double n_obs = round(srData.n_obs);
+          const double n_pred_b_int = round(n_pred_b);
+
+          // Absolute errors for n_predicted_uncertain_*
+          const double abs_uncertainty_b = std::max(srData.n_bkg_err, 0.001); // &lt;-- Avoid trouble with b_err==0
+          const double abs_uncertainty_sb = std::max(srData.calc_n_sigbkg_err(), 0.001); // &lt;-- Avoid trouble with sb_err==0
+ 
+
+          // Construct dummy 1-element Eigen objects for passing to the general likelihood calculator
+          Eigen::ArrayXd n_obss(1);        n_obss(0) = n_obs;
+          Eigen::ArrayXd n_preds_b_int(1); n_preds_b_int(0) = n_pred_b_int;
+          Eigen::ArrayXd n_preds_b(1);     n_preds_b(0) = n_pred_b;
+          Eigen::ArrayXd n_preds_sb(1);    n_preds_sb(0) = n_pred_sb;
+          Eigen::ArrayXd sqrtevals_b(1);   sqrtevals_b(0) = abs_uncertainty_b;
+          Eigen::ArrayXd sqrtevals_sb(1);  sqrtevals_sb(0) = abs_uncertainty_sb;
+          Eigen::MatrixXd dummy(1,1); dummy(0,0) = 1.0;
+
+
+          // Compute this SR's DLLs as the differences of s+b and b (partial) LLs
+          const double ll_b_exp = marg_prof_fn(n_preds_b, n_preds_b_int, sqrtevals_b, dummy);
+          const double ll_b_obs = marg_prof_fn(n_preds_b, n_obss, sqrtevals_b, dummy);
+          const double ll_sb_exp = marg_prof_fn(n_preds_sb, n_preds_b_int, sqrtevals_sb, dummy);
+          const double ll_sb_obs = marg_prof_fn(n_preds_sb, n_obss, sqrtevals_sb, dummy);
+          const double dll_exp = ll_sb_exp - ll_b_exp;
+          const double dll_obs = ll_sb_obs - ll_b_obs;
+
+          // Check for problems
+          if (Utils::isnan(ll_b_exp))
+          {
+            std::stringstream msg;
+            msg &lt;&lt; &quot;Computation of ll_b_exp for signal region &quot; &lt;&lt; srData.sr_label &lt;&lt; &quot; in analysis &quot; &lt;&lt; ananame &lt;&lt; &quot; returned NaN&quot; &lt;&lt; endl;
+            invalid_point().raise(msg.str());
+          }
+          if (Utils::isnan(ll_b_obs))
+          {
+            std::stringstream msg;
+            msg &lt;&lt; &quot;Computation of ll_b_obs for signal region &quot; &lt;&lt; srData.sr_label &lt;&lt; &quot; in analysis &quot; &lt;&lt; ananame &lt;&lt; &quot; returned NaN&quot; &lt;&lt; endl;
+            invalid_point().raise(msg.str());
+          }
+          if (Utils::isnan(ll_sb_exp))
+          {
+            std::stringstream msg;
+            msg &lt;&lt; &quot;Computation of ll_sb_exp for signal region &quot; &lt;&lt; srData.sr_label &lt;&lt; &quot; in analysis &quot; &lt;&lt; ananame &lt;&lt; &quot; returned NaN&quot; &lt;&lt; endl;
+            invalid_point().raise(msg.str());
+          }
+          if (Utils::isnan(ll_sb_obs))
+          {
+            std::stringstream msg;
+            msg &lt;&lt; &quot;Computation of ll_sb_obs for signal region &quot; &lt;&lt; srData.sr_label &lt;&lt; &quot; in analysis &quot; &lt;&lt; ananame &lt;&lt; &quot; returned NaN&quot; &lt;&lt; endl;
+            invalid_point().raise(msg.str());
+          }
+
+          // Update the running best-expected-exclusion detail
+          if (dll_exp &lt; bestexp_dll_exp || SR == 0)
+          {
+            bestexp_dll_exp = dll_exp;
+            bestexp_dll_obs = dll_obs;
+            bestexp_sr_label = srData.sr_label;
+            bestexp_sr_index = SR;
+            #ifdef COLLIDERBIT_DEBUG
+            cout &lt;&lt; DEBUG_PREFIX &lt;&lt; &quot;Setting bestexp_sr_label to: &quot; &lt;&lt; bestexp_sr_label &lt;&lt; &quot;, LogL_exp = &quot; &lt;&lt; bestexp_dll_exp &lt;&lt; &quot;, LogL_obs = &quot; &lt;&lt; bestexp_dll_obs &lt;&lt; endl;
+            #endif
+          }
+
+          // Store (obs) result for this SR
+          result.sr_indices[srData.sr_label] = SR;
+          result.sr_loglikes[srData.sr_label] = dll_obs;
+          // Also add the obs loglike to the no-correlations sum over SRs
+          nocovar_srsum_dll_obs += dll_obs;
+
+          #ifdef COLLIDERBIT_DEBUG
+          cout &lt;&lt; DEBUG_PREFIX &lt;&lt; ananame &lt;&lt; &quot;, &quot; &lt;&lt; srData.sr_label &lt;&lt; &quot;,  llsb_exp-llb_exp = &quot; &lt;&lt; dll_exp &lt;&lt; &quot;,  llsb_obs-llb_obs= &quot; &lt;&lt; dll_obs &lt;&lt; endl;
+          #endif
+
+        }
+
+        // Set this analysis' total obs DLL to that from the best-expected SR
+        ana_dll = bestexp_dll_obs;
+        result.combination_sr_label = bestexp_sr_label;
+        result.combination_sr_index = bestexp_sr_index;
+        result.combination_loglike = ana_dll;
+
+        // Or should we use the naive sum of SR loglikes (without correlations) instead?
+        if (combine_nocovar_SRs)
+        {
+          result.combination_loglike = nocovar_srsum_dll_obs;
+        }
+
+        #ifdef COLLIDERBIT_DEBUG
+        cout &lt;&lt; DEBUG_PREFIX &lt;&lt; &quot;calc_LHC_LogLikes: &quot; &lt;&lt; ananame &lt;&lt; &quot;_&quot; &lt;&lt; bestexp_sr_label &lt;&lt; &quot;_LogLike : &quot; &lt;&lt; ana_dll &lt;&lt; endl;
+        #endif
+
+      } // end cov/no-cov
+
+
+      // Check for problems with the result
+      for(auto&amp; s_d_pair : result.sr_loglikes)
+      {
+        if (Utils::isnan(s_d_pair.second))
+        {
+          std::stringstream msg;
+          msg &lt;&lt; &quot;Computation of loglike for signal region &quot; &lt;&lt; s_d_pair.first &lt;&lt; &quot; in analysis &quot; &lt;&lt; ananame &lt;&lt; &quot; returned NaN&quot; &lt;&lt; endl;
+          msg &lt;&lt; &quot;Will now print the signal region data for this analysis:&quot; &lt;&lt; endl;
+          for (size_t SR = 0; SR &lt; nSR; ++SR)
+          {
+            const SignalRegionData&amp; srData = adata[SR];
+            msg &lt;&lt; srData.sr_label
+                &lt;&lt; &quot;,  n_bkg = &quot; &lt;&lt; srData.n_bkg
+                &lt;&lt; &quot;,  n_bkg_err = &quot; &lt;&lt; srData.n_bkg_err
+                &lt;&lt; &quot;,  n_obs = &quot; &lt;&lt; srData.n_obs
+                &lt;&lt; &quot;,  n_sig_scaled = &quot; &lt;&lt; srData.n_sig_scaled
+                &lt;&lt; &quot;,  n_sig_MC = &quot; &lt;&lt; srData.n_sig_MC
+                &lt;&lt; &quot;,  n_sig_MC_sys = &quot; &lt;&lt; srData.n_sig_MC_sys
+                &lt;&lt; endl;
+          }
+          invalid_point().raise(msg.str());
+        }
+      }
+
+      return result;
+    }
+
+
+    void calc_LHC_LogLikes(map_str_AnalysisLogLikes&amp; result)
+    {
+      // Read options
+      using namespace Pipes::calc_LHC_LogLikes;
+      // Use covariance matrices if available?
+      static const bool USE_COVAR = runOptions-&gt;getValueOrDef&lt;bool&gt;(true, &quot;use_covariances&quot;);
+      // Use marginalisation rather than profiling (probably less stable)?
+      static const bool USE_MARG = runOptions-&gt;getValueOrDef&lt;bool&gt;(false, &quot;use_marginalising&quot;);
+      // Use the naive sum of SR loglikes for analyses without known correlations?
+      static const bool combine_nocovar_SRs = runOptions-&gt;getValueOrDef&lt;bool&gt;(false, &quot;combine_SRs_without_covariances&quot;);
+
+      // Clear the result map
+      result.clear();
+
+      // Loop over analyses in Dep::AllAnalysisNumbers
+      // Main loop over all analyses to compute DLL = LL_sb - LL_b
+      for (size_t analysis = 0; analysis &lt; Dep::AllAnalysisNumbers-&gt;size(); ++analysis)
+      {
+        // AnalysisData for this analysis
+        const AnalysisData&amp; adata = *(Dep::AllAnalysisNumbers-&gt;at(analysis));
+        const std::string ananame = adata.analysis_name;
+
+        #ifdef COLLIDERBIT_DEBUG
+        std::streamsize stream_precision = cout.precision();  // get current precision
+        cout.precision(2);  // set precision
+        cout &lt;&lt; DEBUG_PREFIX &lt;&lt; &quot;calc_LHC_LogLikes: &quot; &lt;&lt; &quot;Will print content of &quot; &lt;&lt; ananame &lt;&lt; &quot; signal regions:&quot; &lt;&lt; endl;
+        for (size_t SR = 0; SR &lt; adata.size(); ++SR)
+        {
+          const SignalRegionData&amp; srData = adata[SR];
+          cout &lt;&lt; std::fixed &lt;&lt; DEBUG_PREFIX
+                                 &lt;&lt; &quot;calc_LHC_LogLikes: &quot; &lt;&lt; ananame
+                                 &lt;&lt; &quot;, &quot; &lt;&lt; srData.sr_label
+                                 &lt;&lt; &quot;,  n_b = &quot; &lt;&lt; srData.n_bkg &lt;&lt; &quot; +/- &quot; &lt;&lt; srData.n_bkg_err
+                                 &lt;&lt; &quot;,  n_obs = &quot; &lt;&lt; srData.n_obs
+                                 &lt;&lt; &quot;,  excess = &quot; &lt;&lt; srData.n_obs - srData.n_bkg &lt;&lt; &quot; +/- &quot; &lt;&lt; srData.n_bkg_err
+                                 &lt;&lt; &quot;,  n_s = &quot; &lt;&lt; srData.n_sig_scaled
+                                 &lt;&lt; &quot;,  (excess-n_s) = &quot; &lt;&lt; (srData.n_obs-srData.n_bkg) - srData.n_sig_scaled &lt;&lt; &quot; +/- &quot; &lt;&lt; srData.n_bkg_err
+                                 &lt;&lt; &quot;,  n_s_MC = &quot; &lt;&lt; srData.n_sig_MC
+                                 &lt;&lt; endl;
+        }
+        cout.precision(stream_precision); // restore previous precision
+        #endif
+
+        bool set_zero_loglike = false;
+        if (not Dep::RunMC-&gt;event_gen_BYPASS &amp;&amp; (not Dep::RunMC-&gt;event_generation_began || Dep::RunMC-&gt;exceeded_maxFailedEvents) )
+        {
+          set_zero_loglike = true;
+        }
+
+        // Get loglike(s) for the current analysis
+        AnalysisLogLikes aloglikes = calc_loglikes_for_analysis(adata, USE_COVAR, USE_MARG, combine_nocovar_SRs, set_zero_loglike);
+        
+        // Save to results map
+        result[ananame] = aloglikes;
+
+      } // end analysis loop
+
+    }
+
+
+
+
+    void get_LHC_LogLike_per_analysis(map_str_dbl&amp; result)
+    {
+      using namespace Pipes::get_LHC_LogLike_per_analysis;
+
+      std::stringstream summary_line;
+      summary_line &lt;&lt; &quot;LHC loglikes per analysis: &quot;;
+
+      for (const std::pair&lt;str,AnalysisLogLikes&gt; pair : *Dep::LHC_LogLikes)
+      {
+        const str&amp; analysis_name = pair.first;
+        const AnalysisLogLikes&amp; analysis_loglikes = pair.second;
+
+        result[analysis_name] = analysis_loglikes.combination_loglike;
+
+        summary_line &lt;&lt; analysis_name &lt;&lt; &quot;:&quot; &lt;&lt; analysis_loglikes.combination_loglike &lt;&lt; &quot;, &quot;;
+      }
+      logger() &lt;&lt; LogTags::debug &lt;&lt; summary_line.str() &lt;&lt; EOM;
+    }
+
+
+    void get_LHC_LogLike_per_SR(map_str_dbl&amp; result)
+    {
+      using namespace Pipes::get_LHC_LogLike_per_SR;
+
+      std::stringstream summary_line;
+      summary_line &lt;&lt; &quot;LHC loglikes per SR: &quot;;
+
+      for (const std::pair&lt;str,AnalysisLogLikes&gt; pair_i : *Dep::LHC_LogLikes)
+      {
+        const str&amp; analysis_name = pair_i.first;
+        const AnalysisLogLikes&amp; analysis_loglikes = pair_i.second;
+
+        summary_line &lt;&lt; analysis_name &lt;&lt; &quot;: &quot;;
+
+        for (const std::pair&lt;str,double&gt; pair_j : analysis_loglikes.sr_loglikes)
+        {
+          const str&amp; sr_label = pair_j.first;
+          const double&amp; sr_loglike = pair_j.second;
+          const int sr_index = analysis_loglikes.sr_indices.at(sr_label);
+
+          const str key = analysis_name + &quot;__&quot; + sr_label + &quot;__i&quot; + std::to_string(sr_index) + &quot;__LogLike&quot;;
+          result[key] = sr_loglike;
+
+          summary_line &lt;&lt; sr_label + &quot;__i&quot; + std::to_string(sr_index) &lt;&lt; &quot;:&quot; &lt;&lt; sr_loglike &lt;&lt; &quot;, &quot;;
+        }
+
+        result[analysis_name + &quot;__combined_LogLike&quot;] = analysis_loglikes.combination_loglike;
+
+        summary_line &lt;&lt; &quot;combined_LogLike:&quot; &lt;&lt; analysis_loglikes.combination_loglike &lt;&lt; &quot;, &quot;;
+      }
+      logger() &lt;&lt; LogTags::debug &lt;&lt; summary_line.str() &lt;&lt; EOM;
+    }
+
+
+    void get_LHC_LogLike_SR_labels(map_str_str&amp; result)
+    {
+      using namespace Pipes::get_LHC_LogLike_per_SR;
+      for (const std::pair&lt;str,AnalysisLogLikes&gt; pair_i : *Dep::LHC_LogLikes)
+      {
+        const str&amp; analysis_name = pair_i.first;
+        const AnalysisLogLikes&amp; analysis_loglikes = pair_i.second;
+
+        result[analysis_name] = analysis_loglikes.combination_sr_label;
+      }
+    }
+
+
+    void get_LHC_LogLike_SR_indices(map_str_dbl&amp; result)
+    {
+      using namespace Pipes::get_LHC_LogLike_per_SR;
+
+      std::stringstream summary_line;
+      summary_line &lt;&lt; &quot;LHC loglike SR indices: &quot;;
+
+      // Loop over analyses
+      for (const std::pair&lt;str,AnalysisLogLikes&gt; pair_i : *Dep::LHC_LogLikes)
+      {
+        const str&amp; analysis_name = pair_i.first;
+        const AnalysisLogLikes&amp; analysis_loglikes = pair_i.second;
+
+        result[analysis_name] = (double) analysis_loglikes.combination_sr_index;
+
+        summary_line &lt;&lt; analysis_name &lt;&lt; &quot;:&quot; &lt;&lt; analysis_loglikes.combination_sr_index &lt;&lt; &quot;, &quot;;
+      }
+      logger() &lt;&lt; LogTags::debug &lt;&lt; summary_line.str() &lt;&lt; EOM;
+    }
+
+
+    void calc_combined_LHC_LogLike(double&amp; result)
+    {
+      using namespace Pipes::calc_combined_LHC_LogLike;
+      result = 0.0;
+
+      static const bool write_summary_to_log = runOptions-&gt;getValueOrDef&lt;bool&gt;(false, &quot;write_summary_to_log&quot;);
+
+      std::stringstream summary_line_combined_loglike; 
+      summary_line_combined_loglike &lt;&lt; &quot;calc_combined_LHC_LogLike: combined LogLike: &quot;;
+      std::stringstream summary_line_skipped_analyses;
+      summary_line_skipped_analyses &lt;&lt; &quot;calc_combined_LHC_LogLike: skipped analyses: &quot;;
+      std::stringstream summary_line_included_analyses;
+      summary_line_included_analyses &lt;&lt; &quot;calc_combined_LHC_LogLike: included analyses: &quot;;
+
+      // Read analysis names from the yaml file
+      std::vector&lt;str&gt; default_skip_analyses;  // The default is empty lists of analyses to skip
+      static const std::vector&lt;str&gt; skip_analyses = runOptions-&gt;getValueOrDef&lt;std::vector&lt;str&gt; &gt;(default_skip_analyses, &quot;skip_analyses&quot;);
+
+      // If too many events have failed, do the conservative thing and return delta log-likelihood = 0
+      if (Dep::RunMC-&gt;exceeded_maxFailedEvents)
+      {
+        #ifdef COLLIDERBIT_DEBUG
+          cout &lt;&lt; DEBUG_PREFIX &lt;&lt; &quot;calc_combined_LHC_LogLike: Too many failed events. Will be conservative and return a delta log-likelihood of 0.&quot; &lt;&lt; endl;
+        #endif
+        return;
+      }
+
+      // Loop over analyses and calculate the total observed dLL
+      for (auto const&amp; analysis_loglike_pair : *Dep::LHC_LogLike_per_analysis)
+      {
+        const str&amp; analysis_name = analysis_loglike_pair.first;
+        const double&amp; analysis_loglike = analysis_loglike_pair.second;
+
+        // If the analysis name is in skip_analyses, don't add its loglike to the total loglike.
+        if (std::find(skip_analyses.begin(), skip_analyses.end(), analysis_name) != skip_analyses.end())
+        {
+          #ifdef COLLIDERBIT_DEBUG
+            cout.precision(5);
+            cout &lt;&lt; DEBUG_PREFIX &lt;&lt; &quot;calc_combined_LHC_LogLike: Leaving out analysis &quot; &lt;&lt; analysis_name &lt;&lt; &quot; with LogL = &quot; &lt;&lt; analysis_loglike &lt;&lt; endl;
+          #endif
+
+          // Add to log summary
+          if(write_summary_to_log)
+          {
+            summary_line_skipped_analyses &lt;&lt; analysis_name &lt;&lt; &quot;__LogLike:&quot; &lt;&lt; analysis_loglike &lt;&lt; &quot;, &quot;;
+          }
+
+          continue;
+        }
+
+        // Add analysis loglike.
+        // If using capped likelihood for each individual analysis, set analysis_loglike = min(analysis_loglike,0)
+        static const bool use_cap_loglike_individual = runOptions-&gt;getValueOrDef&lt;bool&gt;(false, &quot;cap_loglike_individual_analyses&quot;);
+        if (use_cap_loglike_individual)
+        {
+          result += std::min(analysis_loglike, 0.0);
+        }
+        else
+        {
+          result += analysis_loglike;
+        }
+
+        // Add to log summary
+        if(write_summary_to_log)
+        {
+          summary_line_included_analyses &lt;&lt; analysis_name &lt;&lt; &quot;__LogLike:&quot; &lt;&lt; analysis_loglike &lt;&lt; &quot;, &quot;;
+        }
+
+        #ifdef COLLIDERBIT_DEBUG
+          cout.precision(5);
+          cout &lt;&lt; DEBUG_PREFIX &lt;&lt; &quot;calc_combined_LHC_LogLike: Analysis &quot; &lt;&lt; analysis_name &lt;&lt; &quot; contributes with a LogL = &quot; &lt;&lt; analysis_loglike &lt;&lt; endl;
+        #endif
+      }
+
+      #ifdef COLLIDERBIT_DEBUG
+        cout &lt;&lt; DEBUG_PREFIX &lt;&lt; &quot;calc_combined_LHC_LogLike: LHC_Combined_LogLike = &quot; &lt;&lt; result &lt;&lt; endl;
+      #endif
+
+      // If using a &quot;global&quot; capped likelihood, set result = min(result,0)
+      static const bool use_cap_loglike = runOptions-&gt;getValueOrDef&lt;bool&gt;(false, &quot;cap_loglike&quot;);
+      if (use_cap_loglike)
+      {
+        result = std::min(result, 0.0);
+      }
+
+      // Write log summary
+      if(write_summary_to_log)
+      {
+        summary_line_combined_loglike &lt;&lt; result;
+
+        logger() &lt;&lt; summary_line_combined_loglike.str() &lt;&lt; EOM;
+        logger() &lt;&lt; summary_line_included_analyses.str() &lt;&lt; EOM;
+        logger() &lt;&lt; summary_line_skipped_analyses.str() &lt;&lt; EOM;
+      }  
+    }
+
+
+    void calc_LHC_LogLike_scan_guide(double&amp; result)
+    {
+      using namespace Pipes::calc_LHC_LogLike_scan_guide;
+      result = 0.0;
+
+      static const bool write_summary_to_log = runOptions-&gt;getValueOrDef&lt;bool&gt;(false, &quot;write_summary_to_log&quot;);
+      static const double target_LHC_loglike = runOptions-&gt;getValue&lt;double&gt;(&quot;target_LHC_loglike&quot;);
+      static const double target_width = runOptions-&gt;getValue&lt;double&gt;(&quot;width_LHC_loglike&quot;);
+
+      // Get the combined LHC loglike
+      double LHC_loglike = *Dep::LHC_Combined_LogLike;
+
+      // Calculate the dummy scan guide loglike using a gaussian centered on the target LHC loglike value
+      result = Stats::gaussian_loglikelihood(LHC_loglike, target_LHC_loglike, 0.0, target_width, false);
+
+      // Write log summary
+      if(write_summary_to_log)
+      {
+        std::stringstream summary_line; 
+        summary_line &lt;&lt; &quot;LHC_LogLike_scan_guide: &quot; &lt;&lt; result;
+        logger() &lt;&lt; summary_line.str() &lt;&lt; EOM;
+      }  
+    }
+
+  }
+}
+</code></pre><hr><p>Updated on 2022-08-01 at 17:02:25 +0000</p><div class=edit-page><a href=https://github.com/RC1242RC/gambit_gh_pages/blob/master/content/en/documentation/code/DarkBit_development/Files/LHC__likelihoods_8cpp.md><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2"><path d="M17 3a2.828 2.828.0 114 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></svg>Edit this page on GitHub</a></div></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a class=text-muted href=https://www.netlify.com/>Netlify</a>, <a class=text-muted href=https://gohugo.io/>Hugo</a>, and <a class=text-muted href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.54bf0932b8a36d0e152b1635b099a6ef1394d35327e2437550a075c9c8ed1bd8aed5847c21b36fc02ed24014c031d9ca24017b0c78b1639d7e2fa8329898b842.js integrity="sha512-VL8JMrijbQ4VKxY1sJmm7xOU01Mn4kN1UKB1ycjtG9iu1YR8IbNvwC7SQBTAMdnKJAF7DHixY51+L6gymJi4Qg==" crossorigin=anonymous defer></script>
+<script src=/js/highlight.min.5b48bc253dc75aeea5fb366ecf700f4925e2b6eb1a1466f2124b722d68148d67bc0a9365d2b8ad9c585161b46372d23b08509a16f1fd518542b894756d4752d0.js integrity="sha512-W0i8JT3HWu6l+zZuz3APSSXitusaFGbyEktyLWgUjWe8CpNl0ritnFhRYbRjctI7CFCaFvH9UYVCuJR1bUdS0A==" crossorigin=anonymous defer></script>
+<script src=/main.min.40265e9a032aeba5eaf67baac3cbbc22667a7533215d326eeb3e9f4d5e4be40f9ff4dcd22949db73ae527ca26a19d7998091a8973c82af760b2c0daa335190ed.js integrity="sha512-QCZemgMq66Xq9nuqw8u8ImZ6dTMhXTJu6z6fTV5L5A+f9NzSKUnbc65SfKJqGdeZgJGolzyCr3YLLA2qM1GQ7Q==" crossorigin=anonymous defer></script>
+<script src=https://rc1242rc.github.io/index.min.8de8ea9ff8c668ecf31dbf247b94193c399781a13d3aec3324d2fb783797867753dc1c4a2bfbe668bc6f3d6dc508842b1ae16a71c1bf62d0434771ba31cc559b.js integrity="sha512-jejqn/jGaOzzHb8ke5QZPDmXgaE9OuwzJNL7eDeXhndT3BxKK/vmaLxvPW3FCIQrGuFqccG/YtBDR3G6McxVmw==" crossorigin=anonymous defer></script></body></html>
