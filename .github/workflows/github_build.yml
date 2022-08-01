@@ -52,9 +52,8 @@ jobs:
           working-directory: ./${{ matrix.branches }}_source
           doxyfile-path: ../doxygen_and_doxybook2/Doxyfile
       - name: Convert xml to md using doxybook2
-        run: space=" "
-          && mkdir ${{ matrix.branches }}
-          && ./doxybook2/bin/doxybook2 --input ./xml --output ./${{ matrix.branches }} --config ./doxygen_and_doxybook2/config.json --templates ./doxygen_and_doxybook2/doxybook_templates --config-data '{"baseURL":${space}"/documentation/code/${{ matrix.branches }}"}'
+        run: mkdir ${{ matrix.branches }}
+          && ./doxybook2/bin/doxybook2 --input ./xml --output ./${{ matrix.branches }} --config ./doxygen_and_doxybook2/config.json --templates ./doxygen_and_doxybook2/doxybook_templates --config-data '{"baseURL":"/documentation/code/${{ matrix.branches }}"}'
       - name: Upload branch code md as artifact
         uses: actions/upload-artifact@v3
         with:
@@ -87,9 +86,8 @@ jobs:
           working-directory: ./${{ env.folder }}_source
           doxyfile-path: ../doxygen_and_doxybook2/Doxyfile
       - name: Convert xml to md using doxybook2
-        run: space=" "
-          && mkdir ${{ env.folder }}
-          && ./doxybook2/bin/doxybook2 --input ./xml --output ./${{ env.folder }} --config ./doxygen_and_doxybook2/config.json --templates ./doxygen_and_doxybook2/doxybook_templates --config-data '{"baseURL":${space}"/documentation/code/${{ env.folder }}"}'
+        run: mkdir ${{ env.folder }}
+          && ./doxybook2/bin/doxybook2 --input ./xml --output ./${{ env.folder }} --config ./doxygen_and_doxybook2/config.json --templates ./doxygen_and_doxybook2/doxybook_templates --config-data '{"baseURL":"/documentation/code/${{ env.folder }}"}'
       - name: Upload repo code md as artifact
         uses: actions/upload-artifact@v3
         with:
