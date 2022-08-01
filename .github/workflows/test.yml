@@ -1,0 +1,21 @@
+name: Test
+
+on:
+  workflow_dispatch:
+    inputs:
+      test:
+        description: 'test'
+        required: true
+        default: 'test'
+
+jobs:
+        
+  document_repos:
+    runs-on: ubuntu-latest
+    steps:
+      
+      - name: Set folder variable
+        run: echo "folder=${${{ inputs.test }}##*/}" >> $GITHUB_ENV
+          && echo ${{ env.folder }}
+        
+        
