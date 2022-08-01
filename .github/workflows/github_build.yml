@@ -77,8 +77,7 @@ jobs:
           && mkdir doxybook2
           && unzip doxybook2-linux-amd64-v1.4.0.zip -d ./doxybook2
       - name: Set folder variable
-        run: str = ${{ matrix.repos }}
-          && echo "folder=${str##*/}" >> $GITHUB_ENV
+        run: echo "folder=${$repos##*/}" >> $GITHUB_ENV
       - name: Shallow clone repo
         run: git clone --depth 1 ${{ matrix.repos }} ${{ env.folder }}_source
           && ls -a -l
