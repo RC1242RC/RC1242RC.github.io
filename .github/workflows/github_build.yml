@@ -24,15 +24,6 @@ jobs:
       branches: ${{ steps.setVariables.outputs.branches }}
       repos: ${{ steps.setVariables.outputs.repos }}
     steps:
-      - name: Install doxybook2
-        run:  wget https://github.com/matusnovak/doxybook2/releases/download/v1.4.0/doxybook2-linux-amd64-v1.4.0.zip
-          && mkdir doxybook2
-          && unzip doxybook2-linux-amd64-v1.4.0.zip -d ./doxybook2
-      - name: Upload doxybook2 as artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: doxybook2
-          path: ./doxybook2
       - id: setVariables
         run: echo "::set-output name=branches::$branches_temp"
           && echo "::set-output name=repos::$repos_temp"
@@ -49,11 +40,10 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-      - name: Download doxybook2 artifact
-        uses: actions/download-artifact@v3
-        with:
-          name: doxybook2
-          path: ./doxybook2
+      - name: Install doxybook2
+        run:  wget https://github.com/matusnovak/doxybook2/releases/download/v1.4.0/doxybook2-linux-amd64-v1.4.0.zip
+          && mkdir doxybook2
+          && unzip doxybook2-linux-amd64-v1.4.0.zip -d ./doxybook2
       - name: Shallow clone branch
         run: git clone --depth 1 ${{ inputs.dev_repo }} --branch ${{ matrix.branches }} ${{ matrix.branches }}_source
           && ls -a -l
@@ -79,23 +69,22 @@ jobs:
     strategy:
       matrix:
         repos: ${{ fromJson(needs.setup.outputs.repos )}}
-    env:
-      folder: ${${{ matrix.repos }}##*/}_source
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-      - name: Download doxybook2 artifact
-        uses: actions/download-artifact@v3
-        with:
-          name: doxybook2
-          path: ./doxybook2
+      - name: Install doxybook2
+        run:  wget https://github.com/matusnovak/doxybook2/releases/download/v1.4.0/doxybook2-linux-amd64-v1.4.0.zip
+          && mkdir doxybook2
+          && unzip doxybook2-linux-amd64-v1.4.0.zip -d ./doxybook2
+      - name: Set env
+        run: echo "folder=${${{ matrix.repos }}##*/}" >> $GITHUB_ENV
       - name: Shallow clone repo
-        run: git clone --depth 1 ${{ matrix.repos }} ${{ env.folder }}
+        run: git clone --depth 1 ${{ matrix.repos }} ${{ env.folder }}_source
           && ls -a -l
       - name: Generate doxygen xml
         uses: mattnotmitt/doxygen-action@v1.9.4
         with:
-          working-directory: ./${{ env.folder }}
+          working-directory: ./${{ env.folder }}_source
           doxyfile-path: ../doxygen_and_doxybook2/Doxyfile
       - name: Convert xml to md using doxybook2
         run: ls -a -l
