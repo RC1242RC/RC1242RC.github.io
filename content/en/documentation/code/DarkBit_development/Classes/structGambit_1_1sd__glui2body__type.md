@@ -18,14 +18,14 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Fdouble | **[brgst1](/documentation/code/classes/structgambit_1_1sd__glui2body__type/#variable-brgst1)**  |
-| Fdouble | **[brgst2](/documentation/code/classes/structgambit_1_1sd__glui2body__type/#variable-brgst2)**  |
-| Fdouble | **[brgsb1](/documentation/code/classes/structgambit_1_1sd__glui2body__type/#variable-brgsb1)**  |
-| Fdouble | **[brgsb2](/documentation/code/classes/structgambit_1_1sd__glui2body__type/#variable-brgsb2)**  |
-| Fdouble | **[brgsupl](/documentation/code/classes/structgambit_1_1sd__glui2body__type/#variable-brgsupl)**  |
-| Fdouble | **[brgsupr](/documentation/code/classes/structgambit_1_1sd__glui2body__type/#variable-brgsupr)**  |
-| Fdouble | **[brgsdownl](/documentation/code/classes/structgambit_1_1sd__glui2body__type/#variable-brgsdownl)**  |
-| Fdouble | **[brgsdownr](/documentation/code/classes/structgambit_1_1sd__glui2body__type/#variable-brgsdownr)**  |
+| Fdouble | **[brgst1](/documentation/code/darkbit_developmentclasses/structgambit_1_1sd__glui2body__type/#variable-brgst1)**  |
+| Fdouble | **[brgst2](/documentation/code/darkbit_developmentclasses/structgambit_1_1sd__glui2body__type/#variable-brgst2)**  |
+| Fdouble | **[brgsb1](/documentation/code/darkbit_developmentclasses/structgambit_1_1sd__glui2body__type/#variable-brgsb1)**  |
+| Fdouble | **[brgsb2](/documentation/code/darkbit_developmentclasses/structgambit_1_1sd__glui2body__type/#variable-brgsb2)**  |
+| Fdouble | **[brgsupl](/documentation/code/darkbit_developmentclasses/structgambit_1_1sd__glui2body__type/#variable-brgsupl)**  |
+| Fdouble | **[brgsupr](/documentation/code/darkbit_developmentclasses/structgambit_1_1sd__glui2body__type/#variable-brgsupr)**  |
+| Fdouble | **[brgsdownl](/documentation/code/darkbit_developmentclasses/structgambit_1_1sd__glui2body__type/#variable-brgsdownl)**  |
+| Fdouble | **[brgsdownr](/documentation/code/darkbit_developmentclasses/structgambit_1_1sd__glui2body__type/#variable-brgsdownr)**  |
 
 ## Public Attributes Documentation
 
@@ -87,4 +87,4 @@ Fdouble brgsdownr;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:22 +0000
+Updated on 2022-08-01 at 17:31:41 +0000

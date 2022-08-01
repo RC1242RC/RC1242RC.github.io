@@ -16,7 +16,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| character *6 function | **[text](/documentation/code/namespaces/namespacemb/#function-text)**() |
+| character *6 function | **[text](/documentation/code/gambit_sphinxnamespaces/namespacemb/#function-text)**() |
 
 
 ## Functions Documentation
@@ -34,4 +34,4 @@ character *6 function text()
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:32 +0000
+Updated on 2022-08-01 at 17:31:46 +0000

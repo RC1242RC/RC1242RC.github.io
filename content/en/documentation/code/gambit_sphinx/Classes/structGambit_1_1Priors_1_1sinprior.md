@@ -18,9 +18,9 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[limits](/documentation/code/classes/structgambit_1_1priors_1_1sinprior/#function-limits)**(double x) |
-| double | **[inv](/documentation/code/classes/structgambit_1_1priors_1_1sinprior/#function-inv)**(double x) |
-| double | **[prior](/documentation/code/classes/structgambit_1_1priors_1_1sinprior/#function-prior)**(double x) |
+| double | **[limits](/documentation/code/gambit_sphinxclasses/structgambit_1_1priors_1_1sinprior/#function-limits)**(double x) |
+| double | **[inv](/documentation/code/gambit_sphinxclasses/structgambit_1_1priors_1_1sinprior/#function-inv)**(double x) |
+| double | **[prior](/documentation/code/gambit_sphinxclasses/structgambit_1_1priors_1_1sinprior/#function-prior)**(double x) |
 
 ## Public Functions Documentation
 
@@ -53,4 +53,4 @@ static inline double prior(
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:33 +0000
+Updated on 2022-08-01 at 17:31:48 +0000

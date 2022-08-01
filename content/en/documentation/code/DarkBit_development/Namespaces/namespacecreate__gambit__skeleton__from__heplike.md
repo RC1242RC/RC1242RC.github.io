@@ -16,9 +16,9 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| def | **[get_data_from_yaml](/documentation/code/namespaces/namespacecreate__gambit__skeleton__from__heplike/#function-get-data-from-yaml)**(path path) |
-| def | **[create_flavbit_function](/documentation/code/namespaces/namespacecreate__gambit__skeleton__from__heplike/#function-create-flavbit-function)**(capability_name capability_name, * path_to_yaml) |
-| def | **[create_rollcall_entry](/documentation/code/namespaces/namespacecreate__gambit__skeleton__from__heplike/#function-create-rollcall-entry)**(capability_name capability_name) |
+| def | **[get_data_from_yaml](/documentation/code/darkbit_developmentnamespaces/namespacecreate__gambit__skeleton__from__heplike/#function-get-data-from-yaml)**(path path) |
+| def | **[create_flavbit_function](/documentation/code/darkbit_developmentnamespaces/namespacecreate__gambit__skeleton__from__heplike/#function-create-flavbit-function)**(capability_name capability_name, * path_to_yaml) |
+| def | **[create_rollcall_entry](/documentation/code/darkbit_developmentnamespaces/namespacecreate__gambit__skeleton__from__heplike/#function-create-rollcall-entry)**(capability_name capability_name) |
 
 
 ## Functions Documentation
@@ -57,4 +57,4 @@ def create_rollcall_entry(
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:23 +0000
+Updated on 2022-08-01 at 17:31:42 +0000

@@ -21,7 +21,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| T | **[member](/documentation/code/classes/classgambit_1_1backends_1_1instance__helper/#variable-member)**  |
+| T | **[member](/documentation/code/darkbit_developmentclasses/classgambit_1_1backends_1_1instance__helper/#variable-member)**  |
 
 ## Detailed Description
 
@@ -44,4 +44,4 @@ T member;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:22 +0000
+Updated on 2022-08-01 at 17:31:41 +0000

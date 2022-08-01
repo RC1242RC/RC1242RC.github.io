@@ -16,24 +16,24 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) | **[BE_FUNCTION](/documentation/code/files/higgsbounds__4__2__1_8hpp/#function-be-function)**(HiggsBounds_neutral_input_part , void , (double *, double *, int *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *) , "higgsbounds_neutral_input_part_" , "HiggsBounds_neutral_input_part" ) |
+| [LOAD_LIBRARY](/documentation/code/darkbit_developmentfiles/frontend__macros_8hpp/#define-load-library) | **[BE_FUNCTION](/documentation/code/darkbit_developmentfiles/higgsbounds__4__2__1_8hpp/#function-be-function)**(HiggsBounds_neutral_input_part , void , (double *, double *, int *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *) , "higgsbounds_neutral_input_part_" , "HiggsBounds_neutral_input_part" ) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) | **[void](/documentation/code/files/higgsbounds__4__2__1_8hpp/#variable-void)**  |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) double double double double double double double double | **[higgsbounds_charged_input_](/documentation/code/files/higgsbounds__4__2__1_8hpp/#variable-higgsbounds-charged-input-)**  |
+| [LOAD_LIBRARY](/documentation/code/darkbit_developmentfiles/frontend__macros_8hpp/#define-load-library) | **[void](/documentation/code/darkbit_developmentfiles/higgsbounds__4__2__1_8hpp/#variable-void)**  |
+| [LOAD_LIBRARY](/documentation/code/darkbit_developmentfiles/frontend__macros_8hpp/#define-load-library) double double double double double double double double | **[higgsbounds_charged_input_](/documentation/code/darkbit_developmentfiles/higgsbounds__4__2__1_8hpp/#variable-higgsbounds-charged-input-)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[BACKENDNAME](/documentation/code/files/higgsbounds__4__2__1_8hpp/#define-backendname)**  |
-|  | **[BACKENDLANG](/documentation/code/files/higgsbounds__4__2__1_8hpp/#define-backendlang)**  |
-|  | **[VERSION](/documentation/code/files/higgsbounds__4__2__1_8hpp/#define-version)**  |
-|  | **[SAFE_VERSION](/documentation/code/files/higgsbounds__4__2__1_8hpp/#define-safe-version)**  |
-|  | **[REFERENCE](/documentation/code/files/higgsbounds__4__2__1_8hpp/#define-reference)**  |
+|  | **[BACKENDNAME](/documentation/code/darkbit_developmentfiles/higgsbounds__4__2__1_8hpp/#define-backendname)**  |
+|  | **[BACKENDLANG](/documentation/code/darkbit_developmentfiles/higgsbounds__4__2__1_8hpp/#define-backendlang)**  |
+|  | **[VERSION](/documentation/code/darkbit_developmentfiles/higgsbounds__4__2__1_8hpp/#define-version)**  |
+|  | **[SAFE_VERSION](/documentation/code/darkbit_developmentfiles/higgsbounds__4__2__1_8hpp/#define-safe-version)**  |
+|  | **[REFERENCE](/documentation/code/darkbit_developmentfiles/higgsbounds__4__2__1_8hpp/#define-reference)**  |
 
 ## Detailed Description
 
@@ -188,4 +188,4 @@ BE_FUNCTION(HiggsBounds_charged_input, void, (double*, double*, double*, double*
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:25 +0000
+Updated on 2022-08-01 at 17:31:45 +0000

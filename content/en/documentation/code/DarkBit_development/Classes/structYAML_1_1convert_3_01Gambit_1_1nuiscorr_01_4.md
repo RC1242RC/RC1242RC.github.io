@@ -17,8 +17,8 @@ YAML conversion structure for SuperIso SM nuisance data.
 
 |                | Name           |
 | -------------- | -------------- |
-| Node | **[encode](/documentation/code/classes/structyaml_1_1convert_3_01gambit_1_1nuiscorr_01_4/#function-encode)**(const [Gambit::nuiscorr](/documentation/code/classes/structgambit_1_1nuiscorr/) & rhs) |
-| bool | **[decode](/documentation/code/classes/structyaml_1_1convert_3_01gambit_1_1nuiscorr_01_4/#function-decode)**(const Node & node, [Gambit::nuiscorr](/documentation/code/classes/structgambit_1_1nuiscorr/) & rhs) |
+| Node | **[encode](/documentation/code/darkbit_developmentclasses/structyaml_1_1convert_3_01gambit_1_1nuiscorr_01_4/#function-encode)**(const [Gambit::nuiscorr](/documentation/code/darkbit_developmentclasses/structgambit_1_1nuiscorr/) & rhs) |
+| bool | **[decode](/documentation/code/darkbit_developmentclasses/structyaml_1_1convert_3_01gambit_1_1nuiscorr_01_4/#function-decode)**(const Node & node, [Gambit::nuiscorr](/documentation/code/darkbit_developmentclasses/structgambit_1_1nuiscorr/) & rhs) |
 
 ## Public Functions Documentation
 
@@ -43,4 +43,4 @@ static inline bool decode(
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:21 +0000
+Updated on 2022-08-01 at 17:31:41 +0000

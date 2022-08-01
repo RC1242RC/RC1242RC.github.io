@@ -18,46 +18,46 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Settings](/documentation/code/classes/structsettings/#function-settings)**(int _nDims =0, int _nDerived =0) |
-| | **[Settings](/documentation/code/classes/structsettings/#function-settings)**(int _nDims =0, int _nDerived =0) |
-| | **[Settings](/documentation/code/classes/structsettings/#function-settings)**(int _nDims =0, int _nDerived =0) |
+| | **[Settings](/documentation/code/darkbit_developmentclasses/structsettings/#function-settings)**(int _nDims =0, int _nDerived =0) |
+| | **[Settings](/documentation/code/darkbit_developmentclasses/structsettings/#function-settings)**(int _nDims =0, int _nDerived =0) |
+| | **[Settings](/documentation/code/darkbit_developmentclasses/structsettings/#function-settings)**(int _nDims =0, int _nDerived =0) |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| int | **[nDims](/documentation/code/classes/structsettings/#variable-ndims)**  |
-| int | **[nDerived](/documentation/code/classes/structsettings/#variable-nderived)**  |
-| int | **[nlive](/documentation/code/classes/structsettings/#variable-nlive)**  |
-| int | **[num_repeats](/documentation/code/classes/structsettings/#variable-num-repeats)**  |
-| int | **[nprior](/documentation/code/classes/structsettings/#variable-nprior)**  |
-| int | **[nfail](/documentation/code/classes/structsettings/#variable-nfail)**  |
-| bool | **[do_clustering](/documentation/code/classes/structsettings/#variable-do-clustering)**  |
-| int | **[feedback](/documentation/code/classes/structsettings/#variable-feedback)**  |
-| double | **[precision_criterion](/documentation/code/classes/structsettings/#variable-precision-criterion)**  |
-| double | **[logzero](/documentation/code/classes/structsettings/#variable-logzero)**  |
-| int | **[max_ndead](/documentation/code/classes/structsettings/#variable-max-ndead)**  |
-| double | **[boost_posterior](/documentation/code/classes/structsettings/#variable-boost-posterior)**  |
-| bool | **[posteriors](/documentation/code/classes/structsettings/#variable-posteriors)**  |
-| bool | **[equals](/documentation/code/classes/structsettings/#variable-equals)**  |
-| bool | **[cluster_posteriors](/documentation/code/classes/structsettings/#variable-cluster-posteriors)**  |
-| bool | **[write_resume](/documentation/code/classes/structsettings/#variable-write-resume)**  |
-| bool | **[write_paramnames](/documentation/code/classes/structsettings/#variable-write-paramnames)**  |
-| bool | **[read_resume](/documentation/code/classes/structsettings/#variable-read-resume)**  |
-| bool | **[write_stats](/documentation/code/classes/structsettings/#variable-write-stats)**  |
-| bool | **[write_live](/documentation/code/classes/structsettings/#variable-write-live)**  |
-| bool | **[write_dead](/documentation/code/classes/structsettings/#variable-write-dead)**  |
-| bool | **[write_prior](/documentation/code/classes/structsettings/#variable-write-prior)**  |
-| bool | **[maximise](/documentation/code/classes/structsettings/#variable-maximise)**  |
-| double | **[compression_factor](/documentation/code/classes/structsettings/#variable-compression-factor)**  |
-| std::string | **[base_dir](/documentation/code/classes/structsettings/#variable-base-dir)**  |
-| std::string | **[file_root](/documentation/code/classes/structsettings/#variable-file-root)**  |
-| std::vector< double > | **[grade_frac](/documentation/code/classes/structsettings/#variable-grade-frac)**  |
-| std::vector< int > | **[grade_dims](/documentation/code/classes/structsettings/#variable-grade-dims)**  |
-| std::vector< double > | **[loglikes](/documentation/code/classes/structsettings/#variable-loglikes)**  |
-| std::vector< int > | **[nlives](/documentation/code/classes/structsettings/#variable-nlives)**  |
-| int | **[seed](/documentation/code/classes/structsettings/#variable-seed)**  |
-| bool | **[synchronous](/documentation/code/classes/structsettings/#variable-synchronous)**  |
+| int | **[nDims](/documentation/code/darkbit_developmentclasses/structsettings/#variable-ndims)**  |
+| int | **[nDerived](/documentation/code/darkbit_developmentclasses/structsettings/#variable-nderived)**  |
+| int | **[nlive](/documentation/code/darkbit_developmentclasses/structsettings/#variable-nlive)**  |
+| int | **[num_repeats](/documentation/code/darkbit_developmentclasses/structsettings/#variable-num-repeats)**  |
+| int | **[nprior](/documentation/code/darkbit_developmentclasses/structsettings/#variable-nprior)**  |
+| int | **[nfail](/documentation/code/darkbit_developmentclasses/structsettings/#variable-nfail)**  |
+| bool | **[do_clustering](/documentation/code/darkbit_developmentclasses/structsettings/#variable-do-clustering)**  |
+| int | **[feedback](/documentation/code/darkbit_developmentclasses/structsettings/#variable-feedback)**  |
+| double | **[precision_criterion](/documentation/code/darkbit_developmentclasses/structsettings/#variable-precision-criterion)**  |
+| double | **[logzero](/documentation/code/darkbit_developmentclasses/structsettings/#variable-logzero)**  |
+| int | **[max_ndead](/documentation/code/darkbit_developmentclasses/structsettings/#variable-max-ndead)**  |
+| double | **[boost_posterior](/documentation/code/darkbit_developmentclasses/structsettings/#variable-boost-posterior)**  |
+| bool | **[posteriors](/documentation/code/darkbit_developmentclasses/structsettings/#variable-posteriors)**  |
+| bool | **[equals](/documentation/code/darkbit_developmentclasses/structsettings/#variable-equals)**  |
+| bool | **[cluster_posteriors](/documentation/code/darkbit_developmentclasses/structsettings/#variable-cluster-posteriors)**  |
+| bool | **[write_resume](/documentation/code/darkbit_developmentclasses/structsettings/#variable-write-resume)**  |
+| bool | **[write_paramnames](/documentation/code/darkbit_developmentclasses/structsettings/#variable-write-paramnames)**  |
+| bool | **[read_resume](/documentation/code/darkbit_developmentclasses/structsettings/#variable-read-resume)**  |
+| bool | **[write_stats](/documentation/code/darkbit_developmentclasses/structsettings/#variable-write-stats)**  |
+| bool | **[write_live](/documentation/code/darkbit_developmentclasses/structsettings/#variable-write-live)**  |
+| bool | **[write_dead](/documentation/code/darkbit_developmentclasses/structsettings/#variable-write-dead)**  |
+| bool | **[write_prior](/documentation/code/darkbit_developmentclasses/structsettings/#variable-write-prior)**  |
+| bool | **[maximise](/documentation/code/darkbit_developmentclasses/structsettings/#variable-maximise)**  |
+| double | **[compression_factor](/documentation/code/darkbit_developmentclasses/structsettings/#variable-compression-factor)**  |
+| std::string | **[base_dir](/documentation/code/darkbit_developmentclasses/structsettings/#variable-base-dir)**  |
+| std::string | **[file_root](/documentation/code/darkbit_developmentclasses/structsettings/#variable-file-root)**  |
+| std::vector< double > | **[grade_frac](/documentation/code/darkbit_developmentclasses/structsettings/#variable-grade-frac)**  |
+| std::vector< int > | **[grade_dims](/documentation/code/darkbit_developmentclasses/structsettings/#variable-grade-dims)**  |
+| std::vector< double > | **[loglikes](/documentation/code/darkbit_developmentclasses/structsettings/#variable-loglikes)**  |
+| std::vector< int > | **[nlives](/documentation/code/darkbit_developmentclasses/structsettings/#variable-nlives)**  |
+| int | **[seed](/documentation/code/darkbit_developmentclasses/structsettings/#variable-seed)**  |
+| bool | **[synchronous](/documentation/code/darkbit_developmentclasses/structsettings/#variable-synchronous)**  |
 
 ## Public Functions Documentation
 
@@ -319,4 +319,4 @@ bool synchronous;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:21 +0000
+Updated on 2022-08-01 at 17:31:41 +0000

@@ -16,17 +16,17 @@ Base class for comparing scanner plugins.
 
 `#include <plugin_comparators.hpp>`
 
-Inherited by [Gambit::Scanner::Plugins::VersionCompare](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1versioncompare/), [Gambit::Scanner::Plugins::VersionCompareBottom](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1versioncomparebottom/)
+Inherited by [Gambit::Scanner::Plugins::VersionCompare](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1plugins_1_1versioncompare/), [Gambit::Scanner::Plugins::VersionCompareBottom](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1plugins_1_1versioncomparebottom/)
 
 ## Public Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[VersionCompareBase](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1versioncomparebase/#function-versioncomparebase)**() |
-| virtual bool | **[operator()](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1versioncomparebase/#function-operator())**(const [Plugin_Details](/documentation/code/classes/structgambit_1_1scanner_1_1plugins_1_1plugin__details/) & ) =0 |
-| bool | **[isEmpty](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1versioncomparebase/#function-isempty)**() const |
-| void | **[setEmpty](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1versioncomparebase/#function-setempty)**(bool in) |
-| virtual | **[~VersionCompareBase](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1versioncomparebase/#function-~versioncomparebase)**() |
+| | **[VersionCompareBase](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1plugins_1_1versioncomparebase/#function-versioncomparebase)**() |
+| virtual bool | **[operator()](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1plugins_1_1versioncomparebase/#function-operator())**(const [Plugin_Details](/documentation/code/gambit_sphinxclasses/structgambit_1_1scanner_1_1plugins_1_1plugin__details/) & ) =0 |
+| bool | **[isEmpty](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1plugins_1_1versioncomparebase/#function-isempty)**() const |
+| void | **[setEmpty](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1plugins_1_1versioncomparebase/#function-setempty)**(bool in) |
+| virtual | **[~VersionCompareBase](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1plugins_1_1versioncomparebase/#function-~versioncomparebase)**() |
 
 ## Public Functions Documentation
 
@@ -46,7 +46,7 @@ virtual bool operator()(
 ```
 
 
-**Reimplemented by**: [Gambit::Scanner::Plugins::VersionCompareBottom::operator()](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1versioncomparebottom/#function-operator()), [Gambit::Scanner::Plugins::VersionCompare::operator()](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1versioncompare/#function-operator())
+**Reimplemented by**: [Gambit::Scanner::Plugins::VersionCompareBottom::operator()](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1plugins_1_1versioncomparebottom/#function-operator()), [Gambit::Scanner::Plugins::VersionCompare::operator()](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1plugins_1_1versioncompare/#function-operator())
 
 
 ### function isEmpty
@@ -74,4 +74,4 @@ inline virtual ~VersionCompareBase()
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:34 +0000
+Updated on 2022-08-01 at 17:31:48 +0000

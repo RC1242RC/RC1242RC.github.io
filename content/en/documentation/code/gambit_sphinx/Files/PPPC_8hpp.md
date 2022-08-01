@@ -16,15 +16,15 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::DarkBit](/documentation/code/namespaces/namespacegambit_1_1darkbit/)**  |
+| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::DarkBit](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1darkbit/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Gambit::DarkBit::Interpolator2D](/documentation/code/classes/classgambit_1_1darkbit_1_1interpolator2d/)**  |
-| class | **[Gambit::DarkBit::PPPC_interpolation](/documentation/code/classes/classgambit_1_1darkbit_1_1pppc__interpolation/)**  |
+| class | **[Gambit::DarkBit::Interpolator2D](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1interpolator2d/)**  |
+| class | **[Gambit::DarkBit::PPPC_interpolation](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1pppc__interpolation/)**  |
 
 ## Detailed Description
 
@@ -128,4 +128,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:35 +0000
+Updated on 2022-08-01 at 17:31:49 +0000

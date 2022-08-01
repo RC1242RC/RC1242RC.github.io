@@ -18,9 +18,9 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| char | **[obs1](/documentation/code/classes/structgambit_1_1nuiscorr/#variable-obs1)**  |
-| char | **[obs2](/documentation/code/classes/structgambit_1_1nuiscorr/#variable-obs2)**  |
-| double | **[value](/documentation/code/classes/structgambit_1_1nuiscorr/#variable-value)**  |
+| char | **[obs1](/documentation/code/gambit_sphinxclasses/structgambit_1_1nuiscorr/#variable-obs1)**  |
+| char | **[obs2](/documentation/code/gambit_sphinxclasses/structgambit_1_1nuiscorr/#variable-obs2)**  |
+| double | **[value](/documentation/code/gambit_sphinxclasses/structgambit_1_1nuiscorr/#variable-value)**  |
 
 ## Public Attributes Documentation
 
@@ -47,4 +47,4 @@ double value;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:32 +0000
+Updated on 2022-08-01 at 17:31:46 +0000

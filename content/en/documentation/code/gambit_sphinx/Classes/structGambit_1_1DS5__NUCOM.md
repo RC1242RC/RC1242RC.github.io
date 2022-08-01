@@ -18,16 +18,16 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Farray< Fdouble, 1, 29 > | **[wabr](/documentation/code/classes/structgambit_1_1ds5__nucom/#variable-wabr)**  |
-| Farray< Fdouble, 1, 29, 1, 3 > | **[was0br](/documentation/code/classes/structgambit_1_1ds5__nucom/#variable-was0br)**  |
-| Farray< Fdouble, 1, 15 > | **[wascbr](/documentation/code/classes/structgambit_1_1ds5__nucom/#variable-wascbr)**  |
-| Farray< Fdouble, 1, 3 > | **[was0m](/documentation/code/classes/structgambit_1_1ds5__nucom/#variable-was0m)**  |
-| Fdouble | **[wascm](/documentation/code/classes/structgambit_1_1ds5__nucom/#variable-wascm)**  |
-| Fdouble | **[wamwimp](/documentation/code/classes/structgambit_1_1ds5__nucom/#variable-wamwimp)**  |
-| Fdouble | **[wasv](/documentation/code/classes/structgambit_1_1ds5__nucom/#variable-wasv)**  |
-| Fdouble | **[wasigsip](/documentation/code/classes/structgambit_1_1ds5__nucom/#variable-wasigsip)**  |
-| Fdouble | **[wasigsdp](/documentation/code/classes/structgambit_1_1ds5__nucom/#variable-wasigsdp)**  |
-| Flogical | **[dswasetupcalled](/documentation/code/classes/structgambit_1_1ds5__nucom/#variable-dswasetupcalled)**  |
+| Farray< Fdouble, 1, 29 > | **[wabr](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds5__nucom/#variable-wabr)**  |
+| Farray< Fdouble, 1, 29, 1, 3 > | **[was0br](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds5__nucom/#variable-was0br)**  |
+| Farray< Fdouble, 1, 15 > | **[wascbr](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds5__nucom/#variable-wascbr)**  |
+| Farray< Fdouble, 1, 3 > | **[was0m](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds5__nucom/#variable-was0m)**  |
+| Fdouble | **[wascm](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds5__nucom/#variable-wascm)**  |
+| Fdouble | **[wamwimp](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds5__nucom/#variable-wamwimp)**  |
+| Fdouble | **[wasv](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds5__nucom/#variable-wasv)**  |
+| Fdouble | **[wasigsip](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds5__nucom/#variable-wasigsip)**  |
+| Fdouble | **[wasigsdp](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds5__nucom/#variable-wasigsdp)**  |
+| Flogical | **[dswasetupcalled](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds5__nucom/#variable-dswasetupcalled)**  |
 
 ## Public Attributes Documentation
 
@@ -103,4 +103,4 @@ Flogical dswasetupcalled;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:32 +0000
+Updated on 2022-08-01 at 17:31:46 +0000

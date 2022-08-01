@@ -20,31 +20,31 @@ Class containing the inputs used for inputs to MultiModeCode.
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Multimode_inputs](/documentation/code/classes/classgambit_1_1multimode__inputs/#function-multimode-inputs)**() |
+| | **[Multimode_inputs](/documentation/code/gambit_sphinxclasses/classgambit_1_1multimode__inputs/#function-multimode-inputs)**() |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| int | **[silence_output](/documentation/code/classes/classgambit_1_1multimode__inputs/#variable-silence-output)**  |
-| double | **[k_min](/documentation/code/classes/classgambit_1_1multimode__inputs/#variable-k-min)**  |
-| double | **[k_max](/documentation/code/classes/classgambit_1_1multimode__inputs/#variable-k-max)**  |
-| int | **[numsteps](/documentation/code/classes/classgambit_1_1multimode__inputs/#variable-numsteps)**  |
-| double | **[k_pivot](/documentation/code/classes/classgambit_1_1multimode__inputs/#variable-k-pivot)**  |
-| double | **[N_pivot](/documentation/code/classes/classgambit_1_1multimode__inputs/#variable-n-pivot)**  |
-| double | **[dlnk](/documentation/code/classes/classgambit_1_1multimode__inputs/#variable-dlnk)**  |
-| int | **[num_inflaton](/documentation/code/classes/classgambit_1_1multimode__inputs/#variable-num-inflaton)**  |
-| int | **[potential_choice](/documentation/code/classes/classgambit_1_1multimode__inputs/#variable-potential-choice)**  |
-| int | **[vparam_rows](/documentation/code/classes/classgambit_1_1multimode__inputs/#variable-vparam-rows)**  |
-| std::vector< double > | **[vparams](/documentation/code/classes/classgambit_1_1multimode__inputs/#variable-vparams)**  |
-| std::vector< double > | **[phi_init0](/documentation/code/classes/classgambit_1_1multimode__inputs/#variable-phi-init0)**  |
-| std::vector< double > | **[dphi_init0](/documentation/code/classes/classgambit_1_1multimode__inputs/#variable-dphi-init0)**  |
-| int | **[slowroll_infl_end](/documentation/code/classes/classgambit_1_1multimode__inputs/#variable-slowroll-infl-end)**  |
-| int | **[instreheat](/documentation/code/classes/classgambit_1_1multimode__inputs/#variable-instreheat)**  |
-| int | **[use_deltaN_SR](/documentation/code/classes/classgambit_1_1multimode__inputs/#variable-use-deltan-sr)**  |
-| int | **[evaluate_modes](/documentation/code/classes/classgambit_1_1multimode__inputs/#variable-evaluate-modes)**  |
-| int | **[use_horiz_cross_approx](/documentation/code/classes/classgambit_1_1multimode__inputs/#variable-use-horiz-cross-approx)**  |
-| int | **[get_runningofrunning](/documentation/code/classes/classgambit_1_1multimode__inputs/#variable-get-runningofrunning)**  |
+| int | **[silence_output](/documentation/code/gambit_sphinxclasses/classgambit_1_1multimode__inputs/#variable-silence-output)**  |
+| double | **[k_min](/documentation/code/gambit_sphinxclasses/classgambit_1_1multimode__inputs/#variable-k-min)**  |
+| double | **[k_max](/documentation/code/gambit_sphinxclasses/classgambit_1_1multimode__inputs/#variable-k-max)**  |
+| int | **[numsteps](/documentation/code/gambit_sphinxclasses/classgambit_1_1multimode__inputs/#variable-numsteps)**  |
+| double | **[k_pivot](/documentation/code/gambit_sphinxclasses/classgambit_1_1multimode__inputs/#variable-k-pivot)**  |
+| double | **[N_pivot](/documentation/code/gambit_sphinxclasses/classgambit_1_1multimode__inputs/#variable-n-pivot)**  |
+| double | **[dlnk](/documentation/code/gambit_sphinxclasses/classgambit_1_1multimode__inputs/#variable-dlnk)**  |
+| int | **[num_inflaton](/documentation/code/gambit_sphinxclasses/classgambit_1_1multimode__inputs/#variable-num-inflaton)**  |
+| int | **[potential_choice](/documentation/code/gambit_sphinxclasses/classgambit_1_1multimode__inputs/#variable-potential-choice)**  |
+| int | **[vparam_rows](/documentation/code/gambit_sphinxclasses/classgambit_1_1multimode__inputs/#variable-vparam-rows)**  |
+| std::vector< double > | **[vparams](/documentation/code/gambit_sphinxclasses/classgambit_1_1multimode__inputs/#variable-vparams)**  |
+| std::vector< double > | **[phi_init0](/documentation/code/gambit_sphinxclasses/classgambit_1_1multimode__inputs/#variable-phi-init0)**  |
+| std::vector< double > | **[dphi_init0](/documentation/code/gambit_sphinxclasses/classgambit_1_1multimode__inputs/#variable-dphi-init0)**  |
+| int | **[slowroll_infl_end](/documentation/code/gambit_sphinxclasses/classgambit_1_1multimode__inputs/#variable-slowroll-infl-end)**  |
+| int | **[instreheat](/documentation/code/gambit_sphinxclasses/classgambit_1_1multimode__inputs/#variable-instreheat)**  |
+| int | **[use_deltaN_SR](/documentation/code/gambit_sphinxclasses/classgambit_1_1multimode__inputs/#variable-use-deltan-sr)**  |
+| int | **[evaluate_modes](/documentation/code/gambit_sphinxclasses/classgambit_1_1multimode__inputs/#variable-evaluate-modes)**  |
+| int | **[use_horiz_cross_approx](/documentation/code/gambit_sphinxclasses/classgambit_1_1multimode__inputs/#variable-use-horiz-cross-approx)**  |
+| int | **[get_runningofrunning](/documentation/code/gambit_sphinxclasses/classgambit_1_1multimode__inputs/#variable-get-runningofrunning)**  |
 
 ## Public Functions Documentation
 
@@ -192,4 +192,4 @@ int get_runningofrunning;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:32 +0000
+Updated on 2022-08-01 at 17:31:46 +0000

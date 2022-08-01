@@ -14,116 +14,116 @@ description: "[No description available]"
 
 [No description available]
 
-Inherits from [MontePythonLike.Likelihood](/documentation/code/classes/classmontepythonlike_1_1likelihood/), [MontePythonLike.Likelihood](/documentation/code/classes/classmontepythonlike_1_1likelihood/), object
+Inherits from [MontePythonLike.Likelihood](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood/), [MontePythonLike.Likelihood](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood/), object
 
 ## Public Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| def | **[__init__](/documentation/code/classes/classmontepythonlike_1_1likelihood__newdat/#function---init--)**(self self, path path, data data, command_line command_line) |
-| def | **[loglkl](/documentation/code/classes/classmontepythonlike_1_1likelihood__newdat/#function-loglkl)**(self self, cosmo cosmo, data data) |
-| def | **[compute_lkl](/documentation/code/classes/classmontepythonlike_1_1likelihood__newdat/#function-compute-lkl)**(self self, cl cl, cosmo cosmo, data data) |
-| def | **[__init__](/documentation/code/classes/classmontepythonlike_1_1likelihood__newdat/#function---init--)**(self self, path path, data data, command_line command_line) |
-| def | **[loglkl](/documentation/code/classes/classmontepythonlike_1_1likelihood__newdat/#function-loglkl)**(self self, cosmo cosmo, data data) |
-| def | **[compute_lkl](/documentation/code/classes/classmontepythonlike_1_1likelihood__newdat/#function-compute-lkl)**(self self, cl cl, cosmo cosmo, data data) |
+| def | **[__init__](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood__newdat/#function---init--)**(self self, path path, data data, command_line command_line) |
+| def | **[loglkl](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood__newdat/#function-loglkl)**(self self, cosmo cosmo, data data) |
+| def | **[compute_lkl](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood__newdat/#function-compute-lkl)**(self self, cl cl, cosmo cosmo, data data) |
+| def | **[__init__](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood__newdat/#function---init--)**(self self, path path, data data, command_line command_line) |
+| def | **[loglkl](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood__newdat/#function-loglkl)**(self self, cosmo cosmo, data data) |
+| def | **[compute_lkl](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood__newdat/#function-compute-lkl)**(self self, cl cl, cosmo cosmo, data data) |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[calib_uncertainty](/documentation/code/classes/classmontepythonlike_1_1likelihood__newdat/#variable-calib-uncertainty)**  |
-| | **[has_beam_uncertainty](/documentation/code/classes/classmontepythonlike_1_1likelihood__newdat/#variable-has-beam-uncertainty)**  |
-| | **[has_xfactors](/documentation/code/classes/classmontepythonlike_1_1likelihood__newdat/#variable-has-xfactors)**  |
-| | **[obs](/documentation/code/classes/classmontepythonlike_1_1likelihood__newdat/#variable-obs)**  |
-| | **[var](/documentation/code/classes/classmontepythonlike_1_1likelihood__newdat/#variable-var)**  |
-| | **[beam_error](/documentation/code/classes/classmontepythonlike_1_1likelihood__newdat/#variable-beam-error)**  |
-| | **[has_xfactor](/documentation/code/classes/classmontepythonlike_1_1likelihood__newdat/#variable-has-xfactor)**  |
-| | **[xfactor](/documentation/code/classes/classmontepythonlike_1_1likelihood__newdat/#variable-xfactor)**  |
-| | **[num_points](/documentation/code/classes/classmontepythonlike_1_1likelihood__newdat/#variable-num-points)**  |
-| | **[inv_covmat](/documentation/code/classes/classmontepythonlike_1_1likelihood__newdat/#variable-inv-covmat)**  |
-| | **[win_min](/documentation/code/classes/classmontepythonlike_1_1likelihood__newdat/#variable-win-min)**  |
-| | **[win_max](/documentation/code/classes/classmontepythonlike_1_1likelihood__newdat/#variable-win-max)**  |
-| | **[has_pol](/documentation/code/classes/classmontepythonlike_1_1likelihood__newdat/#variable-has-pol)**  |
-| | **[window](/documentation/code/classes/classmontepythonlike_1_1likelihood__newdat/#variable-window)**  |
-| | **[halfsteps](/documentation/code/classes/classmontepythonlike_1_1likelihood__newdat/#variable-halfsteps)**  |
-| | **[margeweights](/documentation/code/classes/classmontepythonlike_1_1likelihood__newdat/#variable-margeweights)**  |
-| | **[margenorm](/documentation/code/classes/classmontepythonlike_1_1likelihood__newdat/#variable-margenorm)**  |
-| | **[l_max](/documentation/code/classes/classmontepythonlike_1_1likelihood__newdat/#variable-l-max)**  |
-| | **[nuisance](/documentation/code/classes/classmontepythonlike_1_1likelihood__newdat/#variable-nuisance)**  |
-| | **[use_nuisance](/documentation/code/classes/classmontepythonlike_1_1likelihood__newdat/#variable-use-nuisance)**  |
-| | **[lkl](/documentation/code/classes/classmontepythonlike_1_1likelihood__newdat/#variable-lkl)**  |
+| | **[calib_uncertainty](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood__newdat/#variable-calib-uncertainty)**  |
+| | **[has_beam_uncertainty](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood__newdat/#variable-has-beam-uncertainty)**  |
+| | **[has_xfactors](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood__newdat/#variable-has-xfactors)**  |
+| | **[obs](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood__newdat/#variable-obs)**  |
+| | **[var](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood__newdat/#variable-var)**  |
+| | **[beam_error](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood__newdat/#variable-beam-error)**  |
+| | **[has_xfactor](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood__newdat/#variable-has-xfactor)**  |
+| | **[xfactor](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood__newdat/#variable-xfactor)**  |
+| | **[num_points](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood__newdat/#variable-num-points)**  |
+| | **[inv_covmat](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood__newdat/#variable-inv-covmat)**  |
+| | **[win_min](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood__newdat/#variable-win-min)**  |
+| | **[win_max](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood__newdat/#variable-win-max)**  |
+| | **[has_pol](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood__newdat/#variable-has-pol)**  |
+| | **[window](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood__newdat/#variable-window)**  |
+| | **[halfsteps](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood__newdat/#variable-halfsteps)**  |
+| | **[margeweights](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood__newdat/#variable-margeweights)**  |
+| | **[margenorm](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood__newdat/#variable-margenorm)**  |
+| | **[l_max](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood__newdat/#variable-l-max)**  |
+| | **[nuisance](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood__newdat/#variable-nuisance)**  |
+| | **[use_nuisance](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood__newdat/#variable-use-nuisance)**  |
+| | **[lkl](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood__newdat/#variable-lkl)**  |
 
 ## Additional inherited members
 
-**Public Functions inherited from [MontePythonLike.Likelihood](/documentation/code/classes/classmontepythonlike_1_1likelihood/)**
+**Public Functions inherited from [MontePythonLike.Likelihood](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood/)**
 
 |                | Name           |
 | -------------- | -------------- |
-| def | **[raise_fiducial_model_err](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-raise-fiducial-model-err)**(self self) |
-| def | **[read_from_file](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-read-from-file)**(self self, path path, data data, command_line command_line) |
-| def | **[get_cl](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-get-cl)**(self self, cosmo cosmo, l_max l_max =-1) |
-| def | **[get_unlensed_cl](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-get-unlensed-cl)**(self self, cosmo cosmo, l_max l_max =-1) |
-| def | **[need_cosmo_arguments](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-need-cosmo-arguments)**(self self, data data, dictionary dictionary) |
-| def | **[read_contamination_spectra](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-read-contamination-spectra)**(self self, data data) |
-| def | **[add_contamination_spectra](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-add-contamination-spectra)**(self self, cl cl, data data) |
-| def | **[add_nuisance_prior](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-add-nuisance-prior)**(self self, lkl lkl, data data) |
-| def | **[computeLikelihood](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-computelikelihood)**(self self, ctx ctx) |
-| def | **[raise_fiducial_model_err](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-raise-fiducial-model-err)**(self self) |
-| def | **[read_from_file](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-read-from-file)**(self self, path path, data data, command_line command_line) |
-| def | **[get_cl](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-get-cl)**(self self, cosmo cosmo, l_max l_max =-1) |
-| def | **[get_unlensed_cl](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-get-unlensed-cl)**(self self, cosmo cosmo, l_max l_max =-1) |
-| def | **[need_cosmo_arguments](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-need-cosmo-arguments)**(self self, data data, dictionary dictionary) |
-| def | **[read_contamination_spectra](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-read-contamination-spectra)**(self self, data data) |
-| def | **[add_contamination_spectra](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-add-contamination-spectra)**(self self, cl cl, data data) |
-| def | **[add_nuisance_prior](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-add-nuisance-prior)**(self self, lkl lkl, data data) |
-| def | **[computeLikelihood](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-computelikelihood)**(self self, ctx ctx) |
+| def | **[raise_fiducial_model_err](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood/#function-raise-fiducial-model-err)**(self self) |
+| def | **[read_from_file](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood/#function-read-from-file)**(self self, path path, data data, command_line command_line) |
+| def | **[get_cl](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood/#function-get-cl)**(self self, cosmo cosmo, l_max l_max =-1) |
+| def | **[get_unlensed_cl](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood/#function-get-unlensed-cl)**(self self, cosmo cosmo, l_max l_max =-1) |
+| def | **[need_cosmo_arguments](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood/#function-need-cosmo-arguments)**(self self, data data, dictionary dictionary) |
+| def | **[read_contamination_spectra](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood/#function-read-contamination-spectra)**(self self, data data) |
+| def | **[add_contamination_spectra](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood/#function-add-contamination-spectra)**(self self, cl cl, data data) |
+| def | **[add_nuisance_prior](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood/#function-add-nuisance-prior)**(self self, lkl lkl, data data) |
+| def | **[computeLikelihood](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood/#function-computelikelihood)**(self self, ctx ctx) |
+| def | **[raise_fiducial_model_err](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood/#function-raise-fiducial-model-err)**(self self) |
+| def | **[read_from_file](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood/#function-read-from-file)**(self self, path path, data data, command_line command_line) |
+| def | **[get_cl](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood/#function-get-cl)**(self self, cosmo cosmo, l_max l_max =-1) |
+| def | **[get_unlensed_cl](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood/#function-get-unlensed-cl)**(self self, cosmo cosmo, l_max l_max =-1) |
+| def | **[need_cosmo_arguments](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood/#function-need-cosmo-arguments)**(self self, data data, dictionary dictionary) |
+| def | **[read_contamination_spectra](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood/#function-read-contamination-spectra)**(self self, data data) |
+| def | **[add_contamination_spectra](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood/#function-add-contamination-spectra)**(self self, cl cl, data data) |
+| def | **[add_nuisance_prior](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood/#function-add-nuisance-prior)**(self self, lkl lkl, data data) |
+| def | **[computeLikelihood](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood/#function-computelikelihood)**(self self, ctx ctx) |
 
-**Public Attributes inherited from [MontePythonLike.Likelihood](/documentation/code/classes/classmontepythonlike_1_1likelihood/)**
-
-|                | Name           |
-| -------------- | -------------- |
-| | **[name](/documentation/code/classes/classmontepythonlike_1_1likelihood/#variable-name)**  |
-| | **[folder](/documentation/code/classes/classmontepythonlike_1_1likelihood/#variable-folder)**  |
-| | **[data_directory](/documentation/code/classes/classmontepythonlike_1_1likelihood/#variable-data-directory)**  |
-| | **[default_values](/documentation/code/classes/classmontepythonlike_1_1likelihood/#variable-default-values)**  |
-| | **[need_update](/documentation/code/classes/classmontepythonlike_1_1likelihood/#variable-need-update)**  |
-| | **[path](/documentation/code/classes/classmontepythonlike_1_1likelihood/#variable-path)**  |
-| | **[dictionary](/documentation/code/classes/classmontepythonlike_1_1likelihood/#variable-dictionary)**  |
-
-**Public Functions inherited from [MontePythonLike.Likelihood](/documentation/code/classes/classmontepythonlike_1_1likelihood/)**
+**Public Attributes inherited from [MontePythonLike.Likelihood](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood/)**
 
 |                | Name           |
 | -------------- | -------------- |
-| def | **[raise_fiducial_model_err](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-raise-fiducial-model-err)**(self self) |
-| def | **[read_from_file](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-read-from-file)**(self self, path path, data data, command_line command_line) |
-| def | **[get_cl](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-get-cl)**(self self, cosmo cosmo, l_max l_max =-1) |
-| def | **[get_unlensed_cl](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-get-unlensed-cl)**(self self, cosmo cosmo, l_max l_max =-1) |
-| def | **[need_cosmo_arguments](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-need-cosmo-arguments)**(self self, data data, dictionary dictionary) |
-| def | **[read_contamination_spectra](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-read-contamination-spectra)**(self self, data data) |
-| def | **[add_contamination_spectra](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-add-contamination-spectra)**(self self, cl cl, data data) |
-| def | **[add_nuisance_prior](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-add-nuisance-prior)**(self self, lkl lkl, data data) |
-| def | **[computeLikelihood](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-computelikelihood)**(self self, ctx ctx) |
-| def | **[raise_fiducial_model_err](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-raise-fiducial-model-err)**(self self) |
-| def | **[read_from_file](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-read-from-file)**(self self, path path, data data, command_line command_line) |
-| def | **[get_cl](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-get-cl)**(self self, cosmo cosmo, l_max l_max =-1) |
-| def | **[get_unlensed_cl](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-get-unlensed-cl)**(self self, cosmo cosmo, l_max l_max =-1) |
-| def | **[need_cosmo_arguments](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-need-cosmo-arguments)**(self self, data data, dictionary dictionary) |
-| def | **[read_contamination_spectra](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-read-contamination-spectra)**(self self, data data) |
-| def | **[add_contamination_spectra](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-add-contamination-spectra)**(self self, cl cl, data data) |
-| def | **[add_nuisance_prior](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-add-nuisance-prior)**(self self, lkl lkl, data data) |
-| def | **[computeLikelihood](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-computelikelihood)**(self self, ctx ctx) |
+| | **[name](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood/#variable-name)**  |
+| | **[folder](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood/#variable-folder)**  |
+| | **[data_directory](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood/#variable-data-directory)**  |
+| | **[default_values](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood/#variable-default-values)**  |
+| | **[need_update](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood/#variable-need-update)**  |
+| | **[path](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood/#variable-path)**  |
+| | **[dictionary](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood/#variable-dictionary)**  |
 
-**Public Attributes inherited from [MontePythonLike.Likelihood](/documentation/code/classes/classmontepythonlike_1_1likelihood/)**
+**Public Functions inherited from [MontePythonLike.Likelihood](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood/)**
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[name](/documentation/code/classes/classmontepythonlike_1_1likelihood/#variable-name)**  |
-| | **[folder](/documentation/code/classes/classmontepythonlike_1_1likelihood/#variable-folder)**  |
-| | **[data_directory](/documentation/code/classes/classmontepythonlike_1_1likelihood/#variable-data-directory)**  |
-| | **[default_values](/documentation/code/classes/classmontepythonlike_1_1likelihood/#variable-default-values)**  |
-| | **[need_update](/documentation/code/classes/classmontepythonlike_1_1likelihood/#variable-need-update)**  |
-| | **[path](/documentation/code/classes/classmontepythonlike_1_1likelihood/#variable-path)**  |
-| | **[dictionary](/documentation/code/classes/classmontepythonlike_1_1likelihood/#variable-dictionary)**  |
+| def | **[raise_fiducial_model_err](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood/#function-raise-fiducial-model-err)**(self self) |
+| def | **[read_from_file](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood/#function-read-from-file)**(self self, path path, data data, command_line command_line) |
+| def | **[get_cl](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood/#function-get-cl)**(self self, cosmo cosmo, l_max l_max =-1) |
+| def | **[get_unlensed_cl](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood/#function-get-unlensed-cl)**(self self, cosmo cosmo, l_max l_max =-1) |
+| def | **[need_cosmo_arguments](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood/#function-need-cosmo-arguments)**(self self, data data, dictionary dictionary) |
+| def | **[read_contamination_spectra](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood/#function-read-contamination-spectra)**(self self, data data) |
+| def | **[add_contamination_spectra](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood/#function-add-contamination-spectra)**(self self, cl cl, data data) |
+| def | **[add_nuisance_prior](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood/#function-add-nuisance-prior)**(self self, lkl lkl, data data) |
+| def | **[computeLikelihood](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood/#function-computelikelihood)**(self self, ctx ctx) |
+| def | **[raise_fiducial_model_err](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood/#function-raise-fiducial-model-err)**(self self) |
+| def | **[read_from_file](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood/#function-read-from-file)**(self self, path path, data data, command_line command_line) |
+| def | **[get_cl](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood/#function-get-cl)**(self self, cosmo cosmo, l_max l_max =-1) |
+| def | **[get_unlensed_cl](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood/#function-get-unlensed-cl)**(self self, cosmo cosmo, l_max l_max =-1) |
+| def | **[need_cosmo_arguments](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood/#function-need-cosmo-arguments)**(self self, data data, dictionary dictionary) |
+| def | **[read_contamination_spectra](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood/#function-read-contamination-spectra)**(self self, data data) |
+| def | **[add_contamination_spectra](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood/#function-add-contamination-spectra)**(self self, cl cl, data data) |
+| def | **[add_nuisance_prior](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood/#function-add-nuisance-prior)**(self self, lkl lkl, data data) |
+| def | **[computeLikelihood](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood/#function-computelikelihood)**(self self, ctx ctx) |
+
+**Public Attributes inherited from [MontePythonLike.Likelihood](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood/)**
+
+|                | Name           |
+| -------------- | -------------- |
+| | **[name](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood/#variable-name)**  |
+| | **[folder](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood/#variable-folder)**  |
+| | **[data_directory](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood/#variable-data-directory)**  |
+| | **[default_values](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood/#variable-default-values)**  |
+| | **[need_update](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood/#variable-need-update)**  |
+| | **[path](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood/#variable-path)**  |
+| | **[dictionary](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood/#variable-dictionary)**  |
 
 
 ## Public Functions Documentation
@@ -140,7 +140,7 @@ def __init__(
 ```
 
 
-**Reimplements**: [MontePythonLike::Likelihood::__init__](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function---init--)
+**Reimplements**: [MontePythonLike::Likelihood::__init__](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood/#function---init--)
 
 
 
@@ -172,7 +172,7 @@ def loglkl(
 ```
 
 
-**Reimplements**: [MontePythonLike::Likelihood::loglkl](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-loglkl)
+**Reimplements**: [MontePythonLike::Likelihood::loglkl](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood/#function-loglkl)
 
 
 
@@ -210,7 +210,7 @@ def __init__(
 ```
 
 
-**Reimplements**: [MontePythonLike::Likelihood::__init__](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function---init--)
+**Reimplements**: [MontePythonLike::Likelihood::__init__](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood/#function---init--)
 
 
 
@@ -242,7 +242,7 @@ def loglkl(
 ```
 
 
-**Reimplements**: [MontePythonLike::Likelihood::loglkl](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-loglkl)
+**Reimplements**: [MontePythonLike::Likelihood::loglkl](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood/#function-loglkl)
 
 
 
@@ -419,4 +419,4 @@ lkl;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:21 +0000
+Updated on 2022-08-01 at 17:31:41 +0000

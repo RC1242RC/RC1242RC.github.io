@@ -16,23 +16,23 @@ Container class to store plugin values for resume function.  [More...](#detailed
 
 `#include <plugin_loader.hpp>`
 
-Inherits from [Gambit::Scanner::Plugins::__plugin_resume_base__](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1____plugin__resume__base____/)
+Inherits from [Gambit::Scanner::Plugins::__plugin_resume_base__](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1plugins_1_1____plugin__resume__base____/)
 
 ## Public Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[__plugin_resume__](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1____plugin__resume____/#function---plugin-resume--)**(T & data) |
-| virtual void | **[print](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1____plugin__resume____/#function-print)**(std::ofstream & out) |
-| | **[~__plugin_resume__](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1____plugin__resume____/#function-~--plugin-resume--)**() |
+| | **[__plugin_resume__](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1plugins_1_1____plugin__resume____/#function---plugin-resume--)**(T & data) |
+| virtual void | **[print](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1plugins_1_1____plugin__resume____/#function-print)**(std::ofstream & out) |
+| | **[~__plugin_resume__](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1plugins_1_1____plugin__resume____/#function-~--plugin-resume--)**() |
 
 ## Additional inherited members
 
-**Public Functions inherited from [Gambit::Scanner::Plugins::__plugin_resume_base__](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1____plugin__resume__base____/)**
+**Public Functions inherited from [Gambit::Scanner::Plugins::__plugin_resume_base__](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1plugins_1_1____plugin__resume__base____/)**
 
 |                | Name           |
 | -------------- | -------------- |
-| virtual | **[~__plugin_resume_base__](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1____plugin__resume__base____/#function-~--plugin-resume-base--)**() |
+| virtual | **[~__plugin_resume_base__](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1plugins_1_1____plugin__resume__base____/#function-~--plugin-resume-base--)**() |
 
 
 ## Detailed Description
@@ -63,7 +63,7 @@ inline virtual void print(
 ```
 
 
-**Reimplements**: [Gambit::Scanner::Plugins::__plugin_resume_base__::print](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1____plugin__resume__base____/#function-print)
+**Reimplements**: [Gambit::Scanner::Plugins::__plugin_resume_base__::print](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1plugins_1_1____plugin__resume__base____/#function-print)
 
 
 ### function ~__plugin_resume__
@@ -75,4 +75,4 @@ inline ~__plugin_resume__()
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:34 +0000
+Updated on 2022-08-01 at 17:31:48 +0000

@@ -18,34 +18,34 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Fdouble | **[bhlslnl](/documentation/code/classes/structgambit_1_1wisfer__hdec__type/#variable-bhlslnl)**  |
-| Fdouble | **[bhlslel](/documentation/code/classes/structgambit_1_1wisfer__hdec__type/#variable-bhlslel)**  |
-| Fdouble | **[bhlsler](/documentation/code/classes/structgambit_1_1wisfer__hdec__type/#variable-bhlsler)**  |
-| Fdouble | **[bhlsqul](/documentation/code/classes/structgambit_1_1wisfer__hdec__type/#variable-bhlsqul)**  |
-| Fdouble | **[bhlsqur](/documentation/code/classes/structgambit_1_1wisfer__hdec__type/#variable-bhlsqur)**  |
-| Fdouble | **[bhlsqdl](/documentation/code/classes/structgambit_1_1wisfer__hdec__type/#variable-bhlsqdl)**  |
-| Fdouble | **[bhlsqdr](/documentation/code/classes/structgambit_1_1wisfer__hdec__type/#variable-bhlsqdr)**  |
-| Farray< Fdouble, 1, 2, 1, 2 > | **[bhlst](/documentation/code/classes/structgambit_1_1wisfer__hdec__type/#variable-bhlst)**  |
-| Farray< Fdouble, 1, 2, 1, 2 > | **[bhlsb](/documentation/code/classes/structgambit_1_1wisfer__hdec__type/#variable-bhlsb)**  |
-| Farray< Fdouble, 1, 2, 1, 2 > | **[bhlstau](/documentation/code/classes/structgambit_1_1wisfer__hdec__type/#variable-bhlstau)**  |
-| Fdouble | **[bhhslnl](/documentation/code/classes/structgambit_1_1wisfer__hdec__type/#variable-bhhslnl)**  |
-| Fdouble | **[bhhslel](/documentation/code/classes/structgambit_1_1wisfer__hdec__type/#variable-bhhslel)**  |
-| Fdouble | **[bhhsler](/documentation/code/classes/structgambit_1_1wisfer__hdec__type/#variable-bhhsler)**  |
-| Fdouble | **[bhhsqul](/documentation/code/classes/structgambit_1_1wisfer__hdec__type/#variable-bhhsqul)**  |
-| Fdouble | **[bhhsqur](/documentation/code/classes/structgambit_1_1wisfer__hdec__type/#variable-bhhsqur)**  |
-| Fdouble | **[bhhsqdl](/documentation/code/classes/structgambit_1_1wisfer__hdec__type/#variable-bhhsqdl)**  |
-| Fdouble | **[bhhsqdr](/documentation/code/classes/structgambit_1_1wisfer__hdec__type/#variable-bhhsqdr)**  |
-| Farray< Fdouble, 1, 2, 1, 2 > | **[bhhst](/documentation/code/classes/structgambit_1_1wisfer__hdec__type/#variable-bhhst)**  |
-| Farray< Fdouble, 1, 2, 1, 2 > | **[bhhsb](/documentation/code/classes/structgambit_1_1wisfer__hdec__type/#variable-bhhsb)**  |
-| Farray< Fdouble, 1, 2, 1, 2 > | **[bhhstau](/documentation/code/classes/structgambit_1_1wisfer__hdec__type/#variable-bhhstau)**  |
-| Fdouble | **[bhastau](/documentation/code/classes/structgambit_1_1wisfer__hdec__type/#variable-bhastau)**  |
-| Fdouble | **[bhasb](/documentation/code/classes/structgambit_1_1wisfer__hdec__type/#variable-bhasb)**  |
-| Fdouble | **[bhast](/documentation/code/classes/structgambit_1_1wisfer__hdec__type/#variable-bhast)**  |
-| Fdouble | **[bhcsl00](/documentation/code/classes/structgambit_1_1wisfer__hdec__type/#variable-bhcsl00)**  |
-| Fdouble | **[bhcsl11](/documentation/code/classes/structgambit_1_1wisfer__hdec__type/#variable-bhcsl11)**  |
-| Fdouble | **[bhcsl21](/documentation/code/classes/structgambit_1_1wisfer__hdec__type/#variable-bhcsl21)**  |
-| Fdouble | **[bhcsq](/documentation/code/classes/structgambit_1_1wisfer__hdec__type/#variable-bhcsq)**  |
-| Farray< Fdouble, 1, 2, 1, 2 > | **[bhcstb](/documentation/code/classes/structgambit_1_1wisfer__hdec__type/#variable-bhcstb)**  |
+| Fdouble | **[bhlslnl](/documentation/code/darkbit_developmentclasses/structgambit_1_1wisfer__hdec__type/#variable-bhlslnl)**  |
+| Fdouble | **[bhlslel](/documentation/code/darkbit_developmentclasses/structgambit_1_1wisfer__hdec__type/#variable-bhlslel)**  |
+| Fdouble | **[bhlsler](/documentation/code/darkbit_developmentclasses/structgambit_1_1wisfer__hdec__type/#variable-bhlsler)**  |
+| Fdouble | **[bhlsqul](/documentation/code/darkbit_developmentclasses/structgambit_1_1wisfer__hdec__type/#variable-bhlsqul)**  |
+| Fdouble | **[bhlsqur](/documentation/code/darkbit_developmentclasses/structgambit_1_1wisfer__hdec__type/#variable-bhlsqur)**  |
+| Fdouble | **[bhlsqdl](/documentation/code/darkbit_developmentclasses/structgambit_1_1wisfer__hdec__type/#variable-bhlsqdl)**  |
+| Fdouble | **[bhlsqdr](/documentation/code/darkbit_developmentclasses/structgambit_1_1wisfer__hdec__type/#variable-bhlsqdr)**  |
+| Farray< Fdouble, 1, 2, 1, 2 > | **[bhlst](/documentation/code/darkbit_developmentclasses/structgambit_1_1wisfer__hdec__type/#variable-bhlst)**  |
+| Farray< Fdouble, 1, 2, 1, 2 > | **[bhlsb](/documentation/code/darkbit_developmentclasses/structgambit_1_1wisfer__hdec__type/#variable-bhlsb)**  |
+| Farray< Fdouble, 1, 2, 1, 2 > | **[bhlstau](/documentation/code/darkbit_developmentclasses/structgambit_1_1wisfer__hdec__type/#variable-bhlstau)**  |
+| Fdouble | **[bhhslnl](/documentation/code/darkbit_developmentclasses/structgambit_1_1wisfer__hdec__type/#variable-bhhslnl)**  |
+| Fdouble | **[bhhslel](/documentation/code/darkbit_developmentclasses/structgambit_1_1wisfer__hdec__type/#variable-bhhslel)**  |
+| Fdouble | **[bhhsler](/documentation/code/darkbit_developmentclasses/structgambit_1_1wisfer__hdec__type/#variable-bhhsler)**  |
+| Fdouble | **[bhhsqul](/documentation/code/darkbit_developmentclasses/structgambit_1_1wisfer__hdec__type/#variable-bhhsqul)**  |
+| Fdouble | **[bhhsqur](/documentation/code/darkbit_developmentclasses/structgambit_1_1wisfer__hdec__type/#variable-bhhsqur)**  |
+| Fdouble | **[bhhsqdl](/documentation/code/darkbit_developmentclasses/structgambit_1_1wisfer__hdec__type/#variable-bhhsqdl)**  |
+| Fdouble | **[bhhsqdr](/documentation/code/darkbit_developmentclasses/structgambit_1_1wisfer__hdec__type/#variable-bhhsqdr)**  |
+| Farray< Fdouble, 1, 2, 1, 2 > | **[bhhst](/documentation/code/darkbit_developmentclasses/structgambit_1_1wisfer__hdec__type/#variable-bhhst)**  |
+| Farray< Fdouble, 1, 2, 1, 2 > | **[bhhsb](/documentation/code/darkbit_developmentclasses/structgambit_1_1wisfer__hdec__type/#variable-bhhsb)**  |
+| Farray< Fdouble, 1, 2, 1, 2 > | **[bhhstau](/documentation/code/darkbit_developmentclasses/structgambit_1_1wisfer__hdec__type/#variable-bhhstau)**  |
+| Fdouble | **[bhastau](/documentation/code/darkbit_developmentclasses/structgambit_1_1wisfer__hdec__type/#variable-bhastau)**  |
+| Fdouble | **[bhasb](/documentation/code/darkbit_developmentclasses/structgambit_1_1wisfer__hdec__type/#variable-bhasb)**  |
+| Fdouble | **[bhast](/documentation/code/darkbit_developmentclasses/structgambit_1_1wisfer__hdec__type/#variable-bhast)**  |
+| Fdouble | **[bhcsl00](/documentation/code/darkbit_developmentclasses/structgambit_1_1wisfer__hdec__type/#variable-bhcsl00)**  |
+| Fdouble | **[bhcsl11](/documentation/code/darkbit_developmentclasses/structgambit_1_1wisfer__hdec__type/#variable-bhcsl11)**  |
+| Fdouble | **[bhcsl21](/documentation/code/darkbit_developmentclasses/structgambit_1_1wisfer__hdec__type/#variable-bhcsl21)**  |
+| Fdouble | **[bhcsq](/documentation/code/darkbit_developmentclasses/structgambit_1_1wisfer__hdec__type/#variable-bhcsq)**  |
+| Farray< Fdouble, 1, 2, 1, 2 > | **[bhcstb](/documentation/code/darkbit_developmentclasses/structgambit_1_1wisfer__hdec__type/#variable-bhcstb)**  |
 
 ## Public Attributes Documentation
 
@@ -247,4 +247,4 @@ Farray< Fdouble, 1, 2, 1, 2 > bhcstb;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:22 +0000
+Updated on 2022-08-01 at 17:31:41 +0000

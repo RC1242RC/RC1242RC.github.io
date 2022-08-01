@@ -16,15 +16,15 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[FlavBit::Functown](/documentation/code/namespaces/namespaceflavbit_1_1functown/)**  |
+| **[FlavBit::Functown](/documentation/code/gambit_sphinxnamespaces/namespaceflavbit_1_1functown/)**  |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| std::string | **[infile](/documentation/code/files/flavbit__standalone__example_8cpp/#function-infile)**("FlavBit/data/example.slha" ) |
-| | **[QUICK_FUNCTION](/documentation/code/files/flavbit__standalone__example_8cpp/#function-quick-function)**(FlavBit , MSSM_spectrum , NEW_CAPABILITY , relabelSpectrum , Spectrum , (MSSM30atQ, MSSM30atMGUT) , (unimproved_MSSM_spectrum, Spectrum) ) |
-| int | **[main](/documentation/code/files/flavbit__standalone__example_8cpp/#function-main)**(int argc, char ** argv) |
+| std::string | **[infile](/documentation/code/gambit_sphinxfiles/flavbit__standalone__example_8cpp/#function-infile)**("FlavBit/data/example.slha" ) |
+| | **[QUICK_FUNCTION](/documentation/code/gambit_sphinxfiles/flavbit__standalone__example_8cpp/#function-quick-function)**(FlavBit , MSSM_spectrum , NEW_CAPABILITY , relabelSpectrum , Spectrum , (MSSM30atQ, MSSM30atMGUT) , (unimproved_MSSM_spectrum, Spectrum) ) |
+| int | **[main](/documentation/code/gambit_sphinxfiles/flavbit__standalone__example_8cpp/#function-main)**(int argc, char ** argv) |
 
 
 ## Functions Documentation
@@ -440,4 +440,4 @@ int main(int argc, char** argv)
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:34 +0000
+Updated on 2022-08-01 at 17:31:48 +0000

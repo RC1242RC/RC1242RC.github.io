@@ -18,8 +18,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Fdouble | **[stoptot4](/documentation/code/classes/structgambit_1_1sd__stopwidth__type/#variable-stoptot4)**  |
-| Farray< Fdouble, 1, 2 > | **[stoptot](/documentation/code/classes/structgambit_1_1sd__stopwidth__type/#variable-stoptot)**  |
+| Fdouble | **[stoptot4](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__stopwidth__type/#variable-stoptot4)**  |
+| Farray< Fdouble, 1, 2 > | **[stoptot](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__stopwidth__type/#variable-stoptot)**  |
 
 ## Public Attributes Documentation
 
@@ -39,4 +39,4 @@ Farray< Fdouble, 1, 2 > stoptot;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:32 +0000
+Updated on 2022-08-01 at 17:31:46 +0000

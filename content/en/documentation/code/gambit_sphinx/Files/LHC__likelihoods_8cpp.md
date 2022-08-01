@@ -16,14 +16,14 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::ColliderBit](/documentation/code/namespaces/namespacegambit_1_1colliderbit/)**  |
+| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::ColliderBit](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1colliderbit/)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[DEBUG_PREFIX](/documentation/code/files/lhc__likelihoods_8cpp/#define-debug-prefix)**  |
+|  | **[DEBUG_PREFIX](/documentation/code/gambit_sphinxfiles/lhc__likelihoods_8cpp/#define-debug-prefix)**  |
 
 ## Detailed Description
 
@@ -1082,4 +1082,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:36 +0000
+Updated on 2022-08-01 at 17:31:50 +0000

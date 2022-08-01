@@ -16,23 +16,23 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::Scanner](/documentation/code/namespaces/namespacegambit_1_1scanner/)**  |
+| **[Gambit](/documentation/code/darkbit_developmentnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::Scanner](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1scanner/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Gambit::Scanner::Scanner_Plugin_Function< ret(args...)>](/documentation/code/classes/classgambit_1_1scanner_1_1scanner__plugin__function_3_01ret_07args_8_8_8_08_4/)** <br>Objective functor made up a single plugin.  |
-| class | **[Gambit::Scanner::Multi_Scanner_Plugin_Function< ret(args...)>](/documentation/code/classes/classgambit_1_1scanner_1_1multi__scanner__plugin__function_3_01ret_07args_8_8_8_08_4/)** <br>Objective functor made up of multiple plugins.  |
-| class | **[Gambit::Scanner::Plugin_Function_Factory](/documentation/code/classes/classgambit_1_1scanner_1_1plugin__function__factory/)** <br>Factory class to make objectives using objective plugins.  |
+| class | **[Gambit::Scanner::Scanner_Plugin_Function< ret(args...)>](/documentation/code/darkbit_developmentclasses/classgambit_1_1scanner_1_1scanner__plugin__function_3_01ret_07args_8_8_8_08_4/)** <br>Objective functor made up a single plugin.  |
+| class | **[Gambit::Scanner::Multi_Scanner_Plugin_Function< ret(args...)>](/documentation/code/darkbit_developmentclasses/classgambit_1_1scanner_1_1multi__scanner__plugin__function_3_01ret_07args_8_8_8_08_4/)** <br>Objective functor made up of multiple plugins.  |
+| class | **[Gambit::Scanner::Plugin_Function_Factory](/documentation/code/darkbit_developmentclasses/classgambit_1_1scanner_1_1plugin__function__factory/)** <br>Factory class to make objectives using objective plugins.  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[LOAD_FUNC_TEMPLATE](/documentation/code/files/plugin__factory_8hpp/#define-load-func-template)**(name, ...)  |
-|  | **[LOAD_MULTI_FUNC_TEMPLATE](/documentation/code/files/plugin__factory_8hpp/#define-load-multi-func-template)**(name, ...)  |
+|  | **[LOAD_FUNC_TEMPLATE](/documentation/code/darkbit_developmentfiles/plugin__factory_8hpp/#define-load-func-template)**(name, ...)  |
+|  | **[LOAD_MULTI_FUNC_TEMPLATE](/documentation/code/darkbit_developmentfiles/plugin__factory_8hpp/#define-load-multi-func-template)**(name, ...)  |
 
 ## Detailed Description
 
@@ -267,4 +267,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:23 +0000
+Updated on 2022-08-01 at 17:31:43 +0000

@@ -16,20 +16,20 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| def | **[remove_bao](/documentation/code/namespaces/namespacecreate__sdssdr7__fid/#function-remove-bao)**(k_in k_in, pk_in pk_in) |
-| def | **[get_flat_fid](/documentation/code/namespaces/namespacecreate__sdssdr7__fid/#function-get-flat-fid)**(cosmo cosmo, kh kh, z z, sigma2bao sigma2bao, h h) |
-| def | **[sdss_lrgDR7_fiducial_setup](/documentation/code/namespaces/namespacecreate__sdssdr7__fid/#function-sdss-lrgdr7-fiducial-setup)**(path path, cosmo cosmo, h h) |
+| def | **[remove_bao](/documentation/code/darkbit_developmentnamespaces/namespacecreate__sdssdr7__fid/#function-remove-bao)**(k_in k_in, pk_in pk_in) |
+| def | **[get_flat_fid](/documentation/code/darkbit_developmentnamespaces/namespacecreate__sdssdr7__fid/#function-get-flat-fid)**(cosmo cosmo, kh kh, z z, sigma2bao sigma2bao, h h) |
+| def | **[sdss_lrgDR7_fiducial_setup](/documentation/code/darkbit_developmentnamespaces/namespacecreate__sdssdr7__fid/#function-sdss-lrgdr7-fiducial-setup)**(path path, cosmo cosmo, h h) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| bool | **[PYTHON3](/documentation/code/namespaces/namespacecreate__sdssdr7__fid/#variable-python3)**  |
-| | **[path_to_classy](/documentation/code/namespaces/namespacecreate__sdssdr7__fid/#variable-path-to-classy)**  |
-| | **[classy_version](/documentation/code/namespaces/namespacecreate__sdssdr7__fid/#variable-classy-version)**  |
-| | **[cosmo](/documentation/code/namespaces/namespacecreate__sdssdr7__fid/#variable-cosmo)**  |
-| float | **[h](/documentation/code/namespaces/namespacecreate__sdssdr7__fid/#variable-h)**  |
-| dictionary | **[cosmo_arguments](/documentation/code/namespaces/namespacecreate__sdssdr7__fid/#variable-cosmo-arguments)**  |
+| bool | **[PYTHON3](/documentation/code/darkbit_developmentnamespaces/namespacecreate__sdssdr7__fid/#variable-python3)**  |
+| | **[path_to_classy](/documentation/code/darkbit_developmentnamespaces/namespacecreate__sdssdr7__fid/#variable-path-to-classy)**  |
+| | **[classy_version](/documentation/code/darkbit_developmentnamespaces/namespacecreate__sdssdr7__fid/#variable-classy-version)**  |
+| | **[cosmo](/documentation/code/darkbit_developmentnamespaces/namespacecreate__sdssdr7__fid/#variable-cosmo)**  |
+| float | **[h](/documentation/code/darkbit_developmentnamespaces/namespacecreate__sdssdr7__fid/#variable-h)**  |
+| dictionary | **[cosmo_arguments](/documentation/code/darkbit_developmentnamespaces/namespacecreate__sdssdr7__fid/#variable-cosmo-arguments)**  |
 
 
 ## Functions Documentation
@@ -143,4 +143,4 @@ dictionary cosmo_arguments =  {'P_k_max_h/Mpc': 1.5, 'ln10^{10}A_s': 3.0, 'N_ur'
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:23 +0000
+Updated on 2022-08-01 at 17:31:42 +0000

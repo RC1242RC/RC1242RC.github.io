@@ -16,8 +16,8 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[modules](/documentation/code/namespaces/namespacemodules/)**  |
-| **[modules::classutils](/documentation/code/namespaces/namespacemodules_1_1classutils/)**  |
+| **[modules](/documentation/code/darkbit_developmentnamespaces/namespacemodules/)**  |
+| **[modules::classutils](/documentation/code/darkbit_developmentnamespaces/namespacemodules_1_1classutils/)**  |
 
 
 
@@ -2132,4 +2132,4 @@ def isAcceptedMemberVariable(mem_el):
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:26 +0000
+Updated on 2022-08-01 at 17:31:45 +0000

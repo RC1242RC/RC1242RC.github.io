@@ -18,14 +18,14 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Fdouble | **[g2weak](/documentation/code/classes/structgambit_1_1ds5__couplingconstants/#variable-g2weak)**  |
-| Fdouble | **[gyweak](/documentation/code/classes/structgambit_1_1ds5__couplingconstants/#variable-gyweak)**  |
-| Fdouble | **[g3stro](/documentation/code/classes/structgambit_1_1ds5__couplingconstants/#variable-g3stro)**  |
-| Fdouble | **[alphem](/documentation/code/classes/structgambit_1_1ds5__couplingconstants/#variable-alphem)**  |
-| Fdouble | **[alph3](/documentation/code/classes/structgambit_1_1ds5__couplingconstants/#variable-alph3)**  |
-| Farray< Fdouble, 1, 12 > | **[yukawa](/documentation/code/classes/structgambit_1_1ds5__couplingconstants/#variable-yukawa)**  |
-| Fdouble | **[g2wmz](/documentation/code/classes/structgambit_1_1ds5__couplingconstants/#variable-g2wmz)**  |
-| Fdouble | **[gywmz](/documentation/code/classes/structgambit_1_1ds5__couplingconstants/#variable-gywmz)**  |
+| Fdouble | **[g2weak](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds5__couplingconstants/#variable-g2weak)**  |
+| Fdouble | **[gyweak](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds5__couplingconstants/#variable-gyweak)**  |
+| Fdouble | **[g3stro](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds5__couplingconstants/#variable-g3stro)**  |
+| Fdouble | **[alphem](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds5__couplingconstants/#variable-alphem)**  |
+| Fdouble | **[alph3](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds5__couplingconstants/#variable-alph3)**  |
+| Farray< Fdouble, 1, 12 > | **[yukawa](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds5__couplingconstants/#variable-yukawa)**  |
+| Fdouble | **[g2wmz](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds5__couplingconstants/#variable-g2wmz)**  |
+| Fdouble | **[gywmz](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds5__couplingconstants/#variable-gywmz)**  |
 
 ## Public Attributes Documentation
 
@@ -87,4 +87,4 @@ Fdouble gywmz;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:32 +0000
+Updated on 2022-08-01 at 17:31:46 +0000

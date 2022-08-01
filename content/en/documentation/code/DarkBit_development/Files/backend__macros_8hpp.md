@@ -16,41 +16,41 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[BE_FUNCTION_5](/documentation/code/files/backend__macros_8hpp/#define-be-function-5)**(NAME, TYPE, ARGSLIST, SYMBOLNAMES, CAPABILITY)  |
-|  | **[BE_FUNCTION_6](/documentation/code/files/backend__macros_8hpp/#define-be-function-6)**(NAME, TYPE, ARGSLIST, SYMBOLNAMES, CAPABILITY, MODELS)  |
-|  | **[BE_FUNCTION_7](/documentation/code/files/backend__macros_8hpp/#define-be-function-7)**(NAME, TYPE, ARGSLIST, SYMBOLNAMES, CAPABILITY, MODELS, REF)  |
-|  | **[BE_FUNCTION](/documentation/code/files/backend__macros_8hpp/#define-be-function)**(...)  |
-|  | **[BE_FUNCTION_I](/documentation/code/files/backend__macros_8hpp/#define-be-function-i)**(NAME, TYPE, ARGLIST, SYMBOLNAMES, CAPABILITY, MODELS, REF)  |
-|  | **[BE_FUNCTION_I_AUX](/documentation/code/files/backend__macros_8hpp/#define-be-function-i-aux)**(NAME, TYPE, ARGLIST, SYMBOLNAMES, CAPABILITY, MODELS)  |
-|  | **[BE_FUNCTION_I_OTHER](/documentation/code/files/backend__macros_8hpp/#define-be-function-i-other)**(NAME, TYPE, ARGLIST, SYMBOLNAMES, CAPABILITY, MODELS) <br>Backend function macro for other backends (C/C++/Fortran)  |
-|  | **[BE_FUNCTION_I_MAIN](/documentation/code/files/backend__macros_8hpp/#define-be-function-i-main)**(NAME, TYPE, ARGLIST, SYMBOLNAMES, CAPABILITY, MODELS, REF) <br>Main actual backend function macro.  |
-|  | **[BE_FUNCTION_I_SUPP](/documentation/code/files/backend__macros_8hpp/#define-be-function-i-supp)**(NAME) <br>Supplemenentary backend function macro.  |
-|  | **[BE_CONV_FUNCTION_FULL](/documentation/code/files/backend__macros_8hpp/#define-be-conv-function-full)**(NAME, TYPE, ARGSLIST, CAPABILITY, MODELS, REF)  |
-|  | **[BE_CONV_FUNCTION_MAIN](/documentation/code/files/backend__macros_8hpp/#define-be-conv-function-main)**(NAME, TYPE, ARGSLIST, CAPABILITY, MODELS, REF)  |
-|  | **[BE_CONV_FUNCTION_SUPP](/documentation/code/files/backend__macros_8hpp/#define-be-conv-function-supp)**(NAME)  |
-|  | **[ARG_NAME](/documentation/code/files/backend__macros_8hpp/#define-arg-name)**(R, DATA, INDEX, ELEM) <br>Macros to add names to an argument list.  |
-|  | **[FUNCTION_ARGS_SEQ](/documentation/code/files/backend__macros_8hpp/#define-function-args-seq)**(ARGLIST)  |
-|  | **[FUNCTION_ARGS](/documentation/code/files/backend__macros_8hpp/#define-function-args)**(ARGLIST)  |
-|  | **[ARG_NAME_ONLY](/documentation/code/files/backend__macros_8hpp/#define-arg-name-only)**(R, DATA, INDEX, ELEM) <br>Macros to get only the names corresponding to an argument list.  |
-|  | **[FUNCTION_ARG_NAMES_SEQ](/documentation/code/files/backend__macros_8hpp/#define-function-arg-names-seq)**(ARGLIST)  |
-|  | **[FUNCTION_ARG_NAMES](/documentation/code/files/backend__macros_8hpp/#define-function-arg-names)**(ARGLIST)  |
-|  | **[MODULE](/documentation/code/files/backend__macros_8hpp/#define-module)** <br>Declare the backend initialisation module BackendIniBit.  |
-|  | **[BE_INI_DEPENDENCY](/documentation/code/files/backend__macros_8hpp/#define-be-ini-dependency)**(DEP, TYPE) <br>Dependency macro for point-level backend initialisation functions (in BackendIniBit)  |
-|  | **[BE_INI_CONDITIONAL_DEPENDENCY](/documentation/code/files/backend__macros_8hpp/#define-be-ini-conditional-dependency)**(DEP, TYPE, ...) <br>Model-conditional dependency macro for point-level backend initialisation functions (in BackendIniBit)  |
-|  | **[BE_ALLOW_MODEL](/documentation/code/files/backend__macros_8hpp/#define-be-allow-model)**(MODEL) <br>Macro for assigning a single allowed model to an entire backend.  |
-|  | **[SET_ALLOWED_MODELS](/documentation/code/files/backend__macros_8hpp/#define-set-allowed-models)**(NAME, MODELS) <br>Set all the allowed models for a given backend functor.  |
-|  | **[MAKE_INUSE_POINTER](/documentation/code/files/backend__macros_8hpp/#define-make-inuse-pointer)**(NAME) <br>Make the inUse pipe for a given backend functor.  |
-|  | **[LOAD_LIBRARY](/documentation/code/files/backend__macros_8hpp/#define-load-library)** <br>Macro containing initialization code.  |
-|  | **[REGISTER_BACKEND](/documentation/code/files/backend__macros_8hpp/#define-register-backend)**(BE, VER, SAFEVER, REF) <br>Register this backend with the Core if not running in standalone mode.  |
-|  | **[LOAD_ALL_FACTORIES](/documentation/code/files/backend__macros_8hpp/#define-load-all-factories)** <br>Load factory functions for classes provided by this backend.  |
-|  | **[LOAD_FACTORIES_FOR_TYPE](/documentation/code/files/backend__macros_8hpp/#define-load-factories-for-type)**(r, data, elem) <br>Load all factory functions for a given type.  |
-|  | **[LOAD_NTH_FACTORY_FOR_TYPE](/documentation/code/files/backend__macros_8hpp/#define-load-nth-factory-for-type)**(r, data, i, elem) <br>Redirector from within BOOST_PP_SEQ_FOR_EACH_I to LOAD_SINGLE_FACTORY.  |
-|  | **[LOAD_SINGLE_FACTORY](/documentation/code/files/backend__macros_8hpp/#define-load-single-factory)**(BARENAME, NAME, ARGS, SYMBOLNAMES, ABSTRACT, PTRNAME) <br>Load a single factory function from a backend.  |
-|  | **[BE_VARIABLE_I](/documentation/code/files/backend__macros_8hpp/#define-be-variable-i)**(NAME, TYPE, SYMBOLNAMES, CAPABILITY, MODELS, REF)  |
-|  | **[BE_VARIABLE_I_AUX](/documentation/code/files/backend__macros_8hpp/#define-be-variable-i-aux)**(NAME, TYPE, SYMBOLNAMES, CAPABILITY, MODELS)  |
-|  | **[BE_VARIABLE_I_OTHER](/documentation/code/files/backend__macros_8hpp/#define-be-variable-i-other)**(NAME, TYPE, SYMBOLNAMES, CAPABILITY, MODELS) <br>Backend variable macro for regular backends (C/C++/Fortran)  |
-|  | **[BE_VARIABLE_I_MAIN](/documentation/code/files/backend__macros_8hpp/#define-be-variable-i-main)**(NAME, TYPE, SYMBOLNAMES, CAPABILITY, MODELS, REF) <br>Main actual backend variable macro.  |
-|  | **[BE_VARIABLE_I_SUPP](/documentation/code/files/backend__macros_8hpp/#define-be-variable-i-supp)**(NAME) <br>Supplementary backend variable macro.  |
+|  | **[BE_FUNCTION_5](/documentation/code/darkbit_developmentfiles/backend__macros_8hpp/#define-be-function-5)**(NAME, TYPE, ARGSLIST, SYMBOLNAMES, CAPABILITY)  |
+|  | **[BE_FUNCTION_6](/documentation/code/darkbit_developmentfiles/backend__macros_8hpp/#define-be-function-6)**(NAME, TYPE, ARGSLIST, SYMBOLNAMES, CAPABILITY, MODELS)  |
+|  | **[BE_FUNCTION_7](/documentation/code/darkbit_developmentfiles/backend__macros_8hpp/#define-be-function-7)**(NAME, TYPE, ARGSLIST, SYMBOLNAMES, CAPABILITY, MODELS, REF)  |
+|  | **[BE_FUNCTION](/documentation/code/darkbit_developmentfiles/backend__macros_8hpp/#define-be-function)**(...)  |
+|  | **[BE_FUNCTION_I](/documentation/code/darkbit_developmentfiles/backend__macros_8hpp/#define-be-function-i)**(NAME, TYPE, ARGLIST, SYMBOLNAMES, CAPABILITY, MODELS, REF)  |
+|  | **[BE_FUNCTION_I_AUX](/documentation/code/darkbit_developmentfiles/backend__macros_8hpp/#define-be-function-i-aux)**(NAME, TYPE, ARGLIST, SYMBOLNAMES, CAPABILITY, MODELS)  |
+|  | **[BE_FUNCTION_I_OTHER](/documentation/code/darkbit_developmentfiles/backend__macros_8hpp/#define-be-function-i-other)**(NAME, TYPE, ARGLIST, SYMBOLNAMES, CAPABILITY, MODELS) <br>Backend function macro for other backends (C/C++/Fortran)  |
+|  | **[BE_FUNCTION_I_MAIN](/documentation/code/darkbit_developmentfiles/backend__macros_8hpp/#define-be-function-i-main)**(NAME, TYPE, ARGLIST, SYMBOLNAMES, CAPABILITY, MODELS, REF) <br>Main actual backend function macro.  |
+|  | **[BE_FUNCTION_I_SUPP](/documentation/code/darkbit_developmentfiles/backend__macros_8hpp/#define-be-function-i-supp)**(NAME) <br>Supplemenentary backend function macro.  |
+|  | **[BE_CONV_FUNCTION_FULL](/documentation/code/darkbit_developmentfiles/backend__macros_8hpp/#define-be-conv-function-full)**(NAME, TYPE, ARGSLIST, CAPABILITY, MODELS, REF)  |
+|  | **[BE_CONV_FUNCTION_MAIN](/documentation/code/darkbit_developmentfiles/backend__macros_8hpp/#define-be-conv-function-main)**(NAME, TYPE, ARGSLIST, CAPABILITY, MODELS, REF)  |
+|  | **[BE_CONV_FUNCTION_SUPP](/documentation/code/darkbit_developmentfiles/backend__macros_8hpp/#define-be-conv-function-supp)**(NAME)  |
+|  | **[ARG_NAME](/documentation/code/darkbit_developmentfiles/backend__macros_8hpp/#define-arg-name)**(R, DATA, INDEX, ELEM) <br>Macros to add names to an argument list.  |
+|  | **[FUNCTION_ARGS_SEQ](/documentation/code/darkbit_developmentfiles/backend__macros_8hpp/#define-function-args-seq)**(ARGLIST)  |
+|  | **[FUNCTION_ARGS](/documentation/code/darkbit_developmentfiles/backend__macros_8hpp/#define-function-args)**(ARGLIST)  |
+|  | **[ARG_NAME_ONLY](/documentation/code/darkbit_developmentfiles/backend__macros_8hpp/#define-arg-name-only)**(R, DATA, INDEX, ELEM) <br>Macros to get only the names corresponding to an argument list.  |
+|  | **[FUNCTION_ARG_NAMES_SEQ](/documentation/code/darkbit_developmentfiles/backend__macros_8hpp/#define-function-arg-names-seq)**(ARGLIST)  |
+|  | **[FUNCTION_ARG_NAMES](/documentation/code/darkbit_developmentfiles/backend__macros_8hpp/#define-function-arg-names)**(ARGLIST)  |
+|  | **[MODULE](/documentation/code/darkbit_developmentfiles/backend__macros_8hpp/#define-module)** <br>Declare the backend initialisation module BackendIniBit.  |
+|  | **[BE_INI_DEPENDENCY](/documentation/code/darkbit_developmentfiles/backend__macros_8hpp/#define-be-ini-dependency)**(DEP, TYPE) <br>Dependency macro for point-level backend initialisation functions (in BackendIniBit)  |
+|  | **[BE_INI_CONDITIONAL_DEPENDENCY](/documentation/code/darkbit_developmentfiles/backend__macros_8hpp/#define-be-ini-conditional-dependency)**(DEP, TYPE, ...) <br>Model-conditional dependency macro for point-level backend initialisation functions (in BackendIniBit)  |
+|  | **[BE_ALLOW_MODEL](/documentation/code/darkbit_developmentfiles/backend__macros_8hpp/#define-be-allow-model)**(MODEL) <br>Macro for assigning a single allowed model to an entire backend.  |
+|  | **[SET_ALLOWED_MODELS](/documentation/code/darkbit_developmentfiles/backend__macros_8hpp/#define-set-allowed-models)**(NAME, MODELS) <br>Set all the allowed models for a given backend functor.  |
+|  | **[MAKE_INUSE_POINTER](/documentation/code/darkbit_developmentfiles/backend__macros_8hpp/#define-make-inuse-pointer)**(NAME) <br>Make the inUse pipe for a given backend functor.  |
+|  | **[LOAD_LIBRARY](/documentation/code/darkbit_developmentfiles/backend__macros_8hpp/#define-load-library)** <br>Macro containing initialization code.  |
+|  | **[REGISTER_BACKEND](/documentation/code/darkbit_developmentfiles/backend__macros_8hpp/#define-register-backend)**(BE, VER, SAFEVER, REF) <br>Register this backend with the Core if not running in standalone mode.  |
+|  | **[LOAD_ALL_FACTORIES](/documentation/code/darkbit_developmentfiles/backend__macros_8hpp/#define-load-all-factories)** <br>Load factory functions for classes provided by this backend.  |
+|  | **[LOAD_FACTORIES_FOR_TYPE](/documentation/code/darkbit_developmentfiles/backend__macros_8hpp/#define-load-factories-for-type)**(r, data, elem) <br>Load all factory functions for a given type.  |
+|  | **[LOAD_NTH_FACTORY_FOR_TYPE](/documentation/code/darkbit_developmentfiles/backend__macros_8hpp/#define-load-nth-factory-for-type)**(r, data, i, elem) <br>Redirector from within BOOST_PP_SEQ_FOR_EACH_I to LOAD_SINGLE_FACTORY.  |
+|  | **[LOAD_SINGLE_FACTORY](/documentation/code/darkbit_developmentfiles/backend__macros_8hpp/#define-load-single-factory)**(BARENAME, NAME, ARGS, SYMBOLNAMES, ABSTRACT, PTRNAME) <br>Load a single factory function from a backend.  |
+|  | **[BE_VARIABLE_I](/documentation/code/darkbit_developmentfiles/backend__macros_8hpp/#define-be-variable-i)**(NAME, TYPE, SYMBOLNAMES, CAPABILITY, MODELS, REF)  |
+|  | **[BE_VARIABLE_I_AUX](/documentation/code/darkbit_developmentfiles/backend__macros_8hpp/#define-be-variable-i-aux)**(NAME, TYPE, SYMBOLNAMES, CAPABILITY, MODELS)  |
+|  | **[BE_VARIABLE_I_OTHER](/documentation/code/darkbit_developmentfiles/backend__macros_8hpp/#define-be-variable-i-other)**(NAME, TYPE, SYMBOLNAMES, CAPABILITY, MODELS) <br>Backend variable macro for regular backends (C/C++/Fortran)  |
+|  | **[BE_VARIABLE_I_MAIN](/documentation/code/darkbit_developmentfiles/backend__macros_8hpp/#define-be-variable-i-main)**(NAME, TYPE, SYMBOLNAMES, CAPABILITY, MODELS, REF) <br>Main actual backend variable macro.  |
+|  | **[BE_VARIABLE_I_SUPP](/documentation/code/darkbit_developmentfiles/backend__macros_8hpp/#define-be-variable-i-supp)**(NAME) <br>Supplementary backend variable macro.  |
 
 ## Detailed Description
 
@@ -1167,4 +1167,4 @@ namespace Gambit                                                                
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:25 +0000
+Updated on 2022-08-01 at 17:31:45 +0000

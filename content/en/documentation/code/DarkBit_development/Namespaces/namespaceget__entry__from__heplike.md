@@ -16,9 +16,9 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[topdown](/documentation/code/namespaces/namespaceget__entry__from__heplike/#variable-topdown)**  |
-| | **[filename](/documentation/code/namespaces/namespaceget__entry__from__heplike/#variable-filename)**  |
-| string | **[request](/documentation/code/namespaces/namespaceget__entry__from__heplike/#variable-request)**  |
+| | **[topdown](/documentation/code/darkbit_developmentnamespaces/namespaceget__entry__from__heplike/#variable-topdown)**  |
+| | **[filename](/documentation/code/darkbit_developmentnamespaces/namespaceget__entry__from__heplike/#variable-filename)**  |
+| string | **[request](/documentation/code/darkbit_developmentnamespaces/namespaceget__entry__from__heplike/#variable-request)**  |
 
 
 
@@ -50,4 +50,4 @@ string request =  r'{}'.format(load(f, Loader=Loader)[str(sys.argv[2])]);
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:21 +0000
+Updated on 2022-08-01 at 17:31:41 +0000

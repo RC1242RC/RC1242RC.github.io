@@ -16,8 +16,8 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[configs](/documentation/code/namespaces/namespaceconfigs/)**  |
-| **[configs::heplike_1_2](/documentation/code/namespaces/namespaceconfigs_1_1heplike__1__2/)**  |
+| **[configs](/documentation/code/darkbit_developmentnamespaces/namespaceconfigs/)**  |
+| **[configs::heplike_1_2](/documentation/code/darkbit_developmentnamespaces/namespaceconfigs_1_1heplike__1__2/)**  |
 
 
 
@@ -154,4 +154,4 @@ pragmas_end = [
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:26 +0000
+Updated on 2022-08-01 at 17:31:45 +0000

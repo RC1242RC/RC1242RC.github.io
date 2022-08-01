@@ -16,7 +16,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[Gambit::IniParser::Types::Observable](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/)**  |
+| struct | **[Gambit::IniParser::Types::Observable](/documentation/code/gambit_sphinxclasses/structgambit_1_1iniparser_1_1types_1_1observable/)**  |
 
 
 
@@ -25,4 +25,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:33 +0000
+Updated on 2022-08-01 at 17:31:48 +0000

@@ -16,15 +16,15 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::SpecBit](/documentation/code/namespaces/namespacegambit_1_1specbit/)**  |
+| **[Gambit](/documentation/code/darkbit_developmentnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::SpecBit](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1specbit/)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[IN_SPECBIT](/documentation/code/files/examples_2specbit__tests_8cpp/#define-in-specbit)**  |
-|  | **[QUERYMODELS](/documentation/code/files/examples_2specbit__tests_8cpp/#define-querymodels)**(MODEL) <br>Quick macro to simplify the check of Pipe::Models.  |
+|  | **[IN_SPECBIT](/documentation/code/darkbit_developmentfiles/examples_2specbit__tests_8cpp/#define-in-specbit)**  |
+|  | **[QUERYMODELS](/documentation/code/darkbit_developmentfiles/examples_2specbit__tests_8cpp/#define-querymodels)**(MODEL) <br>Quick macro to simplify the check of Pipe::Models.  |
 
 ## Detailed Description
 
@@ -279,4 +279,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:23 +0000
+Updated on 2022-08-01 at 17:31:43 +0000

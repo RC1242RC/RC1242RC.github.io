@@ -16,7 +16,7 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[libthird_1_1](/documentation/code/namespaces/namespacelibthird__1__1/)**  |
+| **[libthird_1_1](/documentation/code/gambit_sphinxnamespaces/namespacelibthird__1__1/)**  |
 
 
 
@@ -30,4 +30,4 @@ from .main import *
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:36 +0000
+Updated on 2022-08-01 at 17:31:50 +0000

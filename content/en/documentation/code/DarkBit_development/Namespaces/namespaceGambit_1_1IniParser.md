@@ -16,20 +16,20 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit::IniParser::Types](/documentation/code/namespaces/namespacegambit_1_1iniparser_1_1types/)**  |
+| **[Gambit::IniParser::Types](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1iniparser_1_1types/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Gambit::IniParser::IniFile](/documentation/code/classes/classgambit_1_1iniparser_1_1inifile/)** <br>Main inifile class.  |
+| class | **[Gambit::IniParser::IniFile](/documentation/code/darkbit_developmentclasses/classgambit_1_1iniparser_1_1inifile/)** <br>Main inifile class.  |
 
 ## Types
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef [Types::Observable](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/) | **[ObservableType](/documentation/code/namespaces/namespacegambit_1_1iniparser/#typedef-observabletype)**  |
-| typedef std::vector< [ObservableType](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/) > | **[ObservablesType](/documentation/code/namespaces/namespacegambit_1_1iniparser/#typedef-observablestype)**  |
+| typedef [Types::Observable](/documentation/code/darkbit_developmentclasses/structgambit_1_1iniparser_1_1types_1_1observable/) | **[ObservableType](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1iniparser/#typedef-observabletype)**  |
+| typedef std::vector< [ObservableType](/documentation/code/darkbit_developmentclasses/structgambit_1_1iniparser_1_1types_1_1observable/) > | **[ObservablesType](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1iniparser/#typedef-observablestype)**  |
 
 ## Types Documentation
 
@@ -54,4 +54,4 @@ typedef std::vector<ObservableType> Gambit::IniParser::ObservablesType;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:23 +0000
+Updated on 2022-08-01 at 17:31:42 +0000

@@ -16,19 +16,19 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::ColliderBit](/documentation/code/namespaces/namespacegambit_1_1colliderbit/)**  |
+| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::ColliderBit](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1colliderbit/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Gambit::ColliderBit::OPALCharginoHadronicLimitAt208GeV](/documentation/code/classes/classgambit_1_1colliderbit_1_1opalcharginohadroniclimitat208gev/)** <br>A class to contain the limit data from OPAL_EPJC35_2004_1, figure 5b.  |
-| class | **[Gambit::ColliderBit::OPALCharginoSemiLeptonicLimitAt208GeV](/documentation/code/classes/classgambit_1_1colliderbit_1_1opalcharginosemileptoniclimitat208gev/)** <br>A class to contain the limit data from OPAL_EPJC35_2004_1, figure 6b.  |
-| class | **[Gambit::ColliderBit::OPALCharginoLeptonicLimitAt208GeV](/documentation/code/classes/classgambit_1_1colliderbit_1_1opalcharginoleptoniclimitat208gev/)** <br>A class to contain the limit data from OPAL_EPJC35_2004_1, figure 7b.  |
-| class | **[Gambit::ColliderBit::OPALCharginoAllChannelsLimitAt208GeV](/documentation/code/classes/classgambit_1_1colliderbit_1_1opalcharginoallchannelslimitat208gev/)** <br>A class to contain the limit data from OPAL_EPJC35_2004_1, figure 8b.  |
-| class | **[Gambit::ColliderBit::OPALNeutralinoHadronicLimitAt208GeV](/documentation/code/classes/classgambit_1_1colliderbit_1_1opalneutralinohadroniclimitat208gev/)** <br>A class to contain the limit data from OPAL_EPJC35_2004_1, figure 9b.  |
-| class | **[Gambit::ColliderBit::OPALNeutralinoHadronicViaZLimitAt208GeV](/documentation/code/classes/classgambit_1_1colliderbit_1_1opalneutralinohadronicviazlimitat208gev/)** <br>A class to contain the limit data from OPAL_EPJC35_2004_1, figure 9b.  |
+| class | **[Gambit::ColliderBit::OPALCharginoHadronicLimitAt208GeV](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1opalcharginohadroniclimitat208gev/)** <br>A class to contain the limit data from OPAL_EPJC35_2004_1, figure 5b.  |
+| class | **[Gambit::ColliderBit::OPALCharginoSemiLeptonicLimitAt208GeV](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1opalcharginosemileptoniclimitat208gev/)** <br>A class to contain the limit data from OPAL_EPJC35_2004_1, figure 6b.  |
+| class | **[Gambit::ColliderBit::OPALCharginoLeptonicLimitAt208GeV](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1opalcharginoleptoniclimitat208gev/)** <br>A class to contain the limit data from OPAL_EPJC35_2004_1, figure 7b.  |
+| class | **[Gambit::ColliderBit::OPALCharginoAllChannelsLimitAt208GeV](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1opalcharginoallchannelslimitat208gev/)** <br>A class to contain the limit data from OPAL_EPJC35_2004_1, figure 8b.  |
+| class | **[Gambit::ColliderBit::OPALNeutralinoHadronicLimitAt208GeV](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1opalneutralinohadroniclimitat208gev/)** <br>A class to contain the limit data from OPAL_EPJC35_2004_1, figure 9b.  |
+| class | **[Gambit::ColliderBit::OPALNeutralinoHadronicViaZLimitAt208GeV](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1opalneutralinohadronicviazlimitat208gev/)** <br>A class to contain the limit data from OPAL_EPJC35_2004_1, figure 9b.  |
 
 
 
@@ -122,4 +122,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:35 +0000
+Updated on 2022-08-01 at 17:31:49 +0000

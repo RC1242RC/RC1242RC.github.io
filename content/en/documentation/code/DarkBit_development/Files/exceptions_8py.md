@@ -16,15 +16,15 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[modules](/documentation/code/namespaces/namespacemodules/)**  |
-| **[modules::exceptions](/documentation/code/namespaces/namespacemodules_1_1exceptions/)**  |
+| **[modules](/documentation/code/darkbit_developmentnamespaces/namespacemodules/)**  |
+| **[modules::exceptions](/documentation/code/darkbit_developmentnamespaces/namespacemodules_1_1exceptions/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[modules::exceptions::Error](/documentation/code/classes/classmodules_1_1exceptions_1_1error/)**  |
-| class | **[modules::exceptions::ReturnError](/documentation/code/classes/classmodules_1_1exceptions_1_1returnerror/)**  |
+| class | **[modules::exceptions::Error](/documentation/code/darkbit_developmentclasses/classmodules_1_1exceptions_1_1error/)**  |
+| class | **[modules::exceptions::ReturnError](/documentation/code/darkbit_developmentclasses/classmodules_1_1exceptions_1_1returnerror/)**  |
 
 
 
@@ -54,4 +54,4 @@ class ReturnError(Error):
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:26 +0000
+Updated on 2022-08-01 at 17:31:45 +0000

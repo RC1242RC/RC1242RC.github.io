@@ -16,15 +16,15 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::DarkAges](/documentation/code/namespaces/namespacegambit_1_1darkages/)**  |
+| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::DarkAges](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1darkages/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[Gambit::DarkAges::Energy_injection_spectrum](/documentation/code/classes/structgambit_1_1darkages_1_1energy__injection__spectrum/)**  |
-| struct | **[Gambit::DarkAges::Energy_injection_efficiency_table](/documentation/code/classes/structgambit_1_1darkages_1_1energy__injection__efficiency__table/)**  |
+| struct | **[Gambit::DarkAges::Energy_injection_spectrum](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkages_1_1energy__injection__spectrum/)**  |
+| struct | **[Gambit::DarkAges::Energy_injection_efficiency_table](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkages_1_1energy__injection__efficiency__table/)**  |
 
 ## Detailed Description
 
@@ -141,4 +141,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:37 +0000
+Updated on 2022-08-01 at 17:31:50 +0000

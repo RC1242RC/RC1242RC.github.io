@@ -18,13 +18,13 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Fdouble | **[ibcom_x](/documentation/code/classes/structgambit_1_1ds__ibintvars/#variable-ibcom-x)**  |
-| Fdouble | **[ibcom_z](/documentation/code/classes/structgambit_1_1ds__ibintvars/#variable-ibcom-z)**  |
-| Fdouble | **[ibcom_mx](/documentation/code/classes/structgambit_1_1ds__ibintvars/#variable-ibcom-mx)**  |
-| Fdouble | **[ibcom_mp1](/documentation/code/classes/structgambit_1_1ds__ibintvars/#variable-ibcom-mp1)**  |
-| Fdouble | **[ibcom_mp2](/documentation/code/classes/structgambit_1_1ds__ibintvars/#variable-ibcom-mp2)**  |
-| Finteger | **[intch](/documentation/code/classes/structgambit_1_1ds__ibintvars/#variable-intch)**  |
-| Finteger | **[intyield](/documentation/code/classes/structgambit_1_1ds__ibintvars/#variable-intyield)**  |
+| Fdouble | **[ibcom_x](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__ibintvars/#variable-ibcom-x)**  |
+| Fdouble | **[ibcom_z](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__ibintvars/#variable-ibcom-z)**  |
+| Fdouble | **[ibcom_mx](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__ibintvars/#variable-ibcom-mx)**  |
+| Fdouble | **[ibcom_mp1](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__ibintvars/#variable-ibcom-mp1)**  |
+| Fdouble | **[ibcom_mp2](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__ibintvars/#variable-ibcom-mp2)**  |
+| Finteger | **[intch](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__ibintvars/#variable-intch)**  |
+| Finteger | **[intyield](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__ibintvars/#variable-intyield)**  |
 
 ## Public Attributes Documentation
 
@@ -79,4 +79,4 @@ Finteger intyield;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:32 +0000
+Updated on 2022-08-01 at 17:31:46 +0000

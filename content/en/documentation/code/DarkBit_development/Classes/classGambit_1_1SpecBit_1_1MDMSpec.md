@@ -20,41 +20,41 @@ Inherits from Spec< MDMSpec< MI > >
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef [MDMSpec](/documentation/code/classes/classgambit_1_1specbit_1_1mdmspec/)< MI > | **[Self](/documentation/code/classes/classgambit_1_1specbit_1_1mdmspec/#typedef-self)**  |
-| typedef Self::MTget | **[MTget](/documentation/code/classes/classgambit_1_1specbit_1_1mdmspec/#typedef-mtget)**  |
-| typedef Self::MTset | **[MTset](/documentation/code/classes/classgambit_1_1specbit_1_1mdmspec/#typedef-mtset)**  |
-| typedef Self::GetterMaps | **[GetterMaps](/documentation/code/classes/classgambit_1_1specbit_1_1mdmspec/#typedef-gettermaps)**  |
-| typedef Self::SetterMaps | **[SetterMaps](/documentation/code/classes/classgambit_1_1specbit_1_1mdmspec/#typedef-settermaps)**  |
-| typedef SpecTraits< [Self](/documentation/code/classes/classgambit_1_1specbit_1_1mdmspec/#typedef-self) >::Model | **[Model](/documentation/code/classes/classgambit_1_1specbit_1_1mdmspec/#typedef-model)**  |
-| typedef SpecTraits< [Self](/documentation/code/classes/classgambit_1_1specbit_1_1mdmspec/#typedef-self) >::Input | **[Input](/documentation/code/classes/classgambit_1_1specbit_1_1mdmspec/#typedef-input)**  |
+| typedef [MDMSpec](/documentation/code/darkbit_developmentclasses/classgambit_1_1specbit_1_1mdmspec/)< MI > | **[Self](/documentation/code/darkbit_developmentclasses/classgambit_1_1specbit_1_1mdmspec/#typedef-self)**  |
+| typedef Self::MTget | **[MTget](/documentation/code/darkbit_developmentclasses/classgambit_1_1specbit_1_1mdmspec/#typedef-mtget)**  |
+| typedef Self::MTset | **[MTset](/documentation/code/darkbit_developmentclasses/classgambit_1_1specbit_1_1mdmspec/#typedef-mtset)**  |
+| typedef Self::GetterMaps | **[GetterMaps](/documentation/code/darkbit_developmentclasses/classgambit_1_1specbit_1_1mdmspec/#typedef-gettermaps)**  |
+| typedef Self::SetterMaps | **[SetterMaps](/documentation/code/darkbit_developmentclasses/classgambit_1_1specbit_1_1mdmspec/#typedef-settermaps)**  |
+| typedef SpecTraits< [Self](/documentation/code/darkbit_developmentclasses/classgambit_1_1specbit_1_1mdmspec/#typedef-self) >::Model | **[Model](/documentation/code/darkbit_developmentclasses/classgambit_1_1specbit_1_1mdmspec/#typedef-model)**  |
+| typedef SpecTraits< [Self](/documentation/code/darkbit_developmentclasses/classgambit_1_1specbit_1_1mdmspec/#typedef-self) >::Input | **[Input](/documentation/code/darkbit_developmentclasses/classgambit_1_1specbit_1_1mdmspec/#typedef-input)**  |
 
 ## Public Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| SetterMaps | **[fill_setter_maps](/documentation/code/classes/classgambit_1_1specbit_1_1mdmspec/#function-fill-setter-maps)**() |
-| int | **[index_offset](/documentation/code/classes/classgambit_1_1specbit_1_1mdmspec/#function-index-offset)**()<br>Interface function overrides.  |
-| GetterMaps | **[fill_getter_maps](/documentation/code/classes/classgambit_1_1specbit_1_1mdmspec/#function-fill-getter-maps)**()<br>Map filler overrides.  |
-| virtual double | **[GetScale](/documentation/code/classes/classgambit_1_1specbit_1_1mdmspec/#function-getscale)**() const |
-| virtual void | **[SetScale](/documentation/code/classes/classgambit_1_1specbit_1_1mdmspec/#function-setscale)**(double scale) |
-| virtual void | **[RunToScaleOverride](/documentation/code/classes/classgambit_1_1specbit_1_1mdmspec/#function-runtoscaleoverride)**(double scale) |
-| | **[MDMSpec](/documentation/code/classes/classgambit_1_1specbit_1_1mdmspec/#function-mdmspec)**() |
-| | **[MDMSpec](/documentation/code/classes/classgambit_1_1specbit_1_1mdmspec/#function-mdmspec)**(MI mi, str backend_name, str backend_version) |
-| virtual | **[~MDMSpec](/documentation/code/classes/classgambit_1_1specbit_1_1mdmspec/#function-~mdmspec)**() |
-| Model & | **[get_Model](/documentation/code/classes/classgambit_1_1specbit_1_1mdmspec/#function-get-model)**() |
-| Input & | **[get_Input](/documentation/code/classes/classgambit_1_1specbit_1_1mdmspec/#function-get-input)**() |
-| const Model & | **[get_Model](/documentation/code/classes/classgambit_1_1specbit_1_1mdmspec/#function-get-model)**() const |
-| const Input & | **[get_Input](/documentation/code/classes/classgambit_1_1specbit_1_1mdmspec/#function-get-input)**() const |
-| virtual std::string | **[AccessError](/documentation/code/classes/classgambit_1_1specbit_1_1mdmspec/#function-accesserror)**(std::string state) const |
-| template <class MDMlike \> <br>void | **[get_lowe_data_from](/documentation/code/classes/classgambit_1_1specbit_1_1mdmspec/#function-get-lowe-data-from)**(MDMlike & othermodel) |
-| void | **[get_external_spectrum](/documentation/code/classes/classgambit_1_1specbit_1_1mdmspec/#function-get-external-spectrum)**(typename MI::Model & othermodel) |
+| SetterMaps | **[fill_setter_maps](/documentation/code/darkbit_developmentclasses/classgambit_1_1specbit_1_1mdmspec/#function-fill-setter-maps)**() |
+| int | **[index_offset](/documentation/code/darkbit_developmentclasses/classgambit_1_1specbit_1_1mdmspec/#function-index-offset)**()<br>Interface function overrides.  |
+| GetterMaps | **[fill_getter_maps](/documentation/code/darkbit_developmentclasses/classgambit_1_1specbit_1_1mdmspec/#function-fill-getter-maps)**()<br>Map filler overrides.  |
+| virtual double | **[GetScale](/documentation/code/darkbit_developmentclasses/classgambit_1_1specbit_1_1mdmspec/#function-getscale)**() const |
+| virtual void | **[SetScale](/documentation/code/darkbit_developmentclasses/classgambit_1_1specbit_1_1mdmspec/#function-setscale)**(double scale) |
+| virtual void | **[RunToScaleOverride](/documentation/code/darkbit_developmentclasses/classgambit_1_1specbit_1_1mdmspec/#function-runtoscaleoverride)**(double scale) |
+| | **[MDMSpec](/documentation/code/darkbit_developmentclasses/classgambit_1_1specbit_1_1mdmspec/#function-mdmspec)**() |
+| | **[MDMSpec](/documentation/code/darkbit_developmentclasses/classgambit_1_1specbit_1_1mdmspec/#function-mdmspec)**(MI mi, str backend_name, str backend_version) |
+| virtual | **[~MDMSpec](/documentation/code/darkbit_developmentclasses/classgambit_1_1specbit_1_1mdmspec/#function-~mdmspec)**() |
+| Model & | **[get_Model](/documentation/code/darkbit_developmentclasses/classgambit_1_1specbit_1_1mdmspec/#function-get-model)**() |
+| Input & | **[get_Input](/documentation/code/darkbit_developmentclasses/classgambit_1_1specbit_1_1mdmspec/#function-get-input)**() |
+| const Model & | **[get_Model](/documentation/code/darkbit_developmentclasses/classgambit_1_1specbit_1_1mdmspec/#function-get-model)**() const |
+| const Input & | **[get_Input](/documentation/code/darkbit_developmentclasses/classgambit_1_1specbit_1_1mdmspec/#function-get-input)**() const |
+| virtual std::string | **[AccessError](/documentation/code/darkbit_developmentclasses/classgambit_1_1specbit_1_1mdmspec/#function-accesserror)**(std::string state) const |
+| template <class MDMlike \> <br>void | **[get_lowe_data_from](/documentation/code/darkbit_developmentclasses/classgambit_1_1specbit_1_1mdmspec/#function-get-lowe-data-from)**(MDMlike & othermodel) |
+| void | **[get_external_spectrum](/documentation/code/darkbit_developmentclasses/classgambit_1_1specbit_1_1mdmspec/#function-get-external-spectrum)**(typename MI::Model & othermodel) |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| MI | **[model_interface](/documentation/code/classes/classgambit_1_1specbit_1_1mdmspec/#variable-model-interface)**  |
-| DummyInput | **[dummyinput](/documentation/code/classes/classgambit_1_1specbit_1_1mdmspec/#variable-dummyinput)**  |
+| MI | **[model_interface](/documentation/code/darkbit_developmentclasses/classgambit_1_1specbit_1_1mdmspec/#variable-model-interface)**  |
+| DummyInput | **[dummyinput](/documentation/code/darkbit_developmentclasses/classgambit_1_1specbit_1_1mdmspec/#variable-dummyinput)**  |
 
 ## Detailed Description
 
@@ -269,4 +269,4 @@ DummyInput dummyinput;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:23 +0000
+Updated on 2022-08-01 at 17:31:42 +0000

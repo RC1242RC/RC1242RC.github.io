@@ -16,15 +16,15 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::PostProcessor](/documentation/code/namespaces/namespacegambit_1_1postprocessor/)**  |
+| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::PostProcessor](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1postprocessor/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[Gambit::PostProcessor::PPOptions](/documentation/code/classes/structgambit_1_1postprocessor_1_1ppoptions/)**  |
-| class | **[Gambit::PostProcessor::PPDriver](/documentation/code/classes/classgambit_1_1postprocessor_1_1ppdriver/)** <br>Driver class to handle the actual postprocessing tasks.  |
+| struct | **[Gambit::PostProcessor::PPOptions](/documentation/code/gambit_sphinxclasses/structgambit_1_1postprocessor_1_1ppoptions/)**  |
+| class | **[Gambit::PostProcessor::PPDriver](/documentation/code/gambit_sphinxclasses/classgambit_1_1postprocessor_1_1ppdriver/)** <br>Driver class to handle the actual postprocessing tasks.  |
 
 ## Detailed Description
 
@@ -191,4 +191,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:34 +0000
+Updated on 2022-08-01 at 17:31:48 +0000

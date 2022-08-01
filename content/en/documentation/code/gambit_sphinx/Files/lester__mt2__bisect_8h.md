@@ -16,28 +16,28 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Lester](/documentation/code/namespaces/namespacelester/)**  |
+| **[Lester](/documentation/code/gambit_sphinxnamespaces/namespacelester/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[Lester::EllipseParams](/documentation/code/classes/structlester_1_1ellipseparams/)**  |
-| class | **[asymm_mt2_lester_bisect](/documentation/code/classes/classasymm__mt2__lester__bisect/)**  |
+| struct | **[Lester::EllipseParams](/documentation/code/gambit_sphinxclasses/structlester_1_1ellipseparams/)**  |
+| class | **[asymm_mt2_lester_bisect](/documentation/code/gambit_sphinxclasses/classasymm__mt2__lester__bisect/)**  |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| void | **[myversion](/documentation/code/files/lester__mt2__bisect_8h/#function-myversion)**() |
-| double | **[MT](/documentation/code/files/lester__mt2__bisect_8h/#function-mt)**(double px1, double px2, double py1, double py2, double m1, double m2) |
-| std::pair< double, double > | **[ben_findsols](/documentation/code/files/lester__mt2__bisect_8h/#function-ben-findsols)**(double MT2, double px, double py, double visM, double Ma, double pxb, double pyb, double metx, double mety, double visMb, double Mb) |
+| void | **[myversion](/documentation/code/gambit_sphinxfiles/lester__mt2__bisect_8h/#function-myversion)**() |
+| double | **[MT](/documentation/code/gambit_sphinxfiles/lester__mt2__bisect_8h/#function-mt)**(double px1, double px2, double py1, double py2, double m1, double m2) |
+| std::pair< double, double > | **[ben_findsols](/documentation/code/gambit_sphinxfiles/lester__mt2__bisect_8h/#function-ben-findsols)**(double MT2, double px, double py, double visM, double Ma, double pxb, double pyb, double metx, double mety, double visMb, double Mb) |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[ASYMM_MT2_BISECT_H](/documentation/code/files/lester__mt2__bisect_8h/#define-asymm-mt2-bisect-h)**  |
+|  | **[ASYMM_MT2_BISECT_H](/documentation/code/gambit_sphinxfiles/lester__mt2__bisect_8h/#define-asymm-mt2-bisect-h)**  |
 
 
 ## Functions Documentation
@@ -723,4 +723,4 @@ std::pair <double,double>  ben_findsols(double MT2, double px, double py, double
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:35 +0000
+Updated on 2022-08-01 at 17:31:49 +0000

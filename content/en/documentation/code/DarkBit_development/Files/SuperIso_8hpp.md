@@ -16,18 +16,18 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit](/documentation/code/darkbit_developmentnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[Gambit::parameters](/documentation/code/classes/structgambit_1_1parameters/)**  |
-| struct | **[Gambit::indnuis](/documentation/code/classes/structgambit_1_1indnuis/)**  |
-| struct | **[Gambit::nuisance](/documentation/code/classes/structgambit_1_1nuisance/)**  |
-| struct | **[Gambit::nuiscorr](/documentation/code/classes/structgambit_1_1nuiscorr/)**  |
-| struct | **[Gambit::obsname](/documentation/code/classes/structgambit_1_1obsname/)**  |
-| struct | **[Gambit::flhaparam](/documentation/code/classes/structgambit_1_1flhaparam/)**  |
+| struct | **[Gambit::parameters](/documentation/code/darkbit_developmentclasses/structgambit_1_1parameters/)**  |
+| struct | **[Gambit::indnuis](/documentation/code/darkbit_developmentclasses/structgambit_1_1indnuis/)**  |
+| struct | **[Gambit::nuisance](/documentation/code/darkbit_developmentclasses/structgambit_1_1nuisance/)**  |
+| struct | **[Gambit::nuiscorr](/documentation/code/darkbit_developmentclasses/structgambit_1_1nuiscorr/)**  |
+| struct | **[Gambit::obsname](/documentation/code/darkbit_developmentclasses/structgambit_1_1obsname/)**  |
+| struct | **[Gambit::flhaparam](/documentation/code/darkbit_developmentclasses/structgambit_1_1flhaparam/)**  |
 
 ## Detailed Description
 
@@ -492,4 +492,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:25 +0000
+Updated on 2022-08-01 at 17:31:45 +0000

@@ -18,12 +18,12 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| fh_complex | **[couplings](/documentation/code/classes/structgambit_1_1fh__couplings__container/#variable-couplings)**  |
-| fh_complex | **[couplings_sm](/documentation/code/classes/structgambit_1_1fh__couplings__container/#variable-couplings-sm)**  |
-| fh_real | **[gammas](/documentation/code/classes/structgambit_1_1fh__couplings__container/#variable-gammas)**  |
-| fh_real | **[gammas_sm](/documentation/code/classes/structgambit_1_1fh__couplings__container/#variable-gammas-sm)**  |
-| str | **[calculator](/documentation/code/classes/structgambit_1_1fh__couplings__container/#variable-calculator)**  |
-| str | **[calculator_version](/documentation/code/classes/structgambit_1_1fh__couplings__container/#variable-calculator-version)**  |
+| fh_complex | **[couplings](/documentation/code/gambit_sphinxclasses/structgambit_1_1fh__couplings__container/#variable-couplings)**  |
+| fh_complex | **[couplings_sm](/documentation/code/gambit_sphinxclasses/structgambit_1_1fh__couplings__container/#variable-couplings-sm)**  |
+| fh_real | **[gammas](/documentation/code/gambit_sphinxclasses/structgambit_1_1fh__couplings__container/#variable-gammas)**  |
+| fh_real | **[gammas_sm](/documentation/code/gambit_sphinxclasses/structgambit_1_1fh__couplings__container/#variable-gammas-sm)**  |
+| str | **[calculator](/documentation/code/gambit_sphinxclasses/structgambit_1_1fh__couplings__container/#variable-calculator)**  |
+| str | **[calculator_version](/documentation/code/gambit_sphinxclasses/structgambit_1_1fh__couplings__container/#variable-calculator-version)**  |
 
 ## Public Attributes Documentation
 
@@ -71,4 +71,4 @@ str calculator_version;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:32 +0000
+Updated on 2022-08-01 at 17:31:46 +0000

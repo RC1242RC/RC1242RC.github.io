@@ -22,14 +22,14 @@ Inherits from boost::shared_ptr< Function_Base< ret(args...)> >
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[scan_ptr](/documentation/code/classes/classgambit_1_1scanner_1_1scan__ptr_3_01ret_07args_8_8_8_08_4/#function-scan-ptr)**() |
-| | **[scan_ptr](/documentation/code/classes/classgambit_1_1scanner_1_1scan__ptr_3_01ret_07args_8_8_8_08_4/#function-scan-ptr)**(const [scan_ptr](/documentation/code/classes/classgambit_1_1scanner_1_1scan__ptr/) & in) |
-| | **[scan_ptr](/documentation/code/classes/classgambit_1_1scanner_1_1scan__ptr_3_01ret_07args_8_8_8_08_4/#function-scan-ptr)**([scan_ptr](/documentation/code/classes/classgambit_1_1scanner_1_1scan__ptr/) && in) |
-| | **[scan_ptr](/documentation/code/classes/classgambit_1_1scanner_1_1scan__ptr_3_01ret_07args_8_8_8_08_4/#function-scan-ptr)**(void * in) |
-| [scan_ptr](/documentation/code/classes/classgambit_1_1scanner_1_1scan__ptr/)< ret(args...)> & | **[operator=](/documentation/code/classes/classgambit_1_1scanner_1_1scan__ptr_3_01ret_07args_8_8_8_08_4/#function-operator=)**(void * in) |
-| [scan_ptr](/documentation/code/classes/classgambit_1_1scanner_1_1scan__ptr/)< ret(args...)> & | **[operator=](/documentation/code/classes/classgambit_1_1scanner_1_1scan__ptr_3_01ret_07args_8_8_8_08_4/#function-operator=)**(const [scan_ptr](/documentation/code/classes/classgambit_1_1scanner_1_1scan__ptr/)< ret(args...)> & in) |
-| [scan_ptr](/documentation/code/classes/classgambit_1_1scanner_1_1scan__ptr/)< ret(args...)> & | **[operator=](/documentation/code/classes/classgambit_1_1scanner_1_1scan__ptr_3_01ret_07args_8_8_8_08_4/#function-operator=)**(s_ptr && in) |
-| ret | **[operator()](/documentation/code/classes/classgambit_1_1scanner_1_1scan__ptr_3_01ret_07args_8_8_8_08_4/#function-operator())**(const args &... params) |
+| | **[scan_ptr](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1scan__ptr_3_01ret_07args_8_8_8_08_4/#function-scan-ptr)**() |
+| | **[scan_ptr](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1scan__ptr_3_01ret_07args_8_8_8_08_4/#function-scan-ptr)**(const [scan_ptr](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1scan__ptr/) & in) |
+| | **[scan_ptr](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1scan__ptr_3_01ret_07args_8_8_8_08_4/#function-scan-ptr)**([scan_ptr](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1scan__ptr/) && in) |
+| | **[scan_ptr](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1scan__ptr_3_01ret_07args_8_8_8_08_4/#function-scan-ptr)**(void * in) |
+| [scan_ptr](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1scan__ptr/)< ret(args...)> & | **[operator=](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1scan__ptr_3_01ret_07args_8_8_8_08_4/#function-operator=)**(void * in) |
+| [scan_ptr](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1scan__ptr/)< ret(args...)> & | **[operator=](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1scan__ptr_3_01ret_07args_8_8_8_08_4/#function-operator=)**(const [scan_ptr](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1scan__ptr/)< ret(args...)> & in) |
+| [scan_ptr](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1scan__ptr/)< ret(args...)> & | **[operator=](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1scan__ptr_3_01ret_07args_8_8_8_08_4/#function-operator=)**(s_ptr && in) |
+| ret | **[operator()](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1scan__ptr_3_01ret_07args_8_8_8_08_4/#function-operator())**(const args &... params) |
 
 ## Detailed Description
 
@@ -114,4 +114,4 @@ inline ret operator()(
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:34 +0000
+Updated on 2022-08-01 at 17:31:48 +0000

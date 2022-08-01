@@ -20,14 +20,14 @@ Helper struct to carry around model information.
 
 |                | Name           |
 | -------------- | -------------- |
-| str | **[name](/documentation/code/classes/structgambit_1_1model__info/#variable-name)** <br>Model name.  |
-| std::vector< str > | **[parameters](/documentation/code/classes/structgambit_1_1model__info/#variable-parameters)** <br>Parameter names.  |
-| int | **[nparams](/documentation/code/classes/structgambit_1_1model__info/#variable-nparams)** <br>Number of parameters ( parameters.size() )  |
-| str | **[parent](/documentation/code/classes/structgambit_1_1model__info/#variable-parent)** <br>Parent model name.  |
-| std::vector< str > | **[lineage](/documentation/code/classes/structgambit_1_1model__info/#variable-lineage)** <br>Parent and all ancestor models.  |
-| std::vector< str > | **[descendants](/documentation/code/classes/structgambit_1_1model__info/#variable-descendants)** <br>All children and later descendants.  |
-| str | **[description](/documentation/code/classes/structgambit_1_1model__info/#variable-description)** <br>Full description of capability.  |
-| bool | **[has_description](/documentation/code/classes/structgambit_1_1model__info/#variable-has-description)** <br>Flag to check if description is missing.  |
+| str | **[name](/documentation/code/darkbit_developmentclasses/structgambit_1_1model__info/#variable-name)** <br>Model name.  |
+| std::vector< str > | **[parameters](/documentation/code/darkbit_developmentclasses/structgambit_1_1model__info/#variable-parameters)** <br>Parameter names.  |
+| int | **[nparams](/documentation/code/darkbit_developmentclasses/structgambit_1_1model__info/#variable-nparams)** <br>Number of parameters ( parameters.size() )  |
+| str | **[parent](/documentation/code/darkbit_developmentclasses/structgambit_1_1model__info/#variable-parent)** <br>Parent model name.  |
+| std::vector< str > | **[lineage](/documentation/code/darkbit_developmentclasses/structgambit_1_1model__info/#variable-lineage)** <br>Parent and all ancestor models.  |
+| std::vector< str > | **[descendants](/documentation/code/darkbit_developmentclasses/structgambit_1_1model__info/#variable-descendants)** <br>All children and later descendants.  |
+| str | **[description](/documentation/code/darkbit_developmentclasses/structgambit_1_1model__info/#variable-description)** <br>Full description of capability.  |
+| bool | **[has_description](/documentation/code/darkbit_developmentclasses/structgambit_1_1model__info/#variable-has-description)** <br>Flag to check if description is missing.  |
 
 ## Public Attributes Documentation
 
@@ -97,4 +97,4 @@ Flag to check if description is missing.
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:22 +0000
+Updated on 2022-08-01 at 17:31:41 +0000

@@ -18,7 +18,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef void | **[type](/documentation/code/classes/structgambit_1_1scanner_1_1first__arg__type_3_01ret_07_08_4/#typedef-type)**  |
+| typedef void | **[type](/documentation/code/darkbit_developmentclasses/structgambit_1_1scanner_1_1first__arg__type_3_01ret_07_08_4/#typedef-type)**  |
 
 ## Detailed Description
 
@@ -38,4 +38,4 @@ typedef void Gambit::Scanner::first_arg_type< ret()>::type;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:23 +0000
+Updated on 2022-08-01 at 17:31:42 +0000

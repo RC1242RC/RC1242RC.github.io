@@ -16,14 +16,14 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[if](/documentation/code/files/nulike__1__0__5_8cpp/#function-if)**(scan_level ) |
+| | **[if](/documentation/code/gambit_sphinxfiles/nulike__1__0__5_8cpp/#function-if)**(scan_level ) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[BE_INI_FUNCTION](/documentation/code/files/nulike__1__0__5_8cpp/#variable-be-ini-function)**  |
-| | **[scan_level](/documentation/code/files/nulike__1__0__5_8cpp/#variable-scan-level)**  |
+| | **[BE_INI_FUNCTION](/documentation/code/gambit_sphinxfiles/nulike__1__0__5_8cpp/#variable-be-ini-function)**  |
+| | **[scan_level](/documentation/code/gambit_sphinxfiles/nulike__1__0__5_8cpp/#variable-scan-level)**  |
 
 ## Detailed Description
 
@@ -184,4 +184,4 @@ END_BE_INI_FUNCTION
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:37 +0000
+Updated on 2022-08-01 at 17:31:51 +0000

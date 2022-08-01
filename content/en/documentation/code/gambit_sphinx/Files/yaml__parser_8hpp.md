@@ -16,18 +16,18 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::IniParser](/documentation/code/namespaces/namespacegambit_1_1iniparser/)**  |
-| **[Gambit::IniParser::Types](/documentation/code/namespaces/namespacegambit_1_1iniparser_1_1types/)**  |
-| **[YAML](/documentation/code/namespaces/namespaceyaml/)**  |
+| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::IniParser](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1iniparser/)**  |
+| **[Gambit::IniParser::Types](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1iniparser_1_1types/)**  |
+| **[YAML](/documentation/code/gambit_sphinxnamespaces/namespaceyaml/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[Gambit::IniParser::Types::Observable](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/)**  |
-| class | **[Gambit::IniParser::IniFile](/documentation/code/classes/classgambit_1_1iniparser_1_1inifile/)** <br>Main inifile class.  |
-| struct | **[YAML::convert< Gambit::IniParser::Types::Observable >](/documentation/code/classes/structyaml_1_1convert_3_01gambit_1_1iniparser_1_1types_1_1observable_01_4/)**  |
+| struct | **[Gambit::IniParser::Types::Observable](/documentation/code/gambit_sphinxclasses/structgambit_1_1iniparser_1_1types_1_1observable/)**  |
+| class | **[Gambit::IniParser::IniFile](/documentation/code/gambit_sphinxclasses/classgambit_1_1iniparser_1_1inifile/)** <br>Main inifile class.  |
+| struct | **[YAML::convert< Gambit::IniParser::Types::Observable >](/documentation/code/gambit_sphinxclasses/structyaml_1_1convert_3_01gambit_1_1iniparser_1_1types_1_1observable_01_4/)**  |
 
 ## Detailed Description
 
@@ -174,4 +174,4 @@ namespace YAML
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:35 +0000
+Updated on 2022-08-01 at 17:31:49 +0000

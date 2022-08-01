@@ -16,13 +16,13 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Pythia8](/documentation/code/namespaces/namespacepythia8/)**  |
+| **[Pythia8](/documentation/code/gambit_sphinxnamespaces/namespacepythia8/)**  |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| int | **[main](/documentation/code/files/mainewinos__bino__winos__higgsinos_8cc/#function-main)**() |
+| int | **[main](/documentation/code/gambit_sphinxfiles/mainewinos__bino__winos__higgsinos_8cc/#function-main)**() |
 
 
 ## Functions Documentation
@@ -101,4 +101,4 @@ int main() {
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:35 +0000
+Updated on 2022-08-01 at 17:31:49 +0000

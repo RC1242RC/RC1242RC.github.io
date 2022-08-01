@@ -21,19 +21,19 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[TH_Channel](/documentation/code/classes/structgambit_1_1darkbit_1_1th__channel/#function-th-channel)**(std::vector< str > finalStateIDs, daFunk::Funk genRate)<br>Constructor.  |
-| void | **[printChannel](/documentation/code/classes/structgambit_1_1darkbit_1_1th__channel/#function-printchannel)**() const<br>Print information about this channel.  |
-| bool | **[channelContains](/documentation/code/classes/structgambit_1_1darkbit_1_1th__channel/#function-channelcontains)**(str p) const<br>Indicate whether or not the final states of this channel contain a specific particle.  |
-| bool | **[isChannel](/documentation/code/classes/structgambit_1_1darkbit_1_1th__channel/#function-ischannel)**(str p0, str p1, str p2 ="", str p3 ="") const<br>Indicate whether or not this channel is the one defined by some specific final states. Particle name version.  |
-| bool | **[isChannel](/documentation/code/classes/structgambit_1_1darkbit_1_1th__channel/#function-ischannel)**(std::vector< str > particles) const<br>Indicate whether or not this channel is the one defined by some specific final states. Particle vector version.  |
+| | **[TH_Channel](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1th__channel/#function-th-channel)**(std::vector< str > finalStateIDs, daFunk::Funk genRate)<br>Constructor.  |
+| void | **[printChannel](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1th__channel/#function-printchannel)**() const<br>Print information about this channel.  |
+| bool | **[channelContains](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1th__channel/#function-channelcontains)**(str p) const<br>Indicate whether or not the final states of this channel contain a specific particle.  |
+| bool | **[isChannel](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1th__channel/#function-ischannel)**(str p0, str p1, str p2 ="", str p3 ="") const<br>Indicate whether or not this channel is the one defined by some specific final states. Particle name version.  |
+| bool | **[isChannel](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1th__channel/#function-ischannel)**(std::vector< str > particles) const<br>Indicate whether or not this channel is the one defined by some specific final states. Particle vector version.  |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| std::vector< std::string > | **[finalStateIDs](/documentation/code/classes/structgambit_1_1darkbit_1_1th__channel/#variable-finalstateids)** <br>Final state identifiers.  |
-| unsigned int | **[nFinalStates](/documentation/code/classes/structgambit_1_1darkbit_1_1th__channel/#variable-nfinalstates)** <br>Number of final state particles in this channel.  |
-| daFunk::Funk | **[genRate](/documentation/code/classes/structgambit_1_1darkbit_1_1th__channel/#variable-genrate)** <br>Energy dependence of final state particles. Includes v_rel ("v") as last argument in case of annihilation.  |
+| std::vector< std::string > | **[finalStateIDs](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1th__channel/#variable-finalstateids)** <br>Final state identifiers.  |
+| unsigned int | **[nFinalStates](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1th__channel/#variable-nfinalstates)** <br>Number of final state particles in this channel.  |
+| daFunk::Funk | **[genRate](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1th__channel/#variable-genrate)** <br>Energy dependence of final state particles. Includes v_rel ("v") as last argument in case of annihilation.  |
 
 ## Detailed Description
 
@@ -126,4 +126,4 @@ Energy dependence of final state particles. Includes v_rel ("v") as last argumen
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:33 +0000
+Updated on 2022-08-01 at 17:31:47 +0000

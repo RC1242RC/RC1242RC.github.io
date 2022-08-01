@@ -16,18 +16,18 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::DRes](/documentation/code/namespaces/namespacegambit_1_1dres/)**  |
-| **[boost](/documentation/code/namespaces/namespaceboost/)**  |
+| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::DRes](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1dres/)**  |
+| **[boost](/documentation/code/gambit_sphinxnamespaces/namespaceboost/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[Gambit::DRes::OutputVertexInfo](/documentation/code/classes/structgambit_1_1dres_1_1outputvertexinfo/)** <br>Minimal info about outputVertices.  |
-| struct | **[Gambit::DRes::Rule](/documentation/code/classes/structgambit_1_1dres_1_1rule/)**  |
-| struct | **[Gambit::DRes::QueueEntry](/documentation/code/classes/structgambit_1_1dres_1_1queueentry/)** <br>Information in parameter queue.  |
-| class | **[Gambit::DRes::DependencyResolver](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/)** <br>Main dependency resolver.  |
+| struct | **[Gambit::DRes::OutputVertexInfo](/documentation/code/gambit_sphinxclasses/structgambit_1_1dres_1_1outputvertexinfo/)** <br>Minimal info about outputVertices.  |
+| struct | **[Gambit::DRes::Rule](/documentation/code/gambit_sphinxclasses/structgambit_1_1dres_1_1rule/)**  |
+| struct | **[Gambit::DRes::QueueEntry](/documentation/code/gambit_sphinxclasses/structgambit_1_1dres_1_1queueentry/)** <br>Information in parameter queue.  |
+| class | **[Gambit::DRes::DependencyResolver](/documentation/code/gambit_sphinxclasses/classgambit_1_1dres_1_1dependencyresolver/)** <br>Main dependency resolver.  |
 
 ## Detailed Description
 
@@ -290,4 +290,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:35 +0000
+Updated on 2022-08-01 at 17:31:49 +0000

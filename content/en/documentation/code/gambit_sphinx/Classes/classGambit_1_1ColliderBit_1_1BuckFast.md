@@ -16,36 +16,36 @@ A base class for [BuckFast]() simple smearing simulations within ColliderBit.
 
 `#include <BuckFast.hpp>`
 
-Inherits from [Gambit::ColliderBit::BaseDetector](/documentation/code/classes/classgambit_1_1colliderbit_1_1basedetector/)
+Inherits from [Gambit::ColliderBit::BaseDetector](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1basedetector/)
 
 ## Public Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| virtual void | **[init](/documentation/code/classes/classgambit_1_1colliderbit_1_1buckfast/#function-init)**(const std::vector< std::string > & )<br>[Settings](/documentation/code/classes/structsettings/) parsing and initialization for any sub-class.  |
-| virtual void | **[init](/documentation/code/classes/classgambit_1_1colliderbit_1_1buckfast/#function-init)**()<br>General init for any collider of this type.  |
-| virtual void | **[processEvent](/documentation/code/classes/classgambit_1_1colliderbit_1_1buckfast/#function-processevent)**(HEPUtils::Event & event) const<br>Process an event with [BuckFast](/documentation/code/classes/classgambit_1_1colliderbit_1_1buckfast/).  |
-| | **[BuckFast](/documentation/code/classes/classgambit_1_1colliderbit_1_1buckfast/#function-buckfast)**()<br>Constructor.  |
-| virtual | **[~BuckFast](/documentation/code/classes/classgambit_1_1colliderbit_1_1buckfast/#function-~buckfast)**()<br>Destructor.  |
+| virtual void | **[init](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1buckfast/#function-init)**(const std::vector< std::string > & )<br>[Settings](/documentation/code/gambit_sphinxclasses/structsettings/) parsing and initialization for any sub-class.  |
+| virtual void | **[init](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1buckfast/#function-init)**()<br>General init for any collider of this type.  |
+| virtual void | **[processEvent](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1buckfast/#function-processevent)**(HEPUtils::Event & event) const<br>Process an event with [BuckFast](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1buckfast/).  |
+| | **[BuckFast](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1buckfast/#function-buckfast)**()<br>Constructor.  |
+| virtual | **[~BuckFast](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1buckfast/#function-~buckfast)**()<br>Destructor.  |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| void(* | **[smearElectronEnergy](/documentation/code/classes/classgambit_1_1colliderbit_1_1buckfast/#variable-smearelectronenergy)**  |
-| void(* | **[smearMuonMomentum](/documentation/code/classes/classgambit_1_1colliderbit_1_1buckfast/#variable-smearmuonmomentum)**  |
-| void(* | **[smearTaus](/documentation/code/classes/classgambit_1_1colliderbit_1_1buckfast/#variable-smeartaus)**  |
-| void(* | **[smearJets](/documentation/code/classes/classgambit_1_1colliderbit_1_1buckfast/#variable-smearjets)**  |
+| void(* | **[smearElectronEnergy](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1buckfast/#variable-smearelectronenergy)**  |
+| void(* | **[smearMuonMomentum](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1buckfast/#variable-smearmuonmomentum)**  |
+| void(* | **[smearTaus](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1buckfast/#variable-smeartaus)**  |
+| void(* | **[smearJets](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1buckfast/#variable-smearjets)**  |
 
 ## Additional inherited members
 
-**Public Functions inherited from [Gambit::ColliderBit::BaseDetector](/documentation/code/classes/classgambit_1_1colliderbit_1_1basedetector/)**
+**Public Functions inherited from [Gambit::ColliderBit::BaseDetector](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1basedetector/)**
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[BaseDetector](/documentation/code/classes/classgambit_1_1colliderbit_1_1basedetector/#function-basedetector)**()<br>Constructor.  |
-| virtual | **[~BaseDetector](/documentation/code/classes/classgambit_1_1colliderbit_1_1basedetector/#function-~basedetector)**()<br>Destructor.  |
-| virtual void | **[clear](/documentation/code/classes/classgambit_1_1colliderbit_1_1basedetector/#function-clear)**()<br>Reset this instance for reuse, avoiding the need for "new" or "delete".  |
+| | **[BaseDetector](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1basedetector/#function-basedetector)**()<br>Constructor.  |
+| virtual | **[~BaseDetector](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1basedetector/#function-~basedetector)**()<br>Destructor.  |
+| virtual void | **[clear](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1basedetector/#function-clear)**()<br>Reset this instance for reuse, avoiding the need for "new" or "delete".  |
 
 
 ## Public Functions Documentation
@@ -58,9 +58,9 @@ inline virtual void init(
 )
 ```
 
-[Settings](/documentation/code/classes/structsettings/) parsing and initialization for any sub-class. 
+[Settings](/documentation/code/gambit_sphinxclasses/structsettings/) parsing and initialization for any sub-class. 
 
-**Reimplements**: [Gambit::ColliderBit::BaseDetector::init](/documentation/code/classes/classgambit_1_1colliderbit_1_1basedetector/#function-init)
+**Reimplements**: [Gambit::ColliderBit::BaseDetector::init](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1basedetector/#function-init)
 
 
 ### function init
@@ -71,7 +71,7 @@ inline virtual void init()
 
 General init for any collider of this type. 
 
-**Reimplements**: [Gambit::ColliderBit::BaseDetector::init](/documentation/code/classes/classgambit_1_1colliderbit_1_1basedetector/#function-init)
+**Reimplements**: [Gambit::ColliderBit::BaseDetector::init](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1basedetector/#function-init)
 
 
 ### function processEvent
@@ -82,9 +82,9 @@ virtual void processEvent(
 ) const
 ```
 
-Process an event with [BuckFast](/documentation/code/classes/classgambit_1_1colliderbit_1_1buckfast/). 
+Process an event with [BuckFast](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1buckfast/). 
 
-**Reimplements**: [Gambit::ColliderBit::BaseDetector::processEvent](/documentation/code/classes/classgambit_1_1colliderbit_1_1basedetector/#function-processevent)
+**Reimplements**: [Gambit::ColliderBit::BaseDetector::processEvent](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1basedetector/#function-processevent)
 
 
 TodoRun-dependence? 
@@ -143,4 +143,4 @@ void(* smearJets;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:33 +0000
+Updated on 2022-08-01 at 17:31:47 +0000

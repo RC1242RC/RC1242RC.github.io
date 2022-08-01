@@ -16,10 +16,10 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::Backends](/documentation/code/namespaces/namespacegambit_1_1backends/)**  |
-| **[Gambit::Backends::Pythia_8_212](/documentation/code/namespaces/namespacegambit_1_1backends_1_1pythia__8__212/)**  |
-| **[Gambit::Backends::Pythia_8_212::Pythia8](/documentation/code/namespaces/namespacegambit_1_1backends_1_1pythia__8__212_1_1pythia8/)**  |
+| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::Backends](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1backends/)**  |
+| **[Gambit::Backends::Pythia_8_212](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1backends_1_1pythia__8__212/)**  |
+| **[Gambit::Backends::Pythia_8_212::Pythia8](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1backends_1_1pythia__8__212_1_1pythia8/)**  |
 
 
 
@@ -192,4 +192,4 @@ BE_INI_FUNCTION{} END_BE_INI_FUNCTION
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:37 +0000
+Updated on 2022-08-01 at 17:31:50 +0000

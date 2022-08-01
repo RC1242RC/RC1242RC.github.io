@@ -18,12 +18,12 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[PPPC_interpolation](/documentation/code/classes/classgambit_1_1darkbit_1_1pppc__interpolation/#function-pppc-interpolation)**(const std::string & filename) |
-| | **[PPPC_interpolation](/documentation/code/classes/classgambit_1_1darkbit_1_1pppc__interpolation/#function-pppc-interpolation)**() =delete |
-| | **[PPPC_interpolation](/documentation/code/classes/classgambit_1_1darkbit_1_1pppc__interpolation/#function-pppc-interpolation)**(const [PPPC_interpolation](/documentation/code/classes/classgambit_1_1darkbit_1_1pppc__interpolation/) & ) =delete |
-| [PPPC_interpolation](/documentation/code/classes/classgambit_1_1darkbit_1_1pppc__interpolation/) | **[operator=](/documentation/code/classes/classgambit_1_1darkbit_1_1pppc__interpolation/#function-operator=)**(const [PPPC_interpolation](/documentation/code/classes/classgambit_1_1darkbit_1_1pppc__interpolation/) & ) =delete |
-| [PPPC_interpolation](/documentation/code/classes/classgambit_1_1darkbit_1_1pppc__interpolation/) & | **[operator=](/documentation/code/classes/classgambit_1_1darkbit_1_1pppc__interpolation/#function-operator=)**([PPPC_interpolation](/documentation/code/classes/classgambit_1_1darkbit_1_1pppc__interpolation/) && other) |
-| double | **[operator()](/documentation/code/classes/classgambit_1_1darkbit_1_1pppc__interpolation/#function-operator())**(const std::string & channel, double m, double x) const |
+| | **[PPPC_interpolation](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1pppc__interpolation/#function-pppc-interpolation)**(const std::string & filename) |
+| | **[PPPC_interpolation](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1pppc__interpolation/#function-pppc-interpolation)**() =delete |
+| | **[PPPC_interpolation](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1pppc__interpolation/#function-pppc-interpolation)**(const [PPPC_interpolation](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1pppc__interpolation/) & ) =delete |
+| [PPPC_interpolation](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1pppc__interpolation/) | **[operator=](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1pppc__interpolation/#function-operator=)**(const [PPPC_interpolation](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1pppc__interpolation/) & ) =delete |
+| [PPPC_interpolation](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1pppc__interpolation/) & | **[operator=](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1pppc__interpolation/#function-operator=)**([PPPC_interpolation](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1pppc__interpolation/) && other) |
+| double | **[operator()](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1pppc__interpolation/#function-operator())**(const std::string & channel, double m, double x) const |
 
 ## Public Functions Documentation
 
@@ -83,4 +83,4 @@ double operator()(
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:33 +0000
+Updated on 2022-08-01 at 17:31:47 +0000

@@ -18,9 +18,9 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Fcomplex | **[cpa](/documentation/code/classes/structgambit_1_1libfarraytest__cb3__type/#variable-cpa)**  |
-| Fcomplex16 | **[cpb](/documentation/code/classes/structgambit_1_1libfarraytest__cb3__type/#variable-cpb)**  |
-| Finteger | **[f](/documentation/code/classes/structgambit_1_1libfarraytest__cb3__type/#variable-f)**  |
+| Fcomplex | **[cpa](/documentation/code/gambit_sphinxclasses/structgambit_1_1libfarraytest__cb3__type/#variable-cpa)**  |
+| Fcomplex16 | **[cpb](/documentation/code/gambit_sphinxclasses/structgambit_1_1libfarraytest__cb3__type/#variable-cpb)**  |
+| Finteger | **[f](/documentation/code/gambit_sphinxclasses/structgambit_1_1libfarraytest__cb3__type/#variable-f)**  |
 
 ## Public Attributes Documentation
 
@@ -47,4 +47,4 @@ Finteger f;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:32 +0000
+Updated on 2022-08-01 at 17:31:46 +0000

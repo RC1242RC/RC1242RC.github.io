@@ -18,7 +18,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| int | **[member](/documentation/code/classes/classgambit_1_1backends_1_1instance__helper_3_01void_01_4/#variable-member)**  |
+| int | **[member](/documentation/code/gambit_sphinxclasses/classgambit_1_1backends_1_1instance__helper_3_01void_01_4/#variable-member)**  |
 
 ## Public Attributes Documentation
 
@@ -31,4 +31,4 @@ int member;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:32 +0000
+Updated on 2022-08-01 at 17:31:46 +0000

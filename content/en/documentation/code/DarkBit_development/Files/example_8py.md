@@ -16,8 +16,8 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[configs](/documentation/code/namespaces/namespaceconfigs/)**  |
-| **[configs::example](/documentation/code/namespaces/namespaceconfigs_1_1example/)**  |
+| **[configs](/documentation/code/darkbit_developmentnamespaces/namespaceconfigs/)**  |
+| **[configs::example](/documentation/code/darkbit_developmentnamespaces/namespaceconfigs_1_1example/)**  |
 
 
 
@@ -69,4 +69,4 @@ cb_capability_suffix = ''
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:26 +0000
+Updated on 2022-08-01 at 17:31:45 +0000

@@ -18,8 +18,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[m](/documentation/code/classes/structgambit_1_1darkbit_1_1drde__params/#variable-m)**  |
-| double | **[sigma](/documentation/code/classes/structgambit_1_1darkbit_1_1drde__params/#variable-sigma)**  |
+| double | **[m](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1drde__params/#variable-m)**  |
+| double | **[sigma](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1drde__params/#variable-sigma)**  |
 
 ## Public Attributes Documentation
 
@@ -39,4 +39,4 @@ double sigma;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:33 +0000
+Updated on 2022-08-01 at 17:31:47 +0000

@@ -16,15 +16,15 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit](/documentation/code/darkbit_developmentnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[Gambit::libFarrayTest_CB_type](/documentation/code/classes/structgambit_1_1libfarraytest__cb__type/)**  |
-| struct | **[Gambit::libFarrayTest_CB2_type](/documentation/code/classes/structgambit_1_1libfarraytest__cb2__type/)**  |
-| struct | **[Gambit::libFarrayTest_CB3_type](/documentation/code/classes/structgambit_1_1libfarraytest__cb3__type/)**  |
+| struct | **[Gambit::libFarrayTest_CB_type](/documentation/code/darkbit_developmentclasses/structgambit_1_1libfarraytest__cb__type/)**  |
+| struct | **[Gambit::libFarrayTest_CB2_type](/documentation/code/darkbit_developmentclasses/structgambit_1_1libfarraytest__cb2__type/)**  |
+| struct | **[Gambit::libFarrayTest_CB3_type](/documentation/code/darkbit_developmentclasses/structgambit_1_1libfarraytest__cb3__type/)**  |
 
 ## Detailed Description
 
@@ -97,4 +97,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:25 +0000
+Updated on 2022-08-01 at 17:31:45 +0000

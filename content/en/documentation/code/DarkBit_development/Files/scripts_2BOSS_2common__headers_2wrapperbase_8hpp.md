@@ -16,7 +16,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[WrapperBase](/documentation/code/classes/classwrapperbase/)**  |
+| class | **[WrapperBase](/documentation/code/darkbit_developmentclasses/classwrapperbase/)**  |
 
 
 
@@ -54,4 +54,4 @@ __END_GAMBIT_NAMESPACE__
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:26 +0000
+Updated on 2022-08-01 at 17:31:45 +0000

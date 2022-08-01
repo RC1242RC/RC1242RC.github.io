@@ -16,7 +16,7 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[libsecond_1_0](/documentation/code/namespaces/namespacelibsecond__1__0/)**  |
+| **[libsecond_1_0](/documentation/code/darkbit_developmentnamespaces/namespacelibsecond__1__0/)**  |
 
 
 
@@ -84,4 +84,4 @@ def returnResult():
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:25 +0000
+Updated on 2022-08-01 at 17:31:44 +0000

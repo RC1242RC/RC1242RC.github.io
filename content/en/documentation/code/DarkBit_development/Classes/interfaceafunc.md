@@ -18,7 +18,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| double precision function | **[func](/documentation/code/classes/interfaceafunc/#function-func)**(y y) |
+| double precision function | **[func](/documentation/code/darkbit_developmentclasses/interfaceafunc/#function-func)**(y y) |
 
 ## Public Functions Documentation
 
@@ -33,4 +33,4 @@ double precision function func(
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:21 +0000
+Updated on 2022-08-01 at 17:31:41 +0000

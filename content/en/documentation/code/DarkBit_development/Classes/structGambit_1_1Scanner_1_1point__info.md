@@ -18,10 +18,10 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| int | **[mult](/documentation/code/classes/structgambit_1_1scanner_1_1point__info/#variable-mult)**  |
-| int | **[chain](/documentation/code/classes/structgambit_1_1scanner_1_1point__info/#variable-chain)**  |
-| int | **[rank](/documentation/code/classes/structgambit_1_1scanner_1_1point__info/#variable-rank)**  |
-| unsigned long long int | **[id](/documentation/code/classes/structgambit_1_1scanner_1_1point__info/#variable-id)**  |
+| int | **[mult](/documentation/code/darkbit_developmentclasses/structgambit_1_1scanner_1_1point__info/#variable-mult)**  |
+| int | **[chain](/documentation/code/darkbit_developmentclasses/structgambit_1_1scanner_1_1point__info/#variable-chain)**  |
+| int | **[rank](/documentation/code/darkbit_developmentclasses/structgambit_1_1scanner_1_1point__info/#variable-rank)**  |
+| unsigned long long int | **[id](/documentation/code/darkbit_developmentclasses/structgambit_1_1scanner_1_1point__info/#variable-id)**  |
 
 ## Public Attributes Documentation
 
@@ -55,4 +55,4 @@ unsigned long long int id;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:23 +0000
+Updated on 2022-08-01 at 17:31:42 +0000

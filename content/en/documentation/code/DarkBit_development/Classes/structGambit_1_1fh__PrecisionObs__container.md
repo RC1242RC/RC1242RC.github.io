@@ -18,16 +18,16 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| fh_real | **[gmu2](/documentation/code/classes/structgambit_1_1fh__precisionobs__container/#variable-gmu2)**  |
-| fh_real | **[deltaRho](/documentation/code/classes/structgambit_1_1fh__precisionobs__container/#variable-deltarho)**  |
-| fh_real | **[MW_MSSM](/documentation/code/classes/structgambit_1_1fh__precisionobs__container/#variable-mw-mssm)**  |
-| fh_real | **[MW_SM](/documentation/code/classes/structgambit_1_1fh__precisionobs__container/#variable-mw-sm)**  |
-| fh_real | **[sinW2_MSSM](/documentation/code/classes/structgambit_1_1fh__precisionobs__container/#variable-sinw2-mssm)**  |
-| fh_real | **[sinW2_SM](/documentation/code/classes/structgambit_1_1fh__precisionobs__container/#variable-sinw2-sm)**  |
-| fh_real | **[edm_ele](/documentation/code/classes/structgambit_1_1fh__precisionobs__container/#variable-edm-ele)**  |
-| fh_real | **[edm_neu](/documentation/code/classes/structgambit_1_1fh__precisionobs__container/#variable-edm-neu)**  |
-| fh_real | **[edm_Hg](/documentation/code/classes/structgambit_1_1fh__precisionobs__container/#variable-edm-hg)**  |
-| int | **[ccb](/documentation/code/classes/structgambit_1_1fh__precisionobs__container/#variable-ccb)**  |
+| fh_real | **[gmu2](/documentation/code/darkbit_developmentclasses/structgambit_1_1fh__precisionobs__container/#variable-gmu2)**  |
+| fh_real | **[deltaRho](/documentation/code/darkbit_developmentclasses/structgambit_1_1fh__precisionobs__container/#variable-deltarho)**  |
+| fh_real | **[MW_MSSM](/documentation/code/darkbit_developmentclasses/structgambit_1_1fh__precisionobs__container/#variable-mw-mssm)**  |
+| fh_real | **[MW_SM](/documentation/code/darkbit_developmentclasses/structgambit_1_1fh__precisionobs__container/#variable-mw-sm)**  |
+| fh_real | **[sinW2_MSSM](/documentation/code/darkbit_developmentclasses/structgambit_1_1fh__precisionobs__container/#variable-sinw2-mssm)**  |
+| fh_real | **[sinW2_SM](/documentation/code/darkbit_developmentclasses/structgambit_1_1fh__precisionobs__container/#variable-sinw2-sm)**  |
+| fh_real | **[edm_ele](/documentation/code/darkbit_developmentclasses/structgambit_1_1fh__precisionobs__container/#variable-edm-ele)**  |
+| fh_real | **[edm_neu](/documentation/code/darkbit_developmentclasses/structgambit_1_1fh__precisionobs__container/#variable-edm-neu)**  |
+| fh_real | **[edm_Hg](/documentation/code/darkbit_developmentclasses/structgambit_1_1fh__precisionobs__container/#variable-edm-hg)**  |
+| int | **[ccb](/documentation/code/darkbit_developmentclasses/structgambit_1_1fh__precisionobs__container/#variable-ccb)**  |
 
 ## Public Attributes Documentation
 
@@ -103,4 +103,4 @@ int ccb;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:22 +0000
+Updated on 2022-08-01 at 17:31:41 +0000

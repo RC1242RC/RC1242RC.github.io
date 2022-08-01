@@ -16,21 +16,21 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::DarkBit](/documentation/code/namespaces/namespacegambit_1_1darkbit/)**  |
+| **[Gambit](/documentation/code/darkbit_developmentnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::DarkBit](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1darkbit/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Gambit::DarkBit::MajoranaSingletDM](/documentation/code/classes/classgambit_1_1darkbit_1_1majoranasingletdm/)**  |
+| class | **[Gambit::DarkBit::MajoranaSingletDM](/documentation/code/darkbit_developmentclasses/classgambit_1_1darkbit_1_1majoranasingletdm/)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[getSMmass](/documentation/code/files/majoranasingletdm_8cpp/#define-getsmmass)**(Name, spinX2)  |
-|  | **[addParticle](/documentation/code/files/majoranasingletdm_8cpp/#define-addparticle)**(Name, Mass, spinX2)  |
+|  | **[getSMmass](/documentation/code/darkbit_developmentfiles/majoranasingletdm_8cpp/#define-getsmmass)**(Name, spinX2)  |
+|  | **[addParticle](/documentation/code/darkbit_developmentfiles/majoranasingletdm_8cpp/#define-addparticle)**(Name, Mass, spinX2)  |
 
 ## Detailed Description
 
@@ -513,4 +513,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:24 +0000
+Updated on 2022-08-01 at 17:31:43 +0000

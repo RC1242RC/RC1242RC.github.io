@@ -16,16 +16,16 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::SpecBit](/documentation/code/namespaces/namespacegambit_1_1specbit/)**  |
+| **[Gambit](/documentation/code/darkbit_developmentnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::SpecBit](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1specbit/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[Gambit::SpecBit::SpectrumEntry](/documentation/code/classes/structgambit_1_1specbit_1_1spectrumentry/)**  |
-| class | **[Gambit::SpecBit::SpectrumEntriesForVevacious](/documentation/code/classes/classgambit_1_1specbit_1_1spectrumentriesforvevacious/)**  |
-| class | **[Gambit::SpecBit::VevaciousResultContainer](/documentation/code/classes/classgambit_1_1specbit_1_1vevaciousresultcontainer/)**  |
+| struct | **[Gambit::SpecBit::SpectrumEntry](/documentation/code/darkbit_developmentclasses/structgambit_1_1specbit_1_1spectrumentry/)**  |
+| class | **[Gambit::SpecBit::SpectrumEntriesForVevacious](/documentation/code/darkbit_developmentclasses/classgambit_1_1specbit_1_1spectrumentriesforvevacious/)**  |
+| class | **[Gambit::SpecBit::VevaciousResultContainer](/documentation/code/darkbit_developmentclasses/classgambit_1_1specbit_1_1vevaciousresultcontainer/)**  |
 
 ## Detailed Description
 
@@ -164,4 +164,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:23 +0000
+Updated on 2022-08-01 at 17:31:43 +0000

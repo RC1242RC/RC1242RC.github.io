@@ -22,10 +22,10 @@ Inherits from Parser
 
 |                | Name           |
 | -------------- | -------------- |
-| const ObservablesType & | **[getObservables](/documentation/code/classes/classgambit_1_1iniparser_1_1inifile/#function-getobservables)**() const |
-| const ObservablesType & | **[getRules](/documentation/code/classes/classgambit_1_1iniparser_1_1inifile/#function-getrules)**() const |
-| const str | **[filename](/documentation/code/classes/classgambit_1_1iniparser_1_1inifile/#function-filename)**() const |
-| virtual void | **[readFile](/documentation/code/classes/classgambit_1_1iniparser_1_1inifile/#function-readfile)**(str name)<br>Read in the YAML file.  |
+| const ObservablesType & | **[getObservables](/documentation/code/gambit_sphinxclasses/classgambit_1_1iniparser_1_1inifile/#function-getobservables)**() const |
+| const ObservablesType & | **[getRules](/documentation/code/gambit_sphinxclasses/classgambit_1_1iniparser_1_1inifile/#function-getrules)**() const |
+| const str | **[filename](/documentation/code/gambit_sphinxclasses/classgambit_1_1iniparser_1_1inifile/#function-filename)**() const |
+| virtual void | **[readFile](/documentation/code/gambit_sphinxclasses/classgambit_1_1iniparser_1_1inifile/#function-readfile)**(str name)<br>Read in the YAML file.  |
 
 ## Public Functions Documentation
 
@@ -65,4 +65,4 @@ Read in the YAML file.
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:33 +0000
+Updated on 2022-08-01 at 17:31:48 +0000

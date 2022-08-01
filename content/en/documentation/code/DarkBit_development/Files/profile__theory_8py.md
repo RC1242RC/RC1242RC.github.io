@@ -16,7 +16,7 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[profile_theory](/documentation/code/namespaces/namespaceprofile__theory/)**  |
+| **[profile_theory](/documentation/code/darkbit_developmentnamespaces/namespaceprofile__theory/)**  |
 
 
 
@@ -103,4 +103,4 @@ if __name__ == "__main__":
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:24 +0000
+Updated on 2022-08-01 at 17:31:43 +0000

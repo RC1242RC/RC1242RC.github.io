@@ -16,16 +16,16 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::DecayBit](/documentation/code/namespaces/namespacegambit_1_1decaybit/)**  |
+| **[Gambit](/documentation/code/darkbit_developmentnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::DecayBit](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1decaybit/)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[pow2](/documentation/code/files/decaybit_8cpp/#define-pow2)**(a)  |
-|  | **[pow3](/documentation/code/files/decaybit_8cpp/#define-pow3)**(a)  |
-|  | **[pow4](/documentation/code/files/decaybit_8cpp/#define-pow4)**(a)  |
+|  | **[pow2](/documentation/code/darkbit_developmentfiles/decaybit_8cpp/#define-pow2)**(a)  |
+|  | **[pow3](/documentation/code/darkbit_developmentfiles/decaybit_8cpp/#define-pow3)**(a)  |
+|  | **[pow4](/documentation/code/darkbit_developmentfiles/decaybit_8cpp/#define-pow4)**(a)  |
 
 ## Detailed Description
 
@@ -3605,4 +3605,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:24 +0000
+Updated on 2022-08-01 at 17:31:43 +0000

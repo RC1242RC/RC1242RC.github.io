@@ -16,21 +16,21 @@ likelihood container for scanner plugins.
 
 `#include <factory_defs.hpp>`
 
-Inherits from [Gambit::Scanner::scan_ptr< double(std::unordered_map< std::string, double > &)>](/documentation/code/classes/classgambit_1_1scanner_1_1scan__ptr/)
+Inherits from [Gambit::Scanner::scan_ptr< double(std::unordered_map< std::string, double > &)>](/documentation/code/darkbit_developmentclasses/classgambit_1_1scanner_1_1scan__ptr/)
 
 ## Public Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[like_ptr](/documentation/code/classes/classgambit_1_1scanner_1_1like__ptr/#function-like-ptr)**() |
-| | **[like_ptr](/documentation/code/classes/classgambit_1_1scanner_1_1like__ptr/#function-like-ptr)**(const [like_ptr](/documentation/code/classes/classgambit_1_1scanner_1_1like__ptr/) & in) |
-| [like_ptr](/documentation/code/classes/classgambit_1_1scanner_1_1like__ptr/) & | **[operator=](/documentation/code/classes/classgambit_1_1scanner_1_1like__ptr/#function-operator=)**(const [like_ptr](/documentation/code/classes/classgambit_1_1scanner_1_1like__ptr/) & ) =default |
-| | **[like_ptr](/documentation/code/classes/classgambit_1_1scanner_1_1like__ptr/#function-like-ptr)**(void * in) |
-| std::unordered_map< std::string, double > | **[transform](/documentation/code/classes/classgambit_1_1scanner_1_1like__ptr/#function-transform)**(const std::vector< double > & vec) |
-| std::vector< std::string > | **[get_names](/documentation/code/classes/classgambit_1_1scanner_1_1like__ptr/#function-get-names)**() const |
-| std::vector< double > | **[inverse_transform](/documentation/code/classes/classgambit_1_1scanner_1_1like__ptr/#function-inverse-transform)**(const std::unordered_map< std::string, double > & physical) |
-| double | **[operator()](/documentation/code/classes/classgambit_1_1scanner_1_1like__ptr/#function-operator())**(const std::vector< double > & vec) |
-| double | **[operator()](/documentation/code/classes/classgambit_1_1scanner_1_1like__ptr/#function-operator())**(std::unordered_map< std::string, double > & map, const std::vector< double > & vec =std::vector< double >()) |
+| | **[like_ptr](/documentation/code/darkbit_developmentclasses/classgambit_1_1scanner_1_1like__ptr/#function-like-ptr)**() |
+| | **[like_ptr](/documentation/code/darkbit_developmentclasses/classgambit_1_1scanner_1_1like__ptr/#function-like-ptr)**(const [like_ptr](/documentation/code/darkbit_developmentclasses/classgambit_1_1scanner_1_1like__ptr/) & in) |
+| [like_ptr](/documentation/code/darkbit_developmentclasses/classgambit_1_1scanner_1_1like__ptr/) & | **[operator=](/documentation/code/darkbit_developmentclasses/classgambit_1_1scanner_1_1like__ptr/#function-operator=)**(const [like_ptr](/documentation/code/darkbit_developmentclasses/classgambit_1_1scanner_1_1like__ptr/) & ) =default |
+| | **[like_ptr](/documentation/code/darkbit_developmentclasses/classgambit_1_1scanner_1_1like__ptr/#function-like-ptr)**(void * in) |
+| std::unordered_map< std::string, double > | **[transform](/documentation/code/darkbit_developmentclasses/classgambit_1_1scanner_1_1like__ptr/#function-transform)**(const std::vector< double > & vec) |
+| std::vector< std::string > | **[get_names](/documentation/code/darkbit_developmentclasses/classgambit_1_1scanner_1_1like__ptr/#function-get-names)**() const |
+| std::vector< double > | **[inverse_transform](/documentation/code/darkbit_developmentclasses/classgambit_1_1scanner_1_1like__ptr/#function-inverse-transform)**(const std::unordered_map< std::string, double > & physical) |
+| double | **[operator()](/documentation/code/darkbit_developmentclasses/classgambit_1_1scanner_1_1like__ptr/#function-operator())**(const std::vector< double > & vec) |
+| double | **[operator()](/documentation/code/darkbit_developmentclasses/classgambit_1_1scanner_1_1like__ptr/#function-operator())**(std::unordered_map< std::string, double > & map, const std::vector< double > & vec =std::vector< double >()) |
 
 ## Public Functions Documentation
 
@@ -114,4 +114,4 @@ inline double operator()(
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:23 +0000
+Updated on 2022-08-01 at 17:31:42 +0000

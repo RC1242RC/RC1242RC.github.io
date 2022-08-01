@@ -18,7 +18,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[par](/documentation/code/classes/structgambit_1_1micromegas_1_1mocommonstr/#variable-par)**  |
+| double | **[par](/documentation/code/gambit_sphinxclasses/structgambit_1_1micromegas_1_1mocommonstr/#variable-par)**  |
 
 ## Public Attributes Documentation
 
@@ -31,4 +31,4 @@ double par;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:33 +0000
+Updated on 2022-08-01 at 17:31:48 +0000

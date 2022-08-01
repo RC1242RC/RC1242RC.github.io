@@ -18,12 +18,12 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| void * | **[handle](/documentation/code/classes/structgambit_1_1numout/#variable-handle)**  |
-| REAL ** | **[link](/documentation/code/classes/structgambit_1_1numout/#variable-link)**  |
-| REAL * | **[Q](/documentation/code/classes/structgambit_1_1numout/#variable-q)**  |
-| REAL * | **[SC](/documentation/code/classes/structgambit_1_1numout/#variable-sc)**  |
-| int | **[init](/documentation/code/classes/structgambit_1_1numout/#variable-init)**  |
-| [CalcHEP_interface](/documentation/code/classes/structgambit_1_1calchep__interface/) * | **[interface](/documentation/code/classes/structgambit_1_1numout/#variable-interface)**  |
+| void * | **[handle](/documentation/code/gambit_sphinxclasses/structgambit_1_1numout/#variable-handle)**  |
+| REAL ** | **[link](/documentation/code/gambit_sphinxclasses/structgambit_1_1numout/#variable-link)**  |
+| REAL * | **[Q](/documentation/code/gambit_sphinxclasses/structgambit_1_1numout/#variable-q)**  |
+| REAL * | **[SC](/documentation/code/gambit_sphinxclasses/structgambit_1_1numout/#variable-sc)**  |
+| int | **[init](/documentation/code/gambit_sphinxclasses/structgambit_1_1numout/#variable-init)**  |
+| [CalcHEP_interface](/documentation/code/gambit_sphinxclasses/structgambit_1_1calchep__interface/) * | **[interface](/documentation/code/gambit_sphinxclasses/structgambit_1_1numout/#variable-interface)**  |
 
 ## Public Attributes Documentation
 
@@ -71,4 +71,4 @@ CalcHEP_interface * interface;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:32 +0000
+Updated on 2022-08-01 at 17:31:46 +0000

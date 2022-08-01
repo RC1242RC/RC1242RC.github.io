@@ -16,7 +16,7 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[create_gambit_skeleton_from_heplike](/documentation/code/namespaces/namespacecreate__gambit__skeleton__from__heplike/)**  |
+| **[create_gambit_skeleton_from_heplike](/documentation/code/darkbit_developmentnamespaces/namespacecreate__gambit__skeleton__from__heplike/)**  |
 
 
 
@@ -158,4 +158,4 @@ if __name__ == '__main__':
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:23 +0000
+Updated on 2022-08-01 at 17:31:43 +0000

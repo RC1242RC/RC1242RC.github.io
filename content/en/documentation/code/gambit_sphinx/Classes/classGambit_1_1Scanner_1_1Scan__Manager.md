@@ -18,9 +18,9 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Scan_Manager](/documentation/code/classes/classgambit_1_1scanner_1_1scan__manager/#function-scan-manager)**(const YAML::Node & node, [printer_interface](/documentation/code/namespaces/namespacegambit_1_1scanner/#typedef-printer-interface) * printerInterface, const [Factory_Base](/documentation/code/classes/classgambit_1_1scanner_1_1factory__base/) * factory =0) |
-| | **[~Scan_Manager](/documentation/code/classes/classgambit_1_1scanner_1_1scan__manager/#function-~scan-manager)**() |
-| int | **[Run](/documentation/code/classes/classgambit_1_1scanner_1_1scan__manager/#function-run)**() |
+| | **[Scan_Manager](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1scan__manager/#function-scan-manager)**(const YAML::Node & node, [printer_interface](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1scanner/#typedef-printer-interface) * printerInterface, const [Factory_Base](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1factory__base/) * factory =0) |
+| | **[~Scan_Manager](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1scan__manager/#function-~scan-manager)**() |
+| int | **[Run](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1scan__manager/#function-run)**() |
 
 ## Public Functions Documentation
 
@@ -51,4 +51,4 @@ int Run()
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:34 +0000
+Updated on 2022-08-01 at 17:31:48 +0000

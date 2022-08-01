@@ -20,45 +20,45 @@ Inherits from object, object
 
 |                | Name           |
 | -------------- | -------------- |
-| def | **[__init__](/documentation/code/classes/classmontepythonlike_1_1data/#function---init--)**(self self, command_line command_line, path path, experiments experiments) |
-| def | **[set_class_version](/documentation/code/classes/classmontepythonlike_1_1data/#function-set-class-version)**(self self, class_path class_path) |
-| def | **[read_file](/documentation/code/classes/classmontepythonlike_1_1data/#function-read-file)**(self self, param param, structure structure, field field ='', separate separate =False) |
-| def | **[read_version](/documentation/code/classes/classmontepythonlike_1_1data/#function-read-version)**(self self, param_file param_file) |
-| def | **[get_mcmc_parameters](/documentation/code/classes/classmontepythonlike_1_1data/#function-get-mcmc-parameters)**(self self, table_of_strings table_of_strings) |
-| def | **[add_experiment](/documentation/code/classes/classmontepythonlike_1_1data/#function-add-experiment)**(self self, experiment_name experiment_name, experiment_object experiment_object) |
-| def | **[check_nuisance_params](/documentation/code/classes/classmontepythonlike_1_1data/#function-check-nuisance-params)**(self self) |
-| def | **[__init__](/documentation/code/classes/classmontepythonlike_1_1data/#function---init--)**(self self, command_line command_line, path path, experiments experiments) |
-| def | **[set_class_version](/documentation/code/classes/classmontepythonlike_1_1data/#function-set-class-version)**(self self, class_path class_path) |
-| def | **[read_file](/documentation/code/classes/classmontepythonlike_1_1data/#function-read-file)**(self self, param param, structure structure, field field ='', separate separate =False) |
-| def | **[read_version](/documentation/code/classes/classmontepythonlike_1_1data/#function-read-version)**(self self, param_file param_file) |
-| def | **[get_mcmc_parameters](/documentation/code/classes/classmontepythonlike_1_1data/#function-get-mcmc-parameters)**(self self, table_of_strings table_of_strings) |
-| def | **[add_experiment](/documentation/code/classes/classmontepythonlike_1_1data/#function-add-experiment)**(self self, experiment_name experiment_name, experiment_object experiment_object) |
-| def | **[check_nuisance_params](/documentation/code/classes/classmontepythonlike_1_1data/#function-check-nuisance-params)**(self self) |
+| def | **[__init__](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1data/#function---init--)**(self self, command_line command_line, path path, experiments experiments) |
+| def | **[set_class_version](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1data/#function-set-class-version)**(self self, class_path class_path) |
+| def | **[read_file](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1data/#function-read-file)**(self self, param param, structure structure, field field ='', separate separate =False) |
+| def | **[read_version](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1data/#function-read-version)**(self self, param_file param_file) |
+| def | **[get_mcmc_parameters](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1data/#function-get-mcmc-parameters)**(self self, table_of_strings table_of_strings) |
+| def | **[add_experiment](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1data/#function-add-experiment)**(self self, experiment_name experiment_name, experiment_object experiment_object) |
+| def | **[check_nuisance_params](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1data/#function-check-nuisance-params)**(self self) |
+| def | **[__init__](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1data/#function---init--)**(self self, command_line command_line, path path, experiments experiments) |
+| def | **[set_class_version](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1data/#function-set-class-version)**(self self, class_path class_path) |
+| def | **[read_file](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1data/#function-read-file)**(self self, param param, structure structure, field field ='', separate separate =False) |
+| def | **[read_version](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1data/#function-read-version)**(self self, param_file param_file) |
+| def | **[get_mcmc_parameters](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1data/#function-get-mcmc-parameters)**(self self, table_of_strings table_of_strings) |
+| def | **[add_experiment](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1data/#function-add-experiment)**(self self, experiment_name experiment_name, experiment_object experiment_object) |
+| def | **[check_nuisance_params](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1data/#function-check-nuisance-params)**(self self) |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[lkl](/documentation/code/classes/classmontepythonlike_1_1data/#variable-lkl)**  |
-| | **[jumping](/documentation/code/classes/classmontepythonlike_1_1data/#variable-jumping)**  |
-| | **[jumping_factor](/documentation/code/classes/classmontepythonlike_1_1data/#variable-jumping-factor)**  |
-| | **[command_line](/documentation/code/classes/classmontepythonlike_1_1data/#variable-command-line)**  |
-| | **[path](/documentation/code/classes/classmontepythonlike_1_1data/#variable-path)**  |
-| | **[boundary_loglike](/documentation/code/classes/classmontepythonlike_1_1data/#variable-boundary-loglike)**  |
-| | **[cosmo_arguments](/documentation/code/classes/classmontepythonlike_1_1data/#variable-cosmo-arguments)**  |
-| | **[mcmc_parameters](/documentation/code/classes/classmontepythonlike_1_1data/#variable-mcmc-parameters)**  |
-| | **[NS_param_names](/documentation/code/classes/classmontepythonlike_1_1data/#variable-ns-param-names)**  |
-| | **[NS_arguments](/documentation/code/classes/classmontepythonlike_1_1data/#variable-ns-arguments)**  |
-| | **[PC_param_names](/documentation/code/classes/classmontepythonlike_1_1data/#variable-pc-param-names)**  |
-| | **[PC_arguments](/documentation/code/classes/classmontepythonlike_1_1data/#variable-pc-arguments)**  |
-| | **[experiments](/documentation/code/classes/classmontepythonlike_1_1data/#variable-experiments)**  |
-| | **[over_sampling](/documentation/code/classes/classmontepythonlike_1_1data/#variable-over-sampling)**  |
-| | **[N](/documentation/code/classes/classmontepythonlike_1_1data/#variable-n)**  |
-| | **[out](/documentation/code/classes/classmontepythonlike_1_1data/#variable-out)**  |
-| | **[out_name](/documentation/code/classes/classmontepythonlike_1_1data/#variable-out-name)**  |
-| | **[cosmological_module_name](/documentation/code/classes/classmontepythonlike_1_1data/#variable-cosmological-module-name)**  |
-| | **[log_flag](/documentation/code/classes/classmontepythonlike_1_1data/#variable-log-flag)**  |
-| | **[need_cosmo_update](/documentation/code/classes/classmontepythonlike_1_1data/#variable-need-cosmo-update)**  |
+| | **[lkl](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1data/#variable-lkl)**  |
+| | **[jumping](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1data/#variable-jumping)**  |
+| | **[jumping_factor](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1data/#variable-jumping-factor)**  |
+| | **[command_line](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1data/#variable-command-line)**  |
+| | **[path](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1data/#variable-path)**  |
+| | **[boundary_loglike](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1data/#variable-boundary-loglike)**  |
+| | **[cosmo_arguments](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1data/#variable-cosmo-arguments)**  |
+| | **[mcmc_parameters](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1data/#variable-mcmc-parameters)**  |
+| | **[NS_param_names](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1data/#variable-ns-param-names)**  |
+| | **[NS_arguments](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1data/#variable-ns-arguments)**  |
+| | **[PC_param_names](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1data/#variable-pc-param-names)**  |
+| | **[PC_arguments](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1data/#variable-pc-arguments)**  |
+| | **[experiments](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1data/#variable-experiments)**  |
+| | **[over_sampling](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1data/#variable-over-sampling)**  |
+| | **[N](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1data/#variable-n)**  |
+| | **[out](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1data/#variable-out)**  |
+| | **[out_name](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1data/#variable-out-name)**  |
+| | **[cosmological_module_name](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1data/#variable-cosmological-module-name)**  |
+| | **[log_flag](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1data/#variable-log-flag)**  |
+| | **[need_cosmo_update](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1data/#variable-need-cosmo-update)**  |
 
 ## Detailed Description
 
@@ -719,4 +719,4 @@ need_cosmo_update;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:32 +0000
+Updated on 2022-08-01 at 17:31:46 +0000

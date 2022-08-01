@@ -18,25 +18,25 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Farray< Finteger, 1, 3 > | **[knu](/documentation/code/classes/structgambit_1_1ds__pacodes__mssm61/#variable-knu)**  |
-| Farray< Finteger, 1, 3 > | **[kl](/documentation/code/classes/structgambit_1_1ds__pacodes__mssm61/#variable-kl)**  |
-| Farray< Finteger, 1, 3 > | **[kqu](/documentation/code/classes/structgambit_1_1ds__pacodes__mssm61/#variable-kqu)**  |
-| Farray< Finteger, 1, 3 > | **[kqd](/documentation/code/classes/structgambit_1_1ds__pacodes__mssm61/#variable-kqd)**  |
-| Farray< Finteger, 1, 2 > | **[kse](/documentation/code/classes/structgambit_1_1ds__pacodes__mssm61/#variable-kse)**  |
-| Farray< Finteger, 1, 2 > | **[ksmu](/documentation/code/classes/structgambit_1_1ds__pacodes__mssm61/#variable-ksmu)**  |
-| Farray< Finteger, 1, 2 > | **[kstau](/documentation/code/classes/structgambit_1_1ds__pacodes__mssm61/#variable-kstau)**  |
-| Farray< Finteger, 1, 2 > | **[ksu](/documentation/code/classes/structgambit_1_1ds__pacodes__mssm61/#variable-ksu)**  |
-| Farray< Finteger, 1, 2 > | **[ksd](/documentation/code/classes/structgambit_1_1ds__pacodes__mssm61/#variable-ksd)**  |
-| Farray< Finteger, 1, 2 > | **[ksc](/documentation/code/classes/structgambit_1_1ds__pacodes__mssm61/#variable-ksc)**  |
-| Farray< Finteger, 1, 2 > | **[kss](/documentation/code/classes/structgambit_1_1ds__pacodes__mssm61/#variable-kss)**  |
-| Farray< Finteger, 1, 2 > | **[kst](/documentation/code/classes/structgambit_1_1ds__pacodes__mssm61/#variable-kst)**  |
-| Farray< Finteger, 1, 2 > | **[ksb](/documentation/code/classes/structgambit_1_1ds__pacodes__mssm61/#variable-ksb)**  |
-| Farray< Finteger, 1, 4 > | **[kn](/documentation/code/classes/structgambit_1_1ds__pacodes__mssm61/#variable-kn)**  |
-| Farray< Finteger, 1, 2 > | **[kcha](/documentation/code/classes/structgambit_1_1ds__pacodes__mssm61/#variable-kcha)**  |
-| Farray< Finteger, 1, 6 > | **[ksnu](/documentation/code/classes/structgambit_1_1ds__pacodes__mssm61/#variable-ksnu)**  |
-| Farray< Finteger, 1, 6 > | **[ksl](/documentation/code/classes/structgambit_1_1ds__pacodes__mssm61/#variable-ksl)**  |
-| Farray< Finteger, 1, 6 > | **[ksqu](/documentation/code/classes/structgambit_1_1ds__pacodes__mssm61/#variable-ksqu)**  |
-| Farray< Finteger, 1, 6 > | **[ksqd](/documentation/code/classes/structgambit_1_1ds__pacodes__mssm61/#variable-ksqd)**  |
+| Farray< Finteger, 1, 3 > | **[knu](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__pacodes__mssm61/#variable-knu)**  |
+| Farray< Finteger, 1, 3 > | **[kl](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__pacodes__mssm61/#variable-kl)**  |
+| Farray< Finteger, 1, 3 > | **[kqu](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__pacodes__mssm61/#variable-kqu)**  |
+| Farray< Finteger, 1, 3 > | **[kqd](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__pacodes__mssm61/#variable-kqd)**  |
+| Farray< Finteger, 1, 2 > | **[kse](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__pacodes__mssm61/#variable-kse)**  |
+| Farray< Finteger, 1, 2 > | **[ksmu](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__pacodes__mssm61/#variable-ksmu)**  |
+| Farray< Finteger, 1, 2 > | **[kstau](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__pacodes__mssm61/#variable-kstau)**  |
+| Farray< Finteger, 1, 2 > | **[ksu](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__pacodes__mssm61/#variable-ksu)**  |
+| Farray< Finteger, 1, 2 > | **[ksd](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__pacodes__mssm61/#variable-ksd)**  |
+| Farray< Finteger, 1, 2 > | **[ksc](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__pacodes__mssm61/#variable-ksc)**  |
+| Farray< Finteger, 1, 2 > | **[kss](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__pacodes__mssm61/#variable-kss)**  |
+| Farray< Finteger, 1, 2 > | **[kst](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__pacodes__mssm61/#variable-kst)**  |
+| Farray< Finteger, 1, 2 > | **[ksb](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__pacodes__mssm61/#variable-ksb)**  |
+| Farray< Finteger, 1, 4 > | **[kn](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__pacodes__mssm61/#variable-kn)**  |
+| Farray< Finteger, 1, 2 > | **[kcha](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__pacodes__mssm61/#variable-kcha)**  |
+| Farray< Finteger, 1, 6 > | **[ksnu](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__pacodes__mssm61/#variable-ksnu)**  |
+| Farray< Finteger, 1, 6 > | **[ksl](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__pacodes__mssm61/#variable-ksl)**  |
+| Farray< Finteger, 1, 6 > | **[ksqu](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__pacodes__mssm61/#variable-ksqu)**  |
+| Farray< Finteger, 1, 6 > | **[ksqd](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__pacodes__mssm61/#variable-ksqd)**  |
 
 ## Public Attributes Documentation
 
@@ -175,4 +175,4 @@ Farray< Finteger, 1, 6 > ksqd;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:22 +0000
+Updated on 2022-08-01 at 17:31:41 +0000

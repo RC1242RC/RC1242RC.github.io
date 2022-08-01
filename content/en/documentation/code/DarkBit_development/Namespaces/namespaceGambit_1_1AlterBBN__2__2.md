@@ -16,8 +16,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[Gambit::AlterBBN_2_2::errorparam](/documentation/code/classes/structgambit_1_1alterbbn__2__2_1_1errorparam/)**  |
-| struct | **[Gambit::AlterBBN_2_2::relicparam](/documentation/code/classes/structgambit_1_1alterbbn__2__2_1_1relicparam/)**  |
+| struct | **[Gambit::AlterBBN_2_2::errorparam](/documentation/code/darkbit_developmentclasses/structgambit_1_1alterbbn__2__2_1_1errorparam/)**  |
+| struct | **[Gambit::AlterBBN_2_2::relicparam](/documentation/code/darkbit_developmentclasses/structgambit_1_1alterbbn__2__2_1_1relicparam/)**  |
 
 
 
@@ -26,4 +26,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:22 +0000
+Updated on 2022-08-01 at 17:31:41 +0000

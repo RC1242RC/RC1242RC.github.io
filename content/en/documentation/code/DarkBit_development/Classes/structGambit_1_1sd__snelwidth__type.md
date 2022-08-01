@@ -18,7 +18,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Fdouble | **[sneltot2](/documentation/code/classes/structgambit_1_1sd__snelwidth__type/#variable-sneltot2)**  |
+| Fdouble | **[sneltot2](/documentation/code/darkbit_developmentclasses/structgambit_1_1sd__snelwidth__type/#variable-sneltot2)**  |
 
 ## Public Attributes Documentation
 
@@ -31,4 +31,4 @@ Fdouble sneltot2;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:22 +0000
+Updated on 2022-08-01 at 17:31:41 +0000

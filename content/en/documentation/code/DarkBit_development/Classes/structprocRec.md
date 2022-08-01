@@ -18,9 +18,9 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| struct [procRec](/documentation/code/classes/structprocrec/) * | **[next](/documentation/code/classes/structprocrec/#variable-next)**  |
-| char * | **[libname](/documentation/code/classes/structprocrec/#variable-libname)**  |
-| numout * | **[cc](/documentation/code/classes/structprocrec/#variable-cc)**  |
+| struct [procRec](/documentation/code/darkbit_developmentclasses/structprocrec/) * | **[next](/documentation/code/darkbit_developmentclasses/structprocrec/#variable-next)**  |
+| char * | **[libname](/documentation/code/darkbit_developmentclasses/structprocrec/#variable-libname)**  |
+| numout * | **[cc](/documentation/code/darkbit_developmentclasses/structprocrec/#variable-cc)**  |
 
 ## Public Attributes Documentation
 
@@ -47,4 +47,4 @@ numout * cc;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:21 +0000
+Updated on 2022-08-01 at 17:31:41 +0000

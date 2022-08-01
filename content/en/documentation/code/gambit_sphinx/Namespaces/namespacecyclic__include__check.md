@@ -16,23 +16,23 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| def | **[checkLoop](/documentation/code/namespaces/namespacecyclic__include__check/#function-checkloop)**(fle fle, ref ref, prev prev) |
+| def | **[checkLoop](/documentation/code/gambit_sphinxnamespaces/namespacecyclic__include__check/#function-checkloop)**(fle fle, ref ref, prev prev) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| list | **[IncludeDirs](/documentation/code/namespaces/namespacecyclic__include__check/#variable-includedirs)**  |
-| list | **[files](/documentation/code/namespaces/namespacecyclic__include__check/#variable-files)**  |
-| | **[fs](/documentation/code/namespaces/namespacecyclic__include__check/#variable-fs)**  |
-| dictionary | **[includes](/documentation/code/namespaces/namespacecyclic__include__check/#variable-includes)**  |
-| | **[infile](/documentation/code/namespaces/namespacecyclic__include__check/#variable-infile)**  |
-| | **[inp](/documentation/code/namespaces/namespacecyclic__include__check/#variable-inp)**  |
-| | **[lines](/documentation/code/namespaces/namespacecyclic__include__check/#variable-lines)**  |
-| | **[lineL](/documentation/code/namespaces/namespacecyclic__include__check/#variable-linel)**  |
-| | **[st2](/documentation/code/namespaces/namespacecyclic__include__check/#variable-st2)**  |
-| list | **[prev](/documentation/code/namespaces/namespacecyclic__include__check/#variable-prev)**  |
-| def | **[loop](/documentation/code/namespaces/namespacecyclic__include__check/#variable-loop)**  |
+| list | **[IncludeDirs](/documentation/code/gambit_sphinxnamespaces/namespacecyclic__include__check/#variable-includedirs)**  |
+| list | **[files](/documentation/code/gambit_sphinxnamespaces/namespacecyclic__include__check/#variable-files)**  |
+| | **[fs](/documentation/code/gambit_sphinxnamespaces/namespacecyclic__include__check/#variable-fs)**  |
+| dictionary | **[includes](/documentation/code/gambit_sphinxnamespaces/namespacecyclic__include__check/#variable-includes)**  |
+| | **[infile](/documentation/code/gambit_sphinxnamespaces/namespacecyclic__include__check/#variable-infile)**  |
+| | **[inp](/documentation/code/gambit_sphinxnamespaces/namespacecyclic__include__check/#variable-inp)**  |
+| | **[lines](/documentation/code/gambit_sphinxnamespaces/namespacecyclic__include__check/#variable-lines)**  |
+| | **[lineL](/documentation/code/gambit_sphinxnamespaces/namespacecyclic__include__check/#variable-linel)**  |
+| | **[st2](/documentation/code/gambit_sphinxnamespaces/namespacecyclic__include__check/#variable-st2)**  |
+| list | **[prev](/documentation/code/gambit_sphinxnamespaces/namespacecyclic__include__check/#variable-prev)**  |
+| def | **[loop](/documentation/code/gambit_sphinxnamespaces/namespacecyclic__include__check/#variable-loop)**  |
 
 
 ## Functions Documentation
@@ -146,4 +146,4 @@ def loop =  checkLoop(f,f,prev);
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:34 +0000
+Updated on 2022-08-01 at 17:31:48 +0000

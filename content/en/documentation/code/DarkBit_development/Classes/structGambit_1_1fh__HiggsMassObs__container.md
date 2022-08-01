@@ -18,14 +18,14 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| fh_real | **[MH](/documentation/code/classes/structgambit_1_1fh__higgsmassobs__container/#variable-mh)**  |
-| fh_real | **[deltaMH](/documentation/code/classes/structgambit_1_1fh__higgsmassobs__container/#variable-deltamh)**  |
-| fh_complex | **[SinAlphaEff](/documentation/code/classes/structgambit_1_1fh__higgsmassobs__container/#variable-sinalphaeff)**  |
-| fh_complex | **[deltaSinAlphaEff](/documentation/code/classes/structgambit_1_1fh__higgsmassobs__container/#variable-deltasinalphaeff)**  |
-| fh_complex | **[UH](/documentation/code/classes/structgambit_1_1fh__higgsmassobs__container/#variable-uh)**  |
-| fh_complex | **[deltaUH](/documentation/code/classes/structgambit_1_1fh__higgsmassobs__container/#variable-deltauh)**  |
-| fh_complex | **[ZH](/documentation/code/classes/structgambit_1_1fh__higgsmassobs__container/#variable-zh)**  |
-| fh_complex | **[deltaZH](/documentation/code/classes/structgambit_1_1fh__higgsmassobs__container/#variable-deltazh)**  |
+| fh_real | **[MH](/documentation/code/darkbit_developmentclasses/structgambit_1_1fh__higgsmassobs__container/#variable-mh)**  |
+| fh_real | **[deltaMH](/documentation/code/darkbit_developmentclasses/structgambit_1_1fh__higgsmassobs__container/#variable-deltamh)**  |
+| fh_complex | **[SinAlphaEff](/documentation/code/darkbit_developmentclasses/structgambit_1_1fh__higgsmassobs__container/#variable-sinalphaeff)**  |
+| fh_complex | **[deltaSinAlphaEff](/documentation/code/darkbit_developmentclasses/structgambit_1_1fh__higgsmassobs__container/#variable-deltasinalphaeff)**  |
+| fh_complex | **[UH](/documentation/code/darkbit_developmentclasses/structgambit_1_1fh__higgsmassobs__container/#variable-uh)**  |
+| fh_complex | **[deltaUH](/documentation/code/darkbit_developmentclasses/structgambit_1_1fh__higgsmassobs__container/#variable-deltauh)**  |
+| fh_complex | **[ZH](/documentation/code/darkbit_developmentclasses/structgambit_1_1fh__higgsmassobs__container/#variable-zh)**  |
+| fh_complex | **[deltaZH](/documentation/code/darkbit_developmentclasses/structgambit_1_1fh__higgsmassobs__container/#variable-deltazh)**  |
 
 ## Public Attributes Documentation
 
@@ -87,4 +87,4 @@ fh_complex deltaZH;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:22 +0000
+Updated on 2022-08-01 at 17:31:41 +0000

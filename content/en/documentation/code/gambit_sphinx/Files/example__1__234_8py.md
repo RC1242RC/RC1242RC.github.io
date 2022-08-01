@@ -16,8 +16,8 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[configs](/documentation/code/namespaces/namespaceconfigs/)**  |
-| **[configs::example_1_234](/documentation/code/namespaces/namespaceconfigs_1_1example__1__234/)**  |
+| **[configs](/documentation/code/gambit_sphinxnamespaces/namespaceconfigs/)**  |
+| **[configs::example_1_234](/documentation/code/gambit_sphinxnamespaces/namespaceconfigs_1_1example__1__234/)**  |
 
 
 
@@ -127,4 +127,4 @@ pragmas_end = []
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:37 +0000
+Updated on 2022-08-01 at 17:31:51 +0000

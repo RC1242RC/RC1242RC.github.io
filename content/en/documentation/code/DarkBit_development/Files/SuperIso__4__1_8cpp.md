@@ -16,9 +16,9 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[Nobs_BKll](/documentation/code/files/superiso__4__1_8cpp/#define-nobs-bkll)** <br>Number of observables the SuperIso returns for B0 -> K(*) mu mu and Bs -> phi mu mu.  |
-|  | **[Nobs_BKsll](/documentation/code/files/superiso__4__1_8cpp/#define-nobs-bksll)**  |
-|  | **[Nobs_Bsphill](/documentation/code/files/superiso__4__1_8cpp/#define-nobs-bsphill)**  |
+|  | **[Nobs_BKll](/documentation/code/darkbit_developmentfiles/superiso__4__1_8cpp/#define-nobs-bkll)** <br>Number of observables the SuperIso returns for B0 -> K(*) mu mu and Bs -> phi mu mu.  |
+|  | **[Nobs_BKsll](/documentation/code/darkbit_developmentfiles/superiso__4__1_8cpp/#define-nobs-bksll)**  |
+|  | **[Nobs_Bsphill](/documentation/code/darkbit_developmentfiles/superiso__4__1_8cpp/#define-nobs-bsphill)**  |
 
 ## Detailed Description
 
@@ -235,4 +235,4 @@ END_BE_NAMESPACE
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:26 +0000
+Updated on 2022-08-01 at 17:31:46 +0000

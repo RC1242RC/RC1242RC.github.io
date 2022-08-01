@@ -14,7 +14,7 @@ description: "[No description available]"
 
 [No description available] [More...](#detailed-description)
 
-Inherited by [Gambit::Scanner::Plugins::Plugin_Interface< T >](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__interface/)
+Inherited by [Gambit::Scanner::Plugins::Plugin_Interface< T >](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1plugins_1_1plugin__interface/)
 
 ## Detailed Description
 
@@ -25,4 +25,4 @@ class Gambit::Scanner::Plugins::Plugin_Main_Interface_Base;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:34 +0000
+Updated on 2022-08-01 at 17:31:48 +0000

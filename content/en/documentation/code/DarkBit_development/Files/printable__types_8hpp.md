@@ -16,17 +16,17 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit](/documentation/code/darkbit_developmentnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[SCANNER_SIMPLE_TYPES_NOBOOL](/documentation/code/files/printable__types_8hpp/#define-scanner-simple-types-nobool)**  |
-|  | **[SCANNER_SIMPLE_TYPES](/documentation/code/files/printable__types_8hpp/#define-scanner-simple-types)**  |
-|  | **[SCANNER_VECTOR_TYPES](/documentation/code/files/printable__types_8hpp/#define-scanner-vector-types)**  |
-|  | **[SCANNER_PRINTABLE_TYPES](/documentation/code/files/printable__types_8hpp/#define-scanner-printable-types)**  |
-|  | **[SCANNER_RETRIEVABLE_TYPES](/documentation/code/files/printable__types_8hpp/#define-scanner-retrievable-types)**  |
+|  | **[SCANNER_SIMPLE_TYPES_NOBOOL](/documentation/code/darkbit_developmentfiles/printable__types_8hpp/#define-scanner-simple-types-nobool)**  |
+|  | **[SCANNER_SIMPLE_TYPES](/documentation/code/darkbit_developmentfiles/printable__types_8hpp/#define-scanner-simple-types)**  |
+|  | **[SCANNER_VECTOR_TYPES](/documentation/code/darkbit_developmentfiles/printable__types_8hpp/#define-scanner-vector-types)**  |
+|  | **[SCANNER_PRINTABLE_TYPES](/documentation/code/darkbit_developmentfiles/printable__types_8hpp/#define-scanner-printable-types)**  |
+|  | **[SCANNER_RETRIEVABLE_TYPES](/documentation/code/darkbit_developmentfiles/printable__types_8hpp/#define-scanner-retrievable-types)**  |
 
 ## Detailed Description
 
@@ -191,4 +191,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:23 +0000
+Updated on 2022-08-01 at 17:31:43 +0000

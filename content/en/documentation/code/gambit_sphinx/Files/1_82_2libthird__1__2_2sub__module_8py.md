@@ -16,8 +16,8 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[libthird_1_2](/documentation/code/namespaces/namespacelibthird__1__2/)**  |
-| **[libthird_1_2::sub_module](/documentation/code/namespaces/namespacelibthird__1__2_1_1sub__module/)**  |
+| **[libthird_1_2](/documentation/code/gambit_sphinxnamespaces/namespacelibthird__1__2/)**  |
+| **[libthird_1_2::sub_module](/documentation/code/gambit_sphinxnamespaces/namespacelibthird__1__2_1_1sub__module/)**  |
 
 
 
@@ -43,4 +43,4 @@ def someOtherFunction(x):
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:36 +0000
+Updated on 2022-08-01 at 17:31:50 +0000

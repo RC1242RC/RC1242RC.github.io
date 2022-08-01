@@ -18,11 +18,11 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Farray< Fdouble, 7, 12 > | **[ftp](/documentation/code/classes/structgambit_1_1ds__ddcomlegacy/#variable-ftp)**  |
-| Farray< Fdouble, 7, 12 > | **[ftn](/documentation/code/classes/structgambit_1_1ds__ddcomlegacy/#variable-ftn)**  |
-| Fdouble | **[delu](/documentation/code/classes/structgambit_1_1ds__ddcomlegacy/#variable-delu)**  |
-| Fdouble | **[deld](/documentation/code/classes/structgambit_1_1ds__ddcomlegacy/#variable-deld)**  |
-| Fdouble | **[dels](/documentation/code/classes/structgambit_1_1ds__ddcomlegacy/#variable-dels)**  |
+| Farray< Fdouble, 7, 12 > | **[ftp](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__ddcomlegacy/#variable-ftp)**  |
+| Farray< Fdouble, 7, 12 > | **[ftn](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__ddcomlegacy/#variable-ftn)**  |
+| Fdouble | **[delu](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__ddcomlegacy/#variable-delu)**  |
+| Fdouble | **[deld](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__ddcomlegacy/#variable-deld)**  |
+| Fdouble | **[dels](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__ddcomlegacy/#variable-dels)**  |
 
 ## Public Attributes Documentation
 
@@ -63,4 +63,4 @@ Fdouble dels;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:21 +0000
+Updated on 2022-08-01 at 17:31:41 +0000

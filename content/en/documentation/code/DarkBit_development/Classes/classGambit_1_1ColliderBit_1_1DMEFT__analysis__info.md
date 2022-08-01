@@ -18,26 +18,26 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| void | **[add_bkgcov](/documentation/code/classes/classgambit_1_1colliderbit_1_1dmeft__analysis__info/#function-add-bkgcov)**(const std::vector< std::vector< double > > & bkgcov_in) |
-| void | **[add_interp1d](/documentation/code/classes/classgambit_1_1colliderbit_1_1dmeft__analysis__info/#function-add-interp1d)**(str name, str filename, std::vector< str > colnames) |
-| void | **[add_interp2d](/documentation/code/classes/classgambit_1_1colliderbit_1_1dmeft__analysis__info/#function-add-interp2d)**(str name, str filename, std::vector< str > colnames) |
-| const Utils::interp1d_collection & | **[get_interp1d](/documentation/code/classes/classgambit_1_1colliderbit_1_1dmeft__analysis__info/#function-get-interp1d)**(str name) const |
-| const Utils::interp2d_collection & | **[get_interp2d](/documentation/code/classes/classgambit_1_1colliderbit_1_1dmeft__analysis__info/#function-get-interp2d)**(str name) const |
+| void | **[add_bkgcov](/documentation/code/darkbit_developmentclasses/classgambit_1_1colliderbit_1_1dmeft__analysis__info/#function-add-bkgcov)**(const std::vector< std::vector< double > > & bkgcov_in) |
+| void | **[add_interp1d](/documentation/code/darkbit_developmentclasses/classgambit_1_1colliderbit_1_1dmeft__analysis__info/#function-add-interp1d)**(str name, str filename, std::vector< str > colnames) |
+| void | **[add_interp2d](/documentation/code/darkbit_developmentclasses/classgambit_1_1colliderbit_1_1dmeft__analysis__info/#function-add-interp2d)**(str name, str filename, std::vector< str > colnames) |
+| const Utils::interp1d_collection & | **[get_interp1d](/documentation/code/darkbit_developmentclasses/classgambit_1_1colliderbit_1_1dmeft__analysis__info/#function-get-interp1d)**(str name) const |
+| const Utils::interp2d_collection & | **[get_interp2d](/documentation/code/darkbit_developmentclasses/classgambit_1_1colliderbit_1_1dmeft__analysis__info/#function-get-interp2d)**(str name) const |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| str | **[name](/documentation/code/classes/classgambit_1_1colliderbit_1_1dmeft__analysis__info/#variable-name)**  |
-| double | **[lumi_invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1dmeft__analysis__info/#variable-lumi-invfb)**  |
-| size_t | **[n_signal_regions](/documentation/code/classes/classgambit_1_1colliderbit_1_1dmeft__analysis__info/#variable-n-signal-regions)**  |
-| std::vector< int > | **[obsnum](/documentation/code/classes/classgambit_1_1colliderbit_1_1dmeft__analysis__info/#variable-obsnum)**  |
-| std::vector< double > | **[bkgnum](/documentation/code/classes/classgambit_1_1colliderbit_1_1dmeft__analysis__info/#variable-bkgnum)**  |
-| std::vector< double > | **[bkgerr](/documentation/code/classes/classgambit_1_1colliderbit_1_1dmeft__analysis__info/#variable-bkgerr)**  |
-| Eigen::MatrixXd | **[bkgcov](/documentation/code/classes/classgambit_1_1colliderbit_1_1dmeft__analysis__info/#variable-bkgcov)**  |
-| std::map< str, std::vector< double > > | **[extra_info](/documentation/code/classes/classgambit_1_1colliderbit_1_1dmeft__analysis__info/#variable-extra-info)**  |
-| std::map< str, std::unique_ptr< Utils::interp1d_collection > > | **[interp1d](/documentation/code/classes/classgambit_1_1colliderbit_1_1dmeft__analysis__info/#variable-interp1d)**  |
-| std::map< str, std::unique_ptr< Utils::interp2d_collection > > | **[interp2d](/documentation/code/classes/classgambit_1_1colliderbit_1_1dmeft__analysis__info/#variable-interp2d)**  |
+| str | **[name](/documentation/code/darkbit_developmentclasses/classgambit_1_1colliderbit_1_1dmeft__analysis__info/#variable-name)**  |
+| double | **[lumi_invfb](/documentation/code/darkbit_developmentclasses/classgambit_1_1colliderbit_1_1dmeft__analysis__info/#variable-lumi-invfb)**  |
+| size_t | **[n_signal_regions](/documentation/code/darkbit_developmentclasses/classgambit_1_1colliderbit_1_1dmeft__analysis__info/#variable-n-signal-regions)**  |
+| std::vector< int > | **[obsnum](/documentation/code/darkbit_developmentclasses/classgambit_1_1colliderbit_1_1dmeft__analysis__info/#variable-obsnum)**  |
+| std::vector< double > | **[bkgnum](/documentation/code/darkbit_developmentclasses/classgambit_1_1colliderbit_1_1dmeft__analysis__info/#variable-bkgnum)**  |
+| std::vector< double > | **[bkgerr](/documentation/code/darkbit_developmentclasses/classgambit_1_1colliderbit_1_1dmeft__analysis__info/#variable-bkgerr)**  |
+| Eigen::MatrixXd | **[bkgcov](/documentation/code/darkbit_developmentclasses/classgambit_1_1colliderbit_1_1dmeft__analysis__info/#variable-bkgcov)**  |
+| std::map< str, std::vector< double > > | **[extra_info](/documentation/code/darkbit_developmentclasses/classgambit_1_1colliderbit_1_1dmeft__analysis__info/#variable-extra-info)**  |
+| std::map< str, std::unique_ptr< Utils::interp1d_collection > > | **[interp1d](/documentation/code/darkbit_developmentclasses/classgambit_1_1colliderbit_1_1dmeft__analysis__info/#variable-interp1d)**  |
+| std::map< str, std::unique_ptr< Utils::interp2d_collection > > | **[interp2d](/documentation/code/darkbit_developmentclasses/classgambit_1_1colliderbit_1_1dmeft__analysis__info/#variable-interp2d)**  |
 
 ## Detailed Description
 
@@ -173,4 +173,4 @@ std::map< str, std::unique_ptr< Utils::interp2d_collection > > interp2d;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:22 +0000
+Updated on 2022-08-01 at 17:31:42 +0000

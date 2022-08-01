@@ -18,25 +18,25 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Farray< Fdouble, 1, 2, 1, 4 > | **[brstopw](/documentation/code/classes/structgambit_1_1sd__stop3body__type/#variable-brstopw)**  |
-| Farray< Fdouble, 1, 2, 1, 4 > | **[brstoph](/documentation/code/classes/structgambit_1_1sd__stop3body__type/#variable-brstoph)**  |
-| Farray< Fdouble, 1, 2, 1, 2 > | **[brststau](/documentation/code/classes/structgambit_1_1sd__stop3body__type/#variable-brststau)**  |
-| Farray< Fdouble, 1, 2, 1, 2 > | **[brstsntau](/documentation/code/classes/structgambit_1_1sd__stop3body__type/#variable-brstsntau)**  |
-| Farray< Fdouble, 1, 2, 1, 2 > | **[brstsel](/documentation/code/classes/structgambit_1_1sd__stop3body__type/#variable-brstsel)**  |
-| Farray< Fdouble, 1, 2, 1, 2 > | **[brstbsbst](/documentation/code/classes/structgambit_1_1sd__stop3body__type/#variable-brstbsbst)**  |
-| Farray< Fdouble, 1, 2, 1, 2 > | **[brstbbsbt](/documentation/code/classes/structgambit_1_1sd__stop3body__type/#variable-brstbbsbt)**  |
-| Farray< Fdouble, 1, 2, 1, 2 > | **[brsttausbnu](/documentation/code/classes/structgambit_1_1sd__stop3body__type/#variable-brsttausbnu)**  |
-| Farray< Fdouble, 1, 2, 1, 2 > | **[brstelsbnu](/documentation/code/classes/structgambit_1_1sd__stop3body__type/#variable-brstelsbnu)**  |
-| Farray< Fdouble, 1, 2, 1, 2 > | **[brstupsbdow](/documentation/code/classes/structgambit_1_1sd__stop3body__type/#variable-brstupsbdow)**  |
-| Farray< Fdouble, 1, 2 > | **[brstsnel](/documentation/code/classes/structgambit_1_1sd__stop3body__type/#variable-brstsnel)**  |
-| Fdouble | **[brst2st1tt](/documentation/code/classes/structgambit_1_1sd__stop3body__type/#variable-brst2st1tt)**  |
-| Fdouble | **[brst2st1startt](/documentation/code/classes/structgambit_1_1sd__stop3body__type/#variable-brst2st1startt)**  |
-| Fdouble | **[brst2st1bb](/documentation/code/classes/structgambit_1_1sd__stop3body__type/#variable-brst2st1bb)**  |
-| Fdouble | **[brst2st1uu](/documentation/code/classes/structgambit_1_1sd__stop3body__type/#variable-brst2st1uu)**  |
-| Fdouble | **[brst2st1dd](/documentation/code/classes/structgambit_1_1sd__stop3body__type/#variable-brst2st1dd)**  |
-| Fdouble | **[brst2st1ee](/documentation/code/classes/structgambit_1_1sd__stop3body__type/#variable-brst2st1ee)**  |
-| Fdouble | **[brst2st1nunu](/documentation/code/classes/structgambit_1_1sd__stop3body__type/#variable-brst2st1nunu)**  |
-| Fdouble | **[brst2st1tautau](/documentation/code/classes/structgambit_1_1sd__stop3body__type/#variable-brst2st1tautau)**  |
+| Farray< Fdouble, 1, 2, 1, 4 > | **[brstopw](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__stop3body__type/#variable-brstopw)**  |
+| Farray< Fdouble, 1, 2, 1, 4 > | **[brstoph](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__stop3body__type/#variable-brstoph)**  |
+| Farray< Fdouble, 1, 2, 1, 2 > | **[brststau](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__stop3body__type/#variable-brststau)**  |
+| Farray< Fdouble, 1, 2, 1, 2 > | **[brstsntau](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__stop3body__type/#variable-brstsntau)**  |
+| Farray< Fdouble, 1, 2, 1, 2 > | **[brstsel](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__stop3body__type/#variable-brstsel)**  |
+| Farray< Fdouble, 1, 2, 1, 2 > | **[brstbsbst](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__stop3body__type/#variable-brstbsbst)**  |
+| Farray< Fdouble, 1, 2, 1, 2 > | **[brstbbsbt](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__stop3body__type/#variable-brstbbsbt)**  |
+| Farray< Fdouble, 1, 2, 1, 2 > | **[brsttausbnu](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__stop3body__type/#variable-brsttausbnu)**  |
+| Farray< Fdouble, 1, 2, 1, 2 > | **[brstelsbnu](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__stop3body__type/#variable-brstelsbnu)**  |
+| Farray< Fdouble, 1, 2, 1, 2 > | **[brstupsbdow](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__stop3body__type/#variable-brstupsbdow)**  |
+| Farray< Fdouble, 1, 2 > | **[brstsnel](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__stop3body__type/#variable-brstsnel)**  |
+| Fdouble | **[brst2st1tt](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__stop3body__type/#variable-brst2st1tt)**  |
+| Fdouble | **[brst2st1startt](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__stop3body__type/#variable-brst2st1startt)**  |
+| Fdouble | **[brst2st1bb](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__stop3body__type/#variable-brst2st1bb)**  |
+| Fdouble | **[brst2st1uu](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__stop3body__type/#variable-brst2st1uu)**  |
+| Fdouble | **[brst2st1dd](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__stop3body__type/#variable-brst2st1dd)**  |
+| Fdouble | **[brst2st1ee](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__stop3body__type/#variable-brst2st1ee)**  |
+| Fdouble | **[brst2st1nunu](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__stop3body__type/#variable-brst2st1nunu)**  |
+| Fdouble | **[brst2st1tautau](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__stop3body__type/#variable-brst2st1tautau)**  |
 
 ## Public Attributes Documentation
 
@@ -175,4 +175,4 @@ Fdouble brst2st1tautau;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:32 +0000
+Updated on 2022-08-01 at 17:31:46 +0000

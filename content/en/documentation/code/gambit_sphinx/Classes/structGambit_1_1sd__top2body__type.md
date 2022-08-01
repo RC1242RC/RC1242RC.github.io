@@ -18,9 +18,9 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Fdouble | **[brtopbw](/documentation/code/classes/structgambit_1_1sd__top2body__type/#variable-brtopbw)**  |
-| Fdouble | **[brtopbh](/documentation/code/classes/structgambit_1_1sd__top2body__type/#variable-brtopbh)**  |
-| Farray< Fdouble, 1, 4, 1, 2 > | **[brtopneutrstop](/documentation/code/classes/structgambit_1_1sd__top2body__type/#variable-brtopneutrstop)**  |
+| Fdouble | **[brtopbw](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__top2body__type/#variable-brtopbw)**  |
+| Fdouble | **[brtopbh](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__top2body__type/#variable-brtopbh)**  |
+| Farray< Fdouble, 1, 4, 1, 2 > | **[brtopneutrstop](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__top2body__type/#variable-brtopneutrstop)**  |
 
 ## Public Attributes Documentation
 
@@ -47,4 +47,4 @@ Farray< Fdouble, 1, 4, 1, 2 > brtopneutrstop;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:32 +0000
+Updated on 2022-08-01 at 17:31:46 +0000

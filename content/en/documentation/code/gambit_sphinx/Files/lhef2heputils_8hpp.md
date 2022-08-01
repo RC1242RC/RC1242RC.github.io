@@ -16,13 +16,13 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[LHEF](/documentation/code/namespaces/namespacelhef/)** <br>Forward declaration to cut down on includes.  |
+| **[LHEF](/documentation/code/gambit_sphinxnamespaces/namespacelhef/)** <br>Forward declaration to cut down on includes.  |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| void | **[get_HEPUtils_event](/documentation/code/files/lhef2heputils_8hpp/#function-get-heputils-event)**(const LHEF::Reader & , HEPUtils::Event & , double )<br>Extract an LHE event as a HEPUtils::Event.  |
+| void | **[get_HEPUtils_event](/documentation/code/gambit_sphinxfiles/lhef2heputils_8hpp/#function-get-heputils-event)**(const LHEF::Reader & , HEPUtils::Event & , double )<br>Extract an LHE event as a HEPUtils::Event.  |
 
 
 ## Functions Documentation
@@ -64,4 +64,4 @@ void get_HEPUtils_event(const LHEF::Reader&, HEPUtils::Event&, double);
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:35 +0000
+Updated on 2022-08-01 at 17:31:49 +0000

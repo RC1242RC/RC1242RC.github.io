@@ -16,25 +16,25 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::DarkBit](/documentation/code/namespaces/namespacegambit_1_1darkbit/)**  |
+| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::DarkBit](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1darkbit/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Gambit::DarkBit::AxionInterpolator](/documentation/code/classes/classgambit_1_1darkbit_1_1axioninterpolator/)**  |
-| class | **[Gambit::DarkBit::AxionInterpolator2D](/documentation/code/classes/classgambit_1_1darkbit_1_1axioninterpolator2d/)**  |
-| class | **[Gambit::DarkBit::HESS_Interpolator](/documentation/code/classes/classgambit_1_1darkbit_1_1hess__interpolator/)**  |
-| class | **[Gambit::DarkBit::SolarModel](/documentation/code/classes/classgambit_1_1darkbit_1_1solarmodel/)**  |
-| struct | **[Gambit::DarkBit::SolarModel_params1](/documentation/code/classes/structgambit_1_1darkbit_1_1solarmodel__params1/)**  |
-| struct | **[Gambit::DarkBit::SolarModel_params2](/documentation/code/classes/structgambit_1_1darkbit_1_1solarmodel__params2/)**  |
-| struct | **[Gambit::DarkBit::SolarModel_params3](/documentation/code/classes/structgambit_1_1darkbit_1_1solarmodel__params3/)**  |
-| struct | **[Gambit::DarkBit::SolarModel_params4](/documentation/code/classes/structgambit_1_1darkbit_1_1solarmodel__params4/)**  |
-| class | **[Gambit::DarkBit::CAST_SolarModel_Interpolator](/documentation/code/classes/classgambit_1_1darkbit_1_1cast__solarmodel__interpolator/)**  |
-| struct | **[Gambit::DarkBit::AxionEDT_params](/documentation/code/classes/structgambit_1_1darkbit_1_1axionedt__params/)**  |
-| class | **[Gambit::DarkBit::WDInterpolator](/documentation/code/classes/classgambit_1_1darkbit_1_1wdinterpolator/)**  |
-| struct | **[Gambit::DarkBit::dRdE_params](/documentation/code/classes/structgambit_1_1darkbit_1_1drde__params/)**  |
+| class | **[Gambit::DarkBit::AxionInterpolator](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1axioninterpolator/)**  |
+| class | **[Gambit::DarkBit::AxionInterpolator2D](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1axioninterpolator2d/)**  |
+| class | **[Gambit::DarkBit::HESS_Interpolator](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1hess__interpolator/)**  |
+| class | **[Gambit::DarkBit::SolarModel](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1solarmodel/)**  |
+| struct | **[Gambit::DarkBit::SolarModel_params1](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1solarmodel__params1/)**  |
+| struct | **[Gambit::DarkBit::SolarModel_params2](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1solarmodel__params2/)**  |
+| struct | **[Gambit::DarkBit::SolarModel_params3](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1solarmodel__params3/)**  |
+| struct | **[Gambit::DarkBit::SolarModel_params4](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1solarmodel__params4/)**  |
+| class | **[Gambit::DarkBit::CAST_SolarModel_Interpolator](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1cast__solarmodel__interpolator/)**  |
+| struct | **[Gambit::DarkBit::AxionEDT_params](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1axionedt__params/)**  |
+| class | **[Gambit::DarkBit::WDInterpolator](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1wdinterpolator/)**  |
+| struct | **[Gambit::DarkBit::dRdE_params](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1drde__params/)**  |
 
 ## Detailed Description
 
@@ -2328,4 +2328,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:35 +0000
+Updated on 2022-08-01 at 17:31:49 +0000

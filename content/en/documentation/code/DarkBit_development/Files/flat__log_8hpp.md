@@ -16,21 +16,21 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::Priors](/documentation/code/namespaces/namespacegambit_1_1priors/)**  |
+| **[Gambit](/documentation/code/darkbit_developmentnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::Priors](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1priors/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[Gambit::Priors::flatprior](/documentation/code/classes/structgambit_1_1priors_1_1flatprior/)**  |
-| struct | **[Gambit::Priors::logprior](/documentation/code/classes/structgambit_1_1priors_1_1logprior/)**  |
-| struct | **[Gambit::Priors::sinprior](/documentation/code/classes/structgambit_1_1priors_1_1sinprior/)**  |
-| struct | **[Gambit::Priors::cosprior](/documentation/code/classes/structgambit_1_1priors_1_1cosprior/)**  |
-| struct | **[Gambit::Priors::tanprior](/documentation/code/classes/structgambit_1_1priors_1_1tanprior/)**  |
-| struct | **[Gambit::Priors::cotprior](/documentation/code/classes/structgambit_1_1priors_1_1cotprior/)**  |
-| struct | **[Gambit::Priors::arccosprior](/documentation/code/classes/structgambit_1_1priors_1_1arccosprior/)**  |
-| class | **[Gambit::Priors::RangePrior1D](/documentation/code/classes/classgambit_1_1priors_1_1rangeprior1d/)** <br>Template class for 1d priors which need only a "range" option in their constructor.  |
+| struct | **[Gambit::Priors::flatprior](/documentation/code/darkbit_developmentclasses/structgambit_1_1priors_1_1flatprior/)**  |
+| struct | **[Gambit::Priors::logprior](/documentation/code/darkbit_developmentclasses/structgambit_1_1priors_1_1logprior/)**  |
+| struct | **[Gambit::Priors::sinprior](/documentation/code/darkbit_developmentclasses/structgambit_1_1priors_1_1sinprior/)**  |
+| struct | **[Gambit::Priors::cosprior](/documentation/code/darkbit_developmentclasses/structgambit_1_1priors_1_1cosprior/)**  |
+| struct | **[Gambit::Priors::tanprior](/documentation/code/darkbit_developmentclasses/structgambit_1_1priors_1_1tanprior/)**  |
+| struct | **[Gambit::Priors::cotprior](/documentation/code/darkbit_developmentclasses/structgambit_1_1priors_1_1cotprior/)**  |
+| struct | **[Gambit::Priors::arccosprior](/documentation/code/darkbit_developmentclasses/structgambit_1_1priors_1_1arccosprior/)**  |
+| class | **[Gambit::Priors::RangePrior1D](/documentation/code/darkbit_developmentclasses/classgambit_1_1priors_1_1rangeprior1d/)** <br>Template class for 1d priors which need only a "range" option in their constructor.  |
 
 ## Detailed Description
 
@@ -289,4 +289,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:23 +0000
+Updated on 2022-08-01 at 17:31:43 +0000

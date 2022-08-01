@@ -18,14 +18,14 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Interpolator2D](/documentation/code/classes/classgambit_1_1darkbit_1_1interpolator2d/#function-interpolator2d)**() |
-| | **[Interpolator2D](/documentation/code/classes/classgambit_1_1darkbit_1_1interpolator2d/#function-interpolator2d)**(const std::vector< double > & xin, const std::vector< double > & yin, const std::vector< double > & zin) |
-| [Interpolator2D](/documentation/code/classes/classgambit_1_1darkbit_1_1interpolator2d/) & | **[operator=](/documentation/code/classes/classgambit_1_1darkbit_1_1interpolator2d/#function-operator=)**([Interpolator2D](/documentation/code/classes/classgambit_1_1darkbit_1_1interpolator2d/) && interp) |
-| | **[~Interpolator2D](/documentation/code/classes/classgambit_1_1darkbit_1_1interpolator2d/#function-~interpolator2d)**() |
-| | **[Interpolator2D](/documentation/code/classes/classgambit_1_1darkbit_1_1interpolator2d/#function-interpolator2d)**(const [Interpolator2D](/documentation/code/classes/classgambit_1_1darkbit_1_1interpolator2d/) & ) =delete |
-| [Interpolator2D](/documentation/code/classes/classgambit_1_1darkbit_1_1interpolator2d/) | **[operator=](/documentation/code/classes/classgambit_1_1darkbit_1_1interpolator2d/#function-operator=)**(const [Interpolator2D](/documentation/code/classes/classgambit_1_1darkbit_1_1interpolator2d/) & ) =delete |
-| double | **[interpolate](/documentation/code/classes/classgambit_1_1darkbit_1_1interpolator2d/#function-interpolate)**(double x, double y) const |
-| bool | **[is_inside_box](/documentation/code/classes/classgambit_1_1darkbit_1_1interpolator2d/#function-is-inside-box)**(double x, double y) const |
+| | **[Interpolator2D](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1interpolator2d/#function-interpolator2d)**() |
+| | **[Interpolator2D](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1interpolator2d/#function-interpolator2d)**(const std::vector< double > & xin, const std::vector< double > & yin, const std::vector< double > & zin) |
+| [Interpolator2D](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1interpolator2d/) & | **[operator=](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1interpolator2d/#function-operator=)**([Interpolator2D](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1interpolator2d/) && interp) |
+| | **[~Interpolator2D](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1interpolator2d/#function-~interpolator2d)**() |
+| | **[Interpolator2D](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1interpolator2d/#function-interpolator2d)**(const [Interpolator2D](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1interpolator2d/) & ) =delete |
+| [Interpolator2D](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1interpolator2d/) | **[operator=](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1interpolator2d/#function-operator=)**(const [Interpolator2D](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1interpolator2d/) & ) =delete |
+| double | **[interpolate](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1interpolator2d/#function-interpolate)**(double x, double y) const |
+| bool | **[is_inside_box](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1interpolator2d/#function-is-inside-box)**(double x, double y) const |
 
 ## Public Functions Documentation
 
@@ -103,4 +103,4 @@ bool is_inside_box(
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:33 +0000
+Updated on 2022-08-01 at 17:31:47 +0000

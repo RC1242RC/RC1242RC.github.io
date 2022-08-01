@@ -16,8 +16,8 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[modules](/documentation/code/namespaces/namespacemodules/)**  |
-| **[modules::funcparse](/documentation/code/namespaces/namespacemodules_1_1funcparse/)**  |
+| **[modules](/documentation/code/gambit_sphinxnamespaces/namespacemodules/)**  |
+| **[modules::funcparse](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1funcparse/)**  |
 
 
 
@@ -328,4 +328,4 @@ def generateFunctionWrapperClassVersion(func_el, wr_func_name, namespaces, n_ove
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:37 +0000
+Updated on 2022-08-01 at 17:31:51 +0000

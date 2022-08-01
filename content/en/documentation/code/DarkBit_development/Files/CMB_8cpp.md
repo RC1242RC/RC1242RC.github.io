@@ -16,8 +16,8 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::CosmoBit](/documentation/code/namespaces/namespacegambit_1_1cosmobit/)**  |
+| **[Gambit](/documentation/code/darkbit_developmentnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::CosmoBit](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1cosmobit/)**  |
 
 ## Detailed Description
 
@@ -53,7 +53,7 @@ CosmoBit routines relating to the CMB.
 
 Routines include extracting CMB spectra and computing effects of energy injections.
 
-Does _not_ contain the Planck likelihoods; these live in [CosmoBit/src/Planck.cpp](/documentation/code/files/planck_8cpp/#file-planck.cpp).
+Does _not_ contain the Planck likelihoods; these live in [CosmoBit/src/Planck.cpp](/documentation/code/darkbit_developmentfiles/planck_8cpp/#file-planck.cpp).
 
 
 
@@ -470,4 +470,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:24 +0000
+Updated on 2022-08-01 at 17:31:43 +0000

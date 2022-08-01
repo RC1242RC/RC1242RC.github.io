@@ -16,26 +16,26 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[YAML](/documentation/code/namespaces/namespaceyaml/)**  |
-| **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::FlavBit](/documentation/code/namespaces/namespacegambit_1_1flavbit/)**  |
+| **[YAML](/documentation/code/darkbit_developmentnamespaces/namespaceyaml/)**  |
+| **[Gambit](/documentation/code/darkbit_developmentnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::FlavBit](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1flavbit/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[YAML::convert< Gambit::nuiscorr >](/documentation/code/classes/structyaml_1_1convert_3_01gambit_1_1nuiscorr_01_4/)** <br>YAML conversion structure for SuperIso SM nuisance data.  |
+| struct | **[YAML::convert< Gambit::nuiscorr >](/documentation/code/darkbit_developmentclasses/structyaml_1_1convert_3_01gambit_1_1nuiscorr_01_4/)** <br>YAML conversion structure for SuperIso SM nuisance data.  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[THE_REST](/documentation/code/files/flavbit_8cpp/#define-the-rest)**(bins)  |
-|  | **[SI_SINGLE_PREDICTION_FUNCTION](/documentation/code/files/flavbit_8cpp/#define-si-single-prediction-function)**(name)  |
-|  | **[SI_SINGLE_PREDICTION_FUNCTION_BINS](/documentation/code/files/flavbit_8cpp/#define-si-single-prediction-function-bins)**(name, bins)  |
-|  | **[SI_MULTI_PREDICTION_FUNCTION](/documentation/code/files/flavbit_8cpp/#define-si-multi-prediction-function)**(name)  |
-|  | **[SI_MULTI_PREDICTION_FUNCTION_BINS](/documentation/code/files/flavbit_8cpp/#define-si-multi-prediction-function-bins)**(name, bins, exp)  |
-|  | **[HEPLIKE_GAUSSIAN_1D_LIKELIHOOD](/documentation/code/files/flavbit_8cpp/#define-heplike-gaussian-1d-likelihood)**(name, file) <br>HEPLike single-observable likelihood.  |
+|  | **[THE_REST](/documentation/code/darkbit_developmentfiles/flavbit_8cpp/#define-the-rest)**(bins)  |
+|  | **[SI_SINGLE_PREDICTION_FUNCTION](/documentation/code/darkbit_developmentfiles/flavbit_8cpp/#define-si-single-prediction-function)**(name)  |
+|  | **[SI_SINGLE_PREDICTION_FUNCTION_BINS](/documentation/code/darkbit_developmentfiles/flavbit_8cpp/#define-si-single-prediction-function-bins)**(name, bins)  |
+|  | **[SI_MULTI_PREDICTION_FUNCTION](/documentation/code/darkbit_developmentfiles/flavbit_8cpp/#define-si-multi-prediction-function)**(name)  |
+|  | **[SI_MULTI_PREDICTION_FUNCTION_BINS](/documentation/code/darkbit_developmentfiles/flavbit_8cpp/#define-si-multi-prediction-function-bins)**(name, bins, exp)  |
+|  | **[HEPLIKE_GAUSSIAN_1D_LIKELIHOOD](/documentation/code/darkbit_developmentfiles/flavbit_8cpp/#define-heplike-gaussian-1d-likelihood)**(name, file) <br>HEPLike single-observable likelihood.  |
 
 ## Detailed Description
 
@@ -3131,4 +3131,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:24 +0000
+Updated on 2022-08-01 at 17:31:43 +0000

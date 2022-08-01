@@ -16,31 +16,31 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef [Gambit::Models::safe_param_map](/documentation/code/classes/classgambit_1_1models_1_1safe__param__map/)< [Gambit::safe_ptr](/documentation/code/classes/classgambit_1_1safe__ptr/)< const double > > | **[map](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/#typedef-map)**  |
+| typedef [Gambit::Models::safe_param_map](/documentation/code/darkbit_developmentclasses/classgambit_1_1models_1_1safe__param__map/)< [Gambit::safe_ptr](/documentation/code/darkbit_developmentclasses/classgambit_1_1safe__ptr/)< const double > > | **[map](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1objectivesbit/#typedef-map)**  |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| std::vector< double > | **[get_arguments](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/#function-get-arguments)**([map](/documentation/code/classes/classgambit_1_1models_1_1safe__param__map/) param) |
-| void | **[gaussian](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/#function-gaussian)**(double & loglike) |
-| double | **[rosenbrock](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/#function-rosenbrock)**(double x, double y) |
-| double | **[rosenbrock](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/#function-rosenbrock)**(std::vector< double > x) |
-| void | **[rosenbrock](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/#function-rosenbrock)**(double & loglike)<br>See [https://en.wikipedia.org/wiki/Rosenbrock_function](https://en.wikipedia.org/wiki/Rosenbrock_function).  |
-| void | **[himmelblau](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/#function-himmelblau)**(double & loglike)<br>See [https://en.wikipedia.org/wiki/Himmelblau%27s_function](https://en.wikipedia.org/wiki/Himmelblau%27s_function).  |
-| void | **[mccormick](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/#function-mccormick)**(double & loglike) |
-| void | **[ackley](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/#function-ackley)**(double & loglike)<br>See [https://en.wikipedia.org/wiki/Ackley_function](https://en.wikipedia.org/wiki/Ackley_function).  |
-| void | **[eggbox](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/#function-eggbox)**(double & loglike)<br>Test problem 2 from [https://arxiv.org/abs/1306.2144](https://arxiv.org/abs/1306.2144).  |
-| void | **[rastrigin](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/#function-rastrigin)**(double & loglike)<br>See [https://en.wikipedia.org/wiki/Rastrigin_function](https://en.wikipedia.org/wiki/Rastrigin_function).  |
-| void | **[beale](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/#function-beale)**(double & loglike) |
-| double | **[logaddexp](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/#function-logaddexp)**(double x, double y) |
-| void | **[shells](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/#function-shells)**(double & loglike)<br>Test problem 1 from [https://arxiv.org/abs/1306.2144](https://arxiv.org/abs/1306.2144).  |
-| void | **[styblinski_tang](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/#function-styblinski-tang)**(double & loglike) |
-| void | **[easom](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/#function-easom)**(double & loglike) |
-| void | **[tf1](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/#function-tf1)**(double & loglike)<br>Analytic function 1 from [https://arxiv.org/abs/2101.04525](https://arxiv.org/abs/2101.04525).  |
-| void | **[tf2](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/#function-tf2)**(double & loglike)<br>Analytic function 2 from [https://arxiv.org/abs/2101.04525](https://arxiv.org/abs/2101.04525).  |
-| void | **[tf3](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/#function-tf3)**(double & loglike)<br>Analytic function 3 from [https://arxiv.org/abs/2101.04525](https://arxiv.org/abs/2101.04525).  |
-| void | **[tf4](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/#function-tf4)**(double & loglike)<br>Analytic function 4 from [https://arxiv.org/abs/2101.04525](https://arxiv.org/abs/2101.04525).  |
+| std::vector< double > | **[get_arguments](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1objectivesbit/#function-get-arguments)**([map](/documentation/code/darkbit_developmentclasses/classgambit_1_1models_1_1safe__param__map/) param) |
+| void | **[gaussian](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1objectivesbit/#function-gaussian)**(double & loglike) |
+| double | **[rosenbrock](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1objectivesbit/#function-rosenbrock)**(double x, double y) |
+| double | **[rosenbrock](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1objectivesbit/#function-rosenbrock)**(std::vector< double > x) |
+| void | **[rosenbrock](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1objectivesbit/#function-rosenbrock)**(double & loglike)<br>See [https://en.wikipedia.org/wiki/Rosenbrock_function](https://en.wikipedia.org/wiki/Rosenbrock_function).  |
+| void | **[himmelblau](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1objectivesbit/#function-himmelblau)**(double & loglike)<br>See [https://en.wikipedia.org/wiki/Himmelblau%27s_function](https://en.wikipedia.org/wiki/Himmelblau%27s_function).  |
+| void | **[mccormick](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1objectivesbit/#function-mccormick)**(double & loglike) |
+| void | **[ackley](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1objectivesbit/#function-ackley)**(double & loglike)<br>See [https://en.wikipedia.org/wiki/Ackley_function](https://en.wikipedia.org/wiki/Ackley_function).  |
+| void | **[eggbox](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1objectivesbit/#function-eggbox)**(double & loglike)<br>Test problem 2 from [https://arxiv.org/abs/1306.2144](https://arxiv.org/abs/1306.2144).  |
+| void | **[rastrigin](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1objectivesbit/#function-rastrigin)**(double & loglike)<br>See [https://en.wikipedia.org/wiki/Rastrigin_function](https://en.wikipedia.org/wiki/Rastrigin_function).  |
+| void | **[beale](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1objectivesbit/#function-beale)**(double & loglike) |
+| double | **[logaddexp](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1objectivesbit/#function-logaddexp)**(double x, double y) |
+| void | **[shells](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1objectivesbit/#function-shells)**(double & loglike)<br>Test problem 1 from [https://arxiv.org/abs/1306.2144](https://arxiv.org/abs/1306.2144).  |
+| void | **[styblinski_tang](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1objectivesbit/#function-styblinski-tang)**(double & loglike) |
+| void | **[easom](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1objectivesbit/#function-easom)**(double & loglike) |
+| void | **[tf1](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1objectivesbit/#function-tf1)**(double & loglike)<br>Analytic function 1 from [https://arxiv.org/abs/2101.04525](https://arxiv.org/abs/2101.04525).  |
+| void | **[tf2](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1objectivesbit/#function-tf2)**(double & loglike)<br>Analytic function 2 from [https://arxiv.org/abs/2101.04525](https://arxiv.org/abs/2101.04525).  |
+| void | **[tf3](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1objectivesbit/#function-tf3)**(double & loglike)<br>Analytic function 3 from [https://arxiv.org/abs/2101.04525](https://arxiv.org/abs/2101.04525).  |
+| void | **[tf4](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1objectivesbit/#function-tf4)**(double & loglike)<br>Analytic function 4 from [https://arxiv.org/abs/2101.04525](https://arxiv.org/abs/2101.04525).  |
 
 ## Types Documentation
 
@@ -243,4 +243,4 @@ Analytic function 4 from [https://arxiv.org/abs/2101.04525](https://arxiv.org/ab
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:23 +0000
+Updated on 2022-08-01 at 17:31:42 +0000

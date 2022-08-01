@@ -16,26 +16,26 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Gambit::MultiNest::LogLikeWrapper](/documentation/code/classes/classgambit_1_1multinest_1_1loglikewrapper/)** <br>Class to connect multinest log-likelihood function and ScannerBit likelihood function.  |
+| class | **[Gambit::MultiNest::LogLikeWrapper](/documentation/code/darkbit_developmentclasses/classgambit_1_1multinest_1_1loglikewrapper/)** <br>Class to connect multinest log-likelihood function and ScannerBit likelihood function.  |
 
 ## Types
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef [Gambit::Scanner::like_ptr](/documentation/code/classes/classgambit_1_1scanner_1_1like__ptr/) | **[scanPtr](/documentation/code/namespaces/namespacegambit_1_1multinest/#typedef-scanptr)** <br>Typedef for the ScannerBit pointer to the external loglikelihood function.  |
+| typedef [Gambit::Scanner::like_ptr](/documentation/code/darkbit_developmentclasses/classgambit_1_1scanner_1_1like__ptr/) | **[scanPtr](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1multinest/#typedef-scanptr)** <br>Typedef for the ScannerBit pointer to the external loglikelihood function.  |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[callback_loglike](/documentation/code/namespaces/namespacegambit_1_1multinest/#function-callback-loglike)**(double * Cube, int ndim, int npars, void * )<br>Plain-vanilla C-functions to pass to Multinest for the callbacks.  |
-| void | **[callback_dumper](/documentation/code/namespaces/namespacegambit_1_1multinest/#function-callback-dumper)**(int nSamples, int nlive, int nPar, double * physLive, double * posterior, double * paramConstr, double maxLogLike, double logZ, double logZerr, void * ) |
+| double | **[callback_loglike](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1multinest/#function-callback-loglike)**(double * Cube, int ndim, int npars, void * )<br>Plain-vanilla C-functions to pass to Multinest for the callbacks.  |
+| void | **[callback_dumper](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1multinest/#function-callback-dumper)**(int nSamples, int nlive, int nPar, double * physLive, double * posterior, double * paramConstr, double maxLogLike, double logZ, double logZerr, void * ) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| [LogLikeWrapper](/documentation/code/classes/classgambit_1_1multinest_1_1loglikewrapper/) * | **[global_loglike_object](/documentation/code/namespaces/namespacegambit_1_1multinest/#variable-global-loglike-object)** <br>Global pointer to loglikelihood wrapper object, for use in the MultiNest callback functions.  |
+| [LogLikeWrapper](/documentation/code/darkbit_developmentclasses/classgambit_1_1multinest_1_1loglikewrapper/) * | **[global_loglike_object](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1multinest/#variable-global-loglike-object)** <br>Global pointer to loglikelihood wrapper object, for use in the MultiNest callback functions.  |
 
 ## Types Documentation
 
@@ -100,4 +100,4 @@ Global pointer to loglikelihood wrapper object, for use in the MultiNest callbac
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:23 +0000
+Updated on 2022-08-01 at 17:31:42 +0000

@@ -16,7 +16,7 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[FJNS::PseudoJet](/documentation/code/namespaces/namespacefjns_1_1pseudojet/)**  |
+| **[FJNS::PseudoJet](/documentation/code/gambit_sphinxnamespaces/namespacefjns_1_1pseudojet/)**  |
 
 
 
@@ -25,4 +25,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:34 +0000
+Updated on 2022-08-01 at 17:31:48 +0000

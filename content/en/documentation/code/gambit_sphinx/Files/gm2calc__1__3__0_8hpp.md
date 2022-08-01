@@ -16,10 +16,10 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::Backends](/documentation/code/namespaces/namespacegambit_1_1backends/)**  |
-| **[Gambit::Backends::gm2calc_1_3_0](/documentation/code/namespaces/namespacegambit_1_1backends_1_1gm2calc__1__3__0/)**  |
-| **[Gambit::Backends::gm2calc_1_3_0::gm2calc](/documentation/code/namespaces/namespacegambit_1_1backends_1_1gm2calc__1__3__0_1_1gm2calc/)**  |
+| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::Backends](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1backends/)**  |
+| **[Gambit::Backends::gm2calc_1_3_0](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1backends_1_1gm2calc__1__3__0/)**  |
+| **[Gambit::Backends::gm2calc_1_3_0::gm2calc](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1backends_1_1gm2calc__1__3__0_1_1gm2calc/)**  |
 
 
 
@@ -113,4 +113,4 @@ BE_INI_FUNCTION{} END_BE_INI_FUNCTION
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:37 +0000
+Updated on 2022-08-01 at 17:31:50 +0000

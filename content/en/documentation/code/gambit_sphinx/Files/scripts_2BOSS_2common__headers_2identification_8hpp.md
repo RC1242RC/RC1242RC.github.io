@@ -16,12 +16,12 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[BACKENDNAME](/documentation/code/files/scripts_2boss_2common__headers_2identification_8hpp/#define-backendname)**  |
-|  | **[BACKENDLANG](/documentation/code/files/scripts_2boss_2common__headers_2identification_8hpp/#define-backendlang)**  |
-|  | **[VERSION](/documentation/code/files/scripts_2boss_2common__headers_2identification_8hpp/#define-version)**  |
-|  | **[SAFE_VERSION](/documentation/code/files/scripts_2boss_2common__headers_2identification_8hpp/#define-safe-version)**  |
-|  | **[REFERENCE](/documentation/code/files/scripts_2boss_2common__headers_2identification_8hpp/#define-reference)**  |
-|  | **[DO_CLASSLOADING](/documentation/code/files/scripts_2boss_2common__headers_2identification_8hpp/#define-do-classloading)**  |
+|  | **[BACKENDNAME](/documentation/code/gambit_sphinxfiles/scripts_2boss_2common__headers_2identification_8hpp/#define-backendname)**  |
+|  | **[BACKENDLANG](/documentation/code/gambit_sphinxfiles/scripts_2boss_2common__headers_2identification_8hpp/#define-backendlang)**  |
+|  | **[VERSION](/documentation/code/gambit_sphinxfiles/scripts_2boss_2common__headers_2identification_8hpp/#define-version)**  |
+|  | **[SAFE_VERSION](/documentation/code/gambit_sphinxfiles/scripts_2boss_2common__headers_2identification_8hpp/#define-safe-version)**  |
+|  | **[REFERENCE](/documentation/code/gambit_sphinxfiles/scripts_2boss_2common__headers_2identification_8hpp/#define-reference)**  |
+|  | **[DO_CLASSLOADING](/documentation/code/gambit_sphinxfiles/scripts_2boss_2common__headers_2identification_8hpp/#define-do-classloading)**  |
 
 
 
@@ -90,4 +90,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:37 +0000
+Updated on 2022-08-01 at 17:31:51 +0000

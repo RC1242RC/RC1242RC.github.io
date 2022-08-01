@@ -16,15 +16,15 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::SpecBit](/documentation/code/namespaces/namespacegambit_1_1specbit/)**  |
+| **[Gambit](/documentation/code/darkbit_developmentnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::SpecBit](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1specbit/)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[addtomap_EL](/documentation/code/files/qedqcdwrapper_8cpp/#define-addtomap-el)**(r, PRODUCT) <br>TODO: wrap using BOSS at some point, i.e. get this from FlexibleSUSY or SoftSUSY.  |
-|  | **[addtomap](/documentation/code/files/qedqcdwrapper_8cpp/#define-addtomap)**(__KEYS, FPTR)  |
+|  | **[addtomap_EL](/documentation/code/darkbit_developmentfiles/qedqcdwrapper_8cpp/#define-addtomap-el)**(r, PRODUCT) <br>TODO: wrap using BOSS at some point, i.e. get this from FlexibleSUSY or SoftSUSY.  |
+|  | **[addtomap](/documentation/code/darkbit_developmentfiles/qedqcdwrapper_8cpp/#define-addtomap)**(__KEYS, FPTR)  |
 
 ## Detailed Description
 
@@ -33,7 +33,7 @@ description: "[No description available]"
 
 **Date**: 2015 Mar
 
-This class is used to wrap the QedQcd object used by SoftSUSY and FlexibleSUSY in a [Gambit](/documentation/code/namespaces/namespacegambit/) SubSpectrum object. This is to enable access to the parameters of the SM defined as a low-energy effective theory (as opposed to correspending information defined in a UV model). Parameters defined this way are often used as input to a physics calculator.
+This class is used to wrap the QedQcd object used by SoftSUSY and FlexibleSUSY in a [Gambit](/documentation/code/darkbit_developmentnamespaces/namespacegambit/) SubSpectrum object. This is to enable access to the parameters of the SM defined as a low-energy effective theory (as opposed to correspending information defined in a UV model). Parameters defined this way are often used as input to a physics calculator.
 
 
 
@@ -349,4 +349,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:23 +0000
+Updated on 2022-08-01 at 17:31:43 +0000

@@ -16,15 +16,15 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::Backends](/documentation/code/namespaces/namespacegambit_1_1backends/)**  |
+| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::Backends](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1backends/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Gambit::Backends::instance_helper](/documentation/code/classes/classgambit_1_1backends_1_1instance__helper/)**  |
-| class | **[Gambit::Backends::instance_helper< void >](/documentation/code/classes/classgambit_1_1backends_1_1instance__helper_3_01void_01_4/)**  |
+| class | **[Gambit::Backends::instance_helper](/documentation/code/gambit_sphinxclasses/classgambit_1_1backends_1_1instance__helper/)**  |
+| class | **[Gambit::Backends::instance_helper< void >](/documentation/code/gambit_sphinxclasses/classgambit_1_1backends_1_1instance__helper_3_01void_01_4/)**  |
 
 ## Detailed Description
 
@@ -149,4 +149,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:37 +0000
+Updated on 2022-08-01 at 17:31:50 +0000

@@ -16,7 +16,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| def | **[main](/documentation/code/namespaces/namespaceboss/#function-main)**() |
+| def | **[main](/documentation/code/darkbit_developmentnamespaces/namespaceboss/#function-main)**() |
 
 
 ## Functions Documentation
@@ -34,4 +34,4 @@ def main()
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:23 +0000
+Updated on 2022-08-01 at 17:31:42 +0000

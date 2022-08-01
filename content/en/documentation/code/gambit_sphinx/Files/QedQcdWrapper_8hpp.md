@@ -16,15 +16,15 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::SpecBit](/documentation/code/namespaces/namespacegambit_1_1specbit/)**  |
+| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::SpecBit](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1specbit/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[Gambit::SpecTraits< SpecBit::QedQcdWrapper >](/documentation/code/classes/structgambit_1_1spectraits_3_01specbit_1_1qedqcdwrapper_01_4/)** <br>Specialisation of traits class needed to inform base spectrum class of the Model and Input types.  |
-| class | **[Gambit::SpecBit::QedQcdWrapper](/documentation/code/classes/classgambit_1_1specbit_1_1qedqcdwrapper/)**  |
+| struct | **[Gambit::SpecTraits< SpecBit::QedQcdWrapper >](/documentation/code/gambit_sphinxclasses/structgambit_1_1spectraits_3_01specbit_1_1qedqcdwrapper_01_4/)** <br>Specialisation of traits class needed to inform base spectrum class of the Model and Input types.  |
+| class | **[Gambit::SpecBit::QedQcdWrapper](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1qedqcdwrapper/)**  |
 
 ## Detailed Description
 
@@ -33,7 +33,7 @@ description: "[No description available]"
 
 **Date**: 2015 Mar
 
-This class is used to wrap the QedQcd object used by SoftSUSY and FlexibleSUSY in a [Gambit](/documentation/code/namespaces/namespacegambit/) SubSpectrum object. This is to enable access to the parameters of the SM defined as a low-energy effective theory (as opposed to correspending information defined in a UV model). Parameters defined this way are often used as input to a physics calculator.
+This class is used to wrap the QedQcd object used by SoftSUSY and FlexibleSUSY in a [Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/) SubSpectrum object. This is to enable access to the parameters of the SM defined as a low-energy effective theory (as opposed to correspending information defined in a UV model). Parameters defined this way are often used as input to a physics calculator.
 
 This is one of the simplest wrappers possible, so it is useful as a guide for designing other SubSpectrum wrappers. To assist this, code is documented with the following markings to distinguish pieces that are essential for all wrappers from those which are specific to this wrapper: /***/ - Required by all wrappers. /*O*/ - Optional (e.g. unused maps fillers can be left undeclared) /*P*/ - Required if map fillers are protected, which is sensible.
 
@@ -136,4 +136,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:34 +0000
+Updated on 2022-08-01 at 17:31:48 +0000

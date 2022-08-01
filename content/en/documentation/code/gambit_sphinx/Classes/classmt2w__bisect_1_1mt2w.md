@@ -18,17 +18,17 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[mt2w](/documentation/code/classes/classmt2w__bisect_1_1mt2w/#function-mt2w)**(double upper_bound =500.0, double error_value =499.0, double scan_step =0.5) |
-| void | **[set_momenta](/documentation/code/classes/classmt2w__bisect_1_1mt2w/#function-set-momenta)**(double * pl0, double * pb10, double * pb20, double * pmiss0) |
-| void | **[set_momenta](/documentation/code/classes/classmt2w__bisect_1_1mt2w/#function-set-momenta)**(double El, double plx, double ply, double plz, double Eb1, double pb1x, double pb1y, double pb1z, double Eb2, double pb2x, double pb2y, double pb2z, double pmissx, double pmissy) |
-| double | **[get_mt2w](/documentation/code/classes/classmt2w__bisect_1_1mt2w/#function-get-mt2w)**() |
-| void | **[print](/documentation/code/classes/classmt2w__bisect_1_1mt2w/#function-print)**() |
+| | **[mt2w](/documentation/code/gambit_sphinxclasses/classmt2w__bisect_1_1mt2w/#function-mt2w)**(double upper_bound =500.0, double error_value =499.0, double scan_step =0.5) |
+| void | **[set_momenta](/documentation/code/gambit_sphinxclasses/classmt2w__bisect_1_1mt2w/#function-set-momenta)**(double * pl0, double * pb10, double * pb20, double * pmiss0) |
+| void | **[set_momenta](/documentation/code/gambit_sphinxclasses/classmt2w__bisect_1_1mt2w/#function-set-momenta)**(double El, double plx, double ply, double plz, double Eb1, double pb1x, double pb1y, double pb1z, double Eb2, double pb2x, double pb2y, double pb2z, double pmissx, double pmissy) |
+| double | **[get_mt2w](/documentation/code/gambit_sphinxclasses/classmt2w__bisect_1_1mt2w/#function-get-mt2w)**() |
+| void | **[print](/documentation/code/gambit_sphinxclasses/classmt2w__bisect_1_1mt2w/#function-print)**() |
 
 ## Protected Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| void | **[mt2w_bisect](/documentation/code/classes/classmt2w__bisect_1_1mt2w/#function-mt2w-bisect)**() |
+| void | **[mt2w_bisect](/documentation/code/gambit_sphinxclasses/classmt2w__bisect_1_1mt2w/#function-mt2w-bisect)**() |
 
 ## Public Functions Documentation
 
@@ -102,4 +102,4 @@ void mt2w_bisect()
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:32 +0000
+Updated on 2022-08-01 at 17:31:46 +0000

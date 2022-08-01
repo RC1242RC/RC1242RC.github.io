@@ -16,30 +16,30 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| string | **[castxml_cc_id](/documentation/code/namespaces/namespaceconfigs_1_1example__1__234/#variable-castxml-cc-id)**  |
-| string | **[castxml_cc](/documentation/code/namespaces/namespaceconfigs_1_1example__1__234/#variable-castxml-cc)**  |
-| string | **[castxml_cc_opt](/documentation/code/namespaces/namespaceconfigs_1_1example__1__234/#variable-castxml-cc-opt)**  |
-| string | **[gambit_backend_name](/documentation/code/namespaces/namespaceconfigs_1_1example__1__234/#variable-gambit-backend-name)**  |
-| string | **[gambit_backend_version](/documentation/code/namespaces/namespaceconfigs_1_1example__1__234/#variable-gambit-backend-version)**  |
-| string | **[gambit_backend_reference](/documentation/code/namespaces/namespaceconfigs_1_1example__1__234/#variable-gambit-backend-reference)**  |
-| string | **[gambit_base_namespace](/documentation/code/namespaces/namespaceconfigs_1_1example__1__234/#variable-gambit-base-namespace)**  |
-| list | **[input_files](/documentation/code/namespaces/namespaceconfigs_1_1example__1__234/#variable-input-files)**  |
-| list | **[include_paths](/documentation/code/namespaces/namespaceconfigs_1_1example__1__234/#variable-include-paths)**  |
-| list | **[base_paths](/documentation/code/namespaces/namespaceconfigs_1_1example__1__234/#variable-base-paths)**  |
-| string | **[header_files_to](/documentation/code/namespaces/namespaceconfigs_1_1example__1__234/#variable-header-files-to)**  |
-| string | **[src_files_to](/documentation/code/namespaces/namespaceconfigs_1_1example__1__234/#variable-src-files-to)**  |
-| list | **[load_classes](/documentation/code/namespaces/namespaceconfigs_1_1example__1__234/#variable-load-classes)**  |
-| list | **[load_functions](/documentation/code/namespaces/namespaceconfigs_1_1example__1__234/#variable-load-functions)**  |
-| list | **[ditch](/documentation/code/namespaces/namespaceconfigs_1_1example__1__234/#variable-ditch)**  |
-| bool | **[auto_detect_stdlib_paths](/documentation/code/namespaces/namespaceconfigs_1_1example__1__234/#variable-auto-detect-stdlib-paths)**  |
-| bool | **[load_parent_classes](/documentation/code/namespaces/namespaceconfigs_1_1example__1__234/#variable-load-parent-classes)**  |
-| bool | **[wrap_inherited_members](/documentation/code/namespaces/namespaceconfigs_1_1example__1__234/#variable-wrap-inherited-members)**  |
-| string | **[header_extension](/documentation/code/namespaces/namespaceconfigs_1_1example__1__234/#variable-header-extension)**  |
-| string | **[source_extension](/documentation/code/namespaces/namespaceconfigs_1_1example__1__234/#variable-source-extension)**  |
-| int | **[indent](/documentation/code/namespaces/namespaceconfigs_1_1example__1__234/#variable-indent)**  |
-| dictionary | **[known_classes](/documentation/code/namespaces/namespaceconfigs_1_1example__1__234/#variable-known-classes)**  |
-| list | **[pragmas_begin](/documentation/code/namespaces/namespaceconfigs_1_1example__1__234/#variable-pragmas-begin)**  |
-| list | **[pragmas_end](/documentation/code/namespaces/namespaceconfigs_1_1example__1__234/#variable-pragmas-end)**  |
+| string | **[castxml_cc_id](/documentation/code/gambit_sphinxnamespaces/namespaceconfigs_1_1example__1__234/#variable-castxml-cc-id)**  |
+| string | **[castxml_cc](/documentation/code/gambit_sphinxnamespaces/namespaceconfigs_1_1example__1__234/#variable-castxml-cc)**  |
+| string | **[castxml_cc_opt](/documentation/code/gambit_sphinxnamespaces/namespaceconfigs_1_1example__1__234/#variable-castxml-cc-opt)**  |
+| string | **[gambit_backend_name](/documentation/code/gambit_sphinxnamespaces/namespaceconfigs_1_1example__1__234/#variable-gambit-backend-name)**  |
+| string | **[gambit_backend_version](/documentation/code/gambit_sphinxnamespaces/namespaceconfigs_1_1example__1__234/#variable-gambit-backend-version)**  |
+| string | **[gambit_backend_reference](/documentation/code/gambit_sphinxnamespaces/namespaceconfigs_1_1example__1__234/#variable-gambit-backend-reference)**  |
+| string | **[gambit_base_namespace](/documentation/code/gambit_sphinxnamespaces/namespaceconfigs_1_1example__1__234/#variable-gambit-base-namespace)**  |
+| list | **[input_files](/documentation/code/gambit_sphinxnamespaces/namespaceconfigs_1_1example__1__234/#variable-input-files)**  |
+| list | **[include_paths](/documentation/code/gambit_sphinxnamespaces/namespaceconfigs_1_1example__1__234/#variable-include-paths)**  |
+| list | **[base_paths](/documentation/code/gambit_sphinxnamespaces/namespaceconfigs_1_1example__1__234/#variable-base-paths)**  |
+| string | **[header_files_to](/documentation/code/gambit_sphinxnamespaces/namespaceconfigs_1_1example__1__234/#variable-header-files-to)**  |
+| string | **[src_files_to](/documentation/code/gambit_sphinxnamespaces/namespaceconfigs_1_1example__1__234/#variable-src-files-to)**  |
+| list | **[load_classes](/documentation/code/gambit_sphinxnamespaces/namespaceconfigs_1_1example__1__234/#variable-load-classes)**  |
+| list | **[load_functions](/documentation/code/gambit_sphinxnamespaces/namespaceconfigs_1_1example__1__234/#variable-load-functions)**  |
+| list | **[ditch](/documentation/code/gambit_sphinxnamespaces/namespaceconfigs_1_1example__1__234/#variable-ditch)**  |
+| bool | **[auto_detect_stdlib_paths](/documentation/code/gambit_sphinxnamespaces/namespaceconfigs_1_1example__1__234/#variable-auto-detect-stdlib-paths)**  |
+| bool | **[load_parent_classes](/documentation/code/gambit_sphinxnamespaces/namespaceconfigs_1_1example__1__234/#variable-load-parent-classes)**  |
+| bool | **[wrap_inherited_members](/documentation/code/gambit_sphinxnamespaces/namespaceconfigs_1_1example__1__234/#variable-wrap-inherited-members)**  |
+| string | **[header_extension](/documentation/code/gambit_sphinxnamespaces/namespaceconfigs_1_1example__1__234/#variable-header-extension)**  |
+| string | **[source_extension](/documentation/code/gambit_sphinxnamespaces/namespaceconfigs_1_1example__1__234/#variable-source-extension)**  |
+| int | **[indent](/documentation/code/gambit_sphinxnamespaces/namespaceconfigs_1_1example__1__234/#variable-indent)**  |
+| dictionary | **[known_classes](/documentation/code/gambit_sphinxnamespaces/namespaceconfigs_1_1example__1__234/#variable-known-classes)**  |
+| list | **[pragmas_begin](/documentation/code/gambit_sphinxnamespaces/namespaceconfigs_1_1example__1__234/#variable-pragmas-begin)**  |
+| list | **[pragmas_end](/documentation/code/gambit_sphinxnamespaces/namespaceconfigs_1_1example__1__234/#variable-pragmas-end)**  |
 
 
 
@@ -232,4 +232,4 @@ list pragmas_end =  [];
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:34 +0000
+Updated on 2022-08-01 at 17:31:48 +0000

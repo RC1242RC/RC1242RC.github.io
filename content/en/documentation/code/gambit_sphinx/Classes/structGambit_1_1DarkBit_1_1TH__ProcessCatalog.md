@@ -20,18 +20,18 @@ A container holding all annihilation and decay initial states relevant for DarkB
 
 |                | Name           |
 | -------------- | -------------- |
-| [TH_Process](/documentation/code/classes/structgambit_1_1darkbit_1_1th__process/) | **[getProcess](/documentation/code/classes/structgambit_1_1darkbit_1_1th__processcatalog/#function-getprocess)**(str id1, str id2 ="") const<br>Retrieve a specific process from the catalog.  |
-| const [TH_Process](/documentation/code/classes/structgambit_1_1darkbit_1_1th__process/) * | **[find](/documentation/code/classes/structgambit_1_1darkbit_1_1th__processcatalog/#function-find)**(str id1, str id2 ="") const<br>Check for a specific process in the catalog.  |
-| [TH_ParticleProperty](/documentation/code/classes/structgambit_1_1darkbit_1_1th__particleproperty/) | **[getParticleProperty](/documentation/code/classes/structgambit_1_1darkbit_1_1th__processcatalog/#function-getparticleproperty)**(str id) const<br>Retrieve properties of a given particle involved in one or more processes in this catalog.  |
-| bool | **[hasParticleProperty](/documentation/code/classes/structgambit_1_1darkbit_1_1th__processcatalog/#function-hasparticleproperty)**(str id) const<br>Check whether particle is in particle properties catalog.  |
-| void | **[validate](/documentation/code/classes/structgambit_1_1darkbit_1_1th__processcatalog/#function-validate)**()<br>Validate kinematics and entries.  |
+| [TH_Process](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1th__process/) | **[getProcess](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1th__processcatalog/#function-getprocess)**(str id1, str id2 ="") const<br>Retrieve a specific process from the catalog.  |
+| const [TH_Process](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1th__process/) * | **[find](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1th__processcatalog/#function-find)**(str id1, str id2 ="") const<br>Check for a specific process in the catalog.  |
+| [TH_ParticleProperty](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1th__particleproperty/) | **[getParticleProperty](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1th__processcatalog/#function-getparticleproperty)**(str id) const<br>Retrieve properties of a given particle involved in one or more processes in this catalog.  |
+| bool | **[hasParticleProperty](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1th__processcatalog/#function-hasparticleproperty)**(str id) const<br>Check whether particle is in particle properties catalog.  |
+| void | **[validate](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1th__processcatalog/#function-validate)**()<br>Validate kinematics and entries.  |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| std::vector< [TH_Process](/documentation/code/classes/structgambit_1_1darkbit_1_1th__process/) > | **[processList](/documentation/code/classes/structgambit_1_1darkbit_1_1th__processcatalog/#variable-processlist)** <br>Vector of all processes in this catalog.  |
-| std::map< std::string, [TH_ParticleProperty](/documentation/code/classes/structgambit_1_1darkbit_1_1th__particleproperty/) > | **[particleProperties](/documentation/code/classes/structgambit_1_1darkbit_1_1th__processcatalog/#variable-particleproperties)** <br>Map from particles involved in the processes of this catalog, to their properties.  |
+| std::vector< [TH_Process](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1th__process/) > | **[processList](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1th__processcatalog/#variable-processlist)** <br>Vector of all processes in this catalog.  |
+| std::map< std::string, [TH_ParticleProperty](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1th__particleproperty/) > | **[particleProperties](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1th__processcatalog/#variable-particleproperties)** <br>Map from particles involved in the processes of this catalog, to their properties.  |
 
 ## Public Functions Documentation
 
@@ -105,4 +105,4 @@ Map from particles involved in the processes of this catalog, to their propertie
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:33 +0000
+Updated on 2022-08-01 at 17:31:47 +0000

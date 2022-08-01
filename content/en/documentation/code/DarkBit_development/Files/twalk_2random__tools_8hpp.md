@@ -16,37 +16,37 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Cholesky](/documentation/code/classes/classcholesky/)**  |
-| class | **[Ran_old](/documentation/code/classes/classran__old/)**  |
-| class | **[Ran](/documentation/code/classes/classran/)**  |
-| class | **[ExponDev](/documentation/code/classes/classexpondev/)**  |
-| class | **[NormalDev](/documentation/code/classes/classnormaldev/)**  |
-| class | **[BasicDevs](/documentation/code/classes/classbasicdevs/)**  |
-| class | **[MultiNormalDev](/documentation/code/classes/classmultinormaldev/)**  |
-| class | **[AdvanceDevs](/documentation/code/classes/classadvancedevs/)**  |
-| class | **[RandomPlane](/documentation/code/classes/classrandomplane/)**  |
-| class | **[RandomBasis](/documentation/code/classes/classrandombasis/)**  |
-| class | **[TransformRandomBasis](/documentation/code/classes/classtransformrandombasis/)**  |
-| class | **[MultiNormDev](/documentation/code/classes/classmultinormdev/)**  |
+| class | **[Cholesky](/documentation/code/darkbit_developmentclasses/classcholesky/)**  |
+| class | **[Ran_old](/documentation/code/darkbit_developmentclasses/classran__old/)**  |
+| class | **[Ran](/documentation/code/darkbit_developmentclasses/classran/)**  |
+| class | **[ExponDev](/documentation/code/darkbit_developmentclasses/classexpondev/)**  |
+| class | **[NormalDev](/documentation/code/darkbit_developmentclasses/classnormaldev/)**  |
+| class | **[BasicDevs](/documentation/code/darkbit_developmentclasses/classbasicdevs/)**  |
+| class | **[MultiNormalDev](/documentation/code/darkbit_developmentclasses/classmultinormaldev/)**  |
+| class | **[AdvanceDevs](/documentation/code/darkbit_developmentclasses/classadvancedevs/)**  |
+| class | **[RandomPlane](/documentation/code/darkbit_developmentclasses/classrandomplane/)**  |
+| class | **[RandomBasis](/documentation/code/darkbit_developmentclasses/classrandombasis/)**  |
+| class | **[TransformRandomBasis](/documentation/code/darkbit_developmentclasses/classtransformrandombasis/)**  |
+| class | **[MultiNormDev](/documentation/code/darkbit_developmentclasses/classmultinormdev/)**  |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| template <typename T \> <br>T * | **[matrix](/documentation/code/files/twalk_2random__tools_8hpp/#function-matrix)**(const int xN) |
-| template <typename T \> <br>T ** | **[matrix](/documentation/code/files/twalk_2random__tools_8hpp/#function-matrix)**(const int xN, const int yN) |
-| template <typename T \> <br>T *** | **[matrix](/documentation/code/files/twalk_2random__tools_8hpp/#function-matrix)**(const int xN, const int yN, const int zN) |
-| template <typename T \> <br>T * | **[matrix](/documentation/code/files/twalk_2random__tools_8hpp/#function-matrix)**(const int xN, T in) |
-| template <typename T \> <br>T ** | **[matrix](/documentation/code/files/twalk_2random__tools_8hpp/#function-matrix)**(const int xN, const int yN, T in) |
-| template <typename T \> <br>T *** | **[matrix](/documentation/code/files/twalk_2random__tools_8hpp/#function-matrix)**(const int xN, const int yN, const int zN, T in) |
-| template <typename T \> <br>T * | **[matrix](/documentation/code/files/twalk_2random__tools_8hpp/#function-matrix)**(const int xN, T * in) |
-| template <typename T \> <br>T ** | **[matrix](/documentation/code/files/twalk_2random__tools_8hpp/#function-matrix)**(const int xN, const int yN, T ** in) |
-| template <typename T \> <br>T *** | **[matrix](/documentation/code/files/twalk_2random__tools_8hpp/#function-matrix)**(const int xN, const int yN, const int zN, T *** in) |
-| template <typename T \> <br>void | **[del](/documentation/code/files/twalk_2random__tools_8hpp/#function-del)**(T * temp) |
-| template <typename T \> <br>void | **[del](/documentation/code/files/twalk_2random__tools_8hpp/#function-del)**(T ** temp, int xN) |
-| template <typename T \> <br>void | **[del](/documentation/code/files/twalk_2random__tools_8hpp/#function-del)**(T *** temp, int xN, int yN) |
-| template <class T \> <br>const T | **[SQ](/documentation/code/files/twalk_2random__tools_8hpp/#function-sq)**(const T a) |
-| template <class T \> <br>const T | **[SQR](/documentation/code/files/twalk_2random__tools_8hpp/#function-sqr)**(const T a) |
+| template <typename T \> <br>T * | **[matrix](/documentation/code/darkbit_developmentfiles/twalk_2random__tools_8hpp/#function-matrix)**(const int xN) |
+| template <typename T \> <br>T ** | **[matrix](/documentation/code/darkbit_developmentfiles/twalk_2random__tools_8hpp/#function-matrix)**(const int xN, const int yN) |
+| template <typename T \> <br>T *** | **[matrix](/documentation/code/darkbit_developmentfiles/twalk_2random__tools_8hpp/#function-matrix)**(const int xN, const int yN, const int zN) |
+| template <typename T \> <br>T * | **[matrix](/documentation/code/darkbit_developmentfiles/twalk_2random__tools_8hpp/#function-matrix)**(const int xN, T in) |
+| template <typename T \> <br>T ** | **[matrix](/documentation/code/darkbit_developmentfiles/twalk_2random__tools_8hpp/#function-matrix)**(const int xN, const int yN, T in) |
+| template <typename T \> <br>T *** | **[matrix](/documentation/code/darkbit_developmentfiles/twalk_2random__tools_8hpp/#function-matrix)**(const int xN, const int yN, const int zN, T in) |
+| template <typename T \> <br>T * | **[matrix](/documentation/code/darkbit_developmentfiles/twalk_2random__tools_8hpp/#function-matrix)**(const int xN, T * in) |
+| template <typename T \> <br>T ** | **[matrix](/documentation/code/darkbit_developmentfiles/twalk_2random__tools_8hpp/#function-matrix)**(const int xN, const int yN, T ** in) |
+| template <typename T \> <br>T *** | **[matrix](/documentation/code/darkbit_developmentfiles/twalk_2random__tools_8hpp/#function-matrix)**(const int xN, const int yN, const int zN, T *** in) |
+| template <typename T \> <br>void | **[del](/documentation/code/darkbit_developmentfiles/twalk_2random__tools_8hpp/#function-del)**(T * temp) |
+| template <typename T \> <br>void | **[del](/documentation/code/darkbit_developmentfiles/twalk_2random__tools_8hpp/#function-del)**(T ** temp, int xN) |
+| template <typename T \> <br>void | **[del](/documentation/code/darkbit_developmentfiles/twalk_2random__tools_8hpp/#function-del)**(T *** temp, int xN, int yN) |
+| template <class T \> <br>const T | **[SQ](/documentation/code/darkbit_developmentfiles/twalk_2random__tools_8hpp/#function-sq)**(const T a) |
+| template <class T \> <br>const T | **[SQR](/documentation/code/darkbit_developmentfiles/twalk_2random__tools_8hpp/#function-sqr)**(const T a) |
 
 
 ## Functions Documentation
@@ -1622,4 +1622,4 @@ class MultiNormDev : public RandomBasis, public Cholesky
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:23 +0000
+Updated on 2022-08-01 at 17:31:43 +0000

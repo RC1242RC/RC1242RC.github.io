@@ -16,29 +16,29 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[UNKNOWN](/documentation/code/files/interoperability__macros_8hpp/#define-unknown)** <br>If not defined already, define the backend languages.  |
-|  | **[CC_LANG](/documentation/code/files/interoperability__macros_8hpp/#define-cc-lang)**  |
-|  | **[CXX_LANG](/documentation/code/files/interoperability__macros_8hpp/#define-cxx-lang)**  |
-|  | **[FORTRAN_LANG](/documentation/code/files/interoperability__macros_8hpp/#define-fortran-lang)**  |
-|  | **[Fortran_LANG](/documentation/code/files/interoperability__macros_8hpp/#define-fortran-lang)**  |
-|  | **[MATHEMATICA_LANG](/documentation/code/files/interoperability__macros_8hpp/#define-mathematica-lang)**  |
-|  | **[Mathematica_LANG](/documentation/code/files/interoperability__macros_8hpp/#define-mathematica-lang)**  |
-|  | **[PYTHON_LANG](/documentation/code/files/interoperability__macros_8hpp/#define-python-lang)**  |
-|  | **[Python_LANG](/documentation/code/files/interoperability__macros_8hpp/#define-python-lang)**  |
-|  | **[PYTHON2_LANG](/documentation/code/files/interoperability__macros_8hpp/#define-python2-lang)**  |
-|  | **[Python2_LANG](/documentation/code/files/interoperability__macros_8hpp/#define-python2-lang)**  |
-|  | **[PYTHON3_LANG](/documentation/code/files/interoperability__macros_8hpp/#define-python3-lang)**  |
-|  | **[Python3_LANG](/documentation/code/files/interoperability__macros_8hpp/#define-python3-lang)**  |
-|  | **[DATA_LANG](/documentation/code/files/interoperability__macros_8hpp/#define-data-lang)**  |
-|  | **[Data_LANG](/documentation/code/files/interoperability__macros_8hpp/#define-data-lang)**  |
-|  | **[DEFINED_BACKENDLANG](/documentation/code/files/interoperability__macros_8hpp/#define-defined-backendlang)** <br>Macro to help identifying the language of the backend.  |
-|  | **[MATH_TYPE](/documentation/code/files/interoperability__macros_8hpp/#define-math-type)**(TYPE) <br>Macro to choose between mathematica types, python types and normal types.  |
-|  | **[USING_CC](/documentation/code/files/interoperability__macros_8hpp/#define-using-cc)** <br>Macro that determines whether the language of the backend is C.  |
-|  | **[USING_CXX](/documentation/code/files/interoperability__macros_8hpp/#define-using-cxx)** <br>Macro that determines whether the language of the backend is C++.  |
-|  | **[USING_FORTRAN](/documentation/code/files/interoperability__macros_8hpp/#define-using-fortran)** <br>Macro that determines whether the language of the backend is Fortran.  |
-|  | **[USING_MATHEMATICA](/documentation/code/files/interoperability__macros_8hpp/#define-using-mathematica)** <br>Macro that determines whether the language of the backend is Mathematica.  |
-|  | **[USING_PYTHON](/documentation/code/files/interoperability__macros_8hpp/#define-using-python)** <br>Macro that determines whether the language of the backend is Python.  |
-|  | **[DATA_ONLY](/documentation/code/files/interoperability__macros_8hpp/#define-data-only)** <br>Macro that determines whether the the backend is purely data.  |
+|  | **[UNKNOWN](/documentation/code/gambit_sphinxfiles/interoperability__macros_8hpp/#define-unknown)** <br>If not defined already, define the backend languages.  |
+|  | **[CC_LANG](/documentation/code/gambit_sphinxfiles/interoperability__macros_8hpp/#define-cc-lang)**  |
+|  | **[CXX_LANG](/documentation/code/gambit_sphinxfiles/interoperability__macros_8hpp/#define-cxx-lang)**  |
+|  | **[FORTRAN_LANG](/documentation/code/gambit_sphinxfiles/interoperability__macros_8hpp/#define-fortran-lang)**  |
+|  | **[Fortran_LANG](/documentation/code/gambit_sphinxfiles/interoperability__macros_8hpp/#define-fortran-lang)**  |
+|  | **[MATHEMATICA_LANG](/documentation/code/gambit_sphinxfiles/interoperability__macros_8hpp/#define-mathematica-lang)**  |
+|  | **[Mathematica_LANG](/documentation/code/gambit_sphinxfiles/interoperability__macros_8hpp/#define-mathematica-lang)**  |
+|  | **[PYTHON_LANG](/documentation/code/gambit_sphinxfiles/interoperability__macros_8hpp/#define-python-lang)**  |
+|  | **[Python_LANG](/documentation/code/gambit_sphinxfiles/interoperability__macros_8hpp/#define-python-lang)**  |
+|  | **[PYTHON2_LANG](/documentation/code/gambit_sphinxfiles/interoperability__macros_8hpp/#define-python2-lang)**  |
+|  | **[Python2_LANG](/documentation/code/gambit_sphinxfiles/interoperability__macros_8hpp/#define-python2-lang)**  |
+|  | **[PYTHON3_LANG](/documentation/code/gambit_sphinxfiles/interoperability__macros_8hpp/#define-python3-lang)**  |
+|  | **[Python3_LANG](/documentation/code/gambit_sphinxfiles/interoperability__macros_8hpp/#define-python3-lang)**  |
+|  | **[DATA_LANG](/documentation/code/gambit_sphinxfiles/interoperability__macros_8hpp/#define-data-lang)**  |
+|  | **[Data_LANG](/documentation/code/gambit_sphinxfiles/interoperability__macros_8hpp/#define-data-lang)**  |
+|  | **[DEFINED_BACKENDLANG](/documentation/code/gambit_sphinxfiles/interoperability__macros_8hpp/#define-defined-backendlang)** <br>Macro to help identifying the language of the backend.  |
+|  | **[MATH_TYPE](/documentation/code/gambit_sphinxfiles/interoperability__macros_8hpp/#define-math-type)**(TYPE) <br>Macro to choose between mathematica types, python types and normal types.  |
+|  | **[USING_CC](/documentation/code/gambit_sphinxfiles/interoperability__macros_8hpp/#define-using-cc)** <br>Macro that determines whether the language of the backend is C.  |
+|  | **[USING_CXX](/documentation/code/gambit_sphinxfiles/interoperability__macros_8hpp/#define-using-cxx)** <br>Macro that determines whether the language of the backend is C++.  |
+|  | **[USING_FORTRAN](/documentation/code/gambit_sphinxfiles/interoperability__macros_8hpp/#define-using-fortran)** <br>Macro that determines whether the language of the backend is Fortran.  |
+|  | **[USING_MATHEMATICA](/documentation/code/gambit_sphinxfiles/interoperability__macros_8hpp/#define-using-mathematica)** <br>Macro that determines whether the language of the backend is Mathematica.  |
+|  | **[USING_PYTHON](/documentation/code/gambit_sphinxfiles/interoperability__macros_8hpp/#define-using-python)** <br>Macro that determines whether the language of the backend is Python.  |
+|  | **[DATA_ONLY](/documentation/code/gambit_sphinxfiles/interoperability__macros_8hpp/#define-data-only)** <br>Macro that determines whether the the backend is purely data.  |
 
 ## Detailed Description
 
@@ -341,4 +341,4 @@ Macro that determines whether the the backend is purely data.
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:37 +0000
+Updated on 2022-08-01 at 17:31:50 +0000

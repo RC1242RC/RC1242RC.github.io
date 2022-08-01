@@ -16,7 +16,7 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[salami_gambit](/documentation/code/namespaces/namespacesalami__gambit/)**  |
+| **[salami_gambit](/documentation/code/darkbit_developmentnamespaces/namespacesalami__gambit/)**  |
 
 
 
@@ -153,4 +153,4 @@ def get_xsection(proc, energy, xsec_lo_fb):
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:25 +0000
+Updated on 2022-08-01 at 17:31:44 +0000

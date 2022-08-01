@@ -16,14 +16,14 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::Priors](/documentation/code/namespaces/namespacegambit_1_1priors/)**  |
+| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::Priors](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1priors/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Gambit::Priors::BasePrior](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/)** <br>Abstract base class for priors.  |
+| class | **[Gambit::Priors::BasePrior](/documentation/code/gambit_sphinxclasses/classgambit_1_1priors_1_1baseprior/)** <br>Abstract base class for priors.  |
 
 ## Detailed Description
 
@@ -127,4 +127,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:34 +0000
+Updated on 2022-08-01 at 17:31:48 +0000

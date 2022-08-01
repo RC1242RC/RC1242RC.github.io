@@ -16,28 +16,28 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[if](/documentation/code/files/ddcalc__2__2__0_8cpp/#function-if)**(scan_level ) |
-| | **[if](/documentation/code/files/ddcalc__2__2__0_8cpp/#function-if)**(couplings. coeff_structure ==1) |
-| | **[if](/documentation/code/files/ddcalc__2__2__0_8cpp/#function-if)**(LocalHaloParameters_ptr->rho0 *fraction !  =rho0_eff) |
-| | **[if](/documentation/code/files/ddcalc__2__2__0_8cpp/#function-if)**(LocalHaloParameters_ptr->vrot !  =vrot) |
-| | **[if](/documentation/code/files/ddcalc__2__2__0_8cpp/#function-if)**(LocalHaloParameters_ptr->v0 !  =v0) |
-| | **[if](/documentation/code/files/ddcalc__2__2__0_8cpp/#function-if)**(LocalHaloParameters_ptr->vesc !  =vesc) |
-| | **[if](/documentation/code/files/ddcalc__2__2__0_8cpp/#function-if)**(halo_changed ) |
+| | **[if](/documentation/code/darkbit_developmentfiles/ddcalc__2__2__0_8cpp/#function-if)**(scan_level ) |
+| | **[if](/documentation/code/darkbit_developmentfiles/ddcalc__2__2__0_8cpp/#function-if)**(couplings. coeff_structure ==1) |
+| | **[if](/documentation/code/darkbit_developmentfiles/ddcalc__2__2__0_8cpp/#function-if)**(LocalHaloParameters_ptr->rho0 *fraction !  =rho0_eff) |
+| | **[if](/documentation/code/darkbit_developmentfiles/ddcalc__2__2__0_8cpp/#function-if)**(LocalHaloParameters_ptr->vrot !  =vrot) |
+| | **[if](/documentation/code/darkbit_developmentfiles/ddcalc__2__2__0_8cpp/#function-if)**(LocalHaloParameters_ptr->v0 !  =v0) |
+| | **[if](/documentation/code/darkbit_developmentfiles/ddcalc__2__2__0_8cpp/#function-if)**(LocalHaloParameters_ptr->vesc !  =vesc) |
+| | **[if](/documentation/code/darkbit_developmentfiles/ddcalc__2__2__0_8cpp/#function-if)**(halo_changed ) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[BE_NAMESPACE](/documentation/code/files/ddcalc__2__2__0_8cpp/#variable-be-namespace)**  |
-| int | **[WIMP](/documentation/code/files/ddcalc__2__2__0_8cpp/#variable-wimp)**  |
-| int | **[Halo](/documentation/code/files/ddcalc__2__2__0_8cpp/#variable-halo)**  |
-| [END_BE_NAMESPACE](/documentation/code/files/common__macros_8hpp/#define-end-be-namespace) | **[BE_INI_FUNCTION](/documentation/code/files/ddcalc__2__2__0_8cpp/#variable-be-ini-function)**  |
-| safe_ptr< LocalMaxwellianHalo > | **[LocalHaloParameters_ptr](/documentation/code/files/ddcalc__2__2__0_8cpp/#variable-localhaloparameters-ptr)**  |
-| double | **[fraction](/documentation/code/files/ddcalc__2__2__0_8cpp/#variable-fraction)**  |
-| bool | **[scan_level](/documentation/code/files/ddcalc__2__2__0_8cpp/#variable-scan-level)**  |
-| DD_coupling_container | **[couplings](/documentation/code/files/ddcalc__2__2__0_8cpp/#variable-couplings)**  |
-| | **[else](/documentation/code/files/ddcalc__2__2__0_8cpp/#variable-else)**  |
-| bool | **[halo_changed](/documentation/code/files/ddcalc__2__2__0_8cpp/#variable-halo-changed)**  |
+| | **[BE_NAMESPACE](/documentation/code/darkbit_developmentfiles/ddcalc__2__2__0_8cpp/#variable-be-namespace)**  |
+| int | **[WIMP](/documentation/code/darkbit_developmentfiles/ddcalc__2__2__0_8cpp/#variable-wimp)**  |
+| int | **[Halo](/documentation/code/darkbit_developmentfiles/ddcalc__2__2__0_8cpp/#variable-halo)**  |
+| [END_BE_NAMESPACE](/documentation/code/darkbit_developmentfiles/common__macros_8hpp/#define-end-be-namespace) | **[BE_INI_FUNCTION](/documentation/code/darkbit_developmentfiles/ddcalc__2__2__0_8cpp/#variable-be-ini-function)**  |
+| safe_ptr< LocalMaxwellianHalo > | **[LocalHaloParameters_ptr](/documentation/code/darkbit_developmentfiles/ddcalc__2__2__0_8cpp/#variable-localhaloparameters-ptr)**  |
+| double | **[fraction](/documentation/code/darkbit_developmentfiles/ddcalc__2__2__0_8cpp/#variable-fraction)**  |
+| bool | **[scan_level](/documentation/code/darkbit_developmentfiles/ddcalc__2__2__0_8cpp/#variable-scan-level)**  |
+| DD_coupling_container | **[couplings](/documentation/code/darkbit_developmentfiles/ddcalc__2__2__0_8cpp/#variable-couplings)**  |
+| | **[else](/documentation/code/darkbit_developmentfiles/ddcalc__2__2__0_8cpp/#variable-else)**  |
+| bool | **[halo_changed](/documentation/code/darkbit_developmentfiles/ddcalc__2__2__0_8cpp/#variable-halo-changed)**  |
 
 ## Detailed Description
 
@@ -445,4 +445,4 @@ END_BE_NAMESPACE
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:26 +0000
+Updated on 2022-08-01 at 17:31:45 +0000

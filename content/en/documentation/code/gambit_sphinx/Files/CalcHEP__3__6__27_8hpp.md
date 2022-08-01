@@ -16,11 +16,11 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[BACKENDNAME](/documentation/code/files/calchep__3__6__27_8hpp/#define-backendname)**  |
-|  | **[BACKENDLANG](/documentation/code/files/calchep__3__6__27_8hpp/#define-backendlang)**  |
-|  | **[VERSION](/documentation/code/files/calchep__3__6__27_8hpp/#define-version)**  |
-|  | **[SAFE_VERSION](/documentation/code/files/calchep__3__6__27_8hpp/#define-safe-version)**  |
-|  | **[REFERENCE](/documentation/code/files/calchep__3__6__27_8hpp/#define-reference)**  |
+|  | **[BACKENDNAME](/documentation/code/gambit_sphinxfiles/calchep__3__6__27_8hpp/#define-backendname)**  |
+|  | **[BACKENDLANG](/documentation/code/gambit_sphinxfiles/calchep__3__6__27_8hpp/#define-backendlang)**  |
+|  | **[VERSION](/documentation/code/gambit_sphinxfiles/calchep__3__6__27_8hpp/#define-version)**  |
+|  | **[SAFE_VERSION](/documentation/code/gambit_sphinxfiles/calchep__3__6__27_8hpp/#define-safe-version)**  |
+|  | **[REFERENCE](/documentation/code/gambit_sphinxfiles/calchep__3__6__27_8hpp/#define-reference)**  |
 
 ## Detailed Description
 
@@ -129,4 +129,4 @@ BE_INI_CONDITIONAL_DEPENDENCY(DMEFT_spectrum, Spectrum, DMEFT)
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:37 +0000
+Updated on 2022-08-01 at 17:31:50 +0000

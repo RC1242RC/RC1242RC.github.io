@@ -14,30 +14,30 @@ description: "[No description available]"
 
 [No description available]
 
-Inherits from [modules.infomsg.InfoMessage](/documentation/code/classes/classmodules_1_1infomsg_1_1infomessage/), object
+Inherits from [modules.infomsg.InfoMessage](/documentation/code/gambit_sphinxclasses/classmodules_1_1infomsg_1_1infomessage/), object
 
 ## Public Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| def | **[__init__](/documentation/code/classes/classmodules_1_1infomsg_1_1noloadedtypesentry/#function---init--)**(self self, tag tag, reason reason ='') |
+| def | **[__init__](/documentation/code/gambit_sphinxclasses/classmodules_1_1infomsg_1_1noloadedtypesentry/#function---init--)**(self self, tag tag, reason reason ='') |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| string | **[msg](/documentation/code/classes/classmodules_1_1infomsg_1_1noloadedtypesentry/#variable-msg)**  |
-| | **[tags_done](/documentation/code/classes/classmodules_1_1infomsg_1_1noloadedtypesentry/#variable-tags-done)**  |
-| | **[tag](/documentation/code/classes/classmodules_1_1infomsg_1_1noloadedtypesentry/#variable-tag)**  |
-| | **[msg](/documentation/code/classes/classmodules_1_1infomsg_1_1noloadedtypesentry/#variable-msg)**  |
+| string | **[msg](/documentation/code/gambit_sphinxclasses/classmodules_1_1infomsg_1_1noloadedtypesentry/#variable-msg)**  |
+| | **[tags_done](/documentation/code/gambit_sphinxclasses/classmodules_1_1infomsg_1_1noloadedtypesentry/#variable-tags-done)**  |
+| | **[tag](/documentation/code/gambit_sphinxclasses/classmodules_1_1infomsg_1_1noloadedtypesentry/#variable-tag)**  |
+| | **[msg](/documentation/code/gambit_sphinxclasses/classmodules_1_1infomsg_1_1noloadedtypesentry/#variable-msg)**  |
 
 ## Additional inherited members
 
-**Public Functions inherited from [modules.infomsg.InfoMessage](/documentation/code/classes/classmodules_1_1infomsg_1_1infomessage/)**
+**Public Functions inherited from [modules.infomsg.InfoMessage](/documentation/code/gambit_sphinxclasses/classmodules_1_1infomsg_1_1infomessage/)**
 
 |                | Name           |
 | -------------- | -------------- |
-| def | **[printMessage](/documentation/code/classes/classmodules_1_1infomsg_1_1infomessage/#function-printmessage)**(self self) |
+| def | **[printMessage](/documentation/code/gambit_sphinxclasses/classmodules_1_1infomsg_1_1infomessage/#function-printmessage)**(self self) |
 
 
 ## Public Functions Documentation
@@ -53,7 +53,7 @@ def __init__(
 ```
 
 
-**Reimplements**: [modules::infomsg::InfoMessage::__init__](/documentation/code/classes/classmodules_1_1infomsg_1_1infomessage/#function---init--)
+**Reimplements**: [modules::infomsg::InfoMessage::__init__](/documentation/code/gambit_sphinxclasses/classmodules_1_1infomsg_1_1infomessage/#function---init--)
 
 
 ## Public Attributes Documentation
@@ -88,4 +88,4 @@ msg;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:32 +0000
+Updated on 2022-08-01 at 17:31:46 +0000

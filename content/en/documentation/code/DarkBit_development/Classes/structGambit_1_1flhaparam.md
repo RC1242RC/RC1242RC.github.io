@@ -18,43 +18,43 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| std::complex< double > | **[dC7](/documentation/code/classes/structgambit_1_1flhaparam/#variable-dc7)**  |
-| std::complex< double > | **[dC8](/documentation/code/classes/structgambit_1_1flhaparam/#variable-dc8)**  |
-| std::complex< double > | **[dC9](/documentation/code/classes/structgambit_1_1flhaparam/#variable-dc9)**  |
-| std::complex< double > | **[dC10](/documentation/code/classes/structgambit_1_1flhaparam/#variable-dc10)**  |
-| std::complex< double > | **[dC9e](/documentation/code/classes/structgambit_1_1flhaparam/#variable-dc9e)**  |
-| std::complex< double > | **[dC10e](/documentation/code/classes/structgambit_1_1flhaparam/#variable-dc10e)**  |
-| std::complex< double > | **[dC7p](/documentation/code/classes/structgambit_1_1flhaparam/#variable-dc7p)**  |
-| std::complex< double > | **[dC8p](/documentation/code/classes/structgambit_1_1flhaparam/#variable-dc8p)**  |
-| std::complex< double > | **[dC9p](/documentation/code/classes/structgambit_1_1flhaparam/#variable-dc9p)**  |
-| std::complex< double > | **[dC10p](/documentation/code/classes/structgambit_1_1flhaparam/#variable-dc10p)**  |
-| std::complex< double > | **[dC9pe](/documentation/code/classes/structgambit_1_1flhaparam/#variable-dc9pe)**  |
-| std::complex< double > | **[dC10pe](/documentation/code/classes/structgambit_1_1flhaparam/#variable-dc10pe)**  |
-| std::complex< double > | **[C7](/documentation/code/classes/structgambit_1_1flhaparam/#variable-c7)**  |
-| std::complex< double > | **[C8](/documentation/code/classes/structgambit_1_1flhaparam/#variable-c8)**  |
-| std::complex< double > | **[C9](/documentation/code/classes/structgambit_1_1flhaparam/#variable-c9)**  |
-| std::complex< double > | **[C10](/documentation/code/classes/structgambit_1_1flhaparam/#variable-c10)**  |
-| std::complex< double > | **[C9e](/documentation/code/classes/structgambit_1_1flhaparam/#variable-c9e)**  |
-| std::complex< double > | **[C10e](/documentation/code/classes/structgambit_1_1flhaparam/#variable-c10e)**  |
-| std::complex< double > | **[C7p](/documentation/code/classes/structgambit_1_1flhaparam/#variable-c7p)**  |
-| std::complex< double > | **[C8p](/documentation/code/classes/structgambit_1_1flhaparam/#variable-c8p)**  |
-| std::complex< double > | **[C9p](/documentation/code/classes/structgambit_1_1flhaparam/#variable-c9p)**  |
-| std::complex< double > | **[C10p](/documentation/code/classes/structgambit_1_1flhaparam/#variable-c10p)**  |
-| std::complex< double > | **[C9pe](/documentation/code/classes/structgambit_1_1flhaparam/#variable-c9pe)**  |
-| std::complex< double > | **[C10pe](/documentation/code/classes/structgambit_1_1flhaparam/#variable-c10pe)**  |
-| std::complex< double > | **[C7SM](/documentation/code/classes/structgambit_1_1flhaparam/#variable-c7sm)**  |
-| std::complex< double > | **[C8SM](/documentation/code/classes/structgambit_1_1flhaparam/#variable-c8sm)**  |
-| std::complex< double > | **[C9SM](/documentation/code/classes/structgambit_1_1flhaparam/#variable-c9sm)**  |
-| std::complex< double > | **[C10SM](/documentation/code/classes/structgambit_1_1flhaparam/#variable-c10sm)**  |
-| std::complex< double > | **[C9eSM](/documentation/code/classes/structgambit_1_1flhaparam/#variable-c9esm)**  |
-| std::complex< double > | **[C10eSM](/documentation/code/classes/structgambit_1_1flhaparam/#variable-c10esm)**  |
-| std::complex< double > | **[C7pSM](/documentation/code/classes/structgambit_1_1flhaparam/#variable-c7psm)**  |
-| std::complex< double > | **[C8pSM](/documentation/code/classes/structgambit_1_1flhaparam/#variable-c8psm)**  |
-| std::complex< double > | **[C9pSM](/documentation/code/classes/structgambit_1_1flhaparam/#variable-c9psm)**  |
-| std::complex< double > | **[C10pSM](/documentation/code/classes/structgambit_1_1flhaparam/#variable-c10psm)**  |
-| std::complex< double > | **[C9peSM](/documentation/code/classes/structgambit_1_1flhaparam/#variable-c9pesm)**  |
-| std::complex< double > | **[C10peSM](/documentation/code/classes/structgambit_1_1flhaparam/#variable-c10pesm)**  |
-| double | **[Q](/documentation/code/classes/structgambit_1_1flhaparam/#variable-q)**  |
+| std::complex< double > | **[dC7](/documentation/code/darkbit_developmentclasses/structgambit_1_1flhaparam/#variable-dc7)**  |
+| std::complex< double > | **[dC8](/documentation/code/darkbit_developmentclasses/structgambit_1_1flhaparam/#variable-dc8)**  |
+| std::complex< double > | **[dC9](/documentation/code/darkbit_developmentclasses/structgambit_1_1flhaparam/#variable-dc9)**  |
+| std::complex< double > | **[dC10](/documentation/code/darkbit_developmentclasses/structgambit_1_1flhaparam/#variable-dc10)**  |
+| std::complex< double > | **[dC9e](/documentation/code/darkbit_developmentclasses/structgambit_1_1flhaparam/#variable-dc9e)**  |
+| std::complex< double > | **[dC10e](/documentation/code/darkbit_developmentclasses/structgambit_1_1flhaparam/#variable-dc10e)**  |
+| std::complex< double > | **[dC7p](/documentation/code/darkbit_developmentclasses/structgambit_1_1flhaparam/#variable-dc7p)**  |
+| std::complex< double > | **[dC8p](/documentation/code/darkbit_developmentclasses/structgambit_1_1flhaparam/#variable-dc8p)**  |
+| std::complex< double > | **[dC9p](/documentation/code/darkbit_developmentclasses/structgambit_1_1flhaparam/#variable-dc9p)**  |
+| std::complex< double > | **[dC10p](/documentation/code/darkbit_developmentclasses/structgambit_1_1flhaparam/#variable-dc10p)**  |
+| std::complex< double > | **[dC9pe](/documentation/code/darkbit_developmentclasses/structgambit_1_1flhaparam/#variable-dc9pe)**  |
+| std::complex< double > | **[dC10pe](/documentation/code/darkbit_developmentclasses/structgambit_1_1flhaparam/#variable-dc10pe)**  |
+| std::complex< double > | **[C7](/documentation/code/darkbit_developmentclasses/structgambit_1_1flhaparam/#variable-c7)**  |
+| std::complex< double > | **[C8](/documentation/code/darkbit_developmentclasses/structgambit_1_1flhaparam/#variable-c8)**  |
+| std::complex< double > | **[C9](/documentation/code/darkbit_developmentclasses/structgambit_1_1flhaparam/#variable-c9)**  |
+| std::complex< double > | **[C10](/documentation/code/darkbit_developmentclasses/structgambit_1_1flhaparam/#variable-c10)**  |
+| std::complex< double > | **[C9e](/documentation/code/darkbit_developmentclasses/structgambit_1_1flhaparam/#variable-c9e)**  |
+| std::complex< double > | **[C10e](/documentation/code/darkbit_developmentclasses/structgambit_1_1flhaparam/#variable-c10e)**  |
+| std::complex< double > | **[C7p](/documentation/code/darkbit_developmentclasses/structgambit_1_1flhaparam/#variable-c7p)**  |
+| std::complex< double > | **[C8p](/documentation/code/darkbit_developmentclasses/structgambit_1_1flhaparam/#variable-c8p)**  |
+| std::complex< double > | **[C9p](/documentation/code/darkbit_developmentclasses/structgambit_1_1flhaparam/#variable-c9p)**  |
+| std::complex< double > | **[C10p](/documentation/code/darkbit_developmentclasses/structgambit_1_1flhaparam/#variable-c10p)**  |
+| std::complex< double > | **[C9pe](/documentation/code/darkbit_developmentclasses/structgambit_1_1flhaparam/#variable-c9pe)**  |
+| std::complex< double > | **[C10pe](/documentation/code/darkbit_developmentclasses/structgambit_1_1flhaparam/#variable-c10pe)**  |
+| std::complex< double > | **[C7SM](/documentation/code/darkbit_developmentclasses/structgambit_1_1flhaparam/#variable-c7sm)**  |
+| std::complex< double > | **[C8SM](/documentation/code/darkbit_developmentclasses/structgambit_1_1flhaparam/#variable-c8sm)**  |
+| std::complex< double > | **[C9SM](/documentation/code/darkbit_developmentclasses/structgambit_1_1flhaparam/#variable-c9sm)**  |
+| std::complex< double > | **[C10SM](/documentation/code/darkbit_developmentclasses/structgambit_1_1flhaparam/#variable-c10sm)**  |
+| std::complex< double > | **[C9eSM](/documentation/code/darkbit_developmentclasses/structgambit_1_1flhaparam/#variable-c9esm)**  |
+| std::complex< double > | **[C10eSM](/documentation/code/darkbit_developmentclasses/structgambit_1_1flhaparam/#variable-c10esm)**  |
+| std::complex< double > | **[C7pSM](/documentation/code/darkbit_developmentclasses/structgambit_1_1flhaparam/#variable-c7psm)**  |
+| std::complex< double > | **[C8pSM](/documentation/code/darkbit_developmentclasses/structgambit_1_1flhaparam/#variable-c8psm)**  |
+| std::complex< double > | **[C9pSM](/documentation/code/darkbit_developmentclasses/structgambit_1_1flhaparam/#variable-c9psm)**  |
+| std::complex< double > | **[C10pSM](/documentation/code/darkbit_developmentclasses/structgambit_1_1flhaparam/#variable-c10psm)**  |
+| std::complex< double > | **[C9peSM](/documentation/code/darkbit_developmentclasses/structgambit_1_1flhaparam/#variable-c9pesm)**  |
+| std::complex< double > | **[C10peSM](/documentation/code/darkbit_developmentclasses/structgambit_1_1flhaparam/#variable-c10pesm)**  |
+| double | **[Q](/documentation/code/darkbit_developmentclasses/structgambit_1_1flhaparam/#variable-q)**  |
 
 ## Public Attributes Documentation
 
@@ -319,4 +319,4 @@ double Q;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:22 +0000
+Updated on 2022-08-01 at 17:31:41 +0000

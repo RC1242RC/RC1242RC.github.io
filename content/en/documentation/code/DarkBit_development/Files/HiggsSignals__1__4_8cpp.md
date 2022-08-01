@@ -16,13 +16,13 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[if](/documentation/code/files/higgssignals__1__4_8cpp/#function-if)**(scan_level ) |
+| | **[if](/documentation/code/darkbit_developmentfiles/higgssignals__1__4_8cpp/#function-if)**(scan_level ) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[BE_INI_FUNCTION](/documentation/code/files/higgssignals__1__4_8cpp/#variable-be-ini-function)**  |
+| | **[BE_INI_FUNCTION](/documentation/code/darkbit_developmentfiles/higgssignals__1__4_8cpp/#variable-be-ini-function)**  |
 
 
 ## Functions Documentation
@@ -105,4 +105,4 @@ END_BE_INI_FUNCTION
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:26 +0000
+Updated on 2022-08-01 at 17:31:46 +0000

@@ -16,16 +16,16 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::CosmoBit](/documentation/code/namespaces/namespacegambit_1_1cosmobit/)**  |
+| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::CosmoBit](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Gambit::CosmoBit::SM_time_evo](/documentation/code/classes/classgambit_1_1cosmobit_1_1sm__time__evo/)**  |
-| class | **[Gambit::CosmoBit::Primordial_ps](/documentation/code/classes/classgambit_1_1cosmobit_1_1primordial__ps/)**  |
-| class | **[Gambit::CosmoBit::Parametrised_ps](/documentation/code/classes/classgambit_1_1cosmobit_1_1parametrised__ps/)**  |
+| class | **[Gambit::CosmoBit::SM_time_evo](/documentation/code/gambit_sphinxclasses/classgambit_1_1cosmobit_1_1sm__time__evo/)**  |
+| class | **[Gambit::CosmoBit::Primordial_ps](/documentation/code/gambit_sphinxclasses/classgambit_1_1cosmobit_1_1primordial__ps/)**  |
+| class | **[Gambit::CosmoBit::Parametrised_ps](/documentation/code/gambit_sphinxclasses/classgambit_1_1cosmobit_1_1parametrised__ps/)**  |
 
 ## Detailed Description
 
@@ -326,4 +326,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:35 +0000
+Updated on 2022-08-01 at 17:31:49 +0000

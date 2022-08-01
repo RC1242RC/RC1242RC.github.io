@@ -16,20 +16,20 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::DarkBit](/documentation/code/namespaces/namespacegambit_1_1darkbit/)**  |
+| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::DarkBit](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1darkbit/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[Gambit::DarkBit::Wstruct](/documentation/code/classes/structgambit_1_1darkbit_1_1wstruct/)**  |
-| struct | **[Gambit::DarkBit::RD_coannihilating_particle](/documentation/code/classes/structgambit_1_1darkbit_1_1rd__coannihilating__particle/)**  |
-| struct | **[Gambit::DarkBit::RD_spectrum_type](/documentation/code/classes/structgambit_1_1darkbit_1_1rd__spectrum__type/)**  |
-| struct | **[Gambit::DarkBit::nuyield_info](/documentation/code/classes/structgambit_1_1darkbit_1_1nuyield__info/)** <br>Neutrino telescope yield info container.  |
-| struct | **[Gambit::DarkBit::nudata](/documentation/code/classes/structgambit_1_1darkbit_1_1nudata/)** <br>Neutrino telescope data container.  |
-| struct | **[Gambit::DarkBit::SimYieldChannel](/documentation/code/classes/structgambit_1_1darkbit_1_1simyieldchannel/)** <br>Annihilation/decay channel.  |
-| class | **[Gambit::DarkBit::SimYieldTable](/documentation/code/classes/classgambit_1_1darkbit_1_1simyieldtable/)** <br>Channel container Object containing tabularized yields for particle decay and two-body final states.  |
+| struct | **[Gambit::DarkBit::Wstruct](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1wstruct/)**  |
+| struct | **[Gambit::DarkBit::RD_coannihilating_particle](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1rd__coannihilating__particle/)**  |
+| struct | **[Gambit::DarkBit::RD_spectrum_type](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1rd__spectrum__type/)**  |
+| struct | **[Gambit::DarkBit::nuyield_info](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1nuyield__info/)** <br>Neutrino telescope yield info container.  |
+| struct | **[Gambit::DarkBit::nudata](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1nudata/)** <br>Neutrino telescope data container.  |
+| struct | **[Gambit::DarkBit::SimYieldChannel](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1simyieldchannel/)** <br>Annihilation/decay channel.  |
+| class | **[Gambit::DarkBit::SimYieldTable](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1simyieldtable/)** <br>Channel container Object containing tabularized yields for particle decay and two-body final states.  |
 
 ## Detailed Description
 
@@ -230,4 +230,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:35 +0000
+Updated on 2022-08-01 at 17:31:49 +0000

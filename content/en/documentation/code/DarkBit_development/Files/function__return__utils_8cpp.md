@@ -16,9 +16,9 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| template <typename U ,typename V \> <br>U * | **[pointer_returner](/documentation/code/files/function__return__utils_8cpp/#function-pointer-returner)**(V * ptr) |
-| template <typename U ,typename V \> <br>U & | **[reference_returner](/documentation/code/files/function__return__utils_8cpp/#function-reference-returner)**(V * ptr) |
-| template <typename U ,typename V \> <br>U & | **[reference_returner](/documentation/code/files/function__return__utils_8cpp/#function-reference-returner)**(const V * ptr) |
+| template <typename U ,typename V \> <br>U * | **[pointer_returner](/documentation/code/darkbit_developmentfiles/function__return__utils_8cpp/#function-pointer-returner)**(V * ptr) |
+| template <typename U ,typename V \> <br>U & | **[reference_returner](/documentation/code/darkbit_developmentfiles/function__return__utils_8cpp/#function-reference-returner)**(V * ptr) |
+| template <typename U ,typename V \> <br>U & | **[reference_returner](/documentation/code/darkbit_developmentfiles/function__return__utils_8cpp/#function-reference-returner)**(const V * ptr) |
 
 
 ## Functions Documentation
@@ -119,4 +119,4 @@ U& reference_returner(const V* ptr)
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:26 +0000
+Updated on 2022-08-01 at 17:31:45 +0000

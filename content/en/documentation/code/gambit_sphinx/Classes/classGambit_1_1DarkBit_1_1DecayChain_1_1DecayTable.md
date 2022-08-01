@@ -18,15 +18,15 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[DecayTable](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1decaytable/#function-decaytable)**(const [TH_ProcessCatalog](/documentation/code/classes/structgambit_1_1darkbit_1_1th__processcatalog/) & cat, const [SimYieldTable](/documentation/code/classes/classgambit_1_1darkbit_1_1simyieldtable/) & tab, set< string > disabledList) |
-| | **[DecayTable](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1decaytable/#function-decaytable)**() |
-| bool | **[hasEntry](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1decaytable/#function-hasentry)**(string index) const |
-| void | **[addEntry](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1decaytable/#function-addentry)**(string pID, double m, bool stable) |
-| void | **[addEntry](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1decaytable/#function-addentry)**(string pID, [DecayTableEntry](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1decaytableentry/) entry) |
-| bool | **[randomDecay](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1decaytable/#function-randomdecay)**(string pID, const [TH_Channel](/documentation/code/classes/structgambit_1_1darkbit_1_1th__channel/) *& decay) const |
-| const [DecayTableEntry](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1decaytableentry/) & | **[operator[]](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1decaytable/#function-operator[])**(string i) const |
-| void | **[printTable](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1decaytable/#function-printtable)**() const |
-| double | **[getWidth](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1decaytable/#function-getwidth)**(const [TH_Channel](/documentation/code/classes/structgambit_1_1darkbit_1_1th__channel/) * ch) |
+| | **[DecayTable](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1decaychain_1_1decaytable/#function-decaytable)**(const [TH_ProcessCatalog](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1th__processcatalog/) & cat, const [SimYieldTable](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1simyieldtable/) & tab, set< string > disabledList) |
+| | **[DecayTable](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1decaychain_1_1decaytable/#function-decaytable)**() |
+| bool | **[hasEntry](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1decaychain_1_1decaytable/#function-hasentry)**(string index) const |
+| void | **[addEntry](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1decaychain_1_1decaytable/#function-addentry)**(string pID, double m, bool stable) |
+| void | **[addEntry](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1decaychain_1_1decaytable/#function-addentry)**(string pID, [DecayTableEntry](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1decaychain_1_1decaytableentry/) entry) |
+| bool | **[randomDecay](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1decaychain_1_1decaytable/#function-randomdecay)**(string pID, const [TH_Channel](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1th__channel/) *& decay) const |
+| const [DecayTableEntry](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1decaychain_1_1decaytableentry/) & | **[operator[]](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1decaychain_1_1decaytable/#function-operator[])**(string i) const |
+| void | **[printTable](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1decaychain_1_1decaytable/#function-printtable)**() const |
+| double | **[getWidth](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1decaychain_1_1decaytable/#function-getwidth)**(const [TH_Channel](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1th__channel/) * ch) |
 
 ## Public Functions Documentation
 
@@ -115,4 +115,4 @@ static double getWidth(
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:33 +0000
+Updated on 2022-08-01 at 17:31:47 +0000

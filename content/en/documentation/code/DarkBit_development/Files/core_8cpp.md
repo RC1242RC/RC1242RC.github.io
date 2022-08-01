@@ -16,14 +16,14 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit](/documentation/code/darkbit_developmentnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[GET_RANK](/documentation/code/files/core_8cpp/#define-get-rank)**  |
-|  | **[GET_SIZE](/documentation/code/files/core_8cpp/#define-get-size)**  |
+|  | **[GET_RANK](/documentation/code/darkbit_developmentfiles/core_8cpp/#define-get-rank)**  |
+|  | **[GET_SIZE](/documentation/code/darkbit_developmentfiles/core_8cpp/#define-get-size)**  |
 
 ## Detailed Description
 
@@ -755,4 +755,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:24 +0000
+Updated on 2022-08-01 at 17:31:43 +0000

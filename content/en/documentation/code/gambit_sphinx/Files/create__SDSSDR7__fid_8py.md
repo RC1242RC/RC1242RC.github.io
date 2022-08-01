@@ -16,7 +16,7 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[create_SDSSDR7_fid](/documentation/code/namespaces/namespacecreate__sdssdr7__fid/)**  |
+| **[create_SDSSDR7_fid](/documentation/code/gambit_sphinxnamespaces/namespacecreate__sdssdr7__fid/)**  |
 
 
 
@@ -262,4 +262,4 @@ if __name__ == "__main__":
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:37 +0000
+Updated on 2022-08-01 at 17:31:50 +0000

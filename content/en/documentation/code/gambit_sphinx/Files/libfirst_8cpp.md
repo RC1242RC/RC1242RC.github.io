@@ -16,27 +16,27 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| void | **[initialize](/documentation/code/files/libfirst_8cpp/#function-initialize)**(int a) |
-| void | **[someFunction](/documentation/code/files/libfirst_8cpp/#function-somefunction)**() |
-| double | **[byRefExample](/documentation/code/files/libfirst_8cpp/#function-byrefexample)**(double & input) |
-| void | **[byRefExample2](/documentation/code/files/libfirst_8cpp/#function-byrefexample2)**(double & input, double input2) |
-| double | **[returnResult](/documentation/code/files/libfirst_8cpp/#function-returnresult)**() |
-| double | **[nastyExample](/documentation/code/files/libfirst_8cpp/#function-nastyexample)**(int count, ... ) |
-| double | **[arrayarg_1D](/documentation/code/files/libfirst_8cpp/#function-arrayarg-1d)**(double arg[10]) |
-| double | **[arrayarg_2D](/documentation/code/files/libfirst_8cpp/#function-arrayarg-2d)**(double arg[10][10]) |
-| double | **[arrayarg_3D](/documentation/code/files/libfirst_8cpp/#function-arrayarg-3d)**(double arg[10][10][10]) |
+| void | **[initialize](/documentation/code/gambit_sphinxfiles/libfirst_8cpp/#function-initialize)**(int a) |
+| void | **[someFunction](/documentation/code/gambit_sphinxfiles/libfirst_8cpp/#function-somefunction)**() |
+| double | **[byRefExample](/documentation/code/gambit_sphinxfiles/libfirst_8cpp/#function-byrefexample)**(double & input) |
+| void | **[byRefExample2](/documentation/code/gambit_sphinxfiles/libfirst_8cpp/#function-byrefexample2)**(double & input, double input2) |
+| double | **[returnResult](/documentation/code/gambit_sphinxfiles/libfirst_8cpp/#function-returnresult)**() |
+| double | **[nastyExample](/documentation/code/gambit_sphinxfiles/libfirst_8cpp/#function-nastyexample)**(int count, ... ) |
+| double | **[arrayarg_1D](/documentation/code/gambit_sphinxfiles/libfirst_8cpp/#function-arrayarg-1d)**(double arg[10]) |
+| double | **[arrayarg_2D](/documentation/code/gambit_sphinxfiles/libfirst_8cpp/#function-arrayarg-2d)**(double arg[10][10]) |
+| double | **[arrayarg_3D](/documentation/code/gambit_sphinxfiles/libfirst_8cpp/#function-arrayarg-3d)**(double arg[10][10][10]) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| const int | **[array_length](/documentation/code/files/libfirst_8cpp/#variable-array-length)**  |
-| int | **[someInt](/documentation/code/files/libfirst_8cpp/#variable-someint)**  |
-| double | **[someDouble](/documentation/code/files/libfirst_8cpp/#variable-somedouble)**  |
-| double | **[someArray](/documentation/code/files/libfirst_8cpp/#variable-somearray)**  |
-| std::vector< double > | **[someVector](/documentation/code/files/libfirst_8cpp/#variable-somevector)**  |
-| bool | **[isInitialized](/documentation/code/files/libfirst_8cpp/#variable-isinitialized)**  |
-| std::string | **[prefix](/documentation/code/files/libfirst_8cpp/#variable-prefix)**  |
+| const int | **[array_length](/documentation/code/gambit_sphinxfiles/libfirst_8cpp/#variable-array-length)**  |
+| int | **[someInt](/documentation/code/gambit_sphinxfiles/libfirst_8cpp/#variable-someint)**  |
+| double | **[someDouble](/documentation/code/gambit_sphinxfiles/libfirst_8cpp/#variable-somedouble)**  |
+| double | **[someArray](/documentation/code/gambit_sphinxfiles/libfirst_8cpp/#variable-somearray)**  |
+| std::vector< double > | **[someVector](/documentation/code/gambit_sphinxfiles/libfirst_8cpp/#variable-somevector)**  |
+| bool | **[isInitialized](/documentation/code/gambit_sphinxfiles/libfirst_8cpp/#variable-isinitialized)**  |
+| std::string | **[prefix](/documentation/code/gambit_sphinxfiles/libfirst_8cpp/#variable-prefix)**  |
 
 
 ## Functions Documentation
@@ -298,4 +298,4 @@ double arrayarg_3D(double arg[10][10][10])
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:36 +0000
+Updated on 2022-08-01 at 17:31:50 +0000

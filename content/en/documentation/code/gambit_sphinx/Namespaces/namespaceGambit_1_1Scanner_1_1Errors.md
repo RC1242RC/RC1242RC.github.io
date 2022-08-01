@@ -16,9 +16,9 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| std::stringstream & | **[_err_](/documentation/code/namespaces/namespacegambit_1_1scanner_1_1errors/#function--err-)**() |
-| std::stringstream & | **[_warn_](/documentation/code/namespaces/namespacegambit_1_1scanner_1_1errors/#function--warn-)**() |
-| bool & | **[_bool_](/documentation/code/namespaces/namespacegambit_1_1scanner_1_1errors/#function--bool-)**() |
+| std::stringstream & | **[_err_](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1scanner_1_1errors/#function--err-)**() |
+| std::stringstream & | **[_warn_](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1scanner_1_1errors/#function--warn-)**() |
+| bool & | **[_bool_](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1scanner_1_1errors/#function--bool-)**() |
 
 
 ## Functions Documentation
@@ -50,4 +50,4 @@ inline bool & _bool_()
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:34 +0000
+Updated on 2022-08-01 at 17:31:48 +0000

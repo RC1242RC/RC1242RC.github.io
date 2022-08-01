@@ -16,14 +16,14 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[Gambit::hb_ModelParameters](/documentation/code/classes/structgambit_1_1hb__modelparameters/)**  |
-| struct | **[Gambit::hb_ModelParameters_effC](/documentation/code/classes/structgambit_1_1hb__modelparameters__effc/)**  |
+| struct | **[Gambit::hb_ModelParameters](/documentation/code/gambit_sphinxclasses/structgambit_1_1hb__modelparameters/)**  |
+| struct | **[Gambit::hb_ModelParameters_effC](/documentation/code/gambit_sphinxclasses/structgambit_1_1hb__modelparameters__effc/)**  |
 
 ## Detailed Description
 
@@ -152,4 +152,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:37 +0000
+Updated on 2022-08-01 at 17:31:50 +0000

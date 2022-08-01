@@ -16,13 +16,13 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[FJNS](/documentation/code/namespaces/namespacefjns/)**  |
+| **[FJNS](/documentation/code/gambit_sphinxnamespaces/namespacefjns/)**  |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| void | **[get_HEPUtils_event](/documentation/code/files/lhef2heputils_8cpp/#function-get-heputils-event)**(const LHEF::Reader & lhe, Event & evt, double jet_pt_min)<br>Extract an LHE event as a HEPUtils::Event.  |
+| void | **[get_HEPUtils_event](/documentation/code/gambit_sphinxfiles/lhef2heputils_8cpp/#function-get-heputils-event)**(const LHEF::Reader & lhe, Event & evt, double jet_pt_min)<br>Extract an LHE event as a HEPUtils::Event.  |
 
 
 ## Functions Documentation
@@ -159,4 +159,4 @@ void get_HEPUtils_event(const LHEF::Reader& lhe, Event& evt, double jet_pt_min)
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:36 +0000
+Updated on 2022-08-01 at 17:31:50 +0000

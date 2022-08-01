@@ -18,14 +18,14 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Ran_old](/documentation/code/classes/classran__old/#function-ran-old)**(unsigned long long int j) |
-| unsigned long long int | **[int64](/documentation/code/classes/classran__old/#function-int64)**() |
-| double | **[Doub](/documentation/code/classes/classran__old/#function-doub)**() |
-| unsigned int | **[int32](/documentation/code/classes/classran__old/#function-int32)**() |
-| | **[Ran_old](/documentation/code/classes/classran__old/#function-ran-old)**(unsigned long long int j) |
-| unsigned long long int | **[int64](/documentation/code/classes/classran__old/#function-int64)**() |
-| double | **[Doub](/documentation/code/classes/classran__old/#function-doub)**() |
-| unsigned int | **[int32](/documentation/code/classes/classran__old/#function-int32)**() |
+| | **[Ran_old](/documentation/code/gambit_sphinxclasses/classran__old/#function-ran-old)**(unsigned long long int j) |
+| unsigned long long int | **[int64](/documentation/code/gambit_sphinxclasses/classran__old/#function-int64)**() |
+| double | **[Doub](/documentation/code/gambit_sphinxclasses/classran__old/#function-doub)**() |
+| unsigned int | **[int32](/documentation/code/gambit_sphinxclasses/classran__old/#function-int32)**() |
+| | **[Ran_old](/documentation/code/gambit_sphinxclasses/classran__old/#function-ran-old)**(unsigned long long int j) |
+| unsigned long long int | **[int64](/documentation/code/gambit_sphinxclasses/classran__old/#function-int64)**() |
+| double | **[Doub](/documentation/code/gambit_sphinxclasses/classran__old/#function-doub)**() |
+| unsigned int | **[int32](/documentation/code/gambit_sphinxclasses/classran__old/#function-int32)**() |
 
 ## Public Functions Documentation
 
@@ -91,4 +91,4 @@ inline unsigned int int32()
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:32 +0000
+Updated on 2022-08-01 at 17:31:46 +0000

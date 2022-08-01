@@ -16,8 +16,8 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[modules](/documentation/code/namespaces/namespacemodules/)**  |
-| **[modules::gb](/documentation/code/namespaces/namespacemodules_1_1gb/)**  |
+| **[modules](/documentation/code/darkbit_developmentnamespaces/namespacemodules/)**  |
+| **[modules::gb](/documentation/code/darkbit_developmentnamespaces/namespacemodules_1_1gb/)**  |
 
 
 
@@ -115,4 +115,4 @@ default_implicit_types = {
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:26 +0000
+Updated on 2022-08-01 at 17:31:45 +0000

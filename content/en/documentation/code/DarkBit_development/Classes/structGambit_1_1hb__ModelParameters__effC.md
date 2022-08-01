@@ -18,29 +18,29 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[Mh](/documentation/code/classes/structgambit_1_1hb__modelparameters__effc/#variable-mh)**  |
-| double | **[hGammaTot](/documentation/code/classes/structgambit_1_1hb__modelparameters__effc/#variable-hgammatot)**  |
-| double | **[g2hjss_s](/documentation/code/classes/structgambit_1_1hb__modelparameters__effc/#variable-g2hjss-s)**  |
-| double | **[g2hjss_p](/documentation/code/classes/structgambit_1_1hb__modelparameters__effc/#variable-g2hjss-p)**  |
-| double | **[g2hjcc_s](/documentation/code/classes/structgambit_1_1hb__modelparameters__effc/#variable-g2hjcc-s)**  |
-| double | **[g2hjcc_p](/documentation/code/classes/structgambit_1_1hb__modelparameters__effc/#variable-g2hjcc-p)**  |
-| double | **[g2hjbb_s](/documentation/code/classes/structgambit_1_1hb__modelparameters__effc/#variable-g2hjbb-s)**  |
-| double | **[g2hjbb_p](/documentation/code/classes/structgambit_1_1hb__modelparameters__effc/#variable-g2hjbb-p)**  |
-| double | **[g2hjtt_s](/documentation/code/classes/structgambit_1_1hb__modelparameters__effc/#variable-g2hjtt-s)**  |
-| double | **[g2hjtt_p](/documentation/code/classes/structgambit_1_1hb__modelparameters__effc/#variable-g2hjtt-p)**  |
-| double | **[g2hjmumu_s](/documentation/code/classes/structgambit_1_1hb__modelparameters__effc/#variable-g2hjmumu-s)**  |
-| double | **[g2hjmumu_p](/documentation/code/classes/structgambit_1_1hb__modelparameters__effc/#variable-g2hjmumu-p)**  |
-| double | **[g2hjtautau_s](/documentation/code/classes/structgambit_1_1hb__modelparameters__effc/#variable-g2hjtautau-s)**  |
-| double | **[g2hjtautau_p](/documentation/code/classes/structgambit_1_1hb__modelparameters__effc/#variable-g2hjtautau-p)**  |
-| double | **[g2hjWW](/documentation/code/classes/structgambit_1_1hb__modelparameters__effc/#variable-g2hjww)**  |
-| double | **[g2hjZZ](/documentation/code/classes/structgambit_1_1hb__modelparameters__effc/#variable-g2hjzz)**  |
-| double | **[g2hjZga](/documentation/code/classes/structgambit_1_1hb__modelparameters__effc/#variable-g2hjzga)**  |
-| double | **[g2hjgaga](/documentation/code/classes/structgambit_1_1hb__modelparameters__effc/#variable-g2hjgaga)**  |
-| double | **[g2hjgg](/documentation/code/classes/structgambit_1_1hb__modelparameters__effc/#variable-g2hjgg)**  |
-| double | **[g2hjggZ](/documentation/code/classes/structgambit_1_1hb__modelparameters__effc/#variable-g2hjggz)**  |
-| double | **[g2hjhiZ](/documentation/code/classes/structgambit_1_1hb__modelparameters__effc/#variable-g2hjhiz)**  |
-| double | **[BR_hjinvisible](/documentation/code/classes/structgambit_1_1hb__modelparameters__effc/#variable-br-hjinvisible)**  |
-| double | **[BR_hjhihi](/documentation/code/classes/structgambit_1_1hb__modelparameters__effc/#variable-br-hjhihi)**  |
+| double | **[Mh](/documentation/code/darkbit_developmentclasses/structgambit_1_1hb__modelparameters__effc/#variable-mh)**  |
+| double | **[hGammaTot](/documentation/code/darkbit_developmentclasses/structgambit_1_1hb__modelparameters__effc/#variable-hgammatot)**  |
+| double | **[g2hjss_s](/documentation/code/darkbit_developmentclasses/structgambit_1_1hb__modelparameters__effc/#variable-g2hjss-s)**  |
+| double | **[g2hjss_p](/documentation/code/darkbit_developmentclasses/structgambit_1_1hb__modelparameters__effc/#variable-g2hjss-p)**  |
+| double | **[g2hjcc_s](/documentation/code/darkbit_developmentclasses/structgambit_1_1hb__modelparameters__effc/#variable-g2hjcc-s)**  |
+| double | **[g2hjcc_p](/documentation/code/darkbit_developmentclasses/structgambit_1_1hb__modelparameters__effc/#variable-g2hjcc-p)**  |
+| double | **[g2hjbb_s](/documentation/code/darkbit_developmentclasses/structgambit_1_1hb__modelparameters__effc/#variable-g2hjbb-s)**  |
+| double | **[g2hjbb_p](/documentation/code/darkbit_developmentclasses/structgambit_1_1hb__modelparameters__effc/#variable-g2hjbb-p)**  |
+| double | **[g2hjtt_s](/documentation/code/darkbit_developmentclasses/structgambit_1_1hb__modelparameters__effc/#variable-g2hjtt-s)**  |
+| double | **[g2hjtt_p](/documentation/code/darkbit_developmentclasses/structgambit_1_1hb__modelparameters__effc/#variable-g2hjtt-p)**  |
+| double | **[g2hjmumu_s](/documentation/code/darkbit_developmentclasses/structgambit_1_1hb__modelparameters__effc/#variable-g2hjmumu-s)**  |
+| double | **[g2hjmumu_p](/documentation/code/darkbit_developmentclasses/structgambit_1_1hb__modelparameters__effc/#variable-g2hjmumu-p)**  |
+| double | **[g2hjtautau_s](/documentation/code/darkbit_developmentclasses/structgambit_1_1hb__modelparameters__effc/#variable-g2hjtautau-s)**  |
+| double | **[g2hjtautau_p](/documentation/code/darkbit_developmentclasses/structgambit_1_1hb__modelparameters__effc/#variable-g2hjtautau-p)**  |
+| double | **[g2hjWW](/documentation/code/darkbit_developmentclasses/structgambit_1_1hb__modelparameters__effc/#variable-g2hjww)**  |
+| double | **[g2hjZZ](/documentation/code/darkbit_developmentclasses/structgambit_1_1hb__modelparameters__effc/#variable-g2hjzz)**  |
+| double | **[g2hjZga](/documentation/code/darkbit_developmentclasses/structgambit_1_1hb__modelparameters__effc/#variable-g2hjzga)**  |
+| double | **[g2hjgaga](/documentation/code/darkbit_developmentclasses/structgambit_1_1hb__modelparameters__effc/#variable-g2hjgaga)**  |
+| double | **[g2hjgg](/documentation/code/darkbit_developmentclasses/structgambit_1_1hb__modelparameters__effc/#variable-g2hjgg)**  |
+| double | **[g2hjggZ](/documentation/code/darkbit_developmentclasses/structgambit_1_1hb__modelparameters__effc/#variable-g2hjggz)**  |
+| double | **[g2hjhiZ](/documentation/code/darkbit_developmentclasses/structgambit_1_1hb__modelparameters__effc/#variable-g2hjhiz)**  |
+| double | **[BR_hjinvisible](/documentation/code/darkbit_developmentclasses/structgambit_1_1hb__modelparameters__effc/#variable-br-hjinvisible)**  |
+| double | **[BR_hjhihi](/documentation/code/darkbit_developmentclasses/structgambit_1_1hb__modelparameters__effc/#variable-br-hjhihi)**  |
 
 ## Public Attributes Documentation
 
@@ -207,4 +207,4 @@ double BR_hjhihi;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:22 +0000
+Updated on 2022-08-01 at 17:31:41 +0000

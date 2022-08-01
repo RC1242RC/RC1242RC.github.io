@@ -20,27 +20,27 @@ Container for all the plugin info from the inifile and Scannerbit.
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[pluginInfo](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugininfo/#function-plugininfo)**() |
-| void | **[iniFile](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugininfo/#function-inifile)**(const Options & options_in)<br>Enter plugin inifile.  |
-| void | **[printer_prior](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugininfo/#function-printer-prior)**([printer_interface](/documentation/code/namespaces/namespacegambit_1_1scanner/#typedef-printer-interface) & printerIn, [Priors::BasePrior](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/) & prior_in) |
-| bool | **[keep_running](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugininfo/#function-keep-running)**() const |
-| void | **[set_running](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugininfo/#function-set-running)**(bool b) |
-| bool | **[func_calculating](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugininfo/#function-func-calculating)**() const |
-| void | **[set_calculating](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugininfo/#function-set-calculating)**(bool b) |
-| void | **[set_early_shutdown_in_progress](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugininfo/#function-set-early-shutdown-in-progress)**() |
-| bool | **[early_shutdown_in_progress](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugininfo/#function-early-shutdown-in-progress)**() const |
-| bool | **[resume_mode](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugininfo/#function-resume-mode)**() const |
-| std::string | **[temp_file_path](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugininfo/#function-temp-file-path)**() |
-| int | **[getRank](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugininfo/#function-getrank)**() |
-| template <typename... T\> <br>void | **[resume](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugininfo/#function-resume)**(const std::string & name, T &... data)<br>resume function  |
-| void | **[dump](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugininfo/#function-dump)**()<br>Dump contents for resume.  |
-| void | **[dump](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugininfo/#function-dump)**(const std::string & name)<br>Dump contents for one plugin.  |
-| void | **[save_alt_min_LogL_state](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugininfo/#function-save-alt-min-logl-state)**() const<br>Save persistence file to record that the alternative min_LogL value is in use for this scan.  |
-| void | **[clear_alt_min_LogL_state](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugininfo/#function-clear-alt-min-logl-state)**() const<br>Delete the persistence file if it exists (e.g. when starting a new run)  |
-| bool | **[check_alt_min_LogL_state](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugininfo/#function-check-alt-min-logl-state)**() const<br>Check persistence file to see if we should be using the alternative min_LogL value.  |
-| const [Plugin_Loader](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__loader/) & | **[operator()](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugininfo/#function-operator())**()<br>Retrieve plugin data.  |
-| [Plugin_Interface_Details](/documentation/code/classes/structgambit_1_1scanner_1_1plugins_1_1plugin__interface__details/) | **[operator()](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugininfo/#function-operator())**(const std::string & type, const std::string & tag)<br>Get plugin data for single plugin.  |
-| | **[~pluginInfo](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugininfo/#function-~plugininfo)**() |
+| | **[pluginInfo](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1plugins_1_1plugininfo/#function-plugininfo)**() |
+| void | **[iniFile](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1plugins_1_1plugininfo/#function-inifile)**(const Options & options_in)<br>Enter plugin inifile.  |
+| void | **[printer_prior](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1plugins_1_1plugininfo/#function-printer-prior)**([printer_interface](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1scanner/#typedef-printer-interface) & printerIn, [Priors::BasePrior](/documentation/code/gambit_sphinxclasses/classgambit_1_1priors_1_1baseprior/) & prior_in) |
+| bool | **[keep_running](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1plugins_1_1plugininfo/#function-keep-running)**() const |
+| void | **[set_running](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1plugins_1_1plugininfo/#function-set-running)**(bool b) |
+| bool | **[func_calculating](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1plugins_1_1plugininfo/#function-func-calculating)**() const |
+| void | **[set_calculating](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1plugins_1_1plugininfo/#function-set-calculating)**(bool b) |
+| void | **[set_early_shutdown_in_progress](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1plugins_1_1plugininfo/#function-set-early-shutdown-in-progress)**() |
+| bool | **[early_shutdown_in_progress](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1plugins_1_1plugininfo/#function-early-shutdown-in-progress)**() const |
+| bool | **[resume_mode](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1plugins_1_1plugininfo/#function-resume-mode)**() const |
+| std::string | **[temp_file_path](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1plugins_1_1plugininfo/#function-temp-file-path)**() |
+| int | **[getRank](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1plugins_1_1plugininfo/#function-getrank)**() |
+| template <typename... T\> <br>void | **[resume](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1plugins_1_1plugininfo/#function-resume)**(const std::string & name, T &... data)<br>resume function  |
+| void | **[dump](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1plugins_1_1plugininfo/#function-dump)**()<br>Dump contents for resume.  |
+| void | **[dump](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1plugins_1_1plugininfo/#function-dump)**(const std::string & name)<br>Dump contents for one plugin.  |
+| void | **[save_alt_min_LogL_state](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1plugins_1_1plugininfo/#function-save-alt-min-logl-state)**() const<br>Save persistence file to record that the alternative min_LogL value is in use for this scan.  |
+| void | **[clear_alt_min_LogL_state](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1plugins_1_1plugininfo/#function-clear-alt-min-logl-state)**() const<br>Delete the persistence file if it exists (e.g. when starting a new run)  |
+| bool | **[check_alt_min_LogL_state](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1plugins_1_1plugininfo/#function-check-alt-min-logl-state)**() const<br>Check persistence file to see if we should be using the alternative min_LogL value.  |
+| const [Plugin_Loader](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1plugins_1_1plugin__loader/) & | **[operator()](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1plugins_1_1plugininfo/#function-operator())**()<br>Retrieve plugin data.  |
+| [Plugin_Interface_Details](/documentation/code/gambit_sphinxclasses/structgambit_1_1scanner_1_1plugins_1_1plugin__interface__details/) | **[operator()](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1plugins_1_1plugininfo/#function-operator())**(const std::string & type, const std::string & tag)<br>Get plugin data for single plugin.  |
+| | **[~pluginInfo](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1plugins_1_1plugininfo/#function-~plugininfo)**() |
 
 ## Public Functions Documentation
 
@@ -220,4 +220,4 @@ Get plugin data for single plugin.
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:34 +0000
+Updated on 2022-08-01 at 17:31:48 +0000

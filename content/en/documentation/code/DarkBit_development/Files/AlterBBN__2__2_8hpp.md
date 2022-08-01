@@ -16,11 +16,11 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[BACKENDNAME](/documentation/code/files/alterbbn__2__2_8hpp/#define-backendname)**  |
-|  | **[BACKENDLANG](/documentation/code/files/alterbbn__2__2_8hpp/#define-backendlang)**  |
-|  | **[VERSION](/documentation/code/files/alterbbn__2__2_8hpp/#define-version)**  |
-|  | **[SAFE_VERSION](/documentation/code/files/alterbbn__2__2_8hpp/#define-safe-version)**  |
-|  | **[REFERENCE](/documentation/code/files/alterbbn__2__2_8hpp/#define-reference)**  |
+|  | **[BACKENDNAME](/documentation/code/darkbit_developmentfiles/alterbbn__2__2_8hpp/#define-backendname)**  |
+|  | **[BACKENDLANG](/documentation/code/darkbit_developmentfiles/alterbbn__2__2_8hpp/#define-backendlang)**  |
+|  | **[VERSION](/documentation/code/darkbit_developmentfiles/alterbbn__2__2_8hpp/#define-version)**  |
+|  | **[SAFE_VERSION](/documentation/code/darkbit_developmentfiles/alterbbn__2__2_8hpp/#define-safe-version)**  |
+|  | **[REFERENCE](/documentation/code/darkbit_developmentfiles/alterbbn__2__2_8hpp/#define-reference)**  |
 
 ## Detailed Description
 
@@ -125,4 +125,4 @@ BE_CONV_FUNCTION(call_nucl, int, (map_str_dbl&,double*), "call_nucl")
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:25 +0000
+Updated on 2022-08-01 at 17:31:45 +0000

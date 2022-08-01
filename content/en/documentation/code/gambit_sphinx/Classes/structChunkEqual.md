@@ -18,8 +18,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| bool | **[operator()](/documentation/code/classes/structchunkequal/#function-operator())**(const [Chunk](/documentation/code/classes/structchunk/) & lhs, const [Chunk](/documentation/code/classes/structchunk/) & rhs) const |
-| bool | **[operator()](/documentation/code/classes/structchunkequal/#function-operator())**(const [Chunk](/documentation/code/classes/structchunk/) & lhs, const [Chunk](/documentation/code/classes/structchunk/) & rhs) const |
+| bool | **[operator()](/documentation/code/gambit_sphinxclasses/structchunkequal/#function-operator())**(const [Chunk](/documentation/code/gambit_sphinxclasses/structchunk/) & lhs, const [Chunk](/documentation/code/gambit_sphinxclasses/structchunk/) & rhs) const |
+| bool | **[operator()](/documentation/code/gambit_sphinxclasses/structchunkequal/#function-operator())**(const [Chunk](/documentation/code/gambit_sphinxclasses/structchunk/) & lhs, const [Chunk](/documentation/code/gambit_sphinxclasses/structchunk/) & rhs) const |
 
 ## Public Functions Documentation
 
@@ -45,4 +45,4 @@ inline bool operator()(
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:32 +0000
+Updated on 2022-08-01 at 17:31:46 +0000

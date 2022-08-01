@@ -16,16 +16,16 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| integer function | **[one](/documentation/code/namespaces/namespacem1/#function-one)**() |
+| integer function | **[one](/documentation/code/gambit_sphinxnamespaces/namespacem1/#function-one)**() |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| integer | **[i1](/documentation/code/namespaces/namespacem1/#variable-i1)**  |
-| integer, dimension(2) | **[i2](/documentation/code/namespaces/namespacem1/#variable-i2)**  |
-| integer, dimension(3) | **[i3](/documentation/code/namespaces/namespacem1/#variable-i3)**  |
-| character *8 | **[str](/documentation/code/namespaces/namespacem1/#variable-str)**  |
+| integer | **[i1](/documentation/code/gambit_sphinxnamespaces/namespacem1/#variable-i1)**  |
+| integer, dimension(2) | **[i2](/documentation/code/gambit_sphinxnamespaces/namespacem1/#variable-i2)**  |
+| integer, dimension(3) | **[i3](/documentation/code/gambit_sphinxnamespaces/namespacem1/#variable-i3)**  |
+| character *8 | **[str](/documentation/code/gambit_sphinxnamespaces/namespacem1/#variable-str)**  |
 
 
 ## Functions Documentation
@@ -73,4 +73,4 @@ character *8 str;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:32 +0000
+Updated on 2022-08-01 at 17:31:46 +0000

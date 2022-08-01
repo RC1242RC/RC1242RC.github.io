@@ -16,8 +16,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[Gambit::MicrOmegas::aChannel](/documentation/code/classes/structgambit_1_1micromegas_1_1achannel/)**  |
-| struct | **[Gambit::MicrOmegas::MOcommonSTR](/documentation/code/classes/structgambit_1_1micromegas_1_1mocommonstr/)**  |
+| struct | **[Gambit::MicrOmegas::aChannel](/documentation/code/gambit_sphinxclasses/structgambit_1_1micromegas_1_1achannel/)**  |
+| struct | **[Gambit::MicrOmegas::MOcommonSTR](/documentation/code/gambit_sphinxclasses/structgambit_1_1micromegas_1_1mocommonstr/)**  |
 
 
 
@@ -26,4 +26,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:33 +0000
+Updated on 2022-08-01 at 17:31:48 +0000

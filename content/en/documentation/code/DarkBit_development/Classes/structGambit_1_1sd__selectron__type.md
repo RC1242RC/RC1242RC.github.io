@@ -18,7 +18,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Farray< Fdouble, 1, 6, 1, 6 > | **[selmix](/documentation/code/classes/structgambit_1_1sd__selectron__type/#variable-selmix)**  |
+| Farray< Fdouble, 1, 6, 1, 6 > | **[selmix](/documentation/code/darkbit_developmentclasses/structgambit_1_1sd__selectron__type/#variable-selmix)**  |
 
 ## Public Attributes Documentation
 
@@ -31,4 +31,4 @@ Farray< Fdouble, 1, 6, 1, 6 > selmix;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:22 +0000
+Updated on 2022-08-01 at 17:31:41 +0000

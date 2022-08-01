@@ -23,4 +23,4 @@ struct Gambit::Scanner::_find_variadic_type_not_exact_;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:23 +0000
+Updated on 2022-08-01 at 17:31:42 +0000

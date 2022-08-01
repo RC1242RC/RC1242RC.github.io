@@ -14,19 +14,19 @@ description: "[No description available]"
 
 [No description available] [More...](#detailed-description)
 
-Inherits from [modules.exceptions.Error](/documentation/code/classes/classmodules_1_1exceptions_1_1error/), Exception
+Inherits from [modules.exceptions.Error](/documentation/code/gambit_sphinxclasses/classmodules_1_1exceptions_1_1error/), Exception
 
 ## Public Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| def | **[__init__](/documentation/code/classes/classmodules_1_1exceptions_1_1returnerror/#function---init--)**(self self, msg msg) |
+| def | **[__init__](/documentation/code/gambit_sphinxclasses/classmodules_1_1exceptions_1_1returnerror/#function---init--)**(self self, msg msg) |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[msg](/documentation/code/classes/classmodules_1_1exceptions_1_1returnerror/#variable-msg)**  |
+| | **[msg](/documentation/code/gambit_sphinxclasses/classmodules_1_1exceptions_1_1returnerror/#variable-msg)**  |
 
 ## Detailed Description
 
@@ -67,4 +67,4 @@ msg;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:32 +0000
+Updated on 2022-08-01 at 17:31:46 +0000

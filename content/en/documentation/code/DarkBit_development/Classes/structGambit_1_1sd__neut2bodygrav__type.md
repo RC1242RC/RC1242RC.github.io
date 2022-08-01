@@ -18,11 +18,11 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Farray< Fdouble, 1, 4 > | **[brneutgamgrav](/documentation/code/classes/structgambit_1_1sd__neut2bodygrav__type/#variable-brneutgamgrav)**  |
-| Farray< Fdouble, 1, 4 > | **[brneutzgrav](/documentation/code/classes/structgambit_1_1sd__neut2bodygrav__type/#variable-brneutzgrav)**  |
-| Farray< Fdouble, 1, 4 > | **[brneuthlgrav](/documentation/code/classes/structgambit_1_1sd__neut2bodygrav__type/#variable-brneuthlgrav)**  |
-| Farray< Fdouble, 1, 4 > | **[brneuthhgrav](/documentation/code/classes/structgambit_1_1sd__neut2bodygrav__type/#variable-brneuthhgrav)**  |
-| Farray< Fdouble, 1, 4 > | **[brneuthagrav](/documentation/code/classes/structgambit_1_1sd__neut2bodygrav__type/#variable-brneuthagrav)**  |
+| Farray< Fdouble, 1, 4 > | **[brneutgamgrav](/documentation/code/darkbit_developmentclasses/structgambit_1_1sd__neut2bodygrav__type/#variable-brneutgamgrav)**  |
+| Farray< Fdouble, 1, 4 > | **[brneutzgrav](/documentation/code/darkbit_developmentclasses/structgambit_1_1sd__neut2bodygrav__type/#variable-brneutzgrav)**  |
+| Farray< Fdouble, 1, 4 > | **[brneuthlgrav](/documentation/code/darkbit_developmentclasses/structgambit_1_1sd__neut2bodygrav__type/#variable-brneuthlgrav)**  |
+| Farray< Fdouble, 1, 4 > | **[brneuthhgrav](/documentation/code/darkbit_developmentclasses/structgambit_1_1sd__neut2bodygrav__type/#variable-brneuthhgrav)**  |
+| Farray< Fdouble, 1, 4 > | **[brneuthagrav](/documentation/code/darkbit_developmentclasses/structgambit_1_1sd__neut2bodygrav__type/#variable-brneuthagrav)**  |
 
 ## Public Attributes Documentation
 
@@ -63,4 +63,4 @@ Farray< Fdouble, 1, 4 > brneuthagrav;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:22 +0000
+Updated on 2022-08-01 at 17:31:41 +0000

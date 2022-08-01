@@ -16,8 +16,8 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[libthird_1_2](/documentation/code/namespaces/namespacelibthird__1__2/)**  |
-| **[libthird_1_2::main](/documentation/code/namespaces/namespacelibthird__1__2_1_1main/)**  |
+| **[libthird_1_2](/documentation/code/gambit_sphinxnamespaces/namespacelibthird__1__2/)**  |
+| **[libthird_1_2::main](/documentation/code/gambit_sphinxnamespaces/namespacelibthird__1__2_1_1main/)**  |
 
 
 
@@ -86,4 +86,4 @@ def returnResult():
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:36 +0000
+Updated on 2022-08-01 at 17:31:50 +0000

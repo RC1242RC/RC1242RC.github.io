@@ -16,7 +16,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| string | **[module_name](/documentation/code/namespaces/namespacemodules_1_1active__cfg/#variable-module-name)**  |
+| string | **[module_name](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1active__cfg/#variable-module-name)**  |
 
 
 
@@ -34,4 +34,4 @@ string module_name =  'example_1_234';
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:32 +0000
+Updated on 2022-08-01 at 17:31:46 +0000

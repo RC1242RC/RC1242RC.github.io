@@ -16,55 +16,55 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[export_abstract](/documentation/code/files/plugin__macros_8hpp/#define-export-abstract)**(name, ...)  |
-|  | **[export_object](/documentation/code/files/plugin__macros_8hpp/#define-export-object)**(name, ...) <br>Makes the object "name" available to the plugin interface.  |
-|  | **[plugin_main](/documentation/code/files/plugin__macros_8hpp/#define-plugin-main)**(...) <br>Declaration of the main function which will be ran by the interface.  |
-|  | **[gambit_plugin](/documentation/code/files/plugin__macros_8hpp/#define-gambit-plugin)**(...) <br>Generic plugin declaration of the from [gambit_plugin(name, type, version)]() |
-|  | **[plugin_constructor](/documentation/code/files/plugin__macros_8hpp/#define-plugin-constructor)** <br>Runs when the plugin is loaded.  |
-|  | **[plugin_deconstructor](/documentation/code/files/plugin__macros_8hpp/#define-plugin-deconstructor)** <br>Runs when the plugin is destroyed.  |
-|  | **[__PLUGIN_version](/documentation/code/files/plugin__macros_8hpp/#define---plugin-version)**(...) <br>Sets the version number.  |
-|  | **[__PLUGIN_no_version](/documentation/code/files/plugin__macros_8hpp/#define---plugin-no-version)** <br>Set version number to 0.0.0.  |
-|  | **[reqd_inifile_entries](/documentation/code/files/plugin__macros_8hpp/#define-reqd-inifile-entries)**(...) <br>Tells ScannerBit that these tags are required.  |
-|  | **[reqd_libraries](/documentation/code/files/plugin__macros_8hpp/#define-reqd-libraries)**(...) <br>Tells ScannerBit that these libraries are requested.  |
-|  | **[reqd_headers](/documentation/code/files/plugin__macros_8hpp/#define-reqd-headers)**(...) <br>Tells ScannerBit that these include files must exist.  |
-|  | **[set_flag](/documentation/code/files/plugin__macros_8hpp/#define-set-flag)**(...) <br>Tells ScannerBit to set a flag.  |
-|  | **[cxx_flags](/documentation/code/files/plugin__macros_8hpp/#define-cxx-flags)**(...)  |
-|  | **[REQD_INIFILE_ENTRIES](/documentation/code/files/plugin__macros_8hpp/#define-reqd-inifile-entries)**(...)  |
-|  | **[REQD_LIRBARIES](/documentation/code/files/plugin__macros_8hpp/#define-reqd-lirbaries)**(...)  |
-|  | **[REQD_HEADERS](/documentation/code/files/plugin__macros_8hpp/#define-reqd-headers)**(...)  |
-|  | **[SET_FLAG](/documentation/code/files/plugin__macros_8hpp/#define-set-flag)**(...)  |
-|  | **[CXX_FLAGS](/documentation/code/files/plugin__macros_8hpp/#define-cxx-flags)**(...)  |
-|  | **[_ARG_N_](/documentation/code/files/plugin__macros_8hpp/#define--arg-n-)**(_1_, _2_, _3_, _4_, ret, ...)  |
-|  | **[__ARG_N__](/documentation/code/files/plugin__macros_8hpp/#define---arg-n--)**(...)  |
-|  | **[__COMBINE__](/documentation/code/files/plugin__macros_8hpp/#define---combine--)**(a, b)  |
-|  | **[_COMBINE_](/documentation/code/files/plugin__macros_8hpp/#define--combine-)**(a, b)  |
-|  | **[_STR_](/documentation/code/files/plugin__macros_8hpp/#define--str-)**(a)  |
-|  | **[__STR__](/documentation/code/files/plugin__macros_8hpp/#define---str--)**(a)  |
-|  | **[__PLUGIN_VERSION___4](/documentation/code/files/plugin__macros_8hpp/#define---plugin-version---4)**(major, minor, patch, release)  |
-|  | **[__PLUGIN_VERSION___3](/documentation/code/files/plugin__macros_8hpp/#define---plugin-version---3)**(major, minor, patch)  |
-|  | **[__PLUGIN_VERSION___2](/documentation/code/files/plugin__macros_8hpp/#define---plugin-version---2)**(major, minor)  |
-|  | **[__PLUGIN_VERSION___1](/documentation/code/files/plugin__macros_8hpp/#define---plugin-version---1)**(major)  |
-|  | **[__PLUGIN_VERSION___0](/documentation/code/files/plugin__macros_8hpp/#define---plugin-version---0)**()  |
-|  | **[__PLUGIN_VERSION](/documentation/code/files/plugin__macros_8hpp/#define---plugin-version)**(...)  |
-|  | **[EXPORT_ABSTRACT](/documentation/code/files/plugin__macros_8hpp/#define-export-abstract)**(name, ...)  |
-|  | **[EXPORT_OBJECT](/documentation/code/files/plugin__macros_8hpp/#define-export-object)**(name, ...)  |
-|  | **[PLUGIN_CONSTRUCTOR](/documentation/code/files/plugin__macros_8hpp/#define-plugin-constructor)**  |
-|  | **[PLUGIN_DECONSTRUCTOR](/documentation/code/files/plugin__macros_8hpp/#define-plugin-deconstructor)**  |
-|  | **[__PLUGIN_MAIN_RET_VAL__](/documentation/code/files/plugin__macros_8hpp/#define---plugin-main-ret-val--)**(...)  |
-|  | **[PLUGIN_MAIN](/documentation/code/files/plugin__macros_8hpp/#define-plugin-main)**(...)  |
-|  | **[__GAMBIT_PLUGIN__](/documentation/code/files/plugin__macros_8hpp/#define---gambit-plugin--)**(plug_name, plug_type, plug_version)  |
-|  | **[_GAMBIT_PLUGIN_](/documentation/code/files/plugin__macros_8hpp/#define--gambit-plugin-)**(plug_name, plug_type, plug_version)  |
-|  | **[GAMBIT_PLUGIN_1](/documentation/code/files/plugin__macros_8hpp/#define-gambit-plugin-1)**(plugin_name)  |
-|  | **[GAMBIT_PLUGIN_2](/documentation/code/files/plugin__macros_8hpp/#define-gambit-plugin-2)**(plugin_name, plug_type)  |
-|  | **[GAMBIT_PLUGIN_3](/documentation/code/files/plugin__macros_8hpp/#define-gambit-plugin-3)**(plug_name, plug_type, plug_version)  |
-|  | **[GAMBIT_PLUGIN](/documentation/code/files/plugin__macros_8hpp/#define-gambit-plugin)**(...)  |
-|  | **[___GAMBIT_PLUGIN_NAMESPACE___](/documentation/code/files/plugin__macros_8hpp/#define----gambit-plugin-namespace---)**(plug_name, plug_type, plug_version)  |
-|  | **[_GAMBIT_PLUGIN_NAMESPACE_](/documentation/code/files/plugin__macros_8hpp/#define--gambit-plugin-namespace-)**(plug_name, plug_type, plug_version)  |
-|  | **[__GAMBIT_PLUGIN_NAMESPACE___1](/documentation/code/files/plugin__macros_8hpp/#define---gambit-plugin-namespace---1)**(plug_name)  |
-|  | **[__GAMBIT_PLUGIN_NAMESPACE___2](/documentation/code/files/plugin__macros_8hpp/#define---gambit-plugin-namespace---2)**(plug_name, plug_type)  |
-|  | **[__GAMBIT_PLUGIN_NAMESPACE___3](/documentation/code/files/plugin__macros_8hpp/#define---gambit-plugin-namespace---3)**(plug_name, plug_type, plug_version)  |
-|  | **[__GAMBIT_PLUGIN_NAMESPACE__](/documentation/code/files/plugin__macros_8hpp/#define---gambit-plugin-namespace--)**(...)  |
-|  | **[GAMBIT_PLUGIN_INITIALIZE](/documentation/code/files/plugin__macros_8hpp/#define-gambit-plugin-initialize)**(setup, ...)  |
+|  | **[export_abstract](/documentation/code/gambit_sphinxfiles/plugin__macros_8hpp/#define-export-abstract)**(name, ...)  |
+|  | **[export_object](/documentation/code/gambit_sphinxfiles/plugin__macros_8hpp/#define-export-object)**(name, ...) <br>Makes the object "name" available to the plugin interface.  |
+|  | **[plugin_main](/documentation/code/gambit_sphinxfiles/plugin__macros_8hpp/#define-plugin-main)**(...) <br>Declaration of the main function which will be ran by the interface.  |
+|  | **[gambit_plugin](/documentation/code/gambit_sphinxfiles/plugin__macros_8hpp/#define-gambit-plugin)**(...) <br>Generic plugin declaration of the from [gambit_plugin(name, type, version)]() |
+|  | **[plugin_constructor](/documentation/code/gambit_sphinxfiles/plugin__macros_8hpp/#define-plugin-constructor)** <br>Runs when the plugin is loaded.  |
+|  | **[plugin_deconstructor](/documentation/code/gambit_sphinxfiles/plugin__macros_8hpp/#define-plugin-deconstructor)** <br>Runs when the plugin is destroyed.  |
+|  | **[__PLUGIN_version](/documentation/code/gambit_sphinxfiles/plugin__macros_8hpp/#define---plugin-version)**(...) <br>Sets the version number.  |
+|  | **[__PLUGIN_no_version](/documentation/code/gambit_sphinxfiles/plugin__macros_8hpp/#define---plugin-no-version)** <br>Set version number to 0.0.0.  |
+|  | **[reqd_inifile_entries](/documentation/code/gambit_sphinxfiles/plugin__macros_8hpp/#define-reqd-inifile-entries)**(...) <br>Tells ScannerBit that these tags are required.  |
+|  | **[reqd_libraries](/documentation/code/gambit_sphinxfiles/plugin__macros_8hpp/#define-reqd-libraries)**(...) <br>Tells ScannerBit that these libraries are requested.  |
+|  | **[reqd_headers](/documentation/code/gambit_sphinxfiles/plugin__macros_8hpp/#define-reqd-headers)**(...) <br>Tells ScannerBit that these include files must exist.  |
+|  | **[set_flag](/documentation/code/gambit_sphinxfiles/plugin__macros_8hpp/#define-set-flag)**(...) <br>Tells ScannerBit to set a flag.  |
+|  | **[cxx_flags](/documentation/code/gambit_sphinxfiles/plugin__macros_8hpp/#define-cxx-flags)**(...)  |
+|  | **[REQD_INIFILE_ENTRIES](/documentation/code/gambit_sphinxfiles/plugin__macros_8hpp/#define-reqd-inifile-entries)**(...)  |
+|  | **[REQD_LIRBARIES](/documentation/code/gambit_sphinxfiles/plugin__macros_8hpp/#define-reqd-lirbaries)**(...)  |
+|  | **[REQD_HEADERS](/documentation/code/gambit_sphinxfiles/plugin__macros_8hpp/#define-reqd-headers)**(...)  |
+|  | **[SET_FLAG](/documentation/code/gambit_sphinxfiles/plugin__macros_8hpp/#define-set-flag)**(...)  |
+|  | **[CXX_FLAGS](/documentation/code/gambit_sphinxfiles/plugin__macros_8hpp/#define-cxx-flags)**(...)  |
+|  | **[_ARG_N_](/documentation/code/gambit_sphinxfiles/plugin__macros_8hpp/#define--arg-n-)**(_1_, _2_, _3_, _4_, ret, ...)  |
+|  | **[__ARG_N__](/documentation/code/gambit_sphinxfiles/plugin__macros_8hpp/#define---arg-n--)**(...)  |
+|  | **[__COMBINE__](/documentation/code/gambit_sphinxfiles/plugin__macros_8hpp/#define---combine--)**(a, b)  |
+|  | **[_COMBINE_](/documentation/code/gambit_sphinxfiles/plugin__macros_8hpp/#define--combine-)**(a, b)  |
+|  | **[_STR_](/documentation/code/gambit_sphinxfiles/plugin__macros_8hpp/#define--str-)**(a)  |
+|  | **[__STR__](/documentation/code/gambit_sphinxfiles/plugin__macros_8hpp/#define---str--)**(a)  |
+|  | **[__PLUGIN_VERSION___4](/documentation/code/gambit_sphinxfiles/plugin__macros_8hpp/#define---plugin-version---4)**(major, minor, patch, release)  |
+|  | **[__PLUGIN_VERSION___3](/documentation/code/gambit_sphinxfiles/plugin__macros_8hpp/#define---plugin-version---3)**(major, minor, patch)  |
+|  | **[__PLUGIN_VERSION___2](/documentation/code/gambit_sphinxfiles/plugin__macros_8hpp/#define---plugin-version---2)**(major, minor)  |
+|  | **[__PLUGIN_VERSION___1](/documentation/code/gambit_sphinxfiles/plugin__macros_8hpp/#define---plugin-version---1)**(major)  |
+|  | **[__PLUGIN_VERSION___0](/documentation/code/gambit_sphinxfiles/plugin__macros_8hpp/#define---plugin-version---0)**()  |
+|  | **[__PLUGIN_VERSION](/documentation/code/gambit_sphinxfiles/plugin__macros_8hpp/#define---plugin-version)**(...)  |
+|  | **[EXPORT_ABSTRACT](/documentation/code/gambit_sphinxfiles/plugin__macros_8hpp/#define-export-abstract)**(name, ...)  |
+|  | **[EXPORT_OBJECT](/documentation/code/gambit_sphinxfiles/plugin__macros_8hpp/#define-export-object)**(name, ...)  |
+|  | **[PLUGIN_CONSTRUCTOR](/documentation/code/gambit_sphinxfiles/plugin__macros_8hpp/#define-plugin-constructor)**  |
+|  | **[PLUGIN_DECONSTRUCTOR](/documentation/code/gambit_sphinxfiles/plugin__macros_8hpp/#define-plugin-deconstructor)**  |
+|  | **[__PLUGIN_MAIN_RET_VAL__](/documentation/code/gambit_sphinxfiles/plugin__macros_8hpp/#define---plugin-main-ret-val--)**(...)  |
+|  | **[PLUGIN_MAIN](/documentation/code/gambit_sphinxfiles/plugin__macros_8hpp/#define-plugin-main)**(...)  |
+|  | **[__GAMBIT_PLUGIN__](/documentation/code/gambit_sphinxfiles/plugin__macros_8hpp/#define---gambit-plugin--)**(plug_name, plug_type, plug_version)  |
+|  | **[_GAMBIT_PLUGIN_](/documentation/code/gambit_sphinxfiles/plugin__macros_8hpp/#define--gambit-plugin-)**(plug_name, plug_type, plug_version)  |
+|  | **[GAMBIT_PLUGIN_1](/documentation/code/gambit_sphinxfiles/plugin__macros_8hpp/#define-gambit-plugin-1)**(plugin_name)  |
+|  | **[GAMBIT_PLUGIN_2](/documentation/code/gambit_sphinxfiles/plugin__macros_8hpp/#define-gambit-plugin-2)**(plugin_name, plug_type)  |
+|  | **[GAMBIT_PLUGIN_3](/documentation/code/gambit_sphinxfiles/plugin__macros_8hpp/#define-gambit-plugin-3)**(plug_name, plug_type, plug_version)  |
+|  | **[GAMBIT_PLUGIN](/documentation/code/gambit_sphinxfiles/plugin__macros_8hpp/#define-gambit-plugin)**(...)  |
+|  | **[___GAMBIT_PLUGIN_NAMESPACE___](/documentation/code/gambit_sphinxfiles/plugin__macros_8hpp/#define----gambit-plugin-namespace---)**(plug_name, plug_type, plug_version)  |
+|  | **[_GAMBIT_PLUGIN_NAMESPACE_](/documentation/code/gambit_sphinxfiles/plugin__macros_8hpp/#define--gambit-plugin-namespace-)**(plug_name, plug_type, plug_version)  |
+|  | **[__GAMBIT_PLUGIN_NAMESPACE___1](/documentation/code/gambit_sphinxfiles/plugin__macros_8hpp/#define---gambit-plugin-namespace---1)**(plug_name)  |
+|  | **[__GAMBIT_PLUGIN_NAMESPACE___2](/documentation/code/gambit_sphinxfiles/plugin__macros_8hpp/#define---gambit-plugin-namespace---2)**(plug_name, plug_type)  |
+|  | **[__GAMBIT_PLUGIN_NAMESPACE___3](/documentation/code/gambit_sphinxfiles/plugin__macros_8hpp/#define---gambit-plugin-namespace---3)**(plug_name, plug_type, plug_version)  |
+|  | **[__GAMBIT_PLUGIN_NAMESPACE__](/documentation/code/gambit_sphinxfiles/plugin__macros_8hpp/#define---gambit-plugin-namespace--)**(...)  |
+|  | **[GAMBIT_PLUGIN_INITIALIZE](/documentation/code/gambit_sphinxfiles/plugin__macros_8hpp/#define-gambit-plugin-initialize)**(setup, ...)  |
 
 ## Detailed Description
 
@@ -1107,4 +1107,4 @@ __GAMBIT_PLUGIN_NAMESPACE__(__VA_ARGS__)                                        
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:34 +0000
+Updated on 2022-08-01 at 17:31:48 +0000

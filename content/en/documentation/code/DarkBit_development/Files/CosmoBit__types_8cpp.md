@@ -16,14 +16,14 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::CosmoBit](/documentation/code/namespaces/namespacegambit_1_1cosmobit/)**  |
+| **[Gambit](/documentation/code/darkbit_developmentnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::CosmoBit](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1cosmobit/)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[GSL_SPLINE_TYPE](/documentation/code/files/cosmobit__types_8cpp/#define-gsl-spline-type)**  |
+|  | **[GSL_SPLINE_TYPE](/documentation/code/darkbit_developmentfiles/cosmobit__types_8cpp/#define-gsl-spline-type)**  |
 
 ## Detailed Description
 
@@ -290,4 +290,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:24 +0000
+Updated on 2022-08-01 at 17:31:43 +0000

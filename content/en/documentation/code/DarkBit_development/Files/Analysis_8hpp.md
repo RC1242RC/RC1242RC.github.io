@@ -16,20 +16,20 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::ColliderBit](/documentation/code/namespaces/namespacegambit_1_1colliderbit/)**  |
+| **[Gambit](/documentation/code/darkbit_developmentnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::ColliderBit](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1colliderbit/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Gambit::ColliderBit::Analysis](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/)** <br>A class for collider analyses within ColliderBit.  |
+| class | **[Gambit::ColliderBit::Analysis](/documentation/code/darkbit_developmentclasses/classgambit_1_1colliderbit_1_1analysis/)** <br>A class for collider analyses within ColliderBit.  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[DEFINE_ANALYSIS_FACTORY](/documentation/code/files/analysis_8hpp/#define-define-analysis-factory)**(ANAME) <br>For analysis factory function definition.  |
+|  | **[DEFINE_ANALYSIS_FACTORY](/documentation/code/darkbit_developmentfiles/analysis_8hpp/#define-define-analysis-factory)**(ANAME) <br>For analysis factory function definition.  |
 
 ## Detailed Description
 
@@ -170,4 +170,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:24 +0000
+Updated on 2022-08-01 at 17:31:44 +0000

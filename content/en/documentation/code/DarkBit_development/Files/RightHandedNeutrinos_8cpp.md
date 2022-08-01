@@ -16,9 +16,9 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::NeutrinoBit](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**  |
-| **[Eigen](/documentation/code/namespaces/namespaceeigen/)**  |
+| **[Gambit](/documentation/code/darkbit_developmentnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::NeutrinoBit](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1neutrinobit/)**  |
+| **[Eigen](/documentation/code/darkbit_developmentnamespaces/namespaceeigen/)**  |
 
 ## Detailed Description
 
@@ -2391,4 +2391,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:23 +0000
+Updated on 2022-08-01 at 17:31:43 +0000

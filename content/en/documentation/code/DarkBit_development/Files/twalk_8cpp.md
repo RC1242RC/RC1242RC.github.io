@@ -16,20 +16,20 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::Scanner](/documentation/code/namespaces/namespacegambit_1_1scanner/)**  |
+| **[Gambit](/documentation/code/darkbit_developmentnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::Scanner](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1scanner/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[Gambit::Scanner::point_info](/documentation/code/classes/structgambit_1_1scanner_1_1point__info/)**  |
+| struct | **[Gambit::Scanner::point_info](/documentation/code/darkbit_developmentclasses/structgambit_1_1scanner_1_1point__info/)**  |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[scanner_plugin](/documentation/code/files/twalk_8cpp/#function-scanner-plugin)**(twalk , version(1, 0, 1) ) |
+| | **[scanner_plugin](/documentation/code/darkbit_developmentfiles/twalk_8cpp/#function-scanner-plugin)**(twalk , version(1, 0, 1) ) |
 
 ## Detailed Description
 
@@ -509,4 +509,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:23 +0000
+Updated on 2022-08-01 at 17:31:43 +0000

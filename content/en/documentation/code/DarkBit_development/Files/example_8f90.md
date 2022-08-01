@@ -16,16 +16,16 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[m1](/documentation/code/namespaces/namespacem1/)**  |
-| **[ma](/documentation/code/namespaces/namespacema/)**  |
-| **[mb](/documentation/code/namespaces/namespacemb/)**  |
+| **[m1](/documentation/code/darkbit_developmentnamespaces/namespacem1/)**  |
+| **[ma](/documentation/code/darkbit_developmentnamespaces/namespacema/)**  |
+| **[mb](/documentation/code/darkbit_developmentnamespaces/namespacemb/)**  |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| integer function | **[two](/documentation/code/files/example_8f90/#function-two)**() |
-| character *8 function | **[text](/documentation/code/files/example_8f90/#function-text)**() |
+| integer function | **[two](/documentation/code/darkbit_developmentfiles/example_8f90/#function-two)**() |
+| character *8 function | **[text](/documentation/code/darkbit_developmentfiles/example_8f90/#function-text)**() |
 
 
 ## Functions Documentation
@@ -91,4 +91,4 @@ end module mb
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:26 +0000
+Updated on 2022-08-01 at 17:31:45 +0000

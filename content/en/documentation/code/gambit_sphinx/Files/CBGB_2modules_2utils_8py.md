@@ -16,8 +16,8 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[modules](/documentation/code/namespaces/namespacemodules/)**  |
-| **[modules::utils](/documentation/code/namespaces/namespacemodules_1_1utils/)**  |
+| **[modules](/documentation/code/gambit_sphinxnamespaces/namespacemodules/)**  |
+| **[modules::utils](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1utils/)**  |
 
 
 
@@ -1247,4 +1247,4 @@ def addNamespace(code, namespace_name, indent=4):
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:37 +0000
+Updated on 2022-08-01 at 17:31:51 +0000

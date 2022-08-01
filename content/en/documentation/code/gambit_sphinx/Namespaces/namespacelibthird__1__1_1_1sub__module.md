@@ -16,13 +16,13 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| def | **[someOtherFunction](/documentation/code/namespaces/namespacelibthird__1__1_1_1sub__module/#function-someotherfunction)**(x x) |
+| def | **[someOtherFunction](/documentation/code/gambit_sphinxnamespaces/namespacelibthird__1__1_1_1sub__module/#function-someotherfunction)**(x x) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| int | **[someOtherInt](/documentation/code/namespaces/namespacelibthird__1__1_1_1sub__module/#variable-someotherint)**  |
+| int | **[someOtherInt](/documentation/code/gambit_sphinxnamespaces/namespacelibthird__1__1_1_1sub__module/#variable-someotherint)**  |
 
 
 ## Functions Documentation
@@ -51,4 +51,4 @@ int someOtherInt =  5;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:32 +0000
+Updated on 2022-08-01 at 17:31:46 +0000

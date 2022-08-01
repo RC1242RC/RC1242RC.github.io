@@ -18,22 +18,22 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[SolarModel](/documentation/code/classes/classgambit_1_1darkbit_1_1solarmodel/#function-solarmodel)**() |
-| | **[SolarModel](/documentation/code/classes/classgambit_1_1darkbit_1_1solarmodel/#function-solarmodel)**(std::string file) |
-| | **[~SolarModel](/documentation/code/classes/classgambit_1_1darkbit_1_1solarmodel/#function-~solarmodel)**() |
-| [SolarModel](/documentation/code/classes/classgambit_1_1darkbit_1_1solarmodel/) & | **[operator=](/documentation/code/classes/classgambit_1_1darkbit_1_1solarmodel/#function-operator=)**([SolarModel](/documentation/code/classes/classgambit_1_1darkbit_1_1solarmodel/) && model) |
-| | **[SolarModel](/documentation/code/classes/classgambit_1_1darkbit_1_1solarmodel/#function-solarmodel)**(const [SolarModel](/documentation/code/classes/classgambit_1_1darkbit_1_1solarmodel/) & ) =delete |
-| [SolarModel](/documentation/code/classes/classgambit_1_1darkbit_1_1solarmodel/) | **[operator=](/documentation/code/classes/classgambit_1_1darkbit_1_1solarmodel/#function-operator=)**(const [SolarModel](/documentation/code/classes/classgambit_1_1darkbit_1_1solarmodel/) & ) =delete |
-| double | **[kappa_squared](/documentation/code/classes/classgambit_1_1darkbit_1_1solarmodel/#function-kappa-squared)**(double r) |
-| double | **[temperature_in_keV](/documentation/code/classes/classgambit_1_1darkbit_1_1solarmodel/#function-temperature-in-kev)**(double r) |
-| double | **[omega_pl_squared](/documentation/code/classes/classgambit_1_1darkbit_1_1solarmodel/#function-omega-pl-squared)**(double r) |
+| | **[SolarModel](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1solarmodel/#function-solarmodel)**() |
+| | **[SolarModel](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1solarmodel/#function-solarmodel)**(std::string file) |
+| | **[~SolarModel](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1solarmodel/#function-~solarmodel)**() |
+| [SolarModel](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1solarmodel/) & | **[operator=](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1solarmodel/#function-operator=)**([SolarModel](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1solarmodel/) && model) |
+| | **[SolarModel](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1solarmodel/#function-solarmodel)**(const [SolarModel](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1solarmodel/) & ) =delete |
+| [SolarModel](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1solarmodel/) | **[operator=](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1solarmodel/#function-operator=)**(const [SolarModel](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1solarmodel/) & ) =delete |
+| double | **[kappa_squared](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1solarmodel/#function-kappa-squared)**(double r) |
+| double | **[temperature_in_keV](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1solarmodel/#function-temperature-in-kev)**(double r) |
+| double | **[omega_pl_squared](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1solarmodel/#function-omega-pl-squared)**(double r) |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[r_lo](/documentation/code/classes/classgambit_1_1darkbit_1_1solarmodel/#variable-r-lo)**  |
-| double | **[r_hi](/documentation/code/classes/classgambit_1_1darkbit_1_1solarmodel/#variable-r-hi)**  |
+| double | **[r_lo](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1solarmodel/#variable-r-lo)**  |
+| double | **[r_hi](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1solarmodel/#variable-r-hi)**  |
 
 ## Public Functions Documentation
 
@@ -132,4 +132,4 @@ double r_hi;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:33 +0000
+Updated on 2022-08-01 at 17:31:47 +0000

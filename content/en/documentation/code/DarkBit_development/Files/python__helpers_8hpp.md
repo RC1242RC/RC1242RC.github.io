@@ -16,7 +16,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef char | **[PyDict](/documentation/code/files/python__helpers_8hpp/#typedef-pydict)** <br>Types used for Python backends.  |
+| typedef char | **[PyDict](/documentation/code/darkbit_developmentfiles/python__helpers_8hpp/#typedef-pydict)** <br>Types used for Python backends.  |
 
 ## Detailed Description
 
@@ -173,4 +173,4 @@ Types used for Python backends.
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:25 +0000
+Updated on 2022-08-01 at 17:31:45 +0000

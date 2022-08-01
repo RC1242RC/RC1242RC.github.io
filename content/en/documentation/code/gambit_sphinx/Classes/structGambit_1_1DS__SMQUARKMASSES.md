@@ -18,13 +18,13 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Fdouble | **[mu2gev](/documentation/code/classes/structgambit_1_1ds__smquarkmasses/#variable-mu2gev)**  |
-| Fdouble | **[md2gev](/documentation/code/classes/structgambit_1_1ds__smquarkmasses/#variable-md2gev)**  |
-| Fdouble | **[ms2gev](/documentation/code/classes/structgambit_1_1ds__smquarkmasses/#variable-ms2gev)**  |
-| Fdouble | **[mcmc](/documentation/code/classes/structgambit_1_1ds__smquarkmasses/#variable-mcmc)**  |
-| Fdouble | **[mbmb](/documentation/code/classes/structgambit_1_1ds__smquarkmasses/#variable-mbmb)**  |
-| Fdouble | **[mtmt](/documentation/code/classes/structgambit_1_1ds__smquarkmasses/#variable-mtmt)**  |
-| Fstring< 5 > | **[roption](/documentation/code/classes/structgambit_1_1ds__smquarkmasses/#variable-roption)**  |
+| Fdouble | **[mu2gev](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__smquarkmasses/#variable-mu2gev)**  |
+| Fdouble | **[md2gev](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__smquarkmasses/#variable-md2gev)**  |
+| Fdouble | **[ms2gev](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__smquarkmasses/#variable-ms2gev)**  |
+| Fdouble | **[mcmc](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__smquarkmasses/#variable-mcmc)**  |
+| Fdouble | **[mbmb](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__smquarkmasses/#variable-mbmb)**  |
+| Fdouble | **[mtmt](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__smquarkmasses/#variable-mtmt)**  |
+| Fstring< 5 > | **[roption](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__smquarkmasses/#variable-roption)**  |
 
 ## Public Attributes Documentation
 
@@ -79,4 +79,4 @@ Fstring< 5 > roption;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:32 +0000
+Updated on 2022-08-01 at 17:31:46 +0000

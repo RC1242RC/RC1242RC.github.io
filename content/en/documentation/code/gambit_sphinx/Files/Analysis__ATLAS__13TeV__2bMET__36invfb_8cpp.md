@@ -16,15 +16,15 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::ColliderBit](/documentation/code/namespaces/namespacegambit_1_1colliderbit/)**  |
+| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::ColliderBit](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1colliderbit/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Gambit::ColliderBit::MT2](/documentation/code/classes/classgambit_1_1colliderbit_1_1mt2/)** <br>A useful [MT2]() class for this module.  |
-| class | **[Gambit::ColliderBit::Analysis_ATLAS_13TeV_2bMET_36invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2bmet__36invfb/)**  |
+| class | **[Gambit::ColliderBit::MT2](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1mt2/)** <br>A useful [MT2]() class for this module.  |
+| class | **[Gambit::ColliderBit::Analysis_ATLAS_13TeV_2bMET_36invfb](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2bmet__36invfb/)**  |
 
 
 
@@ -968,4 +968,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:35 +0000
+Updated on 2022-08-01 at 17:31:49 +0000

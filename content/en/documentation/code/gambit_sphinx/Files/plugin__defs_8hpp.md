@@ -16,19 +16,19 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::Scanner](/documentation/code/namespaces/namespacegambit_1_1scanner/)**  |
-| **[Gambit::Scanner::Plugins](/documentation/code/namespaces/namespacegambit_1_1scanner_1_1plugins/)**  |
+| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::Scanner](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1scanner/)**  |
+| **[Gambit::Scanner::Plugins](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1scanner_1_1plugins/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Gambit::Scanner::resume_params_func](/documentation/code/classes/classgambit_1_1scanner_1_1resume__params__func/)** <br>class to interface with the plugin manager resume functions.  |
-| class | **[Gambit::Scanner::Plugins::factoryBase](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1factorybase/)**  |
-| class | **[Gambit::Scanner::Plugins::funcFactory](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1funcfactory/)**  |
-| class | **[Gambit::Scanner::Plugins::classFactory](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1classfactory/)**  |
-| struct | **[Gambit::Scanner::Plugins::pluginData](/documentation/code/classes/structgambit_1_1scanner_1_1plugins_1_1plugindata/)** <br>Structure that holds all the data provided by plugins about themselves.  |
+| class | **[Gambit::Scanner::resume_params_func](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1resume__params__func/)** <br>class to interface with the plugin manager resume functions.  |
+| class | **[Gambit::Scanner::Plugins::factoryBase](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1plugins_1_1factorybase/)**  |
+| class | **[Gambit::Scanner::Plugins::funcFactory](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1plugins_1_1funcfactory/)**  |
+| class | **[Gambit::Scanner::Plugins::classFactory](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1plugins_1_1classfactory/)**  |
+| struct | **[Gambit::Scanner::Plugins::pluginData](/documentation/code/gambit_sphinxclasses/structgambit_1_1scanner_1_1plugins_1_1plugindata/)** <br>Structure that holds all the data provided by plugins about themselves.  |
 
 ## Detailed Description
 
@@ -266,4 +266,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:34 +0000
+Updated on 2022-08-01 at 17:31:48 +0000

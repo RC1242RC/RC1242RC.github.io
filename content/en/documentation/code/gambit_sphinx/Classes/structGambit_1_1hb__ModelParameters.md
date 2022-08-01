@@ -18,54 +18,54 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[Mh](/documentation/code/classes/structgambit_1_1hb__modelparameters/#variable-mh)**  |
-| double | **[deltaMh](/documentation/code/classes/structgambit_1_1hb__modelparameters/#variable-deltamh)**  |
-| double | **[hGammaTot](/documentation/code/classes/structgambit_1_1hb__modelparameters/#variable-hgammatot)**  |
-| int | **[CP](/documentation/code/classes/structgambit_1_1hb__modelparameters/#variable-cp)**  |
-| double | **[CS_lep_hjZ_ratio](/documentation/code/classes/structgambit_1_1hb__modelparameters/#variable-cs-lep-hjz-ratio)**  |
-| double | **[CS_lep_bbhj_ratio](/documentation/code/classes/structgambit_1_1hb__modelparameters/#variable-cs-lep-bbhj-ratio)**  |
-| double | **[CS_lep_tautauhj_ratio](/documentation/code/classes/structgambit_1_1hb__modelparameters/#variable-cs-lep-tautauhj-ratio)**  |
-| double | **[CS_lep_hjhi_ratio](/documentation/code/classes/structgambit_1_1hb__modelparameters/#variable-cs-lep-hjhi-ratio)**  |
-| double | **[CS_gg_hj_ratio](/documentation/code/classes/structgambit_1_1hb__modelparameters/#variable-cs-gg-hj-ratio)**  |
-| double | **[CS_bb_hj_ratio](/documentation/code/classes/structgambit_1_1hb__modelparameters/#variable-cs-bb-hj-ratio)**  |
-| double | **[CS_bg_hjb_ratio](/documentation/code/classes/structgambit_1_1hb__modelparameters/#variable-cs-bg-hjb-ratio)**  |
-| double | **[CS_ud_hjWp_ratio](/documentation/code/classes/structgambit_1_1hb__modelparameters/#variable-cs-ud-hjwp-ratio)**  |
-| double | **[CS_cs_hjWp_ratio](/documentation/code/classes/structgambit_1_1hb__modelparameters/#variable-cs-cs-hjwp-ratio)**  |
-| double | **[CS_ud_hjWm_ratio](/documentation/code/classes/structgambit_1_1hb__modelparameters/#variable-cs-ud-hjwm-ratio)**  |
-| double | **[CS_cs_hjWm_ratio](/documentation/code/classes/structgambit_1_1hb__modelparameters/#variable-cs-cs-hjwm-ratio)**  |
-| double | **[CS_gg_hjZ_ratio](/documentation/code/classes/structgambit_1_1hb__modelparameters/#variable-cs-gg-hjz-ratio)**  |
-| double | **[CS_dd_hjZ_ratio](/documentation/code/classes/structgambit_1_1hb__modelparameters/#variable-cs-dd-hjz-ratio)**  |
-| double | **[CS_uu_hjZ_ratio](/documentation/code/classes/structgambit_1_1hb__modelparameters/#variable-cs-uu-hjz-ratio)**  |
-| double | **[CS_ss_hjZ_ratio](/documentation/code/classes/structgambit_1_1hb__modelparameters/#variable-cs-ss-hjz-ratio)**  |
-| double | **[CS_cc_hjZ_ratio](/documentation/code/classes/structgambit_1_1hb__modelparameters/#variable-cs-cc-hjz-ratio)**  |
-| double | **[CS_bb_hjZ_ratio](/documentation/code/classes/structgambit_1_1hb__modelparameters/#variable-cs-bb-hjz-ratio)**  |
-| double | **[CS_tev_vbf_ratio](/documentation/code/classes/structgambit_1_1hb__modelparameters/#variable-cs-tev-vbf-ratio)**  |
-| double | **[CS_tev_tthj_ratio](/documentation/code/classes/structgambit_1_1hb__modelparameters/#variable-cs-tev-tthj-ratio)**  |
-| double | **[CS_lhc7_vbf_ratio](/documentation/code/classes/structgambit_1_1hb__modelparameters/#variable-cs-lhc7-vbf-ratio)**  |
-| double | **[CS_lhc7_tthj_ratio](/documentation/code/classes/structgambit_1_1hb__modelparameters/#variable-cs-lhc7-tthj-ratio)**  |
-| double | **[CS_lhc8_vbf_ratio](/documentation/code/classes/structgambit_1_1hb__modelparameters/#variable-cs-lhc8-vbf-ratio)**  |
-| double | **[CS_lhc8_tthj_ratio](/documentation/code/classes/structgambit_1_1hb__modelparameters/#variable-cs-lhc8-tthj-ratio)**  |
-| double | **[BR_hjss](/documentation/code/classes/structgambit_1_1hb__modelparameters/#variable-br-hjss)**  |
-| double | **[BR_hjcc](/documentation/code/classes/structgambit_1_1hb__modelparameters/#variable-br-hjcc)**  |
-| double | **[BR_hjbb](/documentation/code/classes/structgambit_1_1hb__modelparameters/#variable-br-hjbb)**  |
-| double | **[BR_hjmumu](/documentation/code/classes/structgambit_1_1hb__modelparameters/#variable-br-hjmumu)**  |
-| double | **[BR_hjtautau](/documentation/code/classes/structgambit_1_1hb__modelparameters/#variable-br-hjtautau)**  |
-| double | **[BR_hjWW](/documentation/code/classes/structgambit_1_1hb__modelparameters/#variable-br-hjww)**  |
-| double | **[BR_hjZZ](/documentation/code/classes/structgambit_1_1hb__modelparameters/#variable-br-hjzz)**  |
-| double | **[BR_hjZga](/documentation/code/classes/structgambit_1_1hb__modelparameters/#variable-br-hjzga)**  |
-| double | **[BR_hjgaga](/documentation/code/classes/structgambit_1_1hb__modelparameters/#variable-br-hjgaga)**  |
-| double | **[BR_hjgg](/documentation/code/classes/structgambit_1_1hb__modelparameters/#variable-br-hjgg)**  |
-| double | **[BR_hjinvisible](/documentation/code/classes/structgambit_1_1hb__modelparameters/#variable-br-hjinvisible)**  |
-| double | **[BR_hjhihi](/documentation/code/classes/structgambit_1_1hb__modelparameters/#variable-br-hjhihi)**  |
-| double | **[MHplus](/documentation/code/classes/structgambit_1_1hb__modelparameters/#variable-mhplus)**  |
-| double | **[deltaMHplus](/documentation/code/classes/structgambit_1_1hb__modelparameters/#variable-deltamhplus)**  |
-| double | **[HpGammaTot](/documentation/code/classes/structgambit_1_1hb__modelparameters/#variable-hpgammatot)**  |
-| double | **[CS_lep_HpjHmi_ratio](/documentation/code/classes/structgambit_1_1hb__modelparameters/#variable-cs-lep-hpjhmi-ratio)**  |
-| double | **[BR_tWpb](/documentation/code/classes/structgambit_1_1hb__modelparameters/#variable-br-twpb)**  |
-| double | **[BR_tHpjb](/documentation/code/classes/structgambit_1_1hb__modelparameters/#variable-br-thpjb)**  |
-| double | **[BR_Hpjcs](/documentation/code/classes/structgambit_1_1hb__modelparameters/#variable-br-hpjcs)**  |
-| double | **[BR_Hpjcb](/documentation/code/classes/structgambit_1_1hb__modelparameters/#variable-br-hpjcb)**  |
-| double | **[BR_Hptaunu](/documentation/code/classes/structgambit_1_1hb__modelparameters/#variable-br-hptaunu)**  |
+| double | **[Mh](/documentation/code/gambit_sphinxclasses/structgambit_1_1hb__modelparameters/#variable-mh)**  |
+| double | **[deltaMh](/documentation/code/gambit_sphinxclasses/structgambit_1_1hb__modelparameters/#variable-deltamh)**  |
+| double | **[hGammaTot](/documentation/code/gambit_sphinxclasses/structgambit_1_1hb__modelparameters/#variable-hgammatot)**  |
+| int | **[CP](/documentation/code/gambit_sphinxclasses/structgambit_1_1hb__modelparameters/#variable-cp)**  |
+| double | **[CS_lep_hjZ_ratio](/documentation/code/gambit_sphinxclasses/structgambit_1_1hb__modelparameters/#variable-cs-lep-hjz-ratio)**  |
+| double | **[CS_lep_bbhj_ratio](/documentation/code/gambit_sphinxclasses/structgambit_1_1hb__modelparameters/#variable-cs-lep-bbhj-ratio)**  |
+| double | **[CS_lep_tautauhj_ratio](/documentation/code/gambit_sphinxclasses/structgambit_1_1hb__modelparameters/#variable-cs-lep-tautauhj-ratio)**  |
+| double | **[CS_lep_hjhi_ratio](/documentation/code/gambit_sphinxclasses/structgambit_1_1hb__modelparameters/#variable-cs-lep-hjhi-ratio)**  |
+| double | **[CS_gg_hj_ratio](/documentation/code/gambit_sphinxclasses/structgambit_1_1hb__modelparameters/#variable-cs-gg-hj-ratio)**  |
+| double | **[CS_bb_hj_ratio](/documentation/code/gambit_sphinxclasses/structgambit_1_1hb__modelparameters/#variable-cs-bb-hj-ratio)**  |
+| double | **[CS_bg_hjb_ratio](/documentation/code/gambit_sphinxclasses/structgambit_1_1hb__modelparameters/#variable-cs-bg-hjb-ratio)**  |
+| double | **[CS_ud_hjWp_ratio](/documentation/code/gambit_sphinxclasses/structgambit_1_1hb__modelparameters/#variable-cs-ud-hjwp-ratio)**  |
+| double | **[CS_cs_hjWp_ratio](/documentation/code/gambit_sphinxclasses/structgambit_1_1hb__modelparameters/#variable-cs-cs-hjwp-ratio)**  |
+| double | **[CS_ud_hjWm_ratio](/documentation/code/gambit_sphinxclasses/structgambit_1_1hb__modelparameters/#variable-cs-ud-hjwm-ratio)**  |
+| double | **[CS_cs_hjWm_ratio](/documentation/code/gambit_sphinxclasses/structgambit_1_1hb__modelparameters/#variable-cs-cs-hjwm-ratio)**  |
+| double | **[CS_gg_hjZ_ratio](/documentation/code/gambit_sphinxclasses/structgambit_1_1hb__modelparameters/#variable-cs-gg-hjz-ratio)**  |
+| double | **[CS_dd_hjZ_ratio](/documentation/code/gambit_sphinxclasses/structgambit_1_1hb__modelparameters/#variable-cs-dd-hjz-ratio)**  |
+| double | **[CS_uu_hjZ_ratio](/documentation/code/gambit_sphinxclasses/structgambit_1_1hb__modelparameters/#variable-cs-uu-hjz-ratio)**  |
+| double | **[CS_ss_hjZ_ratio](/documentation/code/gambit_sphinxclasses/structgambit_1_1hb__modelparameters/#variable-cs-ss-hjz-ratio)**  |
+| double | **[CS_cc_hjZ_ratio](/documentation/code/gambit_sphinxclasses/structgambit_1_1hb__modelparameters/#variable-cs-cc-hjz-ratio)**  |
+| double | **[CS_bb_hjZ_ratio](/documentation/code/gambit_sphinxclasses/structgambit_1_1hb__modelparameters/#variable-cs-bb-hjz-ratio)**  |
+| double | **[CS_tev_vbf_ratio](/documentation/code/gambit_sphinxclasses/structgambit_1_1hb__modelparameters/#variable-cs-tev-vbf-ratio)**  |
+| double | **[CS_tev_tthj_ratio](/documentation/code/gambit_sphinxclasses/structgambit_1_1hb__modelparameters/#variable-cs-tev-tthj-ratio)**  |
+| double | **[CS_lhc7_vbf_ratio](/documentation/code/gambit_sphinxclasses/structgambit_1_1hb__modelparameters/#variable-cs-lhc7-vbf-ratio)**  |
+| double | **[CS_lhc7_tthj_ratio](/documentation/code/gambit_sphinxclasses/structgambit_1_1hb__modelparameters/#variable-cs-lhc7-tthj-ratio)**  |
+| double | **[CS_lhc8_vbf_ratio](/documentation/code/gambit_sphinxclasses/structgambit_1_1hb__modelparameters/#variable-cs-lhc8-vbf-ratio)**  |
+| double | **[CS_lhc8_tthj_ratio](/documentation/code/gambit_sphinxclasses/structgambit_1_1hb__modelparameters/#variable-cs-lhc8-tthj-ratio)**  |
+| double | **[BR_hjss](/documentation/code/gambit_sphinxclasses/structgambit_1_1hb__modelparameters/#variable-br-hjss)**  |
+| double | **[BR_hjcc](/documentation/code/gambit_sphinxclasses/structgambit_1_1hb__modelparameters/#variable-br-hjcc)**  |
+| double | **[BR_hjbb](/documentation/code/gambit_sphinxclasses/structgambit_1_1hb__modelparameters/#variable-br-hjbb)**  |
+| double | **[BR_hjmumu](/documentation/code/gambit_sphinxclasses/structgambit_1_1hb__modelparameters/#variable-br-hjmumu)**  |
+| double | **[BR_hjtautau](/documentation/code/gambit_sphinxclasses/structgambit_1_1hb__modelparameters/#variable-br-hjtautau)**  |
+| double | **[BR_hjWW](/documentation/code/gambit_sphinxclasses/structgambit_1_1hb__modelparameters/#variable-br-hjww)**  |
+| double | **[BR_hjZZ](/documentation/code/gambit_sphinxclasses/structgambit_1_1hb__modelparameters/#variable-br-hjzz)**  |
+| double | **[BR_hjZga](/documentation/code/gambit_sphinxclasses/structgambit_1_1hb__modelparameters/#variable-br-hjzga)**  |
+| double | **[BR_hjgaga](/documentation/code/gambit_sphinxclasses/structgambit_1_1hb__modelparameters/#variable-br-hjgaga)**  |
+| double | **[BR_hjgg](/documentation/code/gambit_sphinxclasses/structgambit_1_1hb__modelparameters/#variable-br-hjgg)**  |
+| double | **[BR_hjinvisible](/documentation/code/gambit_sphinxclasses/structgambit_1_1hb__modelparameters/#variable-br-hjinvisible)**  |
+| double | **[BR_hjhihi](/documentation/code/gambit_sphinxclasses/structgambit_1_1hb__modelparameters/#variable-br-hjhihi)**  |
+| double | **[MHplus](/documentation/code/gambit_sphinxclasses/structgambit_1_1hb__modelparameters/#variable-mhplus)**  |
+| double | **[deltaMHplus](/documentation/code/gambit_sphinxclasses/structgambit_1_1hb__modelparameters/#variable-deltamhplus)**  |
+| double | **[HpGammaTot](/documentation/code/gambit_sphinxclasses/structgambit_1_1hb__modelparameters/#variable-hpgammatot)**  |
+| double | **[CS_lep_HpjHmi_ratio](/documentation/code/gambit_sphinxclasses/structgambit_1_1hb__modelparameters/#variable-cs-lep-hpjhmi-ratio)**  |
+| double | **[BR_tWpb](/documentation/code/gambit_sphinxclasses/structgambit_1_1hb__modelparameters/#variable-br-twpb)**  |
+| double | **[BR_tHpjb](/documentation/code/gambit_sphinxclasses/structgambit_1_1hb__modelparameters/#variable-br-thpjb)**  |
+| double | **[BR_Hpjcs](/documentation/code/gambit_sphinxclasses/structgambit_1_1hb__modelparameters/#variable-br-hpjcs)**  |
+| double | **[BR_Hpjcb](/documentation/code/gambit_sphinxclasses/structgambit_1_1hb__modelparameters/#variable-br-hpjcb)**  |
+| double | **[BR_Hptaunu](/documentation/code/gambit_sphinxclasses/structgambit_1_1hb__modelparameters/#variable-br-hptaunu)**  |
 
 ## Public Attributes Documentation
 
@@ -407,4 +407,4 @@ double BR_Hptaunu;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:32 +0000
+Updated on 2022-08-01 at 17:31:46 +0000

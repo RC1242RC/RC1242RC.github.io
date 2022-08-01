@@ -16,9 +16,9 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[objective_plugin](/documentation/code/files/objective__plugin_8hpp/#define-objective-plugin)**(...)  |
-|  | **[__OBJECTIVE_SETUP__](/documentation/code/files/objective__plugin_8hpp/#define---objective-setup--)**  |
-|  | **[OBJECTIVE_PLUGIN](/documentation/code/files/objective__plugin_8hpp/#define-objective-plugin)**(plug_name, ...)  |
+|  | **[objective_plugin](/documentation/code/gambit_sphinxfiles/objective__plugin_8hpp/#define-objective-plugin)**(...)  |
+|  | **[__OBJECTIVE_SETUP__](/documentation/code/gambit_sphinxfiles/objective__plugin_8hpp/#define---objective-setup--)**  |
+|  | **[OBJECTIVE_PLUGIN](/documentation/code/gambit_sphinxfiles/objective__plugin_8hpp/#define-objective-plugin)**(plug_name, ...)  |
 
 ## Detailed Description
 
@@ -133,4 +133,4 @@ inline void print_parameters(std::unordered_map<std::string, double> &key_map)  
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:34 +0000
+Updated on 2022-08-01 at 17:31:48 +0000

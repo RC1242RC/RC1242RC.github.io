@@ -16,16 +16,16 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::FlavBit](/documentation/code/namespaces/namespacegambit_1_1flavbit/)**  |
+| **[Gambit](/documentation/code/darkbit_developmentnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::FlavBit](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1flavbit/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[Gambit::FlavBit::Correlation](/documentation/code/classes/structgambit_1_1flavbit_1_1correlation/)** <br>Simple structure for holding a correlation value and name of the correlated observable.  |
-| struct | **[Gambit::FlavBit::Measurement](/documentation/code/classes/structgambit_1_1flavbit_1_1measurement/)** <br>Representation of a single entry in the FlavBit YAML database.  |
-| struct | **[Gambit::FlavBit::predictions_measurements_covariances](/documentation/code/classes/structgambit_1_1flavbit_1_1predictions__measurements__covariances/)**  |
+| struct | **[Gambit::FlavBit::Correlation](/documentation/code/darkbit_developmentclasses/structgambit_1_1flavbit_1_1correlation/)** <br>Simple structure for holding a correlation value and name of the correlated observable.  |
+| struct | **[Gambit::FlavBit::Measurement](/documentation/code/darkbit_developmentclasses/structgambit_1_1flavbit_1_1measurement/)** <br>Representation of a single entry in the FlavBit YAML database.  |
+| struct | **[Gambit::FlavBit::predictions_measurements_covariances](/documentation/code/darkbit_developmentclasses/structgambit_1_1flavbit_1_1predictions__measurements__covariances/)**  |
 
 ## Detailed Description
 
@@ -131,4 +131,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:23 +0000
+Updated on 2022-08-01 at 17:31:43 +0000

@@ -16,10 +16,10 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::Backends](/documentation/code/namespaces/namespacegambit_1_1backends/)**  |
-| **[Gambit::Backends::vevacious_1_0](/documentation/code/namespaces/namespacegambit_1_1backends_1_1vevacious__1__0/)**  |
-| **[Gambit::Backends::vevacious_1_0::VevaciousPlusPlus](/documentation/code/namespaces/namespacegambit_1_1backends_1_1vevacious__1__0_1_1vevaciousplusplus/)**  |
+| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::Backends](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1backends/)**  |
+| **[Gambit::Backends::vevacious_1_0](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1backends_1_1vevacious__1__0/)**  |
+| **[Gambit::Backends::vevacious_1_0::VevaciousPlusPlus](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1backends_1_1vevacious__1__0_1_1vevaciousplusplus/)**  |
 
 
 
@@ -68,4 +68,4 @@ BE_INI_FUNCTION{} END_BE_INI_FUNCTION
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:37 +0000
+Updated on 2022-08-01 at 17:31:50 +0000

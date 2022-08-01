@@ -18,19 +18,19 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[my_Nelder_Mead](/documentation/code/classes/classmy__nelder__mead/#function-my-nelder-mead)**(int dd, double alpha, double beta, double gamma, int NNtry, double eeps, [my_func](/documentation/code/classes/structmy__func/) * ff) |
-| bool | **[one_cycle](/documentation/code/classes/classmy__nelder__mead/#function-one-cycle)**([my_simplex](/documentation/code/classes/classmy__simplex/) * s) |
-| bool | **[find_global_min](/documentation/code/classes/classmy__nelder__mead/#function-find-global-min)**(double xin[DMAX *(DMAX+1)]) |
+| | **[my_Nelder_Mead](/documentation/code/darkbit_developmentclasses/classmy__nelder__mead/#function-my-nelder-mead)**(int dd, double alpha, double beta, double gamma, int NNtry, double eeps, [my_func](/documentation/code/darkbit_developmentclasses/structmy__func/) * ff) |
+| bool | **[one_cycle](/documentation/code/darkbit_developmentclasses/classmy__nelder__mead/#function-one-cycle)**([my_simplex](/documentation/code/darkbit_developmentclasses/classmy__simplex/) * s) |
+| bool | **[find_global_min](/documentation/code/darkbit_developmentclasses/classmy__nelder__mead/#function-find-global-min)**(double xin[DMAX *(DMAX+1)]) |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| [my_func](/documentation/code/classes/structmy__func/) * | **[f](/documentation/code/classes/classmy__nelder__mead/#variable-f)**  |
-| [my_simplex](/documentation/code/classes/classmy__simplex/) | **[simplex](/documentation/code/classes/classmy__nelder__mead/#variable-simplex)**  |
-| bool | **[convergeYes](/documentation/code/classes/classmy__nelder__mead/#variable-convergeyes)**  |
-| double | **[yfinal](/documentation/code/classes/classmy__nelder__mead/#variable-yfinal)**  |
-| double | **[xfinal](/documentation/code/classes/classmy__nelder__mead/#variable-xfinal)**  |
+| [my_func](/documentation/code/darkbit_developmentclasses/structmy__func/) * | **[f](/documentation/code/darkbit_developmentclasses/classmy__nelder__mead/#variable-f)**  |
+| [my_simplex](/documentation/code/darkbit_developmentclasses/classmy__simplex/) | **[simplex](/documentation/code/darkbit_developmentclasses/classmy__nelder__mead/#variable-simplex)**  |
+| bool | **[convergeYes](/documentation/code/darkbit_developmentclasses/classmy__nelder__mead/#variable-convergeyes)**  |
+| double | **[yfinal](/documentation/code/darkbit_developmentclasses/classmy__nelder__mead/#variable-yfinal)**  |
+| double | **[xfinal](/documentation/code/darkbit_developmentclasses/classmy__nelder__mead/#variable-xfinal)**  |
 
 ## Public Functions Documentation
 
@@ -106,4 +106,4 @@ double xfinal;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:21 +0000
+Updated on 2022-08-01 at 17:31:41 +0000

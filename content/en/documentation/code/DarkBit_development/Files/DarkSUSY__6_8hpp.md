@@ -16,20 +16,20 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[BE_FUNCTION](/documentation/code/files/darksusy__6_8hpp/#function-be-function)**(dsrdstart , void , (int &, double(&)[1000], double(&)[1000], int &, double(&)[1000], double(&)[1000], int &, double(&)[1000]) , "dsrdstart_" , "dsrdstart" ) |
-| double double double int int int dsrdens | **[BE_VARIABLE](/documentation/code/files/darksusy__6_8hpp/#function-be-variable)**(ddcomlegacy , DS_DDCOMLEGACY , "ddcomlegacy_" , "ddcomlegacy" ) |
-| double double double int int int dsrdens rdtime | **[BE_VARIABLE](/documentation/code/files/darksusy__6_8hpp/#function-be-variable)**(rdpars , DS_RDPARS , "rdpars_" , "rdpars" ) |
-| double double double int int int dsrdens rdtime const double(&const | **[double](/documentation/code/files/darksusy__6_8hpp/#function-double)**(& ) |
+| | **[BE_FUNCTION](/documentation/code/darkbit_developmentfiles/darksusy__6_8hpp/#function-be-function)**(dsrdstart , void , (int &, double(&)[1000], double(&)[1000], int &, double(&)[1000], double(&)[1000], int &, double(&)[1000]) , "dsrdstart_" , "dsrdstart" ) |
+| double double double int int int dsrdens | **[BE_VARIABLE](/documentation/code/darkbit_developmentfiles/darksusy__6_8hpp/#function-be-variable)**(ddcomlegacy , DS_DDCOMLEGACY , "ddcomlegacy_" , "ddcomlegacy" ) |
+| double double double int int int dsrdens rdtime | **[BE_VARIABLE](/documentation/code/darkbit_developmentfiles/darksusy__6_8hpp/#function-be-variable)**(rdpars , DS_RDPARS , "rdpars_" , "rdpars" ) |
+| double double double int int int dsrdens rdtime const double(&const | **[double](/documentation/code/darkbit_developmentfiles/darksusy__6_8hpp/#function-double)**(& ) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[void](/documentation/code/files/darksusy__6_8hpp/#variable-void)**  |
-| double | **[double](/documentation/code/files/darksusy__6_8hpp/#variable-double)**  |
-| double double double int int int | **[dsrdens_](/documentation/code/files/darksusy__6_8hpp/#variable-dsrdens-)**  |
-| double double double int int int dsrdens | **[DS_RDTIME](/documentation/code/files/darksusy__6_8hpp/#variable-ds-rdtime)**  |
-| double double double int int int dsrdens | **[rdtime_](/documentation/code/files/darksusy__6_8hpp/#variable-rdtime-)**  |
+| | **[void](/documentation/code/darkbit_developmentfiles/darksusy__6_8hpp/#variable-void)**  |
+| double | **[double](/documentation/code/darkbit_developmentfiles/darksusy__6_8hpp/#variable-double)**  |
+| double double double int int int | **[dsrdens_](/documentation/code/darkbit_developmentfiles/darksusy__6_8hpp/#variable-dsrdens-)**  |
+| double double double int int int dsrdens | **[DS_RDTIME](/documentation/code/darkbit_developmentfiles/darksusy__6_8hpp/#variable-ds-rdtime)**  |
+| double double double int int int dsrdens | **[rdtime_](/documentation/code/darkbit_developmentfiles/darksusy__6_8hpp/#variable-rdtime-)**  |
 
 ## Detailed Description
 
@@ -195,4 +195,4 @@ BE_CONV_FUNCTION(dsgenericwimp_nusetup, void, (const double(&)[29], const double
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:25 +0000
+Updated on 2022-08-01 at 17:31:45 +0000

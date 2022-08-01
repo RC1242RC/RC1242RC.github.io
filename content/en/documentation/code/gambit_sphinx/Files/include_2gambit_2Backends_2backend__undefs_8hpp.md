@@ -16,7 +16,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[DO_CLASSLOADING](/documentation/code/files/include_2gambit_2backends_2backend__undefs_8hpp/#define-do-classloading)**  |
+|  | **[DO_CLASSLOADING](/documentation/code/gambit_sphinxfiles/include_2gambit_2backends_2backend__undefs_8hpp/#define-do-classloading)**  |
 
 ## Detailed Description
 
@@ -77,4 +77,4 @@ Authors (add name and date if you modify):
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:37 +0000
+Updated on 2022-08-01 at 17:31:50 +0000

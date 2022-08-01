@@ -16,17 +16,17 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::SpecBit](/documentation/code/namespaces/namespacegambit_1_1specbit/)**  |
+| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::SpecBit](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1specbit/)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[OUTPUT](/documentation/code/files/specbit__externaltests_8hpp/#define-output)**  |
-|  | **[TAGerr](/documentation/code/files/specbit__externaltests_8hpp/#define-tagerr)**  |
-|  | **[TAGfatal](/documentation/code/files/specbit__externaltests_8hpp/#define-tagfatal)**  |
-|  | **[TAGeom](/documentation/code/files/specbit__externaltests_8hpp/#define-tageom)**  |
+|  | **[OUTPUT](/documentation/code/gambit_sphinxfiles/specbit__externaltests_8hpp/#define-output)**  |
+|  | **[TAGerr](/documentation/code/gambit_sphinxfiles/specbit__externaltests_8hpp/#define-tagerr)**  |
+|  | **[TAGfatal](/documentation/code/gambit_sphinxfiles/specbit__externaltests_8hpp/#define-tagfatal)**  |
+|  | **[TAGeom](/documentation/code/gambit_sphinxfiles/specbit__externaltests_8hpp/#define-tageom)**  |
 
 ## Detailed Description
 
@@ -37,7 +37,7 @@ description: "[No description available]"
 
 Test functions for Spectrum object
 
-These functions test various aspects of the Spectrum class and related classes. They are not dependent on any other parts of [Gambit](/documentation/code/namespaces/namespacegambit/), so that Spectrum object test code can be compiled and run seperately from [Gambit](/documentation/code/namespaces/namespacegambit/), but but also be run from inside [Gambit](/documentation/code/namespaces/namespacegambit/).
+These functions test various aspects of the Spectrum class and related classes. They are not dependent on any other parts of [Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/), so that Spectrum object test code can be compiled and run seperately from [Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/), but but also be run from inside [Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/).
 
 
 
@@ -1401,4 +1401,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:34 +0000
+Updated on 2022-08-01 at 17:31:48 +0000

@@ -18,7 +18,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| const bool | **[value](/documentation/code/classes/structgambit_1_1scanner_1_1is__args__convertible/#variable-value)**  |
+| const bool | **[value](/documentation/code/darkbit_developmentclasses/structgambit_1_1scanner_1_1is__args__convertible/#variable-value)**  |
 
 ## Detailed Description
 
@@ -38,4 +38,4 @@ static const bool value = false;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:23 +0000
+Updated on 2022-08-01 at 17:31:42 +0000

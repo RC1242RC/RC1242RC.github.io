@@ -20,8 +20,8 @@ Simple structure for holding a correlation value and name of the correlated obse
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[corr_val](/documentation/code/classes/structgambit_1_1flavbit_1_1correlation/#variable-corr-val)**  |
-| std::string | **[corr_name](/documentation/code/classes/structgambit_1_1flavbit_1_1correlation/#variable-corr-name)**  |
+| double | **[corr_val](/documentation/code/darkbit_developmentclasses/structgambit_1_1flavbit_1_1correlation/#variable-corr-val)**  |
+| std::string | **[corr_name](/documentation/code/darkbit_developmentclasses/structgambit_1_1flavbit_1_1correlation/#variable-corr-name)**  |
 
 ## Public Attributes Documentation
 
@@ -41,4 +41,4 @@ std::string corr_name;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:23 +0000
+Updated on 2022-08-01 at 17:31:42 +0000

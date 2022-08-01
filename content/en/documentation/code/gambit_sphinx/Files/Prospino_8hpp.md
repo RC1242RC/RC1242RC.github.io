@@ -16,13 +16,13 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Gambit::prospino_settings](/documentation/code/classes/classgambit_1_1prospino__settings/)**  |
+| class | **[Gambit::prospino_settings](/documentation/code/gambit_sphinxclasses/classgambit_1_1prospino__settings/)**  |
 
 ## Detailed Description
 
@@ -107,4 +107,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:37 +0000
+Updated on 2022-08-01 at 17:31:50 +0000

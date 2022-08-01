@@ -18,21 +18,21 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| bool | **[can_delete_BEptr](/documentation/code/classes/classwrapperbase/#function-can-delete-beptr)**() |
-| void | **[set_delete_BEptr](/documentation/code/classes/classwrapperbase/#function-set-delete-beptr)**(bool del_wrp_in) |
-| | **[WrapperBase](/documentation/code/classes/classwrapperbase/#function-wrapperbase)**([AbstractBase](/documentation/code/classes/classabstractbase/) * BEptr_in) |
-| virtual | **[~WrapperBase](/documentation/code/classes/classwrapperbase/#function-~wrapperbase)**() |
-| bool | **[can_delete_BEptr](/documentation/code/classes/classwrapperbase/#function-can-delete-beptr)**() |
-| void | **[set_delete_BEptr](/documentation/code/classes/classwrapperbase/#function-set-delete-beptr)**(bool del_wrp_in) |
-| | **[WrapperBase](/documentation/code/classes/classwrapperbase/#function-wrapperbase)**([AbstractBase](/documentation/code/classes/classabstractbase/) * BEptr_in) |
-| virtual | **[~WrapperBase](/documentation/code/classes/classwrapperbase/#function-~wrapperbase)**() |
+| bool | **[can_delete_BEptr](/documentation/code/darkbit_developmentclasses/classwrapperbase/#function-can-delete-beptr)**() |
+| void | **[set_delete_BEptr](/documentation/code/darkbit_developmentclasses/classwrapperbase/#function-set-delete-beptr)**(bool del_wrp_in) |
+| | **[WrapperBase](/documentation/code/darkbit_developmentclasses/classwrapperbase/#function-wrapperbase)**([AbstractBase](/documentation/code/darkbit_developmentclasses/classabstractbase/) * BEptr_in) |
+| virtual | **[~WrapperBase](/documentation/code/darkbit_developmentclasses/classwrapperbase/#function-~wrapperbase)**() |
+| bool | **[can_delete_BEptr](/documentation/code/darkbit_developmentclasses/classwrapperbase/#function-can-delete-beptr)**() |
+| void | **[set_delete_BEptr](/documentation/code/darkbit_developmentclasses/classwrapperbase/#function-set-delete-beptr)**(bool del_wrp_in) |
+| | **[WrapperBase](/documentation/code/darkbit_developmentclasses/classwrapperbase/#function-wrapperbase)**([AbstractBase](/documentation/code/darkbit_developmentclasses/classabstractbase/) * BEptr_in) |
+| virtual | **[~WrapperBase](/documentation/code/darkbit_developmentclasses/classwrapperbase/#function-~wrapperbase)**() |
 
 ## Protected Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| [AbstractBase](/documentation/code/classes/classabstractbase/) * | **[BEptr](/documentation/code/classes/classwrapperbase/#variable-beptr)**  |
-| bool | **[delete_BEptr](/documentation/code/classes/classwrapperbase/#variable-delete-beptr)**  |
+| [AbstractBase](/documentation/code/darkbit_developmentclasses/classabstractbase/) * | **[BEptr](/documentation/code/darkbit_developmentclasses/classwrapperbase/#variable-beptr)**  |
+| bool | **[delete_BEptr](/documentation/code/darkbit_developmentclasses/classwrapperbase/#variable-delete-beptr)**  |
 
 ## Public Functions Documentation
 
@@ -118,4 +118,4 @@ bool delete_BEptr;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:21 +0000
+Updated on 2022-08-01 at 17:31:41 +0000

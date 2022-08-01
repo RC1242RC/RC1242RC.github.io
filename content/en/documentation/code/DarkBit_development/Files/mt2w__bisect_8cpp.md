@@ -16,7 +16,7 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[mt2w_bisect](/documentation/code/namespaces/namespacemt2w__bisect/)**  |
+| **[mt2w_bisect](/documentation/code/darkbit_developmentnamespaces/namespacemt2w__bisect/)**  |
 
 
 
@@ -404,4 +404,4 @@ inline int mt2w::signchange_p( long double t1, long double t2, long double t3, l
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:25 +0000
+Updated on 2022-08-01 at 17:31:44 +0000

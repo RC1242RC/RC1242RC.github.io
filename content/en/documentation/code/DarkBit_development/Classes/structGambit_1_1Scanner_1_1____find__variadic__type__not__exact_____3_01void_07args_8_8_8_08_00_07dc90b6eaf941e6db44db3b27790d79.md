@@ -18,14 +18,14 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef [find_variadic_type_not_exact](/documentation/code/classes/structgambit_1_1scanner_1_1find__variadic__type__not__exact/)< void(args...), T... >::ret_type | **[ret_type](/documentation/code/classes/structgambit_1_1scanner_1_1____find__variadic__type__not__exact_____3_01void_07args_8_8_8_08_00_07dc90b6eaf941e6db44db3b27790d79/#typedef-ret-type)**  |
-| typedef [find_variadic_type_not_exact](/documentation/code/classes/structgambit_1_1scanner_1_1find__variadic__type__not__exact/)< void(args...), T... >::func_type | **[func_type](/documentation/code/classes/structgambit_1_1scanner_1_1____find__variadic__type__not__exact_____3_01void_07args_8_8_8_08_00_07dc90b6eaf941e6db44db3b27790d79/#typedef-func-type)**  |
+| typedef [find_variadic_type_not_exact](/documentation/code/darkbit_developmentclasses/structgambit_1_1scanner_1_1find__variadic__type__not__exact/)< void(args...), T... >::ret_type | **[ret_type](/documentation/code/darkbit_developmentclasses/structgambit_1_1scanner_1_1____find__variadic__type__not__exact_____3_01void_07args_8_8_8_08_00_07dc90b6eaf941e6db44db3b27790d79/#typedef-ret-type)**  |
+| typedef [find_variadic_type_not_exact](/documentation/code/darkbit_developmentclasses/structgambit_1_1scanner_1_1find__variadic__type__not__exact/)< void(args...), T... >::func_type | **[func_type](/documentation/code/darkbit_developmentclasses/structgambit_1_1scanner_1_1____find__variadic__type__not__exact_____3_01void_07args_8_8_8_08_00_07dc90b6eaf941e6db44db3b27790d79/#typedef-func-type)**  |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| const bool | **[value](/documentation/code/classes/structgambit_1_1scanner_1_1____find__variadic__type__not__exact_____3_01void_07args_8_8_8_08_00_07dc90b6eaf941e6db44db3b27790d79/#variable-value)**  |
+| const bool | **[value](/documentation/code/darkbit_developmentclasses/structgambit_1_1scanner_1_1____find__variadic__type__not__exact_____3_01void_07args_8_8_8_08_00_07dc90b6eaf941e6db44db3b27790d79/#variable-value)**  |
 
 ## Detailed Description
 
@@ -65,4 +65,4 @@ static const bool value = find_variadic_type_not_exact <void (args...), T...>::v
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:23 +0000
+Updated on 2022-08-01 at 17:31:42 +0000

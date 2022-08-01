@@ -20,8 +20,8 @@ Holds the info about a python backend function, and defines conversion functions
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[python_function](/documentation/code/classes/classgambit_1_1backends_1_1python__function/#function-python-function)**(const str & , const str & , const str & )<br>Constructor.  |
-| TYPE | **[operator()](/documentation/code/classes/classgambit_1_1backends_1_1python__function/#function-operator())**(ARGS && ...)<br>Operation (execute function and return value)  |
+| | **[python_function](/documentation/code/gambit_sphinxclasses/classgambit_1_1backends_1_1python__function/#function-python-function)**(const str & , const str & , const str & )<br>Constructor.  |
+| TYPE | **[operator()](/documentation/code/gambit_sphinxclasses/classgambit_1_1backends_1_1python__function/#function-operator())**(ARGS && ...)<br>Operation (execute function and return value)  |
 
 ## Detailed Description
 
@@ -58,4 +58,4 @@ Operation (execute function and return value)
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:32 +0000
+Updated on 2022-08-01 at 17:31:46 +0000

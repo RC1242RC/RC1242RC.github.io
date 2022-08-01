@@ -20,17 +20,17 @@ Class to connect PolyChord log-likelihood function and ScannerBit likelihood fun
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[LogLikeWrapper](/documentation/code/classes/classgambit_1_1polychord__1__20__1_1_1loglikewrapper/#function-loglikewrapper)**([scanPtr](/documentation/code/namespaces/namespacegambit_1_1polychord__1__20__1/#typedef-scanptr) loglike, printer_interface & printer)<br>Constructor.  |
-| double | **[LogLike](/documentation/code/classes/classgambit_1_1polychord__1__20__1_1_1loglikewrapper/#function-loglike)**(double * Cube, int ndim, double * phi, int nderived)<br>Main interface function from PolyChord to ScannerBit-supplied loglikelihood function.  |
-| void | **[dumper](/documentation/code/classes/classgambit_1_1polychord__1__20__1_1_1loglikewrapper/#function-dumper)**(int ndead, int nlive, int npars, double * live, double * dead, double * logweights, double , double )<br>Main interface to PolyChord dumper routine  |
+| | **[LogLikeWrapper](/documentation/code/gambit_sphinxclasses/classgambit_1_1polychord__1__20__1_1_1loglikewrapper/#function-loglikewrapper)**([scanPtr](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1polychord__1__20__1/#typedef-scanptr) loglike, printer_interface & printer)<br>Constructor.  |
+| double | **[LogLike](/documentation/code/gambit_sphinxclasses/classgambit_1_1polychord__1__20__1_1_1loglikewrapper/#function-loglike)**(double * Cube, int ndim, double * phi, int nderived)<br>Main interface function from PolyChord to ScannerBit-supplied loglikelihood function.  |
+| void | **[dumper](/documentation/code/gambit_sphinxclasses/classgambit_1_1polychord__1__20__1_1_1loglikewrapper/#function-dumper)**(int ndead, int nlive, int npars, double * live, double * dead, double * logweights, double , double )<br>Main interface to PolyChord dumper routine  |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| std::unordered_map< std::string, int > | **[index_map](/documentation/code/classes/classgambit_1_1polychord__1__20__1_1_1loglikewrapper/#variable-index-map)**  |
-| [Settings](/documentation/code/classes/structsettings/) | **[boundSettings](/documentation/code/classes/classgambit_1_1polychord__1__20__1_1_1loglikewrapper/#variable-boundsettings)** <br>copy of the settings in use.  |
-| int | **[printer_speed_threshold](/documentation/code/classes/classgambit_1_1polychord__1__20__1_1_1loglikewrapper/#variable-printer-speed-threshold)**  |
+| std::unordered_map< std::string, int > | **[index_map](/documentation/code/gambit_sphinxclasses/classgambit_1_1polychord__1__20__1_1_1loglikewrapper/#variable-index-map)**  |
+| [Settings](/documentation/code/gambit_sphinxclasses/structsettings/) | **[boundSettings](/documentation/code/gambit_sphinxclasses/classgambit_1_1polychord__1__20__1_1_1loglikewrapper/#variable-boundsettings)** <br>copy of the settings in use.  |
+| int | **[printer_speed_threshold](/documentation/code/gambit_sphinxclasses/classgambit_1_1polychord__1__20__1_1_1loglikewrapper/#variable-printer-speed-threshold)**  |
 
 ## Public Functions Documentation
 
@@ -45,7 +45,7 @@ LogLikeWrapper(
 
 Constructor. 
 
-[LogLikeWrapper](/documentation/code/classes/classgambit_1_1polychord__1__20__1_1_1loglikewrapper/) Constructor. 
+[LogLikeWrapper](/documentation/code/gambit_sphinxclasses/classgambit_1_1polychord__1__20__1_1_1loglikewrapper/) Constructor. 
 
 
 ### function LogLike
@@ -121,4 +121,4 @@ Disable printing for speeds greater and equal than Speeds start at 0 A value of 
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:33 +0000
+Updated on 2022-08-01 at 17:31:48 +0000

@@ -16,14 +16,14 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::Scanner](/documentation/code/namespaces/namespacegambit_1_1scanner/)**  |
+| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::Scanner](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1scanner/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Gambit::Scanner::Scan_Manager](/documentation/code/classes/classgambit_1_1scanner_1_1scan__manager/)**  |
+| class | **[Gambit::Scanner::Scan_Manager](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1scan__manager/)**  |
 
 ## Detailed Description
 
@@ -88,4 +88,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:34 +0000
+Updated on 2022-08-01 at 17:31:48 +0000

@@ -20,32 +20,32 @@ Histogram class for cascade decays.
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[SimpleHist](/documentation/code/classes/structgambit_1_1darkbit_1_1simplehist/#function-simplehist)**() |
-| | **[SimpleHist](/documentation/code/classes/structgambit_1_1darkbit_1_1simplehist/#function-simplehist)**(int nBins, double Emin, double Emax, bool logscale) |
-| | **[SimpleHist](/documentation/code/classes/structgambit_1_1darkbit_1_1simplehist/#function-simplehist)**(std::vector< double > binLower) |
-| void | **[addEvent](/documentation/code/classes/structgambit_1_1darkbit_1_1simplehist/#function-addevent)**(double E, double weight =1.0)<br>Add an entry to histogram.  |
-| void | **[addToBin](/documentation/code/classes/structgambit_1_1darkbit_1_1simplehist/#function-addtobin)**(int bin, double weight =1.0)<br>Add an entry to a specified bin.  |
-| void | **[addBox](/documentation/code/classes/structgambit_1_1darkbit_1_1simplehist/#function-addbox)**(double Emin, double Emax, double weight =1.0)<br>Add a box spectrum to the histogram.  |
-| void | **[addHistAsWeights_sameBin](/documentation/code/classes/structgambit_1_1darkbit_1_1simplehist/#function-addhistasweights-samebin)**([SimpleHist](/documentation/code/classes/structgambit_1_1darkbit_1_1simplehist/) & in) |
-| double | **[getError](/documentation/code/classes/structgambit_1_1darkbit_1_1simplehist/#function-geterror)**(int bin) const<br>Get error for a specified bin.  |
-| double | **[getRelError](/documentation/code/classes/structgambit_1_1darkbit_1_1simplehist/#function-getrelerror)**(int bin) const<br>Get relative error for a specified bin.  |
-| void | **[divideByBinSize](/documentation/code/classes/structgambit_1_1darkbit_1_1simplehist/#function-dividebybinsize)**()<br>Divide all histogram bins by the respective bin size.  |
-| void | **[multiply](/documentation/code/classes/structgambit_1_1darkbit_1_1simplehist/#function-multiply)**(double x)<br>Multiply all bin contents by x.  |
-| int | **[findIndex](/documentation/code/classes/structgambit_1_1darkbit_1_1simplehist/#function-findindex)**(double val) const<br>Find bin index for given value.  |
-| double | **[binSize](/documentation/code/classes/structgambit_1_1darkbit_1_1simplehist/#function-binsize)**(int bin) const<br>Retrieve size of given bins.  |
-| double | **[binCenter](/documentation/code/classes/structgambit_1_1darkbit_1_1simplehist/#function-bincenter)**(int bin) const<br>Get central value of bin.  |
-| std::vector< double > | **[getBinCenters](/documentation/code/classes/structgambit_1_1darkbit_1_1simplehist/#function-getbincenters)**() const<br>Double get central values of all bins.  |
-| const std::vector< double > & | **[getBinValues](/documentation/code/classes/structgambit_1_1darkbit_1_1simplehist/#function-getbinvalues)**() const |
-| void | **[getEdges](/documentation/code/classes/structgambit_1_1darkbit_1_1simplehist/#function-getedges)**(double & lower, double & upper) const |
+| | **[SimpleHist](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1simplehist/#function-simplehist)**() |
+| | **[SimpleHist](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1simplehist/#function-simplehist)**(int nBins, double Emin, double Emax, bool logscale) |
+| | **[SimpleHist](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1simplehist/#function-simplehist)**(std::vector< double > binLower) |
+| void | **[addEvent](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1simplehist/#function-addevent)**(double E, double weight =1.0)<br>Add an entry to histogram.  |
+| void | **[addToBin](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1simplehist/#function-addtobin)**(int bin, double weight =1.0)<br>Add an entry to a specified bin.  |
+| void | **[addBox](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1simplehist/#function-addbox)**(double Emin, double Emax, double weight =1.0)<br>Add a box spectrum to the histogram.  |
+| void | **[addHistAsWeights_sameBin](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1simplehist/#function-addhistasweights-samebin)**([SimpleHist](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1simplehist/) & in) |
+| double | **[getError](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1simplehist/#function-geterror)**(int bin) const<br>Get error for a specified bin.  |
+| double | **[getRelError](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1simplehist/#function-getrelerror)**(int bin) const<br>Get relative error for a specified bin.  |
+| void | **[divideByBinSize](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1simplehist/#function-dividebybinsize)**()<br>Divide all histogram bins by the respective bin size.  |
+| void | **[multiply](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1simplehist/#function-multiply)**(double x)<br>Multiply all bin contents by x.  |
+| int | **[findIndex](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1simplehist/#function-findindex)**(double val) const<br>Find bin index for given value.  |
+| double | **[binSize](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1simplehist/#function-binsize)**(int bin) const<br>Retrieve size of given bins.  |
+| double | **[binCenter](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1simplehist/#function-bincenter)**(int bin) const<br>Get central value of bin.  |
+| std::vector< double > | **[getBinCenters](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1simplehist/#function-getbincenters)**() const<br>Double get central values of all bins.  |
+| const std::vector< double > & | **[getBinValues](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1simplehist/#function-getbinvalues)**() const |
+| void | **[getEdges](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1simplehist/#function-getedges)**(double & lower, double & upper) const |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| std::vector< double > | **[binLower](/documentation/code/classes/structgambit_1_1darkbit_1_1simplehist/#variable-binlower)**  |
-| std::vector< double > | **[binVals](/documentation/code/classes/structgambit_1_1darkbit_1_1simplehist/#variable-binvals)**  |
-| std::vector< double > | **[wtSq](/documentation/code/classes/structgambit_1_1darkbit_1_1simplehist/#variable-wtsq)** <br>Sum of the squares of all weights.  |
-| int | **[nBins](/documentation/code/classes/structgambit_1_1darkbit_1_1simplehist/#variable-nbins)**  |
+| std::vector< double > | **[binLower](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1simplehist/#variable-binlower)**  |
+| std::vector< double > | **[binVals](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1simplehist/#variable-binvals)**  |
+| std::vector< double > | **[wtSq](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1simplehist/#variable-wtsq)** <br>Sum of the squares of all weights.  |
+| int | **[nBins](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1simplehist/#variable-nbins)**  |
 
 ## Public Functions Documentation
 
@@ -252,4 +252,4 @@ int nBins;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:33 +0000
+Updated on 2022-08-01 at 17:31:47 +0000

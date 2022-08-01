@@ -18,12 +18,12 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Farray< Fdouble, 1, 4 > | **[brsdowlndow](/documentation/code/classes/structgambit_1_1sd__sdown2body__type/#variable-brsdowlndow)**  |
-| Farray< Fdouble, 1, 2 > | **[brsdowlchup](/documentation/code/classes/structgambit_1_1sd__sdown2body__type/#variable-brsdowlchup)**  |
-| Fdouble | **[brsdowlglui](/documentation/code/classes/structgambit_1_1sd__sdown2body__type/#variable-brsdowlglui)**  |
-| Farray< Fdouble, 1, 4 > | **[brsdowrndow](/documentation/code/classes/structgambit_1_1sd__sdown2body__type/#variable-brsdowrndow)**  |
-| Farray< Fdouble, 1, 2 > | **[brsdowrchup](/documentation/code/classes/structgambit_1_1sd__sdown2body__type/#variable-brsdowrchup)**  |
-| Fdouble | **[brsdowrglui](/documentation/code/classes/structgambit_1_1sd__sdown2body__type/#variable-brsdowrglui)**  |
+| Farray< Fdouble, 1, 4 > | **[brsdowlndow](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__sdown2body__type/#variable-brsdowlndow)**  |
+| Farray< Fdouble, 1, 2 > | **[brsdowlchup](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__sdown2body__type/#variable-brsdowlchup)**  |
+| Fdouble | **[brsdowlglui](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__sdown2body__type/#variable-brsdowlglui)**  |
+| Farray< Fdouble, 1, 4 > | **[brsdowrndow](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__sdown2body__type/#variable-brsdowrndow)**  |
+| Farray< Fdouble, 1, 2 > | **[brsdowrchup](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__sdown2body__type/#variable-brsdowrchup)**  |
+| Fdouble | **[brsdowrglui](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__sdown2body__type/#variable-brsdowrglui)**  |
 
 ## Public Attributes Documentation
 
@@ -71,4 +71,4 @@ Fdouble brsdowrglui;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:32 +0000
+Updated on 2022-08-01 at 17:31:46 +0000

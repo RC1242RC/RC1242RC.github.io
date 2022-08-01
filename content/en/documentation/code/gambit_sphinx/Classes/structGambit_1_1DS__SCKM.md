@@ -18,11 +18,11 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Farray< Fdouble_complex, 1, 3, 1, 3 > | **[ckm](/documentation/code/classes/structgambit_1_1ds__sckm/#variable-ckm)**  |
-| Fdouble | **[ckms12](/documentation/code/classes/structgambit_1_1ds__sckm/#variable-ckms12)**  |
-| Fdouble | **[ckms23](/documentation/code/classes/structgambit_1_1ds__sckm/#variable-ckms23)**  |
-| Fdouble | **[ckms13](/documentation/code/classes/structgambit_1_1ds__sckm/#variable-ckms13)**  |
-| Fdouble | **[ckmdelta](/documentation/code/classes/structgambit_1_1ds__sckm/#variable-ckmdelta)**  |
+| Farray< Fdouble_complex, 1, 3, 1, 3 > | **[ckm](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__sckm/#variable-ckm)**  |
+| Fdouble | **[ckms12](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__sckm/#variable-ckms12)**  |
+| Fdouble | **[ckms23](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__sckm/#variable-ckms23)**  |
+| Fdouble | **[ckms13](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__sckm/#variable-ckms13)**  |
+| Fdouble | **[ckmdelta](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__sckm/#variable-ckmdelta)**  |
 
 ## Public Attributes Documentation
 
@@ -63,4 +63,4 @@ Fdouble ckmdelta;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:32 +0000
+Updated on 2022-08-01 at 17:31:46 +0000

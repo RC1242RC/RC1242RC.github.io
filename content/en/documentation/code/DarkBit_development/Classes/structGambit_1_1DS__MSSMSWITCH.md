@@ -18,12 +18,12 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Fdouble | **[msquarks](/documentation/code/classes/structgambit_1_1ds__mssmswitch/#variable-msquarks)**  |
-| Fdouble | **[msleptons](/documentation/code/classes/structgambit_1_1ds__mssmswitch/#variable-msleptons)**  |
-| Finteger | **[higloop](/documentation/code/classes/structgambit_1_1ds__mssmswitch/#variable-higloop)**  |
-| Finteger | **[neuloop](/documentation/code/classes/structgambit_1_1ds__mssmswitch/#variable-neuloop)**  |
-| Finteger | **[bsgqcd](/documentation/code/classes/structgambit_1_1ds__mssmswitch/#variable-bsgqcd)**  |
-| Finteger | **[higwid](/documentation/code/classes/structgambit_1_1ds__mssmswitch/#variable-higwid)**  |
+| Fdouble | **[msquarks](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__mssmswitch/#variable-msquarks)**  |
+| Fdouble | **[msleptons](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__mssmswitch/#variable-msleptons)**  |
+| Finteger | **[higloop](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__mssmswitch/#variable-higloop)**  |
+| Finteger | **[neuloop](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__mssmswitch/#variable-neuloop)**  |
+| Finteger | **[bsgqcd](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__mssmswitch/#variable-bsgqcd)**  |
+| Finteger | **[higwid](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__mssmswitch/#variable-higwid)**  |
 
 ## Public Attributes Documentation
 
@@ -71,4 +71,4 @@ Finteger higwid;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:22 +0000
+Updated on 2022-08-01 at 17:31:41 +0000

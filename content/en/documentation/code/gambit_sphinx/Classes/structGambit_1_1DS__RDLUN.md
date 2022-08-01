@@ -18,8 +18,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Finteger | **[rdlulog](/documentation/code/classes/structgambit_1_1ds__rdlun/#variable-rdlulog)**  |
-| Finteger | **[rdluerr](/documentation/code/classes/structgambit_1_1ds__rdlun/#variable-rdluerr)**  |
+| Finteger | **[rdlulog](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__rdlun/#variable-rdlulog)**  |
+| Finteger | **[rdluerr](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__rdlun/#variable-rdluerr)**  |
 
 ## Public Attributes Documentation
 
@@ -39,4 +39,4 @@ Finteger rdluerr;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:32 +0000
+Updated on 2022-08-01 at 17:31:46 +0000

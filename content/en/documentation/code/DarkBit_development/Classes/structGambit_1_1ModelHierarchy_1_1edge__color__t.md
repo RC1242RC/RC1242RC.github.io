@@ -17,7 +17,7 @@ Property tag for adding color property to edges.
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef boost::edge_property_tag | **[kind](/documentation/code/classes/structgambit_1_1modelhierarchy_1_1edge__color__t/#typedef-kind)**  |
+| typedef boost::edge_property_tag | **[kind](/documentation/code/darkbit_developmentclasses/structgambit_1_1modelhierarchy_1_1edge__color__t/#typedef-kind)**  |
 
 ## Public Types Documentation
 
@@ -30,4 +30,4 @@ typedef boost::edge_property_tag Gambit::ModelHierarchy::edge_color_t::kind;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:22 +0000
+Updated on 2022-08-01 at 17:31:41 +0000

@@ -16,24 +16,24 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::DRes](/documentation/code/namespaces/namespacegambit_1_1dres/)**  |
-| **[LogTags](/documentation/code/namespaces/namespacelogtags/)**  |
+| **[Gambit](/documentation/code/darkbit_developmentnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::DRes](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1dres/)**  |
+| **[LogTags](/documentation/code/darkbit_developmentnamespaces/namespacelogtags/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Gambit::DRes::edgeWriter](/documentation/code/classes/classgambit_1_1dres_1_1edgewriter/)**  |
-| class | **[Gambit::DRes::labelWriter](/documentation/code/classes/classgambit_1_1dres_1_1labelwriter/)**  |
+| class | **[Gambit::DRes::edgeWriter](/documentation/code/darkbit_developmentclasses/classgambit_1_1dres_1_1edgewriter/)**  |
+| class | **[Gambit::DRes::labelWriter](/documentation/code/darkbit_developmentclasses/classgambit_1_1dres_1_1labelwriter/)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[OBSLIKE_VERTEXID](/documentation/code/files/depresolver_8cpp/#define-obslike-vertexid)**  |
-|  | **[NORMAL_DEPENDENCY](/documentation/code/files/depresolver_8cpp/#define-normal-dependency)**  |
-|  | **[LOOP_MANAGER_DEPENDENCY](/documentation/code/files/depresolver_8cpp/#define-loop-manager-dependency)**  |
+|  | **[OBSLIKE_VERTEXID](/documentation/code/darkbit_developmentfiles/depresolver_8cpp/#define-obslike-vertexid)**  |
+|  | **[NORMAL_DEPENDENCY](/documentation/code/darkbit_developmentfiles/depresolver_8cpp/#define-normal-dependency)**  |
+|  | **[LOOP_MANAGER_DEPENDENCY](/documentation/code/darkbit_developmentfiles/depresolver_8cpp/#define-loop-manager-dependency)**  |
 
 ## Detailed Description
 
@@ -2516,4 +2516,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:24 +0000
+Updated on 2022-08-01 at 17:31:43 +0000

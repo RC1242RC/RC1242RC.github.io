@@ -16,8 +16,8 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[modules](/documentation/code/namespaces/namespacemodules/)**  |
-| **[modules::active_cfg](/documentation/code/namespaces/namespacemodules_1_1active__cfg/)**  |
+| **[modules](/documentation/code/gambit_sphinxnamespaces/namespacemodules/)**  |
+| **[modules::active_cfg](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1active__cfg/)**  |
 
 
 
@@ -33,4 +33,4 @@ module_name = 'example_1_234'
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:37 +0000
+Updated on 2022-08-01 at 17:31:51 +0000

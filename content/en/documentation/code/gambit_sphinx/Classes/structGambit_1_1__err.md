@@ -18,10 +18,10 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| char | **[errWhere](/documentation/code/classes/structgambit_1_1__err/#variable-errwhere)**  |
-| char | **[errText](/documentation/code/classes/structgambit_1_1__err/#variable-errtext)**  |
-| int | **[errValue](/documentation/code/classes/structgambit_1_1__err/#variable-errvalue)**  |
-| struct [_err](/documentation/code/classes/structgambit_1_1__err/) * | **[next](/documentation/code/classes/structgambit_1_1__err/#variable-next)**  |
+| char | **[errWhere](/documentation/code/gambit_sphinxclasses/structgambit_1_1__err/#variable-errwhere)**  |
+| char | **[errText](/documentation/code/gambit_sphinxclasses/structgambit_1_1__err/#variable-errtext)**  |
+| int | **[errValue](/documentation/code/gambit_sphinxclasses/structgambit_1_1__err/#variable-errvalue)**  |
+| struct [_err](/documentation/code/gambit_sphinxclasses/structgambit_1_1__err/) * | **[next](/documentation/code/gambit_sphinxclasses/structgambit_1_1__err/#variable-next)**  |
 
 ## Public Attributes Documentation
 
@@ -55,4 +55,4 @@ struct _err * next;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:32 +0000
+Updated on 2022-08-01 at 17:31:46 +0000

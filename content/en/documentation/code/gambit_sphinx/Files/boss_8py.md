@@ -16,7 +16,7 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[boss](/documentation/code/namespaces/namespaceboss/)**  |
+| **[boss](/documentation/code/gambit_sphinxnamespaces/namespaceboss/)**  |
 
 
 
@@ -896,4 +896,4 @@ if  __name__ =='__main__':main()
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:37 +0000
+Updated on 2022-08-01 at 17:31:51 +0000

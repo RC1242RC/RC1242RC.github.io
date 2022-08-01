@@ -18,9 +18,9 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| int | **[coeff_structure](/documentation/code/classes/structgambit_1_1dd__coupling__container/#variable-coeff-structure)**  |
-| [DM_nucleon_couplings](/documentation/code/classes/structgambit_1_1dm__nucleon__couplings/) | **[DM_nucleon_coeffs](/documentation/code/classes/structgambit_1_1dd__coupling__container/#variable-dm-nucleon-coeffs)**  |
-| [NREO_DM_nucleon_couplings](/documentation/code/classes/structgambit_1_1nreo__dm__nucleon__couplings/) | **[DD_nonrel_WCs](/documentation/code/classes/structgambit_1_1dd__coupling__container/#variable-dd-nonrel-wcs)**  |
+| int | **[coeff_structure](/documentation/code/darkbit_developmentclasses/structgambit_1_1dd__coupling__container/#variable-coeff-structure)**  |
+| [DM_nucleon_couplings](/documentation/code/darkbit_developmentclasses/structgambit_1_1dm__nucleon__couplings/) | **[DM_nucleon_coeffs](/documentation/code/darkbit_developmentclasses/structgambit_1_1dd__coupling__container/#variable-dm-nucleon-coeffs)**  |
+| [NREO_DM_nucleon_couplings](/documentation/code/darkbit_developmentclasses/structgambit_1_1nreo__dm__nucleon__couplings/) | **[DD_nonrel_WCs](/documentation/code/darkbit_developmentclasses/structgambit_1_1dd__coupling__container/#variable-dd-nonrel-wcs)**  |
 
 ## Public Attributes Documentation
 
@@ -47,4 +47,4 @@ NREO_DM_nucleon_couplings DD_nonrel_WCs;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:21 +0000
+Updated on 2022-08-01 at 17:31:41 +0000

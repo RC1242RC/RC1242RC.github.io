@@ -16,26 +16,26 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::ColliderBit](/documentation/code/namespaces/namespacegambit_1_1colliderbit/)**  |
+| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::ColliderBit](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1colliderbit/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Gambit::ColliderBit::Analysis_CMS_8TeV_MultiLEP_20invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__8tev__multilep__20invfb/)**  |
-| class | **[Gambit::ColliderBit::Analysis_CMS_8TeV_MultiLEP_3Lep_20invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__8tev__multilep__3lep__20invfb/)**  |
-| class | **[Gambit::ColliderBit::Analysis_CMS_8TeV_MultiLEP_4Lep_20invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__8tev__multilep__4lep__20invfb/)**  |
+| class | **[Gambit::ColliderBit::Analysis_CMS_8TeV_MultiLEP_20invfb](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1analysis__cms__8tev__multilep__20invfb/)**  |
+| class | **[Gambit::ColliderBit::Analysis_CMS_8TeV_MultiLEP_3Lep_20invfb](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1analysis__cms__8tev__multilep__3lep__20invfb/)**  |
+| class | **[Gambit::ColliderBit::Analysis_CMS_8TeV_MultiLEP_4Lep_20invfb](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1analysis__cms__8tev__multilep__4lep__20invfb/)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[ADD_RESULTS_SRGROUP_1](/documentation/code/files/analysis__cms__8tev__multilep__20invfb_8cpp/#define-add-results-srgroup-1)**  |
-|  | **[ADD_RESULTS_SRGROUP_2](/documentation/code/files/analysis__cms__8tev__multilep__20invfb_8cpp/#define-add-results-srgroup-2)**  |
-|  | **[ADD_RESULTS_SRGROUP_3](/documentation/code/files/analysis__cms__8tev__multilep__20invfb_8cpp/#define-add-results-srgroup-3)**  |
-|  | **[ADD_RESULTS_SRGROUP_4](/documentation/code/files/analysis__cms__8tev__multilep__20invfb_8cpp/#define-add-results-srgroup-4)**  |
-|  | **[ADD_RESULTS_SRGROUP_5](/documentation/code/files/analysis__cms__8tev__multilep__20invfb_8cpp/#define-add-results-srgroup-5)**  |
+|  | **[ADD_RESULTS_SRGROUP_1](/documentation/code/gambit_sphinxfiles/analysis__cms__8tev__multilep__20invfb_8cpp/#define-add-results-srgroup-1)**  |
+|  | **[ADD_RESULTS_SRGROUP_2](/documentation/code/gambit_sphinxfiles/analysis__cms__8tev__multilep__20invfb_8cpp/#define-add-results-srgroup-2)**  |
+|  | **[ADD_RESULTS_SRGROUP_3](/documentation/code/gambit_sphinxfiles/analysis__cms__8tev__multilep__20invfb_8cpp/#define-add-results-srgroup-3)**  |
+|  | **[ADD_RESULTS_SRGROUP_4](/documentation/code/gambit_sphinxfiles/analysis__cms__8tev__multilep__20invfb_8cpp/#define-add-results-srgroup-4)**  |
+|  | **[ADD_RESULTS_SRGROUP_5](/documentation/code/gambit_sphinxfiles/analysis__cms__8tev__multilep__20invfb_8cpp/#define-add-results-srgroup-5)**  |
 
 
 
@@ -1102,4 +1102,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:36 +0000
+Updated on 2022-08-01 at 17:31:49 +0000

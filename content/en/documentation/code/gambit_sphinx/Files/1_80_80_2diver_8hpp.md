@@ -16,20 +16,20 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::Diver_1_0_0](/documentation/code/namespaces/namespacegambit_1_1diver__1__0__0/)**  |
+| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::Diver_1_0_0](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1diver__1__0__0/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[Gambit::Diver_1_0_0::diverScanData](/documentation/code/classes/structgambit_1_1diver__1__0__0_1_1diverscandata/)** <br>Structure for passing likelihood and printer data through Diver to the objective function.  |
+| struct | **[Gambit::Diver_1_0_0::diverScanData](/documentation/code/gambit_sphinxclasses/structgambit_1_1diver__1__0__0_1_1diverscandata/)** <br>Structure for passing likelihood and printer data through Diver to the objective function.  |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| void | **[cdiver](/documentation/code/files/1_80_80_2diver_8hpp/#function-cdiver)**(double(*)(double[], const int, int &, bool &, const bool, void *&) , int , const double [], const double [], const char [], int , int , const int [], bool , const int , const int , int , int , const double [], double , double , bool , bool , int , bool , bool , double , int , bool , bool , double(*)(const double[], const int, void *&) , double , double , int , bool , bool , int , int , double , void *& , int ) |
+| void | **[cdiver](/documentation/code/gambit_sphinxfiles/1_80_80_2diver_8hpp/#function-cdiver)**(double(*)(double[], const int, int &, bool &, const bool, void *&) , int , const double [], const double [], const char [], int , int , const int [], bool , const int , const int , int , int , const double [], double , double , bool , bool , int , bool , bool , double , int , bool , bool , double(*)(const double[], const int, void *&) , double , double , int , bool , bool , int , int , double , void *& , int ) |
 
 ## Detailed Description
 
@@ -142,4 +142,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:34 +0000
+Updated on 2022-08-01 at 17:31:48 +0000

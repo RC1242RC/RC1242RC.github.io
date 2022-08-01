@@ -16,20 +16,20 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| def | **[initialize](/documentation/code/namespaces/namespacelibthird__1__2_1_1main/#function-initialize)**(a a) |
-| def | **[someFunction](/documentation/code/namespaces/namespacelibthird__1__2_1_1main/#function-somefunction)**() |
-| def | **[returnResult](/documentation/code/namespaces/namespacelibthird__1__2_1_1main/#function-returnresult)**() |
+| def | **[initialize](/documentation/code/gambit_sphinxnamespaces/namespacelibthird__1__2_1_1main/#function-initialize)**(a a) |
+| def | **[someFunction](/documentation/code/gambit_sphinxnamespaces/namespacelibthird__1__2_1_1main/#function-somefunction)**() |
+| def | **[returnResult](/documentation/code/gambit_sphinxnamespaces/namespacelibthird__1__2_1_1main/#function-returnresult)**() |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| int | **[array_length](/documentation/code/namespaces/namespacelibthird__1__2_1_1main/#variable-array-length)**  |
-| int | **[someInt](/documentation/code/namespaces/namespacelibthird__1__2_1_1main/#variable-someint)**  |
-| int | **[someDouble](/documentation/code/namespaces/namespacelibthird__1__2_1_1main/#variable-somedouble)**  |
-| list | **[someVector](/documentation/code/namespaces/namespacelibthird__1__2_1_1main/#variable-somevector)**  |
-| bool | **[isInitialized](/documentation/code/namespaces/namespacelibthird__1__2_1_1main/#variable-isinitialized)**  |
-| string | **[prefix](/documentation/code/namespaces/namespacelibthird__1__2_1_1main/#variable-prefix)**  |
+| int | **[array_length](/documentation/code/gambit_sphinxnamespaces/namespacelibthird__1__2_1_1main/#variable-array-length)**  |
+| int | **[someInt](/documentation/code/gambit_sphinxnamespaces/namespacelibthird__1__2_1_1main/#variable-someint)**  |
+| int | **[someDouble](/documentation/code/gambit_sphinxnamespaces/namespacelibthird__1__2_1_1main/#variable-somedouble)**  |
+| list | **[someVector](/documentation/code/gambit_sphinxnamespaces/namespacelibthird__1__2_1_1main/#variable-somevector)**  |
+| bool | **[isInitialized](/documentation/code/gambit_sphinxnamespaces/namespacelibthird__1__2_1_1main/#variable-isinitialized)**  |
+| string | **[prefix](/documentation/code/gambit_sphinxnamespaces/namespacelibthird__1__2_1_1main/#variable-prefix)**  |
 
 
 ## Functions Documentation
@@ -107,4 +107,4 @@ string prefix =  "libthird 1.2: ";
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:32 +0000
+Updated on 2022-08-01 at 17:31:46 +0000

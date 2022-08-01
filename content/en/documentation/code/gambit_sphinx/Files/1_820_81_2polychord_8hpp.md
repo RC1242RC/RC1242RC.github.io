@@ -16,21 +16,21 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::PolyChord_1_20_1](/documentation/code/namespaces/namespacegambit_1_1polychord__1__20__1/)**  |
+| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::PolyChord_1_20_1](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1polychord__1__20__1/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[Settings](/documentation/code/classes/structsettings/)**  |
-| class | **[Gambit::PolyChord_1_20_1::LogLikeWrapper](/documentation/code/classes/classgambit_1_1polychord__1__20__1_1_1loglikewrapper/)** <br>Class to connect PolyChord log-likelihood function and ScannerBit likelihood function.  |
+| struct | **[Settings](/documentation/code/gambit_sphinxclasses/structsettings/)**  |
+| class | **[Gambit::PolyChord_1_20_1::LogLikeWrapper](/documentation/code/gambit_sphinxclasses/classgambit_1_1polychord__1__20__1_1_1loglikewrapper/)** <br>Class to connect PolyChord log-likelihood function and ScannerBit likelihood function.  |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| void | **[run_polychord](/documentation/code/files/1_820_81_2polychord_8hpp/#function-run-polychord)**(double(*)(double *, int, double *, int) loglikelihood, void(*)(int, int, int, double *, double *, double *, double, double) dumper, [Settings](/documentation/code/classes/structsettings/) ) |
+| void | **[run_polychord](/documentation/code/gambit_sphinxfiles/1_820_81_2polychord_8hpp/#function-run-polychord)**(double(*)(double *, int, double *, int) loglikelihood, void(*)(int, int, int, double *, double *, double *, double, double) dumper, [Settings](/documentation/code/gambit_sphinxclasses/structsettings/) ) |
 
 ## Detailed Description
 
@@ -188,4 +188,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:34 +0000
+Updated on 2022-08-01 at 17:31:48 +0000

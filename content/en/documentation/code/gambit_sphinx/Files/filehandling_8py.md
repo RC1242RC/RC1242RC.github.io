@@ -16,8 +16,8 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[modules](/documentation/code/namespaces/namespacemodules/)**  |
-| **[modules::filehandling](/documentation/code/namespaces/namespacemodules_1_1filehandling/)**  |
+| **[modules](/documentation/code/gambit_sphinxnamespaces/namespacemodules/)**  |
+| **[modules::filehandling](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1filehandling/)**  |
 
 
 
@@ -911,4 +911,4 @@ def resetSourceCode(reset_info_file_name):
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:37 +0000
+Updated on 2022-08-01 at 17:31:51 +0000

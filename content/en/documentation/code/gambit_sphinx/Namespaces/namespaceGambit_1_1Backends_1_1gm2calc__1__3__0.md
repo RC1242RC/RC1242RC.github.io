@@ -16,7 +16,7 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit::Backends::gm2calc_1_3_0::gm2calc](/documentation/code/namespaces/namespacegambit_1_1backends_1_1gm2calc__1__3__0_1_1gm2calc/)**  |
+| **[Gambit::Backends::gm2calc_1_3_0::gm2calc](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1backends_1_1gm2calc__1__3__0_1_1gm2calc/)**  |
 
 
 
@@ -25,4 +25,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:32 +0000
+Updated on 2022-08-01 at 17:31:46 +0000

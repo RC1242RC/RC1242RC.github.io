@@ -16,25 +16,25 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::AlterBBN_2_2](/documentation/code/namespaces/namespacegambit_1_1alterbbn__2__2/)**  |
-| **[Gambit::Backends](/documentation/code/namespaces/namespacegambit_1_1backends/)**  |
-| **[Gambit::Backends::AlterBBN_2_2](/documentation/code/namespaces/namespacegambit_1_1backends_1_1alterbbn__2__2/)**  |
+| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::AlterBBN_2_2](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1alterbbn__2__2/)**  |
+| **[Gambit::Backends](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1backends/)**  |
+| **[Gambit::Backends::AlterBBN_2_2](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1backends_1_1alterbbn__2__2/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Gambit::BBN_container](/documentation/code/classes/classgambit_1_1bbn__container/)**  |
-| struct | **[Gambit::AlterBBN_2_2::relicparam](/documentation/code/classes/structgambit_1_1alterbbn__2__2_1_1relicparam/)**  |
-| struct | **[Gambit::AlterBBN_2_2::errorparam](/documentation/code/classes/structgambit_1_1alterbbn__2__2_1_1errorparam/)**  |
+| class | **[Gambit::BBN_container](/documentation/code/gambit_sphinxclasses/classgambit_1_1bbn__container/)**  |
+| struct | **[Gambit::AlterBBN_2_2::relicparam](/documentation/code/gambit_sphinxclasses/structgambit_1_1alterbbn__2__2_1_1relicparam/)**  |
+| struct | **[Gambit::AlterBBN_2_2::errorparam](/documentation/code/gambit_sphinxclasses/structgambit_1_1alterbbn__2__2_1_1errorparam/)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[NNUCREAC](/documentation/code/files/alterbbn_8hpp/#define-nnucreac)**  |
-|  | **[NTABMAX](/documentation/code/files/alterbbn_8hpp/#define-ntabmax)**  |
+|  | **[NNUCREAC](/documentation/code/gambit_sphinxfiles/alterbbn_8hpp/#define-nnucreac)**  |
+|  | **[NTABMAX](/documentation/code/gambit_sphinxfiles/alterbbn_8hpp/#define-ntabmax)**  |
 
 ## Detailed Description
 
@@ -277,4 +277,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:37 +0000
+Updated on 2022-08-01 at 17:31:50 +0000

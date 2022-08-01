@@ -16,18 +16,18 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::Scanner](/documentation/code/namespaces/namespacegambit_1_1scanner/)**  |
+| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::Scanner](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1scanner/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Gambit::Scanner::Function_Base< ret(args...)>](/documentation/code/classes/classgambit_1_1scanner_1_1function__base_3_01ret_07args_8_8_8_08_4/)** <br>Base function for the object that is upputed by "set_purpose".  |
-| class | **[Gambit::Scanner::Function_Deleter< ret(args...)>](/documentation/code/classes/classgambit_1_1scanner_1_1function__deleter_3_01ret_07args_8_8_8_08_4/)**  |
-| class | **[Gambit::Scanner::scan_ptr< ret(args...)>](/documentation/code/classes/classgambit_1_1scanner_1_1scan__ptr_3_01ret_07args_8_8_8_08_4/)** <br>Container class that hold the output of the "get_purpose" function.  |
-| class | **[Gambit::Scanner::like_ptr](/documentation/code/classes/classgambit_1_1scanner_1_1like__ptr/)** <br>likelihood container for scanner plugins.  |
-| class | **[Gambit::Scanner::Factory_Base](/documentation/code/classes/classgambit_1_1scanner_1_1factory__base/)** <br>Pure Base class of a plugin Factory function.  |
+| class | **[Gambit::Scanner::Function_Base< ret(args...)>](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1function__base_3_01ret_07args_8_8_8_08_4/)** <br>Base function for the object that is upputed by "set_purpose".  |
+| class | **[Gambit::Scanner::Function_Deleter< ret(args...)>](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1function__deleter_3_01ret_07args_8_8_8_08_4/)**  |
+| class | **[Gambit::Scanner::scan_ptr< ret(args...)>](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1scan__ptr_3_01ret_07args_8_8_8_08_4/)** <br>Container class that hold the output of the "get_purpose" function.  |
+| class | **[Gambit::Scanner::like_ptr](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1like__ptr/)** <br>likelihood container for scanner plugins.  |
+| class | **[Gambit::Scanner::Factory_Base](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1factory__base/)** <br>Pure Base class of a plugin Factory function.  |
 
 ## Detailed Description
 
@@ -424,4 +424,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:34 +0000
+Updated on 2022-08-01 at 17:31:48 +0000

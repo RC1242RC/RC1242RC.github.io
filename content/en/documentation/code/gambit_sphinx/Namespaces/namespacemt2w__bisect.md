@@ -16,7 +16,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[mt2w_bisect::mt2w](/documentation/code/classes/classmt2w__bisect_1_1mt2w/)**  |
+| class | **[mt2w_bisect::mt2w](/documentation/code/gambit_sphinxclasses/classmt2w__bisect_1_1mt2w/)**  |
 
 
 
@@ -25,4 +25,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:32 +0000
+Updated on 2022-08-01 at 17:31:46 +0000

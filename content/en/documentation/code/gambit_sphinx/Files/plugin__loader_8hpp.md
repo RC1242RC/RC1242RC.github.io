@@ -16,21 +16,21 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::GMPI](/documentation/code/namespaces/namespacegambit_1_1gmpi/)** <br>Forward declare MPI class.  |
-| **[Gambit::Scanner](/documentation/code/namespaces/namespacegambit_1_1scanner/)**  |
-| **[Gambit::Scanner::Plugins](/documentation/code/namespaces/namespacegambit_1_1scanner_1_1plugins/)**  |
+| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::GMPI](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1gmpi/)** <br>Forward declare MPI class.  |
+| **[Gambit::Scanner](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1scanner/)**  |
+| **[Gambit::Scanner::Plugins](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1scanner_1_1plugins/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[Gambit::Scanner::Plugins::Proto_Plugin_Details](/documentation/code/classes/structgambit_1_1scanner_1_1plugins_1_1proto__plugin__details/)** <br>Plugin info from inifile.  |
-| struct | **[Gambit::Scanner::Plugins::Plugin_Interface_Details](/documentation/code/classes/structgambit_1_1scanner_1_1plugins_1_1plugin__interface__details/)** <br>Plugin info to be given to the interface class.  |
-| class | **[Gambit::Scanner::Plugins::Plugin_Loader](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__loader/)** <br>container class for the actual plugins detected by ScannerBit  |
-| class | **[Gambit::Scanner::Plugins::__plugin_resume_base__](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1____plugin__resume__base____/)** <br>Virtual container base class to store plugin values for resume function.  |
-| class | **[Gambit::Scanner::Plugins::__plugin_resume__](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1____plugin__resume____/)** <br>Container class to store plugin values for resume function.  |
-| class | **[Gambit::Scanner::Plugins::pluginInfo](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugininfo/)** <br>Container for all the plugin info from the inifile and Scannerbit.  |
+| struct | **[Gambit::Scanner::Plugins::Proto_Plugin_Details](/documentation/code/gambit_sphinxclasses/structgambit_1_1scanner_1_1plugins_1_1proto__plugin__details/)** <br>Plugin info from inifile.  |
+| struct | **[Gambit::Scanner::Plugins::Plugin_Interface_Details](/documentation/code/gambit_sphinxclasses/structgambit_1_1scanner_1_1plugins_1_1plugin__interface__details/)** <br>Plugin info to be given to the interface class.  |
+| class | **[Gambit::Scanner::Plugins::Plugin_Loader](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1plugins_1_1plugin__loader/)** <br>container class for the actual plugins detected by ScannerBit  |
+| class | **[Gambit::Scanner::Plugins::__plugin_resume_base__](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1plugins_1_1____plugin__resume__base____/)** <br>Virtual container base class to store plugin values for resume function.  |
+| class | **[Gambit::Scanner::Plugins::__plugin_resume__](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1plugins_1_1____plugin__resume____/)** <br>Container class to store plugin values for resume function.  |
+| class | **[Gambit::Scanner::Plugins::pluginInfo](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1plugins_1_1plugininfo/)** <br>Container for all the plugin info from the inifile and Scannerbit.  |
 
 ## Detailed Description
 
@@ -296,4 +296,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:34 +0000
+Updated on 2022-08-01 at 17:31:48 +0000

@@ -16,84 +16,84 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[if](/documentation/code/files/feynhiggs__2__12__0_8cpp/#function-if)**(scan_level ) |
-| | **[if](/documentation/code/files/feynhiggs__2__12__0_8cpp/#function-if)**(slhaea. find"SPINFO" ==slhaea.end()) |
-| std::vector< std::string > | **[k3](/documentation/code/files/feynhiggs__2__12__0_8cpp/#function-k3)**(1 , "3" ) |
-| std::vector< std::string > | **[k4](/documentation/code/files/feynhiggs__2__12__0_8cpp/#function-k4)**(1 , "4" ) |
-| | **[if](/documentation/code/files/feynhiggs__2__12__0_8cpp/#function-if)**(spinfo.find(k3) !  =spinfo.end()||spinfo.find(k4) !=spinfo.end()) |
-| | **[FHSetSMPara](/documentation/code/files/feynhiggs__2__12__0_8cpp/#function-fhsetsmpara)**(error , invAlfa , AlfasMZ , GF , ME , MU , MD , MM , MC , MS , ML , MB , MW , MZ , CKMlambda , CKMA , CKMrhobar , CKMetabar ) |
-| | **[if](/documentation/code/files/feynhiggs__2__12__0_8cpp/#function-if)**(MA0<= 0.) |
-| | **[FHSetPara](/documentation/code/files/feynhiggs__2__12__0_8cpp/#function-fhsetpara)**(error , scalefactor , MT , TB , MA0 , MHp , M3SL , M3SE , M3SQ , M3SU , M3SD , M2SL , M2SE , M2SQ , M2SU , M2SD , M1SL , M1SE , M1SQ , M1SU , M1SD , MUE , Atau , At , Ab , Amu , Ac , As , Ae , Au , Ad , M_1 , M_2 , M_3 , Qtau , Qt , Qb ) |
+| | **[if](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#function-if)**(scan_level ) |
+| | **[if](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#function-if)**(slhaea. find"SPINFO" ==slhaea.end()) |
+| std::vector< std::string > | **[k3](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#function-k3)**(1 , "3" ) |
+| std::vector< std::string > | **[k4](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#function-k4)**(1 , "4" ) |
+| | **[if](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#function-if)**(spinfo.find(k3) !  =spinfo.end()||spinfo.find(k4) !=spinfo.end()) |
+| | **[FHSetSMPara](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#function-fhsetsmpara)**(error , invAlfa , AlfasMZ , GF , ME , MU , MD , MM , MC , MS , ML , MB , MW , MZ , CKMlambda , CKMA , CKMrhobar , CKMetabar ) |
+| | **[if](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#function-if)**(MA0<= 0.) |
+| | **[FHSetPara](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#function-fhsetpara)**(error , scalefactor , MT , TB , MA0 , MHp , M3SL , M3SE , M3SQ , M3SU , M3SD , M2SL , M2SE , M2SQ , M2SU , M2SD , M1SL , M1SE , M1SQ , M1SU , M1SD , MUE , Atau , At , Ab , Amu , Ac , As , Ae , Au , Ad , M_1 , M_2 , M_3 , Qtau , Qt , Qb ) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[BE_INI_FUNCTION](/documentation/code/files/feynhiggs__2__12__0_8cpp/#variable-be-ini-function)**  |
-| bool | **[scan_level](/documentation/code/files/feynhiggs__2__12__0_8cpp/#variable-scan-level)**  |
-| const Spectrum & | **[fullspectrum](/documentation/code/files/feynhiggs__2__12__0_8cpp/#variable-fullspectrum)**  |
-| const SMInputs & | **[sminputs](/documentation/code/files/feynhiggs__2__12__0_8cpp/#variable-sminputs)**  |
-| const SubSpectrum & | **[spec](/documentation/code/files/feynhiggs__2__12__0_8cpp/#variable-spec)**  |
-| SLHAea::Coll | **[slhaea](/documentation/code/files/feynhiggs__2__12__0_8cpp/#variable-slhaea)**  |
-| SLHAea::Block | **[spinfo](/documentation/code/files/feynhiggs__2__12__0_8cpp/#variable-spinfo)**  |
-| fh_real | **[invAlfa](/documentation/code/files/feynhiggs__2__12__0_8cpp/#variable-invalfa)**  |
-| fh_real | **[AlfasMZ](/documentation/code/files/feynhiggs__2__12__0_8cpp/#variable-alfasmz)**  |
-| fh_real | **[GF](/documentation/code/files/feynhiggs__2__12__0_8cpp/#variable-gf)**  |
-| fh_real | **[ME](/documentation/code/files/feynhiggs__2__12__0_8cpp/#variable-me)**  |
-| fh_real | **[MU](/documentation/code/files/feynhiggs__2__12__0_8cpp/#variable-mu)**  |
-| fh_real | **[MD](/documentation/code/files/feynhiggs__2__12__0_8cpp/#variable-md)**  |
-| fh_real | **[MM](/documentation/code/files/feynhiggs__2__12__0_8cpp/#variable-mm)**  |
-| fh_real | **[MC](/documentation/code/files/feynhiggs__2__12__0_8cpp/#variable-mc)**  |
-| fh_real | **[MS](/documentation/code/files/feynhiggs__2__12__0_8cpp/#variable-ms)**  |
-| fh_real | **[ML](/documentation/code/files/feynhiggs__2__12__0_8cpp/#variable-ml)**  |
-| fh_real | **[MB](/documentation/code/files/feynhiggs__2__12__0_8cpp/#variable-mb)**  |
-| fh_real | **[MW](/documentation/code/files/feynhiggs__2__12__0_8cpp/#variable-mw)**  |
-| fh_real | **[MZ](/documentation/code/files/feynhiggs__2__12__0_8cpp/#variable-mz)**  |
-| fh_real | **[CKMlambda](/documentation/code/files/feynhiggs__2__12__0_8cpp/#variable-ckmlambda)**  |
-| fh_real | **[CKMA](/documentation/code/files/feynhiggs__2__12__0_8cpp/#variable-ckma)**  |
-| fh_real | **[CKMrhobar](/documentation/code/files/feynhiggs__2__12__0_8cpp/#variable-ckmrhobar)**  |
-| fh_real | **[CKMetabar](/documentation/code/files/feynhiggs__2__12__0_8cpp/#variable-ckmetabar)**  |
-| | **[error](/documentation/code/files/feynhiggs__2__12__0_8cpp/#variable-error)**  |
-| fh_real | **[MT](/documentation/code/files/feynhiggs__2__12__0_8cpp/#variable-mt)**  |
-| fh_real | **[TB](/documentation/code/files/feynhiggs__2__12__0_8cpp/#variable-tb)**  |
-| fh_real | **[MA0](/documentation/code/files/feynhiggs__2__12__0_8cpp/#variable-ma0)**  |
-| fh_real | **[MHp](/documentation/code/files/feynhiggs__2__12__0_8cpp/#variable-mhp)**  |
-| fh_real | **[M1SL](/documentation/code/files/feynhiggs__2__12__0_8cpp/#variable-m1sl)**  |
-| fh_real | **[M2SL](/documentation/code/files/feynhiggs__2__12__0_8cpp/#variable-m2sl)**  |
-| fh_real | **[M3SL](/documentation/code/files/feynhiggs__2__12__0_8cpp/#variable-m3sl)**  |
-| fh_real | **[M1SE](/documentation/code/files/feynhiggs__2__12__0_8cpp/#variable-m1se)**  |
-| fh_real | **[M2SE](/documentation/code/files/feynhiggs__2__12__0_8cpp/#variable-m2se)**  |
-| fh_real | **[M3SE](/documentation/code/files/feynhiggs__2__12__0_8cpp/#variable-m3se)**  |
-| fh_real | **[M1SQ](/documentation/code/files/feynhiggs__2__12__0_8cpp/#variable-m1sq)**  |
-| fh_real | **[M2SQ](/documentation/code/files/feynhiggs__2__12__0_8cpp/#variable-m2sq)**  |
-| fh_real | **[M3SQ](/documentation/code/files/feynhiggs__2__12__0_8cpp/#variable-m3sq)**  |
-| fh_real | **[M1SU](/documentation/code/files/feynhiggs__2__12__0_8cpp/#variable-m1su)**  |
-| fh_real | **[M2SU](/documentation/code/files/feynhiggs__2__12__0_8cpp/#variable-m2su)**  |
-| fh_real | **[M3SU](/documentation/code/files/feynhiggs__2__12__0_8cpp/#variable-m3su)**  |
-| fh_real | **[M1SD](/documentation/code/files/feynhiggs__2__12__0_8cpp/#variable-m1sd)**  |
-| fh_real | **[M2SD](/documentation/code/files/feynhiggs__2__12__0_8cpp/#variable-m2sd)**  |
-| fh_real | **[M3SD](/documentation/code/files/feynhiggs__2__12__0_8cpp/#variable-m3sd)**  |
-| fh_complex | **[Af](/documentation/code/files/feynhiggs__2__12__0_8cpp/#variable-af)**  |
-| Af | **[re](/documentation/code/files/feynhiggs__2__12__0_8cpp/#variable-re)**  |
-| Af | **[im](/documentation/code/files/feynhiggs__2__12__0_8cpp/#variable-im)**  |
-| fh_complex | **[At](/documentation/code/files/feynhiggs__2__12__0_8cpp/#variable-at)**  |
-| fh_complex | **[Ac](/documentation/code/files/feynhiggs__2__12__0_8cpp/#variable-ac)**  |
-| fh_complex | **[Au](/documentation/code/files/feynhiggs__2__12__0_8cpp/#variable-au)**  |
-| fh_complex | **[Ab](/documentation/code/files/feynhiggs__2__12__0_8cpp/#variable-ab)**  |
-| fh_complex | **[As](/documentation/code/files/feynhiggs__2__12__0_8cpp/#variable-as)**  |
-| fh_complex | **[Ad](/documentation/code/files/feynhiggs__2__12__0_8cpp/#variable-ad)**  |
-| fh_complex | **[Atau](/documentation/code/files/feynhiggs__2__12__0_8cpp/#variable-atau)**  |
-| fh_complex | **[Amu](/documentation/code/files/feynhiggs__2__12__0_8cpp/#variable-amu)**  |
-| fh_complex | **[Ae](/documentation/code/files/feynhiggs__2__12__0_8cpp/#variable-ae)**  |
-| fh_complex | **[MUE](/documentation/code/files/feynhiggs__2__12__0_8cpp/#variable-mue)**  |
-| fh_complex | **[M_1](/documentation/code/files/feynhiggs__2__12__0_8cpp/#variable-m-1)**  |
-| fh_complex | **[M_2](/documentation/code/files/feynhiggs__2__12__0_8cpp/#variable-m-2)**  |
-| fh_complex | **[M_3](/documentation/code/files/feynhiggs__2__12__0_8cpp/#variable-m-3)**  |
-| double | **[SCALE](/documentation/code/files/feynhiggs__2__12__0_8cpp/#variable-scale)**  |
-| fh_real | **[Qtau](/documentation/code/files/feynhiggs__2__12__0_8cpp/#variable-qtau)**  |
-| fh_real | **[Qt](/documentation/code/files/feynhiggs__2__12__0_8cpp/#variable-qt)**  |
-| fh_real | **[Qb](/documentation/code/files/feynhiggs__2__12__0_8cpp/#variable-qb)**  |
-| fh_real | **[scalefactor](/documentation/code/files/feynhiggs__2__12__0_8cpp/#variable-scalefactor)**  |
+| | **[BE_INI_FUNCTION](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#variable-be-ini-function)**  |
+| bool | **[scan_level](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#variable-scan-level)**  |
+| const Spectrum & | **[fullspectrum](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#variable-fullspectrum)**  |
+| const SMInputs & | **[sminputs](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#variable-sminputs)**  |
+| const SubSpectrum & | **[spec](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#variable-spec)**  |
+| SLHAea::Coll | **[slhaea](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#variable-slhaea)**  |
+| SLHAea::Block | **[spinfo](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#variable-spinfo)**  |
+| fh_real | **[invAlfa](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#variable-invalfa)**  |
+| fh_real | **[AlfasMZ](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#variable-alfasmz)**  |
+| fh_real | **[GF](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#variable-gf)**  |
+| fh_real | **[ME](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#variable-me)**  |
+| fh_real | **[MU](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#variable-mu)**  |
+| fh_real | **[MD](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#variable-md)**  |
+| fh_real | **[MM](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#variable-mm)**  |
+| fh_real | **[MC](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#variable-mc)**  |
+| fh_real | **[MS](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#variable-ms)**  |
+| fh_real | **[ML](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#variable-ml)**  |
+| fh_real | **[MB](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#variable-mb)**  |
+| fh_real | **[MW](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#variable-mw)**  |
+| fh_real | **[MZ](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#variable-mz)**  |
+| fh_real | **[CKMlambda](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#variable-ckmlambda)**  |
+| fh_real | **[CKMA](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#variable-ckma)**  |
+| fh_real | **[CKMrhobar](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#variable-ckmrhobar)**  |
+| fh_real | **[CKMetabar](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#variable-ckmetabar)**  |
+| | **[error](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#variable-error)**  |
+| fh_real | **[MT](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#variable-mt)**  |
+| fh_real | **[TB](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#variable-tb)**  |
+| fh_real | **[MA0](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#variable-ma0)**  |
+| fh_real | **[MHp](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#variable-mhp)**  |
+| fh_real | **[M1SL](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#variable-m1sl)**  |
+| fh_real | **[M2SL](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#variable-m2sl)**  |
+| fh_real | **[M3SL](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#variable-m3sl)**  |
+| fh_real | **[M1SE](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#variable-m1se)**  |
+| fh_real | **[M2SE](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#variable-m2se)**  |
+| fh_real | **[M3SE](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#variable-m3se)**  |
+| fh_real | **[M1SQ](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#variable-m1sq)**  |
+| fh_real | **[M2SQ](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#variable-m2sq)**  |
+| fh_real | **[M3SQ](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#variable-m3sq)**  |
+| fh_real | **[M1SU](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#variable-m1su)**  |
+| fh_real | **[M2SU](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#variable-m2su)**  |
+| fh_real | **[M3SU](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#variable-m3su)**  |
+| fh_real | **[M1SD](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#variable-m1sd)**  |
+| fh_real | **[M2SD](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#variable-m2sd)**  |
+| fh_real | **[M3SD](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#variable-m3sd)**  |
+| fh_complex | **[Af](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#variable-af)**  |
+| Af | **[re](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#variable-re)**  |
+| Af | **[im](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#variable-im)**  |
+| fh_complex | **[At](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#variable-at)**  |
+| fh_complex | **[Ac](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#variable-ac)**  |
+| fh_complex | **[Au](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#variable-au)**  |
+| fh_complex | **[Ab](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#variable-ab)**  |
+| fh_complex | **[As](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#variable-as)**  |
+| fh_complex | **[Ad](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#variable-ad)**  |
+| fh_complex | **[Atau](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#variable-atau)**  |
+| fh_complex | **[Amu](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#variable-amu)**  |
+| fh_complex | **[Ae](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#variable-ae)**  |
+| fh_complex | **[MUE](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#variable-mue)**  |
+| fh_complex | **[M_1](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#variable-m-1)**  |
+| fh_complex | **[M_2](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#variable-m-2)**  |
+| fh_complex | **[M_3](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#variable-m-3)**  |
+| double | **[SCALE](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#variable-scale)**  |
+| fh_real | **[Qtau](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#variable-qtau)**  |
+| fh_real | **[Qt](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#variable-qt)**  |
+| fh_real | **[Qb](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#variable-qb)**  |
+| fh_real | **[scalefactor](/documentation/code/darkbit_developmentfiles/feynhiggs__2__12__0_8cpp/#variable-scalefactor)**  |
 
 
 ## Functions Documentation
@@ -950,4 +950,4 @@ END_BE_INI_FUNCTION
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:26 +0000
+Updated on 2022-08-01 at 17:31:46 +0000

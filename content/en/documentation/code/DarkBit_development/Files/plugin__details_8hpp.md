@@ -16,16 +16,16 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::Scanner](/documentation/code/namespaces/namespacegambit_1_1scanner/)**  |
-| **[Gambit::Scanner::Plugins](/documentation/code/namespaces/namespacegambit_1_1scanner_1_1plugins/)**  |
+| **[Gambit](/documentation/code/darkbit_developmentnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::Scanner](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1scanner/)**  |
+| **[Gambit::Scanner::Plugins](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1scanner_1_1plugins/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[Gambit::Scanner::Plugins::Plugin_Details](/documentation/code/classes/structgambit_1_1scanner_1_1plugins_1_1plugin__details/)** <br>container info for a specific plugin  |
-| class | **[Gambit::Scanner::Plugins::Plugin_Details_Ref](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__details__ref/)**  |
+| struct | **[Gambit::Scanner::Plugins::Plugin_Details](/documentation/code/darkbit_developmentclasses/structgambit_1_1scanner_1_1plugins_1_1plugin__details/)** <br>container info for a specific plugin  |
+| class | **[Gambit::Scanner::Plugins::Plugin_Details_Ref](/documentation/code/darkbit_developmentclasses/classgambit_1_1scanner_1_1plugins_1_1plugin__details__ref/)**  |
 
 ## Detailed Description
 
@@ -170,4 +170,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:23 +0000
+Updated on 2022-08-01 at 17:31:43 +0000

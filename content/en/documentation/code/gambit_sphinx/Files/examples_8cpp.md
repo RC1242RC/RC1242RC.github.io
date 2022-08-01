@@ -16,11 +16,11 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[objective_plugin](/documentation/code/files/examples_8cpp/#function-objective-plugin)**(uniform , version(1, 0, 0) ) |
-| | **[objective_plugin](/documentation/code/files/examples_8cpp/#function-objective-plugin)**(gaussian , version(1, 0, 0) ) |
-| | **[objective_plugin](/documentation/code/files/examples_8cpp/#function-objective-plugin)**(normal_example , version(1, 0, 0) ) |
-| | **[objective_plugin](/documentation/code/files/examples_8cpp/#function-objective-plugin)**(EggBox , version(1, 0, 0) ) |
-| | **[objective_plugin](/documentation/code/files/examples_8cpp/#function-objective-plugin)**(flat_prior , version(1, 0, 0) ) |
+| | **[objective_plugin](/documentation/code/gambit_sphinxfiles/examples_8cpp/#function-objective-plugin)**(uniform , version(1, 0, 0) ) |
+| | **[objective_plugin](/documentation/code/gambit_sphinxfiles/examples_8cpp/#function-objective-plugin)**(gaussian , version(1, 0, 0) ) |
+| | **[objective_plugin](/documentation/code/gambit_sphinxfiles/examples_8cpp/#function-objective-plugin)**(normal_example , version(1, 0, 0) ) |
+| | **[objective_plugin](/documentation/code/gambit_sphinxfiles/examples_8cpp/#function-objective-plugin)**(EggBox , version(1, 0, 0) ) |
+| | **[objective_plugin](/documentation/code/gambit_sphinxfiles/examples_8cpp/#function-objective-plugin)**(flat_prior , version(1, 0, 0) ) |
 
 ## Detailed Description
 
@@ -279,4 +279,4 @@ objective_plugin(flat_prior, version(1, 0, 0))
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:34 +0000
+Updated on 2022-08-01 at 17:31:48 +0000

@@ -16,61 +16,61 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::Scanner](/documentation/code/namespaces/namespacegambit_1_1scanner/)**  |
-| **[Gambit::Scanner::Errors](/documentation/code/namespaces/namespacegambit_1_1scanner_1_1errors/)**  |
+| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::Scanner](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1scanner/)**  |
+| **[Gambit::Scanner::Errors](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1scanner_1_1errors/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[Gambit::Scanner::func_ptr_type< void(args...)>](/documentation/code/classes/structgambit_1_1scanner_1_1func__ptr__type_3_01void_07args_8_8_8_08_4/)**  |
-| struct | **[Gambit::Scanner::remove_all_func< ret(args...)>](/documentation/code/classes/structgambit_1_1scanner_1_1remove__all__func_3_01ret_07args_8_8_8_08_4/)**  |
-| struct | **[Gambit::Scanner::return_type< ret(args...)>](/documentation/code/classes/structgambit_1_1scanner_1_1return__type_3_01ret_07args_8_8_8_08_4/)**  |
-| struct | **[Gambit::Scanner::first_arg_type< ret(T, args...)>](/documentation/code/classes/structgambit_1_1scanner_1_1first__arg__type_3_01ret_07t_00_01args_8_8_8_08_4/)**  |
-| struct | **[Gambit::Scanner::first_arg_type< ret()>](/documentation/code/classes/structgambit_1_1scanner_1_1first__arg__type_3_01ret_07_08_4/)**  |
-| struct | **[Gambit::Scanner::is_args_convertible](/documentation/code/classes/structgambit_1_1scanner_1_1is__args__convertible/)**  |
-| struct | **[Gambit::Scanner::__is_args_convertible__](/documentation/code/classes/structgambit_1_1scanner_1_1____is__args__convertible____/)**  |
-| struct | **[Gambit::Scanner::__is_args_convertible__< false, T1, T2 >](/documentation/code/classes/structgambit_1_1scanner_1_1____is__args__convertible_____3_01false_00_01t1_00_01t2_01_4/)**  |
-| struct | **[Gambit::Scanner::is_args_convertible< ret1(arg1, args1...), ret2(arg2, args2...)>](/documentation/code/classes/structgambit_1_1scanner_1_1is__args__convertible_3_01ret1_07arg1_00_01args1_8_8_8_08_00_01ret2_07arg2_00_01args2_8_8_8_08_4/)**  |
-| struct | **[Gambit::Scanner::is_args_convertible< ret1(), ret2()>](/documentation/code/classes/structgambit_1_1scanner_1_1is__args__convertible_3_01ret1_07_08_00_01ret2_07_08_4/)**  |
-| struct | **[Gambit::Scanner::_find_variadic_type_not_exact_< T1, T2, T... >](/documentation/code/classes/structgambit_1_1scanner_1_1__find__variadic__type__not__exact___3_01t1_00_01t2_00_01t_8_8_8_01_4/)**  |
-| struct | **[Gambit::Scanner::find_variadic_type_not_exact](/documentation/code/classes/structgambit_1_1scanner_1_1find__variadic__type__not__exact/)**  |
-| struct | **[Gambit::Scanner::find_variadic_type_not_exact< void(args...)>](/documentation/code/classes/structgambit_1_1scanner_1_1find__variadic__type__not__exact_3_01void_07args_8_8_8_08_4/)**  |
-| struct | **[Gambit::Scanner::__find_variadic_type_not_exact__< void(args...), ret(args...), T1, T... >](/documentation/code/classes/structgambit_1_1scanner_1_1____find__variadic__type__not__exact_____3_01void_07args_8_8_8_08_00_e143deac0e765eb009f74255cae70cdb/)**  |
-| struct | **[Gambit::Scanner::__find_variadic_type_not_exact__< void(args...), ret(args2...), T1, T... >](/documentation/code/classes/structgambit_1_1scanner_1_1____find__variadic__type__not__exact_____3_01void_07args_8_8_8_08_00_07dc90b6eaf941e6db44db3b27790d79/)**  |
-| struct | **[Gambit::Scanner::find_variadic_type_exact< void(args...), ret(args2...), T... >](/documentation/code/classes/structgambit_1_1scanner_1_1find__variadic__type__exact_3_01void_07args_8_8_8_08_00_01ret_07args2_8_8_8_08_00_01t_8_8_8_01_4/)**  |
-| struct | **[Gambit::Scanner::find_variadic_type_exact< void(args...), ret(args...), T... >](/documentation/code/classes/structgambit_1_1scanner_1_1find__variadic__type__exact_3_01void_07args_8_8_8_08_00_01ret_07args_8_8_8_08_00_01t_8_8_8_01_4/)**  |
-| struct | **[Gambit::Scanner::find_variadic_type_exact< void(args...)>](/documentation/code/classes/structgambit_1_1scanner_1_1find__variadic__type__exact_3_01void_07args_8_8_8_08_4/)**  |
-| struct | **[Gambit::Scanner::_find_variadic_type_convert_< Tc, T1, T... >](/documentation/code/classes/structgambit_1_1scanner_1_1__find__variadic__type__convert___3_01tc_00_01t1_00_01t_8_8_8_01_4/)**  |
-| struct | **[Gambit::Scanner::find_variadic_type_convert](/documentation/code/classes/structgambit_1_1scanner_1_1find__variadic__type__convert/)**  |
-| struct | **[Gambit::Scanner::find_variadic_type_convert< ret(args...)>](/documentation/code/classes/structgambit_1_1scanner_1_1find__variadic__type__convert_3_01ret_07args_8_8_8_08_4/)**  |
-| struct | **[Gambit::Scanner::__find_variadic_type_convert__< b, Tc, T1, T... >](/documentation/code/classes/structgambit_1_1scanner_1_1____find__variadic__type__convert_____3_01b_00_01tc_00_01t1_00_01t_8_8_8_01_4/)**  |
-| struct | **[Gambit::Scanner::__find_variadic_type_convert__< true, Tc, T1, T... >](/documentation/code/classes/structgambit_1_1scanner_1_1____find__variadic__type__convert_____3_01true_00_01tc_00_01t1_00_01t_8_8_8_01_4/)**  |
-| struct | **[Gambit::Scanner::__find_variadic_type__](/documentation/code/classes/structgambit_1_1scanner_1_1____find__variadic__type____/)**  |
-| struct | **[Gambit::Scanner::find_variadic_type](/documentation/code/classes/structgambit_1_1scanner_1_1find__variadic__type/)**  |
-| struct | **[Gambit::Scanner::__find_variadic_type__< true, b1, b2, T... >](/documentation/code/classes/structgambit_1_1scanner_1_1____find__variadic__type_____3_01true_00_01b1_00_01b2_00_01t_8_8_8_01_4/)**  |
-| struct | **[Gambit::Scanner::__find_variadic_type__< false, true, b2, T... >](/documentation/code/classes/structgambit_1_1scanner_1_1____find__variadic__type_____3_01false_00_01true_00_01b2_00_01t_8_8_8_01_4/)**  |
-| struct | **[Gambit::Scanner::__find_variadic_type__< false, false, true, T... >](/documentation/code/classes/structgambit_1_1scanner_1_1____find__variadic__type_____3_01false_00_01false_00_01true_00_01t_8_8_8_01_4/)**  |
+| struct | **[Gambit::Scanner::func_ptr_type< void(args...)>](/documentation/code/gambit_sphinxclasses/structgambit_1_1scanner_1_1func__ptr__type_3_01void_07args_8_8_8_08_4/)**  |
+| struct | **[Gambit::Scanner::remove_all_func< ret(args...)>](/documentation/code/gambit_sphinxclasses/structgambit_1_1scanner_1_1remove__all__func_3_01ret_07args_8_8_8_08_4/)**  |
+| struct | **[Gambit::Scanner::return_type< ret(args...)>](/documentation/code/gambit_sphinxclasses/structgambit_1_1scanner_1_1return__type_3_01ret_07args_8_8_8_08_4/)**  |
+| struct | **[Gambit::Scanner::first_arg_type< ret(T, args...)>](/documentation/code/gambit_sphinxclasses/structgambit_1_1scanner_1_1first__arg__type_3_01ret_07t_00_01args_8_8_8_08_4/)**  |
+| struct | **[Gambit::Scanner::first_arg_type< ret()>](/documentation/code/gambit_sphinxclasses/structgambit_1_1scanner_1_1first__arg__type_3_01ret_07_08_4/)**  |
+| struct | **[Gambit::Scanner::is_args_convertible](/documentation/code/gambit_sphinxclasses/structgambit_1_1scanner_1_1is__args__convertible/)**  |
+| struct | **[Gambit::Scanner::__is_args_convertible__](/documentation/code/gambit_sphinxclasses/structgambit_1_1scanner_1_1____is__args__convertible____/)**  |
+| struct | **[Gambit::Scanner::__is_args_convertible__< false, T1, T2 >](/documentation/code/gambit_sphinxclasses/structgambit_1_1scanner_1_1____is__args__convertible_____3_01false_00_01t1_00_01t2_01_4/)**  |
+| struct | **[Gambit::Scanner::is_args_convertible< ret1(arg1, args1...), ret2(arg2, args2...)>](/documentation/code/gambit_sphinxclasses/structgambit_1_1scanner_1_1is__args__convertible_3_01ret1_07arg1_00_01args1_8_8_8_08_00_01ret2_07arg2_00_01args2_8_8_8_08_4/)**  |
+| struct | **[Gambit::Scanner::is_args_convertible< ret1(), ret2()>](/documentation/code/gambit_sphinxclasses/structgambit_1_1scanner_1_1is__args__convertible_3_01ret1_07_08_00_01ret2_07_08_4/)**  |
+| struct | **[Gambit::Scanner::_find_variadic_type_not_exact_< T1, T2, T... >](/documentation/code/gambit_sphinxclasses/structgambit_1_1scanner_1_1__find__variadic__type__not__exact___3_01t1_00_01t2_00_01t_8_8_8_01_4/)**  |
+| struct | **[Gambit::Scanner::find_variadic_type_not_exact](/documentation/code/gambit_sphinxclasses/structgambit_1_1scanner_1_1find__variadic__type__not__exact/)**  |
+| struct | **[Gambit::Scanner::find_variadic_type_not_exact< void(args...)>](/documentation/code/gambit_sphinxclasses/structgambit_1_1scanner_1_1find__variadic__type__not__exact_3_01void_07args_8_8_8_08_4/)**  |
+| struct | **[Gambit::Scanner::__find_variadic_type_not_exact__< void(args...), ret(args...), T1, T... >](/documentation/code/gambit_sphinxclasses/structgambit_1_1scanner_1_1____find__variadic__type__not__exact_____3_01void_07args_8_8_8_08_00_e143deac0e765eb009f74255cae70cdb/)**  |
+| struct | **[Gambit::Scanner::__find_variadic_type_not_exact__< void(args...), ret(args2...), T1, T... >](/documentation/code/gambit_sphinxclasses/structgambit_1_1scanner_1_1____find__variadic__type__not__exact_____3_01void_07args_8_8_8_08_00_07dc90b6eaf941e6db44db3b27790d79/)**  |
+| struct | **[Gambit::Scanner::find_variadic_type_exact< void(args...), ret(args2...), T... >](/documentation/code/gambit_sphinxclasses/structgambit_1_1scanner_1_1find__variadic__type__exact_3_01void_07args_8_8_8_08_00_01ret_07args2_8_8_8_08_00_01t_8_8_8_01_4/)**  |
+| struct | **[Gambit::Scanner::find_variadic_type_exact< void(args...), ret(args...), T... >](/documentation/code/gambit_sphinxclasses/structgambit_1_1scanner_1_1find__variadic__type__exact_3_01void_07args_8_8_8_08_00_01ret_07args_8_8_8_08_00_01t_8_8_8_01_4/)**  |
+| struct | **[Gambit::Scanner::find_variadic_type_exact< void(args...)>](/documentation/code/gambit_sphinxclasses/structgambit_1_1scanner_1_1find__variadic__type__exact_3_01void_07args_8_8_8_08_4/)**  |
+| struct | **[Gambit::Scanner::_find_variadic_type_convert_< Tc, T1, T... >](/documentation/code/gambit_sphinxclasses/structgambit_1_1scanner_1_1__find__variadic__type__convert___3_01tc_00_01t1_00_01t_8_8_8_01_4/)**  |
+| struct | **[Gambit::Scanner::find_variadic_type_convert](/documentation/code/gambit_sphinxclasses/structgambit_1_1scanner_1_1find__variadic__type__convert/)**  |
+| struct | **[Gambit::Scanner::find_variadic_type_convert< ret(args...)>](/documentation/code/gambit_sphinxclasses/structgambit_1_1scanner_1_1find__variadic__type__convert_3_01ret_07args_8_8_8_08_4/)**  |
+| struct | **[Gambit::Scanner::__find_variadic_type_convert__< b, Tc, T1, T... >](/documentation/code/gambit_sphinxclasses/structgambit_1_1scanner_1_1____find__variadic__type__convert_____3_01b_00_01tc_00_01t1_00_01t_8_8_8_01_4/)**  |
+| struct | **[Gambit::Scanner::__find_variadic_type_convert__< true, Tc, T1, T... >](/documentation/code/gambit_sphinxclasses/structgambit_1_1scanner_1_1____find__variadic__type__convert_____3_01true_00_01tc_00_01t1_00_01t_8_8_8_01_4/)**  |
+| struct | **[Gambit::Scanner::__find_variadic_type__](/documentation/code/gambit_sphinxclasses/structgambit_1_1scanner_1_1____find__variadic__type____/)**  |
+| struct | **[Gambit::Scanner::find_variadic_type](/documentation/code/gambit_sphinxclasses/structgambit_1_1scanner_1_1find__variadic__type/)**  |
+| struct | **[Gambit::Scanner::__find_variadic_type__< true, b1, b2, T... >](/documentation/code/gambit_sphinxclasses/structgambit_1_1scanner_1_1____find__variadic__type_____3_01true_00_01b1_00_01b2_00_01t_8_8_8_01_4/)**  |
+| struct | **[Gambit::Scanner::__find_variadic_type__< false, true, b2, T... >](/documentation/code/gambit_sphinxclasses/structgambit_1_1scanner_1_1____find__variadic__type_____3_01false_00_01true_00_01b2_00_01t_8_8_8_01_4/)**  |
+| struct | **[Gambit::Scanner::__find_variadic_type__< false, false, true, T... >](/documentation/code/gambit_sphinxclasses/structgambit_1_1scanner_1_1____find__variadic__type_____3_01false_00_01false_00_01true_00_01t_8_8_8_01_4/)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[scan_err](/documentation/code/files/scanner__utils_8hpp/#define-scan-err)**  |
-|  | **[scan_warn](/documentation/code/files/scanner__utils_8hpp/#define-scan-warn)**  |
-|  | **[scan_end](/documentation/code/files/scanner__utils_8hpp/#define-scan-end)**  |
-|  | **[scan_flush](/documentation/code/files/scanner__utils_8hpp/#define-scan-flush)**  |
-|  | **[SCAN_ERR](/documentation/code/files/scanner__utils_8hpp/#define-scan-err)**  |
-|  | **[SCAN_WARN](/documentation/code/files/scanner__utils_8hpp/#define-scan-warn)**  |
-|  | **[SCAN_END_INTERNAL](/documentation/code/files/scanner__utils_8hpp/#define-scan-end-internal)**  |
-|  | **[SCAN_END](/documentation/code/files/scanner__utils_8hpp/#define-scan-end)**  |
-|  | **[SCAN_FLUSH](/documentation/code/files/scanner__utils_8hpp/#define-scan-flush)**  |
+|  | **[scan_err](/documentation/code/gambit_sphinxfiles/scanner__utils_8hpp/#define-scan-err)**  |
+|  | **[scan_warn](/documentation/code/gambit_sphinxfiles/scanner__utils_8hpp/#define-scan-warn)**  |
+|  | **[scan_end](/documentation/code/gambit_sphinxfiles/scanner__utils_8hpp/#define-scan-end)**  |
+|  | **[scan_flush](/documentation/code/gambit_sphinxfiles/scanner__utils_8hpp/#define-scan-flush)**  |
+|  | **[SCAN_ERR](/documentation/code/gambit_sphinxfiles/scanner__utils_8hpp/#define-scan-err)**  |
+|  | **[SCAN_WARN](/documentation/code/gambit_sphinxfiles/scanner__utils_8hpp/#define-scan-warn)**  |
+|  | **[SCAN_END_INTERNAL](/documentation/code/gambit_sphinxfiles/scanner__utils_8hpp/#define-scan-end-internal)**  |
+|  | **[SCAN_END](/documentation/code/gambit_sphinxfiles/scanner__utils_8hpp/#define-scan-end)**  |
+|  | **[SCAN_FLUSH](/documentation/code/gambit_sphinxfiles/scanner__utils_8hpp/#define-scan-flush)**  |
 
 ## Detailed Description
 
 
-Utility Functions for the [Gambit](/documentation/code/namespaces/namespacegambit/) Scanner
+Utility Functions for the [Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/) Scanner
 
 
 
@@ -866,4 +866,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:34 +0000
+Updated on 2022-08-01 at 17:31:48 +0000

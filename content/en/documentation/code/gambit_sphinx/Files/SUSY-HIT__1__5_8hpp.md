@@ -16,24 +16,24 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) | **[BE_FUNCTION](/documentation/code/files/susy-hit__1__5_8hpp/#function-be-function)**(sdecay , void , () , "sdecay_" , "sdecay" ) |
+| [LOAD_LIBRARY](/documentation/code/gambit_sphinxfiles/frontend__macros_8hpp/#define-load-library) | **[BE_FUNCTION](/documentation/code/gambit_sphinxfiles/susy-hit__1__5_8hpp/#function-be-function)**(sdecay , void , () , "sdecay_" , "sdecay" ) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) | **[double](/documentation/code/files/susy-hit__1__5_8hpp/#variable-double)**  |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) | **[s_hit_unlikely_](/documentation/code/files/susy-hit__1__5_8hpp/#variable-s-hit-unlikely-)**  |
+| [LOAD_LIBRARY](/documentation/code/gambit_sphinxfiles/frontend__macros_8hpp/#define-load-library) | **[double](/documentation/code/gambit_sphinxfiles/susy-hit__1__5_8hpp/#variable-double)**  |
+| [LOAD_LIBRARY](/documentation/code/gambit_sphinxfiles/frontend__macros_8hpp/#define-load-library) | **[s_hit_unlikely_](/documentation/code/gambit_sphinxfiles/susy-hit__1__5_8hpp/#variable-s-hit-unlikely-)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[BACKENDNAME](/documentation/code/files/susy-hit__1__5_8hpp/#define-backendname)**  |
-|  | **[BACKENDLANG](/documentation/code/files/susy-hit__1__5_8hpp/#define-backendlang)**  |
-|  | **[VERSION](/documentation/code/files/susy-hit__1__5_8hpp/#define-version)**  |
-|  | **[SAFE_VERSION](/documentation/code/files/susy-hit__1__5_8hpp/#define-safe-version)**  |
-|  | **[REFERENCE](/documentation/code/files/susy-hit__1__5_8hpp/#define-reference)**  |
+|  | **[BACKENDNAME](/documentation/code/gambit_sphinxfiles/susy-hit__1__5_8hpp/#define-backendname)**  |
+|  | **[BACKENDLANG](/documentation/code/gambit_sphinxfiles/susy-hit__1__5_8hpp/#define-backendlang)**  |
+|  | **[VERSION](/documentation/code/gambit_sphinxfiles/susy-hit__1__5_8hpp/#define-version)**  |
+|  | **[SAFE_VERSION](/documentation/code/gambit_sphinxfiles/susy-hit__1__5_8hpp/#define-safe-version)**  |
+|  | **[REFERENCE](/documentation/code/gambit_sphinxfiles/susy-hit__1__5_8hpp/#define-reference)**  |
 
 ## Detailed Description
 
@@ -222,4 +222,4 @@ BE_INI_DEPENDENCY(Z_decay_rates, DecayTable::Entry)
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:37 +0000
+Updated on 2022-08-01 at 17:31:50 +0000

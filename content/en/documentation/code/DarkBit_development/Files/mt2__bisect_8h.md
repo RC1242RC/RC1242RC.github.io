@@ -16,23 +16,23 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[mt2_bisect](/documentation/code/namespaces/namespacemt2__bisect/)**  |
+| **[mt2_bisect](/documentation/code/darkbit_developmentnamespaces/namespacemt2__bisect/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[mt2_bisect::mt2](/documentation/code/classes/classmt2__bisect_1_1mt2/)**  |
+| class | **[mt2_bisect::mt2](/documentation/code/darkbit_developmentclasses/classmt2__bisect_1_1mt2/)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[RELATIVE_PRECISION](/documentation/code/files/mt2__bisect_8h/#define-relative-precision)**  |
-|  | **[ABSOLUTE_PRECISION](/documentation/code/files/mt2__bisect_8h/#define-absolute-precision)**  |
-|  | **[MIN_MASS](/documentation/code/files/mt2__bisect_8h/#define-min-mass)**  |
-|  | **[ZERO_MASS](/documentation/code/files/mt2__bisect_8h/#define-zero-mass)**  |
-|  | **[SCANSTEP](/documentation/code/files/mt2__bisect_8h/#define-scanstep)**  |
+|  | **[RELATIVE_PRECISION](/documentation/code/darkbit_developmentfiles/mt2__bisect_8h/#define-relative-precision)**  |
+|  | **[ABSOLUTE_PRECISION](/documentation/code/darkbit_developmentfiles/mt2__bisect_8h/#define-absolute-precision)**  |
+|  | **[MIN_MASS](/documentation/code/darkbit_developmentfiles/mt2__bisect_8h/#define-min-mass)**  |
+|  | **[ZERO_MASS](/documentation/code/darkbit_developmentfiles/mt2__bisect_8h/#define-zero-mass)**  |
+|  | **[SCANSTEP](/documentation/code/darkbit_developmentfiles/mt2__bisect_8h/#define-scanstep)**  |
 
 
 
@@ -145,4 +145,4 @@ class mt2
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:24 +0000
+Updated on 2022-08-01 at 17:31:44 +0000

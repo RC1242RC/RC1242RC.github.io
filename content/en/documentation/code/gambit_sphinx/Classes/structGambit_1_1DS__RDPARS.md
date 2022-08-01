@@ -18,20 +18,20 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Fdouble | **[cosmin](/documentation/code/classes/structgambit_1_1ds__rdpars/#variable-cosmin)**  |
-| Fdouble | **[waccd](/documentation/code/classes/structgambit_1_1ds__rdpars/#variable-waccd)**  |
-| Fdouble | **[dpminr](/documentation/code/classes/structgambit_1_1ds__rdpars/#variable-dpminr)**  |
-| Fdouble | **[dpthr](/documentation/code/classes/structgambit_1_1ds__rdpars/#variable-dpthr)**  |
-| Fdouble | **[wdiffr](/documentation/code/classes/structgambit_1_1ds__rdpars/#variable-wdiffr)**  |
-| Fdouble | **[wdifft](/documentation/code/classes/structgambit_1_1ds__rdpars/#variable-wdifft)**  |
-| Fdouble | **[hstep](/documentation/code/classes/structgambit_1_1ds__rdpars/#variable-hstep)**  |
-| Fdouble | **[hmin](/documentation/code/classes/structgambit_1_1ds__rdpars/#variable-hmin)**  |
-| Fdouble | **[compeps](/documentation/code/classes/structgambit_1_1ds__rdpars/#variable-compeps)**  |
-| Fdouble | **[xinit](/documentation/code/classes/structgambit_1_1ds__rdpars/#variable-xinit)**  |
-| Fdouble | **[xfinal](/documentation/code/classes/structgambit_1_1ds__rdpars/#variable-xfinal)**  |
-| Fdouble | **[umax](/documentation/code/classes/structgambit_1_1ds__rdpars/#variable-umax)**  |
-| Fdouble | **[cfr](/documentation/code/classes/structgambit_1_1ds__rdpars/#variable-cfr)**  |
-| Fdouble | **[pmax](/documentation/code/classes/structgambit_1_1ds__rdpars/#variable-pmax)**  |
+| Fdouble | **[cosmin](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__rdpars/#variable-cosmin)**  |
+| Fdouble | **[waccd](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__rdpars/#variable-waccd)**  |
+| Fdouble | **[dpminr](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__rdpars/#variable-dpminr)**  |
+| Fdouble | **[dpthr](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__rdpars/#variable-dpthr)**  |
+| Fdouble | **[wdiffr](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__rdpars/#variable-wdiffr)**  |
+| Fdouble | **[wdifft](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__rdpars/#variable-wdifft)**  |
+| Fdouble | **[hstep](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__rdpars/#variable-hstep)**  |
+| Fdouble | **[hmin](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__rdpars/#variable-hmin)**  |
+| Fdouble | **[compeps](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__rdpars/#variable-compeps)**  |
+| Fdouble | **[xinit](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__rdpars/#variable-xinit)**  |
+| Fdouble | **[xfinal](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__rdpars/#variable-xfinal)**  |
+| Fdouble | **[umax](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__rdpars/#variable-umax)**  |
+| Fdouble | **[cfr](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__rdpars/#variable-cfr)**  |
+| Fdouble | **[pmax](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__rdpars/#variable-pmax)**  |
 
 ## Public Attributes Documentation
 
@@ -135,4 +135,4 @@ Fdouble pmax;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:32 +0000
+Updated on 2022-08-01 at 17:31:46 +0000

@@ -16,15 +16,15 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::ColliderBit](/documentation/code/namespaces/namespacegambit_1_1colliderbit/)**  |
+| **[Gambit](/documentation/code/darkbit_developmentnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::ColliderBit](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1colliderbit/)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[DEBUG_PREFIX](/documentation/code/files/generateeventpy8collider_8hpp/#define-debug-prefix)**  |
-|  | **[GET_PYTHIA_EVENT](/documentation/code/files/generateeventpy8collider_8hpp/#define-get-pythia-event)**(NAME) <br>Generate a hard scattering event with a specific Pythia,.  |
+|  | **[DEBUG_PREFIX](/documentation/code/darkbit_developmentfiles/generateeventpy8collider_8hpp/#define-debug-prefix)**  |
+|  | **[GET_PYTHIA_EVENT](/documentation/code/darkbit_developmentfiles/generateeventpy8collider_8hpp/#define-get-pythia-event)**(NAME) <br>Generate a hard scattering event with a specific Pythia,.  |
 
 ## Detailed Description
 
@@ -273,4 +273,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:24 +0000
+Updated on 2022-08-01 at 17:31:44 +0000

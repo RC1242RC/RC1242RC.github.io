@@ -18,8 +18,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| bool | **[operator()](/documentation/code/classes/structchunkless/#function-operator())**(const [Chunk](/documentation/code/classes/structchunk/) & lhs, const [Chunk](/documentation/code/classes/structchunk/) & rhs) const |
-| bool | **[operator()](/documentation/code/classes/structchunkless/#function-operator())**(const [Chunk](/documentation/code/classes/structchunk/) & lhs, const [Chunk](/documentation/code/classes/structchunk/) & rhs) const |
+| bool | **[operator()](/documentation/code/darkbit_developmentclasses/structchunkless/#function-operator())**(const [Chunk](/documentation/code/darkbit_developmentclasses/structchunk/) & lhs, const [Chunk](/documentation/code/darkbit_developmentclasses/structchunk/) & rhs) const |
+| bool | **[operator()](/documentation/code/darkbit_developmentclasses/structchunkless/#function-operator())**(const [Chunk](/documentation/code/darkbit_developmentclasses/structchunk/) & lhs, const [Chunk](/documentation/code/darkbit_developmentclasses/structchunk/) & rhs) const |
 
 ## Public Functions Documentation
 
@@ -45,4 +45,4 @@ inline bool operator()(
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:21 +0000
+Updated on 2022-08-01 at 17:31:41 +0000

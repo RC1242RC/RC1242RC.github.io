@@ -16,7 +16,7 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[generate_raster_scan_settings](/documentation/code/namespaces/namespacegenerate__raster__scan__settings/)**  |
+| **[generate_raster_scan_settings](/documentation/code/darkbit_developmentnamespaces/namespacegenerate__raster__scan__settings/)**  |
 
 
 
@@ -153,4 +153,4 @@ print(output)
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:24 +0000
+Updated on 2022-08-01 at 17:31:44 +0000

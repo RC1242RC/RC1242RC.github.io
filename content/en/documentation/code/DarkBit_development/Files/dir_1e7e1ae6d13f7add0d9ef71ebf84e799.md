@@ -16,8 +16,8 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[src/NeutrinoBit.cpp](/documentation/code/files/neutrinobit_8cpp/#file-neutrinobit.cpp)**  |
-| **[src/RightHandedNeutrinos.cpp](/documentation/code/files/righthandedneutrinos_8cpp/#file-righthandedneutrinos.cpp)**  |
+| **[src/NeutrinoBit.cpp](/documentation/code/darkbit_developmentfiles/neutrinobit_8cpp/#file-neutrinobit.cpp)**  |
+| **[src/RightHandedNeutrinos.cpp](/documentation/code/darkbit_developmentfiles/righthandedneutrinos_8cpp/#file-righthandedneutrinos.cpp)**  |
 
 
 
@@ -26,4 +26,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:23 +0000
+Updated on 2022-08-01 at 17:31:43 +0000

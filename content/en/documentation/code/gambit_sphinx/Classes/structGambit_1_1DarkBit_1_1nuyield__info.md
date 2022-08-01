@@ -20,8 +20,8 @@ Neutrino telescope yield info container.
 
 |                | Name           |
 | -------------- | -------------- |
-| bool | **[threadsafe](/documentation/code/classes/structgambit_1_1darkbit_1_1nuyield__info/#variable-threadsafe)**  |
-| nuyield_function_pointer | **[pointer](/documentation/code/classes/structgambit_1_1darkbit_1_1nuyield__info/#variable-pointer)**  |
+| bool | **[threadsafe](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1nuyield__info/#variable-threadsafe)**  |
+| nuyield_function_pointer | **[pointer](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1nuyield__info/#variable-pointer)**  |
 
 ## Public Attributes Documentation
 
@@ -41,4 +41,4 @@ nuyield_function_pointer pointer;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:33 +0000
+Updated on 2022-08-01 at 17:31:47 +0000

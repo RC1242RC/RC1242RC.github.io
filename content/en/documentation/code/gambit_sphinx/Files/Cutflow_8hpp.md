@@ -16,16 +16,16 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::ColliderBit](/documentation/code/namespaces/namespacegambit_1_1colliderbit/)**  |
-| **[std](/documentation/code/namespaces/namespacestd/)**  |
+| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::ColliderBit](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1colliderbit/)**  |
+| **[std](/documentation/code/gambit_sphinxnamespaces/namespacestd/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[Gambit::ColliderBit::Cutflow](/documentation/code/classes/structgambit_1_1colliderbit_1_1cutflow/)** <br>A tracker of numbers & fractions of events passing sequential cuts.  |
-| struct | **[Gambit::ColliderBit::Cutflows](/documentation/code/classes/structgambit_1_1colliderbit_1_1cutflows/)** <br>A container for several [Cutflow](/documentation/code/classes/structgambit_1_1colliderbit_1_1cutflow/) objects, with some convenient batch access.  |
+| struct | **[Gambit::ColliderBit::Cutflow](/documentation/code/gambit_sphinxclasses/structgambit_1_1colliderbit_1_1cutflow/)** <br>A tracker of numbers & fractions of events passing sequential cuts.  |
+| struct | **[Gambit::ColliderBit::Cutflows](/documentation/code/gambit_sphinxclasses/structgambit_1_1colliderbit_1_1cutflows/)** <br>A container for several [Cutflow](/documentation/code/gambit_sphinxclasses/structgambit_1_1colliderbit_1_1cutflow/) objects, with some convenient batch access.  |
 
 ## Detailed Description
 
@@ -336,4 +336,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:35 +0000
+Updated on 2022-08-01 at 17:31:49 +0000

@@ -20,7 +20,7 @@ Model hierarchy tree class.
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[ModelHierarchy](/documentation/code/classes/classgambit_1_1modelhierarchy/#function-modelhierarchy)**(const Models::ModelFunctorClaw & claw, const primodel_vec & pmv, str file, bool talky)<br>Constructor.  |
+| | **[ModelHierarchy](/documentation/code/gambit_sphinxclasses/classgambit_1_1modelhierarchy/#function-modelhierarchy)**(const Models::ModelFunctorClaw & claw, const primodel_vec & pmv, str file, bool talky)<br>Constructor.  |
 
 ## Public Functions Documentation
 
@@ -37,9 +37,9 @@ ModelHierarchy(
 
 Constructor. 
 
-[ModelHierarchy](/documentation/code/classes/classgambit_1_1modelhierarchy/) method definitions Creates a graph of the model hierarchy for visualisation purposes. 
+[ModelHierarchy](/documentation/code/gambit_sphinxclasses/classgambit_1_1modelhierarchy/) method definitions Creates a graph of the model hierarchy for visualisation purposes. 
 
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:32 +0000
+Updated on 2022-08-01 at 17:31:46 +0000

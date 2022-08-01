@@ -16,14 +16,14 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::ColliderBit](/documentation/code/namespaces/namespacegambit_1_1colliderbit/)**  |
+| **[Gambit](/documentation/code/darkbit_developmentnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::ColliderBit](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1colliderbit/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Gambit::ColliderBit::EventCounter](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/)** <br>A simple class for counting events of type HEPUtils::Event.  |
+| class | **[Gambit::ColliderBit::EventCounter](/documentation/code/darkbit_developmentclasses/classgambit_1_1colliderbit_1_1eventcounter/)** <br>A simple class for counting events of type HEPUtils::Event.  |
 
 ## Detailed Description
 
@@ -182,4 +182,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:24 +0000
+Updated on 2022-08-01 at 17:31:44 +0000

@@ -18,12 +18,12 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Farray< Fdouble, 1, 4 > | **[brsuplnup](/documentation/code/classes/structgambit_1_1sd__sup2body__type/#variable-brsuplnup)**  |
-| Farray< Fdouble, 1, 2 > | **[brsuplcdow](/documentation/code/classes/structgambit_1_1sd__sup2body__type/#variable-brsuplcdow)**  |
-| Fdouble | **[brsuplglui](/documentation/code/classes/structgambit_1_1sd__sup2body__type/#variable-brsuplglui)**  |
-| Farray< Fdouble, 1, 4 > | **[brsuprnup](/documentation/code/classes/structgambit_1_1sd__sup2body__type/#variable-brsuprnup)**  |
-| Farray< Fdouble, 1, 2 > | **[brsuprcdow](/documentation/code/classes/structgambit_1_1sd__sup2body__type/#variable-brsuprcdow)**  |
-| Fdouble | **[brsuprglui](/documentation/code/classes/structgambit_1_1sd__sup2body__type/#variable-brsuprglui)**  |
+| Farray< Fdouble, 1, 4 > | **[brsuplnup](/documentation/code/darkbit_developmentclasses/structgambit_1_1sd__sup2body__type/#variable-brsuplnup)**  |
+| Farray< Fdouble, 1, 2 > | **[brsuplcdow](/documentation/code/darkbit_developmentclasses/structgambit_1_1sd__sup2body__type/#variable-brsuplcdow)**  |
+| Fdouble | **[brsuplglui](/documentation/code/darkbit_developmentclasses/structgambit_1_1sd__sup2body__type/#variable-brsuplglui)**  |
+| Farray< Fdouble, 1, 4 > | **[brsuprnup](/documentation/code/darkbit_developmentclasses/structgambit_1_1sd__sup2body__type/#variable-brsuprnup)**  |
+| Farray< Fdouble, 1, 2 > | **[brsuprcdow](/documentation/code/darkbit_developmentclasses/structgambit_1_1sd__sup2body__type/#variable-brsuprcdow)**  |
+| Fdouble | **[brsuprglui](/documentation/code/darkbit_developmentclasses/structgambit_1_1sd__sup2body__type/#variable-brsuprglui)**  |
 
 ## Public Attributes Documentation
 
@@ -71,4 +71,4 @@ Fdouble brsuprglui;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:22 +0000
+Updated on 2022-08-01 at 17:31:41 +0000

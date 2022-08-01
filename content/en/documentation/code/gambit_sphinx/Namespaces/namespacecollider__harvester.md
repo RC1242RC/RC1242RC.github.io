@@ -16,13 +16,13 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| def | **[main](/documentation/code/namespaces/namespacecollider__harvester/#function-main)**(argv argv) |
+| def | **[main](/documentation/code/gambit_sphinxnamespaces/namespacecollider__harvester/#function-main)**(argv argv) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| string | **[toolsfile](/documentation/code/namespaces/namespacecollider__harvester/#variable-toolsfile)**  |
+| string | **[toolsfile](/documentation/code/gambit_sphinxnamespaces/namespacecollider__harvester/#variable-toolsfile)**  |
 
 
 ## Functions Documentation
@@ -51,4 +51,4 @@ string toolsfile = "./Utils/scripts/harvesting_tools.py";
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:34 +0000
+Updated on 2022-08-01 at 17:31:48 +0000

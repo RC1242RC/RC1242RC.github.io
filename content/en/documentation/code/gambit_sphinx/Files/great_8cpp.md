@@ -16,14 +16,14 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::GreAT](/documentation/code/namespaces/namespacegambit_1_1great/)**  |
+| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::GreAT](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1great/)**  |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[scanner_plugin](/documentation/code/files/great_8cpp/#function-scanner-plugin)**(great , version(1, 0, 0) ) |
+| | **[scanner_plugin](/documentation/code/gambit_sphinxfiles/great_8cpp/#function-scanner-plugin)**(great , version(1, 0, 0) ) |
 
 ## Detailed Description
 
@@ -288,4 +288,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:34 +0000
+Updated on 2022-08-01 at 17:31:48 +0000

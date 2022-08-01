@@ -16,15 +16,15 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::DarkBit](/documentation/code/namespaces/namespacegambit_1_1darkbit/)**  |
+| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::DarkBit](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1darkbit/)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[addParticle](/documentation/code/files/energyinjection_8cpp/#define-addparticle)**(Name, Mass, spinX2)  |
-|  | **[addParticle](/documentation/code/files/energyinjection_8cpp/#define-addparticle)**(Name, Mass, spinX2)  |
+|  | **[addParticle](/documentation/code/gambit_sphinxfiles/energyinjection_8cpp/#define-addparticle)**(Name, Mass, spinX2)  |
+|  | **[addParticle](/documentation/code/gambit_sphinxfiles/energyinjection_8cpp/#define-addparticle)**(Name, Mass, spinX2)  |
 
 ## Detailed Description
 
@@ -349,4 +349,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:35 +0000
+Updated on 2022-08-01 at 17:31:49 +0000

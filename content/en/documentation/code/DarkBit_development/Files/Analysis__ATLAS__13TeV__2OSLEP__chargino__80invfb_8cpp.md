@@ -16,17 +16,17 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::ColliderBit](/documentation/code/namespaces/namespacegambit_1_1colliderbit/)**  |
+| **[Gambit](/documentation/code/darkbit_developmentnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::ColliderBit](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1colliderbit/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Gambit::ColliderBit::Analysis_ATLAS_13TeV_2OSLEP_chargino_80invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2oslep__chargino__80invfb/)**  |
-| struct | **[Gambit::ColliderBit::Analysis_ATLAS_13TeV_2OSLEP_chargino_80invfb::ptComparison](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__2oslep__chargino__80invfb_1_1ptcomparison/)**  |
-| class | **[Gambit::ColliderBit::Analysis_ATLAS_13TeV_2OSLEP_chargino_inclusive_80invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2oslep__chargino__inclusive__80invfb/)**  |
-| class | **[Gambit::ColliderBit::Analysis_ATLAS_13TeV_2OSLEP_chargino_binned_80invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2oslep__chargino__binned__80invfb/)**  |
+| class | **[Gambit::ColliderBit::Analysis_ATLAS_13TeV_2OSLEP_chargino_80invfb](/documentation/code/darkbit_developmentclasses/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2oslep__chargino__80invfb/)**  |
+| struct | **[Gambit::ColliderBit::Analysis_ATLAS_13TeV_2OSLEP_chargino_80invfb::ptComparison](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__2oslep__chargino__80invfb_1_1ptcomparison/)**  |
+| class | **[Gambit::ColliderBit::Analysis_ATLAS_13TeV_2OSLEP_chargino_inclusive_80invfb](/documentation/code/darkbit_developmentclasses/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2oslep__chargino__inclusive__80invfb/)**  |
+| class | **[Gambit::ColliderBit::Analysis_ATLAS_13TeV_2OSLEP_chargino_binned_80invfb](/documentation/code/darkbit_developmentclasses/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2oslep__chargino__binned__80invfb/)**  |
 
 
 
@@ -553,4 +553,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:24 +0000
+Updated on 2022-08-01 at 17:31:44 +0000

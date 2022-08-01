@@ -20,9 +20,9 @@ Class to connect multinest log-likelihood function and ScannerBit likelihood fun
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[LogLikeWrapper](/documentation/code/classes/classgambit_1_1multinest_1_1loglikewrapper/#function-loglikewrapper)**([scanPtr](/documentation/code/namespaces/namespacegambit_1_1multinest/#typedef-scanptr) loglike, printer_interface & printer)<br>Constructor.  |
-| double | **[LogLike](/documentation/code/classes/classgambit_1_1multinest_1_1loglikewrapper/#function-loglike)**(double * Cube, int ndim, int )<br>Main interface function from MultiNest to ScannerBit-supplied loglikelihood function.  |
-| void | **[dumper](/documentation/code/classes/classgambit_1_1multinest_1_1loglikewrapper/#function-dumper)**(int nSamples, int nlive, int nPar, double * physLive, double * posterior, double * , double , double , double )<br>Main interface to MultiNest dumper routine.  |
+| | **[LogLikeWrapper](/documentation/code/darkbit_developmentclasses/classgambit_1_1multinest_1_1loglikewrapper/#function-loglikewrapper)**([scanPtr](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1multinest/#typedef-scanptr) loglike, printer_interface & printer)<br>Constructor.  |
+| double | **[LogLike](/documentation/code/darkbit_developmentclasses/classgambit_1_1multinest_1_1loglikewrapper/#function-loglike)**(double * Cube, int ndim, int )<br>Main interface function from MultiNest to ScannerBit-supplied loglikelihood function.  |
+| void | **[dumper](/documentation/code/darkbit_developmentclasses/classgambit_1_1multinest_1_1loglikewrapper/#function-dumper)**(int nSamples, int nlive, int nPar, double * physLive, double * posterior, double * , double , double , double )<br>Main interface to MultiNest dumper routine.  |
 
 ## Public Functions Documentation
 
@@ -37,7 +37,7 @@ LogLikeWrapper(
 
 Constructor. 
 
-[LogLikeWrapper](/documentation/code/classes/classgambit_1_1multinest_1_1loglikewrapper/) Constructor. 
+[LogLikeWrapper](/documentation/code/darkbit_developmentclasses/classgambit_1_1multinest_1_1loglikewrapper/) Constructor. 
 
 
 ### function LogLike
@@ -88,4 +88,4 @@ nSamples = total number of samples in posterior distribution nlive = total numbe
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:23 +0000
+Updated on 2022-08-01 at 17:31:42 +0000

@@ -16,14 +16,14 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::ColliderBit](/documentation/code/namespaces/namespacegambit_1_1colliderbit/)**  |
+| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::ColliderBit](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1colliderbit/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Gambit::ColliderBit::Analysis_CMS_13TeV_0LEP_36invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__0lep__36invfb/)** <br>[CMS]() Run 2 0-lepton jet+MET SUSY analysis, with 36/fb of data.  |
+| class | **[Gambit::ColliderBit::Analysis_CMS_13TeV_0LEP_36invfb](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1analysis__cms__13tev__0lep__36invfb/)** <br>[CMS]() Run 2 0-lepton jet+MET SUSY analysis, with 36/fb of data.  |
 
 
 
@@ -295,4 +295,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:35 +0000
+Updated on 2022-08-01 at 17:31:49 +0000

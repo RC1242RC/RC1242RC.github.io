@@ -18,8 +18,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[edgeWriter](/documentation/code/classes/classgambit_1_1dres_1_1edgewriter/#function-edgewriter)**(const [DRes::MasterGraphType](/documentation/code/namespaces/namespacegambit_1_1dres/#typedef-mastergraphtype) * ) |
-| void | **[operator()](/documentation/code/classes/classgambit_1_1dres_1_1edgewriter/#function-operator())**(std::ostream & , const EdgeID & ) const |
+| | **[edgeWriter](/documentation/code/gambit_sphinxclasses/classgambit_1_1dres_1_1edgewriter/#function-edgewriter)**(const [DRes::MasterGraphType](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1dres/#typedef-mastergraphtype) * ) |
+| void | **[operator()](/documentation/code/gambit_sphinxclasses/classgambit_1_1dres_1_1edgewriter/#function-operator())**(std::ostream & , const EdgeID & ) const |
 
 ## Public Functions Documentation
 
@@ -44,4 +44,4 @@ inline void operator()(
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:33 +0000
+Updated on 2022-08-01 at 17:31:47 +0000

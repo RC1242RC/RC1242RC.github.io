@@ -18,14 +18,14 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| bool | **[f_eff_mode](/documentation/code/classes/structgambit_1_1darkages_1_1energy__injection__efficiency__table/#variable-f-eff-mode)**  |
-| std::vector< double > | **[redshift](/documentation/code/classes/structgambit_1_1darkages_1_1energy__injection__efficiency__table/#variable-redshift)**  |
-| std::vector< double > | **[f_heat](/documentation/code/classes/structgambit_1_1darkages_1_1energy__injection__efficiency__table/#variable-f-heat)**  |
-| std::vector< double > | **[f_lya](/documentation/code/classes/structgambit_1_1darkages_1_1energy__injection__efficiency__table/#variable-f-lya)**  |
-| std::vector< double > | **[f_hion](/documentation/code/classes/structgambit_1_1darkages_1_1energy__injection__efficiency__table/#variable-f-hion)**  |
-| std::vector< double > | **[f_heion](/documentation/code/classes/structgambit_1_1darkages_1_1energy__injection__efficiency__table/#variable-f-heion)**  |
-| std::vector< double > | **[f_lowe](/documentation/code/classes/structgambit_1_1darkages_1_1energy__injection__efficiency__table/#variable-f-lowe)**  |
-| std::vector< double > | **[f_eff](/documentation/code/classes/structgambit_1_1darkages_1_1energy__injection__efficiency__table/#variable-f-eff)**  |
+| bool | **[f_eff_mode](/documentation/code/darkbit_developmentclasses/structgambit_1_1darkages_1_1energy__injection__efficiency__table/#variable-f-eff-mode)**  |
+| std::vector< double > | **[redshift](/documentation/code/darkbit_developmentclasses/structgambit_1_1darkages_1_1energy__injection__efficiency__table/#variable-redshift)**  |
+| std::vector< double > | **[f_heat](/documentation/code/darkbit_developmentclasses/structgambit_1_1darkages_1_1energy__injection__efficiency__table/#variable-f-heat)**  |
+| std::vector< double > | **[f_lya](/documentation/code/darkbit_developmentclasses/structgambit_1_1darkages_1_1energy__injection__efficiency__table/#variable-f-lya)**  |
+| std::vector< double > | **[f_hion](/documentation/code/darkbit_developmentclasses/structgambit_1_1darkages_1_1energy__injection__efficiency__table/#variable-f-hion)**  |
+| std::vector< double > | **[f_heion](/documentation/code/darkbit_developmentclasses/structgambit_1_1darkages_1_1energy__injection__efficiency__table/#variable-f-heion)**  |
+| std::vector< double > | **[f_lowe](/documentation/code/darkbit_developmentclasses/structgambit_1_1darkages_1_1energy__injection__efficiency__table/#variable-f-lowe)**  |
+| std::vector< double > | **[f_eff](/documentation/code/darkbit_developmentclasses/structgambit_1_1darkages_1_1energy__injection__efficiency__table/#variable-f-eff)**  |
 
 ## Public Attributes Documentation
 
@@ -87,4 +87,4 @@ std::vector< double > f_eff;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:23 +0000
+Updated on 2022-08-01 at 17:31:42 +0000

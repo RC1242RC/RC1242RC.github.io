@@ -18,9 +18,9 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[mathematica_variable](/documentation/code/classes/classgambit_1_1mathematica__variable/#function-mathematica-variable)**(const str & be, const str & ver, const str & symbol) |
-| [mathematica_variable](/documentation/code/classes/classgambit_1_1mathematica__variable/) & | **[operator=](/documentation/code/classes/classgambit_1_1mathematica__variable/#function-operator=)**(const TYPE & val) |
-| | **[operator TYPE const](/documentation/code/classes/classgambit_1_1mathematica__variable/#function-operator-type-const)**() |
+| | **[mathematica_variable](/documentation/code/gambit_sphinxclasses/classgambit_1_1mathematica__variable/#function-mathematica-variable)**(const str & be, const str & ver, const str & symbol) |
+| [mathematica_variable](/documentation/code/gambit_sphinxclasses/classgambit_1_1mathematica__variable/) & | **[operator=](/documentation/code/gambit_sphinxclasses/classgambit_1_1mathematica__variable/#function-operator=)**(const TYPE & val) |
+| | **[operator TYPE const](/documentation/code/gambit_sphinxclasses/classgambit_1_1mathematica__variable/#function-operator-type-const)**() |
 
 ## Detailed Description
 
@@ -60,4 +60,4 @@ inline operator TYPE const()
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:32 +0000
+Updated on 2022-08-01 at 17:31:46 +0000

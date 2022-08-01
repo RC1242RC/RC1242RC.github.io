@@ -21,15 +21,15 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[SpectrumEntriesForVevacious](/documentation/code/classes/classgambit_1_1specbit_1_1spectrumentriesforvevacious/#function-spectrumentriesforvevacious)**() |
-| void | **[set_scale](/documentation/code/classes/classgambit_1_1specbit_1_1spectrumentriesforvevacious/#function-set-scale)**(double inScale) |
-| void | **[set_inputPath](/documentation/code/classes/classgambit_1_1specbit_1_1spectrumentriesforvevacious/#function-set-inputpath)**(std::string inPath) |
-| void | **[set_inputFilename](/documentation/code/classes/classgambit_1_1specbit_1_1spectrumentriesforvevacious/#function-set-inputfilename)**(std::string inFile) |
-| double | **[get_scale](/documentation/code/classes/classgambit_1_1specbit_1_1spectrumentriesforvevacious/#function-get-scale)**() |
-| std::string | **[get_inputFilename](/documentation/code/classes/classgambit_1_1specbit_1_1spectrumentriesforvevacious/#function-get-inputfilename)**() |
-| std::string | **[get_inputPath](/documentation/code/classes/classgambit_1_1specbit_1_1spectrumentriesforvevacious/#function-get-inputpath)**() |
-| void | **[add_entry](/documentation/code/classes/classgambit_1_1specbit_1_1spectrumentriesforvevacious/#function-add-entry)**(std::string name, vec_pair_int_dbl vec, int dimension) |
-| [map_str_SpectrumEntry](/documentation/code/namespaces/namespacegambit_1_1specbit/#typedef-map-str-spectrumentry) | **[get_spec_entry_map](/documentation/code/classes/classgambit_1_1specbit_1_1spectrumentriesforvevacious/#function-get-spec-entry-map)**() |
+| | **[SpectrumEntriesForVevacious](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1spectrumentriesforvevacious/#function-spectrumentriesforvevacious)**() |
+| void | **[set_scale](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1spectrumentriesforvevacious/#function-set-scale)**(double inScale) |
+| void | **[set_inputPath](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1spectrumentriesforvevacious/#function-set-inputpath)**(std::string inPath) |
+| void | **[set_inputFilename](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1spectrumentriesforvevacious/#function-set-inputfilename)**(std::string inFile) |
+| double | **[get_scale](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1spectrumentriesforvevacious/#function-get-scale)**() |
+| std::string | **[get_inputFilename](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1spectrumentriesforvevacious/#function-get-inputfilename)**() |
+| std::string | **[get_inputPath](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1spectrumentriesforvevacious/#function-get-inputpath)**() |
+| void | **[add_entry](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1spectrumentriesforvevacious/#function-add-entry)**(std::string name, vec_pair_int_dbl vec, int dimension) |
+| [map_str_SpectrumEntry](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1specbit/#typedef-map-str-spectrumentry) | **[get_spec_entry_map](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1spectrumentriesforvevacious/#function-get-spec-entry-map)**() |
 
 ## Detailed Description
 
@@ -38,7 +38,7 @@ class Gambit::SpecBit::SpectrumEntriesForVevacious;
 ```
 
 
-class for setting & storing all spectrum entries of type [SpectrumEntry](/documentation/code/classes/structgambit_1_1specbit_1_1spectrumentry/) that need to be passed to vevacious (scale, input filenames & paths as well as spectrum entries) passed to vevacious before calling it 
+class for setting & storing all spectrum entries of type [SpectrumEntry](/documentation/code/gambit_sphinxclasses/structgambit_1_1specbit_1_1spectrumentry/) that need to be passed to vevacious (scale, input filenames & paths as well as spectrum entries) passed to vevacious before calling it 
 
 ## Public Functions Documentation
 
@@ -108,7 +108,7 @@ void add_entry(
 ```
 
 
-add a [SpectrumEntry](/documentation/code/classes/structgambit_1_1specbit_1_1spectrumentry/) type to the 'spec_entry_map' map. GAMBIT will iterate through it and pass all contents to vevacious before it is called. 
+add a [SpectrumEntry](/documentation/code/gambit_sphinxclasses/structgambit_1_1specbit_1_1spectrumentry/) type to the 'spec_entry_map' map. GAMBIT will iterate through it and pass all contents to vevacious before it is called. 
 
 
 ### function get_spec_entry_map
@@ -120,4 +120,4 @@ inline map_str_SpectrumEntry get_spec_entry_map()
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:34 +0000
+Updated on 2022-08-01 at 17:31:48 +0000

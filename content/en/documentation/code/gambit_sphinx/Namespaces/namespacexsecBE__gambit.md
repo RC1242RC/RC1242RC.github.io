@@ -16,16 +16,16 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| def | **[import_slha_string](/documentation/code/namespaces/namespacexsecbe__gambit/#function-import-slha-string)**(slha_string slha_string) |
-| def | **[set_parameters](/documentation/code/namespaces/namespacexsecbe__gambit/#function-set-parameters)**(params params) |
-| def | **[get_xsection](/documentation/code/namespaces/namespacexsecbe__gambit/#function-get-xsection)**(proc proc) |
+| def | **[import_slha_string](/documentation/code/gambit_sphinxnamespaces/namespacexsecbe__gambit/#function-import-slha-string)**(slha_string slha_string) |
+| def | **[set_parameters](/documentation/code/gambit_sphinxnamespaces/namespacexsecbe__gambit/#function-set-parameters)**(params params) |
+| def | **[get_xsection](/documentation/code/gambit_sphinxnamespaces/namespacexsecbe__gambit/#function-get-xsection)**(proc proc) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| string | **[prefix](/documentation/code/namespaces/namespacexsecbe__gambit/#variable-prefix)**  |
-| | **[data_dir](/documentation/code/namespaces/namespacexsecbe__gambit/#variable-data-dir)**  |
+| string | **[prefix](/documentation/code/gambit_sphinxnamespaces/namespacexsecbe__gambit/#variable-prefix)**  |
+| | **[data_dir](/documentation/code/gambit_sphinxnamespaces/namespacexsecbe__gambit/#variable-data-dir)**  |
 
 
 ## Functions Documentation
@@ -79,4 +79,4 @@ data_dir;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:32 +0000
+Updated on 2022-08-01 at 17:31:46 +0000

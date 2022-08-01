@@ -18,13 +18,13 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Cholesky](/documentation/code/classes/classgambit_1_1cholesky/#function-cholesky)**() |
-| | **[Cholesky](/documentation/code/classes/classgambit_1_1cholesky/#function-cholesky)**(const int num) |
-| bool | **[EnterMat](/documentation/code/classes/classgambit_1_1cholesky/#function-entermat)**(std::vector< std::vector< double > > & a) |
-| void | **[ElMult](/documentation/code/classes/classgambit_1_1cholesky/#function-elmult)**(std::vector< double > & y) const |
-| std::vector< double > | **[invElMult](/documentation/code/classes/classgambit_1_1cholesky/#function-invelmult)**(const std::vector< double > & y) const<br>x = L^-1 y where L is the lower-diagonal [Cholesky](/documentation/code/classes/classgambit_1_1cholesky/) matrix  |
-| double | **[Square](/documentation/code/classes/classgambit_1_1cholesky/#function-square)**(const std::vector< double > & y, const std::vector< double > & y0) |
-| double | **[DetSqrt](/documentation/code/classes/classgambit_1_1cholesky/#function-detsqrt)**() |
+| | **[Cholesky](/documentation/code/darkbit_developmentclasses/classgambit_1_1cholesky/#function-cholesky)**() |
+| | **[Cholesky](/documentation/code/darkbit_developmentclasses/classgambit_1_1cholesky/#function-cholesky)**(const int num) |
+| bool | **[EnterMat](/documentation/code/darkbit_developmentclasses/classgambit_1_1cholesky/#function-entermat)**(std::vector< std::vector< double > > & a) |
+| void | **[ElMult](/documentation/code/darkbit_developmentclasses/classgambit_1_1cholesky/#function-elmult)**(std::vector< double > & y) const |
+| std::vector< double > | **[invElMult](/documentation/code/darkbit_developmentclasses/classgambit_1_1cholesky/#function-invelmult)**(const std::vector< double > & y) const<br>x = L^-1 y where L is the lower-diagonal [Cholesky](/documentation/code/darkbit_developmentclasses/classgambit_1_1cholesky/) matrix  |
+| double | **[Square](/documentation/code/darkbit_developmentclasses/classgambit_1_1cholesky/#function-square)**(const std::vector< double > & y, const std::vector< double > & y0) |
+| double | **[DetSqrt](/documentation/code/darkbit_developmentclasses/classgambit_1_1cholesky/#function-detsqrt)**() |
 
 ## Public Functions Documentation
 
@@ -70,7 +70,7 @@ inline std::vector< double > invElMult(
 ) const
 ```
 
-x = L^-1 y where L is the lower-diagonal [Cholesky](/documentation/code/classes/classgambit_1_1cholesky/) matrix 
+x = L^-1 y where L is the lower-diagonal [Cholesky](/documentation/code/darkbit_developmentclasses/classgambit_1_1cholesky/) matrix 
 
 Found by forward substituion since L is lower-diagonal. 
 
@@ -94,4 +94,4 @@ inline double DetSqrt()
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:21 +0000
+Updated on 2022-08-01 at 17:31:41 +0000

@@ -18,8 +18,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[weight](/documentation/code/classes/structgambit_1_1micromegas_1_1achannel/#variable-weight)**  |
-| char * | **[prtcl](/documentation/code/classes/structgambit_1_1micromegas_1_1achannel/#variable-prtcl)**  |
+| double | **[weight](/documentation/code/darkbit_developmentclasses/structgambit_1_1micromegas_1_1achannel/#variable-weight)**  |
+| char * | **[prtcl](/documentation/code/darkbit_developmentclasses/structgambit_1_1micromegas_1_1achannel/#variable-prtcl)**  |
 
 ## Public Attributes Documentation
 
@@ -39,4 +39,4 @@ char * prtcl;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:23 +0000
+Updated on 2022-08-01 at 17:31:42 +0000

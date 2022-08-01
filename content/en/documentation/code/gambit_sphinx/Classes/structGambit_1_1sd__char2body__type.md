@@ -18,27 +18,27 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Farray< Fdouble, 1, 2 > | **[brcharst1](/documentation/code/classes/structgambit_1_1sd__char2body__type/#variable-brcharst1)**  |
-| Farray< Fdouble, 1, 2 > | **[brcharst2](/documentation/code/classes/structgambit_1_1sd__char2body__type/#variable-brcharst2)**  |
-| Farray< Fdouble, 1, 2 > | **[brcharsb1](/documentation/code/classes/structgambit_1_1sd__char2body__type/#variable-brcharsb1)**  |
-| Farray< Fdouble, 1, 2 > | **[brcharsb2](/documentation/code/classes/structgambit_1_1sd__char2body__type/#variable-brcharsb2)**  |
-| Farray< Fdouble, 1, 2 > | **[brcharsupl](/documentation/code/classes/structgambit_1_1sd__char2body__type/#variable-brcharsupl)**  |
-| Farray< Fdouble, 1, 2 > | **[brcharsupr](/documentation/code/classes/structgambit_1_1sd__char2body__type/#variable-brcharsupr)**  |
-| Farray< Fdouble, 1, 2 > | **[brcharsdownl](/documentation/code/classes/structgambit_1_1sd__char2body__type/#variable-brcharsdownl)**  |
-| Farray< Fdouble, 1, 2 > | **[brcharsdownr](/documentation/code/classes/structgambit_1_1sd__char2body__type/#variable-brcharsdownr)**  |
-| Farray< Fdouble, 1, 2 > | **[brcharsnel](/documentation/code/classes/structgambit_1_1sd__char2body__type/#variable-brcharsnel)**  |
-| Farray< Fdouble, 1, 2 > | **[brcharsn1](/documentation/code/classes/structgambit_1_1sd__char2body__type/#variable-brcharsn1)**  |
-| Farray< Fdouble, 1, 2 > | **[brcharsn2](/documentation/code/classes/structgambit_1_1sd__char2body__type/#variable-brcharsn2)**  |
-| Farray< Fdouble, 1, 2 > | **[brcharsell](/documentation/code/classes/structgambit_1_1sd__char2body__type/#variable-brcharsell)**  |
-| Farray< Fdouble, 1, 2 > | **[brcharselr](/documentation/code/classes/structgambit_1_1sd__char2body__type/#variable-brcharselr)**  |
-| Farray< Fdouble, 1, 2 > | **[brcharstau1](/documentation/code/classes/structgambit_1_1sd__char2body__type/#variable-brcharstau1)**  |
-| Farray< Fdouble, 1, 2 > | **[brcharstau2](/documentation/code/classes/structgambit_1_1sd__char2body__type/#variable-brcharstau2)**  |
-| Farray< Fdouble, 1, 2, 1, 4 > | **[brcharhcneut](/documentation/code/classes/structgambit_1_1sd__char2body__type/#variable-brcharhcneut)**  |
-| Farray< Fdouble, 1, 2, 1, 4 > | **[brcharwneut](/documentation/code/classes/structgambit_1_1sd__char2body__type/#variable-brcharwneut)**  |
-| Fdouble | **[brcharzchic](/documentation/code/classes/structgambit_1_1sd__char2body__type/#variable-brcharzchic)**  |
-| Fdouble | **[brcharhlchic](/documentation/code/classes/structgambit_1_1sd__char2body__type/#variable-brcharhlchic)**  |
-| Fdouble | **[brcharhhchic](/documentation/code/classes/structgambit_1_1sd__char2body__type/#variable-brcharhhchic)**  |
-| Fdouble | **[brcharhachic](/documentation/code/classes/structgambit_1_1sd__char2body__type/#variable-brcharhachic)**  |
+| Farray< Fdouble, 1, 2 > | **[brcharst1](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__char2body__type/#variable-brcharst1)**  |
+| Farray< Fdouble, 1, 2 > | **[brcharst2](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__char2body__type/#variable-brcharst2)**  |
+| Farray< Fdouble, 1, 2 > | **[brcharsb1](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__char2body__type/#variable-brcharsb1)**  |
+| Farray< Fdouble, 1, 2 > | **[brcharsb2](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__char2body__type/#variable-brcharsb2)**  |
+| Farray< Fdouble, 1, 2 > | **[brcharsupl](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__char2body__type/#variable-brcharsupl)**  |
+| Farray< Fdouble, 1, 2 > | **[brcharsupr](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__char2body__type/#variable-brcharsupr)**  |
+| Farray< Fdouble, 1, 2 > | **[brcharsdownl](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__char2body__type/#variable-brcharsdownl)**  |
+| Farray< Fdouble, 1, 2 > | **[brcharsdownr](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__char2body__type/#variable-brcharsdownr)**  |
+| Farray< Fdouble, 1, 2 > | **[brcharsnel](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__char2body__type/#variable-brcharsnel)**  |
+| Farray< Fdouble, 1, 2 > | **[brcharsn1](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__char2body__type/#variable-brcharsn1)**  |
+| Farray< Fdouble, 1, 2 > | **[brcharsn2](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__char2body__type/#variable-brcharsn2)**  |
+| Farray< Fdouble, 1, 2 > | **[brcharsell](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__char2body__type/#variable-brcharsell)**  |
+| Farray< Fdouble, 1, 2 > | **[brcharselr](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__char2body__type/#variable-brcharselr)**  |
+| Farray< Fdouble, 1, 2 > | **[brcharstau1](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__char2body__type/#variable-brcharstau1)**  |
+| Farray< Fdouble, 1, 2 > | **[brcharstau2](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__char2body__type/#variable-brcharstau2)**  |
+| Farray< Fdouble, 1, 2, 1, 4 > | **[brcharhcneut](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__char2body__type/#variable-brcharhcneut)**  |
+| Farray< Fdouble, 1, 2, 1, 4 > | **[brcharwneut](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__char2body__type/#variable-brcharwneut)**  |
+| Fdouble | **[brcharzchic](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__char2body__type/#variable-brcharzchic)**  |
+| Fdouble | **[brcharhlchic](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__char2body__type/#variable-brcharhlchic)**  |
+| Fdouble | **[brcharhhchic](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__char2body__type/#variable-brcharhhchic)**  |
+| Fdouble | **[brcharhachic](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__char2body__type/#variable-brcharhachic)**  |
 
 ## Public Attributes Documentation
 
@@ -191,4 +191,4 @@ Fdouble brcharhachic;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:32 +0000
+Updated on 2022-08-01 at 17:31:46 +0000

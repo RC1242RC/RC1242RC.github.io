@@ -16,8 +16,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[ROOT_Math_VecTypes](/documentation/code/files/minuit2_8hpp/#define-root-math-vectypes)**  |
-|  | **[MATHCORE_STANDALONE](/documentation/code/files/minuit2_8hpp/#define-mathcore-standalone)**  |
+|  | **[ROOT_Math_VecTypes](/documentation/code/gambit_sphinxfiles/minuit2_8hpp/#define-root-math-vectypes)**  |
+|  | **[MATHCORE_STANDALONE](/documentation/code/gambit_sphinxfiles/minuit2_8hpp/#define-mathcore-standalone)**  |
 
 ## Detailed Description
 
@@ -78,4 +78,4 @@ Authors (add name and date if you modify):
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:34 +0000
+Updated on 2022-08-01 at 17:31:48 +0000

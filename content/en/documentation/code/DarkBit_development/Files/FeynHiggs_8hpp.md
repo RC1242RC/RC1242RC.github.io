@@ -16,64 +16,64 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit](/documentation/code/darkbit_developmentnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[Gambit::fh_HiggsMassObs_container](/documentation/code/classes/structgambit_1_1fh__higgsmassobs__container/)**  |
-| struct | **[Gambit::fh_FlavourObs_container](/documentation/code/classes/structgambit_1_1fh__flavourobs__container/)**  |
-| struct | **[Gambit::fh_PrecisionObs_container](/documentation/code/classes/structgambit_1_1fh__precisionobs__container/)**  |
-| struct | **[Gambit::fh_MSSMMassObs_container](/documentation/code/classes/structgambit_1_1fh__mssmmassobs__container/)**  |
-| struct | **[Gambit::fh_Couplings_container](/documentation/code/classes/structgambit_1_1fh__couplings__container/)**  |
-| struct | **[Gambit::fh_HiggsProd_container](/documentation/code/classes/structgambit_1_1fh__higgsprod__container/)**  |
+| struct | **[Gambit::fh_HiggsMassObs_container](/documentation/code/darkbit_developmentclasses/structgambit_1_1fh__higgsmassobs__container/)**  |
+| struct | **[Gambit::fh_FlavourObs_container](/documentation/code/darkbit_developmentclasses/structgambit_1_1fh__flavourobs__container/)**  |
+| struct | **[Gambit::fh_PrecisionObs_container](/documentation/code/darkbit_developmentclasses/structgambit_1_1fh__precisionobs__container/)**  |
+| struct | **[Gambit::fh_MSSMMassObs_container](/documentation/code/darkbit_developmentclasses/structgambit_1_1fh__mssmmassobs__container/)**  |
+| struct | **[Gambit::fh_Couplings_container](/documentation/code/darkbit_developmentclasses/structgambit_1_1fh__couplings__container/)**  |
+| struct | **[Gambit::fh_HiggsProd_container](/documentation/code/darkbit_developmentclasses/structgambit_1_1fh__higgsprod__container/)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[ncouplings](/documentation/code/files/feynhiggs_8hpp/#define-ncouplings)**  |
-|  | **[Roffset](/documentation/code/files/feynhiggs_8hpp/#define-roffset)**  |
-|  | **[ncouplingsms](/documentation/code/files/feynhiggs_8hpp/#define-ncouplingsms)**  |
-|  | **[RSMoffset](/documentation/code/files/feynhiggs_8hpp/#define-rsmoffset)**  |
-|  | **[ngammas](/documentation/code/files/feynhiggs_8hpp/#define-ngammas)**  |
-|  | **[BRoffset](/documentation/code/files/feynhiggs_8hpp/#define-broffset)**  |
-|  | **[ngammasms](/documentation/code/files/feynhiggs_8hpp/#define-ngammasms)**  |
-|  | **[BRSMoffset](/documentation/code/files/feynhiggs_8hpp/#define-brsmoffset)**  |
-|  | **[H0VV](/documentation/code/files/feynhiggs_8hpp/#define-h0vv)**(h, vv)  |
-|  | **[H0FF](/documentation/code/files/feynhiggs_8hpp/#define-h0ff)**(h, t, g1, g2)  |
-|  | **[HpFF](/documentation/code/files/feynhiggs_8hpp/#define-hpff)**(p, g1, g2)  |
-|  | **[H0ChaCha](/documentation/code/files/feynhiggs_8hpp/#define-h0chacha)**(h, c1, c2)  |
-|  | **[H0NeuNeu](/documentation/code/files/feynhiggs_8hpp/#define-h0neuneu)**(h, n1, n2)  |
-|  | **[HpNeuCha](/documentation/code/files/feynhiggs_8hpp/#define-hpneucha)**(n1, c2)  |
-|  | **[H0HV](/documentation/code/files/feynhiggs_8hpp/#define-h0hv)**(h, hv)  |
-|  | **[HpHV](/documentation/code/files/feynhiggs_8hpp/#define-hphv)**(hv)  |
-|  | **[H0HH](/documentation/code/files/feynhiggs_8hpp/#define-h0hh)**(h, h1, h2)  |
-|  | **[H0SfSf](/documentation/code/files/feynhiggs_8hpp/#define-h0sfsf)**(h, s1, s2, t, g)  |
-|  | **[HpSfSf](/documentation/code/files/feynhiggs_8hpp/#define-hpsfsf)**(s1, s2, p, g1, g2)  |
-|  | **[tBF](/documentation/code/files/feynhiggs_8hpp/#define-tbf)**(bf)  |
-|  | **[nprodxs](/documentation/code/files/feynhiggs_8hpp/#define-nprodxs)**  |
-|  | **[bbh](/documentation/code/files/feynhiggs_8hpp/#define-bbh)**(h)  |
-|  | **[bbhSM](/documentation/code/files/feynhiggs_8hpp/#define-bbhsm)**(h)  |
-|  | **[btagbh](/documentation/code/files/feynhiggs_8hpp/#define-btagbh)**(h)  |
-|  | **[btagbhSM](/documentation/code/files/feynhiggs_8hpp/#define-btagbhsm)**(h)  |
-|  | **[ggh](/documentation/code/files/feynhiggs_8hpp/#define-ggh)**(h)  |
-|  | **[ggh2](/documentation/code/files/feynhiggs_8hpp/#define-ggh2)**(h)  |
-|  | **[gghSM](/documentation/code/files/feynhiggs_8hpp/#define-gghsm)**(h)  |
-|  | **[qqh](/documentation/code/files/feynhiggs_8hpp/#define-qqh)**(h)  |
-|  | **[qqhSM](/documentation/code/files/feynhiggs_8hpp/#define-qqhsm)**(h)  |
-|  | **[tth](/documentation/code/files/feynhiggs_8hpp/#define-tth)**(h)  |
-|  | **[tthSM](/documentation/code/files/feynhiggs_8hpp/#define-tthsm)**(h)  |
-|  | **[Wh](/documentation/code/files/feynhiggs_8hpp/#define-wh)**(h)  |
-|  | **[WhSM](/documentation/code/files/feynhiggs_8hpp/#define-whsm)**(h)  |
-|  | **[Zh](/documentation/code/files/feynhiggs_8hpp/#define-zh)**(h)  |
-|  | **[ZhSM](/documentation/code/files/feynhiggs_8hpp/#define-zhsm)**(h)  |
-|  | **[StSth](/documentation/code/files/feynhiggs_8hpp/#define-ststh)**(h)  |
-|  | **[tHm](/documentation/code/files/feynhiggs_8hpp/#define-thm)**  |
-|  | **[tHm2](/documentation/code/files/feynhiggs_8hpp/#define-thm2)**  |
-|  | **[tHm2lo](/documentation/code/files/feynhiggs_8hpp/#define-thm2lo)**  |
-|  | **[tHm2hi](/documentation/code/files/feynhiggs_8hpp/#define-thm2hi)**  |
+|  | **[ncouplings](/documentation/code/darkbit_developmentfiles/feynhiggs_8hpp/#define-ncouplings)**  |
+|  | **[Roffset](/documentation/code/darkbit_developmentfiles/feynhiggs_8hpp/#define-roffset)**  |
+|  | **[ncouplingsms](/documentation/code/darkbit_developmentfiles/feynhiggs_8hpp/#define-ncouplingsms)**  |
+|  | **[RSMoffset](/documentation/code/darkbit_developmentfiles/feynhiggs_8hpp/#define-rsmoffset)**  |
+|  | **[ngammas](/documentation/code/darkbit_developmentfiles/feynhiggs_8hpp/#define-ngammas)**  |
+|  | **[BRoffset](/documentation/code/darkbit_developmentfiles/feynhiggs_8hpp/#define-broffset)**  |
+|  | **[ngammasms](/documentation/code/darkbit_developmentfiles/feynhiggs_8hpp/#define-ngammasms)**  |
+|  | **[BRSMoffset](/documentation/code/darkbit_developmentfiles/feynhiggs_8hpp/#define-brsmoffset)**  |
+|  | **[H0VV](/documentation/code/darkbit_developmentfiles/feynhiggs_8hpp/#define-h0vv)**(h, vv)  |
+|  | **[H0FF](/documentation/code/darkbit_developmentfiles/feynhiggs_8hpp/#define-h0ff)**(h, t, g1, g2)  |
+|  | **[HpFF](/documentation/code/darkbit_developmentfiles/feynhiggs_8hpp/#define-hpff)**(p, g1, g2)  |
+|  | **[H0ChaCha](/documentation/code/darkbit_developmentfiles/feynhiggs_8hpp/#define-h0chacha)**(h, c1, c2)  |
+|  | **[H0NeuNeu](/documentation/code/darkbit_developmentfiles/feynhiggs_8hpp/#define-h0neuneu)**(h, n1, n2)  |
+|  | **[HpNeuCha](/documentation/code/darkbit_developmentfiles/feynhiggs_8hpp/#define-hpneucha)**(n1, c2)  |
+|  | **[H0HV](/documentation/code/darkbit_developmentfiles/feynhiggs_8hpp/#define-h0hv)**(h, hv)  |
+|  | **[HpHV](/documentation/code/darkbit_developmentfiles/feynhiggs_8hpp/#define-hphv)**(hv)  |
+|  | **[H0HH](/documentation/code/darkbit_developmentfiles/feynhiggs_8hpp/#define-h0hh)**(h, h1, h2)  |
+|  | **[H0SfSf](/documentation/code/darkbit_developmentfiles/feynhiggs_8hpp/#define-h0sfsf)**(h, s1, s2, t, g)  |
+|  | **[HpSfSf](/documentation/code/darkbit_developmentfiles/feynhiggs_8hpp/#define-hpsfsf)**(s1, s2, p, g1, g2)  |
+|  | **[tBF](/documentation/code/darkbit_developmentfiles/feynhiggs_8hpp/#define-tbf)**(bf)  |
+|  | **[nprodxs](/documentation/code/darkbit_developmentfiles/feynhiggs_8hpp/#define-nprodxs)**  |
+|  | **[bbh](/documentation/code/darkbit_developmentfiles/feynhiggs_8hpp/#define-bbh)**(h)  |
+|  | **[bbhSM](/documentation/code/darkbit_developmentfiles/feynhiggs_8hpp/#define-bbhsm)**(h)  |
+|  | **[btagbh](/documentation/code/darkbit_developmentfiles/feynhiggs_8hpp/#define-btagbh)**(h)  |
+|  | **[btagbhSM](/documentation/code/darkbit_developmentfiles/feynhiggs_8hpp/#define-btagbhsm)**(h)  |
+|  | **[ggh](/documentation/code/darkbit_developmentfiles/feynhiggs_8hpp/#define-ggh)**(h)  |
+|  | **[ggh2](/documentation/code/darkbit_developmentfiles/feynhiggs_8hpp/#define-ggh2)**(h)  |
+|  | **[gghSM](/documentation/code/darkbit_developmentfiles/feynhiggs_8hpp/#define-gghsm)**(h)  |
+|  | **[qqh](/documentation/code/darkbit_developmentfiles/feynhiggs_8hpp/#define-qqh)**(h)  |
+|  | **[qqhSM](/documentation/code/darkbit_developmentfiles/feynhiggs_8hpp/#define-qqhsm)**(h)  |
+|  | **[tth](/documentation/code/darkbit_developmentfiles/feynhiggs_8hpp/#define-tth)**(h)  |
+|  | **[tthSM](/documentation/code/darkbit_developmentfiles/feynhiggs_8hpp/#define-tthsm)**(h)  |
+|  | **[Wh](/documentation/code/darkbit_developmentfiles/feynhiggs_8hpp/#define-wh)**(h)  |
+|  | **[WhSM](/documentation/code/darkbit_developmentfiles/feynhiggs_8hpp/#define-whsm)**(h)  |
+|  | **[Zh](/documentation/code/darkbit_developmentfiles/feynhiggs_8hpp/#define-zh)**(h)  |
+|  | **[ZhSM](/documentation/code/darkbit_developmentfiles/feynhiggs_8hpp/#define-zhsm)**(h)  |
+|  | **[StSth](/documentation/code/darkbit_developmentfiles/feynhiggs_8hpp/#define-ststh)**(h)  |
+|  | **[tHm](/documentation/code/darkbit_developmentfiles/feynhiggs_8hpp/#define-thm)**  |
+|  | **[tHm2](/documentation/code/darkbit_developmentfiles/feynhiggs_8hpp/#define-thm2)**  |
+|  | **[tHm2lo](/documentation/code/darkbit_developmentfiles/feynhiggs_8hpp/#define-thm2lo)**  |
+|  | **[tHm2hi](/documentation/code/darkbit_developmentfiles/feynhiggs_8hpp/#define-thm2hi)**  |
 
 ## Detailed Description
 
@@ -781,4 +781,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:25 +0000
+Updated on 2022-08-01 at 17:31:45 +0000

@@ -18,14 +18,14 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Fdouble | **[pdivr](/documentation/code/classes/structgambit_1_1ds__rdpadd/#variable-pdivr)**  |
-| Fdouble | **[dpres](/documentation/code/classes/structgambit_1_1ds__rdpadd/#variable-dpres)**  |
-| Finteger | **[nlow](/documentation/code/classes/structgambit_1_1ds__rdpadd/#variable-nlow)**  |
-| Finteger | **[nhigh](/documentation/code/classes/structgambit_1_1ds__rdpadd/#variable-nhigh)**  |
-| Finteger | **[npres](/documentation/code/classes/structgambit_1_1ds__rdpadd/#variable-npres)**  |
-| Finteger | **[nthup](/documentation/code/classes/structgambit_1_1ds__rdpadd/#variable-nthup)**  |
-| Finteger | **[cthtest](/documentation/code/classes/structgambit_1_1ds__rdpadd/#variable-cthtest)**  |
-| Finteger | **[spltest](/documentation/code/classes/structgambit_1_1ds__rdpadd/#variable-spltest)**  |
+| Fdouble | **[pdivr](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__rdpadd/#variable-pdivr)**  |
+| Fdouble | **[dpres](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__rdpadd/#variable-dpres)**  |
+| Finteger | **[nlow](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__rdpadd/#variable-nlow)**  |
+| Finteger | **[nhigh](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__rdpadd/#variable-nhigh)**  |
+| Finteger | **[npres](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__rdpadd/#variable-npres)**  |
+| Finteger | **[nthup](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__rdpadd/#variable-nthup)**  |
+| Finteger | **[cthtest](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__rdpadd/#variable-cthtest)**  |
+| Finteger | **[spltest](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__rdpadd/#variable-spltest)**  |
 
 ## Public Attributes Documentation
 
@@ -87,4 +87,4 @@ Finteger spltest;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:32 +0000
+Updated on 2022-08-01 at 17:31:46 +0000

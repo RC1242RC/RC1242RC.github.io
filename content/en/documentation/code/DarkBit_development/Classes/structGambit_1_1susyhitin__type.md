@@ -18,16 +18,16 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Fdouble | **[flagshsin](/documentation/code/classes/structgambit_1_1susyhitin__type/#variable-flagshsin)**  |
-| Fdouble | **[amsin](/documentation/code/classes/structgambit_1_1susyhitin__type/#variable-amsin)**  |
-| Fdouble | **[amcin](/documentation/code/classes/structgambit_1_1susyhitin__type/#variable-amcin)**  |
-| Fdouble | **[ammuonin](/documentation/code/classes/structgambit_1_1susyhitin__type/#variable-ammuonin)**  |
-| Fdouble | **[alphin](/documentation/code/classes/structgambit_1_1susyhitin__type/#variable-alphin)**  |
-| Fdouble | **[gamwin](/documentation/code/classes/structgambit_1_1susyhitin__type/#variable-gamwin)**  |
-| Fdouble | **[gamzin](/documentation/code/classes/structgambit_1_1susyhitin__type/#variable-gamzin)**  |
-| Fdouble | **[vusin](/documentation/code/classes/structgambit_1_1susyhitin__type/#variable-vusin)**  |
-| Fdouble | **[vcbin](/documentation/code/classes/structgambit_1_1susyhitin__type/#variable-vcbin)**  |
-| Fdouble | **[rvubin](/documentation/code/classes/structgambit_1_1susyhitin__type/#variable-rvubin)**  |
+| Fdouble | **[flagshsin](/documentation/code/darkbit_developmentclasses/structgambit_1_1susyhitin__type/#variable-flagshsin)**  |
+| Fdouble | **[amsin](/documentation/code/darkbit_developmentclasses/structgambit_1_1susyhitin__type/#variable-amsin)**  |
+| Fdouble | **[amcin](/documentation/code/darkbit_developmentclasses/structgambit_1_1susyhitin__type/#variable-amcin)**  |
+| Fdouble | **[ammuonin](/documentation/code/darkbit_developmentclasses/structgambit_1_1susyhitin__type/#variable-ammuonin)**  |
+| Fdouble | **[alphin](/documentation/code/darkbit_developmentclasses/structgambit_1_1susyhitin__type/#variable-alphin)**  |
+| Fdouble | **[gamwin](/documentation/code/darkbit_developmentclasses/structgambit_1_1susyhitin__type/#variable-gamwin)**  |
+| Fdouble | **[gamzin](/documentation/code/darkbit_developmentclasses/structgambit_1_1susyhitin__type/#variable-gamzin)**  |
+| Fdouble | **[vusin](/documentation/code/darkbit_developmentclasses/structgambit_1_1susyhitin__type/#variable-vusin)**  |
+| Fdouble | **[vcbin](/documentation/code/darkbit_developmentclasses/structgambit_1_1susyhitin__type/#variable-vcbin)**  |
+| Fdouble | **[rvubin](/documentation/code/darkbit_developmentclasses/structgambit_1_1susyhitin__type/#variable-rvubin)**  |
 
 ## Public Attributes Documentation
 
@@ -103,4 +103,4 @@ Fdouble rvubin;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:22 +0000
+Updated on 2022-08-01 at 17:31:41 +0000

@@ -16,37 +16,37 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Cholesky](/documentation/code/classes/classcholesky/)**  |
-| class | **[Ran_old](/documentation/code/classes/classran__old/)**  |
-| class | **[Ran](/documentation/code/classes/classran/)**  |
-| class | **[ExponDev](/documentation/code/classes/classexpondev/)**  |
-| class | **[NormalDev](/documentation/code/classes/classnormaldev/)**  |
-| class | **[BasicDevs](/documentation/code/classes/classbasicdevs/)**  |
-| class | **[MultiNormalDev](/documentation/code/classes/classmultinormaldev/)**  |
-| class | **[AdvanceDevs](/documentation/code/classes/classadvancedevs/)**  |
-| class | **[RandomPlane](/documentation/code/classes/classrandomplane/)**  |
-| class | **[RandomBasis](/documentation/code/classes/classrandombasis/)**  |
-| class | **[TransformRandomBasis](/documentation/code/classes/classtransformrandombasis/)**  |
-| class | **[MultiNormDev](/documentation/code/classes/classmultinormdev/)**  |
+| class | **[Cholesky](/documentation/code/gambit_sphinxclasses/classcholesky/)**  |
+| class | **[Ran_old](/documentation/code/gambit_sphinxclasses/classran__old/)**  |
+| class | **[Ran](/documentation/code/gambit_sphinxclasses/classran/)**  |
+| class | **[ExponDev](/documentation/code/gambit_sphinxclasses/classexpondev/)**  |
+| class | **[NormalDev](/documentation/code/gambit_sphinxclasses/classnormaldev/)**  |
+| class | **[BasicDevs](/documentation/code/gambit_sphinxclasses/classbasicdevs/)**  |
+| class | **[MultiNormalDev](/documentation/code/gambit_sphinxclasses/classmultinormaldev/)**  |
+| class | **[AdvanceDevs](/documentation/code/gambit_sphinxclasses/classadvancedevs/)**  |
+| class | **[RandomPlane](/documentation/code/gambit_sphinxclasses/classrandomplane/)**  |
+| class | **[RandomBasis](/documentation/code/gambit_sphinxclasses/classrandombasis/)**  |
+| class | **[TransformRandomBasis](/documentation/code/gambit_sphinxclasses/classtransformrandombasis/)**  |
+| class | **[MultiNormDev](/documentation/code/gambit_sphinxclasses/classmultinormdev/)**  |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| template <typename T \> <br>T * | **[matrix](/documentation/code/files/simple_2random__tools_8hpp/#function-matrix)**(const int xN) |
-| template <typename T \> <br>T ** | **[matrix](/documentation/code/files/simple_2random__tools_8hpp/#function-matrix)**(const int xN, const int yN) |
-| template <typename T \> <br>T *** | **[matrix](/documentation/code/files/simple_2random__tools_8hpp/#function-matrix)**(const int xN, const int yN, const int zN) |
-| template <typename T \> <br>T * | **[matrix](/documentation/code/files/simple_2random__tools_8hpp/#function-matrix)**(const int xN, T in) |
-| template <typename T \> <br>T ** | **[matrix](/documentation/code/files/simple_2random__tools_8hpp/#function-matrix)**(const int xN, const int yN, T in) |
-| template <typename T \> <br>T *** | **[matrix](/documentation/code/files/simple_2random__tools_8hpp/#function-matrix)**(const int xN, const int yN, const int zN, T in) |
-| template <typename T \> <br>T * | **[matrix](/documentation/code/files/simple_2random__tools_8hpp/#function-matrix)**(const int xN, T * in) |
-| template <typename T \> <br>T ** | **[matrix](/documentation/code/files/simple_2random__tools_8hpp/#function-matrix)**(const int xN, const int yN, T ** in) |
-| template <typename T \> <br>T *** | **[matrix](/documentation/code/files/simple_2random__tools_8hpp/#function-matrix)**(const int xN, const int yN, const int zN, T *** in) |
-| template <typename T \> <br>void | **[del](/documentation/code/files/simple_2random__tools_8hpp/#function-del)**(T * temp) |
-| template <typename T \> <br>void | **[del](/documentation/code/files/simple_2random__tools_8hpp/#function-del)**(T ** temp, int xN) |
-| template <typename T \> <br>void | **[del](/documentation/code/files/simple_2random__tools_8hpp/#function-del)**(T *** temp, int xN, int yN) |
-| template <class T \> <br>const T | **[SQ](/documentation/code/files/simple_2random__tools_8hpp/#function-sq)**(const T a) |
-| template <class T \> <br>const T | **[SQR](/documentation/code/files/simple_2random__tools_8hpp/#function-sqr)**(const T a) |
+| template <typename T \> <br>T * | **[matrix](/documentation/code/gambit_sphinxfiles/simple_2random__tools_8hpp/#function-matrix)**(const int xN) |
+| template <typename T \> <br>T ** | **[matrix](/documentation/code/gambit_sphinxfiles/simple_2random__tools_8hpp/#function-matrix)**(const int xN, const int yN) |
+| template <typename T \> <br>T *** | **[matrix](/documentation/code/gambit_sphinxfiles/simple_2random__tools_8hpp/#function-matrix)**(const int xN, const int yN, const int zN) |
+| template <typename T \> <br>T * | **[matrix](/documentation/code/gambit_sphinxfiles/simple_2random__tools_8hpp/#function-matrix)**(const int xN, T in) |
+| template <typename T \> <br>T ** | **[matrix](/documentation/code/gambit_sphinxfiles/simple_2random__tools_8hpp/#function-matrix)**(const int xN, const int yN, T in) |
+| template <typename T \> <br>T *** | **[matrix](/documentation/code/gambit_sphinxfiles/simple_2random__tools_8hpp/#function-matrix)**(const int xN, const int yN, const int zN, T in) |
+| template <typename T \> <br>T * | **[matrix](/documentation/code/gambit_sphinxfiles/simple_2random__tools_8hpp/#function-matrix)**(const int xN, T * in) |
+| template <typename T \> <br>T ** | **[matrix](/documentation/code/gambit_sphinxfiles/simple_2random__tools_8hpp/#function-matrix)**(const int xN, const int yN, T ** in) |
+| template <typename T \> <br>T *** | **[matrix](/documentation/code/gambit_sphinxfiles/simple_2random__tools_8hpp/#function-matrix)**(const int xN, const int yN, const int zN, T *** in) |
+| template <typename T \> <br>void | **[del](/documentation/code/gambit_sphinxfiles/simple_2random__tools_8hpp/#function-del)**(T * temp) |
+| template <typename T \> <br>void | **[del](/documentation/code/gambit_sphinxfiles/simple_2random__tools_8hpp/#function-del)**(T ** temp, int xN) |
+| template <typename T \> <br>void | **[del](/documentation/code/gambit_sphinxfiles/simple_2random__tools_8hpp/#function-del)**(T *** temp, int xN, int yN) |
+| template <class T \> <br>const T | **[SQ](/documentation/code/gambit_sphinxfiles/simple_2random__tools_8hpp/#function-sq)**(const T a) |
+| template <class T \> <br>const T | **[SQR](/documentation/code/gambit_sphinxfiles/simple_2random__tools_8hpp/#function-sqr)**(const T a) |
 
 
 ## Functions Documentation
@@ -1526,4 +1526,4 @@ class MultiNormDev : public RandomBasis, public Cholesky
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:34 +0000
+Updated on 2022-08-01 at 17:31:48 +0000

@@ -16,20 +16,20 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[captn_init](/documentation/code/files/captngeneral__2__1_8cpp/#function-captn-init)**(solarmodel [0], rho0 , vsun , v0 , vesc ) |
-| | **[captn_init_oper](/documentation/code/files/captngeneral__2__1_8cpp/#function-captn-init-oper)**() |
-| | **[for](/documentation/code/files/captngeneral__2__1_8cpp/#function-for)**() |
+| | **[captn_init](/documentation/code/gambit_sphinxfiles/captngeneral__2__1_8cpp/#function-captn-init)**(solarmodel [0], rho0 , vsun , v0 , vesc ) |
+| | **[captn_init_oper](/documentation/code/gambit_sphinxfiles/captngeneral__2__1_8cpp/#function-captn-init-oper)**() |
+| | **[for](/documentation/code/gambit_sphinxfiles/captngeneral__2__1_8cpp/#function-for)**() |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[BE_INI_FUNCTION](/documentation/code/files/captngeneral__2__1_8cpp/#variable-be-ini-function)**  |
-| double | **[v0](/documentation/code/files/captngeneral__2__1_8cpp/#variable-v0)**  |
-| double | **[vsun](/documentation/code/files/captngeneral__2__1_8cpp/#variable-vsun)**  |
-| double | **[vesc](/documentation/code/files/captngeneral__2__1_8cpp/#variable-vesc)**  |
-| const int | **[clen](/documentation/code/files/captngeneral__2__1_8cpp/#variable-clen)**  |
-| char | **[solarmodel](/documentation/code/files/captngeneral__2__1_8cpp/#variable-solarmodel)**  |
+| | **[BE_INI_FUNCTION](/documentation/code/gambit_sphinxfiles/captngeneral__2__1_8cpp/#variable-be-ini-function)**  |
+| double | **[v0](/documentation/code/gambit_sphinxfiles/captngeneral__2__1_8cpp/#variable-v0)**  |
+| double | **[vsun](/documentation/code/gambit_sphinxfiles/captngeneral__2__1_8cpp/#variable-vsun)**  |
+| double | **[vesc](/documentation/code/gambit_sphinxfiles/captngeneral__2__1_8cpp/#variable-vesc)**  |
+| const int | **[clen](/documentation/code/gambit_sphinxfiles/captngeneral__2__1_8cpp/#variable-clen)**  |
+| char | **[solarmodel](/documentation/code/gambit_sphinxfiles/captngeneral__2__1_8cpp/#variable-solarmodel)**  |
 
 ## Detailed Description
 
@@ -167,4 +167,4 @@ END_BE_INI_FUNCTION
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:37 +0000
+Updated on 2022-08-01 at 17:31:51 +0000

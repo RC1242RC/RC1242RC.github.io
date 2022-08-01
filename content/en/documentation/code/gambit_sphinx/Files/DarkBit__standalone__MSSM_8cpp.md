@@ -16,14 +16,14 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[DarkBit::Functown](/documentation/code/namespaces/namespacedarkbit_1_1functown/)**  |
+| **[DarkBit::Functown](/documentation/code/gambit_sphinxnamespaces/namespacedarkbit_1_1functown/)**  |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[QUICK_FUNCTION](/documentation/code/files/darkbit__standalone__mssm_8cpp/#function-quick-function)**(DarkBit , SLHA_pseudonyms , NEW_CAPABILITY , createSLHA1Names , mass_es_pseudonyms , () , (MSSM_spectrum, Spectrum) ) |
-| int | **[main](/documentation/code/files/darkbit__standalone__mssm_8cpp/#function-main)**(int argc, char * argv[]) |
+| | **[QUICK_FUNCTION](/documentation/code/gambit_sphinxfiles/darkbit__standalone__mssm_8cpp/#function-quick-function)**(DarkBit , SLHA_pseudonyms , NEW_CAPABILITY , createSLHA1Names , mass_es_pseudonyms , () , (MSSM_spectrum, Spectrum) ) |
+| int | **[main](/documentation/code/gambit_sphinxfiles/darkbit__standalone__mssm_8cpp/#function-main)**(int argc, char * argv[]) |
 
 ## Detailed Description
 
@@ -1838,4 +1838,4 @@ int main(int argc, char* argv[])
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:35 +0000
+Updated on 2022-08-01 at 17:31:48 +0000

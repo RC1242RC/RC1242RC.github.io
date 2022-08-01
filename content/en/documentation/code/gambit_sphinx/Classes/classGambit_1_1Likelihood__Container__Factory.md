@@ -14,23 +14,23 @@ description: "[No description available]"
 
 [No description available]
 
-Inherits from [Gambit::Scanner::Factory_Base](/documentation/code/classes/classgambit_1_1scanner_1_1factory__base/)
+Inherits from [Gambit::Scanner::Factory_Base](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1factory__base/)
 
 ## Public Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Likelihood_Container_Factory](/documentation/code/classes/classgambit_1_1likelihood__container__factory/#function-likelihood-container-factory)**(const [gambit_core](/documentation/code/classes/classgambit_1_1gambit__core/) & core, [DRes::DependencyResolver](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/) & dependencyResolver, [IniParser::IniFile](/documentation/code/classes/classgambit_1_1iniparser_1_1inifile/) & iniFile, Printers::BaseBasePrinter & printer) |
-| | **[~Likelihood_Container_Factory](/documentation/code/classes/classgambit_1_1likelihood__container__factory/#function-~likelihood-container-factory)**() |
-| virtual void * | **[operator()](/documentation/code/classes/classgambit_1_1likelihood__container__factory/#function-operator())**(const str & purpose) const |
+| | **[Likelihood_Container_Factory](/documentation/code/gambit_sphinxclasses/classgambit_1_1likelihood__container__factory/#function-likelihood-container-factory)**(const [gambit_core](/documentation/code/gambit_sphinxclasses/classgambit_1_1gambit__core/) & core, [DRes::DependencyResolver](/documentation/code/gambit_sphinxclasses/classgambit_1_1dres_1_1dependencyresolver/) & dependencyResolver, [IniParser::IniFile](/documentation/code/gambit_sphinxclasses/classgambit_1_1iniparser_1_1inifile/) & iniFile, Printers::BaseBasePrinter & printer) |
+| | **[~Likelihood_Container_Factory](/documentation/code/gambit_sphinxclasses/classgambit_1_1likelihood__container__factory/#function-~likelihood-container-factory)**() |
+| virtual void * | **[operator()](/documentation/code/gambit_sphinxclasses/classgambit_1_1likelihood__container__factory/#function-operator())**(const str & purpose) const |
 
 ## Additional inherited members
 
-**Public Functions inherited from [Gambit::Scanner::Factory_Base](/documentation/code/classes/classgambit_1_1scanner_1_1factory__base/)**
+**Public Functions inherited from [Gambit::Scanner::Factory_Base](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1factory__base/)**
 
 |                | Name           |
 | -------------- | -------------- |
-| virtual | **[~Factory_Base](/documentation/code/classes/classgambit_1_1scanner_1_1factory__base/#function-~factory-base)**() |
+| virtual | **[~Factory_Base](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1factory__base/#function-~factory-base)**() |
 
 
 ## Public Functions Documentation
@@ -63,9 +63,9 @@ virtual void * operator()(
 ```
 
 
-**Reimplements**: [Gambit::Scanner::Factory_Base::operator()](/documentation/code/classes/classgambit_1_1scanner_1_1factory__base/#function-operator())
+**Reimplements**: [Gambit::Scanner::Factory_Base::operator()](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1factory__base/#function-operator())
 
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:32 +0000
+Updated on 2022-08-01 at 17:31:46 +0000

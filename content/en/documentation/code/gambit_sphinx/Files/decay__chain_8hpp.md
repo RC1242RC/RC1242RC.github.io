@@ -16,21 +16,21 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::DarkBit](/documentation/code/namespaces/namespacegambit_1_1darkbit/)**  |
-| **[Gambit::DarkBit::DecayChain](/documentation/code/namespaces/namespacegambit_1_1darkbit_1_1decaychain/)**  |
+| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::DarkBit](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1darkbit/)**  |
+| **[Gambit::DarkBit::DecayChain](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1darkbit_1_1decaychain/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Gambit::DarkBit::DecayChain::vec3](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec3/)**  |
-| class | **[Gambit::DarkBit::DecayChain::vec4](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec4/)**  |
-| class | **[Gambit::DarkBit::DecayChain::mat4](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1mat4/)**  |
-| class | **[Gambit::DarkBit::DecayChain::DecayTableEntry](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1decaytableentry/)**  |
-| class | **[Gambit::DarkBit::DecayChain::DecayTable](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1decaytable/)**  |
-| class | **[Gambit::DarkBit::DecayChain::ChainParticle](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1chainparticle/)**  |
-| struct | **[Gambit::DarkBit::DecayChain::ChainContainer](/documentation/code/classes/structgambit_1_1darkbit_1_1decaychain_1_1chaincontainer/)**  |
+| class | **[Gambit::DarkBit::DecayChain::vec3](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1decaychain_1_1vec3/)**  |
+| class | **[Gambit::DarkBit::DecayChain::vec4](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1decaychain_1_1vec4/)**  |
+| class | **[Gambit::DarkBit::DecayChain::mat4](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1decaychain_1_1mat4/)**  |
+| class | **[Gambit::DarkBit::DecayChain::DecayTableEntry](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1decaychain_1_1decaytableentry/)**  |
+| class | **[Gambit::DarkBit::DecayChain::DecayTable](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1decaychain_1_1decaytable/)**  |
+| class | **[Gambit::DarkBit::DecayChain::ChainParticle](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1decaychain_1_1chainparticle/)**  |
+| struct | **[Gambit::DarkBit::DecayChain::ChainContainer](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1decaychain_1_1chaincontainer/)**  |
 
 ## Detailed Description
 
@@ -387,4 +387,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:35 +0000
+Updated on 2022-08-01 at 17:31:49 +0000

@@ -16,8 +16,8 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::FunctorHelp](/documentation/code/namespaces/namespacegambit_1_1functorhelp/)** <br>Definitions of friend functions from above.  |
+| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::FunctorHelp](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1functorhelp/)** <br>Definitions of friend functions from above.  |
 
 ## Detailed Description
 
@@ -140,4 +140,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:35 +0000
+Updated on 2022-08-01 at 17:31:49 +0000

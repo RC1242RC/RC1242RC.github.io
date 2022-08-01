@@ -16,55 +16,55 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[procRec](/documentation/code/classes/structprocrec/)**  |
+| struct | **[procRec](/documentation/code/gambit_sphinxclasses/structprocrec/)**  |
 
 ## Types
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef struct [procRec](/documentation/code/classes/structprocrec/) | **[procRec](/documentation/code/files/main_8c/#typedef-procrec)**  |
+| typedef struct [procRec](/documentation/code/gambit_sphinxclasses/structprocrec/) | **[procRec](/documentation/code/gambit_sphinxfiles/main_8c/#typedef-procrec)**  |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| int | **[prepareWorkPlace](/documentation/code/files/main_8c/#function-prepareworkplace)**(void ) |
-| char * | **[pdg2name](/documentation/code/files/main_8c/#function-pdg2name)**(int pdg) |
-| char * | **[pdg2mass](/documentation/code/files/main_8c/#function-pdg2mass)**(int pdg) |
-| char * | **[pdg2width](/documentation/code/files/main_8c/#function-pdg2width)**(int pdg) |
-| int | **[checkWorkPlace](/documentation/code/files/main_8c/#function-checkworkplace)**(void ) |
-| int | **[checkMtime](/documentation/code/files/main_8c/#function-checkmtime)**(char * fname) |
-| void * | **[newSymbol](/documentation/code/files/main_8c/#function-newsymbol)**(void * handle, char * name) |
-| void | **[dClose](/documentation/code/files/main_8c/#function-dclose)**(void * handle) |
-| REAL * | **[varAddress](/documentation/code/files/main_8c/#function-varaddress)**(char * name) |
-| int | **[passParameters](/documentation/code/files/main_8c/#function-passparameters)**(numout * cc) |
-| void | **[delAllLib](/documentation/code/files/main_8c/#function-delalllib)**(void ) |
-| void | **[cleanDecayTable](/documentation/code/files/main_8c/#function-cleandecaytable)**(void ) |
-| int | **[pTabPos](/documentation/code/files/main_8c/#function-ptabpos)**(char * name) |
-| double | **[pMass](/documentation/code/files/main_8c/#function-pmass)**(char * name) |
-| double | **[pWidth](/documentation/code/files/main_8c/#function-pwidth)**(char * name, txtList * LL) |
-| double | **[aWidth](/documentation/code/files/main_8c/#function-awidth)**(char * name) |
-| int | **[pListEq](/documentation/code/files/main_8c/#function-plisteq)**(char * txt1, char * txt2) |
-| numout * | **[loadLib](/documentation/code/files/main_8c/#function-loadlib)**(void * handle, char * lib) |
-| void * | **[dLoad](/documentation/code/files/main_8c/#function-dload)**(char * libName) |
-| numout * | **[getMEcode](/documentation/code/files/main_8c/#function-getmecode)**(int twidth, int Gauge, char * Process, char * excludeVirtual, char * excludeOut, char * lib) |
-| int | **[findVal](/documentation/code/files/main_8c/#function-findval)**(char * name, double * val) |
-| double | **[findValW](/documentation/code/files/main_8c/#function-findvalw)**(char * name) |
-| int | **[procInfo2](/documentation/code/files/main_8c/#function-procinfo2)**(numout * cc, int nsub, char ** name, REAL * mass) |
+| int | **[prepareWorkPlace](/documentation/code/gambit_sphinxfiles/main_8c/#function-prepareworkplace)**(void ) |
+| char * | **[pdg2name](/documentation/code/gambit_sphinxfiles/main_8c/#function-pdg2name)**(int pdg) |
+| char * | **[pdg2mass](/documentation/code/gambit_sphinxfiles/main_8c/#function-pdg2mass)**(int pdg) |
+| char * | **[pdg2width](/documentation/code/gambit_sphinxfiles/main_8c/#function-pdg2width)**(int pdg) |
+| int | **[checkWorkPlace](/documentation/code/gambit_sphinxfiles/main_8c/#function-checkworkplace)**(void ) |
+| int | **[checkMtime](/documentation/code/gambit_sphinxfiles/main_8c/#function-checkmtime)**(char * fname) |
+| void * | **[newSymbol](/documentation/code/gambit_sphinxfiles/main_8c/#function-newsymbol)**(void * handle, char * name) |
+| void | **[dClose](/documentation/code/gambit_sphinxfiles/main_8c/#function-dclose)**(void * handle) |
+| REAL * | **[varAddress](/documentation/code/gambit_sphinxfiles/main_8c/#function-varaddress)**(char * name) |
+| int | **[passParameters](/documentation/code/gambit_sphinxfiles/main_8c/#function-passparameters)**(numout * cc) |
+| void | **[delAllLib](/documentation/code/gambit_sphinxfiles/main_8c/#function-delalllib)**(void ) |
+| void | **[cleanDecayTable](/documentation/code/gambit_sphinxfiles/main_8c/#function-cleandecaytable)**(void ) |
+| int | **[pTabPos](/documentation/code/gambit_sphinxfiles/main_8c/#function-ptabpos)**(char * name) |
+| double | **[pMass](/documentation/code/gambit_sphinxfiles/main_8c/#function-pmass)**(char * name) |
+| double | **[pWidth](/documentation/code/gambit_sphinxfiles/main_8c/#function-pwidth)**(char * name, txtList * LL) |
+| double | **[aWidth](/documentation/code/gambit_sphinxfiles/main_8c/#function-awidth)**(char * name) |
+| int | **[pListEq](/documentation/code/gambit_sphinxfiles/main_8c/#function-plisteq)**(char * txt1, char * txt2) |
+| numout * | **[loadLib](/documentation/code/gambit_sphinxfiles/main_8c/#function-loadlib)**(void * handle, char * lib) |
+| void * | **[dLoad](/documentation/code/gambit_sphinxfiles/main_8c/#function-dload)**(char * libName) |
+| numout * | **[getMEcode](/documentation/code/gambit_sphinxfiles/main_8c/#function-getmecode)**(int twidth, int Gauge, char * Process, char * excludeVirtual, char * excludeOut, char * lib) |
+| int | **[findVal](/documentation/code/gambit_sphinxfiles/main_8c/#function-findval)**(char * name, double * val) |
+| double | **[findValW](/documentation/code/gambit_sphinxfiles/main_8c/#function-findvalw)**(char * name) |
+| int | **[procInfo2](/documentation/code/gambit_sphinxfiles/main_8c/#function-procinfo2)**(numout * cc, int nsub, char ** name, REAL * mass) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| char * | **[libDir](/documentation/code/files/main_8c/#variable-libdir)**  |
-| char * | **[modelDir](/documentation/code/files/main_8c/#variable-modeldir)**  |
-| char * | **[compDir](/documentation/code/files/main_8c/#variable-compdir)**  |
-| char * | **[calchepDir](/documentation/code/files/main_8c/#variable-calchepdir)**  |
-| int | **[modelNum](/documentation/code/files/main_8c/#variable-modelnum)**  |
-| int | **[ForceUG](/documentation/code/files/main_8c/#variable-forceug)**  |
-| [procRec](/documentation/code/classes/structprocrec/) * | **[allProc](/documentation/code/files/main_8c/#variable-allproc)**  |
-| decayTableStr * | **[decayTable](/documentation/code/files/main_8c/#variable-decaytable)**  |
-| int | **[nPrtcls_old](/documentation/code/files/main_8c/#variable-nprtcls-old)**  |
+| char * | **[libDir](/documentation/code/gambit_sphinxfiles/main_8c/#variable-libdir)**  |
+| char * | **[modelDir](/documentation/code/gambit_sphinxfiles/main_8c/#variable-modeldir)**  |
+| char * | **[compDir](/documentation/code/gambit_sphinxfiles/main_8c/#variable-compdir)**  |
+| char * | **[calchepDir](/documentation/code/gambit_sphinxfiles/main_8c/#variable-calchepdir)**  |
+| int | **[modelNum](/documentation/code/gambit_sphinxfiles/main_8c/#variable-modelnum)**  |
+| int | **[ForceUG](/documentation/code/gambit_sphinxfiles/main_8c/#variable-forceug)**  |
+| [procRec](/documentation/code/gambit_sphinxclasses/structprocrec/) * | **[allProc](/documentation/code/gambit_sphinxfiles/main_8c/#variable-allproc)**  |
+| decayTableStr * | **[decayTable](/documentation/code/gambit_sphinxfiles/main_8c/#variable-decaytable)**  |
+| int | **[nPrtcls_old](/documentation/code/gambit_sphinxfiles/main_8c/#variable-nprtcls-old)**  |
 
 ## Types Documentation
 
@@ -954,4 +954,4 @@ int procInfo2(numout*cc,int nsub,char**name,REAL*mass)
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:37 +0000
+Updated on 2022-08-01 at 17:31:50 +0000

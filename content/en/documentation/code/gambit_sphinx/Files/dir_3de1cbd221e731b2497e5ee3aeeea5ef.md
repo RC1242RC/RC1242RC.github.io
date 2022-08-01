@@ -16,7 +16,7 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[polychord_1.18.2/polychord_1.18.2/polychord.cpp](/documentation/code/files/polychord__1_818_82_2polychord_8cpp/#file-polychord-1.18.2/polychord.cpp)**  |
+| **[polychord_1.18.2/polychord_1.18.2/polychord.cpp](/documentation/code/gambit_sphinxfiles/polychord__1_818_82_2polychord_8cpp/#file-polychord-1.18.2/polychord.cpp)**  |
 
 
 
@@ -25,4 +25,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:34 +0000
+Updated on 2022-08-01 at 17:31:48 +0000

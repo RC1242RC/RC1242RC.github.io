@@ -18,14 +18,14 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef [__find_variadic_type__](/documentation/code/classes/structgambit_1_1scanner_1_1____find__variadic__type____/)< [find_variadic_type_exact](/documentation/code/classes/structgambit_1_1scanner_1_1find__variadic__type__exact/)< T... >::value, [find_variadic_type_not_exact](/documentation/code/classes/structgambit_1_1scanner_1_1find__variadic__type__not__exact/)< T... >::value, [find_variadic_type_convert](/documentation/code/classes/structgambit_1_1scanner_1_1find__variadic__type__convert/)< T... >::value, T... >::ret_type | **[ret_type](/documentation/code/classes/structgambit_1_1scanner_1_1find__variadic__type/#typedef-ret-type)**  |
-| typedef [__find_variadic_type__](/documentation/code/classes/structgambit_1_1scanner_1_1____find__variadic__type____/)< [find_variadic_type_exact](/documentation/code/classes/structgambit_1_1scanner_1_1find__variadic__type__exact/)< T... >::value, [find_variadic_type_not_exact](/documentation/code/classes/structgambit_1_1scanner_1_1find__variadic__type__not__exact/)< T... >::value, [find_variadic_type_convert](/documentation/code/classes/structgambit_1_1scanner_1_1find__variadic__type__convert/)< T... >::value, T... >::func_type | **[func_type](/documentation/code/classes/structgambit_1_1scanner_1_1find__variadic__type/#typedef-func-type)**  |
+| typedef [__find_variadic_type__](/documentation/code/darkbit_developmentclasses/structgambit_1_1scanner_1_1____find__variadic__type____/)< [find_variadic_type_exact](/documentation/code/darkbit_developmentclasses/structgambit_1_1scanner_1_1find__variadic__type__exact/)< T... >::value, [find_variadic_type_not_exact](/documentation/code/darkbit_developmentclasses/structgambit_1_1scanner_1_1find__variadic__type__not__exact/)< T... >::value, [find_variadic_type_convert](/documentation/code/darkbit_developmentclasses/structgambit_1_1scanner_1_1find__variadic__type__convert/)< T... >::value, T... >::ret_type | **[ret_type](/documentation/code/darkbit_developmentclasses/structgambit_1_1scanner_1_1find__variadic__type/#typedef-ret-type)**  |
+| typedef [__find_variadic_type__](/documentation/code/darkbit_developmentclasses/structgambit_1_1scanner_1_1____find__variadic__type____/)< [find_variadic_type_exact](/documentation/code/darkbit_developmentclasses/structgambit_1_1scanner_1_1find__variadic__type__exact/)< T... >::value, [find_variadic_type_not_exact](/documentation/code/darkbit_developmentclasses/structgambit_1_1scanner_1_1find__variadic__type__not__exact/)< T... >::value, [find_variadic_type_convert](/documentation/code/darkbit_developmentclasses/structgambit_1_1scanner_1_1find__variadic__type__convert/)< T... >::value, T... >::func_type | **[func_type](/documentation/code/darkbit_developmentclasses/structgambit_1_1scanner_1_1find__variadic__type/#typedef-func-type)**  |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| const bool | **[value](/documentation/code/classes/structgambit_1_1scanner_1_1find__variadic__type/#variable-value)**  |
+| const bool | **[value](/documentation/code/darkbit_developmentclasses/structgambit_1_1scanner_1_1find__variadic__type/#variable-value)**  |
 
 ## Detailed Description
 
@@ -61,4 +61,4 @@ static const bool value = __find_variadic_type__<find_variadic_type_exact<T...>:
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:23 +0000
+Updated on 2022-08-01 at 17:31:42 +0000

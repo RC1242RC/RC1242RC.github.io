@@ -16,17 +16,17 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[if](/documentation/code/files/darksusy__generic__wimp__6__2__2_8cpp/#function-if)**(scan_level ) |
+| | **[if](/documentation/code/gambit_sphinxfiles/darksusy__generic__wimp__6__2__2_8cpp/#function-if)**(scan_level ) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[BE_NAMESPACE](/documentation/code/files/darksusy__generic__wimp__6__2__2_8cpp/#variable-be-namespace)**  |
-| double | **[anmwimp](/documentation/code/files/darksusy__generic__wimp__6__2__2_8cpp/#variable-anmwimp)**  |
-| std::vector< int > | **[DSanpdg1](/documentation/code/files/darksusy__generic__wimp__6__2__2_8cpp/#variable-dsanpdg1)**  |
-| std::vector< int > | **[DSanpdg2](/documentation/code/files/darksusy__generic__wimp__6__2__2_8cpp/#variable-dsanpdg2)**  |
-| [END_BE_NAMESPACE](/documentation/code/files/common__macros_8hpp/#define-end-be-namespace) | **[BE_INI_FUNCTION](/documentation/code/files/darksusy__generic__wimp__6__2__2_8cpp/#variable-be-ini-function)**  |
+| | **[BE_NAMESPACE](/documentation/code/gambit_sphinxfiles/darksusy__generic__wimp__6__2__2_8cpp/#variable-be-namespace)**  |
+| double | **[anmwimp](/documentation/code/gambit_sphinxfiles/darksusy__generic__wimp__6__2__2_8cpp/#variable-anmwimp)**  |
+| std::vector< int > | **[DSanpdg1](/documentation/code/gambit_sphinxfiles/darksusy__generic__wimp__6__2__2_8cpp/#variable-dsanpdg1)**  |
+| std::vector< int > | **[DSanpdg2](/documentation/code/gambit_sphinxfiles/darksusy__generic__wimp__6__2__2_8cpp/#variable-dsanpdg2)**  |
+| [END_BE_NAMESPACE](/documentation/code/gambit_sphinxfiles/common__macros_8hpp/#define-end-be-namespace) | **[BE_INI_FUNCTION](/documentation/code/gambit_sphinxfiles/darksusy__generic__wimp__6__2__2_8cpp/#variable-be-ini-function)**  |
 
 ## Detailed Description
 
@@ -416,4 +416,4 @@ END_BE_NAMESPACE
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:37 +0000
+Updated on 2022-08-01 at 17:31:51 +0000

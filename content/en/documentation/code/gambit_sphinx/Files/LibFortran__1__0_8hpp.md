@@ -16,31 +16,31 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::Backends](/documentation/code/namespaces/namespacegambit_1_1backends/)**  |
+| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::Backends](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1backends/)**  |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) | **[BE_FUNCTION](/documentation/code/files/libfortran__1__0_8hpp/#function-be-function)**(runMe , void , (double(*)(int &), int &) , "runme_" , "runMe" ) |
+| [LOAD_LIBRARY](/documentation/code/gambit_sphinxfiles/frontend__macros_8hpp/#define-load-library) | **[BE_FUNCTION](/documentation/code/gambit_sphinxfiles/libfortran__1__0_8hpp/#function-be-function)**(runMe , void , (double(*)(int &), int &) , "runme_" , "runMe" ) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) | **[double](/documentation/code/files/libfortran__1__0_8hpp/#variable-double)**  |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) double int | **[average_](/documentation/code/files/libfortran__1__0_8hpp/#variable-average-)**  |
+| [LOAD_LIBRARY](/documentation/code/gambit_sphinxfiles/frontend__macros_8hpp/#define-load-library) | **[double](/documentation/code/gambit_sphinxfiles/libfortran__1__0_8hpp/#variable-double)**  |
+| [LOAD_LIBRARY](/documentation/code/gambit_sphinxfiles/frontend__macros_8hpp/#define-load-library) double int | **[average_](/documentation/code/gambit_sphinxfiles/libfortran__1__0_8hpp/#variable-average-)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[BACKENDNAME](/documentation/code/files/libfortran__1__0_8hpp/#define-backendname)**  |
-|  | **[BACKENDLANG](/documentation/code/files/libfortran__1__0_8hpp/#define-backendlang)**  |
-|  | **[VERSION](/documentation/code/files/libfortran__1__0_8hpp/#define-version)**  |
-|  | **[SAFE_VERSION](/documentation/code/files/libfortran__1__0_8hpp/#define-safe-version)**  |
-|  | **[REFERENCE](/documentation/code/files/libfortran__1__0_8hpp/#define-reference)**  |
+|  | **[BACKENDNAME](/documentation/code/gambit_sphinxfiles/libfortran__1__0_8hpp/#define-backendname)**  |
+|  | **[BACKENDLANG](/documentation/code/gambit_sphinxfiles/libfortran__1__0_8hpp/#define-backendlang)**  |
+|  | **[VERSION](/documentation/code/gambit_sphinxfiles/libfortran__1__0_8hpp/#define-version)**  |
+|  | **[SAFE_VERSION](/documentation/code/gambit_sphinxfiles/libfortran__1__0_8hpp/#define-safe-version)**  |
+|  | **[REFERENCE](/documentation/code/gambit_sphinxfiles/libfortran__1__0_8hpp/#define-reference)**  |
 
 ## Detailed Description
 
@@ -183,4 +183,4 @@ END_BE_INI_FUNCTION
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:02:37 +0000
+Updated on 2022-08-01 at 17:31:50 +0000
