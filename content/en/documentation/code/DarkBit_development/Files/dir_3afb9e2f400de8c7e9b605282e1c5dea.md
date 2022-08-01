@@ -16,7 +16,7 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[gambit](/documentation/code/darkbit_developmentfiles/dir_34b86502f398aef74377816197960739/#dir-gambit)**  |
+| **[gambit](/documentation/code/darkbit_development/files/dir_34b86502f398aef74377816197960739/#dir-gambit)**  |
 
 
 
@@ -25,4 +25,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:43 +0000
+Updated on 2022-08-01 at 17:41:24 +0000

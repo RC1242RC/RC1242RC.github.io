@@ -16,7 +16,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[gm2calc_1_3_0_all_data](/documentation/code/gambit_sphinxfiles/gm2calc__1__3__0_2loaded__types_8hpp/#define-gm2calc-1-3-0-all-data)**  |
+|  | **[gm2calc_1_3_0_all_data](/documentation/code/gambit_sphinx/files/gm2calc__1__3__0_2loaded__types_8hpp/#define-gm2calc-1-3-0-all-data)**  |
 
 
 
@@ -89,4 +89,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:50 +0000
+Updated on 2022-08-01 at 17:41:24 +0000

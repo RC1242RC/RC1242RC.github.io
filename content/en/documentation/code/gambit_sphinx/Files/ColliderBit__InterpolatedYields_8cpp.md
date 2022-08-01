@@ -16,15 +16,15 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::ColliderBit](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1colliderbit/)**  |
+| **[Gambit](/documentation/code/gambit_sphinx/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::ColliderBit](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1colliderbit/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Gambit::ColliderBit::DMEFT_analysis_info](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1dmeft__analysis__info/)**  |
-| struct | **[Gambit::ColliderBit::_gsl_target_func_params](/documentation/code/gambit_sphinxclasses/structgambit_1_1colliderbit_1_1__gsl__target__func__params/)** <br>A struct to contain parameters for the GSL optimiser target function.  |
+| class | **[Gambit::ColliderBit::DMEFT_analysis_info](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1dmeft__analysis__info/)**  |
+| struct | **[Gambit::ColliderBit::_gsl_target_func_params](/documentation/code/gambit_sphinx/classes/structgambit_1_1colliderbit_1_1__gsl__target__func__params/)** <br>A struct to contain parameters for the GSL optimiser target function.  |
 
 ## Detailed Description
 
@@ -1058,4 +1058,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:50 +0000
+Updated on 2022-08-01 at 17:41:24 +0000

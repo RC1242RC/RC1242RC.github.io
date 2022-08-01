@@ -16,8 +16,8 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[configs](/documentation/code/gambit_sphinxnamespaces/namespaceconfigs/)**  |
-| **[configs::example](/documentation/code/gambit_sphinxnamespaces/namespaceconfigs_1_1example/)**  |
+| **[configs](/documentation/code/gambit_sphinx/namespaces/namespaceconfigs/)**  |
+| **[configs::example](/documentation/code/gambit_sphinx/namespaces/namespaceconfigs_1_1example/)**  |
 
 
 
@@ -69,4 +69,4 @@ cb_capability_suffix = ''
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:51 +0000
+Updated on 2022-08-01 at 17:41:25 +0000

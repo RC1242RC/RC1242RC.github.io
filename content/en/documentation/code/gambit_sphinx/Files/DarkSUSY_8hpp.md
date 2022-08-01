@@ -16,61 +16,61 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit](/documentation/code/gambit_sphinx/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[Gambit::DS_IBINTVARS](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__ibintvars/)**  |
-| struct | **[Gambit::DS5_MSPCTM](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds5__mspctm/)**  |
-| struct | **[Gambit::DS_SMQUARKMASSES](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__smquarkmasses/)**  |
-| struct | **[Gambit::DS_PMASSES](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__pmasses/)**  |
-| struct | **[Gambit::DS5_WIDTHS](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds5__widths/)**  |
-| struct | **[Gambit::DS_PWIDTHS](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__pwidths/)**  |
-| struct | **[Gambit::DS_gg](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__gg/)**  |
-| struct | **[Gambit::DS_INTDOF](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__intdof/)**  |
-| struct | **[Gambit::DS5_PACODES](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds5__pacodes/)**  |
-| struct | **[Gambit::DS_PACODES_MSSM](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__pacodes__mssm/)**  |
-| struct | **[Gambit::DS_PACODES_MSSM61](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__pacodes__mssm61/)**  |
-| struct | **[Gambit::DS_MSSMIUSEFUL](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__mssmiuseful/)**  |
-| struct | **[Gambit::DS_VRTXS](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__vrtxs/)**  |
-| struct | **[Gambit::DS5_SMRUSEFUL](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds5__smruseful/)**  |
-| struct | **[Gambit::DS_SMCOUPLING](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__smcoupling/)**  |
-| struct | **[Gambit::DS_SMCOUPLING61](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__smcoupling61/)**  |
-| struct | **[Gambit::DS5_SMCUSEFUL](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds5__smcuseful/)**  |
-| struct | **[Gambit::DS5_COUPLINGCONSTANTS](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds5__couplingconstants/)**  |
-| struct | **[Gambit::DS_COUPLINGCONSTANTS](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__couplingconstants/)**  |
-| struct | **[Gambit::DS_COUPLINGCONSTANTS61](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__couplingconstants61/)**  |
-| struct | **[Gambit::DS5_SCKM](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds5__sckm/)**  |
-| struct | **[Gambit::DS_SCKM](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__sckm/)**  |
-| struct | **[Gambit::DS_MIXING](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__mixing/)**  |
-| struct | **[Gambit::DS_MSSMTYPE](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__mssmtype/)**  |
-| struct | **[Gambit::DS_MSSMPAR](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__mssmpar/)**  |
-| struct | **[Gambit::DS_MSSMSWITCH](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__mssmswitch/)**  |
-| struct | **[Gambit::DS_SFERMIONMASS](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__sfermionmass/)**  |
-| struct | **[Gambit::DS_MSSMWIDTHS](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__mssmwidths/)**  |
-| struct | **[Gambit::DS_MSSMMIXING](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__mssmmixing/)**  |
-| struct | **[Gambit::DS5_RDMGEV](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds5__rdmgev/)**  |
-| struct | **[Gambit::DS_DSANCOANN](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__dsancoann/)**  |
-| struct | **[Gambit::DS_RDPTH](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__rdpth/)**  |
-| struct | **[Gambit::DS_RDSWITCH](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__rdswitch/)**  |
-| struct | **[Gambit::DS_RDLUN](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__rdlun/)**  |
-| struct | **[Gambit::DS_RDPADD](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__rdpadd/)**  |
-| struct | **[Gambit::DS_RDDOF](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__rddof/)**  |
-| struct | **[Gambit::DS_RDERRORS](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__rderrors/)**  |
-| struct | **[Gambit::DS_RDPARS](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__rdpars/)**  |
-| struct | **[Gambit::DS_RDTIME](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__rdtime/)**  |
-| struct | **[Gambit::DS5_DDCOM](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds5__ddcom/)**  |
-| struct | **[Gambit::DS5_NUCOM](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds5__nucom/)**  |
-| struct | **[Gambit::DS_NUCOM](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__nucom/)**  |
-| struct | **[Gambit::DS5_HMCOM](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds5__hmcom/)**  |
-| struct | **[Gambit::DS_HMCOM](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__hmcom/)**  |
-| struct | **[Gambit::DS_DDCOMLEGACY](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__ddcomlegacy/)**  |
-| struct | **[Gambit::DS_DDMSSMCOM](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__ddmssmcom/)**  |
-| struct | **[Gambit::DS_HMISODF](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__hmisodf/)**  |
-| struct | **[Gambit::DS_HMFRAMEVELCOM](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__hmframevelcom/)**  |
-| struct | **[Gambit::DS_HMNOCLUE](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__hmnoclue/)**  |
+| struct | **[Gambit::DS_IBINTVARS](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__ibintvars/)**  |
+| struct | **[Gambit::DS5_MSPCTM](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds5__mspctm/)**  |
+| struct | **[Gambit::DS_SMQUARKMASSES](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__smquarkmasses/)**  |
+| struct | **[Gambit::DS_PMASSES](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__pmasses/)**  |
+| struct | **[Gambit::DS5_WIDTHS](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds5__widths/)**  |
+| struct | **[Gambit::DS_PWIDTHS](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__pwidths/)**  |
+| struct | **[Gambit::DS_gg](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__gg/)**  |
+| struct | **[Gambit::DS_INTDOF](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__intdof/)**  |
+| struct | **[Gambit::DS5_PACODES](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds5__pacodes/)**  |
+| struct | **[Gambit::DS_PACODES_MSSM](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__pacodes__mssm/)**  |
+| struct | **[Gambit::DS_PACODES_MSSM61](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__pacodes__mssm61/)**  |
+| struct | **[Gambit::DS_MSSMIUSEFUL](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__mssmiuseful/)**  |
+| struct | **[Gambit::DS_VRTXS](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__vrtxs/)**  |
+| struct | **[Gambit::DS5_SMRUSEFUL](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds5__smruseful/)**  |
+| struct | **[Gambit::DS_SMCOUPLING](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__smcoupling/)**  |
+| struct | **[Gambit::DS_SMCOUPLING61](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__smcoupling61/)**  |
+| struct | **[Gambit::DS5_SMCUSEFUL](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds5__smcuseful/)**  |
+| struct | **[Gambit::DS5_COUPLINGCONSTANTS](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds5__couplingconstants/)**  |
+| struct | **[Gambit::DS_COUPLINGCONSTANTS](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__couplingconstants/)**  |
+| struct | **[Gambit::DS_COUPLINGCONSTANTS61](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__couplingconstants61/)**  |
+| struct | **[Gambit::DS5_SCKM](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds5__sckm/)**  |
+| struct | **[Gambit::DS_SCKM](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__sckm/)**  |
+| struct | **[Gambit::DS_MIXING](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__mixing/)**  |
+| struct | **[Gambit::DS_MSSMTYPE](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__mssmtype/)**  |
+| struct | **[Gambit::DS_MSSMPAR](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__mssmpar/)**  |
+| struct | **[Gambit::DS_MSSMSWITCH](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__mssmswitch/)**  |
+| struct | **[Gambit::DS_SFERMIONMASS](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__sfermionmass/)**  |
+| struct | **[Gambit::DS_MSSMWIDTHS](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__mssmwidths/)**  |
+| struct | **[Gambit::DS_MSSMMIXING](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__mssmmixing/)**  |
+| struct | **[Gambit::DS5_RDMGEV](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds5__rdmgev/)**  |
+| struct | **[Gambit::DS_DSANCOANN](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__dsancoann/)**  |
+| struct | **[Gambit::DS_RDPTH](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__rdpth/)**  |
+| struct | **[Gambit::DS_RDSWITCH](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__rdswitch/)**  |
+| struct | **[Gambit::DS_RDLUN](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__rdlun/)**  |
+| struct | **[Gambit::DS_RDPADD](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__rdpadd/)**  |
+| struct | **[Gambit::DS_RDDOF](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__rddof/)**  |
+| struct | **[Gambit::DS_RDERRORS](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__rderrors/)**  |
+| struct | **[Gambit::DS_RDPARS](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__rdpars/)**  |
+| struct | **[Gambit::DS_RDTIME](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__rdtime/)**  |
+| struct | **[Gambit::DS5_DDCOM](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds5__ddcom/)**  |
+| struct | **[Gambit::DS5_NUCOM](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds5__nucom/)**  |
+| struct | **[Gambit::DS_NUCOM](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__nucom/)**  |
+| struct | **[Gambit::DS5_HMCOM](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds5__hmcom/)**  |
+| struct | **[Gambit::DS_HMCOM](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__hmcom/)**  |
+| struct | **[Gambit::DS_DDCOMLEGACY](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__ddcomlegacy/)**  |
+| struct | **[Gambit::DS_DDMSSMCOM](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__ddmssmcom/)**  |
+| struct | **[Gambit::DS_HMISODF](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__hmisodf/)**  |
+| struct | **[Gambit::DS_HMFRAMEVELCOM](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__hmframevelcom/)**  |
+| struct | **[Gambit::DS_HMNOCLUE](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__hmnoclue/)**  |
 
 ## Detailed Description
 
@@ -563,4 +563,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:50 +0000
+Updated on 2022-08-01 at 17:41:25 +0000

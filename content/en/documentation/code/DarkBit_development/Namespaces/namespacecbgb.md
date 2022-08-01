@@ -16,40 +16,40 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[input_cfg_path](/documentation/code/darkbit_developmentnamespaces/namespacecbgb/#variable-input-cfg-path)**  |
-| | **[input_cfg_dir](/documentation/code/darkbit_developmentnamespaces/namespacecbgb/#variable-input-cfg-dir)**  |
-| | **[input_cfg_filename](/documentation/code/darkbit_developmentnamespaces/namespacecbgb/#variable-input-cfg-filename)**  |
-| | **[input_cfg_modulename](/documentation/code/darkbit_developmentnamespaces/namespacecbgb/#variable-input-cfg-modulename)**  |
-| | **[ext](/documentation/code/darkbit_developmentnamespaces/namespacecbgb/#variable-ext)**  |
-| | **[module_name](/documentation/code/darkbit_developmentnamespaces/namespacecbgb/#variable-module-name)**  |
-| | **[cfg](/documentation/code/darkbit_developmentnamespaces/namespacecbgb/#variable-cfg)**  |
-| string | **[f_listing](/documentation/code/darkbit_developmentnamespaces/namespacecbgb/#variable-f-listing)**  |
-| list | **[f_duplicates](/documentation/code/darkbit_developmentnamespaces/namespacecbgb/#variable-f-duplicates)**  |
-| string | **[cb_listing](/documentation/code/darkbit_developmentnamespaces/namespacecbgb/#variable-cb-listing)**  |
-| list | **[cb_duplicates](/documentation/code/darkbit_developmentnamespaces/namespacecbgb/#variable-cb-duplicates)**  |
-| string | **[src_content](/documentation/code/darkbit_developmentnamespaces/namespacecbgb/#variable-src-content)**  |
-| string | **[src_lines](/documentation/code/darkbit_developmentnamespaces/namespacecbgb/#variable-src-lines)**  |
-| | **[code_parts_dict](/documentation/code/darkbit_developmentnamespaces/namespacecbgb/#variable-code-parts-dict)**  |
-| string | **[be_types_file_content](/documentation/code/darkbit_developmentnamespaces/namespacecbgb/#variable-be-types-file-content)**  |
-| string | **[frontend_file_content](/documentation/code/darkbit_developmentnamespaces/namespacecbgb/#variable-frontend-file-content)**  |
-| | **[functions_left](/documentation/code/darkbit_developmentnamespaces/namespacecbgb/#variable-functions-left)**  |
-| | **[code_lines](/documentation/code/darkbit_developmentnamespaces/namespacecbgb/#variable-code-lines)**  |
-| | **[code_category](/documentation/code/darkbit_developmentnamespaces/namespacecbgb/#variable-code-category)**  |
-| | **[f_name](/documentation/code/darkbit_developmentnamespaces/namespacecbgb/#variable-f-name)**  |
-| | **[f_name_short](/documentation/code/darkbit_developmentnamespaces/namespacecbgb/#variable-f-name-short)**  |
-| list | **[other_f_list](/documentation/code/darkbit_developmentnamespaces/namespacecbgb/#variable-other-f-list)**  |
-| bool | **[found_other_f](/documentation/code/darkbit_developmentnamespaces/namespacecbgb/#variable-found-other-f)**  |
-| | **[other_f_name_short](/documentation/code/darkbit_developmentnamespaces/namespacecbgb/#variable-other-f-name-short)**  |
-| bool | **[is_requested](/documentation/code/darkbit_developmentnamespaces/namespacecbgb/#variable-is-requested)**  |
-| | **[use_f_name](/documentation/code/darkbit_developmentnamespaces/namespacecbgb/#variable-use-f-name)**  |
-| | **[return_type_info](/documentation/code/darkbit_developmentnamespaces/namespacecbgb/#variable-return-type-info)**  |
-| | **[parameter_defs](/documentation/code/darkbit_developmentnamespaces/namespacecbgb/#variable-parameter-defs)**  |
-| | **[arg_names](/documentation/code/darkbit_developmentnamespaces/namespacecbgb/#variable-arg-names)**  |
-| | **[arg_info_dict](/documentation/code/darkbit_developmentnamespaces/namespacecbgb/#variable-arg-info-dict)**  |
-| | **[f_dict](/documentation/code/darkbit_developmentnamespaces/namespacecbgb/#variable-f-dict)**  |
-| | **[common_blocks_left](/documentation/code/darkbit_developmentnamespaces/namespacecbgb/#variable-common-blocks-left)**  |
-| | **[cb_dicts](/documentation/code/darkbit_developmentnamespaces/namespacecbgb/#variable-cb-dicts)**  |
-| | **[var_info_dict](/documentation/code/darkbit_developmentnamespaces/namespacecbgb/#variable-var-info-dict)**  |
+| | **[input_cfg_path](/documentation/code/darkbit_development/namespaces/namespacecbgb/#variable-input-cfg-path)**  |
+| | **[input_cfg_dir](/documentation/code/darkbit_development/namespaces/namespacecbgb/#variable-input-cfg-dir)**  |
+| | **[input_cfg_filename](/documentation/code/darkbit_development/namespaces/namespacecbgb/#variable-input-cfg-filename)**  |
+| | **[input_cfg_modulename](/documentation/code/darkbit_development/namespaces/namespacecbgb/#variable-input-cfg-modulename)**  |
+| | **[ext](/documentation/code/darkbit_development/namespaces/namespacecbgb/#variable-ext)**  |
+| | **[module_name](/documentation/code/darkbit_development/namespaces/namespacecbgb/#variable-module-name)**  |
+| | **[cfg](/documentation/code/darkbit_development/namespaces/namespacecbgb/#variable-cfg)**  |
+| string | **[f_listing](/documentation/code/darkbit_development/namespaces/namespacecbgb/#variable-f-listing)**  |
+| list | **[f_duplicates](/documentation/code/darkbit_development/namespaces/namespacecbgb/#variable-f-duplicates)**  |
+| string | **[cb_listing](/documentation/code/darkbit_development/namespaces/namespacecbgb/#variable-cb-listing)**  |
+| list | **[cb_duplicates](/documentation/code/darkbit_development/namespaces/namespacecbgb/#variable-cb-duplicates)**  |
+| string | **[src_content](/documentation/code/darkbit_development/namespaces/namespacecbgb/#variable-src-content)**  |
+| string | **[src_lines](/documentation/code/darkbit_development/namespaces/namespacecbgb/#variable-src-lines)**  |
+| | **[code_parts_dict](/documentation/code/darkbit_development/namespaces/namespacecbgb/#variable-code-parts-dict)**  |
+| string | **[be_types_file_content](/documentation/code/darkbit_development/namespaces/namespacecbgb/#variable-be-types-file-content)**  |
+| string | **[frontend_file_content](/documentation/code/darkbit_development/namespaces/namespacecbgb/#variable-frontend-file-content)**  |
+| | **[functions_left](/documentation/code/darkbit_development/namespaces/namespacecbgb/#variable-functions-left)**  |
+| | **[code_lines](/documentation/code/darkbit_development/namespaces/namespacecbgb/#variable-code-lines)**  |
+| | **[code_category](/documentation/code/darkbit_development/namespaces/namespacecbgb/#variable-code-category)**  |
+| | **[f_name](/documentation/code/darkbit_development/namespaces/namespacecbgb/#variable-f-name)**  |
+| | **[f_name_short](/documentation/code/darkbit_development/namespaces/namespacecbgb/#variable-f-name-short)**  |
+| list | **[other_f_list](/documentation/code/darkbit_development/namespaces/namespacecbgb/#variable-other-f-list)**  |
+| bool | **[found_other_f](/documentation/code/darkbit_development/namespaces/namespacecbgb/#variable-found-other-f)**  |
+| | **[other_f_name_short](/documentation/code/darkbit_development/namespaces/namespacecbgb/#variable-other-f-name-short)**  |
+| bool | **[is_requested](/documentation/code/darkbit_development/namespaces/namespacecbgb/#variable-is-requested)**  |
+| | **[use_f_name](/documentation/code/darkbit_development/namespaces/namespacecbgb/#variable-use-f-name)**  |
+| | **[return_type_info](/documentation/code/darkbit_development/namespaces/namespacecbgb/#variable-return-type-info)**  |
+| | **[parameter_defs](/documentation/code/darkbit_development/namespaces/namespacecbgb/#variable-parameter-defs)**  |
+| | **[arg_names](/documentation/code/darkbit_development/namespaces/namespacecbgb/#variable-arg-names)**  |
+| | **[arg_info_dict](/documentation/code/darkbit_development/namespaces/namespacecbgb/#variable-arg-info-dict)**  |
+| | **[f_dict](/documentation/code/darkbit_development/namespaces/namespacecbgb/#variable-f-dict)**  |
+| | **[common_blocks_left](/documentation/code/darkbit_development/namespaces/namespacecbgb/#variable-common-blocks-left)**  |
+| | **[cb_dicts](/documentation/code/darkbit_development/namespaces/namespacecbgb/#variable-cb-dicts)**  |
+| | **[var_info_dict](/documentation/code/darkbit_development/namespaces/namespacecbgb/#variable-var-info-dict)**  |
 
 
 
@@ -298,4 +298,4 @@ var_info_dict =  utils.getVariablesDict(code_lines, cb_dict['member_names']);
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:42 +0000
+Updated on 2022-08-01 at 17:41:24 +0000

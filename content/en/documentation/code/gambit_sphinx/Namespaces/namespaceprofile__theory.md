@@ -16,14 +16,14 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| def | **[profile](/documentation/code/gambit_sphinxnamespaces/namespaceprofile__theory/#function-profile)**(file_name file_name, frac_error frac_error =0.1, min_ min_ =0., max_ max_ =1., log_normal log_normal =True) |
+| def | **[profile](/documentation/code/gambit_sphinx/namespaces/namespaceprofile__theory/#function-profile)**(file_name file_name, frac_error frac_error =0.1, min_ min_ =0., max_ max_ =1., log_normal log_normal =True) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[FILE_NAME](/documentation/code/gambit_sphinxnamespaces/namespaceprofile__theory/#variable-file-name)**  |
-| | **[ARGS](/documentation/code/gambit_sphinxnamespaces/namespaceprofile__theory/#variable-args)**  |
+| | **[FILE_NAME](/documentation/code/gambit_sphinx/namespaces/namespaceprofile__theory/#variable-file-name)**  |
+| | **[ARGS](/documentation/code/gambit_sphinx/namespaces/namespaceprofile__theory/#variable-args)**  |
 
 ## Detailed Description
 
@@ -95,4 +95,4 @@ ARGS =  map(float, sys.argv[2:]);
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:46 +0000
+Updated on 2022-08-01 at 17:41:20 +0000

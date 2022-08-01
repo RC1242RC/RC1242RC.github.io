@@ -16,55 +16,55 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[procRec](/documentation/code/darkbit_developmentclasses/structprocrec/)**  |
+| struct | **[procRec](/documentation/code/darkbit_development/classes/structprocrec/)**  |
 
 ## Types
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef struct [procRec](/documentation/code/darkbit_developmentclasses/structprocrec/) | **[procRec](/documentation/code/darkbit_developmentfiles/main_8c/#typedef-procrec)**  |
+| typedef struct [procRec](/documentation/code/darkbit_development/classes/structprocrec/) | **[procRec](/documentation/code/darkbit_development/files/main_8c/#typedef-procrec)**  |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| int | **[prepareWorkPlace](/documentation/code/darkbit_developmentfiles/main_8c/#function-prepareworkplace)**(void ) |
-| char * | **[pdg2name](/documentation/code/darkbit_developmentfiles/main_8c/#function-pdg2name)**(int pdg) |
-| char * | **[pdg2mass](/documentation/code/darkbit_developmentfiles/main_8c/#function-pdg2mass)**(int pdg) |
-| char * | **[pdg2width](/documentation/code/darkbit_developmentfiles/main_8c/#function-pdg2width)**(int pdg) |
-| int | **[checkWorkPlace](/documentation/code/darkbit_developmentfiles/main_8c/#function-checkworkplace)**(void ) |
-| int | **[checkMtime](/documentation/code/darkbit_developmentfiles/main_8c/#function-checkmtime)**(char * fname) |
-| void * | **[newSymbol](/documentation/code/darkbit_developmentfiles/main_8c/#function-newsymbol)**(void * handle, char * name) |
-| void | **[dClose](/documentation/code/darkbit_developmentfiles/main_8c/#function-dclose)**(void * handle) |
-| REAL * | **[varAddress](/documentation/code/darkbit_developmentfiles/main_8c/#function-varaddress)**(char * name) |
-| int | **[passParameters](/documentation/code/darkbit_developmentfiles/main_8c/#function-passparameters)**(numout * cc) |
-| void | **[delAllLib](/documentation/code/darkbit_developmentfiles/main_8c/#function-delalllib)**(void ) |
-| void | **[cleanDecayTable](/documentation/code/darkbit_developmentfiles/main_8c/#function-cleandecaytable)**(void ) |
-| int | **[pTabPos](/documentation/code/darkbit_developmentfiles/main_8c/#function-ptabpos)**(char * name) |
-| double | **[pMass](/documentation/code/darkbit_developmentfiles/main_8c/#function-pmass)**(char * name) |
-| double | **[pWidth](/documentation/code/darkbit_developmentfiles/main_8c/#function-pwidth)**(char * name, txtList * LL) |
-| double | **[aWidth](/documentation/code/darkbit_developmentfiles/main_8c/#function-awidth)**(char * name) |
-| int | **[pListEq](/documentation/code/darkbit_developmentfiles/main_8c/#function-plisteq)**(char * txt1, char * txt2) |
-| numout * | **[loadLib](/documentation/code/darkbit_developmentfiles/main_8c/#function-loadlib)**(void * handle, char * lib) |
-| void * | **[dLoad](/documentation/code/darkbit_developmentfiles/main_8c/#function-dload)**(char * libName) |
-| numout * | **[getMEcode](/documentation/code/darkbit_developmentfiles/main_8c/#function-getmecode)**(int twidth, int Gauge, char * Process, char * excludeVirtual, char * excludeOut, char * lib) |
-| int | **[findVal](/documentation/code/darkbit_developmentfiles/main_8c/#function-findval)**(char * name, double * val) |
-| double | **[findValW](/documentation/code/darkbit_developmentfiles/main_8c/#function-findvalw)**(char * name) |
-| int | **[procInfo2](/documentation/code/darkbit_developmentfiles/main_8c/#function-procinfo2)**(numout * cc, int nsub, char ** name, REAL * mass) |
+| int | **[prepareWorkPlace](/documentation/code/darkbit_development/files/main_8c/#function-prepareworkplace)**(void ) |
+| char * | **[pdg2name](/documentation/code/darkbit_development/files/main_8c/#function-pdg2name)**(int pdg) |
+| char * | **[pdg2mass](/documentation/code/darkbit_development/files/main_8c/#function-pdg2mass)**(int pdg) |
+| char * | **[pdg2width](/documentation/code/darkbit_development/files/main_8c/#function-pdg2width)**(int pdg) |
+| int | **[checkWorkPlace](/documentation/code/darkbit_development/files/main_8c/#function-checkworkplace)**(void ) |
+| int | **[checkMtime](/documentation/code/darkbit_development/files/main_8c/#function-checkmtime)**(char * fname) |
+| void * | **[newSymbol](/documentation/code/darkbit_development/files/main_8c/#function-newsymbol)**(void * handle, char * name) |
+| void | **[dClose](/documentation/code/darkbit_development/files/main_8c/#function-dclose)**(void * handle) |
+| REAL * | **[varAddress](/documentation/code/darkbit_development/files/main_8c/#function-varaddress)**(char * name) |
+| int | **[passParameters](/documentation/code/darkbit_development/files/main_8c/#function-passparameters)**(numout * cc) |
+| void | **[delAllLib](/documentation/code/darkbit_development/files/main_8c/#function-delalllib)**(void ) |
+| void | **[cleanDecayTable](/documentation/code/darkbit_development/files/main_8c/#function-cleandecaytable)**(void ) |
+| int | **[pTabPos](/documentation/code/darkbit_development/files/main_8c/#function-ptabpos)**(char * name) |
+| double | **[pMass](/documentation/code/darkbit_development/files/main_8c/#function-pmass)**(char * name) |
+| double | **[pWidth](/documentation/code/darkbit_development/files/main_8c/#function-pwidth)**(char * name, txtList * LL) |
+| double | **[aWidth](/documentation/code/darkbit_development/files/main_8c/#function-awidth)**(char * name) |
+| int | **[pListEq](/documentation/code/darkbit_development/files/main_8c/#function-plisteq)**(char * txt1, char * txt2) |
+| numout * | **[loadLib](/documentation/code/darkbit_development/files/main_8c/#function-loadlib)**(void * handle, char * lib) |
+| void * | **[dLoad](/documentation/code/darkbit_development/files/main_8c/#function-dload)**(char * libName) |
+| numout * | **[getMEcode](/documentation/code/darkbit_development/files/main_8c/#function-getmecode)**(int twidth, int Gauge, char * Process, char * excludeVirtual, char * excludeOut, char * lib) |
+| int | **[findVal](/documentation/code/darkbit_development/files/main_8c/#function-findval)**(char * name, double * val) |
+| double | **[findValW](/documentation/code/darkbit_development/files/main_8c/#function-findvalw)**(char * name) |
+| int | **[procInfo2](/documentation/code/darkbit_development/files/main_8c/#function-procinfo2)**(numout * cc, int nsub, char ** name, REAL * mass) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| char * | **[libDir](/documentation/code/darkbit_developmentfiles/main_8c/#variable-libdir)**  |
-| char * | **[modelDir](/documentation/code/darkbit_developmentfiles/main_8c/#variable-modeldir)**  |
-| char * | **[compDir](/documentation/code/darkbit_developmentfiles/main_8c/#variable-compdir)**  |
-| char * | **[calchepDir](/documentation/code/darkbit_developmentfiles/main_8c/#variable-calchepdir)**  |
-| int | **[modelNum](/documentation/code/darkbit_developmentfiles/main_8c/#variable-modelnum)**  |
-| int | **[ForceUG](/documentation/code/darkbit_developmentfiles/main_8c/#variable-forceug)**  |
-| [procRec](/documentation/code/darkbit_developmentclasses/structprocrec/) * | **[allProc](/documentation/code/darkbit_developmentfiles/main_8c/#variable-allproc)**  |
-| decayTableStr * | **[decayTable](/documentation/code/darkbit_developmentfiles/main_8c/#variable-decaytable)**  |
-| int | **[nPrtcls_old](/documentation/code/darkbit_developmentfiles/main_8c/#variable-nprtcls-old)**  |
+| char * | **[libDir](/documentation/code/darkbit_development/files/main_8c/#variable-libdir)**  |
+| char * | **[modelDir](/documentation/code/darkbit_development/files/main_8c/#variable-modeldir)**  |
+| char * | **[compDir](/documentation/code/darkbit_development/files/main_8c/#variable-compdir)**  |
+| char * | **[calchepDir](/documentation/code/darkbit_development/files/main_8c/#variable-calchepdir)**  |
+| int | **[modelNum](/documentation/code/darkbit_development/files/main_8c/#variable-modelnum)**  |
+| int | **[ForceUG](/documentation/code/darkbit_development/files/main_8c/#variable-forceug)**  |
+| [procRec](/documentation/code/darkbit_development/classes/structprocrec/) * | **[allProc](/documentation/code/darkbit_development/files/main_8c/#variable-allproc)**  |
+| decayTableStr * | **[decayTable](/documentation/code/darkbit_development/files/main_8c/#variable-decaytable)**  |
+| int | **[nPrtcls_old](/documentation/code/darkbit_development/files/main_8c/#variable-nprtcls-old)**  |
 
 ## Types Documentation
 
@@ -954,4 +954,4 @@ int procInfo2(numout*cc,int nsub,char**name,REAL*mass)
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:45 +0000
+Updated on 2022-08-01 at 17:41:26 +0000

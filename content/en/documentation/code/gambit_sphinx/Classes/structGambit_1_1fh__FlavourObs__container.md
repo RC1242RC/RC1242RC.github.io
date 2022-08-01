@@ -18,12 +18,12 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| fh_real | **[Bsg_MSSM](/documentation/code/gambit_sphinxclasses/structgambit_1_1fh__flavourobs__container/#variable-bsg-mssm)**  |
-| fh_real | **[Bsg_SM](/documentation/code/gambit_sphinxclasses/structgambit_1_1fh__flavourobs__container/#variable-bsg-sm)**  |
-| fh_real | **[deltaMs_MSSM](/documentation/code/gambit_sphinxclasses/structgambit_1_1fh__flavourobs__container/#variable-deltams-mssm)**  |
-| fh_real | **[deltaMs_SM](/documentation/code/gambit_sphinxclasses/structgambit_1_1fh__flavourobs__container/#variable-deltams-sm)**  |
-| fh_real | **[Bsmumu_MSSM](/documentation/code/gambit_sphinxclasses/structgambit_1_1fh__flavourobs__container/#variable-bsmumu-mssm)**  |
-| fh_real | **[Bsmumu_SM](/documentation/code/gambit_sphinxclasses/structgambit_1_1fh__flavourobs__container/#variable-bsmumu-sm)**  |
+| fh_real | **[Bsg_MSSM](/documentation/code/gambit_sphinx/classes/structgambit_1_1fh__flavourobs__container/#variable-bsg-mssm)**  |
+| fh_real | **[Bsg_SM](/documentation/code/gambit_sphinx/classes/structgambit_1_1fh__flavourobs__container/#variable-bsg-sm)**  |
+| fh_real | **[deltaMs_MSSM](/documentation/code/gambit_sphinx/classes/structgambit_1_1fh__flavourobs__container/#variable-deltams-mssm)**  |
+| fh_real | **[deltaMs_SM](/documentation/code/gambit_sphinx/classes/structgambit_1_1fh__flavourobs__container/#variable-deltams-sm)**  |
+| fh_real | **[Bsmumu_MSSM](/documentation/code/gambit_sphinx/classes/structgambit_1_1fh__flavourobs__container/#variable-bsmumu-mssm)**  |
+| fh_real | **[Bsmumu_SM](/documentation/code/gambit_sphinx/classes/structgambit_1_1fh__flavourobs__container/#variable-bsmumu-sm)**  |
 
 ## Public Attributes Documentation
 
@@ -71,4 +71,4 @@ fh_real Bsmumu_SM;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:46 +0000
+Updated on 2022-08-01 at 17:41:21 +0000

@@ -16,13 +16,13 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit](/documentation/code/gambit_sphinx/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Gambit::gambit_core](/documentation/code/gambit_sphinxclasses/classgambit_1_1gambit__core/)** <br>Master driver class for a GAMBIT scan.  |
+| class | **[Gambit::gambit_core](/documentation/code/gambit_sphinx/classes/classgambit_1_1gambit__core/)** <br>Master driver class for a GAMBIT scan.  |
 
 ## Detailed Description
 
@@ -218,4 +218,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:49 +0000
+Updated on 2022-08-01 at 17:41:23 +0000

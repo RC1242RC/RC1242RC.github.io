@@ -18,15 +18,15 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Farray< Fdouble, 1, 300 > | **[tgev](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__rddof/#variable-tgev)**  |
-| Farray< Fdouble, 1, 300 > | **[fh](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__rddof/#variable-fh)**  |
-| Farray< Fdouble, 1, 300 > | **[fg](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__rddof/#variable-fg)**  |
-| Farray< Fdouble, 1, 300 > | **[fe](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__rddof/#variable-fe)**  |
-| Farray< Fdouble, 1, 300 > | **[fp](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__rddof/#variable-fp)**  |
-| Finteger | **[nf](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__rddof/#variable-nf)**  |
-| Finteger | **[khi](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__rddof/#variable-khi)**  |
-| Finteger | **[klo](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__rddof/#variable-klo)**  |
-| Finteger | **[dofcode](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__rddof/#variable-dofcode)**  |
+| Farray< Fdouble, 1, 300 > | **[tgev](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__rddof/#variable-tgev)**  |
+| Farray< Fdouble, 1, 300 > | **[fh](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__rddof/#variable-fh)**  |
+| Farray< Fdouble, 1, 300 > | **[fg](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__rddof/#variable-fg)**  |
+| Farray< Fdouble, 1, 300 > | **[fe](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__rddof/#variable-fe)**  |
+| Farray< Fdouble, 1, 300 > | **[fp](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__rddof/#variable-fp)**  |
+| Finteger | **[nf](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__rddof/#variable-nf)**  |
+| Finteger | **[khi](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__rddof/#variable-khi)**  |
+| Finteger | **[klo](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__rddof/#variable-klo)**  |
+| Finteger | **[dofcode](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__rddof/#variable-dofcode)**  |
 
 ## Public Attributes Documentation
 
@@ -95,4 +95,4 @@ Finteger dofcode;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:46 +0000
+Updated on 2022-08-01 at 17:41:21 +0000

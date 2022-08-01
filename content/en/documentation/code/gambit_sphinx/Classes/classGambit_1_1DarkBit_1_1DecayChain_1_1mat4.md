@@ -18,16 +18,16 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[mat4](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1decaychain_1_1mat4/#function-mat4)**() |
-| | **[mat4](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1decaychain_1_1mat4/#function-mat4)**(double v00, double v01, double v02, double v03, double v10, double v11, double v12, double v13, double v20, double v21, double v22, double v23, double v30, double v31, double v32, double v33) |
-| | **[mat4](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1decaychain_1_1mat4/#function-mat4)**(double v) |
-| [mat4](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1decaychain_1_1mat4/) | **[identity](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1decaychain_1_1mat4/#function-identity)**() |
+| | **[mat4](/documentation/code/gambit_sphinx/classes/classgambit_1_1darkbit_1_1decaychain_1_1mat4/#function-mat4)**() |
+| | **[mat4](/documentation/code/gambit_sphinx/classes/classgambit_1_1darkbit_1_1decaychain_1_1mat4/#function-mat4)**(double v00, double v01, double v02, double v03, double v10, double v11, double v12, double v13, double v20, double v21, double v22, double v23, double v30, double v31, double v32, double v33) |
+| | **[mat4](/documentation/code/gambit_sphinx/classes/classgambit_1_1darkbit_1_1decaychain_1_1mat4/#function-mat4)**(double v) |
+| [mat4](/documentation/code/gambit_sphinx/classes/classgambit_1_1darkbit_1_1decaychain_1_1mat4/) | **[identity](/documentation/code/gambit_sphinx/classes/classgambit_1_1darkbit_1_1decaychain_1_1mat4/#function-identity)**() |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[vals](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1decaychain_1_1mat4/#variable-vals)**  |
+| double | **[vals](/documentation/code/gambit_sphinx/classes/classgambit_1_1darkbit_1_1decaychain_1_1mat4/#variable-vals)**  |
 
 ## Public Functions Documentation
 
@@ -89,4 +89,4 @@ double vals;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:47 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

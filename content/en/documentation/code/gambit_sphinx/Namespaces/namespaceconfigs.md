@@ -16,14 +16,14 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[configs::example](/documentation/code/gambit_sphinxnamespaces/namespaceconfigs_1_1example/)**  |
-| **[configs::example_1_234](/documentation/code/gambit_sphinxnamespaces/namespaceconfigs_1_1example__1__234/)**  |
-| **[configs::gm2calc_1_2_0](/documentation/code/gambit_sphinxnamespaces/namespaceconfigs_1_1gm2calc__1__2__0/)**  |
-| **[configs::gm2calc_1_3_0](/documentation/code/gambit_sphinxnamespaces/namespaceconfigs_1_1gm2calc__1__3__0/)**  |
-| **[configs::heplike_1_2](/documentation/code/gambit_sphinxnamespaces/namespaceconfigs_1_1heplike__1__2/)**  |
-| **[configs::pythia_8_212](/documentation/code/gambit_sphinxnamespaces/namespaceconfigs_1_1pythia__8__212/)**  |
-| **[configs::pythia_8_212_nohepmc](/documentation/code/gambit_sphinxnamespaces/namespaceconfigs_1_1pythia__8__212__nohepmc/)**  |
-| **[configs::vevacious_1_0](/documentation/code/gambit_sphinxnamespaces/namespaceconfigs_1_1vevacious__1__0/)**  |
+| **[configs::example](/documentation/code/gambit_sphinx/namespaces/namespaceconfigs_1_1example/)**  |
+| **[configs::example_1_234](/documentation/code/gambit_sphinx/namespaces/namespaceconfigs_1_1example__1__234/)**  |
+| **[configs::gm2calc_1_2_0](/documentation/code/gambit_sphinx/namespaces/namespaceconfigs_1_1gm2calc__1__2__0/)**  |
+| **[configs::gm2calc_1_3_0](/documentation/code/gambit_sphinx/namespaces/namespaceconfigs_1_1gm2calc__1__3__0/)**  |
+| **[configs::heplike_1_2](/documentation/code/gambit_sphinx/namespaces/namespaceconfigs_1_1heplike__1__2/)**  |
+| **[configs::pythia_8_212](/documentation/code/gambit_sphinx/namespaces/namespaceconfigs_1_1pythia__8__212/)**  |
+| **[configs::pythia_8_212_nohepmc](/documentation/code/gambit_sphinx/namespaces/namespaceconfigs_1_1pythia__8__212__nohepmc/)**  |
+| **[configs::vevacious_1_0](/documentation/code/gambit_sphinx/namespaces/namespaceconfigs_1_1vevacious__1__0/)**  |
 
 
 
@@ -32,4 +32,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:48 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

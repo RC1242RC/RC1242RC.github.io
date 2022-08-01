@@ -17,14 +17,14 @@ description: "[No description available]"
 
 `#include <plugin_defs.hpp>`
 
-Inherited by [Gambit::Scanner::Plugins::classFactory< T >](/documentation/code/darkbit_developmentclasses/classgambit_1_1scanner_1_1plugins_1_1classfactory/), [Gambit::Scanner::Plugins::funcFactory< T >](/documentation/code/darkbit_developmentclasses/classgambit_1_1scanner_1_1plugins_1_1funcfactory/)
+Inherited by [Gambit::Scanner::Plugins::classFactory< T >](/documentation/code/darkbit_development/classes/classgambit_1_1scanner_1_1plugins_1_1classfactory/), [Gambit::Scanner::Plugins::funcFactory< T >](/documentation/code/darkbit_development/classes/classgambit_1_1scanner_1_1plugins_1_1funcfactory/)
 
 ## Public Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| virtual void * | **[operator()](/documentation/code/darkbit_developmentclasses/classgambit_1_1scanner_1_1plugins_1_1factorybase/#function-operator())**() =0 |
-| virtual | **[~factoryBase](/documentation/code/darkbit_developmentclasses/classgambit_1_1scanner_1_1plugins_1_1factorybase/#function-~factorybase)**() |
+| virtual void * | **[operator()](/documentation/code/darkbit_development/classes/classgambit_1_1scanner_1_1plugins_1_1factorybase/#function-operator())**() =0 |
+| virtual | **[~factoryBase](/documentation/code/darkbit_development/classes/classgambit_1_1scanner_1_1plugins_1_1factorybase/#function-~factorybase)**() |
 
 ## Detailed Description
 
@@ -44,7 +44,7 @@ virtual void * operator()() =0
 ```
 
 
-**Reimplemented by**: [Gambit::Scanner::Plugins::funcFactory::operator()](/documentation/code/darkbit_developmentclasses/classgambit_1_1scanner_1_1plugins_1_1funcfactory/#function-operator()), [Gambit::Scanner::Plugins::classFactory::operator()](/documentation/code/darkbit_developmentclasses/classgambit_1_1scanner_1_1plugins_1_1classfactory/#function-operator())
+**Reimplemented by**: [Gambit::Scanner::Plugins::funcFactory::operator()](/documentation/code/darkbit_development/classes/classgambit_1_1scanner_1_1plugins_1_1funcfactory/#function-operator()), [Gambit::Scanner::Plugins::classFactory::operator()](/documentation/code/darkbit_development/classes/classgambit_1_1scanner_1_1plugins_1_1classfactory/#function-operator())
 
 
 ### function ~factoryBase
@@ -56,4 +56,4 @@ inline virtual ~factoryBase()
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:42 +0000
+Updated on 2022-08-01 at 17:41:24 +0000

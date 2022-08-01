@@ -18,15 +18,15 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Fdouble | **[s2thw](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds5__smruseful/#variable-s2thw)**  |
-| Fdouble | **[sinthw](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds5__smruseful/#variable-sinthw)**  |
-| Fdouble | **[costhw](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds5__smruseful/#variable-costhw)**  |
-| Fdouble | **[delrho](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds5__smruseful/#variable-delrho)**  |
-| Fdouble | **[alph3mz](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds5__smruseful/#variable-alph3mz)**  |
-| Fdouble | **[gfermi](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds5__smruseful/#variable-gfermi)**  |
-| Fdouble | **[s2wmz](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds5__smruseful/#variable-s2wmz)**  |
-| Fdouble | **[swmz](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds5__smruseful/#variable-swmz)**  |
-| Fdouble | **[cwmz](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds5__smruseful/#variable-cwmz)**  |
+| Fdouble | **[s2thw](/documentation/code/darkbit_development/classes/structgambit_1_1ds5__smruseful/#variable-s2thw)**  |
+| Fdouble | **[sinthw](/documentation/code/darkbit_development/classes/structgambit_1_1ds5__smruseful/#variable-sinthw)**  |
+| Fdouble | **[costhw](/documentation/code/darkbit_development/classes/structgambit_1_1ds5__smruseful/#variable-costhw)**  |
+| Fdouble | **[delrho](/documentation/code/darkbit_development/classes/structgambit_1_1ds5__smruseful/#variable-delrho)**  |
+| Fdouble | **[alph3mz](/documentation/code/darkbit_development/classes/structgambit_1_1ds5__smruseful/#variable-alph3mz)**  |
+| Fdouble | **[gfermi](/documentation/code/darkbit_development/classes/structgambit_1_1ds5__smruseful/#variable-gfermi)**  |
+| Fdouble | **[s2wmz](/documentation/code/darkbit_development/classes/structgambit_1_1ds5__smruseful/#variable-s2wmz)**  |
+| Fdouble | **[swmz](/documentation/code/darkbit_development/classes/structgambit_1_1ds5__smruseful/#variable-swmz)**  |
+| Fdouble | **[cwmz](/documentation/code/darkbit_development/classes/structgambit_1_1ds5__smruseful/#variable-cwmz)**  |
 
 ## Public Attributes Documentation
 
@@ -95,4 +95,4 @@ Fdouble cwmz;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:41 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

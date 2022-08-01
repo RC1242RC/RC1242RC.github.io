@@ -18,14 +18,14 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef [find_variadic_type_exact](/documentation/code/darkbit_developmentclasses/structgambit_1_1scanner_1_1find__variadic__type__exact/)< void(args...), T... >::ret_type | **[ret_type](/documentation/code/darkbit_developmentclasses/structgambit_1_1scanner_1_1find__variadic__type__exact_3_01void_07args_8_8_8_08_00_01ret_07args2_8_8_8_08_00_01t_8_8_8_01_4/#typedef-ret-type)**  |
-| typedef [find_variadic_type_exact](/documentation/code/darkbit_developmentclasses/structgambit_1_1scanner_1_1find__variadic__type__exact/)< void(args...), T... >::func_type | **[func_type](/documentation/code/darkbit_developmentclasses/structgambit_1_1scanner_1_1find__variadic__type__exact_3_01void_07args_8_8_8_08_00_01ret_07args2_8_8_8_08_00_01t_8_8_8_01_4/#typedef-func-type)**  |
+| typedef [find_variadic_type_exact](/documentation/code/darkbit_development/classes/structgambit_1_1scanner_1_1find__variadic__type__exact/)< void(args...), T... >::ret_type | **[ret_type](/documentation/code/darkbit_development/classes/structgambit_1_1scanner_1_1find__variadic__type__exact_3_01void_07args_8_8_8_08_00_01ret_07args2_8_8_8_08_00_01t_8_8_8_01_4/#typedef-ret-type)**  |
+| typedef [find_variadic_type_exact](/documentation/code/darkbit_development/classes/structgambit_1_1scanner_1_1find__variadic__type__exact/)< void(args...), T... >::func_type | **[func_type](/documentation/code/darkbit_development/classes/structgambit_1_1scanner_1_1find__variadic__type__exact_3_01void_07args_8_8_8_08_00_01ret_07args2_8_8_8_08_00_01t_8_8_8_01_4/#typedef-func-type)**  |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| const bool | **[value](/documentation/code/darkbit_developmentclasses/structgambit_1_1scanner_1_1find__variadic__type__exact_3_01void_07args_8_8_8_08_00_01ret_07args2_8_8_8_08_00_01t_8_8_8_01_4/#variable-value)**  |
+| const bool | **[value](/documentation/code/darkbit_development/classes/structgambit_1_1scanner_1_1find__variadic__type__exact_3_01void_07args_8_8_8_08_00_01ret_07args2_8_8_8_08_00_01t_8_8_8_01_4/#variable-value)**  |
 
 ## Detailed Description
 
@@ -64,4 +64,4 @@ static const bool value = find_variadic_type_exact<void (args...), T...>::value;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:42 +0000
+Updated on 2022-08-01 at 17:41:24 +0000

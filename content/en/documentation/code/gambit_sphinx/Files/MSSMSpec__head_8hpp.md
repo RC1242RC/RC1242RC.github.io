@@ -16,16 +16,16 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::SpecBit](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1specbit/)**  |
+| **[Gambit](/documentation/code/gambit_sphinx/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::SpecBit](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1specbit/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[Gambit::SpecTraits< SpecBit::MSSMSpec< MI > >](/documentation/code/gambit_sphinxclasses/structgambit_1_1spectraits_3_01specbit_1_1mssmspec_3_01mi_01_4_01_4/)**  |
-| class | **[Gambit::SpecBit::MSSMSpec](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1mssmspec/)**  |
-| struct | **[Gambit::SpecBit::MSSM_strs](/documentation/code/gambit_sphinxclasses/structgambit_1_1specbit_1_1mssm__strs/)**  |
+| struct | **[Gambit::SpecTraits< SpecBit::MSSMSpec< MI > >](/documentation/code/gambit_sphinx/classes/structgambit_1_1spectraits_3_01specbit_1_1mssmspec_3_01mi_01_4_01_4/)**  |
+| class | **[Gambit::SpecBit::MSSMSpec](/documentation/code/gambit_sphinx/classes/classgambit_1_1specbit_1_1mssmspec/)**  |
+| struct | **[Gambit::SpecBit::MSSM_strs](/documentation/code/gambit_sphinx/classes/structgambit_1_1specbit_1_1mssm__strs/)**  |
 
 ## Detailed Description
 
@@ -280,4 +280,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:48 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

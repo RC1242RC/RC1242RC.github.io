@@ -18,10 +18,10 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Farray< Fdouble,-2, 0 > | **[a](/documentation/code/gambit_sphinxclasses/structgambit_1_1libfarraytest__cb__type/#variable-a)**  |
-| Farray< Fdouble, 1, 3 > | **[b](/documentation/code/gambit_sphinxclasses/structgambit_1_1libfarraytest__cb__type/#variable-b)**  |
-| Finteger | **[c](/documentation/code/gambit_sphinxclasses/structgambit_1_1libfarraytest__cb__type/#variable-c)**  |
-| Farray< Finteger, 1, 3, 0, 1, -1, 0 > | **[d](/documentation/code/gambit_sphinxclasses/structgambit_1_1libfarraytest__cb__type/#variable-d)**  |
+| Farray< Fdouble,-2, 0 > | **[a](/documentation/code/gambit_sphinx/classes/structgambit_1_1libfarraytest__cb__type/#variable-a)**  |
+| Farray< Fdouble, 1, 3 > | **[b](/documentation/code/gambit_sphinx/classes/structgambit_1_1libfarraytest__cb__type/#variable-b)**  |
+| Finteger | **[c](/documentation/code/gambit_sphinx/classes/structgambit_1_1libfarraytest__cb__type/#variable-c)**  |
+| Farray< Finteger, 1, 3, 0, 1, -1, 0 > | **[d](/documentation/code/gambit_sphinx/classes/structgambit_1_1libfarraytest__cb__type/#variable-d)**  |
 
 ## Public Attributes Documentation
 
@@ -55,4 +55,4 @@ Farray< Finteger, 1, 3, 0, 1, -1, 0 > d;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:46 +0000
+Updated on 2022-08-01 at 17:41:21 +0000

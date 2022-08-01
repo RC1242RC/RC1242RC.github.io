@@ -16,9 +16,9 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| void | **[check_node_keys](/documentation/code/darkbit_developmentfiles/minuit2_8cpp/#function-check-node-keys)**(YAML::Node node, std::vector< std::string > keys)<br>Check that a yaml node does not contain unexpected keys.  |
-| double | **[get_node_value](/documentation/code/darkbit_developmentfiles/minuit2_8cpp/#function-get-node-value)**(YAML::Node node, std::string key, double default_)<br>Get a particular key from a node.  |
-| | **[scanner_plugin](/documentation/code/darkbit_developmentfiles/minuit2_8cpp/#function-scanner-plugin)**(minuit2 , version(6, 23, 01) ) |
+| void | **[check_node_keys](/documentation/code/darkbit_development/files/minuit2_8cpp/#function-check-node-keys)**(YAML::Node node, std::vector< std::string > keys)<br>Check that a yaml node does not contain unexpected keys.  |
+| double | **[get_node_value](/documentation/code/darkbit_development/files/minuit2_8cpp/#function-get-node-value)**(YAML::Node node, std::string key, double default_)<br>Get a particular key from a node.  |
+| | **[scanner_plugin](/documentation/code/darkbit_development/files/minuit2_8cpp/#function-scanner-plugin)**(minuit2 , version(6, 23, 01) ) |
 
 ## Detailed Description
 
@@ -381,4 +381,4 @@ scanner_plugin(minuit2, version(6, 23, 01))
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:43 +0000
+Updated on 2022-08-01 at 17:41:24 +0000

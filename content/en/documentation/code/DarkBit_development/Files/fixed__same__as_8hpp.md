@@ -16,15 +16,15 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/darkbit_developmentnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::Priors](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1priors/)**  |
+| **[Gambit](/documentation/code/darkbit_development/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::Priors](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1priors/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Gambit::Priors::FixedPrior](/documentation/code/darkbit_developmentclasses/classgambit_1_1priors_1_1fixedprior/)** <br>A fixed parameter.  |
-| class | **[Gambit::Priors::MultiPriors](/documentation/code/darkbit_developmentclasses/classgambit_1_1priors_1_1multipriors/)** <br>A parameter that is fixed to a different parameter.  |
+| class | **[Gambit::Priors::FixedPrior](/documentation/code/darkbit_development/classes/classgambit_1_1priors_1_1fixedprior/)** <br>A fixed parameter.  |
+| class | **[Gambit::Priors::MultiPriors](/documentation/code/darkbit_development/classes/classgambit_1_1priors_1_1multipriors/)** <br>A parameter that is fixed to a different parameter.  |
 
 ## Detailed Description
 
@@ -239,4 +239,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:43 +0000
+Updated on 2022-08-01 at 17:41:24 +0000

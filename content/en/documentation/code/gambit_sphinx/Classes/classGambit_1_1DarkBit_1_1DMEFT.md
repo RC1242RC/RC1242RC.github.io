@@ -18,9 +18,9 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[DMEFT](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1dmeft/#function-dmeft)**()<br>Initialize [DMEFT](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1dmeft/) object (branching ratios etc)  |
-| | **[~DMEFT](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1dmeft/#function-~dmeft)**() |
-| double | **[sv](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1dmeft/#function-sv)**(str channel, DecayTable & tbl, double(*)(str &, std::vector< str > &, std::vector< str > &, double &, const DecayTable &) sigmav, double v_rel) |
+| | **[DMEFT](/documentation/code/gambit_sphinx/classes/classgambit_1_1darkbit_1_1dmeft/#function-dmeft)**()<br>Initialize [DMEFT](/documentation/code/gambit_sphinx/classes/classgambit_1_1darkbit_1_1dmeft/) object (branching ratios etc)  |
+| | **[~DMEFT](/documentation/code/gambit_sphinx/classes/classgambit_1_1darkbit_1_1dmeft/#function-~dmeft)**() |
+| double | **[sv](/documentation/code/gambit_sphinx/classes/classgambit_1_1darkbit_1_1dmeft/#function-sv)**(str channel, DecayTable & tbl, double(*)(str &, std::vector< str > &, std::vector< str > &, double &, const DecayTable &) sigmav, double v_rel) |
 
 ## Public Functions Documentation
 
@@ -30,7 +30,7 @@ description: "[No description available]"
 inline DMEFT()
 ```
 
-Initialize [DMEFT](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1dmeft/) object (branching ratios etc) 
+Initialize [DMEFT](/documentation/code/gambit_sphinx/classes/classgambit_1_1darkbit_1_1dmeft/) object (branching ratios etc) 
 
 ### function ~DMEFT
 
@@ -56,4 +56,4 @@ Returns sigma*v for a given channel.
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:47 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

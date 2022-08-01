@@ -16,7 +16,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[Pythia_8_212_all_data](/documentation/code/darkbit_developmentfiles/pythia__8__212_2loaded__types_8hpp/#define-pythia-8-212-all-data)**  |
+|  | **[Pythia_8_212_all_data](/documentation/code/darkbit_development/files/pythia__8__212_2loaded__types_8hpp/#define-pythia-8-212-all-data)**  |
 
 
 
@@ -119,4 +119,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:45 +0000
+Updated on 2022-08-01 at 17:41:26 +0000

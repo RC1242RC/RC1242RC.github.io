@@ -16,16 +16,16 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::Models](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1models/)**  |
+| **[Gambit](/documentation/code/gambit_sphinx/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::Models](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1models/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[Gambit::DM_nucleon_couplings](/documentation/code/gambit_sphinxclasses/structgambit_1_1dm__nucleon__couplings/)**  |
-| struct | **[Gambit::NREO_DM_nucleon_couplings](/documentation/code/gambit_sphinxclasses/structgambit_1_1nreo__dm__nucleon__couplings/)** <br>Container for effective non-relativistic DM-nucleon Wilson coefficients.  |
-| struct | **[Gambit::DD_coupling_container](/documentation/code/gambit_sphinxclasses/structgambit_1_1dd__coupling__container/)**  |
+| struct | **[Gambit::DM_nucleon_couplings](/documentation/code/gambit_sphinx/classes/structgambit_1_1dm__nucleon__couplings/)**  |
+| struct | **[Gambit::NREO_DM_nucleon_couplings](/documentation/code/gambit_sphinx/classes/structgambit_1_1nreo__dm__nucleon__couplings/)** <br>Container for effective non-relativistic DM-nucleon Wilson coefficients.  |
+| struct | **[Gambit::DD_coupling_container](/documentation/code/gambit_sphinx/classes/structgambit_1_1dd__coupling__container/)**  |
 
 ## Detailed Description
 
@@ -121,4 +121,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:50 +0000
+Updated on 2022-08-01 at 17:41:25 +0000

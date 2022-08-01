@@ -18,13 +18,13 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[CAST_SolarModel_Interpolator](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1cast__solarmodel__interpolator/#function-cast-solarmodel-interpolator)**(std::string solar_model_gagg, std::string solar_model_gaee, std::string data_set) |
-| | **[CAST_SolarModel_Interpolator](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1cast__solarmodel__interpolator/#function-cast-solarmodel-interpolator)**([CAST_SolarModel_Interpolator](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1cast__solarmodel__interpolator/) && interp) |
-| | **[~CAST_SolarModel_Interpolator](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1cast__solarmodel__interpolator/#function-~cast-solarmodel-interpolator)**() |
-| | **[CAST_SolarModel_Interpolator](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1cast__solarmodel__interpolator/#function-cast-solarmodel-interpolator)**(const [CAST_SolarModel_Interpolator](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1cast__solarmodel__interpolator/) & ) =delete |
-| [CAST_SolarModel_Interpolator](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1cast__solarmodel__interpolator/) | **[operator=](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1cast__solarmodel__interpolator/#function-operator=)**(const [CAST_SolarModel_Interpolator](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1cast__solarmodel__interpolator/) & ) =delete |
-| std::vector< double > | **[evaluate_gagg_contrib](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1cast__solarmodel__interpolator/#function-evaluate-gagg-contrib)**(double m_ax) |
-| std::vector< double > | **[evaluate_gaee_contrib](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1cast__solarmodel__interpolator/#function-evaluate-gaee-contrib)**(double m_ax) |
+| | **[CAST_SolarModel_Interpolator](/documentation/code/gambit_sphinx/classes/classgambit_1_1darkbit_1_1cast__solarmodel__interpolator/#function-cast-solarmodel-interpolator)**(std::string solar_model_gagg, std::string solar_model_gaee, std::string data_set) |
+| | **[CAST_SolarModel_Interpolator](/documentation/code/gambit_sphinx/classes/classgambit_1_1darkbit_1_1cast__solarmodel__interpolator/#function-cast-solarmodel-interpolator)**([CAST_SolarModel_Interpolator](/documentation/code/gambit_sphinx/classes/classgambit_1_1darkbit_1_1cast__solarmodel__interpolator/) && interp) |
+| | **[~CAST_SolarModel_Interpolator](/documentation/code/gambit_sphinx/classes/classgambit_1_1darkbit_1_1cast__solarmodel__interpolator/#function-~cast-solarmodel-interpolator)**() |
+| | **[CAST_SolarModel_Interpolator](/documentation/code/gambit_sphinx/classes/classgambit_1_1darkbit_1_1cast__solarmodel__interpolator/#function-cast-solarmodel-interpolator)**(const [CAST_SolarModel_Interpolator](/documentation/code/gambit_sphinx/classes/classgambit_1_1darkbit_1_1cast__solarmodel__interpolator/) & ) =delete |
+| [CAST_SolarModel_Interpolator](/documentation/code/gambit_sphinx/classes/classgambit_1_1darkbit_1_1cast__solarmodel__interpolator/) | **[operator=](/documentation/code/gambit_sphinx/classes/classgambit_1_1darkbit_1_1cast__solarmodel__interpolator/#function-operator=)**(const [CAST_SolarModel_Interpolator](/documentation/code/gambit_sphinx/classes/classgambit_1_1darkbit_1_1cast__solarmodel__interpolator/) & ) =delete |
+| std::vector< double > | **[evaluate_gagg_contrib](/documentation/code/gambit_sphinx/classes/classgambit_1_1darkbit_1_1cast__solarmodel__interpolator/#function-evaluate-gagg-contrib)**(double m_ax) |
+| std::vector< double > | **[evaluate_gaee_contrib](/documentation/code/gambit_sphinx/classes/classgambit_1_1darkbit_1_1cast__solarmodel__interpolator/#function-evaluate-gaee-contrib)**(double m_ax) |
 
 ## Public Functions Documentation
 
@@ -93,4 +93,4 @@ std::vector< double > evaluate_gaee_contrib(
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:47 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

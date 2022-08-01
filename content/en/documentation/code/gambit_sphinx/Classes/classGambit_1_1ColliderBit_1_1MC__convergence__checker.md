@@ -20,13 +20,13 @@ Helper class for testing for convergence of analyses.
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[MC_convergence_checker](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1mc__convergence__checker/#function-mc-convergence-checker)**()<br>Constructor.  |
-| | **[~MC_convergence_checker](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1mc__convergence__checker/#function-~mc-convergence-checker)**()<br>Destructor.  |
-| void | **[init](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1mc__convergence__checker/#function-init)**(const [convergence_settings](/documentation/code/gambit_sphinxclasses/structgambit_1_1colliderbit_1_1convergence__settings/) & settings)<br>Initialise (or re-initialise) the object.  |
-| void | **[set_settings](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1mc__convergence__checker/#function-set-settings)**(const [convergence_settings](/documentation/code/gambit_sphinxclasses/structgambit_1_1colliderbit_1_1convergence__settings/) & settings)<br>Provide a pointer to the convergence settings.  |
-| void | **[clear](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1mc__convergence__checker/#function-clear)**()<br>Clear all convergence data (for all threads)  |
-| void | **[update](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1mc__convergence__checker/#function-update)**(const [AnalysisContainer](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1analysiscontainer/) & ac)<br>Update the convergence data. This is the only routine meant to be called in parallel.  |
-| bool | **[achieved](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1mc__convergence__checker/#function-achieved)**(const [AnalysisContainer](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1analysiscontainer/) & ac)<br>Check if convergence has been achieved across threads, and across all instances of this class.  |
+| | **[MC_convergence_checker](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1mc__convergence__checker/#function-mc-convergence-checker)**()<br>Constructor.  |
+| | **[~MC_convergence_checker](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1mc__convergence__checker/#function-~mc-convergence-checker)**()<br>Destructor.  |
+| void | **[init](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1mc__convergence__checker/#function-init)**(const [convergence_settings](/documentation/code/gambit_sphinx/classes/structgambit_1_1colliderbit_1_1convergence__settings/) & settings)<br>Initialise (or re-initialise) the object.  |
+| void | **[set_settings](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1mc__convergence__checker/#function-set-settings)**(const [convergence_settings](/documentation/code/gambit_sphinx/classes/structgambit_1_1colliderbit_1_1convergence__settings/) & settings)<br>Provide a pointer to the convergence settings.  |
+| void | **[clear](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1mc__convergence__checker/#function-clear)**()<br>Clear all convergence data (for all threads)  |
+| void | **[update](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1mc__convergence__checker/#function-update)**(const [AnalysisContainer](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1analysiscontainer/) & ac)<br>Update the convergence data. This is the only routine meant to be called in parallel.  |
+| bool | **[achieved](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1mc__convergence__checker/#function-achieved)**(const [AnalysisContainer](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1analysiscontainer/) & ac)<br>Check if convergence has been achieved across threads, and across all instances of this class.  |
 
 ## Public Functions Documentation
 
@@ -99,4 +99,4 @@ Check if convergence has been achieved across threads, and across all instances 
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:47 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

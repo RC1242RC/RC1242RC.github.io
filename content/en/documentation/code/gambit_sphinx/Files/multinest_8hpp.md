@@ -16,20 +16,20 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::MultiNest](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1multinest/)**  |
+| **[Gambit](/documentation/code/gambit_sphinx/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::MultiNest](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1multinest/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Gambit::MultiNest::LogLikeWrapper](/documentation/code/gambit_sphinxclasses/classgambit_1_1multinest_1_1loglikewrapper/)** <br>Class to connect multinest log-likelihood function and ScannerBit likelihood function.  |
+| class | **[Gambit::MultiNest::LogLikeWrapper](/documentation/code/gambit_sphinx/classes/classgambit_1_1multinest_1_1loglikewrapper/)** <br>Class to connect multinest log-likelihood function and ScannerBit likelihood function.  |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| void | **[run](/documentation/code/gambit_sphinxfiles/multinest_8hpp/#function-run)**(bool , bool , bool , int , double , double , int , int , int , int , int , double , char [], int , int [], bool , bool , bool , bool , double , int , double(*)(double *, int, int, void *) , void(*)(int, int, int, double *, double *, double *, double, double, double, void *) , void * ) |
+| void | **[run](/documentation/code/gambit_sphinx/files/multinest_8hpp/#function-run)**(bool , bool , bool , int , double , double , int , int , int , int , int , double , char [], int , int [], bool , bool , bool , bool , double , int , double(*)(double *, int, int, void *) , void(*)(int, int, int, double *, double *, double *, double, double, double, void *) , void * ) |
 
 ## Detailed Description
 
@@ -163,4 +163,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:48 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

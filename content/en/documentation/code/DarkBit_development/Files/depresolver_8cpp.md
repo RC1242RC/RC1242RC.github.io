@@ -16,24 +16,24 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/darkbit_developmentnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::DRes](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1dres/)**  |
-| **[LogTags](/documentation/code/darkbit_developmentnamespaces/namespacelogtags/)**  |
+| **[Gambit](/documentation/code/darkbit_development/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::DRes](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1dres/)**  |
+| **[LogTags](/documentation/code/darkbit_development/namespaces/namespacelogtags/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Gambit::DRes::edgeWriter](/documentation/code/darkbit_developmentclasses/classgambit_1_1dres_1_1edgewriter/)**  |
-| class | **[Gambit::DRes::labelWriter](/documentation/code/darkbit_developmentclasses/classgambit_1_1dres_1_1labelwriter/)**  |
+| class | **[Gambit::DRes::edgeWriter](/documentation/code/darkbit_development/classes/classgambit_1_1dres_1_1edgewriter/)**  |
+| class | **[Gambit::DRes::labelWriter](/documentation/code/darkbit_development/classes/classgambit_1_1dres_1_1labelwriter/)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[OBSLIKE_VERTEXID](/documentation/code/darkbit_developmentfiles/depresolver_8cpp/#define-obslike-vertexid)**  |
-|  | **[NORMAL_DEPENDENCY](/documentation/code/darkbit_developmentfiles/depresolver_8cpp/#define-normal-dependency)**  |
-|  | **[LOOP_MANAGER_DEPENDENCY](/documentation/code/darkbit_developmentfiles/depresolver_8cpp/#define-loop-manager-dependency)**  |
+|  | **[OBSLIKE_VERTEXID](/documentation/code/darkbit_development/files/depresolver_8cpp/#define-obslike-vertexid)**  |
+|  | **[NORMAL_DEPENDENCY](/documentation/code/darkbit_development/files/depresolver_8cpp/#define-normal-dependency)**  |
+|  | **[LOOP_MANAGER_DEPENDENCY](/documentation/code/darkbit_development/files/depresolver_8cpp/#define-loop-manager-dependency)**  |
 
 ## Detailed Description
 
@@ -2516,4 +2516,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:43 +0000
+Updated on 2022-08-01 at 17:41:25 +0000

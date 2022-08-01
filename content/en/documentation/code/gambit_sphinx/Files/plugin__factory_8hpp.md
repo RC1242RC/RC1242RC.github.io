@@ -16,23 +16,23 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::Scanner](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1scanner/)**  |
+| **[Gambit](/documentation/code/gambit_sphinx/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::Scanner](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1scanner/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Gambit::Scanner::Scanner_Plugin_Function< ret(args...)>](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1scanner__plugin__function_3_01ret_07args_8_8_8_08_4/)** <br>Objective functor made up a single plugin.  |
-| class | **[Gambit::Scanner::Multi_Scanner_Plugin_Function< ret(args...)>](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1multi__scanner__plugin__function_3_01ret_07args_8_8_8_08_4/)** <br>Objective functor made up of multiple plugins.  |
-| class | **[Gambit::Scanner::Plugin_Function_Factory](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1plugin__function__factory/)** <br>Factory class to make objectives using objective plugins.  |
+| class | **[Gambit::Scanner::Scanner_Plugin_Function< ret(args...)>](/documentation/code/gambit_sphinx/classes/classgambit_1_1scanner_1_1scanner__plugin__function_3_01ret_07args_8_8_8_08_4/)** <br>Objective functor made up a single plugin.  |
+| class | **[Gambit::Scanner::Multi_Scanner_Plugin_Function< ret(args...)>](/documentation/code/gambit_sphinx/classes/classgambit_1_1scanner_1_1multi__scanner__plugin__function_3_01ret_07args_8_8_8_08_4/)** <br>Objective functor made up of multiple plugins.  |
+| class | **[Gambit::Scanner::Plugin_Function_Factory](/documentation/code/gambit_sphinx/classes/classgambit_1_1scanner_1_1plugin__function__factory/)** <br>Factory class to make objectives using objective plugins.  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[LOAD_FUNC_TEMPLATE](/documentation/code/gambit_sphinxfiles/plugin__factory_8hpp/#define-load-func-template)**(name, ...)  |
-|  | **[LOAD_MULTI_FUNC_TEMPLATE](/documentation/code/gambit_sphinxfiles/plugin__factory_8hpp/#define-load-multi-func-template)**(name, ...)  |
+|  | **[LOAD_FUNC_TEMPLATE](/documentation/code/gambit_sphinx/files/plugin__factory_8hpp/#define-load-func-template)**(name, ...)  |
+|  | **[LOAD_MULTI_FUNC_TEMPLATE](/documentation/code/gambit_sphinx/files/plugin__factory_8hpp/#define-load-multi-func-template)**(name, ...)  |
 
 ## Detailed Description
 
@@ -267,4 +267,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:48 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

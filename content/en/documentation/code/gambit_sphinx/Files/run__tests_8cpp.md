@@ -16,7 +16,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| int | **[main](/documentation/code/gambit_sphinxfiles/run__tests_8cpp/#function-main)**(int argc, char * argv[])<br>Main GAMBIT program.  |
+| int | **[main](/documentation/code/gambit_sphinx/files/run__tests_8cpp/#function-main)**(int argc, char * argv[])<br>Main GAMBIT program.  |
 
 
 ## Functions Documentation
@@ -101,4 +101,4 @@ int main(int argc, char* argv[])
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:48 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

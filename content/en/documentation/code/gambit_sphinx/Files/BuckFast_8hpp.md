@@ -16,14 +16,14 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::ColliderBit](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1colliderbit/)**  |
+| **[Gambit](/documentation/code/gambit_sphinx/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::ColliderBit](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1colliderbit/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Gambit::ColliderBit::BuckFast](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1buckfast/)** <br>A base class for [BuckFast]() simple smearing simulations within ColliderBit.  |
+| class | **[Gambit::ColliderBit::BuckFast](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1buckfast/)** <br>A base class for [BuckFast]() simple smearing simulations within ColliderBit.  |
 
 ## Detailed Description
 
@@ -107,4 +107,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:49 +0000
+Updated on 2022-08-01 at 17:41:23 +0000

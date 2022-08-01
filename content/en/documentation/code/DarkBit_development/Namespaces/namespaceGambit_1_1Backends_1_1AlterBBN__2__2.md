@@ -16,8 +16,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef [Gambit::AlterBBN_2_2::relicparam](/documentation/code/darkbit_developmentclasses/structgambit_1_1alterbbn__2__2_1_1relicparam/) | **[relicparam](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1backends_1_1alterbbn__2__2/#typedef-relicparam)**  |
-| typedef [Gambit::AlterBBN_2_2::errorparam](/documentation/code/darkbit_developmentclasses/structgambit_1_1alterbbn__2__2_1_1errorparam/) | **[errorparam](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1backends_1_1alterbbn__2__2/#typedef-errorparam)**  |
+| typedef [Gambit::AlterBBN_2_2::relicparam](/documentation/code/darkbit_development/classes/structgambit_1_1alterbbn__2__2_1_1relicparam/) | **[relicparam](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1backends_1_1alterbbn__2__2/#typedef-relicparam)**  |
+| typedef [Gambit::AlterBBN_2_2::errorparam](/documentation/code/darkbit_development/classes/structgambit_1_1alterbbn__2__2_1_1errorparam/) | **[errorparam](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1backends_1_1alterbbn__2__2/#typedef-errorparam)**  |
 
 ## Types Documentation
 
@@ -42,4 +42,4 @@ typedef Gambit::AlterBBN_2_2::errorparam Gambit::Backends::AlterBBN_2_2::errorpa
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:41 +0000
+Updated on 2022-08-01 at 17:41:23 +0000

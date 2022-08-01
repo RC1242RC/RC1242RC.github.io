@@ -16,11 +16,11 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[lambda](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1decaybit_1_1mssm__h/#function-lambda)**(double x, double y, double z) |
-| double | **[gamma_h_chi_gL](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1decaybit_1_1mssm__h/#function-gamma-h-chi-gl)**(std::array< double, 2 > m, double gL, double mh =125., double mw =80.385, double GF =1.1663787e-5) |
-| double | **[gamma_h_chi_0](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1decaybit_1_1mssm__h/#function-gamma-h-chi-0)**(int i, int j, std::array< double, 4 > m, std::array< std::array< double, 4 >, 4 > Z, double alpha, double mh =125., double mw =80.385, double GF =1.1663787e-5, double sw2 =0.22) |
-| double | **[gamma_h_chi_pm](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1decaybit_1_1mssm__h/#function-gamma-h-chi-pm)**(int i, int j, std::array< double, 2 > m, std::array< std::array< double, 2 >, 2 > U, std::array< std::array< double, 2 >, 2 > V, double alpha, double mh =125., double mw =80.385, double GF =1.1663787e-5) |
-| double | **[gamma_h_chi](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1decaybit_1_1mssm__h/#function-gamma-h-chi)**(std::array< double, 2 > m_pm, std::array< double, 4 > m_0, std::array< std::array< double, 2 >, 2 > U, std::array< std::array< double, 2 >, 2 > V, std::array< std::array< double, 4 >, 4 > Z, double alpha, double mh =125., double mw =80.385, double GF =1.1663787e-5, double sw2 =0.22) |
+| double | **[lambda](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1decaybit_1_1mssm__h/#function-lambda)**(double x, double y, double z) |
+| double | **[gamma_h_chi_gL](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1decaybit_1_1mssm__h/#function-gamma-h-chi-gl)**(std::array< double, 2 > m, double gL, double mh =125., double mw =80.385, double GF =1.1663787e-5) |
+| double | **[gamma_h_chi_0](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1decaybit_1_1mssm__h/#function-gamma-h-chi-0)**(int i, int j, std::array< double, 4 > m, std::array< std::array< double, 4 >, 4 > Z, double alpha, double mh =125., double mw =80.385, double GF =1.1663787e-5, double sw2 =0.22) |
+| double | **[gamma_h_chi_pm](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1decaybit_1_1mssm__h/#function-gamma-h-chi-pm)**(int i, int j, std::array< double, 2 > m, std::array< std::array< double, 2 >, 2 > U, std::array< std::array< double, 2 >, 2 > V, double alpha, double mh =125., double mw =80.385, double GF =1.1663787e-5) |
+| double | **[gamma_h_chi](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1decaybit_1_1mssm__h/#function-gamma-h-chi)**(std::array< double, 2 > m_pm, std::array< double, 4 > m_0, std::array< std::array< double, 2 >, 2 > U, std::array< std::array< double, 2 >, 2 > V, std::array< std::array< double, 4 >, 4 > Z, double alpha, double mh =125., double mw =80.385, double GF =1.1663787e-5, double sw2 =0.22) |
 
 
 ## Functions Documentation
@@ -208,4 +208,4 @@ sw2Weinberg angle, \(\sin^2\theta_W\)
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:47 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

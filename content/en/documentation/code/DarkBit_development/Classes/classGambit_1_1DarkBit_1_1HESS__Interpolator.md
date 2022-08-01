@@ -18,17 +18,17 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[HESS_Interpolator](/documentation/code/darkbit_developmentclasses/classgambit_1_1darkbit_1_1hess__interpolator/#function-hess-interpolator)**(std::string file) |
-| | **[~HESS_Interpolator](/documentation/code/darkbit_developmentclasses/classgambit_1_1darkbit_1_1hess__interpolator/#function-~hess-interpolator)**() |
-| | **[HESS_Interpolator](/documentation/code/darkbit_developmentclasses/classgambit_1_1darkbit_1_1hess__interpolator/#function-hess-interpolator)**(const [HESS_Interpolator](/documentation/code/darkbit_developmentclasses/classgambit_1_1darkbit_1_1hess__interpolator/) & ) =delete |
-| [HESS_Interpolator](/documentation/code/darkbit_developmentclasses/classgambit_1_1darkbit_1_1hess__interpolator/) | **[operator=](/documentation/code/darkbit_developmentclasses/classgambit_1_1darkbit_1_1hess__interpolator/#function-operator=)**(const [HESS_Interpolator](/documentation/code/darkbit_developmentclasses/classgambit_1_1darkbit_1_1hess__interpolator/) & ) =delete |
-| double | **[lnL](/documentation/code/darkbit_developmentclasses/classgambit_1_1darkbit_1_1hess__interpolator/#function-lnl)**(double epsilon, double gamma) |
+| | **[HESS_Interpolator](/documentation/code/darkbit_development/classes/classgambit_1_1darkbit_1_1hess__interpolator/#function-hess-interpolator)**(std::string file) |
+| | **[~HESS_Interpolator](/documentation/code/darkbit_development/classes/classgambit_1_1darkbit_1_1hess__interpolator/#function-~hess-interpolator)**() |
+| | **[HESS_Interpolator](/documentation/code/darkbit_development/classes/classgambit_1_1darkbit_1_1hess__interpolator/#function-hess-interpolator)**(const [HESS_Interpolator](/documentation/code/darkbit_development/classes/classgambit_1_1darkbit_1_1hess__interpolator/) & ) =delete |
+| [HESS_Interpolator](/documentation/code/darkbit_development/classes/classgambit_1_1darkbit_1_1hess__interpolator/) | **[operator=](/documentation/code/darkbit_development/classes/classgambit_1_1darkbit_1_1hess__interpolator/#function-operator=)**(const [HESS_Interpolator](/documentation/code/darkbit_development/classes/classgambit_1_1darkbit_1_1hess__interpolator/) & ) =delete |
+| double | **[lnL](/documentation/code/darkbit_development/classes/classgambit_1_1darkbit_1_1hess__interpolator/#function-lnl)**(double epsilon, double gamma) |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| ASCIItableReader | **[interp_lnL](/documentation/code/darkbit_developmentclasses/classgambit_1_1darkbit_1_1hess__interpolator/#variable-interp-lnl)**  |
+| ASCIItableReader | **[interp_lnL](/documentation/code/darkbit_development/classes/classgambit_1_1darkbit_1_1hess__interpolator/#variable-interp-lnl)**  |
 
 ## Public Functions Documentation
 
@@ -87,4 +87,4 @@ ASCIItableReader interp_lnL;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:42 +0000
+Updated on 2022-08-01 at 17:41:23 +0000

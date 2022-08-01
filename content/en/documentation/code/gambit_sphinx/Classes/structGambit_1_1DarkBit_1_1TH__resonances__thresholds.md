@@ -20,17 +20,17 @@ Location of resonances and thresholds in energy (GeV)
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[TH_resonances_thresholds](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1th__resonances__thresholds/#function-th-resonances-thresholds)**() |
-| | **[TH_resonances_thresholds](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1th__resonances__thresholds/#function-th-resonances-thresholds)**(const [TH_resonances_thresholds](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1th__resonances__thresholds/) & copy) |
-| [TH_resonances_thresholds](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1th__resonances__thresholds/) & | **[operator=](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1th__resonances__thresholds/#function-operator=)**(const [TH_resonances_thresholds](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1th__resonances__thresholds/) & ) =default |
-| | **[TH_resonances_thresholds](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1th__resonances__thresholds/#function-th-resonances-thresholds)**(const std::vector< [TH_Resonance](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1th__resonance/) > & resonances, const std::vector< double > & thresholds) |
+| | **[TH_resonances_thresholds](/documentation/code/gambit_sphinx/classes/structgambit_1_1darkbit_1_1th__resonances__thresholds/#function-th-resonances-thresholds)**() |
+| | **[TH_resonances_thresholds](/documentation/code/gambit_sphinx/classes/structgambit_1_1darkbit_1_1th__resonances__thresholds/#function-th-resonances-thresholds)**(const [TH_resonances_thresholds](/documentation/code/gambit_sphinx/classes/structgambit_1_1darkbit_1_1th__resonances__thresholds/) & copy) |
+| [TH_resonances_thresholds](/documentation/code/gambit_sphinx/classes/structgambit_1_1darkbit_1_1th__resonances__thresholds/) & | **[operator=](/documentation/code/gambit_sphinx/classes/structgambit_1_1darkbit_1_1th__resonances__thresholds/#function-operator=)**(const [TH_resonances_thresholds](/documentation/code/gambit_sphinx/classes/structgambit_1_1darkbit_1_1th__resonances__thresholds/) & ) =default |
+| | **[TH_resonances_thresholds](/documentation/code/gambit_sphinx/classes/structgambit_1_1darkbit_1_1th__resonances__thresholds/#function-th-resonances-thresholds)**(const std::vector< [TH_Resonance](/documentation/code/gambit_sphinx/classes/structgambit_1_1darkbit_1_1th__resonance/) > & resonances, const std::vector< double > & thresholds) |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| std::vector< [TH_Resonance](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1th__resonance/) > | **[resonances](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1th__resonances__thresholds/#variable-resonances)**  |
-| std::vector< double > | **[threshold_energy](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1th__resonances__thresholds/#variable-threshold-energy)**  |
+| std::vector< [TH_Resonance](/documentation/code/gambit_sphinx/classes/structgambit_1_1darkbit_1_1th__resonance/) > | **[resonances](/documentation/code/gambit_sphinx/classes/structgambit_1_1darkbit_1_1th__resonances__thresholds/#variable-resonances)**  |
+| std::vector< double > | **[threshold_energy](/documentation/code/gambit_sphinx/classes/structgambit_1_1darkbit_1_1th__resonances__thresholds/#variable-threshold-energy)**  |
 
 ## Public Functions Documentation
 
@@ -87,4 +87,4 @@ std::vector< double > threshold_energy;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:47 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

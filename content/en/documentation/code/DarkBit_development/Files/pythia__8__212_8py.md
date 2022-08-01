@@ -16,8 +16,8 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[configs](/documentation/code/darkbit_developmentnamespaces/namespaceconfigs/)**  |
-| **[configs::pythia_8_212](/documentation/code/darkbit_developmentnamespaces/namespaceconfigs_1_1pythia__8__212/)**  |
+| **[configs](/documentation/code/darkbit_development/namespaces/namespaceconfigs/)**  |
+| **[configs::pythia_8_212](/documentation/code/darkbit_development/namespaces/namespaceconfigs_1_1pythia__8__212/)**  |
 
 
 
@@ -166,4 +166,4 @@ pragmas_end = []
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:45 +0000
+Updated on 2022-08-01 at 17:41:26 +0000

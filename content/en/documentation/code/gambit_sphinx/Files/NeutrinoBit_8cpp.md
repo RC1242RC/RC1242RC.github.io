@@ -16,14 +16,14 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::NeutrinoBit](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1neutrinobit/)**  |
+| **[Gambit](/documentation/code/gambit_sphinx/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::NeutrinoBit](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1neutrinobit/)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[_USE_MATH_DEFINES](/documentation/code/gambit_sphinxfiles/neutrinobit_8cpp/#define--use-math-defines)**  |
+|  | **[_USE_MATH_DEFINES](/documentation/code/gambit_sphinx/files/neutrinobit_8cpp/#define--use-math-defines)**  |
 
 ## Detailed Description
 
@@ -999,4 +999,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:48 +0000
+Updated on 2022-08-01 at 17:41:23 +0000

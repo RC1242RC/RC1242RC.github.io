@@ -18,9 +18,9 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| int | **[errnumber](/documentation/code/darkbit_developmentclasses/structgambit_1_1alterbbn__2__2_1_1errorparam/#variable-errnumber)**  |
-| double | **[random](/documentation/code/darkbit_developmentclasses/structgambit_1_1alterbbn__2__2_1_1errorparam/#variable-random)**  |
-| double | **[life_neutron](/documentation/code/darkbit_developmentclasses/structgambit_1_1alterbbn__2__2_1_1errorparam/#variable-life-neutron)**  |
+| int | **[errnumber](/documentation/code/darkbit_development/classes/structgambit_1_1alterbbn__2__2_1_1errorparam/#variable-errnumber)**  |
+| double | **[random](/documentation/code/darkbit_development/classes/structgambit_1_1alterbbn__2__2_1_1errorparam/#variable-random)**  |
+| double | **[life_neutron](/documentation/code/darkbit_development/classes/structgambit_1_1alterbbn__2__2_1_1errorparam/#variable-life-neutron)**  |
 
 ## Public Attributes Documentation
 
@@ -47,4 +47,4 @@ double life_neutron;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:41 +0000
+Updated on 2022-08-01 at 17:41:23 +0000

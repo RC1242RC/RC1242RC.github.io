@@ -16,21 +16,21 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| def | **[initialize](/documentation/code/darkbit_developmentnamespaces/namespacelibsecond__1__2/#function-initialize)**(a a) |
-| def | **[someFunction](/documentation/code/darkbit_developmentnamespaces/namespacelibsecond__1__2/#function-somefunction)**() |
-| def | **[hiddenFunction](/documentation/code/darkbit_developmentnamespaces/namespacelibsecond__1__2/#function-hiddenfunction)**(x x) |
-| def | **[returnResult](/documentation/code/darkbit_developmentnamespaces/namespacelibsecond__1__2/#function-returnresult)**() |
+| def | **[initialize](/documentation/code/darkbit_development/namespaces/namespacelibsecond__1__2/#function-initialize)**(a a) |
+| def | **[someFunction](/documentation/code/darkbit_development/namespaces/namespacelibsecond__1__2/#function-somefunction)**() |
+| def | **[hiddenFunction](/documentation/code/darkbit_development/namespaces/namespacelibsecond__1__2/#function-hiddenfunction)**(x x) |
+| def | **[returnResult](/documentation/code/darkbit_development/namespaces/namespacelibsecond__1__2/#function-returnresult)**() |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| int | **[array_length](/documentation/code/darkbit_developmentnamespaces/namespacelibsecond__1__2/#variable-array-length)**  |
-| int | **[someInt](/documentation/code/darkbit_developmentnamespaces/namespacelibsecond__1__2/#variable-someint)**  |
-| int | **[someDouble](/documentation/code/darkbit_developmentnamespaces/namespacelibsecond__1__2/#variable-somedouble)**  |
-| list | **[someVector](/documentation/code/darkbit_developmentnamespaces/namespacelibsecond__1__2/#variable-somevector)**  |
-| bool | **[isInitialized](/documentation/code/darkbit_developmentnamespaces/namespacelibsecond__1__2/#variable-isinitialized)**  |
-| string | **[prefix](/documentation/code/darkbit_developmentnamespaces/namespacelibsecond__1__2/#variable-prefix)**  |
+| int | **[array_length](/documentation/code/darkbit_development/namespaces/namespacelibsecond__1__2/#variable-array-length)**  |
+| int | **[someInt](/documentation/code/darkbit_development/namespaces/namespacelibsecond__1__2/#variable-someint)**  |
+| int | **[someDouble](/documentation/code/darkbit_development/namespaces/namespacelibsecond__1__2/#variable-somedouble)**  |
+| list | **[someVector](/documentation/code/darkbit_development/namespaces/namespacelibsecond__1__2/#variable-somevector)**  |
+| bool | **[isInitialized](/documentation/code/darkbit_development/namespaces/namespacelibsecond__1__2/#variable-isinitialized)**  |
+| string | **[prefix](/documentation/code/darkbit_development/namespaces/namespacelibsecond__1__2/#variable-prefix)**  |
 
 
 ## Functions Documentation
@@ -117,4 +117,4 @@ string prefix =  "libsecond 1.2: ";
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:41 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

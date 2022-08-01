@@ -18,9 +18,9 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| fh_real | **[prodxs_Tev](/documentation/code/gambit_sphinxclasses/structgambit_1_1fh__higgsprod__container/#variable-prodxs-tev)**  |
-| fh_real | **[prodxs_LHC7](/documentation/code/gambit_sphinxclasses/structgambit_1_1fh__higgsprod__container/#variable-prodxs-lhc7)**  |
-| fh_real | **[prodxs_LHC8](/documentation/code/gambit_sphinxclasses/structgambit_1_1fh__higgsprod__container/#variable-prodxs-lhc8)**  |
+| fh_real | **[prodxs_Tev](/documentation/code/gambit_sphinx/classes/structgambit_1_1fh__higgsprod__container/#variable-prodxs-tev)**  |
+| fh_real | **[prodxs_LHC7](/documentation/code/gambit_sphinx/classes/structgambit_1_1fh__higgsprod__container/#variable-prodxs-lhc7)**  |
+| fh_real | **[prodxs_LHC8](/documentation/code/gambit_sphinx/classes/structgambit_1_1fh__higgsprod__container/#variable-prodxs-lhc8)**  |
 
 ## Public Attributes Documentation
 
@@ -47,4 +47,4 @@ fh_real prodxs_LHC8;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:46 +0000
+Updated on 2022-08-01 at 17:41:21 +0000

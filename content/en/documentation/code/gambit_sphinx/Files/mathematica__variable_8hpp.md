@@ -16,13 +16,13 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit](/documentation/code/gambit_sphinx/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Gambit::mathematica_variable](/documentation/code/gambit_sphinxclasses/classgambit_1_1mathematica__variable/)**  |
+| class | **[Gambit::mathematica_variable](/documentation/code/gambit_sphinx/classes/classgambit_1_1mathematica__variable/)**  |
 
 ## Detailed Description
 
@@ -366,4 +366,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:50 +0000
+Updated on 2022-08-01 at 17:41:25 +0000

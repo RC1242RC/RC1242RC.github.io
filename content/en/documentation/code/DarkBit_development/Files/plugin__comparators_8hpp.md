@@ -16,17 +16,17 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/darkbit_developmentnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::Scanner](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1scanner/)**  |
-| **[Gambit::Scanner::Plugins](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1scanner_1_1plugins/)**  |
+| **[Gambit](/documentation/code/darkbit_development/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::Scanner](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1scanner/)**  |
+| **[Gambit::Scanner::Plugins](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1scanner_1_1plugins/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Gambit::Scanner::Plugins::VersionCompareBase](/documentation/code/darkbit_developmentclasses/classgambit_1_1scanner_1_1plugins_1_1versioncomparebase/)** <br>Base class for comparing scanner plugins.  |
-| class | **[Gambit::Scanner::Plugins::VersionCompareBottom](/documentation/code/darkbit_developmentclasses/classgambit_1_1scanner_1_1plugins_1_1versioncomparebottom/)**  |
-| class | **[Gambit::Scanner::Plugins::VersionCompare](/documentation/code/darkbit_developmentclasses/classgambit_1_1scanner_1_1plugins_1_1versioncompare/)**  |
+| class | **[Gambit::Scanner::Plugins::VersionCompareBase](/documentation/code/darkbit_development/classes/classgambit_1_1scanner_1_1plugins_1_1versioncomparebase/)** <br>Base class for comparing scanner plugins.  |
+| class | **[Gambit::Scanner::Plugins::VersionCompareBottom](/documentation/code/darkbit_development/classes/classgambit_1_1scanner_1_1plugins_1_1versioncomparebottom/)**  |
+| class | **[Gambit::Scanner::Plugins::VersionCompare](/documentation/code/darkbit_development/classes/classgambit_1_1scanner_1_1plugins_1_1versioncompare/)**  |
 
 ## Detailed Description
 
@@ -135,4 +135,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:43 +0000
+Updated on 2022-08-01 at 17:41:24 +0000

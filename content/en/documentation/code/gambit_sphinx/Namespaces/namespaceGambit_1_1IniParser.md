@@ -16,20 +16,20 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit::IniParser::Types](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1iniparser_1_1types/)**  |
+| **[Gambit::IniParser::Types](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1iniparser_1_1types/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Gambit::IniParser::IniFile](/documentation/code/gambit_sphinxclasses/classgambit_1_1iniparser_1_1inifile/)** <br>Main inifile class.  |
+| class | **[Gambit::IniParser::IniFile](/documentation/code/gambit_sphinx/classes/classgambit_1_1iniparser_1_1inifile/)** <br>Main inifile class.  |
 
 ## Types
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef [Types::Observable](/documentation/code/gambit_sphinxclasses/structgambit_1_1iniparser_1_1types_1_1observable/) | **[ObservableType](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1iniparser/#typedef-observabletype)**  |
-| typedef std::vector< [ObservableType](/documentation/code/gambit_sphinxclasses/structgambit_1_1iniparser_1_1types_1_1observable/) > | **[ObservablesType](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1iniparser/#typedef-observablestype)**  |
+| typedef [Types::Observable](/documentation/code/gambit_sphinx/classes/structgambit_1_1iniparser_1_1types_1_1observable/) | **[ObservableType](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1iniparser/#typedef-observabletype)**  |
+| typedef std::vector< [ObservableType](/documentation/code/gambit_sphinx/classes/structgambit_1_1iniparser_1_1types_1_1observable/) > | **[ObservablesType](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1iniparser/#typedef-observablestype)**  |
 
 ## Types Documentation
 
@@ -54,4 +54,4 @@ typedef std::vector<ObservableType> Gambit::IniParser::ObservablesType;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:48 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

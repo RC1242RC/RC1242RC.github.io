@@ -16,17 +16,17 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/darkbit_developmentnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::SpecBit](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1specbit/)**  |
+| **[Gambit](/documentation/code/darkbit_development/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::SpecBit](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1specbit/)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[OUTPUT](/documentation/code/darkbit_developmentfiles/specbit__externaltests_8hpp/#define-output)**  |
-|  | **[TAGerr](/documentation/code/darkbit_developmentfiles/specbit__externaltests_8hpp/#define-tagerr)**  |
-|  | **[TAGfatal](/documentation/code/darkbit_developmentfiles/specbit__externaltests_8hpp/#define-tagfatal)**  |
-|  | **[TAGeom](/documentation/code/darkbit_developmentfiles/specbit__externaltests_8hpp/#define-tageom)**  |
+|  | **[OUTPUT](/documentation/code/darkbit_development/files/specbit__externaltests_8hpp/#define-output)**  |
+|  | **[TAGerr](/documentation/code/darkbit_development/files/specbit__externaltests_8hpp/#define-tagerr)**  |
+|  | **[TAGfatal](/documentation/code/darkbit_development/files/specbit__externaltests_8hpp/#define-tagfatal)**  |
+|  | **[TAGeom](/documentation/code/darkbit_development/files/specbit__externaltests_8hpp/#define-tageom)**  |
 
 ## Detailed Description
 
@@ -37,7 +37,7 @@ description: "[No description available]"
 
 Test functions for Spectrum object
 
-These functions test various aspects of the Spectrum class and related classes. They are not dependent on any other parts of [Gambit](/documentation/code/darkbit_developmentnamespaces/namespacegambit/), so that Spectrum object test code can be compiled and run seperately from [Gambit](/documentation/code/darkbit_developmentnamespaces/namespacegambit/), but but also be run from inside [Gambit](/documentation/code/darkbit_developmentnamespaces/namespacegambit/).
+These functions test various aspects of the Spectrum class and related classes. They are not dependent on any other parts of [Gambit](/documentation/code/darkbit_development/namespaces/namespacegambit/), so that Spectrum object test code can be compiled and run seperately from [Gambit](/documentation/code/darkbit_development/namespaces/namespacegambit/), but but also be run from inside [Gambit](/documentation/code/darkbit_development/namespaces/namespacegambit/).
 
 
 
@@ -1401,4 +1401,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:43 +0000
+Updated on 2022-08-01 at 17:41:24 +0000

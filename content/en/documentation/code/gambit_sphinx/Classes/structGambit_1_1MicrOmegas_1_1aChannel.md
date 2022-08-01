@@ -18,8 +18,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[weight](/documentation/code/gambit_sphinxclasses/structgambit_1_1micromegas_1_1achannel/#variable-weight)**  |
-| char * | **[prtcl](/documentation/code/gambit_sphinxclasses/structgambit_1_1micromegas_1_1achannel/#variable-prtcl)**  |
+| double | **[weight](/documentation/code/gambit_sphinx/classes/structgambit_1_1micromegas_1_1achannel/#variable-weight)**  |
+| char * | **[prtcl](/documentation/code/gambit_sphinx/classes/structgambit_1_1micromegas_1_1achannel/#variable-prtcl)**  |
 
 ## Public Attributes Documentation
 
@@ -39,4 +39,4 @@ char * prtcl;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:48 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

@@ -20,41 +20,41 @@ Inherits from Spec< ScalarSingletDM_Z3Spec< MI > >
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef [ScalarSingletDM_Z3Spec](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/)< MI > | **[Self](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/#typedef-self)**  |
-| typedef Self::MTget | **[MTget](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/#typedef-mtget)**  |
-| typedef Self::MTset | **[MTset](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/#typedef-mtset)**  |
-| typedef Self::GetterMaps | **[GetterMaps](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/#typedef-gettermaps)**  |
-| typedef Self::SetterMaps | **[SetterMaps](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/#typedef-settermaps)**  |
-| typedef SpecTraits< [Self](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/#typedef-self) >::Model | **[Model](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/#typedef-model)**  |
-| typedef SpecTraits< [Self](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/#typedef-self) >::Input | **[Input](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/#typedef-input)**  |
+| typedef [ScalarSingletDM_Z3Spec](/documentation/code/gambit_sphinx/classes/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/)< MI > | **[Self](/documentation/code/gambit_sphinx/classes/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/#typedef-self)**  |
+| typedef Self::MTget | **[MTget](/documentation/code/gambit_sphinx/classes/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/#typedef-mtget)**  |
+| typedef Self::MTset | **[MTset](/documentation/code/gambit_sphinx/classes/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/#typedef-mtset)**  |
+| typedef Self::GetterMaps | **[GetterMaps](/documentation/code/gambit_sphinx/classes/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/#typedef-gettermaps)**  |
+| typedef Self::SetterMaps | **[SetterMaps](/documentation/code/gambit_sphinx/classes/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/#typedef-settermaps)**  |
+| typedef SpecTraits< [Self](/documentation/code/gambit_sphinx/classes/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/#typedef-self) >::Model | **[Model](/documentation/code/gambit_sphinx/classes/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/#typedef-model)**  |
+| typedef SpecTraits< [Self](/documentation/code/gambit_sphinx/classes/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/#typedef-self) >::Input | **[Input](/documentation/code/gambit_sphinx/classes/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/#typedef-input)**  |
 
 ## Public Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| SetterMaps | **[fill_setter_maps](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/#function-fill-setter-maps)**() |
-| int | **[index_offset](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/#function-index-offset)**()<br>Interface function overrides.  |
-| GetterMaps | **[fill_getter_maps](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/#function-fill-getter-maps)**()<br>Map filler overrides.  |
-| virtual double | **[GetScale](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/#function-getscale)**() const |
-| virtual void | **[SetScale](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/#function-setscale)**(double scale) |
-| virtual void | **[RunToScaleOverride](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/#function-runtoscaleoverride)**(double scale) |
-| | **[ScalarSingletDM_Z3Spec](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/#function-scalarsingletdm-z3spec)**() |
-| | **[ScalarSingletDM_Z3Spec](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/#function-scalarsingletdm-z3spec)**(MI mi, str backend_name, str backend_version) |
-| virtual | **[~ScalarSingletDM_Z3Spec](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/#function-~scalarsingletdm-z3spec)**() |
-| Model & | **[get_Model](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/#function-get-model)**() |
-| Input & | **[get_Input](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/#function-get-input)**() |
-| const Model & | **[get_Model](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/#function-get-model)**() const |
-| const Input & | **[get_Input](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/#function-get-input)**() const |
-| virtual std::string | **[AccessError](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/#function-accesserror)**(std::string state) const |
-| template <class ScalarSingletDM_Z3like \> <br>void | **[get_lowe_data_from](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/#function-get-lowe-data-from)**(ScalarSingletDM_Z3like & othermodel) |
-| void | **[get_external_spectrum](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/#function-get-external-spectrum)**(typename MI::Model & othermodel) |
+| SetterMaps | **[fill_setter_maps](/documentation/code/gambit_sphinx/classes/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/#function-fill-setter-maps)**() |
+| int | **[index_offset](/documentation/code/gambit_sphinx/classes/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/#function-index-offset)**()<br>Interface function overrides.  |
+| GetterMaps | **[fill_getter_maps](/documentation/code/gambit_sphinx/classes/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/#function-fill-getter-maps)**()<br>Map filler overrides.  |
+| virtual double | **[GetScale](/documentation/code/gambit_sphinx/classes/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/#function-getscale)**() const |
+| virtual void | **[SetScale](/documentation/code/gambit_sphinx/classes/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/#function-setscale)**(double scale) |
+| virtual void | **[RunToScaleOverride](/documentation/code/gambit_sphinx/classes/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/#function-runtoscaleoverride)**(double scale) |
+| | **[ScalarSingletDM_Z3Spec](/documentation/code/gambit_sphinx/classes/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/#function-scalarsingletdm-z3spec)**() |
+| | **[ScalarSingletDM_Z3Spec](/documentation/code/gambit_sphinx/classes/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/#function-scalarsingletdm-z3spec)**(MI mi, str backend_name, str backend_version) |
+| virtual | **[~ScalarSingletDM_Z3Spec](/documentation/code/gambit_sphinx/classes/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/#function-~scalarsingletdm-z3spec)**() |
+| Model & | **[get_Model](/documentation/code/gambit_sphinx/classes/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/#function-get-model)**() |
+| Input & | **[get_Input](/documentation/code/gambit_sphinx/classes/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/#function-get-input)**() |
+| const Model & | **[get_Model](/documentation/code/gambit_sphinx/classes/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/#function-get-model)**() const |
+| const Input & | **[get_Input](/documentation/code/gambit_sphinx/classes/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/#function-get-input)**() const |
+| virtual std::string | **[AccessError](/documentation/code/gambit_sphinx/classes/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/#function-accesserror)**(std::string state) const |
+| template <class ScalarSingletDM_Z3like \> <br>void | **[get_lowe_data_from](/documentation/code/gambit_sphinx/classes/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/#function-get-lowe-data-from)**(ScalarSingletDM_Z3like & othermodel) |
+| void | **[get_external_spectrum](/documentation/code/gambit_sphinx/classes/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/#function-get-external-spectrum)**(typename MI::Model & othermodel) |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| MI | **[model_interface](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/#variable-model-interface)**  |
-| DummyInput | **[dummyinput](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/#variable-dummyinput)**  |
+| MI | **[model_interface](/documentation/code/gambit_sphinx/classes/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/#variable-model-interface)**  |
+| DummyInput | **[dummyinput](/documentation/code/gambit_sphinx/classes/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/#variable-dummyinput)**  |
 
 ## Detailed Description
 
@@ -269,4 +269,4 @@ DummyInput dummyinput;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:48 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

@@ -16,15 +16,15 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/darkbit_developmentnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::PrecisionBit](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1precisionbit/)**  |
+| **[Gambit](/documentation/code/darkbit_development/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::PrecisionBit](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1precisionbit/)**  |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| const double | **[abserr_mw](/documentation/code/darkbit_developmentfiles/precisionbit_8cpp/#variable-abserr-mw)**  |
-| const double | **[abserr_sinW2eff](/documentation/code/darkbit_developmentfiles/precisionbit_8cpp/#variable-abserr-sinw2eff)**  |
+| const double | **[abserr_mw](/documentation/code/darkbit_development/files/precisionbit_8cpp/#variable-abserr-mw)**  |
+| const double | **[abserr_sinW2eff](/documentation/code/darkbit_development/files/precisionbit_8cpp/#variable-abserr-sinw2eff)**  |
 
 ## Detailed Description
 
@@ -1171,4 +1171,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:43 +0000
+Updated on 2022-08-01 at 17:41:24 +0000

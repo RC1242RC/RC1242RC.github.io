@@ -16,20 +16,20 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| def | **[initialize](/documentation/code/gambit_sphinxnamespaces/namespacelibsecond__1__0/#function-initialize)**(a a) |
-| def | **[someFunction](/documentation/code/gambit_sphinxnamespaces/namespacelibsecond__1__0/#function-somefunction)**() |
-| def | **[returnResult](/documentation/code/gambit_sphinxnamespaces/namespacelibsecond__1__0/#function-returnresult)**() |
+| def | **[initialize](/documentation/code/gambit_sphinx/namespaces/namespacelibsecond__1__0/#function-initialize)**(a a) |
+| def | **[someFunction](/documentation/code/gambit_sphinx/namespaces/namespacelibsecond__1__0/#function-somefunction)**() |
+| def | **[returnResult](/documentation/code/gambit_sphinx/namespaces/namespacelibsecond__1__0/#function-returnresult)**() |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| int | **[array_length](/documentation/code/gambit_sphinxnamespaces/namespacelibsecond__1__0/#variable-array-length)**  |
-| int | **[someInt](/documentation/code/gambit_sphinxnamespaces/namespacelibsecond__1__0/#variable-someint)**  |
-| int | **[someDouble](/documentation/code/gambit_sphinxnamespaces/namespacelibsecond__1__0/#variable-somedouble)**  |
-| list | **[someVector](/documentation/code/gambit_sphinxnamespaces/namespacelibsecond__1__0/#variable-somevector)**  |
-| bool | **[isInitialized](/documentation/code/gambit_sphinxnamespaces/namespacelibsecond__1__0/#variable-isinitialized)**  |
-| string | **[prefix](/documentation/code/gambit_sphinxnamespaces/namespacelibsecond__1__0/#variable-prefix)**  |
+| int | **[array_length](/documentation/code/gambit_sphinx/namespaces/namespacelibsecond__1__0/#variable-array-length)**  |
+| int | **[someInt](/documentation/code/gambit_sphinx/namespaces/namespacelibsecond__1__0/#variable-someint)**  |
+| int | **[someDouble](/documentation/code/gambit_sphinx/namespaces/namespacelibsecond__1__0/#variable-somedouble)**  |
+| list | **[someVector](/documentation/code/gambit_sphinx/namespaces/namespacelibsecond__1__0/#variable-somevector)**  |
+| bool | **[isInitialized](/documentation/code/gambit_sphinx/namespaces/namespacelibsecond__1__0/#variable-isinitialized)**  |
+| string | **[prefix](/documentation/code/gambit_sphinx/namespaces/namespacelibsecond__1__0/#variable-prefix)**  |
 
 
 ## Functions Documentation
@@ -107,4 +107,4 @@ string prefix =  "libsecond 1.0: ";
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:46 +0000
+Updated on 2022-08-01 at 17:41:21 +0000

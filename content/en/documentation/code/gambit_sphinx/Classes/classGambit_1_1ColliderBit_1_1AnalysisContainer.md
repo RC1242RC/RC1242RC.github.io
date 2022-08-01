@@ -1,6 +1,6 @@
 ---
 title: 'class Gambit::ColliderBit::AnalysisContainer'
-description: 'A class for managing collections of [Analysis](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1analysis/) instances. '
+description: 'A class for managing collections of [Analysis](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1analysis/) instances. '
 
 ---
 
@@ -11,7 +11,7 @@ description: 'A class for managing collections of [Analysis](/documentation/code
 
 
 
-A class for managing collections of [Analysis](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1analysis/) instances. 
+A class for managing collections of [Analysis](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1analysis/) instances. 
 
 
 `#include <AnalysisContainer.hpp>`
@@ -20,34 +20,34 @@ A class for managing collections of [Analysis](/documentation/code/gambit_sphinx
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[AnalysisContainer](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1analysiscontainer/#function-analysiscontainer)**()<br>Constructor.  |
-| | **[~AnalysisContainer](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1analysiscontainer/#function-~analysiscontainer)**()<br>Destructor.  |
-| void | **[register_thread](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1analysiscontainer/#function-register-thread)**(str base_key_in)<br>Add container to instances map.  |
-| void | **[clear](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1analysiscontainer/#function-clear)**()<br>Delete and clear the analyses contained within this instance.  |
-| void | **[set_current_collider](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1analysiscontainer/#function-set-current-collider)**(str collider_name)<br>Set name of current collider.  |
-| str | **[get_current_collider](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1analysiscontainer/#function-get-current-collider)**() const<br>Get name of current collider.  |
-| bool | **[has_analyses](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1analysiscontainer/#function-has-analyses)**(str collider_name) const<br>Does this instance contain analyses for the given collider.  |
-| bool | **[has_analyses](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1analysiscontainer/#function-has-analyses)**() const<br>Does this instance contain analyses for the current collider.  |
-| void | **[init](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1analysiscontainer/#function-init)**(const std::vector< str > & analysis_names, str collider_name)<br>Initialize analyses (by names) for a specified collider.  |
-| void | **[init](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1analysiscontainer/#function-init)**(const std::vector< str > & analysis_names)<br>Initialize analyses (by names) for the current collider.  |
-| void | **[reset](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1analysiscontainer/#function-reset)**(str collider_name, str analysis_name)<br>Reset specific analysis.  |
-| void | **[reset](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1analysiscontainer/#function-reset)**(str collider_name)<br>Reset all analyses for given collider.  |
-| void | **[reset](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1analysiscontainer/#function-reset)**()<br>Reset all analyses for the current collider.  |
-| void | **[reset_all](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1analysiscontainer/#function-reset-all)**()<br>Reset all analyses for all colliders.  |
-| const [Analysis](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1analysis/) * | **[get_analysis_pointer](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1analysiscontainer/#function-get-analysis-pointer)**(str collider_name, str analysis_name) const<br>Get pointer to specific analysis.  |
-| const std::map< str, [Analysis](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1analysis/) * > & | **[get_collider_analyses_map](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1analysiscontainer/#function-get-collider-analyses-map)**(str collider_name) const<br>Get analyses map for a specific collider.  |
-| const std::map< str, [Analysis](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1analysis/) * > & | **[get_current_analyses_map](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1analysiscontainer/#function-get-current-analyses-map)**() const<br>Get analyses map for the current collider.  |
-| const std::map< str, std::map< str, [Analysis](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1analysis/) * > > & | **[get_full_analyses_map](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1analysiscontainer/#function-get-full-analyses-map)**() const<br>Get the full analyses map.  |
-| void | **[analyze](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1analysiscontainer/#function-analyze)**(const HEPUtils::Event & event, str collider_name, str analysis_name) const<br>Pass event through specific analysis.  |
-| void | **[analyze](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1analysiscontainer/#function-analyze)**(const HEPUtils::Event & event, str collider_name) const<br>Pass event through all analysis for a specific collider.  |
-| void | **[analyze](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1analysiscontainer/#function-analyze)**(const HEPUtils::Event & event) const<br>Pass event through all analysis for the current collider.  |
-| void | **[collect_and_add_signal](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1analysiscontainer/#function-collect-and-add-signal)**(str collider_name, str analysis_name) |
-| void | **[collect_and_add_signal](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1analysiscontainer/#function-collect-and-add-signal)**(str collider_name) |
-| void | **[collect_and_add_signal](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1analysiscontainer/#function-collect-and-add-signal)**() |
-| void | **[scale](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1analysiscontainer/#function-scale)**(str collider_name, str analysis_name, double xsec_per_event)<br>Scale results for specific analysis.  |
-| void | **[scale](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1analysiscontainer/#function-scale)**(str collider_name, double xsec_per_event)<br>Scale results for all analyses for given collider.  |
-| void | **[scale](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1analysiscontainer/#function-scale)**(double xsec_per_event)<br>Scale results for all analyses for the current collider.  |
-| void | **[scale_all](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1analysiscontainer/#function-scale-all)**(double xsec_per_event)<br>Scale results for all analyses across all colliders.  |
+| | **[AnalysisContainer](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-analysiscontainer)**()<br>Constructor.  |
+| | **[~AnalysisContainer](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-~analysiscontainer)**()<br>Destructor.  |
+| void | **[register_thread](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-register-thread)**(str base_key_in)<br>Add container to instances map.  |
+| void | **[clear](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-clear)**()<br>Delete and clear the analyses contained within this instance.  |
+| void | **[set_current_collider](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-set-current-collider)**(str collider_name)<br>Set name of current collider.  |
+| str | **[get_current_collider](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-get-current-collider)**() const<br>Get name of current collider.  |
+| bool | **[has_analyses](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-has-analyses)**(str collider_name) const<br>Does this instance contain analyses for the given collider.  |
+| bool | **[has_analyses](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-has-analyses)**() const<br>Does this instance contain analyses for the current collider.  |
+| void | **[init](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-init)**(const std::vector< str > & analysis_names, str collider_name)<br>Initialize analyses (by names) for a specified collider.  |
+| void | **[init](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-init)**(const std::vector< str > & analysis_names)<br>Initialize analyses (by names) for the current collider.  |
+| void | **[reset](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-reset)**(str collider_name, str analysis_name)<br>Reset specific analysis.  |
+| void | **[reset](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-reset)**(str collider_name)<br>Reset all analyses for given collider.  |
+| void | **[reset](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-reset)**()<br>Reset all analyses for the current collider.  |
+| void | **[reset_all](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-reset-all)**()<br>Reset all analyses for all colliders.  |
+| const [Analysis](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1analysis/) * | **[get_analysis_pointer](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-get-analysis-pointer)**(str collider_name, str analysis_name) const<br>Get pointer to specific analysis.  |
+| const std::map< str, [Analysis](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1analysis/) * > & | **[get_collider_analyses_map](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-get-collider-analyses-map)**(str collider_name) const<br>Get analyses map for a specific collider.  |
+| const std::map< str, [Analysis](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1analysis/) * > & | **[get_current_analyses_map](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-get-current-analyses-map)**() const<br>Get analyses map for the current collider.  |
+| const std::map< str, std::map< str, [Analysis](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1analysis/) * > > & | **[get_full_analyses_map](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-get-full-analyses-map)**() const<br>Get the full analyses map.  |
+| void | **[analyze](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-analyze)**(const HEPUtils::Event & event, str collider_name, str analysis_name) const<br>Pass event through specific analysis.  |
+| void | **[analyze](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-analyze)**(const HEPUtils::Event & event, str collider_name) const<br>Pass event through all analysis for a specific collider.  |
+| void | **[analyze](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-analyze)**(const HEPUtils::Event & event) const<br>Pass event through all analysis for the current collider.  |
+| void | **[collect_and_add_signal](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-collect-and-add-signal)**(str collider_name, str analysis_name) |
+| void | **[collect_and_add_signal](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-collect-and-add-signal)**(str collider_name) |
+| void | **[collect_and_add_signal](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-collect-and-add-signal)**() |
+| void | **[scale](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-scale)**(str collider_name, str analysis_name, double xsec_per_event)<br>Scale results for specific analysis.  |
+| void | **[scale](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-scale)**(str collider_name, double xsec_per_event)<br>Scale results for all analyses for given collider.  |
+| void | **[scale](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-scale)**(double xsec_per_event)<br>Scale results for all analyses for the current collider.  |
+| void | **[scale_all](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-scale-all)**(double xsec_per_event)<br>Scale results for all analyses across all colliders.  |
 
 ## Public Functions Documentation
 
@@ -85,7 +85,7 @@ void clear()
 
 Delete and clear the analyses contained within this instance. 
 
-TodoStoring smart ptrs to [Analysis](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1analysis/) would make this way easier 
+TodoStoring smart ptrs to [Analysis](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1analysis/) would make this way easier 
 
 
 ### function set_current_collider
@@ -273,7 +273,7 @@ void collect_and_add_signal(
 
 Collect signal predictions from other threads and add to this one, for specific analysis
 
-Collect signal predictions from other threads and add to this one, for specific analysis. Note: [Analysis::add](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1analysis/#function-add) will not add analyses to themselves. 
+Collect signal predictions from other threads and add to this one, for specific analysis. Note: [Analysis::add](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1analysis/#function-add) will not add analyses to themselves. 
 
 
 ### function collect_and_add_signal
@@ -343,4 +343,4 @@ Scale results for all analyses across all colliders.
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:47 +0000
+Updated on 2022-08-01 at 17:41:21 +0000

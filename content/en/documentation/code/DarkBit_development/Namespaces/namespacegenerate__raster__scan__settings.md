@@ -16,27 +16,27 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| list | **[m2_data](/documentation/code/darkbit_developmentnamespaces/namespacegenerate__raster__scan__settings/#variable-m2-data)**  |
-| list | **[xsec_fb_data](/documentation/code/darkbit_developmentnamespaces/namespacegenerate__raster__scan__settings/#variable-xsec-fb-data)**  |
-| list | **[xsec_uncert_fb_data](/documentation/code/darkbit_developmentnamespaces/namespacegenerate__raster__scan__settings/#variable-xsec-uncert-fb-data)**  |
-| int | **[n](/documentation/code/darkbit_developmentnamespaces/namespacegenerate__raster__scan__settings/#variable-n)**  |
-| int | **[N](/documentation/code/darkbit_developmentnamespaces/namespacegenerate__raster__scan__settings/#variable-n)**  |
-| list | **[m2](/documentation/code/darkbit_developmentnamespaces/namespacegenerate__raster__scan__settings/#variable-m2)**  |
-| list | **[xsec_fb](/documentation/code/darkbit_developmentnamespaces/namespacegenerate__raster__scan__settings/#variable-xsec-fb)**  |
-| list | **[xsec_uncert_fb](/documentation/code/darkbit_developmentnamespaces/namespacegenerate__raster__scan__settings/#variable-xsec-uncert-fb)**  |
-| int | **[m1_min](/documentation/code/darkbit_developmentnamespaces/namespacegenerate__raster__scan__settings/#variable-m1-min)**  |
-| int | **[m1_step](/documentation/code/darkbit_developmentnamespaces/namespacegenerate__raster__scan__settings/#variable-m1-step)**  |
-| list | **[m1_raster](/documentation/code/darkbit_developmentnamespaces/namespacegenerate__raster__scan__settings/#variable-m1-raster)**  |
-| list | **[m2_raster](/documentation/code/darkbit_developmentnamespaces/namespacegenerate__raster__scan__settings/#variable-m2-raster)**  |
-| list | **[xsec_fb_raster](/documentation/code/darkbit_developmentnamespaces/namespacegenerate__raster__scan__settings/#variable-xsec-fb-raster)**  |
-| list | **[xsec_uncert_fb_raster](/documentation/code/darkbit_developmentnamespaces/namespacegenerate__raster__scan__settings/#variable-xsec-uncert-fb-raster)**  |
-| int | **[m1](/documentation/code/darkbit_developmentnamespaces/namespacegenerate__raster__scan__settings/#variable-m1)**  |
-| string | **[model_name](/documentation/code/darkbit_developmentnamespaces/namespacegenerate__raster__scan__settings/#variable-model-name)**  |
-| string | **[m1_str](/documentation/code/darkbit_developmentnamespaces/namespacegenerate__raster__scan__settings/#variable-m1-str)**  |
-| string | **[m2_str](/documentation/code/darkbit_developmentnamespaces/namespacegenerate__raster__scan__settings/#variable-m2-str)**  |
-| string | **[xsec_fb_str](/documentation/code/darkbit_developmentnamespaces/namespacegenerate__raster__scan__settings/#variable-xsec-fb-str)**  |
-| string | **[xsec_uncert_fb_str](/documentation/code/darkbit_developmentnamespaces/namespacegenerate__raster__scan__settings/#variable-xsec-uncert-fb-str)**  |
-| string | **[output](/documentation/code/darkbit_developmentnamespaces/namespacegenerate__raster__scan__settings/#variable-output)**  |
+| list | **[m2_data](/documentation/code/darkbit_development/namespaces/namespacegenerate__raster__scan__settings/#variable-m2-data)**  |
+| list | **[xsec_fb_data](/documentation/code/darkbit_development/namespaces/namespacegenerate__raster__scan__settings/#variable-xsec-fb-data)**  |
+| list | **[xsec_uncert_fb_data](/documentation/code/darkbit_development/namespaces/namespacegenerate__raster__scan__settings/#variable-xsec-uncert-fb-data)**  |
+| int | **[n](/documentation/code/darkbit_development/namespaces/namespacegenerate__raster__scan__settings/#variable-n)**  |
+| int | **[N](/documentation/code/darkbit_development/namespaces/namespacegenerate__raster__scan__settings/#variable-n)**  |
+| list | **[m2](/documentation/code/darkbit_development/namespaces/namespacegenerate__raster__scan__settings/#variable-m2)**  |
+| list | **[xsec_fb](/documentation/code/darkbit_development/namespaces/namespacegenerate__raster__scan__settings/#variable-xsec-fb)**  |
+| list | **[xsec_uncert_fb](/documentation/code/darkbit_development/namespaces/namespacegenerate__raster__scan__settings/#variable-xsec-uncert-fb)**  |
+| int | **[m1_min](/documentation/code/darkbit_development/namespaces/namespacegenerate__raster__scan__settings/#variable-m1-min)**  |
+| int | **[m1_step](/documentation/code/darkbit_development/namespaces/namespacegenerate__raster__scan__settings/#variable-m1-step)**  |
+| list | **[m1_raster](/documentation/code/darkbit_development/namespaces/namespacegenerate__raster__scan__settings/#variable-m1-raster)**  |
+| list | **[m2_raster](/documentation/code/darkbit_development/namespaces/namespacegenerate__raster__scan__settings/#variable-m2-raster)**  |
+| list | **[xsec_fb_raster](/documentation/code/darkbit_development/namespaces/namespacegenerate__raster__scan__settings/#variable-xsec-fb-raster)**  |
+| list | **[xsec_uncert_fb_raster](/documentation/code/darkbit_development/namespaces/namespacegenerate__raster__scan__settings/#variable-xsec-uncert-fb-raster)**  |
+| int | **[m1](/documentation/code/darkbit_development/namespaces/namespacegenerate__raster__scan__settings/#variable-m1)**  |
+| string | **[model_name](/documentation/code/darkbit_development/namespaces/namespacegenerate__raster__scan__settings/#variable-model-name)**  |
+| string | **[m1_str](/documentation/code/darkbit_development/namespaces/namespacegenerate__raster__scan__settings/#variable-m1-str)**  |
+| string | **[m2_str](/documentation/code/darkbit_development/namespaces/namespacegenerate__raster__scan__settings/#variable-m2-str)**  |
+| string | **[xsec_fb_str](/documentation/code/darkbit_development/namespaces/namespacegenerate__raster__scan__settings/#variable-xsec-fb-str)**  |
+| string | **[xsec_uncert_fb_str](/documentation/code/darkbit_development/namespaces/namespacegenerate__raster__scan__settings/#variable-xsec-uncert-fb-str)**  |
+| string | **[output](/documentation/code/darkbit_development/namespaces/namespacegenerate__raster__scan__settings/#variable-output)**  |
 
 
 
@@ -211,4 +211,4 @@ Scanner:
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:41 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

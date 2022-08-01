@@ -16,14 +16,14 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::DarkBit](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1darkbit/)**  |
+| **[Gambit](/documentation/code/gambit_sphinx/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::DarkBit](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1darkbit/)**  |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| int | **[main](/documentation/code/gambit_sphinxfiles/darkbit__standalone__scalarsingletdm__z2_8cpp/#function-main)**() |
+| int | **[main](/documentation/code/gambit_sphinx/files/darkbit__standalone__scalarsingletdm__z2_8cpp/#function-main)**() |
 
 ## Detailed Description
 
@@ -583,4 +583,4 @@ int main()
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:48 +0000
+Updated on 2022-08-01 at 17:41:23 +0000

@@ -20,20 +20,20 @@ Annihilation/decay channel.
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[SimYieldChannel](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1simyieldchannel/#function-simyieldchannel)**(daFunk::Funk dNdE, const std::string & p1, const std::string & p2, const std::string & finalState, double Ecm_min, double Ecm_max, [safe_ptr](/documentation/code/gambit_sphinxclasses/classgambit_1_1safe__ptr/)< Options > runOptions)<br>General annihilation/decay channel for sim yield tables.  |
+| | **[SimYieldChannel](/documentation/code/gambit_sphinx/classes/structgambit_1_1darkbit_1_1simyieldchannel/#function-simyieldchannel)**(daFunk::Funk dNdE, const std::string & p1, const std::string & p2, const std::string & finalState, double Ecm_min, double Ecm_max, [safe_ptr](/documentation/code/gambit_sphinx/classes/classgambit_1_1safe__ptr/)< Options > runOptions)<br>General annihilation/decay channel for sim yield tables.  |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| daFunk::Funk | **[dNdE](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1simyieldchannel/#variable-dnde)**  |
-| daFunk::BoundFunk | **[dNdE_bound](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1simyieldchannel/#variable-dnde-bound)**  |
-| std::string | **[p1](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1simyieldchannel/#variable-p1)**  |
-| std::string | **[p2](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1simyieldchannel/#variable-p2)**  |
-| std::string | **[finalState](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1simyieldchannel/#variable-finalstate)**  |
-| double | **[finalStateMass](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1simyieldchannel/#variable-finalstatemass)**  |
-| double | **[Ecm_min](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1simyieldchannel/#variable-ecm-min)**  |
-| double | **[Ecm_max](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1simyieldchannel/#variable-ecm-max)**  |
+| daFunk::Funk | **[dNdE](/documentation/code/gambit_sphinx/classes/structgambit_1_1darkbit_1_1simyieldchannel/#variable-dnde)**  |
+| daFunk::BoundFunk | **[dNdE_bound](/documentation/code/gambit_sphinx/classes/structgambit_1_1darkbit_1_1simyieldchannel/#variable-dnde-bound)**  |
+| std::string | **[p1](/documentation/code/gambit_sphinx/classes/structgambit_1_1darkbit_1_1simyieldchannel/#variable-p1)**  |
+| std::string | **[p2](/documentation/code/gambit_sphinx/classes/structgambit_1_1darkbit_1_1simyieldchannel/#variable-p2)**  |
+| std::string | **[finalState](/documentation/code/gambit_sphinx/classes/structgambit_1_1darkbit_1_1simyieldchannel/#variable-finalstate)**  |
+| double | **[finalStateMass](/documentation/code/gambit_sphinx/classes/structgambit_1_1darkbit_1_1simyieldchannel/#variable-finalstatemass)**  |
+| double | **[Ecm_min](/documentation/code/gambit_sphinx/classes/structgambit_1_1darkbit_1_1simyieldchannel/#variable-ecm-min)**  |
+| double | **[Ecm_max](/documentation/code/gambit_sphinx/classes/structgambit_1_1darkbit_1_1simyieldchannel/#variable-ecm-max)**  |
 
 ## Public Functions Documentation
 
@@ -113,4 +113,4 @@ double Ecm_max;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:47 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

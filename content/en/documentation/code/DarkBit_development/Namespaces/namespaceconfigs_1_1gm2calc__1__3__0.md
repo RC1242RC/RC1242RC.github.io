@@ -16,30 +16,30 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| string | **[castxml_cc_id](/documentation/code/darkbit_developmentnamespaces/namespaceconfigs_1_1gm2calc__1__3__0/#variable-castxml-cc-id)**  |
-| string | **[castxml_cc](/documentation/code/darkbit_developmentnamespaces/namespaceconfigs_1_1gm2calc__1__3__0/#variable-castxml-cc)**  |
-| string | **[castxml_cc_opt](/documentation/code/darkbit_developmentnamespaces/namespaceconfigs_1_1gm2calc__1__3__0/#variable-castxml-cc-opt)**  |
-| string | **[gambit_backend_name](/documentation/code/darkbit_developmentnamespaces/namespaceconfigs_1_1gm2calc__1__3__0/#variable-gambit-backend-name)**  |
-| string | **[gambit_backend_version](/documentation/code/darkbit_developmentnamespaces/namespaceconfigs_1_1gm2calc__1__3__0/#variable-gambit-backend-version)**  |
-| string | **[gambit_backend_reference](/documentation/code/darkbit_developmentnamespaces/namespaceconfigs_1_1gm2calc__1__3__0/#variable-gambit-backend-reference)**  |
-| string | **[gambit_base_namespace](/documentation/code/darkbit_developmentnamespaces/namespaceconfigs_1_1gm2calc__1__3__0/#variable-gambit-base-namespace)**  |
-| list | **[input_files](/documentation/code/darkbit_developmentnamespaces/namespaceconfigs_1_1gm2calc__1__3__0/#variable-input-files)**  |
-| list | **[include_paths](/documentation/code/darkbit_developmentnamespaces/namespaceconfigs_1_1gm2calc__1__3__0/#variable-include-paths)**  |
-| list | **[base_paths](/documentation/code/darkbit_developmentnamespaces/namespaceconfigs_1_1gm2calc__1__3__0/#variable-base-paths)**  |
-| string | **[header_files_to](/documentation/code/darkbit_developmentnamespaces/namespaceconfigs_1_1gm2calc__1__3__0/#variable-header-files-to)**  |
-| string | **[src_files_to](/documentation/code/darkbit_developmentnamespaces/namespaceconfigs_1_1gm2calc__1__3__0/#variable-src-files-to)**  |
-| list | **[load_classes](/documentation/code/darkbit_developmentnamespaces/namespaceconfigs_1_1gm2calc__1__3__0/#variable-load-classes)**  |
-| list | **[load_functions](/documentation/code/darkbit_developmentnamespaces/namespaceconfigs_1_1gm2calc__1__3__0/#variable-load-functions)**  |
-| list | **[ditch](/documentation/code/darkbit_developmentnamespaces/namespaceconfigs_1_1gm2calc__1__3__0/#variable-ditch)**  |
-| bool | **[auto_detect_stdlib_paths](/documentation/code/darkbit_developmentnamespaces/namespaceconfigs_1_1gm2calc__1__3__0/#variable-auto-detect-stdlib-paths)**  |
-| bool | **[load_parent_classes](/documentation/code/darkbit_developmentnamespaces/namespaceconfigs_1_1gm2calc__1__3__0/#variable-load-parent-classes)**  |
-| bool | **[wrap_inherited_members](/documentation/code/darkbit_developmentnamespaces/namespaceconfigs_1_1gm2calc__1__3__0/#variable-wrap-inherited-members)**  |
-| string | **[header_extension](/documentation/code/darkbit_developmentnamespaces/namespaceconfigs_1_1gm2calc__1__3__0/#variable-header-extension)**  |
-| string | **[source_extension](/documentation/code/darkbit_developmentnamespaces/namespaceconfigs_1_1gm2calc__1__3__0/#variable-source-extension)**  |
-| int | **[indent](/documentation/code/darkbit_developmentnamespaces/namespaceconfigs_1_1gm2calc__1__3__0/#variable-indent)**  |
-| dictionary | **[known_classes](/documentation/code/darkbit_developmentnamespaces/namespaceconfigs_1_1gm2calc__1__3__0/#variable-known-classes)**  |
-| list | **[pragmas_begin](/documentation/code/darkbit_developmentnamespaces/namespaceconfigs_1_1gm2calc__1__3__0/#variable-pragmas-begin)**  |
-| list | **[pragmas_end](/documentation/code/darkbit_developmentnamespaces/namespaceconfigs_1_1gm2calc__1__3__0/#variable-pragmas-end)**  |
+| string | **[castxml_cc_id](/documentation/code/darkbit_development/namespaces/namespaceconfigs_1_1gm2calc__1__3__0/#variable-castxml-cc-id)**  |
+| string | **[castxml_cc](/documentation/code/darkbit_development/namespaces/namespaceconfigs_1_1gm2calc__1__3__0/#variable-castxml-cc)**  |
+| string | **[castxml_cc_opt](/documentation/code/darkbit_development/namespaces/namespaceconfigs_1_1gm2calc__1__3__0/#variable-castxml-cc-opt)**  |
+| string | **[gambit_backend_name](/documentation/code/darkbit_development/namespaces/namespaceconfigs_1_1gm2calc__1__3__0/#variable-gambit-backend-name)**  |
+| string | **[gambit_backend_version](/documentation/code/darkbit_development/namespaces/namespaceconfigs_1_1gm2calc__1__3__0/#variable-gambit-backend-version)**  |
+| string | **[gambit_backend_reference](/documentation/code/darkbit_development/namespaces/namespaceconfigs_1_1gm2calc__1__3__0/#variable-gambit-backend-reference)**  |
+| string | **[gambit_base_namespace](/documentation/code/darkbit_development/namespaces/namespaceconfigs_1_1gm2calc__1__3__0/#variable-gambit-base-namespace)**  |
+| list | **[input_files](/documentation/code/darkbit_development/namespaces/namespaceconfigs_1_1gm2calc__1__3__0/#variable-input-files)**  |
+| list | **[include_paths](/documentation/code/darkbit_development/namespaces/namespaceconfigs_1_1gm2calc__1__3__0/#variable-include-paths)**  |
+| list | **[base_paths](/documentation/code/darkbit_development/namespaces/namespaceconfigs_1_1gm2calc__1__3__0/#variable-base-paths)**  |
+| string | **[header_files_to](/documentation/code/darkbit_development/namespaces/namespaceconfigs_1_1gm2calc__1__3__0/#variable-header-files-to)**  |
+| string | **[src_files_to](/documentation/code/darkbit_development/namespaces/namespaceconfigs_1_1gm2calc__1__3__0/#variable-src-files-to)**  |
+| list | **[load_classes](/documentation/code/darkbit_development/namespaces/namespaceconfigs_1_1gm2calc__1__3__0/#variable-load-classes)**  |
+| list | **[load_functions](/documentation/code/darkbit_development/namespaces/namespaceconfigs_1_1gm2calc__1__3__0/#variable-load-functions)**  |
+| list | **[ditch](/documentation/code/darkbit_development/namespaces/namespaceconfigs_1_1gm2calc__1__3__0/#variable-ditch)**  |
+| bool | **[auto_detect_stdlib_paths](/documentation/code/darkbit_development/namespaces/namespaceconfigs_1_1gm2calc__1__3__0/#variable-auto-detect-stdlib-paths)**  |
+| bool | **[load_parent_classes](/documentation/code/darkbit_development/namespaces/namespaceconfigs_1_1gm2calc__1__3__0/#variable-load-parent-classes)**  |
+| bool | **[wrap_inherited_members](/documentation/code/darkbit_development/namespaces/namespaceconfigs_1_1gm2calc__1__3__0/#variable-wrap-inherited-members)**  |
+| string | **[header_extension](/documentation/code/darkbit_development/namespaces/namespaceconfigs_1_1gm2calc__1__3__0/#variable-header-extension)**  |
+| string | **[source_extension](/documentation/code/darkbit_development/namespaces/namespaceconfigs_1_1gm2calc__1__3__0/#variable-source-extension)**  |
+| int | **[indent](/documentation/code/darkbit_development/namespaces/namespaceconfigs_1_1gm2calc__1__3__0/#variable-indent)**  |
+| dictionary | **[known_classes](/documentation/code/darkbit_development/namespaces/namespaceconfigs_1_1gm2calc__1__3__0/#variable-known-classes)**  |
+| list | **[pragmas_begin](/documentation/code/darkbit_development/namespaces/namespaceconfigs_1_1gm2calc__1__3__0/#variable-pragmas-begin)**  |
+| list | **[pragmas_end](/documentation/code/darkbit_development/namespaces/namespaceconfigs_1_1gm2calc__1__3__0/#variable-pragmas-end)**  |
 
 
 
@@ -261,4 +261,4 @@ list pragmas_end =  [
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:42 +0000
+Updated on 2022-08-01 at 17:41:24 +0000

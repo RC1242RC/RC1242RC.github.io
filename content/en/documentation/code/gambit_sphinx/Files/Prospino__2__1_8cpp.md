@@ -16,21 +16,21 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[BE_NAMESPACE](/documentation/code/gambit_sphinxfiles/prospino__2__1_8cpp/#variable-be-namespace)**  |
-| Farray< Fdouble, 1, 20 > | **[unimass](/documentation/code/gambit_sphinxfiles/prospino__2__1_8cpp/#variable-unimass)**  |
-| Farray< Fdouble, 0, 99 > | **[lowmass](/documentation/code/gambit_sphinxfiles/prospino__2__1_8cpp/#variable-lowmass)**  |
-| Farray< Fdouble, 1, 2, 1, 2 > | **[uu_in](/documentation/code/gambit_sphinxfiles/prospino__2__1_8cpp/#variable-uu-in)**  |
-| Farray< Fdouble, 1, 2, 1, 2 > | **[vv_in](/documentation/code/gambit_sphinxfiles/prospino__2__1_8cpp/#variable-vv-in)**  |
-| Farray< Fdouble, 1, 4, 1, 4 > | **[bw_in](/documentation/code/gambit_sphinxfiles/prospino__2__1_8cpp/#variable-bw-in)**  |
-| Farray< Fdouble, 1, 2, 1, 2 > | **[mst_in](/documentation/code/gambit_sphinxfiles/prospino__2__1_8cpp/#variable-mst-in)**  |
-| Farray< Fdouble, 1, 2, 1, 2 > | **[msb_in](/documentation/code/gambit_sphinxfiles/prospino__2__1_8cpp/#variable-msb-in)**  |
-| Farray< Fdouble, 1, 2, 1, 2 > | **[msl_in](/documentation/code/gambit_sphinxfiles/prospino__2__1_8cpp/#variable-msl-in)**  |
+| | **[BE_NAMESPACE](/documentation/code/gambit_sphinx/files/prospino__2__1_8cpp/#variable-be-namespace)**  |
+| Farray< Fdouble, 1, 20 > | **[unimass](/documentation/code/gambit_sphinx/files/prospino__2__1_8cpp/#variable-unimass)**  |
+| Farray< Fdouble, 0, 99 > | **[lowmass](/documentation/code/gambit_sphinx/files/prospino__2__1_8cpp/#variable-lowmass)**  |
+| Farray< Fdouble, 1, 2, 1, 2 > | **[uu_in](/documentation/code/gambit_sphinx/files/prospino__2__1_8cpp/#variable-uu-in)**  |
+| Farray< Fdouble, 1, 2, 1, 2 > | **[vv_in](/documentation/code/gambit_sphinx/files/prospino__2__1_8cpp/#variable-vv-in)**  |
+| Farray< Fdouble, 1, 4, 1, 4 > | **[bw_in](/documentation/code/gambit_sphinx/files/prospino__2__1_8cpp/#variable-bw-in)**  |
+| Farray< Fdouble, 1, 2, 1, 2 > | **[mst_in](/documentation/code/gambit_sphinx/files/prospino__2__1_8cpp/#variable-mst-in)**  |
+| Farray< Fdouble, 1, 2, 1, 2 > | **[msb_in](/documentation/code/gambit_sphinx/files/prospino__2__1_8cpp/#variable-msb-in)**  |
+| Farray< Fdouble, 1, 2, 1, 2 > | **[msl_in](/documentation/code/gambit_sphinx/files/prospino__2__1_8cpp/#variable-msl-in)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[BACKEND_DEBUG](/documentation/code/gambit_sphinxfiles/prospino__2__1_8cpp/#define-backend-debug)**  |
+|  | **[BACKEND_DEBUG](/documentation/code/gambit_sphinx/files/prospino__2__1_8cpp/#define-backend-debug)**  |
 
 ## Detailed Description
 
@@ -691,4 +691,4 @@ END_BE_NAMESPACE
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:51 +0000
+Updated on 2022-08-01 at 17:41:25 +0000

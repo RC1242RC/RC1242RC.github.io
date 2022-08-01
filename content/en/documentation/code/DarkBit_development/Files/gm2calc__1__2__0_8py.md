@@ -16,8 +16,8 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[configs](/documentation/code/darkbit_developmentnamespaces/namespaceconfigs/)**  |
-| **[configs::gm2calc_1_2_0](/documentation/code/darkbit_developmentnamespaces/namespaceconfigs_1_1gm2calc__1__2__0/)**  |
+| **[configs](/documentation/code/darkbit_development/namespaces/namespaceconfigs/)**  |
+| **[configs::gm2calc_1_2_0](/documentation/code/darkbit_development/namespaces/namespaceconfigs_1_1gm2calc__1__2__0/)**  |
 
 
 
@@ -146,4 +146,4 @@ pragmas_end = [
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:45 +0000
+Updated on 2022-08-01 at 17:41:26 +0000

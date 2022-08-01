@@ -16,15 +16,15 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit](/documentation/code/gambit_sphinx/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[Gambit::particle2](/documentation/code/gambit_sphinxclasses/structgambit_1_1particle2/)**  |
-| struct | **[Gambit::particle23](/documentation/code/gambit_sphinxclasses/structgambit_1_1particle23/)**  |
-| struct | **[Gambit::Finputs](/documentation/code/gambit_sphinxclasses/structgambit_1_1finputs/)**  |
+| struct | **[Gambit::particle2](/documentation/code/gambit_sphinx/classes/structgambit_1_1particle2/)**  |
+| struct | **[Gambit::particle23](/documentation/code/gambit_sphinx/classes/structgambit_1_1particle23/)**  |
+| struct | **[Gambit::Finputs](/documentation/code/gambit_sphinx/classes/structgambit_1_1finputs/)**  |
 
 ## Detailed Description
 
@@ -156,4 +156,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:50 +0000
+Updated on 2022-08-01 at 17:41:25 +0000

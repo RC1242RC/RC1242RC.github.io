@@ -18,10 +18,10 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[gps](/documentation/code/darkbit_developmentclasses/structgambit_1_1dm__nucleon__couplings/#variable-gps)**  |
-| double | **[gns](/documentation/code/darkbit_developmentclasses/structgambit_1_1dm__nucleon__couplings/#variable-gns)**  |
-| double | **[gpa](/documentation/code/darkbit_developmentclasses/structgambit_1_1dm__nucleon__couplings/#variable-gpa)**  |
-| double | **[gna](/documentation/code/darkbit_developmentclasses/structgambit_1_1dm__nucleon__couplings/#variable-gna)**  |
+| double | **[gps](/documentation/code/darkbit_development/classes/structgambit_1_1dm__nucleon__couplings/#variable-gps)**  |
+| double | **[gns](/documentation/code/darkbit_development/classes/structgambit_1_1dm__nucleon__couplings/#variable-gns)**  |
+| double | **[gpa](/documentation/code/darkbit_development/classes/structgambit_1_1dm__nucleon__couplings/#variable-gpa)**  |
+| double | **[gna](/documentation/code/darkbit_development/classes/structgambit_1_1dm__nucleon__couplings/#variable-gna)**  |
 
 ## Public Attributes Documentation
 
@@ -55,4 +55,4 @@ double gna;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:41 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

@@ -18,8 +18,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[WIMP_EFT_DM](/documentation/code/darkbit_developmentclasses/classgambit_1_1darkbit_1_1wimp__eft__dm/#function-wimp-eft-dm)**(TH_ProcessCatalog *const catalog)<br>Initialize object (branching ratios etc)  |
-| double | **[sv](/documentation/code/darkbit_developmentclasses/classgambit_1_1darkbit_1_1wimp__eft__dm/#function-sv)**(std::string channel, double mass, double A, double B, double v)<br>Returns <sigma v> in cm3/s for given channel, velocity and model parameters.  |
+| | **[WIMP_EFT_DM](/documentation/code/darkbit_development/classes/classgambit_1_1darkbit_1_1wimp__eft__dm/#function-wimp-eft-dm)**(TH_ProcessCatalog *const catalog)<br>Initialize object (branching ratios etc)  |
+| double | **[sv](/documentation/code/darkbit_development/classes/classgambit_1_1darkbit_1_1wimp__eft__dm/#function-sv)**(std::string channel, double mass, double A, double B, double v)<br>Returns <sigma v> in cm3/s for given channel, velocity and model parameters.  |
 
 ## Public Functions Documentation
 
@@ -54,4 +54,4 @@ Parameterises <sigma v> as A + Bv^2, i.e. s + p wave annihilation with no resona
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:42 +0000
+Updated on 2022-08-01 at 17:41:23 +0000

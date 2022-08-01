@@ -16,8 +16,8 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[libthird_1_2](/documentation/code/darkbit_developmentnamespaces/namespacelibthird__1__2/)**  |
-| **[libthird_1_2::main](/documentation/code/darkbit_developmentnamespaces/namespacelibthird__1__2_1_1main/)**  |
+| **[libthird_1_2](/documentation/code/darkbit_development/namespaces/namespacelibthird__1__2/)**  |
+| **[libthird_1_2::main](/documentation/code/darkbit_development/namespaces/namespacelibthird__1__2_1_1main/)**  |
 
 
 
@@ -86,4 +86,4 @@ def returnResult():
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:44 +0000
+Updated on 2022-08-01 at 17:41:26 +0000

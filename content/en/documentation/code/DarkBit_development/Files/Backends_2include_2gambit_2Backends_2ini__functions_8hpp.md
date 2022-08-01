@@ -16,20 +16,20 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/darkbit_developmentnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::Backends](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1backends/)**  |
+| **[Gambit](/documentation/code/darkbit_development/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::Backends](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1backends/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| union | **[Gambit::Backends::void_voidFptr](/documentation/code/darkbit_developmentclasses/uniongambit_1_1backends_1_1void__voidfptr/)**  |
+| union | **[Gambit::Backends::void_voidFptr](/documentation/code/darkbit_development/classes/uniongambit_1_1backends_1_1void__voidfptr/)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[NS_SEP](/documentation/code/darkbit_developmentfiles/backends_2include_2gambit_2backends_2ini__functions_8hpp/#define-ns-sep)** <br>Define the separator to use instead of "::" when macros get gnarly.  |
+|  | **[NS_SEP](/documentation/code/darkbit_development/files/backends_2include_2gambit_2backends_2ini__functions_8hpp/#define-ns-sep)** <br>Define the separator to use instead of "::" when macros get gnarly.  |
 
 ## Detailed Description
 
@@ -192,4 +192,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:45 +0000
+Updated on 2022-08-01 at 17:41:26 +0000

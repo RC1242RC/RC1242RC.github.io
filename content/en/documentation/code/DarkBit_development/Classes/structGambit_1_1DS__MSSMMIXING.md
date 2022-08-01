@@ -18,20 +18,20 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Farray< Fdouble_complex, 1, 4, 1, 4 > | **[neunmx](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__mssmmixing/#variable-neunmx)**  |
-| Farray< Fdouble_complex, 1, 2, 1, 2 > | **[chaumx](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__mssmmixing/#variable-chaumx)**  |
-| Farray< Fdouble_complex, 1, 2, 1, 2 > | **[chavmx](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__mssmmixing/#variable-chavmx)**  |
-| Farray< Fdouble_complex, 1, 3, 1, 3 > | **[slulmx](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__mssmmixing/#variable-slulmx)**  |
-| Farray< Fdouble_complex, 1, 6, 1, 3 > | **[sldlmx](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__mssmmixing/#variable-sldlmx)**  |
-| Farray< Fdouble_complex, 1, 6, 1, 3 > | **[sldrmx](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__mssmmixing/#variable-sldrmx)**  |
-| Farray< Fdouble_complex, 1, 6, 1, 3 > | **[squlmx](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__mssmmixing/#variable-squlmx)**  |
-| Farray< Fdouble_complex, 1, 6, 1, 3 > | **[squrmx](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__mssmmixing/#variable-squrmx)**  |
-| Farray< Fdouble_complex, 1, 6, 1, 3 > | **[sqdlmx](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__mssmmixing/#variable-sqdlmx)**  |
-| Farray< Fdouble_complex, 1, 6, 1, 3 > | **[sqdrmx](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__mssmmixing/#variable-sqdrmx)**  |
-| Fdouble | **[alpha](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__mssmmixing/#variable-alpha)**  |
-| Fdouble | **[mix_stop](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__mssmmixing/#variable-mix-stop)**  |
-| Fdouble | **[mix_sbot](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__mssmmixing/#variable-mix-sbot)**  |
-| Fdouble | **[mix_stau](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__mssmmixing/#variable-mix-stau)**  |
+| Farray< Fdouble_complex, 1, 4, 1, 4 > | **[neunmx](/documentation/code/darkbit_development/classes/structgambit_1_1ds__mssmmixing/#variable-neunmx)**  |
+| Farray< Fdouble_complex, 1, 2, 1, 2 > | **[chaumx](/documentation/code/darkbit_development/classes/structgambit_1_1ds__mssmmixing/#variable-chaumx)**  |
+| Farray< Fdouble_complex, 1, 2, 1, 2 > | **[chavmx](/documentation/code/darkbit_development/classes/structgambit_1_1ds__mssmmixing/#variable-chavmx)**  |
+| Farray< Fdouble_complex, 1, 3, 1, 3 > | **[slulmx](/documentation/code/darkbit_development/classes/structgambit_1_1ds__mssmmixing/#variable-slulmx)**  |
+| Farray< Fdouble_complex, 1, 6, 1, 3 > | **[sldlmx](/documentation/code/darkbit_development/classes/structgambit_1_1ds__mssmmixing/#variable-sldlmx)**  |
+| Farray< Fdouble_complex, 1, 6, 1, 3 > | **[sldrmx](/documentation/code/darkbit_development/classes/structgambit_1_1ds__mssmmixing/#variable-sldrmx)**  |
+| Farray< Fdouble_complex, 1, 6, 1, 3 > | **[squlmx](/documentation/code/darkbit_development/classes/structgambit_1_1ds__mssmmixing/#variable-squlmx)**  |
+| Farray< Fdouble_complex, 1, 6, 1, 3 > | **[squrmx](/documentation/code/darkbit_development/classes/structgambit_1_1ds__mssmmixing/#variable-squrmx)**  |
+| Farray< Fdouble_complex, 1, 6, 1, 3 > | **[sqdlmx](/documentation/code/darkbit_development/classes/structgambit_1_1ds__mssmmixing/#variable-sqdlmx)**  |
+| Farray< Fdouble_complex, 1, 6, 1, 3 > | **[sqdrmx](/documentation/code/darkbit_development/classes/structgambit_1_1ds__mssmmixing/#variable-sqdrmx)**  |
+| Fdouble | **[alpha](/documentation/code/darkbit_development/classes/structgambit_1_1ds__mssmmixing/#variable-alpha)**  |
+| Fdouble | **[mix_stop](/documentation/code/darkbit_development/classes/structgambit_1_1ds__mssmmixing/#variable-mix-stop)**  |
+| Fdouble | **[mix_sbot](/documentation/code/darkbit_development/classes/structgambit_1_1ds__mssmmixing/#variable-mix-sbot)**  |
+| Fdouble | **[mix_stau](/documentation/code/darkbit_development/classes/structgambit_1_1ds__mssmmixing/#variable-mix-stau)**  |
 
 ## Public Attributes Documentation
 
@@ -135,4 +135,4 @@ Fdouble mix_stau;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:41 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

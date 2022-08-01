@@ -20,20 +20,20 @@ Representation of a single entry in the FlavBit YAML database.
 
 |                | Name           |
 | -------------- | -------------- |
-| bool | **[is_limit](/documentation/code/gambit_sphinxclasses/structgambit_1_1flavbit_1_1measurement/#variable-is-limit)**  |
-| bool | **[exp_one_sided](/documentation/code/gambit_sphinxclasses/structgambit_1_1flavbit_1_1measurement/#variable-exp-one-sided)**  |
-| double | **[exp_value](/documentation/code/gambit_sphinxclasses/structgambit_1_1flavbit_1_1measurement/#variable-exp-value)**  |
-| double | **[exp_stat_error](/documentation/code/gambit_sphinxclasses/structgambit_1_1flavbit_1_1measurement/#variable-exp-stat-error)**  |
-| double | **[exp_sys_error](/documentation/code/gambit_sphinxclasses/structgambit_1_1flavbit_1_1measurement/#variable-exp-sys-error)**  |
-| double | **[exp_error](/documentation/code/gambit_sphinxclasses/structgambit_1_1flavbit_1_1measurement/#variable-exp-error)**  |
-| double | **[exp_90_CL](/documentation/code/gambit_sphinxclasses/structgambit_1_1flavbit_1_1measurement/#variable-exp-90-cl)**  |
-| double | **[exp_95_CL](/documentation/code/gambit_sphinxclasses/structgambit_1_1flavbit_1_1measurement/#variable-exp-95-cl)**  |
-| double | **[th_error](/documentation/code/gambit_sphinxclasses/structgambit_1_1flavbit_1_1measurement/#variable-th-error)**  |
-| std::string | **[name](/documentation/code/gambit_sphinxclasses/structgambit_1_1flavbit_1_1measurement/#variable-name)**  |
-| std::string | **[exp_source](/documentation/code/gambit_sphinxclasses/structgambit_1_1flavbit_1_1measurement/#variable-exp-source)**  |
-| std::string | **[th_error_source](/documentation/code/gambit_sphinxclasses/structgambit_1_1flavbit_1_1measurement/#variable-th-error-source)**  |
-| std::string | **[th_error_type](/documentation/code/gambit_sphinxclasses/structgambit_1_1flavbit_1_1measurement/#variable-th-error-type)**  |
-| std::vector< [Correlation](/documentation/code/gambit_sphinxclasses/structgambit_1_1flavbit_1_1correlation/) > | **[corr](/documentation/code/gambit_sphinxclasses/structgambit_1_1flavbit_1_1measurement/#variable-corr)**  |
+| bool | **[is_limit](/documentation/code/gambit_sphinx/classes/structgambit_1_1flavbit_1_1measurement/#variable-is-limit)**  |
+| bool | **[exp_one_sided](/documentation/code/gambit_sphinx/classes/structgambit_1_1flavbit_1_1measurement/#variable-exp-one-sided)**  |
+| double | **[exp_value](/documentation/code/gambit_sphinx/classes/structgambit_1_1flavbit_1_1measurement/#variable-exp-value)**  |
+| double | **[exp_stat_error](/documentation/code/gambit_sphinx/classes/structgambit_1_1flavbit_1_1measurement/#variable-exp-stat-error)**  |
+| double | **[exp_sys_error](/documentation/code/gambit_sphinx/classes/structgambit_1_1flavbit_1_1measurement/#variable-exp-sys-error)**  |
+| double | **[exp_error](/documentation/code/gambit_sphinx/classes/structgambit_1_1flavbit_1_1measurement/#variable-exp-error)**  |
+| double | **[exp_90_CL](/documentation/code/gambit_sphinx/classes/structgambit_1_1flavbit_1_1measurement/#variable-exp-90-cl)**  |
+| double | **[exp_95_CL](/documentation/code/gambit_sphinx/classes/structgambit_1_1flavbit_1_1measurement/#variable-exp-95-cl)**  |
+| double | **[th_error](/documentation/code/gambit_sphinx/classes/structgambit_1_1flavbit_1_1measurement/#variable-th-error)**  |
+| std::string | **[name](/documentation/code/gambit_sphinx/classes/structgambit_1_1flavbit_1_1measurement/#variable-name)**  |
+| std::string | **[exp_source](/documentation/code/gambit_sphinx/classes/structgambit_1_1flavbit_1_1measurement/#variable-exp-source)**  |
+| std::string | **[th_error_source](/documentation/code/gambit_sphinx/classes/structgambit_1_1flavbit_1_1measurement/#variable-th-error-source)**  |
+| std::string | **[th_error_type](/documentation/code/gambit_sphinx/classes/structgambit_1_1flavbit_1_1measurement/#variable-th-error-type)**  |
+| std::vector< [Correlation](/documentation/code/gambit_sphinx/classes/structgambit_1_1flavbit_1_1correlation/) > | **[corr](/documentation/code/gambit_sphinx/classes/structgambit_1_1flavbit_1_1measurement/#variable-corr)**  |
 
 ## Public Attributes Documentation
 
@@ -137,4 +137,4 @@ std::vector< Correlation > corr;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:47 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

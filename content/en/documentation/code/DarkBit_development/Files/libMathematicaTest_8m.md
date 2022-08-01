@@ -16,17 +16,17 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| (*) ::Package(*) ::Section(*) Dummy(*) author(*) t dat | **[CalculateSquare](/documentation/code/darkbit_developmentfiles/libmathematicatest_8m/#variable-calculatesquare)**  |
-| CalculateSum[var1_, var2_] | **[__pad0__](/documentation/code/darkbit_developmentfiles/libmathematicatest_8m/#variable---pad0--)**  |
-| | **[Var2](/documentation/code/darkbit_developmentfiles/libmathematicatest_8m/#variable-var2)**  |
-| PrintVar[] | **[__pad1__](/documentation/code/darkbit_developmentfiles/libmathematicatest_8m/#variable---pad1--)**  |
-| PrintVarorVar2[check_] | **[__pad2__](/documentation/code/darkbit_developmentfiles/libmathematicatest_8m/#variable---pad2--)**  |
-| PrintVarorVar2[check_] | **[Var](/documentation/code/darkbit_developmentfiles/libmathematicatest_8m/#variable-var)**  |
-| VarEqualVar2[] | **[__pad3__](/documentation/code/darkbit_developmentfiles/libmathematicatest_8m/#variable---pad3--)**  |
-| VarEqualVar2[]<> | **[ToString](/documentation/code/darkbit_developmentfiles/libmathematicatest_8m/#variable-tostring)**  |
-| VoidTest[] | **[__pad4__](/documentation/code/darkbit_developmentfiles/libmathematicatest_8m/#variable---pad4--)**  |
-| ExtractElement[list_, i_] | **[__pad5__](/documentation/code/darkbit_developmentfiles/libmathematicatest_8m/#variable---pad5--)**  |
-| ExtractElement[list_, i_] | **[func](/documentation/code/darkbit_developmentfiles/libmathematicatest_8m/#variable-func)**  |
+| (*) ::Package(*) ::Section(*) Dummy(*) author(*) t dat | **[CalculateSquare](/documentation/code/darkbit_development/files/libmathematicatest_8m/#variable-calculatesquare)**  |
+| CalculateSum[var1_, var2_] | **[__pad0__](/documentation/code/darkbit_development/files/libmathematicatest_8m/#variable---pad0--)**  |
+| | **[Var2](/documentation/code/darkbit_development/files/libmathematicatest_8m/#variable-var2)**  |
+| PrintVar[] | **[__pad1__](/documentation/code/darkbit_development/files/libmathematicatest_8m/#variable---pad1--)**  |
+| PrintVarorVar2[check_] | **[__pad2__](/documentation/code/darkbit_development/files/libmathematicatest_8m/#variable---pad2--)**  |
+| PrintVarorVar2[check_] | **[Var](/documentation/code/darkbit_development/files/libmathematicatest_8m/#variable-var)**  |
+| VarEqualVar2[] | **[__pad3__](/documentation/code/darkbit_development/files/libmathematicatest_8m/#variable---pad3--)**  |
+| VarEqualVar2[]<> | **[ToString](/documentation/code/darkbit_development/files/libmathematicatest_8m/#variable-tostring)**  |
+| VoidTest[] | **[__pad4__](/documentation/code/darkbit_development/files/libmathematicatest_8m/#variable---pad4--)**  |
+| ExtractElement[list_, i_] | **[__pad5__](/documentation/code/darkbit_development/files/libmathematicatest_8m/#variable---pad5--)**  |
+| ExtractElement[list_, i_] | **[func](/documentation/code/darkbit_development/files/libmathematicatest_8m/#variable-func)**  |
 
 
 
@@ -170,4 +170,4 @@ SquareList[list_]:=Table[list[[i]]^2,{i,Length[list]}]
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:44 +0000
+Updated on 2022-08-01 at 17:41:26 +0000

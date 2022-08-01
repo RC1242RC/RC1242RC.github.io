@@ -16,7 +16,7 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[FJNS::PseudoJet](/documentation/code/darkbit_developmentnamespaces/namespacefjns_1_1pseudojet/)**  |
+| **[FJNS::PseudoJet](/documentation/code/darkbit_development/namespaces/namespacefjns_1_1pseudojet/)**  |
 
 
 
@@ -25,4 +25,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:42 +0000
+Updated on 2022-08-01 at 17:41:24 +0000

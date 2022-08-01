@@ -18,12 +18,12 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| void * | **[handle](/documentation/code/darkbit_developmentclasses/structgambit_1_1numout/#variable-handle)**  |
-| REAL ** | **[link](/documentation/code/darkbit_developmentclasses/structgambit_1_1numout/#variable-link)**  |
-| REAL * | **[Q](/documentation/code/darkbit_developmentclasses/structgambit_1_1numout/#variable-q)**  |
-| REAL * | **[SC](/documentation/code/darkbit_developmentclasses/structgambit_1_1numout/#variable-sc)**  |
-| int | **[init](/documentation/code/darkbit_developmentclasses/structgambit_1_1numout/#variable-init)**  |
-| [CalcHEP_interface](/documentation/code/darkbit_developmentclasses/structgambit_1_1calchep__interface/) * | **[interface](/documentation/code/darkbit_developmentclasses/structgambit_1_1numout/#variable-interface)**  |
+| void * | **[handle](/documentation/code/darkbit_development/classes/structgambit_1_1numout/#variable-handle)**  |
+| REAL ** | **[link](/documentation/code/darkbit_development/classes/structgambit_1_1numout/#variable-link)**  |
+| REAL * | **[Q](/documentation/code/darkbit_development/classes/structgambit_1_1numout/#variable-q)**  |
+| REAL * | **[SC](/documentation/code/darkbit_development/classes/structgambit_1_1numout/#variable-sc)**  |
+| int | **[init](/documentation/code/darkbit_development/classes/structgambit_1_1numout/#variable-init)**  |
+| [CalcHEP_interface](/documentation/code/darkbit_development/classes/structgambit_1_1calchep__interface/) * | **[interface](/documentation/code/darkbit_development/classes/structgambit_1_1numout/#variable-interface)**  |
 
 ## Public Attributes Documentation
 
@@ -71,4 +71,4 @@ CalcHEP_interface * interface;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:41 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

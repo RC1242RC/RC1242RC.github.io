@@ -18,8 +18,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Farray< Fdouble_complex, 1, 50, 1, 50, 1, 50 > | **[gl](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__vrtxs/#variable-gl)**  |
-| Farray< Fdouble_complex, 1, 50, 1, 50, 1, 50 > | **[gr](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__vrtxs/#variable-gr)**  |
+| Farray< Fdouble_complex, 1, 50, 1, 50, 1, 50 > | **[gl](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__vrtxs/#variable-gl)**  |
+| Farray< Fdouble_complex, 1, 50, 1, 50, 1, 50 > | **[gr](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__vrtxs/#variable-gr)**  |
 
 ## Public Attributes Documentation
 
@@ -39,4 +39,4 @@ Farray< Fdouble_complex, 1, 50, 1, 50, 1, 50 > gr;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:46 +0000
+Updated on 2022-08-01 at 17:41:21 +0000

@@ -16,8 +16,8 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[modules](/documentation/code/darkbit_developmentnamespaces/namespacemodules/)**  |
-| **[modules::funcutils](/documentation/code/darkbit_developmentnamespaces/namespacemodules_1_1funcutils/)**  |
+| **[modules](/documentation/code/darkbit_development/namespaces/namespacemodules/)**  |
+| **[modules::funcutils](/documentation/code/darkbit_development/namespaces/namespacemodules_1_1funcutils/)**  |
 
 
 
@@ -583,4 +583,4 @@ def getFunctionNameDict(func_el):
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:45 +0000
+Updated on 2022-08-01 at 17:41:26 +0000

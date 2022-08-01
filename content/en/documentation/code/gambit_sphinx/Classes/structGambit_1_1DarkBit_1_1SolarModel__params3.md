@@ -18,10 +18,10 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[rs](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1solarmodel__params3/#variable-rs)**  |
-| double | **[ma0](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1solarmodel__params3/#variable-ma0)**  |
-| [SolarModel](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1solarmodel/) * | **[sol](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1solarmodel__params3/#variable-sol)**  |
-| [AxionInterpolator](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1axioninterpolator/) * | **[eff_exp](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1solarmodel__params3/#variable-eff-exp)**  |
+| double | **[rs](/documentation/code/gambit_sphinx/classes/structgambit_1_1darkbit_1_1solarmodel__params3/#variable-rs)**  |
+| double | **[ma0](/documentation/code/gambit_sphinx/classes/structgambit_1_1darkbit_1_1solarmodel__params3/#variable-ma0)**  |
+| [SolarModel](/documentation/code/gambit_sphinx/classes/classgambit_1_1darkbit_1_1solarmodel/) * | **[sol](/documentation/code/gambit_sphinx/classes/structgambit_1_1darkbit_1_1solarmodel__params3/#variable-sol)**  |
+| [AxionInterpolator](/documentation/code/gambit_sphinx/classes/classgambit_1_1darkbit_1_1axioninterpolator/) * | **[eff_exp](/documentation/code/gambit_sphinx/classes/structgambit_1_1darkbit_1_1solarmodel__params3/#variable-eff-exp)**  |
 
 ## Public Attributes Documentation
 
@@ -55,4 +55,4 @@ AxionInterpolator * eff_exp;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:47 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

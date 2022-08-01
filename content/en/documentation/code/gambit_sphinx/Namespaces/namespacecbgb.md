@@ -16,40 +16,40 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[input_cfg_path](/documentation/code/gambit_sphinxnamespaces/namespacecbgb/#variable-input-cfg-path)**  |
-| | **[input_cfg_dir](/documentation/code/gambit_sphinxnamespaces/namespacecbgb/#variable-input-cfg-dir)**  |
-| | **[input_cfg_filename](/documentation/code/gambit_sphinxnamespaces/namespacecbgb/#variable-input-cfg-filename)**  |
-| | **[input_cfg_modulename](/documentation/code/gambit_sphinxnamespaces/namespacecbgb/#variable-input-cfg-modulename)**  |
-| | **[ext](/documentation/code/gambit_sphinxnamespaces/namespacecbgb/#variable-ext)**  |
-| | **[module_name](/documentation/code/gambit_sphinxnamespaces/namespacecbgb/#variable-module-name)**  |
-| | **[cfg](/documentation/code/gambit_sphinxnamespaces/namespacecbgb/#variable-cfg)**  |
-| string | **[f_listing](/documentation/code/gambit_sphinxnamespaces/namespacecbgb/#variable-f-listing)**  |
-| list | **[f_duplicates](/documentation/code/gambit_sphinxnamespaces/namespacecbgb/#variable-f-duplicates)**  |
-| string | **[cb_listing](/documentation/code/gambit_sphinxnamespaces/namespacecbgb/#variable-cb-listing)**  |
-| list | **[cb_duplicates](/documentation/code/gambit_sphinxnamespaces/namespacecbgb/#variable-cb-duplicates)**  |
-| string | **[src_content](/documentation/code/gambit_sphinxnamespaces/namespacecbgb/#variable-src-content)**  |
-| string | **[src_lines](/documentation/code/gambit_sphinxnamespaces/namespacecbgb/#variable-src-lines)**  |
-| | **[code_parts_dict](/documentation/code/gambit_sphinxnamespaces/namespacecbgb/#variable-code-parts-dict)**  |
-| string | **[be_types_file_content](/documentation/code/gambit_sphinxnamespaces/namespacecbgb/#variable-be-types-file-content)**  |
-| string | **[frontend_file_content](/documentation/code/gambit_sphinxnamespaces/namespacecbgb/#variable-frontend-file-content)**  |
-| | **[functions_left](/documentation/code/gambit_sphinxnamespaces/namespacecbgb/#variable-functions-left)**  |
-| | **[code_lines](/documentation/code/gambit_sphinxnamespaces/namespacecbgb/#variable-code-lines)**  |
-| | **[code_category](/documentation/code/gambit_sphinxnamespaces/namespacecbgb/#variable-code-category)**  |
-| | **[f_name](/documentation/code/gambit_sphinxnamespaces/namespacecbgb/#variable-f-name)**  |
-| | **[f_name_short](/documentation/code/gambit_sphinxnamespaces/namespacecbgb/#variable-f-name-short)**  |
-| list | **[other_f_list](/documentation/code/gambit_sphinxnamespaces/namespacecbgb/#variable-other-f-list)**  |
-| bool | **[found_other_f](/documentation/code/gambit_sphinxnamespaces/namespacecbgb/#variable-found-other-f)**  |
-| | **[other_f_name_short](/documentation/code/gambit_sphinxnamespaces/namespacecbgb/#variable-other-f-name-short)**  |
-| bool | **[is_requested](/documentation/code/gambit_sphinxnamespaces/namespacecbgb/#variable-is-requested)**  |
-| | **[use_f_name](/documentation/code/gambit_sphinxnamespaces/namespacecbgb/#variable-use-f-name)**  |
-| | **[return_type_info](/documentation/code/gambit_sphinxnamespaces/namespacecbgb/#variable-return-type-info)**  |
-| | **[parameter_defs](/documentation/code/gambit_sphinxnamespaces/namespacecbgb/#variable-parameter-defs)**  |
-| | **[arg_names](/documentation/code/gambit_sphinxnamespaces/namespacecbgb/#variable-arg-names)**  |
-| | **[arg_info_dict](/documentation/code/gambit_sphinxnamespaces/namespacecbgb/#variable-arg-info-dict)**  |
-| | **[f_dict](/documentation/code/gambit_sphinxnamespaces/namespacecbgb/#variable-f-dict)**  |
-| | **[common_blocks_left](/documentation/code/gambit_sphinxnamespaces/namespacecbgb/#variable-common-blocks-left)**  |
-| | **[cb_dicts](/documentation/code/gambit_sphinxnamespaces/namespacecbgb/#variable-cb-dicts)**  |
-| | **[var_info_dict](/documentation/code/gambit_sphinxnamespaces/namespacecbgb/#variable-var-info-dict)**  |
+| | **[input_cfg_path](/documentation/code/gambit_sphinx/namespaces/namespacecbgb/#variable-input-cfg-path)**  |
+| | **[input_cfg_dir](/documentation/code/gambit_sphinx/namespaces/namespacecbgb/#variable-input-cfg-dir)**  |
+| | **[input_cfg_filename](/documentation/code/gambit_sphinx/namespaces/namespacecbgb/#variable-input-cfg-filename)**  |
+| | **[input_cfg_modulename](/documentation/code/gambit_sphinx/namespaces/namespacecbgb/#variable-input-cfg-modulename)**  |
+| | **[ext](/documentation/code/gambit_sphinx/namespaces/namespacecbgb/#variable-ext)**  |
+| | **[module_name](/documentation/code/gambit_sphinx/namespaces/namespacecbgb/#variable-module-name)**  |
+| | **[cfg](/documentation/code/gambit_sphinx/namespaces/namespacecbgb/#variable-cfg)**  |
+| string | **[f_listing](/documentation/code/gambit_sphinx/namespaces/namespacecbgb/#variable-f-listing)**  |
+| list | **[f_duplicates](/documentation/code/gambit_sphinx/namespaces/namespacecbgb/#variable-f-duplicates)**  |
+| string | **[cb_listing](/documentation/code/gambit_sphinx/namespaces/namespacecbgb/#variable-cb-listing)**  |
+| list | **[cb_duplicates](/documentation/code/gambit_sphinx/namespaces/namespacecbgb/#variable-cb-duplicates)**  |
+| string | **[src_content](/documentation/code/gambit_sphinx/namespaces/namespacecbgb/#variable-src-content)**  |
+| string | **[src_lines](/documentation/code/gambit_sphinx/namespaces/namespacecbgb/#variable-src-lines)**  |
+| | **[code_parts_dict](/documentation/code/gambit_sphinx/namespaces/namespacecbgb/#variable-code-parts-dict)**  |
+| string | **[be_types_file_content](/documentation/code/gambit_sphinx/namespaces/namespacecbgb/#variable-be-types-file-content)**  |
+| string | **[frontend_file_content](/documentation/code/gambit_sphinx/namespaces/namespacecbgb/#variable-frontend-file-content)**  |
+| | **[functions_left](/documentation/code/gambit_sphinx/namespaces/namespacecbgb/#variable-functions-left)**  |
+| | **[code_lines](/documentation/code/gambit_sphinx/namespaces/namespacecbgb/#variable-code-lines)**  |
+| | **[code_category](/documentation/code/gambit_sphinx/namespaces/namespacecbgb/#variable-code-category)**  |
+| | **[f_name](/documentation/code/gambit_sphinx/namespaces/namespacecbgb/#variable-f-name)**  |
+| | **[f_name_short](/documentation/code/gambit_sphinx/namespaces/namespacecbgb/#variable-f-name-short)**  |
+| list | **[other_f_list](/documentation/code/gambit_sphinx/namespaces/namespacecbgb/#variable-other-f-list)**  |
+| bool | **[found_other_f](/documentation/code/gambit_sphinx/namespaces/namespacecbgb/#variable-found-other-f)**  |
+| | **[other_f_name_short](/documentation/code/gambit_sphinx/namespaces/namespacecbgb/#variable-other-f-name-short)**  |
+| bool | **[is_requested](/documentation/code/gambit_sphinx/namespaces/namespacecbgb/#variable-is-requested)**  |
+| | **[use_f_name](/documentation/code/gambit_sphinx/namespaces/namespacecbgb/#variable-use-f-name)**  |
+| | **[return_type_info](/documentation/code/gambit_sphinx/namespaces/namespacecbgb/#variable-return-type-info)**  |
+| | **[parameter_defs](/documentation/code/gambit_sphinx/namespaces/namespacecbgb/#variable-parameter-defs)**  |
+| | **[arg_names](/documentation/code/gambit_sphinx/namespaces/namespacecbgb/#variable-arg-names)**  |
+| | **[arg_info_dict](/documentation/code/gambit_sphinx/namespaces/namespacecbgb/#variable-arg-info-dict)**  |
+| | **[f_dict](/documentation/code/gambit_sphinx/namespaces/namespacecbgb/#variable-f-dict)**  |
+| | **[common_blocks_left](/documentation/code/gambit_sphinx/namespaces/namespacecbgb/#variable-common-blocks-left)**  |
+| | **[cb_dicts](/documentation/code/gambit_sphinx/namespaces/namespacecbgb/#variable-cb-dicts)**  |
+| | **[var_info_dict](/documentation/code/gambit_sphinx/namespaces/namespacecbgb/#variable-var-info-dict)**  |
 
 
 
@@ -298,4 +298,4 @@ var_info_dict =  utils.getVariablesDict(code_lines, cb_dict['member_names']);
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:48 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

@@ -16,18 +16,18 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/darkbit_developmentnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::Scanner](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1scanner/)**  |
-| **[Gambit::Scanner::Plugins](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1scanner_1_1plugins/)**  |
+| **[Gambit](/documentation/code/darkbit_development/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::Scanner](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1scanner/)**  |
+| **[Gambit::Scanner::Plugins](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1scanner_1_1plugins/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Gambit::Scanner::Plugins::Plugin_Main_Interface_Base< ret(args...)>](/documentation/code/darkbit_developmentclasses/classgambit_1_1scanner_1_1plugins_1_1plugin__main__interface__base_3_01ret_07args_8_8_8_08_4/)**  |
-| class | **[Gambit::Scanner::Plugins::Plugin_Interface_Base](/documentation/code/darkbit_developmentclasses/classgambit_1_1scanner_1_1plugins_1_1plugin__interface__base/)**  |
-| class | **[Gambit::Scanner::Plugins::Plugin_Interface](/documentation/code/darkbit_developmentclasses/classgambit_1_1scanner_1_1plugins_1_1plugin__interface/)**  |
-| class | **[Gambit::Scanner::Plugins::Plugin_Interface< ret(args...)>](/documentation/code/darkbit_developmentclasses/classgambit_1_1scanner_1_1plugins_1_1plugin__interface_3_01ret_07args_8_8_8_08_4/)**  |
+| class | **[Gambit::Scanner::Plugins::Plugin_Main_Interface_Base< ret(args...)>](/documentation/code/darkbit_development/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__main__interface__base_3_01ret_07args_8_8_8_08_4/)**  |
+| class | **[Gambit::Scanner::Plugins::Plugin_Interface_Base](/documentation/code/darkbit_development/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__interface__base/)**  |
+| class | **[Gambit::Scanner::Plugins::Plugin_Interface](/documentation/code/darkbit_development/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__interface/)**  |
+| class | **[Gambit::Scanner::Plugins::Plugin_Interface< ret(args...)>](/documentation/code/darkbit_development/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__interface_3_01ret_07args_8_8_8_08_4/)**  |
 
 ## Detailed Description
 
@@ -238,4 +238,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:43 +0000
+Updated on 2022-08-01 at 17:41:24 +0000

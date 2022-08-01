@@ -16,15 +16,15 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[modules](/documentation/code/gambit_sphinxnamespaces/namespacemodules/)**  |
-| **[modules::exceptions](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1exceptions/)**  |
+| **[modules](/documentation/code/gambit_sphinx/namespaces/namespacemodules/)**  |
+| **[modules::exceptions](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1exceptions/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[modules::exceptions::Error](/documentation/code/gambit_sphinxclasses/classmodules_1_1exceptions_1_1error/)**  |
-| class | **[modules::exceptions::ReturnError](/documentation/code/gambit_sphinxclasses/classmodules_1_1exceptions_1_1returnerror/)**  |
+| class | **[modules::exceptions::Error](/documentation/code/gambit_sphinx/classes/classmodules_1_1exceptions_1_1error/)**  |
+| class | **[modules::exceptions::ReturnError](/documentation/code/gambit_sphinx/classes/classmodules_1_1exceptions_1_1returnerror/)**  |
 
 
 
@@ -54,4 +54,4 @@ class ReturnError(Error):
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:51 +0000
+Updated on 2022-08-01 at 17:41:25 +0000

@@ -20,27 +20,27 @@ Structure that holds all the data provided by plugins about themselves.
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[pluginData](/documentation/code/gambit_sphinxclasses/structgambit_1_1scanner_1_1plugins_1_1plugindata/#function-plugindata)**(const std::string & name, const std::string & type, const std::string & version_in) |
-| std::string | **[print](/documentation/code/gambit_sphinxclasses/structgambit_1_1scanner_1_1plugins_1_1plugindata/#function-print)**() |
-| | **[~pluginData](/documentation/code/gambit_sphinxclasses/structgambit_1_1scanner_1_1plugins_1_1plugindata/#function-~plugindata)**() |
+| | **[pluginData](/documentation/code/gambit_sphinx/classes/structgambit_1_1scanner_1_1plugins_1_1plugindata/#function-plugindata)**(const std::string & name, const std::string & type, const std::string & version_in) |
+| std::string | **[print](/documentation/code/gambit_sphinx/classes/structgambit_1_1scanner_1_1plugins_1_1plugindata/#function-print)**() |
+| | **[~pluginData](/documentation/code/gambit_sphinx/classes/structgambit_1_1scanner_1_1plugins_1_1plugindata/#function-~plugindata)**() |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| std::string | **[name](/documentation/code/gambit_sphinxclasses/structgambit_1_1scanner_1_1plugins_1_1plugindata/#variable-name)**  |
-| std::string | **[type](/documentation/code/gambit_sphinxclasses/structgambit_1_1scanner_1_1plugins_1_1plugindata/#variable-type)**  |
-| std::string | **[version](/documentation/code/gambit_sphinxclasses/structgambit_1_1scanner_1_1plugins_1_1plugindata/#variable-version)**  |
-| std::string | **[tag](/documentation/code/gambit_sphinxclasses/structgambit_1_1scanner_1_1plugins_1_1plugindata/#variable-tag)**  |
-| YAML::Node | **[node](/documentation/code/gambit_sphinxclasses/structgambit_1_1scanner_1_1plugins_1_1plugindata/#variable-node)**  |
-| [printer_interface](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1scanner/#typedef-printer-interface) * | **[printer](/documentation/code/gambit_sphinxclasses/structgambit_1_1scanner_1_1plugins_1_1plugindata/#variable-printer)**  |
-| [prior_interface](/documentation/code/gambit_sphinxclasses/classgambit_1_1priors_1_1baseprior/) * | **[prior](/documentation/code/gambit_sphinxclasses/structgambit_1_1scanner_1_1plugins_1_1plugindata/#variable-prior)**  |
-| std::vector< void * > | **[inputData](/documentation/code/gambit_sphinxclasses/structgambit_1_1scanner_1_1plugins_1_1plugindata/#variable-inputdata)**  |
-| std::vector< void(*)([pluginData](/documentation/code/gambit_sphinxclasses/structgambit_1_1scanner_1_1plugins_1_1plugindata/) &)> | **[inits](/documentation/code/gambit_sphinxclasses/structgambit_1_1scanner_1_1plugins_1_1plugindata/#variable-inits)**  |
-| std::map< std::string, [factoryBase](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1plugins_1_1factorybase/) * > | **[outputFuncs](/documentation/code/gambit_sphinxclasses/structgambit_1_1scanner_1_1plugins_1_1plugindata/#variable-outputfuncs)**  |
-| std::map< type_index, void * > | **[plugin_mains](/documentation/code/gambit_sphinxclasses/structgambit_1_1scanner_1_1plugins_1_1plugindata/#variable-plugin-mains)**  |
-| void(* | **[deconstructor](/documentation/code/gambit_sphinxclasses/structgambit_1_1scanner_1_1plugins_1_1plugindata/#variable-deconstructor)**  |
-| bool | **[loaded](/documentation/code/gambit_sphinxclasses/structgambit_1_1scanner_1_1plugins_1_1plugindata/#variable-loaded)**  |
+| std::string | **[name](/documentation/code/gambit_sphinx/classes/structgambit_1_1scanner_1_1plugins_1_1plugindata/#variable-name)**  |
+| std::string | **[type](/documentation/code/gambit_sphinx/classes/structgambit_1_1scanner_1_1plugins_1_1plugindata/#variable-type)**  |
+| std::string | **[version](/documentation/code/gambit_sphinx/classes/structgambit_1_1scanner_1_1plugins_1_1plugindata/#variable-version)**  |
+| std::string | **[tag](/documentation/code/gambit_sphinx/classes/structgambit_1_1scanner_1_1plugins_1_1plugindata/#variable-tag)**  |
+| YAML::Node | **[node](/documentation/code/gambit_sphinx/classes/structgambit_1_1scanner_1_1plugins_1_1plugindata/#variable-node)**  |
+| [printer_interface](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1scanner/#typedef-printer-interface) * | **[printer](/documentation/code/gambit_sphinx/classes/structgambit_1_1scanner_1_1plugins_1_1plugindata/#variable-printer)**  |
+| [prior_interface](/documentation/code/gambit_sphinx/classes/classgambit_1_1priors_1_1baseprior/) * | **[prior](/documentation/code/gambit_sphinx/classes/structgambit_1_1scanner_1_1plugins_1_1plugindata/#variable-prior)**  |
+| std::vector< void * > | **[inputData](/documentation/code/gambit_sphinx/classes/structgambit_1_1scanner_1_1plugins_1_1plugindata/#variable-inputdata)**  |
+| std::vector< void(*)([pluginData](/documentation/code/gambit_sphinx/classes/structgambit_1_1scanner_1_1plugins_1_1plugindata/) &)> | **[inits](/documentation/code/gambit_sphinx/classes/structgambit_1_1scanner_1_1plugins_1_1plugindata/#variable-inits)**  |
+| std::map< std::string, [factoryBase](/documentation/code/gambit_sphinx/classes/classgambit_1_1scanner_1_1plugins_1_1factorybase/) * > | **[outputFuncs](/documentation/code/gambit_sphinx/classes/structgambit_1_1scanner_1_1plugins_1_1plugindata/#variable-outputfuncs)**  |
+| std::map< type_index, void * > | **[plugin_mains](/documentation/code/gambit_sphinx/classes/structgambit_1_1scanner_1_1plugins_1_1plugindata/#variable-plugin-mains)**  |
+| void(* | **[deconstructor](/documentation/code/gambit_sphinx/classes/structgambit_1_1scanner_1_1plugins_1_1plugindata/#variable-deconstructor)**  |
+| bool | **[loaded](/documentation/code/gambit_sphinx/classes/structgambit_1_1scanner_1_1plugins_1_1plugindata/#variable-loaded)**  |
 
 ## Public Functions Documentation
 
@@ -164,4 +164,4 @@ bool loaded;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:48 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

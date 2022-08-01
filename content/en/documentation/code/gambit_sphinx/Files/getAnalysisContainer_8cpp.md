@@ -16,15 +16,15 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::ColliderBit](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1colliderbit/)**  |
+| **[Gambit](/documentation/code/gambit_sphinx/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::ColliderBit](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1colliderbit/)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[DEBUG_PREFIX](/documentation/code/gambit_sphinxfiles/getanalysiscontainer_8cpp/#define-debug-prefix)**  |
-|  | **[GET_ANALYSIS_CONTAINER](/documentation/code/gambit_sphinxfiles/getanalysiscontainer_8cpp/#define-get-analysis-container)**(NAME, EXPERIMENT) <br>Retrieve a container for analyses with EXPERIMENT.  |
+|  | **[DEBUG_PREFIX](/documentation/code/gambit_sphinx/files/getanalysiscontainer_8cpp/#define-debug-prefix)**  |
+|  | **[GET_ANALYSIS_CONTAINER](/documentation/code/gambit_sphinx/files/getanalysiscontainer_8cpp/#define-get-analysis-container)**(NAME, EXPERIMENT) <br>Retrieve a container for analyses with EXPERIMENT.  |
 
 ## Detailed Description
 
@@ -183,4 +183,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:50 +0000
+Updated on 2022-08-01 at 17:41:24 +0000

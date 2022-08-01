@@ -16,14 +16,14 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::ColliderBit](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1colliderbit/)**  |
+| **[Gambit](/documentation/code/gambit_sphinx/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::ColliderBit](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1colliderbit/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Gambit::ColliderBit::Analysis_ATLAS_7TeV_2LEPStop_4_7invfb](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1analysis__atlas__7tev__2lepstop__4__7invfb/)**  |
+| class | **[Gambit::ColliderBit::Analysis_ATLAS_7TeV_2LEPStop_4_7invfb](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1analysis__atlas__7tev__2lepstop__4__7invfb/)**  |
 
 
 
@@ -218,4 +218,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:49 +0000
+Updated on 2022-08-01 at 17:41:23 +0000

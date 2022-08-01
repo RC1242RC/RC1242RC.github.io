@@ -18,46 +18,46 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Settings](/documentation/code/gambit_sphinxclasses/structsettings/#function-settings)**(int _nDims =0, int _nDerived =0) |
-| | **[Settings](/documentation/code/gambit_sphinxclasses/structsettings/#function-settings)**(int _nDims =0, int _nDerived =0) |
-| | **[Settings](/documentation/code/gambit_sphinxclasses/structsettings/#function-settings)**(int _nDims =0, int _nDerived =0) |
+| | **[Settings](/documentation/code/gambit_sphinx/classes/structsettings/#function-settings)**(int _nDims =0, int _nDerived =0) |
+| | **[Settings](/documentation/code/gambit_sphinx/classes/structsettings/#function-settings)**(int _nDims =0, int _nDerived =0) |
+| | **[Settings](/documentation/code/gambit_sphinx/classes/structsettings/#function-settings)**(int _nDims =0, int _nDerived =0) |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| int | **[nDims](/documentation/code/gambit_sphinxclasses/structsettings/#variable-ndims)**  |
-| int | **[nDerived](/documentation/code/gambit_sphinxclasses/structsettings/#variable-nderived)**  |
-| int | **[nlive](/documentation/code/gambit_sphinxclasses/structsettings/#variable-nlive)**  |
-| int | **[num_repeats](/documentation/code/gambit_sphinxclasses/structsettings/#variable-num-repeats)**  |
-| int | **[nprior](/documentation/code/gambit_sphinxclasses/structsettings/#variable-nprior)**  |
-| int | **[nfail](/documentation/code/gambit_sphinxclasses/structsettings/#variable-nfail)**  |
-| bool | **[do_clustering](/documentation/code/gambit_sphinxclasses/structsettings/#variable-do-clustering)**  |
-| int | **[feedback](/documentation/code/gambit_sphinxclasses/structsettings/#variable-feedback)**  |
-| double | **[precision_criterion](/documentation/code/gambit_sphinxclasses/structsettings/#variable-precision-criterion)**  |
-| double | **[logzero](/documentation/code/gambit_sphinxclasses/structsettings/#variable-logzero)**  |
-| int | **[max_ndead](/documentation/code/gambit_sphinxclasses/structsettings/#variable-max-ndead)**  |
-| double | **[boost_posterior](/documentation/code/gambit_sphinxclasses/structsettings/#variable-boost-posterior)**  |
-| bool | **[posteriors](/documentation/code/gambit_sphinxclasses/structsettings/#variable-posteriors)**  |
-| bool | **[equals](/documentation/code/gambit_sphinxclasses/structsettings/#variable-equals)**  |
-| bool | **[cluster_posteriors](/documentation/code/gambit_sphinxclasses/structsettings/#variable-cluster-posteriors)**  |
-| bool | **[write_resume](/documentation/code/gambit_sphinxclasses/structsettings/#variable-write-resume)**  |
-| bool | **[write_paramnames](/documentation/code/gambit_sphinxclasses/structsettings/#variable-write-paramnames)**  |
-| bool | **[read_resume](/documentation/code/gambit_sphinxclasses/structsettings/#variable-read-resume)**  |
-| bool | **[write_stats](/documentation/code/gambit_sphinxclasses/structsettings/#variable-write-stats)**  |
-| bool | **[write_live](/documentation/code/gambit_sphinxclasses/structsettings/#variable-write-live)**  |
-| bool | **[write_dead](/documentation/code/gambit_sphinxclasses/structsettings/#variable-write-dead)**  |
-| bool | **[write_prior](/documentation/code/gambit_sphinxclasses/structsettings/#variable-write-prior)**  |
-| bool | **[maximise](/documentation/code/gambit_sphinxclasses/structsettings/#variable-maximise)**  |
-| double | **[compression_factor](/documentation/code/gambit_sphinxclasses/structsettings/#variable-compression-factor)**  |
-| std::string | **[base_dir](/documentation/code/gambit_sphinxclasses/structsettings/#variable-base-dir)**  |
-| std::string | **[file_root](/documentation/code/gambit_sphinxclasses/structsettings/#variable-file-root)**  |
-| std::vector< double > | **[grade_frac](/documentation/code/gambit_sphinxclasses/structsettings/#variable-grade-frac)**  |
-| std::vector< int > | **[grade_dims](/documentation/code/gambit_sphinxclasses/structsettings/#variable-grade-dims)**  |
-| std::vector< double > | **[loglikes](/documentation/code/gambit_sphinxclasses/structsettings/#variable-loglikes)**  |
-| std::vector< int > | **[nlives](/documentation/code/gambit_sphinxclasses/structsettings/#variable-nlives)**  |
-| int | **[seed](/documentation/code/gambit_sphinxclasses/structsettings/#variable-seed)**  |
-| bool | **[synchronous](/documentation/code/gambit_sphinxclasses/structsettings/#variable-synchronous)**  |
+| int | **[nDims](/documentation/code/gambit_sphinx/classes/structsettings/#variable-ndims)**  |
+| int | **[nDerived](/documentation/code/gambit_sphinx/classes/structsettings/#variable-nderived)**  |
+| int | **[nlive](/documentation/code/gambit_sphinx/classes/structsettings/#variable-nlive)**  |
+| int | **[num_repeats](/documentation/code/gambit_sphinx/classes/structsettings/#variable-num-repeats)**  |
+| int | **[nprior](/documentation/code/gambit_sphinx/classes/structsettings/#variable-nprior)**  |
+| int | **[nfail](/documentation/code/gambit_sphinx/classes/structsettings/#variable-nfail)**  |
+| bool | **[do_clustering](/documentation/code/gambit_sphinx/classes/structsettings/#variable-do-clustering)**  |
+| int | **[feedback](/documentation/code/gambit_sphinx/classes/structsettings/#variable-feedback)**  |
+| double | **[precision_criterion](/documentation/code/gambit_sphinx/classes/structsettings/#variable-precision-criterion)**  |
+| double | **[logzero](/documentation/code/gambit_sphinx/classes/structsettings/#variable-logzero)**  |
+| int | **[max_ndead](/documentation/code/gambit_sphinx/classes/structsettings/#variable-max-ndead)**  |
+| double | **[boost_posterior](/documentation/code/gambit_sphinx/classes/structsettings/#variable-boost-posterior)**  |
+| bool | **[posteriors](/documentation/code/gambit_sphinx/classes/structsettings/#variable-posteriors)**  |
+| bool | **[equals](/documentation/code/gambit_sphinx/classes/structsettings/#variable-equals)**  |
+| bool | **[cluster_posteriors](/documentation/code/gambit_sphinx/classes/structsettings/#variable-cluster-posteriors)**  |
+| bool | **[write_resume](/documentation/code/gambit_sphinx/classes/structsettings/#variable-write-resume)**  |
+| bool | **[write_paramnames](/documentation/code/gambit_sphinx/classes/structsettings/#variable-write-paramnames)**  |
+| bool | **[read_resume](/documentation/code/gambit_sphinx/classes/structsettings/#variable-read-resume)**  |
+| bool | **[write_stats](/documentation/code/gambit_sphinx/classes/structsettings/#variable-write-stats)**  |
+| bool | **[write_live](/documentation/code/gambit_sphinx/classes/structsettings/#variable-write-live)**  |
+| bool | **[write_dead](/documentation/code/gambit_sphinx/classes/structsettings/#variable-write-dead)**  |
+| bool | **[write_prior](/documentation/code/gambit_sphinx/classes/structsettings/#variable-write-prior)**  |
+| bool | **[maximise](/documentation/code/gambit_sphinx/classes/structsettings/#variable-maximise)**  |
+| double | **[compression_factor](/documentation/code/gambit_sphinx/classes/structsettings/#variable-compression-factor)**  |
+| std::string | **[base_dir](/documentation/code/gambit_sphinx/classes/structsettings/#variable-base-dir)**  |
+| std::string | **[file_root](/documentation/code/gambit_sphinx/classes/structsettings/#variable-file-root)**  |
+| std::vector< double > | **[grade_frac](/documentation/code/gambit_sphinx/classes/structsettings/#variable-grade-frac)**  |
+| std::vector< int > | **[grade_dims](/documentation/code/gambit_sphinx/classes/structsettings/#variable-grade-dims)**  |
+| std::vector< double > | **[loglikes](/documentation/code/gambit_sphinx/classes/structsettings/#variable-loglikes)**  |
+| std::vector< int > | **[nlives](/documentation/code/gambit_sphinx/classes/structsettings/#variable-nlives)**  |
+| int | **[seed](/documentation/code/gambit_sphinx/classes/structsettings/#variable-seed)**  |
+| bool | **[synchronous](/documentation/code/gambit_sphinx/classes/structsettings/#variable-synchronous)**  |
 
 ## Public Functions Documentation
 
@@ -319,4 +319,4 @@ bool synchronous;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:46 +0000
+Updated on 2022-08-01 at 17:41:20 +0000

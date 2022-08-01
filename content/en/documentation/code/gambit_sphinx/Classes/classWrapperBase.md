@@ -18,21 +18,21 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| bool | **[can_delete_BEptr](/documentation/code/gambit_sphinxclasses/classwrapperbase/#function-can-delete-beptr)**() |
-| void | **[set_delete_BEptr](/documentation/code/gambit_sphinxclasses/classwrapperbase/#function-set-delete-beptr)**(bool del_wrp_in) |
-| | **[WrapperBase](/documentation/code/gambit_sphinxclasses/classwrapperbase/#function-wrapperbase)**([AbstractBase](/documentation/code/gambit_sphinxclasses/classabstractbase/) * BEptr_in) |
-| virtual | **[~WrapperBase](/documentation/code/gambit_sphinxclasses/classwrapperbase/#function-~wrapperbase)**() |
-| bool | **[can_delete_BEptr](/documentation/code/gambit_sphinxclasses/classwrapperbase/#function-can-delete-beptr)**() |
-| void | **[set_delete_BEptr](/documentation/code/gambit_sphinxclasses/classwrapperbase/#function-set-delete-beptr)**(bool del_wrp_in) |
-| | **[WrapperBase](/documentation/code/gambit_sphinxclasses/classwrapperbase/#function-wrapperbase)**([AbstractBase](/documentation/code/gambit_sphinxclasses/classabstractbase/) * BEptr_in) |
-| virtual | **[~WrapperBase](/documentation/code/gambit_sphinxclasses/classwrapperbase/#function-~wrapperbase)**() |
+| bool | **[can_delete_BEptr](/documentation/code/gambit_sphinx/classes/classwrapperbase/#function-can-delete-beptr)**() |
+| void | **[set_delete_BEptr](/documentation/code/gambit_sphinx/classes/classwrapperbase/#function-set-delete-beptr)**(bool del_wrp_in) |
+| | **[WrapperBase](/documentation/code/gambit_sphinx/classes/classwrapperbase/#function-wrapperbase)**([AbstractBase](/documentation/code/gambit_sphinx/classes/classabstractbase/) * BEptr_in) |
+| virtual | **[~WrapperBase](/documentation/code/gambit_sphinx/classes/classwrapperbase/#function-~wrapperbase)**() |
+| bool | **[can_delete_BEptr](/documentation/code/gambit_sphinx/classes/classwrapperbase/#function-can-delete-beptr)**() |
+| void | **[set_delete_BEptr](/documentation/code/gambit_sphinx/classes/classwrapperbase/#function-set-delete-beptr)**(bool del_wrp_in) |
+| | **[WrapperBase](/documentation/code/gambit_sphinx/classes/classwrapperbase/#function-wrapperbase)**([AbstractBase](/documentation/code/gambit_sphinx/classes/classabstractbase/) * BEptr_in) |
+| virtual | **[~WrapperBase](/documentation/code/gambit_sphinx/classes/classwrapperbase/#function-~wrapperbase)**() |
 
 ## Protected Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| [AbstractBase](/documentation/code/gambit_sphinxclasses/classabstractbase/) * | **[BEptr](/documentation/code/gambit_sphinxclasses/classwrapperbase/#variable-beptr)**  |
-| bool | **[delete_BEptr](/documentation/code/gambit_sphinxclasses/classwrapperbase/#variable-delete-beptr)**  |
+| [AbstractBase](/documentation/code/gambit_sphinx/classes/classabstractbase/) * | **[BEptr](/documentation/code/gambit_sphinx/classes/classwrapperbase/#variable-beptr)**  |
+| bool | **[delete_BEptr](/documentation/code/gambit_sphinx/classes/classwrapperbase/#variable-delete-beptr)**  |
 
 ## Public Functions Documentation
 
@@ -118,4 +118,4 @@ bool delete_BEptr;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:46 +0000
+Updated on 2022-08-01 at 17:41:20 +0000

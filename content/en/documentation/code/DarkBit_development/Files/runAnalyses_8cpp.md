@@ -16,15 +16,15 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/darkbit_developmentnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::ColliderBit](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1colliderbit/)**  |
+| **[Gambit](/documentation/code/darkbit_development/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::ColliderBit](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1colliderbit/)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[DEBUG_PREFIX](/documentation/code/darkbit_developmentfiles/runanalyses_8cpp/#define-debug-prefix)**  |
-|  | **[RUN_ANALYSES](/documentation/code/darkbit_developmentfiles/runanalyses_8cpp/#define-run-analyses)**(NAME, EXPERIMENT, SMEARED_EVENT_DEP) <br>Run all analyses for EXPERIMENT.  |
+|  | **[DEBUG_PREFIX](/documentation/code/darkbit_development/files/runanalyses_8cpp/#define-debug-prefix)**  |
+|  | **[RUN_ANALYSES](/documentation/code/darkbit_development/files/runanalyses_8cpp/#define-run-analyses)**(NAME, EXPERIMENT, SMEARED_EVENT_DEP) <br>Run all analyses for EXPERIMENT.  |
 
 ## Detailed Description
 
@@ -221,4 +221,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:44 +0000
+Updated on 2022-08-01 at 17:41:25 +0000

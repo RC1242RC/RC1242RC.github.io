@@ -16,15 +16,15 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::MicrOmegas](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1micromegas/)**  |
+| **[Gambit](/documentation/code/gambit_sphinx/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::MicrOmegas](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1micromegas/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[Gambit::MicrOmegas::MOcommonSTR](/documentation/code/gambit_sphinxclasses/structgambit_1_1micromegas_1_1mocommonstr/)**  |
-| struct | **[Gambit::MicrOmegas::aChannel](/documentation/code/gambit_sphinxclasses/structgambit_1_1micromegas_1_1achannel/)**  |
+| struct | **[Gambit::MicrOmegas::MOcommonSTR](/documentation/code/gambit_sphinx/classes/structgambit_1_1micromegas_1_1mocommonstr/)**  |
+| struct | **[Gambit::MicrOmegas::aChannel](/documentation/code/gambit_sphinx/classes/structgambit_1_1micromegas_1_1achannel/)**  |
 
 ## Detailed Description
 
@@ -80,4 +80,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:50 +0000
+Updated on 2022-08-01 at 17:41:25 +0000

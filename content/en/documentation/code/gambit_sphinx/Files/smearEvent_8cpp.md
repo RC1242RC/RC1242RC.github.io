@@ -16,14 +16,14 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::ColliderBit](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1colliderbit/)**  |
+| **[Gambit](/documentation/code/gambit_sphinx/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::ColliderBit](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1colliderbit/)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[SMEAR_EVENT](/documentation/code/gambit_sphinxfiles/smearevent_8cpp/#define-smear-event)**(NAME, EXPERIMENT) <br>Smear an event using a simulation of EXPERIMENT.  |
+|  | **[SMEAR_EVENT](/documentation/code/gambit_sphinx/files/smearevent_8cpp/#define-smear-event)**(NAME, EXPERIMENT) <br>Smear an event using a simulation of EXPERIMENT.  |
 
 ## Detailed Description
 
@@ -131,4 +131,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:50 +0000
+Updated on 2022-08-01 at 17:41:24 +0000

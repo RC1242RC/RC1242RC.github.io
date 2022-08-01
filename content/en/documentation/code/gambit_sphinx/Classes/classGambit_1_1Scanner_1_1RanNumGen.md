@@ -18,11 +18,11 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[RanNumGen](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1rannumgen/#function-rannumgen)**(int proj, int ma, double din, double alim, double alimt, double div, unsigned long seed =0) |
-| double | **[Doub](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1rannumgen/#function-doub)**() |
-| double | **[ExpDev](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1rannumgen/#function-expdev)**() |
-| double | **[Dev](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1rannumgen/#function-dev)**(std::vector< double > & aNext, std::vector< std::vector< double > > & a0, int t, int tt) |
-| | **[~RanNumGen](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1rannumgen/#function-~rannumgen)**() |
+| | **[RanNumGen](/documentation/code/gambit_sphinx/classes/classgambit_1_1scanner_1_1rannumgen/#function-rannumgen)**(int proj, int ma, double din, double alim, double alimt, double div, unsigned long seed =0) |
+| double | **[Doub](/documentation/code/gambit_sphinx/classes/classgambit_1_1scanner_1_1rannumgen/#function-doub)**() |
+| double | **[ExpDev](/documentation/code/gambit_sphinx/classes/classgambit_1_1scanner_1_1rannumgen/#function-expdev)**() |
+| double | **[Dev](/documentation/code/gambit_sphinx/classes/classgambit_1_1scanner_1_1rannumgen/#function-dev)**(std::vector< double > & aNext, std::vector< std::vector< double > > & a0, int t, int tt) |
+| | **[~RanNumGen](/documentation/code/gambit_sphinx/classes/classgambit_1_1scanner_1_1rannumgen/#function-~rannumgen)**() |
 
 ## Public Functions Documentation
 
@@ -76,4 +76,4 @@ inline ~RanNumGen()
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:48 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

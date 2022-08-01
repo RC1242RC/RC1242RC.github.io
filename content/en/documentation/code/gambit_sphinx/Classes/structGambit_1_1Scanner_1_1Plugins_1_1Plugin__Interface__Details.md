@@ -20,17 +20,17 @@ Plugin info to be given to the interface class.
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Plugin_Interface_Details](/documentation/code/gambit_sphinxclasses/structgambit_1_1scanner_1_1plugins_1_1plugin__interface__details/#function-plugin-interface-details)**([Plugin_Details](/documentation/code/gambit_sphinxclasses/structgambit_1_1scanner_1_1plugins_1_1plugin__details/) & details, [printer_interface](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1scanner/#typedef-printer-interface) * printer, [Priors::BasePrior](/documentation/code/gambit_sphinxclasses/classgambit_1_1priors_1_1baseprior/) * prior, const YAML::Node & node) |
+| | **[Plugin_Interface_Details](/documentation/code/gambit_sphinx/classes/structgambit_1_1scanner_1_1plugins_1_1plugin__interface__details/#function-plugin-interface-details)**([Plugin_Details](/documentation/code/gambit_sphinx/classes/structgambit_1_1scanner_1_1plugins_1_1plugin__details/) & details, [printer_interface](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1scanner/#typedef-printer-interface) * printer, [Priors::BasePrior](/documentation/code/gambit_sphinx/classes/classgambit_1_1priors_1_1baseprior/) * prior, const YAML::Node & node) |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| [Plugin_Details](/documentation/code/gambit_sphinxclasses/structgambit_1_1scanner_1_1plugins_1_1plugin__details/) & | **[details](/documentation/code/gambit_sphinxclasses/structgambit_1_1scanner_1_1plugins_1_1plugin__interface__details/#variable-details)**  |
-| [printer_interface](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1scanner/#typedef-printer-interface) * | **[printer](/documentation/code/gambit_sphinxclasses/structgambit_1_1scanner_1_1plugins_1_1plugin__interface__details/#variable-printer)**  |
-| [Priors::BasePrior](/documentation/code/gambit_sphinxclasses/classgambit_1_1priors_1_1baseprior/) * | **[prior](/documentation/code/gambit_sphinxclasses/structgambit_1_1scanner_1_1plugins_1_1plugin__interface__details/#variable-prior)**  |
-| YAML::Node | **[flags](/documentation/code/gambit_sphinxclasses/structgambit_1_1scanner_1_1plugins_1_1plugin__interface__details/#variable-flags)**  |
-| YAML::Node | **[node](/documentation/code/gambit_sphinxclasses/structgambit_1_1scanner_1_1plugins_1_1plugin__interface__details/#variable-node)**  |
+| [Plugin_Details](/documentation/code/gambit_sphinx/classes/structgambit_1_1scanner_1_1plugins_1_1plugin__details/) & | **[details](/documentation/code/gambit_sphinx/classes/structgambit_1_1scanner_1_1plugins_1_1plugin__interface__details/#variable-details)**  |
+| [printer_interface](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1scanner/#typedef-printer-interface) * | **[printer](/documentation/code/gambit_sphinx/classes/structgambit_1_1scanner_1_1plugins_1_1plugin__interface__details/#variable-printer)**  |
+| [Priors::BasePrior](/documentation/code/gambit_sphinx/classes/classgambit_1_1priors_1_1baseprior/) * | **[prior](/documentation/code/gambit_sphinx/classes/structgambit_1_1scanner_1_1plugins_1_1plugin__interface__details/#variable-prior)**  |
+| YAML::Node | **[flags](/documentation/code/gambit_sphinx/classes/structgambit_1_1scanner_1_1plugins_1_1plugin__interface__details/#variable-flags)**  |
+| YAML::Node | **[node](/documentation/code/gambit_sphinx/classes/structgambit_1_1scanner_1_1plugins_1_1plugin__interface__details/#variable-node)**  |
 
 ## Public Functions Documentation
 
@@ -85,4 +85,4 @@ YAML::Node node;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:48 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

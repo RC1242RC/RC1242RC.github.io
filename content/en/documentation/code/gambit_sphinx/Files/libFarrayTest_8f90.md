@@ -16,25 +16,25 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[testmodule](/documentation/code/gambit_sphinxnamespaces/namespacetestmodule/)**  |
+| **[testmodule](/documentation/code/gambit_sphinx/namespaces/namespacetestmodule/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| interface | **[afunc](/documentation/code/gambit_sphinxclasses/interfaceafunc/)**  |
+| interface | **[afunc](/documentation/code/gambit_sphinx/classes/interfaceafunc/)**  |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| subroutine | **[printstuff](/documentation/code/gambit_sphinxfiles/libfarraytest_8f90/#function-printstuff)**() |
-| subroutine | **[fillarrays](/documentation/code/gambit_sphinxfiles/libfarraytest_8f90/#function-fillarrays)**() |
-| subroutine | **[fptrroutine](/documentation/code/gambit_sphinxfiles/libfarraytest_8f90/#function-fptrroutine)**(i i, j j, func func) |
-| double precision function | **[doublefuncarray](/documentation/code/gambit_sphinxfiles/libfarraytest_8f90/#function-doublefuncarray)**(i i) |
-| double precision function | **[doublefuncarray2](/documentation/code/gambit_sphinxfiles/libfarraytest_8f90/#function-doublefuncarray2)**(i i) |
-| double precision function | **[doublefuncarray3](/documentation/code/gambit_sphinxfiles/libfarraytest_8f90/#function-doublefuncarray3)**(i i) |
-| subroutine | **[testcomplex](/documentation/code/gambit_sphinxfiles/libfarraytest_8f90/#function-testcomplex)**(z z, re re, im im) |
+| subroutine | **[printstuff](/documentation/code/gambit_sphinx/files/libfarraytest_8f90/#function-printstuff)**() |
+| subroutine | **[fillarrays](/documentation/code/gambit_sphinx/files/libfarraytest_8f90/#function-fillarrays)**() |
+| subroutine | **[fptrroutine](/documentation/code/gambit_sphinx/files/libfarraytest_8f90/#function-fptrroutine)**(i i, j j, func func) |
+| double precision function | **[doublefuncarray](/documentation/code/gambit_sphinx/files/libfarraytest_8f90/#function-doublefuncarray)**(i i) |
+| double precision function | **[doublefuncarray2](/documentation/code/gambit_sphinx/files/libfarraytest_8f90/#function-doublefuncarray2)**(i i) |
+| double precision function | **[doublefuncarray3](/documentation/code/gambit_sphinx/files/libfarraytest_8f90/#function-doublefuncarray3)**(i i) |
+| subroutine | **[testcomplex](/documentation/code/gambit_sphinx/files/libfarraytest_8f90/#function-testcomplex)**(z z, re re, im im) |
 
 
 ## Functions Documentation
@@ -257,4 +257,4 @@ end module testmodule
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:50 +0000
+Updated on 2022-08-01 at 17:41:24 +0000

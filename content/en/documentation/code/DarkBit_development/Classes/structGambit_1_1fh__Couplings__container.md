@@ -18,12 +18,12 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| fh_complex | **[couplings](/documentation/code/darkbit_developmentclasses/structgambit_1_1fh__couplings__container/#variable-couplings)**  |
-| fh_complex | **[couplings_sm](/documentation/code/darkbit_developmentclasses/structgambit_1_1fh__couplings__container/#variable-couplings-sm)**  |
-| fh_real | **[gammas](/documentation/code/darkbit_developmentclasses/structgambit_1_1fh__couplings__container/#variable-gammas)**  |
-| fh_real | **[gammas_sm](/documentation/code/darkbit_developmentclasses/structgambit_1_1fh__couplings__container/#variable-gammas-sm)**  |
-| str | **[calculator](/documentation/code/darkbit_developmentclasses/structgambit_1_1fh__couplings__container/#variable-calculator)**  |
-| str | **[calculator_version](/documentation/code/darkbit_developmentclasses/structgambit_1_1fh__couplings__container/#variable-calculator-version)**  |
+| fh_complex | **[couplings](/documentation/code/darkbit_development/classes/structgambit_1_1fh__couplings__container/#variable-couplings)**  |
+| fh_complex | **[couplings_sm](/documentation/code/darkbit_development/classes/structgambit_1_1fh__couplings__container/#variable-couplings-sm)**  |
+| fh_real | **[gammas](/documentation/code/darkbit_development/classes/structgambit_1_1fh__couplings__container/#variable-gammas)**  |
+| fh_real | **[gammas_sm](/documentation/code/darkbit_development/classes/structgambit_1_1fh__couplings__container/#variable-gammas-sm)**  |
+| str | **[calculator](/documentation/code/darkbit_development/classes/structgambit_1_1fh__couplings__container/#variable-calculator)**  |
+| str | **[calculator_version](/documentation/code/darkbit_development/classes/structgambit_1_1fh__couplings__container/#variable-calculator-version)**  |
 
 ## Public Attributes Documentation
 
@@ -71,4 +71,4 @@ str calculator_version;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:41 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

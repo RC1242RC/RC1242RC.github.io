@@ -18,14 +18,14 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef int | **[ret_type](/documentation/code/darkbit_developmentclasses/structgambit_1_1scanner_1_1find__variadic__type__exact_3_01void_07args_8_8_8_08_4/#typedef-ret-type)**  |
-| typedef void | **[func_type](/documentation/code/darkbit_developmentclasses/structgambit_1_1scanner_1_1find__variadic__type__exact_3_01void_07args_8_8_8_08_4/#typedef-func-type)**  |
+| typedef int | **[ret_type](/documentation/code/darkbit_development/classes/structgambit_1_1scanner_1_1find__variadic__type__exact_3_01void_07args_8_8_8_08_4/#typedef-ret-type)**  |
+| typedef void | **[func_type](/documentation/code/darkbit_development/classes/structgambit_1_1scanner_1_1find__variadic__type__exact_3_01void_07args_8_8_8_08_4/#typedef-func-type)**  |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| const bool | **[value](/documentation/code/darkbit_developmentclasses/structgambit_1_1scanner_1_1find__variadic__type__exact_3_01void_07args_8_8_8_08_4/#variable-value)**  |
+| const bool | **[value](/documentation/code/darkbit_development/classes/structgambit_1_1scanner_1_1find__variadic__type__exact_3_01void_07args_8_8_8_08_4/#variable-value)**  |
 
 ## Detailed Description
 
@@ -61,4 +61,4 @@ static const bool value = false;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:42 +0000
+Updated on 2022-08-01 at 17:41:24 +0000

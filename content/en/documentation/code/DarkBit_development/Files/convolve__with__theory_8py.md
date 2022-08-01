@@ -16,7 +16,7 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[convolve_with_theory](/documentation/code/darkbit_developmentnamespaces/namespaceconvolve__with__theory/)**  |
+| **[convolve_with_theory](/documentation/code/darkbit_development/namespaces/namespaceconvolve__with__theory/)**  |
 
 
 
@@ -98,4 +98,4 @@ if __name__ == "__main__":
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:43 +0000
+Updated on 2022-08-01 at 17:41:24 +0000

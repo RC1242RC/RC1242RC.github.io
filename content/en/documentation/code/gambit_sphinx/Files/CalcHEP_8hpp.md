@@ -16,15 +16,15 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit](/documentation/code/gambit_sphinx/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[Gambit::colorBasis](/documentation/code/gambit_sphinxclasses/structgambit_1_1colorbasis/)**  |
-| struct | **[Gambit::CalcHEP_interface](/documentation/code/gambit_sphinxclasses/structgambit_1_1calchep__interface/)**  |
-| struct | **[Gambit::numout](/documentation/code/gambit_sphinxclasses/structgambit_1_1numout/)**  |
+| struct | **[Gambit::colorBasis](/documentation/code/gambit_sphinx/classes/structgambit_1_1colorbasis/)**  |
+| struct | **[Gambit::CalcHEP_interface](/documentation/code/gambit_sphinx/classes/structgambit_1_1calchep__interface/)**  |
+| struct | **[Gambit::numout](/documentation/code/gambit_sphinx/classes/structgambit_1_1numout/)**  |
 
 ## Detailed Description
 
@@ -110,4 +110,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:50 +0000
+Updated on 2022-08-01 at 17:41:25 +0000

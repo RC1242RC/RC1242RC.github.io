@@ -16,9 +16,9 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/darkbit_developmentnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::DarkBit](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1darkbit/)**  |
-| **[Gambit::DarkBit::DecayChain](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1darkbit_1_1decaychain/)**  |
+| **[Gambit](/documentation/code/darkbit_development/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::DarkBit](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1darkbit/)**  |
+| **[Gambit::DarkBit::DecayChain](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1darkbit_1_1decaychain/)**  |
 
 ## Detailed Description
 
@@ -1002,4 +1002,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:43 +0000
+Updated on 2022-08-01 at 17:41:24 +0000

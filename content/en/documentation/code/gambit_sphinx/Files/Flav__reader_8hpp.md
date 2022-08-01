@@ -16,14 +16,14 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::FlavBit](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1flavbit/)**  |
+| **[Gambit](/documentation/code/gambit_sphinx/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::FlavBit](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1flavbit/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Gambit::FlavBit::Flav_reader](/documentation/code/gambit_sphinxclasses/classgambit_1_1flavbit_1_1flav__reader/)** <br>Reader class for FlavBit YAML database.  |
+| class | **[Gambit::FlavBit::Flav_reader](/documentation/code/gambit_sphinx/classes/classgambit_1_1flavbit_1_1flav__reader/)** <br>Reader class for FlavBit YAML database.  |
 
 ## Detailed Description
 
@@ -137,4 +137,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:48 +0000
+Updated on 2022-08-01 at 17:41:23 +0000

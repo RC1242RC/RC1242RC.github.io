@@ -18,24 +18,24 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[EllipseParams](/documentation/code/gambit_sphinxclasses/structlester_1_1ellipseparams/#function-ellipseparams)**(const double c_xx2, const double c_yy2, const double c_xy2, const double c_x2, const double c_y2, const double c2) |
-| | **[EllipseParams](/documentation/code/gambit_sphinxclasses/structlester_1_1ellipseparams/#function-ellipseparams)**() |
-| void | **[setDet](/documentation/code/gambit_sphinxclasses/structlester_1_1ellipseparams/#function-setdet)**() |
-| | **[EllipseParams](/documentation/code/gambit_sphinxclasses/structlester_1_1ellipseparams/#function-ellipseparams)**(const double x0, const double y0) |
-| double | **[lesterFactor](/documentation/code/gambit_sphinxclasses/structlester_1_1ellipseparams/#function-lesterfactor)**(const [EllipseParams](/documentation/code/gambit_sphinxclasses/structlester_1_1ellipseparams/) & e2) const |
-| bool | **[operator==](/documentation/code/gambit_sphinxclasses/structlester_1_1ellipseparams/#function-operator==)**(const [EllipseParams](/documentation/code/gambit_sphinxclasses/structlester_1_1ellipseparams/) & other) const |
+| | **[EllipseParams](/documentation/code/gambit_sphinx/classes/structlester_1_1ellipseparams/#function-ellipseparams)**(const double c_xx2, const double c_yy2, const double c_xy2, const double c_x2, const double c_y2, const double c2) |
+| | **[EllipseParams](/documentation/code/gambit_sphinx/classes/structlester_1_1ellipseparams/#function-ellipseparams)**() |
+| void | **[setDet](/documentation/code/gambit_sphinx/classes/structlester_1_1ellipseparams/#function-setdet)**() |
+| | **[EllipseParams](/documentation/code/gambit_sphinx/classes/structlester_1_1ellipseparams/#function-ellipseparams)**(const double x0, const double y0) |
+| double | **[lesterFactor](/documentation/code/gambit_sphinx/classes/structlester_1_1ellipseparams/#function-lesterfactor)**(const [EllipseParams](/documentation/code/gambit_sphinx/classes/structlester_1_1ellipseparams/) & e2) const |
+| bool | **[operator==](/documentation/code/gambit_sphinx/classes/structlester_1_1ellipseparams/#function-operator==)**(const [EllipseParams](/documentation/code/gambit_sphinx/classes/structlester_1_1ellipseparams/) & other) const |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[c_xx](/documentation/code/gambit_sphinxclasses/structlester_1_1ellipseparams/#variable-c-xx)**  |
-| double | **[c_yy](/documentation/code/gambit_sphinxclasses/structlester_1_1ellipseparams/#variable-c-yy)**  |
-| double | **[c_xy](/documentation/code/gambit_sphinxclasses/structlester_1_1ellipseparams/#variable-c-xy)**  |
-| double | **[c_x](/documentation/code/gambit_sphinxclasses/structlester_1_1ellipseparams/#variable-c-x)**  |
-| double | **[c_y](/documentation/code/gambit_sphinxclasses/structlester_1_1ellipseparams/#variable-c-y)**  |
-| double | **[c](/documentation/code/gambit_sphinxclasses/structlester_1_1ellipseparams/#variable-c)**  |
-| double | **[det](/documentation/code/gambit_sphinxclasses/structlester_1_1ellipseparams/#variable-det)**  |
+| double | **[c_xx](/documentation/code/gambit_sphinx/classes/structlester_1_1ellipseparams/#variable-c-xx)**  |
+| double | **[c_yy](/documentation/code/gambit_sphinx/classes/structlester_1_1ellipseparams/#variable-c-yy)**  |
+| double | **[c_xy](/documentation/code/gambit_sphinx/classes/structlester_1_1ellipseparams/#variable-c-xy)**  |
+| double | **[c_x](/documentation/code/gambit_sphinx/classes/structlester_1_1ellipseparams/#variable-c-x)**  |
+| double | **[c_y](/documentation/code/gambit_sphinx/classes/structlester_1_1ellipseparams/#variable-c-y)**  |
+| double | **[c](/documentation/code/gambit_sphinx/classes/structlester_1_1ellipseparams/#variable-c)**  |
+| double | **[det](/documentation/code/gambit_sphinx/classes/structlester_1_1ellipseparams/#variable-det)**  |
 
 ## Public Functions Documentation
 
@@ -148,4 +148,4 @@ double det;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:46 +0000
+Updated on 2022-08-01 at 17:41:21 +0000

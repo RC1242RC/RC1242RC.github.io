@@ -16,14 +16,14 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/darkbit_developmentnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::Backends](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1backends/)**  |
+| **[Gambit](/documentation/code/darkbit_development/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::Backends](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1backends/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Gambit::Backends::python_function](/documentation/code/darkbit_developmentclasses/classgambit_1_1backends_1_1python__function/)** <br>Holds the info about a python backend function, and defines conversion functions.  |
+| class | **[Gambit::Backends::python_function](/documentation/code/darkbit_development/classes/classgambit_1_1backends_1_1python__function/)** <br>Holds the info about a python backend function, and defines conversion functions.  |
 
 ## Detailed Description
 
@@ -160,4 +160,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:45 +0000
+Updated on 2022-08-01 at 17:41:26 +0000

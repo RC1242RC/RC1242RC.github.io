@@ -20,9 +20,9 @@ A templated class specific for the UserHooks.  [More...](#detailed-description)
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[SetHooks](/documentation/code/darkbit_developmentclasses/classgambit_1_1colliderbit_1_1sethooks/#function-sethooks)**() |
-| | **[~SetHooks](/documentation/code/darkbit_developmentclasses/classgambit_1_1colliderbit_1_1sethooks/#function-~sethooks)**() |
-| bool | **[SetupHook](/documentation/code/darkbit_developmentclasses/classgambit_1_1colliderbit_1_1sethooks/#function-setuphook)**(PythiaT * ) |
+| | **[SetHooks](/documentation/code/darkbit_development/classes/classgambit_1_1colliderbit_1_1sethooks/#function-sethooks)**() |
+| | **[~SetHooks](/documentation/code/darkbit_development/classes/classgambit_1_1colliderbit_1_1sethooks/#function-~sethooks)**() |
+| bool | **[SetupHook](/documentation/code/darkbit_development/classes/classgambit_1_1colliderbit_1_1sethooks/#function-setuphook)**(PythiaT * ) |
 
 ## Detailed Description
 
@@ -60,4 +60,4 @@ inline bool SetupHook(
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:42 +0000
+Updated on 2022-08-01 at 17:41:23 +0000

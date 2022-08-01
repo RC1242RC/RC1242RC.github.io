@@ -16,14 +16,14 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| subroutine | **[testme](/documentation/code/gambit_sphinxfiles/libfortran_8f90/#function-testme)**() |
-| subroutine | **[runme](/documentation/code/gambit_sphinxfiles/libfortran_8f90/#function-runme)**(f f, i i) |
-| subroutine | **[externalroutine](/documentation/code/gambit_sphinxfiles/libfortran_8f90/#function-externalroutine)**(i i) |
-| real *8 function | **[externalfunction](/documentation/code/gambit_sphinxfiles/libfortran_8f90/#function-externalfunction)**(i i) |
-| real *8 function | **[externalfunction2](/documentation/code/gambit_sphinxfiles/libfortran_8f90/#function-externalfunction2)**(i i, j j) |
-| real *8 function | **[average](/documentation/code/gambit_sphinxfiles/libfortran_8f90/#function-average)**(f f, n n) |
-| real *8 function | **[funcgauss](/documentation/code/gambit_sphinxfiles/libfortran_8f90/#function-funcgauss)**(x x) |
-| real *8 function | **[funcbe](/documentation/code/gambit_sphinxfiles/libfortran_8f90/#function-funcbe)**(x x) |
+| subroutine | **[testme](/documentation/code/gambit_sphinx/files/libfortran_8f90/#function-testme)**() |
+| subroutine | **[runme](/documentation/code/gambit_sphinx/files/libfortran_8f90/#function-runme)**(f f, i i) |
+| subroutine | **[externalroutine](/documentation/code/gambit_sphinx/files/libfortran_8f90/#function-externalroutine)**(i i) |
+| real *8 function | **[externalfunction](/documentation/code/gambit_sphinx/files/libfortran_8f90/#function-externalfunction)**(i i) |
+| real *8 function | **[externalfunction2](/documentation/code/gambit_sphinx/files/libfortran_8f90/#function-externalfunction2)**(i i, j j) |
+| real *8 function | **[average](/documentation/code/gambit_sphinx/files/libfortran_8f90/#function-average)**(f f, n n) |
+| real *8 function | **[funcgauss](/documentation/code/gambit_sphinx/files/libfortran_8f90/#function-funcgauss)**(x x) |
+| real *8 function | **[funcbe](/documentation/code/gambit_sphinx/files/libfortran_8f90/#function-funcbe)**(x x) |
 
 
 ## Functions Documentation
@@ -201,4 +201,4 @@ end function
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:50 +0000
+Updated on 2022-08-01 at 17:41:24 +0000

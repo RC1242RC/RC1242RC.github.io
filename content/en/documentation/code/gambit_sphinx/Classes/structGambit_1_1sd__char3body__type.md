@@ -18,27 +18,27 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Farray< Fdouble, 1, 2, 1, 4 > | **[brntaunut](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__char3body__type/#variable-brntaunut)**  |
-| Farray< Fdouble, 1, 2, 1, 4 > | **[brnelnue](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__char3body__type/#variable-brnelnue)**  |
-| Farray< Fdouble, 1, 2, 1, 4 > | **[brnmunumu](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__char3body__type/#variable-brnmunumu)**  |
-| Farray< Fdouble, 1, 2, 1, 4 > | **[brnupdb](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__char3body__type/#variable-brnupdb)**  |
-| Farray< Fdouble, 1, 2, 1, 4 > | **[brnchsb](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__char3body__type/#variable-brnchsb)**  |
-| Farray< Fdouble, 1, 2, 1, 4 > | **[brntopbb](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__char3body__type/#variable-brntopbb)**  |
-| Farray< Fdouble, 1, 2 > | **[brglupdb](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__char3body__type/#variable-brglupdb)**  |
-| Farray< Fdouble, 1, 2 > | **[brglchsb](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__char3body__type/#variable-brglchsb)**  |
-| Farray< Fdouble, 1, 2 > | **[brgltopbb](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__char3body__type/#variable-brgltopbb)**  |
-| Fdouble | **[brchee](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__char3body__type/#variable-brchee)**  |
-| Fdouble | **[brchmumu](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__char3body__type/#variable-brchmumu)**  |
-| Fdouble | **[brchtautau](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__char3body__type/#variable-brchtautau)**  |
-| Fdouble | **[brchnene](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__char3body__type/#variable-brchnene)**  |
-| Fdouble | **[brchnmunmu](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__char3body__type/#variable-brchnmunmu)**  |
-| Fdouble | **[brchntauntau](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__char3body__type/#variable-brchntauntau)**  |
-| Fdouble | **[brchupup](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__char3body__type/#variable-brchupup)**  |
-| Fdouble | **[brchdodo](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__char3body__type/#variable-brchdodo)**  |
-| Fdouble | **[brchchch](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__char3body__type/#variable-brchchch)**  |
-| Fdouble | **[brchstst](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__char3body__type/#variable-brchstst)**  |
-| Fdouble | **[brchtoptop](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__char3body__type/#variable-brchtoptop)**  |
-| Fdouble | **[brchbotbot](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__char3body__type/#variable-brchbotbot)**  |
+| Farray< Fdouble, 1, 2, 1, 4 > | **[brntaunut](/documentation/code/gambit_sphinx/classes/structgambit_1_1sd__char3body__type/#variable-brntaunut)**  |
+| Farray< Fdouble, 1, 2, 1, 4 > | **[brnelnue](/documentation/code/gambit_sphinx/classes/structgambit_1_1sd__char3body__type/#variable-brnelnue)**  |
+| Farray< Fdouble, 1, 2, 1, 4 > | **[brnmunumu](/documentation/code/gambit_sphinx/classes/structgambit_1_1sd__char3body__type/#variable-brnmunumu)**  |
+| Farray< Fdouble, 1, 2, 1, 4 > | **[brnupdb](/documentation/code/gambit_sphinx/classes/structgambit_1_1sd__char3body__type/#variable-brnupdb)**  |
+| Farray< Fdouble, 1, 2, 1, 4 > | **[brnchsb](/documentation/code/gambit_sphinx/classes/structgambit_1_1sd__char3body__type/#variable-brnchsb)**  |
+| Farray< Fdouble, 1, 2, 1, 4 > | **[brntopbb](/documentation/code/gambit_sphinx/classes/structgambit_1_1sd__char3body__type/#variable-brntopbb)**  |
+| Farray< Fdouble, 1, 2 > | **[brglupdb](/documentation/code/gambit_sphinx/classes/structgambit_1_1sd__char3body__type/#variable-brglupdb)**  |
+| Farray< Fdouble, 1, 2 > | **[brglchsb](/documentation/code/gambit_sphinx/classes/structgambit_1_1sd__char3body__type/#variable-brglchsb)**  |
+| Farray< Fdouble, 1, 2 > | **[brgltopbb](/documentation/code/gambit_sphinx/classes/structgambit_1_1sd__char3body__type/#variable-brgltopbb)**  |
+| Fdouble | **[brchee](/documentation/code/gambit_sphinx/classes/structgambit_1_1sd__char3body__type/#variable-brchee)**  |
+| Fdouble | **[brchmumu](/documentation/code/gambit_sphinx/classes/structgambit_1_1sd__char3body__type/#variable-brchmumu)**  |
+| Fdouble | **[brchtautau](/documentation/code/gambit_sphinx/classes/structgambit_1_1sd__char3body__type/#variable-brchtautau)**  |
+| Fdouble | **[brchnene](/documentation/code/gambit_sphinx/classes/structgambit_1_1sd__char3body__type/#variable-brchnene)**  |
+| Fdouble | **[brchnmunmu](/documentation/code/gambit_sphinx/classes/structgambit_1_1sd__char3body__type/#variable-brchnmunmu)**  |
+| Fdouble | **[brchntauntau](/documentation/code/gambit_sphinx/classes/structgambit_1_1sd__char3body__type/#variable-brchntauntau)**  |
+| Fdouble | **[brchupup](/documentation/code/gambit_sphinx/classes/structgambit_1_1sd__char3body__type/#variable-brchupup)**  |
+| Fdouble | **[brchdodo](/documentation/code/gambit_sphinx/classes/structgambit_1_1sd__char3body__type/#variable-brchdodo)**  |
+| Fdouble | **[brchchch](/documentation/code/gambit_sphinx/classes/structgambit_1_1sd__char3body__type/#variable-brchchch)**  |
+| Fdouble | **[brchstst](/documentation/code/gambit_sphinx/classes/structgambit_1_1sd__char3body__type/#variable-brchstst)**  |
+| Fdouble | **[brchtoptop](/documentation/code/gambit_sphinx/classes/structgambit_1_1sd__char3body__type/#variable-brchtoptop)**  |
+| Fdouble | **[brchbotbot](/documentation/code/gambit_sphinx/classes/structgambit_1_1sd__char3body__type/#variable-brchbotbot)**  |
 
 ## Public Attributes Documentation
 
@@ -191,4 +191,4 @@ Fdouble brchbotbot;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:46 +0000
+Updated on 2022-08-01 at 17:41:21 +0000

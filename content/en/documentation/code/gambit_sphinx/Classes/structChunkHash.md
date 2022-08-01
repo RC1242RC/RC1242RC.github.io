@@ -18,8 +18,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| std::size_t | **[operator()](/documentation/code/gambit_sphinxclasses/structchunkhash/#function-operator())**(const [Chunk](/documentation/code/gambit_sphinxclasses/structchunk/) & key) const |
-| std::size_t | **[operator()](/documentation/code/gambit_sphinxclasses/structchunkhash/#function-operator())**(const [Chunk](/documentation/code/gambit_sphinxclasses/structchunk/) & key) const |
+| std::size_t | **[operator()](/documentation/code/gambit_sphinx/classes/structchunkhash/#function-operator())**(const [Chunk](/documentation/code/gambit_sphinx/classes/structchunk/) & key) const |
+| std::size_t | **[operator()](/documentation/code/gambit_sphinx/classes/structchunkhash/#function-operator())**(const [Chunk](/documentation/code/gambit_sphinx/classes/structchunk/) & key) const |
 
 ## Public Functions Documentation
 
@@ -43,4 +43,4 @@ inline std::size_t operator()(
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:46 +0000
+Updated on 2022-08-01 at 17:41:20 +0000

@@ -16,15 +16,15 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::ColliderBit](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1colliderbit/)**  |
+| **[Gambit](/documentation/code/gambit_sphinx/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::ColliderBit](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1colliderbit/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[Gambit::ColliderBit::SignalRegionData](/documentation/code/gambit_sphinxclasses/structgambit_1_1colliderbit_1_1signalregiondata/)** <br>A simple container for the result of one signal region from one analysis.  |
-| struct | **[Gambit::ColliderBit::AnalysisData](/documentation/code/gambit_sphinxclasses/structgambit_1_1colliderbit_1_1analysisdata/)**  |
+| struct | **[Gambit::ColliderBit::SignalRegionData](/documentation/code/gambit_sphinx/classes/structgambit_1_1colliderbit_1_1signalregiondata/)** <br>A simple container for the result of one signal region from one analysis.  |
+| struct | **[Gambit::ColliderBit::AnalysisData](/documentation/code/gambit_sphinx/classes/structgambit_1_1colliderbit_1_1analysisdata/)**  |
 
 ## Detailed Description
 
@@ -264,4 +264,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:49 +0000
+Updated on 2022-08-01 at 17:41:23 +0000

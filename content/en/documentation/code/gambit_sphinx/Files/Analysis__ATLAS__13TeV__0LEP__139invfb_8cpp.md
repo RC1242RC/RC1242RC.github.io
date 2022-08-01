@@ -16,15 +16,15 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::ColliderBit](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1colliderbit/)**  |
-| **[HEPUtils](/documentation/code/gambit_sphinxnamespaces/namespaceheputils/)**  |
+| **[Gambit](/documentation/code/gambit_sphinx/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::ColliderBit](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1colliderbit/)**  |
+| **[HEPUtils](/documentation/code/gambit_sphinx/namespaces/namespaceheputils/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Gambit::ColliderBit::Analysis_ATLAS_13TeV_0LEP_139invfb](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__0lep__139invfb/)** <br>[ATLAS]() Run 2 0-lepton jet+MET SUSY analysis, with 139/fb of data.  |
+| class | **[Gambit::ColliderBit::Analysis_ATLAS_13TeV_0LEP_139invfb](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__0lep__139invfb/)** <br>[ATLAS]() Run 2 0-lepton jet+MET SUSY analysis, with 139/fb of data.  |
 
 
 
@@ -382,4 +382,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:49 +0000
+Updated on 2022-08-01 at 17:41:23 +0000

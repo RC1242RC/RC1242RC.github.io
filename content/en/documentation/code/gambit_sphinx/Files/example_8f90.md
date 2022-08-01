@@ -16,16 +16,16 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[m1](/documentation/code/gambit_sphinxnamespaces/namespacem1/)**  |
-| **[ma](/documentation/code/gambit_sphinxnamespaces/namespacema/)**  |
-| **[mb](/documentation/code/gambit_sphinxnamespaces/namespacemb/)**  |
+| **[m1](/documentation/code/gambit_sphinx/namespaces/namespacem1/)**  |
+| **[ma](/documentation/code/gambit_sphinx/namespaces/namespacema/)**  |
+| **[mb](/documentation/code/gambit_sphinx/namespaces/namespacemb/)**  |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| integer function | **[two](/documentation/code/gambit_sphinxfiles/example_8f90/#function-two)**() |
-| character *8 function | **[text](/documentation/code/gambit_sphinxfiles/example_8f90/#function-text)**() |
+| integer function | **[two](/documentation/code/gambit_sphinx/files/example_8f90/#function-two)**() |
+| character *8 function | **[text](/documentation/code/gambit_sphinx/files/example_8f90/#function-text)**() |
 
 
 ## Functions Documentation
@@ -91,4 +91,4 @@ end module mb
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:51 +0000
+Updated on 2022-08-01 at 17:41:25 +0000

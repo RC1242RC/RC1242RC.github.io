@@ -16,7 +16,7 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[get_entry_from_heplike](/documentation/code/gambit_sphinxnamespaces/namespaceget__entry__from__heplike/)**  |
+| **[get_entry_from_heplike](/documentation/code/gambit_sphinx/namespaces/namespaceget__entry__from__heplike/)**  |
 
 
 
@@ -53,4 +53,4 @@ if __name__ == '__main__':
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:48 +0000
+Updated on 2022-08-01 at 17:41:23 +0000

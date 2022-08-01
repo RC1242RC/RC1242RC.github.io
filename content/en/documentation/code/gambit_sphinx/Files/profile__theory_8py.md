@@ -16,7 +16,7 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[profile_theory](/documentation/code/gambit_sphinxnamespaces/namespaceprofile__theory/)**  |
+| **[profile_theory](/documentation/code/gambit_sphinx/namespaces/namespaceprofile__theory/)**  |
 
 
 
@@ -103,4 +103,4 @@ if __name__ == "__main__":
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:48 +0000
+Updated on 2022-08-01 at 17:41:23 +0000

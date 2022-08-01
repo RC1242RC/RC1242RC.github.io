@@ -16,16 +16,16 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/darkbit_developmentnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::ColliderBit](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1colliderbit/)**  |
-| **[std](/documentation/code/darkbit_developmentnamespaces/namespacestd/)**  |
+| **[Gambit](/documentation/code/darkbit_development/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::ColliderBit](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1colliderbit/)**  |
+| **[std](/documentation/code/darkbit_development/namespaces/namespacestd/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[Gambit::ColliderBit::Cutflow](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1cutflow/)** <br>A tracker of numbers & fractions of events passing sequential cuts.  |
-| struct | **[Gambit::ColliderBit::Cutflows](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1cutflows/)** <br>A container for several [Cutflow](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1cutflow/) objects, with some convenient batch access.  |
+| struct | **[Gambit::ColliderBit::Cutflow](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1cutflow/)** <br>A tracker of numbers & fractions of events passing sequential cuts.  |
+| struct | **[Gambit::ColliderBit::Cutflows](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1cutflows/)** <br>A container for several [Cutflow](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1cutflow/) objects, with some convenient batch access.  |
 
 ## Detailed Description
 
@@ -336,4 +336,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:44 +0000
+Updated on 2022-08-01 at 17:41:25 +0000

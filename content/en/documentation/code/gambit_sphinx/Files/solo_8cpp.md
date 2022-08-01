@@ -16,22 +16,22 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[ColliderBit::Functown](/documentation/code/gambit_sphinxnamespaces/namespacecolliderbit_1_1functown/)**  |
-| **[BackendIniBit::Functown](/documentation/code/gambit_sphinxnamespaces/namespacebackendinibit_1_1functown/)**  |
-| **[CAT](/documentation/code/gambit_sphinxnamespaces/namespacecat/)**  |
+| **[ColliderBit::Functown](/documentation/code/gambit_sphinx/namespaces/namespacecolliderbit_1_1functown/)**  |
+| **[BackendIniBit::Functown](/documentation/code/gambit_sphinx/namespaces/namespacebackendinibit_1_1functown/)**  |
+| **[CAT](/documentation/code/gambit_sphinx/namespaces/namespacecat/)**  |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| int | **[main](/documentation/code/gambit_sphinxfiles/solo_8cpp/#function-main)**(int argc, char * argv[])<br>ColliderBit Solo main program.  |
+| int | **[main](/documentation/code/gambit_sphinx/files/solo_8cpp/#function-main)**(int argc, char * argv[])<br>ColliderBit Solo main program.  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[NULIKE_VERSION](/documentation/code/gambit_sphinxfiles/solo_8cpp/#define-nulike-version)**  |
-|  | **[NULIKE_SAFE_VERSION](/documentation/code/gambit_sphinxfiles/solo_8cpp/#define-nulike-safe-version)**  |
+|  | **[NULIKE_VERSION](/documentation/code/gambit_sphinx/files/solo_8cpp/#define-nulike-version)**  |
+|  | **[NULIKE_SAFE_VERSION](/documentation/code/gambit_sphinx/files/solo_8cpp/#define-nulike-safe-version)**  |
 
 
 ## Functions Documentation
@@ -327,4 +327,4 @@ int main(int argc, char* argv[])
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:49 +0000
+Updated on 2022-08-01 at 17:41:23 +0000

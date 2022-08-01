@@ -16,14 +16,14 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/darkbit_developmentnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::Backends](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1backends/)**  |
+| **[Gambit](/documentation/code/darkbit_development/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::Backends](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1backends/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[Gambit::Backends::backend_info](/documentation/code/darkbit_developmentclasses/structgambit_1_1backends_1_1backend__info/)** <br>Structure providing some basic info on backend libraries.  |
+| struct | **[Gambit::Backends::backend_info](/documentation/code/darkbit_development/classes/structgambit_1_1backends_1_1backend__info/)** <br>Structure providing some basic info on backend libraries.  |
 
 ## Detailed Description
 
@@ -231,4 +231,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:45 +0000
+Updated on 2022-08-01 at 17:41:26 +0000

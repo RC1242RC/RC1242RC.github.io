@@ -16,24 +16,24 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::DRes](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1dres/)**  |
-| **[LogTags](/documentation/code/gambit_sphinxnamespaces/namespacelogtags/)**  |
+| **[Gambit](/documentation/code/gambit_sphinx/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::DRes](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1dres/)**  |
+| **[LogTags](/documentation/code/gambit_sphinx/namespaces/namespacelogtags/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Gambit::DRes::edgeWriter](/documentation/code/gambit_sphinxclasses/classgambit_1_1dres_1_1edgewriter/)**  |
-| class | **[Gambit::DRes::labelWriter](/documentation/code/gambit_sphinxclasses/classgambit_1_1dres_1_1labelwriter/)**  |
+| class | **[Gambit::DRes::edgeWriter](/documentation/code/gambit_sphinx/classes/classgambit_1_1dres_1_1edgewriter/)**  |
+| class | **[Gambit::DRes::labelWriter](/documentation/code/gambit_sphinx/classes/classgambit_1_1dres_1_1labelwriter/)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[OBSLIKE_VERTEXID](/documentation/code/gambit_sphinxfiles/depresolver_8cpp/#define-obslike-vertexid)**  |
-|  | **[NORMAL_DEPENDENCY](/documentation/code/gambit_sphinxfiles/depresolver_8cpp/#define-normal-dependency)**  |
-|  | **[LOOP_MANAGER_DEPENDENCY](/documentation/code/gambit_sphinxfiles/depresolver_8cpp/#define-loop-manager-dependency)**  |
+|  | **[OBSLIKE_VERTEXID](/documentation/code/gambit_sphinx/files/depresolver_8cpp/#define-obslike-vertexid)**  |
+|  | **[NORMAL_DEPENDENCY](/documentation/code/gambit_sphinx/files/depresolver_8cpp/#define-normal-dependency)**  |
+|  | **[LOOP_MANAGER_DEPENDENCY](/documentation/code/gambit_sphinx/files/depresolver_8cpp/#define-loop-manager-dependency)**  |
 
 ## Detailed Description
 
@@ -2516,4 +2516,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:49 +0000
+Updated on 2022-08-01 at 17:41:23 +0000

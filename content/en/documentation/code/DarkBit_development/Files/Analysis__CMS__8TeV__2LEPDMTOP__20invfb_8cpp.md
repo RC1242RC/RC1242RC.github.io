@@ -16,14 +16,14 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/darkbit_developmentnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::ColliderBit](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1colliderbit/)**  |
+| **[Gambit](/documentation/code/darkbit_development/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::ColliderBit](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1colliderbit/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Gambit::ColliderBit::Analysis_CMS_8TeV_2LEPDMTOP_20invfb](/documentation/code/darkbit_developmentclasses/classgambit_1_1colliderbit_1_1analysis__cms__8tev__2lepdmtop__20invfb/)**  |
+| class | **[Gambit::ColliderBit::Analysis_CMS_8TeV_2LEPDMTOP_20invfb](/documentation/code/darkbit_development/classes/classgambit_1_1colliderbit_1_1analysis__cms__8tev__2lepdmtop__20invfb/)**  |
 
 
 
@@ -281,4 +281,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:44 +0000
+Updated on 2022-08-01 at 17:41:25 +0000

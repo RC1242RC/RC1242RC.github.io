@@ -16,17 +16,17 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::CosmoBit](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/)**  |
+| **[Gambit](/documentation/code/gambit_sphinx/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::CosmoBit](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/)**  |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[na0](/documentation/code/gambit_sphinxfiles/cosmoalps_8cpp/#variable-na0)**  |
-| double | **[mass](/documentation/code/gambit_sphinxfiles/cosmoalps_8cpp/#variable-mass)**  |
-| double | **[tau](/documentation/code/gambit_sphinxfiles/cosmoalps_8cpp/#variable-tau)**  |
-| SM_time_evo * | **[SM_quantities](/documentation/code/gambit_sphinxfiles/cosmoalps_8cpp/#variable-sm-quantities)**  |
+| double | **[na0](/documentation/code/gambit_sphinx/files/cosmoalps_8cpp/#variable-na0)**  |
+| double | **[mass](/documentation/code/gambit_sphinx/files/cosmoalps_8cpp/#variable-mass)**  |
+| double | **[tau](/documentation/code/gambit_sphinx/files/cosmoalps_8cpp/#variable-tau)**  |
+| SM_time_evo * | **[SM_quantities](/documentation/code/gambit_sphinx/files/cosmoalps_8cpp/#variable-sm-quantities)**  |
 
 ## Detailed Description
 
@@ -492,4 +492,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:49 +0000
+Updated on 2022-08-01 at 17:41:23 +0000

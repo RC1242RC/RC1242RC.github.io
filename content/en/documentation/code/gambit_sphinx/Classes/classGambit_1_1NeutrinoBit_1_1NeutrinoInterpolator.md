@@ -18,11 +18,11 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[NeutrinoInterpolator](/documentation/code/gambit_sphinxclasses/classgambit_1_1neutrinobit_1_1neutrinointerpolator/#function-neutrinointerpolator)**(std::string file) |
-| | **[NeutrinoInterpolator](/documentation/code/gambit_sphinxclasses/classgambit_1_1neutrinobit_1_1neutrinointerpolator/#function-neutrinointerpolator)**(const [NeutrinoInterpolator](/documentation/code/gambit_sphinxclasses/classgambit_1_1neutrinobit_1_1neutrinointerpolator/) & ) =delete |
-| [NeutrinoInterpolator](/documentation/code/gambit_sphinxclasses/classgambit_1_1neutrinobit_1_1neutrinointerpolator/) & | **[operator=](/documentation/code/gambit_sphinxclasses/classgambit_1_1neutrinobit_1_1neutrinointerpolator/#function-operator=)**(const [NeutrinoInterpolator](/documentation/code/gambit_sphinxclasses/classgambit_1_1neutrinobit_1_1neutrinointerpolator/) & ) =delete |
-| | **[~NeutrinoInterpolator](/documentation/code/gambit_sphinxclasses/classgambit_1_1neutrinobit_1_1neutrinointerpolator/#function-~neutrinointerpolator)**() |
-| double | **[eval](/documentation/code/gambit_sphinxclasses/classgambit_1_1neutrinobit_1_1neutrinointerpolator/#function-eval)**(double x) |
+| | **[NeutrinoInterpolator](/documentation/code/gambit_sphinx/classes/classgambit_1_1neutrinobit_1_1neutrinointerpolator/#function-neutrinointerpolator)**(std::string file) |
+| | **[NeutrinoInterpolator](/documentation/code/gambit_sphinx/classes/classgambit_1_1neutrinobit_1_1neutrinointerpolator/#function-neutrinointerpolator)**(const [NeutrinoInterpolator](/documentation/code/gambit_sphinx/classes/classgambit_1_1neutrinobit_1_1neutrinointerpolator/) & ) =delete |
+| [NeutrinoInterpolator](/documentation/code/gambit_sphinx/classes/classgambit_1_1neutrinobit_1_1neutrinointerpolator/) & | **[operator=](/documentation/code/gambit_sphinx/classes/classgambit_1_1neutrinobit_1_1neutrinointerpolator/#function-operator=)**(const [NeutrinoInterpolator](/documentation/code/gambit_sphinx/classes/classgambit_1_1neutrinobit_1_1neutrinointerpolator/) & ) =delete |
+| | **[~NeutrinoInterpolator](/documentation/code/gambit_sphinx/classes/classgambit_1_1neutrinobit_1_1neutrinointerpolator/#function-~neutrinointerpolator)**() |
+| double | **[eval](/documentation/code/gambit_sphinx/classes/classgambit_1_1neutrinobit_1_1neutrinointerpolator/#function-eval)**(double x) |
 
 ## Public Functions Documentation
 
@@ -71,4 +71,4 @@ inline double eval(
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:48 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

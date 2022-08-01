@@ -20,17 +20,17 @@ Container for loglike information for an analysis.
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[AnalysisLogLikes](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1analysisloglikes/#function-analysisloglikes)**() |
+| | **[AnalysisLogLikes](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1analysisloglikes/#function-analysisloglikes)**() |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| std::map< std::string, int > | **[sr_indices](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1analysisloglikes/#variable-sr-indices)**  |
-| std::map< std::string, double > | **[sr_loglikes](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1analysisloglikes/#variable-sr-loglikes)**  |
-| std::string | **[combination_sr_label](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1analysisloglikes/#variable-combination-sr-label)**  |
-| int | **[combination_sr_index](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1analysisloglikes/#variable-combination-sr-index)**  |
-| double | **[combination_loglike](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1analysisloglikes/#variable-combination-loglike)**  |
+| std::map< std::string, int > | **[sr_indices](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1analysisloglikes/#variable-sr-indices)**  |
+| std::map< std::string, double > | **[sr_loglikes](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1analysisloglikes/#variable-sr-loglikes)**  |
+| std::string | **[combination_sr_label](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1analysisloglikes/#variable-combination-sr-label)**  |
+| int | **[combination_sr_index](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1analysisloglikes/#variable-combination-sr-index)**  |
+| double | **[combination_loglike](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1analysisloglikes/#variable-combination-loglike)**  |
 
 ## Public Functions Documentation
 
@@ -80,4 +80,4 @@ double combination_loglike;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:42 +0000
+Updated on 2022-08-01 at 17:41:23 +0000

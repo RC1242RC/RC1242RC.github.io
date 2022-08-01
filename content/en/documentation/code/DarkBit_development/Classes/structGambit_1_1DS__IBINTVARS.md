@@ -18,13 +18,13 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Fdouble | **[ibcom_x](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__ibintvars/#variable-ibcom-x)**  |
-| Fdouble | **[ibcom_z](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__ibintvars/#variable-ibcom-z)**  |
-| Fdouble | **[ibcom_mx](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__ibintvars/#variable-ibcom-mx)**  |
-| Fdouble | **[ibcom_mp1](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__ibintvars/#variable-ibcom-mp1)**  |
-| Fdouble | **[ibcom_mp2](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__ibintvars/#variable-ibcom-mp2)**  |
-| Finteger | **[intch](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__ibintvars/#variable-intch)**  |
-| Finteger | **[intyield](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__ibintvars/#variable-intyield)**  |
+| Fdouble | **[ibcom_x](/documentation/code/darkbit_development/classes/structgambit_1_1ds__ibintvars/#variable-ibcom-x)**  |
+| Fdouble | **[ibcom_z](/documentation/code/darkbit_development/classes/structgambit_1_1ds__ibintvars/#variable-ibcom-z)**  |
+| Fdouble | **[ibcom_mx](/documentation/code/darkbit_development/classes/structgambit_1_1ds__ibintvars/#variable-ibcom-mx)**  |
+| Fdouble | **[ibcom_mp1](/documentation/code/darkbit_development/classes/structgambit_1_1ds__ibintvars/#variable-ibcom-mp1)**  |
+| Fdouble | **[ibcom_mp2](/documentation/code/darkbit_development/classes/structgambit_1_1ds__ibintvars/#variable-ibcom-mp2)**  |
+| Finteger | **[intch](/documentation/code/darkbit_development/classes/structgambit_1_1ds__ibintvars/#variable-intch)**  |
+| Finteger | **[intyield](/documentation/code/darkbit_development/classes/structgambit_1_1ds__ibintvars/#variable-intyield)**  |
 
 ## Public Attributes Documentation
 
@@ -79,4 +79,4 @@ Finteger intyield;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:41 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

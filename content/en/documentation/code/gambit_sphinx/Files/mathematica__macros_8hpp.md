@@ -16,8 +16,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[BE_FUNCTION_I_MATH](/documentation/code/gambit_sphinxfiles/mathematica__macros_8hpp/#define-be-function-i-math)**(NAME, TYPE, ARGLIST, SYMBOLNAME, CAPABILITY, MODELS) <br>Backend function macro for mathematica.  |
-|  | **[BE_VARIABLE_I_MATH](/documentation/code/gambit_sphinxfiles/mathematica__macros_8hpp/#define-be-variable-i-math)**(NAME, TYPE, SYMBOLNAME, CAPABILITY, MODELS) <br>Backend variable macro for Mathematica.  |
+|  | **[BE_FUNCTION_I_MATH](/documentation/code/gambit_sphinx/files/mathematica__macros_8hpp/#define-be-function-i-math)**(NAME, TYPE, ARGLIST, SYMBOLNAME, CAPABILITY, MODELS) <br>Backend function macro for mathematica.  |
+|  | **[BE_VARIABLE_I_MATH](/documentation/code/gambit_sphinx/files/mathematica__macros_8hpp/#define-be-variable-i-math)**(NAME, TYPE, SYMBOLNAME, CAPABILITY, MODELS) <br>Backend variable macro for Mathematica.  |
 
 ## Detailed Description
 
@@ -176,4 +176,4 @@ namespace Gambit                                                                
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:50 +0000
+Updated on 2022-08-01 at 17:41:25 +0000

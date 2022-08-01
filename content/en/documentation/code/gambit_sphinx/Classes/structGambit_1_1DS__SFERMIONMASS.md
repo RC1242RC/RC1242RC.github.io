@@ -18,16 +18,16 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Farray< Fdouble, 1, 3 > | **[massup1](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__sfermionmass/#variable-massup1)**  |
-| Farray< Fdouble, 1, 3 > | **[massup2](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__sfermionmass/#variable-massup2)**  |
-| Farray< Fdouble, 1, 3 > | **[thetamixu](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__sfermionmass/#variable-thetamixu)**  |
-| Farray< Fdouble, 1, 3 > | **[massdn1](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__sfermionmass/#variable-massdn1)**  |
-| Farray< Fdouble, 1, 3 > | **[massdn2](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__sfermionmass/#variable-massdn2)**  |
-| Farray< Fdouble, 1, 3 > | **[thetamixd](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__sfermionmass/#variable-thetamixd)**  |
-| Farray< Fdouble, 1, 3 > | **[masssn](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__sfermionmass/#variable-masssn)**  |
-| Farray< Fdouble, 1, 3 > | **[masssl1](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__sfermionmass/#variable-masssl1)**  |
-| Farray< Fdouble, 1, 3 > | **[masssl2](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__sfermionmass/#variable-masssl2)**  |
-| Farray< Fdouble, 1, 3 > | **[thetamixsl](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__sfermionmass/#variable-thetamixsl)**  |
+| Farray< Fdouble, 1, 3 > | **[massup1](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__sfermionmass/#variable-massup1)**  |
+| Farray< Fdouble, 1, 3 > | **[massup2](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__sfermionmass/#variable-massup2)**  |
+| Farray< Fdouble, 1, 3 > | **[thetamixu](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__sfermionmass/#variable-thetamixu)**  |
+| Farray< Fdouble, 1, 3 > | **[massdn1](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__sfermionmass/#variable-massdn1)**  |
+| Farray< Fdouble, 1, 3 > | **[massdn2](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__sfermionmass/#variable-massdn2)**  |
+| Farray< Fdouble, 1, 3 > | **[thetamixd](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__sfermionmass/#variable-thetamixd)**  |
+| Farray< Fdouble, 1, 3 > | **[masssn](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__sfermionmass/#variable-masssn)**  |
+| Farray< Fdouble, 1, 3 > | **[masssl1](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__sfermionmass/#variable-masssl1)**  |
+| Farray< Fdouble, 1, 3 > | **[masssl2](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__sfermionmass/#variable-masssl2)**  |
+| Farray< Fdouble, 1, 3 > | **[thetamixsl](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__sfermionmass/#variable-thetamixsl)**  |
 
 ## Public Attributes Documentation
 
@@ -103,4 +103,4 @@ Farray< Fdouble, 1, 3 > thetamixsl;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:46 +0000
+Updated on 2022-08-01 at 17:41:21 +0000

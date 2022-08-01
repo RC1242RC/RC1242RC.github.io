@@ -18,16 +18,16 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Freal8 | **[m](/documentation/code/gambit_sphinxclasses/structgambit_1_1particle23/#variable-m)**  |
-| Freal8 | **[m2](/documentation/code/gambit_sphinxclasses/structgambit_1_1particle23/#variable-m2)**  |
-| Freal8 | **[g](/documentation/code/gambit_sphinxclasses/structgambit_1_1particle23/#variable-g)**  |
-| Finteger | **[id](/documentation/code/gambit_sphinxclasses/structgambit_1_1particle23/#variable-id)**  |
-| Farray< Finteger, 1, 200, 1, 2 > | **[id2](/documentation/code/gambit_sphinxclasses/structgambit_1_1particle23/#variable-id2)**  |
-| Farray< Finteger, 1, 600, 1, 3 > | **[id3](/documentation/code/gambit_sphinxclasses/structgambit_1_1particle23/#variable-id3)**  |
-| Farray< Freal8, 1, 200 > | **[gi2](/documentation/code/gambit_sphinxclasses/structgambit_1_1particle23/#variable-gi2)**  |
-| Farray< Freal8, 1, 600 > | **[gi3](/documentation/code/gambit_sphinxclasses/structgambit_1_1particle23/#variable-gi3)**  |
-| Farray< Freal8, 1, 200 > | **[bi2](/documentation/code/gambit_sphinxclasses/structgambit_1_1particle23/#variable-bi2)**  |
-| Farray< Freal8, 1, 600 > | **[bi3](/documentation/code/gambit_sphinxclasses/structgambit_1_1particle23/#variable-bi3)**  |
+| Freal8 | **[m](/documentation/code/gambit_sphinx/classes/structgambit_1_1particle23/#variable-m)**  |
+| Freal8 | **[m2](/documentation/code/gambit_sphinx/classes/structgambit_1_1particle23/#variable-m2)**  |
+| Freal8 | **[g](/documentation/code/gambit_sphinx/classes/structgambit_1_1particle23/#variable-g)**  |
+| Finteger | **[id](/documentation/code/gambit_sphinx/classes/structgambit_1_1particle23/#variable-id)**  |
+| Farray< Finteger, 1, 200, 1, 2 > | **[id2](/documentation/code/gambit_sphinx/classes/structgambit_1_1particle23/#variable-id2)**  |
+| Farray< Finteger, 1, 600, 1, 3 > | **[id3](/documentation/code/gambit_sphinx/classes/structgambit_1_1particle23/#variable-id3)**  |
+| Farray< Freal8, 1, 200 > | **[gi2](/documentation/code/gambit_sphinx/classes/structgambit_1_1particle23/#variable-gi2)**  |
+| Farray< Freal8, 1, 600 > | **[gi3](/documentation/code/gambit_sphinx/classes/structgambit_1_1particle23/#variable-gi3)**  |
+| Farray< Freal8, 1, 200 > | **[bi2](/documentation/code/gambit_sphinx/classes/structgambit_1_1particle23/#variable-bi2)**  |
+| Farray< Freal8, 1, 600 > | **[bi3](/documentation/code/gambit_sphinx/classes/structgambit_1_1particle23/#variable-bi3)**  |
 
 ## Public Attributes Documentation
 
@@ -103,4 +103,4 @@ Farray< Freal8, 1, 600 > bi3;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:46 +0000
+Updated on 2022-08-01 at 17:41:21 +0000

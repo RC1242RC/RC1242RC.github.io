@@ -18,12 +18,12 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Fdouble | **[rho0](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds5__hmcom/#variable-rho0)**  |
-| Fdouble | **[rhox](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds5__hmcom/#variable-rhox)**  |
-| Fdouble | **[v_sun](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds5__hmcom/#variable-v-sun)**  |
-| Fdouble | **[r_0](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds5__hmcom/#variable-r-0)**  |
-| Fdouble | **[v_earth](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds5__hmcom/#variable-v-earth)**  |
-| Finteger | **[hclumpy](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds5__hmcom/#variable-hclumpy)**  |
+| Fdouble | **[rho0](/documentation/code/darkbit_development/classes/structgambit_1_1ds5__hmcom/#variable-rho0)**  |
+| Fdouble | **[rhox](/documentation/code/darkbit_development/classes/structgambit_1_1ds5__hmcom/#variable-rhox)**  |
+| Fdouble | **[v_sun](/documentation/code/darkbit_development/classes/structgambit_1_1ds5__hmcom/#variable-v-sun)**  |
+| Fdouble | **[r_0](/documentation/code/darkbit_development/classes/structgambit_1_1ds5__hmcom/#variable-r-0)**  |
+| Fdouble | **[v_earth](/documentation/code/darkbit_development/classes/structgambit_1_1ds5__hmcom/#variable-v-earth)**  |
+| Finteger | **[hclumpy](/documentation/code/darkbit_development/classes/structgambit_1_1ds5__hmcom/#variable-hclumpy)**  |
 
 ## Public Attributes Documentation
 
@@ -71,4 +71,4 @@ Finteger hclumpy;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:41 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

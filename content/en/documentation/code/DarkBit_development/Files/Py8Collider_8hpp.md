@@ -16,16 +16,16 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/darkbit_developmentnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::ColliderBit](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1colliderbit/)**  |
+| **[Gambit](/documentation/code/darkbit_development/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::ColliderBit](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1colliderbit/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Gambit::ColliderBit::Py8Collider](/documentation/code/darkbit_developmentclasses/classgambit_1_1colliderbit_1_1py8collider/)** <br>A specializable, recyclable class interfacing ColliderBit and Pythia.  |
-| class | **[Gambit::ColliderBit::Py8Collider::InitializationError](/documentation/code/darkbit_developmentclasses/classgambit_1_1colliderbit_1_1py8collider_1_1initializationerror/)** <br>An exception for when Pythia fails to initialize.  |
-| class | **[Gambit::ColliderBit::Py8Collider::EventGenerationError](/documentation/code/darkbit_developmentclasses/classgambit_1_1colliderbit_1_1py8collider_1_1eventgenerationerror/)** <br>An exception for when Pythia fails to generate events.  |
+| class | **[Gambit::ColliderBit::Py8Collider](/documentation/code/darkbit_development/classes/classgambit_1_1colliderbit_1_1py8collider/)** <br>A specializable, recyclable class interfacing ColliderBit and Pythia.  |
+| class | **[Gambit::ColliderBit::Py8Collider::InitializationError](/documentation/code/darkbit_development/classes/classgambit_1_1colliderbit_1_1py8collider_1_1initializationerror/)** <br>An exception for when Pythia fails to initialize.  |
+| class | **[Gambit::ColliderBit::Py8Collider::EventGenerationError](/documentation/code/darkbit_development/classes/classgambit_1_1colliderbit_1_1py8collider_1_1eventgenerationerror/)** <br>An exception for when Pythia fails to generate events.  |
 
 ## Detailed Description
 
@@ -260,4 +260,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:44 +0000
+Updated on 2022-08-01 at 17:41:25 +0000

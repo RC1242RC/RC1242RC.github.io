@@ -16,20 +16,20 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::PolyChord_1_17_1](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1polychord__1__17__1/)**  |
+| **[Gambit](/documentation/code/gambit_sphinx/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::PolyChord_1_17_1](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1polychord__1__17__1/)**  |
 
 ## Types
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef [Gambit::Scanner::like_ptr](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1like__ptr/) | **[scanPtr](/documentation/code/gambit_sphinxfiles/polychord__1_817_81_2polychord_8cpp/#typedef-scanptr)** <br>Typedef for the ScannerBit pointer to the external loglikelihood function.  |
+| typedef [Gambit::Scanner::like_ptr](/documentation/code/gambit_sphinx/classes/classgambit_1_1scanner_1_1like__ptr/) | **[scanPtr](/documentation/code/gambit_sphinx/files/polychord__1_817_81_2polychord_8cpp/#typedef-scanptr)** <br>Typedef for the ScannerBit pointer to the external loglikelihood function.  |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[scanner_plugin](/documentation/code/gambit_sphinxfiles/polychord__1_817_81_2polychord_8cpp/#function-scanner-plugin)**(polychord , version(1, 17, 1) ) |
+| | **[scanner_plugin](/documentation/code/gambit_sphinx/files/polychord__1_817_81_2polychord_8cpp/#function-scanner-plugin)**(polychord , version(1, 17, 1) ) |
 
 ## Detailed Description
 
@@ -488,4 +488,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:48 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

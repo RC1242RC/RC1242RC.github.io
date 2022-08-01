@@ -16,15 +16,15 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| def | **[replace](/documentation/code/darkbit_developmentnamespaces/namespacemplike__patch__script/#function-replace)**(file file, pattern pattern, subst subst, append_to_beginning append_to_beginning ="") |
+| def | **[replace](/documentation/code/darkbit_development/namespaces/namespacemplike__patch__script/#function-replace)**(file file, pattern pattern, subst subst, append_to_beginning append_to_beginning ="") |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| list | **[output](/documentation/code/darkbit_developmentnamespaces/namespacemplike__patch__script/#variable-output)**  |
-| | **[abspath](/documentation/code/darkbit_developmentnamespaces/namespacemplike__patch__script/#variable-abspath)**  |
-| | **[append_to_beginning](/documentation/code/darkbit_developmentnamespaces/namespacemplike__patch__script/#variable-append-to-beginning)**  |
+| list | **[output](/documentation/code/darkbit_development/namespaces/namespacemplike__patch__script/#variable-output)**  |
+| | **[abspath](/documentation/code/darkbit_development/namespaces/namespacemplike__patch__script/#variable-abspath)**  |
+| | **[append_to_beginning](/documentation/code/darkbit_development/namespaces/namespacemplike__patch__script/#variable-append-to-beginning)**  |
 
 ## Detailed Description
 
@@ -102,4 +102,4 @@ append_to_beginning;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:41 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

@@ -1,6 +1,6 @@
 ---
 title: 'struct Gambit::ColliderBit::Cutflows'
-description: 'A container for several [Cutflow](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1cutflow/) objects, with some convenient batch access. '
+description: 'A container for several [Cutflow](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1cutflow/) objects, with some convenient batch access. '
 
 ---
 
@@ -11,7 +11,7 @@ description: 'A container for several [Cutflow](/documentation/code/darkbit_deve
 
 
 
-A container for several [Cutflow](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1cutflow/) objects, with some convenient batch access. 
+A container for several [Cutflow](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1cutflow/) objects, with some convenient batch access. 
 
 
 `#include <Cutflow.hpp>`
@@ -20,32 +20,32 @@ A container for several [Cutflow](/documentation/code/darkbit_developmentclasses
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Cutflows](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1cutflows/#function-cutflows)**()<br>Do-nothing default constructor.  |
-| | **[Cutflows](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1cutflows/#function-cutflows)**(const vector< [Cutflow](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1cutflow/) > & cutflows)<br>Populating constructor.  |
-| void | **[addCutflow](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1cutflows/#function-addcutflow)**(const [Cutflow](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1cutflow/) & cf)<br>Append a provided [Cutflow](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1cutflow/) to the list.  |
-| void | **[addCutflow](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1cutflows/#function-addcutflow)**(const string & cfname, const vector< string > & cutnames)<br>Append a newly constructed [Cutflow](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1cutflow/) to the list.  |
-| [Cutflow](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1cutflow/) & | **[operator[]](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1cutflows/#function-operator[])**(size_t i)<br>Access the _i'th_[Cutflow](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1cutflow/).  |
-| const [Cutflow](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1cutflow/) & | **[operator[]](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1cutflows/#function-operator[])**(size_t i) const<br>Access the _i'th_[Cutflow](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1cutflow/) (const)  |
-| [Cutflow](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1cutflow/) & | **[operator[]](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1cutflows/#function-operator[])**(const string & name)<br>Access the [Cutflow](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1cutflow/) whose name is _name_.  |
-| const [Cutflow](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1cutflow/) & | **[operator[]](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1cutflows/#function-operator[])**(const string & name) const<br>Access the _i'th_[Cutflow](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1cutflow/) (const)  |
-| void | **[fillinit](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1cutflows/#function-fillinit)**(double weight =1.)<br>Fill the pre-cuts state counter for all contained {[Cutflow](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1cutflow/)}s.  |
-| bool | **[fill](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1cutflows/#function-fill)**(size_t icut, bool cutresult =true, double weight =1.)<br>Fill the _{icut}'th_ post-cut counter, starting at icut=1 for first cut, with the same result for all {[Cutflow](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1cutflow/)}s.  |
-| bool | **[fill](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1cutflows/#function-fill)**(size_t icut, double weight)<br>Fill the _{icut}'th_ post-cut counter, starting at icut=1 for first cut, with the same result for all {[Cutflow](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1cutflow/)}s (cutresult=true overload)  |
-| bool | **[fill](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1cutflows/#function-fill)**(size_t icut, const vector< bool > & cutresults, double weight =1.)<br>Fill cut-state counters from an n-element results vector, starting at icut.  |
-| bool | **[fillall](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1cutflows/#function-fillall)**(const vector< bool > & cutresults, double weight =1.)<br>Fill all cut-state counters from an Ncut-element results vector, starting at icut=1.  |
-| bool | **[fillnext](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1cutflows/#function-fillnext)**(bool cutresult, double weight =1.)<br>Fill the next post-cut counter.  |
-| bool | **[fillnext](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1cutflows/#function-fillnext)**(double weight =1.)<br>Fill the next post-cut counter, assuming a true result.  |
-| bool | **[fillnext](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1cutflows/#function-fillnext)**(const vector< bool > & cutresults, double weight =1.)<br>Fill the next cut-state counters from an n-element results vector.  |
-| void | **[scale](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1cutflows/#function-scale)**(double factor)<br>Scale the contained {[Cutflow](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1cutflow/)}s by the given factor.  |
-| void | **[normalize](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1cutflows/#function-normalize)**(double norm, size_t icut =0) |
-| string | **[str](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1cutflows/#function-str)**() const<br>Create a string representation.  |
-| void | **[print](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1cutflows/#function-print)**(std::ostream & os) const<br>Print string representation to a stream.  |
+| | **[Cutflows](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1cutflows/#function-cutflows)**()<br>Do-nothing default constructor.  |
+| | **[Cutflows](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1cutflows/#function-cutflows)**(const vector< [Cutflow](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1cutflow/) > & cutflows)<br>Populating constructor.  |
+| void | **[addCutflow](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1cutflows/#function-addcutflow)**(const [Cutflow](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1cutflow/) & cf)<br>Append a provided [Cutflow](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1cutflow/) to the list.  |
+| void | **[addCutflow](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1cutflows/#function-addcutflow)**(const string & cfname, const vector< string > & cutnames)<br>Append a newly constructed [Cutflow](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1cutflow/) to the list.  |
+| [Cutflow](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1cutflow/) & | **[operator[]](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1cutflows/#function-operator[])**(size_t i)<br>Access the _i'th_[Cutflow](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1cutflow/).  |
+| const [Cutflow](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1cutflow/) & | **[operator[]](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1cutflows/#function-operator[])**(size_t i) const<br>Access the _i'th_[Cutflow](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1cutflow/) (const)  |
+| [Cutflow](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1cutflow/) & | **[operator[]](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1cutflows/#function-operator[])**(const string & name)<br>Access the [Cutflow](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1cutflow/) whose name is _name_.  |
+| const [Cutflow](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1cutflow/) & | **[operator[]](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1cutflows/#function-operator[])**(const string & name) const<br>Access the _i'th_[Cutflow](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1cutflow/) (const)  |
+| void | **[fillinit](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1cutflows/#function-fillinit)**(double weight =1.)<br>Fill the pre-cuts state counter for all contained {[Cutflow](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1cutflow/)}s.  |
+| bool | **[fill](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1cutflows/#function-fill)**(size_t icut, bool cutresult =true, double weight =1.)<br>Fill the _{icut}'th_ post-cut counter, starting at icut=1 for first cut, with the same result for all {[Cutflow](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1cutflow/)}s.  |
+| bool | **[fill](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1cutflows/#function-fill)**(size_t icut, double weight)<br>Fill the _{icut}'th_ post-cut counter, starting at icut=1 for first cut, with the same result for all {[Cutflow](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1cutflow/)}s (cutresult=true overload)  |
+| bool | **[fill](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1cutflows/#function-fill)**(size_t icut, const vector< bool > & cutresults, double weight =1.)<br>Fill cut-state counters from an n-element results vector, starting at icut.  |
+| bool | **[fillall](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1cutflows/#function-fillall)**(const vector< bool > & cutresults, double weight =1.)<br>Fill all cut-state counters from an Ncut-element results vector, starting at icut=1.  |
+| bool | **[fillnext](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1cutflows/#function-fillnext)**(bool cutresult, double weight =1.)<br>Fill the next post-cut counter.  |
+| bool | **[fillnext](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1cutflows/#function-fillnext)**(double weight =1.)<br>Fill the next post-cut counter, assuming a true result.  |
+| bool | **[fillnext](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1cutflows/#function-fillnext)**(const vector< bool > & cutresults, double weight =1.)<br>Fill the next cut-state counters from an n-element results vector.  |
+| void | **[scale](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1cutflows/#function-scale)**(double factor)<br>Scale the contained {[Cutflow](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1cutflow/)}s by the given factor.  |
+| void | **[normalize](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1cutflows/#function-normalize)**(double norm, size_t icut =0) |
+| string | **[str](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1cutflows/#function-str)**() const<br>Create a string representation.  |
+| void | **[print](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1cutflows/#function-print)**(std::ostream & os) const<br>Print string representation to a stream.  |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| vector< [Cutflow](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1cutflow/) > | **[cfs](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1cutflows/#variable-cfs)**  |
+| vector< [Cutflow](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1cutflow/) > | **[cfs](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1cutflows/#variable-cfs)**  |
 
 ## Public Functions Documentation
 
@@ -75,7 +75,7 @@ inline void addCutflow(
 )
 ```
 
-Append a provided [Cutflow](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1cutflow/) to the list. 
+Append a provided [Cutflow](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1cutflow/) to the list. 
 
 ### function addCutflow
 
@@ -86,7 +86,7 @@ inline void addCutflow(
 )
 ```
 
-Append a newly constructed [Cutflow](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1cutflow/) to the list. 
+Append a newly constructed [Cutflow](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1cutflow/) to the list. 
 
 ### function operator[]
 
@@ -96,7 +96,7 @@ inline Cutflow & operator[](
 )
 ```
 
-Access the _i'th_[Cutflow](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1cutflow/). 
+Access the _i'th_[Cutflow](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1cutflow/). 
 
 ### function operator[]
 
@@ -106,7 +106,7 @@ inline const Cutflow & operator[](
 ) const
 ```
 
-Access the _i'th_[Cutflow](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1cutflow/) (const) 
+Access the _i'th_[Cutflow](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1cutflow/) (const) 
 
 ### function operator[]
 
@@ -116,7 +116,7 @@ inline Cutflow & operator[](
 )
 ```
 
-Access the [Cutflow](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1cutflow/) whose name is _name_. 
+Access the [Cutflow](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1cutflow/) whose name is _name_. 
 
 ### function operator[]
 
@@ -126,7 +126,7 @@ inline const Cutflow & operator[](
 ) const
 ```
 
-Access the _i'th_[Cutflow](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1cutflow/) (const) 
+Access the _i'th_[Cutflow](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1cutflow/) (const) 
 
 ### function fillinit
 
@@ -136,7 +136,7 @@ inline void fillinit(
 )
 ```
 
-Fill the pre-cuts state counter for all contained {[Cutflow](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1cutflow/)}s. 
+Fill the pre-cuts state counter for all contained {[Cutflow](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1cutflow/)}s. 
 
 ### function fill
 
@@ -148,7 +148,7 @@ inline bool fill(
 )
 ```
 
-Fill the _{icut}'th_ post-cut counter, starting at icut=1 for first cut, with the same result for all {[Cutflow](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1cutflow/)}s. 
+Fill the _{icut}'th_ post-cut counter, starting at icut=1 for first cut, with the same result for all {[Cutflow](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1cutflow/)}s. 
 
 ### function fill
 
@@ -159,7 +159,7 @@ inline bool fill(
 )
 ```
 
-Fill the _{icut}'th_ post-cut counter, starting at icut=1 for first cut, with the same result for all {[Cutflow](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1cutflow/)}s (cutresult=true overload) 
+Fill the _{icut}'th_ post-cut counter, starting at icut=1 for first cut, with the same result for all {[Cutflow](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1cutflow/)}s (cutresult=true overload) 
 
 **Note**: Returns the cut result to allow 'side-effect' cut-flow filling in an if-statement 
 
@@ -237,7 +237,7 @@ inline void scale(
 )
 ```
 
-Scale the contained {[Cutflow](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1cutflow/)}s by the given factor. 
+Scale the contained {[Cutflow](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1cutflow/)}s by the given factor. 
 
 ### function normalize
 
@@ -283,4 +283,4 @@ vector< Cutflow > cfs;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:42 +0000
+Updated on 2022-08-01 at 17:41:23 +0000

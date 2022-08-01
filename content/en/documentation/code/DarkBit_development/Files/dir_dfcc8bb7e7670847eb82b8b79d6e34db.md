@@ -16,7 +16,7 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[src/ObjectivesBit.cpp](/documentation/code/darkbit_developmentfiles/objectivesbit_8cpp/#file-objectivesbit.cpp)**  |
+| **[src/ObjectivesBit.cpp](/documentation/code/darkbit_development/files/objectivesbit_8cpp/#file-objectivesbit.cpp)**  |
 
 
 
@@ -25,4 +25,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:43 +0000
+Updated on 2022-08-01 at 17:41:24 +0000

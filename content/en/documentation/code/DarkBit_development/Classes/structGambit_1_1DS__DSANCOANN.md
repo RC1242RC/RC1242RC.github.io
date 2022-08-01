@@ -18,10 +18,10 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Farray< Fdouble, 1, 50 > | **[mco](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__dsancoann/#variable-mco)**  |
-| Farray< Fdouble, 1, 50 > | **[mdof](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__dsancoann/#variable-mdof)**  |
-| Farray< Finteger, 1, 50 > | **[kco](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__dsancoann/#variable-kco)**  |
-| Finteger | **[nco](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__dsancoann/#variable-nco)**  |
+| Farray< Fdouble, 1, 50 > | **[mco](/documentation/code/darkbit_development/classes/structgambit_1_1ds__dsancoann/#variable-mco)**  |
+| Farray< Fdouble, 1, 50 > | **[mdof](/documentation/code/darkbit_development/classes/structgambit_1_1ds__dsancoann/#variable-mdof)**  |
+| Farray< Finteger, 1, 50 > | **[kco](/documentation/code/darkbit_development/classes/structgambit_1_1ds__dsancoann/#variable-kco)**  |
+| Finteger | **[nco](/documentation/code/darkbit_development/classes/structgambit_1_1ds__dsancoann/#variable-nco)**  |
 
 ## Public Attributes Documentation
 
@@ -55,4 +55,4 @@ Finteger nco;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:41 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

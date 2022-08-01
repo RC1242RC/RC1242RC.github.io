@@ -16,15 +16,15 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| complex< double > | **[Vw4lLL](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1flavbit_1_1boxes/#function-vw4lll)**(int alpha, int beta, int gamma, int delta, SMInputs sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > mnu) |
-| complex< double > | **[Vw8lLL](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1flavbit_1_1boxes/#function-vw8lll)**(int alpha, int beta, int gamma, int delta, SMInputs sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > mnu) |
-| complex< double > | **[Vw4lpLL](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1flavbit_1_1boxes/#function-vw4lpll)**(int alpha, int beta, int gamma, int delta, SMInputs sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > mnu) |
-| complex< double > | **[Vw8lpLL](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1flavbit_1_1boxes/#function-vw8lpll)**(int alpha, int beta, int gamma, int delta, SMInputs sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > mnu) |
-| complex< double > | **[Vw4dLL](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1flavbit_1_1boxes/#function-vw4dll)**(int alpha, int beta, int gamma, int delta, SMInputs sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > mnu) |
-| complex< double > | **[Vw4uLL](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1flavbit_1_1boxes/#function-vw4ull)**(int alpha, int beta, int gamma, int delta, SMInputs sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > mnu) |
-| complex< double > | **[VsumlLL](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1flavbit_1_1boxes/#function-vsumlll)**(int alpha, int beta, int gamma, int delta, SMInputs sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > mnu) |
-| complex< double > | **[VsumdLL](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1flavbit_1_1boxes/#function-vsumdll)**(int alpha, int beta, int gamma, int delta, SMInputs sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > mnu) |
-| complex< double > | **[VsumuLL](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1flavbit_1_1boxes/#function-vsumull)**(int alpha, int beta, int gamma, int delta, SMInputs sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > mnu) |
+| complex< double > | **[Vw4lLL](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1flavbit_1_1boxes/#function-vw4lll)**(int alpha, int beta, int gamma, int delta, SMInputs sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > mnu) |
+| complex< double > | **[Vw8lLL](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1flavbit_1_1boxes/#function-vw8lll)**(int alpha, int beta, int gamma, int delta, SMInputs sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > mnu) |
+| complex< double > | **[Vw4lpLL](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1flavbit_1_1boxes/#function-vw4lpll)**(int alpha, int beta, int gamma, int delta, SMInputs sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > mnu) |
+| complex< double > | **[Vw8lpLL](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1flavbit_1_1boxes/#function-vw8lpll)**(int alpha, int beta, int gamma, int delta, SMInputs sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > mnu) |
+| complex< double > | **[Vw4dLL](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1flavbit_1_1boxes/#function-vw4dll)**(int alpha, int beta, int gamma, int delta, SMInputs sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > mnu) |
+| complex< double > | **[Vw4uLL](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1flavbit_1_1boxes/#function-vw4ull)**(int alpha, int beta, int gamma, int delta, SMInputs sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > mnu) |
+| complex< double > | **[VsumlLL](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1flavbit_1_1boxes/#function-vsumlll)**(int alpha, int beta, int gamma, int delta, SMInputs sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > mnu) |
+| complex< double > | **[VsumdLL](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1flavbit_1_1boxes/#function-vsumdll)**(int alpha, int beta, int gamma, int delta, SMInputs sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > mnu) |
+| complex< double > | **[VsumuLL](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1flavbit_1_1boxes/#function-vsumull)**(int alpha, int beta, int gamma, int delta, SMInputs sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > mnu) |
 
 
 ## Functions Documentation
@@ -170,4 +170,4 @@ complex< double > VsumuLL(
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:42 +0000
+Updated on 2022-08-01 at 17:41:23 +0000

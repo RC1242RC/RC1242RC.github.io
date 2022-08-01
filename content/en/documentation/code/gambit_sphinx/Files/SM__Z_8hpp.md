@@ -16,15 +16,15 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::DecayBit](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1decaybit/)**  |
-| **[Gambit::DecayBit::SM_Z](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1decaybit_1_1sm__z/)**  |
+| **[Gambit](/documentation/code/gambit_sphinx/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::DecayBit](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1decaybit/)**  |
+| **[Gambit::DecayBit::SM_Z](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1decaybit_1_1sm__z/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Gambit::DecayBit::SM_Z::TwoLoop](/documentation/code/gambit_sphinxclasses/classgambit_1_1decaybit_1_1sm__z_1_1twoloop/)**  |
+| class | **[Gambit::DecayBit::SM_Z::TwoLoop](/documentation/code/gambit_sphinx/classes/classgambit_1_1decaybit_1_1sm__z_1_1twoloop/)**  |
 
 ## Detailed Description
 
@@ -260,4 +260,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:48 +0000
+Updated on 2022-08-01 at 17:41:23 +0000

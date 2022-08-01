@@ -16,24 +16,24 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| [LOAD_LIBRARY](/documentation/code/darkbit_developmentfiles/frontend__macros_8hpp/#define-load-library) | **[BE_FUNCTION](/documentation/code/darkbit_developmentfiles/higgssignals__1__4_8hpp/#function-be-function)**(HiggsBounds_neutral_input_part_HS , void , (double *, double *, int *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *) , "higgsbounds_neutral_input_part_" , "HiggsBounds_neutral_input_part_HS" ) |
+| [LOAD_LIBRARY](/documentation/code/darkbit_development/files/frontend__macros_8hpp/#define-load-library) | **[BE_FUNCTION](/documentation/code/darkbit_development/files/higgssignals__1__4_8hpp/#function-be-function)**(HiggsBounds_neutral_input_part_HS , void , (double *, double *, int *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *) , "higgsbounds_neutral_input_part_" , "HiggsBounds_neutral_input_part_HS" ) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| [LOAD_LIBRARY](/documentation/code/darkbit_developmentfiles/frontend__macros_8hpp/#define-load-library) | **[void](/documentation/code/darkbit_developmentfiles/higgssignals__1__4_8hpp/#variable-void)**  |
-| [LOAD_LIBRARY](/documentation/code/darkbit_developmentfiles/frontend__macros_8hpp/#define-load-library) double double double double double double double double | **[higgsbounds_charged_input_](/documentation/code/darkbit_developmentfiles/higgssignals__1__4_8hpp/#variable-higgsbounds-charged-input-)**  |
+| [LOAD_LIBRARY](/documentation/code/darkbit_development/files/frontend__macros_8hpp/#define-load-library) | **[void](/documentation/code/darkbit_development/files/higgssignals__1__4_8hpp/#variable-void)**  |
+| [LOAD_LIBRARY](/documentation/code/darkbit_development/files/frontend__macros_8hpp/#define-load-library) double double double double double double double double | **[higgsbounds_charged_input_](/documentation/code/darkbit_development/files/higgssignals__1__4_8hpp/#variable-higgsbounds-charged-input-)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[BACKENDNAME](/documentation/code/darkbit_developmentfiles/higgssignals__1__4_8hpp/#define-backendname)**  |
-|  | **[BACKENDLANG](/documentation/code/darkbit_developmentfiles/higgssignals__1__4_8hpp/#define-backendlang)**  |
-|  | **[VERSION](/documentation/code/darkbit_developmentfiles/higgssignals__1__4_8hpp/#define-version)**  |
-|  | **[SAFE_VERSION](/documentation/code/darkbit_developmentfiles/higgssignals__1__4_8hpp/#define-safe-version)**  |
-|  | **[REFERENCE](/documentation/code/darkbit_developmentfiles/higgssignals__1__4_8hpp/#define-reference)**  |
+|  | **[BACKENDNAME](/documentation/code/darkbit_development/files/higgssignals__1__4_8hpp/#define-backendname)**  |
+|  | **[BACKENDLANG](/documentation/code/darkbit_development/files/higgssignals__1__4_8hpp/#define-backendlang)**  |
+|  | **[VERSION](/documentation/code/darkbit_development/files/higgssignals__1__4_8hpp/#define-version)**  |
+|  | **[SAFE_VERSION](/documentation/code/darkbit_development/files/higgssignals__1__4_8hpp/#define-safe-version)**  |
+|  | **[REFERENCE](/documentation/code/darkbit_development/files/higgssignals__1__4_8hpp/#define-reference)**  |
 
 ## Detailed Description
 
@@ -188,4 +188,4 @@ BE_FUNCTION(HiggsBounds_charged_input_HS, void, (double*, double*, double*, doub
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:45 +0000
+Updated on 2022-08-01 at 17:41:26 +0000

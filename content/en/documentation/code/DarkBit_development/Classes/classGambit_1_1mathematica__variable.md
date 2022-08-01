@@ -18,9 +18,9 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[mathematica_variable](/documentation/code/darkbit_developmentclasses/classgambit_1_1mathematica__variable/#function-mathematica-variable)**(const str & be, const str & ver, const str & symbol) |
-| [mathematica_variable](/documentation/code/darkbit_developmentclasses/classgambit_1_1mathematica__variable/) & | **[operator=](/documentation/code/darkbit_developmentclasses/classgambit_1_1mathematica__variable/#function-operator=)**(const TYPE & val) |
-| | **[operator TYPE const](/documentation/code/darkbit_developmentclasses/classgambit_1_1mathematica__variable/#function-operator-type-const)**() |
+| | **[mathematica_variable](/documentation/code/darkbit_development/classes/classgambit_1_1mathematica__variable/#function-mathematica-variable)**(const str & be, const str & ver, const str & symbol) |
+| [mathematica_variable](/documentation/code/darkbit_development/classes/classgambit_1_1mathematica__variable/) & | **[operator=](/documentation/code/darkbit_development/classes/classgambit_1_1mathematica__variable/#function-operator=)**(const TYPE & val) |
+| | **[operator TYPE const](/documentation/code/darkbit_development/classes/classgambit_1_1mathematica__variable/#function-operator-type-const)**() |
 
 ## Detailed Description
 
@@ -60,4 +60,4 @@ inline operator TYPE const()
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:41 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

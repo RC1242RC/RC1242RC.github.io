@@ -21,17 +21,17 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Parametrised_ps](/documentation/code/darkbit_developmentclasses/classgambit_1_1cosmobit_1_1parametrised__ps/#function-parametrised-ps)**() |
-| | **[~Parametrised_ps](/documentation/code/darkbit_developmentclasses/classgambit_1_1cosmobit_1_1parametrised__ps/#function-~parametrised-ps)**() |
-| void | **[set_N_pivot](/documentation/code/darkbit_developmentclasses/classgambit_1_1cosmobit_1_1parametrised__ps/#function-set-n-pivot)**(double npiv) |
-| void | **[set_n_s](/documentation/code/darkbit_developmentclasses/classgambit_1_1cosmobit_1_1parametrised__ps/#function-set-n-s)**(double ns) |
-| void | **[set_ln10A_s](/documentation/code/darkbit_developmentclasses/classgambit_1_1cosmobit_1_1parametrised__ps/#function-set-ln10a-s)**(double ln10As) |
-| void | **[set_r](/documentation/code/darkbit_developmentclasses/classgambit_1_1cosmobit_1_1parametrised__ps/#function-set-r)**(double rr) |
-| double | **[get_N_pivot](/documentation/code/darkbit_developmentclasses/classgambit_1_1cosmobit_1_1parametrised__ps/#function-get-n-pivot)**() |
-| double | **[get_n_s](/documentation/code/darkbit_developmentclasses/classgambit_1_1cosmobit_1_1parametrised__ps/#function-get-n-s)**() |
-| double | **[get_ln10A_s](/documentation/code/darkbit_developmentclasses/classgambit_1_1cosmobit_1_1parametrised__ps/#function-get-ln10a-s)**() |
-| double | **[get_r](/documentation/code/darkbit_developmentclasses/classgambit_1_1cosmobit_1_1parametrised__ps/#function-get-r)**() |
-| map_str_dbl | **[get_parametrised_ps_map](/documentation/code/darkbit_developmentclasses/classgambit_1_1cosmobit_1_1parametrised__ps/#function-get-parametrised-ps-map)**()<br>return members as str to double map for printing  |
+| | **[Parametrised_ps](/documentation/code/darkbit_development/classes/classgambit_1_1cosmobit_1_1parametrised__ps/#function-parametrised-ps)**() |
+| | **[~Parametrised_ps](/documentation/code/darkbit_development/classes/classgambit_1_1cosmobit_1_1parametrised__ps/#function-~parametrised-ps)**() |
+| void | **[set_N_pivot](/documentation/code/darkbit_development/classes/classgambit_1_1cosmobit_1_1parametrised__ps/#function-set-n-pivot)**(double npiv) |
+| void | **[set_n_s](/documentation/code/darkbit_development/classes/classgambit_1_1cosmobit_1_1parametrised__ps/#function-set-n-s)**(double ns) |
+| void | **[set_ln10A_s](/documentation/code/darkbit_development/classes/classgambit_1_1cosmobit_1_1parametrised__ps/#function-set-ln10a-s)**(double ln10As) |
+| void | **[set_r](/documentation/code/darkbit_development/classes/classgambit_1_1cosmobit_1_1parametrised__ps/#function-set-r)**(double rr) |
+| double | **[get_N_pivot](/documentation/code/darkbit_development/classes/classgambit_1_1cosmobit_1_1parametrised__ps/#function-get-n-pivot)**() |
+| double | **[get_n_s](/documentation/code/darkbit_development/classes/classgambit_1_1cosmobit_1_1parametrised__ps/#function-get-n-s)**() |
+| double | **[get_ln10A_s](/documentation/code/darkbit_development/classes/classgambit_1_1cosmobit_1_1parametrised__ps/#function-get-ln10a-s)**() |
+| double | **[get_r](/documentation/code/darkbit_development/classes/classgambit_1_1cosmobit_1_1parametrised__ps/#function-get-r)**() |
+| map_str_dbl | **[get_parametrised_ps_map](/documentation/code/darkbit_development/classes/classgambit_1_1cosmobit_1_1parametrised__ps/#function-get-parametrised-ps-map)**()<br>return members as str to double map for printing  |
 
 ## Detailed Description
 
@@ -136,4 +136,4 @@ return members as str to double map for printing
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:42 +0000
+Updated on 2022-08-01 at 17:41:23 +0000

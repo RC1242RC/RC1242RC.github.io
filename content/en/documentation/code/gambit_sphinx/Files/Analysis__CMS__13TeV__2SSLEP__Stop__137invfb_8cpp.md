@@ -16,15 +16,15 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::ColliderBit](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1colliderbit/)**  |
+| **[Gambit](/documentation/code/gambit_sphinx/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::ColliderBit](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1colliderbit/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Gambit::ColliderBit::Analysis_CMS_13TeV_2SSLEP_Stop_137invfb](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2sslep__stop__137invfb/)**  |
-| struct | **[Gambit::ColliderBit::Analysis_CMS_13TeV_2SSLEP_Stop_137invfb::ptComparison](/documentation/code/gambit_sphinxclasses/structgambit_1_1colliderbit_1_1analysis__cms__13tev__2sslep__stop__137invfb_1_1ptcomparison/)**  |
+| class | **[Gambit::ColliderBit::Analysis_CMS_13TeV_2SSLEP_Stop_137invfb](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2sslep__stop__137invfb/)**  |
+| struct | **[Gambit::ColliderBit::Analysis_CMS_13TeV_2SSLEP_Stop_137invfb::ptComparison](/documentation/code/gambit_sphinx/classes/structgambit_1_1colliderbit_1_1analysis__cms__13tev__2sslep__stop__137invfb_1_1ptcomparison/)**  |
 
 
 
@@ -944,4 +944,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:49 +0000
+Updated on 2022-08-01 at 17:41:24 +0000

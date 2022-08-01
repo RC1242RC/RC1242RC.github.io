@@ -18,12 +18,12 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Fdouble | **[msquarks](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__mssmswitch/#variable-msquarks)**  |
-| Fdouble | **[msleptons](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__mssmswitch/#variable-msleptons)**  |
-| Finteger | **[higloop](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__mssmswitch/#variable-higloop)**  |
-| Finteger | **[neuloop](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__mssmswitch/#variable-neuloop)**  |
-| Finteger | **[bsgqcd](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__mssmswitch/#variable-bsgqcd)**  |
-| Finteger | **[higwid](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__mssmswitch/#variable-higwid)**  |
+| Fdouble | **[msquarks](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__mssmswitch/#variable-msquarks)**  |
+| Fdouble | **[msleptons](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__mssmswitch/#variable-msleptons)**  |
+| Finteger | **[higloop](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__mssmswitch/#variable-higloop)**  |
+| Finteger | **[neuloop](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__mssmswitch/#variable-neuloop)**  |
+| Finteger | **[bsgqcd](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__mssmswitch/#variable-bsgqcd)**  |
+| Finteger | **[higwid](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__mssmswitch/#variable-higwid)**  |
 
 ## Public Attributes Documentation
 
@@ -71,4 +71,4 @@ Finteger higwid;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:46 +0000
+Updated on 2022-08-01 at 17:41:21 +0000

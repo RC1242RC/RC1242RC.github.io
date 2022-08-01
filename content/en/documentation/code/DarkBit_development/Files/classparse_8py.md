@@ -16,8 +16,8 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[modules](/documentation/code/darkbit_developmentnamespaces/namespacemodules/)**  |
-| **[modules::classparse](/documentation/code/darkbit_developmentnamespaces/namespacemodules_1_1classparse/)**  |
+| **[modules](/documentation/code/darkbit_development/namespaces/namespacemodules/)**  |
+| **[modules::classparse](/documentation/code/darkbit_development/namespaces/namespacemodules_1_1classparse/)**  |
 
 
 
@@ -940,4 +940,4 @@ def addWrapperTypedefs(class_name, namespaces):
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:45 +0000
+Updated on 2022-08-01 at 17:41:26 +0000

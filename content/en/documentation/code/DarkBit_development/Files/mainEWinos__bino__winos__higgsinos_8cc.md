@@ -16,13 +16,13 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Pythia8](/documentation/code/darkbit_developmentnamespaces/namespacepythia8/)**  |
+| **[Pythia8](/documentation/code/darkbit_development/namespaces/namespacepythia8/)**  |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| int | **[main](/documentation/code/darkbit_developmentfiles/mainewinos__bino__winos__higgsinos_8cc/#function-main)**() |
+| int | **[main](/documentation/code/darkbit_development/files/mainewinos__bino__winos__higgsinos_8cc/#function-main)**() |
 
 
 ## Functions Documentation
@@ -101,4 +101,4 @@ int main() {
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:44 +0000
+Updated on 2022-08-01 at 17:41:25 +0000

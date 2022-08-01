@@ -18,10 +18,10 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Fstring< 5 > | **[chara](/documentation/code/darkbit_developmentclasses/structgambit_1_1libfarraytest__cb2__type/#variable-chara)**  |
-| FstringArray< 5, 1, 3 > | **[charb](/documentation/code/darkbit_developmentclasses/structgambit_1_1libfarraytest__cb2__type/#variable-charb)**  |
-| FstringArray< 6, 1, 2, -1, 0 > | **[charc](/documentation/code/darkbit_developmentclasses/structgambit_1_1libfarraytest__cb2__type/#variable-charc)**  |
-| Finteger | **[e](/documentation/code/darkbit_developmentclasses/structgambit_1_1libfarraytest__cb2__type/#variable-e)**  |
+| Fstring< 5 > | **[chara](/documentation/code/darkbit_development/classes/structgambit_1_1libfarraytest__cb2__type/#variable-chara)**  |
+| FstringArray< 5, 1, 3 > | **[charb](/documentation/code/darkbit_development/classes/structgambit_1_1libfarraytest__cb2__type/#variable-charb)**  |
+| FstringArray< 6, 1, 2, -1, 0 > | **[charc](/documentation/code/darkbit_development/classes/structgambit_1_1libfarraytest__cb2__type/#variable-charc)**  |
+| Finteger | **[e](/documentation/code/darkbit_development/classes/structgambit_1_1libfarraytest__cb2__type/#variable-e)**  |
 
 ## Public Attributes Documentation
 
@@ -55,4 +55,4 @@ Finteger e;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:41 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

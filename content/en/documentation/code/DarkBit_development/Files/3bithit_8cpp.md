@@ -16,22 +16,22 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[SpecBit::Functown](/documentation/code/darkbit_developmentnamespaces/namespacespecbit_1_1functown/)**  |
-| **[DecayBit::Functown](/documentation/code/darkbit_developmentnamespaces/namespacedecaybit_1_1functown/)**  |
-| **[PrecisionBit::Functown](/documentation/code/darkbit_developmentnamespaces/namespaceprecisionbit_1_1functown/)**  |
+| **[SpecBit::Functown](/documentation/code/darkbit_development/namespaces/namespacespecbit_1_1functown/)**  |
+| **[DecayBit::Functown](/documentation/code/darkbit_development/namespaces/namespacedecaybit_1_1functown/)**  |
+| **[PrecisionBit::Functown](/documentation/code/darkbit_development/namespaces/namespaceprecisionbit_1_1functown/)**  |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| int | **[main](/documentation/code/darkbit_developmentfiles/3bithit_8cpp/#function-main)**() |
+| int | **[main](/documentation/code/darkbit_development/files/3bithit_8cpp/#function-main)**() |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| const std::string | **[filename_in](/documentation/code/darkbit_developmentfiles/3bithit_8cpp/#variable-filename-in)**  |
-| const std::string | **[filename_out](/documentation/code/darkbit_developmentfiles/3bithit_8cpp/#variable-filename-out)**  |
+| const std::string | **[filename_in](/documentation/code/darkbit_development/files/3bithit_8cpp/#variable-filename-in)**  |
+| const std::string | **[filename_out](/documentation/code/darkbit_development/files/3bithit_8cpp/#variable-filename-out)**  |
 
 ## Detailed Description
 
@@ -702,4 +702,4 @@ int main()
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:43 +0000
+Updated on 2022-08-01 at 17:41:24 +0000

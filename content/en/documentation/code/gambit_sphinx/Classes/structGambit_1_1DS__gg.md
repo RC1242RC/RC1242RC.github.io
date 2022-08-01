@@ -18,7 +18,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Farray< Fdouble_complex, 1, 27, 1, 2 > | **[gg](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__gg/#variable-gg)**  |
+| Farray< Fdouble_complex, 1, 27, 1, 2 > | **[gg](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__gg/#variable-gg)**  |
 
 ## Public Attributes Documentation
 
@@ -31,4 +31,4 @@ Farray< Fdouble_complex, 1, 27, 1, 2 > gg;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:46 +0000
+Updated on 2022-08-01 at 17:41:21 +0000

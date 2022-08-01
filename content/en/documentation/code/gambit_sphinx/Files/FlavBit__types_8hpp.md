@@ -16,16 +16,16 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::FlavBit](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1flavbit/)**  |
+| **[Gambit](/documentation/code/gambit_sphinx/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::FlavBit](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1flavbit/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[Gambit::FlavBit::Correlation](/documentation/code/gambit_sphinxclasses/structgambit_1_1flavbit_1_1correlation/)** <br>Simple structure for holding a correlation value and name of the correlated observable.  |
-| struct | **[Gambit::FlavBit::Measurement](/documentation/code/gambit_sphinxclasses/structgambit_1_1flavbit_1_1measurement/)** <br>Representation of a single entry in the FlavBit YAML database.  |
-| struct | **[Gambit::FlavBit::predictions_measurements_covariances](/documentation/code/gambit_sphinxclasses/structgambit_1_1flavbit_1_1predictions__measurements__covariances/)**  |
+| struct | **[Gambit::FlavBit::Correlation](/documentation/code/gambit_sphinx/classes/structgambit_1_1flavbit_1_1correlation/)** <br>Simple structure for holding a correlation value and name of the correlated observable.  |
+| struct | **[Gambit::FlavBit::Measurement](/documentation/code/gambit_sphinx/classes/structgambit_1_1flavbit_1_1measurement/)** <br>Representation of a single entry in the FlavBit YAML database.  |
+| struct | **[Gambit::FlavBit::predictions_measurements_covariances](/documentation/code/gambit_sphinx/classes/structgambit_1_1flavbit_1_1predictions__measurements__covariances/)**  |
 
 ## Detailed Description
 
@@ -131,4 +131,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:48 +0000
+Updated on 2022-08-01 at 17:41:23 +0000

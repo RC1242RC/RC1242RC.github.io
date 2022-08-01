@@ -16,74 +16,74 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| string | **[gambit_backend_namespace](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-gambit-backend-namespace)**  |
-| | **[gambit_backend_safeversion](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-gambit-backend-safeversion)**  |
-| string | **[gambit_backend_name_full](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-gambit-backend-name-full)**  |
-| string | **[boss_dir](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-boss-dir)**  |
-| string | **[boss_temp_dir](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-boss-temp-dir)**  |
-| string | **[boss_output_dir](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-boss-output-dir)**  |
-| bool | **[has_castxml_system](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-has-castxml-system)**  |
-| bool | **[has_castxml_local](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-has-castxml-local)**  |
-| bool | **[debug_mode](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-debug-mode)**  |
-| | **[new_code](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-new-code)**  |
-| string | **[xml_file_name](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-xml-file-name)**  |
-| | **[id_dict](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-id-dict)**  |
-| | **[all_id_dict](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-all-id-dict)**  |
-| | **[name_dict](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-name-dict)**  |
-| | **[all_name_dict](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-all-name-dict)**  |
-| list | **[parents_of_loaded_classes](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-parents-of-loaded-classes)**  |
-| list | **[contains_pure_virtual_members](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-contains-pure-virtual-members)**  |
-| | **[file_dict](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-file-dict)**  |
-| | **[std_types_dict](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-std-types-dict)**  |
-| | **[typedef_dict](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-typedef-dict)**  |
-| | **[loaded_classes_in_xml](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-loaded-classes-in-xml)**  |
-| | **[func_dict](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-func-dict)**  |
-| | **[new_header_files](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-new-header-files)**  |
-| list | **[accepted_types](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-accepted-types)**  |
-| list | **[std_headers_used](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-std-headers-used)**  |
-| | **[original_file_paths](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-original-file-paths)**  |
-| list | **[std_include_paths](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-std-include-paths)**  |
-| list | **[functions_done](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-functions-done)**  |
-| list | **[classes_done](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-classes-done)**  |
-| list | **[wr_func_names](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-wr-func-names)**  |
-| | **[factory_info](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-factory-info)**  |
-| | **[class_factory_file_dict](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-class-factory-file-dict)**  |
-| | **[function_file_dict](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-function-file-dict)**  |
-| int | **[symbol_name_counter](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-symbol-name-counter)**  |
-| int | **[function_name_counter](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-function-name-counter)**  |
-| string | **[backend_types_basedir](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-backend-types-basedir)**  |
-| | **[backend_types_dir_complete](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-backend-types-dir-complete)**  |
-| string | **[for_gambit_basedir](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-for-gambit-basedir)**  |
-| | **[for_gambit_backend_types_dir_complete](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-for-gambit-backend-types-dir-complete)**  |
-| string | **[frontend_base_dir](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-frontend-base-dir)**  |
-| | **[frontend_dir_complete](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-frontend-dir-complete)**  |
-| string | **[gambit_backend_incl_dir](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-gambit-backend-incl-dir)**  |
-| string | **[gambit_utils_incl_dir](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-gambit-utils-incl-dir)**  |
-| string | **[code_suffix](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-code-suffix)**  |
-| string | **[abstr_class_prefix](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-abstr-class-prefix)**  |
-| string | **[wrapper_class_prefix](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-wrapper-class-prefix)**  |
-| string | **[abstr_header_prefix](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-abstr-header-prefix)**  |
-| string | **[wrapper_header_prefix](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-wrapper-header-prefix)**  |
-| string | **[general_src_file_prefix](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-general-src-file-prefix)**  |
-| string | **[factory_file_prefix](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-factory-file-prefix)**  |
-| string | **[function_files_prefix](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-function-files-prefix)**  |
-| string | **[func_return_utils_fname](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-func-return-utils-fname)**  |
-| string | **[wrapper_utils_fname](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-wrapper-utils-fname)**  |
-| string | **[frwd_decls_abs_fname](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-frwd-decls-abs-fname)**  |
-| string | **[frwd_decls_wrp_fname](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-frwd-decls-wrp-fname)**  |
-| string | **[wrapper_typedefs_fname](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-wrapper-typedefs-fname)**  |
-| string | **[abstract_typedefs_fname](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-abstract-typedefs-fname)**  |
-| string | **[enum_decls_wrp_fname](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-enum-decls-wrp-fname)**  |
-| string | **[frontend_fname](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-frontend-fname)**  |
-| | **[frontend_path](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-frontend-path)**  |
-| dictionary | **[textmods](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-textmods)**  |
-| dictionary | **[operator_names](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-operator-names)**  |
-| dictionary | **[std_headers](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-std-headers)**  |
-| string | **[output_file_path_be_types](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-output-file-path-be-types)**  |
-| string | **[output_file_path_frontend](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-output-file-path-frontend)**  |
-| list | **[alphabet](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-alphabet)**  |
-| dictionary | **[type_translation_dict](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-type-translation-dict)**  |
-| dictionary | **[default_implicit_types](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/#variable-default-implicit-types)**  |
+| string | **[gambit_backend_namespace](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-gambit-backend-namespace)**  |
+| | **[gambit_backend_safeversion](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-gambit-backend-safeversion)**  |
+| string | **[gambit_backend_name_full](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-gambit-backend-name-full)**  |
+| string | **[boss_dir](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-boss-dir)**  |
+| string | **[boss_temp_dir](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-boss-temp-dir)**  |
+| string | **[boss_output_dir](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-boss-output-dir)**  |
+| bool | **[has_castxml_system](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-has-castxml-system)**  |
+| bool | **[has_castxml_local](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-has-castxml-local)**  |
+| bool | **[debug_mode](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-debug-mode)**  |
+| | **[new_code](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-new-code)**  |
+| string | **[xml_file_name](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-xml-file-name)**  |
+| | **[id_dict](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-id-dict)**  |
+| | **[all_id_dict](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-all-id-dict)**  |
+| | **[name_dict](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-name-dict)**  |
+| | **[all_name_dict](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-all-name-dict)**  |
+| list | **[parents_of_loaded_classes](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-parents-of-loaded-classes)**  |
+| list | **[contains_pure_virtual_members](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-contains-pure-virtual-members)**  |
+| | **[file_dict](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-file-dict)**  |
+| | **[std_types_dict](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-std-types-dict)**  |
+| | **[typedef_dict](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-typedef-dict)**  |
+| | **[loaded_classes_in_xml](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-loaded-classes-in-xml)**  |
+| | **[func_dict](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-func-dict)**  |
+| | **[new_header_files](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-new-header-files)**  |
+| list | **[accepted_types](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-accepted-types)**  |
+| list | **[std_headers_used](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-std-headers-used)**  |
+| | **[original_file_paths](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-original-file-paths)**  |
+| list | **[std_include_paths](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-std-include-paths)**  |
+| list | **[functions_done](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-functions-done)**  |
+| list | **[classes_done](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-classes-done)**  |
+| list | **[wr_func_names](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-wr-func-names)**  |
+| | **[factory_info](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-factory-info)**  |
+| | **[class_factory_file_dict](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-class-factory-file-dict)**  |
+| | **[function_file_dict](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-function-file-dict)**  |
+| int | **[symbol_name_counter](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-symbol-name-counter)**  |
+| int | **[function_name_counter](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-function-name-counter)**  |
+| string | **[backend_types_basedir](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-backend-types-basedir)**  |
+| | **[backend_types_dir_complete](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-backend-types-dir-complete)**  |
+| string | **[for_gambit_basedir](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-for-gambit-basedir)**  |
+| | **[for_gambit_backend_types_dir_complete](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-for-gambit-backend-types-dir-complete)**  |
+| string | **[frontend_base_dir](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-frontend-base-dir)**  |
+| | **[frontend_dir_complete](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-frontend-dir-complete)**  |
+| string | **[gambit_backend_incl_dir](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-gambit-backend-incl-dir)**  |
+| string | **[gambit_utils_incl_dir](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-gambit-utils-incl-dir)**  |
+| string | **[code_suffix](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-code-suffix)**  |
+| string | **[abstr_class_prefix](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-abstr-class-prefix)**  |
+| string | **[wrapper_class_prefix](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-wrapper-class-prefix)**  |
+| string | **[abstr_header_prefix](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-abstr-header-prefix)**  |
+| string | **[wrapper_header_prefix](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-wrapper-header-prefix)**  |
+| string | **[general_src_file_prefix](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-general-src-file-prefix)**  |
+| string | **[factory_file_prefix](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-factory-file-prefix)**  |
+| string | **[function_files_prefix](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-function-files-prefix)**  |
+| string | **[func_return_utils_fname](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-func-return-utils-fname)**  |
+| string | **[wrapper_utils_fname](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-wrapper-utils-fname)**  |
+| string | **[frwd_decls_abs_fname](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-frwd-decls-abs-fname)**  |
+| string | **[frwd_decls_wrp_fname](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-frwd-decls-wrp-fname)**  |
+| string | **[wrapper_typedefs_fname](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-wrapper-typedefs-fname)**  |
+| string | **[abstract_typedefs_fname](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-abstract-typedefs-fname)**  |
+| string | **[enum_decls_wrp_fname](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-enum-decls-wrp-fname)**  |
+| string | **[frontend_fname](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-frontend-fname)**  |
+| | **[frontend_path](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-frontend-path)**  |
+| dictionary | **[textmods](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-textmods)**  |
+| dictionary | **[operator_names](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-operator-names)**  |
+| dictionary | **[std_headers](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-std-headers)**  |
+| string | **[output_file_path_be_types](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-output-file-path-be-types)**  |
+| string | **[output_file_path_frontend](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-output-file-path-frontend)**  |
+| list | **[alphabet](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-alphabet)**  |
+| dictionary | **[type_translation_dict](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-type-translation-dict)**  |
+| dictionary | **[default_implicit_types](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/#variable-default-implicit-types)**  |
 
 
 
@@ -625,4 +625,4 @@ dictionary default_implicit_types =  {
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:46 +0000
+Updated on 2022-08-01 at 17:41:20 +0000

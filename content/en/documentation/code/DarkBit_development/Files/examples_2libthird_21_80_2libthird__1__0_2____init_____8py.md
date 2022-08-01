@@ -16,7 +16,7 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[libthird_1_0](/documentation/code/darkbit_developmentnamespaces/namespacelibthird__1__0/)**  |
+| **[libthird_1_0](/documentation/code/darkbit_development/namespaces/namespacelibthird__1__0/)**  |
 
 
 
@@ -30,4 +30,4 @@ from main import *
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:44 +0000
+Updated on 2022-08-01 at 17:41:26 +0000

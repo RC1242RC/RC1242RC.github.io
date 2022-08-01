@@ -16,14 +16,14 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[Lester::EllipseParams](/documentation/code/darkbit_developmentclasses/structlester_1_1ellipseparams/)**  |
+| struct | **[Lester::EllipseParams](/documentation/code/darkbit_development/classes/structlester_1_1ellipseparams/)**  |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| bool | **[ellipsesAreDisjoint](/documentation/code/darkbit_developmentnamespaces/namespacelester/#function-ellipsesaredisjoint)**(const [EllipseParams](/documentation/code/darkbit_developmentclasses/structlester_1_1ellipseparams/) & e1, const [EllipseParams](/documentation/code/darkbit_developmentclasses/structlester_1_1ellipseparams/) & e2) |
-| bool | **[__private_ellipsesAreDisjoint](/documentation/code/darkbit_developmentnamespaces/namespacelester/#function---private-ellipsesaredisjoint)**(const double coeffLamPow3, const double coeffLamPow2, const double coeffLamPow1, const double coeffLamPow0) |
+| bool | **[ellipsesAreDisjoint](/documentation/code/darkbit_development/namespaces/namespacelester/#function-ellipsesaredisjoint)**(const [EllipseParams](/documentation/code/darkbit_development/classes/structlester_1_1ellipseparams/) & e1, const [EllipseParams](/documentation/code/darkbit_development/classes/structlester_1_1ellipseparams/) & e2) |
+| bool | **[__private_ellipsesAreDisjoint](/documentation/code/darkbit_development/namespaces/namespacelester/#function---private-ellipsesaredisjoint)**(const double coeffLamPow3, const double coeffLamPow2, const double coeffLamPow1, const double coeffLamPow0) |
 
 
 ## Functions Documentation
@@ -56,4 +56,4 @@ bool __private_ellipsesAreDisjoint(
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:41 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

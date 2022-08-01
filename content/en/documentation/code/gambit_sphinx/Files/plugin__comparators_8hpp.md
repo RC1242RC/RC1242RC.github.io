@@ -16,17 +16,17 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::Scanner](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1scanner/)**  |
-| **[Gambit::Scanner::Plugins](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1scanner_1_1plugins/)**  |
+| **[Gambit](/documentation/code/gambit_sphinx/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::Scanner](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1scanner/)**  |
+| **[Gambit::Scanner::Plugins](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1scanner_1_1plugins/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Gambit::Scanner::Plugins::VersionCompareBase](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1plugins_1_1versioncomparebase/)** <br>Base class for comparing scanner plugins.  |
-| class | **[Gambit::Scanner::Plugins::VersionCompareBottom](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1plugins_1_1versioncomparebottom/)**  |
-| class | **[Gambit::Scanner::Plugins::VersionCompare](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1plugins_1_1versioncompare/)**  |
+| class | **[Gambit::Scanner::Plugins::VersionCompareBase](/documentation/code/gambit_sphinx/classes/classgambit_1_1scanner_1_1plugins_1_1versioncomparebase/)** <br>Base class for comparing scanner plugins.  |
+| class | **[Gambit::Scanner::Plugins::VersionCompareBottom](/documentation/code/gambit_sphinx/classes/classgambit_1_1scanner_1_1plugins_1_1versioncomparebottom/)**  |
+| class | **[Gambit::Scanner::Plugins::VersionCompare](/documentation/code/gambit_sphinx/classes/classgambit_1_1scanner_1_1plugins_1_1versioncompare/)**  |
 
 ## Detailed Description
 
@@ -135,4 +135,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:48 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

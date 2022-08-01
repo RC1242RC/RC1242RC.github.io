@@ -18,7 +18,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| const bool | **[value](/documentation/code/darkbit_developmentclasses/structgambit_1_1scanner_1_1is__args__convertible_3_01ret1_07arg1_00_01args1_8_8_8_08_00_01ret2_07arg2_00_01args2_8_8_8_08_4/#variable-value)**  |
+| const bool | **[value](/documentation/code/darkbit_development/classes/structgambit_1_1scanner_1_1is__args__convertible_3_01ret1_07arg1_00_01args1_8_8_8_08_00_01ret2_07arg2_00_01args2_8_8_8_08_4/#variable-value)**  |
 
 ## Detailed Description
 
@@ -43,4 +43,4 @@ static const bool value = __is_args_convertible__<std::is_convertible<arg1, arg2
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:42 +0000
+Updated on 2022-08-01 at 17:41:24 +0000

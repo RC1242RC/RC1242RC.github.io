@@ -16,23 +16,23 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::DarkBit](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1darkbit/)**  |
+| **[Gambit](/documentation/code/gambit_sphinx/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::DarkBit](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1darkbit/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Gambit::DarkBit::ScalarSingletDM](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1scalarsingletdm/)**  |
+| class | **[Gambit::DarkBit::ScalarSingletDM](/documentation/code/gambit_sphinx/classes/classgambit_1_1darkbit_1_1scalarsingletdm/)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[getSMmass](/documentation/code/gambit_sphinxfiles/scalarsingletdm_8cpp/#define-getsmmass)**(Name, spinX2)  |
-|  | **[addParticle](/documentation/code/gambit_sphinxfiles/scalarsingletdm_8cpp/#define-addparticle)**(Name, Mass, spinX2)  |
-|  | **[getSMmass](/documentation/code/gambit_sphinxfiles/scalarsingletdm_8cpp/#define-getsmmass)**(Name, spinX2)  |
-|  | **[addParticle](/documentation/code/gambit_sphinxfiles/scalarsingletdm_8cpp/#define-addparticle)**(Name, Mass, spinX2)  |
+|  | **[getSMmass](/documentation/code/gambit_sphinx/files/scalarsingletdm_8cpp/#define-getsmmass)**(Name, spinX2)  |
+|  | **[addParticle](/documentation/code/gambit_sphinx/files/scalarsingletdm_8cpp/#define-addparticle)**(Name, Mass, spinX2)  |
+|  | **[getSMmass](/documentation/code/gambit_sphinx/files/scalarsingletdm_8cpp/#define-getsmmass)**(Name, spinX2)  |
+|  | **[addParticle](/documentation/code/gambit_sphinx/files/scalarsingletdm_8cpp/#define-addparticle)**(Name, Mass, spinX2)  |
 
 ## Detailed Description
 
@@ -762,4 +762,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:49 +0000
+Updated on 2022-08-01 at 17:41:23 +0000

@@ -21,8 +21,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| void * | **[ptr](/documentation/code/gambit_sphinxclasses/uniongambit_1_1backends_1_1void__voidfptr/#variable-ptr)**  |
-| voidFptr | **[fptr](/documentation/code/gambit_sphinxclasses/uniongambit_1_1backends_1_1void__voidfptr/#variable-fptr)**  |
+| void * | **[ptr](/documentation/code/gambit_sphinx/classes/uniongambit_1_1backends_1_1void__voidfptr/#variable-ptr)**  |
+| voidFptr | **[fptr](/documentation/code/gambit_sphinx/classes/uniongambit_1_1backends_1_1void__voidfptr/#variable-fptr)**  |
 
 ## Detailed Description
 
@@ -51,4 +51,4 @@ voidFptr fptr;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:46 +0000
+Updated on 2022-08-01 at 17:41:21 +0000

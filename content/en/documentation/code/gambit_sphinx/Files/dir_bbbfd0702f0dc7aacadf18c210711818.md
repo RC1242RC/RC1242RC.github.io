@@ -16,7 +16,7 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[examples/ScannerBit_standalone.cpp](/documentation/code/gambit_sphinxfiles/scannerbit__standalone_8cpp/#file-scannerbit-standalone.cpp)**  |
+| **[examples/ScannerBit_standalone.cpp](/documentation/code/gambit_sphinx/files/scannerbit__standalone_8cpp/#file-scannerbit-standalone.cpp)**  |
 
 
 
@@ -25,4 +25,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:48 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

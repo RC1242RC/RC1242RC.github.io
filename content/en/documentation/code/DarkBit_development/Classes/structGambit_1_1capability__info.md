@@ -20,11 +20,11 @@ Helper struct to carry around capability information.
 
 |                | Name           |
 | -------------- | -------------- |
-| str | **[name](/documentation/code/darkbit_developmentclasses/structgambit_1_1capability__info/#variable-name)** <br>Capability name.  |
-| std::map< str, std::set< std::pair< str, str > > > | **[modset](/documentation/code/darkbit_developmentclasses/structgambit_1_1capability__info/#variable-modset)** <br>Set of modules and module functions in which capability is used, along with corresponding result types.  |
-| std::map< str, std::set< std::pair< str, str > > > | **[beset](/documentation/code/darkbit_developmentclasses/structgambit_1_1capability__info/#variable-beset)** <br>Set of backends and backend functions in which capability is used, along with corresponding type signatures.  |
-| str | **[description](/documentation/code/darkbit_developmentclasses/structgambit_1_1capability__info/#variable-description)** <br>Full description of capability.  |
-| bool | **[has_description](/documentation/code/darkbit_developmentclasses/structgambit_1_1capability__info/#variable-has-description)** <br>Flag to check if description is missing.  |
+| str | **[name](/documentation/code/darkbit_development/classes/structgambit_1_1capability__info/#variable-name)** <br>Capability name.  |
+| std::map< str, std::set< std::pair< str, str > > > | **[modset](/documentation/code/darkbit_development/classes/structgambit_1_1capability__info/#variable-modset)** <br>Set of modules and module functions in which capability is used, along with corresponding result types.  |
+| std::map< str, std::set< std::pair< str, str > > > | **[beset](/documentation/code/darkbit_development/classes/structgambit_1_1capability__info/#variable-beset)** <br>Set of backends and backend functions in which capability is used, along with corresponding type signatures.  |
+| str | **[description](/documentation/code/darkbit_development/classes/structgambit_1_1capability__info/#variable-description)** <br>Full description of capability.  |
+| bool | **[has_description](/documentation/code/darkbit_development/classes/structgambit_1_1capability__info/#variable-has-description)** <br>Flag to check if description is missing.  |
 
 ## Public Attributes Documentation
 
@@ -70,4 +70,4 @@ Flag to check if description is missing.
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:41 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

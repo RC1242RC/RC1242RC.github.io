@@ -16,21 +16,21 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/darkbit_developmentnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::PolyChord_1_20_1](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1polychord__1__20__1/)**  |
+| **[Gambit](/documentation/code/darkbit_development/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::PolyChord_1_20_1](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1polychord__1__20__1/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[Settings](/documentation/code/darkbit_developmentclasses/structsettings/)**  |
-| class | **[Gambit::PolyChord_1_20_1::LogLikeWrapper](/documentation/code/darkbit_developmentclasses/classgambit_1_1polychord__1__20__1_1_1loglikewrapper/)** <br>Class to connect PolyChord log-likelihood function and ScannerBit likelihood function.  |
+| struct | **[Settings](/documentation/code/darkbit_development/classes/structsettings/)**  |
+| class | **[Gambit::PolyChord_1_20_1::LogLikeWrapper](/documentation/code/darkbit_development/classes/classgambit_1_1polychord__1__20__1_1_1loglikewrapper/)** <br>Class to connect PolyChord log-likelihood function and ScannerBit likelihood function.  |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| void | **[run_polychord](/documentation/code/darkbit_developmentfiles/1_820_81_2polychord_8hpp/#function-run-polychord)**(double(*)(double *, int, double *, int) loglikelihood, void(*)(int, int, int, double *, double *, double *, double, double) dumper, [Settings](/documentation/code/darkbit_developmentclasses/structsettings/) ) |
+| void | **[run_polychord](/documentation/code/darkbit_development/files/1_820_81_2polychord_8hpp/#function-run-polychord)**(double(*)(double *, int, double *, int) loglikelihood, void(*)(int, int, int, double *, double *, double *, double, double) dumper, [Settings](/documentation/code/darkbit_development/classes/structsettings/) ) |
 
 ## Detailed Description
 
@@ -188,4 +188,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:43 +0000
+Updated on 2022-08-01 at 17:41:24 +0000

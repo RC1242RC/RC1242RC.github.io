@@ -20,26 +20,26 @@ Inherits from FJNS::PseudoJet::UserInfoBase
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[Step](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__1lepstop__36invfb_1_1clusteringhistory_1_1step/)**  |
+| struct | **[Step](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__1lepstop__36invfb_1_1clusteringhistory_1_1step/)**  |
 
 ## Public Types
 
 |                | Name           |
 | -------------- | -------------- |
-| enum| **[Status](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__1lepstop__36invfb_1_1clusteringhistory/#enum-status)** { GOOD, JET_TOO_SMALL, JET_TOO_LARGE, TOO_MANY_ITERATIONS, NONE} |
+| enum| **[Status](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__1lepstop__36invfb_1_1clusteringhistory/#enum-status)** { GOOD, JET_TOO_SMALL, JET_TOO_LARGE, TOO_MANY_ITERATIONS, NONE} |
 
 ## Public Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| [ClusteringHistory](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__1lepstop__36invfb_1_1clusteringhistory/) * | **[AddStep](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__1lepstop__36invfb_1_1clusteringhistory/#function-addstep)**([ClusteringHistory](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__1lepstop__36invfb_1_1clusteringhistory/) & history, const [Step](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__1lepstop__36invfb_1_1clusteringhistory_1_1step/) & step) |
+| [ClusteringHistory](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__1lepstop__36invfb_1_1clusteringhistory/) * | **[AddStep](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__1lepstop__36invfb_1_1clusteringhistory/#function-addstep)**([ClusteringHistory](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__1lepstop__36invfb_1_1clusteringhistory/) & history, const [Step](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__1lepstop__36invfb_1_1clusteringhistory_1_1step/) & step) |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| size_t | **[id](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__1lepstop__36invfb_1_1clusteringhistory/#variable-id)**  |
-| std::vector< [Step](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__1lepstop__36invfb_1_1clusteringhistory_1_1step/) > | **[steps](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__1lepstop__36invfb_1_1clusteringhistory/#variable-steps)**  |
+| size_t | **[id](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__1lepstop__36invfb_1_1clusteringhistory/#variable-id)**  |
+| std::vector< [Step](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__1lepstop__36invfb_1_1clusteringhistory_1_1step/) > | **[steps](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__1lepstop__36invfb_1_1clusteringhistory/#variable-steps)**  |
 
 ## Public Types Documentation
 
@@ -86,4 +86,4 @@ std::vector< Step > steps;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:41 +0000
+Updated on 2022-08-01 at 17:41:23 +0000

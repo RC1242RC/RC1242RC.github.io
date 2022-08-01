@@ -16,16 +16,16 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/darkbit_developmentnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::ColliderBit](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1colliderbit/)**  |
+| **[Gambit](/documentation/code/darkbit_development/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::ColliderBit](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1colliderbit/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Gambit::ColliderBit::L3SelectronLimitAt205GeV](/documentation/code/darkbit_developmentclasses/classgambit_1_1colliderbit_1_1l3selectronlimitat205gev/)** <br>A class to contain the limit data from L3_PLB580_2004_37, figure 2a.  |
-| class | **[Gambit::ColliderBit::L3SmuonLimitAt205GeV](/documentation/code/darkbit_developmentclasses/classgambit_1_1colliderbit_1_1l3smuonlimitat205gev/)** <br>A class to contain the limit data from L3_PLB580_2004_37, figure 2b.  |
-| class | **[Gambit::ColliderBit::L3StauLimitAt205GeV](/documentation/code/darkbit_developmentclasses/classgambit_1_1colliderbit_1_1l3staulimitat205gev/)** <br>A class to contain the limit data from L3_PLB580_2004_37, figure 2c.  |
+| class | **[Gambit::ColliderBit::L3SelectronLimitAt205GeV](/documentation/code/darkbit_development/classes/classgambit_1_1colliderbit_1_1l3selectronlimitat205gev/)** <br>A class to contain the limit data from L3_PLB580_2004_37, figure 2a.  |
+| class | **[Gambit::ColliderBit::L3SmuonLimitAt205GeV](/documentation/code/darkbit_development/classes/classgambit_1_1colliderbit_1_1l3smuonlimitat205gev/)** <br>A class to contain the limit data from L3_PLB580_2004_37, figure 2b.  |
+| class | **[Gambit::ColliderBit::L3StauLimitAt205GeV](/documentation/code/darkbit_development/classes/classgambit_1_1colliderbit_1_1l3staulimitat205gev/)** <br>A class to contain the limit data from L3_PLB580_2004_37, figure 2c.  |
 
 
 
@@ -84,4 +84,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:44 +0000
+Updated on 2022-08-01 at 17:41:25 +0000

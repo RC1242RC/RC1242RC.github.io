@@ -16,20 +16,20 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/darkbit_developmentnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::MultiNest](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1multinest/)**  |
+| **[Gambit](/documentation/code/darkbit_development/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::MultiNest](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1multinest/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Gambit::MultiNest::LogLikeWrapper](/documentation/code/darkbit_developmentclasses/classgambit_1_1multinest_1_1loglikewrapper/)** <br>Class to connect multinest log-likelihood function and ScannerBit likelihood function.  |
+| class | **[Gambit::MultiNest::LogLikeWrapper](/documentation/code/darkbit_development/classes/classgambit_1_1multinest_1_1loglikewrapper/)** <br>Class to connect multinest log-likelihood function and ScannerBit likelihood function.  |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| void | **[run](/documentation/code/darkbit_developmentfiles/multinest_8hpp/#function-run)**(bool , bool , bool , int , double , double , int , int , int , int , int , double , char [], int , int [], bool , bool , bool , bool , double , int , double(*)(double *, int, int, void *) , void(*)(int, int, int, double *, double *, double *, double, double, double, void *) , void * ) |
+| void | **[run](/documentation/code/darkbit_development/files/multinest_8hpp/#function-run)**(bool , bool , bool , int , double , double , int , int , int , int , int , double , char [], int , int [], bool , bool , bool , bool , double , int , double(*)(double *, int, int, void *) , void(*)(int, int, int, double *, double *, double *, double, double, double, void *) , void * ) |
 
 ## Detailed Description
 
@@ -163,4 +163,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:43 +0000
+Updated on 2022-08-01 at 17:41:24 +0000

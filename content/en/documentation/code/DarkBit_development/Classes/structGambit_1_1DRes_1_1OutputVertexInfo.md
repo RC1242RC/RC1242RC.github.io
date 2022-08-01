@@ -20,8 +20,8 @@ Minimal info about outputVertices.
 
 |                | Name           |
 | -------------- | -------------- |
-| VertexID | **[vertex](/documentation/code/darkbit_developmentclasses/structgambit_1_1dres_1_1outputvertexinfo/#variable-vertex)**  |
-| const [IniParser::ObservableType](/documentation/code/darkbit_developmentclasses/structgambit_1_1iniparser_1_1types_1_1observable/) * | **[iniEntry](/documentation/code/darkbit_developmentclasses/structgambit_1_1dres_1_1outputvertexinfo/#variable-inientry)**  |
+| VertexID | **[vertex](/documentation/code/darkbit_development/classes/structgambit_1_1dres_1_1outputvertexinfo/#variable-vertex)**  |
+| const [IniParser::ObservableType](/documentation/code/darkbit_development/classes/structgambit_1_1iniparser_1_1types_1_1observable/) * | **[iniEntry](/documentation/code/darkbit_development/classes/structgambit_1_1dres_1_1outputvertexinfo/#variable-inientry)**  |
 
 ## Public Attributes Documentation
 
@@ -41,4 +41,4 @@ const IniParser::ObservableType * iniEntry;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:42 +0000
+Updated on 2022-08-01 at 17:41:23 +0000

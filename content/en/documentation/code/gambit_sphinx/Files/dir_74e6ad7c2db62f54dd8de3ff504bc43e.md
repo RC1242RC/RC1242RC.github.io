@@ -16,8 +16,8 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[include](/documentation/code/gambit_sphinxfiles/dir_e8dada9eeab80d1c087c30eda3eb5c06/#dir-include)**  |
-| **[src](/documentation/code/gambit_sphinxfiles/dir_1e7e1ae6d13f7add0d9ef71ebf84e799/#dir-src)**  |
+| **[include](/documentation/code/gambit_sphinx/files/dir_e8dada9eeab80d1c087c30eda3eb5c06/#dir-include)**  |
+| **[src](/documentation/code/gambit_sphinx/files/dir_1e7e1ae6d13f7add0d9ef71ebf84e799/#dir-src)**  |
 
 
 
@@ -26,4 +26,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:48 +0000
+Updated on 2022-08-01 at 17:41:23 +0000

@@ -16,24 +16,24 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| [LOAD_LIBRARY](/documentation/code/gambit_sphinxfiles/frontend__macros_8hpp/#define-load-library) | **[BE_FUNCTION](/documentation/code/gambit_sphinxfiles/higgsbounds__4__3__1_8hpp/#function-be-function)**(HiggsBounds_neutral_input_part , void , (double *, double *, int *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *) , "higgsbounds_neutral_input_part_" , "HiggsBounds_neutral_input_part" ) |
+| [LOAD_LIBRARY](/documentation/code/gambit_sphinx/files/frontend__macros_8hpp/#define-load-library) | **[BE_FUNCTION](/documentation/code/gambit_sphinx/files/higgsbounds__4__3__1_8hpp/#function-be-function)**(HiggsBounds_neutral_input_part , void , (double *, double *, int *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *) , "higgsbounds_neutral_input_part_" , "HiggsBounds_neutral_input_part" ) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| [LOAD_LIBRARY](/documentation/code/gambit_sphinxfiles/frontend__macros_8hpp/#define-load-library) | **[void](/documentation/code/gambit_sphinxfiles/higgsbounds__4__3__1_8hpp/#variable-void)**  |
-| [LOAD_LIBRARY](/documentation/code/gambit_sphinxfiles/frontend__macros_8hpp/#define-load-library) double double double double double double double double | **[higgsbounds_charged_input_](/documentation/code/gambit_sphinxfiles/higgsbounds__4__3__1_8hpp/#variable-higgsbounds-charged-input-)**  |
+| [LOAD_LIBRARY](/documentation/code/gambit_sphinx/files/frontend__macros_8hpp/#define-load-library) | **[void](/documentation/code/gambit_sphinx/files/higgsbounds__4__3__1_8hpp/#variable-void)**  |
+| [LOAD_LIBRARY](/documentation/code/gambit_sphinx/files/frontend__macros_8hpp/#define-load-library) double double double double double double double double | **[higgsbounds_charged_input_](/documentation/code/gambit_sphinx/files/higgsbounds__4__3__1_8hpp/#variable-higgsbounds-charged-input-)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[BACKENDNAME](/documentation/code/gambit_sphinxfiles/higgsbounds__4__3__1_8hpp/#define-backendname)**  |
-|  | **[BACKENDLANG](/documentation/code/gambit_sphinxfiles/higgsbounds__4__3__1_8hpp/#define-backendlang)**  |
-|  | **[VERSION](/documentation/code/gambit_sphinxfiles/higgsbounds__4__3__1_8hpp/#define-version)**  |
-|  | **[SAFE_VERSION](/documentation/code/gambit_sphinxfiles/higgsbounds__4__3__1_8hpp/#define-safe-version)**  |
-|  | **[REFERENCE](/documentation/code/gambit_sphinxfiles/higgsbounds__4__3__1_8hpp/#define-reference)**  |
+|  | **[BACKENDNAME](/documentation/code/gambit_sphinx/files/higgsbounds__4__3__1_8hpp/#define-backendname)**  |
+|  | **[BACKENDLANG](/documentation/code/gambit_sphinx/files/higgsbounds__4__3__1_8hpp/#define-backendlang)**  |
+|  | **[VERSION](/documentation/code/gambit_sphinx/files/higgsbounds__4__3__1_8hpp/#define-version)**  |
+|  | **[SAFE_VERSION](/documentation/code/gambit_sphinx/files/higgsbounds__4__3__1_8hpp/#define-safe-version)**  |
+|  | **[REFERENCE](/documentation/code/gambit_sphinx/files/higgsbounds__4__3__1_8hpp/#define-reference)**  |
 
 ## Detailed Description
 
@@ -192,4 +192,4 @@ BE_FUNCTION(HiggsBounds_charged_input, void, (double*, double*, double*, double*
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:50 +0000
+Updated on 2022-08-01 at 17:41:25 +0000

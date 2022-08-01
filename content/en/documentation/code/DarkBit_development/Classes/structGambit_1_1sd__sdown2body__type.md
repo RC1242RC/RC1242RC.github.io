@@ -18,12 +18,12 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Farray< Fdouble, 1, 4 > | **[brsdowlndow](/documentation/code/darkbit_developmentclasses/structgambit_1_1sd__sdown2body__type/#variable-brsdowlndow)**  |
-| Farray< Fdouble, 1, 2 > | **[brsdowlchup](/documentation/code/darkbit_developmentclasses/structgambit_1_1sd__sdown2body__type/#variable-brsdowlchup)**  |
-| Fdouble | **[brsdowlglui](/documentation/code/darkbit_developmentclasses/structgambit_1_1sd__sdown2body__type/#variable-brsdowlglui)**  |
-| Farray< Fdouble, 1, 4 > | **[brsdowrndow](/documentation/code/darkbit_developmentclasses/structgambit_1_1sd__sdown2body__type/#variable-brsdowrndow)**  |
-| Farray< Fdouble, 1, 2 > | **[brsdowrchup](/documentation/code/darkbit_developmentclasses/structgambit_1_1sd__sdown2body__type/#variable-brsdowrchup)**  |
-| Fdouble | **[brsdowrglui](/documentation/code/darkbit_developmentclasses/structgambit_1_1sd__sdown2body__type/#variable-brsdowrglui)**  |
+| Farray< Fdouble, 1, 4 > | **[brsdowlndow](/documentation/code/darkbit_development/classes/structgambit_1_1sd__sdown2body__type/#variable-brsdowlndow)**  |
+| Farray< Fdouble, 1, 2 > | **[brsdowlchup](/documentation/code/darkbit_development/classes/structgambit_1_1sd__sdown2body__type/#variable-brsdowlchup)**  |
+| Fdouble | **[brsdowlglui](/documentation/code/darkbit_development/classes/structgambit_1_1sd__sdown2body__type/#variable-brsdowlglui)**  |
+| Farray< Fdouble, 1, 4 > | **[brsdowrndow](/documentation/code/darkbit_development/classes/structgambit_1_1sd__sdown2body__type/#variable-brsdowrndow)**  |
+| Farray< Fdouble, 1, 2 > | **[brsdowrchup](/documentation/code/darkbit_development/classes/structgambit_1_1sd__sdown2body__type/#variable-brsdowrchup)**  |
+| Fdouble | **[brsdowrglui](/documentation/code/darkbit_development/classes/structgambit_1_1sd__sdown2body__type/#variable-brsdowrglui)**  |
 
 ## Public Attributes Documentation
 
@@ -71,4 +71,4 @@ Fdouble brsdowrglui;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:41 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

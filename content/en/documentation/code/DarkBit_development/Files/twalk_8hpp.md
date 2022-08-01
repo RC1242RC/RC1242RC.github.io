@@ -16,14 +16,14 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/darkbit_developmentnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::Scanner](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1scanner/)**  |
+| **[Gambit](/documentation/code/darkbit_development/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::Scanner](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1scanner/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Gambit::Scanner::RanNumGen](/documentation/code/darkbit_developmentclasses/classgambit_1_1scanner_1_1rannumgen/)**  |
+| class | **[Gambit::Scanner::RanNumGen](/documentation/code/darkbit_development/classes/classgambit_1_1scanner_1_1rannumgen/)**  |
 
 ## Detailed Description
 
@@ -398,4 +398,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:43 +0000
+Updated on 2022-08-01 at 17:41:24 +0000

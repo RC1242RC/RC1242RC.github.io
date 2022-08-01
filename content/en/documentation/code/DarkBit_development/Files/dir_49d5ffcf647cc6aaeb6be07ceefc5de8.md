@@ -16,7 +16,7 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[classy/create_SDSSDR7_fid.py](/documentation/code/darkbit_developmentfiles/create__sdssdr7__fid_8py/#file-create-sdssdr7-fid.py)**  |
+| **[classy/create_SDSSDR7_fid.py](/documentation/code/darkbit_development/files/create__sdssdr7__fid_8py/#file-create-sdssdr7-fid.py)**  |
 
 
 
@@ -25,4 +25,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:45 +0000
+Updated on 2022-08-01 at 17:41:26 +0000

@@ -16,31 +16,31 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/darkbit_developmentnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::Backends](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1backends/)**  |
+| **[Gambit](/documentation/code/darkbit_development/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::Backends](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1backends/)**  |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| [LOAD_LIBRARY](/documentation/code/darkbit_developmentfiles/frontend__macros_8hpp/#define-load-library) | **[BE_FUNCTION](/documentation/code/darkbit_developmentfiles/libfortran__1__0_8hpp/#function-be-function)**(runMe , void , (double(*)(int &), int &) , "runme_" , "runMe" ) |
+| [LOAD_LIBRARY](/documentation/code/darkbit_development/files/frontend__macros_8hpp/#define-load-library) | **[BE_FUNCTION](/documentation/code/darkbit_development/files/libfortran__1__0_8hpp/#function-be-function)**(runMe , void , (double(*)(int &), int &) , "runme_" , "runMe" ) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| [LOAD_LIBRARY](/documentation/code/darkbit_developmentfiles/frontend__macros_8hpp/#define-load-library) | **[double](/documentation/code/darkbit_developmentfiles/libfortran__1__0_8hpp/#variable-double)**  |
-| [LOAD_LIBRARY](/documentation/code/darkbit_developmentfiles/frontend__macros_8hpp/#define-load-library) double int | **[average_](/documentation/code/darkbit_developmentfiles/libfortran__1__0_8hpp/#variable-average-)**  |
+| [LOAD_LIBRARY](/documentation/code/darkbit_development/files/frontend__macros_8hpp/#define-load-library) | **[double](/documentation/code/darkbit_development/files/libfortran__1__0_8hpp/#variable-double)**  |
+| [LOAD_LIBRARY](/documentation/code/darkbit_development/files/frontend__macros_8hpp/#define-load-library) double int | **[average_](/documentation/code/darkbit_development/files/libfortran__1__0_8hpp/#variable-average-)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[BACKENDNAME](/documentation/code/darkbit_developmentfiles/libfortran__1__0_8hpp/#define-backendname)**  |
-|  | **[BACKENDLANG](/documentation/code/darkbit_developmentfiles/libfortran__1__0_8hpp/#define-backendlang)**  |
-|  | **[VERSION](/documentation/code/darkbit_developmentfiles/libfortran__1__0_8hpp/#define-version)**  |
-|  | **[SAFE_VERSION](/documentation/code/darkbit_developmentfiles/libfortran__1__0_8hpp/#define-safe-version)**  |
-|  | **[REFERENCE](/documentation/code/darkbit_developmentfiles/libfortran__1__0_8hpp/#define-reference)**  |
+|  | **[BACKENDNAME](/documentation/code/darkbit_development/files/libfortran__1__0_8hpp/#define-backendname)**  |
+|  | **[BACKENDLANG](/documentation/code/darkbit_development/files/libfortran__1__0_8hpp/#define-backendlang)**  |
+|  | **[VERSION](/documentation/code/darkbit_development/files/libfortran__1__0_8hpp/#define-version)**  |
+|  | **[SAFE_VERSION](/documentation/code/darkbit_development/files/libfortran__1__0_8hpp/#define-safe-version)**  |
+|  | **[REFERENCE](/documentation/code/darkbit_development/files/libfortran__1__0_8hpp/#define-reference)**  |
 
 ## Detailed Description
 
@@ -183,4 +183,4 @@ END_BE_INI_FUNCTION
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:45 +0000
+Updated on 2022-08-01 at 17:41:26 +0000

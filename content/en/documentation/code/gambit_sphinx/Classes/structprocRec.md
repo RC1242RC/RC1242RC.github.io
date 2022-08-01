@@ -18,9 +18,9 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| struct [procRec](/documentation/code/gambit_sphinxclasses/structprocrec/) * | **[next](/documentation/code/gambit_sphinxclasses/structprocrec/#variable-next)**  |
-| char * | **[libname](/documentation/code/gambit_sphinxclasses/structprocrec/#variable-libname)**  |
-| numout * | **[cc](/documentation/code/gambit_sphinxclasses/structprocrec/#variable-cc)**  |
+| struct [procRec](/documentation/code/gambit_sphinx/classes/structprocrec/) * | **[next](/documentation/code/gambit_sphinx/classes/structprocrec/#variable-next)**  |
+| char * | **[libname](/documentation/code/gambit_sphinx/classes/structprocrec/#variable-libname)**  |
+| numout * | **[cc](/documentation/code/gambit_sphinx/classes/structprocrec/#variable-cc)**  |
 
 ## Public Attributes Documentation
 
@@ -47,4 +47,4 @@ numout * cc;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:46 +0000
+Updated on 2022-08-01 at 17:41:20 +0000

@@ -20,22 +20,22 @@ A simple container for a line segment on an xy plane.  [More...](#detailed-descr
 
 |                | Name           |
 | -------------- | -------------- |
-| void | **[init](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1linesegment/#function-init)**(double x1, double y1, double x2, double y2, double extendFrac =-1.)<br>Coordinate initializer / recycler.  |
-| void | **[init](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1linesegment/#function-init)**(const [P2](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1p2/) & p1, const [P2](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1p2/) & p2, double extendFrac =-1.)<br>Point initializer / recycler.  |
-| | **[LineSegment](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1linesegment/#function-linesegment)**()<br>Default constructor.  |
-| | **[LineSegment](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1linesegment/#function-linesegment)**(double x1, double y1, double x2, double y2, double extendFrac =-1.)<br>Coordinate constructor.  |
-| | **[LineSegment](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1linesegment/#function-linesegment)**(const [P2](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1p2/) & p1, const [P2](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1p2/) & p2, double extendFrac =0.)<br>Point constructor.  |
-| | **[LineSegment](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1linesegment/#function-linesegment)**(const [LineSegment](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1linesegment/) & other)<br>Copy constructor.  |
-| [LineSegment](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1linesegment/) & | **[operator=](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1linesegment/#function-operator=)**(const [LineSegment](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1linesegment/) & other)<br>Copy assignment operator.  |
-| const [P2](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1p2/) | **[getp1](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1linesegment/#function-getp1)**() const |
-| const [P2](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1p2/) | **[getp2](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1linesegment/#function-getp2)**() const |
-| double | **[slope](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1linesegment/#function-slope)**() const<br>Get the slope of the line segment.  |
-| double | **[m](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1linesegment/#function-m)**() const<br>Alias for slope.  |
-| double | **[intercept](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1linesegment/#function-intercept)**() const<br>Get the y-intercept of the full line which contains this segment.  |
-| double | **[b](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1linesegment/#function-b)**() const<br>Alias for intercept.  |
-| double | **[abs](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1linesegment/#function-abs)**() const<br>Get the length of the vector from the origin to this point.  |
-| double | **[r](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1linesegment/#function-r)**() const<br>Alias for abs.  |
-| [P2](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1p2/) | **[intersectsAt](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1linesegment/#function-intersectsat)**(const [LineSegment](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1linesegment/) & other) const<br>Determine if this intersects with other and where.  |
+| void | **[init](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1linesegment/#function-init)**(double x1, double y1, double x2, double y2, double extendFrac =-1.)<br>Coordinate initializer / recycler.  |
+| void | **[init](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1linesegment/#function-init)**(const [P2](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1p2/) & p1, const [P2](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1p2/) & p2, double extendFrac =-1.)<br>Point initializer / recycler.  |
+| | **[LineSegment](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1linesegment/#function-linesegment)**()<br>Default constructor.  |
+| | **[LineSegment](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1linesegment/#function-linesegment)**(double x1, double y1, double x2, double y2, double extendFrac =-1.)<br>Coordinate constructor.  |
+| | **[LineSegment](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1linesegment/#function-linesegment)**(const [P2](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1p2/) & p1, const [P2](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1p2/) & p2, double extendFrac =0.)<br>Point constructor.  |
+| | **[LineSegment](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1linesegment/#function-linesegment)**(const [LineSegment](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1linesegment/) & other)<br>Copy constructor.  |
+| [LineSegment](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1linesegment/) & | **[operator=](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1linesegment/#function-operator=)**(const [LineSegment](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1linesegment/) & other)<br>Copy assignment operator.  |
+| const [P2](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1p2/) | **[getp1](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1linesegment/#function-getp1)**() const |
+| const [P2](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1p2/) | **[getp2](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1linesegment/#function-getp2)**() const |
+| double | **[slope](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1linesegment/#function-slope)**() const<br>Get the slope of the line segment.  |
+| double | **[m](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1linesegment/#function-m)**() const<br>Alias for slope.  |
+| double | **[intercept](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1linesegment/#function-intercept)**() const<br>Get the y-intercept of the full line which contains this segment.  |
+| double | **[b](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1linesegment/#function-b)**() const<br>Alias for intercept.  |
+| double | **[abs](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1linesegment/#function-abs)**() const<br>Get the length of the vector from the origin to this point.  |
+| double | **[r](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1linesegment/#function-r)**() const<br>Alias for abs.  |
+| [P2](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1p2/) | **[intersectsAt](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1linesegment/#function-intersectsat)**(const [LineSegment](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1linesegment/) & other) const<br>Determine if this intersects with other and where.  |
 
 ## Detailed Description
 
@@ -45,7 +45,7 @@ class Gambit::ColliderBit::LineSegment;
 
 A simple container for a line segment on an xy plane. 
 
-This class depends on the [P2](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1p2/) class above. It has a built in algorithm to detect intersection with another [LineSegment](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1linesegment/). 
+This class depends on the [P2](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1p2/) class above. It has a built in algorithm to detect intersection with another [LineSegment](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1linesegment/). 
 
 ## Public Functions Documentation
 
@@ -203,4 +203,4 @@ Determine if this intersects with other and where.
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:47 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

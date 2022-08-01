@@ -16,7 +16,7 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[xsecBE_gambit](/documentation/code/darkbit_developmentnamespaces/namespacexsecbe__gambit/)**  |
+| **[xsecBE_gambit](/documentation/code/darkbit_development/namespaces/namespacexsecbe__gambit/)**  |
 
 
 
@@ -115,4 +115,4 @@ def get_xsection(proc):
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:44 +0000
+Updated on 2022-08-01 at 17:41:26 +0000

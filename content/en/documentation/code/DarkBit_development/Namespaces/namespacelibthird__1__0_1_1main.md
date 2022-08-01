@@ -16,20 +16,20 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| def | **[initialize](/documentation/code/darkbit_developmentnamespaces/namespacelibthird__1__0_1_1main/#function-initialize)**(a a) |
-| def | **[someFunction](/documentation/code/darkbit_developmentnamespaces/namespacelibthird__1__0_1_1main/#function-somefunction)**() |
-| def | **[returnResult](/documentation/code/darkbit_developmentnamespaces/namespacelibthird__1__0_1_1main/#function-returnresult)**() |
+| def | **[initialize](/documentation/code/darkbit_development/namespaces/namespacelibthird__1__0_1_1main/#function-initialize)**(a a) |
+| def | **[someFunction](/documentation/code/darkbit_development/namespaces/namespacelibthird__1__0_1_1main/#function-somefunction)**() |
+| def | **[returnResult](/documentation/code/darkbit_development/namespaces/namespacelibthird__1__0_1_1main/#function-returnresult)**() |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| int | **[array_length](/documentation/code/darkbit_developmentnamespaces/namespacelibthird__1__0_1_1main/#variable-array-length)**  |
-| int | **[someInt](/documentation/code/darkbit_developmentnamespaces/namespacelibthird__1__0_1_1main/#variable-someint)**  |
-| int | **[someDouble](/documentation/code/darkbit_developmentnamespaces/namespacelibthird__1__0_1_1main/#variable-somedouble)**  |
-| list | **[someVector](/documentation/code/darkbit_developmentnamespaces/namespacelibthird__1__0_1_1main/#variable-somevector)**  |
-| bool | **[isInitialized](/documentation/code/darkbit_developmentnamespaces/namespacelibthird__1__0_1_1main/#variable-isinitialized)**  |
-| string | **[prefix](/documentation/code/darkbit_developmentnamespaces/namespacelibthird__1__0_1_1main/#variable-prefix)**  |
+| int | **[array_length](/documentation/code/darkbit_development/namespaces/namespacelibthird__1__0_1_1main/#variable-array-length)**  |
+| int | **[someInt](/documentation/code/darkbit_development/namespaces/namespacelibthird__1__0_1_1main/#variable-someint)**  |
+| int | **[someDouble](/documentation/code/darkbit_development/namespaces/namespacelibthird__1__0_1_1main/#variable-somedouble)**  |
+| list | **[someVector](/documentation/code/darkbit_development/namespaces/namespacelibthird__1__0_1_1main/#variable-somevector)**  |
+| bool | **[isInitialized](/documentation/code/darkbit_development/namespaces/namespacelibthird__1__0_1_1main/#variable-isinitialized)**  |
+| string | **[prefix](/documentation/code/darkbit_development/namespaces/namespacelibthird__1__0_1_1main/#variable-prefix)**  |
 
 
 ## Functions Documentation
@@ -107,4 +107,4 @@ string prefix =  "libthird 1.0: ";
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:41 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

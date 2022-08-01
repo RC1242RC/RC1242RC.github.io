@@ -18,7 +18,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Finteger | **[modeltype](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__mssmtype/#variable-modeltype)**  |
+| Finteger | **[modeltype](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__mssmtype/#variable-modeltype)**  |
 
 ## Public Attributes Documentation
 
@@ -31,4 +31,4 @@ Finteger modeltype;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:46 +0000
+Updated on 2022-08-01 at 17:41:21 +0000

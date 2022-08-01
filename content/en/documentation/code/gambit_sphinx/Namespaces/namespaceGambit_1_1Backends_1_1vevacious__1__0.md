@@ -16,7 +16,7 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit::Backends::vevacious_1_0::VevaciousPlusPlus](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1backends_1_1vevacious__1__0_1_1vevaciousplusplus/)**  |
+| **[Gambit::Backends::vevacious_1_0::VevaciousPlusPlus](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1backends_1_1vevacious__1__0_1_1vevaciousplusplus/)**  |
 
 
 
@@ -25,4 +25,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:47 +0000
+Updated on 2022-08-01 at 17:41:21 +0000

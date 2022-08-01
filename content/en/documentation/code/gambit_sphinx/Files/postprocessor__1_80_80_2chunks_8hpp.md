@@ -16,21 +16,21 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[Chunk](/documentation/code/gambit_sphinxclasses/structchunk/)** <br>Struct to describe start and end indices for a chunk of data.  |
-| struct | **[ChunkHash](/documentation/code/gambit_sphinxclasses/structchunkhash/)**  |
-| struct | **[ChunkEqual](/documentation/code/gambit_sphinxclasses/structchunkequal/)**  |
-| struct | **[ChunkLess](/documentation/code/gambit_sphinxclasses/structchunkless/)**  |
+| struct | **[Chunk](/documentation/code/gambit_sphinx/classes/structchunk/)** <br>Struct to describe start and end indices for a chunk of data.  |
+| struct | **[ChunkHash](/documentation/code/gambit_sphinx/classes/structchunkhash/)**  |
+| struct | **[ChunkEqual](/documentation/code/gambit_sphinx/classes/structchunkequal/)**  |
+| struct | **[ChunkLess](/documentation/code/gambit_sphinx/classes/structchunkless/)**  |
 
 ## Types
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef std::set< [Chunk](/documentation/code/gambit_sphinxclasses/structchunk/), [ChunkLess](/documentation/code/gambit_sphinxclasses/structchunkless/) > | **[ChunkSet](/documentation/code/gambit_sphinxfiles/postprocessor__1_80_80_2chunks_8hpp/#typedef-chunkset)**  |
+| typedef std::set< [Chunk](/documentation/code/gambit_sphinx/classes/structchunk/), [ChunkLess](/documentation/code/gambit_sphinx/classes/structchunkless/) > | **[ChunkSet](/documentation/code/gambit_sphinx/files/postprocessor__1_80_80_2chunks_8hpp/#typedef-chunkset)**  |
 
 ## Detailed Description
 
 
-[Chunk](/documentation/code/gambit_sphinxclasses/structchunk/) data objects for postprocessor
+[Chunk](/documentation/code/gambit_sphinx/classes/structchunk/) data objects for postprocessor
 
 
 
@@ -116,4 +116,4 @@ typedef std::set<Chunk,ChunkLess> ChunkSet; // Actually I want ordered sets now
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:48 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

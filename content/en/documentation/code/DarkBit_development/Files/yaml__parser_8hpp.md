@@ -16,18 +16,18 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/darkbit_developmentnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::IniParser](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1iniparser/)**  |
-| **[Gambit::IniParser::Types](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1iniparser_1_1types/)**  |
-| **[YAML](/documentation/code/darkbit_developmentnamespaces/namespaceyaml/)**  |
+| **[Gambit](/documentation/code/darkbit_development/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::IniParser](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1iniparser/)**  |
+| **[Gambit::IniParser::Types](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1iniparser_1_1types/)**  |
+| **[YAML](/documentation/code/darkbit_development/namespaces/namespaceyaml/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[Gambit::IniParser::Types::Observable](/documentation/code/darkbit_developmentclasses/structgambit_1_1iniparser_1_1types_1_1observable/)**  |
-| class | **[Gambit::IniParser::IniFile](/documentation/code/darkbit_developmentclasses/classgambit_1_1iniparser_1_1inifile/)** <br>Main inifile class.  |
-| struct | **[YAML::convert< Gambit::IniParser::Types::Observable >](/documentation/code/darkbit_developmentclasses/structyaml_1_1convert_3_01gambit_1_1iniparser_1_1types_1_1observable_01_4/)**  |
+| struct | **[Gambit::IniParser::Types::Observable](/documentation/code/darkbit_development/classes/structgambit_1_1iniparser_1_1types_1_1observable/)**  |
+| class | **[Gambit::IniParser::IniFile](/documentation/code/darkbit_development/classes/classgambit_1_1iniparser_1_1inifile/)** <br>Main inifile class.  |
+| struct | **[YAML::convert< Gambit::IniParser::Types::Observable >](/documentation/code/darkbit_development/classes/structyaml_1_1convert_3_01gambit_1_1iniparser_1_1types_1_1observable_01_4/)**  |
 
 ## Detailed Description
 
@@ -174,4 +174,4 @@ namespace YAML
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:43 +0000
+Updated on 2022-08-01 at 17:41:25 +0000

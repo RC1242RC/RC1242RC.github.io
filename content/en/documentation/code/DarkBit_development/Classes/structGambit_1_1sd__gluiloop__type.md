@@ -18,7 +18,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Farray< Fdouble, 1, 4 > | **[brglnjgluon](/documentation/code/darkbit_developmentclasses/structgambit_1_1sd__gluiloop__type/#variable-brglnjgluon)**  |
+| Farray< Fdouble, 1, 4 > | **[brglnjgluon](/documentation/code/darkbit_development/classes/structgambit_1_1sd__gluiloop__type/#variable-brglnjgluon)**  |
 
 ## Public Attributes Documentation
 
@@ -31,4 +31,4 @@ Farray< Fdouble, 1, 4 > brglnjgluon;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:41 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

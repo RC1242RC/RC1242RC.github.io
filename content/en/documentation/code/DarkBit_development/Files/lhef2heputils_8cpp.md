@@ -16,13 +16,13 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[FJNS](/documentation/code/darkbit_developmentnamespaces/namespacefjns/)**  |
+| **[FJNS](/documentation/code/darkbit_development/namespaces/namespacefjns/)**  |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| void | **[get_HEPUtils_event](/documentation/code/darkbit_developmentfiles/lhef2heputils_8cpp/#function-get-heputils-event)**(const LHEF::Reader & lhe, Event & evt, double jet_pt_min)<br>Extract an LHE event as a HEPUtils::Event.  |
+| void | **[get_HEPUtils_event](/documentation/code/darkbit_development/files/lhef2heputils_8cpp/#function-get-heputils-event)**(const LHEF::Reader & lhe, Event & evt, double jet_pt_min)<br>Extract an LHE event as a HEPUtils::Event.  |
 
 
 ## Functions Documentation
@@ -159,4 +159,4 @@ void get_HEPUtils_event(const LHEF::Reader& lhe, Event& evt, double jet_pt_min)
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:44 +0000
+Updated on 2022-08-01 at 17:41:25 +0000

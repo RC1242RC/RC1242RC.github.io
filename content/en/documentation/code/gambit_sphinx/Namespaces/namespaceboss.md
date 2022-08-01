@@ -16,7 +16,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| def | **[main](/documentation/code/gambit_sphinxnamespaces/namespaceboss/#function-main)**() |
+| def | **[main](/documentation/code/gambit_sphinx/namespaces/namespaceboss/#function-main)**() |
 
 
 ## Functions Documentation
@@ -34,4 +34,4 @@ def main()
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:48 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

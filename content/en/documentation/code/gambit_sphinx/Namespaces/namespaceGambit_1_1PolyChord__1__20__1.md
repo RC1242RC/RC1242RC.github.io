@@ -16,26 +16,26 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Gambit::PolyChord_1_20_1::LogLikeWrapper](/documentation/code/gambit_sphinxclasses/classgambit_1_1polychord__1__20__1_1_1loglikewrapper/)** <br>Class to connect PolyChord log-likelihood function and ScannerBit likelihood function.  |
+| class | **[Gambit::PolyChord_1_20_1::LogLikeWrapper](/documentation/code/gambit_sphinx/classes/classgambit_1_1polychord__1__20__1_1_1loglikewrapper/)** <br>Class to connect PolyChord log-likelihood function and ScannerBit likelihood function.  |
 
 ## Types
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef [Gambit::Scanner::like_ptr](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1like__ptr/) | **[scanPtr](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1polychord__1__20__1/#typedef-scanptr)** <br>Typedef for the ScannerBit pointer to the external loglikelihood function.  |
+| typedef [Gambit::Scanner::like_ptr](/documentation/code/gambit_sphinx/classes/classgambit_1_1scanner_1_1like__ptr/) | **[scanPtr](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1polychord__1__20__1/#typedef-scanptr)** <br>Typedef for the ScannerBit pointer to the external loglikelihood function.  |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[callback_loglike](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1polychord__1__20__1/#function-callback-loglike)**(double * Cube, int ndim, double * phi, int nderived)<br>C-functions to pass to PolyChord for the callbacks.  |
-| void | **[callback_dumper](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1polychord__1__20__1/#function-callback-dumper)**(int ndead, int nlive, int npars, double * live, double * dead, double * logweights, double logZ, double logZerr) |
+| double | **[callback_loglike](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1polychord__1__20__1/#function-callback-loglike)**(double * Cube, int ndim, double * phi, int nderived)<br>C-functions to pass to PolyChord for the callbacks.  |
+| void | **[callback_dumper](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1polychord__1__20__1/#function-callback-dumper)**(int ndead, int nlive, int npars, double * live, double * dead, double * logweights, double logZ, double logZerr) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| [LogLikeWrapper](/documentation/code/gambit_sphinxclasses/classgambit_1_1polychord__1__20__1_1_1loglikewrapper/) * | **[global_loglike_object](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1polychord__1__20__1/#variable-global-loglike-object)** <br>Global pointer to loglikelihood wrapper object, for use in the PolyChord callback functions.  |
+| [LogLikeWrapper](/documentation/code/gambit_sphinx/classes/classgambit_1_1polychord__1__20__1_1_1loglikewrapper/) * | **[global_loglike_object](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1polychord__1__20__1/#variable-global-loglike-object)** <br>Global pointer to loglikelihood wrapper object, for use in the PolyChord callback functions.  |
 
 ## Types Documentation
 
@@ -98,4 +98,4 @@ Global pointer to loglikelihood wrapper object, for use in the PolyChord callbac
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:48 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

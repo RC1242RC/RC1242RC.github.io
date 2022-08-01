@@ -16,7 +16,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[gm2calc_1_3_0_all_data](/documentation/code/darkbit_developmentfiles/gm2calc__1__3__0_2loaded__types_8hpp/#define-gm2calc-1-3-0-all-data)**  |
+|  | **[gm2calc_1_3_0_all_data](/documentation/code/darkbit_development/files/gm2calc__1__3__0_2loaded__types_8hpp/#define-gm2calc-1-3-0-all-data)**  |
 
 
 
@@ -89,4 +89,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:44 +0000
+Updated on 2022-08-01 at 17:41:26 +0000

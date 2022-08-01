@@ -18,8 +18,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Fdouble | **[sd_mbmb](/documentation/code/darkbit_developmentclasses/structgambit_1_1sd__mbmb__type/#variable-sd-mbmb)**  |
-| Finteger | **[i_sd_mbmb](/documentation/code/darkbit_developmentclasses/structgambit_1_1sd__mbmb__type/#variable-i-sd-mbmb)**  |
+| Fdouble | **[sd_mbmb](/documentation/code/darkbit_development/classes/structgambit_1_1sd__mbmb__type/#variable-sd-mbmb)**  |
+| Finteger | **[i_sd_mbmb](/documentation/code/darkbit_development/classes/structgambit_1_1sd__mbmb__type/#variable-i-sd-mbmb)**  |
 
 ## Public Attributes Documentation
 
@@ -39,4 +39,4 @@ Finteger i_sd_mbmb;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:41 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

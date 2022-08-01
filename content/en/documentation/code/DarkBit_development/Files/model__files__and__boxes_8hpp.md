@@ -16,23 +16,23 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[ALGORITHM1](/documentation/code/darkbit_developmentfiles/model__files__and__boxes_8hpp/#define-algorithm1)**  |
-|  | **[ALGORITHM1l](/documentation/code/darkbit_developmentfiles/model__files__and__boxes_8hpp/#define-algorithm1l)**  |
-|  | **[MAKE_INTERFACE](/documentation/code/darkbit_developmentfiles/model__files__and__boxes_8hpp/#define-make-interface)**  |
-|  | **[MODELNAME](/documentation/code/darkbit_developmentfiles/model__files__and__boxes_8hpp/#define-modelname)** <br>{@ Versions of MSSM spectrum generators that take  |
-|  | **[MODELNAME](/documentation/code/darkbit_developmentfiles/model__files__and__boxes_8hpp/#define-modelname)** <br>{@ Versions of MSSM spectrum generators that take  |
-|  | **[MODELNAME](/documentation/code/darkbit_developmentfiles/model__files__and__boxes_8hpp/#define-modelname)** <br>{@ Versions of MSSM spectrum generators that take  |
-|  | **[MODELNAME](/documentation/code/darkbit_developmentfiles/model__files__and__boxes_8hpp/#define-modelname)** <br>{@ Versions of MSSM spectrum generators that take  |
-|  | **[MODELNAME](/documentation/code/darkbit_developmentfiles/model__files__and__boxes_8hpp/#define-modelname)** <br>{@ Versions of MSSM spectrum generators that take  |
-|  | **[MODELNAME](/documentation/code/darkbit_developmentfiles/model__files__and__boxes_8hpp/#define-modelname)** <br>{@ Versions of MSSM spectrum generators that take  |
-|  | **[MODELNAME](/documentation/code/darkbit_developmentfiles/model__files__and__boxes_8hpp/#define-modelname)** <br>{@ Versions of MSSM spectrum generators that take  |
-|  | **[MODELNAME](/documentation/code/darkbit_developmentfiles/model__files__and__boxes_8hpp/#define-modelname)** <br>{@ Versions of MSSM spectrum generators that take  |
-|  | **[MODELNAME](/documentation/code/darkbit_developmentfiles/model__files__and__boxes_8hpp/#define-modelname)** <br>{@ Versions of MSSM spectrum generators that take  |
-|  | **[MODELNAME](/documentation/code/darkbit_developmentfiles/model__files__and__boxes_8hpp/#define-modelname)** <br>{@ Versions of MSSM spectrum generators that take  |
-|  | **[MODELNAME](/documentation/code/darkbit_developmentfiles/model__files__and__boxes_8hpp/#define-modelname)** <br>{@ Versions of MSSM spectrum generators that take  |
-|  | **[MODELNAME](/documentation/code/darkbit_developmentfiles/model__files__and__boxes_8hpp/#define-modelname)** <br>{@ Versions of MSSM spectrum generators that take  |
-|  | **[MODELNAME](/documentation/code/darkbit_developmentfiles/model__files__and__boxes_8hpp/#define-modelname)** <br>{@ Versions of MSSM spectrum generators that take  |
-|  | **[MODELNAME](/documentation/code/darkbit_developmentfiles/model__files__and__boxes_8hpp/#define-modelname)** <br>{@ Versions of MSSM spectrum generators that take  |
+|  | **[ALGORITHM1](/documentation/code/darkbit_development/files/model__files__and__boxes_8hpp/#define-algorithm1)**  |
+|  | **[ALGORITHM1l](/documentation/code/darkbit_development/files/model__files__and__boxes_8hpp/#define-algorithm1l)**  |
+|  | **[MAKE_INTERFACE](/documentation/code/darkbit_development/files/model__files__and__boxes_8hpp/#define-make-interface)**  |
+|  | **[MODELNAME](/documentation/code/darkbit_development/files/model__files__and__boxes_8hpp/#define-modelname)** <br>{@ Versions of MSSM spectrum generators that take  |
+|  | **[MODELNAME](/documentation/code/darkbit_development/files/model__files__and__boxes_8hpp/#define-modelname)** <br>{@ Versions of MSSM spectrum generators that take  |
+|  | **[MODELNAME](/documentation/code/darkbit_development/files/model__files__and__boxes_8hpp/#define-modelname)** <br>{@ Versions of MSSM spectrum generators that take  |
+|  | **[MODELNAME](/documentation/code/darkbit_development/files/model__files__and__boxes_8hpp/#define-modelname)** <br>{@ Versions of MSSM spectrum generators that take  |
+|  | **[MODELNAME](/documentation/code/darkbit_development/files/model__files__and__boxes_8hpp/#define-modelname)** <br>{@ Versions of MSSM spectrum generators that take  |
+|  | **[MODELNAME](/documentation/code/darkbit_development/files/model__files__and__boxes_8hpp/#define-modelname)** <br>{@ Versions of MSSM spectrum generators that take  |
+|  | **[MODELNAME](/documentation/code/darkbit_development/files/model__files__and__boxes_8hpp/#define-modelname)** <br>{@ Versions of MSSM spectrum generators that take  |
+|  | **[MODELNAME](/documentation/code/darkbit_development/files/model__files__and__boxes_8hpp/#define-modelname)** <br>{@ Versions of MSSM spectrum generators that take  |
+|  | **[MODELNAME](/documentation/code/darkbit_development/files/model__files__and__boxes_8hpp/#define-modelname)** <br>{@ Versions of MSSM spectrum generators that take  |
+|  | **[MODELNAME](/documentation/code/darkbit_development/files/model__files__and__boxes_8hpp/#define-modelname)** <br>{@ Versions of MSSM spectrum generators that take  |
+|  | **[MODELNAME](/documentation/code/darkbit_development/files/model__files__and__boxes_8hpp/#define-modelname)** <br>{@ Versions of MSSM spectrum generators that take  |
+|  | **[MODELNAME](/documentation/code/darkbit_development/files/model__files__and__boxes_8hpp/#define-modelname)** <br>{@ Versions of MSSM spectrum generators that take  |
+|  | **[MODELNAME](/documentation/code/darkbit_development/files/model__files__and__boxes_8hpp/#define-modelname)** <br>{@ Versions of MSSM spectrum generators that take  |
+|  | **[MODELNAME](/documentation/code/darkbit_development/files/model__files__and__boxes_8hpp/#define-modelname)** <br>{@ Versions of MSSM spectrum generators that take  |
 
 ## Detailed Description
 
@@ -423,4 +423,4 @@ All the includes and Model_interface definitions Have now moved the MAKE_INTERFA
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:43 +0000
+Updated on 2022-08-01 at 17:41:24 +0000

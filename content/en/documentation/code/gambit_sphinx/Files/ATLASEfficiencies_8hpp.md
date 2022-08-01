@@ -16,9 +16,9 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::ColliderBit](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1colliderbit/)**  |
-| **[Gambit::ColliderBit::ATLAS](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1colliderbit_1_1atlas/)** <br>ATLAS-specific efficiency and smearing functions for super fast detector simulation.  |
+| **[Gambit](/documentation/code/gambit_sphinx/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::ColliderBit](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1colliderbit/)**  |
+| **[Gambit::ColliderBit::ATLAS](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1colliderbit_1_1atlas/)** <br>ATLAS-specific efficiency and smearing functions for super fast detector simulation.  |
 
 ## Detailed Description
 
@@ -582,4 +582,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:49 +0000
+Updated on 2022-08-01 at 17:41:23 +0000

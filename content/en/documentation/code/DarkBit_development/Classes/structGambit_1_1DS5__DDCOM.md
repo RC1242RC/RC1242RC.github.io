@@ -18,15 +18,15 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Farray< Fdouble, 7, 12 > | **[ftp](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds5__ddcom/#variable-ftp)**  |
-| Farray< Fdouble, 7, 12 > | **[ftn](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds5__ddcom/#variable-ftn)**  |
-| Fdouble | **[delu](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds5__ddcom/#variable-delu)**  |
-| Fdouble | **[deld](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds5__ddcom/#variable-deld)**  |
-| Fdouble | **[dels](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds5__ddcom/#variable-dels)**  |
-| Finteger | **[ddpole](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds5__ddcom/#variable-ddpole)**  |
-| Finteger | **[dddn](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds5__ddcom/#variable-dddn)**  |
-| Fstring< 10 > | **[ddfsi](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds5__ddcom/#variable-ddfsi)**  |
-| Fstring< 10 > | **[ddfsd](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds5__ddcom/#variable-ddfsd)**  |
+| Farray< Fdouble, 7, 12 > | **[ftp](/documentation/code/darkbit_development/classes/structgambit_1_1ds5__ddcom/#variable-ftp)**  |
+| Farray< Fdouble, 7, 12 > | **[ftn](/documentation/code/darkbit_development/classes/structgambit_1_1ds5__ddcom/#variable-ftn)**  |
+| Fdouble | **[delu](/documentation/code/darkbit_development/classes/structgambit_1_1ds5__ddcom/#variable-delu)**  |
+| Fdouble | **[deld](/documentation/code/darkbit_development/classes/structgambit_1_1ds5__ddcom/#variable-deld)**  |
+| Fdouble | **[dels](/documentation/code/darkbit_development/classes/structgambit_1_1ds5__ddcom/#variable-dels)**  |
+| Finteger | **[ddpole](/documentation/code/darkbit_development/classes/structgambit_1_1ds5__ddcom/#variable-ddpole)**  |
+| Finteger | **[dddn](/documentation/code/darkbit_development/classes/structgambit_1_1ds5__ddcom/#variable-dddn)**  |
+| Fstring< 10 > | **[ddfsi](/documentation/code/darkbit_development/classes/structgambit_1_1ds5__ddcom/#variable-ddfsi)**  |
+| Fstring< 10 > | **[ddfsd](/documentation/code/darkbit_development/classes/structgambit_1_1ds5__ddcom/#variable-ddfsd)**  |
 
 ## Public Attributes Documentation
 
@@ -95,4 +95,4 @@ Fstring< 10 > ddfsd;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:41 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

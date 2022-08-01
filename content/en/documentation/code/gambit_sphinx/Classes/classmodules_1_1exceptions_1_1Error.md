@@ -16,7 +16,7 @@ description: "[No description available]"
 
 Inherits from Exception
 
-Inherited by [modules.exceptions.ReturnError](/documentation/code/gambit_sphinxclasses/classmodules_1_1exceptions_1_1returnerror/)
+Inherited by [modules.exceptions.ReturnError](/documentation/code/gambit_sphinx/classes/classmodules_1_1exceptions_1_1returnerror/)
 
 ## Detailed Description
 
@@ -40,4 +40,4 @@ Base class for exceptions.```
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:46 +0000
+Updated on 2022-08-01 at 17:41:20 +0000

@@ -16,13 +16,13 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::FlavBit](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1flavbit/)**  |
-| **[Gambit::FlavBit::LoopFunctions](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1flavbit_1_1loopfunctions/)**  |
-| **[Gambit::FlavBit::Vertices](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1flavbit_1_1vertices/)**  |
-| **[Gambit::FlavBit::Penguins](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1flavbit_1_1penguins/)**  |
-| **[Gambit::FlavBit::Boxes](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1flavbit_1_1boxes/)**  |
-| **[Gambit::FlavBit::FormFactors](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1flavbit_1_1formfactors/)**  |
+| **[Gambit](/documentation/code/gambit_sphinx/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::FlavBit](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1flavbit/)**  |
+| **[Gambit::FlavBit::LoopFunctions](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1flavbit_1_1loopfunctions/)**  |
+| **[Gambit::FlavBit::Vertices](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1flavbit_1_1vertices/)**  |
+| **[Gambit::FlavBit::Penguins](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1flavbit_1_1penguins/)**  |
+| **[Gambit::FlavBit::Boxes](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1flavbit_1_1boxes/)**  |
+| **[Gambit::FlavBit::FormFactors](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1flavbit_1_1formfactors/)**  |
 
 ## Detailed Description
 
@@ -984,4 +984,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:48 +0000
+Updated on 2022-08-01 at 17:41:23 +0000

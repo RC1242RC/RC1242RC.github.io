@@ -16,8 +16,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[YAML::convert< Gambit::IniParser::Types::Observable >](/documentation/code/gambit_sphinxclasses/structyaml_1_1convert_3_01gambit_1_1iniparser_1_1types_1_1observable_01_4/)**  |
-| struct | **[YAML::convert< Gambit::nuiscorr >](/documentation/code/gambit_sphinxclasses/structyaml_1_1convert_3_01gambit_1_1nuiscorr_01_4/)** <br>YAML conversion structure for SuperIso SM nuisance data.  |
+| struct | **[YAML::convert< Gambit::IniParser::Types::Observable >](/documentation/code/gambit_sphinx/classes/structyaml_1_1convert_3_01gambit_1_1iniparser_1_1types_1_1observable_01_4/)**  |
+| struct | **[YAML::convert< Gambit::nuiscorr >](/documentation/code/gambit_sphinx/classes/structyaml_1_1convert_3_01gambit_1_1nuiscorr_01_4/)** <br>YAML conversion structure for SuperIso SM nuisance data.  |
 
 
 
@@ -26,4 +26,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:46 +0000
+Updated on 2022-08-01 at 17:41:20 +0000

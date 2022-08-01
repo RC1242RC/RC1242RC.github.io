@@ -16,7 +16,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Gambit::Models::safe_param_map](/documentation/code/gambit_sphinxclasses/classgambit_1_1models_1_1safe__param__map/)**  |
+| class | **[Gambit::Models::safe_param_map](/documentation/code/gambit_sphinx/classes/classgambit_1_1models_1_1safe__param__map/)**  |
 
 
 
@@ -25,4 +25,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:48 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

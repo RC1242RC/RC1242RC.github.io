@@ -20,44 +20,44 @@ Inherits from Spec< MSSMSpec< MI > >
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef [MSSMSpec](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1mssmspec/)< MI > | **[Self](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1mssmspec/#typedef-self)**  |
-| typedef Self::MTget | **[MTget](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1mssmspec/#typedef-mtget)**  |
-| typedef Self::MTset | **[MTset](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1mssmspec/#typedef-mtset)**  |
-| typedef Self::GetterMaps | **[GetterMaps](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1mssmspec/#typedef-gettermaps)**  |
-| typedef Self::SetterMaps | **[SetterMaps](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1mssmspec/#typedef-settermaps)**  |
-| typedef SpecTraits< [Self](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1mssmspec/#typedef-self) >::Model | **[Model](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1mssmspec/#typedef-model)**  |
-| typedef SpecTraits< [Self](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1mssmspec/#typedef-self) >::Input | **[Input](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1mssmspec/#typedef-input)**  |
+| typedef [MSSMSpec](/documentation/code/gambit_sphinx/classes/classgambit_1_1specbit_1_1mssmspec/)< MI > | **[Self](/documentation/code/gambit_sphinx/classes/classgambit_1_1specbit_1_1mssmspec/#typedef-self)**  |
+| typedef Self::MTget | **[MTget](/documentation/code/gambit_sphinx/classes/classgambit_1_1specbit_1_1mssmspec/#typedef-mtget)**  |
+| typedef Self::MTset | **[MTset](/documentation/code/gambit_sphinx/classes/classgambit_1_1specbit_1_1mssmspec/#typedef-mtset)**  |
+| typedef Self::GetterMaps | **[GetterMaps](/documentation/code/gambit_sphinx/classes/classgambit_1_1specbit_1_1mssmspec/#typedef-gettermaps)**  |
+| typedef Self::SetterMaps | **[SetterMaps](/documentation/code/gambit_sphinx/classes/classgambit_1_1specbit_1_1mssmspec/#typedef-settermaps)**  |
+| typedef SpecTraits< [Self](/documentation/code/gambit_sphinx/classes/classgambit_1_1specbit_1_1mssmspec/#typedef-self) >::Model | **[Model](/documentation/code/gambit_sphinx/classes/classgambit_1_1specbit_1_1mssmspec/#typedef-model)**  |
+| typedef SpecTraits< [Self](/documentation/code/gambit_sphinx/classes/classgambit_1_1specbit_1_1mssmspec/#typedef-self) >::Input | **[Input](/documentation/code/gambit_sphinx/classes/classgambit_1_1specbit_1_1mssmspec/#typedef-input)**  |
 
 ## Public Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| GetterMaps | **[fill_getter_maps](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1mssmspec/#function-fill-getter-maps)**()<br>Map filler overrides.  |
-| SetterMaps | **[fill_setter_maps](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1mssmspec/#function-fill-setter-maps)**() |
-| int | **[index_offset](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1mssmspec/#function-index-offset)**()<br>Interface function overrides.  |
-| virtual double | **[GetScale](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1mssmspec/#function-getscale)**() const |
-| virtual void | **[SetScale](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1mssmspec/#function-setscale)**(double scale) |
-| virtual void | **[RunToScaleOverride](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1mssmspec/#function-runtoscaleoverride)**(double scale) |
-| | **[MSSMSpec](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1mssmspec/#function-mssmspec)**() |
-| | **[MSSMSpec](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1mssmspec/#function-mssmspec)**(MI mi, str backend_name, str backend_version) |
-| virtual | **[~MSSMSpec](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1mssmspec/#function-~mssmspec)**() |
-| Model & | **[get_Model](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1mssmspec/#function-get-model)**() |
-| Input & | **[get_Input](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1mssmspec/#function-get-input)**() |
-| const Model & | **[get_Model](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1mssmspec/#function-get-model)**() const |
-| const Input & | **[get_Input](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1mssmspec/#function-get-input)**() const |
-| virtual double | **[get_lsp_mass](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1mssmspec/#function-get-lsp-mass)**(int & particle_type, int & row, int & col) const |
-| virtual int | **[get_numbers_stable_particles](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1mssmspec/#function-get-numbers-stable-particles)**() const |
-| virtual std::string | **[AccessError](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1mssmspec/#function-accesserror)**(std::string state) const |
-| virtual void | **[add_to_SLHAea](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1mssmspec/#function-add-to-slhaea)**(int slha_version, SLHAstruct & slha) const |
-| template <class MSSMlike \> <br>void | **[get_lowe_data_from](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1mssmspec/#function-get-lowe-data-from)**(MSSMlike & othermodel) |
-| void | **[get_external_spectrum](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1mssmspec/#function-get-external-spectrum)**(typename MI::Model & othermodel) |
+| GetterMaps | **[fill_getter_maps](/documentation/code/gambit_sphinx/classes/classgambit_1_1specbit_1_1mssmspec/#function-fill-getter-maps)**()<br>Map filler overrides.  |
+| SetterMaps | **[fill_setter_maps](/documentation/code/gambit_sphinx/classes/classgambit_1_1specbit_1_1mssmspec/#function-fill-setter-maps)**() |
+| int | **[index_offset](/documentation/code/gambit_sphinx/classes/classgambit_1_1specbit_1_1mssmspec/#function-index-offset)**()<br>Interface function overrides.  |
+| virtual double | **[GetScale](/documentation/code/gambit_sphinx/classes/classgambit_1_1specbit_1_1mssmspec/#function-getscale)**() const |
+| virtual void | **[SetScale](/documentation/code/gambit_sphinx/classes/classgambit_1_1specbit_1_1mssmspec/#function-setscale)**(double scale) |
+| virtual void | **[RunToScaleOverride](/documentation/code/gambit_sphinx/classes/classgambit_1_1specbit_1_1mssmspec/#function-runtoscaleoverride)**(double scale) |
+| | **[MSSMSpec](/documentation/code/gambit_sphinx/classes/classgambit_1_1specbit_1_1mssmspec/#function-mssmspec)**() |
+| | **[MSSMSpec](/documentation/code/gambit_sphinx/classes/classgambit_1_1specbit_1_1mssmspec/#function-mssmspec)**(MI mi, str backend_name, str backend_version) |
+| virtual | **[~MSSMSpec](/documentation/code/gambit_sphinx/classes/classgambit_1_1specbit_1_1mssmspec/#function-~mssmspec)**() |
+| Model & | **[get_Model](/documentation/code/gambit_sphinx/classes/classgambit_1_1specbit_1_1mssmspec/#function-get-model)**() |
+| Input & | **[get_Input](/documentation/code/gambit_sphinx/classes/classgambit_1_1specbit_1_1mssmspec/#function-get-input)**() |
+| const Model & | **[get_Model](/documentation/code/gambit_sphinx/classes/classgambit_1_1specbit_1_1mssmspec/#function-get-model)**() const |
+| const Input & | **[get_Input](/documentation/code/gambit_sphinx/classes/classgambit_1_1specbit_1_1mssmspec/#function-get-input)**() const |
+| virtual double | **[get_lsp_mass](/documentation/code/gambit_sphinx/classes/classgambit_1_1specbit_1_1mssmspec/#function-get-lsp-mass)**(int & particle_type, int & row, int & col) const |
+| virtual int | **[get_numbers_stable_particles](/documentation/code/gambit_sphinx/classes/classgambit_1_1specbit_1_1mssmspec/#function-get-numbers-stable-particles)**() const |
+| virtual std::string | **[AccessError](/documentation/code/gambit_sphinx/classes/classgambit_1_1specbit_1_1mssmspec/#function-accesserror)**(std::string state) const |
+| virtual void | **[add_to_SLHAea](/documentation/code/gambit_sphinx/classes/classgambit_1_1specbit_1_1mssmspec/#function-add-to-slhaea)**(int slha_version, SLHAstruct & slha) const |
+| template <class MSSMlike \> <br>void | **[get_lowe_data_from](/documentation/code/gambit_sphinx/classes/classgambit_1_1specbit_1_1mssmspec/#function-get-lowe-data-from)**(MSSMlike & othermodel) |
+| void | **[get_external_spectrum](/documentation/code/gambit_sphinx/classes/classgambit_1_1specbit_1_1mssmspec/#function-get-external-spectrum)**(typename MI::Model & othermodel) |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| MI | **[model_interface](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1mssmspec/#variable-model-interface)**  |
-| DummyInput | **[dummyinput](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1mssmspec/#variable-dummyinput)**  |
+| MI | **[model_interface](/documentation/code/gambit_sphinx/classes/classgambit_1_1specbit_1_1mssmspec/#variable-model-interface)**  |
+| DummyInput | **[dummyinput](/documentation/code/gambit_sphinx/classes/classgambit_1_1specbit_1_1mssmspec/#variable-dummyinput)**  |
 
 ## Detailed Description
 
@@ -322,4 +322,4 @@ DummyInput dummyinput;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:48 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

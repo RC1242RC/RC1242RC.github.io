@@ -16,7 +16,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[AbstractBase](/documentation/code/darkbit_developmentclasses/classabstractbase/)**  |
+| class | **[AbstractBase](/documentation/code/darkbit_development/classes/classabstractbase/)**  |
 
 
 
@@ -43,4 +43,4 @@ __END_GAMBIT_NAMESPACE__
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:45 +0000
+Updated on 2022-08-01 at 17:41:26 +0000

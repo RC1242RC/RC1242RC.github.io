@@ -16,25 +16,25 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Gambit::DecayBit::SM_Z::TwoLoop](/documentation/code/gambit_sphinxclasses/classgambit_1_1decaybit_1_1sm__z_1_1twoloop/)**  |
+| class | **[Gambit::DecayBit::SM_Z::TwoLoop](/documentation/code/gambit_sphinx/classes/classgambit_1_1decaybit_1_1sm__z_1_1twoloop/)**  |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| const double | **[mu](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1decaybit_1_1sm__z/#variable-mu)**  |
-| const double | **[sigma](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1decaybit_1_1sm__z/#variable-sigma)**  |
-| constexpr struct Gambit::DecayBit::SM_Z::@0 | **[gamma_inv](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1decaybit_1_1sm__z/#variable-gamma-inv)** <br><ahref=" http://pdglive.lbl.gov/BranchingRatio.action?desig=9&parCode=S044 ">PDG measurement of invisible width of \(Z\) boson in GeV  |
-| const double | **[mh_OS](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1decaybit_1_1sm__z/#variable-mh-os)**  |
-| const double | **[mt_OS](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1decaybit_1_1sm__z/#variable-mt-os)**  |
-| const double | **[MZ_OS](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1decaybit_1_1sm__z/#variable-mz-os)**  |
-| const double | **[alpha_s_MSbar_MZ](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1decaybit_1_1sm__z/#variable-alpha-s-msbar-mz)**  |
-| const double | **[delta_alpha_OS](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1decaybit_1_1sm__z/#variable-delta-alpha-os)**  |
-| constexpr struct Gambit::DecayBit::SM_Z::@1 | **[hat](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1decaybit_1_1sm__z/#variable-hat)** <br>The central values of nuisances from eq. 13.  |
-| constexpr int | **[kRows](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1decaybit_1_1sm__z/#variable-krows)**  |
-| constexpr int | **[kCols](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1decaybit_1_1sm__z/#variable-kcols)**  |
-| constexpr double | **[table_5](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1decaybit_1_1sm__z/#variable-table-5)** <br>Coefficient data in Table 5 with MeV converted to GeV.  |
-| constexpr double | **[table_6](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1decaybit_1_1sm__z/#variable-table-6)** <br>Data in Table 6, though re-arranged to match columns in Table 5 with MeV converted to GeV.  |
+| const double | **[mu](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1decaybit_1_1sm__z/#variable-mu)**  |
+| const double | **[sigma](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1decaybit_1_1sm__z/#variable-sigma)**  |
+| constexpr struct Gambit::DecayBit::SM_Z::@0 | **[gamma_inv](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1decaybit_1_1sm__z/#variable-gamma-inv)** <br><ahref=" http://pdglive.lbl.gov/BranchingRatio.action?desig=9&parCode=S044 ">PDG measurement of invisible width of \(Z\) boson in GeV  |
+| const double | **[mh_OS](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1decaybit_1_1sm__z/#variable-mh-os)**  |
+| const double | **[mt_OS](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1decaybit_1_1sm__z/#variable-mt-os)**  |
+| const double | **[MZ_OS](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1decaybit_1_1sm__z/#variable-mz-os)**  |
+| const double | **[alpha_s_MSbar_MZ](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1decaybit_1_1sm__z/#variable-alpha-s-msbar-mz)**  |
+| const double | **[delta_alpha_OS](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1decaybit_1_1sm__z/#variable-delta-alpha-os)**  |
+| constexpr struct Gambit::DecayBit::SM_Z::@1 | **[hat](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1decaybit_1_1sm__z/#variable-hat)** <br>The central values of nuisances from eq. 13.  |
+| constexpr int | **[kRows](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1decaybit_1_1sm__z/#variable-krows)**  |
+| constexpr int | **[kCols](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1decaybit_1_1sm__z/#variable-kcols)**  |
+| constexpr double | **[table_5](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1decaybit_1_1sm__z/#variable-table-5)** <br>Coefficient data in Table 5 with MeV converted to GeV.  |
+| constexpr double | **[table_6](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1decaybit_1_1sm__z/#variable-table-6)** <br>Data in Table 6, though re-arranged to match columns in Table 5 with MeV converted to GeV.  |
 
 
 
@@ -157,4 +157,4 @@ The final entry isn't in the table and instead comes from the text below eq. 16.
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:47 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

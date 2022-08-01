@@ -16,15 +16,15 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::ColliderBit](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1colliderbit/)**  |
+| **[Gambit](/documentation/code/gambit_sphinx/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::ColliderBit](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1colliderbit/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[Gambit::ColliderBit::convergence_settings](/documentation/code/gambit_sphinxclasses/structgambit_1_1colliderbit_1_1convergence__settings/)** <br>Type for holding Monte Carlo convergence settings.  |
-| class | **[Gambit::ColliderBit::MC_convergence_checker](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1mc__convergence__checker/)** <br>Helper class for testing for convergence of analyses.  |
+| struct | **[Gambit::ColliderBit::convergence_settings](/documentation/code/gambit_sphinx/classes/structgambit_1_1colliderbit_1_1convergence__settings/)** <br>Type for holding Monte Carlo convergence settings.  |
+| class | **[Gambit::ColliderBit::MC_convergence_checker](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1mc__convergence__checker/)** <br>Helper class for testing for convergence of analyses.  |
 
 ## Detailed Description
 
@@ -124,4 +124,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:49 +0000
+Updated on 2022-08-01 at 17:41:23 +0000

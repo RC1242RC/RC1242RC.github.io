@@ -16,10 +16,10 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/darkbit_developmentnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::Backends](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1backends/)**  |
-| **[Gambit::Backends::Pythia_8_212](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1backends_1_1pythia__8__212/)**  |
-| **[Gambit::Backends::Pythia_8_212::Pythia8](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1backends_1_1pythia__8__212_1_1pythia8/)**  |
+| **[Gambit](/documentation/code/darkbit_development/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::Backends](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1backends/)**  |
+| **[Gambit::Backends::Pythia_8_212](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1backends_1_1pythia__8__212/)**  |
+| **[Gambit::Backends::Pythia_8_212::Pythia8](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1backends_1_1pythia__8__212_1_1pythia8/)**  |
 
 
 
@@ -192,4 +192,4 @@ BE_INI_FUNCTION{} END_BE_INI_FUNCTION
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:45 +0000
+Updated on 2022-08-01 at 17:41:26 +0000

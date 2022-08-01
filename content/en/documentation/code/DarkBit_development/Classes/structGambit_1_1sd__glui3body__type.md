@@ -18,17 +18,17 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Farray< Fdouble, 1, 4 > | **[brgoup](/documentation/code/darkbit_developmentclasses/structgambit_1_1sd__glui3body__type/#variable-brgoup)**  |
-| Farray< Fdouble, 1, 4 > | **[brgoch](/documentation/code/darkbit_developmentclasses/structgambit_1_1sd__glui3body__type/#variable-brgoch)**  |
-| Farray< Fdouble, 1, 4 > | **[brgodn](/documentation/code/darkbit_developmentclasses/structgambit_1_1sd__glui3body__type/#variable-brgodn)**  |
-| Farray< Fdouble, 1, 4 > | **[brgost](/documentation/code/darkbit_developmentclasses/structgambit_1_1sd__glui3body__type/#variable-brgost)**  |
-| Farray< Fdouble, 1, 4 > | **[brgotp](/documentation/code/darkbit_developmentclasses/structgambit_1_1sd__glui3body__type/#variable-brgotp)**  |
-| Farray< Fdouble, 1, 4 > | **[brgobt](/documentation/code/darkbit_developmentclasses/structgambit_1_1sd__glui3body__type/#variable-brgobt)**  |
-| Farray< Fdouble, 1, 2 > | **[brgoud](/documentation/code/darkbit_developmentclasses/structgambit_1_1sd__glui3body__type/#variable-brgoud)**  |
-| Farray< Fdouble, 1, 2 > | **[brgocs](/documentation/code/darkbit_developmentclasses/structgambit_1_1sd__glui3body__type/#variable-brgocs)**  |
-| Farray< Fdouble, 1, 2 > | **[brgotb](/documentation/code/darkbit_developmentclasses/structgambit_1_1sd__glui3body__type/#variable-brgotb)**  |
-| Fdouble | **[brhcst1b](/documentation/code/darkbit_developmentclasses/structgambit_1_1sd__glui3body__type/#variable-brhcst1b)**  |
-| Fdouble | **[brwst1b](/documentation/code/darkbit_developmentclasses/structgambit_1_1sd__glui3body__type/#variable-brwst1b)**  |
+| Farray< Fdouble, 1, 4 > | **[brgoup](/documentation/code/darkbit_development/classes/structgambit_1_1sd__glui3body__type/#variable-brgoup)**  |
+| Farray< Fdouble, 1, 4 > | **[brgoch](/documentation/code/darkbit_development/classes/structgambit_1_1sd__glui3body__type/#variable-brgoch)**  |
+| Farray< Fdouble, 1, 4 > | **[brgodn](/documentation/code/darkbit_development/classes/structgambit_1_1sd__glui3body__type/#variable-brgodn)**  |
+| Farray< Fdouble, 1, 4 > | **[brgost](/documentation/code/darkbit_development/classes/structgambit_1_1sd__glui3body__type/#variable-brgost)**  |
+| Farray< Fdouble, 1, 4 > | **[brgotp](/documentation/code/darkbit_development/classes/structgambit_1_1sd__glui3body__type/#variable-brgotp)**  |
+| Farray< Fdouble, 1, 4 > | **[brgobt](/documentation/code/darkbit_development/classes/structgambit_1_1sd__glui3body__type/#variable-brgobt)**  |
+| Farray< Fdouble, 1, 2 > | **[brgoud](/documentation/code/darkbit_development/classes/structgambit_1_1sd__glui3body__type/#variable-brgoud)**  |
+| Farray< Fdouble, 1, 2 > | **[brgocs](/documentation/code/darkbit_development/classes/structgambit_1_1sd__glui3body__type/#variable-brgocs)**  |
+| Farray< Fdouble, 1, 2 > | **[brgotb](/documentation/code/darkbit_development/classes/structgambit_1_1sd__glui3body__type/#variable-brgotb)**  |
+| Fdouble | **[brhcst1b](/documentation/code/darkbit_development/classes/structgambit_1_1sd__glui3body__type/#variable-brhcst1b)**  |
+| Fdouble | **[brwst1b](/documentation/code/darkbit_development/classes/structgambit_1_1sd__glui3body__type/#variable-brwst1b)**  |
 
 ## Public Attributes Documentation
 
@@ -111,4 +111,4 @@ Fdouble brwst1b;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:41 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

@@ -18,13 +18,13 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Fdouble | **[g2weak](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__couplingconstants61/#variable-g2weak)**  |
-| Fdouble | **[gyweak](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__couplingconstants61/#variable-gyweak)**  |
-| Fdouble | **[g3stro](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__couplingconstants61/#variable-g3stro)**  |
-| Fdouble | **[alph3](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__couplingconstants61/#variable-alph3)**  |
-| Farray< Fdouble, 1, 12 > | **[yukawa](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__couplingconstants61/#variable-yukawa)**  |
-| Fdouble | **[g2wmz](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__couplingconstants61/#variable-g2wmz)**  |
-| Fdouble | **[gywmz](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__couplingconstants61/#variable-gywmz)**  |
+| Fdouble | **[g2weak](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__couplingconstants61/#variable-g2weak)**  |
+| Fdouble | **[gyweak](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__couplingconstants61/#variable-gyweak)**  |
+| Fdouble | **[g3stro](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__couplingconstants61/#variable-g3stro)**  |
+| Fdouble | **[alph3](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__couplingconstants61/#variable-alph3)**  |
+| Farray< Fdouble, 1, 12 > | **[yukawa](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__couplingconstants61/#variable-yukawa)**  |
+| Fdouble | **[g2wmz](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__couplingconstants61/#variable-g2wmz)**  |
+| Fdouble | **[gywmz](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__couplingconstants61/#variable-gywmz)**  |
 
 ## Public Attributes Documentation
 
@@ -79,4 +79,4 @@ Fdouble gywmz;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:46 +0000
+Updated on 2022-08-01 at 17:41:21 +0000

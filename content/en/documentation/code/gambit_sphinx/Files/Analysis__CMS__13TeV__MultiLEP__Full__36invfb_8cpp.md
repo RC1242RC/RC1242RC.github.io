@@ -16,18 +16,18 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::ColliderBit](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1colliderbit/)**  |
+| **[Gambit](/documentation/code/gambit_sphinx/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::ColliderBit](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1colliderbit/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Gambit::ColliderBit::Analysis_CMS_13TeV_MultiLEP_Full_36invfb](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1analysis__cms__13tev__multilep__full__36invfb/)**  |
-| struct | **[Gambit::ColliderBit::Analysis_CMS_13TeV_MultiLEP_Full_36invfb::ptComparison](/documentation/code/gambit_sphinxclasses/structgambit_1_1colliderbit_1_1analysis__cms__13tev__multilep__full__36invfb_1_1ptcomparison/)**  |
-| class | **[Gambit::ColliderBit::Analysis_CMS_13TeV_MultiLEP_Full_2SSLep_36invfb](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1analysis__cms__13tev__multilep__full__2sslep__36invfb/)**  |
-| class | **[Gambit::ColliderBit::Analysis_CMS_13TeV_MultiLEP_Full_3Lep_36invfb](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1analysis__cms__13tev__multilep__full__3lep__36invfb/)**  |
-| class | **[Gambit::ColliderBit::Analysis_CMS_13TeV_MultiLEP_Full_3Lep_rebinned_36invfb](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1analysis__cms__13tev__multilep__full__3lep__rebinned__36invfb/)**  |
+| class | **[Gambit::ColliderBit::Analysis_CMS_13TeV_MultiLEP_Full_36invfb](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__multilep__full__36invfb/)**  |
+| struct | **[Gambit::ColliderBit::Analysis_CMS_13TeV_MultiLEP_Full_36invfb::ptComparison](/documentation/code/gambit_sphinx/classes/structgambit_1_1colliderbit_1_1analysis__cms__13tev__multilep__full__36invfb_1_1ptcomparison/)**  |
+| class | **[Gambit::ColliderBit::Analysis_CMS_13TeV_MultiLEP_Full_2SSLep_36invfb](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__multilep__full__2sslep__36invfb/)**  |
+| class | **[Gambit::ColliderBit::Analysis_CMS_13TeV_MultiLEP_Full_3Lep_36invfb](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__multilep__full__3lep__36invfb/)**  |
+| class | **[Gambit::ColliderBit::Analysis_CMS_13TeV_MultiLEP_Full_3Lep_rebinned_36invfb](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__multilep__full__3lep__rebinned__36invfb/)**  |
 
 
 
@@ -1209,4 +1209,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:49 +0000
+Updated on 2022-08-01 at 17:41:24 +0000

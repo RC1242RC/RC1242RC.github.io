@@ -18,26 +18,26 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Observable](/documentation/code/darkbit_developmentclasses/structgambit_1_1iniparser_1_1types_1_1observable/#function-observable)**()<br>Default constructor, to ensure the default values are not gibberish.  |
+| | **[Observable](/documentation/code/darkbit_development/classes/structgambit_1_1iniparser_1_1types_1_1observable/#function-observable)**()<br>Default constructor, to ensure the default values are not gibberish.  |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| std::string | **[purpose](/documentation/code/darkbit_developmentclasses/structgambit_1_1iniparser_1_1types_1_1observable/#variable-purpose)**  |
-| std::string | **[capability](/documentation/code/darkbit_developmentclasses/structgambit_1_1iniparser_1_1types_1_1observable/#variable-capability)**  |
-| std::string | **[type](/documentation/code/darkbit_developmentclasses/structgambit_1_1iniparser_1_1types_1_1observable/#variable-type)**  |
-| std::string | **[function](/documentation/code/darkbit_developmentclasses/structgambit_1_1iniparser_1_1types_1_1observable/#variable-function)**  |
-| std::string | **[module](/documentation/code/darkbit_developmentclasses/structgambit_1_1iniparser_1_1types_1_1observable/#variable-module)**  |
-| std::string | **[backend](/documentation/code/darkbit_developmentclasses/structgambit_1_1iniparser_1_1types_1_1observable/#variable-backend)**  |
-| std::string | **[version](/documentation/code/darkbit_developmentclasses/structgambit_1_1iniparser_1_1types_1_1observable/#variable-version)**  |
-| bool | **[printme](/documentation/code/darkbit_developmentclasses/structgambit_1_1iniparser_1_1types_1_1observable/#variable-printme)**  |
-| bool | **[weakrule](/documentation/code/darkbit_developmentclasses/structgambit_1_1iniparser_1_1types_1_1observable/#variable-weakrule)**  |
-| Options | **[options](/documentation/code/darkbit_developmentclasses/structgambit_1_1iniparser_1_1types_1_1observable/#variable-options)**  |
-| YAML::Node | **[subcaps](/documentation/code/darkbit_developmentclasses/structgambit_1_1iniparser_1_1types_1_1observable/#variable-subcaps)**  |
-| std::vector< [Observable](/documentation/code/darkbit_developmentclasses/structgambit_1_1iniparser_1_1types_1_1observable/) > | **[dependencies](/documentation/code/darkbit_developmentclasses/structgambit_1_1iniparser_1_1types_1_1observable/#variable-dependencies)**  |
-| std::vector< [Observable](/documentation/code/darkbit_developmentclasses/structgambit_1_1iniparser_1_1types_1_1observable/) > | **[backends](/documentation/code/darkbit_developmentclasses/structgambit_1_1iniparser_1_1types_1_1observable/#variable-backends)**  |
-| std::vector< std::string > | **[functionChain](/documentation/code/darkbit_developmentclasses/structgambit_1_1iniparser_1_1types_1_1observable/#variable-functionchain)**  |
+| std::string | **[purpose](/documentation/code/darkbit_development/classes/structgambit_1_1iniparser_1_1types_1_1observable/#variable-purpose)**  |
+| std::string | **[capability](/documentation/code/darkbit_development/classes/structgambit_1_1iniparser_1_1types_1_1observable/#variable-capability)**  |
+| std::string | **[type](/documentation/code/darkbit_development/classes/structgambit_1_1iniparser_1_1types_1_1observable/#variable-type)**  |
+| std::string | **[function](/documentation/code/darkbit_development/classes/structgambit_1_1iniparser_1_1types_1_1observable/#variable-function)**  |
+| std::string | **[module](/documentation/code/darkbit_development/classes/structgambit_1_1iniparser_1_1types_1_1observable/#variable-module)**  |
+| std::string | **[backend](/documentation/code/darkbit_development/classes/structgambit_1_1iniparser_1_1types_1_1observable/#variable-backend)**  |
+| std::string | **[version](/documentation/code/darkbit_development/classes/structgambit_1_1iniparser_1_1types_1_1observable/#variable-version)**  |
+| bool | **[printme](/documentation/code/darkbit_development/classes/structgambit_1_1iniparser_1_1types_1_1observable/#variable-printme)**  |
+| bool | **[weakrule](/documentation/code/darkbit_development/classes/structgambit_1_1iniparser_1_1types_1_1observable/#variable-weakrule)**  |
+| Options | **[options](/documentation/code/darkbit_development/classes/structgambit_1_1iniparser_1_1types_1_1observable/#variable-options)**  |
+| YAML::Node | **[subcaps](/documentation/code/darkbit_development/classes/structgambit_1_1iniparser_1_1types_1_1observable/#variable-subcaps)**  |
+| std::vector< [Observable](/documentation/code/darkbit_development/classes/structgambit_1_1iniparser_1_1types_1_1observable/) > | **[dependencies](/documentation/code/darkbit_development/classes/structgambit_1_1iniparser_1_1types_1_1observable/#variable-dependencies)**  |
+| std::vector< [Observable](/documentation/code/darkbit_development/classes/structgambit_1_1iniparser_1_1types_1_1observable/) > | **[backends](/documentation/code/darkbit_development/classes/structgambit_1_1iniparser_1_1types_1_1observable/#variable-backends)**  |
+| std::vector< std::string > | **[functionChain](/documentation/code/darkbit_development/classes/structgambit_1_1iniparser_1_1types_1_1observable/#variable-functionchain)**  |
 
 ## Public Functions Documentation
 
@@ -151,4 +151,4 @@ std::vector< std::string > functionChain;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:42 +0000
+Updated on 2022-08-01 at 17:41:23 +0000

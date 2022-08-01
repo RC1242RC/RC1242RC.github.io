@@ -16,14 +16,14 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[DarkBit::Functown](/documentation/code/darkbit_developmentnamespaces/namespacedarkbit_1_1functown/)**  |
+| **[DarkBit::Functown](/documentation/code/darkbit_development/namespaces/namespacedarkbit_1_1functown/)**  |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[QUICK_FUNCTION](/documentation/code/darkbit_developmentfiles/darkbit__standalone__mssm_8cpp/#function-quick-function)**(DarkBit , SLHA_pseudonyms , NEW_CAPABILITY , createSLHA1Names , mass_es_pseudonyms , () , (MSSM_spectrum, Spectrum) ) |
-| int | **[main](/documentation/code/darkbit_developmentfiles/darkbit__standalone__mssm_8cpp/#function-main)**(int argc, char * argv[]) |
+| | **[QUICK_FUNCTION](/documentation/code/darkbit_development/files/darkbit__standalone__mssm_8cpp/#function-quick-function)**(DarkBit , SLHA_pseudonyms , NEW_CAPABILITY , createSLHA1Names , mass_es_pseudonyms , () , (MSSM_spectrum, Spectrum) ) |
+| int | **[main](/documentation/code/darkbit_development/files/darkbit__standalone__mssm_8cpp/#function-main)**(int argc, char * argv[]) |
 
 ## Detailed Description
 
@@ -1838,4 +1838,4 @@ int main(int argc, char* argv[])
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:43 +0000
+Updated on 2022-08-01 at 17:41:24 +0000

@@ -16,26 +16,26 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[modules](/documentation/code/gambit_sphinxnamespaces/namespacemodules/)**  |
-| **[modules::infomsg](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1infomsg/)**  |
+| **[modules](/documentation/code/gambit_sphinx/namespaces/namespacemodules/)**  |
+| **[modules::infomsg](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1infomsg/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[modules::infomsg::InfoMessage](/documentation/code/gambit_sphinxclasses/classmodules_1_1infomsg_1_1infomessage/)**  |
-| class | **[modules::infomsg::ClassNotLoadable](/documentation/code/gambit_sphinxclasses/classmodules_1_1infomsg_1_1classnotloadable/)**  |
-| class | **[modules::infomsg::ClassAlreadyDone](/documentation/code/gambit_sphinxclasses/classmodules_1_1infomsg_1_1classalreadydone/)**  |
-| class | **[modules::infomsg::FunctionAlreadyDone](/documentation/code/gambit_sphinxclasses/classmodules_1_1infomsg_1_1functionalreadydone/)**  |
-| class | **[modules::infomsg::ParentClassIgnored](/documentation/code/gambit_sphinxclasses/classmodules_1_1infomsg_1_1parentclassignored/)**  |
-| class | **[modules::infomsg::IgnoredFunction](/documentation/code/gambit_sphinxclasses/classmodules_1_1infomsg_1_1ignoredfunction/)**  |
-| class | **[modules::infomsg::IgnoredMemberFunction](/documentation/code/gambit_sphinxclasses/classmodules_1_1infomsg_1_1ignoredmemberfunction/)**  |
-| class | **[modules::infomsg::IgnoredMemberVariable](/documentation/code/gambit_sphinxclasses/classmodules_1_1infomsg_1_1ignoredmembervariable/)**  |
-| class | **[modules::infomsg::NoIncludeStatementGenerated](/documentation/code/gambit_sphinxclasses/classmodules_1_1infomsg_1_1noincludestatementgenerated/)**  |
-| class | **[modules::infomsg::TypeNotAccepted](/documentation/code/gambit_sphinxclasses/classmodules_1_1infomsg_1_1typenotaccepted/)**  |
-| class | **[modules::infomsg::NoFactoryFunctions](/documentation/code/gambit_sphinxclasses/classmodules_1_1infomsg_1_1nofactoryfunctions/)**  |
-| class | **[modules::infomsg::NoPointerCopyAndAssignmentFunctions](/documentation/code/gambit_sphinxclasses/classmodules_1_1infomsg_1_1nopointercopyandassignmentfunctions/)**  |
-| class | **[modules::infomsg::NoLoadedTypesEntry](/documentation/code/gambit_sphinxclasses/classmodules_1_1infomsg_1_1noloadedtypesentry/)**  |
+| class | **[modules::infomsg::InfoMessage](/documentation/code/gambit_sphinx/classes/classmodules_1_1infomsg_1_1infomessage/)**  |
+| class | **[modules::infomsg::ClassNotLoadable](/documentation/code/gambit_sphinx/classes/classmodules_1_1infomsg_1_1classnotloadable/)**  |
+| class | **[modules::infomsg::ClassAlreadyDone](/documentation/code/gambit_sphinx/classes/classmodules_1_1infomsg_1_1classalreadydone/)**  |
+| class | **[modules::infomsg::FunctionAlreadyDone](/documentation/code/gambit_sphinx/classes/classmodules_1_1infomsg_1_1functionalreadydone/)**  |
+| class | **[modules::infomsg::ParentClassIgnored](/documentation/code/gambit_sphinx/classes/classmodules_1_1infomsg_1_1parentclassignored/)**  |
+| class | **[modules::infomsg::IgnoredFunction](/documentation/code/gambit_sphinx/classes/classmodules_1_1infomsg_1_1ignoredfunction/)**  |
+| class | **[modules::infomsg::IgnoredMemberFunction](/documentation/code/gambit_sphinx/classes/classmodules_1_1infomsg_1_1ignoredmemberfunction/)**  |
+| class | **[modules::infomsg::IgnoredMemberVariable](/documentation/code/gambit_sphinx/classes/classmodules_1_1infomsg_1_1ignoredmembervariable/)**  |
+| class | **[modules::infomsg::NoIncludeStatementGenerated](/documentation/code/gambit_sphinx/classes/classmodules_1_1infomsg_1_1noincludestatementgenerated/)**  |
+| class | **[modules::infomsg::TypeNotAccepted](/documentation/code/gambit_sphinx/classes/classmodules_1_1infomsg_1_1typenotaccepted/)**  |
+| class | **[modules::infomsg::NoFactoryFunctions](/documentation/code/gambit_sphinx/classes/classmodules_1_1infomsg_1_1nofactoryfunctions/)**  |
+| class | **[modules::infomsg::NoPointerCopyAndAssignmentFunctions](/documentation/code/gambit_sphinx/classes/classmodules_1_1infomsg_1_1nopointercopyandassignmentfunctions/)**  |
+| class | **[modules::infomsg::NoLoadedTypesEntry](/documentation/code/gambit_sphinx/classes/classmodules_1_1infomsg_1_1noloadedtypesentry/)**  |
 
 
 
@@ -253,4 +253,4 @@ def clearInfoMessages():
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:51 +0000
+Updated on 2022-08-01 at 17:41:25 +0000

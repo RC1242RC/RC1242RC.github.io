@@ -18,11 +18,11 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[ma0](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1axionedt__params/#variable-ma0)**  |
-| double | **[beta](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1axionedt__params/#variable-beta)**  |
-| double | **[Tchi](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1axionedt__params/#variable-tchi)**  |
-| double | **[thetai](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1axionedt__params/#variable-thetai)**  |
-| double | **[Tosc](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1axionedt__params/#variable-tosc)**  |
+| double | **[ma0](/documentation/code/gambit_sphinx/classes/structgambit_1_1darkbit_1_1axionedt__params/#variable-ma0)**  |
+| double | **[beta](/documentation/code/gambit_sphinx/classes/structgambit_1_1darkbit_1_1axionedt__params/#variable-beta)**  |
+| double | **[Tchi](/documentation/code/gambit_sphinx/classes/structgambit_1_1darkbit_1_1axionedt__params/#variable-tchi)**  |
+| double | **[thetai](/documentation/code/gambit_sphinx/classes/structgambit_1_1darkbit_1_1axionedt__params/#variable-thetai)**  |
+| double | **[Tosc](/documentation/code/gambit_sphinx/classes/structgambit_1_1darkbit_1_1axionedt__params/#variable-tosc)**  |
 
 ## Public Attributes Documentation
 
@@ -63,4 +63,4 @@ double Tosc;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:47 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

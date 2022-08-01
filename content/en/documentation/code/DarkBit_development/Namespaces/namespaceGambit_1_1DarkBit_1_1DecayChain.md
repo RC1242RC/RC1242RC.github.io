@@ -16,29 +16,29 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| vec3 | **[operator*](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1darkbit_1_1decaychain/#function-operator*)**(double x, const vec3 & y) |
-| vec3 | **[operator*](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1darkbit_1_1decaychain/#function-operator*)**(const vec3 & y, double x) |
-| vec3 | **[operator/](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1darkbit_1_1decaychain/#function-operator/)**(const vec3 & y, double x) |
-| std::ostream & | **[operator<<](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1darkbit_1_1decaychain/#function-operator<<)**(std::ostream & os, const vec3 & v) |
-| double | **[dot](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1darkbit_1_1decaychain/#function-dot)**(const vec3 & a, const vec3 & b) |
-| vec4 | **[operator*](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1darkbit_1_1decaychain/#function-operator*)**(double x, const vec4 & y) |
-| vec4 | **[operator*](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1darkbit_1_1decaychain/#function-operator*)**(const vec4 & y, double x) |
-| vec4 | **[operator+](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1darkbit_1_1decaychain/#function-operator+)**(const vec4 & x, const vec4 & y) |
-| vec4 | **[operator-](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1darkbit_1_1decaychain/#function-operator-)**(const vec4 & x, const vec4 & y) |
-| std::ostream & | **[operator<<](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1darkbit_1_1decaychain/#function-operator<<)**(std::ostream & os, const vec4 & v) |
-| double | **[dot](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1darkbit_1_1decaychain/#function-dot)**(const vec4 & a, const vec4 & b) |
-| vec4 | **[Ep4vec](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1darkbit_1_1decaychain/#function-ep4vec)**(const vec3 p, double m) |
-| vec4 | **[operator*](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1darkbit_1_1decaychain/#function-operator*)**(const mat4 & m, const vec4 & v) |
-| mat4 | **[operator*](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1darkbit_1_1decaychain/#function-operator*)**(const mat4 & m1, const mat4 & m2) |
-| std::ostream & | **[operator<<](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1darkbit_1_1decaychain/#function-operator<<)**(std::ostream & os, const mat4 & m) |
-| double | **[rand_m1_1](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1darkbit_1_1decaychain/#function-rand-m1-1)**() |
-| vec3 | **[randOnSphere](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1darkbit_1_1decaychain/#function-randonsphere)**() |
-| void | **[lorentzMatrix](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1darkbit_1_1decaychain/#function-lorentzmatrix)**(const vec3 & beta_xyz, mat4 & mat) |
-| void | **[lorentzMatrix](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1darkbit_1_1decaychain/#function-lorentzmatrix)**(const vec3 & beta_xyz, mat4 & mat, double gamma) |
-| vec4 | **[lorentzBoost](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1darkbit_1_1decaychain/#function-lorentzboost)**(const vec4 & inVec, const vec3 & beta_xyz) |
-| vec4 | **[p_parentFrame](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1darkbit_1_1decaychain/#function-p-parentframe)**(const vec4 & inVec, const vec4 & p_parent) |
-| void | **[boostMatrixParentFrame](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1darkbit_1_1decaychain/#function-boostmatrixparentframe)**(mat4 & mat, vec4 & p_parent, double m) |
-| double | **[invariantMass](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1darkbit_1_1decaychain/#function-invariantmass)**(const vec4 & a, const vec4 & b) |
+| vec3 | **[operator*](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1darkbit_1_1decaychain/#function-operator*)**(double x, const vec3 & y) |
+| vec3 | **[operator*](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1darkbit_1_1decaychain/#function-operator*)**(const vec3 & y, double x) |
+| vec3 | **[operator/](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1darkbit_1_1decaychain/#function-operator/)**(const vec3 & y, double x) |
+| std::ostream & | **[operator<<](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1darkbit_1_1decaychain/#function-operator<<)**(std::ostream & os, const vec3 & v) |
+| double | **[dot](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1darkbit_1_1decaychain/#function-dot)**(const vec3 & a, const vec3 & b) |
+| vec4 | **[operator*](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1darkbit_1_1decaychain/#function-operator*)**(double x, const vec4 & y) |
+| vec4 | **[operator*](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1darkbit_1_1decaychain/#function-operator*)**(const vec4 & y, double x) |
+| vec4 | **[operator+](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1darkbit_1_1decaychain/#function-operator+)**(const vec4 & x, const vec4 & y) |
+| vec4 | **[operator-](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1darkbit_1_1decaychain/#function-operator-)**(const vec4 & x, const vec4 & y) |
+| std::ostream & | **[operator<<](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1darkbit_1_1decaychain/#function-operator<<)**(std::ostream & os, const vec4 & v) |
+| double | **[dot](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1darkbit_1_1decaychain/#function-dot)**(const vec4 & a, const vec4 & b) |
+| vec4 | **[Ep4vec](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1darkbit_1_1decaychain/#function-ep4vec)**(const vec3 p, double m) |
+| vec4 | **[operator*](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1darkbit_1_1decaychain/#function-operator*)**(const mat4 & m, const vec4 & v) |
+| mat4 | **[operator*](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1darkbit_1_1decaychain/#function-operator*)**(const mat4 & m1, const mat4 & m2) |
+| std::ostream & | **[operator<<](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1darkbit_1_1decaychain/#function-operator<<)**(std::ostream & os, const mat4 & m) |
+| double | **[rand_m1_1](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1darkbit_1_1decaychain/#function-rand-m1-1)**() |
+| vec3 | **[randOnSphere](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1darkbit_1_1decaychain/#function-randonsphere)**() |
+| void | **[lorentzMatrix](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1darkbit_1_1decaychain/#function-lorentzmatrix)**(const vec3 & beta_xyz, mat4 & mat) |
+| void | **[lorentzMatrix](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1darkbit_1_1decaychain/#function-lorentzmatrix)**(const vec3 & beta_xyz, mat4 & mat, double gamma) |
+| vec4 | **[lorentzBoost](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1darkbit_1_1decaychain/#function-lorentzboost)**(const vec4 & inVec, const vec3 & beta_xyz) |
+| vec4 | **[p_parentFrame](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1darkbit_1_1decaychain/#function-p-parentframe)**(const vec4 & inVec, const vec4 & p_parent) |
+| void | **[boostMatrixParentFrame](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1darkbit_1_1decaychain/#function-boostmatrixparentframe)**(mat4 & mat, vec4 & p_parent, double m) |
+| double | **[invariantMass](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1darkbit_1_1decaychain/#function-invariantmass)**(const vec4 & a, const vec4 & b) |
 
 
 ## Functions Documentation
@@ -275,4 +275,4 @@ double invariantMass(
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:42 +0000
+Updated on 2022-08-01 at 17:41:23 +0000

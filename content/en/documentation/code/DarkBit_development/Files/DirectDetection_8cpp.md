@@ -16,16 +16,16 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/darkbit_developmentnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::DarkBit](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1darkbit/)**  |
+| **[Gambit](/documentation/code/darkbit_development/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::DarkBit](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1darkbit/)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[DDCALC_RESULT](/documentation/code/darkbit_developmentfiles/directdetection_8cpp/#define-ddcalc-result)**(EXPERIMENT, TYPE, NAME) <br>Defines a prototypical DDCalc result extractor.  |
-|  | **[DDCALC_BIN](/documentation/code/darkbit_developmentfiles/directdetection_8cpp/#define-ddcalc-bin)**(EXPERIMENT, TYPE, NAME)  |
-|  | **[DD_EX](/documentation/code/darkbit_developmentfiles/directdetection_8cpp/#define-dd-ex)**(EXPERIMENT)  |
+|  | **[DDCALC_RESULT](/documentation/code/darkbit_development/files/directdetection_8cpp/#define-ddcalc-result)**(EXPERIMENT, TYPE, NAME) <br>Defines a prototypical DDCalc result extractor.  |
+|  | **[DDCALC_BIN](/documentation/code/darkbit_development/files/directdetection_8cpp/#define-ddcalc-bin)**(EXPERIMENT, TYPE, NAME)  |
+|  | **[DD_EX](/documentation/code/darkbit_development/files/directdetection_8cpp/#define-dd-ex)**(EXPERIMENT)  |
 
 ## Detailed Description
 
@@ -565,4 +565,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:43 +0000
+Updated on 2022-08-01 at 17:41:24 +0000

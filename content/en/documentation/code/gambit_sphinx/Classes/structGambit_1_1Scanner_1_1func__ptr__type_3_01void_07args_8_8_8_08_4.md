@@ -18,7 +18,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef void(*)(args...) | **[type](/documentation/code/gambit_sphinxclasses/structgambit_1_1scanner_1_1func__ptr__type_3_01void_07args_8_8_8_08_4/#typedef-type)**  |
+| typedef void(*)(args...) | **[type](/documentation/code/gambit_sphinx/classes/structgambit_1_1scanner_1_1func__ptr__type_3_01void_07args_8_8_8_08_4/#typedef-type)**  |
 
 ## Detailed Description
 
@@ -38,4 +38,4 @@ typedef void(* Gambit::Scanner::func_ptr_type< void(args...)>::type) (args...);
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:48 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

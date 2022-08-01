@@ -20,15 +20,15 @@ A single resonance of a given width at a given energy (both in GeV)
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[TH_Resonance](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1th__resonance/#function-th-resonance)**() |
-| | **[TH_Resonance](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1th__resonance/#function-th-resonance)**(double energy, double width) |
+| | **[TH_Resonance](/documentation/code/gambit_sphinx/classes/structgambit_1_1darkbit_1_1th__resonance/#function-th-resonance)**() |
+| | **[TH_Resonance](/documentation/code/gambit_sphinx/classes/structgambit_1_1darkbit_1_1th__resonance/#function-th-resonance)**(double energy, double width) |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[energy](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1th__resonance/#variable-energy)**  |
-| double | **[width](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1th__resonance/#variable-width)**  |
+| double | **[energy](/documentation/code/gambit_sphinx/classes/structgambit_1_1darkbit_1_1th__resonance/#variable-energy)**  |
+| double | **[width](/documentation/code/gambit_sphinx/classes/structgambit_1_1darkbit_1_1th__resonance/#variable-width)**  |
 
 ## Public Functions Documentation
 
@@ -67,4 +67,4 @@ double width;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:47 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

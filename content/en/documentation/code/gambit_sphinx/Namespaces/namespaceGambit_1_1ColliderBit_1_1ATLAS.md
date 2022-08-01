@@ -15,27 +15,27 @@ ATLAS-specific efficiency and smearing functions for super fast detector simulat
 
 |                | Name           |
 | -------------- | -------------- |
-| void | **[applyElectronEff](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-applyelectroneff)**(std::vector< const HEPUtils::Particle * > & electrons) |
-| void | **[applyMuonEff](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-applymuoneff)**(std::vector< const HEPUtils::Particle * > & muons)<br>Randomly filter the supplied particle list by parameterised muon efficiency.  |
-| void | **[applyMuonEffR2](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-applymuoneffr2)**(std::vector< const HEPUtils::Particle * > & muons)<br>Randomly filter the supplied particle list by parameterised muon efficiency.  |
-| void | **[applyTauEfficiencyR1](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-applytauefficiencyr1)**(std::vector< const HEPUtils::Particle * > & taus) |
-| void | **[applyTauEfficiencyR2](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-applytauefficiencyr2)**(std::vector< const HEPUtils::Particle * > & taus) |
-| void | **[applyPhotonEfficiencyR2](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-applyphotonefficiencyr2)**(std::vector< const HEPUtils::Particle * > & photons) |
-| void | **[smearElectronEnergy](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-smearelectronenergy)**(std::vector< HEPUtils::Particle * > & electrons)<br>Randomly smear the supplied electrons' momenta by parameterised resolutions.  |
-| void | **[smearMuonMomentum](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-smearmuonmomentum)**(std::vector< HEPUtils::Particle * > & muons)<br>Randomly smear the supplied muons' momenta by parameterised resolutions.  |
-| void | **[smearJets](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-smearjets)**(std::vector< HEPUtils::Jet * > & jets)<br>Randomly smear the supplied jets' momenta by parameterised resolutions.  |
-| void | **[smearMET](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-smearmet)**(HEPUtils::P4 & pmiss, double set)<br>Randomly smear the MET vector by parameterised resolutions.  |
-| void | **[smearTaus](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-smeartaus)**(std::vector< HEPUtils::Particle * > & taus)<br>Randomly smear the supplied taus' momenta by parameterised resolutions.  |
-| void | **[applyLooseIDElectronSelectionR2](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-applylooseidelectronselectionr2)**(std::vector< const HEPUtils::Particle * > & electrons) |
-| void | **[applyLooseIDElectronSelectionR2](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-applylooseidelectronselectionr2)**(std::vector< HEPUtils::Particle * > & electrons)<br>Alias to allow non-const particle vectors.  |
-| void | **[applyMediumIDElectronSelectionR2](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-applymediumidelectronselectionr2)**(std::vector< const HEPUtils::Particle * > & electrons) |
-| void | **[applyMediumIDElectronSelectionR2](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-applymediumidelectronselectionr2)**(std::vector< HEPUtils::Particle * > & electrons)<br>Alias to allow non-const particle vectors.  |
-| void | **[applyMediumIDElectronSelection](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-applymediumidelectronselection)**(std::vector< const HEPUtils::Particle * > & electrons) |
-| void | **[applyMediumIDElectronSelection](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-applymediumidelectronselection)**(std::vector< HEPUtils::Particle * > & electrons)<br>Alias to allow non-const particle vectors.  |
-| void | **[applyTightIDElectronSelection](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-applytightidelectronselection)**(std::vector< const HEPUtils::Particle * > & electrons) |
-| void | **[applyTightIDElectronSelection](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-applytightidelectronselection)**(std::vector< HEPUtils::Particle * > & electrons)<br>Alias to allow non-const particle vectors.  |
-| void | **[applyElectronIDEfficiency2019](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-applyelectronidefficiency2019)**(std::vector< const HEPUtils::Particle * > & electrons, str operating_point) |
-| void | **[applyElectronIsolationEfficiency2019](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-applyelectronisolationefficiency2019)**(std::vector< const HEPUtils::Particle * > & electrons, str operating_point) |
+| void | **[applyElectronEff](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-applyelectroneff)**(std::vector< const HEPUtils::Particle * > & electrons) |
+| void | **[applyMuonEff](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-applymuoneff)**(std::vector< const HEPUtils::Particle * > & muons)<br>Randomly filter the supplied particle list by parameterised muon efficiency.  |
+| void | **[applyMuonEffR2](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-applymuoneffr2)**(std::vector< const HEPUtils::Particle * > & muons)<br>Randomly filter the supplied particle list by parameterised muon efficiency.  |
+| void | **[applyTauEfficiencyR1](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-applytauefficiencyr1)**(std::vector< const HEPUtils::Particle * > & taus) |
+| void | **[applyTauEfficiencyR2](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-applytauefficiencyr2)**(std::vector< const HEPUtils::Particle * > & taus) |
+| void | **[applyPhotonEfficiencyR2](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-applyphotonefficiencyr2)**(std::vector< const HEPUtils::Particle * > & photons) |
+| void | **[smearElectronEnergy](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-smearelectronenergy)**(std::vector< HEPUtils::Particle * > & electrons)<br>Randomly smear the supplied electrons' momenta by parameterised resolutions.  |
+| void | **[smearMuonMomentum](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-smearmuonmomentum)**(std::vector< HEPUtils::Particle * > & muons)<br>Randomly smear the supplied muons' momenta by parameterised resolutions.  |
+| void | **[smearJets](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-smearjets)**(std::vector< HEPUtils::Jet * > & jets)<br>Randomly smear the supplied jets' momenta by parameterised resolutions.  |
+| void | **[smearMET](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-smearmet)**(HEPUtils::P4 & pmiss, double set)<br>Randomly smear the MET vector by parameterised resolutions.  |
+| void | **[smearTaus](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-smeartaus)**(std::vector< HEPUtils::Particle * > & taus)<br>Randomly smear the supplied taus' momenta by parameterised resolutions.  |
+| void | **[applyLooseIDElectronSelectionR2](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-applylooseidelectronselectionr2)**(std::vector< const HEPUtils::Particle * > & electrons) |
+| void | **[applyLooseIDElectronSelectionR2](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-applylooseidelectronselectionr2)**(std::vector< HEPUtils::Particle * > & electrons)<br>Alias to allow non-const particle vectors.  |
+| void | **[applyMediumIDElectronSelectionR2](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-applymediumidelectronselectionr2)**(std::vector< const HEPUtils::Particle * > & electrons) |
+| void | **[applyMediumIDElectronSelectionR2](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-applymediumidelectronselectionr2)**(std::vector< HEPUtils::Particle * > & electrons)<br>Alias to allow non-const particle vectors.  |
+| void | **[applyMediumIDElectronSelection](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-applymediumidelectronselection)**(std::vector< const HEPUtils::Particle * > & electrons) |
+| void | **[applyMediumIDElectronSelection](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-applymediumidelectronselection)**(std::vector< HEPUtils::Particle * > & electrons)<br>Alias to allow non-const particle vectors.  |
+| void | **[applyTightIDElectronSelection](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-applytightidelectronselection)**(std::vector< const HEPUtils::Particle * > & electrons) |
+| void | **[applyTightIDElectronSelection](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-applytightidelectronselection)**(std::vector< HEPUtils::Particle * > & electrons)<br>Alias to allow non-const particle vectors.  |
+| void | **[applyElectronIDEfficiency2019](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-applyelectronidefficiency2019)**(std::vector< const HEPUtils::Particle * > & electrons, str operating_point) |
+| void | **[applyElectronIsolationEfficiency2019](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-applyelectronisolationefficiency2019)**(std::vector< const HEPUtils::Particle * > & electrons, str operating_point) |
 
 
 ## Functions Documentation
@@ -102,7 +102,7 @@ inline void applyTauEfficiencyR2(
 **Note**: 
 
   * From Delphes 3.3.2 & ATL-PHYS-PUB-2015-045, 60% for 1-prong, 70% for multi-prong: this is _wrong_!! 
-  * No delete, because this should only ever be applied to copies of the Event Particle* vectors in [Analysis](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1analysis/) routines 
+  * No delete, because this should only ever be applied to copies of the Event Particle* vectors in [Analysis](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1analysis/) routines 
 
 
 Randomly filter the supplied particle list by parameterised Run 2 tau efficiency 
@@ -318,4 +318,4 @@ Electron 2019 Isolation efficiency functions from [https://arxiv.org/pdf/1902.04
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:47 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

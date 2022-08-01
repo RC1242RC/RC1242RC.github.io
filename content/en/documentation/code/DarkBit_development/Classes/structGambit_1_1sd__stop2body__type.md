@@ -18,20 +18,20 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Farray< Fdouble, 1, 4 > | **[brst1neutt](/documentation/code/darkbit_developmentclasses/structgambit_1_1sd__stop2body__type/#variable-brst1neutt)**  |
-| Farray< Fdouble, 1, 4 > | **[brst2neutt](/documentation/code/darkbit_developmentclasses/structgambit_1_1sd__stop2body__type/#variable-brst2neutt)**  |
-| Farray< Fdouble, 1, 2 > | **[brst1charb](/documentation/code/darkbit_developmentclasses/structgambit_1_1sd__stop2body__type/#variable-brst1charb)**  |
-| Farray< Fdouble, 1, 2 > | **[brst1hcsb](/documentation/code/darkbit_developmentclasses/structgambit_1_1sd__stop2body__type/#variable-brst1hcsb)**  |
-| Farray< Fdouble, 1, 2 > | **[brst1wsb](/documentation/code/darkbit_developmentclasses/structgambit_1_1sd__stop2body__type/#variable-brst1wsb)**  |
-| Farray< Fdouble, 1, 2 > | **[brst2charb](/documentation/code/darkbit_developmentclasses/structgambit_1_1sd__stop2body__type/#variable-brst2charb)**  |
-| Farray< Fdouble, 1, 2 > | **[brst2hcsb](/documentation/code/darkbit_developmentclasses/structgambit_1_1sd__stop2body__type/#variable-brst2hcsb)**  |
-| Farray< Fdouble, 1, 2 > | **[brst2wsb](/documentation/code/darkbit_developmentclasses/structgambit_1_1sd__stop2body__type/#variable-brst2wsb)**  |
-| Fdouble | **[brst1glui](/documentation/code/darkbit_developmentclasses/structgambit_1_1sd__stop2body__type/#variable-brst1glui)**  |
-| Fdouble | **[brst2glui](/documentation/code/darkbit_developmentclasses/structgambit_1_1sd__stop2body__type/#variable-brst2glui)**  |
-| Fdouble | **[brst2hl](/documentation/code/darkbit_developmentclasses/structgambit_1_1sd__stop2body__type/#variable-brst2hl)**  |
-| Fdouble | **[brst2hh](/documentation/code/darkbit_developmentclasses/structgambit_1_1sd__stop2body__type/#variable-brst2hh)**  |
-| Fdouble | **[brst2ha](/documentation/code/darkbit_developmentclasses/structgambit_1_1sd__stop2body__type/#variable-brst2ha)**  |
-| Fdouble | **[brst2ztop](/documentation/code/darkbit_developmentclasses/structgambit_1_1sd__stop2body__type/#variable-brst2ztop)**  |
+| Farray< Fdouble, 1, 4 > | **[brst1neutt](/documentation/code/darkbit_development/classes/structgambit_1_1sd__stop2body__type/#variable-brst1neutt)**  |
+| Farray< Fdouble, 1, 4 > | **[brst2neutt](/documentation/code/darkbit_development/classes/structgambit_1_1sd__stop2body__type/#variable-brst2neutt)**  |
+| Farray< Fdouble, 1, 2 > | **[brst1charb](/documentation/code/darkbit_development/classes/structgambit_1_1sd__stop2body__type/#variable-brst1charb)**  |
+| Farray< Fdouble, 1, 2 > | **[brst1hcsb](/documentation/code/darkbit_development/classes/structgambit_1_1sd__stop2body__type/#variable-brst1hcsb)**  |
+| Farray< Fdouble, 1, 2 > | **[brst1wsb](/documentation/code/darkbit_development/classes/structgambit_1_1sd__stop2body__type/#variable-brst1wsb)**  |
+| Farray< Fdouble, 1, 2 > | **[brst2charb](/documentation/code/darkbit_development/classes/structgambit_1_1sd__stop2body__type/#variable-brst2charb)**  |
+| Farray< Fdouble, 1, 2 > | **[brst2hcsb](/documentation/code/darkbit_development/classes/structgambit_1_1sd__stop2body__type/#variable-brst2hcsb)**  |
+| Farray< Fdouble, 1, 2 > | **[brst2wsb](/documentation/code/darkbit_development/classes/structgambit_1_1sd__stop2body__type/#variable-brst2wsb)**  |
+| Fdouble | **[brst1glui](/documentation/code/darkbit_development/classes/structgambit_1_1sd__stop2body__type/#variable-brst1glui)**  |
+| Fdouble | **[brst2glui](/documentation/code/darkbit_development/classes/structgambit_1_1sd__stop2body__type/#variable-brst2glui)**  |
+| Fdouble | **[brst2hl](/documentation/code/darkbit_development/classes/structgambit_1_1sd__stop2body__type/#variable-brst2hl)**  |
+| Fdouble | **[brst2hh](/documentation/code/darkbit_development/classes/structgambit_1_1sd__stop2body__type/#variable-brst2hh)**  |
+| Fdouble | **[brst2ha](/documentation/code/darkbit_development/classes/structgambit_1_1sd__stop2body__type/#variable-brst2ha)**  |
+| Fdouble | **[brst2ztop](/documentation/code/darkbit_development/classes/structgambit_1_1sd__stop2body__type/#variable-brst2ztop)**  |
 
 ## Public Attributes Documentation
 
@@ -135,4 +135,4 @@ Fdouble brst2ztop;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:41 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

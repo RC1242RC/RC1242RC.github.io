@@ -16,14 +16,14 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[MODULE](/documentation/code/gambit_sphinxfiles/susy_8hpp/#define-module)**  |
-|  | **[CAPABILITY](/documentation/code/gambit_sphinxfiles/susy_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/gambit_sphinxfiles/susy_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/gambit_sphinxfiles/susy_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/gambit_sphinxfiles/susy_8hpp/#define-function)**  |
-|  | **[FUNCTION](/documentation/code/gambit_sphinxfiles/susy_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/gambit_sphinxfiles/susy_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/gambit_sphinxfiles/susy_8hpp/#define-function)**  |
+|  | **[MODULE](/documentation/code/gambit_sphinx/files/susy_8hpp/#define-module)**  |
+|  | **[CAPABILITY](/documentation/code/gambit_sphinx/files/susy_8hpp/#define-capability)**  |
+|  | **[FUNCTION](/documentation/code/gambit_sphinx/files/susy_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/gambit_sphinx/files/susy_8hpp/#define-capability)**  |
+|  | **[FUNCTION](/documentation/code/gambit_sphinx/files/susy_8hpp/#define-function)**  |
+|  | **[FUNCTION](/documentation/code/gambit_sphinx/files/susy_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/gambit_sphinx/files/susy_8hpp/#define-capability)**  |
+|  | **[FUNCTION](/documentation/code/gambit_sphinx/files/susy_8hpp/#define-function)**  |
 
 ## Detailed Description
 
@@ -188,4 +188,4 @@ Authors (add name and date if you modify):
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:49 +0000
+Updated on 2022-08-01 at 17:41:23 +0000

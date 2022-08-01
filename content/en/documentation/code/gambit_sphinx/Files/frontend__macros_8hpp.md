@@ -16,19 +16,19 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[BE_FUNCTION_5](/documentation/code/gambit_sphinxfiles/frontend__macros_8hpp/#define-be-function-5)**(NAME, TYPE, ARGSLIST, SYMBOLNAME, CAPABILITY)  |
-|  | **[BE_FUNCTION_6](/documentation/code/gambit_sphinxfiles/frontend__macros_8hpp/#define-be-function-6)**(NAME, TYPE, ARGSLIST, SYMBOLNAME, CAPABILITY, MODELS)  |
-|  | **[BE_FUNCTION_7](/documentation/code/gambit_sphinxfiles/frontend__macros_8hpp/#define-be-function-7)**(NAME, TYPE, ARGSLIST, SYMBOLNAMES, CAPABILITY, MODELS, REF)  |
-|  | **[BE_FUNCTION](/documentation/code/gambit_sphinxfiles/frontend__macros_8hpp/#define-be-function)**(...)  |
-|  | **[BE_FUNCTION_I](/documentation/code/gambit_sphinxfiles/frontend__macros_8hpp/#define-be-function-i)**(NAME, TYPE, ARGLIST, SYMBOLNAME, CAPABILITY, MODELS, REF) <br>Main actual backend function macro.  |
-|  | **[BE_CONV_FUNCTION_FULL](/documentation/code/gambit_sphinxfiles/frontend__macros_8hpp/#define-be-conv-function-full)**(NAME, TYPE, ARGSLIST, CAPABILITY, MODELS, REF)  |
-|  | **[BACKEND_SPECIFIC_COMPILE_UNIT](/documentation/code/gambit_sphinxfiles/frontend__macros_8hpp/#define-backend-specific-compile-unit)** <br>Indicate that this is all occuring in some compile unit other than the main executable.  |
-|  | **[BE_INI_DEPENDENCY](/documentation/code/gambit_sphinxfiles/frontend__macros_8hpp/#define-be-ini-dependency)**(DEP, TYPE) <br>Dependency macro for point-level backend initialisation functions (in BackendIniBit)  |
-|  | **[BE_INI_CONDITIONAL_DEPENDENCY](/documentation/code/gambit_sphinxfiles/frontend__macros_8hpp/#define-be-ini-conditional-dependency)**(DEP, TYPE, ...) <br>Model-conditional dependency macro for point-level backend initialisation functions (in BackendIniBit)  |
-|  | **[BE_ALLOW_MODEL](/documentation/code/gambit_sphinxfiles/frontend__macros_8hpp/#define-be-allow-model)**(MODEL) <br>Macro for assigning a single allowed model to an entire backend.  |
-|  | **[MAKE_INUSE_POINTER](/documentation/code/gambit_sphinxfiles/frontend__macros_8hpp/#define-make-inuse-pointer)**(NAME) <br>Make the inUse pipe for a given backend functor.  |
-|  | **[LOAD_LIBRARY](/documentation/code/gambit_sphinxfiles/frontend__macros_8hpp/#define-load-library)** <br>Macro containing initialization code.  |
-|  | **[BE_VARIABLE_I](/documentation/code/gambit_sphinxfiles/frontend__macros_8hpp/#define-be-variable-i)**(NAME, TYPE, SYMBOLNAME, CAPABILITY, MODELS, REF) <br>Main actual backend variable macro.  |
+|  | **[BE_FUNCTION_5](/documentation/code/gambit_sphinx/files/frontend__macros_8hpp/#define-be-function-5)**(NAME, TYPE, ARGSLIST, SYMBOLNAME, CAPABILITY)  |
+|  | **[BE_FUNCTION_6](/documentation/code/gambit_sphinx/files/frontend__macros_8hpp/#define-be-function-6)**(NAME, TYPE, ARGSLIST, SYMBOLNAME, CAPABILITY, MODELS)  |
+|  | **[BE_FUNCTION_7](/documentation/code/gambit_sphinx/files/frontend__macros_8hpp/#define-be-function-7)**(NAME, TYPE, ARGSLIST, SYMBOLNAMES, CAPABILITY, MODELS, REF)  |
+|  | **[BE_FUNCTION](/documentation/code/gambit_sphinx/files/frontend__macros_8hpp/#define-be-function)**(...)  |
+|  | **[BE_FUNCTION_I](/documentation/code/gambit_sphinx/files/frontend__macros_8hpp/#define-be-function-i)**(NAME, TYPE, ARGLIST, SYMBOLNAME, CAPABILITY, MODELS, REF) <br>Main actual backend function macro.  |
+|  | **[BE_CONV_FUNCTION_FULL](/documentation/code/gambit_sphinx/files/frontend__macros_8hpp/#define-be-conv-function-full)**(NAME, TYPE, ARGSLIST, CAPABILITY, MODELS, REF)  |
+|  | **[BACKEND_SPECIFIC_COMPILE_UNIT](/documentation/code/gambit_sphinx/files/frontend__macros_8hpp/#define-backend-specific-compile-unit)** <br>Indicate that this is all occuring in some compile unit other than the main executable.  |
+|  | **[BE_INI_DEPENDENCY](/documentation/code/gambit_sphinx/files/frontend__macros_8hpp/#define-be-ini-dependency)**(DEP, TYPE) <br>Dependency macro for point-level backend initialisation functions (in BackendIniBit)  |
+|  | **[BE_INI_CONDITIONAL_DEPENDENCY](/documentation/code/gambit_sphinx/files/frontend__macros_8hpp/#define-be-ini-conditional-dependency)**(DEP, TYPE, ...) <br>Model-conditional dependency macro for point-level backend initialisation functions (in BackendIniBit)  |
+|  | **[BE_ALLOW_MODEL](/documentation/code/gambit_sphinx/files/frontend__macros_8hpp/#define-be-allow-model)**(MODEL) <br>Macro for assigning a single allowed model to an entire backend.  |
+|  | **[MAKE_INUSE_POINTER](/documentation/code/gambit_sphinx/files/frontend__macros_8hpp/#define-make-inuse-pointer)**(NAME) <br>Make the inUse pipe for a given backend functor.  |
+|  | **[LOAD_LIBRARY](/documentation/code/gambit_sphinx/files/frontend__macros_8hpp/#define-load-library)** <br>Macro containing initialization code.  |
+|  | **[BE_VARIABLE_I](/documentation/code/gambit_sphinx/files/frontend__macros_8hpp/#define-be-variable-i)**(NAME, TYPE, SYMBOLNAME, CAPABILITY, MODELS, REF) <br>Main actual backend variable macro.  |
 
 ## Detailed Description
 
@@ -442,4 +442,4 @@ namespace Gambit                                                                
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:50 +0000
+Updated on 2022-08-01 at 17:41:25 +0000

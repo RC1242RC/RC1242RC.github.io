@@ -16,18 +16,18 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[G1](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1flavbit_1_1loopfunctions/#function-g1)**(const double x) |
-| double | **[G1](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1flavbit_1_1loopfunctions/#function-g1)**(const double a, const double b, const double c) |
-| double | **[MFVV](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1flavbit_1_1loopfunctions/#function-mfvv)**(const double a, const double b) |
-| double | **[B1](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1flavbit_1_1loopfunctions/#function-b1)**(const double a, const double b, const double Q) |
-| double | **[B0](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1flavbit_1_1loopfunctions/#function-b0)**(const double a, const double b, const double Q) |
-| double | **[C0](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1flavbit_1_1loopfunctions/#function-c0)**(const double a, const double b, const double c) |
-| double | **[C00](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1flavbit_1_1loopfunctions/#function-c00)**(const double a, const double b, const double c, const double Q) |
-| double | **[B02C00C0](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1flavbit_1_1loopfunctions/#function-b02c00c0)**(const double a, const double b, const double c, const double Q) |
-| double | **[D0](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1flavbit_1_1loopfunctions/#function-d0)**(const double a, const double b, const double c, const double d) |
-| double | **[D27](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1flavbit_1_1loopfunctions/#function-d27)**(const double a, const double b, const double c, const double d) |
-| double | **[IC0D0](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1flavbit_1_1loopfunctions/#function-ic0d0)**(const double a, const double b, const double c, const double d) |
-| double | **[E](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1flavbit_1_1loopfunctions/#function-e)**(const double x, const double y) |
+| double | **[G1](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1flavbit_1_1loopfunctions/#function-g1)**(const double x) |
+| double | **[G1](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1flavbit_1_1loopfunctions/#function-g1)**(const double a, const double b, const double c) |
+| double | **[MFVV](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1flavbit_1_1loopfunctions/#function-mfvv)**(const double a, const double b) |
+| double | **[B1](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1flavbit_1_1loopfunctions/#function-b1)**(const double a, const double b, const double Q) |
+| double | **[B0](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1flavbit_1_1loopfunctions/#function-b0)**(const double a, const double b, const double Q) |
+| double | **[C0](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1flavbit_1_1loopfunctions/#function-c0)**(const double a, const double b, const double c) |
+| double | **[C00](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1flavbit_1_1loopfunctions/#function-c00)**(const double a, const double b, const double c, const double Q) |
+| double | **[B02C00C0](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1flavbit_1_1loopfunctions/#function-b02c00c0)**(const double a, const double b, const double c, const double Q) |
+| double | **[D0](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1flavbit_1_1loopfunctions/#function-d0)**(const double a, const double b, const double c, const double d) |
+| double | **[D27](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1flavbit_1_1loopfunctions/#function-d27)**(const double a, const double b, const double c, const double d) |
+| double | **[IC0D0](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1flavbit_1_1loopfunctions/#function-ic0d0)**(const double a, const double b, const double c, const double d) |
+| double | **[E](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1flavbit_1_1loopfunctions/#function-e)**(const double x, const double y) |
 
 
 ## Functions Documentation
@@ -171,4 +171,4 @@ double E(
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:47 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

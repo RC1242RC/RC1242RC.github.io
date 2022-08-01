@@ -18,16 +18,16 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Fdouble | **[hcbrb](/documentation/code/darkbit_developmentclasses/structgambit_1_1widthhc__hdec__type/#variable-hcbrb)**  |
-| Fdouble | **[hcbrl](/documentation/code/darkbit_developmentclasses/structgambit_1_1widthhc__hdec__type/#variable-hcbrl)**  |
-| Fdouble | **[hcbrm](/documentation/code/darkbit_developmentclasses/structgambit_1_1widthhc__hdec__type/#variable-hcbrm)**  |
-| Fdouble | **[hcbrbu](/documentation/code/darkbit_developmentclasses/structgambit_1_1widthhc__hdec__type/#variable-hcbrbu)**  |
-| Fdouble | **[hcbrs](/documentation/code/darkbit_developmentclasses/structgambit_1_1widthhc__hdec__type/#variable-hcbrs)**  |
-| Fdouble | **[hcbrc](/documentation/code/darkbit_developmentclasses/structgambit_1_1widthhc__hdec__type/#variable-hcbrc)**  |
-| Fdouble | **[hcbrt](/documentation/code/darkbit_developmentclasses/structgambit_1_1widthhc__hdec__type/#variable-hcbrt)**  |
-| Fdouble | **[hcbrw](/documentation/code/darkbit_developmentclasses/structgambit_1_1widthhc__hdec__type/#variable-hcbrw)**  |
-| Fdouble | **[hcbra](/documentation/code/darkbit_developmentclasses/structgambit_1_1widthhc__hdec__type/#variable-hcbra)**  |
-| Fdouble | **[hcwdth](/documentation/code/darkbit_developmentclasses/structgambit_1_1widthhc__hdec__type/#variable-hcwdth)**  |
+| Fdouble | **[hcbrb](/documentation/code/darkbit_development/classes/structgambit_1_1widthhc__hdec__type/#variable-hcbrb)**  |
+| Fdouble | **[hcbrl](/documentation/code/darkbit_development/classes/structgambit_1_1widthhc__hdec__type/#variable-hcbrl)**  |
+| Fdouble | **[hcbrm](/documentation/code/darkbit_development/classes/structgambit_1_1widthhc__hdec__type/#variable-hcbrm)**  |
+| Fdouble | **[hcbrbu](/documentation/code/darkbit_development/classes/structgambit_1_1widthhc__hdec__type/#variable-hcbrbu)**  |
+| Fdouble | **[hcbrs](/documentation/code/darkbit_development/classes/structgambit_1_1widthhc__hdec__type/#variable-hcbrs)**  |
+| Fdouble | **[hcbrc](/documentation/code/darkbit_development/classes/structgambit_1_1widthhc__hdec__type/#variable-hcbrc)**  |
+| Fdouble | **[hcbrt](/documentation/code/darkbit_development/classes/structgambit_1_1widthhc__hdec__type/#variable-hcbrt)**  |
+| Fdouble | **[hcbrw](/documentation/code/darkbit_development/classes/structgambit_1_1widthhc__hdec__type/#variable-hcbrw)**  |
+| Fdouble | **[hcbra](/documentation/code/darkbit_development/classes/structgambit_1_1widthhc__hdec__type/#variable-hcbra)**  |
+| Fdouble | **[hcwdth](/documentation/code/darkbit_development/classes/structgambit_1_1widthhc__hdec__type/#variable-hcwdth)**  |
 
 ## Public Attributes Documentation
 
@@ -103,4 +103,4 @@ Fdouble hcwdth;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:41 +0000
+Updated on 2022-08-01 at 17:41:23 +0000

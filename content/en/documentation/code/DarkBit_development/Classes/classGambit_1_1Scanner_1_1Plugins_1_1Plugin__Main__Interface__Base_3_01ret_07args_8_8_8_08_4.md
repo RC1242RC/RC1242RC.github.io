@@ -14,15 +14,15 @@ description: "[No description available]"
 
 [No description available] [More...](#detailed-description)
 
-Inherited by [Gambit::Scanner::Plugins::Plugin_Interface< ret(args...)>](/documentation/code/darkbit_developmentclasses/classgambit_1_1scanner_1_1plugins_1_1plugin__interface_3_01ret_07args_8_8_8_08_4/)
+Inherited by [Gambit::Scanner::Plugins::Plugin_Interface< ret(args...)>](/documentation/code/darkbit_development/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__interface_3_01ret_07args_8_8_8_08_4/)
 
 ## Public Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Plugin_Main_Interface_Base](/documentation/code/darkbit_developmentclasses/classgambit_1_1scanner_1_1plugins_1_1plugin__main__interface__base_3_01ret_07args_8_8_8_08_4/#function-plugin-main-interface-base)**() |
-| int | **[enterMain](/documentation/code/darkbit_developmentclasses/classgambit_1_1scanner_1_1plugins_1_1plugin__main__interface__base_3_01ret_07args_8_8_8_08_4/#function-entermain)**(const std::string & name, const std::map< type_index, void * > & index_map) |
-| ret | **[operator()](/documentation/code/darkbit_developmentclasses/classgambit_1_1scanner_1_1plugins_1_1plugin__main__interface__base_3_01ret_07args_8_8_8_08_4/#function-operator())**(const args &... params) |
+| | **[Plugin_Main_Interface_Base](/documentation/code/darkbit_development/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__main__interface__base_3_01ret_07args_8_8_8_08_4/#function-plugin-main-interface-base)**() |
+| int | **[enterMain](/documentation/code/darkbit_development/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__main__interface__base_3_01ret_07args_8_8_8_08_4/#function-entermain)**(const std::string & name, const std::map< type_index, void * > & index_map) |
+| ret | **[operator()](/documentation/code/darkbit_development/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__main__interface__base_3_01ret_07args_8_8_8_08_4/#function-operator())**(const args &... params) |
 
 ## Detailed Description
 
@@ -62,4 +62,4 @@ inline ret operator()(
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:42 +0000
+Updated on 2022-08-01 at 17:41:24 +0000

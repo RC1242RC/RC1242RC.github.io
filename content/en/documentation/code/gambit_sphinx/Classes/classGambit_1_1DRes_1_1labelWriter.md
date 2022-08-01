@@ -18,8 +18,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[labelWriter](/documentation/code/gambit_sphinxclasses/classgambit_1_1dres_1_1labelwriter/#function-labelwriter)**(const [DRes::MasterGraphType](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1dres/#typedef-mastergraphtype) * masterGraph) |
-| void | **[operator()](/documentation/code/gambit_sphinxclasses/classgambit_1_1dres_1_1labelwriter/#function-operator())**(std::ostream & out, const VertexID & v) const |
+| | **[labelWriter](/documentation/code/gambit_sphinx/classes/classgambit_1_1dres_1_1labelwriter/#function-labelwriter)**(const [DRes::MasterGraphType](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1dres/#typedef-mastergraphtype) * masterGraph) |
+| void | **[operator()](/documentation/code/gambit_sphinx/classes/classgambit_1_1dres_1_1labelwriter/#function-operator())**(std::ostream & out, const VertexID & v) const |
 
 ## Public Functions Documentation
 
@@ -44,4 +44,4 @@ inline void operator()(
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:47 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

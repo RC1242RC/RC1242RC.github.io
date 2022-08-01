@@ -18,11 +18,11 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Fdouble | **[rho0](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__hmcom/#variable-rho0)**  |
-| Fdouble | **[v_sun](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__hmcom/#variable-v-sun)**  |
-| Fdouble | **[r_0](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__hmcom/#variable-r-0)**  |
-| Fdouble | **[v_earth](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__hmcom/#variable-v-earth)**  |
-| Finteger | **[hclumpy](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__hmcom/#variable-hclumpy)**  |
+| Fdouble | **[rho0](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__hmcom/#variable-rho0)**  |
+| Fdouble | **[v_sun](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__hmcom/#variable-v-sun)**  |
+| Fdouble | **[r_0](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__hmcom/#variable-r-0)**  |
+| Fdouble | **[v_earth](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__hmcom/#variable-v-earth)**  |
+| Finteger | **[hclumpy](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__hmcom/#variable-hclumpy)**  |
 
 ## Public Attributes Documentation
 
@@ -63,4 +63,4 @@ Finteger hclumpy;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:46 +0000
+Updated on 2022-08-01 at 17:41:21 +0000

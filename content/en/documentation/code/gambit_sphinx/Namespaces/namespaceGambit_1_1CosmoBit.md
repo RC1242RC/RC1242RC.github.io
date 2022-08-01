@@ -16,103 +16,103 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit::CosmoBit::CosmoBit_utils](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit_1_1cosmobit__utils/)**  |
+| **[Gambit::CosmoBit::CosmoBit_utils](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit_1_1cosmobit__utils/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Gambit::CosmoBit::Parametrised_ps](/documentation/code/gambit_sphinxclasses/classgambit_1_1cosmobit_1_1parametrised__ps/)**  |
-| class | **[Gambit::CosmoBit::Primordial_ps](/documentation/code/gambit_sphinxclasses/classgambit_1_1cosmobit_1_1primordial__ps/)**  |
-| class | **[Gambit::CosmoBit::SM_time_evo](/documentation/code/gambit_sphinxclasses/classgambit_1_1cosmobit_1_1sm__time__evo/)**  |
+| class | **[Gambit::CosmoBit::Parametrised_ps](/documentation/code/gambit_sphinx/classes/classgambit_1_1cosmobit_1_1parametrised__ps/)**  |
+| class | **[Gambit::CosmoBit::Primordial_ps](/documentation/code/gambit_sphinx/classes/classgambit_1_1cosmobit_1_1primordial__ps/)**  |
+| class | **[Gambit::CosmoBit::SM_time_evo](/documentation/code/gambit_sphinx/classes/classgambit_1_1cosmobit_1_1sm__time__evo/)**  |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| error & | **[CosmoBit_error](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-cosmobit-error)**() |
-| warning & | **[CosmoBit_warning](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-cosmobit-warning)**() |
-| void | **[AlterBBN_Input](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-alterbbn-input)**(map_str_dbl & result) |
-| void | **[populate_correlation_matrix](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-populate-correlation-matrix)**(const std::map< std::string, int > & abund_map, std::vector< std::vector< double > > & corr, std::vector< double > & errors, bool has_errors, const Options & runOptions)<br>Check the validity of a correlation matrix for AlterBBN likelihood calculations given in the YAML file, and use it to populate a correlation matrix object.  |
-| void | **[compute_primordial_abundances_BBN](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-compute-primordial-abundances-bbn)**([BBN_container](/documentation/code/gambit_sphinxclasses/classgambit_1_1bbn__container/) & result)<br>Compute elemental abundances from BBN.  |
-| void | **[primordial_abundances](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-primordial-abundances)**([BBN_container](/documentation/code/gambit_sphinxclasses/classgambit_1_1bbn__container/) & result) |
-| void | **[primordial_abundances_decayingDM](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-primordial-abundances-decayingdm)**([BBN_container](/documentation/code/gambit_sphinxclasses/classgambit_1_1bbn__container/) & result) |
-| void | **[extract_helium_abundance](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-extract-helium-abundance)**(double & result)<br>Extract helium-4 abundance from BBN abundance container.  |
-| void | **[compute_BBN_LogLike](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-compute-bbn-loglike)**(double & result)<br>Compute the overall log-likelihood from BBN.  |
-| void | **[class_get_unlensed_Cl_TT](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-class-get-unlensed-cl-tt)**(std::vector< double > & result)<br>Getter functions for CL spectra from classy.  |
-| void | **[class_get_unlensed_Cl_TE](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-class-get-unlensed-cl-te)**(std::vector< double > & result)<br>Temperature & E-mode cross-correlation.  |
-| void | **[class_get_unlensed_Cl_EE](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-class-get-unlensed-cl-ee)**(std::vector< double > & result)<br>E-mode autocorrelation.  |
-| void | **[class_get_unlensed_Cl_BB](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-class-get-unlensed-cl-bb)**(std::vector< double > & result)<br>B-mode autocorrelation.  |
-| void | **[class_get_unlensed_Cl_PhiPhi](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-class-get-unlensed-cl-phiphi)**(std::vector< double > & result)<br>Lensing (Phi) autocorrelation.  |
-| void | **[class_get_lensed_Cl_TT](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-class-get-lensed-cl-tt)**(std::vector< double > & result)<br>Temperature autocorrelation.  |
-| void | **[class_get_lensed_Cl_TE](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-class-get-lensed-cl-te)**(std::vector< double > & result)<br>Temperature & E-mode cross-correlation.  |
-| void | **[class_get_lensed_Cl_EE](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-class-get-lensed-cl-ee)**(std::vector< double > & result)<br>E-mode autocorrelation.  |
-| void | **[class_get_lensed_Cl_BB](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-class-get-lensed-cl-bb)**(std::vector< double > & result)<br>B-mode autocorrelation.  |
-| void | **[class_get_lensed_Cl_PhiPhi](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-class-get-lensed-cl-phiphi)**(std::vector< double > & result)<br>Lensing (Phi) autocorrelation.  |
-| void | **[energy_injection_efficiency_func](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-energy-injection-efficiency-func)**([DarkAges::Energy_injection_efficiency_table](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkages_1_1energy__injection__efficiency__table/) & result)<br>DarkAges ///.  |
-| void | **[f_eff_weighted](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-f-eff-weighted)**(double & result) |
-| void | **[f_eff_at_z](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-f-eff-at-z)**(double & result) |
-| void | **[f_eff_constant](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-f-eff-constant)**(double & result)<br>Manually set the effective energy injection efficiency.  |
-| void | **[p_ann](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-p-ann)**(double & result) |
-| void | **[lnL_p_ann_P18_TTTEEE_lowE_lensing_BAO](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-lnl-p-ann-p18-ttteee-lowe-lensing-bao)**(double & result) |
-| void | **[energy_injection_spectrum_AnnihilatingDM_mixture](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-energy-injection-spectrum-annihilatingdm-mixture)**([DarkAges::Energy_injection_spectrum](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkages_1_1energy__injection__spectrum/) & spectrum)<br>The energy injection spectrum from the AnnihilatingDM model hierarchy.  |
-| void | **[energy_injection_spectrum_DecayingDM_mixture](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-energy-injection-spectrum-decayingdm-mixture)**([DarkAges::Energy_injection_spectrum](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkages_1_1energy__injection__spectrum/) & spectrum)<br>The energy injection spectrum from the DecayingDM model hierarchy.  |
-| void | **[lifetime_ALP_agg](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-lifetime-alp-agg)**(double & result)<br>Lifetime (in s) of an ALP if only the decay a -> g g is open.  |
-| void | **[minimum_abundance_ALP_analytical](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-minimum-abundance-alp-analytical)**(double & result)<br>Compute the abundance of ALPs expected from thermal production via Primakoff processes.  |
-| void | **[minimum_abundance_ALP_numerical](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-minimum-abundance-alp-numerical)**(double & result)<br>Abundance of ALPs expected from thermal production via Primakoff processes as calculated by micrOMEGAs.  |
-| void | **[minimum_fraction_ALP](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-minimum-fraction-alp)**(double & result)<br>Compute the minimal fraction of dark matter in ALPs expected from thermal production via Primakoff processes.  |
-| void | **[DM_fraction_ALP](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-dm-fraction-alp)**(double & result)<br>The fraction of dark matter in decaying ALPs at the time of production.  |
-| void | **[total_DM_abundance_ALP](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-total-dm-abundance-alp)**(double & result) |
-| void | **[compute_dNeff_etaBBN_ALP](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-compute-dneff-etabbn-alp)**(map_str_dbl & result)<br>@TODO function definition needed  |
-| void | **[eta_ratio_ALP](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-eta-ratio-alp)**(double & result) |
-| void | **[Neff_evolution_ALP](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-neff-evolution-alp)**(map_str_dbl & result) |
-| void | **[set_k_pivot](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-set-k-pivot)**(double & result) |
-| void | **[get_Neff_SM](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-get-neff-sm)**(double & result) |
-| void | **[get_mNu_tot](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-get-mnu-tot)**(double & result) |
-| void | **[get_N_ur](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-get-n-ur)**(double & result) |
-| void | **[T_ncdm_SM](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-t-ncdm-sm)**(double & result)<br>Temperature of non-CDM in the (cosmological) SM.  |
-| void | **[T_ncdm](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-t-ncdm)**(double & result)<br>Temperature of non-CDM in non-standard theories.  |
-| void | **[eta0_LCDM](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-eta0-lcdm)**(double & result)<br>Baryon-to-photon ratio (today) in LCDM.  |
-| void | **[compute_Omega0_b](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-compute-omega0-b)**(double & result)<br>The total baryon content today.  |
-| void | **[compute_Omega0_cdm](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-compute-omega0-cdm)**(double & result)<br>The total cold dark matter content today.  |
-| void | **[compute_Omega0_g](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-compute-omega0-g)**(double & result)<br>The total photon content today.  |
-| void | **[compute_n0_g](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-compute-n0-g)**(double & result)<br>Number density of photons today.  |
-| void | **[compute_Omega0_ur](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-compute-omega0-ur)**(double & result)<br>The total ultrarelativistic content today.  |
-| void | **[get_H0_classy](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-get-h0-classy)**(double & result)<br>Hubble.  |
-| void | **[get_H_at_z_classy](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-get-h-at-z-classy)**(daFunk::Funk & result)<br>Functor that calculates Hubble rate at redshift z [km/s/Mpc].  |
-| void | **[get_time_at_z_classy](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-get-time-at-z-classy)**(daFunk::Funk & result)<br>Functor that calculates time since big bang at redshift z [s].  |
-| void | **[get_age_universe_from_time_at_z](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-get-age-universe-from-time-at-z)**(double & result)<br>Age of the universe (time since big bang at z=0) [s].  |
-| void | **[get_Omega0_m_classy](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-get-omega0-m-classy)**(double & result)<br>Energy densities _today_ (Omega0)  |
-| void | **[get_Omega0_r_classy](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-get-omega0-r-classy)**(double & result)<br>Radiation.  |
-| void | **[get_Omega0_ur_classy](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-get-omega0-ur-classy)**(double & result)<br>Ultra-relativistic.  |
-| void | **[get_Omega0_ncdm_classy](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-get-omega0-ncdm-classy)**(double & result)<br>Non-cold dark matter.  |
-| void | **[get_S8_classy](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-get-s8-classy)**(double & result) |
-| void | **[get_Neff_classy](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-get-neff-classy)**(double & result) |
-| void | **[get_tau_reio_classy](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-get-tau-reio-classy)**(double & result)<br>Optical depth at reionisation.  |
-| void | **[get_z_reio_classy](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-get-z-reio-classy)**(double & result)<br>redshift of reionisation  |
-| void | **[get_rs_drag_classy](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-get-rs-drag-classy)**(double & result)<br>Comoving sound horizon at baryon drag epoch.  |
-| std::string | **[multimode_error_handling](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-multimode-error-handling)**(int & err)<br>Helper function for diagnosing MultiModeCode errors.  |
-| void | **[set_multimode_inputs](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-set-multimode-inputs)**([Multimode_inputs](/documentation/code/gambit_sphinxclasses/classgambit_1_1multimode__inputs/) & result) |
-| void | **[get_multimode_primordial_ps](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-get-multimode-primordial-ps)**([Primordial_ps](/documentation/code/gambit_sphinxclasses/classgambit_1_1cosmobit_1_1primordial__ps/) & result) |
-| void | **[get_multimode_parametrised_ps](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-get-multimode-parametrised-ps)**(ModelParameters & result) |
-| void | **[compute_Planck_nuisance_prior_loglike](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-compute-planck-nuisance-prior-loglike)**(double & result) |
-| void | **[compute_Planck_sz_prior](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-compute-planck-sz-prior)**(double & result) |
-| void | **[function_Planck_lowl_TT_2018_loglike](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-function-planck-lowl-tt-2018-loglike)**(double & result)<br>Low-l TT likelihood (PR3 - 2018)  |
-| void | **[function_Planck_lowl_EE_2018_loglike](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-function-planck-lowl-ee-2018-loglike)**(double & result)<br>Low-l E-mode polarisation likelihood (PR3 - 2018)  |
-| void | **[function_Planck_lowl_TTEE_2018_loglike](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-function-planck-lowl-ttee-2018-loglike)**(double & result)<br>Combined low-l TT and and E-mode polarisation likelihood (PR3 - 2018)  |
-| void | **[function_Planck_highl_TT_2018_loglike](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-function-planck-highl-tt-2018-loglike)**(double & result)<br>High-l TT likelihood (PR3 - 2018)  |
-| void | **[function_Planck_highl_TT_lite_2018_loglike](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-function-planck-highl-tt-lite-2018-loglike)**(double & result)<br>Marginalised version of the high-l TT likelihood (PR3 - 2018)  |
-| void | **[function_Planck_highl_TTTEEE_2018_loglike](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-function-planck-highl-ttteee-2018-loglike)**(double & result)<br>High-l TT and polarisation likelihood (PR3 - 2018)  |
-| void | **[function_Planck_highl_TTTEEE_lite_2018_loglike](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-function-planck-highl-ttteee-lite-2018-loglike)**(double & result)<br>Marginalised version of the high-l TT and polarisation likelihood (PR3 - 2018)  |
-| void | **[function_Planck_lensing_2018_loglike](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-function-planck-lensing-2018-loglike)**(double & result)<br>Lensing likelihood (PR3 - 2018)  |
-| void | **[function_Planck_lensing_marged_2018_loglike](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-function-planck-lensing-marged-2018-loglike)**(double & result)<br>Lensing Likelihood (marginalised over reference spectra for TT,EE, etc.) (PR3 - 2018)  |
-| void | **[function_Planck_lowl_TT_2015_loglike](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-function-planck-lowl-tt-2015-loglike)**(double & result)<br>Low-l TT likelihood (PR2 - 2015)  |
-| void | **[function_Planck_lowl_TEB_2015_loglike](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-function-planck-lowl-teb-2015-loglike)**(double & result)<br>Low-l polarisation likelihood (PR2 - 2015)  |
-| void | **[function_Planck_highl_TT_2015_loglike](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-function-planck-highl-tt-2015-loglike)**(double & result)<br>High-l TT likelihood (PR2 - 2015)  |
-| void | **[function_Planck_highl_TT_lite_2015_loglike](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-function-planck-highl-tt-lite-2015-loglike)**(double & result)<br>Marginalised version of high-l TT likelihood (PR2 - 2015)  |
-| void | **[function_Planck_highl_TTTEEE_2015_loglike](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-function-planck-highl-ttteee-2015-loglike)**(double & result)<br>High-l TT and polarisation likelihood (PR2 - 2015)  |
-| void | **[function_Planck_highl_TTTEEE_lite_2015_loglike](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-function-planck-highl-ttteee-lite-2015-loglike)**(double & result)<br>Marginalised version of high-l TT and polarisation likelihood (PR2 - 2015)  |
-| void | **[function_Planck_lensing_2015_loglike](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1cosmobit/#function-function-planck-lensing-2015-loglike)**(double & result)<br>Lensing likelihood (PR2 - 2015)  |
+| error & | **[CosmoBit_error](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-cosmobit-error)**() |
+| warning & | **[CosmoBit_warning](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-cosmobit-warning)**() |
+| void | **[AlterBBN_Input](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-alterbbn-input)**(map_str_dbl & result) |
+| void | **[populate_correlation_matrix](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-populate-correlation-matrix)**(const std::map< std::string, int > & abund_map, std::vector< std::vector< double > > & corr, std::vector< double > & errors, bool has_errors, const Options & runOptions)<br>Check the validity of a correlation matrix for AlterBBN likelihood calculations given in the YAML file, and use it to populate a correlation matrix object.  |
+| void | **[compute_primordial_abundances_BBN](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-compute-primordial-abundances-bbn)**([BBN_container](/documentation/code/gambit_sphinx/classes/classgambit_1_1bbn__container/) & result)<br>Compute elemental abundances from BBN.  |
+| void | **[primordial_abundances](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-primordial-abundances)**([BBN_container](/documentation/code/gambit_sphinx/classes/classgambit_1_1bbn__container/) & result) |
+| void | **[primordial_abundances_decayingDM](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-primordial-abundances-decayingdm)**([BBN_container](/documentation/code/gambit_sphinx/classes/classgambit_1_1bbn__container/) & result) |
+| void | **[extract_helium_abundance](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-extract-helium-abundance)**(double & result)<br>Extract helium-4 abundance from BBN abundance container.  |
+| void | **[compute_BBN_LogLike](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-compute-bbn-loglike)**(double & result)<br>Compute the overall log-likelihood from BBN.  |
+| void | **[class_get_unlensed_Cl_TT](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-class-get-unlensed-cl-tt)**(std::vector< double > & result)<br>Getter functions for CL spectra from classy.  |
+| void | **[class_get_unlensed_Cl_TE](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-class-get-unlensed-cl-te)**(std::vector< double > & result)<br>Temperature & E-mode cross-correlation.  |
+| void | **[class_get_unlensed_Cl_EE](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-class-get-unlensed-cl-ee)**(std::vector< double > & result)<br>E-mode autocorrelation.  |
+| void | **[class_get_unlensed_Cl_BB](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-class-get-unlensed-cl-bb)**(std::vector< double > & result)<br>B-mode autocorrelation.  |
+| void | **[class_get_unlensed_Cl_PhiPhi](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-class-get-unlensed-cl-phiphi)**(std::vector< double > & result)<br>Lensing (Phi) autocorrelation.  |
+| void | **[class_get_lensed_Cl_TT](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-class-get-lensed-cl-tt)**(std::vector< double > & result)<br>Temperature autocorrelation.  |
+| void | **[class_get_lensed_Cl_TE](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-class-get-lensed-cl-te)**(std::vector< double > & result)<br>Temperature & E-mode cross-correlation.  |
+| void | **[class_get_lensed_Cl_EE](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-class-get-lensed-cl-ee)**(std::vector< double > & result)<br>E-mode autocorrelation.  |
+| void | **[class_get_lensed_Cl_BB](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-class-get-lensed-cl-bb)**(std::vector< double > & result)<br>B-mode autocorrelation.  |
+| void | **[class_get_lensed_Cl_PhiPhi](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-class-get-lensed-cl-phiphi)**(std::vector< double > & result)<br>Lensing (Phi) autocorrelation.  |
+| void | **[energy_injection_efficiency_func](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-energy-injection-efficiency-func)**([DarkAges::Energy_injection_efficiency_table](/documentation/code/gambit_sphinx/classes/structgambit_1_1darkages_1_1energy__injection__efficiency__table/) & result)<br>DarkAges ///.  |
+| void | **[f_eff_weighted](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-f-eff-weighted)**(double & result) |
+| void | **[f_eff_at_z](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-f-eff-at-z)**(double & result) |
+| void | **[f_eff_constant](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-f-eff-constant)**(double & result)<br>Manually set the effective energy injection efficiency.  |
+| void | **[p_ann](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-p-ann)**(double & result) |
+| void | **[lnL_p_ann_P18_TTTEEE_lowE_lensing_BAO](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-lnl-p-ann-p18-ttteee-lowe-lensing-bao)**(double & result) |
+| void | **[energy_injection_spectrum_AnnihilatingDM_mixture](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-energy-injection-spectrum-annihilatingdm-mixture)**([DarkAges::Energy_injection_spectrum](/documentation/code/gambit_sphinx/classes/structgambit_1_1darkages_1_1energy__injection__spectrum/) & spectrum)<br>The energy injection spectrum from the AnnihilatingDM model hierarchy.  |
+| void | **[energy_injection_spectrum_DecayingDM_mixture](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-energy-injection-spectrum-decayingdm-mixture)**([DarkAges::Energy_injection_spectrum](/documentation/code/gambit_sphinx/classes/structgambit_1_1darkages_1_1energy__injection__spectrum/) & spectrum)<br>The energy injection spectrum from the DecayingDM model hierarchy.  |
+| void | **[lifetime_ALP_agg](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-lifetime-alp-agg)**(double & result)<br>Lifetime (in s) of an ALP if only the decay a -> g g is open.  |
+| void | **[minimum_abundance_ALP_analytical](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-minimum-abundance-alp-analytical)**(double & result)<br>Compute the abundance of ALPs expected from thermal production via Primakoff processes.  |
+| void | **[minimum_abundance_ALP_numerical](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-minimum-abundance-alp-numerical)**(double & result)<br>Abundance of ALPs expected from thermal production via Primakoff processes as calculated by micrOMEGAs.  |
+| void | **[minimum_fraction_ALP](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-minimum-fraction-alp)**(double & result)<br>Compute the minimal fraction of dark matter in ALPs expected from thermal production via Primakoff processes.  |
+| void | **[DM_fraction_ALP](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-dm-fraction-alp)**(double & result)<br>The fraction of dark matter in decaying ALPs at the time of production.  |
+| void | **[total_DM_abundance_ALP](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-total-dm-abundance-alp)**(double & result) |
+| void | **[compute_dNeff_etaBBN_ALP](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-compute-dneff-etabbn-alp)**(map_str_dbl & result)<br>@TODO function definition needed  |
+| void | **[eta_ratio_ALP](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-eta-ratio-alp)**(double & result) |
+| void | **[Neff_evolution_ALP](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-neff-evolution-alp)**(map_str_dbl & result) |
+| void | **[set_k_pivot](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-set-k-pivot)**(double & result) |
+| void | **[get_Neff_SM](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-get-neff-sm)**(double & result) |
+| void | **[get_mNu_tot](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-get-mnu-tot)**(double & result) |
+| void | **[get_N_ur](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-get-n-ur)**(double & result) |
+| void | **[T_ncdm_SM](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-t-ncdm-sm)**(double & result)<br>Temperature of non-CDM in the (cosmological) SM.  |
+| void | **[T_ncdm](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-t-ncdm)**(double & result)<br>Temperature of non-CDM in non-standard theories.  |
+| void | **[eta0_LCDM](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-eta0-lcdm)**(double & result)<br>Baryon-to-photon ratio (today) in LCDM.  |
+| void | **[compute_Omega0_b](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-compute-omega0-b)**(double & result)<br>The total baryon content today.  |
+| void | **[compute_Omega0_cdm](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-compute-omega0-cdm)**(double & result)<br>The total cold dark matter content today.  |
+| void | **[compute_Omega0_g](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-compute-omega0-g)**(double & result)<br>The total photon content today.  |
+| void | **[compute_n0_g](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-compute-n0-g)**(double & result)<br>Number density of photons today.  |
+| void | **[compute_Omega0_ur](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-compute-omega0-ur)**(double & result)<br>The total ultrarelativistic content today.  |
+| void | **[get_H0_classy](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-get-h0-classy)**(double & result)<br>Hubble.  |
+| void | **[get_H_at_z_classy](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-get-h-at-z-classy)**(daFunk::Funk & result)<br>Functor that calculates Hubble rate at redshift z [km/s/Mpc].  |
+| void | **[get_time_at_z_classy](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-get-time-at-z-classy)**(daFunk::Funk & result)<br>Functor that calculates time since big bang at redshift z [s].  |
+| void | **[get_age_universe_from_time_at_z](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-get-age-universe-from-time-at-z)**(double & result)<br>Age of the universe (time since big bang at z=0) [s].  |
+| void | **[get_Omega0_m_classy](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-get-omega0-m-classy)**(double & result)<br>Energy densities _today_ (Omega0)  |
+| void | **[get_Omega0_r_classy](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-get-omega0-r-classy)**(double & result)<br>Radiation.  |
+| void | **[get_Omega0_ur_classy](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-get-omega0-ur-classy)**(double & result)<br>Ultra-relativistic.  |
+| void | **[get_Omega0_ncdm_classy](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-get-omega0-ncdm-classy)**(double & result)<br>Non-cold dark matter.  |
+| void | **[get_S8_classy](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-get-s8-classy)**(double & result) |
+| void | **[get_Neff_classy](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-get-neff-classy)**(double & result) |
+| void | **[get_tau_reio_classy](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-get-tau-reio-classy)**(double & result)<br>Optical depth at reionisation.  |
+| void | **[get_z_reio_classy](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-get-z-reio-classy)**(double & result)<br>redshift of reionisation  |
+| void | **[get_rs_drag_classy](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-get-rs-drag-classy)**(double & result)<br>Comoving sound horizon at baryon drag epoch.  |
+| std::string | **[multimode_error_handling](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-multimode-error-handling)**(int & err)<br>Helper function for diagnosing MultiModeCode errors.  |
+| void | **[set_multimode_inputs](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-set-multimode-inputs)**([Multimode_inputs](/documentation/code/gambit_sphinx/classes/classgambit_1_1multimode__inputs/) & result) |
+| void | **[get_multimode_primordial_ps](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-get-multimode-primordial-ps)**([Primordial_ps](/documentation/code/gambit_sphinx/classes/classgambit_1_1cosmobit_1_1primordial__ps/) & result) |
+| void | **[get_multimode_parametrised_ps](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-get-multimode-parametrised-ps)**(ModelParameters & result) |
+| void | **[compute_Planck_nuisance_prior_loglike](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-compute-planck-nuisance-prior-loglike)**(double & result) |
+| void | **[compute_Planck_sz_prior](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-compute-planck-sz-prior)**(double & result) |
+| void | **[function_Planck_lowl_TT_2018_loglike](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-function-planck-lowl-tt-2018-loglike)**(double & result)<br>Low-l TT likelihood (PR3 - 2018)  |
+| void | **[function_Planck_lowl_EE_2018_loglike](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-function-planck-lowl-ee-2018-loglike)**(double & result)<br>Low-l E-mode polarisation likelihood (PR3 - 2018)  |
+| void | **[function_Planck_lowl_TTEE_2018_loglike](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-function-planck-lowl-ttee-2018-loglike)**(double & result)<br>Combined low-l TT and and E-mode polarisation likelihood (PR3 - 2018)  |
+| void | **[function_Planck_highl_TT_2018_loglike](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-function-planck-highl-tt-2018-loglike)**(double & result)<br>High-l TT likelihood (PR3 - 2018)  |
+| void | **[function_Planck_highl_TT_lite_2018_loglike](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-function-planck-highl-tt-lite-2018-loglike)**(double & result)<br>Marginalised version of the high-l TT likelihood (PR3 - 2018)  |
+| void | **[function_Planck_highl_TTTEEE_2018_loglike](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-function-planck-highl-ttteee-2018-loglike)**(double & result)<br>High-l TT and polarisation likelihood (PR3 - 2018)  |
+| void | **[function_Planck_highl_TTTEEE_lite_2018_loglike](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-function-planck-highl-ttteee-lite-2018-loglike)**(double & result)<br>Marginalised version of the high-l TT and polarisation likelihood (PR3 - 2018)  |
+| void | **[function_Planck_lensing_2018_loglike](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-function-planck-lensing-2018-loglike)**(double & result)<br>Lensing likelihood (PR3 - 2018)  |
+| void | **[function_Planck_lensing_marged_2018_loglike](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-function-planck-lensing-marged-2018-loglike)**(double & result)<br>Lensing Likelihood (marginalised over reference spectra for TT,EE, etc.) (PR3 - 2018)  |
+| void | **[function_Planck_lowl_TT_2015_loglike](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-function-planck-lowl-tt-2015-loglike)**(double & result)<br>Low-l TT likelihood (PR2 - 2015)  |
+| void | **[function_Planck_lowl_TEB_2015_loglike](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-function-planck-lowl-teb-2015-loglike)**(double & result)<br>Low-l polarisation likelihood (PR2 - 2015)  |
+| void | **[function_Planck_highl_TT_2015_loglike](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-function-planck-highl-tt-2015-loglike)**(double & result)<br>High-l TT likelihood (PR2 - 2015)  |
+| void | **[function_Planck_highl_TT_lite_2015_loglike](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-function-planck-highl-tt-lite-2015-loglike)**(double & result)<br>Marginalised version of high-l TT likelihood (PR2 - 2015)  |
+| void | **[function_Planck_highl_TTTEEE_2015_loglike](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-function-planck-highl-ttteee-2015-loglike)**(double & result)<br>High-l TT and polarisation likelihood (PR2 - 2015)  |
+| void | **[function_Planck_highl_TTTEEE_lite_2015_loglike](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-function-planck-highl-ttteee-lite-2015-loglike)**(double & result)<br>Marginalised version of high-l TT and polarisation likelihood (PR2 - 2015)  |
+| void | **[function_Planck_lensing_2015_loglike](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1cosmobit/#function-function-planck-lensing-2015-loglike)**(double & result)<br>Lensing likelihood (PR2 - 2015)  |
 
 
 ## Functions Documentation
@@ -990,4 +990,4 @@ Lensing likelihood (PR2 - 2015)
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:47 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

@@ -18,9 +18,9 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[ma0](/documentation/code/darkbit_developmentclasses/structgambit_1_1darkbit_1_1solarmodel__params4/#variable-ma0)**  |
-| [AxionInterpolator](/documentation/code/darkbit_developmentclasses/classgambit_1_1darkbit_1_1axioninterpolator/) * | **[eff_exp](/documentation/code/darkbit_developmentclasses/structgambit_1_1darkbit_1_1solarmodel__params4/#variable-eff-exp)**  |
-| [AxionInterpolator](/documentation/code/darkbit_developmentclasses/classgambit_1_1darkbit_1_1axioninterpolator/) * | **[gaee_flux](/documentation/code/darkbit_developmentclasses/structgambit_1_1darkbit_1_1solarmodel__params4/#variable-gaee-flux)**  |
+| double | **[ma0](/documentation/code/darkbit_development/classes/structgambit_1_1darkbit_1_1solarmodel__params4/#variable-ma0)**  |
+| [AxionInterpolator](/documentation/code/darkbit_development/classes/classgambit_1_1darkbit_1_1axioninterpolator/) * | **[eff_exp](/documentation/code/darkbit_development/classes/structgambit_1_1darkbit_1_1solarmodel__params4/#variable-eff-exp)**  |
+| [AxionInterpolator](/documentation/code/darkbit_development/classes/classgambit_1_1darkbit_1_1axioninterpolator/) * | **[gaee_flux](/documentation/code/darkbit_development/classes/structgambit_1_1darkbit_1_1solarmodel__params4/#variable-gaee-flux)**  |
 
 ## Public Attributes Documentation
 
@@ -47,4 +47,4 @@ AxionInterpolator * gaee_flux;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:42 +0000
+Updated on 2022-08-01 at 17:41:23 +0000

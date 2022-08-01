@@ -16,7 +16,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| int | **[main](/documentation/code/gambit_sphinxfiles/scanlibs_8cpp/#function-main)**(int argc, char * argv[]) |
+| int | **[main](/documentation/code/gambit_sphinx/files/scanlibs_8cpp/#function-main)**(int argc, char * argv[]) |
 
 ## Detailed Description
 
@@ -167,4 +167,4 @@ int main(int argc, char *argv[])
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:48 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

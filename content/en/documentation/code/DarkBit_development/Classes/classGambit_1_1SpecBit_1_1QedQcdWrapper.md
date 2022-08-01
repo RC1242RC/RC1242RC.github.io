@@ -20,33 +20,33 @@ Inherits from Spec< QedQcdWrapper >
 
 |                | Name           |
 | -------------- | -------------- |
-| virtual double | **[hard_upper](/documentation/code/darkbit_developmentclasses/classgambit_1_1specbit_1_1qedqcdwrapper/#function-hard-upper)**() const |
-| virtual double | **[soft_upper](/documentation/code/darkbit_developmentclasses/classgambit_1_1specbit_1_1qedqcdwrapper/#function-soft-upper)**() const |
-| virtual double | **[soft_lower](/documentation/code/darkbit_developmentclasses/classgambit_1_1specbit_1_1qedqcdwrapper/#function-soft-lower)**() const |
-| virtual double | **[hard_lower](/documentation/code/darkbit_developmentclasses/classgambit_1_1specbit_1_1qedqcdwrapper/#function-hard-lower)**() const |
-| | **[QedQcdWrapper](/documentation/code/darkbit_developmentclasses/classgambit_1_1specbit_1_1qedqcdwrapper/#function-qedqcdwrapper)**()<br>[QedQcdWrapper](/documentation/code/darkbit_developmentclasses/classgambit_1_1specbit_1_1qedqcdwrapper/) member functions.  |
-| | **[QedQcdWrapper](/documentation/code/darkbit_developmentclasses/classgambit_1_1specbit_1_1qedqcdwrapper/#function-qedqcdwrapper)**(const softsusy::QedQcd & model, const SMInputs & input) |
-| virtual int | **[get_numbers_stable_particles](/documentation/code/darkbit_developmentclasses/classgambit_1_1specbit_1_1qedqcdwrapper/#function-get-numbers-stable-particles)**() const |
-| GetterMaps | **[fill_getter_maps](/documentation/code/darkbit_developmentclasses/classgambit_1_1specbit_1_1qedqcdwrapper/#function-fill-getter-maps)**()<br>Map fillers.  |
-| SetterMaps | **[fill_setter_maps](/documentation/code/darkbit_developmentclasses/classgambit_1_1specbit_1_1qedqcdwrapper/#function-fill-setter-maps)**() |
-| virtual | **[~QedQcdWrapper](/documentation/code/darkbit_developmentclasses/classgambit_1_1specbit_1_1qedqcdwrapper/#function-~qedqcdwrapper)**()<br>Destructor.  |
-| Model & | **[get_Model](/documentation/code/darkbit_developmentclasses/classgambit_1_1specbit_1_1qedqcdwrapper/#function-get-model)**() |
-| Input & | **[get_Input](/documentation/code/darkbit_developmentclasses/classgambit_1_1specbit_1_1qedqcdwrapper/#function-get-input)**() |
-| const Model & | **[get_Model](/documentation/code/darkbit_developmentclasses/classgambit_1_1specbit_1_1qedqcdwrapper/#function-get-model)**() const |
-| const Input & | **[get_Input](/documentation/code/darkbit_developmentclasses/classgambit_1_1specbit_1_1qedqcdwrapper/#function-get-input)**() const |
-| virtual void | **[add_to_SLHAea](/documentation/code/darkbit_developmentclasses/classgambit_1_1specbit_1_1qedqcdwrapper/#function-add-to-slhaea)**(int , SLHAstruct & slha) const<br>Add QEDQCD information to an SLHAea object.  |
-| virtual double | **[GetScale](/documentation/code/darkbit_developmentclasses/classgambit_1_1specbit_1_1qedqcdwrapper/#function-getscale)**() const<br>RunningPars interface overrides.  |
-| virtual void | **[SetScale](/documentation/code/darkbit_developmentclasses/classgambit_1_1specbit_1_1qedqcdwrapper/#function-setscale)**(double scale)<br>Manually define the current renormalisation scale (do this at own risk!)  |
-| virtual void | **[RunToScaleOverride](/documentation/code/darkbit_developmentclasses/classgambit_1_1specbit_1_1qedqcdwrapper/#function-runtoscaleoverride)**(double end_scale)<br>Run masses and couplings to end_scale.  |
+| virtual double | **[hard_upper](/documentation/code/darkbit_development/classes/classgambit_1_1specbit_1_1qedqcdwrapper/#function-hard-upper)**() const |
+| virtual double | **[soft_upper](/documentation/code/darkbit_development/classes/classgambit_1_1specbit_1_1qedqcdwrapper/#function-soft-upper)**() const |
+| virtual double | **[soft_lower](/documentation/code/darkbit_development/classes/classgambit_1_1specbit_1_1qedqcdwrapper/#function-soft-lower)**() const |
+| virtual double | **[hard_lower](/documentation/code/darkbit_development/classes/classgambit_1_1specbit_1_1qedqcdwrapper/#function-hard-lower)**() const |
+| | **[QedQcdWrapper](/documentation/code/darkbit_development/classes/classgambit_1_1specbit_1_1qedqcdwrapper/#function-qedqcdwrapper)**()<br>[QedQcdWrapper](/documentation/code/darkbit_development/classes/classgambit_1_1specbit_1_1qedqcdwrapper/) member functions.  |
+| | **[QedQcdWrapper](/documentation/code/darkbit_development/classes/classgambit_1_1specbit_1_1qedqcdwrapper/#function-qedqcdwrapper)**(const softsusy::QedQcd & model, const SMInputs & input) |
+| virtual int | **[get_numbers_stable_particles](/documentation/code/darkbit_development/classes/classgambit_1_1specbit_1_1qedqcdwrapper/#function-get-numbers-stable-particles)**() const |
+| GetterMaps | **[fill_getter_maps](/documentation/code/darkbit_development/classes/classgambit_1_1specbit_1_1qedqcdwrapper/#function-fill-getter-maps)**()<br>Map fillers.  |
+| SetterMaps | **[fill_setter_maps](/documentation/code/darkbit_development/classes/classgambit_1_1specbit_1_1qedqcdwrapper/#function-fill-setter-maps)**() |
+| virtual | **[~QedQcdWrapper](/documentation/code/darkbit_development/classes/classgambit_1_1specbit_1_1qedqcdwrapper/#function-~qedqcdwrapper)**()<br>Destructor.  |
+| Model & | **[get_Model](/documentation/code/darkbit_development/classes/classgambit_1_1specbit_1_1qedqcdwrapper/#function-get-model)**() |
+| Input & | **[get_Input](/documentation/code/darkbit_development/classes/classgambit_1_1specbit_1_1qedqcdwrapper/#function-get-input)**() |
+| const Model & | **[get_Model](/documentation/code/darkbit_development/classes/classgambit_1_1specbit_1_1qedqcdwrapper/#function-get-model)**() const |
+| const Input & | **[get_Input](/documentation/code/darkbit_development/classes/classgambit_1_1specbit_1_1qedqcdwrapper/#function-get-input)**() const |
+| virtual void | **[add_to_SLHAea](/documentation/code/darkbit_development/classes/classgambit_1_1specbit_1_1qedqcdwrapper/#function-add-to-slhaea)**(int , SLHAstruct & slha) const<br>Add QEDQCD information to an SLHAea object.  |
+| virtual double | **[GetScale](/documentation/code/darkbit_development/classes/classgambit_1_1specbit_1_1qedqcdwrapper/#function-getscale)**() const<br>RunningPars interface overrides.  |
+| virtual void | **[SetScale](/documentation/code/darkbit_development/classes/classgambit_1_1specbit_1_1qedqcdwrapper/#function-setscale)**(double scale)<br>Manually define the current renormalisation scale (do this at own risk!)  |
+| virtual void | **[RunToScaleOverride](/documentation/code/darkbit_development/classes/classgambit_1_1specbit_1_1qedqcdwrapper/#function-runtoscaleoverride)**(double end_scale)<br>Run masses and couplings to end_scale.  |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[hardup](/documentation/code/darkbit_developmentclasses/classgambit_1_1specbit_1_1qedqcdwrapper/#variable-hardup)**  |
-| double | **[softup](/documentation/code/darkbit_developmentclasses/classgambit_1_1specbit_1_1qedqcdwrapper/#variable-softup)**  |
-| double | **[softlow](/documentation/code/darkbit_developmentclasses/classgambit_1_1specbit_1_1qedqcdwrapper/#variable-softlow)**  |
-| double | **[hardlow](/documentation/code/darkbit_developmentclasses/classgambit_1_1specbit_1_1qedqcdwrapper/#variable-hardlow)**  |
+| double | **[hardup](/documentation/code/darkbit_development/classes/classgambit_1_1specbit_1_1qedqcdwrapper/#variable-hardup)**  |
+| double | **[softup](/documentation/code/darkbit_development/classes/classgambit_1_1specbit_1_1qedqcdwrapper/#variable-softup)**  |
+| double | **[softlow](/documentation/code/darkbit_development/classes/classgambit_1_1specbit_1_1qedqcdwrapper/#variable-softlow)**  |
+| double | **[hardlow](/documentation/code/darkbit_development/classes/classgambit_1_1specbit_1_1qedqcdwrapper/#variable-hardlow)**  |
 
 ## Public Functions Documentation
 
@@ -84,7 +84,7 @@ inline virtual double hard_lower() const
 QedQcdWrapper()
 ```
 
-[QedQcdWrapper](/documentation/code/darkbit_developmentclasses/classgambit_1_1specbit_1_1qedqcdwrapper/) member functions. 
+[QedQcdWrapper](/documentation/code/darkbit_development/classes/classgambit_1_1specbit_1_1qedqcdwrapper/) member functions. 
 
 Constructors 
 
@@ -248,4 +248,4 @@ double hardlow;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:42 +0000
+Updated on 2022-08-01 at 17:41:24 +0000

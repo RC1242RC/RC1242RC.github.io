@@ -16,13 +16,13 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[Gambit::Diver_1_0_4::diverScanData](/documentation/code/gambit_sphinxclasses/structgambit_1_1diver__1__0__4_1_1diverscandata/)** <br>Structure for passing likelihood and printer data through Diver to the objective function.  |
+| struct | **[Gambit::Diver_1_0_4::diverScanData](/documentation/code/gambit_sphinx/classes/structgambit_1_1diver__1__0__4_1_1diverscandata/)** <br>Structure for passing likelihood and printer data through Diver to the objective function.  |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[objective](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1diver__1__0__4/#function-objective)**(double params[], const int param_dim, int & fcall, bool & quit, const bool validvector, void *& context)<br>Function to be minimised by Diver.  |
+| double | **[objective](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1diver__1__0__4/#function-objective)**(double params[], const int param_dim, int & fcall, bool & quit, const bool validvector, void *& context)<br>Function to be minimised by Diver.  |
 
 
 ## Functions Documentation
@@ -48,4 +48,4 @@ Function to be minimised by Diver.
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:47 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

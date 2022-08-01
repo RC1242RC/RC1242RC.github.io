@@ -16,7 +16,7 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[cbgb](/documentation/code/gambit_sphinxnamespaces/namespacecbgb/)**  |
+| **[cbgb](/documentation/code/gambit_sphinx/namespaces/namespacecbgb/)**  |
 
 
 
@@ -479,4 +479,4 @@ print
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:51 +0000
+Updated on 2022-08-01 at 17:41:25 +0000

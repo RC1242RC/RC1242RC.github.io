@@ -18,21 +18,21 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[vec3](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1decaychain_1_1vec3/#function-vec3)**() |
-| | **[vec3](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1decaychain_1_1vec3/#function-vec3)**(double v0, double v1, double v2) |
-| | **[vec3](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1decaychain_1_1vec3/#function-vec3)**(double v0) |
-| double | **[length](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1decaychain_1_1vec3/#function-length)**() const |
-| void | **[normalize](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1decaychain_1_1vec3/#function-normalize)**() |
-| void | **[normalize](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1decaychain_1_1vec3/#function-normalize)**(const double len) |
-| double & | **[operator[]](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1decaychain_1_1vec3/#function-operator[])**(int i) |
-| double | **[operator[]](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1decaychain_1_1vec3/#function-operator[])**(int i) const |
-| [vec3](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1decaychain_1_1vec3/) | **[operator-](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1decaychain_1_1vec3/#function-operator-)**() const |
+| | **[vec3](/documentation/code/gambit_sphinx/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec3/#function-vec3)**() |
+| | **[vec3](/documentation/code/gambit_sphinx/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec3/#function-vec3)**(double v0, double v1, double v2) |
+| | **[vec3](/documentation/code/gambit_sphinx/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec3/#function-vec3)**(double v0) |
+| double | **[length](/documentation/code/gambit_sphinx/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec3/#function-length)**() const |
+| void | **[normalize](/documentation/code/gambit_sphinx/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec3/#function-normalize)**() |
+| void | **[normalize](/documentation/code/gambit_sphinx/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec3/#function-normalize)**(const double len) |
+| double & | **[operator[]](/documentation/code/gambit_sphinx/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec3/#function-operator[])**(int i) |
+| double | **[operator[]](/documentation/code/gambit_sphinx/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec3/#function-operator[])**(int i) const |
+| [vec3](/documentation/code/gambit_sphinx/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec3/) | **[operator-](/documentation/code/gambit_sphinx/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec3/#function-operator-)**() const |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[vals](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1decaychain_1_1vec3/#variable-vals)**  |
+| double | **[vals](/documentation/code/gambit_sphinx/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec3/#variable-vals)**  |
 
 ## Public Functions Documentation
 
@@ -122,4 +122,4 @@ double vals;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:47 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

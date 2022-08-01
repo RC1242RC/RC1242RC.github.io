@@ -14,45 +14,45 @@ description: "[No description available]"
 
 [No description available]
 
-Inherited by [AdvanceDevs](/documentation/code/darkbit_developmentclasses/classadvancedevs/), [AdvanceDevs](/documentation/code/darkbit_developmentclasses/classadvancedevs/), [MultiNormDev](/documentation/code/darkbit_developmentclasses/classmultinormdev/), [MultiNormDev](/documentation/code/darkbit_developmentclasses/classmultinormdev/), [MultiNormalDev](/documentation/code/darkbit_developmentclasses/classmultinormaldev/), [MultiNormalDev](/documentation/code/darkbit_developmentclasses/classmultinormaldev/), [TransformRandomBasis](/documentation/code/darkbit_developmentclasses/classtransformrandombasis/), [TransformRandomBasis](/documentation/code/darkbit_developmentclasses/classtransformrandombasis/)
+Inherited by [AdvanceDevs](/documentation/code/darkbit_development/classes/classadvancedevs/), [AdvanceDevs](/documentation/code/darkbit_development/classes/classadvancedevs/), [MultiNormDev](/documentation/code/darkbit_development/classes/classmultinormdev/), [MultiNormDev](/documentation/code/darkbit_development/classes/classmultinormdev/), [MultiNormalDev](/documentation/code/darkbit_development/classes/classmultinormaldev/), [MultiNormalDev](/documentation/code/darkbit_development/classes/classmultinormaldev/), [TransformRandomBasis](/documentation/code/darkbit_development/classes/classtransformrandombasis/), [TransformRandomBasis](/documentation/code/darkbit_development/classes/classtransformrandombasis/)
 
 ## Public Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Cholesky](/documentation/code/darkbit_developmentclasses/classcholesky/#function-cholesky)**(const int nin) |
-| | **[Cholesky](/documentation/code/darkbit_developmentclasses/classcholesky/#function-cholesky)**(double ** a, const int nin) |
-| bool | **[EnterMatM](/documentation/code/darkbit_developmentclasses/classcholesky/#function-entermatm)**(double ** a, const int min) |
-| bool | **[EnterMat](/documentation/code/darkbit_developmentclasses/classcholesky/#function-entermat)**(double ** a) |
-| void | **[EnterMat](/documentation/code/darkbit_developmentclasses/classcholesky/#function-entermat)**(double ** a, int nin) |
-| void | **[ElMult](/documentation/code/darkbit_developmentclasses/classcholesky/#function-elmult)**(double * y, double * b) |
-| void | **[ElMult](/documentation/code/darkbit_developmentclasses/classcholesky/#function-elmult)**(double * y) |
-| void | **[Solve](/documentation/code/darkbit_developmentclasses/classcholesky/#function-solve)**(double * b, double * x) |
-| double | **[Square](/documentation/code/darkbit_developmentclasses/classcholesky/#function-square)**(double * y, double * y0) |
-| double | **[Square](/documentation/code/darkbit_developmentclasses/classcholesky/#function-square)**(double * y, double * y0, int * map) |
-| void | **[Inverse](/documentation/code/darkbit_developmentclasses/classcholesky/#function-inverse)**(double ** ainv) |
-| double | **[DetSqrt](/documentation/code/darkbit_developmentclasses/classcholesky/#function-detsqrt)**() |
-| | **[~Cholesky](/documentation/code/darkbit_developmentclasses/classcholesky/#function-~cholesky)**() |
-| | **[Cholesky](/documentation/code/darkbit_developmentclasses/classcholesky/#function-cholesky)**(const int nin) |
-| | **[Cholesky](/documentation/code/darkbit_developmentclasses/classcholesky/#function-cholesky)**(double ** a, const int nin) |
-| bool | **[EnterMatM](/documentation/code/darkbit_developmentclasses/classcholesky/#function-entermatm)**(double ** a, const int min) |
-| bool | **[EnterMat](/documentation/code/darkbit_developmentclasses/classcholesky/#function-entermat)**(double ** a) |
-| bool | **[EnterMat](/documentation/code/darkbit_developmentclasses/classcholesky/#function-entermat)**(const std::vector< std::vector< double > > & a) |
-| void | **[EnterMat](/documentation/code/darkbit_developmentclasses/classcholesky/#function-entermat)**(double ** a, int nin) |
-| void | **[ElMult](/documentation/code/darkbit_developmentclasses/classcholesky/#function-elmult)**(double * y, double * b) |
-| void | **[ElMult](/documentation/code/darkbit_developmentclasses/classcholesky/#function-elmult)**(double * y) |
-| void | **[Solve](/documentation/code/darkbit_developmentclasses/classcholesky/#function-solve)**(double * b, double * x) |
-| double | **[Square](/documentation/code/darkbit_developmentclasses/classcholesky/#function-square)**(double * y, double * y0) |
-| double | **[Square](/documentation/code/darkbit_developmentclasses/classcholesky/#function-square)**(double * y, double * y0, int * map) |
-| void | **[Inverse](/documentation/code/darkbit_developmentclasses/classcholesky/#function-inverse)**(double ** ainv) |
-| double | **[DetSqrt](/documentation/code/darkbit_developmentclasses/classcholesky/#function-detsqrt)**() |
-| | **[~Cholesky](/documentation/code/darkbit_developmentclasses/classcholesky/#function-~cholesky)**() |
+| | **[Cholesky](/documentation/code/darkbit_development/classes/classcholesky/#function-cholesky)**(const int nin) |
+| | **[Cholesky](/documentation/code/darkbit_development/classes/classcholesky/#function-cholesky)**(double ** a, const int nin) |
+| bool | **[EnterMatM](/documentation/code/darkbit_development/classes/classcholesky/#function-entermatm)**(double ** a, const int min) |
+| bool | **[EnterMat](/documentation/code/darkbit_development/classes/classcholesky/#function-entermat)**(double ** a) |
+| void | **[EnterMat](/documentation/code/darkbit_development/classes/classcholesky/#function-entermat)**(double ** a, int nin) |
+| void | **[ElMult](/documentation/code/darkbit_development/classes/classcholesky/#function-elmult)**(double * y, double * b) |
+| void | **[ElMult](/documentation/code/darkbit_development/classes/classcholesky/#function-elmult)**(double * y) |
+| void | **[Solve](/documentation/code/darkbit_development/classes/classcholesky/#function-solve)**(double * b, double * x) |
+| double | **[Square](/documentation/code/darkbit_development/classes/classcholesky/#function-square)**(double * y, double * y0) |
+| double | **[Square](/documentation/code/darkbit_development/classes/classcholesky/#function-square)**(double * y, double * y0, int * map) |
+| void | **[Inverse](/documentation/code/darkbit_development/classes/classcholesky/#function-inverse)**(double ** ainv) |
+| double | **[DetSqrt](/documentation/code/darkbit_development/classes/classcholesky/#function-detsqrt)**() |
+| | **[~Cholesky](/documentation/code/darkbit_development/classes/classcholesky/#function-~cholesky)**() |
+| | **[Cholesky](/documentation/code/darkbit_development/classes/classcholesky/#function-cholesky)**(const int nin) |
+| | **[Cholesky](/documentation/code/darkbit_development/classes/classcholesky/#function-cholesky)**(double ** a, const int nin) |
+| bool | **[EnterMatM](/documentation/code/darkbit_development/classes/classcholesky/#function-entermatm)**(double ** a, const int min) |
+| bool | **[EnterMat](/documentation/code/darkbit_development/classes/classcholesky/#function-entermat)**(double ** a) |
+| bool | **[EnterMat](/documentation/code/darkbit_development/classes/classcholesky/#function-entermat)**(const std::vector< std::vector< double > > & a) |
+| void | **[EnterMat](/documentation/code/darkbit_development/classes/classcholesky/#function-entermat)**(double ** a, int nin) |
+| void | **[ElMult](/documentation/code/darkbit_development/classes/classcholesky/#function-elmult)**(double * y, double * b) |
+| void | **[ElMult](/documentation/code/darkbit_development/classes/classcholesky/#function-elmult)**(double * y) |
+| void | **[Solve](/documentation/code/darkbit_development/classes/classcholesky/#function-solve)**(double * b, double * x) |
+| double | **[Square](/documentation/code/darkbit_development/classes/classcholesky/#function-square)**(double * y, double * y0) |
+| double | **[Square](/documentation/code/darkbit_development/classes/classcholesky/#function-square)**(double * y, double * y0, int * map) |
+| void | **[Inverse](/documentation/code/darkbit_development/classes/classcholesky/#function-inverse)**(double ** ainv) |
+| double | **[DetSqrt](/documentation/code/darkbit_development/classes/classcholesky/#function-detsqrt)**() |
+| | **[~Cholesky](/documentation/code/darkbit_development/classes/classcholesky/#function-~cholesky)**() |
 
 ## Protected Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| int | **[num](/documentation/code/darkbit_developmentclasses/classcholesky/#variable-num)**  |
+| int | **[num](/documentation/code/darkbit_development/classes/classcholesky/#variable-num)**  |
 
 ## Public Functions Documentation
 
@@ -318,4 +318,4 @@ int num;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:41 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

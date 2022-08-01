@@ -16,7 +16,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[NNUC](/documentation/code/gambit_sphinxfiles/alterbbn__2__2_8cpp/#define-nnuc)**  |
+|  | **[NNUC](/documentation/code/gambit_sphinx/files/alterbbn__2__2_8cpp/#define-nnuc)**  |
 
 ## Detailed Description
 
@@ -170,4 +170,4 @@ END_BE_NAMESPACE
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:51 +0000
+Updated on 2022-08-01 at 17:41:25 +0000

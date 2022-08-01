@@ -18,20 +18,20 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Fdouble | **[cosmin](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__rdpars/#variable-cosmin)**  |
-| Fdouble | **[waccd](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__rdpars/#variable-waccd)**  |
-| Fdouble | **[dpminr](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__rdpars/#variable-dpminr)**  |
-| Fdouble | **[dpthr](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__rdpars/#variable-dpthr)**  |
-| Fdouble | **[wdiffr](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__rdpars/#variable-wdiffr)**  |
-| Fdouble | **[wdifft](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__rdpars/#variable-wdifft)**  |
-| Fdouble | **[hstep](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__rdpars/#variable-hstep)**  |
-| Fdouble | **[hmin](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__rdpars/#variable-hmin)**  |
-| Fdouble | **[compeps](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__rdpars/#variable-compeps)**  |
-| Fdouble | **[xinit](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__rdpars/#variable-xinit)**  |
-| Fdouble | **[xfinal](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__rdpars/#variable-xfinal)**  |
-| Fdouble | **[umax](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__rdpars/#variable-umax)**  |
-| Fdouble | **[cfr](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__rdpars/#variable-cfr)**  |
-| Fdouble | **[pmax](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__rdpars/#variable-pmax)**  |
+| Fdouble | **[cosmin](/documentation/code/darkbit_development/classes/structgambit_1_1ds__rdpars/#variable-cosmin)**  |
+| Fdouble | **[waccd](/documentation/code/darkbit_development/classes/structgambit_1_1ds__rdpars/#variable-waccd)**  |
+| Fdouble | **[dpminr](/documentation/code/darkbit_development/classes/structgambit_1_1ds__rdpars/#variable-dpminr)**  |
+| Fdouble | **[dpthr](/documentation/code/darkbit_development/classes/structgambit_1_1ds__rdpars/#variable-dpthr)**  |
+| Fdouble | **[wdiffr](/documentation/code/darkbit_development/classes/structgambit_1_1ds__rdpars/#variable-wdiffr)**  |
+| Fdouble | **[wdifft](/documentation/code/darkbit_development/classes/structgambit_1_1ds__rdpars/#variable-wdifft)**  |
+| Fdouble | **[hstep](/documentation/code/darkbit_development/classes/structgambit_1_1ds__rdpars/#variable-hstep)**  |
+| Fdouble | **[hmin](/documentation/code/darkbit_development/classes/structgambit_1_1ds__rdpars/#variable-hmin)**  |
+| Fdouble | **[compeps](/documentation/code/darkbit_development/classes/structgambit_1_1ds__rdpars/#variable-compeps)**  |
+| Fdouble | **[xinit](/documentation/code/darkbit_development/classes/structgambit_1_1ds__rdpars/#variable-xinit)**  |
+| Fdouble | **[xfinal](/documentation/code/darkbit_development/classes/structgambit_1_1ds__rdpars/#variable-xfinal)**  |
+| Fdouble | **[umax](/documentation/code/darkbit_development/classes/structgambit_1_1ds__rdpars/#variable-umax)**  |
+| Fdouble | **[cfr](/documentation/code/darkbit_development/classes/structgambit_1_1ds__rdpars/#variable-cfr)**  |
+| Fdouble | **[pmax](/documentation/code/darkbit_development/classes/structgambit_1_1ds__rdpars/#variable-pmax)**  |
 
 ## Public Attributes Documentation
 
@@ -135,4 +135,4 @@ Fdouble pmax;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:41 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

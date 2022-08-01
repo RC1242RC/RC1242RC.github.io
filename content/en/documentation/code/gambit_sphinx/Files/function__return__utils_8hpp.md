@@ -16,9 +16,9 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| template <typename U ,typename V \> <br>U * | **[pointer_returner](/documentation/code/gambit_sphinxfiles/function__return__utils_8hpp/#function-pointer-returner)**(V * ptr) |
-| template <typename U ,typename V \> <br>U & | **[reference_returner](/documentation/code/gambit_sphinxfiles/function__return__utils_8hpp/#function-reference-returner)**(V * ptr) |
-| template <typename U ,typename V \> <br>U & | **[reference_returner](/documentation/code/gambit_sphinxfiles/function__return__utils_8hpp/#function-reference-returner)**(const V * ptr) |
+| template <typename U ,typename V \> <br>U * | **[pointer_returner](/documentation/code/gambit_sphinx/files/function__return__utils_8hpp/#function-pointer-returner)**(V * ptr) |
+| template <typename U ,typename V \> <br>U & | **[reference_returner](/documentation/code/gambit_sphinx/files/function__return__utils_8hpp/#function-reference-returner)**(V * ptr) |
+| template <typename U ,typename V \> <br>U & | **[reference_returner](/documentation/code/gambit_sphinx/files/function__return__utils_8hpp/#function-reference-returner)**(const V * ptr) |
 
 
 ## Functions Documentation
@@ -82,4 +82,4 @@ U& reference_returner(const V* ptr);
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:51 +0000
+Updated on 2022-08-01 at 17:41:25 +0000

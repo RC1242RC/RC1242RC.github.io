@@ -16,10 +16,10 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/darkbit_developmentnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::Backends](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1backends/)**  |
-| **[Gambit::Backends::vevacious_1_0](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1backends_1_1vevacious__1__0/)**  |
-| **[Gambit::Backends::vevacious_1_0::VevaciousPlusPlus](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1backends_1_1vevacious__1__0_1_1vevaciousplusplus/)**  |
+| **[Gambit](/documentation/code/darkbit_development/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::Backends](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1backends/)**  |
+| **[Gambit::Backends::vevacious_1_0](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1backends_1_1vevacious__1__0/)**  |
+| **[Gambit::Backends::vevacious_1_0::VevaciousPlusPlus](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1backends_1_1vevacious__1__0_1_1vevaciousplusplus/)**  |
 
 
 
@@ -68,4 +68,4 @@ BE_INI_FUNCTION{} END_BE_INI_FUNCTION
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:45 +0000
+Updated on 2022-08-01 at 17:41:26 +0000

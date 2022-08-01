@@ -16,18 +16,18 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/darkbit_developmentnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::DRes](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1dres/)**  |
-| **[boost](/documentation/code/darkbit_developmentnamespaces/namespaceboost/)**  |
+| **[Gambit](/documentation/code/darkbit_development/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::DRes](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1dres/)**  |
+| **[boost](/documentation/code/darkbit_development/namespaces/namespaceboost/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[Gambit::DRes::OutputVertexInfo](/documentation/code/darkbit_developmentclasses/structgambit_1_1dres_1_1outputvertexinfo/)** <br>Minimal info about outputVertices.  |
-| struct | **[Gambit::DRes::Rule](/documentation/code/darkbit_developmentclasses/structgambit_1_1dres_1_1rule/)**  |
-| struct | **[Gambit::DRes::QueueEntry](/documentation/code/darkbit_developmentclasses/structgambit_1_1dres_1_1queueentry/)** <br>Information in parameter queue.  |
-| class | **[Gambit::DRes::DependencyResolver](/documentation/code/darkbit_developmentclasses/classgambit_1_1dres_1_1dependencyresolver/)** <br>Main dependency resolver.  |
+| struct | **[Gambit::DRes::OutputVertexInfo](/documentation/code/darkbit_development/classes/structgambit_1_1dres_1_1outputvertexinfo/)** <br>Minimal info about outputVertices.  |
+| struct | **[Gambit::DRes::Rule](/documentation/code/darkbit_development/classes/structgambit_1_1dres_1_1rule/)**  |
+| struct | **[Gambit::DRes::QueueEntry](/documentation/code/darkbit_development/classes/structgambit_1_1dres_1_1queueentry/)** <br>Information in parameter queue.  |
+| class | **[Gambit::DRes::DependencyResolver](/documentation/code/darkbit_development/classes/classgambit_1_1dres_1_1dependencyresolver/)** <br>Main dependency resolver.  |
 
 ## Detailed Description
 
@@ -290,4 +290,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:43 +0000
+Updated on 2022-08-01 at 17:41:25 +0000

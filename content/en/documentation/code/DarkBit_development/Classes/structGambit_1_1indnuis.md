@@ -18,10 +18,10 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[cent](/documentation/code/darkbit_developmentclasses/structgambit_1_1indnuis/#variable-cent)**  |
-| double | **[dev](/documentation/code/darkbit_developmentclasses/structgambit_1_1indnuis/#variable-dev)**  |
-| int | **[type](/documentation/code/darkbit_developmentclasses/structgambit_1_1indnuis/#variable-type)**  |
-| char * | **[name](/documentation/code/darkbit_developmentclasses/structgambit_1_1indnuis/#variable-name)**  |
+| double | **[cent](/documentation/code/darkbit_development/classes/structgambit_1_1indnuis/#variable-cent)**  |
+| double | **[dev](/documentation/code/darkbit_development/classes/structgambit_1_1indnuis/#variable-dev)**  |
+| int | **[type](/documentation/code/darkbit_development/classes/structgambit_1_1indnuis/#variable-type)**  |
+| char * | **[name](/documentation/code/darkbit_development/classes/structgambit_1_1indnuis/#variable-name)**  |
 
 ## Public Attributes Documentation
 
@@ -55,4 +55,4 @@ char * name;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:41 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

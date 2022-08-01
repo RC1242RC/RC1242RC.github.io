@@ -16,16 +16,16 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| integer function | **[one](/documentation/code/darkbit_developmentnamespaces/namespacem1/#function-one)**() |
+| integer function | **[one](/documentation/code/darkbit_development/namespaces/namespacem1/#function-one)**() |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| integer | **[i1](/documentation/code/darkbit_developmentnamespaces/namespacem1/#variable-i1)**  |
-| integer, dimension(2) | **[i2](/documentation/code/darkbit_developmentnamespaces/namespacem1/#variable-i2)**  |
-| integer, dimension(3) | **[i3](/documentation/code/darkbit_developmentnamespaces/namespacem1/#variable-i3)**  |
-| character *8 | **[str](/documentation/code/darkbit_developmentnamespaces/namespacem1/#variable-str)**  |
+| integer | **[i1](/documentation/code/darkbit_development/namespaces/namespacem1/#variable-i1)**  |
+| integer, dimension(2) | **[i2](/documentation/code/darkbit_development/namespaces/namespacem1/#variable-i2)**  |
+| integer, dimension(3) | **[i3](/documentation/code/darkbit_development/namespaces/namespacem1/#variable-i3)**  |
+| character *8 | **[str](/documentation/code/darkbit_development/namespaces/namespacem1/#variable-str)**  |
 
 
 ## Functions Documentation
@@ -73,4 +73,4 @@ character *8 str;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:41 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

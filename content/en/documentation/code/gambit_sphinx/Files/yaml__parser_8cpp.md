@@ -16,15 +16,15 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::IniParser](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1iniparser/)**  |
-| **[YAML](/documentation/code/gambit_sphinxnamespaces/namespaceyaml/)**  |
+| **[Gambit](/documentation/code/gambit_sphinx/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::IniParser](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1iniparser/)**  |
+| **[YAML](/documentation/code/gambit_sphinx/namespaces/namespaceyaml/)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[READ](/documentation/code/gambit_sphinxfiles/yaml__parser_8cpp/#define-read)**(NAME)  |
+|  | **[READ](/documentation/code/gambit_sphinx/files/yaml__parser_8cpp/#define-read)**(NAME)  |
 
 ## Detailed Description
 
@@ -188,4 +188,4 @@ namespace YAML
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:49 +0000
+Updated on 2022-08-01 at 17:41:23 +0000

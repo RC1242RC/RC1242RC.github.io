@@ -21,15 +21,15 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| template <typename... args\> <br>bool | **[hasKey](/documentation/code/gambit_sphinxclasses/classgambit_1_1descriptiondatabase/#function-haskey)**(const args &... keys) const |
-| template <typename TYPE ,typename... args\> <br>TYPE | **[getValue](/documentation/code/gambit_sphinxclasses/classgambit_1_1descriptiondatabase/#function-getvalue)**(const args &... keys) const |
-| | **[DescriptionDatabase](/documentation/code/gambit_sphinxclasses/classgambit_1_1descriptiondatabase/#function-descriptiondatabase)**()<br>Default constructor.  |
-| | **[DescriptionDatabase](/documentation/code/gambit_sphinxclasses/classgambit_1_1descriptiondatabase/#function-descriptiondatabase)**(const str & filename)<br>Construct from file.  |
-| | **[DescriptionDatabase](/documentation/code/gambit_sphinxclasses/classgambit_1_1descriptiondatabase/#function-descriptiondatabase)**(const YAML::Node & descriptions)<br>Copy constructor.  |
-| | **[DescriptionDatabase](/documentation/code/gambit_sphinxclasses/classgambit_1_1descriptiondatabase/#function-descriptiondatabase)**(YAML::Node && descriptions)<br>Move constructor.  |
-| template <typename... args\> <br>void | **[loadFile](/documentation/code/gambit_sphinxclasses/classgambit_1_1descriptiondatabase/#function-loadfile)**(const str & filename)<br>Load descriptions from file.  |
-| std::map< str, int > | **[check_for_duplicates](/documentation/code/gambit_sphinxclasses/classgambit_1_1descriptiondatabase/#function-check-for-duplicates)**()<br>Check 'descriptions' for duplicate keys.  |
-| std::vector< str > | **[get_all_values](/documentation/code/gambit_sphinxclasses/classgambit_1_1descriptiondatabase/#function-get-all-values)**(str key)<br>Return vector of descriptions matching key (for retrieving values with non-unique keys)  |
+| template <typename... args\> <br>bool | **[hasKey](/documentation/code/gambit_sphinx/classes/classgambit_1_1descriptiondatabase/#function-haskey)**(const args &... keys) const |
+| template <typename TYPE ,typename... args\> <br>TYPE | **[getValue](/documentation/code/gambit_sphinx/classes/classgambit_1_1descriptiondatabase/#function-getvalue)**(const args &... keys) const |
+| | **[DescriptionDatabase](/documentation/code/gambit_sphinx/classes/classgambit_1_1descriptiondatabase/#function-descriptiondatabase)**()<br>Default constructor.  |
+| | **[DescriptionDatabase](/documentation/code/gambit_sphinx/classes/classgambit_1_1descriptiondatabase/#function-descriptiondatabase)**(const str & filename)<br>Construct from file.  |
+| | **[DescriptionDatabase](/documentation/code/gambit_sphinx/classes/classgambit_1_1descriptiondatabase/#function-descriptiondatabase)**(const YAML::Node & descriptions)<br>Copy constructor.  |
+| | **[DescriptionDatabase](/documentation/code/gambit_sphinx/classes/classgambit_1_1descriptiondatabase/#function-descriptiondatabase)**(YAML::Node && descriptions)<br>Move constructor.  |
+| template <typename... args\> <br>void | **[loadFile](/documentation/code/gambit_sphinx/classes/classgambit_1_1descriptiondatabase/#function-loadfile)**(const str & filename)<br>Load descriptions from file.  |
+| std::map< str, int > | **[check_for_duplicates](/documentation/code/gambit_sphinx/classes/classgambit_1_1descriptiondatabase/#function-check-for-duplicates)**()<br>Check 'descriptions' for duplicate keys.  |
+| std::vector< str > | **[get_all_values](/documentation/code/gambit_sphinx/classes/classgambit_1_1descriptiondatabase/#function-get-all-values)**(str key)<br>Return vector of descriptions matching key (for retrieving values with non-unique keys)  |
 
 ## Detailed Description
 
@@ -74,7 +74,7 @@ DescriptionDatabase()
 
 Default constructor. 
 
-Member functions for [DescriptionDatabase](/documentation/code/gambit_sphinxclasses/classgambit_1_1descriptiondatabase/) class.
+Member functions for [DescriptionDatabase](/documentation/code/gambit_sphinx/classes/classgambit_1_1descriptiondatabase/) class.
 
 Default constructor 
 
@@ -140,4 +140,4 @@ Return vector of descriptions matching key (for retrieving values with non-uniqu
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:46 +0000
+Updated on 2022-08-01 at 17:41:21 +0000

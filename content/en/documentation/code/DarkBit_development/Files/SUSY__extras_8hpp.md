@@ -16,35 +16,35 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[BACKEND_REQ](/documentation/code/darkbit_developmentfiles/susy__extras_8hpp/#function-backend-req)**(prospino_run , (libprospino) , map_str_dbl , (const PID_pair &, const Options &) ) |
+| | **[BACKEND_REQ](/documentation/code/darkbit_development/files/susy__extras_8hpp/#function-backend-req)**(prospino_run , (libprospino) , map_str_dbl , (const PID_pair &, const Options &) ) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[libprospino](/documentation/code/darkbit_developmentfiles/susy__extras_8hpp/#variable-libprospino)**  |
-| | **[void](/documentation/code/darkbit_developmentfiles/susy__extras_8hpp/#variable-void)**  |
+| | **[libprospino](/documentation/code/darkbit_development/files/susy__extras_8hpp/#variable-libprospino)**  |
+| | **[void](/documentation/code/darkbit_development/files/susy__extras_8hpp/#variable-void)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[CAPABILITY](/documentation/code/darkbit_developmentfiles/susy__extras_8hpp/#define-capability)** <br>A map between PID pairs and cross-sections.  |
-|  | **[FUNCTION](/documentation/code/darkbit_developmentfiles/susy__extras_8hpp/#define-function)** <br>Get the PIDPairCrossSectionsMap using the Prospino backend.  |
-|  | **[CAPABILITY](/documentation/code/darkbit_developmentfiles/susy__extras_8hpp/#define-capability)** <br>A map between PID pairs and cross-sections.  |
-|  | **[FUNCTION](/documentation/code/darkbit_developmentfiles/susy__extras_8hpp/#define-function)** <br>Get the PIDPairCrossSectionsMap using the Prospino backend.  |
-|  | **[CAPABILITY](/documentation/code/darkbit_developmentfiles/susy__extras_8hpp/#define-capability)** <br>A map between PID pairs and cross-sections.  |
-|  | **[FUNCTION](/documentation/code/darkbit_developmentfiles/susy__extras_8hpp/#define-function)** <br>Get the PIDPairCrossSectionsMap using the Prospino backend.  |
-|  | **[FUNCTION](/documentation/code/darkbit_developmentfiles/susy__extras_8hpp/#define-function)** <br>Get the PIDPairCrossSectionsMap using the Prospino backend.  |
-|  | **[CAPABILITY](/documentation/code/darkbit_developmentfiles/susy__extras_8hpp/#define-capability)** <br>A map between PID pairs and cross-sections.  |
-|  | **[FUNCTION](/documentation/code/darkbit_developmentfiles/susy__extras_8hpp/#define-function)** <br>Get the PIDPairCrossSectionsMap using the Prospino backend.  |
-|  | **[CAPABILITY](/documentation/code/darkbit_developmentfiles/susy__extras_8hpp/#define-capability)** <br>A map between PID pairs and cross-sections.  |
-|  | **[FUNCTION](/documentation/code/darkbit_developmentfiles/susy__extras_8hpp/#define-function)** <br>Get the PIDPairCrossSectionsMap using the Prospino backend.  |
-|  | **[CAPABILITY](/documentation/code/darkbit_developmentfiles/susy__extras_8hpp/#define-capability)** <br>A map between PID pairs and cross-sections.  |
-|  | **[FUNCTION](/documentation/code/darkbit_developmentfiles/susy__extras_8hpp/#define-function)** <br>Get the PIDPairCrossSectionsMap using the Prospino backend.  |
-|  | **[CAPABILITY](/documentation/code/darkbit_developmentfiles/susy__extras_8hpp/#define-capability)** <br>A map between PID pairs and cross-sections.  |
-|  | **[FUNCTION](/documentation/code/darkbit_developmentfiles/susy__extras_8hpp/#define-function)** <br>Get the PIDPairCrossSectionsMap using the Prospino backend.  |
-|  | **[MODULE](/documentation/code/darkbit_developmentfiles/susy__extras_8hpp/#define-module)**  |
+|  | **[CAPABILITY](/documentation/code/darkbit_development/files/susy__extras_8hpp/#define-capability)** <br>A map between PID pairs and cross-sections.  |
+|  | **[FUNCTION](/documentation/code/darkbit_development/files/susy__extras_8hpp/#define-function)** <br>Get the PIDPairCrossSectionsMap using the Prospino backend.  |
+|  | **[CAPABILITY](/documentation/code/darkbit_development/files/susy__extras_8hpp/#define-capability)** <br>A map between PID pairs and cross-sections.  |
+|  | **[FUNCTION](/documentation/code/darkbit_development/files/susy__extras_8hpp/#define-function)** <br>Get the PIDPairCrossSectionsMap using the Prospino backend.  |
+|  | **[CAPABILITY](/documentation/code/darkbit_development/files/susy__extras_8hpp/#define-capability)** <br>A map between PID pairs and cross-sections.  |
+|  | **[FUNCTION](/documentation/code/darkbit_development/files/susy__extras_8hpp/#define-function)** <br>Get the PIDPairCrossSectionsMap using the Prospino backend.  |
+|  | **[FUNCTION](/documentation/code/darkbit_development/files/susy__extras_8hpp/#define-function)** <br>Get the PIDPairCrossSectionsMap using the Prospino backend.  |
+|  | **[CAPABILITY](/documentation/code/darkbit_development/files/susy__extras_8hpp/#define-capability)** <br>A map between PID pairs and cross-sections.  |
+|  | **[FUNCTION](/documentation/code/darkbit_development/files/susy__extras_8hpp/#define-function)** <br>Get the PIDPairCrossSectionsMap using the Prospino backend.  |
+|  | **[CAPABILITY](/documentation/code/darkbit_development/files/susy__extras_8hpp/#define-capability)** <br>A map between PID pairs and cross-sections.  |
+|  | **[FUNCTION](/documentation/code/darkbit_development/files/susy__extras_8hpp/#define-function)** <br>Get the PIDPairCrossSectionsMap using the Prospino backend.  |
+|  | **[CAPABILITY](/documentation/code/darkbit_development/files/susy__extras_8hpp/#define-capability)** <br>A map between PID pairs and cross-sections.  |
+|  | **[FUNCTION](/documentation/code/darkbit_development/files/susy__extras_8hpp/#define-function)** <br>Get the PIDPairCrossSectionsMap using the Prospino backend.  |
+|  | **[CAPABILITY](/documentation/code/darkbit_development/files/susy__extras_8hpp/#define-capability)** <br>A map between PID pairs and cross-sections.  |
+|  | **[FUNCTION](/documentation/code/darkbit_development/files/susy__extras_8hpp/#define-function)** <br>Get the PIDPairCrossSectionsMap using the Prospino backend.  |
+|  | **[MODULE](/documentation/code/darkbit_development/files/susy__extras_8hpp/#define-module)**  |
 
 ## Detailed Description
 
@@ -477,4 +477,4 @@ Read single SLHA file and replace some entries for use with model ColliderBit_SL
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:44 +0000
+Updated on 2022-08-01 at 17:41:25 +0000

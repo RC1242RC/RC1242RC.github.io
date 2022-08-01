@@ -16,15 +16,15 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::ColliderBit](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1colliderbit/)**  |
+| **[Gambit](/documentation/code/gambit_sphinx/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::ColliderBit](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1colliderbit/)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[DEBUG_PREFIX](/documentation/code/gambit_sphinxfiles/generateeventpy8collider_8hpp/#define-debug-prefix)**  |
-|  | **[GET_PYTHIA_EVENT](/documentation/code/gambit_sphinxfiles/generateeventpy8collider_8hpp/#define-get-pythia-event)**(NAME) <br>Generate a hard scattering event with a specific Pythia,.  |
+|  | **[DEBUG_PREFIX](/documentation/code/gambit_sphinx/files/generateeventpy8collider_8hpp/#define-debug-prefix)**  |
+|  | **[GET_PYTHIA_EVENT](/documentation/code/gambit_sphinx/files/generateeventpy8collider_8hpp/#define-get-pythia-event)**(NAME) <br>Generate a hard scattering event with a specific Pythia,.  |
 
 ## Detailed Description
 
@@ -273,4 +273,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:49 +0000
+Updated on 2022-08-01 at 17:41:23 +0000

@@ -16,28 +16,28 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[my_func](/documentation/code/darkbit_developmentclasses/structmy__func/)**  |
-| class | **[my_simplex](/documentation/code/darkbit_developmentclasses/classmy__simplex/)**  |
-| class | **[my_Nelder_Mead](/documentation/code/darkbit_developmentclasses/classmy__nelder__mead/)**  |
+| struct | **[my_func](/documentation/code/darkbit_development/classes/structmy__func/)**  |
+| class | **[my_simplex](/documentation/code/darkbit_development/classes/classmy__simplex/)**  |
+| class | **[my_Nelder_Mead](/documentation/code/darkbit_development/classes/classmy__nelder__mead/)**  |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[my_lp](/documentation/code/darkbit_developmentfiles/topness_8h/#function-my-lp)**(double u[4], double v[4]) |
-| void | **[my_add](/documentation/code/darkbit_developmentfiles/topness_8h/#function-my-add)**(double a[4], double b[4], double c[4]) |
-| double | **[my_dot](/documentation/code/darkbit_developmentfiles/topness_8h/#function-my-dot)**(double p1[], double p2[], int d) |
-| double | **[my_dot](/documentation/code/darkbit_developmentfiles/topness_8h/#function-my-dot)**(double p1[], double p2[], double a[], int d) |
-| double | **[my_enorm](/documentation/code/darkbit_developmentfiles/topness_8h/#function-my-enorm)**(double p[], int d) |
-| double | **[topnesscompute](/documentation/code/darkbit_developmentfiles/topness_8h/#function-topnesscompute)**(double pb1[4], double pl[4], double MET[4], double sigmat, double sigmaW) |
+| double | **[my_lp](/documentation/code/darkbit_development/files/topness_8h/#function-my-lp)**(double u[4], double v[4]) |
+| void | **[my_add](/documentation/code/darkbit_development/files/topness_8h/#function-my-add)**(double a[4], double b[4], double c[4]) |
+| double | **[my_dot](/documentation/code/darkbit_development/files/topness_8h/#function-my-dot)**(double p1[], double p2[], int d) |
+| double | **[my_dot](/documentation/code/darkbit_development/files/topness_8h/#function-my-dot)**(double p1[], double p2[], double a[], int d) |
+| double | **[my_enorm](/documentation/code/darkbit_development/files/topness_8h/#function-my-enorm)**(double p[], int d) |
+| double | **[topnesscompute](/documentation/code/darkbit_development/files/topness_8h/#function-topnesscompute)**(double pb1[4], double pl[4], double MET[4], double sigmat, double sigmaW) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| const double | **[mt](/documentation/code/darkbit_developmentfiles/topness_8h/#variable-mt)**  |
-| const double | **[mW](/documentation/code/darkbit_developmentfiles/topness_8h/#variable-mw)**  |
-| const int | **[DMAX](/documentation/code/darkbit_developmentfiles/topness_8h/#variable-dmax)**  |
+| const double | **[mt](/documentation/code/darkbit_development/files/topness_8h/#variable-mt)**  |
+| const double | **[mW](/documentation/code/darkbit_development/files/topness_8h/#variable-mw)**  |
+| const int | **[DMAX](/documentation/code/darkbit_development/files/topness_8h/#variable-dmax)**  |
 
 
 ## Functions Documentation
@@ -989,4 +989,4 @@ double topnesscompute(double pb1[4], double pl[4], double MET[4], double sigmat,
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:44 +0000
+Updated on 2022-08-01 at 17:41:25 +0000

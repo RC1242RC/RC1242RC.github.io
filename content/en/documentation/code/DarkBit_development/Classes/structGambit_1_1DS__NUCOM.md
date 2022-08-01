@@ -18,12 +18,12 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Farray< Fdouble, 1, 29, 1, 3 > | **[ans0br](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__nucom/#variable-ans0br)**  |
-| Farray< Fdouble, 1, 15 > | **[anscbr](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__nucom/#variable-anscbr)**  |
-| Farray< Fdouble, 1, 3 > | **[ans0m](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__nucom/#variable-ans0m)**  |
-| Fdouble | **[anscm](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__nucom/#variable-anscm)**  |
-| Farray< Finteger, 1, 29, 1, 6 > | **[anch_2body](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__nucom/#variable-anch-2body)**  |
-| Farray< Finteger, 1, 29, 1, 2 > | **[yieldchannels_line](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__nucom/#variable-yieldchannels-line)**  |
+| Farray< Fdouble, 1, 29, 1, 3 > | **[ans0br](/documentation/code/darkbit_development/classes/structgambit_1_1ds__nucom/#variable-ans0br)**  |
+| Farray< Fdouble, 1, 15 > | **[anscbr](/documentation/code/darkbit_development/classes/structgambit_1_1ds__nucom/#variable-anscbr)**  |
+| Farray< Fdouble, 1, 3 > | **[ans0m](/documentation/code/darkbit_development/classes/structgambit_1_1ds__nucom/#variable-ans0m)**  |
+| Fdouble | **[anscm](/documentation/code/darkbit_development/classes/structgambit_1_1ds__nucom/#variable-anscm)**  |
+| Farray< Finteger, 1, 29, 1, 6 > | **[anch_2body](/documentation/code/darkbit_development/classes/structgambit_1_1ds__nucom/#variable-anch-2body)**  |
+| Farray< Finteger, 1, 29, 1, 2 > | **[yieldchannels_line](/documentation/code/darkbit_development/classes/structgambit_1_1ds__nucom/#variable-yieldchannels-line)**  |
 
 ## Public Attributes Documentation
 
@@ -71,4 +71,4 @@ Farray< Finteger, 1, 29, 1, 2 > yieldchannels_line;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:41 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

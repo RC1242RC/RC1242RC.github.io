@@ -16,14 +16,14 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit](/documentation/code/gambit_sphinx/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[Gambit::gambit_inflation_observables](/documentation/code/gambit_sphinxclasses/structgambit_1_1gambit__inflation__observables/)**  |
-| class | **[Gambit::Multimode_inputs](/documentation/code/gambit_sphinxclasses/classgambit_1_1multimode__inputs/)** <br>Class containing the inputs used for inputs to MultiModeCode.  |
+| struct | **[Gambit::gambit_inflation_observables](/documentation/code/gambit_sphinx/classes/structgambit_1_1gambit__inflation__observables/)**  |
+| class | **[Gambit::Multimode_inputs](/documentation/code/gambit_sphinx/classes/classgambit_1_1multimode__inputs/)** <br>Class containing the inputs used for inputs to MultiModeCode.  |
 
 ## Detailed Description
 
@@ -137,4 +137,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:50 +0000
+Updated on 2022-08-01 at 17:41:25 +0000

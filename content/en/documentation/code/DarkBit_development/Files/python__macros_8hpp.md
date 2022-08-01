@@ -16,8 +16,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[BE_FUNCTION_I_PY](/documentation/code/darkbit_developmentfiles/python__macros_8hpp/#define-be-function-i-py)**(NAME, TYPE, ARGLIST, SYMBOLNAME, CAPABILITY, MODELS) <br>Backend function macro for Python backends.  |
-|  | **[BE_VARIABLE_I_PY](/documentation/code/darkbit_developmentfiles/python__macros_8hpp/#define-be-variable-i-py)**(NAME, TYPE, SYMBOLNAME, CAPABILITY, MODELS) <br>Backend variable macro for Python.  |
+|  | **[BE_FUNCTION_I_PY](/documentation/code/darkbit_development/files/python__macros_8hpp/#define-be-function-i-py)**(NAME, TYPE, ARGLIST, SYMBOLNAME, CAPABILITY, MODELS) <br>Backend function macro for Python backends.  |
+|  | **[BE_VARIABLE_I_PY](/documentation/code/darkbit_development/files/python__macros_8hpp/#define-be-variable-i-py)**(NAME, TYPE, SYMBOLNAME, CAPABILITY, MODELS) <br>Backend variable macro for Python.  |
 
 ## Detailed Description
 
@@ -166,4 +166,4 @@ namespace Gambit                                                                
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:45 +0000
+Updated on 2022-08-01 at 17:41:26 +0000

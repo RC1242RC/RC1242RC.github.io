@@ -18,9 +18,9 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| SMInputs | **[sminputs](/documentation/code/gambit_sphinxclasses/structgambit_1_1finputs/#variable-sminputs)**  |
-| std::map< str, [safe_ptr](/documentation/code/gambit_sphinxclasses/classgambit_1_1safe__ptr/)< const double > > | **[param](/documentation/code/gambit_sphinxclasses/structgambit_1_1finputs/#variable-param)**  |
-| [safe_ptr](/documentation/code/gambit_sphinxclasses/classgambit_1_1safe__ptr/)< Options > | **[options](/documentation/code/gambit_sphinxclasses/structgambit_1_1finputs/#variable-options)**  |
+| SMInputs | **[sminputs](/documentation/code/gambit_sphinx/classes/structgambit_1_1finputs/#variable-sminputs)**  |
+| std::map< str, [safe_ptr](/documentation/code/gambit_sphinx/classes/classgambit_1_1safe__ptr/)< const double > > | **[param](/documentation/code/gambit_sphinx/classes/structgambit_1_1finputs/#variable-param)**  |
+| [safe_ptr](/documentation/code/gambit_sphinx/classes/classgambit_1_1safe__ptr/)< Options > | **[options](/documentation/code/gambit_sphinx/classes/structgambit_1_1finputs/#variable-options)**  |
 
 ## Public Attributes Documentation
 
@@ -47,4 +47,4 @@ safe_ptr< Options > options;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:46 +0000
+Updated on 2022-08-01 at 17:41:21 +0000

@@ -16,18 +16,18 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| template <class Model \> <br>void | **[setpars](/documentation/code/darkbit_developmentfiles/external__examples_8hpp/#function-setpars)**(Model & mssm) |
-| void | **[spec_print](/documentation/code/darkbit_developmentfiles/external__examples_8hpp/#function-spec-print)**(Gambit::SubSpectrum & spec) |
-| template <class M \> <br>void | **[mssm_print](/documentation/code/darkbit_developmentfiles/external__examples_8hpp/#function-mssm-print)**([Gambit::SpecBit::MSSMSpec](/documentation/code/darkbit_developmentclasses/classgambit_1_1specbit_1_1mssmspec/)< M > & mssm) |
-| void | **[spec_manipulate](/documentation/code/darkbit_developmentfiles/external__examples_8hpp/#function-spec-manipulate)**(Gambit::SubSpectrum & spec) |
-| template <class M \> <br>void | **[mssm_manipulate](/documentation/code/darkbit_developmentfiles/external__examples_8hpp/#function-mssm-manipulate)**([Gambit::SpecBit::MSSMSpec](/documentation/code/darkbit_developmentclasses/classgambit_1_1specbit_1_1mssmspec/)< M > & mssm) |
-| void | **[SM_checks](/documentation/code/darkbit_developmentfiles/external__examples_8hpp/#function-sm-checks)**(Gambit::SubSpectrum & SM) |
+| template <class Model \> <br>void | **[setpars](/documentation/code/darkbit_development/files/external__examples_8hpp/#function-setpars)**(Model & mssm) |
+| void | **[spec_print](/documentation/code/darkbit_development/files/external__examples_8hpp/#function-spec-print)**(Gambit::SubSpectrum & spec) |
+| template <class M \> <br>void | **[mssm_print](/documentation/code/darkbit_development/files/external__examples_8hpp/#function-mssm-print)**([Gambit::SpecBit::MSSMSpec](/documentation/code/darkbit_development/classes/classgambit_1_1specbit_1_1mssmspec/)< M > & mssm) |
+| void | **[spec_manipulate](/documentation/code/darkbit_development/files/external__examples_8hpp/#function-spec-manipulate)**(Gambit::SubSpectrum & spec) |
+| template <class M \> <br>void | **[mssm_manipulate](/documentation/code/darkbit_development/files/external__examples_8hpp/#function-mssm-manipulate)**([Gambit::SpecBit::MSSMSpec](/documentation/code/darkbit_development/classes/classgambit_1_1specbit_1_1mssmspec/)< M > & mssm) |
+| void | **[SM_checks](/documentation/code/darkbit_development/files/external__examples_8hpp/#function-sm-checks)**(Gambit::SubSpectrum & SM) |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[PRINTOUT](/documentation/code/darkbit_developmentfiles/external__examples_8hpp/#define-printout)**  |
+|  | **[PRINTOUT](/documentation/code/darkbit_development/files/external__examples_8hpp/#define-printout)**  |
 
 
 ## Functions Documentation
@@ -428,4 +428,4 @@ void SM_checks(Gambit::SubSpectrum& SM) {
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:43 +0000
+Updated on 2022-08-01 at 17:41:24 +0000

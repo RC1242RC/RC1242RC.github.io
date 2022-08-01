@@ -16,8 +16,8 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[configs](/documentation/code/gambit_sphinxnamespaces/namespaceconfigs/)**  |
-| **[configs::heplike_1_2](/documentation/code/gambit_sphinxnamespaces/namespaceconfigs_1_1heplike__1__2/)**  |
+| **[configs](/documentation/code/gambit_sphinx/namespaces/namespaceconfigs/)**  |
+| **[configs::heplike_1_2](/documentation/code/gambit_sphinx/namespaces/namespaceconfigs_1_1heplike__1__2/)**  |
 
 
 
@@ -154,4 +154,4 @@ pragmas_end = [
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:51 +0000
+Updated on 2022-08-01 at 17:41:25 +0000

@@ -15,8 +15,8 @@ Definitions of friend functions from above.  [More...](#detailed-description)
 
 |                | Name           |
 | -------------- | -------------- |
-| void | **[entering_multithreaded_region](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1functorhelp/#function-entering-multithreaded-region)**(module_functor_common & functor) |
-| void | **[leaving_multithreaded_region](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1functorhelp/#function-leaving-multithreaded-region)**(module_functor_common & functor) |
+| void | **[entering_multithreaded_region](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1functorhelp/#function-entering-multithreaded-region)**(module_functor_common & functor) |
+| void | **[leaving_multithreaded_region](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1functorhelp/#function-leaving-multithreaded-region)**(module_functor_common & functor) |
 
 ## Detailed Description
 
@@ -51,4 +51,4 @@ void leaving_multithreaded_region(
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:48 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

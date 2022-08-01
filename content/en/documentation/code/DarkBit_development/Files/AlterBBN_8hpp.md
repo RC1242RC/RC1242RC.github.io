@@ -16,25 +16,25 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/darkbit_developmentnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::AlterBBN_2_2](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1alterbbn__2__2/)**  |
-| **[Gambit::Backends](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1backends/)**  |
-| **[Gambit::Backends::AlterBBN_2_2](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1backends_1_1alterbbn__2__2/)**  |
+| **[Gambit](/documentation/code/darkbit_development/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::AlterBBN_2_2](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1alterbbn__2__2/)**  |
+| **[Gambit::Backends](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1backends/)**  |
+| **[Gambit::Backends::AlterBBN_2_2](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1backends_1_1alterbbn__2__2/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Gambit::BBN_container](/documentation/code/darkbit_developmentclasses/classgambit_1_1bbn__container/)**  |
-| struct | **[Gambit::AlterBBN_2_2::relicparam](/documentation/code/darkbit_developmentclasses/structgambit_1_1alterbbn__2__2_1_1relicparam/)**  |
-| struct | **[Gambit::AlterBBN_2_2::errorparam](/documentation/code/darkbit_developmentclasses/structgambit_1_1alterbbn__2__2_1_1errorparam/)**  |
+| class | **[Gambit::BBN_container](/documentation/code/darkbit_development/classes/classgambit_1_1bbn__container/)**  |
+| struct | **[Gambit::AlterBBN_2_2::relicparam](/documentation/code/darkbit_development/classes/structgambit_1_1alterbbn__2__2_1_1relicparam/)**  |
+| struct | **[Gambit::AlterBBN_2_2::errorparam](/documentation/code/darkbit_development/classes/structgambit_1_1alterbbn__2__2_1_1errorparam/)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[NNUCREAC](/documentation/code/darkbit_developmentfiles/alterbbn_8hpp/#define-nnucreac)**  |
-|  | **[NTABMAX](/documentation/code/darkbit_developmentfiles/alterbbn_8hpp/#define-ntabmax)**  |
+|  | **[NNUCREAC](/documentation/code/darkbit_development/files/alterbbn_8hpp/#define-nnucreac)**  |
+|  | **[NTABMAX](/documentation/code/darkbit_development/files/alterbbn_8hpp/#define-ntabmax)**  |
 
 ## Detailed Description
 
@@ -277,4 +277,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:45 +0000
+Updated on 2022-08-01 at 17:41:26 +0000

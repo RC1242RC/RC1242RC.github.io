@@ -18,52 +18,52 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[my_simplex](/documentation/code/gambit_sphinxclasses/classmy__simplex/#function-my-simplex)**(int dd, double aalpha, double bbeta, double ggamma, [my_func](/documentation/code/gambit_sphinxclasses/structmy__func/) * ff) |
-| void | **[find_min](/documentation/code/gambit_sphinxclasses/classmy__simplex/#function-find-min)**() |
-| void | **[find_max](/documentation/code/gambit_sphinxclasses/classmy__simplex/#function-find-max)**() |
-| void | **[my_SetUp](/documentation/code/gambit_sphinxclasses/classmy__simplex/#function-my-setup)**(double xin[]) |
-| void | **[set_y](/documentation/code/gambit_sphinxclasses/classmy__simplex/#function-set-y)**() |
-| void | **[my_Centroid](/documentation/code/gambit_sphinxclasses/classmy__simplex/#function-my-centroid)**(int h) |
-| void | **[my_Reflection](/documentation/code/gambit_sphinxclasses/classmy__simplex/#function-my-reflection)**() |
-| void | **[my_Expansion](/documentation/code/gambit_sphinxclasses/classmy__simplex/#function-my-expansion)**() |
-| void | **[my_Contraction](/documentation/code/gambit_sphinxclasses/classmy__simplex/#function-my-contraction)**() |
-| void | **[replace_all](/documentation/code/gambit_sphinxclasses/classmy__simplex/#function-replace-all)**() |
-| double | **[get_yavg](/documentation/code/gambit_sphinxclasses/classmy__simplex/#function-get-yavg)**() |
-| double | **[get_sigma](/documentation/code/gambit_sphinxclasses/classmy__simplex/#function-get-sigma)**() |
-| void | **[print_Centroid](/documentation/code/gambit_sphinxclasses/classmy__simplex/#function-print-centroid)**() |
-| void | **[print_Reflect](/documentation/code/gambit_sphinxclasses/classmy__simplex/#function-print-reflect)**() |
-| void | **[print_Expand](/documentation/code/gambit_sphinxclasses/classmy__simplex/#function-print-expand)**() |
-| void | **[print_Contract](/documentation/code/gambit_sphinxclasses/classmy__simplex/#function-print-contract)**() |
-| void | **[print_max](/documentation/code/gambit_sphinxclasses/classmy__simplex/#function-print-max)**() |
-| void | **[print_min](/documentation/code/gambit_sphinxclasses/classmy__simplex/#function-print-min)**() |
-| void | **[print_all](/documentation/code/gambit_sphinxclasses/classmy__simplex/#function-print-all)**() |
-| void | **[print_xy](/documentation/code/gambit_sphinxclasses/classmy__simplex/#function-print-xy)**() |
-| void | **[print_xyl](/documentation/code/gambit_sphinxclasses/classmy__simplex/#function-print-xyl)**() |
-| void | **[print_xyh](/documentation/code/gambit_sphinxclasses/classmy__simplex/#function-print-xyh)**() |
+| | **[my_simplex](/documentation/code/gambit_sphinx/classes/classmy__simplex/#function-my-simplex)**(int dd, double aalpha, double bbeta, double ggamma, [my_func](/documentation/code/gambit_sphinx/classes/structmy__func/) * ff) |
+| void | **[find_min](/documentation/code/gambit_sphinx/classes/classmy__simplex/#function-find-min)**() |
+| void | **[find_max](/documentation/code/gambit_sphinx/classes/classmy__simplex/#function-find-max)**() |
+| void | **[my_SetUp](/documentation/code/gambit_sphinx/classes/classmy__simplex/#function-my-setup)**(double xin[]) |
+| void | **[set_y](/documentation/code/gambit_sphinx/classes/classmy__simplex/#function-set-y)**() |
+| void | **[my_Centroid](/documentation/code/gambit_sphinx/classes/classmy__simplex/#function-my-centroid)**(int h) |
+| void | **[my_Reflection](/documentation/code/gambit_sphinx/classes/classmy__simplex/#function-my-reflection)**() |
+| void | **[my_Expansion](/documentation/code/gambit_sphinx/classes/classmy__simplex/#function-my-expansion)**() |
+| void | **[my_Contraction](/documentation/code/gambit_sphinx/classes/classmy__simplex/#function-my-contraction)**() |
+| void | **[replace_all](/documentation/code/gambit_sphinx/classes/classmy__simplex/#function-replace-all)**() |
+| double | **[get_yavg](/documentation/code/gambit_sphinx/classes/classmy__simplex/#function-get-yavg)**() |
+| double | **[get_sigma](/documentation/code/gambit_sphinx/classes/classmy__simplex/#function-get-sigma)**() |
+| void | **[print_Centroid](/documentation/code/gambit_sphinx/classes/classmy__simplex/#function-print-centroid)**() |
+| void | **[print_Reflect](/documentation/code/gambit_sphinx/classes/classmy__simplex/#function-print-reflect)**() |
+| void | **[print_Expand](/documentation/code/gambit_sphinx/classes/classmy__simplex/#function-print-expand)**() |
+| void | **[print_Contract](/documentation/code/gambit_sphinx/classes/classmy__simplex/#function-print-contract)**() |
+| void | **[print_max](/documentation/code/gambit_sphinx/classes/classmy__simplex/#function-print-max)**() |
+| void | **[print_min](/documentation/code/gambit_sphinx/classes/classmy__simplex/#function-print-min)**() |
+| void | **[print_all](/documentation/code/gambit_sphinx/classes/classmy__simplex/#function-print-all)**() |
+| void | **[print_xy](/documentation/code/gambit_sphinx/classes/classmy__simplex/#function-print-xy)**() |
+| void | **[print_xyl](/documentation/code/gambit_sphinx/classes/classmy__simplex/#function-print-xyl)**() |
+| void | **[print_xyh](/documentation/code/gambit_sphinx/classes/classmy__simplex/#function-print-xyh)**() |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| [my_func](/documentation/code/gambit_sphinxclasses/structmy__func/) * | **[f](/documentation/code/gambit_sphinxclasses/classmy__simplex/#variable-f)**  |
-| double | **[xstart](/documentation/code/gambit_sphinxclasses/classmy__simplex/#variable-xstart)**  |
-| double | **[x](/documentation/code/gambit_sphinxclasses/classmy__simplex/#variable-x)**  |
-| double | **[xh](/documentation/code/gambit_sphinxclasses/classmy__simplex/#variable-xh)**  |
-| double | **[xl](/documentation/code/gambit_sphinxclasses/classmy__simplex/#variable-xl)**  |
-| double | **[y](/documentation/code/gambit_sphinxclasses/classmy__simplex/#variable-y)**  |
-| double | **[yl](/documentation/code/gambit_sphinxclasses/classmy__simplex/#variable-yl)**  |
-| double | **[ynh](/documentation/code/gambit_sphinxclasses/classmy__simplex/#variable-ynh)**  |
-| double | **[yh](/documentation/code/gambit_sphinxclasses/classmy__simplex/#variable-yh)**  |
-| double | **[xCentroid](/documentation/code/gambit_sphinxclasses/classmy__simplex/#variable-xcentroid)**  |
-| double | **[yReflect](/documentation/code/gambit_sphinxclasses/classmy__simplex/#variable-yreflect)**  |
-| double | **[yExpand](/documentation/code/gambit_sphinxclasses/classmy__simplex/#variable-yexpand)**  |
-| double | **[yContract](/documentation/code/gambit_sphinxclasses/classmy__simplex/#variable-ycontract)**  |
-| double | **[xReflect](/documentation/code/gambit_sphinxclasses/classmy__simplex/#variable-xreflect)**  |
-| double | **[xExpand](/documentation/code/gambit_sphinxclasses/classmy__simplex/#variable-xexpand)**  |
-| double | **[xContract](/documentation/code/gambit_sphinxclasses/classmy__simplex/#variable-xcontract)**  |
-| int | **[imin](/documentation/code/gambit_sphinxclasses/classmy__simplex/#variable-imin)**  |
-| int | **[imax](/documentation/code/gambit_sphinxclasses/classmy__simplex/#variable-imax)**  |
-| int | **[inmax](/documentation/code/gambit_sphinxclasses/classmy__simplex/#variable-inmax)**  |
+| [my_func](/documentation/code/gambit_sphinx/classes/structmy__func/) * | **[f](/documentation/code/gambit_sphinx/classes/classmy__simplex/#variable-f)**  |
+| double | **[xstart](/documentation/code/gambit_sphinx/classes/classmy__simplex/#variable-xstart)**  |
+| double | **[x](/documentation/code/gambit_sphinx/classes/classmy__simplex/#variable-x)**  |
+| double | **[xh](/documentation/code/gambit_sphinx/classes/classmy__simplex/#variable-xh)**  |
+| double | **[xl](/documentation/code/gambit_sphinx/classes/classmy__simplex/#variable-xl)**  |
+| double | **[y](/documentation/code/gambit_sphinx/classes/classmy__simplex/#variable-y)**  |
+| double | **[yl](/documentation/code/gambit_sphinx/classes/classmy__simplex/#variable-yl)**  |
+| double | **[ynh](/documentation/code/gambit_sphinx/classes/classmy__simplex/#variable-ynh)**  |
+| double | **[yh](/documentation/code/gambit_sphinx/classes/classmy__simplex/#variable-yh)**  |
+| double | **[xCentroid](/documentation/code/gambit_sphinx/classes/classmy__simplex/#variable-xcentroid)**  |
+| double | **[yReflect](/documentation/code/gambit_sphinx/classes/classmy__simplex/#variable-yreflect)**  |
+| double | **[yExpand](/documentation/code/gambit_sphinx/classes/classmy__simplex/#variable-yexpand)**  |
+| double | **[yContract](/documentation/code/gambit_sphinx/classes/classmy__simplex/#variable-ycontract)**  |
+| double | **[xReflect](/documentation/code/gambit_sphinx/classes/classmy__simplex/#variable-xreflect)**  |
+| double | **[xExpand](/documentation/code/gambit_sphinx/classes/classmy__simplex/#variable-xexpand)**  |
+| double | **[xContract](/documentation/code/gambit_sphinx/classes/classmy__simplex/#variable-xcontract)**  |
+| int | **[imin](/documentation/code/gambit_sphinx/classes/classmy__simplex/#variable-imin)**  |
+| int | **[imax](/documentation/code/gambit_sphinx/classes/classmy__simplex/#variable-imax)**  |
+| int | **[inmax](/documentation/code/gambit_sphinx/classes/classmy__simplex/#variable-inmax)**  |
 
 ## Public Functions Documentation
 
@@ -368,4 +368,4 @@ int inmax;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:46 +0000
+Updated on 2022-08-01 at 17:41:20 +0000

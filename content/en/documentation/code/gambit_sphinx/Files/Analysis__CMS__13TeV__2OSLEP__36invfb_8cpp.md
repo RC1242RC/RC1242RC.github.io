@@ -16,17 +16,17 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::ColliderBit](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1colliderbit/)**  |
+| **[Gambit](/documentation/code/gambit_sphinx/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::ColliderBit](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1colliderbit/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Gambit::ColliderBit::Analysis_CMS_13TeV_2OSLEP_36invfb](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2oslep__36invfb/)**  |
-| struct | **[Gambit::ColliderBit::Analysis_CMS_13TeV_2OSLEP_36invfb::ptComparison](/documentation/code/gambit_sphinxclasses/structgambit_1_1colliderbit_1_1analysis__cms__13tev__2oslep__36invfb_1_1ptcomparison/)**  |
-| struct | **[Gambit::ColliderBit::Analysis_CMS_13TeV_2OSLEP_36invfb::ptJetComparison](/documentation/code/gambit_sphinxclasses/structgambit_1_1colliderbit_1_1analysis__cms__13tev__2oslep__36invfb_1_1ptjetcomparison/)**  |
-| class | **[Gambit::ColliderBit::Analysis_CMS_13TeV_2OSLEP_36invfb_nocovar](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2oslep__36invfb__nocovar/)**  |
+| class | **[Gambit::ColliderBit::Analysis_CMS_13TeV_2OSLEP_36invfb](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2oslep__36invfb/)**  |
+| struct | **[Gambit::ColliderBit::Analysis_CMS_13TeV_2OSLEP_36invfb::ptComparison](/documentation/code/gambit_sphinx/classes/structgambit_1_1colliderbit_1_1analysis__cms__13tev__2oslep__36invfb_1_1ptcomparison/)**  |
+| struct | **[Gambit::ColliderBit::Analysis_CMS_13TeV_2OSLEP_36invfb::ptJetComparison](/documentation/code/gambit_sphinx/classes/structgambit_1_1colliderbit_1_1analysis__cms__13tev__2oslep__36invfb_1_1ptjetcomparison/)**  |
+| class | **[Gambit::ColliderBit::Analysis_CMS_13TeV_2OSLEP_36invfb_nocovar](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2oslep__36invfb__nocovar/)**  |
 
 
 
@@ -501,4 +501,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:49 +0000
+Updated on 2022-08-01 at 17:41:24 +0000

@@ -16,7 +16,7 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[get_entry_from_heplike](/documentation/code/darkbit_developmentnamespaces/namespaceget__entry__from__heplike/)**  |
+| **[get_entry_from_heplike](/documentation/code/darkbit_development/namespaces/namespaceget__entry__from__heplike/)**  |
 
 
 
@@ -53,4 +53,4 @@ if __name__ == '__main__':
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:43 +0000
+Updated on 2022-08-01 at 17:41:24 +0000

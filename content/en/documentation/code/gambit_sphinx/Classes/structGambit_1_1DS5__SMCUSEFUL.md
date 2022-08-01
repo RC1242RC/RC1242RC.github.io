@@ -18,7 +18,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Fstring< 5 > | **[roption](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds5__smcuseful/#variable-roption)**  |
+| Fstring< 5 > | **[roption](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds5__smcuseful/#variable-roption)**  |
 
 ## Public Attributes Documentation
 
@@ -31,4 +31,4 @@ Fstring< 5 > roption;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:46 +0000
+Updated on 2022-08-01 at 17:41:21 +0000

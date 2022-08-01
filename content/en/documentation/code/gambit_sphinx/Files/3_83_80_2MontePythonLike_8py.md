@@ -16,22 +16,22 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[MontePythonLike](/documentation/code/gambit_sphinxnamespaces/namespacemontepythonlike/)**  |
+| **[MontePythonLike](/documentation/code/gambit_sphinx/namespaces/namespacemontepythonlike/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[MontePythonLike::Likelihood](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood/)**  |
-| class | **[MontePythonLike::Likelihood_prior](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__prior/)**  |
-| class | **[MontePythonLike::Likelihood_newdat](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__newdat/)**  |
-| class | **[MontePythonLike::Likelihood_clik](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__clik/)**  |
-| class | **[MontePythonLike::Likelihood_mock_cmb](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__mock__cmb/)**  |
-| class | **[MontePythonLike::Likelihood_mpk](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__mpk/)**  |
-| class | **[MontePythonLike::Likelihood_sn](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__sn/)**  |
-| class | **[MontePythonLike::Likelihood_clocks](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__clocks/)**  |
-| class | **[MontePythonLike::Likelihood_isw](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__isw/)**  |
-| class | **[MontePythonLike::Data](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1data/)**  |
+| class | **[MontePythonLike::Likelihood](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood/)**  |
+| class | **[MontePythonLike::Likelihood_prior](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__prior/)**  |
+| class | **[MontePythonLike::Likelihood_newdat](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__newdat/)**  |
+| class | **[MontePythonLike::Likelihood_clik](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__clik/)**  |
+| class | **[MontePythonLike::Likelihood_mock_cmb](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__mock__cmb/)**  |
+| class | **[MontePythonLike::Likelihood_mpk](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__mpk/)**  |
+| class | **[MontePythonLike::Likelihood_sn](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__sn/)**  |
+| class | **[MontePythonLike::Likelihood_clocks](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__clocks/)**  |
+| class | **[MontePythonLike::Likelihood_isw](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__isw/)**  |
+| class | **[MontePythonLike::Data](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1data/)**  |
 
 
 
@@ -3018,4 +3018,4 @@ def get_available_likelihoods(backendDir):
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:51 +0000
+Updated on 2022-08-01 at 17:41:25 +0000

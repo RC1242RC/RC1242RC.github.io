@@ -16,12 +16,12 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| template <int i\> <br>double | **[gamma3bdy_limits](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1darkbit_1_1darkbit__utils/#function-gamma3bdy-limits)**(double Eg, double M_DM, double m1, double m2)<br>Calculate kinematical limits for three-body final states.  |
-| template double | **[gamma3bdy_limits< 0 >](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1darkbit_1_1darkbit__utils/#function-gamma3bdy-limits<-0->)**(double , double , double , double ) |
-| template double | **[gamma3bdy_limits< 1 >](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1darkbit_1_1darkbit__utils/#function-gamma3bdy-limits<-1->)**(double , double , double , double ) |
-| std::string | **[str_flav_to_mass](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1darkbit_1_1darkbit__utils/#function-str-flav-to-mass)**(const std::string & flav) |
-| std::string | **[str_mass_to_flav](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1darkbit_1_1darkbit__utils/#function-str-mass-to-flav)**(const std::string & mass) |
-| void | **[ImportDecays](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1darkbit_1_1darkbit__utils/#function-importdecays)**(std::string pID, TH_ProcessCatalog & catalog, std::set< std::string > & importedDecays, const DecayTable * tbl, double minBranching, std::vector< std::string > excludeDecays) |
+| template <int i\> <br>double | **[gamma3bdy_limits](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1darkbit_1_1darkbit__utils/#function-gamma3bdy-limits)**(double Eg, double M_DM, double m1, double m2)<br>Calculate kinematical limits for three-body final states.  |
+| template double | **[gamma3bdy_limits< 0 >](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1darkbit_1_1darkbit__utils/#function-gamma3bdy-limits<-0->)**(double , double , double , double ) |
+| template double | **[gamma3bdy_limits< 1 >](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1darkbit_1_1darkbit__utils/#function-gamma3bdy-limits<-1->)**(double , double , double , double ) |
+| std::string | **[str_flav_to_mass](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1darkbit_1_1darkbit__utils/#function-str-flav-to-mass)**(const std::string & flav) |
+| std::string | **[str_mass_to_flav](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1darkbit_1_1darkbit__utils/#function-str-mass-to-flav)**(const std::string & mass) |
+| void | **[ImportDecays](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1darkbit_1_1darkbit__utils/#function-importdecays)**(std::string pID, TH_ProcessCatalog & catalog, std::set< std::string > & importedDecays, const DecayTable * tbl, double minBranching, std::vector< std::string > excludeDecays) |
 
 
 ## Functions Documentation
@@ -110,4 +110,4 @@ void ImportDecays(
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:42 +0000
+Updated on 2022-08-01 at 17:41:23 +0000

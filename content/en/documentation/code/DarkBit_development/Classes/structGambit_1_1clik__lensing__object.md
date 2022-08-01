@@ -18,14 +18,14 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| void * | **[plens_payload](/documentation/code/darkbit_developmentclasses/structgambit_1_1clik__lensing__object/#variable-plens-payload)**  |
-| int | **[lmax](/documentation/code/darkbit_developmentclasses/structgambit_1_1clik__lensing__object/#variable-lmax)**  |
-| int | **[type](/documentation/code/darkbit_developmentclasses/structgambit_1_1clik__lensing__object/#variable-type)**  |
-| int | **[renorm](/documentation/code/darkbit_developmentclasses/structgambit_1_1clik__lensing__object/#variable-renorm)**  |
-| int | **[ren1](/documentation/code/darkbit_developmentclasses/structgambit_1_1clik__lensing__object/#variable-ren1)**  |
-| double | **[check](/documentation/code/darkbit_developmentclasses/structgambit_1_1clik__lensing__object/#variable-check)**  |
-| int | **[has_check](/documentation/code/darkbit_developmentclasses/structgambit_1_1clik__lensing__object/#variable-has-check)**  |
-| double * | **[cl_fid](/documentation/code/darkbit_developmentclasses/structgambit_1_1clik__lensing__object/#variable-cl-fid)**  |
+| void * | **[plens_payload](/documentation/code/darkbit_development/classes/structgambit_1_1clik__lensing__object/#variable-plens-payload)**  |
+| int | **[lmax](/documentation/code/darkbit_development/classes/structgambit_1_1clik__lensing__object/#variable-lmax)**  |
+| int | **[type](/documentation/code/darkbit_development/classes/structgambit_1_1clik__lensing__object/#variable-type)**  |
+| int | **[renorm](/documentation/code/darkbit_development/classes/structgambit_1_1clik__lensing__object/#variable-renorm)**  |
+| int | **[ren1](/documentation/code/darkbit_development/classes/structgambit_1_1clik__lensing__object/#variable-ren1)**  |
+| double | **[check](/documentation/code/darkbit_development/classes/structgambit_1_1clik__lensing__object/#variable-check)**  |
+| int | **[has_check](/documentation/code/darkbit_development/classes/structgambit_1_1clik__lensing__object/#variable-has-check)**  |
+| double * | **[cl_fid](/documentation/code/darkbit_development/classes/structgambit_1_1clik__lensing__object/#variable-cl-fid)**  |
 
 ## Public Attributes Documentation
 
@@ -87,4 +87,4 @@ double * cl_fid;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:41 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

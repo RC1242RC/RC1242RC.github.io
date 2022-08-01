@@ -18,8 +18,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Fdouble | **[alph3](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__couplingconstants/#variable-alph3)**  |
-| Farray< Fdouble, 1, 12 > | **[yukawa](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__couplingconstants/#variable-yukawa)**  |
+| Fdouble | **[alph3](/documentation/code/darkbit_development/classes/structgambit_1_1ds__couplingconstants/#variable-alph3)**  |
+| Farray< Fdouble, 1, 12 > | **[yukawa](/documentation/code/darkbit_development/classes/structgambit_1_1ds__couplingconstants/#variable-yukawa)**  |
 
 ## Public Attributes Documentation
 
@@ -39,4 +39,4 @@ Farray< Fdouble, 1, 12 > yukawa;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:41 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

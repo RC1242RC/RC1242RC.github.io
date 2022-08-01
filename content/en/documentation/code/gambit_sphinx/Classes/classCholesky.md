@@ -14,45 +14,45 @@ description: "[No description available]"
 
 [No description available]
 
-Inherited by [AdvanceDevs](/documentation/code/gambit_sphinxclasses/classadvancedevs/), [AdvanceDevs](/documentation/code/gambit_sphinxclasses/classadvancedevs/), [MultiNormDev](/documentation/code/gambit_sphinxclasses/classmultinormdev/), [MultiNormDev](/documentation/code/gambit_sphinxclasses/classmultinormdev/), [MultiNormalDev](/documentation/code/gambit_sphinxclasses/classmultinormaldev/), [MultiNormalDev](/documentation/code/gambit_sphinxclasses/classmultinormaldev/), [TransformRandomBasis](/documentation/code/gambit_sphinxclasses/classtransformrandombasis/), [TransformRandomBasis](/documentation/code/gambit_sphinxclasses/classtransformrandombasis/)
+Inherited by [AdvanceDevs](/documentation/code/gambit_sphinx/classes/classadvancedevs/), [AdvanceDevs](/documentation/code/gambit_sphinx/classes/classadvancedevs/), [MultiNormDev](/documentation/code/gambit_sphinx/classes/classmultinormdev/), [MultiNormDev](/documentation/code/gambit_sphinx/classes/classmultinormdev/), [MultiNormalDev](/documentation/code/gambit_sphinx/classes/classmultinormaldev/), [MultiNormalDev](/documentation/code/gambit_sphinx/classes/classmultinormaldev/), [TransformRandomBasis](/documentation/code/gambit_sphinx/classes/classtransformrandombasis/), [TransformRandomBasis](/documentation/code/gambit_sphinx/classes/classtransformrandombasis/)
 
 ## Public Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Cholesky](/documentation/code/gambit_sphinxclasses/classcholesky/#function-cholesky)**(const int nin) |
-| | **[Cholesky](/documentation/code/gambit_sphinxclasses/classcholesky/#function-cholesky)**(double ** a, const int nin) |
-| bool | **[EnterMatM](/documentation/code/gambit_sphinxclasses/classcholesky/#function-entermatm)**(double ** a, const int min) |
-| bool | **[EnterMat](/documentation/code/gambit_sphinxclasses/classcholesky/#function-entermat)**(double ** a) |
-| void | **[EnterMat](/documentation/code/gambit_sphinxclasses/classcholesky/#function-entermat)**(double ** a, int nin) |
-| void | **[ElMult](/documentation/code/gambit_sphinxclasses/classcholesky/#function-elmult)**(double * y, double * b) |
-| void | **[ElMult](/documentation/code/gambit_sphinxclasses/classcholesky/#function-elmult)**(double * y) |
-| void | **[Solve](/documentation/code/gambit_sphinxclasses/classcholesky/#function-solve)**(double * b, double * x) |
-| double | **[Square](/documentation/code/gambit_sphinxclasses/classcholesky/#function-square)**(double * y, double * y0) |
-| double | **[Square](/documentation/code/gambit_sphinxclasses/classcholesky/#function-square)**(double * y, double * y0, int * map) |
-| void | **[Inverse](/documentation/code/gambit_sphinxclasses/classcholesky/#function-inverse)**(double ** ainv) |
-| double | **[DetSqrt](/documentation/code/gambit_sphinxclasses/classcholesky/#function-detsqrt)**() |
-| | **[~Cholesky](/documentation/code/gambit_sphinxclasses/classcholesky/#function-~cholesky)**() |
-| | **[Cholesky](/documentation/code/gambit_sphinxclasses/classcholesky/#function-cholesky)**(const int nin) |
-| | **[Cholesky](/documentation/code/gambit_sphinxclasses/classcholesky/#function-cholesky)**(double ** a, const int nin) |
-| bool | **[EnterMatM](/documentation/code/gambit_sphinxclasses/classcholesky/#function-entermatm)**(double ** a, const int min) |
-| bool | **[EnterMat](/documentation/code/gambit_sphinxclasses/classcholesky/#function-entermat)**(double ** a) |
-| bool | **[EnterMat](/documentation/code/gambit_sphinxclasses/classcholesky/#function-entermat)**(const std::vector< std::vector< double > > & a) |
-| void | **[EnterMat](/documentation/code/gambit_sphinxclasses/classcholesky/#function-entermat)**(double ** a, int nin) |
-| void | **[ElMult](/documentation/code/gambit_sphinxclasses/classcholesky/#function-elmult)**(double * y, double * b) |
-| void | **[ElMult](/documentation/code/gambit_sphinxclasses/classcholesky/#function-elmult)**(double * y) |
-| void | **[Solve](/documentation/code/gambit_sphinxclasses/classcholesky/#function-solve)**(double * b, double * x) |
-| double | **[Square](/documentation/code/gambit_sphinxclasses/classcholesky/#function-square)**(double * y, double * y0) |
-| double | **[Square](/documentation/code/gambit_sphinxclasses/classcholesky/#function-square)**(double * y, double * y0, int * map) |
-| void | **[Inverse](/documentation/code/gambit_sphinxclasses/classcholesky/#function-inverse)**(double ** ainv) |
-| double | **[DetSqrt](/documentation/code/gambit_sphinxclasses/classcholesky/#function-detsqrt)**() |
-| | **[~Cholesky](/documentation/code/gambit_sphinxclasses/classcholesky/#function-~cholesky)**() |
+| | **[Cholesky](/documentation/code/gambit_sphinx/classes/classcholesky/#function-cholesky)**(const int nin) |
+| | **[Cholesky](/documentation/code/gambit_sphinx/classes/classcholesky/#function-cholesky)**(double ** a, const int nin) |
+| bool | **[EnterMatM](/documentation/code/gambit_sphinx/classes/classcholesky/#function-entermatm)**(double ** a, const int min) |
+| bool | **[EnterMat](/documentation/code/gambit_sphinx/classes/classcholesky/#function-entermat)**(double ** a) |
+| void | **[EnterMat](/documentation/code/gambit_sphinx/classes/classcholesky/#function-entermat)**(double ** a, int nin) |
+| void | **[ElMult](/documentation/code/gambit_sphinx/classes/classcholesky/#function-elmult)**(double * y, double * b) |
+| void | **[ElMult](/documentation/code/gambit_sphinx/classes/classcholesky/#function-elmult)**(double * y) |
+| void | **[Solve](/documentation/code/gambit_sphinx/classes/classcholesky/#function-solve)**(double * b, double * x) |
+| double | **[Square](/documentation/code/gambit_sphinx/classes/classcholesky/#function-square)**(double * y, double * y0) |
+| double | **[Square](/documentation/code/gambit_sphinx/classes/classcholesky/#function-square)**(double * y, double * y0, int * map) |
+| void | **[Inverse](/documentation/code/gambit_sphinx/classes/classcholesky/#function-inverse)**(double ** ainv) |
+| double | **[DetSqrt](/documentation/code/gambit_sphinx/classes/classcholesky/#function-detsqrt)**() |
+| | **[~Cholesky](/documentation/code/gambit_sphinx/classes/classcholesky/#function-~cholesky)**() |
+| | **[Cholesky](/documentation/code/gambit_sphinx/classes/classcholesky/#function-cholesky)**(const int nin) |
+| | **[Cholesky](/documentation/code/gambit_sphinx/classes/classcholesky/#function-cholesky)**(double ** a, const int nin) |
+| bool | **[EnterMatM](/documentation/code/gambit_sphinx/classes/classcholesky/#function-entermatm)**(double ** a, const int min) |
+| bool | **[EnterMat](/documentation/code/gambit_sphinx/classes/classcholesky/#function-entermat)**(double ** a) |
+| bool | **[EnterMat](/documentation/code/gambit_sphinx/classes/classcholesky/#function-entermat)**(const std::vector< std::vector< double > > & a) |
+| void | **[EnterMat](/documentation/code/gambit_sphinx/classes/classcholesky/#function-entermat)**(double ** a, int nin) |
+| void | **[ElMult](/documentation/code/gambit_sphinx/classes/classcholesky/#function-elmult)**(double * y, double * b) |
+| void | **[ElMult](/documentation/code/gambit_sphinx/classes/classcholesky/#function-elmult)**(double * y) |
+| void | **[Solve](/documentation/code/gambit_sphinx/classes/classcholesky/#function-solve)**(double * b, double * x) |
+| double | **[Square](/documentation/code/gambit_sphinx/classes/classcholesky/#function-square)**(double * y, double * y0) |
+| double | **[Square](/documentation/code/gambit_sphinx/classes/classcholesky/#function-square)**(double * y, double * y0, int * map) |
+| void | **[Inverse](/documentation/code/gambit_sphinx/classes/classcholesky/#function-inverse)**(double ** ainv) |
+| double | **[DetSqrt](/documentation/code/gambit_sphinx/classes/classcholesky/#function-detsqrt)**() |
+| | **[~Cholesky](/documentation/code/gambit_sphinx/classes/classcholesky/#function-~cholesky)**() |
 
 ## Protected Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| int | **[num](/documentation/code/gambit_sphinxclasses/classcholesky/#variable-num)**  |
+| int | **[num](/documentation/code/gambit_sphinx/classes/classcholesky/#variable-num)**  |
 
 ## Public Functions Documentation
 
@@ -318,4 +318,4 @@ int num;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:46 +0000
+Updated on 2022-08-01 at 17:41:20 +0000

@@ -16,19 +16,19 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/darkbit_developmentnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::ColliderBit](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1colliderbit/)**  |
+| **[Gambit](/documentation/code/darkbit_development/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::ColliderBit](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1colliderbit/)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[MAP_ANALYSES_WITH_ROOT_RESTFRAMES](/documentation/code/darkbit_developmentfiles/analysiscontainer_8cpp/#define-map-analyses-with-root-restframes)**(F)  |
-|  | **[MAP_ANALYSES_WITH_ROOT](/documentation/code/darkbit_developmentfiles/analysiscontainer_8cpp/#define-map-analyses-with-root)**(F)  |
-|  | **[MAP_ANALYSES](/documentation/code/darkbit_developmentfiles/analysiscontainer_8cpp/#define-map-analyses)**(F)  |
-|  | **[DECLARE_ANALYSIS_FACTORY](/documentation/code/darkbit_developmentfiles/analysiscontainer_8cpp/#define-declare-analysis-factory)**(ANAME) <br>For analysis factory function declaration.  |
-|  | **[IF_X_RTN_CREATE_ANA_X](/documentation/code/darkbit_developmentfiles/analysiscontainer_8cpp/#define-if-x-rtn-create-ana-x)**(A) <br>Forward declarations using [DECLARE_ANALYSIS_FACTORY(ANAME)](/documentation/code/darkbit_developmentfiles/analysiscontainer_8cpp/#define-declare-analysis-factory) |
-|  | **[IF_X_RTN_DETECTOR](/documentation/code/darkbit_developmentfiles/analysiscontainer_8cpp/#define-if-x-rtn-detector)**(A) <br>For the string-based analysis checker and detector retriever getDetector.  |
+|  | **[MAP_ANALYSES_WITH_ROOT_RESTFRAMES](/documentation/code/darkbit_development/files/analysiscontainer_8cpp/#define-map-analyses-with-root-restframes)**(F)  |
+|  | **[MAP_ANALYSES_WITH_ROOT](/documentation/code/darkbit_development/files/analysiscontainer_8cpp/#define-map-analyses-with-root)**(F)  |
+|  | **[MAP_ANALYSES](/documentation/code/darkbit_development/files/analysiscontainer_8cpp/#define-map-analyses)**(F)  |
+|  | **[DECLARE_ANALYSIS_FACTORY](/documentation/code/darkbit_development/files/analysiscontainer_8cpp/#define-declare-analysis-factory)**(ANAME) <br>For analysis factory function declaration.  |
+|  | **[IF_X_RTN_CREATE_ANA_X](/documentation/code/darkbit_development/files/analysiscontainer_8cpp/#define-if-x-rtn-create-ana-x)**(A) <br>Forward declarations using [DECLARE_ANALYSIS_FACTORY(ANAME)](/documentation/code/darkbit_development/files/analysiscontainer_8cpp/#define-declare-analysis-factory) |
+|  | **[IF_X_RTN_DETECTOR](/documentation/code/darkbit_development/files/analysiscontainer_8cpp/#define-if-x-rtn-detector)**(A) <br>For the string-based analysis checker and detector retriever getDetector.  |
 
 ## Detailed Description
 
@@ -117,9 +117,9 @@ For analysis factory function declaration.
 if (name == #A) return create_Analysis_ ## A();
 ```
 
-Forward declarations using [DECLARE_ANALYSIS_FACTORY(ANAME)](/documentation/code/darkbit_developmentfiles/analysiscontainer_8cpp/#define-declare-analysis-factory)
+Forward declarations using [DECLARE_ANALYSIS_FACTORY(ANAME)](/documentation/code/darkbit_development/files/analysiscontainer_8cpp/#define-declare-analysis-factory)
 
-For the string-based factory function [mkAnalysis()](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1colliderbit/#function-mkanalysis)
+For the string-based factory function [mkAnalysis()](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1colliderbit/#function-mkanalysis)
 
 
 ### define IF_X_RTN_DETECTOR
@@ -545,4 +545,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:44 +0000
+Updated on 2022-08-01 at 17:41:25 +0000

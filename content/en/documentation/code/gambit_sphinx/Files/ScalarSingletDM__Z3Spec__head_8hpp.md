@@ -16,15 +16,15 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::SpecBit](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1specbit/)**  |
+| **[Gambit](/documentation/code/gambit_sphinx/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::SpecBit](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1specbit/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[Gambit::SpecTraits< SpecBit::ScalarSingletDM_Z3Spec< MI > >](/documentation/code/gambit_sphinxclasses/structgambit_1_1spectraits_3_01specbit_1_1scalarsingletdm__z3spec_3_01mi_01_4_01_4/)**  |
-| class | **[Gambit::SpecBit::ScalarSingletDM_Z3Spec](/documentation/code/gambit_sphinxclasses/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/)**  |
+| struct | **[Gambit::SpecTraits< SpecBit::ScalarSingletDM_Z3Spec< MI > >](/documentation/code/gambit_sphinx/classes/structgambit_1_1spectraits_3_01specbit_1_1scalarsingletdm__z3spec_3_01mi_01_4_01_4/)**  |
+| class | **[Gambit::SpecBit::ScalarSingletDM_Z3Spec](/documentation/code/gambit_sphinx/classes/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/)**  |
 
 ## Detailed Description
 
@@ -186,4 +186,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:48 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

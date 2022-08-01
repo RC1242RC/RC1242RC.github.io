@@ -20,17 +20,17 @@ Information in parameter queue.
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[QueueEntry](/documentation/code/gambit_sphinxclasses/structgambit_1_1dres_1_1queueentry/#function-queueentry)**() |
-| | **[QueueEntry](/documentation/code/gambit_sphinxclasses/structgambit_1_1dres_1_1queueentry/#function-queueentry)**(sspair a, DRes::VertexID b, int c, bool d) |
+| | **[QueueEntry](/documentation/code/gambit_sphinx/classes/structgambit_1_1dres_1_1queueentry/#function-queueentry)**() |
+| | **[QueueEntry](/documentation/code/gambit_sphinx/classes/structgambit_1_1dres_1_1queueentry/#function-queueentry)**(sspair a, DRes::VertexID b, int c, bool d) |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| sspair | **[first](/documentation/code/gambit_sphinxclasses/structgambit_1_1dres_1_1queueentry/#variable-first)**  |
-| DRes::VertexID | **[second](/documentation/code/gambit_sphinxclasses/structgambit_1_1dres_1_1queueentry/#variable-second)**  |
-| int | **[third](/documentation/code/gambit_sphinxclasses/structgambit_1_1dres_1_1queueentry/#variable-third)**  |
-| bool | **[printme](/documentation/code/gambit_sphinxclasses/structgambit_1_1dres_1_1queueentry/#variable-printme)**  |
+| sspair | **[first](/documentation/code/gambit_sphinx/classes/structgambit_1_1dres_1_1queueentry/#variable-first)**  |
+| DRes::VertexID | **[second](/documentation/code/gambit_sphinx/classes/structgambit_1_1dres_1_1queueentry/#variable-second)**  |
+| int | **[third](/documentation/code/gambit_sphinx/classes/structgambit_1_1dres_1_1queueentry/#variable-third)**  |
+| bool | **[printme](/documentation/code/gambit_sphinx/classes/structgambit_1_1dres_1_1queueentry/#variable-printme)**  |
 
 ## Public Functions Documentation
 
@@ -85,4 +85,4 @@ bool printme;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:47 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

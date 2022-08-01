@@ -16,8 +16,8 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[modules](/documentation/code/darkbit_developmentnamespaces/namespacemodules/)**  |
-| **[modules::gb](/documentation/code/darkbit_developmentnamespaces/namespacemodules_1_1gb/)**  |
+| **[modules](/documentation/code/darkbit_development/namespaces/namespacemodules/)**  |
+| **[modules::gb](/documentation/code/darkbit_development/namespaces/namespacemodules_1_1gb/)**  |
 
 
 
@@ -559,4 +559,4 @@ std_headers = {
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:45 +0000
+Updated on 2022-08-01 at 17:41:26 +0000

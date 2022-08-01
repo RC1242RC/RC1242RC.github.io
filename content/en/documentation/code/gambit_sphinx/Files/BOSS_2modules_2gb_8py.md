@@ -16,8 +16,8 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[modules](/documentation/code/gambit_sphinxnamespaces/namespacemodules/)**  |
-| **[modules::gb](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1gb/)**  |
+| **[modules](/documentation/code/gambit_sphinx/namespaces/namespacemodules/)**  |
+| **[modules::gb](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1gb/)**  |
 
 
 
@@ -559,4 +559,4 @@ std_headers = {
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:51 +0000
+Updated on 2022-08-01 at 17:41:25 +0000

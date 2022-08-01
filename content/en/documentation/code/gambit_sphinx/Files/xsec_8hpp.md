@@ -16,17 +16,17 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::ColliderBit](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1colliderbit/)**  |
+| **[Gambit](/documentation/code/gambit_sphinx/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::ColliderBit](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1colliderbit/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Gambit::ColliderBit::xsec_container](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1xsec__container/)** <br>A base class for holding cross-section info within ColliderBit.  |
-| class | **[Gambit::ColliderBit::MC_xsec_container](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1mc__xsec__container/)** <br>A class for holding a total cross-section calculated via MC across multiple threads.  |
-| class | **[Gambit::ColliderBit::process_xsec_container](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1process__xsec__container/)** <br>A class for holding the cross-section of a single Pythia process (identified by the Pythia process code)  |
-| class | **[Gambit::ColliderBit::PID_pair_xsec_container](/documentation/code/gambit_sphinxclasses/classgambit_1_1colliderbit_1_1pid__pair__xsec__container/)** <br>A class for holding the production cross-section for final state identified by the pair of PID codes.  |
+| class | **[Gambit::ColliderBit::xsec_container](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1xsec__container/)** <br>A base class for holding cross-section info within ColliderBit.  |
+| class | **[Gambit::ColliderBit::MC_xsec_container](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1mc__xsec__container/)** <br>A class for holding a total cross-section calculated via MC across multiple threads.  |
+| class | **[Gambit::ColliderBit::process_xsec_container](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1process__xsec__container/)** <br>A class for holding the cross-section of a single Pythia process (identified by the Pythia process code)  |
+| class | **[Gambit::ColliderBit::PID_pair_xsec_container](/documentation/code/gambit_sphinx/classes/classgambit_1_1colliderbit_1_1pid__pair__xsec__container/)** <br>A class for holding the production cross-section for final state identified by the pair of PID codes.  |
 
 ## Detailed Description
 
@@ -239,4 +239,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:49 +0000
+Updated on 2022-08-01 at 17:41:23 +0000

@@ -20,8 +20,8 @@ Holds the info about a Mathematica backend function, and defines conversion func
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[mathematica_function](/documentation/code/gambit_sphinxclasses/classgambit_1_1backends_1_1mathematica__function/#function-mathematica-function)**(const str & be, const str & ver, const str & symbol)<br>Constructor.  |
-| TYPE | **[operator()](/documentation/code/gambit_sphinxclasses/classgambit_1_1backends_1_1mathematica__function/#function-operator())**(ARGS &&... args)<br>Operation (execute function and return value)  |
+| | **[mathematica_function](/documentation/code/gambit_sphinx/classes/classgambit_1_1backends_1_1mathematica__function/#function-mathematica-function)**(const str & be, const str & ver, const str & symbol)<br>Constructor.  |
+| TYPE | **[operator()](/documentation/code/gambit_sphinx/classes/classgambit_1_1backends_1_1mathematica__function/#function-operator())**(ARGS &&... args)<br>Operation (execute function and return value)  |
 
 ## Detailed Description
 
@@ -58,4 +58,4 @@ Operation (execute function and return value)
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:46 +0000
+Updated on 2022-08-01 at 17:41:21 +0000

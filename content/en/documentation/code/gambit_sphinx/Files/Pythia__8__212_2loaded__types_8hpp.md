@@ -16,7 +16,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[Pythia_8_212_all_data](/documentation/code/gambit_sphinxfiles/pythia__8__212_2loaded__types_8hpp/#define-pythia-8-212-all-data)**  |
+|  | **[Pythia_8_212_all_data](/documentation/code/gambit_sphinx/files/pythia__8__212_2loaded__types_8hpp/#define-pythia-8-212-all-data)**  |
 
 
 
@@ -119,4 +119,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:50 +0000
+Updated on 2022-08-01 at 17:41:24 +0000

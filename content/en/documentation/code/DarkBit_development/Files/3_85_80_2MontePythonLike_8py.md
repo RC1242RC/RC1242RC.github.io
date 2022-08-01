@@ -16,23 +16,23 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[MontePythonLike](/documentation/code/darkbit_developmentnamespaces/namespacemontepythonlike/)**  |
+| **[MontePythonLike](/documentation/code/darkbit_development/namespaces/namespacemontepythonlike/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[MontePythonLike::Likelihood](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood/)**  |
-| class | **[MontePythonLike::Likelihood_prior](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood__prior/)**  |
-| class | **[MontePythonLike::Likelihood_newdat](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood__newdat/)**  |
-| class | **[MontePythonLike::Likelihood_clik](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood__clik/)**  |
-| class | **[MontePythonLike::Likelihood_mock_cmb](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood__mock__cmb/)**  |
-| class | **[MontePythonLike::Likelihood_sd](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood__sd/)**  |
-| class | **[MontePythonLike::Likelihood_mpk](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood__mpk/)**  |
-| class | **[MontePythonLike::Likelihood_sn](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood__sn/)**  |
-| class | **[MontePythonLike::Likelihood_clocks](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood__clocks/)**  |
-| class | **[MontePythonLike::Likelihood_isw](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1likelihood__isw/)**  |
-| class | **[MontePythonLike::Data](/documentation/code/darkbit_developmentclasses/classmontepythonlike_1_1data/)**  |
+| class | **[MontePythonLike::Likelihood](/documentation/code/darkbit_development/classes/classmontepythonlike_1_1likelihood/)**  |
+| class | **[MontePythonLike::Likelihood_prior](/documentation/code/darkbit_development/classes/classmontepythonlike_1_1likelihood__prior/)**  |
+| class | **[MontePythonLike::Likelihood_newdat](/documentation/code/darkbit_development/classes/classmontepythonlike_1_1likelihood__newdat/)**  |
+| class | **[MontePythonLike::Likelihood_clik](/documentation/code/darkbit_development/classes/classmontepythonlike_1_1likelihood__clik/)**  |
+| class | **[MontePythonLike::Likelihood_mock_cmb](/documentation/code/darkbit_development/classes/classmontepythonlike_1_1likelihood__mock__cmb/)**  |
+| class | **[MontePythonLike::Likelihood_sd](/documentation/code/darkbit_development/classes/classmontepythonlike_1_1likelihood__sd/)**  |
+| class | **[MontePythonLike::Likelihood_mpk](/documentation/code/darkbit_development/classes/classmontepythonlike_1_1likelihood__mpk/)**  |
+| class | **[MontePythonLike::Likelihood_sn](/documentation/code/darkbit_development/classes/classmontepythonlike_1_1likelihood__sn/)**  |
+| class | **[MontePythonLike::Likelihood_clocks](/documentation/code/darkbit_development/classes/classmontepythonlike_1_1likelihood__clocks/)**  |
+| class | **[MontePythonLike::Likelihood_isw](/documentation/code/darkbit_development/classes/classmontepythonlike_1_1likelihood__isw/)**  |
+| class | **[MontePythonLike::Data](/documentation/code/darkbit_development/classes/classmontepythonlike_1_1data/)**  |
 
 
 
@@ -3409,4 +3409,4 @@ def get_available_likelihoods(backendDir):
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:45 +0000
+Updated on 2022-08-01 at 17:41:26 +0000

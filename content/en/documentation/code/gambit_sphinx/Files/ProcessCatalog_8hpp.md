@@ -16,19 +16,19 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::DarkBit](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1darkbit/)**  |
+| **[Gambit](/documentation/code/gambit_sphinx/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::DarkBit](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1darkbit/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[Gambit::DarkBit::TH_Resonance](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1th__resonance/)** <br>A single resonance of a given width at a given energy (both in GeV)  |
-| struct | **[Gambit::DarkBit::TH_resonances_thresholds](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1th__resonances__thresholds/)** <br>Location of resonances and thresholds in energy (GeV)  |
-| struct | **[Gambit::DarkBit::TH_ParticleProperty](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1th__particleproperty/)** <br>A container for the mass and spin of a particle.  |
-| struct | **[Gambit::DarkBit::TH_Channel](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1th__channel/)**  |
-| struct | **[Gambit::DarkBit::TH_Process](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1th__process/)**  |
-| struct | **[Gambit::DarkBit::TH_ProcessCatalog](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1th__processcatalog/)** <br>A container holding all annihilation and decay initial states relevant for DarkBit.  |
+| struct | **[Gambit::DarkBit::TH_Resonance](/documentation/code/gambit_sphinx/classes/structgambit_1_1darkbit_1_1th__resonance/)** <br>A single resonance of a given width at a given energy (both in GeV)  |
+| struct | **[Gambit::DarkBit::TH_resonances_thresholds](/documentation/code/gambit_sphinx/classes/structgambit_1_1darkbit_1_1th__resonances__thresholds/)** <br>Location of resonances and thresholds in energy (GeV)  |
+| struct | **[Gambit::DarkBit::TH_ParticleProperty](/documentation/code/gambit_sphinx/classes/structgambit_1_1darkbit_1_1th__particleproperty/)** <br>A container for the mass and spin of a particle.  |
+| struct | **[Gambit::DarkBit::TH_Channel](/documentation/code/gambit_sphinx/classes/structgambit_1_1darkbit_1_1th__channel/)**  |
+| struct | **[Gambit::DarkBit::TH_Process](/documentation/code/gambit_sphinx/classes/structgambit_1_1darkbit_1_1th__process/)**  |
+| struct | **[Gambit::DarkBit::TH_ProcessCatalog](/documentation/code/gambit_sphinx/classes/structgambit_1_1darkbit_1_1th__processcatalog/)** <br>A container holding all annihilation and decay initial states relevant for DarkBit.  |
 
 ## Detailed Description
 
@@ -203,4 +203,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:49 +0000
+Updated on 2022-08-01 at 17:41:23 +0000

@@ -18,7 +18,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Farray< Fdouble, 0, 255 > | **[mass](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__pmasses/#variable-mass)**  |
+| Farray< Fdouble, 0, 255 > | **[mass](/documentation/code/darkbit_development/classes/structgambit_1_1ds__pmasses/#variable-mass)**  |
 
 ## Public Attributes Documentation
 
@@ -31,4 +31,4 @@ Farray< Fdouble, 0, 255 > mass;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:41 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

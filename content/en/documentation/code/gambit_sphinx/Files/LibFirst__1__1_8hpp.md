@@ -16,31 +16,31 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| [LOAD_LIBRARY](/documentation/code/gambit_sphinxfiles/frontend__macros_8hpp/#define-load-library) | **[BE_FUNCTION](/documentation/code/gambit_sphinxfiles/libfirst__1__1_8hpp/#function-be-function)**(someFunction , void , () , "_Z12someFunctionv" , "someFunction" , (NUHM1, WC) ) |
-| [LOAD_LIBRARY](/documentation/code/gambit_sphinxfiles/frontend__macros_8hpp/#define-load-library) double _Z11arrayarg_2DPA10_d | **[BE_FUNCTION](/documentation/code/gambit_sphinxfiles/libfirst__1__1_8hpp/#function-be-function)**(arrayarg_3D , double , (double(*)[10][10]) , "_Z11arrayarg_3DPA10_A10_d" , "example_be_array_3D" ) |
-| | **[if](/documentation/code/gambit_sphinxfiles/libfirst__1__1_8hpp/#function-if)**(scan_level ) |
-| | **[logger](/documentation/code/gambit_sphinxfiles/libfirst__1__1_8hpp/#function-logger)**() |
+| [LOAD_LIBRARY](/documentation/code/gambit_sphinx/files/frontend__macros_8hpp/#define-load-library) | **[BE_FUNCTION](/documentation/code/gambit_sphinx/files/libfirst__1__1_8hpp/#function-be-function)**(someFunction , void , () , "_Z12someFunctionv" , "someFunction" , (NUHM1, WC) ) |
+| [LOAD_LIBRARY](/documentation/code/gambit_sphinx/files/frontend__macros_8hpp/#define-load-library) double _Z11arrayarg_2DPA10_d | **[BE_FUNCTION](/documentation/code/gambit_sphinx/files/libfirst__1__1_8hpp/#function-be-function)**(arrayarg_3D , double , (double(*)[10][10]) , "_Z11arrayarg_3DPA10_A10_d" , "example_be_array_3D" ) |
+| | **[if](/documentation/code/gambit_sphinx/files/libfirst__1__1_8hpp/#function-if)**(scan_level ) |
+| | **[logger](/documentation/code/gambit_sphinx/files/libfirst__1__1_8hpp/#function-logger)**() |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| [LOAD_LIBRARY](/documentation/code/gambit_sphinxfiles/frontend__macros_8hpp/#define-load-library) | **[double](/documentation/code/gambit_sphinxfiles/libfirst__1__1_8hpp/#variable-double)**  |
-| [LOAD_LIBRARY](/documentation/code/gambit_sphinxfiles/frontend__macros_8hpp/#define-load-library) double _Z11arrayarg_2DPA10_d | **[int](/documentation/code/gambit_sphinxfiles/libfirst__1__1_8hpp/#variable-int)**  |
-| [LOAD_LIBRARY](/documentation/code/gambit_sphinxfiles/frontend__macros_8hpp/#define-load-library) double _Z11arrayarg_2DPA10_d | **[awesomeness](/documentation/code/gambit_sphinxfiles/libfirst__1__1_8hpp/#variable-awesomeness)**  |
-| [LOAD_LIBRARY](/documentation/code/gambit_sphinxfiles/frontend__macros_8hpp/#define-load-library) double _Z11arrayarg_2DPA10_d | **[NUHM1](/documentation/code/gambit_sphinxfiles/libfirst__1__1_8hpp/#variable-nuhm1)**  |
-| [LOAD_LIBRARY](/documentation/code/gambit_sphinxfiles/frontend__macros_8hpp/#define-load-library) double _Z11arrayarg_2DPA10_d ScalarSingletDM_Z3 | **[BE_INI_FUNCTION](/documentation/code/gambit_sphinxfiles/libfirst__1__1_8hpp/#variable-be-ini-function)**  |
-| | **[scan_level](/documentation/code/gambit_sphinxfiles/libfirst__1__1_8hpp/#variable-scan-level)**  |
+| [LOAD_LIBRARY](/documentation/code/gambit_sphinx/files/frontend__macros_8hpp/#define-load-library) | **[double](/documentation/code/gambit_sphinx/files/libfirst__1__1_8hpp/#variable-double)**  |
+| [LOAD_LIBRARY](/documentation/code/gambit_sphinx/files/frontend__macros_8hpp/#define-load-library) double _Z11arrayarg_2DPA10_d | **[int](/documentation/code/gambit_sphinx/files/libfirst__1__1_8hpp/#variable-int)**  |
+| [LOAD_LIBRARY](/documentation/code/gambit_sphinx/files/frontend__macros_8hpp/#define-load-library) double _Z11arrayarg_2DPA10_d | **[awesomeness](/documentation/code/gambit_sphinx/files/libfirst__1__1_8hpp/#variable-awesomeness)**  |
+| [LOAD_LIBRARY](/documentation/code/gambit_sphinx/files/frontend__macros_8hpp/#define-load-library) double _Z11arrayarg_2DPA10_d | **[NUHM1](/documentation/code/gambit_sphinx/files/libfirst__1__1_8hpp/#variable-nuhm1)**  |
+| [LOAD_LIBRARY](/documentation/code/gambit_sphinx/files/frontend__macros_8hpp/#define-load-library) double _Z11arrayarg_2DPA10_d ScalarSingletDM_Z3 | **[BE_INI_FUNCTION](/documentation/code/gambit_sphinx/files/libfirst__1__1_8hpp/#variable-be-ini-function)**  |
+| | **[scan_level](/documentation/code/gambit_sphinx/files/libfirst__1__1_8hpp/#variable-scan-level)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[BACKENDNAME](/documentation/code/gambit_sphinxfiles/libfirst__1__1_8hpp/#define-backendname)**  |
-|  | **[BACKENDLANG](/documentation/code/gambit_sphinxfiles/libfirst__1__1_8hpp/#define-backendlang)**  |
-|  | **[VERSION](/documentation/code/gambit_sphinxfiles/libfirst__1__1_8hpp/#define-version)**  |
-|  | **[SAFE_VERSION](/documentation/code/gambit_sphinxfiles/libfirst__1__1_8hpp/#define-safe-version)**  |
-|  | **[REFERENCE](/documentation/code/gambit_sphinxfiles/libfirst__1__1_8hpp/#define-reference)**  |
+|  | **[BACKENDNAME](/documentation/code/gambit_sphinx/files/libfirst__1__1_8hpp/#define-backendname)**  |
+|  | **[BACKENDLANG](/documentation/code/gambit_sphinx/files/libfirst__1__1_8hpp/#define-backendlang)**  |
+|  | **[VERSION](/documentation/code/gambit_sphinx/files/libfirst__1__1_8hpp/#define-version)**  |
+|  | **[SAFE_VERSION](/documentation/code/gambit_sphinx/files/libfirst__1__1_8hpp/#define-safe-version)**  |
+|  | **[REFERENCE](/documentation/code/gambit_sphinx/files/libfirst__1__1_8hpp/#define-reference)**  |
 
 ## Detailed Description
 
@@ -58,7 +58,7 @@ description: "[No description available]"
   * 2014 May
 
 
-Example of how to use the macros in '[backend_macros.hpp](/documentation/code/gambit_sphinxfiles/backend__macros_8hpp/#file-backend-macros.hpp)' to set up a frontend for a specific library.
+Example of how to use the macros in '[backend_macros.hpp](/documentation/code/gambit_sphinx/files/backend__macros_8hpp/#file-backend-macros.hpp)' to set up a frontend for a specific library.
 
 
 
@@ -302,4 +302,4 @@ END_BE_NAMESPACE
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:50 +0000
+Updated on 2022-08-01 at 17:41:25 +0000

@@ -18,21 +18,21 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Fdouble | **[hlbrb](/documentation/code/darkbit_developmentclasses/structgambit_1_1widthhl__hdec__type/#variable-hlbrb)**  |
-| Fdouble | **[hlbrl](/documentation/code/darkbit_developmentclasses/structgambit_1_1widthhl__hdec__type/#variable-hlbrl)**  |
-| Fdouble | **[hlbrm](/documentation/code/darkbit_developmentclasses/structgambit_1_1widthhl__hdec__type/#variable-hlbrm)**  |
-| Fdouble | **[hlbrs](/documentation/code/darkbit_developmentclasses/structgambit_1_1widthhl__hdec__type/#variable-hlbrs)**  |
-| Fdouble | **[hlbrc](/documentation/code/darkbit_developmentclasses/structgambit_1_1widthhl__hdec__type/#variable-hlbrc)**  |
-| Fdouble | **[hlbrt](/documentation/code/darkbit_developmentclasses/structgambit_1_1widthhl__hdec__type/#variable-hlbrt)**  |
-| Fdouble | **[hlbrg](/documentation/code/darkbit_developmentclasses/structgambit_1_1widthhl__hdec__type/#variable-hlbrg)**  |
-| Fdouble | **[hlbrga](/documentation/code/darkbit_developmentclasses/structgambit_1_1widthhl__hdec__type/#variable-hlbrga)**  |
-| Fdouble | **[hlbrzga](/documentation/code/darkbit_developmentclasses/structgambit_1_1widthhl__hdec__type/#variable-hlbrzga)**  |
-| Fdouble | **[hlbrw](/documentation/code/darkbit_developmentclasses/structgambit_1_1widthhl__hdec__type/#variable-hlbrw)**  |
-| Fdouble | **[hlbrz](/documentation/code/darkbit_developmentclasses/structgambit_1_1widthhl__hdec__type/#variable-hlbrz)**  |
-| Fdouble | **[hlbra](/documentation/code/darkbit_developmentclasses/structgambit_1_1widthhl__hdec__type/#variable-hlbra)**  |
-| Fdouble | **[hlbraz](/documentation/code/darkbit_developmentclasses/structgambit_1_1widthhl__hdec__type/#variable-hlbraz)**  |
-| Fdouble | **[hlbrhw](/documentation/code/darkbit_developmentclasses/structgambit_1_1widthhl__hdec__type/#variable-hlbrhw)**  |
-| Fdouble | **[hlwdth](/documentation/code/darkbit_developmentclasses/structgambit_1_1widthhl__hdec__type/#variable-hlwdth)**  |
+| Fdouble | **[hlbrb](/documentation/code/darkbit_development/classes/structgambit_1_1widthhl__hdec__type/#variable-hlbrb)**  |
+| Fdouble | **[hlbrl](/documentation/code/darkbit_development/classes/structgambit_1_1widthhl__hdec__type/#variable-hlbrl)**  |
+| Fdouble | **[hlbrm](/documentation/code/darkbit_development/classes/structgambit_1_1widthhl__hdec__type/#variable-hlbrm)**  |
+| Fdouble | **[hlbrs](/documentation/code/darkbit_development/classes/structgambit_1_1widthhl__hdec__type/#variable-hlbrs)**  |
+| Fdouble | **[hlbrc](/documentation/code/darkbit_development/classes/structgambit_1_1widthhl__hdec__type/#variable-hlbrc)**  |
+| Fdouble | **[hlbrt](/documentation/code/darkbit_development/classes/structgambit_1_1widthhl__hdec__type/#variable-hlbrt)**  |
+| Fdouble | **[hlbrg](/documentation/code/darkbit_development/classes/structgambit_1_1widthhl__hdec__type/#variable-hlbrg)**  |
+| Fdouble | **[hlbrga](/documentation/code/darkbit_development/classes/structgambit_1_1widthhl__hdec__type/#variable-hlbrga)**  |
+| Fdouble | **[hlbrzga](/documentation/code/darkbit_development/classes/structgambit_1_1widthhl__hdec__type/#variable-hlbrzga)**  |
+| Fdouble | **[hlbrw](/documentation/code/darkbit_development/classes/structgambit_1_1widthhl__hdec__type/#variable-hlbrw)**  |
+| Fdouble | **[hlbrz](/documentation/code/darkbit_development/classes/structgambit_1_1widthhl__hdec__type/#variable-hlbrz)**  |
+| Fdouble | **[hlbra](/documentation/code/darkbit_development/classes/structgambit_1_1widthhl__hdec__type/#variable-hlbra)**  |
+| Fdouble | **[hlbraz](/documentation/code/darkbit_development/classes/structgambit_1_1widthhl__hdec__type/#variable-hlbraz)**  |
+| Fdouble | **[hlbrhw](/documentation/code/darkbit_development/classes/structgambit_1_1widthhl__hdec__type/#variable-hlbrhw)**  |
+| Fdouble | **[hlwdth](/documentation/code/darkbit_development/classes/structgambit_1_1widthhl__hdec__type/#variable-hlwdth)**  |
 
 ## Public Attributes Documentation
 
@@ -143,4 +143,4 @@ Fdouble hlwdth;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:41 +0000
+Updated on 2022-08-01 at 17:41:23 +0000

@@ -20,15 +20,15 @@ class to interface with the plugin manager resume functions.
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[resume_params_func](/documentation/code/darkbit_developmentclasses/classgambit_1_1scanner_1_1resume__params__func/#function-resume-params-func)**(const std::string & name_in) |
-| std::string | **[get_name](/documentation/code/darkbit_developmentclasses/classgambit_1_1scanner_1_1resume__params__func/#function-get-name)**() const |
-| void | **[set_resume_mode](/documentation/code/darkbit_developmentclasses/classgambit_1_1scanner_1_1resume__params__func/#function-set-resume-mode)**(const bool & mode) |
-| bool | **[resume_mode](/documentation/code/darkbit_developmentclasses/classgambit_1_1scanner_1_1resume__params__func/#function-resume-mode)**() const |
-| std::string | **[get_temp_file_name](/documentation/code/darkbit_developmentclasses/classgambit_1_1scanner_1_1resume__params__func/#function-get-temp-file-name)**(const std::string & temp_file) |
-| void | **[dump](/documentation/code/darkbit_developmentclasses/classgambit_1_1scanner_1_1resume__params__func/#function-dump)**() |
-| int | **[Rank](/documentation/code/darkbit_developmentclasses/classgambit_1_1scanner_1_1resume__params__func/#function-rank)**() const |
-| int | **[NumTasks](/documentation/code/darkbit_developmentclasses/classgambit_1_1scanner_1_1resume__params__func/#function-numtasks)**() const |
-| template <typename... T\> <br>void | **[operator()](/documentation/code/darkbit_developmentclasses/classgambit_1_1scanner_1_1resume__params__func/#function-operator())**(T &... params) |
+| | **[resume_params_func](/documentation/code/darkbit_development/classes/classgambit_1_1scanner_1_1resume__params__func/#function-resume-params-func)**(const std::string & name_in) |
+| std::string | **[get_name](/documentation/code/darkbit_development/classes/classgambit_1_1scanner_1_1resume__params__func/#function-get-name)**() const |
+| void | **[set_resume_mode](/documentation/code/darkbit_development/classes/classgambit_1_1scanner_1_1resume__params__func/#function-set-resume-mode)**(const bool & mode) |
+| bool | **[resume_mode](/documentation/code/darkbit_development/classes/classgambit_1_1scanner_1_1resume__params__func/#function-resume-mode)**() const |
+| std::string | **[get_temp_file_name](/documentation/code/darkbit_development/classes/classgambit_1_1scanner_1_1resume__params__func/#function-get-temp-file-name)**(const std::string & temp_file) |
+| void | **[dump](/documentation/code/darkbit_development/classes/classgambit_1_1scanner_1_1resume__params__func/#function-dump)**() |
+| int | **[Rank](/documentation/code/darkbit_development/classes/classgambit_1_1scanner_1_1resume__params__func/#function-rank)**() const |
+| int | **[NumTasks](/documentation/code/darkbit_development/classes/classgambit_1_1scanner_1_1resume__params__func/#function-numtasks)**() const |
+| template <typename... T\> <br>void | **[operator()](/documentation/code/darkbit_development/classes/classgambit_1_1scanner_1_1resume__params__func/#function-operator())**(T &... params) |
 
 ## Public Functions Documentation
 
@@ -106,4 +106,4 @@ inline void operator()(
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:42 +0000
+Updated on 2022-08-01 at 17:41:24 +0000

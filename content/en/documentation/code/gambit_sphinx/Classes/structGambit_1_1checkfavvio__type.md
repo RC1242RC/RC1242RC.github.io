@@ -18,8 +18,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Finteger | **[icheckfav](/documentation/code/gambit_sphinxclasses/structgambit_1_1checkfavvio__type/#variable-icheckfav)**  |
-| Farray< Finteger, 1, 2 > | **[imodfav](/documentation/code/gambit_sphinxclasses/structgambit_1_1checkfavvio__type/#variable-imodfav)**  |
+| Finteger | **[icheckfav](/documentation/code/gambit_sphinx/classes/structgambit_1_1checkfavvio__type/#variable-icheckfav)**  |
+| Farray< Finteger, 1, 2 > | **[imodfav](/documentation/code/gambit_sphinx/classes/structgambit_1_1checkfavvio__type/#variable-imodfav)**  |
 
 ## Public Attributes Documentation
 
@@ -39,4 +39,4 @@ Farray< Finteger, 1, 2 > imodfav;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:46 +0000
+Updated on 2022-08-01 at 17:41:21 +0000

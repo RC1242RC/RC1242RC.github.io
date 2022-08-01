@@ -18,16 +18,16 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Farray< Fdouble, 1, 29 > | **[wabr](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds5__nucom/#variable-wabr)**  |
-| Farray< Fdouble, 1, 29, 1, 3 > | **[was0br](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds5__nucom/#variable-was0br)**  |
-| Farray< Fdouble, 1, 15 > | **[wascbr](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds5__nucom/#variable-wascbr)**  |
-| Farray< Fdouble, 1, 3 > | **[was0m](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds5__nucom/#variable-was0m)**  |
-| Fdouble | **[wascm](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds5__nucom/#variable-wascm)**  |
-| Fdouble | **[wamwimp](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds5__nucom/#variable-wamwimp)**  |
-| Fdouble | **[wasv](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds5__nucom/#variable-wasv)**  |
-| Fdouble | **[wasigsip](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds5__nucom/#variable-wasigsip)**  |
-| Fdouble | **[wasigsdp](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds5__nucom/#variable-wasigsdp)**  |
-| Flogical | **[dswasetupcalled](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds5__nucom/#variable-dswasetupcalled)**  |
+| Farray< Fdouble, 1, 29 > | **[wabr](/documentation/code/darkbit_development/classes/structgambit_1_1ds5__nucom/#variable-wabr)**  |
+| Farray< Fdouble, 1, 29, 1, 3 > | **[was0br](/documentation/code/darkbit_development/classes/structgambit_1_1ds5__nucom/#variable-was0br)**  |
+| Farray< Fdouble, 1, 15 > | **[wascbr](/documentation/code/darkbit_development/classes/structgambit_1_1ds5__nucom/#variable-wascbr)**  |
+| Farray< Fdouble, 1, 3 > | **[was0m](/documentation/code/darkbit_development/classes/structgambit_1_1ds5__nucom/#variable-was0m)**  |
+| Fdouble | **[wascm](/documentation/code/darkbit_development/classes/structgambit_1_1ds5__nucom/#variable-wascm)**  |
+| Fdouble | **[wamwimp](/documentation/code/darkbit_development/classes/structgambit_1_1ds5__nucom/#variable-wamwimp)**  |
+| Fdouble | **[wasv](/documentation/code/darkbit_development/classes/structgambit_1_1ds5__nucom/#variable-wasv)**  |
+| Fdouble | **[wasigsip](/documentation/code/darkbit_development/classes/structgambit_1_1ds5__nucom/#variable-wasigsip)**  |
+| Fdouble | **[wasigsdp](/documentation/code/darkbit_development/classes/structgambit_1_1ds5__nucom/#variable-wasigsdp)**  |
+| Flogical | **[dswasetupcalled](/documentation/code/darkbit_development/classes/structgambit_1_1ds5__nucom/#variable-dswasetupcalled)**  |
 
 ## Public Attributes Documentation
 
@@ -103,4 +103,4 @@ Flogical dswasetupcalled;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:41 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

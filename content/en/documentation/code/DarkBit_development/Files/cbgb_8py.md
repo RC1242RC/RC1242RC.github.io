@@ -16,7 +16,7 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[cbgb](/documentation/code/darkbit_developmentnamespaces/namespacecbgb/)**  |
+| **[cbgb](/documentation/code/darkbit_development/namespaces/namespacecbgb/)**  |
 
 
 
@@ -479,4 +479,4 @@ print
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:45 +0000
+Updated on 2022-08-01 at 17:41:26 +0000

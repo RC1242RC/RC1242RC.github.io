@@ -16,7 +16,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Gambit::Models::safe_param_map](/documentation/code/darkbit_developmentclasses/classgambit_1_1models_1_1safe__param__map/)**  |
+| class | **[Gambit::Models::safe_param_map](/documentation/code/darkbit_development/classes/classgambit_1_1models_1_1safe__param__map/)**  |
 
 
 
@@ -25,4 +25,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:42 +0000
+Updated on 2022-08-01 at 17:41:23 +0000

@@ -16,7 +16,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[DO_CLASSLOADING](/documentation/code/gambit_sphinxfiles/scripts_2boss_2common__headers_2backend__undefs_8hpp/#define-do-classloading)**  |
+|  | **[DO_CLASSLOADING](/documentation/code/gambit_sphinx/files/scripts_2boss_2common__headers_2backend__undefs_8hpp/#define-do-classloading)**  |
 
 ## Detailed Description
 
@@ -76,4 +76,4 @@ Authors (add name and date if you modify):
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:51 +0000
+Updated on 2022-08-01 at 17:41:25 +0000

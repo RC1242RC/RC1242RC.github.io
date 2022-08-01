@@ -16,14 +16,14 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::ColliderBit](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1colliderbit/)**  |
+| **[Gambit](/documentation/code/gambit_sphinx/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::ColliderBit](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1colliderbit/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[Gambit::ColliderBit::AnalysisLogLikes](/documentation/code/gambit_sphinxclasses/structgambit_1_1colliderbit_1_1analysisloglikes/)** <br>Container for loglike information for an analysis.  |
+| struct | **[Gambit::ColliderBit::AnalysisLogLikes](/documentation/code/gambit_sphinx/classes/structgambit_1_1colliderbit_1_1analysisloglikes/)** <br>Container for loglike information for an analysis.  |
 
 ## Detailed Description
 
@@ -160,4 +160,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:49 +0000
+Updated on 2022-08-01 at 17:41:23 +0000

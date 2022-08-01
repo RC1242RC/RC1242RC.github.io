@@ -18,7 +18,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef ret(typename remove_all< args >::type...) | **[type](/documentation/code/darkbit_developmentclasses/structgambit_1_1scanner_1_1remove__all__func_3_01ret_07args_8_8_8_08_4/#typedef-type)**  |
+| typedef ret(typename remove_all< args >::type...) | **[type](/documentation/code/darkbit_development/classes/structgambit_1_1scanner_1_1remove__all__func_3_01ret_07args_8_8_8_08_4/#typedef-type)**  |
 
 ## Detailed Description
 
@@ -39,4 +39,4 @@ typedef ret Gambit::Scanner::remove_all_func< ret(args...)>::type(typename remov
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:42 +0000
+Updated on 2022-08-01 at 17:41:24 +0000

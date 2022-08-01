@@ -18,9 +18,9 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[erg](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1solarmodel__params1/#variable-erg)**  |
-| double | **[rad](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1solarmodel__params1/#variable-rad)**  |
-| [SolarModel](/documentation/code/gambit_sphinxclasses/classgambit_1_1darkbit_1_1solarmodel/) * | **[sol](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1solarmodel__params1/#variable-sol)**  |
+| double | **[erg](/documentation/code/gambit_sphinx/classes/structgambit_1_1darkbit_1_1solarmodel__params1/#variable-erg)**  |
+| double | **[rad](/documentation/code/gambit_sphinx/classes/structgambit_1_1darkbit_1_1solarmodel__params1/#variable-rad)**  |
+| [SolarModel](/documentation/code/gambit_sphinx/classes/classgambit_1_1darkbit_1_1solarmodel/) * | **[sol](/documentation/code/gambit_sphinx/classes/structgambit_1_1darkbit_1_1solarmodel__params1/#variable-sol)**  |
 
 ## Public Attributes Documentation
 
@@ -47,4 +47,4 @@ SolarModel * sol;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:47 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

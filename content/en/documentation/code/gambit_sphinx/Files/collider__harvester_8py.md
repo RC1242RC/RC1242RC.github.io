@@ -16,7 +16,7 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[collider_harvester](/documentation/code/gambit_sphinxnamespaces/namespacecollider__harvester/)**  |
+| **[collider_harvester](/documentation/code/gambit_sphinx/namespaces/namespacecollider__harvester/)**  |
 
 
 
@@ -171,4 +171,4 @@ if __name__ == "__main__":
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:49 +0000
+Updated on 2022-08-01 at 17:41:23 +0000

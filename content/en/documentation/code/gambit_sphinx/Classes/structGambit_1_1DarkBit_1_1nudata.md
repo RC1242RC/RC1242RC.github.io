@@ -20,12 +20,12 @@ Neutrino telescope data container.
 
 |                | Name           |
 | -------------- | -------------- |
-| int | **[nobs](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1nudata/#variable-nobs)**  |
-| double | **[signal](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1nudata/#variable-signal)**  |
-| double | **[bg](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1nudata/#variable-bg)**  |
-| double | **[loglike](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1nudata/#variable-loglike)**  |
-| double | **[bgloglike](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1nudata/#variable-bgloglike)**  |
-| double | **[pvalue](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1nudata/#variable-pvalue)**  |
+| int | **[nobs](/documentation/code/gambit_sphinx/classes/structgambit_1_1darkbit_1_1nudata/#variable-nobs)**  |
+| double | **[signal](/documentation/code/gambit_sphinx/classes/structgambit_1_1darkbit_1_1nudata/#variable-signal)**  |
+| double | **[bg](/documentation/code/gambit_sphinx/classes/structgambit_1_1darkbit_1_1nudata/#variable-bg)**  |
+| double | **[loglike](/documentation/code/gambit_sphinx/classes/structgambit_1_1darkbit_1_1nudata/#variable-loglike)**  |
+| double | **[bgloglike](/documentation/code/gambit_sphinx/classes/structgambit_1_1darkbit_1_1nudata/#variable-bgloglike)**  |
+| double | **[pvalue](/documentation/code/gambit_sphinx/classes/structgambit_1_1darkbit_1_1nudata/#variable-pvalue)**  |
 
 ## Public Attributes Documentation
 
@@ -73,4 +73,4 @@ double pvalue;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:47 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

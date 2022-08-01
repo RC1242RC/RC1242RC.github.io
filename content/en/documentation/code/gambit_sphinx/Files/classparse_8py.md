@@ -16,8 +16,8 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[modules](/documentation/code/gambit_sphinxnamespaces/namespacemodules/)**  |
-| **[modules::classparse](/documentation/code/gambit_sphinxnamespaces/namespacemodules_1_1classparse/)**  |
+| **[modules](/documentation/code/gambit_sphinx/namespaces/namespacemodules/)**  |
+| **[modules::classparse](/documentation/code/gambit_sphinx/namespaces/namespacemodules_1_1classparse/)**  |
 
 
 
@@ -940,4 +940,4 @@ def addWrapperTypedefs(class_name, namespaces):
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:51 +0000
+Updated on 2022-08-01 at 17:41:25 +0000

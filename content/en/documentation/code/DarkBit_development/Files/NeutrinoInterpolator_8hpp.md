@@ -16,15 +16,15 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/darkbit_developmentnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::NeutrinoBit](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1neutrinobit/)**  |
+| **[Gambit](/documentation/code/darkbit_development/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::NeutrinoBit](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1neutrinobit/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Gambit::NeutrinoBit::NeutrinoInterpolator](/documentation/code/darkbit_developmentclasses/classgambit_1_1neutrinobit_1_1neutrinointerpolator/)**  |
-| class | **[Gambit::NeutrinoBit::NeutrinoInterpolator2D](/documentation/code/darkbit_developmentclasses/classgambit_1_1neutrinobit_1_1neutrinointerpolator2d/)**  |
+| class | **[Gambit::NeutrinoBit::NeutrinoInterpolator](/documentation/code/darkbit_development/classes/classgambit_1_1neutrinobit_1_1neutrinointerpolator/)**  |
+| class | **[Gambit::NeutrinoBit::NeutrinoInterpolator2D](/documentation/code/darkbit_development/classes/classgambit_1_1neutrinobit_1_1neutrinointerpolator2d/)**  |
 
 ## Detailed Description
 
@@ -247,4 +247,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:43 +0000
+Updated on 2022-08-01 at 17:41:24 +0000

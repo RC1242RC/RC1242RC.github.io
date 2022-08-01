@@ -18,11 +18,11 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[NeutrinoInterpolator2D](/documentation/code/gambit_sphinxclasses/classgambit_1_1neutrinobit_1_1neutrinointerpolator2d/#function-neutrinointerpolator2d)**(std::string file) |
-| | **[NeutrinoInterpolator2D](/documentation/code/gambit_sphinxclasses/classgambit_1_1neutrinobit_1_1neutrinointerpolator2d/#function-neutrinointerpolator2d)**(const [NeutrinoInterpolator2D](/documentation/code/gambit_sphinxclasses/classgambit_1_1neutrinobit_1_1neutrinointerpolator2d/) & ) =delete |
-| [NeutrinoInterpolator2D](/documentation/code/gambit_sphinxclasses/classgambit_1_1neutrinobit_1_1neutrinointerpolator2d/) & | **[operator=](/documentation/code/gambit_sphinxclasses/classgambit_1_1neutrinobit_1_1neutrinointerpolator2d/#function-operator=)**(const [NeutrinoInterpolator2D](/documentation/code/gambit_sphinxclasses/classgambit_1_1neutrinobit_1_1neutrinointerpolator2d/) & ) =delete |
-| | **[~NeutrinoInterpolator2D](/documentation/code/gambit_sphinxclasses/classgambit_1_1neutrinobit_1_1neutrinointerpolator2d/#function-~neutrinointerpolator2d)**() |
-| double | **[eval](/documentation/code/gambit_sphinxclasses/classgambit_1_1neutrinobit_1_1neutrinointerpolator2d/#function-eval)**(double x, double y) |
+| | **[NeutrinoInterpolator2D](/documentation/code/gambit_sphinx/classes/classgambit_1_1neutrinobit_1_1neutrinointerpolator2d/#function-neutrinointerpolator2d)**(std::string file) |
+| | **[NeutrinoInterpolator2D](/documentation/code/gambit_sphinx/classes/classgambit_1_1neutrinobit_1_1neutrinointerpolator2d/#function-neutrinointerpolator2d)**(const [NeutrinoInterpolator2D](/documentation/code/gambit_sphinx/classes/classgambit_1_1neutrinobit_1_1neutrinointerpolator2d/) & ) =delete |
+| [NeutrinoInterpolator2D](/documentation/code/gambit_sphinx/classes/classgambit_1_1neutrinobit_1_1neutrinointerpolator2d/) & | **[operator=](/documentation/code/gambit_sphinx/classes/classgambit_1_1neutrinobit_1_1neutrinointerpolator2d/#function-operator=)**(const [NeutrinoInterpolator2D](/documentation/code/gambit_sphinx/classes/classgambit_1_1neutrinobit_1_1neutrinointerpolator2d/) & ) =delete |
+| | **[~NeutrinoInterpolator2D](/documentation/code/gambit_sphinx/classes/classgambit_1_1neutrinobit_1_1neutrinointerpolator2d/#function-~neutrinointerpolator2d)**() |
+| double | **[eval](/documentation/code/gambit_sphinx/classes/classgambit_1_1neutrinobit_1_1neutrinointerpolator2d/#function-eval)**(double x, double y) |
 
 ## Public Functions Documentation
 
@@ -72,4 +72,4 @@ inline double eval(
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:48 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

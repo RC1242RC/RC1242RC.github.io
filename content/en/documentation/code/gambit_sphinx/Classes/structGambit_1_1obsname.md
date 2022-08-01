@@ -18,12 +18,12 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| char | **[type](/documentation/code/gambit_sphinxclasses/structgambit_1_1obsname/#variable-type)**  |
-| char | **[decay](/documentation/code/gambit_sphinxclasses/structgambit_1_1obsname/#variable-decay)**  |
-| double | **[low](/documentation/code/gambit_sphinxclasses/structgambit_1_1obsname/#variable-low)**  |
-| double | **[high](/documentation/code/gambit_sphinxclasses/structgambit_1_1obsname/#variable-high)**  |
-| char | **[other](/documentation/code/gambit_sphinxclasses/structgambit_1_1obsname/#variable-other)**  |
-| char | **[name](/documentation/code/gambit_sphinxclasses/structgambit_1_1obsname/#variable-name)**  |
+| char | **[type](/documentation/code/gambit_sphinx/classes/structgambit_1_1obsname/#variable-type)**  |
+| char | **[decay](/documentation/code/gambit_sphinx/classes/structgambit_1_1obsname/#variable-decay)**  |
+| double | **[low](/documentation/code/gambit_sphinx/classes/structgambit_1_1obsname/#variable-low)**  |
+| double | **[high](/documentation/code/gambit_sphinx/classes/structgambit_1_1obsname/#variable-high)**  |
+| char | **[other](/documentation/code/gambit_sphinx/classes/structgambit_1_1obsname/#variable-other)**  |
+| char | **[name](/documentation/code/gambit_sphinx/classes/structgambit_1_1obsname/#variable-name)**  |
 
 ## Public Attributes Documentation
 
@@ -71,4 +71,4 @@ char name;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:46 +0000
+Updated on 2022-08-01 at 17:41:21 +0000

@@ -16,14 +16,14 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[CAT](/documentation/code/gambit_sphinxfiles/cats_8hpp/#define-cat)**(X, Y)  |
-|  | **[CAT2](/documentation/code/gambit_sphinxfiles/cats_8hpp/#define-cat2)**(X, Y)  |
-|  | **[CAT_2](/documentation/code/gambit_sphinxfiles/cats_8hpp/#define-cat-2)**  |
-|  | **[CAT_3](/documentation/code/gambit_sphinxfiles/cats_8hpp/#define-cat-3)**(X, Y, Z)  |
-|  | **[CAT_4](/documentation/code/gambit_sphinxfiles/cats_8hpp/#define-cat-4)**(A, X, Y, Z)  |
-|  | **[CAT_5](/documentation/code/gambit_sphinxfiles/cats_8hpp/#define-cat-5)**(A, B, X, Y, Z)  |
-|  | **[CAT_6](/documentation/code/gambit_sphinxfiles/cats_8hpp/#define-cat-6)**(A, B, C, X, Y, Z)  |
-|  | **[CAT_7](/documentation/code/gambit_sphinxfiles/cats_8hpp/#define-cat-7)**(A, B, C, D, X, Y, Z)  |
+|  | **[CAT](/documentation/code/gambit_sphinx/files/cats_8hpp/#define-cat)**(X, Y)  |
+|  | **[CAT2](/documentation/code/gambit_sphinx/files/cats_8hpp/#define-cat2)**(X, Y)  |
+|  | **[CAT_2](/documentation/code/gambit_sphinx/files/cats_8hpp/#define-cat-2)**  |
+|  | **[CAT_3](/documentation/code/gambit_sphinx/files/cats_8hpp/#define-cat-3)**(X, Y, Z)  |
+|  | **[CAT_4](/documentation/code/gambit_sphinx/files/cats_8hpp/#define-cat-4)**(A, X, Y, Z)  |
+|  | **[CAT_5](/documentation/code/gambit_sphinx/files/cats_8hpp/#define-cat-5)**(A, B, X, Y, Z)  |
+|  | **[CAT_6](/documentation/code/gambit_sphinx/files/cats_8hpp/#define-cat-6)**(A, B, C, X, Y, Z)  |
+|  | **[CAT_7](/documentation/code/gambit_sphinx/files/cats_8hpp/#define-cat-7)**(A, B, C, D, X, Y, Z)  |
 
 ## Detailed Description
 
@@ -177,4 +177,4 @@ CAT(A,CAT_6(B,C,D,X,Y,Z))
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:51 +0000
+Updated on 2022-08-01 at 17:41:25 +0000

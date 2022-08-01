@@ -27,7 +27,7 @@ Forward declaration to cut down on includes.
   * May 2019
 
 
-lhef2heputils: a Les Houches Event Format ([LHEF](/documentation/code/gambit_sphinxnamespaces/namespacelhef/)) -> HEPUtils::Event MC generator event file converter, based on lhef2hepmc.
+lhef2heputils: a Les Houches Event Format ([LHEF](/documentation/code/gambit_sphinx/namespaces/namespacelhef/)) -> HEPUtils::Event MC generator event file converter, based on lhef2hepmc.
 
 
 
@@ -36,7 +36,7 @@ lhef2heputils: a Les Houches Event Format ([LHEF](/documentation/code/gambit_sph
 Authors (add name and date if you modify):
 
 
-Hat tip: Leif Lonnblad for writing the [LHEF](/documentation/code/gambit_sphinxnamespaces/namespacelhef/) parser that actually makes this possible!
+Hat tip: Leif Lonnblad for writing the [LHEF](/documentation/code/gambit_sphinx/namespaces/namespacelhef/) parser that actually makes this possible!
 
 
 
@@ -49,4 +49,4 @@ Hat tip: Leif Lonnblad for writing the [LHEF](/documentation/code/gambit_sphinxn
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:46 +0000
+Updated on 2022-08-01 at 17:41:21 +0000

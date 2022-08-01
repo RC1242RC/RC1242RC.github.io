@@ -16,9 +16,9 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/darkbit_developmentnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::Backends](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1backends/)**  |
-| **[Gambit::Backends::HepLike_1_2](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1backends_1_1heplike__1__2/)**  |
+| **[Gambit](/documentation/code/darkbit_development/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::Backends](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1backends/)**  |
+| **[Gambit::Backends::HepLike_1_2](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1backends_1_1heplike__1__2/)**  |
 
 
 
@@ -72,4 +72,4 @@ BE_INI_FUNCTION{} END_BE_INI_FUNCTION
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:45 +0000
+Updated on 2022-08-01 at 17:41:26 +0000

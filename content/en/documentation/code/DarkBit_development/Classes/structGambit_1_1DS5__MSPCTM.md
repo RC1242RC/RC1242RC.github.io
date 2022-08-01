@@ -18,14 +18,14 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Farray< Fdouble, 0, 50 > | **[mass](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds5__mspctm/#variable-mass)**  |
-| Farray< Fdouble, 0, 50 > | **[runnmann](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds5__mspctm/#variable-runnmann)**  |
-| Fdouble | **[mu2gev](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds5__mspctm/#variable-mu2gev)**  |
-| Fdouble | **[md2gev](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds5__mspctm/#variable-md2gev)**  |
-| Fdouble | **[ms2gev](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds5__mspctm/#variable-ms2gev)**  |
-| Fdouble | **[mcmc](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds5__mspctm/#variable-mcmc)**  |
-| Fdouble | **[mbmb](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds5__mspctm/#variable-mbmb)**  |
-| Fdouble | **[mtmt](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds5__mspctm/#variable-mtmt)**  |
+| Farray< Fdouble, 0, 50 > | **[mass](/documentation/code/darkbit_development/classes/structgambit_1_1ds5__mspctm/#variable-mass)**  |
+| Farray< Fdouble, 0, 50 > | **[runnmann](/documentation/code/darkbit_development/classes/structgambit_1_1ds5__mspctm/#variable-runnmann)**  |
+| Fdouble | **[mu2gev](/documentation/code/darkbit_development/classes/structgambit_1_1ds5__mspctm/#variable-mu2gev)**  |
+| Fdouble | **[md2gev](/documentation/code/darkbit_development/classes/structgambit_1_1ds5__mspctm/#variable-md2gev)**  |
+| Fdouble | **[ms2gev](/documentation/code/darkbit_development/classes/structgambit_1_1ds5__mspctm/#variable-ms2gev)**  |
+| Fdouble | **[mcmc](/documentation/code/darkbit_development/classes/structgambit_1_1ds5__mspctm/#variable-mcmc)**  |
+| Fdouble | **[mbmb](/documentation/code/darkbit_development/classes/structgambit_1_1ds5__mspctm/#variable-mbmb)**  |
+| Fdouble | **[mtmt](/documentation/code/darkbit_development/classes/structgambit_1_1ds5__mspctm/#variable-mtmt)**  |
 
 ## Public Attributes Documentation
 
@@ -87,4 +87,4 @@ Fdouble mtmt;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:41 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

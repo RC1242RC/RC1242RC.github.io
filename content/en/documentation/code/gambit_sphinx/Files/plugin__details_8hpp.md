@@ -16,16 +16,16 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::Scanner](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1scanner/)**  |
-| **[Gambit::Scanner::Plugins](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1scanner_1_1plugins/)**  |
+| **[Gambit](/documentation/code/gambit_sphinx/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::Scanner](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1scanner/)**  |
+| **[Gambit::Scanner::Plugins](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1scanner_1_1plugins/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[Gambit::Scanner::Plugins::Plugin_Details](/documentation/code/gambit_sphinxclasses/structgambit_1_1scanner_1_1plugins_1_1plugin__details/)** <br>container info for a specific plugin  |
-| class | **[Gambit::Scanner::Plugins::Plugin_Details_Ref](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1plugins_1_1plugin__details__ref/)**  |
+| struct | **[Gambit::Scanner::Plugins::Plugin_Details](/documentation/code/gambit_sphinx/classes/structgambit_1_1scanner_1_1plugins_1_1plugin__details/)** <br>container info for a specific plugin  |
+| class | **[Gambit::Scanner::Plugins::Plugin_Details_Ref](/documentation/code/gambit_sphinx/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__details__ref/)**  |
 
 ## Detailed Description
 
@@ -170,4 +170,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:48 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

@@ -18,8 +18,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| virtual | **[~AbstractBase](/documentation/code/darkbit_developmentclasses/classabstractbase/#function-~abstractbase)**() |
-| virtual | **[~AbstractBase](/documentation/code/darkbit_developmentclasses/classabstractbase/#function-~abstractbase)**() |
+| virtual | **[~AbstractBase](/documentation/code/darkbit_development/classes/classabstractbase/#function-~abstractbase)**() |
+| virtual | **[~AbstractBase](/documentation/code/darkbit_development/classes/classabstractbase/#function-~abstractbase)**() |
 
 ## Public Functions Documentation
 
@@ -39,4 +39,4 @@ inline virtual ~AbstractBase()
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:41 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

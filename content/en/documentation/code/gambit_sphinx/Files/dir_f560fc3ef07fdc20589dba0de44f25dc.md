@@ -16,7 +16,7 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[header_templates/standard_header_template.hpp](/documentation/code/gambit_sphinxfiles/standard__header__template_8hpp/#file-standard-header-template.hpp)**  |
+| **[header_templates/standard_header_template.hpp](/documentation/code/gambit_sphinx/files/standard__header__template_8hpp/#file-standard-header-template.hpp)**  |
 
 
 
@@ -25,4 +25,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:51 +0000
+Updated on 2022-08-01 at 17:41:25 +0000

@@ -16,25 +16,25 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/darkbit_developmentnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::ColliderBit](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1colliderbit/)**  |
+| **[Gambit](/documentation/code/darkbit_development/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::ColliderBit](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1colliderbit/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Gambit::ColliderBit::Analysis_ATLAS_7TeV_1OR2LEPStop_4_7invfb](/documentation/code/darkbit_developmentclasses/classgambit_1_1colliderbit_1_1analysis__atlas__7tev__1or2lepstop__4__7invfb/)**  |
+| class | **[Gambit::ColliderBit::Analysis_ATLAS_7TeV_1OR2LEPStop_4_7invfb](/documentation/code/darkbit_development/classes/classgambit_1_1colliderbit_1_1analysis__atlas__7tev__1or2lepstop__4__7invfb/)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[CUTFLOWMAP](/documentation/code/darkbit_developmentfiles/analysis__atlas__7tev__1or2lepstop__4__7invfb_8cpp/#define-cutflowmap)**(X)  |
-|  | **[f](/documentation/code/darkbit_developmentfiles/analysis__atlas__7tev__1or2lepstop__4__7invfb_8cpp/#define-f)**(x)  |
-|  | **[g](/documentation/code/darkbit_developmentfiles/analysis__atlas__7tev__1or2lepstop__4__7invfb_8cpp/#define-g)**(x)  |
-|  | **[VARMAP](/documentation/code/darkbit_developmentfiles/analysis__atlas__7tev__1or2lepstop__4__7invfb_8cpp/#define-varmap)**(X)  |
-|  | **[f](/documentation/code/darkbit_developmentfiles/analysis__atlas__7tev__1or2lepstop__4__7invfb_8cpp/#define-f)**(x)  |
-|  | **[g](/documentation/code/darkbit_developmentfiles/analysis__atlas__7tev__1or2lepstop__4__7invfb_8cpp/#define-g)**(x)  |
+|  | **[CUTFLOWMAP](/documentation/code/darkbit_development/files/analysis__atlas__7tev__1or2lepstop__4__7invfb_8cpp/#define-cutflowmap)**(X)  |
+|  | **[f](/documentation/code/darkbit_development/files/analysis__atlas__7tev__1or2lepstop__4__7invfb_8cpp/#define-f)**(x)  |
+|  | **[g](/documentation/code/darkbit_development/files/analysis__atlas__7tev__1or2lepstop__4__7invfb_8cpp/#define-g)**(x)  |
+|  | **[VARMAP](/documentation/code/darkbit_development/files/analysis__atlas__7tev__1or2lepstop__4__7invfb_8cpp/#define-varmap)**(X)  |
+|  | **[f](/documentation/code/darkbit_development/files/analysis__atlas__7tev__1or2lepstop__4__7invfb_8cpp/#define-f)**(x)  |
+|  | **[g](/documentation/code/darkbit_development/files/analysis__atlas__7tev__1or2lepstop__4__7invfb_8cpp/#define-g)**(x)  |
 
 
 
@@ -601,4 +601,4 @@ DEFINE_ANALYSIS_FACTORY(ATLAS_7TeV_1OR2LEPStop_4_7invfb)
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:44 +0000
+Updated on 2022-08-01 at 17:41:25 +0000

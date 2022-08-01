@@ -16,11 +16,11 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[BACKENDNAME](/documentation/code/gambit_sphinxfiles/nulike__1__0__8_8hpp/#define-backendname)**  |
-|  | **[BACKENDLANG](/documentation/code/gambit_sphinxfiles/nulike__1__0__8_8hpp/#define-backendlang)**  |
-|  | **[VERSION](/documentation/code/gambit_sphinxfiles/nulike__1__0__8_8hpp/#define-version)**  |
-|  | **[SAFE_VERSION](/documentation/code/gambit_sphinxfiles/nulike__1__0__8_8hpp/#define-safe-version)**  |
-|  | **[REFERENCE](/documentation/code/gambit_sphinxfiles/nulike__1__0__8_8hpp/#define-reference)**  |
+|  | **[BACKENDNAME](/documentation/code/gambit_sphinx/files/nulike__1__0__8_8hpp/#define-backendname)**  |
+|  | **[BACKENDLANG](/documentation/code/gambit_sphinx/files/nulike__1__0__8_8hpp/#define-backendlang)**  |
+|  | **[VERSION](/documentation/code/gambit_sphinx/files/nulike__1__0__8_8hpp/#define-version)**  |
+|  | **[SAFE_VERSION](/documentation/code/gambit_sphinx/files/nulike__1__0__8_8hpp/#define-safe-version)**  |
+|  | **[REFERENCE](/documentation/code/gambit_sphinx/files/nulike__1__0__8_8hpp/#define-reference)**  |
 
 ## Detailed Description
 
@@ -113,4 +113,4 @@ LOAD_LIBRARY
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:50 +0000
+Updated on 2022-08-01 at 17:41:25 +0000

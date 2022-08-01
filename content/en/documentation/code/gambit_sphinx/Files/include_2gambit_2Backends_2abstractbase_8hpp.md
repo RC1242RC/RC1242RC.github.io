@@ -16,7 +16,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[AbstractBase](/documentation/code/gambit_sphinxclasses/classabstractbase/)**  |
+| class | **[AbstractBase](/documentation/code/gambit_sphinx/classes/classabstractbase/)**  |
 
 
 
@@ -43,4 +43,4 @@ class AbstractBase
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:50 +0000
+Updated on 2022-08-01 at 17:41:25 +0000

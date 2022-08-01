@@ -14,75 +14,75 @@ description: "[No description available]"
 
 [No description available]
 
-Inherits from [BasicDevs](/documentation/code/darkbit_developmentclasses/classbasicdevs/), [BasicDevs](/documentation/code/darkbit_developmentclasses/classbasicdevs/), [Ran](/documentation/code/darkbit_developmentclasses/classran/)
+Inherits from [BasicDevs](/documentation/code/darkbit_development/classes/classbasicdevs/), [BasicDevs](/documentation/code/darkbit_development/classes/classbasicdevs/), [Ran](/documentation/code/darkbit_development/classes/classran/)
 
-Inherited by [MultiNormDev](/documentation/code/darkbit_developmentclasses/classmultinormdev/), [MultiNormDev](/documentation/code/darkbit_developmentclasses/classmultinormdev/), [TransformRandomBasis](/documentation/code/darkbit_developmentclasses/classtransformrandombasis/), [TransformRandomBasis](/documentation/code/darkbit_developmentclasses/classtransformrandombasis/)
+Inherited by [MultiNormDev](/documentation/code/darkbit_development/classes/classmultinormdev/), [MultiNormDev](/documentation/code/darkbit_development/classes/classmultinormdev/), [TransformRandomBasis](/documentation/code/darkbit_development/classes/classtransformrandombasis/), [TransformRandomBasis](/documentation/code/darkbit_development/classes/classtransformrandombasis/)
 
 ## Public Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[RandomBasis](/documentation/code/darkbit_developmentclasses/classrandombasis/#function-randombasis)**(int nin, unsigned long long iin) |
-| void | **[ChangeDim](/documentation/code/darkbit_developmentclasses/classrandombasis/#function-changedim)**(const int nin) |
-| void | **[RandRot](/documentation/code/darkbit_developmentclasses/classrandombasis/#function-randrot)**() |
-| double | **[RanMult](/documentation/code/darkbit_developmentclasses/classrandombasis/#function-ranmult)**(double ** cin) |
-| void | **[RanMult](/documentation/code/darkbit_developmentclasses/classrandombasis/#function-ranmult)**(const double in, double * out) |
-| void | **[RanMult](/documentation/code/darkbit_developmentclasses/classrandombasis/#function-ranmult)**(double * in, const double w, double * out) |
-| double | **[Mag](/documentation/code/darkbit_developmentclasses/classrandombasis/#function-mag)**(double * a, double * a0) |
-| void | **[Adjust](/documentation/code/darkbit_developmentclasses/classrandombasis/#function-adjust)**(double * a, const double lim, const int iin) |
-| virtual void | **[operator++](/documentation/code/darkbit_developmentclasses/classrandombasis/#function-operator++)**(int ) |
-| virtual | **[~RandomBasis](/documentation/code/darkbit_developmentclasses/classrandombasis/#function-~randombasis)**() |
-| | **[RandomBasis](/documentation/code/darkbit_developmentclasses/classrandombasis/#function-randombasis)**(int nin, unsigned long long iin) |
-| void | **[ChangeDim](/documentation/code/darkbit_developmentclasses/classrandombasis/#function-changedim)**(const int nin) |
-| void | **[RandRot](/documentation/code/darkbit_developmentclasses/classrandombasis/#function-randrot)**() |
-| double | **[RanMult](/documentation/code/darkbit_developmentclasses/classrandombasis/#function-ranmult)**(double ** cin) |
-| void | **[RanMult](/documentation/code/darkbit_developmentclasses/classrandombasis/#function-ranmult)**(const double in, double * out) |
-| void | **[RanMult](/documentation/code/darkbit_developmentclasses/classrandombasis/#function-ranmult)**(double * in, const double w, double * out) |
-| double | **[Mag](/documentation/code/darkbit_developmentclasses/classrandombasis/#function-mag)**(double * a, double * a0) |
-| void | **[Adjust](/documentation/code/darkbit_developmentclasses/classrandombasis/#function-adjust)**(double * a, const double lim, const int iin) |
-| virtual void | **[operator++](/documentation/code/darkbit_developmentclasses/classrandombasis/#function-operator++)**(int ) |
-| virtual | **[~RandomBasis](/documentation/code/darkbit_developmentclasses/classrandombasis/#function-~randombasis)**() |
+| | **[RandomBasis](/documentation/code/darkbit_development/classes/classrandombasis/#function-randombasis)**(int nin, unsigned long long iin) |
+| void | **[ChangeDim](/documentation/code/darkbit_development/classes/classrandombasis/#function-changedim)**(const int nin) |
+| void | **[RandRot](/documentation/code/darkbit_development/classes/classrandombasis/#function-randrot)**() |
+| double | **[RanMult](/documentation/code/darkbit_development/classes/classrandombasis/#function-ranmult)**(double ** cin) |
+| void | **[RanMult](/documentation/code/darkbit_development/classes/classrandombasis/#function-ranmult)**(const double in, double * out) |
+| void | **[RanMult](/documentation/code/darkbit_development/classes/classrandombasis/#function-ranmult)**(double * in, const double w, double * out) |
+| double | **[Mag](/documentation/code/darkbit_development/classes/classrandombasis/#function-mag)**(double * a, double * a0) |
+| void | **[Adjust](/documentation/code/darkbit_development/classes/classrandombasis/#function-adjust)**(double * a, const double lim, const int iin) |
+| virtual void | **[operator++](/documentation/code/darkbit_development/classes/classrandombasis/#function-operator++)**(int ) |
+| virtual | **[~RandomBasis](/documentation/code/darkbit_development/classes/classrandombasis/#function-~randombasis)**() |
+| | **[RandomBasis](/documentation/code/darkbit_development/classes/classrandombasis/#function-randombasis)**(int nin, unsigned long long iin) |
+| void | **[ChangeDim](/documentation/code/darkbit_development/classes/classrandombasis/#function-changedim)**(const int nin) |
+| void | **[RandRot](/documentation/code/darkbit_development/classes/classrandombasis/#function-randrot)**() |
+| double | **[RanMult](/documentation/code/darkbit_development/classes/classrandombasis/#function-ranmult)**(double ** cin) |
+| void | **[RanMult](/documentation/code/darkbit_development/classes/classrandombasis/#function-ranmult)**(const double in, double * out) |
+| void | **[RanMult](/documentation/code/darkbit_development/classes/classrandombasis/#function-ranmult)**(double * in, const double w, double * out) |
+| double | **[Mag](/documentation/code/darkbit_development/classes/classrandombasis/#function-mag)**(double * a, double * a0) |
+| void | **[Adjust](/documentation/code/darkbit_development/classes/classrandombasis/#function-adjust)**(double * a, const double lim, const int iin) |
+| virtual void | **[operator++](/documentation/code/darkbit_development/classes/classrandombasis/#function-operator++)**(int ) |
+| virtual | **[~RandomBasis](/documentation/code/darkbit_development/classes/classrandombasis/#function-~randombasis)**() |
 
 ## Protected Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| int | **[num](/documentation/code/darkbit_developmentclasses/classrandombasis/#variable-num)**  |
-| double ** | **[currentVec](/documentation/code/darkbit_developmentclasses/classrandombasis/#variable-currentvec)**  |
-| double ** | **[endVec](/documentation/code/darkbit_developmentclasses/classrandombasis/#variable-endvec)**  |
+| int | **[num](/documentation/code/darkbit_development/classes/classrandombasis/#variable-num)**  |
+| double ** | **[currentVec](/documentation/code/darkbit_development/classes/classrandombasis/#variable-currentvec)**  |
+| double ** | **[endVec](/documentation/code/darkbit_development/classes/classrandombasis/#variable-endvec)**  |
 
 ## Additional inherited members
 
-**Public Functions inherited from [BasicDevs](/documentation/code/darkbit_developmentclasses/classbasicdevs/)**
+**Public Functions inherited from [BasicDevs](/documentation/code/darkbit_development/classes/classbasicdevs/)**
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[BasicDevs](/documentation/code/darkbit_developmentclasses/classbasicdevs/#function-basicdevs)**(unsigned long long i) |
-| double | **[Dev](/documentation/code/darkbit_developmentclasses/classbasicdevs/#function-dev)**() |
-| double | **[ExpDev](/documentation/code/darkbit_developmentclasses/classbasicdevs/#function-expdev)**() |
-| | **[BasicDevs](/documentation/code/darkbit_developmentclasses/classbasicdevs/#function-basicdevs)**(unsigned long long i) |
-| double | **[Dev](/documentation/code/darkbit_developmentclasses/classbasicdevs/#function-dev)**() |
-| double | **[ExpDev](/documentation/code/darkbit_developmentclasses/classbasicdevs/#function-expdev)**() |
+| | **[BasicDevs](/documentation/code/darkbit_development/classes/classbasicdevs/#function-basicdevs)**(unsigned long long i) |
+| double | **[Dev](/documentation/code/darkbit_development/classes/classbasicdevs/#function-dev)**() |
+| double | **[ExpDev](/documentation/code/darkbit_development/classes/classbasicdevs/#function-expdev)**() |
+| | **[BasicDevs](/documentation/code/darkbit_development/classes/classbasicdevs/#function-basicdevs)**(unsigned long long i) |
+| double | **[Dev](/documentation/code/darkbit_development/classes/classbasicdevs/#function-dev)**() |
+| double | **[ExpDev](/documentation/code/darkbit_development/classes/classbasicdevs/#function-expdev)**() |
 
-**Public Functions inherited from [BasicDevs](/documentation/code/darkbit_developmentclasses/classbasicdevs/)**
-
-|                | Name           |
-| -------------- | -------------- |
-| | **[BasicDevs](/documentation/code/darkbit_developmentclasses/classbasicdevs/#function-basicdevs)**(unsigned long long i) |
-| double | **[Dev](/documentation/code/darkbit_developmentclasses/classbasicdevs/#function-dev)**() |
-| double | **[ExpDev](/documentation/code/darkbit_developmentclasses/classbasicdevs/#function-expdev)**() |
-| | **[BasicDevs](/documentation/code/darkbit_developmentclasses/classbasicdevs/#function-basicdevs)**(unsigned long long i) |
-| double | **[Dev](/documentation/code/darkbit_developmentclasses/classbasicdevs/#function-dev)**() |
-| double | **[ExpDev](/documentation/code/darkbit_developmentclasses/classbasicdevs/#function-expdev)**() |
-
-**Public Functions inherited from [Ran](/documentation/code/darkbit_developmentclasses/classran/)**
+**Public Functions inherited from [BasicDevs](/documentation/code/darkbit_development/classes/classbasicdevs/)**
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Ran](/documentation/code/darkbit_developmentclasses/classran/#function-ran)**(unsigned long long int ) |
-| double | **[Doub](/documentation/code/darkbit_developmentclasses/classran/#function-doub)**() |
-| | **[Ran](/documentation/code/darkbit_developmentclasses/classran/#function-ran)**(unsigned long long int ) |
-| double | **[Doub](/documentation/code/darkbit_developmentclasses/classran/#function-doub)**() |
+| | **[BasicDevs](/documentation/code/darkbit_development/classes/classbasicdevs/#function-basicdevs)**(unsigned long long i) |
+| double | **[Dev](/documentation/code/darkbit_development/classes/classbasicdevs/#function-dev)**() |
+| double | **[ExpDev](/documentation/code/darkbit_development/classes/classbasicdevs/#function-expdev)**() |
+| | **[BasicDevs](/documentation/code/darkbit_development/classes/classbasicdevs/#function-basicdevs)**(unsigned long long i) |
+| double | **[Dev](/documentation/code/darkbit_development/classes/classbasicdevs/#function-dev)**() |
+| double | **[ExpDev](/documentation/code/darkbit_development/classes/classbasicdevs/#function-expdev)**() |
+
+**Public Functions inherited from [Ran](/documentation/code/darkbit_development/classes/classran/)**
+
+|                | Name           |
+| -------------- | -------------- |
+| | **[Ran](/documentation/code/darkbit_development/classes/classran/#function-ran)**(unsigned long long int ) |
+| double | **[Doub](/documentation/code/darkbit_development/classes/classran/#function-doub)**() |
+| | **[Ran](/documentation/code/darkbit_development/classes/classran/#function-ran)**(unsigned long long int ) |
+| double | **[Doub](/documentation/code/darkbit_development/classes/classran/#function-doub)**() |
 
 
 ## Public Functions Documentation
@@ -173,7 +173,7 @@ inline virtual void operator++(
 ```
 
 
-**Reimplemented by**: [TransformRandomBasis::operator++](/documentation/code/darkbit_developmentclasses/classtransformrandombasis/#function-operator++), [TransformRandomBasis::operator++](/documentation/code/darkbit_developmentclasses/classtransformrandombasis/#function-operator++)
+**Reimplemented by**: [TransformRandomBasis::operator++](/documentation/code/darkbit_development/classes/classtransformrandombasis/#function-operator++), [TransformRandomBasis::operator++](/documentation/code/darkbit_development/classes/classtransformrandombasis/#function-operator++)
 
 
 ### function ~RandomBasis
@@ -269,7 +269,7 @@ inline virtual void operator++(
 ```
 
 
-**Reimplemented by**: [TransformRandomBasis::operator++](/documentation/code/darkbit_developmentclasses/classtransformrandombasis/#function-operator++), [TransformRandomBasis::operator++](/documentation/code/darkbit_developmentclasses/classtransformrandombasis/#function-operator++)
+**Reimplemented by**: [TransformRandomBasis::operator++](/documentation/code/darkbit_development/classes/classtransformrandombasis/#function-operator++), [TransformRandomBasis::operator++](/documentation/code/darkbit_development/classes/classtransformrandombasis/#function-operator++)
 
 
 ### function ~RandomBasis
@@ -304,4 +304,4 @@ double ** endVec;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:41 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

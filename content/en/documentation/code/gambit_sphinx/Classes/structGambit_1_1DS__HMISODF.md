@@ -18,8 +18,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Fdouble | **[vd_3d](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__hmisodf/#variable-vd-3d)**  |
-| Fdouble | **[vgalesc](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__hmisodf/#variable-vgalesc)**  |
+| Fdouble | **[vd_3d](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__hmisodf/#variable-vd-3d)**  |
+| Fdouble | **[vgalesc](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__hmisodf/#variable-vgalesc)**  |
 
 ## Public Attributes Documentation
 
@@ -39,4 +39,4 @@ Fdouble vgalesc;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:46 +0000
+Updated on 2022-08-01 at 17:41:21 +0000

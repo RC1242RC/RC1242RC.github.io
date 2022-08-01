@@ -16,23 +16,23 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| void | **[do_cleanup](/documentation/code/darkbit_developmentfiles/scannerbit__standalone_8cpp/#function-do-cleanup)**() |
-| void | **[sighandler](/documentation/code/darkbit_developmentfiles/scannerbit__standalone_8cpp/#function-sighandler)**(int ) |
-| void | **[scanner_diagnostic](/documentation/code/darkbit_developmentfiles/scannerbit__standalone_8cpp/#function-scanner-diagnostic)**() |
-| void | **[test_function_diagnostic](/documentation/code/darkbit_developmentfiles/scannerbit__standalone_8cpp/#function-test-function-diagnostic)**() |
-| void | **[prior_diagnostic](/documentation/code/darkbit_developmentfiles/scannerbit__standalone_8cpp/#function-prior-diagnostic)**() |
-| void | **[ff_prior_diagnostic](/documentation/code/darkbit_developmentfiles/scannerbit__standalone_8cpp/#function-ff-prior-diagnostic)**(const std::string & command) |
-| void | **[ff_scanner_diagnostic](/documentation/code/darkbit_developmentfiles/scannerbit__standalone_8cpp/#function-ff-scanner-diagnostic)**(const std::string & command) |
-| void | **[ff_test_function_diagnostic](/documentation/code/darkbit_developmentfiles/scannerbit__standalone_8cpp/#function-ff-test-function-diagnostic)**(const std::string & command) |
-| void | **[bail](/documentation/code/darkbit_developmentfiles/scannerbit__standalone_8cpp/#function-bail)**() |
-| bool | **[arg_parser](/documentation/code/darkbit_developmentfiles/scannerbit__standalone_8cpp/#function-arg-parser)**(std::string & filename, std::vector< std::string > & vec, int argc, char ** argv) |
-| int | **[main](/documentation/code/darkbit_developmentfiles/scannerbit__standalone_8cpp/#function-main)**(int argc, char ** argv) |
+| void | **[do_cleanup](/documentation/code/darkbit_development/files/scannerbit__standalone_8cpp/#function-do-cleanup)**() |
+| void | **[sighandler](/documentation/code/darkbit_development/files/scannerbit__standalone_8cpp/#function-sighandler)**(int ) |
+| void | **[scanner_diagnostic](/documentation/code/darkbit_development/files/scannerbit__standalone_8cpp/#function-scanner-diagnostic)**() |
+| void | **[test_function_diagnostic](/documentation/code/darkbit_development/files/scannerbit__standalone_8cpp/#function-test-function-diagnostic)**() |
+| void | **[prior_diagnostic](/documentation/code/darkbit_development/files/scannerbit__standalone_8cpp/#function-prior-diagnostic)**() |
+| void | **[ff_prior_diagnostic](/documentation/code/darkbit_development/files/scannerbit__standalone_8cpp/#function-ff-prior-diagnostic)**(const std::string & command) |
+| void | **[ff_scanner_diagnostic](/documentation/code/darkbit_development/files/scannerbit__standalone_8cpp/#function-ff-scanner-diagnostic)**(const std::string & command) |
+| void | **[ff_test_function_diagnostic](/documentation/code/darkbit_development/files/scannerbit__standalone_8cpp/#function-ff-test-function-diagnostic)**(const std::string & command) |
+| void | **[bail](/documentation/code/darkbit_development/files/scannerbit__standalone_8cpp/#function-bail)**() |
+| bool | **[arg_parser](/documentation/code/darkbit_development/files/scannerbit__standalone_8cpp/#function-arg-parser)**(std::string & filename, std::vector< std::string > & vec, int argc, char ** argv) |
+| int | **[main](/documentation/code/darkbit_development/files/scannerbit__standalone_8cpp/#function-main)**(int argc, char ** argv) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| Printers::PrinterManager * | **[printerInterface](/documentation/code/darkbit_developmentfiles/scannerbit__standalone_8cpp/#variable-printerinterface)**  |
+| Printers::PrinterManager * | **[printerInterface](/documentation/code/darkbit_development/files/scannerbit__standalone_8cpp/#variable-printerinterface)**  |
 
 ## Detailed Description
 
@@ -522,4 +522,4 @@ int main(int argc, char **argv)
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:43 +0000
+Updated on 2022-08-01 at 17:41:24 +0000

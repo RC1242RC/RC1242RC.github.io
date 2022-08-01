@@ -18,7 +18,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| bool | **[operator()](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__multilep__confnote__36invfb_1_1ptjetcomparison/#function-operator())**(const HEPUtils::Jet * i, const HEPUtils::Jet * j) |
+| bool | **[operator()](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__multilep__confnote__36invfb_1_1ptjetcomparison/#function-operator())**(const HEPUtils::Jet * i, const HEPUtils::Jet * j) |
 
 ## Public Functions Documentation
 
@@ -34,4 +34,4 @@ inline bool operator()(
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:42 +0000
+Updated on 2022-08-01 at 17:41:23 +0000

@@ -18,27 +18,27 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| int | **[forceUG](/documentation/code/gambit_sphinxclasses/structgambit_1_1calchep__interface/#variable-forceug)**  |
-| char * | **[CALCHEP](/documentation/code/gambit_sphinxclasses/structgambit_1_1calchep__interface/#variable-calchep)**  |
-| int | **[nvar](/documentation/code/gambit_sphinxclasses/structgambit_1_1calchep__interface/#variable-nvar)**  |
-| int | **[nfunc](/documentation/code/gambit_sphinxclasses/structgambit_1_1calchep__interface/#variable-nfunc)**  |
-| char ** | **[varName](/documentation/code/gambit_sphinxclasses/structgambit_1_1calchep__interface/#variable-varname)**  |
-| REAL * | **[va](/documentation/code/gambit_sphinxclasses/structgambit_1_1calchep__interface/#variable-va)**  |
-| int | **[nin](/documentation/code/gambit_sphinxclasses/structgambit_1_1calchep__interface/#variable-nin)**  |
-| int | **[nout](/documentation/code/gambit_sphinxclasses/structgambit_1_1calchep__interface/#variable-nout)**  |
-| int | **[nprc](/documentation/code/gambit_sphinxclasses/structgambit_1_1calchep__interface/#variable-nprc)**  |
-| char *(* | **[pinf](/documentation/code/gambit_sphinxclasses/structgambit_1_1calchep__interface/#variable-pinf)**  |
-| int(* | **[pinfAux](/documentation/code/gambit_sphinxclasses/structgambit_1_1calchep__interface/#variable-pinfaux)**  |
-| char ** | **[polarized](/documentation/code/gambit_sphinxclasses/structgambit_1_1calchep__interface/#variable-polarized)**  |
-| int(* | **[calcFunc](/documentation/code/gambit_sphinxclasses/structgambit_1_1calchep__interface/#variable-calcfunc)**  |
-| double * | **[BWrange](/documentation/code/gambit_sphinxclasses/structgambit_1_1calchep__interface/#variable-bwrange)**  |
-| int * | **[twidth](/documentation/code/gambit_sphinxclasses/structgambit_1_1calchep__interface/#variable-twidth)**  |
-| int * | **[gtwidth](/documentation/code/gambit_sphinxclasses/structgambit_1_1calchep__interface/#variable-gtwidth)**  |
-| int * | **[gswidth](/documentation/code/gambit_sphinxclasses/structgambit_1_1calchep__interface/#variable-gswidth)**  |
-| double(** | **[aWidth](/documentation/code/gambit_sphinxclasses/structgambit_1_1calchep__interface/#variable-awidth)**  |
-| double(* | **[sqme](/documentation/code/gambit_sphinxclasses/structgambit_1_1calchep__interface/#variable-sqme)**  |
-| char *(* | **[den_info](/documentation/code/gambit_sphinxclasses/structgambit_1_1calchep__interface/#variable-den-info)**  |
-| [colorBasis](/documentation/code/gambit_sphinxclasses/structgambit_1_1colorbasis/) * | **[cb](/documentation/code/gambit_sphinxclasses/structgambit_1_1calchep__interface/#variable-cb)**  |
+| int | **[forceUG](/documentation/code/gambit_sphinx/classes/structgambit_1_1calchep__interface/#variable-forceug)**  |
+| char * | **[CALCHEP](/documentation/code/gambit_sphinx/classes/structgambit_1_1calchep__interface/#variable-calchep)**  |
+| int | **[nvar](/documentation/code/gambit_sphinx/classes/structgambit_1_1calchep__interface/#variable-nvar)**  |
+| int | **[nfunc](/documentation/code/gambit_sphinx/classes/structgambit_1_1calchep__interface/#variable-nfunc)**  |
+| char ** | **[varName](/documentation/code/gambit_sphinx/classes/structgambit_1_1calchep__interface/#variable-varname)**  |
+| REAL * | **[va](/documentation/code/gambit_sphinx/classes/structgambit_1_1calchep__interface/#variable-va)**  |
+| int | **[nin](/documentation/code/gambit_sphinx/classes/structgambit_1_1calchep__interface/#variable-nin)**  |
+| int | **[nout](/documentation/code/gambit_sphinx/classes/structgambit_1_1calchep__interface/#variable-nout)**  |
+| int | **[nprc](/documentation/code/gambit_sphinx/classes/structgambit_1_1calchep__interface/#variable-nprc)**  |
+| char *(* | **[pinf](/documentation/code/gambit_sphinx/classes/structgambit_1_1calchep__interface/#variable-pinf)**  |
+| int(* | **[pinfAux](/documentation/code/gambit_sphinx/classes/structgambit_1_1calchep__interface/#variable-pinfaux)**  |
+| char ** | **[polarized](/documentation/code/gambit_sphinx/classes/structgambit_1_1calchep__interface/#variable-polarized)**  |
+| int(* | **[calcFunc](/documentation/code/gambit_sphinx/classes/structgambit_1_1calchep__interface/#variable-calcfunc)**  |
+| double * | **[BWrange](/documentation/code/gambit_sphinx/classes/structgambit_1_1calchep__interface/#variable-bwrange)**  |
+| int * | **[twidth](/documentation/code/gambit_sphinx/classes/structgambit_1_1calchep__interface/#variable-twidth)**  |
+| int * | **[gtwidth](/documentation/code/gambit_sphinx/classes/structgambit_1_1calchep__interface/#variable-gtwidth)**  |
+| int * | **[gswidth](/documentation/code/gambit_sphinx/classes/structgambit_1_1calchep__interface/#variable-gswidth)**  |
+| double(** | **[aWidth](/documentation/code/gambit_sphinx/classes/structgambit_1_1calchep__interface/#variable-awidth)**  |
+| double(* | **[sqme](/documentation/code/gambit_sphinx/classes/structgambit_1_1calchep__interface/#variable-sqme)**  |
+| char *(* | **[den_info](/documentation/code/gambit_sphinx/classes/structgambit_1_1calchep__interface/#variable-den-info)**  |
+| [colorBasis](/documentation/code/gambit_sphinx/classes/structgambit_1_1colorbasis/) * | **[cb](/documentation/code/gambit_sphinx/classes/structgambit_1_1calchep__interface/#variable-cb)**  |
 
 ## Public Attributes Documentation
 
@@ -191,4 +191,4 @@ colorBasis * cb;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:46 +0000
+Updated on 2022-08-01 at 17:41:21 +0000

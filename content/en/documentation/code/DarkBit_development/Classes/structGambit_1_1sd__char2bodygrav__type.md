@@ -18,8 +18,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Farray< Fdouble, 1, 2 > | **[brcharwgravitino](/documentation/code/darkbit_developmentclasses/structgambit_1_1sd__char2bodygrav__type/#variable-brcharwgravitino)**  |
-| Farray< Fdouble, 1, 2 > | **[brcharhcgravitino](/documentation/code/darkbit_developmentclasses/structgambit_1_1sd__char2bodygrav__type/#variable-brcharhcgravitino)**  |
+| Farray< Fdouble, 1, 2 > | **[brcharwgravitino](/documentation/code/darkbit_development/classes/structgambit_1_1sd__char2bodygrav__type/#variable-brcharwgravitino)**  |
+| Farray< Fdouble, 1, 2 > | **[brcharhcgravitino](/documentation/code/darkbit_development/classes/structgambit_1_1sd__char2bodygrav__type/#variable-brcharhcgravitino)**  |
 
 ## Public Attributes Documentation
 
@@ -39,4 +39,4 @@ Farray< Fdouble, 1, 2 > brcharhcgravitino;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:41 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

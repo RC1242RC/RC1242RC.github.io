@@ -16,8 +16,8 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[configs](/documentation/code/gambit_sphinxnamespaces/namespaceconfigs/)**  |
-| **[configs::gm2calc_1_2_0](/documentation/code/gambit_sphinxnamespaces/namespaceconfigs_1_1gm2calc__1__2__0/)**  |
+| **[configs](/documentation/code/gambit_sphinx/namespaces/namespaceconfigs/)**  |
+| **[configs::gm2calc_1_2_0](/documentation/code/gambit_sphinx/namespaces/namespaceconfigs_1_1gm2calc__1__2__0/)**  |
 
 
 
@@ -146,4 +146,4 @@ pragmas_end = [
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:51 +0000
+Updated on 2022-08-01 at 17:41:25 +0000

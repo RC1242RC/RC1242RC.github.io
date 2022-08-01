@@ -20,15 +20,15 @@ Specialisation of traits class needed to inform base spectrum class of the Model
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef SpectrumContents::SM | **[Contents](/documentation/code/gambit_sphinxclasses/structgambit_1_1spectraits_3_01specbit_1_1qedqcdwrapper_01_4/#typedef-contents)**  |
-| typedef softsusy::QedQcd | **[Model](/documentation/code/gambit_sphinxclasses/structgambit_1_1spectraits_3_01specbit_1_1qedqcdwrapper_01_4/#typedef-model)**  |
-| typedef SMInputs | **[Input](/documentation/code/gambit_sphinxclasses/structgambit_1_1spectraits_3_01specbit_1_1qedqcdwrapper_01_4/#typedef-input)**  |
+| typedef SpectrumContents::SM | **[Contents](/documentation/code/gambit_sphinx/classes/structgambit_1_1spectraits_3_01specbit_1_1qedqcdwrapper_01_4/#typedef-contents)**  |
+| typedef softsusy::QedQcd | **[Model](/documentation/code/gambit_sphinx/classes/structgambit_1_1spectraits_3_01specbit_1_1qedqcdwrapper_01_4/#typedef-model)**  |
+| typedef SMInputs | **[Input](/documentation/code/gambit_sphinx/classes/structgambit_1_1spectraits_3_01specbit_1_1qedqcdwrapper_01_4/#typedef-input)**  |
 
 ## Public Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| std::string | **[name](/documentation/code/gambit_sphinxclasses/structgambit_1_1spectraits_3_01specbit_1_1qedqcdwrapper_01_4/#function-name)**() |
+| std::string | **[name](/documentation/code/gambit_sphinx/classes/structgambit_1_1spectraits_3_01specbit_1_1qedqcdwrapper_01_4/#function-name)**() |
 
 ## Public Types Documentation
 
@@ -64,4 +64,4 @@ static inline std::string name()
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:46 +0000
+Updated on 2022-08-01 at 17:41:21 +0000

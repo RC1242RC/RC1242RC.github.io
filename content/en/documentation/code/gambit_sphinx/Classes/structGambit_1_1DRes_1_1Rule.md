@@ -21,15 +21,15 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Rule](/documentation/code/gambit_sphinxclasses/structgambit_1_1dres_1_1rule/#function-rule)**(std::string function, std::string module) |
-| | **[Rule](/documentation/code/gambit_sphinxclasses/structgambit_1_1dres_1_1rule/#function-rule)**([IniParser::ObservableType](/documentation/code/gambit_sphinxclasses/structgambit_1_1iniparser_1_1types_1_1observable/) t) |
+| | **[Rule](/documentation/code/gambit_sphinx/classes/structgambit_1_1dres_1_1rule/#function-rule)**(std::string function, std::string module) |
+| | **[Rule](/documentation/code/gambit_sphinx/classes/structgambit_1_1dres_1_1rule/#function-rule)**([IniParser::ObservableType](/documentation/code/gambit_sphinx/classes/structgambit_1_1iniparser_1_1types_1_1observable/) t) |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| std::string | **[function](/documentation/code/gambit_sphinxclasses/structgambit_1_1dres_1_1rule/#variable-function)**  |
-| std::string | **[module](/documentation/code/gambit_sphinxclasses/structgambit_1_1dres_1_1rule/#variable-module)**  |
+| std::string | **[function](/documentation/code/gambit_sphinx/classes/structgambit_1_1dres_1_1rule/#variable-function)**  |
+| std::string | **[module](/documentation/code/gambit_sphinx/classes/structgambit_1_1dres_1_1rule/#variable-module)**  |
 
 ## Detailed Description
 
@@ -79,4 +79,4 @@ std::string module;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:47 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

@@ -16,48 +16,48 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Gambit::DRes::DependencyResolver](/documentation/code/gambit_sphinxclasses/classgambit_1_1dres_1_1dependencyresolver/)** <br>Main dependency resolver.  |
-| class | **[Gambit::DRes::edgeWriter](/documentation/code/gambit_sphinxclasses/classgambit_1_1dres_1_1edgewriter/)**  |
-| class | **[Gambit::DRes::labelWriter](/documentation/code/gambit_sphinxclasses/classgambit_1_1dres_1_1labelwriter/)**  |
-| struct | **[Gambit::DRes::OutputVertexInfo](/documentation/code/gambit_sphinxclasses/structgambit_1_1dres_1_1outputvertexinfo/)** <br>Minimal info about outputVertices.  |
-| struct | **[Gambit::DRes::QueueEntry](/documentation/code/gambit_sphinxclasses/structgambit_1_1dres_1_1queueentry/)** <br>Information in parameter queue.  |
-| struct | **[Gambit::DRes::Rule](/documentation/code/gambit_sphinxclasses/structgambit_1_1dres_1_1rule/)**  |
+| class | **[Gambit::DRes::DependencyResolver](/documentation/code/gambit_sphinx/classes/classgambit_1_1dres_1_1dependencyresolver/)** <br>Main dependency resolver.  |
+| class | **[Gambit::DRes::edgeWriter](/documentation/code/gambit_sphinx/classes/classgambit_1_1dres_1_1edgewriter/)**  |
+| class | **[Gambit::DRes::labelWriter](/documentation/code/gambit_sphinx/classes/classgambit_1_1dres_1_1labelwriter/)**  |
+| struct | **[Gambit::DRes::OutputVertexInfo](/documentation/code/gambit_sphinx/classes/structgambit_1_1dres_1_1outputvertexinfo/)** <br>Minimal info about outputVertices.  |
+| struct | **[Gambit::DRes::QueueEntry](/documentation/code/gambit_sphinx/classes/structgambit_1_1dres_1_1queueentry/)** <br>Information in parameter queue.  |
+| struct | **[Gambit::DRes::Rule](/documentation/code/gambit_sphinx/classes/structgambit_1_1dres_1_1rule/)**  |
 
 ## Types
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef adjacency_list< vecS, vecS, bidirectionalS, functor *, vecS > | **[MasterGraphType](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1dres/#typedef-mastergraphtype)**  |
-| typedef graph_traits< [MasterGraphType](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1dres/#typedef-mastergraphtype) >::vertex_descriptor | **[VertexID](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1dres/#typedef-vertexid)**  |
-| typedef graph_traits< [MasterGraphType](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1dres/#typedef-mastergraphtype) >::edge_descriptor | **[EdgeID](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1dres/#typedef-edgeid)**  |
-| typedef property_map< [MasterGraphType](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1dres/#typedef-mastergraphtype), vertex_index_t >::type | **[IndexMap](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1dres/#typedef-indexmap)**  |
-| typedef std::map< std::string, double * > | **[inputMapType](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1dres/#typedef-inputmaptype)**  |
-| typedef std::map< std::string, std::vector< functor * > > | **[outputMapType](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1dres/#typedef-outputmaptype)**  |
+| typedef adjacency_list< vecS, vecS, bidirectionalS, functor *, vecS > | **[MasterGraphType](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1dres/#typedef-mastergraphtype)**  |
+| typedef graph_traits< [MasterGraphType](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1dres/#typedef-mastergraphtype) >::vertex_descriptor | **[VertexID](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1dres/#typedef-vertexid)**  |
+| typedef graph_traits< [MasterGraphType](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1dres/#typedef-mastergraphtype) >::edge_descriptor | **[EdgeID](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1dres/#typedef-edgeid)**  |
+| typedef property_map< [MasterGraphType](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1dres/#typedef-mastergraphtype), vertex_index_t >::type | **[IndexMap](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1dres/#typedef-indexmap)**  |
+| typedef std::map< std::string, double * > | **[inputMapType](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1dres/#typedef-inputmaptype)**  |
+| typedef std::map< std::string, std::vector< functor * > > | **[outputMapType](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1dres/#typedef-outputmaptype)**  |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| bool | **[stringComp](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1dres/#function-stringcomp)**(const str & s1, const str & s2, bool with_regex =true)<br>Check whether s1 (wildcard + regex allowed) matches s2.  |
-| bool | **[typeComp](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1dres/#function-typecomp)**(str s1, str s2, const Utils::type_equivalency & eq, bool with_regex =true)<br>Type comparison taking into account equivalence classes.  |
-| error & | **[dependency_resolver_error](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1dres/#function-dependency-resolver-error)**()<br>Dependency resolver errors.  |
-| warning & | **[dependency_resolver_warning](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1dres/#function-dependency-resolver-warning)**()<br>Dependency resolver warnings.  |
-| void | **[getParentVertices](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1dres/#function-getparentvertices)**(const VertexID & vertex, const [DRes::MasterGraphType](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1dres/#typedef-mastergraphtype) & graph, std::set< VertexID > & myVertexList) |
-| std::vector< VertexID > | **[sortVertices](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1dres/#function-sortvertices)**(const std::set< VertexID > & set, const std::list< VertexID > & topoOrder) |
-| std::vector< VertexID > | **[getSortedParentVertices](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1dres/#function-getsortedparentvertices)**(const VertexID & vertex, const [DRes::MasterGraphType](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1dres/#typedef-mastergraphtype) & graph, const std::list< VertexID > & topoOrder) |
-| bool | **[quantityMatchesIniEntry](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1dres/#function-quantitymatchesinientry)**(const sspair & quantity, const [IniParser::ObservableType](/documentation/code/gambit_sphinxclasses/structgambit_1_1iniparser_1_1types_1_1observable/) & observable, const Utils::type_equivalency & eq) |
-| bool | **[capabilityMatchesIniEntry](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1dres/#function-capabilitymatchesinientry)**(const sspair & quantity, const [IniParser::ObservableType](/documentation/code/gambit_sphinxclasses/structgambit_1_1iniparser_1_1types_1_1observable/) & observable) |
-| bool | **[moduleFuncMatchesIniEntry](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1dres/#function-modulefuncmatchesinientry)**(functor * f, const [IniParser::ObservableType](/documentation/code/gambit_sphinxclasses/structgambit_1_1iniparser_1_1types_1_1observable/) & e, const Utils::type_equivalency & eq) |
-| bool | **[backendFuncMatchesIniEntry](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1dres/#function-backendfuncmatchesinientry)**(functor * f, const [IniParser::ObservableType](/documentation/code/gambit_sphinxclasses/structgambit_1_1iniparser_1_1types_1_1observable/) & e, const Utils::type_equivalency & eq) |
-| int | **[getEntryLevelForOptions](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1dres/#function-getentrylevelforoptions)**(const [IniParser::ObservableType](/documentation/code/gambit_sphinxclasses/structgambit_1_1iniparser_1_1types_1_1observable/) & e) |
-| bool | **[matchesRules](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1dres/#function-matchesrules)**(functor * f, const [Rule](/documentation/code/gambit_sphinxclasses/structgambit_1_1dres_1_1rule/) & rule) |
-| double | **[getTimeEstimate](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1dres/#function-gettimeestimate)**(const std::set< VertexID > & vertexList, const [DRes::MasterGraphType](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1dres/#typedef-mastergraphtype) & graph) |
+| bool | **[stringComp](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1dres/#function-stringcomp)**(const str & s1, const str & s2, bool with_regex =true)<br>Check whether s1 (wildcard + regex allowed) matches s2.  |
+| bool | **[typeComp](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1dres/#function-typecomp)**(str s1, str s2, const Utils::type_equivalency & eq, bool with_regex =true)<br>Type comparison taking into account equivalence classes.  |
+| error & | **[dependency_resolver_error](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1dres/#function-dependency-resolver-error)**()<br>Dependency resolver errors.  |
+| warning & | **[dependency_resolver_warning](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1dres/#function-dependency-resolver-warning)**()<br>Dependency resolver warnings.  |
+| void | **[getParentVertices](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1dres/#function-getparentvertices)**(const VertexID & vertex, const [DRes::MasterGraphType](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1dres/#typedef-mastergraphtype) & graph, std::set< VertexID > & myVertexList) |
+| std::vector< VertexID > | **[sortVertices](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1dres/#function-sortvertices)**(const std::set< VertexID > & set, const std::list< VertexID > & topoOrder) |
+| std::vector< VertexID > | **[getSortedParentVertices](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1dres/#function-getsortedparentvertices)**(const VertexID & vertex, const [DRes::MasterGraphType](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1dres/#typedef-mastergraphtype) & graph, const std::list< VertexID > & topoOrder) |
+| bool | **[quantityMatchesIniEntry](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1dres/#function-quantitymatchesinientry)**(const sspair & quantity, const [IniParser::ObservableType](/documentation/code/gambit_sphinx/classes/structgambit_1_1iniparser_1_1types_1_1observable/) & observable, const Utils::type_equivalency & eq) |
+| bool | **[capabilityMatchesIniEntry](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1dres/#function-capabilitymatchesinientry)**(const sspair & quantity, const [IniParser::ObservableType](/documentation/code/gambit_sphinx/classes/structgambit_1_1iniparser_1_1types_1_1observable/) & observable) |
+| bool | **[moduleFuncMatchesIniEntry](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1dres/#function-modulefuncmatchesinientry)**(functor * f, const [IniParser::ObservableType](/documentation/code/gambit_sphinx/classes/structgambit_1_1iniparser_1_1types_1_1observable/) & e, const Utils::type_equivalency & eq) |
+| bool | **[backendFuncMatchesIniEntry](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1dres/#function-backendfuncmatchesinientry)**(functor * f, const [IniParser::ObservableType](/documentation/code/gambit_sphinx/classes/structgambit_1_1iniparser_1_1types_1_1observable/) & e, const Utils::type_equivalency & eq) |
+| int | **[getEntryLevelForOptions](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1dres/#function-getentrylevelforoptions)**(const [IniParser::ObservableType](/documentation/code/gambit_sphinx/classes/structgambit_1_1iniparser_1_1types_1_1observable/) & e) |
+| bool | **[matchesRules](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1dres/#function-matchesrules)**(functor * f, const [Rule](/documentation/code/gambit_sphinx/classes/structgambit_1_1dres_1_1rule/) & rule) |
+| double | **[getTimeEstimate](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1dres/#function-gettimeestimate)**(const std::set< VertexID > & vertexList, const [DRes::MasterGraphType](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1dres/#typedef-mastergraphtype) & graph) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| bool | **[use_regex](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1dres/#variable-use-regex)** <br>Global flag for regex use.  |
+| bool | **[use_regex](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1dres/#variable-use-regex)** <br>Global flag for regex use.  |
 
 ## Types Documentation
 
@@ -273,4 +273,4 @@ Global flag for regex use.
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:47 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

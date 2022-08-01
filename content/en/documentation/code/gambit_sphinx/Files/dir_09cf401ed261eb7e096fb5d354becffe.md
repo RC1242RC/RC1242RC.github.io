@@ -16,9 +16,9 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[shared_includes/DarkSUSY_6.hpp](/documentation/code/gambit_sphinxfiles/darksusy__6_8hpp/#file-darksusy-6.hpp)**  |
-| **[shared_includes/MicrOmegas_SingletDM_3_6_9_2.hpp](/documentation/code/gambit_sphinxfiles/micromegas__singletdm__3__6__9__2_8hpp/#file-micromegas-singletdm-3-6-9-2.hpp)**  |
-| **[shared_includes/nulike_1_0.hpp](/documentation/code/gambit_sphinxfiles/nulike__1__0_8hpp/#file-nulike-1-0.hpp)**  |
+| **[shared_includes/DarkSUSY_6.hpp](/documentation/code/gambit_sphinx/files/darksusy__6_8hpp/#file-darksusy-6.hpp)**  |
+| **[shared_includes/MicrOmegas_SingletDM_3_6_9_2.hpp](/documentation/code/gambit_sphinx/files/micromegas__singletdm__3__6__9__2_8hpp/#file-micromegas-singletdm-3-6-9-2.hpp)**  |
+| **[shared_includes/nulike_1_0.hpp](/documentation/code/gambit_sphinx/files/nulike__1__0_8hpp/#file-nulike-1-0.hpp)**  |
 
 
 
@@ -27,4 +27,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:50 +0000
+Updated on 2022-08-01 at 17:41:25 +0000

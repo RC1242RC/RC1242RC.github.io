@@ -16,18 +16,18 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/darkbit_developmentnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::ColliderBit](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1colliderbit/)**  |
+| **[Gambit](/documentation/code/darkbit_development/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::ColliderBit](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1colliderbit/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Gambit::ColliderBit::Analysis_CMS_13TeV_2LEPsoft_36invfb](/documentation/code/darkbit_developmentclasses/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2lepsoft__36invfb/)**  |
-| struct | **[Gambit::ColliderBit::Analysis_CMS_13TeV_2LEPsoft_36invfb::ptComparison](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1analysis__cms__13tev__2lepsoft__36invfb_1_1ptcomparison/)**  |
-| class | **[Gambit::ColliderBit::Analysis_CMS_13TeV_2LEPsoft_stop_36invfb](/documentation/code/darkbit_developmentclasses/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2lepsoft__stop__36invfb/)**  |
-| class | **[Gambit::ColliderBit::Analysis_CMS_13TeV_2LEPsoft_36invfb_nocovar](/documentation/code/darkbit_developmentclasses/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2lepsoft__36invfb__nocovar/)**  |
-| class | **[Gambit::ColliderBit::Analysis_CMS_13TeV_2LEPsoft_stop_36invfb_nocovar](/documentation/code/darkbit_developmentclasses/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2lepsoft__stop__36invfb__nocovar/)**  |
+| class | **[Gambit::ColliderBit::Analysis_CMS_13TeV_2LEPsoft_36invfb](/documentation/code/darkbit_development/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2lepsoft__36invfb/)**  |
+| struct | **[Gambit::ColliderBit::Analysis_CMS_13TeV_2LEPsoft_36invfb::ptComparison](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1analysis__cms__13tev__2lepsoft__36invfb_1_1ptcomparison/)**  |
+| class | **[Gambit::ColliderBit::Analysis_CMS_13TeV_2LEPsoft_stop_36invfb](/documentation/code/darkbit_development/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2lepsoft__stop__36invfb/)**  |
+| class | **[Gambit::ColliderBit::Analysis_CMS_13TeV_2LEPsoft_36invfb_nocovar](/documentation/code/darkbit_development/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2lepsoft__36invfb__nocovar/)**  |
+| class | **[Gambit::ColliderBit::Analysis_CMS_13TeV_2LEPsoft_stop_36invfb_nocovar](/documentation/code/darkbit_development/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2lepsoft__stop__36invfb__nocovar/)**  |
 
 
 
@@ -672,4 +672,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:44 +0000
+Updated on 2022-08-01 at 17:41:25 +0000

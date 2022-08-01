@@ -16,35 +16,35 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| [LOAD_LIBRARY](/documentation/code/darkbit_developmentfiles/frontend__macros_8hpp/#define-load-library) | **[BE_FUNCTION](/documentation/code/darkbit_developmentfiles/micromegas__mssm__3__6__9__2_8hpp/#function-be-function)**(oneChannel , double , (double, double, char *, char *, char *, char *) , "oneChannel" , "get_oneChannel" , (MSSM63atQ) ) |
-| [LOAD_LIBRARY](/documentation/code/darkbit_developmentfiles/frontend__macros_8hpp/#define-load-library) char MSSM63atQ | **[BE_FUNCTION](/documentation/code/darkbit_developmentfiles/micromegas__mssm__3__6__9__2_8hpp/#function-be-function)**(vSigma , double , (double, double, int) , "vSigma" , "vSigma" , (MSSM63atQ) ) |
-| [LOAD_LIBRARY](/documentation/code/darkbit_developmentfiles/frontend__macros_8hpp/#define-load-library) char MSSM63atQ double MSSM63atQ | **[BE_FUNCTION](/documentation/code/darkbit_developmentfiles/micromegas__mssm__3__6__9__2_8hpp/#function-be-function)**(suspectSUGRA , int , (double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double) , "suspectSUGRA" , "suspectSUGRA" , (MSSM63atQ) ) |
-| [LOAD_LIBRARY](/documentation/code/darkbit_developmentfiles/frontend__macros_8hpp/#define-load-library) char MSSM63atQ double MSSM63atQ char MSSM63atQ | **[BE_FUNCTION](/documentation/code/darkbit_developmentfiles/micromegas__mssm__3__6__9__2_8hpp/#function-be-function)**(sortOddParticles , int , (char *) , "sortOddParticles" , "mass_spectrum" , (MSSM63atQ) ) |
-| [LOAD_LIBRARY](/documentation/code/darkbit_developmentfiles/frontend__macros_8hpp/#define-load-library) char MSSM63atQ double MSSM63atQ char MSSM63atQ MSSM63atQ | **[BE_FUNCTION](/documentation/code/darkbit_developmentfiles/micromegas__mssm__3__6__9__2_8hpp/#function-be-function)**(nucleonAmplitudes , int , (double(*)(double, double, double, double), double *, double *, double *, double *) , "nucleonAmplitudes" , "nucleonAmplitudes" , (MSSM63atQ) ) |
+| [LOAD_LIBRARY](/documentation/code/darkbit_development/files/frontend__macros_8hpp/#define-load-library) | **[BE_FUNCTION](/documentation/code/darkbit_development/files/micromegas__mssm__3__6__9__2_8hpp/#function-be-function)**(oneChannel , double , (double, double, char *, char *, char *, char *) , "oneChannel" , "get_oneChannel" , (MSSM63atQ) ) |
+| [LOAD_LIBRARY](/documentation/code/darkbit_development/files/frontend__macros_8hpp/#define-load-library) char MSSM63atQ | **[BE_FUNCTION](/documentation/code/darkbit_development/files/micromegas__mssm__3__6__9__2_8hpp/#function-be-function)**(vSigma , double , (double, double, int) , "vSigma" , "vSigma" , (MSSM63atQ) ) |
+| [LOAD_LIBRARY](/documentation/code/darkbit_development/files/frontend__macros_8hpp/#define-load-library) char MSSM63atQ double MSSM63atQ | **[BE_FUNCTION](/documentation/code/darkbit_development/files/micromegas__mssm__3__6__9__2_8hpp/#function-be-function)**(suspectSUGRA , int , (double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double) , "suspectSUGRA" , "suspectSUGRA" , (MSSM63atQ) ) |
+| [LOAD_LIBRARY](/documentation/code/darkbit_development/files/frontend__macros_8hpp/#define-load-library) char MSSM63atQ double MSSM63atQ char MSSM63atQ | **[BE_FUNCTION](/documentation/code/darkbit_development/files/micromegas__mssm__3__6__9__2_8hpp/#function-be-function)**(sortOddParticles , int , (char *) , "sortOddParticles" , "mass_spectrum" , (MSSM63atQ) ) |
+| [LOAD_LIBRARY](/documentation/code/darkbit_development/files/frontend__macros_8hpp/#define-load-library) char MSSM63atQ double MSSM63atQ char MSSM63atQ MSSM63atQ | **[BE_FUNCTION](/documentation/code/darkbit_development/files/micromegas__mssm__3__6__9__2_8hpp/#function-be-function)**(nucleonAmplitudes , int , (double(*)(double, double, double, double), double *, double *, double *, double *) , "nucleonAmplitudes" , "nucleonAmplitudes" , (MSSM63atQ) ) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| [LOAD_LIBRARY](/documentation/code/darkbit_developmentfiles/frontend__macros_8hpp/#define-load-library) | **[int](/documentation/code/darkbit_developmentfiles/micromegas__mssm__3__6__9__2_8hpp/#variable-int)**  |
-| [LOAD_LIBRARY](/documentation/code/darkbit_developmentfiles/frontend__macros_8hpp/#define-load-library) char | **[double](/documentation/code/darkbit_developmentfiles/micromegas__mssm__3__6__9__2_8hpp/#variable-double)**  |
-| [LOAD_LIBRARY](/documentation/code/darkbit_developmentfiles/frontend__macros_8hpp/#define-load-library) char | **[assignVal](/documentation/code/darkbit_developmentfiles/micromegas__mssm__3__6__9__2_8hpp/#variable-assignval)**  |
-| [LOAD_LIBRARY](/documentation/code/darkbit_developmentfiles/frontend__macros_8hpp/#define-load-library) char MSSM63atQ double | **[darkOmega](/documentation/code/darkbit_developmentfiles/micromegas__mssm__3__6__9__2_8hpp/#variable-darkomega)**  |
-| [LOAD_LIBRARY](/documentation/code/darkbit_developmentfiles/frontend__macros_8hpp/#define-load-library) char MSSM63atQ double | **[oh2](/documentation/code/darkbit_developmentfiles/micromegas__mssm__3__6__9__2_8hpp/#variable-oh2)**  |
-| [LOAD_LIBRARY](/documentation/code/darkbit_developmentfiles/frontend__macros_8hpp/#define-load-library) char MSSM63atQ double MSSM63atQ char | **[lesHinput](/documentation/code/darkbit_developmentfiles/micromegas__mssm__3__6__9__2_8hpp/#variable-leshinput)**  |
-| [LOAD_LIBRARY](/documentation/code/darkbit_developmentfiles/frontend__macros_8hpp/#define-load-library) char MSSM63atQ double MSSM63atQ char MSSM63atQ | **[void](/documentation/code/darkbit_developmentfiles/micromegas__mssm__3__6__9__2_8hpp/#variable-void)**  |
-| [LOAD_LIBRARY](/documentation/code/darkbit_developmentfiles/frontend__macros_8hpp/#define-load-library) char MSSM63atQ double MSSM63atQ char MSSM63atQ | **[cleanDecayTable](/documentation/code/darkbit_developmentfiles/micromegas__mssm__3__6__9__2_8hpp/#variable-cleandecaytable)**  |
-| [LOAD_LIBRARY](/documentation/code/darkbit_developmentfiles/frontend__macros_8hpp/#define-load-library) char MSSM63atQ double MSSM63atQ char MSSM63atQ MSSM63atQ | **[FeScLoop](/documentation/code/darkbit_developmentfiles/micromegas__mssm__3__6__9__2_8hpp/#variable-fescloop)**  |
+| [LOAD_LIBRARY](/documentation/code/darkbit_development/files/frontend__macros_8hpp/#define-load-library) | **[int](/documentation/code/darkbit_development/files/micromegas__mssm__3__6__9__2_8hpp/#variable-int)**  |
+| [LOAD_LIBRARY](/documentation/code/darkbit_development/files/frontend__macros_8hpp/#define-load-library) char | **[double](/documentation/code/darkbit_development/files/micromegas__mssm__3__6__9__2_8hpp/#variable-double)**  |
+| [LOAD_LIBRARY](/documentation/code/darkbit_development/files/frontend__macros_8hpp/#define-load-library) char | **[assignVal](/documentation/code/darkbit_development/files/micromegas__mssm__3__6__9__2_8hpp/#variable-assignval)**  |
+| [LOAD_LIBRARY](/documentation/code/darkbit_development/files/frontend__macros_8hpp/#define-load-library) char MSSM63atQ double | **[darkOmega](/documentation/code/darkbit_development/files/micromegas__mssm__3__6__9__2_8hpp/#variable-darkomega)**  |
+| [LOAD_LIBRARY](/documentation/code/darkbit_development/files/frontend__macros_8hpp/#define-load-library) char MSSM63atQ double | **[oh2](/documentation/code/darkbit_development/files/micromegas__mssm__3__6__9__2_8hpp/#variable-oh2)**  |
+| [LOAD_LIBRARY](/documentation/code/darkbit_development/files/frontend__macros_8hpp/#define-load-library) char MSSM63atQ double MSSM63atQ char | **[lesHinput](/documentation/code/darkbit_development/files/micromegas__mssm__3__6__9__2_8hpp/#variable-leshinput)**  |
+| [LOAD_LIBRARY](/documentation/code/darkbit_development/files/frontend__macros_8hpp/#define-load-library) char MSSM63atQ double MSSM63atQ char MSSM63atQ | **[void](/documentation/code/darkbit_development/files/micromegas__mssm__3__6__9__2_8hpp/#variable-void)**  |
+| [LOAD_LIBRARY](/documentation/code/darkbit_development/files/frontend__macros_8hpp/#define-load-library) char MSSM63atQ double MSSM63atQ char MSSM63atQ | **[cleanDecayTable](/documentation/code/darkbit_development/files/micromegas__mssm__3__6__9__2_8hpp/#variable-cleandecaytable)**  |
+| [LOAD_LIBRARY](/documentation/code/darkbit_development/files/frontend__macros_8hpp/#define-load-library) char MSSM63atQ double MSSM63atQ char MSSM63atQ MSSM63atQ | **[FeScLoop](/documentation/code/darkbit_development/files/micromegas__mssm__3__6__9__2_8hpp/#variable-fescloop)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[BACKENDNAME](/documentation/code/darkbit_developmentfiles/micromegas__mssm__3__6__9__2_8hpp/#define-backendname)**  |
-|  | **[BACKENDLANG](/documentation/code/darkbit_developmentfiles/micromegas__mssm__3__6__9__2_8hpp/#define-backendlang)**  |
-|  | **[VERSION](/documentation/code/darkbit_developmentfiles/micromegas__mssm__3__6__9__2_8hpp/#define-version)**  |
-|  | **[SAFE_VERSION](/documentation/code/darkbit_developmentfiles/micromegas__mssm__3__6__9__2_8hpp/#define-safe-version)**  |
-|  | **[REFERENCE](/documentation/code/darkbit_developmentfiles/micromegas__mssm__3__6__9__2_8hpp/#define-reference)**  |
+|  | **[BACKENDNAME](/documentation/code/darkbit_development/files/micromegas__mssm__3__6__9__2_8hpp/#define-backendname)**  |
+|  | **[BACKENDLANG](/documentation/code/darkbit_development/files/micromegas__mssm__3__6__9__2_8hpp/#define-backendlang)**  |
+|  | **[VERSION](/documentation/code/darkbit_development/files/micromegas__mssm__3__6__9__2_8hpp/#define-version)**  |
+|  | **[SAFE_VERSION](/documentation/code/darkbit_development/files/micromegas__mssm__3__6__9__2_8hpp/#define-safe-version)**  |
+|  | **[REFERENCE](/documentation/code/darkbit_development/files/micromegas__mssm__3__6__9__2_8hpp/#define-reference)**  |
 
 ## Detailed Description
 
@@ -302,4 +302,4 @@ BE_INI_DEPENDENCY(decay_rates, DecayTable)
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:45 +0000
+Updated on 2022-08-01 at 17:41:26 +0000

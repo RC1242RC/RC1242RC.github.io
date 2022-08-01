@@ -16,14 +16,14 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::DarkBit](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1darkbit/)**  |
+| **[Gambit](/documentation/code/gambit_sphinx/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::DarkBit](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1darkbit/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[Gambit::DarkBit::SimpleHist](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1simplehist/)** <br>Histogram class for cascade decays.  |
+| struct | **[Gambit::DarkBit::SimpleHist](/documentation/code/gambit_sphinx/classes/structgambit_1_1darkbit_1_1simplehist/)** <br>Histogram class for cascade decays.  |
 
 ## Detailed Description
 
@@ -131,4 +131,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:49 +0000
+Updated on 2022-08-01 at 17:41:23 +0000

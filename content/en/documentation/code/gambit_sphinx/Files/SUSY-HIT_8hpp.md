@@ -16,63 +16,63 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit](/documentation/code/gambit_sphinx/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[Gambit::checkfavvio_type](/documentation/code/gambit_sphinxclasses/structgambit_1_1checkfavvio__type/)**  |
-| struct | **[Gambit::susyhitin_type](/documentation/code/gambit_sphinxclasses/structgambit_1_1susyhitin__type/)**  |
-| struct | **[Gambit::sd_leshouches1_type](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__leshouches1__type/)**  |
-| struct | **[Gambit::sd_leshouches2_type](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__leshouches2__type/)**  |
-| struct | **[Gambit::slha_leshouches2_hdec_type](/documentation/code/gambit_sphinxclasses/structgambit_1_1slha__leshouches2__hdec__type/)**  |
-| struct | **[Gambit::widtha_hdec_type](/documentation/code/gambit_sphinxclasses/structgambit_1_1widtha__hdec__type/)**  |
-| struct | **[Gambit::widthhl_hdec_type](/documentation/code/gambit_sphinxclasses/structgambit_1_1widthhl__hdec__type/)**  |
-| struct | **[Gambit::widthhh_hdec_type](/documentation/code/gambit_sphinxclasses/structgambit_1_1widthhh__hdec__type/)**  |
-| struct | **[Gambit::widthhc_hdec_type](/documentation/code/gambit_sphinxclasses/structgambit_1_1widthhc__hdec__type/)**  |
-| struct | **[Gambit::wisusy_hdec_type](/documentation/code/gambit_sphinxclasses/structgambit_1_1wisusy__hdec__type/)**  |
-| struct | **[Gambit::wisfer_hdec_type](/documentation/code/gambit_sphinxclasses/structgambit_1_1wisfer__hdec__type/)**  |
-| struct | **[Gambit::hd_golddec_type](/documentation/code/gambit_sphinxclasses/structgambit_1_1hd__golddec__type/)**  |
-| struct | **[Gambit::sd_char2body_type](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__char2body__type/)**  |
-| struct | **[Gambit::sd_char2bodygrav_type](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__char2bodygrav__type/)**  |
-| struct | **[Gambit::sd_char3body_type](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__char3body__type/)**  |
-| struct | **[Gambit::sd_charwidth_type](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__charwidth__type/)**  |
-| struct | **[Gambit::sd_neut2body_type](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__neut2body__type/)**  |
-| struct | **[Gambit::sd_neut2bodygrav_type](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__neut2bodygrav__type/)**  |
-| struct | **[Gambit::sd_neut3body_type](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__neut3body__type/)**  |
-| struct | **[Gambit::sd_neutloop_type](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__neutloop__type/)**  |
-| struct | **[Gambit::sd_neutwidth_type](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__neutwidth__type/)**  |
-| struct | **[Gambit::sd_glui2body_type](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__glui2body__type/)**  |
-| struct | **[Gambit::sd_glui3body_type](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__glui3body__type/)**  |
-| struct | **[Gambit::sd_gluiloop_type](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__gluiloop__type/)**  |
-| struct | **[Gambit::sd_gluiwidth_type](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__gluiwidth__type/)**  |
-| struct | **[Gambit::sd_sup2body_type](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__sup2body__type/)**  |
-| struct | **[Gambit::sd_supwidth_type](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__supwidth__type/)**  |
-| struct | **[Gambit::sd_sdown2body_type](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__sdown2body__type/)**  |
-| struct | **[Gambit::sd_sdownwidth_type](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__sdownwidth__type/)**  |
-| struct | **[Gambit::sd_stop2body_type](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__stop2body__type/)**  |
-| struct | **[Gambit::sd_stop3body_type](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__stop3body__type/)**  |
-| struct | **[Gambit::sd_stoploop_type](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__stoploop__type/)**  |
-| struct | **[Gambit::sd_stop4body_type](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__stop4body__type/)**  |
-| struct | **[Gambit::sd_stopwidth_type](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__stopwidth__type/)**  |
-| struct | **[Gambit::sd_sbot2body_type](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__sbot2body__type/)**  |
-| struct | **[Gambit::sd_sbot3body_type](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__sbot3body__type/)**  |
-| struct | **[Gambit::sd_sbotwidth_type](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__sbotwidth__type/)**  |
-| struct | **[Gambit::sd_sel2body_type](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__sel2body__type/)**  |
-| struct | **[Gambit::sd_selwidth_type](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__selwidth__type/)**  |
-| struct | **[Gambit::sd_snel2body_type](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__snel2body__type/)**  |
-| struct | **[Gambit::sd_snelwidth_type](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__snelwidth__type/)**  |
-| struct | **[Gambit::sd_stau2body_type](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__stau2body__type/)**  |
-| struct | **[Gambit::sd_stau2bodygrav_type](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__stau2bodygrav__type/)**  |
-| struct | **[Gambit::sd_stauwidth_type](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__stauwidth__type/)**  |
-| struct | **[Gambit::sd_sntau2body_type](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__sntau2body__type/)**  |
-| struct | **[Gambit::sd_sntauwidth_type](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__sntauwidth__type/)**  |
-| struct | **[Gambit::sd_top2body_type](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__top2body__type/)**  |
-| struct | **[Gambit::sd_topwidth_type](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__topwidth__type/)**  |
-| struct | **[Gambit::flavviolation_type](/documentation/code/gambit_sphinxclasses/structgambit_1_1flavviolation__type/)**  |
-| struct | **[Gambit::sd_mbmb_type](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__mbmb__type/)**  |
-| struct | **[Gambit::sd_selectron_type](/documentation/code/gambit_sphinxclasses/structgambit_1_1sd__selectron__type/)**  |
+| struct | **[Gambit::checkfavvio_type](/documentation/code/gambit_sphinx/classes/structgambit_1_1checkfavvio__type/)**  |
+| struct | **[Gambit::susyhitin_type](/documentation/code/gambit_sphinx/classes/structgambit_1_1susyhitin__type/)**  |
+| struct | **[Gambit::sd_leshouches1_type](/documentation/code/gambit_sphinx/classes/structgambit_1_1sd__leshouches1__type/)**  |
+| struct | **[Gambit::sd_leshouches2_type](/documentation/code/gambit_sphinx/classes/structgambit_1_1sd__leshouches2__type/)**  |
+| struct | **[Gambit::slha_leshouches2_hdec_type](/documentation/code/gambit_sphinx/classes/structgambit_1_1slha__leshouches2__hdec__type/)**  |
+| struct | **[Gambit::widtha_hdec_type](/documentation/code/gambit_sphinx/classes/structgambit_1_1widtha__hdec__type/)**  |
+| struct | **[Gambit::widthhl_hdec_type](/documentation/code/gambit_sphinx/classes/structgambit_1_1widthhl__hdec__type/)**  |
+| struct | **[Gambit::widthhh_hdec_type](/documentation/code/gambit_sphinx/classes/structgambit_1_1widthhh__hdec__type/)**  |
+| struct | **[Gambit::widthhc_hdec_type](/documentation/code/gambit_sphinx/classes/structgambit_1_1widthhc__hdec__type/)**  |
+| struct | **[Gambit::wisusy_hdec_type](/documentation/code/gambit_sphinx/classes/structgambit_1_1wisusy__hdec__type/)**  |
+| struct | **[Gambit::wisfer_hdec_type](/documentation/code/gambit_sphinx/classes/structgambit_1_1wisfer__hdec__type/)**  |
+| struct | **[Gambit::hd_golddec_type](/documentation/code/gambit_sphinx/classes/structgambit_1_1hd__golddec__type/)**  |
+| struct | **[Gambit::sd_char2body_type](/documentation/code/gambit_sphinx/classes/structgambit_1_1sd__char2body__type/)**  |
+| struct | **[Gambit::sd_char2bodygrav_type](/documentation/code/gambit_sphinx/classes/structgambit_1_1sd__char2bodygrav__type/)**  |
+| struct | **[Gambit::sd_char3body_type](/documentation/code/gambit_sphinx/classes/structgambit_1_1sd__char3body__type/)**  |
+| struct | **[Gambit::sd_charwidth_type](/documentation/code/gambit_sphinx/classes/structgambit_1_1sd__charwidth__type/)**  |
+| struct | **[Gambit::sd_neut2body_type](/documentation/code/gambit_sphinx/classes/structgambit_1_1sd__neut2body__type/)**  |
+| struct | **[Gambit::sd_neut2bodygrav_type](/documentation/code/gambit_sphinx/classes/structgambit_1_1sd__neut2bodygrav__type/)**  |
+| struct | **[Gambit::sd_neut3body_type](/documentation/code/gambit_sphinx/classes/structgambit_1_1sd__neut3body__type/)**  |
+| struct | **[Gambit::sd_neutloop_type](/documentation/code/gambit_sphinx/classes/structgambit_1_1sd__neutloop__type/)**  |
+| struct | **[Gambit::sd_neutwidth_type](/documentation/code/gambit_sphinx/classes/structgambit_1_1sd__neutwidth__type/)**  |
+| struct | **[Gambit::sd_glui2body_type](/documentation/code/gambit_sphinx/classes/structgambit_1_1sd__glui2body__type/)**  |
+| struct | **[Gambit::sd_glui3body_type](/documentation/code/gambit_sphinx/classes/structgambit_1_1sd__glui3body__type/)**  |
+| struct | **[Gambit::sd_gluiloop_type](/documentation/code/gambit_sphinx/classes/structgambit_1_1sd__gluiloop__type/)**  |
+| struct | **[Gambit::sd_gluiwidth_type](/documentation/code/gambit_sphinx/classes/structgambit_1_1sd__gluiwidth__type/)**  |
+| struct | **[Gambit::sd_sup2body_type](/documentation/code/gambit_sphinx/classes/structgambit_1_1sd__sup2body__type/)**  |
+| struct | **[Gambit::sd_supwidth_type](/documentation/code/gambit_sphinx/classes/structgambit_1_1sd__supwidth__type/)**  |
+| struct | **[Gambit::sd_sdown2body_type](/documentation/code/gambit_sphinx/classes/structgambit_1_1sd__sdown2body__type/)**  |
+| struct | **[Gambit::sd_sdownwidth_type](/documentation/code/gambit_sphinx/classes/structgambit_1_1sd__sdownwidth__type/)**  |
+| struct | **[Gambit::sd_stop2body_type](/documentation/code/gambit_sphinx/classes/structgambit_1_1sd__stop2body__type/)**  |
+| struct | **[Gambit::sd_stop3body_type](/documentation/code/gambit_sphinx/classes/structgambit_1_1sd__stop3body__type/)**  |
+| struct | **[Gambit::sd_stoploop_type](/documentation/code/gambit_sphinx/classes/structgambit_1_1sd__stoploop__type/)**  |
+| struct | **[Gambit::sd_stop4body_type](/documentation/code/gambit_sphinx/classes/structgambit_1_1sd__stop4body__type/)**  |
+| struct | **[Gambit::sd_stopwidth_type](/documentation/code/gambit_sphinx/classes/structgambit_1_1sd__stopwidth__type/)**  |
+| struct | **[Gambit::sd_sbot2body_type](/documentation/code/gambit_sphinx/classes/structgambit_1_1sd__sbot2body__type/)**  |
+| struct | **[Gambit::sd_sbot3body_type](/documentation/code/gambit_sphinx/classes/structgambit_1_1sd__sbot3body__type/)**  |
+| struct | **[Gambit::sd_sbotwidth_type](/documentation/code/gambit_sphinx/classes/structgambit_1_1sd__sbotwidth__type/)**  |
+| struct | **[Gambit::sd_sel2body_type](/documentation/code/gambit_sphinx/classes/structgambit_1_1sd__sel2body__type/)**  |
+| struct | **[Gambit::sd_selwidth_type](/documentation/code/gambit_sphinx/classes/structgambit_1_1sd__selwidth__type/)**  |
+| struct | **[Gambit::sd_snel2body_type](/documentation/code/gambit_sphinx/classes/structgambit_1_1sd__snel2body__type/)**  |
+| struct | **[Gambit::sd_snelwidth_type](/documentation/code/gambit_sphinx/classes/structgambit_1_1sd__snelwidth__type/)**  |
+| struct | **[Gambit::sd_stau2body_type](/documentation/code/gambit_sphinx/classes/structgambit_1_1sd__stau2body__type/)**  |
+| struct | **[Gambit::sd_stau2bodygrav_type](/documentation/code/gambit_sphinx/classes/structgambit_1_1sd__stau2bodygrav__type/)**  |
+| struct | **[Gambit::sd_stauwidth_type](/documentation/code/gambit_sphinx/classes/structgambit_1_1sd__stauwidth__type/)**  |
+| struct | **[Gambit::sd_sntau2body_type](/documentation/code/gambit_sphinx/classes/structgambit_1_1sd__sntau2body__type/)**  |
+| struct | **[Gambit::sd_sntauwidth_type](/documentation/code/gambit_sphinx/classes/structgambit_1_1sd__sntauwidth__type/)**  |
+| struct | **[Gambit::sd_top2body_type](/documentation/code/gambit_sphinx/classes/structgambit_1_1sd__top2body__type/)**  |
+| struct | **[Gambit::sd_topwidth_type](/documentation/code/gambit_sphinx/classes/structgambit_1_1sd__topwidth__type/)**  |
+| struct | **[Gambit::flavviolation_type](/documentation/code/gambit_sphinx/classes/structgambit_1_1flavviolation__type/)**  |
+| struct | **[Gambit::sd_mbmb_type](/documentation/code/gambit_sphinx/classes/structgambit_1_1sd__mbmb__type/)**  |
+| struct | **[Gambit::sd_selectron_type](/documentation/code/gambit_sphinx/classes/structgambit_1_1sd__selectron__type/)**  |
 
 ## Detailed Description
 
@@ -757,4 +757,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:50 +0000
+Updated on 2022-08-01 at 17:41:25 +0000

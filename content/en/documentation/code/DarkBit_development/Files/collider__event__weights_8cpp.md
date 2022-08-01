@@ -16,15 +16,15 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/darkbit_developmentnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::ColliderBit](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1colliderbit/)**  |
+| **[Gambit](/documentation/code/darkbit_development/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::ColliderBit](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1colliderbit/)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[COLLIDERBIT_DEBUG](/documentation/code/darkbit_developmentfiles/collider__event__weights_8cpp/#define-colliderbit-debug)**  |
-|  | **[DEBUG_PREFIX](/documentation/code/darkbit_developmentfiles/collider__event__weights_8cpp/#define-debug-prefix)**  |
+|  | **[COLLIDERBIT_DEBUG](/documentation/code/darkbit_development/files/collider__event__weights_8cpp/#define-colliderbit-debug)**  |
+|  | **[DEBUG_PREFIX](/documentation/code/darkbit_development/files/collider__event__weights_8cpp/#define-debug-prefix)**  |
 
 ## Detailed Description
 
@@ -193,4 +193,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:44 +0000
+Updated on 2022-08-01 at 17:41:25 +0000

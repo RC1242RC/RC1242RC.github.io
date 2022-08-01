@@ -16,19 +16,19 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/darkbit_developmentnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit](/documentation/code/darkbit_development/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Gambit::Likelihood_Container_Factory](/documentation/code/darkbit_developmentclasses/classgambit_1_1likelihood__container__factory/)**  |
+| class | **[Gambit::Likelihood_Container_Factory](/documentation/code/darkbit_development/classes/classgambit_1_1likelihood__container__factory/)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[LOAD_SCANNER_FUNCTION](/documentation/code/darkbit_developmentfiles/container__factory_8hpp/#define-load-scanner-function)**(tag, ...)  |
+|  | **[LOAD_SCANNER_FUNCTION](/documentation/code/darkbit_development/files/container__factory_8hpp/#define-load-scanner-function)**(tag, ...)  |
 
 ## Detailed Description
 
@@ -139,4 +139,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:43 +0000
+Updated on 2022-08-01 at 17:41:25 +0000

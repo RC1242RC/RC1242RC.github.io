@@ -14,21 +14,21 @@ description: "[No description available]"
 
 [No description available]
 
-Inherited by [Gambit::Scanner::Plugins::Plugin_Interface< T >](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1plugins_1_1plugin__interface/), [Gambit::Scanner::Plugins::Plugin_Interface< ret(args...)>](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1plugins_1_1plugin__interface_3_01ret_07args_8_8_8_08_4/)
+Inherited by [Gambit::Scanner::Plugins::Plugin_Interface< T >](/documentation/code/gambit_sphinx/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__interface/), [Gambit::Scanner::Plugins::Plugin_Interface< ret(args...)>](/documentation/code/gambit_sphinx/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__interface_3_01ret_07args_8_8_8_08_4/)
 
 ## Public Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Plugin_Interface_Base](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1plugins_1_1plugin__interface__base/#function-plugin-interface-base)**() |
-| YAML::Node | **[operator[]](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1plugins_1_1plugin__interface__base/#function-operator[])**(const std::string & key) |
-| | **[~Plugin_Interface_Base](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1plugins_1_1plugin__interface__base/#function-~plugin-interface-base)**() |
+| | **[Plugin_Interface_Base](/documentation/code/gambit_sphinx/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__interface__base/#function-plugin-interface-base)**() |
+| YAML::Node | **[operator[]](/documentation/code/gambit_sphinx/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__interface__base/#function-operator[])**(const std::string & key) |
+| | **[~Plugin_Interface_Base](/documentation/code/gambit_sphinx/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__interface__base/#function-~plugin-interface-base)**() |
 
 ## Protected Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| template <typename... plug_args\> <br>const std::map< type_index, void * > & | **[initPlugin](/documentation/code/gambit_sphinxclasses/classgambit_1_1scanner_1_1plugins_1_1plugin__interface__base/#function-initplugin)**(const std::string & type, const std::string & name, const plug_args &... inputs) |
+| template <typename... plug_args\> <br>const std::map< type_index, void * > & | **[initPlugin](/documentation/code/gambit_sphinx/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__interface__base/#function-initplugin)**(const std::string & type, const std::string & name, const plug_args &... inputs) |
 
 ## Public Functions Documentation
 
@@ -71,4 +71,4 @@ inline const std::map< type_index, void * > & initPlugin(
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:48 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

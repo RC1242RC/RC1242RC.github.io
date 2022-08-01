@@ -16,14 +16,14 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/darkbit_developmentnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::ColliderBit](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1colliderbit/)**  |
+| **[Gambit](/documentation/code/darkbit_development/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::ColliderBit](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1colliderbit/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Gambit::ColliderBit::Analysis_ATLAS_13TeV_ZGammaGrav_CONFNOTE_80invfb](/documentation/code/darkbit_developmentclasses/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__zgammagrav__confnote__80invfb/)** <br>[ATLAS]() ZH(->photon+gravitino) (79.8 fb^-1)  |
+| class | **[Gambit::ColliderBit::Analysis_ATLAS_13TeV_ZGammaGrav_CONFNOTE_80invfb](/documentation/code/darkbit_development/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__zgammagrav__confnote__80invfb/)** <br>[ATLAS]() ZH(->photon+gravitino) (79.8 fb^-1)  |
 
 
 
@@ -218,4 +218,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:44 +0000
+Updated on 2022-08-01 at 17:41:25 +0000

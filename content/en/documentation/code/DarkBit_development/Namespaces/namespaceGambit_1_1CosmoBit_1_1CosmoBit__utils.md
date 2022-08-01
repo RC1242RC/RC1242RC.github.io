@@ -16,7 +16,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[entropy_density_SM](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1cosmobit_1_1cosmobit__utils/#function-entropy-density-sm)**(double T, bool T_in_eV =false) |
+| double | **[entropy_density_SM](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1cosmobit_1_1cosmobit__utils/#function-entropy-density-sm)**(double T, bool T_in_eV =false) |
 
 
 ## Functions Documentation
@@ -37,4 +37,4 @@ double entropy_density_SM(
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:42 +0000
+Updated on 2022-08-01 at 17:41:23 +0000

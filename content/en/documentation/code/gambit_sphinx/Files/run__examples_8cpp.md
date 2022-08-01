@@ -16,13 +16,13 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[flexiblesusy](/documentation/code/gambit_sphinxnamespaces/namespaceflexiblesusy/)**  |
+| **[flexiblesusy](/documentation/code/gambit_sphinx/namespaces/namespaceflexiblesusy/)**  |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| int | **[main](/documentation/code/gambit_sphinxfiles/run__examples_8cpp/#function-main)**(int argc, char * argv[]) |
+| int | **[main](/documentation/code/gambit_sphinx/files/run__examples_8cpp/#function-main)**(int argc, char * argv[]) |
 
 
 ## Functions Documentation
@@ -77,4 +77,4 @@ return 0;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:48 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

@@ -16,7 +16,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[WrapperBase](/documentation/code/gambit_sphinxclasses/classwrapperbase/)**  |
+| class | **[WrapperBase](/documentation/code/gambit_sphinx/classes/classwrapperbase/)**  |
 
 
 
@@ -54,4 +54,4 @@ __END_GAMBIT_NAMESPACE__
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:51 +0000
+Updated on 2022-08-01 at 17:41:25 +0000

@@ -18,19 +18,19 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[my_func](/documentation/code/gambit_sphinxclasses/structmy__func/#function-my-func)**(double ppb1[4], double ppl[4], double ppMET[4], double sigmatt, double sigmaWW, double ssign) |
-| double | **[operator()](/documentation/code/gambit_sphinxclasses/structmy__func/#function-operator())**(double points[], int ) |
+| | **[my_func](/documentation/code/gambit_sphinx/classes/structmy__func/#function-my-func)**(double ppb1[4], double ppl[4], double ppMET[4], double sigmatt, double sigmaWW, double ssign) |
+| double | **[operator()](/documentation/code/gambit_sphinx/classes/structmy__func/#function-operator())**(double points[], int ) |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[pb1](/documentation/code/gambit_sphinxclasses/structmy__func/#variable-pb1)**  |
-| double | **[pl](/documentation/code/gambit_sphinxclasses/structmy__func/#variable-pl)**  |
-| double | **[pMET](/documentation/code/gambit_sphinxclasses/structmy__func/#variable-pmet)**  |
-| double | **[sigmat](/documentation/code/gambit_sphinxclasses/structmy__func/#variable-sigmat)**  |
-| double | **[sigmaW](/documentation/code/gambit_sphinxclasses/structmy__func/#variable-sigmaw)**  |
-| double | **[sign](/documentation/code/gambit_sphinxclasses/structmy__func/#variable-sign)**  |
+| double | **[pb1](/documentation/code/gambit_sphinx/classes/structmy__func/#variable-pb1)**  |
+| double | **[pl](/documentation/code/gambit_sphinx/classes/structmy__func/#variable-pl)**  |
+| double | **[pMET](/documentation/code/gambit_sphinx/classes/structmy__func/#variable-pmet)**  |
+| double | **[sigmat](/documentation/code/gambit_sphinx/classes/structmy__func/#variable-sigmat)**  |
+| double | **[sigmaW](/documentation/code/gambit_sphinx/classes/structmy__func/#variable-sigmaw)**  |
+| double | **[sign](/documentation/code/gambit_sphinx/classes/structmy__func/#variable-sign)**  |
 
 ## Public Functions Documentation
 
@@ -104,4 +104,4 @@ double sign;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:46 +0000
+Updated on 2022-08-01 at 17:41:20 +0000

@@ -16,21 +16,21 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[if](/documentation/code/darkbit_developmentfiles/darksusy__5__1__3_8cpp/#function-if)**(scan_level ) |
-| | **[if](/documentation/code/darkbit_developmentfiles/darksusy__5__1__3_8cpp/#function-if)**(runOptions-> hasKey"debug_SLHA_filenames") |
-| else | **[if](/documentation/code/darkbit_developmentfiles/darksusy__5__1__3_8cpp/#function-if)**(ModelInUse("CMSSM") and runOptions->getValueOrDef< bool >(false, "use_DS_isasugra") )<br>Option use_DS_isasugra<bool>: Use DS internal isasugra for parameter running (false)  |
-| else | **[if](/documentation/code/darkbit_developmentfiles/darksusy__5__1__3_8cpp/#function-if)**(ModelInUse("MSSM63atQ")||ModelInUse("CMSSM") ) |
-| | **[if](/documentation/code/darkbit_developmentfiles/darksusy__5__1__3_8cpp/#function-if)**((ModelInUse("MSSM63atQ")||ModelInUse("CMSSM")) &&! mssm_result) |
+| | **[if](/documentation/code/darkbit_development/files/darksusy__5__1__3_8cpp/#function-if)**(scan_level ) |
+| | **[if](/documentation/code/darkbit_development/files/darksusy__5__1__3_8cpp/#function-if)**(runOptions-> hasKey"debug_SLHA_filenames") |
+| else | **[if](/documentation/code/darkbit_development/files/darksusy__5__1__3_8cpp/#function-if)**(ModelInUse("CMSSM") and runOptions->getValueOrDef< bool >(false, "use_DS_isasugra") )<br>Option use_DS_isasugra<bool>: Use DS internal isasugra for parameter running (false)  |
+| else | **[if](/documentation/code/darkbit_development/files/darksusy__5__1__3_8cpp/#function-if)**(ModelInUse("MSSM63atQ")||ModelInUse("CMSSM") ) |
+| | **[if](/documentation/code/darkbit_development/files/darksusy__5__1__3_8cpp/#function-if)**((ModelInUse("MSSM63atQ")||ModelInUse("CMSSM")) &&! mssm_result) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[BE_NAMESPACE](/documentation/code/darkbit_developmentfiles/darksusy__5__1__3_8cpp/#variable-be-namespace)**  |
-| std::vector< double > | **[DSparticle_mass](/documentation/code/darkbit_developmentfiles/darksusy__5__1__3_8cpp/#variable-dsparticle-mass)**  |
-| std::vector< double > | **[GAMBITparticle_mass](/documentation/code/darkbit_developmentfiles/darksusy__5__1__3_8cpp/#variable-gambitparticle-mass)**  |
-| [END_BE_NAMESPACE](/documentation/code/darkbit_developmentfiles/common__macros_8hpp/#define-end-be-namespace) | **[BE_INI_FUNCTION](/documentation/code/darkbit_developmentfiles/darksusy__5__1__3_8cpp/#variable-be-ini-function)**  |
-| bool | **[mssm_result](/documentation/code/darkbit_developmentfiles/darksusy__5__1__3_8cpp/#variable-mssm-result)**  |
+| | **[BE_NAMESPACE](/documentation/code/darkbit_development/files/darksusy__5__1__3_8cpp/#variable-be-namespace)**  |
+| std::vector< double > | **[DSparticle_mass](/documentation/code/darkbit_development/files/darksusy__5__1__3_8cpp/#variable-dsparticle-mass)**  |
+| std::vector< double > | **[GAMBITparticle_mass](/documentation/code/darkbit_development/files/darksusy__5__1__3_8cpp/#variable-gambitparticle-mass)**  |
+| [END_BE_NAMESPACE](/documentation/code/darkbit_development/files/common__macros_8hpp/#define-end-be-namespace) | **[BE_INI_FUNCTION](/documentation/code/darkbit_development/files/darksusy__5__1__3_8cpp/#variable-be-ini-function)**  |
+| bool | **[mssm_result](/documentation/code/darkbit_development/files/darksusy__5__1__3_8cpp/#variable-mssm-result)**  |
 
 ## Detailed Description
 
@@ -1079,4 +1079,4 @@ END_BE_NAMESPACE
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:45 +0000
+Updated on 2022-08-01 at 17:41:27 +0000

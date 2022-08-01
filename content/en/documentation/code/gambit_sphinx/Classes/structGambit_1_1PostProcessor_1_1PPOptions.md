@@ -21,24 +21,24 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| std::set< std::string > | **[all_params](/documentation/code/gambit_sphinxclasses/structgambit_1_1postprocessor_1_1ppoptions/#variable-all-params)**  |
-| std::set< std::string > | **[data_labels](/documentation/code/gambit_sphinxclasses/structgambit_1_1postprocessor_1_1ppoptions/#variable-data-labels)**  |
-| std::set< std::string > | **[data_labels_copy](/documentation/code/gambit_sphinxclasses/structgambit_1_1postprocessor_1_1ppoptions/#variable-data-labels-copy)**  |
-| std::vector< std::string > | **[add_to_logl](/documentation/code/gambit_sphinxclasses/structgambit_1_1postprocessor_1_1ppoptions/#variable-add-to-logl)**  |
-| std::vector< std::string > | **[subtract_from_logl](/documentation/code/gambit_sphinxclasses/structgambit_1_1postprocessor_1_1ppoptions/#variable-subtract-from-logl)**  |
-| std::map< std::string, std::string > | **[renaming_scheme](/documentation/code/gambit_sphinxclasses/structgambit_1_1postprocessor_1_1ppoptions/#variable-renaming-scheme)**  |
-| std::map< std::string, double > | **[cut_less_than](/documentation/code/gambit_sphinxclasses/structgambit_1_1postprocessor_1_1ppoptions/#variable-cut-less-than)**  |
-| std::map< std::string, double > | **[cut_greater_than](/documentation/code/gambit_sphinxclasses/structgambit_1_1postprocessor_1_1ppoptions/#variable-cut-greater-than)**  |
-| bool | **[discard_points_outside_cuts](/documentation/code/gambit_sphinxclasses/structgambit_1_1postprocessor_1_1ppoptions/#variable-discard-points-outside-cuts)**  |
-| std::size_t | **[update_interval](/documentation/code/gambit_sphinxclasses/structgambit_1_1postprocessor_1_1ppoptions/#variable-update-interval)**  |
-| bool | **[discard_old_logl](/documentation/code/gambit_sphinxclasses/structgambit_1_1postprocessor_1_1ppoptions/#variable-discard-old-logl)**  |
-| std::string | **[logl_purpose_name](/documentation/code/gambit_sphinxclasses/structgambit_1_1postprocessor_1_1ppoptions/#variable-logl-purpose-name)**  |
-| std::string | **[reweighted_loglike_name](/documentation/code/gambit_sphinxclasses/structgambit_1_1postprocessor_1_1ppoptions/#variable-reweighted-loglike-name)**  |
-| std::string | **[root](/documentation/code/gambit_sphinxclasses/structgambit_1_1postprocessor_1_1ppoptions/#variable-root)**  |
-| unsigned int | **[numtasks](/documentation/code/gambit_sphinxclasses/structgambit_1_1postprocessor_1_1ppoptions/#variable-numtasks)**  |
-| unsigned int | **[rank](/documentation/code/gambit_sphinxclasses/structgambit_1_1postprocessor_1_1ppoptions/#variable-rank)**  |
-| std::size_t | **[chunksize](/documentation/code/gambit_sphinxclasses/structgambit_1_1postprocessor_1_1ppoptions/#variable-chunksize)**  |
-| bool | **[verbose](/documentation/code/gambit_sphinxclasses/structgambit_1_1postprocessor_1_1ppoptions/#variable-verbose)**  |
+| std::set< std::string > | **[all_params](/documentation/code/gambit_sphinx/classes/structgambit_1_1postprocessor_1_1ppoptions/#variable-all-params)**  |
+| std::set< std::string > | **[data_labels](/documentation/code/gambit_sphinx/classes/structgambit_1_1postprocessor_1_1ppoptions/#variable-data-labels)**  |
+| std::set< std::string > | **[data_labels_copy](/documentation/code/gambit_sphinx/classes/structgambit_1_1postprocessor_1_1ppoptions/#variable-data-labels-copy)**  |
+| std::vector< std::string > | **[add_to_logl](/documentation/code/gambit_sphinx/classes/structgambit_1_1postprocessor_1_1ppoptions/#variable-add-to-logl)**  |
+| std::vector< std::string > | **[subtract_from_logl](/documentation/code/gambit_sphinx/classes/structgambit_1_1postprocessor_1_1ppoptions/#variable-subtract-from-logl)**  |
+| std::map< std::string, std::string > | **[renaming_scheme](/documentation/code/gambit_sphinx/classes/structgambit_1_1postprocessor_1_1ppoptions/#variable-renaming-scheme)**  |
+| std::map< std::string, double > | **[cut_less_than](/documentation/code/gambit_sphinx/classes/structgambit_1_1postprocessor_1_1ppoptions/#variable-cut-less-than)**  |
+| std::map< std::string, double > | **[cut_greater_than](/documentation/code/gambit_sphinx/classes/structgambit_1_1postprocessor_1_1ppoptions/#variable-cut-greater-than)**  |
+| bool | **[discard_points_outside_cuts](/documentation/code/gambit_sphinx/classes/structgambit_1_1postprocessor_1_1ppoptions/#variable-discard-points-outside-cuts)**  |
+| std::size_t | **[update_interval](/documentation/code/gambit_sphinx/classes/structgambit_1_1postprocessor_1_1ppoptions/#variable-update-interval)**  |
+| bool | **[discard_old_logl](/documentation/code/gambit_sphinx/classes/structgambit_1_1postprocessor_1_1ppoptions/#variable-discard-old-logl)**  |
+| std::string | **[logl_purpose_name](/documentation/code/gambit_sphinx/classes/structgambit_1_1postprocessor_1_1ppoptions/#variable-logl-purpose-name)**  |
+| std::string | **[reweighted_loglike_name](/documentation/code/gambit_sphinx/classes/structgambit_1_1postprocessor_1_1ppoptions/#variable-reweighted-loglike-name)**  |
+| std::string | **[root](/documentation/code/gambit_sphinx/classes/structgambit_1_1postprocessor_1_1ppoptions/#variable-root)**  |
+| unsigned int | **[numtasks](/documentation/code/gambit_sphinx/classes/structgambit_1_1postprocessor_1_1ppoptions/#variable-numtasks)**  |
+| unsigned int | **[rank](/documentation/code/gambit_sphinx/classes/structgambit_1_1postprocessor_1_1ppoptions/#variable-rank)**  |
+| std::size_t | **[chunksize](/documentation/code/gambit_sphinx/classes/structgambit_1_1postprocessor_1_1ppoptions/#variable-chunksize)**  |
+| bool | **[verbose](/documentation/code/gambit_sphinx/classes/structgambit_1_1postprocessor_1_1ppoptions/#variable-verbose)**  |
 
 ## Detailed Description
 
@@ -47,7 +47,7 @@ struct Gambit::PostProcessor::PPOptions;
 ```
 
 
-Options object for [PPDriver](/documentation/code/gambit_sphinxclasses/classgambit_1_1postprocessor_1_1ppdriver/) See matching options in [PPDriver](/documentation/code/gambit_sphinxclasses/classgambit_1_1postprocessor_1_1ppdriver/) class for description 
+Options object for [PPDriver](/documentation/code/gambit_sphinx/classes/classgambit_1_1postprocessor_1_1ppdriver/) See matching options in [PPDriver](/documentation/code/gambit_sphinx/classes/classgambit_1_1postprocessor_1_1ppdriver/) class for description 
 
 ## Public Attributes Documentation
 
@@ -179,4 +179,4 @@ bool verbose;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:48 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

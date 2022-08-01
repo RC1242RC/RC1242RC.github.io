@@ -14,16 +14,16 @@ description: "[No description available]"
 
 [No description available]
 
-Inherited by [BasicDevs](/documentation/code/darkbit_developmentclasses/classbasicdevs/), [BasicDevs](/documentation/code/darkbit_developmentclasses/classbasicdevs/), [ExponDev](/documentation/code/darkbit_developmentclasses/classexpondev/), [ExponDev](/documentation/code/darkbit_developmentclasses/classexpondev/), [MultiNormalDev](/documentation/code/darkbit_developmentclasses/classmultinormaldev/), [MultiNormalDev](/documentation/code/darkbit_developmentclasses/classmultinormaldev/), [NormalDev](/documentation/code/darkbit_developmentclasses/classnormaldev/), [NormalDev](/documentation/code/darkbit_developmentclasses/classnormaldev/)
+Inherited by [BasicDevs](/documentation/code/darkbit_development/classes/classbasicdevs/), [BasicDevs](/documentation/code/darkbit_development/classes/classbasicdevs/), [ExponDev](/documentation/code/darkbit_development/classes/classexpondev/), [ExponDev](/documentation/code/darkbit_development/classes/classexpondev/), [MultiNormalDev](/documentation/code/darkbit_development/classes/classmultinormaldev/), [MultiNormalDev](/documentation/code/darkbit_development/classes/classmultinormaldev/), [NormalDev](/documentation/code/darkbit_development/classes/classnormaldev/), [NormalDev](/documentation/code/darkbit_development/classes/classnormaldev/)
 
 ## Public Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Ran](/documentation/code/darkbit_developmentclasses/classran/#function-ran)**(unsigned long long int ) |
-| double | **[Doub](/documentation/code/darkbit_developmentclasses/classran/#function-doub)**() |
-| | **[Ran](/documentation/code/darkbit_developmentclasses/classran/#function-ran)**(unsigned long long int ) |
-| double | **[Doub](/documentation/code/darkbit_developmentclasses/classran/#function-doub)**() |
+| | **[Ran](/documentation/code/darkbit_development/classes/classran/#function-ran)**(unsigned long long int ) |
+| double | **[Doub](/documentation/code/darkbit_development/classes/classran/#function-doub)**() |
+| | **[Ran](/documentation/code/darkbit_development/classes/classran/#function-ran)**(unsigned long long int ) |
+| double | **[Doub](/documentation/code/darkbit_development/classes/classran/#function-doub)**() |
 
 ## Public Functions Documentation
 
@@ -61,4 +61,4 @@ inline double Doub()
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:41 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

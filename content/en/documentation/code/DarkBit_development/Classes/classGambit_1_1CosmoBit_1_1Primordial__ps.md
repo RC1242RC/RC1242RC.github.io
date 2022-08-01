@@ -21,19 +21,19 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Primordial_ps](/documentation/code/darkbit_developmentclasses/classgambit_1_1cosmobit_1_1primordial__ps/#function-primordial-ps)**() |
-| | **[~Primordial_ps](/documentation/code/darkbit_developmentclasses/classgambit_1_1cosmobit_1_1primordial__ps/#function-~primordial-ps)**() |
-| void | **[set_N_pivot](/documentation/code/darkbit_developmentclasses/classgambit_1_1cosmobit_1_1primordial__ps/#function-set-n-pivot)**(double npiv)<br>Fill k from an array of doubles.  |
-| void | **[fill_k](/documentation/code/darkbit_developmentclasses/classgambit_1_1cosmobit_1_1primordial__ps/#function-fill-k)**(double * k_array, int len) |
-| void | **[fill_P_s](/documentation/code/darkbit_developmentclasses/classgambit_1_1cosmobit_1_1primordial__ps/#function-fill-p-s)**(double * P_s_array, int len) |
-| void | **[fill_P_s_iso](/documentation/code/darkbit_developmentclasses/classgambit_1_1cosmobit_1_1primordial__ps/#function-fill-p-s-iso)**(double * P_s_iso_array, int len) |
-| void | **[fill_P_t](/documentation/code/darkbit_developmentclasses/classgambit_1_1cosmobit_1_1primordial__ps/#function-fill-p-t)**(double * P_t_array, int len) |
-| double | **[get_N_pivot](/documentation/code/darkbit_developmentclasses/classgambit_1_1cosmobit_1_1primordial__ps/#function-get-n-pivot)**() |
-| std::vector< double > & | **[get_k](/documentation/code/darkbit_developmentclasses/classgambit_1_1cosmobit_1_1primordial__ps/#function-get-k)**() |
-| std::vector< double > & | **[get_P_s](/documentation/code/darkbit_developmentclasses/classgambit_1_1cosmobit_1_1primordial__ps/#function-get-p-s)**() |
-| std::vector< double > & | **[get_P_t](/documentation/code/darkbit_developmentclasses/classgambit_1_1cosmobit_1_1primordial__ps/#function-get-p-t)**() |
-| std::vector< double > & | **[get_P_s_iso](/documentation/code/darkbit_developmentclasses/classgambit_1_1cosmobit_1_1primordial__ps/#function-get-p-s-iso)**() |
-| int | **[get_vec_size](/documentation/code/darkbit_developmentclasses/classgambit_1_1cosmobit_1_1primordial__ps/#function-get-vec-size)**() |
+| | **[Primordial_ps](/documentation/code/darkbit_development/classes/classgambit_1_1cosmobit_1_1primordial__ps/#function-primordial-ps)**() |
+| | **[~Primordial_ps](/documentation/code/darkbit_development/classes/classgambit_1_1cosmobit_1_1primordial__ps/#function-~primordial-ps)**() |
+| void | **[set_N_pivot](/documentation/code/darkbit_development/classes/classgambit_1_1cosmobit_1_1primordial__ps/#function-set-n-pivot)**(double npiv)<br>Fill k from an array of doubles.  |
+| void | **[fill_k](/documentation/code/darkbit_development/classes/classgambit_1_1cosmobit_1_1primordial__ps/#function-fill-k)**(double * k_array, int len) |
+| void | **[fill_P_s](/documentation/code/darkbit_development/classes/classgambit_1_1cosmobit_1_1primordial__ps/#function-fill-p-s)**(double * P_s_array, int len) |
+| void | **[fill_P_s_iso](/documentation/code/darkbit_development/classes/classgambit_1_1cosmobit_1_1primordial__ps/#function-fill-p-s-iso)**(double * P_s_iso_array, int len) |
+| void | **[fill_P_t](/documentation/code/darkbit_development/classes/classgambit_1_1cosmobit_1_1primordial__ps/#function-fill-p-t)**(double * P_t_array, int len) |
+| double | **[get_N_pivot](/documentation/code/darkbit_development/classes/classgambit_1_1cosmobit_1_1primordial__ps/#function-get-n-pivot)**() |
+| std::vector< double > & | **[get_k](/documentation/code/darkbit_development/classes/classgambit_1_1cosmobit_1_1primordial__ps/#function-get-k)**() |
+| std::vector< double > & | **[get_P_s](/documentation/code/darkbit_development/classes/classgambit_1_1cosmobit_1_1primordial__ps/#function-get-p-s)**() |
+| std::vector< double > & | **[get_P_t](/documentation/code/darkbit_development/classes/classgambit_1_1cosmobit_1_1primordial__ps/#function-get-p-t)**() |
+| std::vector< double > & | **[get_P_s_iso](/documentation/code/darkbit_development/classes/classgambit_1_1cosmobit_1_1primordial__ps/#function-get-p-s-iso)**() |
+| int | **[get_vec_size](/documentation/code/darkbit_development/classes/classgambit_1_1cosmobit_1_1primordial__ps/#function-get-vec-size)**() |
 
 ## Detailed Description
 
@@ -159,4 +159,4 @@ inline int get_vec_size()
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:42 +0000
+Updated on 2022-08-01 at 17:41:23 +0000

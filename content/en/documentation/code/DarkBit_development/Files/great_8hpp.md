@@ -16,14 +16,14 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/darkbit_developmentnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::GreAT](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1great/)**  |
+| **[Gambit](/documentation/code/darkbit_development/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::GreAT](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1great/)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[Gambit::GreAT::greatScanData](/documentation/code/darkbit_developmentclasses/structgambit_1_1great_1_1greatscandata/)** <br>Structure for passing likelihood and printer data through GreAT to the objective function.  |
+| struct | **[Gambit::GreAT::greatScanData](/documentation/code/darkbit_development/classes/structgambit_1_1great_1_1greatscandata/)** <br>Structure for passing likelihood and printer data through GreAT to the objective function.  |
 
 ## Detailed Description
 
@@ -87,4 +87,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:43 +0000
+Updated on 2022-08-01 at 17:41:24 +0000

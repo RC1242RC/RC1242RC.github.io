@@ -18,8 +18,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Finteger | **[thavint](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__rdswitch/#variable-thavint)**  |
-| Finteger | **[rdprt](/documentation/code/gambit_sphinxclasses/structgambit_1_1ds__rdswitch/#variable-rdprt)**  |
+| Finteger | **[thavint](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__rdswitch/#variable-thavint)**  |
+| Finteger | **[rdprt](/documentation/code/gambit_sphinx/classes/structgambit_1_1ds__rdswitch/#variable-rdprt)**  |
 
 ## Public Attributes Documentation
 
@@ -39,4 +39,4 @@ Finteger rdprt;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:46 +0000
+Updated on 2022-08-01 at 17:41:21 +0000

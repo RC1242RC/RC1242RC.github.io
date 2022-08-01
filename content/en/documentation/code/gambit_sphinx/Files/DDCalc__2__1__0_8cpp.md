@@ -16,28 +16,28 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[if](/documentation/code/gambit_sphinxfiles/ddcalc__2__1__0_8cpp/#function-if)**(scan_level ) |
-| | **[if](/documentation/code/gambit_sphinxfiles/ddcalc__2__1__0_8cpp/#function-if)**(couplings. coeff_structure ==1) |
-| | **[if](/documentation/code/gambit_sphinxfiles/ddcalc__2__1__0_8cpp/#function-if)**(LocalHaloParameters_ptr->rho0 *fraction !  =rho0_eff) |
-| | **[if](/documentation/code/gambit_sphinxfiles/ddcalc__2__1__0_8cpp/#function-if)**(LocalHaloParameters_ptr->vrot !  =vrot) |
-| | **[if](/documentation/code/gambit_sphinxfiles/ddcalc__2__1__0_8cpp/#function-if)**(LocalHaloParameters_ptr->v0 !  =v0) |
-| | **[if](/documentation/code/gambit_sphinxfiles/ddcalc__2__1__0_8cpp/#function-if)**(LocalHaloParameters_ptr->vesc !  =vesc) |
-| | **[if](/documentation/code/gambit_sphinxfiles/ddcalc__2__1__0_8cpp/#function-if)**(halo_changed ) |
+| | **[if](/documentation/code/gambit_sphinx/files/ddcalc__2__1__0_8cpp/#function-if)**(scan_level ) |
+| | **[if](/documentation/code/gambit_sphinx/files/ddcalc__2__1__0_8cpp/#function-if)**(couplings. coeff_structure ==1) |
+| | **[if](/documentation/code/gambit_sphinx/files/ddcalc__2__1__0_8cpp/#function-if)**(LocalHaloParameters_ptr->rho0 *fraction !  =rho0_eff) |
+| | **[if](/documentation/code/gambit_sphinx/files/ddcalc__2__1__0_8cpp/#function-if)**(LocalHaloParameters_ptr->vrot !  =vrot) |
+| | **[if](/documentation/code/gambit_sphinx/files/ddcalc__2__1__0_8cpp/#function-if)**(LocalHaloParameters_ptr->v0 !  =v0) |
+| | **[if](/documentation/code/gambit_sphinx/files/ddcalc__2__1__0_8cpp/#function-if)**(LocalHaloParameters_ptr->vesc !  =vesc) |
+| | **[if](/documentation/code/gambit_sphinx/files/ddcalc__2__1__0_8cpp/#function-if)**(halo_changed ) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[BE_NAMESPACE](/documentation/code/gambit_sphinxfiles/ddcalc__2__1__0_8cpp/#variable-be-namespace)**  |
-| int | **[WIMP](/documentation/code/gambit_sphinxfiles/ddcalc__2__1__0_8cpp/#variable-wimp)**  |
-| int | **[Halo](/documentation/code/gambit_sphinxfiles/ddcalc__2__1__0_8cpp/#variable-halo)**  |
-| [END_BE_NAMESPACE](/documentation/code/gambit_sphinxfiles/common__macros_8hpp/#define-end-be-namespace) | **[BE_INI_FUNCTION](/documentation/code/gambit_sphinxfiles/ddcalc__2__1__0_8cpp/#variable-be-ini-function)**  |
-| safe_ptr< LocalMaxwellianHalo > | **[LocalHaloParameters_ptr](/documentation/code/gambit_sphinxfiles/ddcalc__2__1__0_8cpp/#variable-localhaloparameters-ptr)**  |
-| double | **[fraction](/documentation/code/gambit_sphinxfiles/ddcalc__2__1__0_8cpp/#variable-fraction)**  |
-| bool | **[scan_level](/documentation/code/gambit_sphinxfiles/ddcalc__2__1__0_8cpp/#variable-scan-level)**  |
-| DD_coupling_container | **[couplings](/documentation/code/gambit_sphinxfiles/ddcalc__2__1__0_8cpp/#variable-couplings)**  |
-| | **[else](/documentation/code/gambit_sphinxfiles/ddcalc__2__1__0_8cpp/#variable-else)**  |
-| bool | **[halo_changed](/documentation/code/gambit_sphinxfiles/ddcalc__2__1__0_8cpp/#variable-halo-changed)**  |
+| | **[BE_NAMESPACE](/documentation/code/gambit_sphinx/files/ddcalc__2__1__0_8cpp/#variable-be-namespace)**  |
+| int | **[WIMP](/documentation/code/gambit_sphinx/files/ddcalc__2__1__0_8cpp/#variable-wimp)**  |
+| int | **[Halo](/documentation/code/gambit_sphinx/files/ddcalc__2__1__0_8cpp/#variable-halo)**  |
+| [END_BE_NAMESPACE](/documentation/code/gambit_sphinx/files/common__macros_8hpp/#define-end-be-namespace) | **[BE_INI_FUNCTION](/documentation/code/gambit_sphinx/files/ddcalc__2__1__0_8cpp/#variable-be-ini-function)**  |
+| safe_ptr< LocalMaxwellianHalo > | **[LocalHaloParameters_ptr](/documentation/code/gambit_sphinx/files/ddcalc__2__1__0_8cpp/#variable-localhaloparameters-ptr)**  |
+| double | **[fraction](/documentation/code/gambit_sphinx/files/ddcalc__2__1__0_8cpp/#variable-fraction)**  |
+| bool | **[scan_level](/documentation/code/gambit_sphinx/files/ddcalc__2__1__0_8cpp/#variable-scan-level)**  |
+| DD_coupling_container | **[couplings](/documentation/code/gambit_sphinx/files/ddcalc__2__1__0_8cpp/#variable-couplings)**  |
+| | **[else](/documentation/code/gambit_sphinx/files/ddcalc__2__1__0_8cpp/#variable-else)**  |
+| bool | **[halo_changed](/documentation/code/gambit_sphinx/files/ddcalc__2__1__0_8cpp/#variable-halo-changed)**  |
 
 ## Detailed Description
 
@@ -442,4 +442,4 @@ END_BE_NAMESPACE
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:51 +0000
+Updated on 2022-08-01 at 17:41:25 +0000

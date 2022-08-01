@@ -18,16 +18,16 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[RD_coannihilating_particle](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1rd__coannihilating__particle/#function-rd-coannihilating-particle)**() |
-| | **[RD_coannihilating_particle](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1rd__coannihilating__particle/#function-rd-coannihilating-particle)**(const unsigned int & index, const unsigned int & dof, const double & mass) |
+| | **[RD_coannihilating_particle](/documentation/code/gambit_sphinx/classes/structgambit_1_1darkbit_1_1rd__coannihilating__particle/#function-rd-coannihilating-particle)**() |
+| | **[RD_coannihilating_particle](/documentation/code/gambit_sphinx/classes/structgambit_1_1darkbit_1_1rd__coannihilating__particle/#function-rd-coannihilating-particle)**(const unsigned int & index, const unsigned int & dof, const double & mass) |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| unsigned int | **[index](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1rd__coannihilating__particle/#variable-index)**  |
-| unsigned int | **[degreesOfFreedom](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1rd__coannihilating__particle/#variable-degreesoffreedom)**  |
-| double | **[mass](/documentation/code/gambit_sphinxclasses/structgambit_1_1darkbit_1_1rd__coannihilating__particle/#variable-mass)**  |
+| unsigned int | **[index](/documentation/code/gambit_sphinx/classes/structgambit_1_1darkbit_1_1rd__coannihilating__particle/#variable-index)**  |
+| unsigned int | **[degreesOfFreedom](/documentation/code/gambit_sphinx/classes/structgambit_1_1darkbit_1_1rd__coannihilating__particle/#variable-degreesoffreedom)**  |
+| double | **[mass](/documentation/code/gambit_sphinx/classes/structgambit_1_1darkbit_1_1rd__coannihilating__particle/#variable-mass)**  |
 
 ## Public Functions Documentation
 
@@ -74,4 +74,4 @@ double mass;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:47 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

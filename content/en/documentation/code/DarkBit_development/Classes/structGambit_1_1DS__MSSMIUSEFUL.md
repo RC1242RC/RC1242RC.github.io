@@ -18,8 +18,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Finteger | **[lsp](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__mssmiuseful/#variable-lsp)**  |
-| Finteger | **[kln](/documentation/code/darkbit_developmentclasses/structgambit_1_1ds__mssmiuseful/#variable-kln)**  |
+| Finteger | **[lsp](/documentation/code/darkbit_development/classes/structgambit_1_1ds__mssmiuseful/#variable-lsp)**  |
+| Finteger | **[kln](/documentation/code/darkbit_development/classes/structgambit_1_1ds__mssmiuseful/#variable-kln)**  |
 
 ## Public Attributes Documentation
 
@@ -39,4 +39,4 @@ Finteger kln;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:41 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

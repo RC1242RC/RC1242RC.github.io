@@ -16,14 +16,14 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/darkbit_developmentnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::Diver_1_0_2](/documentation/code/darkbit_developmentnamespaces/namespacegambit_1_1diver__1__0__2/)**  |
+| **[Gambit](/documentation/code/darkbit_development/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::Diver_1_0_2](/documentation/code/darkbit_development/namespaces/namespacegambit_1_1diver__1__0__2/)**  |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[scanner_plugin](/documentation/code/darkbit_developmentfiles/diver__1_80_82_2diver_8cpp/#function-scanner-plugin)**(diver , version(1, 0, 2) ) |
+| | **[scanner_plugin](/documentation/code/darkbit_development/files/diver__1_80_82_2diver_8cpp/#function-scanner-plugin)**(diver , version(1, 0, 2) ) |
 
 ## Detailed Description
 
@@ -261,4 +261,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:43 +0000
+Updated on 2022-08-01 at 17:41:24 +0000

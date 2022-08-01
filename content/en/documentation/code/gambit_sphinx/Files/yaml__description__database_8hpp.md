@@ -16,15 +16,15 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit](/documentation/code/gambit_sphinx/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[Gambit::capability_info](/documentation/code/gambit_sphinxclasses/structgambit_1_1capability__info/)** <br>Helper struct to carry around capability information.  |
-| struct | **[Gambit::model_info](/documentation/code/gambit_sphinxclasses/structgambit_1_1model__info/)** <br>Helper struct to carry around model information.  |
-| class | **[Gambit::DescriptionDatabase](/documentation/code/gambit_sphinxclasses/classgambit_1_1descriptiondatabase/)**  |
+| struct | **[Gambit::capability_info](/documentation/code/gambit_sphinx/classes/structgambit_1_1capability__info/)** <br>Helper struct to carry around capability information.  |
+| struct | **[Gambit::model_info](/documentation/code/gambit_sphinx/classes/structgambit_1_1model__info/)** <br>Helper struct to carry around model information.  |
+| class | **[Gambit::DescriptionDatabase](/documentation/code/gambit_sphinx/classes/classgambit_1_1descriptiondatabase/)**  |
 
 ## Detailed Description
 
@@ -163,4 +163,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:49 +0000
+Updated on 2022-08-01 at 17:41:23 +0000

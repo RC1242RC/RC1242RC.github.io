@@ -23,4 +23,4 @@ class Gambit::Scanner::Function_Base;
 Generic function base used by the scanner. Can be Likelihood, observables, etc. 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:42 +0000
+Updated on 2022-08-01 at 17:41:24 +0000

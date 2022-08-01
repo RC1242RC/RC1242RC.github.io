@@ -20,44 +20,44 @@ Master driver class for a GAMBIT scan.
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[gambit_core](/documentation/code/darkbit_developmentclasses/classgambit_1_1gambit__core/#function-gambit-core)**(const Models::ModelFunctorClaw & claw, const [Backends::backend_info](/documentation/code/darkbit_developmentclasses/structgambit_1_1backends_1_1backend__info/) & beinfo)<br>Constructor.  |
-| | **[~gambit_core](/documentation/code/darkbit_developmentclasses/classgambit_1_1gambit__core/#function-~gambit-core)**()<br>Destructor.  |
-| void | **[bail](/documentation/code/darkbit_developmentclasses/classgambit_1_1gambit__core/#function-bail)**(int mpirank =-1)<br>Command-line info function.  |
-| str | **[process_primary_options](/documentation/code/darkbit_developmentclasses/classgambit_1_1gambit__core/#function-process-primary-options)**(int argc, char ** argv)<br>Process default command line options.  |
-| str | **[run_diagnostic](/documentation/code/darkbit_developmentclasses/classgambit_1_1gambit__core/#function-run-diagnostic)**(int argc, char ** argv)<br>Diagnostics function.  |
-| void | **[registerModule](/documentation/code/darkbit_developmentclasses/classgambit_1_1gambit__core/#function-registermodule)**(str module, str ref)<br>Add a new module to modules list.  |
-| void | **[registerBackend](/documentation/code/darkbit_developmentclasses/classgambit_1_1gambit__core/#function-registerbackend)**(str be, str version, str ref)<br>Register a new backend.  |
-| void | **[registerModuleFunctor](/documentation/code/darkbit_developmentclasses/classgambit_1_1gambit__core/#function-registermodulefunctor)**(functor & f)<br>Add a new module functor to functorList.  |
-| void | **[registerNestedModuleFunctor](/documentation/code/darkbit_developmentclasses/classgambit_1_1gambit__core/#function-registernestedmodulefunctor)**(functor & f)<br>Add a new module functor to nestFunctorList.  |
-| void | **[registerBackendFunctor](/documentation/code/darkbit_developmentclasses/classgambit_1_1gambit__core/#function-registerbackendfunctor)**(functor & f)<br>Add a new backend functor to backendFunctorList.  |
-| void | **[registerPrimaryModelFunctor](/documentation/code/darkbit_developmentclasses/classgambit_1_1gambit__core/#function-registerprimarymodelfunctor)**(primary_model_functor & f)<br>Add a new primary model functor to primaryModelFunctorList.  |
-| void | **[registerActiveModelFunctors](/documentation/code/darkbit_developmentclasses/classgambit_1_1gambit__core/#function-registeractivemodelfunctors)**(const pmfVec & fvec)<br>Add entries to the map of activated primary model functors.  |
-| const fVec & | **[getModuleFunctors](/documentation/code/darkbit_developmentclasses/classgambit_1_1gambit__core/#function-getmodulefunctors)**() const<br>Get a reference to the list of module functors.  |
-| const fVec & | **[getNestedModuleFunctors](/documentation/code/darkbit_developmentclasses/classgambit_1_1gambit__core/#function-getnestedmodulefunctors)**() const<br>Get a reference to the list of nested module functors.  |
-| const fVec & | **[getBackendFunctors](/documentation/code/darkbit_developmentclasses/classgambit_1_1gambit__core/#function-getbackendfunctors)**() const<br>Get a reference to the list of backend model functors.  |
-| const pmfVec & | **[getPrimaryModelFunctors](/documentation/code/darkbit_developmentclasses/classgambit_1_1gambit__core/#function-getprimarymodelfunctors)**() const<br>Get a reference to the list of primary model functors.  |
-| const pmfMap & | **[getActiveModelFunctors](/documentation/code/darkbit_developmentclasses/classgambit_1_1gambit__core/#function-getactivemodelfunctors)**() const<br>Get a reference to the map of all user-activated primary model functors.  |
-| const std::map< str, str > & | **[getModuleCitationKeys](/documentation/code/darkbit_developmentclasses/classgambit_1_1gambit__core/#function-getmodulecitationkeys)**() const<br>Get a reference to the map of module citation keys.  |
-| const std::map< sspair, str > & | **[getBackendCitationKeys](/documentation/code/darkbit_developmentclasses/classgambit_1_1gambit__core/#function-getbackendcitationkeys)**() const<br>Get a reference to the map of backend citation keys.  |
-| void | **[accountForMissingClasses](/documentation/code/darkbit_developmentclasses/classgambit_1_1gambit__core/#function-accountformissingclasses)**() const<br>Tell the module functors which backends are actually present.  |
-| [capability_info](/documentation/code/darkbit_developmentclasses/structgambit_1_1capability__info/) | **[get_capability_info](/documentation/code/darkbit_developmentclasses/classgambit_1_1gambit__core/#function-get-capability-info)**(const str & name) const<br>Get the description (and other info) of the named item from the capability database.  |
-| [model_info](/documentation/code/darkbit_developmentclasses/structgambit_1_1model__info/) | **[get_model_info](/documentation/code/darkbit_developmentclasses/classgambit_1_1gambit__core/#function-get-model-info)**(const str & name) const<br>Get the description (and other info) of the named item from the model database.  |
-| int | **[get_outprec](/documentation/code/darkbit_developmentclasses/classgambit_1_1gambit__core/#function-get-outprec)**() const<br>Getter for precision to use for cout.  |
-| void | **[check_databases](/documentation/code/darkbit_developmentclasses/classgambit_1_1gambit__core/#function-check-databases)**()<br>Check the named database for conflicts and missing descriptions.  |
-| void | **[check_capability_descriptions](/documentation/code/darkbit_developmentclasses/classgambit_1_1gambit__core/#function-check-capability-descriptions)**()<br>Check for missing capability descriptions (after reading in runtime flags)  |
+| | **[gambit_core](/documentation/code/darkbit_development/classes/classgambit_1_1gambit__core/#function-gambit-core)**(const Models::ModelFunctorClaw & claw, const [Backends::backend_info](/documentation/code/darkbit_development/classes/structgambit_1_1backends_1_1backend__info/) & beinfo)<br>Constructor.  |
+| | **[~gambit_core](/documentation/code/darkbit_development/classes/classgambit_1_1gambit__core/#function-~gambit-core)**()<br>Destructor.  |
+| void | **[bail](/documentation/code/darkbit_development/classes/classgambit_1_1gambit__core/#function-bail)**(int mpirank =-1)<br>Command-line info function.  |
+| str | **[process_primary_options](/documentation/code/darkbit_development/classes/classgambit_1_1gambit__core/#function-process-primary-options)**(int argc, char ** argv)<br>Process default command line options.  |
+| str | **[run_diagnostic](/documentation/code/darkbit_development/classes/classgambit_1_1gambit__core/#function-run-diagnostic)**(int argc, char ** argv)<br>Diagnostics function.  |
+| void | **[registerModule](/documentation/code/darkbit_development/classes/classgambit_1_1gambit__core/#function-registermodule)**(str module, str ref)<br>Add a new module to modules list.  |
+| void | **[registerBackend](/documentation/code/darkbit_development/classes/classgambit_1_1gambit__core/#function-registerbackend)**(str be, str version, str ref)<br>Register a new backend.  |
+| void | **[registerModuleFunctor](/documentation/code/darkbit_development/classes/classgambit_1_1gambit__core/#function-registermodulefunctor)**(functor & f)<br>Add a new module functor to functorList.  |
+| void | **[registerNestedModuleFunctor](/documentation/code/darkbit_development/classes/classgambit_1_1gambit__core/#function-registernestedmodulefunctor)**(functor & f)<br>Add a new module functor to nestFunctorList.  |
+| void | **[registerBackendFunctor](/documentation/code/darkbit_development/classes/classgambit_1_1gambit__core/#function-registerbackendfunctor)**(functor & f)<br>Add a new backend functor to backendFunctorList.  |
+| void | **[registerPrimaryModelFunctor](/documentation/code/darkbit_development/classes/classgambit_1_1gambit__core/#function-registerprimarymodelfunctor)**(primary_model_functor & f)<br>Add a new primary model functor to primaryModelFunctorList.  |
+| void | **[registerActiveModelFunctors](/documentation/code/darkbit_development/classes/classgambit_1_1gambit__core/#function-registeractivemodelfunctors)**(const pmfVec & fvec)<br>Add entries to the map of activated primary model functors.  |
+| const fVec & | **[getModuleFunctors](/documentation/code/darkbit_development/classes/classgambit_1_1gambit__core/#function-getmodulefunctors)**() const<br>Get a reference to the list of module functors.  |
+| const fVec & | **[getNestedModuleFunctors](/documentation/code/darkbit_development/classes/classgambit_1_1gambit__core/#function-getnestedmodulefunctors)**() const<br>Get a reference to the list of nested module functors.  |
+| const fVec & | **[getBackendFunctors](/documentation/code/darkbit_development/classes/classgambit_1_1gambit__core/#function-getbackendfunctors)**() const<br>Get a reference to the list of backend model functors.  |
+| const pmfVec & | **[getPrimaryModelFunctors](/documentation/code/darkbit_development/classes/classgambit_1_1gambit__core/#function-getprimarymodelfunctors)**() const<br>Get a reference to the list of primary model functors.  |
+| const pmfMap & | **[getActiveModelFunctors](/documentation/code/darkbit_development/classes/classgambit_1_1gambit__core/#function-getactivemodelfunctors)**() const<br>Get a reference to the map of all user-activated primary model functors.  |
+| const std::map< str, str > & | **[getModuleCitationKeys](/documentation/code/darkbit_development/classes/classgambit_1_1gambit__core/#function-getmodulecitationkeys)**() const<br>Get a reference to the map of module citation keys.  |
+| const std::map< sspair, str > & | **[getBackendCitationKeys](/documentation/code/darkbit_development/classes/classgambit_1_1gambit__core/#function-getbackendcitationkeys)**() const<br>Get a reference to the map of backend citation keys.  |
+| void | **[accountForMissingClasses](/documentation/code/darkbit_development/classes/classgambit_1_1gambit__core/#function-accountformissingclasses)**() const<br>Tell the module functors which backends are actually present.  |
+| [capability_info](/documentation/code/darkbit_development/classes/structgambit_1_1capability__info/) | **[get_capability_info](/documentation/code/darkbit_development/classes/classgambit_1_1gambit__core/#function-get-capability-info)**(const str & name) const<br>Get the description (and other info) of the named item from the capability database.  |
+| [model_info](/documentation/code/darkbit_development/classes/structgambit_1_1model__info/) | **[get_model_info](/documentation/code/darkbit_development/classes/classgambit_1_1gambit__core/#function-get-model-info)**(const str & name) const<br>Get the description (and other info) of the named item from the model database.  |
+| int | **[get_outprec](/documentation/code/darkbit_development/classes/classgambit_1_1gambit__core/#function-get-outprec)**() const<br>Getter for precision to use for cout.  |
+| void | **[check_databases](/documentation/code/darkbit_development/classes/classgambit_1_1gambit__core/#function-check-databases)**()<br>Check the named database for conflicts and missing descriptions.  |
+| void | **[check_capability_descriptions](/documentation/code/darkbit_development/classes/classgambit_1_1gambit__core/#function-check-capability-descriptions)**()<br>Check for missing capability descriptions (after reading in runtime flags)  |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| int | **[show_runorder](/documentation/code/darkbit_developmentclasses/classgambit_1_1gambit__core/#variable-show-runorder)**  |
-| int | **[show_backends](/documentation/code/darkbit_developmentclasses/classgambit_1_1gambit__core/#variable-show-backends)** <br>Flag to show the list of required backends.  |
-| bool | **[resume](/documentation/code/darkbit_developmentclasses/classgambit_1_1gambit__core/#variable-resume)** <br>Flag to trigger "resume" mode.  |
-| bool | **[verbose_flag](/documentation/code/darkbit_developmentclasses/classgambit_1_1gambit__core/#variable-verbose-flag)** <br>Verbosity mode.  |
-| bool | **[found_inifile](/documentation/code/darkbit_developmentclasses/classgambit_1_1gambit__core/#variable-found-inifile)** <br>Flag recording whether an inifile has been supplied.  |
-| bool | **[missing_capability_description](/documentation/code/darkbit_developmentclasses/classgambit_1_1gambit__core/#variable-missing-capability-description)** <br>set to true if capability descriptions missing  |
-| std::vector< [capability_info](/documentation/code/darkbit_developmentclasses/structgambit_1_1capability__info/) > | **[capability_dbase](/documentation/code/darkbit_developmentclasses/classgambit_1_1gambit__core/#variable-capability-dbase)** <br>Vector of all [capability_info](/documentation/code/darkbit_developmentclasses/structgambit_1_1capability__info/) objects.  |
-| std::vector< [model_info](/documentation/code/darkbit_developmentclasses/structgambit_1_1model__info/) > | **[model_dbase](/documentation/code/darkbit_developmentclasses/classgambit_1_1gambit__core/#variable-model-dbase)** <br>Vector of all [model_info]() objects.  |
+| int | **[show_runorder](/documentation/code/darkbit_development/classes/classgambit_1_1gambit__core/#variable-show-runorder)**  |
+| int | **[show_backends](/documentation/code/darkbit_development/classes/classgambit_1_1gambit__core/#variable-show-backends)** <br>Flag to show the list of required backends.  |
+| bool | **[resume](/documentation/code/darkbit_development/classes/classgambit_1_1gambit__core/#variable-resume)** <br>Flag to trigger "resume" mode.  |
+| bool | **[verbose_flag](/documentation/code/darkbit_development/classes/classgambit_1_1gambit__core/#variable-verbose-flag)** <br>Verbosity mode.  |
+| bool | **[found_inifile](/documentation/code/darkbit_development/classes/classgambit_1_1gambit__core/#variable-found-inifile)** <br>Flag recording whether an inifile has been supplied.  |
+| bool | **[missing_capability_description](/documentation/code/darkbit_development/classes/classgambit_1_1gambit__core/#variable-missing-capability-description)** <br>set to true if capability descriptions missing  |
+| std::vector< [capability_info](/documentation/code/darkbit_development/classes/structgambit_1_1capability__info/) > | **[capability_dbase](/documentation/code/darkbit_development/classes/classgambit_1_1gambit__core/#variable-capability-dbase)** <br>Vector of all [capability_info](/documentation/code/darkbit_development/classes/structgambit_1_1capability__info/) objects.  |
+| std::vector< [model_info](/documentation/code/darkbit_development/classes/structgambit_1_1model__info/) > | **[model_dbase](/documentation/code/darkbit_development/classes/classgambit_1_1gambit__core/#variable-model-dbase)** <br>Vector of all [model_info]() objects.  |
 
 ## Public Functions Documentation
 
@@ -112,7 +112,7 @@ Process default command line options.
 Process default mode command line options and return filename. 
 
 
-[Gambit](/documentation/code/darkbit_developmentnamespaces/namespacegambit/) 'standard mode' command line option definitions (needed by getopt)
+[Gambit](/documentation/code/darkbit_development/namespaces/namespacegambit/) 'standard mode' command line option definitions (needed by getopt)
 
 
 ### function run_diagnostic
@@ -383,7 +383,7 @@ set to true if capability descriptions missing
 std::vector< capability_info > capability_dbase;
 ```
 
-Vector of all [capability_info](/documentation/code/darkbit_developmentclasses/structgambit_1_1capability__info/) objects. 
+Vector of all [capability_info](/documentation/code/darkbit_development/classes/structgambit_1_1capability__info/) objects. 
 
 ### variable model_dbase
 
@@ -395,4 +395,4 @@ Vector of all [model_info]() objects.
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:41 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

@@ -16,7 +16,7 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[cyclic_include_check](/documentation/code/gambit_sphinxnamespaces/namespacecyclic__include__check/)**  |
+| **[cyclic_include_check](/documentation/code/gambit_sphinx/namespaces/namespacecyclic__include__check/)**  |
 
 
 
@@ -100,4 +100,4 @@ for f in includes:
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:49 +0000
+Updated on 2022-08-01 at 17:41:23 +0000

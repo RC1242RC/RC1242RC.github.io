@@ -16,7 +16,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[scanner_plugin](/documentation/code/gambit_sphinxfiles/random_8cpp/#function-scanner-plugin)**(random , version(1, 0, 0) ) |
+| | **[scanner_plugin](/documentation/code/gambit_sphinx/files/random_8cpp/#function-scanner-plugin)**(random , version(1, 0, 0) ) |
 
 ## Detailed Description
 
@@ -119,4 +119,4 @@ scanner_plugin(random, version(1, 0, 0))
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:48 +0000
+Updated on 2022-08-01 at 17:41:23 +0000

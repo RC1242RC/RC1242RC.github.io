@@ -16,13 +16,13 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[if](/documentation/code/gambit_sphinxfiles/higgsbounds__4__2__1_8cpp/#function-if)**(scan_level ) |
+| | **[if](/documentation/code/gambit_sphinx/files/higgsbounds__4__2__1_8cpp/#function-if)**(scan_level ) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[BE_INI_FUNCTION](/documentation/code/gambit_sphinxfiles/higgsbounds__4__2__1_8cpp/#variable-be-ini-function)**  |
+| | **[BE_INI_FUNCTION](/documentation/code/gambit_sphinx/files/higgsbounds__4__2__1_8cpp/#variable-be-ini-function)**  |
 
 
 ## Functions Documentation
@@ -92,4 +92,4 @@ END_BE_INI_FUNCTION
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:51 +0000
+Updated on 2022-08-01 at 17:41:25 +0000

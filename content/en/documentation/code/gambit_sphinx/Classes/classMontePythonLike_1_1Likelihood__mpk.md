@@ -14,152 +14,152 @@ description: "[No description available]"
 
 [No description available]
 
-Inherits from [MontePythonLike.Likelihood](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood/), [MontePythonLike.Likelihood](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood/), object
+Inherits from [MontePythonLike.Likelihood](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood/), [MontePythonLike.Likelihood](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood/), object
 
 ## Public Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| def | **[__init__](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__mpk/#function---init--)**(self self, path path, data data, command_line command_line, common common =False, common_dict common_dict ={}) |
-| def | **[a2maxpos](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__mpk/#function-a2maxpos)**(self self, a1val a1val) |
-| def | **[a2min1pos](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__mpk/#function-a2min1pos)**(self self, a1val a1val) |
-| def | **[a2min2pos](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__mpk/#function-a2min2pos)**(self self, a1val a1val) |
-| def | **[a2min3pos](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__mpk/#function-a2min3pos)**(self self, a1val a1val) |
-| def | **[a2minfinalpos](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__mpk/#function-a2minfinalpos)**(self self, a1val a1val) |
-| def | **[a2minneg](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__mpk/#function-a2minneg)**(self self, a1val a1val) |
-| def | **[a2max1neg](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__mpk/#function-a2max1neg)**(self self, a1val a1val) |
-| def | **[a2max2neg](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__mpk/#function-a2max2neg)**(self self, a1val a1val) |
-| def | **[a2max3neg](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__mpk/#function-a2max3neg)**(self self, a1val a1val) |
-| def | **[a2maxfinalneg](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__mpk/#function-a2maxfinalneg)**(self self, a1val a1val) |
-| def | **[testa1a2](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__mpk/#function-testa1a2)**(self self, a1val a1val, a2val a2val) |
-| def | **[add_common_knowledge](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__mpk/#function-add-common-knowledge)**(self self, common_dictionary common_dictionary) |
-| def | **[loglkl](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__mpk/#function-loglkl)**(self self, cosmo cosmo, data data) |
-| def | **[remove_bao](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__mpk/#function-remove-bao)**(self self, k_in k_in, pk_in pk_in) |
-| def | **[__init__](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__mpk/#function---init--)**(self self, path path, data data, command_line command_line, common common =False, common_dict common_dict ={}) |
-| def | **[a2maxpos](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__mpk/#function-a2maxpos)**(self self, a1val a1val) |
-| def | **[a2min1pos](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__mpk/#function-a2min1pos)**(self self, a1val a1val) |
-| def | **[a2min2pos](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__mpk/#function-a2min2pos)**(self self, a1val a1val) |
-| def | **[a2min3pos](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__mpk/#function-a2min3pos)**(self self, a1val a1val) |
-| def | **[a2minfinalpos](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__mpk/#function-a2minfinalpos)**(self self, a1val a1val) |
-| def | **[a2minneg](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__mpk/#function-a2minneg)**(self self, a1val a1val) |
-| def | **[a2max1neg](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__mpk/#function-a2max1neg)**(self self, a1val a1val) |
-| def | **[a2max2neg](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__mpk/#function-a2max2neg)**(self self, a1val a1val) |
-| def | **[a2max3neg](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__mpk/#function-a2max3neg)**(self self, a1val a1val) |
-| def | **[a2maxfinalneg](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__mpk/#function-a2maxfinalneg)**(self self, a1val a1val) |
-| def | **[testa1a2](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__mpk/#function-testa1a2)**(self self, a1val a1val, a2val a2val) |
-| def | **[add_common_knowledge](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__mpk/#function-add-common-knowledge)**(self self, common_dictionary common_dictionary) |
-| def | **[loglkl](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__mpk/#function-loglkl)**(self self, cosmo cosmo, data data) |
-| def | **[remove_bao](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__mpk/#function-remove-bao)**(self self, k_in k_in, pk_in pk_in) |
+| def | **[__init__](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__mpk/#function---init--)**(self self, path path, data data, command_line command_line, common common =False, common_dict common_dict ={}) |
+| def | **[a2maxpos](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__mpk/#function-a2maxpos)**(self self, a1val a1val) |
+| def | **[a2min1pos](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__mpk/#function-a2min1pos)**(self self, a1val a1val) |
+| def | **[a2min2pos](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__mpk/#function-a2min2pos)**(self self, a1val a1val) |
+| def | **[a2min3pos](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__mpk/#function-a2min3pos)**(self self, a1val a1val) |
+| def | **[a2minfinalpos](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__mpk/#function-a2minfinalpos)**(self self, a1val a1val) |
+| def | **[a2minneg](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__mpk/#function-a2minneg)**(self self, a1val a1val) |
+| def | **[a2max1neg](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__mpk/#function-a2max1neg)**(self self, a1val a1val) |
+| def | **[a2max2neg](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__mpk/#function-a2max2neg)**(self self, a1val a1val) |
+| def | **[a2max3neg](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__mpk/#function-a2max3neg)**(self self, a1val a1val) |
+| def | **[a2maxfinalneg](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__mpk/#function-a2maxfinalneg)**(self self, a1val a1val) |
+| def | **[testa1a2](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__mpk/#function-testa1a2)**(self self, a1val a1val, a2val a2val) |
+| def | **[add_common_knowledge](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__mpk/#function-add-common-knowledge)**(self self, common_dictionary common_dictionary) |
+| def | **[loglkl](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__mpk/#function-loglkl)**(self self, cosmo cosmo, data data) |
+| def | **[remove_bao](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__mpk/#function-remove-bao)**(self self, k_in k_in, pk_in pk_in) |
+| def | **[__init__](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__mpk/#function---init--)**(self self, path path, data data, command_line command_line, common common =False, common_dict common_dict ={}) |
+| def | **[a2maxpos](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__mpk/#function-a2maxpos)**(self self, a1val a1val) |
+| def | **[a2min1pos](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__mpk/#function-a2min1pos)**(self self, a1val a1val) |
+| def | **[a2min2pos](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__mpk/#function-a2min2pos)**(self self, a1val a1val) |
+| def | **[a2min3pos](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__mpk/#function-a2min3pos)**(self self, a1val a1val) |
+| def | **[a2minfinalpos](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__mpk/#function-a2minfinalpos)**(self self, a1val a1val) |
+| def | **[a2minneg](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__mpk/#function-a2minneg)**(self self, a1val a1val) |
+| def | **[a2max1neg](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__mpk/#function-a2max1neg)**(self self, a1val a1val) |
+| def | **[a2max2neg](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__mpk/#function-a2max2neg)**(self self, a1val a1val) |
+| def | **[a2max3neg](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__mpk/#function-a2max3neg)**(self self, a1val a1val) |
+| def | **[a2maxfinalneg](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__mpk/#function-a2maxfinalneg)**(self self, a1val a1val) |
+| def | **[testa1a2](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__mpk/#function-testa1a2)**(self self, a1val a1val, a2val a2val) |
+| def | **[add_common_knowledge](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__mpk/#function-add-common-knowledge)**(self self, common_dictionary common_dictionary) |
+| def | **[loglkl](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__mpk/#function-loglkl)**(self self, cosmo cosmo, data data) |
+| def | **[remove_bao](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__mpk/#function-remove-bao)**(self self, k_in k_in, pk_in pk_in) |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[use_halofit](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__mpk/#variable-use-halofit)**  |
-| | **[use_sdssDR7](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__mpk/#variable-use-sdssdr7)**  |
-| | **[k_size](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__mpk/#variable-k-size)**  |
-| | **[mu_size](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__mpk/#variable-mu-size)**  |
-| | **[k](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__mpk/#variable-k)**  |
-| | **[kh](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__mpk/#variable-kh)**  |
-| | **[use_giggleZ](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__mpk/#variable-use-gigglez)**  |
-| | **[use_giggleZPP0](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__mpk/#variable-use-gigglezpp0)**  |
-| | **[k_fid_size](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__mpk/#variable-k-fid-size)**  |
-| | **[fiducial_SDSSDR7_nlratio](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__mpk/#variable-fiducial-sdssdr7-nlratio)**  |
-| | **[has_regions](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__mpk/#variable-has-regions)**  |
-| | **[num_regions](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__mpk/#variable-num-regions)**  |
-| | **[num_regions_used](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__mpk/#variable-num-regions-used)**  |
-| | **[used_region](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__mpk/#variable-used-region)**  |
-| | **[n_size](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__mpk/#variable-n-size)**  |
-| | **[window](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__mpk/#variable-window)**  |
-| | **[P_obs](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__mpk/#variable-p-obs)**  |
-| | **[P_err](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__mpk/#variable-p-err)**  |
-| | **[use_covmat](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__mpk/#variable-use-covmat)**  |
-| | **[use_invcov](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__mpk/#variable-use-invcov)**  |
-| | **[invcov](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__mpk/#variable-invcov)**  |
-| | **[P_fid](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__mpk/#variable-p-fid)**  |
-| | **[k_fid](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__mpk/#variable-k-fid)**  |
-| | **[zerowindowfxn](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__mpk/#variable-zerowindowfxn)**  |
-| | **[zerowindowfxnsubtractdat](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__mpk/#variable-zerowindowfxnsubtractdat)**  |
-| | **[zerowindowfxnsubtractdatnorm](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__mpk/#variable-zerowindowfxnsubtractdatnorm)**  |
-| | **[a1list](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__mpk/#variable-a1list)**  |
-| | **[a2list](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__mpk/#variable-a2list)**  |
-| | **[fiducial_SDSSDR7](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood__mpk/#variable-fiducial-sdssdr7)**  |
+| | **[use_halofit](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__mpk/#variable-use-halofit)**  |
+| | **[use_sdssDR7](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__mpk/#variable-use-sdssdr7)**  |
+| | **[k_size](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__mpk/#variable-k-size)**  |
+| | **[mu_size](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__mpk/#variable-mu-size)**  |
+| | **[k](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__mpk/#variable-k)**  |
+| | **[kh](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__mpk/#variable-kh)**  |
+| | **[use_giggleZ](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__mpk/#variable-use-gigglez)**  |
+| | **[use_giggleZPP0](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__mpk/#variable-use-gigglezpp0)**  |
+| | **[k_fid_size](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__mpk/#variable-k-fid-size)**  |
+| | **[fiducial_SDSSDR7_nlratio](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__mpk/#variable-fiducial-sdssdr7-nlratio)**  |
+| | **[has_regions](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__mpk/#variable-has-regions)**  |
+| | **[num_regions](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__mpk/#variable-num-regions)**  |
+| | **[num_regions_used](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__mpk/#variable-num-regions-used)**  |
+| | **[used_region](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__mpk/#variable-used-region)**  |
+| | **[n_size](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__mpk/#variable-n-size)**  |
+| | **[window](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__mpk/#variable-window)**  |
+| | **[P_obs](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__mpk/#variable-p-obs)**  |
+| | **[P_err](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__mpk/#variable-p-err)**  |
+| | **[use_covmat](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__mpk/#variable-use-covmat)**  |
+| | **[use_invcov](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__mpk/#variable-use-invcov)**  |
+| | **[invcov](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__mpk/#variable-invcov)**  |
+| | **[P_fid](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__mpk/#variable-p-fid)**  |
+| | **[k_fid](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__mpk/#variable-k-fid)**  |
+| | **[zerowindowfxn](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__mpk/#variable-zerowindowfxn)**  |
+| | **[zerowindowfxnsubtractdat](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__mpk/#variable-zerowindowfxnsubtractdat)**  |
+| | **[zerowindowfxnsubtractdatnorm](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__mpk/#variable-zerowindowfxnsubtractdatnorm)**  |
+| | **[a1list](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__mpk/#variable-a1list)**  |
+| | **[a2list](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__mpk/#variable-a2list)**  |
+| | **[fiducial_SDSSDR7](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood__mpk/#variable-fiducial-sdssdr7)**  |
 
 ## Additional inherited members
 
-**Public Functions inherited from [MontePythonLike.Likelihood](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood/)**
+**Public Functions inherited from [MontePythonLike.Likelihood](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood/)**
 
 |                | Name           |
 | -------------- | -------------- |
-| def | **[raise_fiducial_model_err](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood/#function-raise-fiducial-model-err)**(self self) |
-| def | **[read_from_file](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood/#function-read-from-file)**(self self, path path, data data, command_line command_line) |
-| def | **[get_cl](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood/#function-get-cl)**(self self, cosmo cosmo, l_max l_max =-1) |
-| def | **[get_unlensed_cl](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood/#function-get-unlensed-cl)**(self self, cosmo cosmo, l_max l_max =-1) |
-| def | **[need_cosmo_arguments](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood/#function-need-cosmo-arguments)**(self self, data data, dictionary dictionary) |
-| def | **[read_contamination_spectra](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood/#function-read-contamination-spectra)**(self self, data data) |
-| def | **[add_contamination_spectra](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood/#function-add-contamination-spectra)**(self self, cl cl, data data) |
-| def | **[add_nuisance_prior](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood/#function-add-nuisance-prior)**(self self, lkl lkl, data data) |
-| def | **[computeLikelihood](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood/#function-computelikelihood)**(self self, ctx ctx) |
-| def | **[raise_fiducial_model_err](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood/#function-raise-fiducial-model-err)**(self self) |
-| def | **[read_from_file](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood/#function-read-from-file)**(self self, path path, data data, command_line command_line) |
-| def | **[get_cl](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood/#function-get-cl)**(self self, cosmo cosmo, l_max l_max =-1) |
-| def | **[get_unlensed_cl](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood/#function-get-unlensed-cl)**(self self, cosmo cosmo, l_max l_max =-1) |
-| def | **[need_cosmo_arguments](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood/#function-need-cosmo-arguments)**(self self, data data, dictionary dictionary) |
-| def | **[read_contamination_spectra](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood/#function-read-contamination-spectra)**(self self, data data) |
-| def | **[add_contamination_spectra](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood/#function-add-contamination-spectra)**(self self, cl cl, data data) |
-| def | **[add_nuisance_prior](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood/#function-add-nuisance-prior)**(self self, lkl lkl, data data) |
-| def | **[computeLikelihood](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood/#function-computelikelihood)**(self self, ctx ctx) |
+| def | **[raise_fiducial_model_err](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood/#function-raise-fiducial-model-err)**(self self) |
+| def | **[read_from_file](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood/#function-read-from-file)**(self self, path path, data data, command_line command_line) |
+| def | **[get_cl](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood/#function-get-cl)**(self self, cosmo cosmo, l_max l_max =-1) |
+| def | **[get_unlensed_cl](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood/#function-get-unlensed-cl)**(self self, cosmo cosmo, l_max l_max =-1) |
+| def | **[need_cosmo_arguments](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood/#function-need-cosmo-arguments)**(self self, data data, dictionary dictionary) |
+| def | **[read_contamination_spectra](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood/#function-read-contamination-spectra)**(self self, data data) |
+| def | **[add_contamination_spectra](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood/#function-add-contamination-spectra)**(self self, cl cl, data data) |
+| def | **[add_nuisance_prior](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood/#function-add-nuisance-prior)**(self self, lkl lkl, data data) |
+| def | **[computeLikelihood](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood/#function-computelikelihood)**(self self, ctx ctx) |
+| def | **[raise_fiducial_model_err](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood/#function-raise-fiducial-model-err)**(self self) |
+| def | **[read_from_file](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood/#function-read-from-file)**(self self, path path, data data, command_line command_line) |
+| def | **[get_cl](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood/#function-get-cl)**(self self, cosmo cosmo, l_max l_max =-1) |
+| def | **[get_unlensed_cl](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood/#function-get-unlensed-cl)**(self self, cosmo cosmo, l_max l_max =-1) |
+| def | **[need_cosmo_arguments](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood/#function-need-cosmo-arguments)**(self self, data data, dictionary dictionary) |
+| def | **[read_contamination_spectra](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood/#function-read-contamination-spectra)**(self self, data data) |
+| def | **[add_contamination_spectra](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood/#function-add-contamination-spectra)**(self self, cl cl, data data) |
+| def | **[add_nuisance_prior](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood/#function-add-nuisance-prior)**(self self, lkl lkl, data data) |
+| def | **[computeLikelihood](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood/#function-computelikelihood)**(self self, ctx ctx) |
 
-**Public Attributes inherited from [MontePythonLike.Likelihood](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood/)**
-
-|                | Name           |
-| -------------- | -------------- |
-| | **[name](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood/#variable-name)**  |
-| | **[folder](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood/#variable-folder)**  |
-| | **[data_directory](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood/#variable-data-directory)**  |
-| | **[default_values](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood/#variable-default-values)**  |
-| | **[need_update](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood/#variable-need-update)**  |
-| | **[use_nuisance](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood/#variable-use-nuisance)**  |
-| | **[nuisance](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood/#variable-nuisance)**  |
-| | **[path](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood/#variable-path)**  |
-| | **[dictionary](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood/#variable-dictionary)**  |
-
-**Public Functions inherited from [MontePythonLike.Likelihood](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood/)**
+**Public Attributes inherited from [MontePythonLike.Likelihood](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood/)**
 
 |                | Name           |
 | -------------- | -------------- |
-| def | **[raise_fiducial_model_err](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood/#function-raise-fiducial-model-err)**(self self) |
-| def | **[read_from_file](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood/#function-read-from-file)**(self self, path path, data data, command_line command_line) |
-| def | **[get_cl](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood/#function-get-cl)**(self self, cosmo cosmo, l_max l_max =-1) |
-| def | **[get_unlensed_cl](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood/#function-get-unlensed-cl)**(self self, cosmo cosmo, l_max l_max =-1) |
-| def | **[need_cosmo_arguments](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood/#function-need-cosmo-arguments)**(self self, data data, dictionary dictionary) |
-| def | **[read_contamination_spectra](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood/#function-read-contamination-spectra)**(self self, data data) |
-| def | **[add_contamination_spectra](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood/#function-add-contamination-spectra)**(self self, cl cl, data data) |
-| def | **[add_nuisance_prior](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood/#function-add-nuisance-prior)**(self self, lkl lkl, data data) |
-| def | **[computeLikelihood](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood/#function-computelikelihood)**(self self, ctx ctx) |
-| def | **[raise_fiducial_model_err](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood/#function-raise-fiducial-model-err)**(self self) |
-| def | **[read_from_file](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood/#function-read-from-file)**(self self, path path, data data, command_line command_line) |
-| def | **[get_cl](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood/#function-get-cl)**(self self, cosmo cosmo, l_max l_max =-1) |
-| def | **[get_unlensed_cl](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood/#function-get-unlensed-cl)**(self self, cosmo cosmo, l_max l_max =-1) |
-| def | **[need_cosmo_arguments](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood/#function-need-cosmo-arguments)**(self self, data data, dictionary dictionary) |
-| def | **[read_contamination_spectra](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood/#function-read-contamination-spectra)**(self self, data data) |
-| def | **[add_contamination_spectra](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood/#function-add-contamination-spectra)**(self self, cl cl, data data) |
-| def | **[add_nuisance_prior](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood/#function-add-nuisance-prior)**(self self, lkl lkl, data data) |
-| def | **[computeLikelihood](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood/#function-computelikelihood)**(self self, ctx ctx) |
+| | **[name](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood/#variable-name)**  |
+| | **[folder](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood/#variable-folder)**  |
+| | **[data_directory](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood/#variable-data-directory)**  |
+| | **[default_values](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood/#variable-default-values)**  |
+| | **[need_update](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood/#variable-need-update)**  |
+| | **[use_nuisance](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood/#variable-use-nuisance)**  |
+| | **[nuisance](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood/#variable-nuisance)**  |
+| | **[path](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood/#variable-path)**  |
+| | **[dictionary](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood/#variable-dictionary)**  |
 
-**Public Attributes inherited from [MontePythonLike.Likelihood](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood/)**
+**Public Functions inherited from [MontePythonLike.Likelihood](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood/)**
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[name](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood/#variable-name)**  |
-| | **[folder](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood/#variable-folder)**  |
-| | **[data_directory](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood/#variable-data-directory)**  |
-| | **[default_values](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood/#variable-default-values)**  |
-| | **[need_update](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood/#variable-need-update)**  |
-| | **[use_nuisance](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood/#variable-use-nuisance)**  |
-| | **[nuisance](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood/#variable-nuisance)**  |
-| | **[path](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood/#variable-path)**  |
-| | **[dictionary](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood/#variable-dictionary)**  |
+| def | **[raise_fiducial_model_err](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood/#function-raise-fiducial-model-err)**(self self) |
+| def | **[read_from_file](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood/#function-read-from-file)**(self self, path path, data data, command_line command_line) |
+| def | **[get_cl](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood/#function-get-cl)**(self self, cosmo cosmo, l_max l_max =-1) |
+| def | **[get_unlensed_cl](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood/#function-get-unlensed-cl)**(self self, cosmo cosmo, l_max l_max =-1) |
+| def | **[need_cosmo_arguments](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood/#function-need-cosmo-arguments)**(self self, data data, dictionary dictionary) |
+| def | **[read_contamination_spectra](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood/#function-read-contamination-spectra)**(self self, data data) |
+| def | **[add_contamination_spectra](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood/#function-add-contamination-spectra)**(self self, cl cl, data data) |
+| def | **[add_nuisance_prior](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood/#function-add-nuisance-prior)**(self self, lkl lkl, data data) |
+| def | **[computeLikelihood](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood/#function-computelikelihood)**(self self, ctx ctx) |
+| def | **[raise_fiducial_model_err](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood/#function-raise-fiducial-model-err)**(self self) |
+| def | **[read_from_file](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood/#function-read-from-file)**(self self, path path, data data, command_line command_line) |
+| def | **[get_cl](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood/#function-get-cl)**(self self, cosmo cosmo, l_max l_max =-1) |
+| def | **[get_unlensed_cl](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood/#function-get-unlensed-cl)**(self self, cosmo cosmo, l_max l_max =-1) |
+| def | **[need_cosmo_arguments](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood/#function-need-cosmo-arguments)**(self self, data data, dictionary dictionary) |
+| def | **[read_contamination_spectra](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood/#function-read-contamination-spectra)**(self self, data data) |
+| def | **[add_contamination_spectra](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood/#function-add-contamination-spectra)**(self self, cl cl, data data) |
+| def | **[add_nuisance_prior](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood/#function-add-nuisance-prior)**(self self, lkl lkl, data data) |
+| def | **[computeLikelihood](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood/#function-computelikelihood)**(self self, ctx ctx) |
+
+**Public Attributes inherited from [MontePythonLike.Likelihood](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood/)**
+
+|                | Name           |
+| -------------- | -------------- |
+| | **[name](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood/#variable-name)**  |
+| | **[folder](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood/#variable-folder)**  |
+| | **[data_directory](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood/#variable-data-directory)**  |
+| | **[default_values](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood/#variable-default-values)**  |
+| | **[need_update](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood/#variable-need-update)**  |
+| | **[use_nuisance](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood/#variable-use-nuisance)**  |
+| | **[nuisance](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood/#variable-nuisance)**  |
+| | **[path](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood/#variable-path)**  |
+| | **[dictionary](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood/#variable-dictionary)**  |
 
 
 ## Public Functions Documentation
@@ -178,7 +178,7 @@ def __init__(
 ```
 
 
-**Reimplements**: [MontePythonLike::Likelihood::__init__](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood/#function---init--)
+**Reimplements**: [MontePythonLike::Likelihood::__init__](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood/#function---init--)
 
 
 
@@ -342,7 +342,7 @@ def loglkl(
 ```
 
 
-**Reimplements**: [MontePythonLike::Likelihood::loglkl](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood/#function-loglkl)
+**Reimplements**: [MontePythonLike::Likelihood::loglkl](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood/#function-loglkl)
 
 
 
@@ -381,7 +381,7 @@ def __init__(
 ```
 
 
-**Reimplements**: [MontePythonLike::Likelihood::__init__](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood/#function---init--)
+**Reimplements**: [MontePythonLike::Likelihood::__init__](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood/#function---init--)
 
 
 
@@ -545,7 +545,7 @@ def loglkl(
 ```
 
 
-**Reimplements**: [MontePythonLike::Likelihood::loglkl](/documentation/code/gambit_sphinxclasses/classmontepythonlike_1_1likelihood/#function-loglkl)
+**Reimplements**: [MontePythonLike::Likelihood::loglkl](/documentation/code/gambit_sphinx/classes/classmontepythonlike_1_1likelihood/#function-loglkl)
 
 
 
@@ -777,4 +777,4 @@ fiducial_SDSSDR7;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:46 +0000
+Updated on 2022-08-01 at 17:41:20 +0000

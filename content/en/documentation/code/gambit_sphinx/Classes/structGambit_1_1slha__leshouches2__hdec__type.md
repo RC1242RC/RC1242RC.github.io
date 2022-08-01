@@ -18,28 +18,28 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Farray< Fdouble, 1, 20 > | **[minval](/documentation/code/gambit_sphinxclasses/structgambit_1_1slha__leshouches2__hdec__type/#variable-minval)**  |
-| Farray< Fdouble, 0, 100 > | **[extval](/documentation/code/gambit_sphinxclasses/structgambit_1_1slha__leshouches2__hdec__type/#variable-extval)**  |
-| Farray< Fdouble, 1, 20 > | **[smval](/documentation/code/gambit_sphinxclasses/structgambit_1_1slha__leshouches2__hdec__type/#variable-smval)**  |
-| Farray< Fdouble, 1, 50 > | **[massval](/documentation/code/gambit_sphinxclasses/structgambit_1_1slha__leshouches2__hdec__type/#variable-massval)**  |
-| Farray< Fdouble, 1, 4, 1, 4 > | **[nmixval](/documentation/code/gambit_sphinxclasses/structgambit_1_1slha__leshouches2__hdec__type/#variable-nmixval)**  |
-| Farray< Fdouble, 1, 2, 1, 2 > | **[umixval](/documentation/code/gambit_sphinxclasses/structgambit_1_1slha__leshouches2__hdec__type/#variable-umixval)**  |
-| Farray< Fdouble, 1, 2, 1, 2 > | **[vmixval](/documentation/code/gambit_sphinxclasses/structgambit_1_1slha__leshouches2__hdec__type/#variable-vmixval)**  |
-| Farray< Fdouble, 1, 2, 1, 2 > | **[stopmixval](/documentation/code/gambit_sphinxclasses/structgambit_1_1slha__leshouches2__hdec__type/#variable-stopmixval)**  |
-| Farray< Fdouble, 1, 2, 1, 2 > | **[sbotmixval](/documentation/code/gambit_sphinxclasses/structgambit_1_1slha__leshouches2__hdec__type/#variable-sbotmixval)**  |
-| Farray< Fdouble, 1, 2, 1, 2 > | **[staumixval](/documentation/code/gambit_sphinxclasses/structgambit_1_1slha__leshouches2__hdec__type/#variable-staumixval)**  |
-| Farray< Fdouble, 1, 10 > | **[hmixval](/documentation/code/gambit_sphinxclasses/structgambit_1_1slha__leshouches2__hdec__type/#variable-hmixval)**  |
-| Farray< Fdouble, 1, 3 > | **[gaugeval](/documentation/code/gambit_sphinxclasses/structgambit_1_1slha__leshouches2__hdec__type/#variable-gaugeval)**  |
-| Farray< Fdouble, 1, 100 > | **[msoftval](/documentation/code/gambit_sphinxclasses/structgambit_1_1slha__leshouches2__hdec__type/#variable-msoftval)**  |
-| Farray< Fdouble, 1, 3, 1, 3 > | **[auval](/documentation/code/gambit_sphinxclasses/structgambit_1_1slha__leshouches2__hdec__type/#variable-auval)**  |
-| Farray< Fdouble, 1, 3, 1, 3 > | **[adval](/documentation/code/gambit_sphinxclasses/structgambit_1_1slha__leshouches2__hdec__type/#variable-adval)**  |
-| Farray< Fdouble, 1, 3, 1, 3 > | **[aeval](/documentation/code/gambit_sphinxclasses/structgambit_1_1slha__leshouches2__hdec__type/#variable-aeval)**  |
-| Farray< Fdouble, 1, 3, 1, 3 > | **[yuval](/documentation/code/gambit_sphinxclasses/structgambit_1_1slha__leshouches2__hdec__type/#variable-yuval)**  |
-| Farray< Fdouble, 1, 3, 1, 3 > | **[ydval](/documentation/code/gambit_sphinxclasses/structgambit_1_1slha__leshouches2__hdec__type/#variable-ydval)**  |
-| Farray< Fdouble, 1, 3, 1, 3 > | **[yeval](/documentation/code/gambit_sphinxclasses/structgambit_1_1slha__leshouches2__hdec__type/#variable-yeval)**  |
-| Fdouble | **[alphaval](/documentation/code/gambit_sphinxclasses/structgambit_1_1slha__leshouches2__hdec__type/#variable-alphaval)**  |
-| Farray< Fdouble, 1, 20 > | **[qvalue](/documentation/code/gambit_sphinxclasses/structgambit_1_1slha__leshouches2__hdec__type/#variable-qvalue)**  |
-| Farray< Finteger, 1, 2 > | **[imod](/documentation/code/gambit_sphinxclasses/structgambit_1_1slha__leshouches2__hdec__type/#variable-imod)**  |
+| Farray< Fdouble, 1, 20 > | **[minval](/documentation/code/gambit_sphinx/classes/structgambit_1_1slha__leshouches2__hdec__type/#variable-minval)**  |
+| Farray< Fdouble, 0, 100 > | **[extval](/documentation/code/gambit_sphinx/classes/structgambit_1_1slha__leshouches2__hdec__type/#variable-extval)**  |
+| Farray< Fdouble, 1, 20 > | **[smval](/documentation/code/gambit_sphinx/classes/structgambit_1_1slha__leshouches2__hdec__type/#variable-smval)**  |
+| Farray< Fdouble, 1, 50 > | **[massval](/documentation/code/gambit_sphinx/classes/structgambit_1_1slha__leshouches2__hdec__type/#variable-massval)**  |
+| Farray< Fdouble, 1, 4, 1, 4 > | **[nmixval](/documentation/code/gambit_sphinx/classes/structgambit_1_1slha__leshouches2__hdec__type/#variable-nmixval)**  |
+| Farray< Fdouble, 1, 2, 1, 2 > | **[umixval](/documentation/code/gambit_sphinx/classes/structgambit_1_1slha__leshouches2__hdec__type/#variable-umixval)**  |
+| Farray< Fdouble, 1, 2, 1, 2 > | **[vmixval](/documentation/code/gambit_sphinx/classes/structgambit_1_1slha__leshouches2__hdec__type/#variable-vmixval)**  |
+| Farray< Fdouble, 1, 2, 1, 2 > | **[stopmixval](/documentation/code/gambit_sphinx/classes/structgambit_1_1slha__leshouches2__hdec__type/#variable-stopmixval)**  |
+| Farray< Fdouble, 1, 2, 1, 2 > | **[sbotmixval](/documentation/code/gambit_sphinx/classes/structgambit_1_1slha__leshouches2__hdec__type/#variable-sbotmixval)**  |
+| Farray< Fdouble, 1, 2, 1, 2 > | **[staumixval](/documentation/code/gambit_sphinx/classes/structgambit_1_1slha__leshouches2__hdec__type/#variable-staumixval)**  |
+| Farray< Fdouble, 1, 10 > | **[hmixval](/documentation/code/gambit_sphinx/classes/structgambit_1_1slha__leshouches2__hdec__type/#variable-hmixval)**  |
+| Farray< Fdouble, 1, 3 > | **[gaugeval](/documentation/code/gambit_sphinx/classes/structgambit_1_1slha__leshouches2__hdec__type/#variable-gaugeval)**  |
+| Farray< Fdouble, 1, 100 > | **[msoftval](/documentation/code/gambit_sphinx/classes/structgambit_1_1slha__leshouches2__hdec__type/#variable-msoftval)**  |
+| Farray< Fdouble, 1, 3, 1, 3 > | **[auval](/documentation/code/gambit_sphinx/classes/structgambit_1_1slha__leshouches2__hdec__type/#variable-auval)**  |
+| Farray< Fdouble, 1, 3, 1, 3 > | **[adval](/documentation/code/gambit_sphinx/classes/structgambit_1_1slha__leshouches2__hdec__type/#variable-adval)**  |
+| Farray< Fdouble, 1, 3, 1, 3 > | **[aeval](/documentation/code/gambit_sphinx/classes/structgambit_1_1slha__leshouches2__hdec__type/#variable-aeval)**  |
+| Farray< Fdouble, 1, 3, 1, 3 > | **[yuval](/documentation/code/gambit_sphinx/classes/structgambit_1_1slha__leshouches2__hdec__type/#variable-yuval)**  |
+| Farray< Fdouble, 1, 3, 1, 3 > | **[ydval](/documentation/code/gambit_sphinx/classes/structgambit_1_1slha__leshouches2__hdec__type/#variable-ydval)**  |
+| Farray< Fdouble, 1, 3, 1, 3 > | **[yeval](/documentation/code/gambit_sphinx/classes/structgambit_1_1slha__leshouches2__hdec__type/#variable-yeval)**  |
+| Fdouble | **[alphaval](/documentation/code/gambit_sphinx/classes/structgambit_1_1slha__leshouches2__hdec__type/#variable-alphaval)**  |
+| Farray< Fdouble, 1, 20 > | **[qvalue](/documentation/code/gambit_sphinx/classes/structgambit_1_1slha__leshouches2__hdec__type/#variable-qvalue)**  |
+| Farray< Finteger, 1, 2 > | **[imod](/documentation/code/gambit_sphinx/classes/structgambit_1_1slha__leshouches2__hdec__type/#variable-imod)**  |
 
 ## Public Attributes Documentation
 
@@ -199,4 +199,4 @@ Farray< Finteger, 1, 2 > imod;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:46 +0000
+Updated on 2022-08-01 at 17:41:21 +0000

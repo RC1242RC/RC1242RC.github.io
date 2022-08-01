@@ -16,20 +16,20 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Gambit](/documentation/code/gambit_sphinxnamespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::ColliderBit](/documentation/code/gambit_sphinxnamespaces/namespacegambit_1_1colliderbit/)**  |
+| **[Gambit](/documentation/code/gambit_sphinx/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::ColliderBit](/documentation/code/gambit_sphinx/namespaces/namespacegambit_1_1colliderbit/)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[DEBUG_PREFIX](/documentation/code/gambit_sphinxfiles/getpy8collider_8hpp/#define-debug-prefix)**  |
-|  | **[GET_SPECTRUM_AND_DECAYS_FOR_PYTHIA_SUSY](/documentation/code/gambit_sphinxfiles/getpy8collider_8hpp/#define-get-spectrum-and-decays-for-pythia-susy)**(NAME, SPECTRUM)  |
-|  | **[GET_SPECTRUM_AND_DECAYS_FOR_PYTHIA_NONSUSY](/documentation/code/gambit_sphinxfiles/getpy8collider_8hpp/#define-get-spectrum-and-decays-for-pythia-nonsusy)**(NAME, SPECTRUM)  |
-|  | **[HEPMC_TYPE](/documentation/code/gambit_sphinxfiles/getpy8collider_8hpp/#define-hepmc-type)**(PYTHIA_NS) <br>Work out last template arg of Py8Collider depending on whether we are using HepMC.  |
-|  | **[GET_SPECIFIC_PYTHIA](/documentation/code/gambit_sphinxfiles/getpy8collider_8hpp/#define-get-specific-pythia)**(NAME, PYTHIA_NS, MODEL_EXTENSION) <br>Retrieve a specific Pythia hard-scattering Monte Carlo simulation.  |
-|  | **[GET_SPECIFIC_PYTHIA_SLHA](/documentation/code/gambit_sphinxfiles/getpy8collider_8hpp/#define-get-specific-pythia-slha)**(NAME, PYTHIA_NS, MODEL_EXTENSION)  |
-|  | **[GET_PYTHIA_AS_BASE_COLLIDER](/documentation/code/gambit_sphinxfiles/getpy8collider_8hpp/#define-get-pythia-as-base-collider)**(NAME) <br>Get a specific Pythia hard-scattering sim as a generator-independent pointer-to-BaseCollider.  |
+|  | **[DEBUG_PREFIX](/documentation/code/gambit_sphinx/files/getpy8collider_8hpp/#define-debug-prefix)**  |
+|  | **[GET_SPECTRUM_AND_DECAYS_FOR_PYTHIA_SUSY](/documentation/code/gambit_sphinx/files/getpy8collider_8hpp/#define-get-spectrum-and-decays-for-pythia-susy)**(NAME, SPECTRUM)  |
+|  | **[GET_SPECTRUM_AND_DECAYS_FOR_PYTHIA_NONSUSY](/documentation/code/gambit_sphinx/files/getpy8collider_8hpp/#define-get-spectrum-and-decays-for-pythia-nonsusy)**(NAME, SPECTRUM)  |
+|  | **[HEPMC_TYPE](/documentation/code/gambit_sphinx/files/getpy8collider_8hpp/#define-hepmc-type)**(PYTHIA_NS) <br>Work out last template arg of Py8Collider depending on whether we are using HepMC.  |
+|  | **[GET_SPECIFIC_PYTHIA](/documentation/code/gambit_sphinx/files/getpy8collider_8hpp/#define-get-specific-pythia)**(NAME, PYTHIA_NS, MODEL_EXTENSION) <br>Retrieve a specific Pythia hard-scattering Monte Carlo simulation.  |
+|  | **[GET_SPECIFIC_PYTHIA_SLHA](/documentation/code/gambit_sphinx/files/getpy8collider_8hpp/#define-get-specific-pythia-slha)**(NAME, PYTHIA_NS, MODEL_EXTENSION)  |
+|  | **[GET_PYTHIA_AS_BASE_COLLIDER](/documentation/code/gambit_sphinx/files/getpy8collider_8hpp/#define-get-pythia-as-base-collider)**(NAME) <br>Get a specific Pythia hard-scattering sim as a generator-independent pointer-to-BaseCollider.  |
 
 ## Detailed Description
 
@@ -546,4 +546,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:49 +0000
+Updated on 2022-08-01 at 17:41:23 +0000

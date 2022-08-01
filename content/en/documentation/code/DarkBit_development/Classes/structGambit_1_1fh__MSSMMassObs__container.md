@@ -18,20 +18,20 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| int | **[nmfv](/documentation/code/darkbit_developmentclasses/structgambit_1_1fh__mssmmassobs__container/#variable-nmfv)**  |
-| fh_real | **[MSf](/documentation/code/darkbit_developmentclasses/structgambit_1_1fh__mssmmassobs__container/#variable-msf)**  |
-| fh_complex | **[USf](/documentation/code/darkbit_developmentclasses/structgambit_1_1fh__mssmmassobs__container/#variable-usf)**  |
-| fh_real | **[MASf](/documentation/code/darkbit_developmentclasses/structgambit_1_1fh__mssmmassobs__container/#variable-masf)**  |
-| fh_complex | **[UASf](/documentation/code/darkbit_developmentclasses/structgambit_1_1fh__mssmmassobs__container/#variable-uasf)**  |
-| fh_real | **[MCha](/documentation/code/darkbit_developmentclasses/structgambit_1_1fh__mssmmassobs__container/#variable-mcha)**  |
-| fh_complex | **[UCha](/documentation/code/darkbit_developmentclasses/structgambit_1_1fh__mssmmassobs__container/#variable-ucha)**  |
-| fh_complex | **[VCha](/documentation/code/darkbit_developmentclasses/structgambit_1_1fh__mssmmassobs__container/#variable-vcha)**  |
-| fh_real | **[MNeu](/documentation/code/darkbit_developmentclasses/structgambit_1_1fh__mssmmassobs__container/#variable-mneu)**  |
-| fh_complex | **[ZNeu](/documentation/code/darkbit_developmentclasses/structgambit_1_1fh__mssmmassobs__container/#variable-zneu)**  |
-| fh_complex | **[deltaMB](/documentation/code/darkbit_developmentclasses/structgambit_1_1fh__mssmmassobs__container/#variable-deltamb)**  |
-| fh_real | **[MGl](/documentation/code/darkbit_developmentclasses/structgambit_1_1fh__mssmmassobs__container/#variable-mgl)**  |
-| fh_real | **[MHtree](/documentation/code/darkbit_developmentclasses/structgambit_1_1fh__mssmmassobs__container/#variable-mhtree)**  |
-| fh_real | **[SinAlphatree](/documentation/code/darkbit_developmentclasses/structgambit_1_1fh__mssmmassobs__container/#variable-sinalphatree)**  |
+| int | **[nmfv](/documentation/code/darkbit_development/classes/structgambit_1_1fh__mssmmassobs__container/#variable-nmfv)**  |
+| fh_real | **[MSf](/documentation/code/darkbit_development/classes/structgambit_1_1fh__mssmmassobs__container/#variable-msf)**  |
+| fh_complex | **[USf](/documentation/code/darkbit_development/classes/structgambit_1_1fh__mssmmassobs__container/#variable-usf)**  |
+| fh_real | **[MASf](/documentation/code/darkbit_development/classes/structgambit_1_1fh__mssmmassobs__container/#variable-masf)**  |
+| fh_complex | **[UASf](/documentation/code/darkbit_development/classes/structgambit_1_1fh__mssmmassobs__container/#variable-uasf)**  |
+| fh_real | **[MCha](/documentation/code/darkbit_development/classes/structgambit_1_1fh__mssmmassobs__container/#variable-mcha)**  |
+| fh_complex | **[UCha](/documentation/code/darkbit_development/classes/structgambit_1_1fh__mssmmassobs__container/#variable-ucha)**  |
+| fh_complex | **[VCha](/documentation/code/darkbit_development/classes/structgambit_1_1fh__mssmmassobs__container/#variable-vcha)**  |
+| fh_real | **[MNeu](/documentation/code/darkbit_development/classes/structgambit_1_1fh__mssmmassobs__container/#variable-mneu)**  |
+| fh_complex | **[ZNeu](/documentation/code/darkbit_development/classes/structgambit_1_1fh__mssmmassobs__container/#variable-zneu)**  |
+| fh_complex | **[deltaMB](/documentation/code/darkbit_development/classes/structgambit_1_1fh__mssmmassobs__container/#variable-deltamb)**  |
+| fh_real | **[MGl](/documentation/code/darkbit_development/classes/structgambit_1_1fh__mssmmassobs__container/#variable-mgl)**  |
+| fh_real | **[MHtree](/documentation/code/darkbit_development/classes/structgambit_1_1fh__mssmmassobs__container/#variable-mhtree)**  |
+| fh_real | **[SinAlphatree](/documentation/code/darkbit_development/classes/structgambit_1_1fh__mssmmassobs__container/#variable-sinalphatree)**  |
 
 ## Public Attributes Documentation
 
@@ -135,4 +135,4 @@ fh_real SinAlphatree;
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:41 +0000
+Updated on 2022-08-01 at 17:41:22 +0000

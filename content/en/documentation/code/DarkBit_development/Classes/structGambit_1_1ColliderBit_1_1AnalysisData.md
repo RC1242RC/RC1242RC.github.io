@@ -21,32 +21,32 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[AnalysisData](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1analysisdata/#function-analysisdata)**()<br>Default constructor.  |
-| | **[AnalysisData](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1analysisdata/#function-analysisdata)**(const std::string & name)<br>Constructor with analysis name.  |
-| | **[AnalysisData](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1analysisdata/#function-analysisdata)**(const std::vector< [SignalRegionData](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1signalregiondata/) > & srds, const Eigen::MatrixXd & cov =Eigen::MatrixXd())<br>Constructor from a list of [SignalRegionData]() and an optional correlation (or covariance?) matrix.  |
-| void | **[clear](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1analysisdata/#function-clear)**() |
-| size_t | **[size](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1analysisdata/#function-size)**() const<br>Number of analyses.  |
-| bool | **[empty](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1analysisdata/#function-empty)**() const<br>Is this container empty of signal regions?  |
-| bool | **[hasCorrs](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1analysisdata/#function-hascorrs)**() const<br>Is there non-null correlation data?  |
-| void | **[add](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1analysisdata/#function-add)**(const [SignalRegionData](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1signalregiondata/) & srd)<br>Add a [SignalRegionData]().  |
-| bool | **[check](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1analysisdata/#function-check)**() const<br>Check that the SRData list and the covariance matrix are consistent.  |
-| void | **[pythonize_me](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1analysisdata/#function-pythonize-me)**() const |
-| [SignalRegionData](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1signalregiondata/) & | **[operator[]](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1analysisdata/#function-operator[])**(size_t i)<br>Access the i'th signal region's data.  |
-| const [SignalRegionData](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1signalregiondata/) & | **[operator[]](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1analysisdata/#function-operator[])**(size_t i) const<br>Access the i'th signal region's data (const)  |
-| std::vector< [SignalRegionData](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1signalregiondata/) >::iterator | **[begin](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1analysisdata/#function-begin)**()<br>Iterators (sugar for direct access to this->srdata)  |
-| std::vector< [SignalRegionData](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1signalregiondata/) >::const_iterator | **[begin](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1analysisdata/#function-begin)**() const |
-| std::vector< [SignalRegionData](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1signalregiondata/) >::iterator | **[end](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1analysisdata/#function-end)**() |
-| std::vector< [SignalRegionData](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1signalregiondata/) >::const_iterator | **[end](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1analysisdata/#function-end)**() const |
+| | **[AnalysisData](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-analysisdata)**()<br>Default constructor.  |
+| | **[AnalysisData](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-analysisdata)**(const std::string & name)<br>Constructor with analysis name.  |
+| | **[AnalysisData](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-analysisdata)**(const std::vector< [SignalRegionData](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1signalregiondata/) > & srds, const Eigen::MatrixXd & cov =Eigen::MatrixXd())<br>Constructor from a list of [SignalRegionData]() and an optional correlation (or covariance?) matrix.  |
+| void | **[clear](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-clear)**() |
+| size_t | **[size](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-size)**() const<br>Number of analyses.  |
+| bool | **[empty](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-empty)**() const<br>Is this container empty of signal regions?  |
+| bool | **[hasCorrs](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-hascorrs)**() const<br>Is there non-null correlation data?  |
+| void | **[add](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-add)**(const [SignalRegionData](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1signalregiondata/) & srd)<br>Add a [SignalRegionData]().  |
+| bool | **[check](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-check)**() const<br>Check that the SRData list and the covariance matrix are consistent.  |
+| void | **[pythonize_me](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-pythonize-me)**() const |
+| [SignalRegionData](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1signalregiondata/) & | **[operator[]](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-operator[])**(size_t i)<br>Access the i'th signal region's data.  |
+| const [SignalRegionData](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1signalregiondata/) & | **[operator[]](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-operator[])**(size_t i) const<br>Access the i'th signal region's data (const)  |
+| std::vector< [SignalRegionData](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1signalregiondata/) >::iterator | **[begin](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-begin)**()<br>Iterators (sugar for direct access to this->srdata)  |
+| std::vector< [SignalRegionData](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1signalregiondata/) >::const_iterator | **[begin](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-begin)**() const |
+| std::vector< [SignalRegionData](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1signalregiondata/) >::iterator | **[end](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-end)**() |
+| std::vector< [SignalRegionData](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1signalregiondata/) >::const_iterator | **[end](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-end)**() const |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| bool | **[event_gen_BYPASS](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1analysisdata/#variable-event-gen-bypass)**  |
-| std::string | **[analysis_name](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1analysisdata/#variable-analysis-name)** <br>[Analysis](/documentation/code/darkbit_developmentclasses/classgambit_1_1colliderbit_1_1analysis/) name.  |
-| std::vector< [SignalRegionData](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1signalregiondata/) > | **[srdata](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1analysisdata/#variable-srdata)** <br>List of signal regions' data summaries.  |
-| std::map< std::string, int > | **[srdata_identifiers](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1analysisdata/#variable-srdata-identifiers)** <br>Map of names and indices of all entries in srdata, for easy lookup.  |
-| Eigen::MatrixXd | **[srcov](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1analysisdata/#variable-srcov)** <br>Optional covariance matrix between SRs (0x0 null matrix = no correlation info)  |
+| bool | **[event_gen_BYPASS](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1analysisdata/#variable-event-gen-bypass)**  |
+| std::string | **[analysis_name](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1analysisdata/#variable-analysis-name)** <br>[Analysis](/documentation/code/darkbit_development/classes/classgambit_1_1colliderbit_1_1analysis/) name.  |
+| std::vector< [SignalRegionData](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1signalregiondata/) > | **[srdata](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1analysisdata/#variable-srdata)** <br>List of signal regions' data summaries.  |
+| std::map< std::string, int > | **[srdata_identifiers](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1analysisdata/#variable-srdata-identifiers)** <br>Map of names and indices of all entries in srdata, for easy lookup.  |
+| Eigen::MatrixXd | **[srcov](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1analysisdata/#variable-srcov)** <br>Optional covariance matrix between SRs (0x0 null matrix = no correlation info)  |
 
 ## Detailed Description
 
@@ -94,7 +94,7 @@ inline AnalysisData(
 
 Constructor from a list of [SignalRegionData]() and an optional correlation (or covariance?) matrix. 
 
-If corrs is a null matrix (the default), this [AnalysisData](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1analysisdata/) is to be interpreted as having no correlation information, and hence the likelihood calculation should use the single best-expected-limit SR. 
+If corrs is a null matrix (the default), this [AnalysisData](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1analysisdata/) is to be interpreted as having no correlation information, and hence the likelihood calculation should use the single best-expected-limit SR. 
 
 
 ### function clear
@@ -106,7 +106,7 @@ inline void clear()
 
 **Todo**: It'd be good to _not_ have to re-enter most of the SRData and the covariance on every point: they don't change 
 
-Clear the list of [SignalRegionData](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1signalregiondata/), and nullify the covariance matrix 
+Clear the list of [SignalRegionData](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1signalregiondata/), and nullify the covariance matrix 
 
 
 ### function size
@@ -162,7 +162,7 @@ void pythonize_me() const
 
 bjf> Experimental! But already useful for helping me convert the key numbers from these analyses to Python for the p-value calculuations.
 
-bjf> Experimental! But already useful for helping me convert the key numbers from these analyses to Python for the p-value calculuations. This is a dumb place to define this, but there is no cpp file for [AnalysisData](/documentation/code/darkbit_developmentclasses/structgambit_1_1colliderbit_1_1analysisdata/) and I can't be bothered making one. 
+bjf> Experimental! But already useful for helping me convert the key numbers from these analyses to Python for the p-value calculuations. This is a dumb place to define this, but there is no cpp file for [AnalysisData](/documentation/code/darkbit_development/classes/structgambit_1_1colliderbit_1_1analysisdata/) and I can't be bothered making one. 
 
 
 Could record or something, but for now just dump to stdout
@@ -232,7 +232,7 @@ bool event_gen_BYPASS = false;
 std::string analysis_name;
 ```
 
-[Analysis](/documentation/code/darkbit_developmentclasses/classgambit_1_1colliderbit_1_1analysis/) name. 
+[Analysis](/documentation/code/darkbit_development/classes/classgambit_1_1colliderbit_1_1analysis/) name. 
 
 ### variable srdata
 
@@ -260,4 +260,4 @@ Optional covariance matrix between SRs (0x0 null matrix = no correlation info)
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:31:42 +0000
+Updated on 2022-08-01 at 17:41:23 +0000
