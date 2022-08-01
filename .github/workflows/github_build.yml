@@ -44,6 +44,8 @@ jobs:
         run:  wget https://github.com/matusnovak/doxybook2/releases/download/v1.4.0/doxybook2-linux-amd64-v1.4.0.zip
           && mkdir doxybook2
           && unzip doxybook2-linux-amd64-v1.4.0.zip -d ./doxybook2
+      - name: Install sed
+        run: sudo apt-get install sed
       - name: Shallow clone branch
         run: git clone --depth 1 ${{ inputs.dev_repo }} --branch ${{ matrix.branches }} ${{ matrix.branches }}_source
       - name: Generate doxygen xml
@@ -51,9 +53,11 @@ jobs:
         with:
           working-directory: ./${{ matrix.branches }}_source
           doxyfile-path: ../doxygen_and_doxybook2/Doxyfile
+      - name: Change baseURL for md output
+        run: sed -i -e 's+/documentation/code/+/documentation/code/${{ matrix.branches }}+g' ./doxygen_and_doxybook2/config.json
       - name: Convert xml to md using doxybook2
         run: mkdir ${{ matrix.branches }}
-          && ./doxybook2/bin/doxybook2 --input ./xml --output ./${{ matrix.branches }} --config ./doxygen_and_doxybook2/config.json --templates ./doxygen_and_doxybook2/doxybook_templates --config-data '{"baseURL":"/documentation/code/${{ matrix.branches }}"}'
+          && ./doxybook2/bin/doxybook2 --input ./xml --output ./${{ matrix.branches }} --config ./doxygen_and_doxybook2/config.json --templates ./doxygen_and_doxybook2/doxybook_templates
       - name: Upload branch code md as artifact
         uses: actions/upload-artifact@v3
         with:
@@ -74,6 +78,8 @@ jobs:
         run:  wget https://github.com/matusnovak/doxybook2/releases/download/v1.4.0/doxybook2-linux-amd64-v1.4.0.zip
           && mkdir doxybook2
           && unzip doxybook2-linux-amd64-v1.4.0.zip -d ./doxybook2
+      - name: Install sed
+        run: sudo apt-get install sed
       - name: Set folder variable
         run: str=${{ matrix.repos }}
           && str2=${str##*/}
@@ -85,9 +91,11 @@ jobs:
         with:
           working-directory: ./${{ env.folder }}_source
           doxyfile-path: ../doxygen_and_doxybook2/Doxyfile
+      - name: Change baseURL for md output
+        run: sed -i -e 's+/documentation/code/+/documentation/code/${{ env.folder }}+g' ./doxygen_and_doxybook2/config.json
       - name: Convert xml to md using doxybook2
         run: mkdir ${{ env.folder }}
-          && ./doxybook2/bin/doxybook2 --input ./xml --output ./${{ env.folder }} --config ./doxygen_and_doxybook2/config.json --templates ./doxygen_and_doxybook2/doxybook_templates --config-data '{"baseURL":"/documentation/code/${{ env.folder }}"}'
+          && ./doxybook2/bin/doxybook2 --input ./xml --output ./${{ env.folder }} --config ./doxygen_and_doxybook2/config.json --templates ./doxygen_and_doxybook2/doxybook_templates
       - name: Upload repo code md as artifact
         uses: actions/upload-artifact@v3
         with:
