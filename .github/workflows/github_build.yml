@@ -54,7 +54,7 @@ jobs:
           working-directory: ./${{ matrix.branches }}_source
           doxyfile-path: ../doxygen_and_doxybook2/Doxyfile
       - name: Change baseURL for md output
-        run: sed -i -e 's+/documentation/code/+/documentation/code/${{ matrix.branches }}+g' ./doxygen_and_doxybook2/config.json
+        run: sed -i -e 's+/documentation/code/+/documentation/code/${{ matrix.branches }}/+g' ./doxygen_and_doxybook2/config.json
       - name: Convert xml to md using doxybook2
         run: mkdir ${{ matrix.branches }}
           && ./doxybook2/bin/doxybook2 --input ./xml --output ./${{ matrix.branches }} --config ./doxygen_and_doxybook2/config.json --templates ./doxygen_and_doxybook2/doxybook_templates
@@ -92,7 +92,7 @@ jobs:
           working-directory: ./${{ env.folder }}_source
           doxyfile-path: ../doxygen_and_doxybook2/Doxyfile
       - name: Change baseURL for md output
-        run: sed -i -e 's+/documentation/code/+/documentation/code/${{ env.folder }}+g' ./doxygen_and_doxybook2/config.json
+        run: sed -i -e 's+/documentation/code/+/documentation/code/${{ env.folder }}/+g' ./doxygen_and_doxybook2/config.json
       - name: Convert xml to md using doxybook2
         run: mkdir ${{ env.folder }}
           && ./doxybook2/bin/doxybook2 --input ./xml --output ./${{ env.folder }} --config ./doxygen_and_doxybook2/config.json --templates ./doxygen_and_doxybook2/doxybook_templates
