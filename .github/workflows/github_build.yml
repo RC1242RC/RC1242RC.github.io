@@ -55,11 +55,12 @@ jobs:
           name: doxybook2
       - name: Shallow clone branch
         run: git clone --depth 1 ${{ inputs.dev_repo }} --branch ${{ matrix.branches }} ${{ matrix.branches }}_source
+          && ls -a -l
       - name: Generate doxygen xml
         uses: mattnotmitt/doxygen-action@v1.9.4
         with:
           working-directory: ./${{ matrix.branches }}_source
-          doxyfile-path: ./doxygen_and_doxybook2/Doxyfile
+          doxyfile-path: ../doxygen_and_doxybook2/Doxyfile
       - name: Convert xml to md using doxybook2
         run: mkdir ${{ matrix.branches }}
           && ./doxybook2/bin/doxybook2 --input ./xml --output ./${{ matrix.branches }} --config ./doxygen_and_doxybook2/config.json -templates ./doxygen_and_doxybook2/doxybook_templates --config-data '{"baseURL":"/documentation/code/${{ matrix.branches }}"}'
@@ -85,11 +86,12 @@ jobs:
           name: doxybook2
       - name: Shallow clone repo
         run: git clone --depth 1 ${{ matrix.repos }} ${{ matrix.repos }}_source
+          && ls -a -l
       - name: Generate doxygen xml
         uses: mattnotmitt/doxygen-action@v1.9.4
         with:
           working-directory: ./${{ matrix.repos }}_source
-          doxyfile-path: ./doxygen_and_doxybook2/Doxyfile
+          doxyfile-path: ../doxygen_and_doxybook2/Doxyfile
       - name: Convert xml to md using doxybook2
         run: mkdir ${{ matrix.repos }}
           && ./doxybook2/bin/doxybook2 --input ./xml --output ./${{ matrix.repos }} --config ./doxygen_and_doxybook2/config.json -templates ./doxygen_and_doxybook2/doxybook_templates --config-data '{"baseURL":"/documentation/code/${{ matrix.repos }}"}'
