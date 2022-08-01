@@ -55,7 +55,7 @@ jobs:
       - name: Convert xml to md using doxybook2
         run: ls -a -l
           && mkdir ${{ matrix.branches }}
-          && ./doxybook2/bin/doxybook2 --input ./xml --output ./${{ matrix.branches }} --config ./doxygen_and_doxybook2/config.json -templates ./doxygen_and_doxybook2/doxybook_templates --config-data '{"baseURL":"/documentation/code/${{ matrix.branches }}"}'
+          && ./doxybook2/bin/doxybook2 --input ./xml --output ./${{ matrix.branches }} --config ./doxygen_and_doxybook2/config.json --templates ./doxygen_and_doxybook2/doxybook_templates --config-data '{"baseURL":"/documentation/code/${{ matrix.branches }}"}'
       - name: Upload branch code md as artifact
         uses: actions/upload-artifact@v3
         with:
@@ -76,8 +76,9 @@ jobs:
         run:  wget https://github.com/matusnovak/doxybook2/releases/download/v1.4.0/doxybook2-linux-amd64-v1.4.0.zip
           && mkdir doxybook2
           && unzip doxybook2-linux-amd64-v1.4.0.zip -d ./doxybook2
-      - name: Set env
-        run: echo "folder=${${{ matrix.repos }}##*/}" >> $GITHUB_ENV
+      - name: Set folder variable
+        run: str = ${{ matrix.repos }}
+          && echo "folder=${str##*/}" >> $GITHUB_ENV
       - name: Shallow clone repo
         run: git clone --depth 1 ${{ matrix.repos }} ${{ env.folder }}_source
           && ls -a -l
@@ -89,7 +90,7 @@ jobs:
       - name: Convert xml to md using doxybook2
         run: ls -a -l
           && mkdir ${{ env.folder }}
-          && ./doxybook2/bin/doxybook2 --input ./xml --output ./${{ env.folder }} --config ./doxygen_and_doxybook2/config.json -templates ./doxygen_and_doxybook2/doxybook_templates --config-data '{"baseURL":"/documentation/code/${{ env.folder }}"}'
+          && ./doxybook2/bin/doxybook2 --input ./xml --output ./${{ env.folder }} --config ./doxygen_and_doxybook2/config.json --templates ./doxygen_and_doxybook2/doxybook_templates --config-data '{"baseURL":"/documentation/code/${{ env.folder }}"}'
       - name: Upload repo code md as artifact
         uses: actions/upload-artifact@v3
         with:
@@ -115,8 +116,6 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           path: ./base_site/content/en/documentation/code
-      - name: remove unwanted doxybook2 directory
-        run: rm -r ./base_site/content/en/documentation/code/doxybook2
       - name: Commit changes
         run: git config --local user.email "test@github.com"
           && git config --local user.name "GitHub Action test"
