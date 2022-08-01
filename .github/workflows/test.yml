@@ -16,6 +16,6 @@ jobs:
       
       - name: Set folder variable
         run: echo "folder=${{ inputs.test }}" >> $GITHUB_ENV
-          && echo ${{ env.folder }}
+          && echo "${{ env.folder }}"
         
         
