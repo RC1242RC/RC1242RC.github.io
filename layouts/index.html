@@ -1,0 +1,50 @@
+{{ define "main" }}
+<section class="section container-fluid mt-n3 pb-3">
+  <div style="float: left">
+    <img src="gambit_logo.png" display="block" width="100%">
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-lg-12 text-center">
+      <h1 class="mt-0">{{ .Title }}</h1>
+    </div>
+    <div class="col-lg-9 col-xl-8 text-center">
+      <p class="lead">{{ .Params.lead | safeHTML }}</p>
+      <a class="btn btn-primary btn-lg px-4 mb-2" href="{{ .Site.BaseURL }}/documentation/installation/introduction/" role="button">Get Started</a>
+      <p class="meta"><a href="{{ .Site.BaseURL }}/license/">BSD License</a></p>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ define "sidebar-prefooter" }}
+  {{ if eq $.Site.Language.LanguageName "English" }}
+  <section class="section section-sm">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-5">
+          <h2 class="h4">A range of modules</h2>
+          <p>Capable of providing native simulations of collider and astrophysics experiments.</p>
+        </div>
+        <div class="col-lg-5">
+          <h2 class="h4">Flexible backend</h2>
+          <p>Easily interface with external code.</p>
+        </div>
+        <div class="col-lg-5">
+          <h2 class="h4">Extra tools</h2>
+          <p>Includes a host of tools for implementing and using hierarchical models.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+{{ end }}
+
+{{ define "sidebar-footer" }}
+<section class="section section-sm container-fluid">
+  <div class="row justify-content-center text-center">
+    <div class="col-lg-9">
+      {{- .Content -}}
+    </div>
+  </div>
+</section>
+{{ end }}
