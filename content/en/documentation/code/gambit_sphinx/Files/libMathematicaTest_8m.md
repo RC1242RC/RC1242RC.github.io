@@ -170,4 +170,4 @@ SquareList[list_]:=Table[list[[i]]^2,{i,Length[list]}]
 
 -------------------------------
 
-Updated on 2022-08-01 at 12:13:34 +0000
+Updated on 2022-08-01 at 17:02:36 +0000
