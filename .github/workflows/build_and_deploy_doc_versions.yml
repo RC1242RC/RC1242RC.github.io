@@ -1,4 +1,4 @@
-name: Build and deploy documentation versions from various sources
+name: Build and deploy doc versions
 
 on:
   workflow_dispatch:
@@ -14,7 +14,7 @@ on:
       repos_to_document:
         description: 'Standalone repos (e.g. releases) to document'
         required: true
-        default: "['none']"
+        default: "[]"
 
 jobs:
   
@@ -24,6 +24,15 @@ jobs:
       branches: ${{ steps.setVariables.outputs.branches }}
       repos: ${{ steps.setVariables.outputs.repos }}
     steps:
+      - name: Install doxybook2
+        run:  wget https://github.com/matusnovak/doxybook2/releases/download/v1.4.0/doxybook2-linux-amd64-v1.4.0.zip
+          && mkdir doxybook2
+          && unzip doxybook2-linux-amd64-v1.4.0.zip -d ./doxybook2
+      - name: Upload doxybook2 as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: doxybook2
+          path: ./doxybook2
       - id: setVariables
         run: echo "::set-output name=branches::$branches_temp"
           && echo "::set-output name=repos::$repos_temp"
@@ -31,58 +40,98 @@ jobs:
           branches_temp: ${{ inputs.dev_branches_to_document }}
           repos_temp: ${{ inputs.repos_to_document }}
 
-  deploy_branches:
+  document_branches:
     needs: setup
     runs-on: ubuntu-latest
     strategy:
       matrix:
         branches: ${{ fromJson(needs.setup.outputs.branches )}}
     steps:
-      - name: Print 1
-        run: echo ${{ matrix.branches }}
-      - name: Print 2
-        run: echo ${{ matrix.repos }}
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Download doxybook2 artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: doxybook2
+      - name: Shallow clone branch
+        run: git clone --depth 1 ${{ inputs.dev_repo }} --branch ${{ matrix.branches }} ${{ matrix.branches }}_source
+      - name: Generate doxygen xml
+        uses: mattnotmitt/doxygen-action@v1.9.4
+        with:
+          working-directory: ./${{ matrix.branches }}_source
+          doxyfile-path: ../doxygen_and_doxybook2/Doxyfile
+      - name: Convert xml to md using doxybook2
+        run: mkdir ${{ matrix.branches }}
+          && ./doxybook2/bin/doxybook2 --input ./xml --output ./${{ matrix.branches }} --config ./doxygen_and_doxybook2/config.json -templates ./doxygen_and_doxybook2/doxybook_templates
+      - name: Upload branch code md as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: ${{ matrix.branches }}
+          path: ./${{ matrix.branches }}
+      
         
-  deploy_repos:
+  document_repos:
     needs: setup
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        branches: ${{ fromJson(needs.setup.outputs.branches )}}
         repos: ${{ fromJson(needs.setup.outputs.repos )}}
-  
-      #- name: Checkout code
-      #  uses: actions/checkout@v2
-      #- name: Cache npm packages
-      #  uses: actions/setup-node@v2
-      #  with:
-      #    node-version: '16'
-      #    cache: 'npm'
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Download doxybook2 artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: doxybook2
+      - name: Shallow clone repo
+        run: git clone --depth 1 ${{ matrix.repos }} ${{ matrix.repos }}_source
+      - name: Generate doxygen xml
+        uses: mattnotmitt/doxygen-action@v1.9.4
+        with:
+          working-directory: ./${{ matrix.repos }}_source
+          doxyfile-path: ../doxygen_and_doxybook2/Doxyfile
+      - name: Convert xml to md using doxybook2
+        run: mkdir ${{ matrix.repos }}
+          && ./doxybook2/bin/doxybook2 --input ./xml --output ./${{ matrix.repos }} --config ./doxygen_and_doxybook2/config.json -templates ./doxygen_and_doxybook2/doxybook_templates
+      - name: Upload repo code md as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: ${{ matrix.repos }}
+          path: ./${{ matrix.repos }}
 
-      #- name: Remove license.md
-      #  run: cd content/en/documentation/_static/collapsible-lists
-      #    && rm LICENSE.md
-
-      #- name: Commit changes
-      #  run: git config --local user.email "test@github.com"
-      #    && git config --local user.name "GitHub Action test"
-      #    && git add --all
-      #    && git commit -m "Deleted problematic LICENSE.md"
-      #    && git push
-
-      #- name: Install npm dependencies
-      #  run: npm install
-      #- name: Build production website
-      #  run: npm run build
-      #- name: Deploy to GitHub Pages
-      #  uses: peaceiris/actions-gh-pages@v3
-      #  with:
-      #    github_token: ${{ secrets.GITHUB_TOKEN }}
-      #    publish_dir: ./public
-      #    destination_dir: testbit
-      #- name: Deploy redirect
-      #  uses: peaceiris/actions-gh-pages@v3
-      #  with:
-      #    github_token: ${{ secrets.GITHUB_TOKEN }}
-      #    publish_dir: ./redirect
-      #    keep_files: true
+  upload_and_deploy:
+    needs: [document_repos, document_branches]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Cache npm packages
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+          cache: 'npm'
+      - name: Wipe code dir
+        run: rm -r code
+          && mkdir code
+        working-directory: ./base_site/content/en/documentation
+      - name: Download docs artifacts into code dir
+        uses: actions/download-artifact@v3
+        with:
+          path: ./base_site/content/en/documentation/code
+      - name: remove unwanted doxybook2 directory
+        run: rm -r ./base_site/content/en/documentation/code/doxybook2
+      - name: Commit changes
+        run: git config --local user.email "test@github.com"
+          && git config --local user.name "GitHub Action test"
+          && git add --all
+          && git commit -m "Documentation rebuild"
+          && git push
+      - name: Install npm dependencies and build site
+        run: npm install
+          && npm run build
+        working-directory: ./base_site
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./base_site
