@@ -1,0 +1,1197 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="ie=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><link rel=preload as=font href=https://rc1242rc.github.io/fonts/vendor/jost/jost-v4-latin-regular.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://rc1242rc.github.io/fonts/vendor/jost/jost-v4-latin-500.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://rc1242rc.github.io/fonts/vendor/jost/jost-v4-latin-700.woff2 type=font/woff2 crossorigin><script>(()=>{var e=localStorage.getItem("theme");e==="dark"&&document.documentElement.setAttribute("data-dark-mode","")})()</script><link rel=stylesheet href=https://rc1242rc.github.io/main.f12f7e04ea768acebec10c86baf049d74d6a79f24bc0dfb7ed77aa60462432916dd1ce8f41c78b69496adf650b3039a28a210183cce598f09b95d6fecb5ff999.css integrity="sha512-8S9+BOp2is6+wQyGuvBJ101qefJLwN+37XeqYEYkMpFt0c6PQceLaUlq32ULMDmiiiEBg8zlmPCbldb+y1/5mQ==" crossorigin=anonymous><noscript><style>img.lazyload{display:none}</style></noscript><meta name=robots content="index, follow"><meta name=googlebot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><meta name=bingbot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><title>file postprocessor_2.0.0/postprocessor_2.0.0/postprocessor_object.cpp - GAMBIT</title><meta name=description content="[No description available]"><link rel=canonical href=https://rc1242rc.github.io/documentation/code/main/files/postprocessor__2_80_80_2postprocessor__object_8cpp/><meta property="og:locale" content="en_US"><meta property="og:type" content="article"><meta property="og:title" content="file postprocessor_2.0.0/postprocessor_2.0.0/postprocessor_object.cpp"><meta property="og:description" content="[No description available]"><meta property="og:url" content="https://rc1242rc.github.io/documentation/code/main/files/postprocessor__2_80_80_2postprocessor__object_8cpp/"><meta property="og:site_name" content="GAMBIT"><meta property="og:image" content="https://rc1242rc.github.io/gambit_logo.png"><meta property="og:image:alt" content="GAMBIT"><meta name=twitter:card content="summary_large_image"><meta name=twitter:site content><meta name=twitter:creator content><meta name=twitter:title content="file postprocessor_2.0.0/postprocessor_2.0.0/postprocessor_object.cpp"><meta name=twitter:description content="[No description available]"><meta name=twitter:image content="https://rc1242rc.github.io/gambit_logo.png"><meta name=twitter:image:alt content="file postprocessor_2.0.0/postprocessor_2.0.0/postprocessor_object.cpp"><script type=application/ld+json>{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://rc1242rc.github.io/#/schema/organization/1","name":"Doks","url":"https://rc1242rc.github.io/","sameAs":["https://github.com/GambitBSM"],"logo":{"@type":"ImageObject","@id":"https://rc1242rc.github.io/#/schema/image/1","url":"https://rc1242rc.github.io/logo-doks.png","width":450,"height":416,"caption":"Doks"},"image":{"@id":"https://rc1242rc.github.io/#/schema/image/1"}},{"@type":"WebSite","@id":"https://rc1242rc.github.io/#/schema/website/1","url":"https://rc1242rc.github.io/","name":"GAMBIT","description":"Documentation for the Global And Modular BSM Inference Tool","publisher":{"@id":"https://rc1242rc.github.io/#/schema/organization/1"}},{"@type":"WebPage","@id":"https://rc1242rc.github.io/documentation/code/main/files/postprocessor__2_80_80_2postprocessor__object_8cpp/","url":"https://rc1242rc.github.io/documentation/code/main/files/postprocessor__2_80_80_2postprocessor__object_8cpp/","name":"file postprocessor_2.0.0\/postprocessor_2.0.0\/postprocessor_object.cpp","description":"[No description available]","isPartOf":{"@id":"https://rc1242rc.github.io/#/schema/website/1"},"about":{"@id":"https://rc1242rc.github.io/#/schema/organization/1"},"datePublished":"0001-01-01T00:00:00CET","dateModified":"0001-01-01T00:00:00CET","breadcrumb":{"@id":"https://rc1242rc.github.io/documentation/code/main/files/postprocessor__2_80_80_2postprocessor__object_8cpp/#/schema/breadcrumb/1"},"primaryImageOfPage":{"@id":"https://rc1242rc.github.io/documentation/code/main/files/postprocessor__2_80_80_2postprocessor__object_8cpp/#/schema/image/2"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://rc1242rc.github.io/documentation/code/main/files/postprocessor__2_80_80_2postprocessor__object_8cpp/"]}]},{"@type":"BreadcrumbList","@id":"https://rc1242rc.github.io/documentation/code/main/files/postprocessor__2_80_80_2postprocessor__object_8cpp/#/schema/breadcrumb/1","name":"Breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/","url":"https://rc1242rc.github.io/","name":"Home"}},{"@type":"ListItem","position":2,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/documentation/","url":"https://rc1242rc.github.io/documentation/","name":"Documentation"}},{"@type":"ListItem","position":3,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/documentation/code/","url":"https://rc1242rc.github.io/documentation/code/","name":"Code"}},{"@type":"ListItem","position":4,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/documentation/code/main/","url":"https://rc1242rc.github.io/documentation/code/main/","name":"Main"}},{"@type":"ListItem","position":5,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/documentation/code/main/files/","url":"https://rc1242rc.github.io/documentation/code/main/files/","name":"Files"}},{"@type":"ListItem","position":6,"item":{"@id":"https://rc1242rc.github.io/documentation/code/main/files/postprocessor__2_80_80_2postprocessor__object_8cpp/"}}]},{"@context":"https://schema.org","@graph":[{"@type":"ImageObject","@id":"https://rc1242rc.github.io/documentation/code/main/files/postprocessor__2_80_80_2postprocessor__object_8cpp/#/schema/image/2","url":"https://rc1242rc.github.io/gambit_logo.png","contentUrl":"https://rc1242rc.github.io/gambit_logo.png","caption":"file postprocessor_2.0.0\/postprocessor_2.0.0\/postprocessor_object.cpp"}]}]}</script><meta name=theme-color content="#fff"><link rel=icon href=https://rc1242rc.github.io/favicon.ico sizes=any><link rel=icon type=image/svg+xml href=https://rc1242rc.github.io/favicon.svg><link rel=apple-touch-icon sizes=180x180 href=https://rc1242rc.github.io/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=https://rc1242rc.github.io/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=https://rc1242rc.github.io/favicon-16x16.png><link rel=manifest crossorigin=use-credentials href=https://rc1242rc.github.io/site.webmanifest></head><body class="documentation single light"><div class=sticky-top><div class=header-bar></div><header class="navbar navbar-expand-md navbar-light doks-navbar"><nav class="container-xxl flex-wrap flex-md-nowrap" aria-label="Main navigation"><a class="navbar-brand p-0 me-auto" href=https://rc1242rc.github.io/ aria-label=GAMBIT><img class=logo-light src=https://rc1242rc.github.io//images/gambit_logo.png width=50px>
+<img class="logo-dark d-none" src=https://rc1242rc.github.io//images/gambit_logo.png width=50px>
+GAMBIT</a>
+<button class="btn btn-menu order-2 d-block d-lg-none" type=button data-bs-toggle=offcanvas data-bs-target=#offcanvasDoks aria-controls=offcanvasDoks aria-label="Open main menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button><div class="offcanvas offcanvas-end border-0 py-lg-1" tabindex=-1 id=offcanvasDoks data-bs-backdrop=true aria-labelledby=offcanvasDoksLabel><div class="header-bar d-lg-none"></div><div class="offcanvas-header d-lg-none"><h2 class="h5 offcanvas-title ps-2" id=offcanvasDoksLabel><a class=text-dark href=/>GAMBIT</a></h2><button type=button class="btn-close text-reset me-2" data-bs-dismiss=offcanvas aria-label="Close main menu"></button></div><div class="offcanvas-body p-4 p-lg-0"><ul class="nav flex-column flex-lg-row align-items-lg-center mt-2 mt-lg-0 ms-lg-2 me-lg-auto"><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Documentation
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=/documentation/installation/introduction/>Installation</a></li><li><a class=dropdown-item href=/documentation/examples/colliderbit>Examples</a></li><li><a class=dropdown-item href=/documentation/help/faqs/>Help</a></li><li><a class=dropdown-item href=/documentation/code/index_classes>Code Reference</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Community
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=/community/publications/>Publications</a></li><li><a class=dropdown-item href=/community/talks/>Talks</a></li><li><a class=dropdown-item href=/community/members/>Members</a></li><li><a class=dropdown-item href=/community/code_of_conduct/>Code of Conduct</a></li><li><a class=dropdown-item href=/community/contact/>Contact</a></li></ul></li></ul><hr class="text-black-50 my-4 d-lg-none"><form class="doks-search position-relative flex-grow-1 ms-lg-auto me-lg-2"><input id=search class="form-control is-search" type=search placeholder="Search site..." aria-label="Search site..." autocomplete=off><div id=suggestions class="shadow bg-white rounded d-none"></div></form><hr class="text-black-50 my-4 d-lg-none"><ul class="nav flex-column flex-lg-row"><li class=nav-item><a class="nav-link social-link" href=https://github.com/GambitBSM><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37.0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44.0 0020 4.77 5.07 5.07.0 0019.91 1S18.73.65 16 2.48a13.38 13.38.0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07.0 005 4.77 5.44 5.44.0 003.5 8.55c0 5.42 3.3 6.61 6.44 7A3.37 3.37.0 009 18.13V22"/></svg><small class="ms-2 d-lg-none">GitHub</small></a></li></ul><hr class="text-black-50 my-4 d-lg-none"><div class=dropdown><button class="btn btn-doks-light dropdown-toggle" id=doks-versions data-bs-toggle=dropdown aria-expanded=false data-bs-display=static aria-label="Toggle version menu">
+<span class=d-none>Doks</span>
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></button><ul class="dropdown-menu dropdown-menu-lg-end me-lg-2 shadow rounded border-0" aria-labelledby=doks-versions></ul></div></div></div></nav></header></div><div class="wrap container-xxl" role=document><div class=content><div class="row flex-xl-nowrap"><div class="col-lg-5 col-xl-4 docs-sidebar"><nav class=docs-links aria-label="Main navigation"><ul class="list-unstyled collapsible-sidebar"><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-installation aria-expanded=false>
+Installation</button><div class=collapse id=section-installation><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/installation/introduction/>Getting Started</a></li><li><a class="docs-link rounded" href=/documentation/installation/docker_usage/>Docker Usage</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_linux/>Installation for Linux</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_windows/>Installation for Windows</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_macos/>Installation for macOS</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-examples aria-expanded=false>
+Examples</button><div class=collapse id=section-examples><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/examples/colliderbit/>ColliderBit</a></li><li><a class="docs-link rounded" href=/documentation/examples/anotherbit/>AnotherBit</a></li><li><a class="docs-link rounded" href=/documentation/examples/anotherbit2/>AnotherBit2</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-help aria-expanded=false>
+Help</button><div class=collapse id=section-help><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/help/faqs/>FAQs</a></li><li><a class="docs-link rounded" href=/documentation/help/compiler_matrix/>Compiler Matrix</a></li><li><a class="docs-link rounded" href=/documentation/help/known_issues/>Known Issues</a></li><li><a class="docs-link rounded" href=/documentation/help/configuration_examples/>Configuration Examples</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-code aria-expanded=false>
+Code Reference</button></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section- aria-expanded=false>
+GAMBIT_VERSION_HERE</button><div class=collapse id=section-><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/code/colliderbit_development/index_classes/>Classes</a></li><li><a class="docs-link rounded" href=/documentation/code/colliderbit_development/index_files/>Files</a></li><li><a class="docs-link rounded" href=/documentation/code/colliderbit_development/index_pages/>Pages</a></li><li><a class="docs-link rounded" href=/documentation/code/colliderbit_development/index_namespaces/>Namespaces</a></li></ul></div></li></ul></nav></div><nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation"><div class=d-xl-none><button class="btn btn-outline-primary btn-sm doks-toc-toggle collapsed" type=button data-bs-toggle=collapse data-bs-target=#onThisPage aria-controls=doks-docs-nav aria-expanded=false aria-label="Toggle On this page navigation">
+<span>On this page</span>
+<span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg></span></button><div class=collapse id=onThisPage><div class="card card-body mt-3 py-1"><div class=page-links><nav id=TableOfContents><ul><li><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#source-code>Source code</a></li></ul></li></ul></nav></div></div></div></div><div class="page-links d-none d-xl-block"><h3>On this page</h3><nav id=TableOfContents><ul><li><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#source-code>Source code</a></li></ul></li></ul></nav></div></nav><main class="docs-content col-lg-11 col-xl-9 mx-xl-auto"><h1>file postprocessor_2.0.0/postprocessor_2.0.0/postprocessor_object.cpp</h1><p class=lead></p><p>[No description available] <a href=#detailed-description>More&mldr;</a></p><h2 id=namespaces>Namespaces <a href=#namespaces class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th>Name</th></tr></thead><tbody><tr><td><strong><a href=/documentation/code/main/namespaces/namespacegambit/>Gambit</a></strong><br>TODO: see if we can use this one:</td></tr><tr><td><strong><a href=/documentation/code/main/namespaces/namespacegambit_1_1postprocessor/>Gambit::PostProcessor</a></strong></td></tr></tbody></table><h2 id=detailed-description>Detailed Description <a href=#detailed-description class=anchor aria-hidden=true>#</a></h2><p><strong>Author</strong>: Ben Farmer (<a href=mailto:b.farmer@imperial.ac.uk>b.farmer@imperial.ac.uk</a>)</p><p><strong>Date</strong>: 2018 Sep</p><p>Helper object for the postprocessor plugin, plus some auxilliary functions</p><hr><p>Authors (add name and date if you modify):</p><hr><h2 id=source-code>Source code <a href=#source-code class=anchor aria-hidden=true>#</a></h2><pre><code>//  GAMBIT: Global and Modular BSM Inference Tool
+//  *********************************************
+
+#include &quot;gambit/Logs/logger.hpp&quot;
+#include &quot;gambit/ScannerBit/scanners/postprocessor_2.0.0/postprocessor.hpp&quot;
+#include &quot;gambit/Utils/new_mpi_datatypes.hpp&quot;
+#include &quot;gambit/Utils/model_parameters.hpp&quot;
+#include &quot;gambit/Utils/util_functions.hpp&quot;
+
+// Need this to allow Master process to manually check for shutdown signals without calling the likelihood container
+#include &quot;gambit/Utils/signal_handling.hpp&quot;
+
+using Gambit::Printers::PPIDpair;
+
+namespace Gambit
+{
+   namespace PostProcessor
+   {
+
+
+      bool point_done(const ChunkSet done_chunks, size_t index)
+      {
+        bool answer = false;
+        for(ChunkSet::const_iterator it=done_chunks.begin();
+             it!=done_chunks.end(); ++it)
+        {
+           if(it-&gt;iContain(index))
+           {
+              answer = true;
+              break;
+           }
+        }
+        return answer;
+      }
+
+      Chunk get_effective_chunk(const std::size_t total_length, const unsigned int rank, const unsigned int numtasks)
+      {
+         // Compute which points this process is supposed to process. Divide total
+         // by number of MPI tasks.
+         unsigned long long my_length = total_length / numtasks;
+         unsigned long long r = total_length % numtasks;
+         // Offset from beginning for this task assuming equal lengths in each task
+         unsigned long long start = my_length * rank;
+         // Divide up the remainder amongst the tasks and adjust offsets to account for these
+         if(rank&lt;r)
+         {
+           my_length++;
+           start+=rank;
+         }
+         else
+         {
+           start+=r;
+         }
+         unsigned long long end = start + my_length - 1; // Minus 1 for the zero indexing
+         return Chunk(start,end);
+      }
+
+      ChunkSet get_done_points(Gambit::Printers::BaseBaseReader&amp; resume_reader)
+      {
+         ChunkSet done_chunks;
+
+         // Need to iterate through the pre-existing output and figure out what points it
+         // has processed. We cannot tell what points were purposefully skipped (if the user
+         // chose not to copy them into the output), but that shouldn't be a big deal since deciding
+         // to skip a point doesn't cost much CPU, so we can just do it again.
+
+         // We build up the set of &quot;done&quot; points as chunks.
+
+         std::size_t previous_index = 0;
+         bool building_chunk = false;
+         std::size_t chunk_start;
+         std::size_t chunk_end;
+         while(not resume_reader.eoi()) // while not end of input
+         {
+            std::size_t input_index;
+            bool is_valid = resume_reader.retrieve(input_index, &quot;input_dataset_index&quot;);
+
+            if(is_valid)
+            {
+               if(not building_chunk)
+               {
+                  // Not building a chunk, and this point is valid, so start new (will be the first) chunk
+                  building_chunk = true;
+                  chunk_start = input_index;
+               }
+               else if(input_index==(previous_index+1))
+               {
+                  // Point is just an increment by one, so still part of this chunk
+                  // Do nothing.
+               }
+               else if(input_index==previous_index)
+               {
+                  // Reader didn't progress, error.
+                  std::ostringstream err;
+                  err &lt;&lt; &quot;'resume_reader' object returned the same value for 'input_dataset_index' twice ('&quot;&lt;&lt;input_index&lt;&lt;&quot;')! This means that it either didn't increment properly during this postprocessor run, or the input dataset contains the same point twice! Either case indicates a bug in the postprocessor, please report it.&quot;;
+                  Scanner::scan_error().raise(LOCAL_INFO,err.str());
+               }
+               else
+               {
+                  // Non-incremental change in input_index! Could be higher or lower, either way, we
+                  // close the previous chunk and start a new one.
+                  chunk_end = previous_index;
+                  done_chunks.insert(Chunk(chunk_start,chunk_end));
+                  chunk_start = input_index;
+               }
+
+               previous_index = input_index;
+            }
+
+            resume_reader.get_next_point(); // Move reader to next previously processed point
+         }
+         // Need to close off last chunk
+         if(building_chunk)
+         {
+            chunk_end = previous_index;
+            done_chunks.insert(Chunk(chunk_start,chunk_end));
+         }
+
+         return merge_chunks(done_chunks); // Simplify the chunks and return them
+      }
+
+      ChunkSet merge_chunks(const ChunkSet&amp; input_chunks)
+      {
+        ChunkSet merged_chunks;
+        if(input_chunks.size()&gt;0)
+        {
+           Chunk new_chunk;
+           std::size_t prev_chunk_end = 0;
+           new_chunk.start = input_chunks.begin()-&gt;start; // Start of first chunk
+           for(ChunkSet::const_iterator it=input_chunks.begin();
+                it!=input_chunks.end(); ++it)
+           {
+              if(prev_chunk_end!=0 and it-&gt;start &gt; prev_chunk_end+1)
+              {
+                 // Gap detected; close the existing chunk and start a new one.
+                 new_chunk.end = prev_chunk_end;
+                 merged_chunks.insert(new_chunk);
+                 new_chunk.start = it-&gt;start;
+              }
+
+              if(it-&gt;end &gt; prev_chunk_end)
+              {
+                prev_chunk_end = it-&gt;end;
+              }
+           }
+           // No more chunks, close the last open chunk
+           new_chunk.end = prev_chunk_end;
+           merged_chunks.insert(new_chunk);
+           // Sanity check; Starts and ends of merged chunks should match some start/end in the input chunks
+           for(ChunkSet::const_iterator it=merged_chunks.begin();
+                it!=merged_chunks.end(); ++it)
+           {
+              bool found_start = false;
+              bool found_end = false;
+              for(ChunkSet::const_iterator jt=input_chunks.begin();
+                   jt!=input_chunks.end(); ++jt)
+              {
+                if(it-&gt;start==jt-&gt;start) found_start = true;
+                if(it-&gt;end==jt-&gt;end) found_end = true;
+              }
+              if(not found_start or not found_end)
+              {
+                 std::ostringstream err;
+                 err &lt;&lt; &quot;Error, merged 'done_chunks' are not consistent with the originally input done_chunks! This indicates a bug in the merge_chunks routine of the postprocessor, please report it. Debug output:&quot; &lt;&lt; endl;
+                 err &lt;&lt; &quot;Problem merged chunk was [&quot;&lt;&lt;it-&gt;start&lt;&lt;&quot;,&quot;&lt;&lt;it-&gt;end&lt;&lt;&quot;]&quot;&lt;&lt;endl;
+                 Scanner::scan_error().raise(LOCAL_INFO,err.str());
+              }
+              // else fine, move to next merged chunk
+           }
+        }
+        // else there are no input chunks, just return an empty ChunkSet
+        return merged_chunks;
+      }
+
+      // Gather a bunch of ints from all processes (COLLECTIVE OPERATION)
+      #ifdef WITH_MPI
+      std::vector&lt;int&gt; allgather_int(int myval, GMPI::Comm&amp; comm)
+      {
+          const MPI_Datatype datatype = GMPI::get_mpi_data_type&lt;int&gt;::type(); // datatype for ints
+          int sendbuf = myval;
+          std::vector&lt;int&gt; all_vals(comm.Get_size(),0);
+          MPI_Allgather(
+             &amp;sendbuf, /* send buffer */
+             1, /* send count */
+             datatype, /* send datatype */
+             &amp;all_vals[0], /* recv buffer */
+             1, /* recv count */
+             datatype, /* recv datatype */
+             *(comm.get_boundcomm()) /* communicator */
+          );
+          return all_vals;
+      }
+      #endif
+
+
+      PPDriver::PPDriver()
+        : reader(NULL)
+        , printer(NULL)
+        , LogLike()
+        , new_params()
+        , req_models()
+        , longname()
+        , total_length()
+        , next_point(0)
+        , chunksize()
+        , done_chunks()
+        , all_params()
+        , data_labels()
+        , data_labels_copy()
+        , add_to_logl()
+        , subtract_from_logl()
+        , renaming_scheme()
+        , cut_less_than()
+        , cut_greater_than()
+        , discard_points_outside_cuts()
+        , update_interval()
+        , discard_old_logl()
+        , logl_purpose_name()
+        , reweighted_loglike_name()
+        , root()
+        , rank()
+        #ifdef WITH_MPI
+        , comm(NULL)
+        #endif
+        , verbose(false)
+      {}
+
+      PPDriver::PPDriver(
+           Printers::BaseBaseReader* const r
+         , Printers::BaseBasePrinter* const p
+         , Scanner::like_ptr const l
+         , const PPOptions&amp; o
+        )
+        : reader(r)
+        , printer(p)
+        , LogLike(l)
+        , new_params()
+        , req_models()
+        , longname()
+        , total_length(getReader().get_dataset_length())
+        , next_point(0)
+        , chunksize(o.chunksize)
+        , done_chunks()
+        , all_params                 (o.all_params                 )
+        , data_labels                (o.data_labels                )
+        , data_labels_copy           (o.data_labels_copy           )
+        , add_to_logl                (o.add_to_logl                )
+        , subtract_from_logl         (o.subtract_from_logl         )
+        , renaming_scheme            (o.renaming_scheme            )
+        , cut_less_than              (o.cut_less_than              )
+        , cut_greater_than           (o.cut_greater_than           )
+        , discard_points_outside_cuts(o.discard_points_outside_cuts)
+        , update_interval            (o.update_interval            )
+        , discard_old_logl           (o.discard_old_logl           )
+        , logl_purpose_name          (o.logl_purpose_name          )
+        , reweighted_loglike_name    (o.reweighted_loglike_name    )
+        , root                       (o.root                       )
+        , rank                       (o.rank                       )
+        #ifdef WITH_MPI
+        , comm                       (o.comm                       )
+        #endif
+        , verbose                    (o.verbose                    )
+    {
+         // Retrieve &quot;visibile&quot; parameter and model names
+         // This will ignore parameters with fixed values in the yaml file,
+         // allowing those to be input or overridden manually
+         std::vector&lt;std::string&gt; keys = getLogLike()-&gt;getPrior().getShownParameters();
+
+         // Pull the keys apart into model-name, parameter-name pairs
+         if(rank==0) std::cout &lt;&lt; &quot;Number of model parameters to be retrieved from previous output: &quot;&lt;&lt; keys.size() &lt;&lt;std::endl;
+         for(auto it=keys.begin(); it!=keys.end(); ++it)
+         {
+            if(rank==0) std::cout &lt;&lt; &quot;   &quot; &lt;&lt; *it &lt;&lt; std::endl;
+            std::vector&lt;std::string&gt; splitkey = Utils::delimiterSplit(*it, &quot;::&quot;);
+            std::string model = splitkey[0];
+            std::string par   = splitkey[1];
+            req_models[model].push_back(par);
+            longname[model][par] = *it;
+         }
+         #ifdef WITH_MPI
+         if(comm==NULL)
+         {
+             std::ostringstream err;
+             err &lt;&lt; &quot;No MPI communicator supplied to postprocessor driver object! This is a bug in the postprocessor scanner plugin, please report it.&quot;;
+             Scanner::scan_error().raise(LOCAL_INFO,err.str());
+         }
+         #endif
+      }
+
+      Printers::BaseBaseReader&amp; PPDriver::getReader()
+      {
+         if(reader==NULL)
+         {
+             std::ostringstream err;
+             err &lt;&lt; &quot;Postprocessor tried to access reader object, but found only a NULL pointer! The postprocessor has therefore not been set up correctly, please report this bug.&quot;;
+             Scanner::scan_error().raise(LOCAL_INFO,err.str());
+         }
+         return *reader;
+      }
+
+      Printers::BaseBasePrinter&amp; PPDriver::getPrinter()
+      {
+         if(printer==NULL)
+         {
+             std::ostringstream err;
+             err &lt;&lt; &quot;Postprocessor tried to access printer object, but found only a NULL pointer! The postprocessor has therefore not been set up correctly, please report this bug.&quot;;
+             Scanner::scan_error().raise(LOCAL_INFO,err.str());
+         }
+         return *printer;
+      }
+
+      Scanner::like_ptr PPDriver::getLogLike()
+      {
+         // Actually it is a strange Greg-pointer, can't set it to NULL it seems.
+         // if(LogLike==NULL)
+         // {
+         //     std::ostringstream err;
+         //     err &lt;&lt; &quot;Postprocessor tried to access LogLike object, but found only a NULL pointer! The postprocessor has therefore not been set up correctly, please report this bug.&quot;;
+         //     Scanner::scan_error().raise(LOCAL_INFO,err.str());
+         // }
+         return LogLike;
+      }
+
+      void PPDriver::check_settings()
+      {
+         new_params = all_params; // Parameters not present in the input file; to be deduced here. Start from everything and cut out those in the input file.
+
+         if(not discard_old_logl)
+         {
+            if(std::find(data_labels.begin(), data_labels.end(), logl_purpose_name)
+                 != data_labels.end())
+            {
+               std::ostringstream err;
+               err &lt;&lt; &quot;Error starting postprocessing run! The 'purpose' name selected for the likelihood to be computed ('&quot;&lt;&lt;logl_purpose_name&lt;&lt;&quot;') collides with an entry in the chosen input data. Please either change the name given in the scanner option 'like', or set 'permit_discard_old_likes' to 'true' to allow the old data to be replaced in the new output.&quot;;
+               Scanner::scan_error().raise(LOCAL_INFO,err.str());
+            }
+            if(std::find(data_labels.begin(), data_labels.end(), reweighted_loglike_name)
+                 != data_labels.end())
+            {
+               std::ostringstream err;
+               err &lt;&lt; &quot;Error starting postprocessing run! The label name selected for the result of likelihood weighting ('&quot;&lt;&lt;reweighted_loglike_name&lt;&lt;&quot;') collides with an entry in the chosen input data. Please either change the name given in the scanner option 'reweighted_like', or set 'permit_discard_old_likes' to 'true' to allow the old data to be replaced in the new output.&quot;;
+               Scanner::scan_error().raise(LOCAL_INFO,err.str());
+            }
+         }
+
+         for(std::map&lt;std::string,std::string&gt;::iterator it = renaming_scheme.begin(); it!=renaming_scheme.end(); ++it)
+         {
+            std::string in_label = it-&gt;first;
+            std::string out_label = it-&gt;second;
+
+            // Make sure input label actually exists
+            if(std::find(data_labels.begin(), data_labels.end(), in_label)
+                == data_labels.end())
+            {
+               //Whoops, could not find this label in the input data
+               std::ostringstream err;
+               err &lt;&lt; &quot;Could not find data labelled '&quot;&lt;&lt;in_label&lt;&lt;&quot;' in the input dataset for postprocessing! In your master YAML file you have requested this data to be relabelled to '&quot;&lt;&lt;out_label&lt;&lt;&quot;', however it could not be found under the specified input label.&quot;;
+               Scanner::scan_error().raise(LOCAL_INFO,err.str());
+            }
+
+            // Make sure chosen output name is not already claimed by the printer
+            if(std::find(all_params.begin(), all_params.end(), out_label)
+                != all_params.end())
+            {
+               //Whoops, name already in use by something else!
+               std::ostringstream err;
+               err &lt;&lt; &quot;Cannot rename dataset '&quot;&lt;&lt;in_label&lt;&lt;&quot;' to '&quot;&lt;&lt;out_label&lt;&lt;&quot;'! The requested output label has already been claimed by some other component in the scan. Please choose a different output label for this dataset in the master YAML file, or remove it from the 'rename' options for the postprocessor scanner plugin&quot;;
+               Scanner::scan_error().raise(LOCAL_INFO,err.str());
+            }
+
+            // Make sure chosen output name doesn't clash with an un-renamed item to be copied
+            std::set&lt;std::string&gt;::iterator jt = std::find(data_labels.begin(), data_labels.end(), out_label);
+            if(jt != data_labels.end())
+            {
+               // Potential clash; check if the name is going to be changed
+               std::map&lt;std::string,std::string&gt;::iterator kt = renaming_scheme.find(*jt);
+               if(kt == renaming_scheme.end())
+               {
+                  // Not getting renamed! Error
+                  std::ostringstream err;
+                  err &lt;&lt; &quot;Cannot rename dataset '&quot;&lt;&lt;in_label&lt;&lt;&quot;' to '&quot;&lt;&lt;out_label&lt;&lt;&quot;'! The requested output label clashes with an item in the input dataset (which isn't getting renamed). Please choose a different output label for this dataset in the master YAML file, remove it from the 'rename' options for the postprocessor scanner plugin, or request for the conflicting input label to be renamed.&quot;;
+                  Scanner::scan_error().raise(LOCAL_INFO,err.str());
+               }
+               // Could still be a problem if the renamed name clashes, but we will check for that separately
+            }
+
+            // Make sure chosen output name doesn't clash with another renamed name
+            for(std::map&lt;std::string,std::string&gt;::iterator jt = renaming_scheme.begin();
+                   jt!=renaming_scheme.end(); ++jt)
+            {
+               if((jt-&gt;second==it-&gt;second) and (jt-&gt;first!=it-&gt;first))
+               {
+                  // If the out_labels match (and we aren't just clashing with ourselves)
+                  // Then this is forbidden
+                  std::ostringstream err;
+                  err &lt;&lt; &quot;Cannot rename dataset '&quot;&lt;&lt;in_label&lt;&lt;&quot;' to '&quot;&lt;&lt;out_label&lt;&lt;&quot;'! The requested output label has already been claimed by some another item in the renaming scheme (you requested '&quot;&lt;&lt;jt-&gt;first&lt;&lt;&quot;' to also be renamed to '&quot;&lt;&lt;jt-&gt;second&lt;&lt;&quot;'). Please choose a different output label for one of these datasets in the master YAML file, or remove one of them from the 'rename' options for the postprocessor scanner plugin&quot;;
+                  Scanner::scan_error().raise(LOCAL_INFO,err.str());
+               }
+            }
+
+            // Make sure the user isn't trying to rename a protected name (MPIrank, pointID)
+            if(in_label==&quot;MPIrank&quot; or in_label==&quot;pointID&quot;)
+            {
+               std::ostringstream err;
+                  err &lt;&lt; &quot;Cannot rename dataset '&quot;&lt;&lt;in_label&lt;&lt;&quot;' to '&quot;&lt;&lt;out_label&lt;&lt;&quot;'! The input dataset has a special purpose so renaming it is forbidden. Please remove it from the 'rename' options for the postprocessor scanner plugin in your master YAML file.&quot;;
+               Scanner::scan_error().raise(LOCAL_INFO,err.str());
+            }
+         }
+
+         // Check that the cut maps refer to input datasets that actually exist
+         for(std::map&lt;std::string,double&gt;::iterator it = cut_less_than.begin(); it!=cut_less_than.end(); ++it)
+         {
+            std::string in_label = it-&gt;first;
+            double cut_value = it-&gt;second;
+
+            // Make sure input label actually exists
+            if(std::find(data_labels.begin(), data_labels.end(), in_label)
+                == data_labels.end())
+            {
+               //Whoops, could not find this label in the input data
+               std::ostringstream err;
+               err &lt;&lt; &quot;Could not find data labelled '&quot;&lt;&lt;in_label&lt;&lt;&quot;' in the input dataset for postprocessing! In your master YAML file you have requested to only postprocess points satisfying the criteria '&quot;&lt;&lt;in_label&lt;&lt;&quot;' &lt;= &quot;&lt;&lt;cut_value&lt;&lt;&quot;, however the requested dataset for cutting could not be found under the specified input label. Please fix the label or remove this entry from the 'cut_less_than' list.&quot;;
+               Scanner::scan_error().raise(LOCAL_INFO,err.str());
+            }
+
+            // Make sure it has type 'double'
+            if(getReader().get_type(in_label) != Printers::getTypeID&lt;double&gt;())
+            {
+               std::ostringstream err;
+               err &lt;&lt; &quot;Type of input dataset '&quot;&lt;&lt;in_label&lt;&lt;&quot;' is not 'double'! In your master YAML file you have requested to only postprocess points satisfying the criteria '&quot;&lt;&lt;in_label&lt;&lt;&quot;' &lt;= &quot;&lt;&lt;cut_value&lt;&lt;&quot;, however the requested dataset for cutting cannot be retrieved as type 'double'. Currently cuts can only be applied to datasets stored as doubles, sorry! Please remove this entry from the 'cut_less_than' list.&quot;;
+               // DEBUG
+               err &lt;&lt; std::endl &lt;&lt; &quot;input type ID:&quot; &lt;&lt; getReader().get_type(in_label) &lt;&lt; std::endl;
+               err              &lt;&lt; &quot;double type ID:&quot; &lt;&lt; Printers::getTypeID&lt;double&gt;() &lt;&lt; std::endl;
+               Scanner::scan_error().raise(LOCAL_INFO,err.str());
+            }
+         }
+         for(std::map&lt;std::string,double&gt;::iterator it = cut_greater_than.begin(); it!=cut_greater_than.end(); ++it)
+         {
+            std::string in_label = it-&gt;first;
+            double cut_value = it-&gt;second;
+
+            // Make sure input label actually exists
+            if(std::find(data_labels.begin(), data_labels.end(), in_label)
+                == data_labels.end())
+            {
+               //Whoops, could not find this label in the input data
+               std::ostringstream err;
+               err &lt;&lt; &quot;Could not find data labelled '&quot;&lt;&lt;in_label&lt;&lt;&quot;' in the input dataset for postprocessing! In your master YAML file you have requested to only postprocess points satisfying the criteria '&quot;&lt;&lt;in_label&lt;&lt;&quot;' &gt;= &quot;&lt;&lt;cut_value&lt;&lt;&quot;, however the requested dataset for cutting could not be found under the specified input label. Please fix the label or remove this entry from the 'cut_greater_than' list.&quot;;
+               Scanner::scan_error().raise(LOCAL_INFO,err.str());
+            }
+
+            // Make sure it has type 'double'
+            if(getReader().get_type(in_label) != Printers::getTypeID&lt;double&gt;())
+            {
+               std::ostringstream err;
+               err &lt;&lt; &quot;Type of input dataset '&quot;&lt;&lt;in_label&lt;&lt;&quot;' is not 'double'! In your master YAML file you have requested to only postprocess points satisfying the criteria '&quot;&lt;&lt;in_label&lt;&lt;&quot;' &lt;= &quot;&lt;&lt;cut_value&lt;&lt;&quot;, however the requested dataset for cutting cannot be retrieved as type 'double'. Currently cuts can only be applied to datasets stored as doubles, sorry! Please remove this entry from the 'cut_greater_than' list.&quot;;
+               Scanner::scan_error().raise(LOCAL_INFO,err.str());
+            }
+   }
+
+
+         // Check what data is to be copied and what is to be recomputed
+         if(rank==0) std::cout &lt;&lt; &quot;Determining which data is to be copied from input file to new output file, and which will be recomputed...&quot; &lt;&lt;std::endl;
+         if(rank==0) std::cout &lt;&lt; &quot; Datasets found in input file: &quot; &lt;&lt; std::endl;
+         for(auto it = data_labels.begin(); it!=data_labels.end(); ++it)
+         {
+            // Check if any parameters we plan to copy have already been registered by the
+            // printer system.
+            // This is actually a little tricky, since names of parameters can be modified
+            // in the output depending on what printer was used. So far we have kept a certain
+            // consistency that can be exploited, but it isn't enforced. Should note this somewhere
+            // in the printer documentation.
+            // For example, when printing ModelParameters, they have their actual parameter names
+            // appended and they are output as separate datasets/columns. Likewise for vector
+            // components. But this appending rule is so far consistent, so I think we can just
+            // check that no prefix substring of the proposed copy has already been registered.
+            // Not sure if this has a danger of observable names just by accident being prefixes of
+            // some other name?
+            bool is_new = true;
+            for(auto jt = all_params.begin(); jt!=all_params.end(); ++jt)
+            {
+               if( ( (*it)==(*jt) )
+                   or Gambit::Utils::startsWith(*it,(*jt)+&quot;:&quot;)
+                   or Gambit::Utils::startsWith(*it,(*jt)+&quot;[&quot;)
+                   or Gambit::Utils::startsWith(*it,(*jt)+&quot;{&quot;)
+                   or Gambit::Utils::startsWith(*it,(*jt)+&quot;%&quot;)
+                   or Gambit::Utils::startsWith(*it,(*jt)+&quot;#&quot;)
+                 ) // if not [input data label] starts with [existing parameter] (plus append seperator character, for extra info like parameter name or index)
+               {
+                  // Then it is not new. Not allowed to copy this, the likelihood container is already printing it anew.
+                  new_params.erase(*jt);
+                  is_new = false;
+                  break;
+               }
+            }
+
+            // If the input_dataset_index dataset is present, recompute it
+            if( (*it) == &quot;input_dataset_index&quot;)
+            {
+              is_new = false;
+            }
+
+            if(is_new)
+            {
+               data_labels_copy.insert(*it); // Not otherwise printed; schedule for copying
+               if(rank==0) std::cout &lt;&lt; &quot;   copy     : &quot;&lt;&lt; (*it) &lt;&lt;std::endl;
+               // Check if it is getting relabelled
+               std::map&lt;std::string,std::string&gt;::iterator jt = renaming_scheme.find(*it);
+               if(jt != renaming_scheme.end())
+               {
+                  // Yep, getting relabelled
+                  if(rank==0) std::cout &lt;&lt; &quot;     to --&gt; : &quot;&lt;&lt; jt-&gt;second &lt;&lt;std::endl;
+               }
+            }
+            else
+            {
+               if(rank==0) std::cout &lt;&lt; &quot;   recompute: &quot;&lt;&lt; (*it) &lt;&lt;std::endl;
+               // Check if it is getting relabelled
+               std::map&lt;std::string,std::string&gt;::iterator jt = renaming_scheme.find(*it);
+               if(jt != renaming_scheme.end())
+               {
+                  // Yep, getting relabelled
+                  data_labels_copy.insert(*it); // Allowed to copy this after all since the name will be changed
+                  if(rank==0)
+                  {
+                     std::cout &lt;&lt; &quot;     with old data copied&quot;&lt;&lt;std::endl;
+                     std::cout &lt;&lt; &quot;     to --&gt; : &quot;&lt;&lt; jt-&gt;second &lt;&lt;std::endl;
+                  }
+               }
+            }
+            // Check if a cut is being applied on this input dataset
+            if(rank==0)
+            {
+               std::map&lt;std::string,double&gt;::iterator jt = cut_less_than.find(*it);
+               if(jt != cut_less_than.end())
+               {
+                     std::cout &lt;&lt; &quot;     with cut &lt;= &quot;&lt;&lt; jt-&gt;second &lt;&lt;std::endl;
+               }
+               std::map&lt;std::string,double&gt;::iterator kt = cut_greater_than.find(*it);
+               if(kt != cut_greater_than.end())
+               {
+                     std::cout &lt;&lt; &quot;     with cut &gt;= &quot;&lt;&lt; kt-&gt;second &lt;&lt;std::endl;
+               }
+            }
+         }
+         // Might as well also list what new stuff is listed for creation
+         if(rank==0)
+         {
+           std::cout &lt;&lt; &quot; New datasets to be added: &quot; &lt;&lt; std::endl;
+           for(auto it = new_params.begin(); it!=new_params.end(); ++it)
+           {
+              std::cout &lt;&lt; &quot;   &quot; &lt;&lt; *it &lt;&lt; std::endl;
+           }
+         }
+         if(rank==0) std::cout &lt;&lt; &quot;Copy analysis complete.&quot; &lt;&lt;std::endl;
+
+
+         if(not discard_old_logl)
+         {
+            // Check if any of the likelihood components being added or subtracted from the likelihood
+            // are going to be replaced in the new output. User must set 'permit_discard_old_likes&quot; to explictly allow this.
+            for(auto it=add_to_logl.begin(); it!=add_to_logl.end(); ++it)
+            {
+               if(std::find(all_params.begin(), all_params.end(), *it)
+                    != all_params.end())
+               {
+                  std::ostringstream err;
+                  err &lt;&lt; &quot;Error starting postprocessing run! One of the data entries listed in the option 'add_to_like' is scheduled to be recalculated during postprocessing (&quot;&lt;&lt;*it&lt;&lt;&quot;). This is permitted; the old value will be added to 'like' and then discarded and replaced by the new value, however you must explicitly permit this to occur by setting 'permit_discard_old_likes' to 'true'.&quot;;
+                  Scanner::scan_error().raise(LOCAL_INFO,err.str());
+               }
+            }
+
+            for(auto it=subtract_from_logl.begin(); it!=subtract_from_logl.end(); ++it)
+            {
+               if(std::find(all_params.begin(), all_params.end(), *it)
+                    != all_params.end())
+               {
+                  std::ostringstream err;
+                  err &lt;&lt; &quot;Error starting postprocessing run! One of the data entries listed in the option 'subtract_from_like' is scheduled to be recalculated during postprocessing (&quot;&lt;&lt;*it&lt;&lt;&quot;). This is permitted; the old value will be subtracted from 'like' and then discarded and replaced by the new value, however you must explicitly permit this to occur by setting 'permit_discard_old_likes' to 'true'.&quot;;
+                  Scanner::scan_error().raise(LOCAL_INFO,err.str());
+               }
+
+            }
+         }
+
+      }
+
+      int PPDriver::run_main_loop(const Chunk&amp; mychunk)
+      {
+         bool quit = false; // Flag to abort 'scan' early.
+         std::size_t loopi = getReader().get_current_index(); // track true index of input file
+         std::size_t ppi = 0; // track number of points actually processed
+         std::size_t n_passed = 0; // Number which have passed any user-specified cuts.
+         bool found_chunk_start = false; // Make sure we start processing from the correct place
+
+         //std::cout &lt;&lt; &quot;Chunk to process: &quot;&lt;&lt;mychunk.start&lt;&lt;&quot; -&gt; &quot;&lt;&lt;mychunk.end&lt;&lt;std::endl;
+
+         if(mychunk.eff_length==0)
+         {
+            // Don't bother doing any processing for zero length chunks
+            // Just check whether the calling code wants us to shut down early
+            // NOTE: A trick here is that the Master process never runs the likelihood container
+            // in this Master/Slave setup. So we have to manually check for the signal,
+            // which is a little clumsy because I ideally wanted to leave this up to the
+            // likelihood container. But doing this locks the postprocessor into using
+            // the GAMBIT signal handling methods. TODO: is there another way?
+
+            //if(verbose) logger() &lt;&lt; LogTags::debug &lt;&lt; LogTags::scanner &lt;&lt; &quot;Chunk to process has length zero! Will check for shutdown signals and then exit chunk process loop&quot; &lt;&lt; EOM;
+
+            quit = Gambit::Scanner::Plugins::plugin_info.early_shutdown_in_progress();
+            if(not quit)
+            {
+               // Inelegant bit @{
+               if(signaldata().check_if_shutdown_begun())
+               {
+                  Gambit::Scanner::Plugins::plugin_info.set_early_shutdown_in_progress();
+                  quit = true;
+               }
+               // @}
+            }
+
+            loopi=mychunk.end; // Set loop counter to end of batch to satisfy checks at end of this function
+         }
+         else
+         {
+            PPIDpair current_point = getReader().get_current_point();
+            loopi = getReader().get_current_index();
+
+            //iif(verbose) logger() &lt;&lt; LogTags::debug &lt;&lt; LogTags::scanner &lt;&lt; &quot;Starting loop over old points (&quot;&lt;&lt;total_length&lt;&lt;&quot; in total)&quot; &lt;&lt; std::endl;
+            //std::cout &lt;&lt; &quot;This task (rank &quot;&lt;&lt;rank&lt;&lt;&quot; of &quot;&lt;&lt;numtasks&lt;&lt;&quot;), will process iterations &quot;&lt;&lt;mychunk.start&lt;&lt;&quot; through to &quot;&lt;&lt;mychunk.end&lt;&lt;&quot;, excluding any points that may have already been processed as recorded by resume data. This leaves &quot;&lt;&lt;mychunk.eff_length&lt;&lt;&quot; points for this rank to process.&quot;&lt;&lt;std::endl;
+
+            // Disable auto-incrementing of pointID's in the likelihood container. We will set these manually.
+            Gambit::Printers::auto_increment() = false;
+
+            bool stop_loop = false;
+
+            if(getReader().eoi())
+            {
+               std::cout &lt;&lt; &quot;Postprocessor (rank &quot;&lt;&lt;rank&lt;&lt;&quot;) immediately reached end of input file! Skipping execution of main loop, ...&quot;&lt;&lt;std::endl;
+               // We should exit with the &quot;unexpected finish&quot; error code if this has happened.
+            }
+
+            if(verbose) logger() &lt;&lt; LogTags::debug &lt;&lt; LogTags::scanner &lt;&lt; &quot;Searching dataset for chunk [&quot;&lt;&lt;mychunk.start&lt;&lt;&quot; -&gt; &quot;&lt;&lt;mychunk.end&lt;&lt;&quot;] (effective length &quot;&lt;&lt;mychunk.eff_length&lt;&lt;&quot;)&quot;&lt;&lt;EOM;
+            ChunkSet::iterator current_done_chunk=done_chunks.begin(); // Used to skip past points that are already done
+            while(not stop_loop) // while not end of input
+            {
+               // std::cout &lt;&lt; &quot;Current index: &quot;&lt;&lt;getReader().get_current_index()&lt;&lt;std::endl;
+               // std::cout &lt;&lt; &quot;Current loopi: &quot;&lt;&lt;loopi&lt;&lt;std::endl;
+               // std::cout &lt;&lt; &quot;Current printer pointID: &quot;&lt;&lt;Gambit::Printers::get_point_id()&lt;&lt;std::endl;
+               // std::cout &lt;&lt; &quot;eoi?: &quot;&lt;&lt;getReader().eoi()&lt;&lt;std::endl;
+
+               // Cancel processing of iterations beyond our assigned range
+               if(loopi&gt;mychunk.end)
+               {
+                  if(verbose) logger() &lt;&lt; LogTags::debug &lt;&lt; LogTags::scanner &lt;&lt; &quot;Reached the end of our batch, stopping iteration. (loopi:&quot;&lt;&lt;loopi&lt;&lt;&quot;, mychunk.end:&quot;&lt;&lt;mychunk.end&lt;&lt;&quot;)&quot; &lt;&lt; EOM;
+                  loopi--; // Return counter to the last index that we actually processed.
+                  break; // Exit the loop
+               }
+
+               // Send early quit signal if we unexpectedly hit the end of the input file
+               if(getReader().eoi())
+               {
+                  if(verbose) logger() &lt;&lt; LogTags::debug &lt;&lt; LogTags::scanner &lt;&lt; &quot;Unexpectedly hit end of input file!&quot; &lt;&lt;EOM;
+                  quit = true;
+               }
+
+               // Inelegant signal checking. TODO: Think about how this can be shifted over to ScannerBit
+               if(not quit)
+               {
+                  quit = Gambit::Scanner::Plugins::plugin_info.early_shutdown_in_progress();
+               }
+
+               if(not quit)
+               {
+                  // Inelegant bit @{
+                  if(signaldata().check_if_shutdown_begun())
+                  {
+                     Gambit::Scanner::Plugins::plugin_info.set_early_shutdown_in_progress();
+                     quit = true;
+                  }
+                  // @}
+               }
+
+               if(not quit)
+               {
+                  unsigned int       MPIrank = current_point.rank;
+                  unsigned long long pointID = current_point.pointID;
+
+                  if(verbose) logger() &lt;&lt; LogTags::debug &lt;&lt; LogTags::scanner
+                     &lt;&lt; &quot;Current point: &quot;&lt;&lt;MPIrank&lt;&lt;&quot;, &quot;&lt;&lt;pointID&lt;&lt;std::endl
+                     &lt;&lt; &quot;Current index: &quot;&lt;&lt;getReader().get_current_index()&lt;&lt;std::endl
+                     &lt;&lt; &quot;Current loopi: &quot;&lt;&lt;loopi&lt;&lt;EOM;
+
+                  // Make sure we didn't somehow get desynchronised from the reader's internal index
+                  if(loopi!=getReader().get_current_index())
+                  {
+                     std::ostringstream err;
+                     err &lt;&lt; &quot;The postprocessor has become desynchronised with its assigned reader object! The postprocessor index is &quot;&lt;&lt;loopi&lt;&lt;&quot; but the reader index is &quot;&lt;&lt;getReader().get_current_index()&lt;&lt;&quot;! This indicates a bug in either the postprocessor or the reader, please report it&quot;;
+                     Scanner::scan_error().raise(LOCAL_INFO,err.str());
+                  }
+
+                  // Check whether the calling code wants us to shut down early
+                  quit = Gambit::Scanner::Plugins::plugin_info.early_shutdown_in_progress();
+                  if(quit)
+                  {
+                     // Need to save data about which points have been processed, so we
+                     // can resume processing from here.
+                     if(verbose) logger() &lt;&lt; LogTags::debug &lt;&lt; LogTags::scanner &lt;&lt; &quot;Postprocessor (rank &quot;&lt;&lt;rank&lt;&lt;&quot;) received quit signal! Aborting run.&quot; &lt;&lt; EOM;
+                     stop_loop = true;
+                  }
+
+                  // If we have moved past the end of the currently selected batch of &quot;done&quot;
+                  // points, then select the next batch (if there are any left)
+                  // if(current_done_chunk!=done_chunks.end()) std::cout &lt;&lt; &quot;Rank &quot;&lt;&lt;rank&lt;&lt;&quot;: loopi=&quot;&lt;&lt;loopi&lt;&lt;&quot;, current_done_chunk=[&quot;&lt;&lt;current_done_chunk-&gt;start&lt;&lt;&quot;,&quot;&lt;&lt;current_done_chunk-&gt;end&lt;&lt;&quot;]&quot;&lt;&lt;std::endl;
+                  while(current_done_chunk!=done_chunks.end() and loopi &gt; current_done_chunk-&gt;end)
+                  {
+                     //std::cout&lt;&lt;&quot;Rank &quot;&lt;&lt;rank&lt;&lt;&quot;: loopi &gt; current_done_chunk-&gt;end (&quot;&lt;&lt;loopi&lt;&lt;&quot; &gt; &quot;&lt;&lt;current_done_chunk-&gt;end&lt;&lt;&quot;). Moving to next done chunk...&quot;&lt;&lt;std::endl;
+                     ++current_done_chunk;
+                     //std::cout&lt;&lt;&quot;Rank &quot;&lt;&lt;rank&lt;&lt;&quot;: ...which is [&quot;&lt;&lt;current_done_chunk-&gt;start&lt;&lt;&quot;,&quot;&lt;&lt;current_done_chunk-&gt;end&lt;&lt;&quot;]&quot;&lt;&lt;std::endl;
+                  }
+
+                  // Skip loop ahead to the batch of points we are assigned to process,
+                  // and skip any points that are already processed;
+                  if(loopi&lt;mychunk.start or (current_done_chunk!=done_chunks.end() and current_done_chunk-&gt;iContain(loopi)))
+                  {
+                     //std::cout&lt;&lt;&quot;Skipping point (not in our batch)&quot;&lt;&lt;std::endl;
+                     //std::cout&lt;&lt;&quot;(loopi==&quot;&lt;&lt;loopi&lt;&lt;&quot;, mychunk.start=&quot;&lt;&lt;mychunk.start&lt;&lt;&quot;, current_done_chunk.start=&quot;&lt;&lt;current_done_chunk-&gt;start&lt;&lt;&quot;, current_done_chunk.end=&quot;&lt;&lt;current_done_chunk-&gt;end&lt;&lt;&quot;)&quot;&lt;&lt;std::endl;
+                     current_point = getReader().get_next_point();
+                     loopi++;
+                     continue;
+                  }
+
+                  // Make sure that the first point we *don't* skip is the correct starting point
+                  if(not found_chunk_start)
+                  {
+                     if(loopi==mychunk.start)
+                     {
+                        found_chunk_start=true;
+                     }
+                     else
+                     {
+                        std::ostringstream err;
+                        err&lt;&lt;&quot;The first point in this batch to be processed does not have the correct index! (mychunk.start=&quot;&lt;&lt;mychunk.start&lt;&lt;&quot;, but loopi=&quot;&lt;&lt;loopi&lt;&lt;&quot;). This is a bug, please report it.&quot;;
+                        Scanner::scan_error().raise(LOCAL_INFO,err.str());
+                     }
+                  }
+
+                  if((ppi % update_interval) == 0 and ppi!=0)
+                  {
+                     // Progress report
+                     std::cout &lt;&lt; &quot;Rank &quot;&lt;&lt;rank&lt;&lt;&quot; has processed &quot;&lt;&lt;ppi&lt;&lt;&quot; of &quot;&lt;&lt;mychunk.eff_length&lt;&lt;&quot; points (&quot;&lt;&lt;100*ppi/mychunk.eff_length&lt;&lt;&quot;%, with &quot;&lt;&lt;100*n_passed/ppi&lt;&lt;&quot;% passing all cuts)&quot;&lt;&lt;std::endl;
+                  }
+                  ppi++; // Processing is go, update counter.
+
+                  if(verbose) logger() &lt;&lt; LogTags::debug &lt;&lt; LogTags::scanner &lt;&lt; &quot;Found candidate point for postprocessing:&quot;&lt;&lt;std::endl
+                      &lt;&lt; &quot;  loopi = &quot;&lt;&lt;loopi&lt;&lt;&quot;, point = (&quot;&lt;&lt;current_point.rank&lt;&lt;&quot;, &quot;&lt;&lt;current_point.pointID&lt;&lt;&quot;)&quot;&lt;&lt;EOM;
+
+                  // Data about current point in input file
+                  if(current_point == Printers::nullpoint)
+                  {
+                     // No valid data here, go to next point
+                     if(verbose) logger() &lt;&lt; LogTags::debug &lt;&lt; LogTags::scanner &lt;&lt; &quot;Skipping point (no valid data here)&quot;&lt;&lt;EOM;
+                     current_point = getReader().get_next_point();
+                     loopi++;
+                     continue;
+                  }
+                  //std::cout &lt;&lt; &quot;Rank: &quot;&lt;&lt;rank&lt;&lt;&quot;, Ready to process! current iteration: &quot;&lt;&lt;loopi&lt;&lt;&quot;, current point:&quot; &lt;&lt; MPIrank &lt;&lt; &quot;, &quot; &lt;&lt; pointID &lt;&lt; std::endl;
+
+
+                  // Storage for retrieved parameters
+                  std::unordered_map&lt;std::string, double&gt; outputMap;
+
+                  // Extract the model parameters
+                  bool valid_modelparams = get_ModelParameters(outputMap);
+
+                  // Check if valid model parameters were extracted. If not, something may be wrong with the input file, or we could just be at the end of a buffer (e.g. in HDF5 case). Can't tell the difference, so just skip the point and continue.
+                  if(not valid_modelparams)
+                  {
+                     if(verbose) logger() &lt;&lt; LogTags::debug &lt;&lt; LogTags::scanner &lt;&lt; &quot;Skipping point as it has no valid ModelParameters&quot; &lt;&lt;EOM;
+                     current_point = getReader().get_next_point();
+                     loopi++;
+                     continue;
+                  }
+
+
+                  // Determine if model point passes the user-requested cuts
+                  // This is a little tricky because we don't know the type of the input dataset.
+                  // For now we will restrict the system so that it only works for datasets with
+                  // type 'double' (which is most stuff). We check for this earlier, so here we
+                  // can just assume that the requested datasets have the correct type.
+
+                  bool cuts_passed = true; // Will be set to false if any cut is failed, or a required entry is invalid
+                  for(std::map&lt;std::string,double&gt;::iterator it = cut_less_than.begin();
+                       it!=cut_less_than.end(); ++it)
+                  {
+                    if(cuts_passed)
+                    {
+                      std::string in_label = it-&gt;first;
+                      double cut_value = it-&gt;second;
+                      double buffer;
+                      bool valid = getReader().retrieve(buffer, in_label);
+                      if(valid)
+                      {
+                         cuts_passed = (buffer &lt;= cut_value);
+                      }
+                      else
+                      {
+                         cuts_passed = false;
+                      }
+                    }
+                  }
+
+                  for(std::map&lt;std::string,double&gt;::iterator it = cut_greater_than.begin();
+                       it!=cut_greater_than.end(); ++it)
+                  {
+                    if(cuts_passed)
+                    {
+                      std::string in_label = it-&gt;first;
+                      double cut_value = it-&gt;second;
+                      double buffer;
+                      bool valid = getReader().retrieve(buffer, in_label);
+                      if(valid)
+                      {
+                         cuts_passed = (buffer &gt;= cut_value);
+                      }
+                      else
+                      {
+                         cuts_passed = false;
+                      }
+                    }
+                  }
+
+                  if(cuts_passed) // Else skip new calculations and go straight to copying old results
+                  {
+                     if(verbose) logger() &lt;&lt; LogTags::debug &lt;&lt; LogTags::scanner &lt;&lt; &quot;Point passed all cuts, beginning new observable/likelihood calculations&quot;&lt;&lt;EOM;
+                     n_passed += 1; // Counter for number of points which have passed all the cuts.
+                     // Before calling the likelihood function, we need to set up the printer to
+                     // output correctly. The auto-incrementing of pointID's cannot be used,
+                     // because we need to match the old scan results. So we must set it manually.
+                     // This is currently a little clunky but it works. Make sure to have turned
+                     // off auto incrementing (see above).
+                     // The printer should still print to files split according to the actual rank, this
+                     // should only change the assigned pointID pair tag. Which should already be
+                     // properly unambiguous if the original scan was done properly.
+                     // Note: This might fail for merged datasets from separate runs. Not sure what the solution
+                     // for that is.
+                     getLogLike()-&gt;setRank(MPIrank); // For purposes of printing only
+                     getLogLike()-&gt;setPtID(pointID);
+
+                     // We feed the unit hypercube and/or transformed parameter map into the likelihood container. ScannerBit
+                     // interprets the map values as post-transformation and not apply a prior to those, and ensures that the
+                     // length of the cube plus number of transformed parameters adds up to the total number of parameter.
+                     double new_logL = getLogLike()(outputMap); // Here we supply *only* the map; no parameters to transform.
+
+                     // Print the index of the point in the input dataset, so that we can easily figure out later which ones
+                     // were postprocessed
+                     //std::cout&lt;&lt;&quot;Rank &quot;&lt;&lt;rank&lt;&lt;&quot;: Printing new data for point (&quot;&lt;&lt;MPIrank&lt;&lt;&quot;, &quot;&lt;&lt;pointID&lt;&lt;&quot;)&quot;&lt;&lt;std::endl;
+                     getPrinter().print(loopi, &quot;input_dataset_index&quot;, MPIrank, pointID);
+
+                     // Add old likelihood components as requested in the inifile
+                     if (not add_to_logl.empty() or not subtract_from_logl.empty())
+                     {
+
+                       double combined_logL = new_logL;
+                       bool is_valid(true);
+
+                       for(auto it=add_to_logl.begin(); it!=add_to_logl.end(); ++it)
+                       {
+                           std::string old_logl = *it;
+                           if(std::find(data_labels.begin(), data_labels.end(), old_logl)
+                               == data_labels.end())
+                           {
+                              std::ostringstream err;
+                              err &lt;&lt; &quot;In the input YAML file, you requested to 'add_to_like' the component '&quot;&lt;&lt;old_logl&lt;&lt;&quot;' from your input data file, however this does not match any of the data labels retrieved from the input data file you specified. Please check the spelling, path, etc. and try again.&quot;;
+                              Scanner::scan_error().raise(LOCAL_INFO,err.str());
+                           }
+                           if(getReader().get_type(*it) != Gambit::Printers::getTypeID&lt;double&gt;())
+                           {
+                              std::ostringstream err;
+                              err &lt;&lt; &quot;In the input YAML file, you requested 'add_to_like' component '&quot;&lt;&lt;old_logl&lt;&lt;&quot;' from your input data file, however this data cannot be retrieved as type 'double', therefore it cannot be used as a likelihood component. Please enter a different data label and try again.&quot;;
+                              Scanner::scan_error().raise(LOCAL_INFO,err.str());
+                           }
+
+                           double old_logl_value;
+                           is_valid = is_valid and getReader().retrieve(old_logl_value, old_logl);
+                           if(is_valid)
+                           {
+                              // Combine with the new logL component
+                              combined_logL += old_logl_value;
+                           }
+                           // Else old likelihood value didn't exist for this point; cannot combine with non-existent likelihood, so don't print the reweighted value.
+                       }
+
+                       // Now do the same thing for the components we want to subtract.
+                       for(auto it=subtract_from_logl.begin(); it!=subtract_from_logl.end(); ++it)
+                       {
+                           std::string old_logl = *it;
+                           if(std::find(data_labels.begin(), data_labels.end(), old_logl)
+                               == data_labels.end())
+                           {
+                              std::ostringstream err;
+                              err &lt;&lt; &quot;In the input YAML file, you requested to 'subtract_from_like' the component '&quot;&lt;&lt;old_logl&lt;&lt;&quot;' from your input data file, however this does not match any of the data labels retrieved from the input data file you specified. Please check the spelling, path, etc. and try again.&quot;;
+                              Scanner::scan_error().raise(LOCAL_INFO,err.str());
+                           }
+                           if(getReader().get_type(*it) != Gambit::Printers::getTypeID&lt;double&gt;())
+                           {
+                              std::ostringstream err;
+                              err &lt;&lt; &quot;In the input YAML file, you requested 'subtract_from_like' component '&quot;&lt;&lt;old_logl&lt;&lt;&quot;' from your input data file, however this data cannot be retrieved as type 'double', therefore it cannot be used as a likelihood component. Please enter a different data label and try again.&quot;;
+                              Scanner::scan_error().raise(LOCAL_INFO,err.str());
+                           }
+
+                           double old_logl_value;
+                           is_valid = is_valid and getReader().retrieve(old_logl_value, old_logl);
+                           if(is_valid)
+                           {
+                              // Combine with the new logL component, subtracting this time
+                              combined_logL -= old_logl_value;
+                           }
+                           // Else old likelihood value didn't exist for this point; cannot combine with non-existent likelihood, so don't print the reweighted value.
+                       }
+
+                       // Output the new reweighted likelihood (if all components were valid)
+                       if(is_valid) getPrinter().print(combined_logL, reweighted_loglike_name, MPIrank, pointID);
+
+                     }
+
+                  }
+                  else if(not discard_points_outside_cuts)
+                  {
+                     if(verbose) logger() &lt;&lt; LogTags::debug &lt;&lt; LogTags::scanner &lt;&lt; &quot;Point outside cuts, but discard_points_outside_cuts is false, so we will copy the old data for this point. But no new calculations will be done.&quot;&lt;&lt;EOM;
+
+                     //std::cout&lt;&lt;&quot;Rank &quot;&lt;&lt;rank&lt;&lt;&quot;: Copying existing data for point (&quot;&lt;&lt;MPIrank&lt;&lt;&quot;, &quot;&lt;&lt;pointID&lt;&lt;&quot;)&quot;&lt;&lt;std::endl;
+                     getPrinter().print(MPIrank, &quot;MPIrank&quot;, MPIrank, pointID);
+                     getPrinter().print(pointID, &quot;pointID&quot;, MPIrank, pointID);
+
+                     // Print the index of the point in the input dataset, so that we can easily figure out later which ones
+                     // were postprocessed
+                     getPrinter().print(loopi, &quot;input_dataset_index&quot;, MPIrank, pointID);
+
+                     // Now the modelparameters
+                     for(auto it=req_models.begin(); it!=req_models.end(); ++it)
+                     {
+                       ModelParameters modelparameters;
+                       std::string model = it-&gt;first;
+                       bool is_valid = getReader().retrieve(modelparameters, model);
+                       if(is_valid)
+                       {
+                          // Use the OutputName set by the reader to preserve the original naming of the modelparameters.
+                          getPrinter().print(modelparameters, modelparameters.getOutputName(), MPIrank, pointID);
+                       }
+                     }
+                  }
+                  else
+                  {
+                     if(verbose) logger() &lt;&lt; LogTags::debug &lt;&lt; LogTags::scanner &lt;&lt; &quot;Skipping point (outside cuts, no data to be copied)&quot;&lt;&lt;EOM;
+                  }
+
+                  if(not cuts_passed and discard_points_outside_cuts)
+                  {
+                     // Don't copy in this case, just discard the old data.
+                     //std::cout&lt;&lt;&quot;Rank &quot;&lt;&lt;rank&lt;&lt;&quot;: Discarding old data for point (&quot;&lt;&lt;MPIrank&lt;&lt;&quot;, &quot;&lt;&lt;pointID&lt;&lt;&quot;) (didn't pass the cuts)&quot;&lt;&lt;std::endl;
+                  }
+                  else
+                  {
+
+                     if(verbose) logger() &lt;&lt; LogTags::debug &lt;&lt; LogTags::scanner &lt;&lt; &quot;Copying old data for this point to new output file&quot; &lt;&lt; EOM;
+
+                     //std::cout&lt;&lt;&quot;Rank &quot;&lt;&lt;rank&lt;&lt;&quot;: Copying existing data for point (&quot;&lt;&lt;MPIrank&lt;&lt;&quot;, &quot;&lt;&lt;pointID&lt;&lt;&quot;)&quot;&lt;&lt;std::endl;
+
+                     for(std::set&lt;std::string&gt;::iterator it = data_labels_copy.begin(); it!=data_labels_copy.end(); ++it)
+                     {
+                        // Check if this input label has been mapped to a different output label.
+                        std::string in_label = *it;
+                        std::map&lt;std::string,std::string&gt;::iterator jt = renaming_scheme.find(in_label);
+                        if(jt != renaming_scheme.end())
+                        {
+                           // Found match! Do the renaming
+                           std::string out_label = jt-&gt;second;
+                           //std::cout &lt;&lt; &quot;Copying data from &quot;&lt;&lt;in_label&lt;&lt;&quot;, to output name &quot;&lt;&lt;out_label&lt;&lt;&quot;, for point (&quot;&lt;&lt;MPIrank&lt;&lt;&quot;, &quot;&lt;&lt;pointID&lt;&lt;&quot;)&quot; &lt;&lt;std::endl;
+                           getReader().retrieve_and_print(in_label,out_label,getPrinter(), MPIrank, pointID);
+                        }
+                        else
+                        {
+                           // No match, keep the old name
+                           //std::cout &lt;&lt; &quot;Copying data from &quot;&lt;&lt;in_label&lt;&lt;&quot; for point (&quot;&lt;&lt;MPIrank&lt;&lt;&quot;, &quot;&lt;&lt;pointID&lt;&lt;&quot;)&quot; &lt;&lt;std::endl;
+                           getReader().retrieve_and_print(in_label,getPrinter(), MPIrank, pointID);
+                        }
+                     }
+                  }
+
+                  if(not stop_loop)
+                  {
+                     current_point = getReader().get_next_point();
+                     loopi++;
+                  }
+               }
+               else
+               {
+                  stop_loop = true;
+               }
+            }
+         }
+
+         // Check if we finished because of reaching the end of the input
+         if(getReader().eoi() and loopi!=mychunk.end)
+         {
+            if(verbose) logger() &lt;&lt; LogTags::debug &lt;&lt; LogTags::scanner &lt;&lt; &quot;Postprocessor (rank &quot;&lt;&lt;rank&lt;&lt;&quot;) reached the end of the input file! (debug: was this the end of our batch? (loopi=&quot;&lt;&lt;loopi&lt;&lt;&quot;, mychunk.end=&quot;&lt;&lt;mychunk.end&lt;&lt;&quot;, total_length = &quot;&lt;&lt;total_length&lt;&lt;&quot;)&quot;&lt;&lt;EOM;
+
+            //std::cout &lt;&lt; &quot;Postprocessor (rank &quot;&lt;&lt;rank&lt;&lt;&quot;) reached the end of the input file! (debug: was this the end of our batch? (loopi=&quot;&lt;&lt;loopi&lt;&lt;&quot;, mychunk.end=&quot;&lt;&lt;mychunk.end&lt;&lt;&quot;, total_length = &quot;&lt;&lt;total_length&lt;&lt;&quot;)&quot;&lt;&lt;std::endl;
+
+         }
+
+         // We now set the return code to inform the calling code of why we stopped.
+         // 0 - Finished processing all the points we were assigned
+         // 1 - Saw quit flag and so stopped prematurely
+         // 2 - Encountered end of input file unexpectedly
+         int exit_code = 0;
+         if(quit)
+         {
+           exit_code = 1;
+           if(verbose) logger() &lt;&lt; LogTags::debug &lt;&lt; LogTags::scanner &lt;&lt; &quot;Postprocessor (rank &quot;&lt;&lt;rank&lt;&lt;&quot;) received quit signal! Aborting run.&quot; &lt;&lt; EOM;
+         }
+         else if(getReader().eoi() and loopi!=mychunk.end)
+         {
+           exit_code = 2;
+         }
+         if(exit_code==0)
+         {
+            // Make sure the exit state makes sense
+            if(loopi!=mychunk.end)
+            {
+               std::ostringstream err;
+               err&lt;&lt;&quot;According to the exit code, out batch is supposedly finished correctly, however the loopi counter is not equal to the proper end of our batch (loopi=&quot;&lt;&lt;loopi&lt;&lt;&quot;, mychunk.end=&quot;&lt;&lt;mychunk.end&lt;&lt;&quot;)&quot;;
+               Scanner::scan_error().raise(LOCAL_INFO,err.str());
+            }
+         }
+         return exit_code;
+      }
+
+      // Extract model parameters from the reader
+      bool PPDriver::get_ModelParameters(std::unordered_map&lt;std::string, double&gt;&amp; outputMap)
+      {
+         bool valid_modelparams = true;
+         for(auto it=req_models.begin(); it!=req_models.end(); ++it)
+         {
+
+           ModelParameters modelparameters;
+           std::string model = it-&gt;first;
+           bool is_valid = getReader().retrieve(modelparameters, model);
+           if(not is_valid)
+           {
+              valid_modelparams = false;
+              //std::cout &lt;&lt; &quot;ModelParameters marked 'invalid' for model &quot;&lt;&lt;model&lt;&lt;&quot;; point will be skipped.&quot; &lt;&lt; std::endl;
+           }
+           //std::cout &lt;&lt; &quot;Retrieved parameters for model '&quot;&lt;&lt;model&lt;&lt;&quot;' at point:&quot; &lt;&lt; std::endl;
+           //std::cout &lt;&lt; &quot; (&quot;&lt;&lt;MPIrank&lt;&lt;&quot;, &quot;&lt;&lt;pointID&lt;&lt;&quot;)  (rank,pointID)&quot; &lt;&lt; std::endl;
+           //const std::vector&lt;std::string&gt; names = modelparameters.getKeys();
+           //for(std::vector&lt;std::string&gt;::const_iterator
+           //    kt = names.begin();
+           //    kt!= names.end(); ++kt)
+           //{
+           //  std::cout &lt;&lt; &quot;    &quot; &lt;&lt; *kt &lt;&lt; &quot; : &quot; &lt;&lt; modelparameters[*kt] &lt;&lt; std::endl;
+           //}
+
+           // Check that all the required parameters were retrieved
+           // Could actually do this in the constructor for the scanner plugin, would be better, but a little more complicated. TODO: do this later.
+           std::vector&lt;std::string&gt; req_pars = it-&gt;second;
+           std::vector&lt;std::string&gt; retrieved_pars = modelparameters.getKeys();
+           for(auto jt = req_pars.begin(); jt != req_pars.end(); ++jt)
+           {
+             std::string par = *jt;
+             if(std::find(retrieved_pars.begin(), retrieved_pars.end(), par)
+                 == retrieved_pars.end())
+             {
+                std::ostringstream err;
+                err &lt;&lt; &quot;Error! Reader could not retrieve the required paramater '&quot;&lt;&lt;par&lt;&lt;&quot;' for the model '&quot;&lt;&lt;model&lt;&lt;&quot;' from the supplied data file! Please check that this parameter indeed exists in that file.&quot; &lt;&lt; std::endl;
+                Scanner::scan_error().raise(LOCAL_INFO,err.str());
+             }
+
+             // If it was found, add it to the return map
+             outputMap[ longname[model][par] ] = modelparameters[par];
+           }
+         }
+         return valid_modelparams;
+      }
+
+      // Define the set of points that can be auto-skipped
+      void PPDriver::set_done_chunks(const ChunkSet&amp; in_done_chunks)
+      {
+         done_chunks = in_done_chunks;
+      }
+
+      Chunk PPDriver::get_new_chunk()
+      {
+         std::size_t chunk_start = next_point;
+         std::size_t chunk_end   = next_point;
+         std::size_t chunk_length = 0;
+         bool stop = false;
+         bool found_start = false;
+
+         if(next_point &gt; total_length)
+         {
+            // Do nothing, no points left to process. Return special stop-signal chunk.
+            chunk_start = 0;
+            chunk_end   = 0;
+         }
+         else
+         {
+            // Build chunk to pre-set size. We select a new chunk by moving forward
+            // through the dataset, but skipping points that have already been processed.
+            while(not stop)
+            {
+               bool point_is_done = false;
+               for(ChunkSet::const_iterator donechunk=done_chunks.begin();
+                    donechunk!=done_chunks.end(); ++donechunk)
+               {
+                  // Check if the next scheduled point has been processed previously
+                  if(donechunk-&gt;iContain(next_point)) point_is_done = true;
+               }
+
+               if(not point_is_done)
+               {
+                  chunk_length++; // Point needs to be processed, count it towards total processing length
+                  if(not found_start)
+                  {
+                     chunk_start = next_point; // Marking the starting point if this is the first unprocessed point to be found
+                     found_start = true;
+                  }
+               }
+
+               if(next_point == total_length)
+               {
+                  // Stop early because we hit the end of the dataset
+                  chunk_end = total_length;
+                  stop = true;
+               }
+               else if(chunk_length == chunksize)
+               {
+                  // Chunk contains enough unprocessed points; stop adding more.
+                  chunk_end = next_point;
+                  stop = true;
+               }
+               else if(next_point &gt; total_length)
+               {
+                  std::ostringstream err;
+                  err &lt;&lt; &quot;Error generating chunk to be processed; next_point exceeds total length of dataset. Something has gone wrong for this to happen, please report this as a postprocessor bug.&quot; &lt;&lt; std::endl;
+                  Scanner::scan_error().raise(LOCAL_INFO,err.str());
+               }
+               else if(chunk_length &gt; chunksize)
+               {
+                  std::ostringstream err;
+                  err &lt;&lt; &quot;Error generating chunk to be processed; length of generated chunk exceeds allocated size. Something has gone wrong for this to happen, please report this as a postprocessor bug.&quot; &lt;&lt; std::endl;
+                  Scanner::scan_error().raise(LOCAL_INFO,err.str());
+               }
+
+               next_point++;
+            }
+         }
+
+         // Return to the chunk to be processed
+         //std::cout&lt;&lt;&quot;chunk_start :&quot;&lt;&lt;chunk_start&lt;&lt;std::endl;
+         //std::cout&lt;&lt;&quot;chunk_end   :&quot;&lt;&lt;chunk_end&lt;&lt;std::endl;
+         //std::cout&lt;&lt;&quot;chunk_length:&quot;&lt;&lt;chunk_length&lt;&lt;std::endl;
+         return Chunk(chunk_start,chunk_end,chunk_length);
+      }
+
+      unsigned long long PPDriver::next_point_index()
+      {
+         return next_point;
+      }
+
+      unsigned long long PPDriver::get_total_length()
+      {
+         return total_length;
+      }
+
+
+   }
+}
+</code></pre><hr><p>Updated on 2022-08-02 at 18:18:37 +0000</p><div class=edit-page><a href=https://github.com/RC1242RC/gambit_gh_pages/blob/master/content/en/documentation/code/main/Files/postprocessor__2_80_80_2postprocessor__object_8cpp.md><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2"><path d="M17 3a2.828 2.828.0 114 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></svg>Edit this page on GitHub</a></div></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a class=text-muted href=https://www.netlify.com/>Netlify</a>, <a class=text-muted href=https://gohugo.io/>Hugo</a>, and <a class=text-muted href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.54bf0932b8a36d0e152b1635b099a6ef1394d35327e2437550a075c9c8ed1bd8aed5847c21b36fc02ed24014c031d9ca24017b0c78b1639d7e2fa8329898b842.js integrity="sha512-VL8JMrijbQ4VKxY1sJmm7xOU01Mn4kN1UKB1ycjtG9iu1YR8IbNvwC7SQBTAMdnKJAF7DHixY51+L6gymJi4Qg==" crossorigin=anonymous defer></script>
+<script src=/js/highlight.min.5b48bc253dc75aeea5fb366ecf700f4925e2b6eb1a1466f2124b722d68148d67bc0a9365d2b8ad9c585161b46372d23b08509a16f1fd518542b894756d4752d0.js integrity="sha512-W0i8JT3HWu6l+zZuz3APSSXitusaFGbyEktyLWgUjWe8CpNl0ritnFhRYbRjctI7CFCaFvH9UYVCuJR1bUdS0A==" crossorigin=anonymous defer></script>
+<script src=/main.min.40265e9a032aeba5eaf67baac3cbbc22667a7533215d326eeb3e9f4d5e4be40f9ff4dcd22949db73ae527ca26a19d7998091a8973c82af760b2c0daa335190ed.js integrity="sha512-QCZemgMq66Xq9nuqw8u8ImZ6dTMhXTJu6z6fTV5L5A+f9NzSKUnbc65SfKJqGdeZgJGolzyCr3YLLA2qM1GQ7Q==" crossorigin=anonymous defer></script>
+<script src=https://rc1242rc.github.io/index.min.97d6402d7a34cdd5bd42756d4cab0cf30d540a9cfd60b87b21ea49bb4e8ab243c43c3171889d41e133bd95a5c6d18e02d0f4cd3d09c2e02e58f2cc367481d403.js integrity="sha512-l9ZALXo0zdW9QnVtTKsM8w1UCpz9YLh7IepJu06KskPEPDFxiJ1B4TO9laXG0Y4C0PTNPQnC4C5Y8sw2dIHUAw==" crossorigin=anonymous defer></script></body></html>

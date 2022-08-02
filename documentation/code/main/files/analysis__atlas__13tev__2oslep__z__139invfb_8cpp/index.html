@@ -1,0 +1,509 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="ie=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><link rel=preload as=font href=https://rc1242rc.github.io/fonts/vendor/jost/jost-v4-latin-regular.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://rc1242rc.github.io/fonts/vendor/jost/jost-v4-latin-500.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://rc1242rc.github.io/fonts/vendor/jost/jost-v4-latin-700.woff2 type=font/woff2 crossorigin><script>(()=>{var e=localStorage.getItem("theme");e==="dark"&&document.documentElement.setAttribute("data-dark-mode","")})()</script><link rel=stylesheet href=https://rc1242rc.github.io/main.f12f7e04ea768acebec10c86baf049d74d6a79f24bc0dfb7ed77aa60462432916dd1ce8f41c78b69496adf650b3039a28a210183cce598f09b95d6fecb5ff999.css integrity="sha512-8S9+BOp2is6+wQyGuvBJ101qefJLwN+37XeqYEYkMpFt0c6PQceLaUlq32ULMDmiiiEBg8zlmPCbldb+y1/5mQ==" crossorigin=anonymous><noscript><style>img.lazyload{display:none}</style></noscript><meta name=robots content="index, follow"><meta name=googlebot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><meta name=bingbot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><title>file analyses/Analysis_ATLAS_13TeV_2OSLEP_Z_139invfb.cpp - GAMBIT</title><meta name=description content="[No description available]"><link rel=canonical href=https://rc1242rc.github.io/documentation/code/main/files/analysis__atlas__13tev__2oslep__z__139invfb_8cpp/><meta property="og:locale" content="en_US"><meta property="og:type" content="article"><meta property="og:title" content="file analyses/Analysis_ATLAS_13TeV_2OSLEP_Z_139invfb.cpp"><meta property="og:description" content="[No description available]"><meta property="og:url" content="https://rc1242rc.github.io/documentation/code/main/files/analysis__atlas__13tev__2oslep__z__139invfb_8cpp/"><meta property="og:site_name" content="GAMBIT"><meta property="og:image" content="https://rc1242rc.github.io/gambit_logo.png"><meta property="og:image:alt" content="GAMBIT"><meta name=twitter:card content="summary_large_image"><meta name=twitter:site content><meta name=twitter:creator content><meta name=twitter:title content="file analyses/Analysis_ATLAS_13TeV_2OSLEP_Z_139invfb.cpp"><meta name=twitter:description content="[No description available]"><meta name=twitter:image content="https://rc1242rc.github.io/gambit_logo.png"><meta name=twitter:image:alt content="file analyses/Analysis_ATLAS_13TeV_2OSLEP_Z_139invfb.cpp"><script type=application/ld+json>{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://rc1242rc.github.io/#/schema/organization/1","name":"Doks","url":"https://rc1242rc.github.io/","sameAs":["https://github.com/GambitBSM"],"logo":{"@type":"ImageObject","@id":"https://rc1242rc.github.io/#/schema/image/1","url":"https://rc1242rc.github.io/logo-doks.png","width":450,"height":416,"caption":"Doks"},"image":{"@id":"https://rc1242rc.github.io/#/schema/image/1"}},{"@type":"WebSite","@id":"https://rc1242rc.github.io/#/schema/website/1","url":"https://rc1242rc.github.io/","name":"GAMBIT","description":"Documentation for the Global And Modular BSM Inference Tool","publisher":{"@id":"https://rc1242rc.github.io/#/schema/organization/1"}},{"@type":"WebPage","@id":"https://rc1242rc.github.io/documentation/code/main/files/analysis__atlas__13tev__2oslep__z__139invfb_8cpp/","url":"https://rc1242rc.github.io/documentation/code/main/files/analysis__atlas__13tev__2oslep__z__139invfb_8cpp/","name":"file analyses\/Analysis_ATLAS_13TeV_2OSLEP_Z_139invfb.cpp","description":"[No description available]","isPartOf":{"@id":"https://rc1242rc.github.io/#/schema/website/1"},"about":{"@id":"https://rc1242rc.github.io/#/schema/organization/1"},"datePublished":"0001-01-01T00:00:00CET","dateModified":"0001-01-01T00:00:00CET","breadcrumb":{"@id":"https://rc1242rc.github.io/documentation/code/main/files/analysis__atlas__13tev__2oslep__z__139invfb_8cpp/#/schema/breadcrumb/1"},"primaryImageOfPage":{"@id":"https://rc1242rc.github.io/documentation/code/main/files/analysis__atlas__13tev__2oslep__z__139invfb_8cpp/#/schema/image/2"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://rc1242rc.github.io/documentation/code/main/files/analysis__atlas__13tev__2oslep__z__139invfb_8cpp/"]}]},{"@type":"BreadcrumbList","@id":"https://rc1242rc.github.io/documentation/code/main/files/analysis__atlas__13tev__2oslep__z__139invfb_8cpp/#/schema/breadcrumb/1","name":"Breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/","url":"https://rc1242rc.github.io/","name":"Home"}},{"@type":"ListItem","position":2,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/documentation/","url":"https://rc1242rc.github.io/documentation/","name":"Documentation"}},{"@type":"ListItem","position":3,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/documentation/code/","url":"https://rc1242rc.github.io/documentation/code/","name":"Code"}},{"@type":"ListItem","position":4,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/documentation/code/main/","url":"https://rc1242rc.github.io/documentation/code/main/","name":"Main"}},{"@type":"ListItem","position":5,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/documentation/code/main/files/","url":"https://rc1242rc.github.io/documentation/code/main/files/","name":"Files"}},{"@type":"ListItem","position":6,"item":{"@id":"https://rc1242rc.github.io/documentation/code/main/files/analysis__atlas__13tev__2oslep__z__139invfb_8cpp/"}}]},{"@context":"https://schema.org","@graph":[{"@type":"ImageObject","@id":"https://rc1242rc.github.io/documentation/code/main/files/analysis__atlas__13tev__2oslep__z__139invfb_8cpp/#/schema/image/2","url":"https://rc1242rc.github.io/gambit_logo.png","contentUrl":"https://rc1242rc.github.io/gambit_logo.png","caption":"file analyses\/Analysis_ATLAS_13TeV_2OSLEP_Z_139invfb.cpp"}]}]}</script><meta name=theme-color content="#fff"><link rel=icon href=https://rc1242rc.github.io/favicon.ico sizes=any><link rel=icon type=image/svg+xml href=https://rc1242rc.github.io/favicon.svg><link rel=apple-touch-icon sizes=180x180 href=https://rc1242rc.github.io/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=https://rc1242rc.github.io/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=https://rc1242rc.github.io/favicon-16x16.png><link rel=manifest crossorigin=use-credentials href=https://rc1242rc.github.io/site.webmanifest></head><body class="documentation single light"><div class=sticky-top><div class=header-bar></div><header class="navbar navbar-expand-md navbar-light doks-navbar"><nav class="container-xxl flex-wrap flex-md-nowrap" aria-label="Main navigation"><a class="navbar-brand p-0 me-auto" href=https://rc1242rc.github.io/ aria-label=GAMBIT><img class=logo-light src=https://rc1242rc.github.io//images/gambit_logo.png width=50px>
+<img class="logo-dark d-none" src=https://rc1242rc.github.io//images/gambit_logo.png width=50px>
+GAMBIT</a>
+<button class="btn btn-menu order-2 d-block d-lg-none" type=button data-bs-toggle=offcanvas data-bs-target=#offcanvasDoks aria-controls=offcanvasDoks aria-label="Open main menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button><div class="offcanvas offcanvas-end border-0 py-lg-1" tabindex=-1 id=offcanvasDoks data-bs-backdrop=true aria-labelledby=offcanvasDoksLabel><div class="header-bar d-lg-none"></div><div class="offcanvas-header d-lg-none"><h2 class="h5 offcanvas-title ps-2" id=offcanvasDoksLabel><a class=text-dark href=/>GAMBIT</a></h2><button type=button class="btn-close text-reset me-2" data-bs-dismiss=offcanvas aria-label="Close main menu"></button></div><div class="offcanvas-body p-4 p-lg-0"><ul class="nav flex-column flex-lg-row align-items-lg-center mt-2 mt-lg-0 ms-lg-2 me-lg-auto"><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Documentation
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=/documentation/installation/introduction/>Installation</a></li><li><a class=dropdown-item href=/documentation/examples/colliderbit>Examples</a></li><li><a class=dropdown-item href=/documentation/help/faqs/>Help</a></li><li><a class=dropdown-item href=/documentation/code/index_classes>Code Reference</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Community
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=/community/publications/>Publications</a></li><li><a class=dropdown-item href=/community/talks/>Talks</a></li><li><a class=dropdown-item href=/community/members/>Members</a></li><li><a class=dropdown-item href=/community/code_of_conduct/>Code of Conduct</a></li><li><a class=dropdown-item href=/community/contact/>Contact</a></li></ul></li></ul><hr class="text-black-50 my-4 d-lg-none"><form class="doks-search position-relative flex-grow-1 ms-lg-auto me-lg-2"><input id=search class="form-control is-search" type=search placeholder="Search site..." aria-label="Search site..." autocomplete=off><div id=suggestions class="shadow bg-white rounded d-none"></div></form><hr class="text-black-50 my-4 d-lg-none"><ul class="nav flex-column flex-lg-row"><li class=nav-item><a class="nav-link social-link" href=https://github.com/GambitBSM><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37.0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44.0 0020 4.77 5.07 5.07.0 0019.91 1S18.73.65 16 2.48a13.38 13.38.0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07.0 005 4.77 5.44 5.44.0 003.5 8.55c0 5.42 3.3 6.61 6.44 7A3.37 3.37.0 009 18.13V22"/></svg><small class="ms-2 d-lg-none">GitHub</small></a></li></ul><hr class="text-black-50 my-4 d-lg-none"><div class=dropdown><button class="btn btn-doks-light dropdown-toggle" id=doks-versions data-bs-toggle=dropdown aria-expanded=false data-bs-display=static aria-label="Toggle version menu">
+<span class=d-none>Doks</span>
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></button><ul class="dropdown-menu dropdown-menu-lg-end me-lg-2 shadow rounded border-0" aria-labelledby=doks-versions></ul></div></div></div></nav></header></div><div class="wrap container-xxl" role=document><div class=content><div class="row flex-xl-nowrap"><div class="col-lg-5 col-xl-4 docs-sidebar"><nav class=docs-links aria-label="Main navigation"><ul class="list-unstyled collapsible-sidebar"><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-installation aria-expanded=false>
+Installation</button><div class=collapse id=section-installation><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/installation/introduction/>Getting Started</a></li><li><a class="docs-link rounded" href=/documentation/installation/docker_usage/>Docker Usage</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_linux/>Installation for Linux</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_windows/>Installation for Windows</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_macos/>Installation for macOS</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-examples aria-expanded=false>
+Examples</button><div class=collapse id=section-examples><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/examples/colliderbit/>ColliderBit</a></li><li><a class="docs-link rounded" href=/documentation/examples/anotherbit/>AnotherBit</a></li><li><a class="docs-link rounded" href=/documentation/examples/anotherbit2/>AnotherBit2</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-help aria-expanded=false>
+Help</button><div class=collapse id=section-help><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/help/faqs/>FAQs</a></li><li><a class="docs-link rounded" href=/documentation/help/compiler_matrix/>Compiler Matrix</a></li><li><a class="docs-link rounded" href=/documentation/help/known_issues/>Known Issues</a></li><li><a class="docs-link rounded" href=/documentation/help/configuration_examples/>Configuration Examples</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-code aria-expanded=false>
+Code Reference</button></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section- aria-expanded=false>
+GAMBIT_VERSION_HERE</button><div class=collapse id=section-><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/code/colliderbit_development/index_classes/>Classes</a></li><li><a class="docs-link rounded" href=/documentation/code/colliderbit_development/index_files/>Files</a></li><li><a class="docs-link rounded" href=/documentation/code/colliderbit_development/index_pages/>Pages</a></li><li><a class="docs-link rounded" href=/documentation/code/colliderbit_development/index_namespaces/>Namespaces</a></li></ul></div></li></ul></nav></div><nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation"><div class=d-xl-none><button class="btn btn-outline-primary btn-sm doks-toc-toggle collapsed" type=button data-bs-toggle=collapse data-bs-target=#onThisPage aria-controls=doks-docs-nav aria-expanded=false aria-label="Toggle On this page navigation">
+<span>On this page</span>
+<span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg></span></button><div class=collapse id=onThisPage><div class="card card-body mt-3 py-1"><div class=page-links><nav id=TableOfContents><ul><li><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#classes>Classes</a></li><li><a href=#source-code>Source code</a></li></ul></li></ul></nav></div></div></div></div><div class="page-links d-none d-xl-block"><h3>On this page</h3><nav id=TableOfContents><ul><li><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#classes>Classes</a></li><li><a href=#source-code>Source code</a></li></ul></li></ul></nav></div></nav><main class="docs-content col-lg-11 col-xl-9 mx-xl-auto"><h1>file analyses/Analysis_ATLAS_13TeV_2OSLEP_Z_139invfb.cpp</h1><p class=lead></p><p>[No description available]</p><h2 id=namespaces>Namespaces <a href=#namespaces class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th>Name</th></tr></thead><tbody><tr><td><strong><a href=/documentation/code/main/namespaces/namespacegambit/>Gambit</a></strong><br>TODO: see if we can use this one:</td></tr><tr><td><strong><a href=/documentation/code/main/namespaces/namespacegambit_1_1colliderbit/>Gambit::ColliderBit</a></strong></td></tr></tbody></table><h2 id=classes>Classes <a href=#classes class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th></th><th>Name</th></tr></thead><tbody><tr><td>class</td><td><strong><a href=/documentation/code/main/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2oslep__z__139invfb/>Gambit::ColliderBit::Analysis_ATLAS_13TeV_2OSLEP_Z_139invfb</a></strong></td></tr></tbody></table><h2 id=source-code>Source code <a href=#source-code class=anchor aria-hidden=true>#</a></h2><pre><code>
+
+// Based on https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2019-016/
+
+// - 139 fb^-1 data
+
+#include &lt;vector&gt;
+#include &lt;cmath&gt;
+#include &lt;memory&gt;
+#include &lt;iomanip&gt;
+#include &lt;algorithm&gt;
+#include &lt;fstream&gt;
+
+#include &quot;gambit/ColliderBit/analyses/Analysis.hpp&quot;
+#include &quot;gambit/ColliderBit/ATLASEfficiencies.hpp&quot;
+#include &quot;gambit/ColliderBit/analyses/Cutflow.hpp&quot;
+#include &quot;gambit/ColliderBit/mt2_bisect.h&quot;
+
+// #define CHECK_CUTFLOW
+
+using namespace std;
+
+namespace Gambit
+{
+  namespace ColliderBit
+  {
+
+    class Analysis_ATLAS_13TeV_2OSLEP_Z_139invfb : public Analysis
+    {
+
+    protected:
+
+      // Counters for the number of accepted events for each signal region
+      std::map&lt;string, EventCounter&gt; _counters = {
+        {&quot;SR1A&quot;, EventCounter(&quot;SR1A&quot;)},
+        {&quot;SR1B&quot;, EventCounter(&quot;SR1B&quot;)},
+        {&quot;SR2A&quot;, EventCounter(&quot;SR2A&quot;)},
+        {&quot;SR2B&quot;, EventCounter(&quot;SR2B&quot;)},
+      };
+
+       vector&lt;Cutflow&gt; _cutflow;
+
+       //vector&lt;int&gt; _test;
+       //int _test2;
+
+    private:
+
+      struct ptComparison
+      {
+        bool operator() (const HEPUtils::Particle* i,const HEPUtils::Particle* j) {return (i-&gt;pT()&gt;j-&gt;pT());}
+      } comparePt;
+
+      struct ptJetComparison
+      {
+        bool operator() (const HEPUtils::Jet* i,const HEPUtils::Jet* j) {return (i-&gt;pT()&gt;j-&gt;pT());}
+      } compareJetPt;
+
+
+    public:
+
+      // Required detector sim
+      static constexpr const char* detector = &quot;ATLAS&quot;;
+
+      Analysis_ATLAS_13TeV_2OSLEP_Z_139invfb()
+      {
+
+        set_analysis_name(&quot;ATLAS_13TeV_2OSLEP_Z_139invfb&quot;);
+        set_luminosity(139);
+
+
+        str cutflow_name = &quot;ATLAS 2 opposite sign leptons at the Z peak 13 TeV&quot;;
+        vector&lt;str&gt; SR1A = {&quot;Trigger&quot;, &quot;Third leading lepton pT &gt; 20 GeV&quot;, &quot;|mll - mZ| &lt; 15 GeV&quot;, &quot;nb-tagged (pT &gt; 30 GeV) &gt;= 1&quot;, &quot;njets (pT &gt; 30 GeV) &gt;= 4&quot;, &quot;MET &gt; 250 GeV&quot;, &quot;mT23l &gt; 100 GeV&quot;};
+        vector&lt;str&gt; SR1B = {&quot;Trigger&quot;, &quot;Third leading lepton pT &gt; 20 GeV&quot;, &quot;|mll - mZ| &lt; 15 GeV&quot;, &quot;nb-tagged (pT &gt; 30 GeV) &gt;= 1&quot;, &quot;njets (pT &gt; 30 GeV) &gt;= 5&quot;, &quot;MET &gt; 150 GeV&quot;, &quot;pTll &gt; 150 GeV&quot;, &quot;Leading b-tagged jet pT &gt; 100 GeV&quot;};
+        vector&lt;str&gt; SR2A = {&quot;Trigger&quot;, &quot;Third leading lepton pT &lt; 20 GeV&quot;, &quot;|mll - mZ| &lt; 15 GeV&quot;, &quot;Leading jet pT &gt; 150 GeV&quot;, &quot;MET &gt; 200 GeV&quot;, &quot;pTll &lt; 50 GeV&quot;};
+        vector&lt;str&gt; SR2B = {&quot;Trigger&quot;, &quot;Third leading lepton pT &lt; 60 GeV&quot;, &quot;|mll - mZ| &lt; 15 GeV&quot;, &quot;nb-tagged (pT &gt; 30 GeV) &gt;= 1&quot;, &quot;MET &gt; 350 GeV&quot;, &quot;pTll &gt; 150 GeV&quot;};
+        _cutflow = { Cutflow(cutflow_name, SR1A),
+                     Cutflow(cutflow_name, SR1B),
+                     Cutflow(cutflow_name, SR2A),
+                     Cutflow(cutflow_name, SR2B) };
+        //_test = {0,0,0,0,0};
+        //_test2 = 0;
+
+      }
+
+      void run(const HEPUtils::Event* event)
+      {
+
+        // Baseline objects
+        vector&lt;const HEPUtils::Particle*&gt; baselineElectrons;
+        vector&lt;const HEPUtils::Particle*&gt; baselineMuons;
+        vector&lt;const HEPUtils::Particle*&gt; baselineTaus;
+        vector&lt;const HEPUtils::Jet*&gt; baselineJets;
+        vector&lt;const HEPUtils::Jet*&gt; baselineBJets;
+        vector&lt;const HEPUtils::Jet*&gt; baselineNonBJets;
+
+        // Missing momentum and energy
+        HEPUtils::P4 ptot = event-&gt;missingmom();
+        double met = event-&gt;met();
+
+        //if(event-&gt;electrons().size() + event-&gt;muons().size() &gt;= 3)
+        //  _test2++;
+
+        // Initialize cutflow
+        for(int i=0; i&lt;4; i++)
+          _cutflow[i].fillinit();
+
+        // Electron candidates are reconstructed from isolated electromagnetic calorimeter energy deposits matched to ID tracks and are required to have |η| &lt; 2.47, a transverse momentum pT &gt; 4.5 GeV, and to pass the “LooseAndBLayer” requirement in arXiv: 1902.04655 [hep-ex].
+        for (const HEPUtils::Particle* electron : event-&gt;electrons())
+        {
+          if (electron-&gt;pT()&gt;4.5 &amp;&amp; electron-&gt;abseta()&lt;2.47) baselineElectrons.push_back(electron);
+        }
+
+        // Apply electron efficiency
+        // Loose electron ID selection
+        ATLAS::applyElectronIDEfficiency2019(baselineElectrons, &quot;Loose&quot;);
+
+        // Muon candidates are reconstructed in the region |η| &lt; 2.4 from muon spectrometer tracks matching ID tracks. Candidate muons must have pT &gt; 4 GeV and pass the medium identification requirements defined in arXiv: 1603.05598 [hep-ex].
+        for (const HEPUtils::Particle* muon : event-&gt;muons())
+        {
+          if (muon-&gt;pT()&gt;4. &amp;&amp; muon-&gt;abseta()&lt;2.4) baselineMuons.push_back(muon);
+        }
+
+        // Apply muon efficiency
+        // Missing: &quot;Medium&quot; muon ID criteria
+        ATLAS::applyMuonEff(baselineMuons);
+
+        // Missing: transverse and longitudinal impact parameter cuts
+
+
+        // Only jet candidates with pT &gt; 20 GeV and |η| &lt; 2.8 are considered in the analysis
+        // Jets with pT &lt; 120 GeV and |η| &lt; 2.8 have an efficiency of 90%
+        // Mising:  cut based on detector noise and non-collision backgrounds
+        double jet_eff = 0.9;
+        for (const HEPUtils::Jet* jet : event-&gt;jets())
+        {
+          if (jet-&gt;pT()&gt;20. &amp;&amp; jet-&gt;abseta()&lt;2.8)
+            if( (jet-&gt;pT() &gt;= 120. || jet-&gt;abseta() &gt;= 2.5) || random_bool(jet_eff) ) baselineJets.push_back(jet);
+        }
+
+        // Overlap removal
+
+        // 1) Remove jets within DeltaR = 0.2 of electron
+        // If b-tagging efficiency &gt; 85%, do not remove jet. The lepton will be removed anyway.
+        removeOverlap(baselineJets, baselineElectrons, 0.2, false, 200, 0.85);
+
+        // 3) Remove jets within DeltaR = 0.2 of a muon
+        removeOverlap(baselineJets, baselineMuons, 0.2, false, DBL_MAX, 0.85);
+
+        // 2) Remove electrons within DeltaR = 0.4 of a jet
+        removeOverlap(baselineElectrons, baselineJets, 0.4);
+
+        // 4) Remove muons within DeltaR = 0.4 of jet
+        // Use lambda function to remove overlap with DeltaRMax as min(0.4, 0.04 + pT(µ)/10 GeV)
+        // Missing: Remove the jet instead if the jet has fewer than 3 associated tracks
+        auto lambda = [](double muonpT) { return std::min(0.4, 0.04 + muonpT/10.); };
+        removeOverlap(baselineMuons, baselineJets, lambda);
+
+        // 5) Remove electron candidates sharing and ID track with a muon candidate
+        // Missing: No track information
+
+        // Find b-jets
+        // Copied from ATLAS_13TeV_3b_24invfb
+        double btag = 0.77; double cmisstag = 1/16.; double misstag = 1./113.;
+        for (const HEPUtils::Jet* jet : baselineJets) {
+          // Tag
+          if( jet-&gt;btag() &amp;&amp; random_bool(btag) ) baselineBJets.push_back(jet);
+          // Misstag c-jet
+          else if( jet-&gt;ctag() &amp;&amp; random_bool(cmisstag) ) baselineBJets.push_back(jet);
+          // Misstag light jet
+          else if( random_bool(misstag) ) baselineBJets.push_back(jet);
+          // Non b-jet
+          else baselineNonBJets.push_back(jet);
+        }
+
+        // Signal objects
+        vector&lt;const HEPUtils::Jet*&gt; signalJets = baselineJets;
+        vector&lt;const HEPUtils::Jet*&gt; signalBJets = baselineBJets;
+        vector&lt;const HEPUtils::Particle*&gt; signalElectrons = baselineElectrons;
+        vector&lt;const HEPUtils::Particle*&gt; signalMuons;
+        vector&lt;const HEPUtils::Particle*&gt; signalLeptons;
+
+        // Signal electrons must satisfy the “medium” identification requirement as defined in arXiv: 1902.04655 [hep-ex]
+        ATLAS::applyElectronIDEfficiency2019(signalElectrons, &quot;Medium&quot;);
+
+
+        // Signal muons must have pT &gt; 5 GeV.
+        for (const HEPUtils::Particle* signalMuon : baselineMuons)
+        {
+          if (signalMuon-&gt;pT() &gt; 5.) signalMuons.push_back(signalMuon);
+        }
+
+        // Missing: we need track information for isolation criteria for signal leptons
+
+        // Fill signal leptons
+        signalLeptons = signalElectrons;
+        signalLeptons.insert(signalLeptons.end(), signalMuons.begin(), signalMuons.end());
+
+        // Sort by pT
+        sort(signalJets.begin(), signalJets.end(), compareJetPt);
+        sort(signalBJets.begin(), signalBJets.end(), compareJetPt);
+        sort(signalLeptons.begin(), signalLeptons.end(), comparePt);
+
+        // Trigger requirements are
+        // - &gt;=3 signal leptons
+        // - &gt;=1 SF-OS pair
+        // - leading lepton pT &gt; 40 GeV
+        // - subleading lepton pT &gt; 20 GeV
+        // - Zlike, |mll - mZ| &lt; 15 GeV
+        bool preselection = false;
+
+        // Count signal leptons and jets
+        size_t nSignalLeptons = signalLeptons.size();
+        size_t nSignalJets = signalJets.size();
+        size_t nSignalBJets = signalBJets.size();
+
+        // Get SFOS pairs
+        vector&lt;vector&lt;const HEPUtils::Particle*&gt;&gt; SFOSpairs = getSFOSpairs(signalLeptons);
+
+        // Get SFOS pairs masses and pTs
+        vector&lt;double&gt; SFOSpair_masses;
+        vector&lt;double&gt; SFOSpair_pTs;
+        for (vector&lt;const HEPUtils::Particle*&gt; pair : SFOSpairs)
+        {
+          SFOSpair_masses.push_back( (pair.at(0)-&gt;mom() + pair.at(1)-&gt;mom()).m() );
+          SFOSpair_pTs.push_back( (pair.at(0)-&gt;mom() + pair.at(1)-&gt;mom()).pT() );
+        }
+        std::sort(SFOSpair_masses.begin(), SFOSpair_masses.end(), std::greater&lt;double&gt;());
+        std::sort(SFOSpair_pTs.begin(), SFOSpair_pTs.end(), std::greater&lt;double&gt;());
+
+        // Z resonance
+        bool Zlike = false;
+        double mZ = 91.2;
+        for(double m : SFOSpair_masses)
+        {
+          if (abs(m - mZ) &lt; 15)
+            Zlike = true;
+        }
+
+        // Combine all preselection cuts
+        preselection = nSignalLeptons &gt;= 3 &amp;&amp; SFOSpairs.size() &gt;= 1 &amp;&amp; signalLeptons.at(0)-&gt;pT() &gt; 40. &amp;&amp; signalLeptons.at(1)-&gt;pT() &gt; 20. &amp;&amp; Zlike;
+
+        // Construct the mT23l variable for the pair of SFOS with invariant mass closest to mZ and highest pT lepton not in the pair
+        vector&lt;const HEPUtils::Particle*&gt; SFOSpairClosestToMZ;
+        double mll =  0;
+        // Find the SFOS pair high inv mass closest to mZ
+        for (vector&lt;const HEPUtils::Particle*&gt; pair: SFOSpairs)
+        {
+          if( fabs( (pair.at(0)-&gt;mom() + pair.at(1)-&gt;mom()).m() - mZ ) &lt; fabs(mll - mZ) )
+          {
+            mll = (pair.at(0)-&gt;mom() + pair.at(1)-&gt;mom()).m();
+            SFOSpairClosestToMZ = pair;
+          }
+        }
+
+        // Construct the pTll variable
+        double pTll = 0.0;
+        if(SFOSpairClosestToMZ.size() == 2)
+          pTll = ( SFOSpairClosestToMZ.at(0)-&gt;mom() + SFOSpairClosestToMZ.at(1)-&gt;mom() ).pT();
+
+        // Find the highest pT lepton not in the pair, but make sure there are at least 3 leptons
+        double mT23l = 0.0;
+        if(nSignalLeptons &gt;= 3 and SFOSpairClosestToMZ.size() == 2)
+        {
+          const HEPUtils::Particle* thirdLepton;
+          if(signalLeptons.at(0) != SFOSpairClosestToMZ.at(0) &amp;&amp; signalLeptons.at(0) != SFOSpairClosestToMZ.at(1))
+            thirdLepton = signalLeptons.at(0);
+          else if(signalLeptons.at(1) != SFOSpairClosestToMZ.at(0) &amp;&amp; signalLeptons.at(1) != SFOSpairClosestToMZ.at(1))
+            thirdLepton = signalLeptons.at(1);
+          else
+            thirdLepton = signalLeptons.at(2);
+
+          double pa[3] = { mll, (SFOSpairClosestToMZ.at(0)-&gt;mom() + SFOSpairClosestToMZ.at(1)-&gt;mom()).px(), (SFOSpairClosestToMZ.at(0)-&gt;mom() + SFOSpairClosestToMZ.at(1)-&gt;mom()).py() };
+          double pb[3] = { 0, thirdLepton-&gt;mom().px(), thirdLepton-&gt;mom().py() };
+          double pmiss[3] = { met, ptot.px(), ptot.py() };
+          double mn = 0.;
+
+          mt2_bisect::mt2 mt2_calc;
+          mt2_calc.set_momenta(pa,pb,pmiss);
+          mt2_calc.set_mn(mn);
+          mT23l = mt2_calc.get_mt2();
+        }
+
+        // Signal Regions
+
+        // Requirement                      SR1A     SR1B    SR2A    SR2B
+        // ---------------------------------------------------------------
+        // Third leading lepton pT           &gt;20      &gt;20     &lt;20     &lt;60   // done
+        // njets (pT &gt; 30 GeV)               &gt;=4      &gt;=5     &gt;=3     &gt;=3   // done
+        // nb-tagged jets (pT &gt; 30 GeV)      &gt;=1      &gt;=1      -      &gt;=1   // done
+        // Leading jet pT                     -        -     &gt;150      -    // done
+        // Leading b-tagged jet pT            -      &gt;100      -       -    // done
+        // MET                              &gt;250     &gt;150    &gt;200    &gt;350   // done
+        // pTll                               -      &gt;150     &lt;50    &gt;150   // done
+        // mT23l                            &gt;100       -       -       -    // done
+
+        // SR1A
+        if (preselection &amp;&amp;
+            signalLeptons.at(2)-&gt;pT() &gt; 20. &amp;&amp;
+            nSignalJets &gt;= 4 &amp;&amp; signalJets.at(3)-&gt;pT() &gt; 30. &amp;&amp;
+            nSignalBJets &gt;= 1 &amp;&amp; signalBJets.at(0)-&gt;pT() &gt; 30. &amp;&amp;
+            // -
+            // -
+            met &gt; 250. &amp;&amp;
+            // -
+            mT23l &gt; 100.
+           )
+          _counters.at(&quot;SR1A&quot;).add_event(event);
+
+        // SR1B
+        if (preselection &amp;&amp;
+            signalLeptons.at(2)-&gt;pT() &gt; 20. &amp;&amp;
+            nSignalJets &gt;= 5 &amp;&amp; signalJets.at(4)-&gt;pT() &gt; 30. &amp;&amp;
+            nSignalBJets &gt;= 1 &amp;&amp; signalBJets.at(0)-&gt;pT() &gt; 30. &amp;&amp;
+            // -
+            signalBJets.at(0)-&gt;pT() &gt; 100. &amp;&amp;
+            met &gt; 150. &amp;&amp;
+            pTll &gt; 150.
+            // -
+           )
+          _counters.at(&quot;SR1B&quot;).add_event(event);
+
+        // SR2A
+        if (preselection &amp;&amp;
+            signalLeptons.at(2)-&gt;pT() &lt; 20. &amp;&amp;
+            nSignalJets &gt;= 3 &amp;&amp; signalJets.at(2)-&gt;pT() &gt; 30. &amp;&amp;
+            // -
+            signalJets.at(0)-&gt;pT() &gt; 150. &amp;&amp;
+            // -
+            met &gt; 200. &amp;&amp;
+            pTll &lt; 50.
+            // -
+           )
+          _counters.at(&quot;SR2A&quot;).add_event(event);
+
+        // SR2B
+        if (preselection &amp;&amp;
+            signalLeptons.at(2)-&gt;pT() &lt; 60. &amp;&amp;
+            nSignalJets &gt;= 3 &amp;&amp; signalJets.at(2)-&gt;pT() &gt; 30. &amp;&amp;
+            nSignalBJets &gt;= 1 &amp;&amp; signalBJets.at(0)-&gt;pT() &gt; 30. &amp;&amp;
+           // -
+           // -
+           met &gt; 350. &amp;&amp;
+           pTll &gt; 150.
+           // -
+           )
+          _counters.at(&quot;SR2B&quot;).add_event(event);
+
+        // Cutflows
+
+        // Fill cutflow with preselection trigger as defined by ATLAS
+        //if(nSignalLeptons &gt;= 3) _test[0]++;
+        //if(nSignalLeptons &gt;= 3 &amp;&amp; nSignalJets &gt;= 3 &amp;&amp; signalJets.at(2)-&gt;pT() &gt; 30.) _test[1]++;
+        //if(nSignalLeptons &gt;= 3 &amp;&amp; nSignalJets &gt;= 3 &amp;&amp; signalJets.at(2)-&gt;pT() &gt; 30. &amp;&amp; met &gt; 50.) _test[2]++;
+        //if(nSignalLeptons &gt;= 3 &amp;&amp; nSignalJets &gt;= 3 &amp;&amp; signalJets.at(2)-&gt;pT() &gt; 30. &amp;&amp; met &gt; 50. &amp;&amp; signalLeptons.at(0)-&gt;pT() &gt; 40.) _test[3]++;
+        //if(nSignalLeptons &gt;= 3 &amp;&amp; nSignalJets &gt;= 3 &amp;&amp; signalJets.at(2)-&gt;pT() &gt; 30. &amp;&amp; met &gt; 50. &amp;&amp; signalLeptons.at(0)-&gt;pT() &gt; 40. &amp;&amp; signalLeptons.at(1)-&gt;pT() &gt; 20.) _test[4]++;
+        if(nSignalLeptons &gt;= 3 &amp;&amp; nSignalJets &gt;= 3 &amp;&amp; signalJets.at(2)-&gt;pT() &gt; 30. &amp;&amp; met &gt; 50. &amp;&amp; signalLeptons.at(0)-&gt;pT() &gt; 40. &amp;&amp; signalLeptons.at(1)-&gt;pT() &gt; 20.)
+        {
+          // 1
+          for(int i=0; i&lt;4; i++)
+            _cutflow[i].fill(1);
+
+          bool SR[] ={true, true, true, true};
+
+          // 2
+          // Third leading lepton pT
+          for(int i=0; i&lt;2; i++)
+            if(signalLeptons.at(2)-&gt;pT() &gt; 20)
+              _cutflow[i].fill(2);
+            else
+              SR[i] = false;
+          if(signalLeptons.at(2)-&gt;pT() &lt; 20)
+            _cutflow[2].fill(2);
+          else SR[2] = false;
+          if(signalLeptons.at(2)-&gt;pT() &lt; 60)
+            _cutflow[3].fill(2);
+          else SR[3] = false;
+
+          // 3
+          // Z peak
+          for(int i=0; i&lt;4; i++)
+            if(Zlike)
+             _cutflow[i].fill(3, SR[i]);
+            else SR[i] = false;
+
+          // 4
+          // nbtagged jets (pT &gt; 30 GeV)
+          for(int i=0; i&lt;4; i++)
+            if(nSignalBJets &gt;= 1 &amp;&amp; signalBJets.at(0)-&gt;pT() &gt; 30. &amp;&amp; i != 2)
+              _cutflow[i].fill(4, SR[i]);
+            else if (i != 2)
+              SR[i] = false;
+          // Leading jet pT &gt; 150 GeV
+          if(signalJets.at(0)-&gt;pT() &gt; 150.)
+            _cutflow[2].fill(4, SR[2]);
+          else SR[2] = false;
+
+          // 5
+          // n jets (pT &gt; 30 GeV)
+          if(nSignalJets &gt;= 4 &amp;&amp; signalJets.at(3)-&gt;pT() &gt; 30.)
+            _cutflow[0].fill(5, SR[0]);
+          else SR[0] = false;
+          if(nSignalJets &gt;= 5 &amp;&amp; signalJets.at(4)-&gt;pT() &gt; 30.)
+            _cutflow[1].fill(5, SR[1]);
+          else SR[1] = false;
+          // MET
+          if(met &gt; 200.)
+            _cutflow[2].fill(5, SR[2]);
+          else SR[2] = false;
+          if(met &gt; 350.)
+            _cutflow[3].fill(5, SR[3]);
+          else SR[3] = false;
+
+          // 6
+          // MET
+          if(met &gt; 250.)
+            _cutflow[0].fill(6, SR[0]);
+          else SR[0] = false;
+          if(met &gt; 150.)
+            _cutflow[1].fill(6, SR[1]);
+          else SR[1] = false;
+          // pTll
+          if(pTll &lt; 50.)
+            _cutflow[2].fill(6, SR[2]);
+          else SR[2] = false;
+          if(pTll &gt; 150.)
+            _cutflow[3].fill(6, SR[3]);
+          else SR[3] = false;
+
+          // 7
+          // mT23l
+          if(mT23l &gt; 100.)
+            _cutflow[0].fill(7, SR[0]);
+          else SR[0] = false;
+          // pTll
+          if(pTll &gt; 150.)
+            _cutflow[1].fill(7, SR[1]);
+          else SR[1] = false;
+
+          // 8
+          // Leading b-tagget jet pT &gt; 100 GeV
+          if(nSignalBJets &gt;= 1 &amp;&amp; signalBJets.at(0)-&gt;pT() &gt; 100.)
+            _cutflow[1].fill(8, SR[1]);
+          else SR[1] = false;
+        }
+      }
+
+      void combine(const Analysis* other)
+      {
+        const Analysis_ATLAS_13TeV_2OSLEP_Z_139invfb* specificOther
+                = dynamic_cast&lt;const Analysis_ATLAS_13TeV_2OSLEP_Z_139invfb*&gt;(other);
+
+        for (auto&amp; pair : _counters) { pair.second += specificOther-&gt;_counters.at(pair.first); }
+      }
+
+      // This function can be overridden by the derived SR-specific classes
+      virtual void collect_results()
+      {
+
+        add_result(SignalRegionData(_counters.at(&quot;SR1A&quot;), 3., {5.4, 0.7}));
+        add_result(SignalRegionData(_counters.at(&quot;SR1B&quot;), 14., {12.8, 1.6}));
+        add_result(SignalRegionData(_counters.at(&quot;SR2A&quot;), 3., {5.7, 1.7}));
+        add_result(SignalRegionData(_counters.at(&quot;SR2B&quot;), 6., {5.4, 0.8}));
+
+        #ifdef CHECK_CUTFLOW
+          cout &lt;&lt; _cutflow &lt;&lt; endl;
+          //cout &lt;&lt; &quot;n signal leptons before = &quot; &lt;&lt; _test2 &lt;&lt; endl;
+          //cout &lt;&lt; &quot;n signal leptons = &quot; &lt;&lt; _test[0] &lt;&lt; endl;
+          //cout &lt;&lt; &quot;n signal jets (pT &gt; 30) = &quot; &lt;&lt; _test[1] &lt;&lt; endl;
+          //cout &lt;&lt; &quot;met = &quot; &lt;&lt; _test[2] &lt;&lt; endl;
+          //cout &lt;&lt; &quot;leading lepton pT &gt; 40 = &quot; &lt;&lt; _test[3] &lt;&lt; endl;
+          //cout &lt;&lt; &quot;subleading lepton pT &gt; 20 = &quot; &lt;&lt; _test[4] &lt;&lt; endl;
+        #endif
+
+
+      }
+
+
+    protected:
+      void analysis_specific_reset()
+      {
+        for (auto&amp; pair : _counters) { pair.second.reset(); }
+      }
+
+    };
+
+    // Factory fn
+    DEFINE_ANALYSIS_FACTORY(ATLAS_13TeV_2OSLEP_Z_139invfb)
+
+
+  }
+}
+</code></pre><hr><p>Updated on 2022-08-02 at 18:18:37 +0000</p><div class=edit-page><a href=https://github.com/RC1242RC/gambit_gh_pages/blob/master/content/en/documentation/code/main/Files/Analysis__ATLAS__13TeV__2OSLEP__Z__139invfb_8cpp.md><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2"><path d="M17 3a2.828 2.828.0 114 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></svg>Edit this page on GitHub</a></div></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a class=text-muted href=https://www.netlify.com/>Netlify</a>, <a class=text-muted href=https://gohugo.io/>Hugo</a>, and <a class=text-muted href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.54bf0932b8a36d0e152b1635b099a6ef1394d35327e2437550a075c9c8ed1bd8aed5847c21b36fc02ed24014c031d9ca24017b0c78b1639d7e2fa8329898b842.js integrity="sha512-VL8JMrijbQ4VKxY1sJmm7xOU01Mn4kN1UKB1ycjtG9iu1YR8IbNvwC7SQBTAMdnKJAF7DHixY51+L6gymJi4Qg==" crossorigin=anonymous defer></script>
+<script src=/js/highlight.min.5b48bc253dc75aeea5fb366ecf700f4925e2b6eb1a1466f2124b722d68148d67bc0a9365d2b8ad9c585161b46372d23b08509a16f1fd518542b894756d4752d0.js integrity="sha512-W0i8JT3HWu6l+zZuz3APSSXitusaFGbyEktyLWgUjWe8CpNl0ritnFhRYbRjctI7CFCaFvH9UYVCuJR1bUdS0A==" crossorigin=anonymous defer></script>
+<script src=/main.min.40265e9a032aeba5eaf67baac3cbbc22667a7533215d326eeb3e9f4d5e4be40f9ff4dcd22949db73ae527ca26a19d7998091a8973c82af760b2c0daa335190ed.js integrity="sha512-QCZemgMq66Xq9nuqw8u8ImZ6dTMhXTJu6z6fTV5L5A+f9NzSKUnbc65SfKJqGdeZgJGolzyCr3YLLA2qM1GQ7Q==" crossorigin=anonymous defer></script>
+<script src=https://rc1242rc.github.io/index.min.97d6402d7a34cdd5bd42756d4cab0cf30d540a9cfd60b87b21ea49bb4e8ab243c43c3171889d41e133bd95a5c6d18e02d0f4cd3d09c2e02e58f2cc367481d403.js integrity="sha512-l9ZALXo0zdW9QnVtTKsM8w1UCpz9YLh7IepJu06KskPEPDFxiJ1B4TO9laXG0Y4C0PTNPQnC4C5Y8sw2dIHUAw==" crossorigin=anonymous defer></script></body></html>

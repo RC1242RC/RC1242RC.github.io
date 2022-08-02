@@ -1,0 +1,669 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="ie=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><link rel=preload as=font href=https://rc1242rc.github.io/fonts/vendor/jost/jost-v4-latin-regular.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://rc1242rc.github.io/fonts/vendor/jost/jost-v4-latin-500.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://rc1242rc.github.io/fonts/vendor/jost/jost-v4-latin-700.woff2 type=font/woff2 crossorigin><script>(()=>{var e=localStorage.getItem("theme");e==="dark"&&document.documentElement.setAttribute("data-dark-mode","")})()</script><link rel=stylesheet href=https://rc1242rc.github.io/main.f12f7e04ea768acebec10c86baf049d74d6a79f24bc0dfb7ed77aa60462432916dd1ce8f41c78b69496adf650b3039a28a210183cce598f09b95d6fecb5ff999.css integrity="sha512-8S9+BOp2is6+wQyGuvBJ101qefJLwN+37XeqYEYkMpFt0c6PQceLaUlq32ULMDmiiiEBg8zlmPCbldb+y1/5mQ==" crossorigin=anonymous><noscript><style>img.lazyload{display:none}</style></noscript><meta name=robots content="index, follow"><meta name=googlebot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><meta name=bingbot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><title>file src/SpecBit_ScalarSingletDM.cpp - GAMBIT</title><meta name=description content="[No description available]"><link rel=canonical href=https://rc1242rc.github.io/documentation/code/colliderbit_development/files/specbit__scalarsingletdm_8cpp/><meta property="og:locale" content="en_US"><meta property="og:type" content="article"><meta property="og:title" content="file src/SpecBit_ScalarSingletDM.cpp"><meta property="og:description" content="[No description available]"><meta property="og:url" content="https://rc1242rc.github.io/documentation/code/colliderbit_development/files/specbit__scalarsingletdm_8cpp/"><meta property="og:site_name" content="GAMBIT"><meta property="og:image" content="https://rc1242rc.github.io/gambit_logo.png"><meta property="og:image:alt" content="GAMBIT"><meta name=twitter:card content="summary_large_image"><meta name=twitter:site content><meta name=twitter:creator content><meta name=twitter:title content="file src/SpecBit_ScalarSingletDM.cpp"><meta name=twitter:description content="[No description available]"><meta name=twitter:image content="https://rc1242rc.github.io/gambit_logo.png"><meta name=twitter:image:alt content="file src/SpecBit_ScalarSingletDM.cpp"><script type=application/ld+json>{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://rc1242rc.github.io/#/schema/organization/1","name":"Doks","url":"https://rc1242rc.github.io/","sameAs":["https://github.com/GambitBSM"],"logo":{"@type":"ImageObject","@id":"https://rc1242rc.github.io/#/schema/image/1","url":"https://rc1242rc.github.io/logo-doks.png","width":450,"height":416,"caption":"Doks"},"image":{"@id":"https://rc1242rc.github.io/#/schema/image/1"}},{"@type":"WebSite","@id":"https://rc1242rc.github.io/#/schema/website/1","url":"https://rc1242rc.github.io/","name":"GAMBIT","description":"Documentation for the Global And Modular BSM Inference Tool","publisher":{"@id":"https://rc1242rc.github.io/#/schema/organization/1"}},{"@type":"WebPage","@id":"https://rc1242rc.github.io/documentation/code/colliderbit_development/files/specbit__scalarsingletdm_8cpp/","url":"https://rc1242rc.github.io/documentation/code/colliderbit_development/files/specbit__scalarsingletdm_8cpp/","name":"file src\/SpecBit_ScalarSingletDM.cpp","description":"[No description available]","isPartOf":{"@id":"https://rc1242rc.github.io/#/schema/website/1"},"about":{"@id":"https://rc1242rc.github.io/#/schema/organization/1"},"datePublished":"0001-01-01T00:00:00CET","dateModified":"0001-01-01T00:00:00CET","breadcrumb":{"@id":"https://rc1242rc.github.io/documentation/code/colliderbit_development/files/specbit__scalarsingletdm_8cpp/#/schema/breadcrumb/1"},"primaryImageOfPage":{"@id":"https://rc1242rc.github.io/documentation/code/colliderbit_development/files/specbit__scalarsingletdm_8cpp/#/schema/image/2"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://rc1242rc.github.io/documentation/code/colliderbit_development/files/specbit__scalarsingletdm_8cpp/"]}]},{"@type":"BreadcrumbList","@id":"https://rc1242rc.github.io/documentation/code/colliderbit_development/files/specbit__scalarsingletdm_8cpp/#/schema/breadcrumb/1","name":"Breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/","url":"https://rc1242rc.github.io/","name":"Home"}},{"@type":"ListItem","position":2,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/documentation/","url":"https://rc1242rc.github.io/documentation/","name":"Documentation"}},{"@type":"ListItem","position":3,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/documentation/code/","url":"https://rc1242rc.github.io/documentation/code/","name":"Code"}},{"@type":"ListItem","position":4,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/documentation/code/colliderbit_development/","url":"https://rc1242rc.github.io/documentation/code/colliderbit_development/","name":"Colliderbit Development"}},{"@type":"ListItem","position":5,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/documentation/code/colliderbit_development/files/","url":"https://rc1242rc.github.io/documentation/code/colliderbit_development/files/","name":"Files"}},{"@type":"ListItem","position":6,"item":{"@id":"https://rc1242rc.github.io/documentation/code/colliderbit_development/files/specbit__scalarsingletdm_8cpp/"}}]},{"@context":"https://schema.org","@graph":[{"@type":"ImageObject","@id":"https://rc1242rc.github.io/documentation/code/colliderbit_development/files/specbit__scalarsingletdm_8cpp/#/schema/image/2","url":"https://rc1242rc.github.io/gambit_logo.png","contentUrl":"https://rc1242rc.github.io/gambit_logo.png","caption":"file src\/SpecBit_ScalarSingletDM.cpp"}]}]}</script><meta name=theme-color content="#fff"><link rel=icon href=https://rc1242rc.github.io/favicon.ico sizes=any><link rel=icon type=image/svg+xml href=https://rc1242rc.github.io/favicon.svg><link rel=apple-touch-icon sizes=180x180 href=https://rc1242rc.github.io/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=https://rc1242rc.github.io/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=https://rc1242rc.github.io/favicon-16x16.png><link rel=manifest crossorigin=use-credentials href=https://rc1242rc.github.io/site.webmanifest></head><body class="documentation single light"><div class=sticky-top><div class=header-bar></div><header class="navbar navbar-expand-md navbar-light doks-navbar"><nav class="container-xxl flex-wrap flex-md-nowrap" aria-label="Main navigation"><a class="navbar-brand p-0 me-auto" href=https://rc1242rc.github.io/ aria-label=GAMBIT><img class=logo-light src=https://rc1242rc.github.io//images/gambit_logo.png width=50px>
+<img class="logo-dark d-none" src=https://rc1242rc.github.io//images/gambit_logo.png width=50px>
+GAMBIT</a>
+<button class="btn btn-menu order-2 d-block d-lg-none" type=button data-bs-toggle=offcanvas data-bs-target=#offcanvasDoks aria-controls=offcanvasDoks aria-label="Open main menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button><div class="offcanvas offcanvas-end border-0 py-lg-1" tabindex=-1 id=offcanvasDoks data-bs-backdrop=true aria-labelledby=offcanvasDoksLabel><div class="header-bar d-lg-none"></div><div class="offcanvas-header d-lg-none"><h2 class="h5 offcanvas-title ps-2" id=offcanvasDoksLabel><a class=text-dark href=/>GAMBIT</a></h2><button type=button class="btn-close text-reset me-2" data-bs-dismiss=offcanvas aria-label="Close main menu"></button></div><div class="offcanvas-body p-4 p-lg-0"><ul class="nav flex-column flex-lg-row align-items-lg-center mt-2 mt-lg-0 ms-lg-2 me-lg-auto"><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Documentation
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=/documentation/installation/introduction/>Installation</a></li><li><a class=dropdown-item href=/documentation/examples/colliderbit>Examples</a></li><li><a class=dropdown-item href=/documentation/help/faqs/>Help</a></li><li><a class=dropdown-item href=/documentation/code/index_classes>Code Reference</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Community
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=/community/publications/>Publications</a></li><li><a class=dropdown-item href=/community/talks/>Talks</a></li><li><a class=dropdown-item href=/community/members/>Members</a></li><li><a class=dropdown-item href=/community/code_of_conduct/>Code of Conduct</a></li><li><a class=dropdown-item href=/community/contact/>Contact</a></li></ul></li></ul><hr class="text-black-50 my-4 d-lg-none"><form class="doks-search position-relative flex-grow-1 ms-lg-auto me-lg-2"><input id=search class="form-control is-search" type=search placeholder="Search site..." aria-label="Search site..." autocomplete=off><div id=suggestions class="shadow bg-white rounded d-none"></div></form><hr class="text-black-50 my-4 d-lg-none"><ul class="nav flex-column flex-lg-row"><li class=nav-item><a class="nav-link social-link" href=https://github.com/GambitBSM><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37.0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44.0 0020 4.77 5.07 5.07.0 0019.91 1S18.73.65 16 2.48a13.38 13.38.0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07.0 005 4.77 5.44 5.44.0 003.5 8.55c0 5.42 3.3 6.61 6.44 7A3.37 3.37.0 009 18.13V22"/></svg><small class="ms-2 d-lg-none">GitHub</small></a></li></ul><hr class="text-black-50 my-4 d-lg-none"><div class=dropdown><button class="btn btn-doks-light dropdown-toggle" id=doks-versions data-bs-toggle=dropdown aria-expanded=false data-bs-display=static aria-label="Toggle version menu">
+<span class=d-none>Doks</span>
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></button><ul class="dropdown-menu dropdown-menu-lg-end me-lg-2 shadow rounded border-0" aria-labelledby=doks-versions></ul></div></div></div></nav></header></div><div class="wrap container-xxl" role=document><div class=content><div class="row flex-xl-nowrap"><div class="col-lg-5 col-xl-4 docs-sidebar"><nav class=docs-links aria-label="Main navigation"><ul class="list-unstyled collapsible-sidebar"><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-installation aria-expanded=false>
+Installation</button><div class=collapse id=section-installation><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/installation/introduction/>Getting Started</a></li><li><a class="docs-link rounded" href=/documentation/installation/docker_usage/>Docker Usage</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_linux/>Installation for Linux</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_windows/>Installation for Windows</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_macos/>Installation for macOS</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-examples aria-expanded=false>
+Examples</button><div class=collapse id=section-examples><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/examples/colliderbit/>ColliderBit</a></li><li><a class="docs-link rounded" href=/documentation/examples/anotherbit/>AnotherBit</a></li><li><a class="docs-link rounded" href=/documentation/examples/anotherbit2/>AnotherBit2</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-help aria-expanded=false>
+Help</button><div class=collapse id=section-help><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/help/faqs/>FAQs</a></li><li><a class="docs-link rounded" href=/documentation/help/compiler_matrix/>Compiler Matrix</a></li><li><a class="docs-link rounded" href=/documentation/help/known_issues/>Known Issues</a></li><li><a class="docs-link rounded" href=/documentation/help/configuration_examples/>Configuration Examples</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-code aria-expanded=false>
+Code Reference</button></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section- aria-expanded=false>
+GAMBIT_VERSION_HERE</button><div class=collapse id=section-><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/code/colliderbit_development/index_classes/>Classes</a></li><li><a class="docs-link rounded" href=/documentation/code/colliderbit_development/index_files/>Files</a></li><li><a class="docs-link rounded" href=/documentation/code/colliderbit_development/index_pages/>Pages</a></li><li><a class="docs-link rounded" href=/documentation/code/colliderbit_development/index_namespaces/>Namespaces</a></li></ul></div></li></ul></nav></div><nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation"><div class=d-xl-none><button class="btn btn-outline-primary btn-sm doks-toc-toggle collapsed" type=button data-bs-toggle=collapse data-bs-target=#onThisPage aria-controls=doks-docs-nav aria-expanded=false aria-label="Toggle On this page navigation">
+<span>On this page</span>
+<span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg></span></button><div class=collapse id=onThisPage><div class="card card-body mt-3 py-1"><div class=page-links><nav id=TableOfContents><ul><li><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#source-code>Source code</a></li></ul></li></ul></nav></div></div></div></div><div class="page-links d-none d-xl-block"><h3>On this page</h3><nav id=TableOfContents><ul><li><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#source-code>Source code</a></li></ul></li></ul></nav></div></nav><main class="docs-content col-lg-11 col-xl-9 mx-xl-auto"><h1>file src/SpecBit_ScalarSingletDM.cpp</h1><p class=lead></p><p>[No description available] <a href=#detailed-description>More&mldr;</a></p><h2 id=namespaces>Namespaces <a href=#namespaces class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th>Name</th></tr></thead><tbody><tr><td><strong><a href=/documentation/code/colliderbit_development/namespaces/namespacegambit/>Gambit</a></strong><br>Simulation of &ldquo;Search for photonic signatures of gauge-mediated supersymmetry in 13 TeV pp collisions with the ATLAS detector&rdquo;.</td></tr><tr><td><strong><a href=/documentation/code/colliderbit_development/namespaces/namespacegambit_1_1specbit/>Gambit::SpecBit</a></strong></td></tr></tbody></table><h2 id=detailed-description>Detailed Description <a href=#detailed-description class=anchor aria-hidden=true>#</a></h2><p><strong>Author</strong>: Ben Farmer (<a href=mailto:benjamin.farmer@fysik.su.se>benjamin.farmer@fysik.su.se</a>)</p><p><strong>Date</strong>: 2015 May</p><p>Functions of module SpecBit</p><p>SpecBit module functions related to the scalar singlet DM model.</p><hr><p>Authors (add name and date if you modify):</p><hr><h2 id=source-code>Source code <a href=#source-code class=anchor aria-hidden=true>#</a></h2><pre><code>//   GAMBIT: Global and Modular BSM Inference Tool
+//   *********************************************
+
+#include &lt;string&gt;
+#include &lt;sstream&gt;
+
+#include &quot;gambit/Elements/gambit_module_headers.hpp&quot;
+
+#include &quot;gambit/Elements/spectrum.hpp&quot;
+#include &quot;gambit/Utils/stream_overloads.hpp&quot;
+#include &quot;gambit/Utils/util_macros.hpp&quot;
+
+#include &quot;gambit/SpecBit/SpecBit_rollcall.hpp&quot;
+#include &quot;gambit/SpecBit/SpecBit_helpers.hpp&quot;
+#include &quot;gambit/SpecBit/QedQcdWrapper.hpp&quot;
+#include &quot;gambit/Models/SimpleSpectra/SMHiggsSimpleSpec.hpp&quot;
+#include &quot;gambit/Models/SimpleSpectra/ScalarSingletDMSimpleSpec.hpp&quot;
+#include &quot;gambit/SpecBit/model_files_and_boxes.hpp&quot;
+
+#include &quot;gambit/SpecBit/ScalarSingletDM_Z2Spec.hpp&quot;
+#include &quot;gambit/SpecBit/ScalarSingletDM_Z3Spec.hpp&quot;
+
+// Flexible SUSY stuff (should not be needed by the rest of gambit)
+#include &quot;flexiblesusy/src/ew_input.hpp&quot;
+#include &quot;flexiblesusy/src/lowe.h&quot;
+#include &quot;flexiblesusy/src/numerics2.hpp&quot;
+#include &quot;flexiblesusy/src/spectrum_generator_settings.hpp&quot;
+// Switch for debug mode
+//#define SPECBIT_DEBUG
+
+namespace Gambit
+{
+
+  namespace SpecBit
+  {
+    using namespace LogTags;
+    using namespace flexiblesusy;
+
+    void get_ScalarSingletDM_Z2_spectrum(Spectrum&amp; result)
+    {
+      namespace myPipe = Pipes::get_ScalarSingletDM_Z2_spectrum;
+      const SMInputs&amp; sminputs = *myPipe::Dep::SMINPUTS;
+
+      // Initialise an object to carry the Singlet plus Higgs sector information
+      Models::ScalarSingletDM_Z2Model singletmodel;
+
+      // quantities needed to fill container spectrum, intermediate calculations
+      double alpha_em = 1.0 / sminputs.alphainv;
+      double C = alpha_em * pi / (sminputs.GF * pow(2,0.5));
+      double sinW2 = 0.5 - pow( 0.25 - C/pow(sminputs.mZ,2) , 0.5);
+      double cosW2 = 0.5 + pow( 0.25 - C/pow(sminputs.mZ,2) , 0.5);
+      double e = pow( 4*pi*( alpha_em ),0.5) ;
+
+      // Higgs sector
+      double mh = *myPipe::Param.at(&quot;mH&quot;);
+      singletmodel.HiggsPoleMass = mh;
+
+      double vev = 1. / sqrt(sqrt(2.)*sminputs.GF);
+      singletmodel.HiggsVEV = vev;
+
+      // Scalar singlet sector
+      singletmodel.SingletPoleMass = *myPipe::Param.at(&quot;mS&quot;);
+      singletmodel.SingletLambda = *myPipe::Param.at(&quot;lambda_hS&quot;);
+      singletmodel.SingletLambdaS = 0;
+
+      // Standard model
+      singletmodel.sinW2 = sinW2;
+
+      // gauge couplings
+      singletmodel.g1 = sqrt(5/3) * e / sqrt(cosW2);
+      singletmodel.g2 = e / sqrt(sinW2);
+      singletmodel.g3   = pow( 4*pi*( sminputs.alphaS ),0.5) ;
+
+      // Yukawas
+      double sqrt2v = pow(2.0,0.5)/vev;
+      singletmodel.Yu[0] = sqrt2v * sminputs.mU;
+      singletmodel.Yu[1] = sqrt2v * sminputs.mCmC;
+      singletmodel.Yu[2] = sqrt2v * sminputs.mT;
+      singletmodel.Ye[0] = sqrt2v * sminputs.mE;
+      singletmodel.Ye[1] = sqrt2v * sminputs.mMu;
+      singletmodel.Ye[2] = sqrt2v * sminputs.mTau;
+      singletmodel.Yd[0] = sqrt2v * sminputs.mD;
+      singletmodel.Yd[1] = sqrt2v * sminputs.mS;
+      singletmodel.Yd[2] = sqrt2v * sminputs.mBmB;
+
+      // Create a SubSpectrum object to wrap the EW sector information
+      Models::ScalarSingletDM_Z2SimpleSpec singletspec(singletmodel);
+
+      // Retrieve any mass cuts
+      static const Spectrum::mc_info mass_cut = myPipe::runOptions-&gt;getValueOrDef&lt;Spectrum::mc_info&gt;(Spectrum::mc_info(), &quot;mass_cut&quot;);
+      static const Spectrum::mr_info mass_ratio_cut = myPipe::runOptions-&gt;getValueOrDef&lt;Spectrum::mr_info&gt;(Spectrum::mr_info(), &quot;mass_ratio_cut&quot;);
+
+      // We don't supply a LE subspectrum here; an SMSimpleSpec will therefore be automatically created from 'sminputs'
+      result = Spectrum(singletspec,sminputs,&amp;myPipe::Param,mass_cut,mass_ratio_cut);
+
+    }
+
+    void get_ScalarSingletDM_Z3_spectrum(Spectrum&amp; result)
+    {
+      namespace myPipe = Pipes::get_ScalarSingletDM_Z3_spectrum;
+      const SMInputs&amp; sminputs = *myPipe::Dep::SMINPUTS;
+
+      // Initialise an object to carry the Singlet plus Higgs sector information
+      Models::ScalarSingletDM_Z3Model singletmodel;
+
+      // quantities needed to fill container spectrum, intermediate calculations
+      double alpha_em = 1.0 / sminputs.alphainv;
+      double C = alpha_em * pi / (sminputs.GF * pow(2,0.5));
+      double sinW2 = 0.5 - pow( 0.25 - C/pow(sminputs.mZ,2) , 0.5);
+      double cosW2 = 0.5 + pow( 0.25 - C/pow(sminputs.mZ,2) , 0.5);
+      double e = pow( 4*pi*( alpha_em ),0.5) ;
+
+      // Higgs sector
+      double mh = *myPipe::Param.at(&quot;mH&quot;);
+      singletmodel.HiggsPoleMass = mh;
+
+      double vev = 1. / sqrt(sqrt(2.)*sminputs.GF);
+      singletmodel.HiggsVEV = vev;
+
+      // Scalar singlet sector
+      singletmodel.SingletPoleMass = *myPipe::Param.at(&quot;mS&quot;);
+      singletmodel.SingletLambda = *myPipe::Param.at(&quot;lambda_hS&quot;);
+      singletmodel.SingletLambdaS = *myPipe::Param.at(&quot;lambda_S&quot;);
+
+      singletmodel.mu3 = *myPipe::Param.at(&quot;mu3&quot;);
+
+      // Standard model
+      singletmodel.sinW2 = sinW2;
+
+      // gauge couplings
+      singletmodel.g1 = sqrt(5/3) * e / sqrt(cosW2);
+      singletmodel.g2 = e / sqrt(sinW2);
+      singletmodel.g3   = pow( 4*pi*( sminputs.alphaS ),0.5) ;
+
+      // Yukawas
+      double sqrt2v = pow(2.0,0.5)/vev;
+      singletmodel.Yu[0] = sqrt2v * sminputs.mU;
+      singletmodel.Yu[1] = sqrt2v * sminputs.mCmC;
+      singletmodel.Yu[2] = sqrt2v * sminputs.mT;
+      singletmodel.Ye[0] = sqrt2v * sminputs.mE;
+      singletmodel.Ye[1] = sqrt2v * sminputs.mMu;
+      singletmodel.Ye[2] = sqrt2v * sminputs.mTau;
+      singletmodel.Yd[0] = sqrt2v * sminputs.mD;
+      singletmodel.Yd[1] = sqrt2v * sminputs.mS;
+      singletmodel.Yd[2] = sqrt2v * sminputs.mBmB;
+
+      // Create a SubSpectrum object to wrap the EW sector information
+      Models::ScalarSingletDM_Z3SimpleSpec singletspec(singletmodel);
+
+      // Retrieve any mass cuts
+      static const Spectrum::mc_info mass_cut = myPipe::runOptions-&gt;getValueOrDef&lt;Spectrum::mc_info&gt;(Spectrum::mc_info(), &quot;mass_cut&quot;);
+      static const Spectrum::mr_info mass_ratio_cut = myPipe::runOptions-&gt;getValueOrDef&lt;Spectrum::mr_info&gt;(Spectrum::mr_info(), &quot;mass_ratio_cut&quot;);
+
+      // We don't supply a LE subspectrum here; an SMSimpleSpec will therefore be automatically created from 'sminputs'
+      result = Spectrum(singletspec,sminputs,&amp;myPipe::Param,mass_cut,mass_ratio_cut);
+
+    }
+
+
+    template&lt;class MI,class SI&gt;
+    Spectrum run_FS_spectrum_generator
+        ( const typename MI::InputParameters&amp; input
+        , const SMInputs&amp; sminputs
+        , const Options&amp; runOptions
+        , const std::map&lt;str, safe_ptr&lt;const double&gt; &gt;&amp; input_Param
+        )
+    {
+      // SoftSUSY object used to set quark and lepton masses and gauge
+      // couplings in QEDxQCD effective theory
+      // Will be initialised by default using values in lowe.h, which we will
+      // override next.
+      softsusy::QedQcd oneset;
+
+      // Fill QedQcd object with SMInputs values
+      setup_QedQcd(oneset,sminputs);
+
+      // Run everything to Mz
+      oneset.toMz();
+
+      // Create spectrum generator object
+      typename MI::SpectrumGenerator spectrum_generator;
+
+      // Spectrum generator settings
+      // Default options copied from flexiblesusy/src/spectrum_generator_settings.hpp
+      //
+      // | enum                             | possible values              | default value   |
+      // |----------------------------------|------------------------------|-----------------|
+      // | precision                        | any positive double          | 1.0e-4          |
+      // | max_iterations                   | any positive double          | 0 (= automatic) |
+      // | algorithm                        | 0 (two-scale) or 1 (lattice) | 0 (= two-scale) |
+      // | calculate_sm_masses              | 0 (no) or 1 (yes)            | 0 (= no)        |
+      // | pole_mass_loop_order             | 0, 1, 2                      | 2 (= 2-loop)    |
+      // | ewsb_loop_order                  | 0, 1, 2                      | 2 (= 2-loop)    |
+      // | beta_loop_order                  | 0, 1, 2                      | 2 (= 2-loop)    |
+      // | threshold_corrections_loop_order | 0, 1                         | 1 (= 1-loop)    |
+      // | higgs_2loop_correction_at_as     | 0, 1                         | 1 (= enabled)   |
+      // | higgs_2loop_correction_ab_as     | 0, 1                         | 1 (= enabled)   |
+      // | higgs_2loop_correction_at_at     | 0, 1                         | 1 (= enabled)   |
+      // | higgs_2loop_correction_atau_atau | 0, 1                         | 1 (= enabled)   |
+
+      Spectrum_generator_settings settings;
+      settings.set(Spectrum_generator_settings::precision, runOptions.getValueOrDef&lt;double&gt;(1.0e-4,&quot;precision_goal&quot;));
+      settings.set(Spectrum_generator_settings::max_iterations, runOptions.getValueOrDef&lt;double&gt;(0,&quot;max_iterations&quot;));
+      settings.set(Spectrum_generator_settings::calculate_sm_masses, runOptions.getValueOrDef&lt;bool&gt; (true, &quot;calculate_sm_masses&quot;));
+      settings.set(Spectrum_generator_settings::pole_mass_loop_order, runOptions.getValueOrDef&lt;int&gt;(2,&quot;pole_mass_loop_order&quot;));
+      settings.set(Spectrum_generator_settings::pole_mass_loop_order, runOptions.getValueOrDef&lt;int&gt;(2,&quot;ewsb_loop_order&quot;));
+      settings.set(Spectrum_generator_settings::beta_loop_order, runOptions.getValueOrDef&lt;int&gt;(2,&quot;beta_loop_order&quot;));
+      settings.set(Spectrum_generator_settings::threshold_corrections_loop_order, runOptions.getValueOrDef&lt;int&gt;(2,&quot;threshold_corrections_loop_order&quot;));
+      settings.set(Spectrum_generator_settings::higgs_2loop_correction_at_as, runOptions.getValueOrDef&lt;int&gt;(1,&quot;higgs_2loop_correction_at_as&quot;));
+      settings.set(Spectrum_generator_settings::higgs_2loop_correction_ab_as, runOptions.getValueOrDef&lt;int&gt;(1,&quot;higgs_2loop_correction_ab_as&quot;));
+      settings.set(Spectrum_generator_settings::higgs_2loop_correction_at_at, runOptions.getValueOrDef&lt;int&gt;(1,&quot;higgs_2loop_correction_at_at&quot;));
+      settings.set(Spectrum_generator_settings::higgs_2loop_correction_atau_atau, runOptions.getValueOrDef&lt;int&gt;(1,&quot;higgs_2loop_correction_atau_atau&quot;));
+
+      spectrum_generator.set_settings(settings);
+
+      // Generate spectrum
+      spectrum_generator.run(oneset, input);
+      const typename MI::Problems&amp; problems = spectrum_generator.get_problems();
+      MI model_interface(spectrum_generator,oneset,input);
+      SI singletdmspec(model_interface, &quot;FlexibleSUSY&quot;, &quot;1.5.1&quot;);
+
+      singletdmspec.set_override(Par::mass1,spectrum_generator.get_high_scale(),&quot;high_scale&quot;,true);
+      singletdmspec.set_override(Par::mass1,spectrum_generator.get_susy_scale(),&quot;susy_scale&quot;,true);
+      singletdmspec.set_override(Par::mass1,spectrum_generator.get_low_scale(), &quot;low_scale&quot;, true);
+
+      singletdmspec.set_override(Par::Pole_Mass_1srd_high,0.0, &quot;h0_1&quot;, true);
+      singletdmspec.set_override(Par::Pole_Mass_1srd_low,0.0,&quot;h0_1&quot;, true);
+
+      // Create a second SubSpectrum object to wrap the qedqcd object used to initialise the spectrum generator
+      // Attach the sminputs object as well, so that SM pole masses can be passed on (these aren't easily
+      // extracted from the QedQcd object, so use the values that we put into it.)
+      QedQcdWrapper qedqcdspec(oneset,sminputs);
+
+      // Deal with points where spectrum generator encountered a problem
+      #ifdef SPECBIT_DEBUG
+        std::cout&lt;&lt;&quot;Problem? &quot;&lt;&lt;problems.have_problem()&lt;&lt;std::endl;
+        std::cout&lt;&lt;&quot;Warning? &quot;&lt;&lt;problems.have_warning()&lt;&lt;std::endl;
+      #endif
+      if( problems.have_problem() )
+      {
+         if( runOptions.getValueOrDef&lt;bool&gt;(false,&quot;invalid_point_fatal&quot;) )
+         {
+            std::ostringstream errmsg;
+            errmsg &lt;&lt; &quot;A serious problem was encountered during spectrum generation!&quot;;
+            errmsg &lt;&lt; &quot;Message from FlexibleSUSY:&quot; &lt;&lt; std::endl;
+            problems.print_problems(errmsg);
+            problems.print_warnings(errmsg);
+            SpecBit_error().raise(LOCAL_INFO,errmsg.str());
+         }
+         else
+         {
+            // Check what the problem was
+            // see: contrib/MassSpectra/flexiblesusy/src/problems.hpp
+            std::ostringstream msg;
+            problems.print_problems(msg);
+            invalid_point().raise(msg.str()); //TODO: This message isn't ending up in the logs.
+         }
+      }
+            double QEWSB  = *input_Param.at(&quot;QEWSB&quot;);
+            singletdmspec.RunToScaleOverride(QEWSB);
+
+      // Retrieve any mass cuts
+      static const Spectrum::mc_info mass_cut = runOptions.getValueOrDef&lt;Spectrum::mc_info&gt;(Spectrum::mc_info(), &quot;mass_cut&quot;);
+      static const Spectrum::mr_info mass_ratio_cut = runOptions.getValueOrDef&lt;Spectrum::mr_info&gt;(Spectrum::mr_info(), &quot;mass_ratio_cut&quot;);
+
+      return Spectrum(qedqcdspec,singletdmspec,sminputs,&amp;input_Param, mass_cut, mass_ratio_cut);
+
+    }
+
+
+    template &lt;class T&gt;
+    void fill_ScalarSingletDM_input(T&amp; input, const std::map&lt;str, safe_ptr&lt;const double&gt; &gt;&amp; Param,SMInputs sminputs)//,double scale)
+    {
+      double mH = *Param.at(&quot;mH&quot;);
+      double mS = *Param.at(&quot;mS&quot;);
+      double lambda_hs = *Param.at(&quot;lambda_hS&quot;);
+      double lambda_s  = *Param.at(&quot;lambda_S&quot;);
+
+      double QEFT  = mS;
+
+      if (QEFT &lt; sminputs.mT)
+      {
+                //QEFT = *Param.at(&quot;mZ&quot;);
+                QEFT = sminputs.mT;
+            }
+
+      input.HiggsIN = -0.5*pow(mH,2);
+      double vev = 1. / sqrt(sqrt(2.)*sminputs.GF);
+
+      input.muSInput = pow(mS,2)-0.5*lambda_hs*pow(vev,2);
+      input.LamSHInput = lambda_hs;
+      input.LamSInput = lambda_s;
+      input.QEWSB = QEFT;  // scale where EWSB conditions are applied
+      input.Qin = QEFT; //scale;  // highest scale at which model is run to
+
+    }
+
+    template &lt;class T&gt;
+    void fill_extra_input(T&amp; input, const std::map&lt;str, safe_ptr&lt;const double&gt; &gt;&amp; Param )
+    {
+      input.mu3Input=*Param.at(&quot;mu3&quot;);
+    }
+
+    bool check_perturb(const Spectrum&amp; spec, const std::vector&lt;SpectrumParameter&gt;&amp; required_parameters, double scale, int pts)
+    {
+      std::unique_ptr&lt;SubSpectrum&gt; ScalarSingletDM = spec.clone_HE();
+      double step = log10(scale) / pts;
+      double runto;
+      double ul = 4.0 * pi;
+
+      for (int i=0;i&lt;pts;i++)
+      {
+        runto = pow(10,step*float(i+1.0)); // scale to run spectrum to
+        if (runto&lt;100){runto=100.0;}// avoid running to low scales
+
+        ScalarSingletDM -&gt; RunToScale(runto);
+
+        for(std::vector&lt;SpectrumParameter&gt;::const_iterator it = required_parameters.begin();
+              it != required_parameters.end(); ++it)
+        {
+          const Par::Tags        tag   = it-&gt;tag();
+          const std::string      name  = it-&gt;name();
+          const std::vector&lt;int&gt; shape = it-&gt;shape();
+          std::ostringstream label;
+          label &lt;&lt; name &lt;&lt;&quot; &quot;&lt;&lt; Par::toString.at(tag);
+
+          if (name == &quot;lambda_S&quot;){ul =  pi;}
+          else if (name == &quot;lambda_h&quot;){ul =  2*pi;}
+          else if (name == &quot;lambda_hS&quot;){ul =  4*pi;}
+          else {ul = 100;}
+
+          if(shape.size()==1 and shape[0]==1)
+          {
+            if (abs(ScalarSingletDM-&gt;get(tag,name))&gt;ul)
+            {
+                            return false;
+                        }
+          }
+          else if(shape.size()==1 and shape[0]&gt;1)
+          {
+            for(int k = 1; k&lt;=shape[0]; ++k)
+            {
+              if (abs(ScalarSingletDM-&gt;get(tag,name,k))&gt;ul) return false;
+            }
+          }
+          else if(shape.size()==2)
+          {
+            for(int k = 1; k&lt;=shape[0]; ++k)
+            {
+              for(int j = 1; j&lt;=shape[0]; ++j)
+              {
+                if (abs(ScalarSingletDM-&gt;get(tag,name,k,j))&gt;ul) return false;
+              }
+            }
+          }
+
+          // check stability condition
+
+          double lamhs = ScalarSingletDM-&gt;get(Par::dimensionless,&quot;lambda_hS&quot;);
+          double lams = ScalarSingletDM-&gt;get(Par::dimensionless,&quot;lambda_S&quot;);
+          double lamh = ScalarSingletDM-&gt;get(Par::dimensionless,&quot;lambda_h&quot;);
+
+          double stability_condition = 2.0 * pow(0.5* 0.25 *  lamh*lams,0.5) + 0.5*lamhs;
+
+          if (!(stability_condition &gt; 0) &amp;&amp; (lams&gt;0) &amp;&amp; (lamh&gt;0))
+                    {
+                        //cout &lt;&lt; &quot;EW stability condition violated at Q = &quot; &lt;&lt; scale &lt;&lt;&quot; , lambda_hs = &quot;&lt;&lt; lamhs &lt;&lt; &quot;lamh = &quot; &lt;&lt; lamh &lt;&lt; &quot; lams = &quot; &lt;&lt; lams &lt;&lt; endl;
+                        return false;
+                    }
+
+        }
+      }
+
+      return true;
+
+    }
+
+    #if(FS_MODEL_ScalarSingletDM_Z2_IS_BUILT)
+    void get_ScalarSingletDM_Z2_spectrum_pole(Spectrum&amp; result)
+    {
+      using namespace softsusy;
+      namespace myPipe = Pipes::get_ScalarSingletDM_Z2_spectrum_pole;
+      const SMInputs&amp; sminputs = *myPipe::Dep::SMINPUTS;
+      const Options&amp; runOptions=*myPipe::runOptions;
+      ScalarSingletDM_Z2_input_parameters input;
+      fill_ScalarSingletDM_input(input,myPipe::Param,sminputs);
+      result = run_FS_spectrum_generator&lt;ScalarSingletDM_Z2_interface&lt;ALGORITHM1&gt;,ScalarSingletDM_Z2Spec&lt;ScalarSingletDM_Z2_interface&lt;ALGORITHM1&gt;&gt;&gt;(input,sminputs,*myPipe::runOptions,myPipe::Param);
+
+      int check_perturb_pts = runOptions.getValueOrDef&lt;double&gt;(10,&quot;check_perturb_pts&quot;);
+      double do_check_perturb = runOptions.getValueOrDef&lt;bool&gt;(false,&quot;check_perturb&quot;);
+      double check_perturb_scale = runOptions.getValueOrDef&lt;double&gt;(1.22e19,&quot;check_high_scale&quot;);
+      double input_scale_tolerance = runOptions.getValueOrDef&lt;double&gt;(1e-3,&quot;input_scale_tolerance&quot;);
+
+      // Check that the Higgs MSbar parameter has been provided at the scale of the singlet MSbar mass
+      double Qin = *myPipe::Param.at(&quot;Qin&quot;);
+      if (abs((Qin - *myPipe::Param.at(&quot;mS&quot;))/Qin) &gt; input_scale_tolerance) SpecBit_error().raise(LOCAL_INFO, &quot;SM_Higgs_running::Qin must equal ScalarSingletDM_Z2_running::mS&quot;);
+
+      if (do_check_perturb)
+      {
+        static const SpectrumContents::ScalarSingletDM_Z2 contents;
+        static const std::vector&lt;SpectrumParameter&gt; required_parameters = contents.all_parameters_with_tag(Par::dimensionless);
+        if (!check_perturb(result,required_parameters,check_perturb_scale,check_perturb_pts))
+        {
+          // invalidate point as spectrum not perturbative up to scale
+          std::ostringstream msg;
+          msg &lt;&lt; &quot;Spectrum not perturbative up to scale = &quot; &lt;&lt; check_perturb_scale &lt;&lt;  std::endl;
+          #ifdef SPECBIT_DEBUG
+            cout &lt;&lt; &quot;Spectrum not perturbative up to scale = &quot; &lt;&lt; check_perturb_scale &lt;&lt;  endl;
+          #endif
+          invalid_point().raise(msg.str());
+        }
+      }
+
+    }
+    #endif
+
+    #if(FS_MODEL_ScalarSingletDM_Z3_IS_BUILT)
+    void get_ScalarSingletDM_Z3_spectrum_pole(Spectrum&amp; result)
+    {
+      using namespace softsusy;
+      namespace myPipe = Pipes::get_ScalarSingletDM_Z3_spectrum_pole;
+      const SMInputs&amp; sminputs = *myPipe::Dep::SMINPUTS;
+      const Options&amp; runOptions=*myPipe::runOptions;
+      //double scale = runOptions.getValueOrDef&lt;double&gt;(173.34,&quot;FS_high_scale&quot;);
+      ScalarSingletDM_Z3_input_parameters input;
+      fill_ScalarSingletDM_input(input,myPipe::Param,sminputs);
+      fill_extra_input(input,myPipe::Param);
+      result = run_FS_spectrum_generator&lt;ScalarSingletDM_Z3_interface&lt;ALGORITHM1&gt;,ScalarSingletDM_Z3Spec&lt;ScalarSingletDM_Z3_interface&lt;ALGORITHM1&gt;&gt;&gt;(input,sminputs,*myPipe::runOptions,myPipe::Param);
+
+      int check_perturb_pts = runOptions.getValueOrDef&lt;double&gt;(10,&quot;check_perturb_pts&quot;);
+      double do_check_perturb = runOptions.getValueOrDef&lt;bool&gt;(false,&quot;check_perturb&quot;);
+      double check_perturb_scale = runOptions.getValueOrDef&lt;double&gt;(1.22e19,&quot;check_high_scale&quot;);
+      double input_scale_tolerance = runOptions.getValueOrDef&lt;double&gt;(1e-3,&quot;input_scale_tolerance&quot;);
+
+      // Check that the Higgs MSbar parameter has been provided at the scale of the singlet MSbar mass
+      double Qin = *myPipe::Param.at(&quot;Qin&quot;);
+      if (abs((Qin - *myPipe::Param.at(&quot;mS&quot;))/Qin) &gt; input_scale_tolerance) SpecBit_error().raise(LOCAL_INFO, &quot;SM_Higgs_running::Qin must equal ScalarSingletDM_Z3_running::mS&quot;);
+
+      if (do_check_perturb)
+      {
+        static const SpectrumContents::ScalarSingletDM_Z3 contents;
+        static const std::vector&lt;SpectrumParameter&gt; required_parameters = contents.all_parameters_with_tag(Par::dimensionless);
+        if (!check_perturb(result,required_parameters,check_perturb_scale,check_perturb_pts))
+        {
+          // invalidate point as spectrum not perturbative up to scale
+          std::ostringstream msg;
+
+          msg &lt;&lt; &quot;Spectrum not perturbative up to scale = &quot; &lt;&lt; check_perturb_scale &lt;&lt;  std::endl;
+          #ifdef SPECBIT_DEBUG
+            cout &lt;&lt; &quot;Spectrum not perturbative up to scale = &quot; &lt;&lt; check_perturb_scale &lt;&lt;  endl;
+          #endif
+          invalid_point().raise(msg.str());
+        }
+      }
+
+    }
+    #endif
+
+        #if(FS_MODEL_ScalarSingletDM_Z2_IS_BUILT)
+        void find_non_perturb_scale_ScalarSingletDM_Z2(double &amp;result)
+        {
+            using namespace flexiblesusy;
+      using namespace softsusy;
+      namespace myPipe = Pipes::find_non_perturb_scale_ScalarSingletDM_Z2;
+      using namespace Gambit;
+      using namespace SpecBit;
+
+      const Spectrum&amp; fullspectrum = *myPipe::Dep::ScalarSingletDM_Z2_spectrum;
+
+          // bound x by (a,b)
+
+          double ms = *myPipe::Param.at(&quot;mS&quot;);
+
+          double a = log10(ms);
+
+          if (a &gt; 20.0)
+          {
+              std::ostringstream msg;
+        msg &lt;&lt; &quot;Scalar mass larger than 10^20 GeV &quot; &lt;&lt; std::endl;
+        invalid_point().raise(msg.str());
+      }
+
+          double b = 20.0;
+          double x = 0.5 * ( b + ms );
+
+          while (abs(a-b)&gt;1e-10)
+          {
+            x=0.5*(b-a)+a;
+        static const SpectrumContents::ScalarSingletDM_Z2 contents;
+        static const std::vector&lt;SpectrumParameter&gt; required_parameters = contents.all_parameters_with_tag(Par::dimensionless);
+            if (!check_perturb(fullspectrum,required_parameters,pow(10,x),3))
+            {
+              b=x;
+            }
+            else
+            {
+              a=x;
+            }
+          }
+          result = pow(10,0.5*(a+b));
+        }
+        #endif
+
+        #if(FS_MODEL_ScalarSingletDM_Z3_IS_BUILT)
+        void find_non_perturb_scale_ScalarSingletDM_Z3(double &amp;result)
+        {
+            using namespace flexiblesusy;
+      using namespace softsusy;
+      namespace myPipe = Pipes::find_non_perturb_scale_ScalarSingletDM_Z3;
+      using namespace Gambit;
+      using namespace SpecBit;
+
+      const Spectrum&amp; fullspectrum = *myPipe::Dep::ScalarSingletDM_Z3_spectrum;
+
+          // bound x by (a,b)
+
+          double ms = *myPipe::Param.at(&quot;mS&quot;);
+
+          double a = log10(ms);
+
+          if (a &gt; 20.0)
+          {
+              std::ostringstream msg;
+        msg &lt;&lt; &quot;Scalar mass larger than 10^20 GeV &quot; &lt;&lt; std::endl;
+        invalid_point().raise(msg.str());
+      }
+
+          double b = 20.0;
+          double x = 0.5 * ( b + ms );
+
+          while (abs(a-b)&gt;1e-10)
+          {
+            x=0.5*(b-a)+a;
+        static const SpectrumContents::ScalarSingletDM_Z3 contents;
+        static const std::vector&lt;SpectrumParameter&gt; required_parameters = contents.all_parameters_with_tag(Par::dimensionless);
+            if (!check_perturb(fullspectrum,required_parameters,pow(10,x),3))
+            {
+              b=x;
+            }
+            else
+            {
+              a=x;
+            }
+          }
+          result = pow(10,0.5*(a+b));
+        }
+    #endif
+
+    void ScalarSingletDM_higgs_couplings_pwid(HiggsCouplingsTable &amp;result)
+    {
+      using namespace Pipes::ScalarSingletDM_higgs_couplings_pwid;
+      dep_bucket&lt;Spectrum&gt;* spectrum_dependency = nullptr;
+      if (ModelInUse(&quot;ScalarSingletDM_Z2&quot;) or ModelInUse(&quot;ScalarSingletDM_Z2_running&quot;))
+      {
+        spectrum_dependency = &amp;Dep::ScalarSingletDM_Z2_spectrum;
+      }
+      else if (ModelInUse(&quot;ScalarSingletDM_Z3&quot;) or ModelInUse(&quot;ScalarSingletDM_Z3_running&quot;))
+      {
+        spectrum_dependency = &amp;Dep::ScalarSingletDM_Z3_spectrum;
+      }
+      else SpecBit_error().raise(LOCAL_INFO, &quot;No valid model for ScalarSingletDM_higgs_couplings_pwid.&quot;);
+      const SubSpectrum&amp; spec = (*spectrum_dependency)-&gt;get_HE();
+
+      // Set the number of Higgses
+      result.set_n_neutral_higgs(1);
+      result.set_n_charged_higgs(0);
+      // Set the CP of the Higgs.
+      result.CP[0] = 1;
+      // Set the decays
+      result.set_neutral_decays_SM(0, &quot;h0_1&quot;, *Dep::Reference_SM_Higgs_decay_rates);
+      result.set_neutral_decays(0, &quot;h0_1&quot;, *Dep::Higgs_decay_rates);
+
+      // Identify the singlet as the only possible invisible particle
+      if (spec.get(Par::Pole_Mass, &quot;S&quot;) * 2.0 &lt; spec.get(Par::Pole_Mass, &quot;h0_1&quot;))
+        result.invisibles = initVector&lt;std::pair&lt;str,str&gt;&gt;(std::make_pair(&quot;S&quot;,&quot;S&quot;));
+      else
+        result.invisibles.clear();
+      // Leave all the effective couplings for all neutral higgses set to unity (done at construction).
+    }
+
+    void fill_map_from_ScalarSingletDM_spectrum(std::map&lt;std::string,double&gt;&amp; specmap, const Spectrum&amp; singletdmspec,
+                                         const std::vector&lt;SpectrumParameter&gt;&amp; required_parameters)
+    {
+      for(std::vector&lt;SpectrumParameter&gt;::const_iterator it = required_parameters.begin();
+           it != required_parameters.end(); ++it)
+      {
+         const Par::Tags        tag   = it-&gt;tag();
+         const std::string      name  = it-&gt;name();
+         const std::vector&lt;int&gt; shape = it-&gt;shape();
+
+
+         // Check scalar case
+         if(shape.size()==1 and shape[0]==1)
+         {
+           std::ostringstream label;
+           label &lt;&lt; name &lt;&lt;&quot; &quot;&lt;&lt; Par::toString.at(tag);
+           specmap[label.str()] = singletdmspec.get_HE().get(tag,name);
+         }
+         // Check vector case
+         else if(shape.size()==1 and shape[0]&gt;1)
+         {
+           for(int i = 1; i&lt;=shape[0]; ++i) {
+             std::ostringstream label;
+             label &lt;&lt; name &lt;&lt;&quot;_&quot;&lt;&lt;i&lt;&lt;&quot; &quot;&lt;&lt; Par::toString.at(tag);
+             specmap[label.str()] = singletdmspec.get_HE().get(tag,name,i);
+           }
+         }
+         // Check matrix case
+         else if(shape.size()==2)
+         {
+           for(int i = 1; i&lt;=shape[0]; ++i) {
+             for(int j = 1; j&lt;=shape[0]; ++j) {
+               std::ostringstream label;
+               label &lt;&lt; name &lt;&lt;&quot;_(&quot;&lt;&lt;i&lt;&lt;&quot;,&quot;&lt;&lt;j&lt;&lt;&quot;) &quot;&lt;&lt;Par::toString.at(tag);
+               specmap[label.str()] = singletdmspec.get_HE().get(tag,name,i,j);
+             }
+           }
+         }
+         // Deal with all other cases
+         else
+         {
+           // ERROR
+           std::ostringstream errmsg;
+           errmsg &lt;&lt; &quot;Error, invalid parameter received while converting SingletDMspectrum to map of strings! This should no be possible if the spectrum content verification routines were working correctly; they must be buggy, please report this.&quot;;
+           errmsg &lt;&lt; &quot;Problematic parameter was: &quot;&lt;&lt; tag &lt;&lt;&quot;, &quot; &lt;&lt; name &lt;&lt; &quot;, shape=&quot;&lt;&lt; shape;
+           utils_error().forced_throw(LOCAL_INFO,errmsg.str());
+         }
+      }
+
+    }
+
+    void get_ScalarSingletDM_Z2_spectrum_as_map (std::map&lt;std::string,double&gt;&amp; specmap)
+    {
+      namespace myPipe = Pipes::get_ScalarSingletDM_Z2_spectrum_as_map;
+      static const Spectrum&amp; spec = *myPipe::Dep::ScalarSingletDM_Z2_spectrum;
+      static const SpectrumContents::ScalarSingletDM_Z2 contents;
+      static const std::vector&lt;SpectrumParameter&gt; required_parameters = contents.all_parameters();
+      fill_map_from_ScalarSingletDM_spectrum(specmap, spec, required_parameters);
+    }
+
+        void get_ScalarSingletDM_Z3_spectrum_as_map (std::map&lt;std::string,double&gt;&amp; specmap)
+    {
+      namespace myPipe = Pipes::get_ScalarSingletDM_Z3_spectrum_as_map;
+      static const Spectrum&amp; spec = *myPipe::Dep::ScalarSingletDM_Z3_spectrum;
+      static const SpectrumContents::ScalarSingletDM_Z3 contents;
+      static const std::vector&lt;SpectrumParameter&gt; required_parameters = contents.all_parameters();
+      fill_map_from_ScalarSingletDM_spectrum(specmap, spec, required_parameters);
+    }
+
+  } // end namespace SpecBit
+} // end namespace Gambit
+</code></pre><hr><p>Updated on 2022-08-02 at 18:18:37 +0000</p><div class=edit-page><a href=https://github.com/RC1242RC/gambit_gh_pages/blob/master/content/en/documentation/code/ColliderBit_development/Files/SpecBit__ScalarSingletDM_8cpp.md><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2"><path d="M17 3a2.828 2.828.0 114 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></svg>Edit this page on GitHub</a></div></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a class=text-muted href=https://www.netlify.com/>Netlify</a>, <a class=text-muted href=https://gohugo.io/>Hugo</a>, and <a class=text-muted href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.54bf0932b8a36d0e152b1635b099a6ef1394d35327e2437550a075c9c8ed1bd8aed5847c21b36fc02ed24014c031d9ca24017b0c78b1639d7e2fa8329898b842.js integrity="sha512-VL8JMrijbQ4VKxY1sJmm7xOU01Mn4kN1UKB1ycjtG9iu1YR8IbNvwC7SQBTAMdnKJAF7DHixY51+L6gymJi4Qg==" crossorigin=anonymous defer></script>
+<script src=/js/highlight.min.5b48bc253dc75aeea5fb366ecf700f4925e2b6eb1a1466f2124b722d68148d67bc0a9365d2b8ad9c585161b46372d23b08509a16f1fd518542b894756d4752d0.js integrity="sha512-W0i8JT3HWu6l+zZuz3APSSXitusaFGbyEktyLWgUjWe8CpNl0ritnFhRYbRjctI7CFCaFvH9UYVCuJR1bUdS0A==" crossorigin=anonymous defer></script>
+<script src=/main.min.40265e9a032aeba5eaf67baac3cbbc22667a7533215d326eeb3e9f4d5e4be40f9ff4dcd22949db73ae527ca26a19d7998091a8973c82af760b2c0daa335190ed.js integrity="sha512-QCZemgMq66Xq9nuqw8u8ImZ6dTMhXTJu6z6fTV5L5A+f9NzSKUnbc65SfKJqGdeZgJGolzyCr3YLLA2qM1GQ7Q==" crossorigin=anonymous defer></script>
+<script src=https://rc1242rc.github.io/index.min.97d6402d7a34cdd5bd42756d4cab0cf30d540a9cfd60b87b21ea49bb4e8ab243c43c3171889d41e133bd95a5c6d18e02d0f4cd3d09c2e02e58f2cc367481d403.js integrity="sha512-l9ZALXo0zdW9QnVtTKsM8w1UCpz9YLh7IepJu06KskPEPDFxiJ1B4TO9laXG0Y4C0PTNPQnC4C5Y8sw2dIHUAw==" crossorigin=anonymous defer></script></body></html>

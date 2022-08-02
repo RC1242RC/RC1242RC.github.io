@@ -1,0 +1,722 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="ie=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><link rel=preload as=font href=https://rc1242rc.github.io/fonts/vendor/jost/jost-v4-latin-regular.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://rc1242rc.github.io/fonts/vendor/jost/jost-v4-latin-500.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://rc1242rc.github.io/fonts/vendor/jost/jost-v4-latin-700.woff2 type=font/woff2 crossorigin><script>(()=>{var e=localStorage.getItem("theme");e==="dark"&&document.documentElement.setAttribute("data-dark-mode","")})()</script><link rel=stylesheet href=https://rc1242rc.github.io/main.f12f7e04ea768acebec10c86baf049d74d6a79f24bc0dfb7ed77aa60462432916dd1ce8f41c78b69496adf650b3039a28a210183cce598f09b95d6fecb5ff999.css integrity="sha512-8S9+BOp2is6+wQyGuvBJ101qefJLwN+37XeqYEYkMpFt0c6PQceLaUlq32ULMDmiiiEBg8zlmPCbldb+y1/5mQ==" crossorigin=anonymous><noscript><style>img.lazyload{display:none}</style></noscript><meta name=robots content="index, follow"><meta name=googlebot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><meta name=bingbot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><title>file src/BBN.cpp - GAMBIT</title><meta name=description content="[No description available]"><link rel=canonical href=https://rc1242rc.github.io/documentation/code/main/files/bbn_8cpp/><meta property="og:locale" content="en_US"><meta property="og:type" content="article"><meta property="og:title" content="file src/BBN.cpp"><meta property="og:description" content="[No description available]"><meta property="og:url" content="https://rc1242rc.github.io/documentation/code/main/files/bbn_8cpp/"><meta property="og:site_name" content="GAMBIT"><meta property="og:image" content="https://rc1242rc.github.io/gambit_logo.png"><meta property="og:image:alt" content="GAMBIT"><meta name=twitter:card content="summary_large_image"><meta name=twitter:site content><meta name=twitter:creator content><meta name=twitter:title content="file src/BBN.cpp"><meta name=twitter:description content="[No description available]"><meta name=twitter:image content="https://rc1242rc.github.io/gambit_logo.png"><meta name=twitter:image:alt content="file src/BBN.cpp"><script type=application/ld+json>{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://rc1242rc.github.io/#/schema/organization/1","name":"Doks","url":"https://rc1242rc.github.io/","sameAs":["https://github.com/GambitBSM"],"logo":{"@type":"ImageObject","@id":"https://rc1242rc.github.io/#/schema/image/1","url":"https://rc1242rc.github.io/logo-doks.png","width":450,"height":416,"caption":"Doks"},"image":{"@id":"https://rc1242rc.github.io/#/schema/image/1"}},{"@type":"WebSite","@id":"https://rc1242rc.github.io/#/schema/website/1","url":"https://rc1242rc.github.io/","name":"GAMBIT","description":"Documentation for the Global And Modular BSM Inference Tool","publisher":{"@id":"https://rc1242rc.github.io/#/schema/organization/1"}},{"@type":"WebPage","@id":"https://rc1242rc.github.io/documentation/code/main/files/bbn_8cpp/","url":"https://rc1242rc.github.io/documentation/code/main/files/bbn_8cpp/","name":"file src\/BBN.cpp","description":"[No description available]","isPartOf":{"@id":"https://rc1242rc.github.io/#/schema/website/1"},"about":{"@id":"https://rc1242rc.github.io/#/schema/organization/1"},"datePublished":"0001-01-01T00:00:00CET","dateModified":"0001-01-01T00:00:00CET","breadcrumb":{"@id":"https://rc1242rc.github.io/documentation/code/main/files/bbn_8cpp/#/schema/breadcrumb/1"},"primaryImageOfPage":{"@id":"https://rc1242rc.github.io/documentation/code/main/files/bbn_8cpp/#/schema/image/2"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://rc1242rc.github.io/documentation/code/main/files/bbn_8cpp/"]}]},{"@type":"BreadcrumbList","@id":"https://rc1242rc.github.io/documentation/code/main/files/bbn_8cpp/#/schema/breadcrumb/1","name":"Breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/","url":"https://rc1242rc.github.io/","name":"Home"}},{"@type":"ListItem","position":2,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/documentation/","url":"https://rc1242rc.github.io/documentation/","name":"Documentation"}},{"@type":"ListItem","position":3,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/documentation/code/","url":"https://rc1242rc.github.io/documentation/code/","name":"Code"}},{"@type":"ListItem","position":4,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/documentation/code/main/","url":"https://rc1242rc.github.io/documentation/code/main/","name":"Main"}},{"@type":"ListItem","position":5,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/documentation/code/main/files/","url":"https://rc1242rc.github.io/documentation/code/main/files/","name":"Files"}},{"@type":"ListItem","position":6,"item":{"@id":"https://rc1242rc.github.io/documentation/code/main/files/bbn_8cpp/"}}]},{"@context":"https://schema.org","@graph":[{"@type":"ImageObject","@id":"https://rc1242rc.github.io/documentation/code/main/files/bbn_8cpp/#/schema/image/2","url":"https://rc1242rc.github.io/gambit_logo.png","contentUrl":"https://rc1242rc.github.io/gambit_logo.png","caption":"file src\/BBN.cpp"}]}]}</script><meta name=theme-color content="#fff"><link rel=icon href=https://rc1242rc.github.io/favicon.ico sizes=any><link rel=icon type=image/svg+xml href=https://rc1242rc.github.io/favicon.svg><link rel=apple-touch-icon sizes=180x180 href=https://rc1242rc.github.io/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=https://rc1242rc.github.io/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=https://rc1242rc.github.io/favicon-16x16.png><link rel=manifest crossorigin=use-credentials href=https://rc1242rc.github.io/site.webmanifest></head><body class="documentation single light"><div class=sticky-top><div class=header-bar></div><header class="navbar navbar-expand-md navbar-light doks-navbar"><nav class="container-xxl flex-wrap flex-md-nowrap" aria-label="Main navigation"><a class="navbar-brand p-0 me-auto" href=https://rc1242rc.github.io/ aria-label=GAMBIT><img class=logo-light src=https://rc1242rc.github.io//images/gambit_logo.png width=50px>
+<img class="logo-dark d-none" src=https://rc1242rc.github.io//images/gambit_logo.png width=50px>
+GAMBIT</a>
+<button class="btn btn-menu order-2 d-block d-lg-none" type=button data-bs-toggle=offcanvas data-bs-target=#offcanvasDoks aria-controls=offcanvasDoks aria-label="Open main menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button><div class="offcanvas offcanvas-end border-0 py-lg-1" tabindex=-1 id=offcanvasDoks data-bs-backdrop=true aria-labelledby=offcanvasDoksLabel><div class="header-bar d-lg-none"></div><div class="offcanvas-header d-lg-none"><h2 class="h5 offcanvas-title ps-2" id=offcanvasDoksLabel><a class=text-dark href=/>GAMBIT</a></h2><button type=button class="btn-close text-reset me-2" data-bs-dismiss=offcanvas aria-label="Close main menu"></button></div><div class="offcanvas-body p-4 p-lg-0"><ul class="nav flex-column flex-lg-row align-items-lg-center mt-2 mt-lg-0 ms-lg-2 me-lg-auto"><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Documentation
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=/documentation/installation/introduction/>Installation</a></li><li><a class=dropdown-item href=/documentation/examples/colliderbit>Examples</a></li><li><a class=dropdown-item href=/documentation/help/faqs/>Help</a></li><li><a class=dropdown-item href=/documentation/code/index_classes>Code Reference</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Community
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=/community/publications/>Publications</a></li><li><a class=dropdown-item href=/community/talks/>Talks</a></li><li><a class=dropdown-item href=/community/members/>Members</a></li><li><a class=dropdown-item href=/community/code_of_conduct/>Code of Conduct</a></li><li><a class=dropdown-item href=/community/contact/>Contact</a></li></ul></li></ul><hr class="text-black-50 my-4 d-lg-none"><form class="doks-search position-relative flex-grow-1 ms-lg-auto me-lg-2"><input id=search class="form-control is-search" type=search placeholder="Search site..." aria-label="Search site..." autocomplete=off><div id=suggestions class="shadow bg-white rounded d-none"></div></form><hr class="text-black-50 my-4 d-lg-none"><ul class="nav flex-column flex-lg-row"><li class=nav-item><a class="nav-link social-link" href=https://github.com/GambitBSM><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37.0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44.0 0020 4.77 5.07 5.07.0 0019.91 1S18.73.65 16 2.48a13.38 13.38.0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07.0 005 4.77 5.44 5.44.0 003.5 8.55c0 5.42 3.3 6.61 6.44 7A3.37 3.37.0 009 18.13V22"/></svg><small class="ms-2 d-lg-none">GitHub</small></a></li></ul><hr class="text-black-50 my-4 d-lg-none"><div class=dropdown><button class="btn btn-doks-light dropdown-toggle" id=doks-versions data-bs-toggle=dropdown aria-expanded=false data-bs-display=static aria-label="Toggle version menu">
+<span class=d-none>Doks</span>
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></button><ul class="dropdown-menu dropdown-menu-lg-end me-lg-2 shadow rounded border-0" aria-labelledby=doks-versions></ul></div></div></div></nav></header></div><div class="wrap container-xxl" role=document><div class=content><div class="row flex-xl-nowrap"><div class="col-lg-5 col-xl-4 docs-sidebar"><nav class=docs-links aria-label="Main navigation"><ul class="list-unstyled collapsible-sidebar"><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-installation aria-expanded=false>
+Installation</button><div class=collapse id=section-installation><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/installation/introduction/>Getting Started</a></li><li><a class="docs-link rounded" href=/documentation/installation/docker_usage/>Docker Usage</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_linux/>Installation for Linux</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_windows/>Installation for Windows</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_macos/>Installation for macOS</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-examples aria-expanded=false>
+Examples</button><div class=collapse id=section-examples><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/examples/colliderbit/>ColliderBit</a></li><li><a class="docs-link rounded" href=/documentation/examples/anotherbit/>AnotherBit</a></li><li><a class="docs-link rounded" href=/documentation/examples/anotherbit2/>AnotherBit2</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-help aria-expanded=false>
+Help</button><div class=collapse id=section-help><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/help/faqs/>FAQs</a></li><li><a class="docs-link rounded" href=/documentation/help/compiler_matrix/>Compiler Matrix</a></li><li><a class="docs-link rounded" href=/documentation/help/known_issues/>Known Issues</a></li><li><a class="docs-link rounded" href=/documentation/help/configuration_examples/>Configuration Examples</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-code aria-expanded=false>
+Code Reference</button></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section- aria-expanded=false>
+GAMBIT_VERSION_HERE</button><div class=collapse id=section-><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/code/colliderbit_development/index_classes/>Classes</a></li><li><a class="docs-link rounded" href=/documentation/code/colliderbit_development/index_files/>Files</a></li><li><a class="docs-link rounded" href=/documentation/code/colliderbit_development/index_pages/>Pages</a></li><li><a class="docs-link rounded" href=/documentation/code/colliderbit_development/index_namespaces/>Namespaces</a></li></ul></div></li></ul></nav></div><nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation"><div class=d-xl-none><button class="btn btn-outline-primary btn-sm doks-toc-toggle collapsed" type=button data-bs-toggle=collapse data-bs-target=#onThisPage aria-controls=doks-docs-nav aria-expanded=false aria-label="Toggle On this page navigation">
+<span>On this page</span>
+<span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg></span></button><div class=collapse id=onThisPage><div class="card card-body mt-3 py-1"><div class=page-links><nav id=TableOfContents><ul><li><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#source-code>Source code</a></li></ul></li></ul></nav></div></div></div></div><div class="page-links d-none d-xl-block"><h3>On this page</h3><nav id=TableOfContents><ul><li><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#source-code>Source code</a></li></ul></li></ul></nav></div></nav><main class="docs-content col-lg-11 col-xl-9 mx-xl-auto"><h1>file src/BBN.cpp</h1><p class=lead></p><p>[No description available] <a href=#detailed-description>More&mldr;</a></p><h2 id=namespaces>Namespaces <a href=#namespaces class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th>Name</th></tr></thead><tbody><tr><td><strong><a href=/documentation/code/main/namespaces/namespacegambit/>Gambit</a></strong><br>TODO: see if we can use this one:</td></tr><tr><td><strong><a href=/documentation/code/main/namespaces/namespacegambit_1_1cosmobit/>Gambit::CosmoBit</a></strong></td></tr></tbody></table><h2 id=detailed-description>Detailed Description <a href=#detailed-description class=anchor aria-hidden=true>#</a></h2><p><strong>Author</strong>:</p><ul><li>Selim C. Hotinli (<a href=mailto:selim.hotinli14@pimperial.ac.uk>selim.hotinli14@pimperial.ac.uk</a>)</li><li>Patrick Stoecker (<a href=mailto:stoecker@physik.rwth-aachen.de>stoecker@physik.rwth-aachen.de</a>)</li><li>Janina Renk (<a href=mailto:janina.renk@fysik.su.se>janina.renk@fysik.su.se</a>)</li><li>Sanjay Bloor (<a href=mailto:sanjay.bloor12@imperial.ac.uk>sanjay.bloor12@imperial.ac.uk</a>)</li><li>Sebastian Hoof (<a href=mailto:hoof@uni-goettingen.de>hoof@uni-goettingen.de</a>)</li><li>Pat Scott (<a href=mailto:pat.scott@uq.edu.au>pat.scott@uq.edu.au</a>)</li><li>Tomas Gonzalo (<a href=mailto:tomas.gonzalo@monash.edu>tomas.gonzalo@monash.edu</a>)</li></ul><p><strong>Date</strong>:</p><ul><li>2017 Jul</li><li>2018 May</li><li>2018 Aug - Sep</li><li>2017 Nov</li><li>2018 Jan - May</li><li>2019 Jan, Feb, June, Nov</li><li>2018 June</li><li>2019 Mar,June</li><li>2019 June, Nov</li><li>2020 Mar</li><li>2018 Mar</li><li>2019 Jul</li><li>2020 Apr</li><li>2020 Sep</li><li>2022 Jan</li></ul><p>CosmoBit routines relating to BBN.</p><hr><p>Authors (add name and date if you modify):</p><hr><h2 id=source-code>Source code <a href=#source-code class=anchor aria-hidden=true>#</a></h2><pre><code>//   GAMBIT: Global and Modular BSM Inference Tool
+//   *********************************************
+
+#include &lt;memory&gt;  // make_unique pointers
+#include &lt;stdint.h&gt; // save memory addresses as int
+
+#include &lt;gsl/gsl_linalg.h&gt;
+
+#include &quot;gambit/Utils/yaml_options.hpp&quot;
+#include &quot;gambit/Utils/ascii_dict_reader.hpp&quot;
+#include &quot;gambit/Elements/gambit_module_headers.hpp&quot;
+#include &quot;gambit/CosmoBit/CosmoBit_rollcall.hpp&quot;
+#include &quot;gambit/CosmoBit/CosmoBit_types.hpp&quot;
+
+namespace Gambit
+{
+
+  namespace CosmoBit
+  {
+    using namespace LogTags;
+
+    void AlterBBN_Input(map_str_dbl &amp;result)
+    {
+      using namespace Pipes::AlterBBN_Input;
+
+      // If we are using some of the &quot;non-standard energy content&quot; models, set the
+      // inputs for the AlterBBN_input map according to the parameters of that model.
+      // In case we are not using one of these models, we use the default values
+      // (i.e. eta inferred from LCDM, Nnu = Neff_SM (3.045) and dNnu = 0)
+      if (ModelInUse(&quot;etaBBN_rBBN_rCMB_dNurBBN_dNurCMB&quot;))
+      {
+        double dNurBBN = *Param.at(&quot;dNur_BBN&quot;);
+
+        // Check if the input for Delta N_ur is negative (unphysical)
+        // NOTE: CosmoBit performs no sanity checks if you allow negative Delta N_ur; you're on your own.
+        static bool allow_negative_delta_N_ur = runOptions-&gt;getValueOrDef&lt;bool&gt;(false,&quot;allow_negative_delta_N_ur&quot;);
+
+        // Only let the user have negative contributions to NEff from Delta N_ur if they've signed off on it.
+        if ( (!allow_negative_delta_N_ur) &amp;&amp; (dNurBBN &lt; 0.0) )
+        {
+          std::ostringstream err;
+          err &lt;&lt; &quot;A negative value for \&quot;dNur_BBN\&quot; is unphysical and is not allowed in CosmoBit by default!\n\n&quot;;
+          err &lt;&lt; &quot;If you want to proceed with negative values, please add\n\n&quot;;
+          err &lt;&lt; &quot;  - module: CosmoBit\n&quot;;
+          err &lt;&lt; &quot;    options:\n&quot;;
+          err &lt;&lt; &quot;      allow_negative_delta_N_ur: true\n\n&quot;;
+          err &lt;&lt; &quot;to the Rules section of the YAML file.&quot;;
+          CosmoBit_error().raise(LOCAL_INFO,err.str());
+        }
+
+        //If check is passed, set inputs.
+        result[&quot;Nnu&quot;] = *Dep::Neff_SM*pow(*Param.at(&quot;r_BBN&quot;),4); // contribution from SM neutrinos
+        result[&quot;dNnu&quot;] = dNurBBN;                                // dNnu: within AlterBBN scenarios in which the sum Nnu+dNnu is the same are identical
+        result[&quot;eta0&quot;] = *Param.at(&quot;eta_BBN&quot;);                // eta at the end of BBN
+      }
+      else // at this point either LCDM or LCDM_theta are in use so we assume standard values for Nnu and dNnu
+      {
+        result[&quot;Nnu&quot;] = *Dep::Neff_SM; // contribution from SM neutrinos
+        result[&quot;dNnu&quot;] = 0.;           // no extra ur species in standard LCDM model
+        result[&quot;eta0&quot;] = *Dep::eta0;  // assume etaBBN = eta0
+      }
+
+      // Adopt the default value for the neutron lifetime in seconds if is not passed as a model parameter
+      if (ModelInUse(&quot;nuclear_params_neutron_lifetime&quot;))
+      {
+        result[&quot;neutron_lifetime&quot;] = *Param.at(&quot;neutron_lifetime&quot;);
+      }
+      else
+      {
+        result[&quot;neutron_lifetime&quot;] = 879.4; // (PDG 2019 recommendation http://pdg.lbl.gov/2019/listings/rpp2019-list-n.pdf);
+      }
+
+      // Tell AlterBBN how to the method and precision to solve the differential equations (-&gt;failsafe)
+      // and also tell it how thorough it should estimate the the theoretical uncertainties.
+      result[&quot;failsafe&quot;] = runOptions-&gt;getValueOrDef&lt;double&gt;(7,&quot;failsafe&quot;);
+      result[&quot;err&quot;] = runOptions-&gt;getValueOrDef&lt;double&gt;(1,&quot;err&quot;);
+
+      logger() &lt;&lt; &quot;Set AlterBBN with parameters eta = &quot; &lt;&lt; result[&quot;eta0&quot;] &lt;&lt; &quot;, Nnu = &quot; &lt;&lt; result[&quot;Nnu&quot;] &lt;&lt; &quot;, dNnu = &quot; &lt;&lt; result[&quot;dNnu&quot;] &lt;&lt; &quot;, neutron lifetime = &quot; &lt;&lt; result[&quot;neutron_lifetime&quot;];
+      logger() &lt;&lt; &quot; and error params: failsafe = &quot; &lt;&lt; result[&quot;failsafe&quot;] &lt;&lt; &quot;, err = &quot; &lt;&lt; result[&quot;err&quot;] &lt;&lt; EOM;
+    }
+
+
+    void populate_correlation_matrix(const std::map&lt;std::string, int&gt;&amp; abund_map, std::vector&lt;std::vector&lt;double&gt;&gt;&amp; corr,
+                                     std::vector&lt;double&gt;&amp; errors, bool has_errors, const Options&amp; runOptions)
+    {
+      std::vector&lt;str&gt; isotope_basis = runOptions.getValue&lt;std::vector&lt;str&gt; &gt;(&quot;isotope_basis&quot;);
+      unsigned int nisotopes = isotope_basis.size();
+
+      std::vector&lt;std::vector&lt;double&gt;&gt; tmp_corr;
+      if (runOptions.hasKey(&quot;correlation_matrix&quot;))
+      {
+        tmp_corr = runOptions.getValue&lt;std::vector&lt;std::vector&lt;double&gt;&gt;&gt;(&quot;correlation_matrix&quot;);
+      }
+      else
+      {
+        tmp_corr = std::vector&lt;std::vector&lt;double&gt;&gt;(nisotopes, std::vector&lt;double&gt;(nisotopes,0.0));
+        for (unsigned int ie = 0; ie &lt; nisotopes; ie++)
+          tmp_corr.at(ie).at(ie) = 1.0;
+      }
+
+      std::vector&lt;double&gt; tmp_err;
+
+      // Check if the size of the isotope_basis and the size of the correlation matrix agree
+      if (nisotopes != tmp_corr.size())
+      {
+        std::ostringstream err;
+        err &lt;&lt; &quot;The length of the list \'isotope_basis\' and the size of the correlation matrix \'correlation_matrix\' do not agree&quot;;
+        CosmoBit_error().raise(LOCAL_INFO, err.str());
+      }
+
+      // If the relative errors or absolute errors are also given, then do also
+      // a check if the length of the list is correct and if the entries are positive.
+      if (has_errors)
+      {
+        if (runOptions.hasKey(&quot;relative_errors&quot;))
+        {
+          tmp_err = runOptions.getValue&lt; std::vector&lt;double&gt; &gt;(&quot;relative_errors&quot;);
+          if (nisotopes != tmp_err.size())
+          {
+            std::ostringstream err;
+            err &lt;&lt; &quot;The length of the list \'isotope_basis\' and the length of \'relative_errors\' do not agree&quot;;
+            CosmoBit_error().raise(LOCAL_INFO, err.str());
+          }
+        }
+        else
+        {
+          tmp_err = runOptions.getValue&lt; std::vector&lt;double&gt; &gt;(&quot;absolute_errors&quot;);
+          if (nisotopes != tmp_err.size())
+          {
+            std::ostringstream err;
+            err &lt;&lt; &quot;The length of the list \'isotope_basis\' and the length of \'absolute_errors\' do not agree&quot;;
+            CosmoBit_error().raise(LOCAL_INFO, err.str());
+          }
+        }
+
+        for (std::vector&lt;double&gt;::iterator it = tmp_err.begin(); it != tmp_err.end(); it++)
+        {
+          if (*it &lt;= 0.0)
+          {
+            std::ostringstream err;
+            err &lt;&lt; &quot;At least one entry in 'relative_error'/'absolute_error' is not positive&quot;;
+            CosmoBit_error().raise(LOCAL_INFO, err.str());
+          }
+        }
+      }
+
+      // Check if the correlation matrix is square
+      for (std::vector&lt;std::vector&lt;double&gt;&gt;::iterator it = tmp_corr.begin(); it != tmp_corr.end(); it++)
+      {
+        if (it-&gt;size() != nisotopes)
+        {
+          std::ostringstream err;
+          err &lt;&lt; &quot;The correlation matrix is not a square matrix&quot;;
+          CosmoBit_error().raise(LOCAL_INFO, err.str());
+        }
+      }
+
+      // Check if the entries in the correlation matrix are reasonable
+      for (unsigned int ie=0; ie&lt;nisotopes; ie++)
+      {
+        // Check if the diagonal entries are equal to 1.
+        if (std::abs(tmp_corr.at(ie).at(ie) - 1.) &gt; 1e-6)
+        {
+          std::ostringstream err;
+          err &lt;&lt; &quot;Not all diagonal elements of the correlation matrix are 1.&quot;;
+          CosmoBit_error().raise(LOCAL_INFO, err.str());
+        }
+        for (unsigned int je=0; je&lt;=ie; je++)
+        {
+          // Check for symmetry
+          if (std::abs(tmp_corr.at(ie).at(je) - tmp_corr.at(je).at(ie)) &gt; 1e-6)
+          {
+            std::ostringstream err;
+            err &lt;&lt; &quot;The correlation matrix is not symmetric&quot;;
+            CosmoBit_error().raise(LOCAL_INFO, err.str());
+          }
+          // Check if the off-diagonal elements are between -1 and 1.
+          if (std::abs(tmp_corr.at(ie).at(je)) &gt;= 1. &amp;&amp; (ie != je))
+          {
+            std::ostringstream err;
+            err &lt;&lt; &quot;The off-diagonal elements of the correlation matrix are not sensible (abs(..) &gt; 1)&quot;;
+            CosmoBit_error().raise(LOCAL_INFO, err.str());
+          }
+        }
+      }
+
+      // Populate the correlation matrix and relative (absolute) errors
+      for (std::vector&lt;str&gt;::iterator it1 = isotope_basis.begin(); it1 != isotope_basis.end(); it1++)
+      {
+        int ie  =  abund_map.at(*it1);
+        int i = std::distance( isotope_basis.begin(), it1 );
+        // If errors are given, fill errors with the respective values (-1.0 refers to no errors given).
+        if (has_errors) errors.at(ie) = tmp_err.at(i);
+        for (std::vector&lt;str&gt;::iterator it2 = isotope_basis.begin(); it2 != isotope_basis.end(); it2++)
+        {
+          int je = abund_map.at(*it2);
+          int j = std::distance( isotope_basis.begin(), it2 );
+          corr.at(ie).at(je) = tmp_corr.at(i).at(j);
+        }
+      }
+    }
+
+    void compute_primordial_abundances_BBN(BBN_container &amp;result)
+    {
+      using namespace Pipes::compute_primordial_abundances_BBN;
+
+      // Global variable of AlterBBN (# computed element abundances)
+      const static size_t NNUC = BEreq::get_NNUC();
+
+      // In AlterBBN ratioH and cov_ratioH are arrays of fixed length.
+      // With certain compiler versions (gcc 5.4.0) we have seen memory corruption problems
+      // if we initialise these as double ratioH[NNUC+1], since the memory was not allocated properly.
+      // Fixed size arrays do not seem to be properly supported even though there are no errors at compile time.
+      // Using a unique pointer for ratioH and a 2D vector for cov_ratioH avoids these problems.
+      auto deleter = [&amp;](double* ptr){delete [] ptr;};
+      std::unique_ptr&lt;double[], decltype(deleter)&gt; ratioH(new double[NNUC+1](), deleter);
+      std::unique_ptr&lt;double[], decltype(deleter)&gt; ratioH_upper(new double[NNUC+1](), deleter);
+      std::unique_ptr&lt;double[], decltype(deleter)&gt; ratioH_lower(new double[NNUC+1](), deleter);
+      std::unique_ptr&lt;double[], decltype(deleter)&gt; cov_ratioH(new double[(NNUC+1)*(NNUC+1)](), deleter);
+
+      static bool first = true;
+
+      /*  Logic of the modified uncertainty treatment:
+          - To modify the covariance matrix, the list containing the isotope basis
+            must be present.
+          - If the correlation_matrix is given it will be read, if it is missing,
+            it is assumed to be diagonal.
+          - For the uncertainties on the respective isotopes, either the relative
+            or an absolute error can be specified. They are mutually exclusive.
+            If they are missing, the uncertainty will be deduced from the result
+            of AlterBBN
+      */
+      const static bool use_custom_covariances = (runOptions-&gt;hasKey(&quot;isotope_basis&quot;));
+      const static bool has_relative_errors = runOptions-&gt;hasKey(&quot;relative_errors&quot;);
+      const static bool has_absolute_errors = runOptions-&gt;hasKey(&quot;absolute_errors&quot;);
+      const static bool has_custom_correlations = runOptions-&gt;hasKey(&quot;correlation_matrix&quot;);
+      const static bool use_diff_uncertainties = runOptions-&gt;getValueOrDef&lt;bool&gt;(false, &quot;diff_uncertainties&quot;);
+
+      // Raise error if the modified uncertainty treatment is intended but 'isotope_basis' is missing
+      if( !use_custom_covariances &amp;&amp;
+          (has_relative_errors || has_absolute_errors || has_custom_correlations) )
+      {
+        str err = &quot;It appears that you intend to pass a custom covariance&quot;
+                  &quot; matrix to AlterBBN, but the entry for \'isotope_basis\'&quot;
+                  &quot; is missing in the options.\n&quot;
+                  &quot;Without this entry neither of the options \'relative_errors\',&quot;
+                  &quot; \'absolute_errors\', or \'correlation_matrix\' can be interpreted.\n\n&quot;
+                  &quot;Please fix this by providing \'isotope_basis\' or by deleting the conflicting options.&quot;;
+                  CosmoBit_error().raise(LOCAL_INFO, err);
+      }
+
+      // Raise error if the uncertainty rules are contradictory
+      if (has_relative_errors &amp;&amp; has_absolute_errors)
+      {
+        str err = &quot;You specified both \'relative_errors\' and \'absolute_errors\'.\n&quot;
+                  &quot;This is contradictory. Please choose only one option.\n&quot;;
+        CosmoBit_error().raise(LOCAL_INFO, err);
+      }
+
+      if ((has_relative_errors or has_absolute_errors) and use_diff_uncertainties)
+      {
+        str err = &quot;The options \'relative_errors\' and \'absolute_errors\' are contradictory with \'diff_uncertainties\'.\n&quot;
+                  &quot;Please choose either one of the former or the latter option.\n&quot;;
+        CosmoBit_error().raise(LOCAL_INFO, err);
+      }
+
+      // Define the vectors to hold the customs errors (correlation matrix + relative (absolute) errors on the isotopes)
+      static std::vector&lt;double&gt; errors(NNUC+1, -1.0);
+      static std::vector&lt;std::vector&lt;double&gt;&gt; corr(NNUC+1, std::vector&lt;double&gt;(NNUC+1, 0.0));
+
+      // Fill AlterBBN_input map with the parameters for the model in consideration
+      map_str_dbl AlterBBN_input = *Dep::AlterBBN_Input;
+
+      if (first)
+      {
+        // Init abundance map and allocate arrays in result
+        result.set_abund_map(BEreq::get_abund_map_AlterBBN());
+        result.init_arr_size(NNUC);
+
+        // Work out which isotopes have been requested downstream
+        // From the YAML sub-capabilities
+        std::vector&lt;str&gt; v = Downstream::subcaps-&gt;getNames();
+        // From other dependencies
+        if (Downstream::neededFor(&quot;helium_abundance&quot;)) v.push_back(&quot;He4&quot;);
+        result.set_active_isotopes(std::set&lt;str&gt;(v.begin(), v.end()));
+        if (result.get_active_isotopes().empty())
+        {
+          str err = &quot;No relevant sub-capabilities found for compute_primordial_abundances_BBN.  Please specify elements to\n&quot;
+                    &quot;compute abundances for in the ObsLikes section of your yaml file as in e.g.\n&quot;
+                    &quot;  sub_capabilities: [He4, D, Li7]&quot;;
+          CosmoBit_error().raise(LOCAL_INFO, err);
+        }
+
+        // Process user-defined correlations (if provided)
+        if (use_custom_covariances)
+        {
+          for (size_t ie = 1; ie &lt;= NNUC; ie++) corr.at(ie).at(ie) = 1.;
+          std::map&lt;std::string, int&gt; abund_map = result.get_abund_map();
+
+          // Check whether any of the entries in isotope_basis is not recognised
+          std::vector&lt;str&gt; isotope_basis = runOptions-&gt;getValue&lt;std::vector&lt;str&gt; &gt;(&quot;isotope_basis&quot;);
+          for (const auto&amp; it : isotope_basis)
+          {
+            if (abund_map.count(it) == 0)
+            {
+              std::ostringstream err;
+              err &lt;&lt; &quot;The isotope \'&quot; &lt;&lt; it &lt;&lt; &quot;\' is not recognised by AlterBBN.&quot; ;
+              CosmoBit_error().raise(LOCAL_INFO, err.str());
+            }
+          }
+
+          bool has_errors = (has_relative_errors || has_absolute_errors);
+
+          // If either has_relative_errors or has_absolute_errors is and the &quot;err&quot; option for AlterBBN is nonzero,
+          // we need to carefully check, whether we are about to override all error estimates for the relevant abundances.
+          // To this end, perform a set difference between the elements in the subcaps (i.e. isotopes we are interested in)
+          // and the isotopes in isotope basis (the ones we want to override).
+          // When all elements in v are included in isotope_basis, throw an error
+          if (has_errors &amp;&amp; int(AlterBBN_input[&quot;err&quot;]) != 0)
+          {
+            std::set&lt;int&gt; modified_indices, diff;
+            for (const auto&amp; it : isotope_basis)
+            {
+              modified_indices.insert(abund_map[it]);
+            }
+            std::set&lt;int&gt; active_indices = result.get_active_isotope_indices();
+            std::set_difference(active_indices.begin(), active_indices.end(),
+                                modified_indices.begin(), modified_indices.end(),
+                                std::inserter(diff, diff.begin()));
+
+            if (diff.size() == 0)
+            {
+              std::ostringstream err;
+              err &lt;&lt; &quot;It seems that you run AlterBBN in a mode with \'error\' != 0 &quot;;
+              err &lt;&lt; &quot;but you have also chosen to set the uncertainties manually by &quot;;
+              err &lt;&lt; &quot;either \'absolute_errors\' or \'relative_errors\'.\n&quot;;
+              err &lt;&lt; &quot;Given your input for the \'isotope_basis\' option, you are about &quot;;
+              err &lt;&lt; &quot;to ovveride all relevant entries of the covariance matrix.\n\n&quot;;
+              err &lt;&lt; &quot;Therefore any nonzero value for \'err\' would have no effect on your &quot;;
+              err &lt;&lt; &quot;results but can slow down the code significantly.\n&quot; ;
+              err &lt;&lt; &quot;Please fix this by setting \'err\'to 0 in the rule for \'AlterBBN_Input\'.&quot;;
+              CosmoBit_error().raise(LOCAL_INFO, err.str());
+            }
+          }
+
+          populate_correlation_matrix(abund_map, corr, errors, has_errors, *runOptions);
+        }
+
+        // Here for a good time, not a long time
+        first = false;
+      }
+
+      // Call AlterBBN routine to calculate element abundances (&amp; errors -- depending
+      // on error calculation settings made with parameters 'err' and failsafe set in
+      // 'AlterBBN_Input')
+      if (not BEreq::call_nucl_err(AlterBBN_input, &amp;ratioH[0], &amp;cov_ratioH[0]))
+      {
+        std::ostringstream err;
+        err &lt;&lt; &quot;AlterBBN calculation for primordial element abundances failed. Invalidating Point.&quot;;
+        invalid_point().raise(err.str());
+      }
+
+      // If the uncertainties are to be taken as difference of high/low values, compute the high and low abundances
+      if(use_diff_uncertainties)
+      {
+        int err = AlterBBN_input[&quot;err&quot;];
+        AlterBBN_input[&quot;err&quot;] = 1;
+        int err1 = BEreq::call_nucl(AlterBBN_input, &amp;ratioH_upper[0]);
+        AlterBBN_input[&quot;err&quot;] = 2;
+        int err2 = BEreq::call_nucl(AlterBBN_input, &amp;ratioH_lower[0]);
+        AlterBBN_input[&quot;err&quot;] = err;
+        if (not err1 or not err2)
+        {
+          std::ostringstream err;
+          err &lt;&lt; &quot;AlterBBN calculation for primordial element abundances failed.&quot;;
+          CosmoBit_error().raise(LOCAL_INFO, err.str());
+        }
+      }
+
+      // Fill relative (absolute) errors
+      std::vector&lt;double&gt; err_ratio(NNUC+1,0);
+      if (use_custom_covariances) for (size_t ie=1; ie &lt;= NNUC; ++ie)
+      {
+        if (has_relative_errors &amp;&amp; (errors.at(ie) &gt; 0.0))
+          err_ratio.at(ie) =  errors.at(ie) * ratioH[ie];
+        else if (has_absolute_errors &amp;&amp; (errors.at(ie) &gt; 0.0))
+          err_ratio.at(ie) =  errors.at(ie);
+        else if (use_diff_uncertainties)
+        {
+          err_ratio.at(ie) = std::max(std::abs(ratioH_upper[ie]-ratioH[ie]),std::abs(ratioH_lower[ie]-ratioH[ie]));
+          // If the error is larger than the central value, take as error the central value
+          if(err_ratio.at(ie) &gt; ratioH[ie]) err_ratio.at(ie) = ratioH[ie];
+        }
+        else
+          // get every diagonal element (row and line 0 are not filled)
+          err_ratio.at(ie) = sqrt(cov_ratioH[ie*(NNUC+1)+ie]);
+      }
+
+      // Fill abundances and covariance matrix of BBN_container with requested results from AlterBBN
+      for (size_t ie=1; ie &lt;= NNUC; ++ie)
+      {
+        result.set_BBN_abund(ie, triplet&lt;double&gt;(ratioH[ie],ratioH_upper[ie],ratioH_lower[ie]));
+        for (size_t je=1; je &lt;= NNUC; ++je)
+        {
+          if (use_custom_covariances)
+            result.set_BBN_covmat(ie, je, corr.at(ie).at(je) * err_ratio.at(ie) * err_ratio.at(je));
+          else
+            result.set_BBN_covmat(ie, je, cov_ratioH[ie*(NNUC+1)+je]);
+        }
+      }
+
+    }
+
+    // Dummy function to return the primordial abundances unchanged from BBN
+    void primordial_abundances(BBN_container &amp;result)
+    {
+      using namespace Pipes::primordial_abundances;
+      result = *Dep::primordial_abundances_BBN;
+    }
+
+    // Compute the primordial abundances including the effects of photodisintegration
+    // from a decaying DM component.
+    void primordial_abundances_decayingDM(BBN_container &amp;result)
+    {
+      using namespace Pipes::primordial_abundances_decayingDM;
+
+      // Get all the relevant parameters from the decayingDM_mixture model
+      const double m_in_MeV = 1e3*(*Param[&quot;mass&quot;]);
+      const double tau = *Param[&quot;lifetime&quot;];
+      const double BR_el = *Param[&quot;BR_el&quot;];
+      const double BR_ph = *Param[&quot;BR_ph&quot;];
+      const double xi = *Param[&quot;fraction&quot;];
+
+      // Calculate the number density of the decaying particles today as if they would not have decayed. (in MeV^3)
+      const double rho0_crit_by_h2 = 3.*pow(m_planck_red*1e3,2) * pow((1e5*1e3*hbar/Mpc_SI),2);  // rho0_crit/(h^2) in MeV^4
+      const double omega_cdm = *Param[&quot;omega_cdm&quot;];
+      const double n0_a = xi / m_in_MeV * omega_cdm * rho0_crit_by_h2;
+
+      // Normalise n0_a with respect to the photon number density at T0.
+      const double T_cmb_in_MeV = 1e-6 * kB_eV_over_K * *Param[&quot;T_cmb&quot;];
+      const double n0_gamma = 2. * zeta3 / pow(pi,2) * pow(T_cmb_in_MeV,3);
+      const double N0a = n0_a / n0_gamma;
+
+      // Fixed number of isotopes
+      int niso = 9;
+
+      // Set input parameters
+      BEreq::set_input_params(
+        byVal(runOptions-&gt;getValueOrDef&lt;bool&gt;(false, &quot;verbose&quot;)),
+        byVal(runOptions-&gt;getValueOrDef&lt;int&gt;(150, &quot;NE_pd&quot;)), // default: 150, fast: 75, aggresive: 30
+        byVal(runOptions-&gt;getValueOrDef&lt;int&gt;(50, &quot;NT_pd&quot;)), // default: 50, fast: 25, aggresive: 10
+        byVal(runOptions-&gt;getValueOrDef&lt;double&gt;(1e-3, &quot;eps&quot;)) // default: 1e-3, fast: 1e-2, aggresive: 1e-1
+      );
+
+      result = *Dep::primordial_abundances_BBN;
+
+      std::vector&lt;double&gt; abundances_pre(niso,0.0);
+      std::vector&lt;double&gt; covariance_pre(niso*niso,0.0);
+      for(int i=0; i !=niso; ++i)
+      {
+        abundances_pre[i] = result.get_BBN_abund(i+1);
+        for(int j=0; j&lt;niso; ++j)
+        {
+          covariance_pre[i*niso + j] = result.get_BBN_covmat(i+1,j+1);
+        }
+      }
+      std::vector&lt;double&gt; abundances_post(niso,0.0);
+      std::vector&lt;double&gt; covariance_post(niso*niso,0.0);
+
+      BEreq::abundance_photodisintegration_decay(abundances_pre.data(),
+                                                 covariance_pre.data(),
+                                                 abundances_post.data(),
+                                                 covariance_post.data(),
+                                                 byVal(m_in_MeV),
+                                                 byVal(tau),
+                                                 byVal(N0a),
+                                                 byVal(BR_el),
+                                                 byVal(BR_ph),
+                                                 byVal(niso));
+
+      for(int i=0; i !=niso; ++i)
+      {
+        result.set_BBN_abund(i+1,abundances_post[i]);
+        for(int j=0; j &lt; niso; ++j)
+        {
+          result.set_BBN_covmat(i+1,j+1,covariance_post[i*niso+j]);
+        }
+      }
+
+      // If there are higher and lower abundances, apply photodisintegration on them too
+      // and take the uncertainty as the largest difference
+      if(result.has_BBN_abund_upper() or result.has_BBN_abund_lower())
+      {
+        std::vector&lt;double&gt; abundances_upper_post(niso,0.0);
+        std::vector&lt;double&gt; abundances_lower_post(niso,0.0);
+
+        for(int i=0; i !=niso; ++i) abundances_pre[i] = result.get_BBN_abund_upper(i+1);
+        BEreq::abundance_photodisintegration_decay(abundances_pre.data(),
+                                                   covariance_pre.data(),
+                                                   abundances_upper_post.data(),
+                                                   covariance_post.data(),
+                                                   byVal(m_in_MeV),
+                                                   byVal(tau),
+                                                   byVal(N0a),
+                                                   byVal(BR_el),
+                                                   byVal(BR_ph),
+                                                   byVal(niso));
+
+        for(int i=0; i !=niso; ++i) abundances_pre[i] = result.get_BBN_abund_lower(i+1);
+        BEreq::abundance_photodisintegration_decay(abundances_pre.data(),
+                                                   covariance_pre.data(),
+                                                   abundances_lower_post.data(),
+                                                   covariance_post.data(),
+                                                   byVal(m_in_MeV),
+                                                   byVal(tau),
+                                                   byVal(N0a),
+                                                   byVal(BR_el),
+                                                   byVal(BR_ph),
+                                                   byVal(niso));
+
+        for(int i=0; i !=niso; ++i)
+        {
+          result.set_BBN_abund(i+1,triplet&lt;double&gt;(abundances_post[i], abundances_upper_post[i], abundances_lower_post[i]));
+          result.set_BBN_covmat(i+1,i+1,pow(std::max(std::abs(abundances_upper_post[i]-abundances_post[i]),std::abs(abundances_lower_post[i]-abundances_post[i])),2));
+          // If the error is larger than the central value, take as error the central value
+          if(result.get_BBN_covmat(i+1,i+1) &gt; abundances_post[i]) result.set_BBN_covmat(i+1,i+1,abundances_post[i]);
+        }
+      }
+    }
+
+    void extract_helium_abundance(double &amp;result)
+    {
+      using namespace Pipes::extract_helium_abundance;
+      result = Dep::primordial_abundances-&gt;get_BBN_abund(&quot;He4&quot;);
+    }
+
+    void compute_BBN_LogLike(double &amp;result)
+    {
+      using namespace Pipes::compute_BBN_LogLike;
+
+      double chi2 = 0;
+      int ii = 0;
+      int ie,je,s;
+
+      BBN_container BBN_res = *Dep::primordial_abundances; // Fill BBN_container with the values of primordial abundances today
+
+      const std::map&lt;std::string, int&gt;&amp; abund_map = BBN_res.get_abund_map();
+      const int niso = BBN_res.get_NNUC();
+
+      // The measurement of the abundance for 3He is done for 3H/D, whereas the computed abundance is 3He/H, so convert it
+      int He3 = abund_map.at(&quot;He3&quot;), D = abund_map.at(&quot;D&quot;);
+      double YD = BBN_res.get_BBN_abund(&quot;D&quot;), YHe3 = BBN_res.get_BBN_abund(&quot;He3&quot;)/BBN_res.get_BBN_abund(&quot;D&quot;);
+      
+      // If the abundance of deuterium is smaller than some arbitrary value, it is effectively zero, so no need to compute anything as the point will be invalidated anyway
+      if(YD &gt; 1.0e-20)
+      {
+        double old_covmat_He3_D = BBN_res.get_BBN_covmat(He3,D);
+        BBN_res.set_BBN_abund(He3, YHe3);
+        for(int i=1; i&lt;=niso; i++)
+        {
+          if(i != He3)
+          {
+            BBN_res.set_BBN_covmat(i, He3, (BBN_res.get_BBN_covmat(i,He3)-BBN_res.get_BBN_covmat(i,D)*YHe3) / YD);
+            BBN_res.set_BBN_covmat(He3, i, BBN_res.get_BBN_covmat(i,He3));
+          }
+          else
+          {
+            BBN_res.set_BBN_covmat(He3, He3, (YHe3*YHe3)/(YD*YD) * (BBN_res.get_BBN_covmat(He3,He3)/pow(YHe3,2) + BBN_res.get_BBN_covmat(D,D)/pow(YD,2) - 2*old_covmat_He3_D/YD/YHe3));
+            // If the uncertainty is negative, it means that the correlations are larger thatn the uncertainties, which is an unphysical point, so invalidate it
+            if(BBN_res.get_BBN_covmat(He3,He3) &lt; 0)
+            {
+              std::ostringstream err;
+              err &lt;&lt; &quot;Unphysical uncertainties. Invalidating Point.&quot;;
+              invalid_point().raise(err.str());
+            }
+          }
+        }
+      }
+      else
+      {
+        std::ostringstream err;
+        err &lt;&lt; &quot;Deuterium abundance is too small. Invalidating Point.&quot;;
+        invalid_point().raise(err.str());
+      }
+
+      static bool first = true;
+      const static str filename = runOptions-&gt;getValueOrDef&lt;std::string&gt;(&quot;default.dat&quot;, &quot;DataFile&quot;);
+      const static str path_to_file = GAMBIT_DIR &quot;/CosmoBit/data/BBN/&quot; + filename;
+      static std::map&lt;std::string,std::vector&lt;double&gt;&gt; dict;
+      static int nobs;
+
+      if (first)
+      {
+        // Read the data
+        const ASCIIdictReader data(path_to_file);
+        logger() &lt;&lt; &quot;BBN data read from file '&quot; &lt;&lt; filename &lt;&lt; &quot;'.&quot; &lt;&lt; EOM;
+
+        // Execute initialisation checks on the contents of the datafile
+        std::map&lt;std::string,std::vector&lt;double&gt;&gt; td = data.get_dict();
+        const str err = &quot;Double entry for one element in BBN data file '&quot; + filename + &quot;'. \nYou can only enter one measurement per element.&quot;;
+        if (data.duplicated_keys()) CosmoBit_error().raise(LOCAL_INFO, err);
+        std::vector&lt;sspair&gt; doppelgangers = {{&quot;Yp&quot;, &quot;He4&quot;}, {&quot;D&quot;,&quot;H2&quot;}};
+        for (const sspair&amp; x : doppelgangers)
+        {
+          if (td.count(x.first) == 0 and td.count(x.second) == 0)
+          {
+            CosmoBit_error().raise(LOCAL_INFO, err + &quot;\nNote that &quot;+x.first+&quot; and &quot;+x.second+&quot; are the same species!&quot;);
+          }
+        }
+
+        // Check that all isotopes requested in the YAML file exist in the datafile, and keep only the data needed
+        const std::vector&lt;str&gt;&amp; v = Downstream::subcaps-&gt;getNames();
+        for (const str&amp; isotope : std::set&lt;str&gt;(v.begin(), v.end()))
+        {
+          auto it = td.find(isotope);
+          // Check if the isotope has been listed as a subcapability
+          if (it == td.end())
+          {
+            str alt_name = &quot;&quot;;
+            for (const sspair&amp; pair : doppelgangers)
+            {
+              if (isotope == pair.first) alt_name = pair.second;
+              if (isotope == pair.second) alt_name = pair.first;
+            }
+            // Check if the isotope's doppelganger has been listed as a subcapability
+            if (alt_name != &quot;&quot;) it = td.find(alt_name);
+          }
+          // Throw an error if the isotope is not found in the datafile
+          if (it == td.end()) CosmoBit_error().raise(LOCAL_INFO, &quot;Did not find observations for &quot;+isotope+&quot; in &quot;+filename+&quot;.&quot;);
+          // Otherwise, save the corresponding dictionary entry
+          else dict[isotope] = it-&gt;second;
+        }
+
+        // Save the number of observations to include in the likelihood.
+        nobs = dict.size();
+        if (nobs == 0)
+        {
+          str err = &quot;No relevant sub-capabilities found for compute_BBN_LogLike.  Please specify elements to\n&quot;
+                    &quot;compute likelihoods from in the ObsLikes section of your YAML file as in e.g.\n&quot;
+                    &quot;  sub_capabilities: [He4, D]&quot;;
+          CosmoBit_error().raise(LOCAL_INFO, err);
+        }
+
+        // Init out.
+        first = false;
+      }
+
+      // Init vectors with observations, predictions and covariance matrix
+      double prediction[nobs],observed[nobs],sigmaobs[nobs],translate[nobs];
+      bool upperlimit[nobs];
+      gsl_matrix *cov = gsl_matrix_alloc(nobs, nobs);
+      gsl_matrix *invcov = gsl_matrix_alloc(nobs, nobs);
+      gsl_permutation *p = gsl_permutation_alloc(nobs);
+
+      // Iterate through observation dictionary to fill observed, sigmaobs and prediction arrays
+      for(std::map&lt;std::string,std::vector&lt;double&gt;&gt;::iterator iter = dict.begin(); iter != dict.end(); ++iter)
+      {
+        std::string key = iter-&gt;first; // iter = [&quot;element key&quot;, [mean, sigma, upper_limit]]
+        if(abund_map.count(key)!=1)   // throw error if element not contained in abundance map was entered in data file
+        {
+          std::ostringstream err;
+          err &lt;&lt; &quot;Unknown element '&quot;&lt;&lt; key &lt;&lt;&quot;' in BBN data file '&quot;&lt;&lt; filename&lt;&lt;&quot;'. \nYou can only enter 'Yp' or 'He4', 'D' or 'H2', 'He3', 'Li7'.&quot;;
+          CosmoBit_error().raise(LOCAL_INFO, err.str());
+        }
+        translate[ii]=abund_map.at(key); // to order observed and predicted abundances consistently
+        observed[ii]=iter-&gt;second[0];
+        sigmaobs[ii]=iter-&gt;second[1];
+        upperlimit[ii] = round(iter-&gt;second[2]);
+        prediction[ii]= BBN_res.get_BBN_abund(key);
+        ii++;
+      }
+
+      // Fill the covariance matrix
+      for(ie=0;ie&lt;nobs;ie++) {for(je=0;je&lt;nobs;je++) gsl_matrix_set(cov, ie, je,pow(sigmaobs[ie],2.)*(ie==je)+BBN_res.get_BBN_covmat(translate[ie], translate[je]));}
+
+      // Compute the LU decomposition and inverse of covariance matrix
+      gsl_linalg_LU_decomp(cov,p,&amp;s);
+      gsl_linalg_LU_invert(cov,p,invcov);
+
+      // Compute the determinant of the inverse of the covariance matrix
+      double det_cov = gsl_linalg_LU_det(cov,s);
+
+      // compute chi2
+      for(ie=0;ie&lt;nobs;ie++)
+      {
+        for(je=0;je&lt;nobs;je++)
+        {
+          if( (not upperlimit[ie] or prediction[ie] &gt; observed[ie]) and
+              (not upperlimit[je] or prediction[je] &gt; observed[je]) )
+            chi2+=(prediction[ie]-observed[ie])*gsl_matrix_get(invcov,ie,je)*(prediction[je]-observed[je]);
+        }
+      }
+      result = -0.5*(chi2 + log(pow(2*pi,nobs)*det_cov));
+
+      logger() &lt;&lt; &quot;BBN LogLike computed to be: &quot; &lt;&lt; result &lt;&lt; EOM;
+
+      gsl_matrix_free(cov);
+      gsl_matrix_free(invcov);
+      gsl_permutation_free(p);
+    }
+
+  } // namespace CosmoBit
+
+} // namespace Gambit
+</code></pre><hr><p>Updated on 2022-08-02 at 18:18:37 +0000</p><div class=edit-page><a href=https://github.com/RC1242RC/gambit_gh_pages/blob/master/content/en/documentation/code/main/Files/BBN_8cpp.md><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2"><path d="M17 3a2.828 2.828.0 114 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></svg>Edit this page on GitHub</a></div></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a class=text-muted href=https://www.netlify.com/>Netlify</a>, <a class=text-muted href=https://gohugo.io/>Hugo</a>, and <a class=text-muted href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.54bf0932b8a36d0e152b1635b099a6ef1394d35327e2437550a075c9c8ed1bd8aed5847c21b36fc02ed24014c031d9ca24017b0c78b1639d7e2fa8329898b842.js integrity="sha512-VL8JMrijbQ4VKxY1sJmm7xOU01Mn4kN1UKB1ycjtG9iu1YR8IbNvwC7SQBTAMdnKJAF7DHixY51+L6gymJi4Qg==" crossorigin=anonymous defer></script>
+<script src=/js/highlight.min.5b48bc253dc75aeea5fb366ecf700f4925e2b6eb1a1466f2124b722d68148d67bc0a9365d2b8ad9c585161b46372d23b08509a16f1fd518542b894756d4752d0.js integrity="sha512-W0i8JT3HWu6l+zZuz3APSSXitusaFGbyEktyLWgUjWe8CpNl0ritnFhRYbRjctI7CFCaFvH9UYVCuJR1bUdS0A==" crossorigin=anonymous defer></script>
+<script src=/main.min.40265e9a032aeba5eaf67baac3cbbc22667a7533215d326eeb3e9f4d5e4be40f9ff4dcd22949db73ae527ca26a19d7998091a8973c82af760b2c0daa335190ed.js integrity="sha512-QCZemgMq66Xq9nuqw8u8ImZ6dTMhXTJu6z6fTV5L5A+f9NzSKUnbc65SfKJqGdeZgJGolzyCr3YLLA2qM1GQ7Q==" crossorigin=anonymous defer></script>
+<script src=https://rc1242rc.github.io/index.min.97d6402d7a34cdd5bd42756d4cab0cf30d540a9cfd60b87b21ea49bb4e8ab243c43c3171889d41e133bd95a5c6d18e02d0f4cd3d09c2e02e58f2cc367481d403.js integrity="sha512-l9ZALXo0zdW9QnVtTKsM8w1UCpz9YLh7IepJu06KskPEPDFxiJ1B4TO9laXG0Y4C0PTNPQnC4C5Y8sw2dIHUAw==" crossorigin=anonymous defer></script></body></html>
