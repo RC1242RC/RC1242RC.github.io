@@ -1,10 +1,10 @@
-name: Build and deploy doc versions
+name: Deploy Gambit Site
 
 on:
   workflow_dispatch:
     inputs:
-      deploy_only:
-        description: 'Redeploy site without rebuilding documentation'
+      rebuild_all:
+        description: 'Rebuild all documentation in addition to deploying site'
         type: boolean
         required: true
         default: false
@@ -24,7 +24,7 @@ on:
 jobs:
   
   setup:
-    if: ${{ inputs.deploy_only }} == false
+    if: ${{ inputs.rebuild_all }}
     runs-on: ubuntu-latest
     outputs:
       branches: ${{ steps.setVariables.outputs.branches }}
@@ -38,7 +38,7 @@ jobs:
           repos_temp: ${{ inputs.repos_to_document }}
 
   document_branches:
-    if: ${{ inputs.deploy_only }} == false
+    if: ${{ inputs.rebuild_all }}
     needs: setup
     runs-on: ubuntu-latest
     strategy:
@@ -73,7 +73,7 @@ jobs:
       
         
   document_repos:
-    if: ${{ inputs.deploy_only }} == false
+    if: ${{ inputs.rebuild_all }}
     needs: setup
     runs-on: ubuntu-latest
     strategy:
@@ -110,8 +110,8 @@ jobs:
           name: ${{ env.folder }}
           path: ./${{ env.folder }}
 
-  upload:
-    if: ${{ inputs.deploy_only }} == false
+  download_docs:
+    if: ${{ inputs.rebuild_all }}
     needs: [document_repos, document_branches]
     runs-on: ubuntu-latest
     steps:
