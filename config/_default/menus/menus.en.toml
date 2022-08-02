@@ -52,14 +52,14 @@
 [[main]]
   name = "Code Reference"
   identifier = "code"
-  url = "/documentation/code/index_classes"
+  url = "/documentation/code/gambit_sphinx/index_classes"
   parent = "documentation"
   weight = 40
 
 [[documentation]]
   name = "Code Reference"
   identifier = "code"
-  url = "/documentation/code/index_classes"
+  url = "/documentation/code/gambit_sphinx/index_classes"
   weight = 40
 
 [[documentation]]
