@@ -71,7 +71,7 @@ Source:
       store: [
         "href", "title", "description", "permalink"
       ],
-      index: ["title", "description", "content", "permalink"]
+      index: ["title", "description", "permalink"]
     }
   });
 
@@ -108,8 +108,7 @@ Source:
         {{ else -}}
           description: "[No description available]",
         {{ end -}}
-        permalink: {{ .RelPermalink |jsonify }},
-        content: {{ .Plain | jsonify }}
+        permalink: {{ .RelPermalink |jsonify }}
       }
     );
   {{ end -}}
