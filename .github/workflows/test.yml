@@ -13,5 +13,5 @@ jobs:
     if: ${{ inputs.deploy_only }}
     runs-on: ubuntu-latest
     steps:
-      - test:
+      - name: test
         run: echo "test"
