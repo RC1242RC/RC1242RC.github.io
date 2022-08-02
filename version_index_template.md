@@ -1,9 +1,9 @@
 ---
-name: GAMBIT_VERSION_HERE
+name: "GAMBIT_VERSION_HERE"
 menu:
   documentation:
     parent: "code"
-    identifier: GAMBIT_VERSION_HERE
+    identifier: "GAMBIT_VERSION_HERE"
     params:
-      version: VERSION_TYPE_HERE
+      version: "VERSION_TYPE_HERE"
 ---
