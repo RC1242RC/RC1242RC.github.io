@@ -3,7 +3,8 @@ title: "Files"
 
 menu:
   documentation:
-    parent: "code"
+    parent: "gambit_sphinx"
+    identifier: "gfiles"
 weight: 30
 ---
 

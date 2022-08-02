@@ -3,7 +3,8 @@ title: "Pages"
 
 menu:
   documentation:
-    parent: "code"
+    parent: "darkbit_development"
+    identifier: "dpages"
 weight: 40
 ---
 

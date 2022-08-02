@@ -69,9 +69,9 @@ Source:
     document: {
       id: 'id',
       store: [
-        "href", "title", "description"
+        "href", "title", "description", "permalink"
       ],
-      index: ["title", "description", "content"]
+      index: ["title", "description", "content", "permalink"]
     }
   });
 
@@ -106,8 +106,9 @@ Source:
         {{ with .Description -}}
           description: {{ . | jsonify }},
         {{ else -}}
-          description: {{ .Summary | plainify | jsonify }},
+          description: "[No description available]",
         {{ end -}}
+        permalink: {{ .RelPermalink |jsonify }},
         content: {{ .Plain | jsonify }}
       }
     );
@@ -152,6 +153,11 @@ Source:
         title.textContent = doc.title;
         title.classList.add("suggestion__title");
         a.appendChild(title);
+
+        const permalink = document.createElement('span');
+        permalink.textContent = doc.permalink;
+        permalink.classList.add("suggestion__permalink");
+        a.appendChild(permalink);
 
         const description = document.createElement('span');
         description.textContent = doc.description;

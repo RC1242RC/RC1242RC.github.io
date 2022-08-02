@@ -3,7 +3,8 @@ title: "Classes"
 
 menu:
   documentation:
-    parent: "code"
+    parent: "gambit_sphinx"
+    identifier: "gclasses"
 weight: 20
 ---
 

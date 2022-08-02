@@ -3,7 +3,8 @@ title: "Classes"
 
 menu:
   documentation:
-    parent: "code"
+    parent: "darkbit_development"
+    identifier: "dclasses"
 weight: 20
 ---
 

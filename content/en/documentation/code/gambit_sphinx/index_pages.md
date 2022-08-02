@@ -3,7 +3,8 @@ title: "Pages"
 
 menu:
   documentation:
-    parent: "code"
+    parent: "gambit_sphinx"
+    identifier: "gpages"
 weight: 40
 ---
 

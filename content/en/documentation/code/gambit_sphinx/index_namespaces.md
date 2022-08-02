@@ -3,7 +3,8 @@ title: "Namespaces"
 
 menu:
   documentation:
-    parent: "code"
+    parent: "gambit_sphinx"
+    identifier: "gnames"
 weight: 50
 ---
 

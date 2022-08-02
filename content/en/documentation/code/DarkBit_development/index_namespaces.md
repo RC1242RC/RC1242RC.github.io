@@ -3,7 +3,8 @@ title: "Namespaces"
 
 menu:
   documentation:
-    parent: "code"
+    parent: "darkbit_development"
+    identifier: "dnames"
 weight: 50
 ---
 

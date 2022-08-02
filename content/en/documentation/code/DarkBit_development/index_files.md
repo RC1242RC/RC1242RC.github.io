@@ -3,7 +3,8 @@ title: "Files"
 
 menu:
   documentation:
-    parent: "code"
+    parent: "darkbit_development"
+    identifier: "dfiles"
 weight: 30
 ---
 
