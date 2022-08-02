@@ -16,7 +16,7 @@
               {{ if .HasChildren -}}
                 <li class="my-1 ms-3">
                   <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#section-{{ .Identifier }}" aria-expanded="{{ if $active }}true{{ else }}false{{ end }}">
-                    {{ .Name }}
+                    <p> {{ .Name }} <br> <font color="grey" size="-3"> version </font> </p>
                   </button>
                   {{ if .HasChildren -}}
                     <div class="collapse{{ if $active }} show{{ end }}" id="section-{{ .Identifier }}">
