@@ -10,7 +10,7 @@ on:
 jobs:
   
   setup:
-    if: ${{ inputs.deploy_only }} == false
+    if: ${{ inputs.deploy_only }} == 'false'
     runs-on: ubuntu-latest
     steps:
       - name: test
