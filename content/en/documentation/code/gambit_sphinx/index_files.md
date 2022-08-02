@@ -3,8 +3,8 @@ title: "Files"
 
 menu:
   documentation:
-    parent: "gambit_sphinx"
-    identifier: "gfiles"
+    parent: GAMBIT_VERSION_HERE
+identifier: "GAMBIT_VERSION_HEREFiles"
 weight: 30
 ---
 
@@ -1042,4 +1042,4 @@ weight: 30
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:41:25 +0000
+Updated on 2022-08-02 at 18:18:41 +0000

@@ -3,8 +3,8 @@ title: "Pages"
 
 menu:
   documentation:
-    parent: "darkbit_development"
-    identifier: "dpages"
+    parent: GAMBIT_VERSION_HERE
+identifier: "GAMBIT_VERSION_HEREPages"
 weight: 40
 ---
 
@@ -16,4 +16,4 @@ weight: 40
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:41:27 +0000
+Updated on 2022-08-02 at 18:18:49 +0000

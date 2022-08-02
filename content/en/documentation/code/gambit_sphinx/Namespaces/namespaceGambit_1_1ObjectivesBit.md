@@ -243,4 +243,4 @@ Analytic function 4 from [https://arxiv.org/abs/2101.04525](https://arxiv.org/ab
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:41:22 +0000
+Updated on 2022-08-02 at 18:18:38 +0000

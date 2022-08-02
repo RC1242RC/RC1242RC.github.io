@@ -3,8 +3,8 @@ title: "Namespaces"
 
 menu:
   documentation:
-    parent: "darkbit_development"
-    identifier: "dnames"
+    parent: GAMBIT_VERSION_HERE
+identifier: "GAMBIT_VERSION_HERENamespaces"
 weight: 50
 ---
 
@@ -150,4 +150,4 @@ weight: 50
 
 -------------------------------
 
-Updated on 2022-08-01 at 17:41:27 +0000
+Updated on 2022-08-02 at 18:18:48 +0000
