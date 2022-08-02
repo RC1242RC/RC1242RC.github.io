@@ -4,10 +4,15 @@ on:
   workflow_dispatch:
     inputs:
       rebuild_all:
-        description: 'Rebuild all documentation in addition to deploying site'
+        description: 'Rebuild all doxygen documentation in addition to deploying site'
         type: boolean
         required: true
         default: false
+      clear_code_dir:
+        description: 'While rebuilding, remove previously built doxygen documentation'
+        type: boolean
+        required: true
+        default: true
       dev_repo:
         description: 'Development repo'
         required: true
@@ -37,7 +42,7 @@ jobs:
           branches_temp: ${{ inputs.dev_branches_to_document }}
           repos_temp: ${{ inputs.repos_to_document }}
 
-  document_branches:
+  document_branches_and_build_menu:
     if: ${{ inputs.rebuild_all }}
     needs: setup
     runs-on: ubuntu-latest
@@ -65,14 +70,19 @@ jobs:
       - name: Convert xml to md using doxybook2
         run: mkdir ${{ matrix.branches }}
           && ./doxybook2/bin/doxybook2 --input ./xml --output ./${{ matrix.branches }} --config ./doxygen_and_doxybook2/config.json --templates ./doxygen_and_doxybook2/doxybook_templates
+      - name: Copy index template into branch folder to act as parent menu
+        run: cp version_index_template.md ./content/documentation/code/${{ matrix.branches }}/_index.md
+      - name: Add gambit version (and type) into index files to reference parent menu
+        run: sed -i -- 's+GAMBIT_VERSION_HERE+${{ matrix.branches }}+g' *.md
+          && sed -i -- 's+VERSION_TYPE_HERE+development+g' _index.md
+        working-directory: ./content/en/documentation/code/${{ matrix.branches }}
       - name: Upload branch code md as artifact
         uses: actions/upload-artifact@v3
         with:
           name: ${{ matrix.branches }}
           path: ./${{ matrix.branches }}
-      
         
-  document_repos:
+  document_repos_and_build_menu:
     if: ${{ inputs.rebuild_all }}
     needs: setup
     runs-on: ubuntu-latest
@@ -104,6 +114,12 @@ jobs:
       - name: Convert xml to md using doxybook2
         run: mkdir ${{ env.folder }}
           && ./doxybook2/bin/doxybook2 --input ./xml --output ./${{ env.folder }} --config ./doxygen_and_doxybook2/config.json --templates ./doxygen_and_doxybook2/doxybook_templates
+      - name: Copy index template into repo folder to act as parent menu
+        run: cp version_index_template.md ./content/documentation/code/${{ env.folder }}/_index.md
+      - name: Add gambit version (and type) into index files to reference parent menu
+        run: sed -i -- 's+GAMBIT_VERSION_HERE+${{ matrix.env.folder }}+g' *.md
+          && sed -i -- 's+VERSION_TYPE_HERE+release+g' _index.md
+        working-directory: ./content/en/documentation/code/${{ env.folder }}
       - name: Upload repo code md as artifact
         uses: actions/upload-artifact@v3
         with:
@@ -112,12 +128,13 @@ jobs:
 
   download_docs:
     if: ${{ inputs.rebuild_all }}
-    needs: [document_repos, document_branches]
+    needs: [document_repos_and_build_menu, document_branches_and_build_menu]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Wipe code dir
+        if: ${{ inputs.clear_code_dir }}
         run: rm -r code
           && mkdir code
         working-directory: ./content/en/documentation
