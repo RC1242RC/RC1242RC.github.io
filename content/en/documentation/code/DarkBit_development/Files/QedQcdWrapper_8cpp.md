@@ -84,6 +84,24 @@ BOOST_PP_SEQ_FOR_EACH_PRODUCT(addtomap_EL, (BOOST_PP_TUPLE_TO_SEQ(__KEYS))((FPTR
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  This class is used to wrap the QedQcd object used by SoftSUSY
+///  and FlexibleSUSY in a Gambit SubSpectrum object. This is to enable
+///  access to the parameters of the SM defined as a low-energy effective theory
+///  (as opposed to correspending information defined in a UV model).
+///  Parameters defined this way are often used as input to a physics calculator.
+///
+///  *********************************************
+///
+///  Authors:
+///  <!-- add name and date if you modify -->
+///
+///  \author Ben Farmer
+///          (benjamin.farmer@fysik.su.se)
+///  \date 2015 Mar
+///
+///  *********************************************
 
 
 #include "gambit/Elements/sminputs.hpp"
@@ -96,8 +114,9 @@ BOOST_PP_SEQ_FOR_EACH_PRODUCT(addtomap_EL, (BOOST_PP_TUPLE_TO_SEQ(__KEYS))((FPTR
 #include <boost/preprocessor/seq/elem.hpp>
 #include <boost/preprocessor/seq/for_each_product.hpp>
 
-#include "lowe.h" 
+#include "lowe.h" ///TODO: wrap using BOSS at some point, i.e. get this from FlexibleSUSY or SoftSUSY
 
+/// Macro to help assign the same function pointers to multiple string keys
 // Relies on "tmp_map" being used as the variable name for the temporary maps
 // inside the fill_map functions.
 #define addtomap_EL(r, PRODUCT)                                         \
@@ -115,7 +134,9 @@ namespace Gambit
    namespace SpecBit
    {
 
+      /// @{ QedQcdWrapper member functions
 
+      ///   @{ Constructors
       QedQcdWrapper::QedQcdWrapper()
          : qedqcd()
          , sminputs()
@@ -130,11 +151,17 @@ namespace Gambit
          , hardlow(2) // (GeV) QedQcd object sets beta functions to zero below here anyway
       {}
 
+      ///   @}
 
+      /// Destructor
       QedQcdWrapper::~QedQcdWrapper() {}
 
+      /// Currently unused virtual functions
+      ///     @{
       int QedQcdWrapper::get_numbers_stable_particles() const {return -1;}
+      ///     @}
 
+      /// Add QED x QCD information to an SLHAea object
       void QedQcdWrapper::add_to_SLHAea(int, SLHAstruct& slha) const
       {
         // Here we assume that all SMINPUTS defined in SLHA2 are provided by the
@@ -147,6 +174,7 @@ namespace Gambit
         SLHAea_add_from_subspec(slha, LOCAL_INFO, *this, Par::Pole_Mass,"d_3","MASS",5,"# mb (pole)");
       }
 
+      /// Run masses and couplings to end_scale
       void QedQcdWrapper::RunToScaleOverride(double end_scale)
       {
         const double tol = 1.0e-5; // Value used internally in QedQcd methods
@@ -154,11 +182,15 @@ namespace Gambit
         qedqcd.run(begin_scale, end_scale, tol);  // Run masses and couplings
       }
 
+      /// Retrieve the current renormalisation scale at which running parameters are defined
       double QedQcdWrapper::GetScale() const { return qedqcd.get_scale(); }
 
+      /// Manually define the current renormalisation scale (do this at own risk!)
       void QedQcdWrapper::SetScale(double scale) { qedqcd.set_scale(scale); }
 
+      /// @}
 
+      /// Plain C-function wrappers for QedQcd running mass getters
       double get_mUp      (const softsusy::QedQcd& model) { return model.displayMass(softsusy::mUp); }
       double get_mCharm   (const softsusy::QedQcd& model) { return model.displayMass(softsusy::mCharm); }
       double get_mTop     (const softsusy::QedQcd& model) { return model.displayMass(softsusy::mTop); }
@@ -172,11 +204,19 @@ namespace Gambit
       double get_mPhoton  (const softsusy::QedQcd&) { return 0.; }
       double get_mGluon   (const softsusy::QedQcd&) { return 0.; }
 
+      /// Plain C-function wrappers for QedQcd running coupling getters
       // Note: often people want 1/alpha, but here we return alpha itself
       // Might want to change these to g1,g3, to be consistent with MSSMSpec
       double get_alpha  (const softsusy::QedQcd& model) { return model.displayAlpha(softsusy::ALPHA); }
       double get_alphaS (const softsusy::QedQcd& model) { return model.displayAlpha(softsusy::ALPHAS); }
 
+      /// All 3 SM gauge couplings.
+      /// The QedQcd documenation has the following to say about this calculations:
+      /// {
+      /// This will calculate the three gauge couplings of the Standard Model at
+      /// the scale m2.
+      /// It's a simple one-loop calculation only and no
+      /// thresholds are assumed. Range of validity is electroweak to top scale.
       // alpha1 is in the GUT normalisation. sinth = sin^2 thetaW(Q) in MSbar
       // scheme
       //  }
@@ -194,6 +234,7 @@ namespace Gambit
          return 0.;
       }
 
+      /// Plain C-function wrappers for extra pole mass getters (manually specified masses)
       //  Note: model object not needed for these, but required by function signature
       double get_Pole_mElectron(const SMInputs& inputs) { return inputs.mE; }
       double get_Pole_mMuon    (const SMInputs& inputs) { return inputs.mMu; }
@@ -214,6 +255,7 @@ namespace Gambit
       {
          GetterMaps map_collection;
 
+         /// @{ mass1 - mass dimension 1 parameters
          //
          // Functions utilising the "extraM" function signature
          // (Zero index, model object as argument)
@@ -236,7 +278,9 @@ namespace Gambit
 
             map_collection[Par::mass1].map0_extraM = tmp_map;
          }
+         /// @}
 
+         /// @{ dimensionless - mass dimension 0 parameters
          {
             // Functions utilising the "extraM" function signature
             // (Zero index, model object as argument)
@@ -248,7 +292,9 @@ namespace Gambit
 
             map_collection[Par::dimensionless].map0_extraM = tmp_map;
          }
+         /// @}
 
+         /// @{ Pole_Mass - Pole mass parameters
          //
          // Functions utilising the plain-vanilla function signature ("fmap")
          // (Zero-argument member functions of model object)
@@ -272,6 +318,12 @@ namespace Gambit
             map_collection[Par::Pole_Mass].map0 = tmp_map;
          }
 
+         /// Functions utilising the "extraI" signature
+         /// (Zero-index, "Inputs" object used as argument)
+         /// "Inputs" is intended as a generic container for anything needed to
+         /// compute the function results. Could have used this exclusively, rather
+         /// than having "extraM" and "extraI" versions of these functions, but it
+         /// seemed nicer to have a version dedicated to the host Model class.
          {
             MTget::fmap0_extraI tmp_map;
 
@@ -302,12 +354,14 @@ namespace Gambit
             map_collection[Par::Pole_Mixing].map0_extraM = tmp_map;
          }
 
+         /// @}
 
 
          return map_collection;
       }
 
 
+      /// Plain C-function wrappers for extra pole mass setters (manually specified masses)
       void set_Pole_mElectron(SMInputs& inputs, double set_value) { inputs.mE = set_value; }
 
       // Filler function for setter function pointer maps
@@ -315,6 +369,7 @@ namespace Gambit
       {
          SetterMaps map_collection;
 
+         /// @{ Pole_Mass - Pole mass parameters
          //
          // Functions utilising the plain-vanilla function signature ("fmap")
          // (Zero-argument member functions of model object)
@@ -332,6 +387,8 @@ namespace Gambit
             map_collection[Par::Pole_Mass].map0 = tmp_map;
          }
 
+         /// Functions utilising the "extraI" signature
+         /// (Zero-index, "Inputs" object used as argument)
          {
             MTset::fmap0_extraI tmp_map;
 
@@ -339,6 +396,7 @@ namespace Gambit
 
             map_collection[Par::Pole_Mass].map0_extraI = tmp_map;
          }
+         /// @}
          return map_collection;
       }
 
@@ -349,4 +407,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:45 +0000
+Updated on 2022-08-02 at 23:34:55 +0000

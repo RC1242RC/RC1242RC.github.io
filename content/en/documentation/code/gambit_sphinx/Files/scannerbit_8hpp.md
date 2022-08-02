@@ -46,6 +46,21 @@ Authors (add name and date if you modify):
 ```
 //  GAMBIT: Global and Modular BSM Inference Tool
 //  *********************************************
+///  \file
+///
+///  ScannerBit executable-level header file.
+///  Include this in your main program that calls
+///  ScannerBit.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Pat Scott
+///          (patscott@physics.mcgill.ca)
+///  \date 2014 Mar
+///
+///  *********************************************
 
 #ifndef __ScannerBit_hpp__
 #define __ScannerBit_hpp__
@@ -87,4 +102,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:48 +0000

@@ -461,18 +461,28 @@ class Likelihood(object):
 
 
 
+###################################
+#
+# END OF GENERIC LIKELIHOOD CLASS
+#
+###################################
 
 
 
-
-
+###################################
+# PRIOR TYPE LIKELIHOOD
+# --> H0,...
+###################################
 class Likelihood_prior(Likelihood):
 
     def loglkl(self):
         raise NotImplementedError('Must implement method loglkl() in your likelihood')
 
 
-
+###################################
+# NEWDAT TYPE LIKELIHOOD
+# --> spt,boomerang,etc.
+###################################
 class Likelihood_newdat(Likelihood):
 
     def __init__(self, path, data, command_line):
@@ -924,7 +934,10 @@ class Likelihood_newdat(Likelihood):
         return self.lkl
 
 
-
+###################################
+# CLIK TYPE LIKELIHOOD
+# --> clik_fake_planck,clik_wmap,etc.
+###################################
 class Likelihood_clik(Likelihood):
 
     def __init__(self, path, data, command_line):
@@ -1131,7 +1144,10 @@ class Likelihood_clik(Likelihood):
         return lkl
 
 
-
+###################################
+# MOCK CMB TYPE LIKELIHOOD
+# --> mock planck, cmbpol, etc.
+###################################
 class Likelihood_mock_cmb(Likelihood):
 
     def __init__(self, path, data, command_line):
@@ -1141,7 +1157,9 @@ class Likelihood_mock_cmb(Likelihood):
         self.need_cosmo_argumentsneed_cosmo_arguments(
             data, {'lensing': 'yes', 'output': 'tCl lCl pCl'})
 
-        
+        ################
+        # Noise spectrum
+        ################
 
         try:
             self.noise_from_file
@@ -1254,7 +1272,9 @@ class Likelihood_mock_cmb(Likelihood):
         #for l in range(self.l_min, self.l_max+1):
         #    test.write('%d  %e  %e\n'%(l,self.noise_T[l],self.noise_P[l]))
 
-        
+        ###########################################################################
+        # implementation of default settings for flags describing the likelihood: #
+        ###########################################################################
 
         # - ignore B modes by default:
         try:
@@ -1292,7 +1312,9 @@ class Likelihood_mock_cmb(Likelihood):
         except:
             self.ExcludeTTTEEE = False
 
-        
+        ##############################################
+        # Delensing noise: implemented by  S. Clesse #
+        ##############################################
 
         if self.delensing:
 
@@ -1333,7 +1355,9 @@ class Likelihood_mock_cmb(Likelihood):
                 #raise io_mp.LikelihoodError("Could not find file ",self.delensing_file)
                 print("Could not find file ",self.delensing_file)
 
-        
+        ###############################################################
+        # Read data for TT, EE, TE, [eventually BB or phi-phi, phi-T] #
+        ###############################################################
 
         # default:
         if not self.ExcludeTTTEEE:
@@ -1651,7 +1675,10 @@ class Likelihood_mock_cmb(Likelihood):
         return -chi2/2
 
 
-
+###################################
+# MPK TYPE LIKELIHOOD
+# --> sdss, wigglez, etc.
+###################################
 class Likelihood_mpk(Likelihood):
 
     def __init__(self, path, data, command_line, common=False, common_dict={}):
@@ -2538,7 +2565,10 @@ class Likelihood_clocks(Likelihood):
 
         return -0.5 * chi2
 
-
+###################################
+# ISW-Likelihood
+# by B. Stoelzner
+###################################
 class Likelihood_isw(Likelihood):
     def __init__(self, path, data, command_line):
         # Initialize
@@ -3018,4 +3048,4 @@ def get_available_likelihoods(backendDir):
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:50 +0000

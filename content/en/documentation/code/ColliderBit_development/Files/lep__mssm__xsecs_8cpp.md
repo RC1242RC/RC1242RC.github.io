@@ -74,6 +74,27 @@ Authors
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Sparticle production cross-section calculators
+///  for LEP.
+///
+///  Usage details are in the corresponding header
+///  file.
+///
+///  *********************************************
+///
+///  Authors
+///
+///  \author Are Raklev
+///          (ahye@fys.uio.no)
+///  \date 2015 Jun
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)
+///  \date 2015 Jul
+///
+///  *********************************************
 
 
 #include <iostream>
@@ -94,6 +115,11 @@ namespace Gambit
   namespace ColliderBit
   {
 
+    /// Retrieve the production cross-section at an e+e- collider for slepton pairs.
+    ///  If l_are_gauge_es = T, then l(bar)_chirality = 1 => (anti-)left-type  slepton
+    ///                                               = 2 => (anti-)right-type slepton
+    ///  If l_are_gauge_es = F, then l(bar)_chirality = 1 => (anti-)slepton is lightest family state
+    ///                                               = 2 => (anti-)slepton is heaviest family state
     void get_sigma_ee_ll(triplet<double>& result, const double sqrts, const int generation, const int l_chirality,
                          const int lbar_chirality, const double gtol, const double ftol, const bool gpt_error,
                          const bool fpt_error, const Spectrum& spec, const double gammaZ, const bool l_are_gauge_es)
@@ -195,6 +221,7 @@ namespace Gambit
     }
 
 
+    /// Retrieve the production cross-section at an e+e- collider for neutralino pairs
     void get_sigma_ee_chi00(triplet<double>& result, const double sqrts, const int chi_first, const int chi_second,
                             const double tol, const bool pt_error, const Spectrum& spec, const double gammaZ)
     {
@@ -262,6 +289,7 @@ namespace Gambit
 
     }
 
+    /// Retrieve the production cross-section at an e+e- collider for chargino pairs
     void get_sigma_ee_chipm(triplet<double>& result, const double sqrts, const int chi_plus, const int chi_minus,
                             const double tol, const bool pt_error, const Spectrum& spec, const double gammaZ)
     {
@@ -334,6 +362,10 @@ namespace Gambit
 
     }
 
+    /// Integrals for t-channel neutralino diagrams
+    /// m1 and m2 are masses of final state sleptons
+    /// mk and ml are neutralino masses
+    /// @{
     double I1(double s, double m1, double m2, double mk, double ml)
     {
       double S = sqrt(s-pow2(m1+m2))*sqrt(s-pow2(m1-m2));
@@ -389,8 +421,11 @@ namespace Gambit
       I3 += (m1sq+m2sq-2.*mksq-s)*S/2.;
       return I3;
     }
+    /// @}
 
 
+    /// Cross section [pb] for \f$e^+e^- -> \tilde l_i \tilde l_j^*\f$
+    /// To use, call SLHA2BFM first on SLHA mixing matrices constructed as a vector of vectors
     double xsec_sleislej(int pid1, int pid2, double sqrts, double m1, double m2, MixMatrix F,
                          MixMatrix N, const double mN[4], double alpha, double mZ, double gZ,
                          double sin2thetaW, bool CP_lock)
@@ -559,6 +594,9 @@ namespace Gambit
 
     }
 
+    /// Cross section [pb] for \f$e^+e^- -> \tilde\chi^0_i \tilde\chi^0_j\f$
+    /// Masses mi and mj for the neutralinos are signed. mS are the selectron masses (left = 0, right = 1).
+    /// Warning! BFM uses inverted \f$\tan\beta\f$! Use tanb = 1 / tanb in converting from SLHA.
     double xsec_neuineuj(int pid1, int pid2, double sqrts, double mi, double mj, MixMatrix N,
                          const double mS[2], double tanb, double alpha, double mZ, double gZ, double sin2thetaW)
     {
@@ -655,6 +693,8 @@ namespace Gambit
     }
 
 
+    /// Cross section [pb] for \f$e^+e^- -> \tilde\chi^+_i \tilde\chi^-_j\f$
+    /// Masses mi and mj for the charginos are signed. msn is electron sneutrino mass.
     double xsec_chaichaj(int pid1, int pid2, double sqrts, double mi, double mj, MixMatrix V,
                          MixMatrix U, double ms, double alpha, double mZ, double gZ, double sin2thetaW)
     {
@@ -742,7 +782,12 @@ namespace Gambit
     }
 
 
+    ///////////////////////////////////////////////////////////////////////
+    /// Functions to convert mass matrices between SLHA and BFM conventions
+    ///////////////////////////////////////////////////////////////////////
+    /// @{
 
+    /// Converts a neutralino mixing matrix in SLHA conventions to BFM conventions, \f$\tan\beta\f$ is as defined in SLHA
     void SLHA2BFM_NN(MixMatrix &NN, double tanb, double sin2thetaW)
     {
       // Define conversion matrix
@@ -760,6 +805,7 @@ namespace Gambit
       NN = multiply(NN,T);
     }
 
+    /// Converts the chargino mixing matrix V in SLHA conventions to BFM conventions
     void SLHA2BFM_VV(MixMatrix &VV)
     {
       // Define conversion matrix (\sigma_3)
@@ -770,6 +816,7 @@ namespace Gambit
       VV = multiply(T,VV);
     }
 
+    /// Converts a neutralino mixing matrix in BFM conventions to SLHA conventions, \f$\tan\beta\f$ is as defined in SLHA
     void BFM2SLHA_NN(MixMatrix &NN, double tanb, double sin2thetaW)
     {
       // Define conversion matrix
@@ -787,11 +834,13 @@ namespace Gambit
       NN = multiply(NN,transpose(T));
     }
 
+    /// Converts the chargino mixing matrix V in BFM conventions to SLHA conventions
     void BFM2SLHA_VV(MixMatrix &VV)
     {
       SLHA2BFM_VV(VV);
     }
 
+    /// Helper function to multiply matrices
     MixMatrix multiply(MixMatrix A, MixMatrix B)
     {
       int dim = A.size();
@@ -806,6 +855,7 @@ namespace Gambit
       return C;
     }
 
+    /// Helper function to find matrix transpose
     MixMatrix transpose(MixMatrix A)
     {
       double temp;
@@ -820,6 +870,7 @@ namespace Gambit
       return A;
     }
 
+    /// Helper function to print a matrix
     void print(MixMatrix A)
     {
       int dim = A.size();
@@ -832,6 +883,7 @@ namespace Gambit
       }
     }
 
+    /// @}
 
   }
 }
@@ -840,4 +892,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:38 +0000
+Updated on 2022-08-02 at 23:34:49 +0000

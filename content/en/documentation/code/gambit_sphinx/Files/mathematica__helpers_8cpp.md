@@ -39,6 +39,21 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Implementations of helper functions for
+///  mathematica_function and mathematica_variable
+///  classes.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)
+///  \date 2017 Dec
+///
+///  *********************************************
 
 #include "gambit/cmake/cmake_variables.hpp"
 
@@ -53,6 +68,7 @@ namespace Gambit
   namespace Backends
   {
 
+    /// Helper function to raise an appropriate warning or error in case of problems.
     void math_error(WSLINK _WSlink, const str& locality, const str& err)
     {
       backend_warning().raise(locality, err);
@@ -65,6 +81,8 @@ namespace Gambit
       else backend_warning().raise(locality, "Type unknown or incompatible with WSTP");
     }
 
+    /// Overloaded functions to get data through WSTP
+    /// @{
     int WSGetVariable(WSLINK WSlink, int* val) { return WSGetInteger(WSlink, val); }
     int WSGetVariable(WSLINK WSlink, float* val) { return WSGetReal32(WSlink, val); }
     int WSGetVariable(WSLINK WSlink, double* val) { return WSGetReal64(WSlink, val); }
@@ -89,7 +107,10 @@ namespace Gambit
       *val = str(val2);
       return ret;
     }
+    /// @}
 
+    /// Overloaded functions to put data through WSTP
+    /// @{
     int WSPutVariable(WSLINK WSlink, int val) { return WSPutInteger32(WSlink, val); }
     int WSPutVariable(WSLINK WSlink, float val) { return WSPutReal32(WSlink, val); }
     int WSPutVariable(WSLINK WSlink, double val) { return WSPutReal64(WSlink, val); }
@@ -103,6 +124,7 @@ namespace Gambit
     int WSPutVariable(WSLINK WSlink, char val) { return WSPutString(WSlink, str(&val).c_str()); }
     int WSPutVariable(WSLINK WSlink, str val) { return WSPutString(WSlink, val.c_str()); }
     int WSPutVariables(WSLINK) { return 1; }
+    /// @}
 
   }
 
@@ -114,4 +136,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:41 +0000
+Updated on 2022-08-02 at 23:34:51 +0000

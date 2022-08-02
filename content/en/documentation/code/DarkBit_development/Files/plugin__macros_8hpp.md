@@ -687,7 +687,24 @@ __GAMBIT_PLUGIN_NAMESPACE__(__VA_ARGS__)                                        
 ```
 //  GAMBIT: Global and Modular BSM Inference Tool
 //  *********************************************
+///  \file
+///
+///  declaration for gambit module
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
 //
+///  \author Gregory Martinez
+///          (gregory.david.martinez@gmail.com)
+///  \date 2013 August
+///  \date 2014 Feb
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)
+///  \date 2014 Dec
+///
+///  *********************************************
 
 #include "gambit/ScannerBit/plugin_details.hpp"
 #include "gambit/ScannerBit/printer_interface.hpp"
@@ -702,19 +719,35 @@ __GAMBIT_PLUGIN_NAMESPACE__(__VA_ARGS__)                                        
   #pragma clang diagnostic ignored "-Wreturn-type-c-linkage"
 #endif
 
+/// \name gambit plugin macros
+/// The main macros to be used by the user.
+/// @{
+/// Makes an abstract type of type "name" available to the plugin interface.
 #define export_abstract(name, ...)      EXPORT_ABSTRACT(name, __VA_ARGS__)
+/// Makes the object "name" available to the plugin interface.
 #define export_object(name, ...)        EXPORT_OBJECT(name, __VA_ARGS__)
+/// Declaration of the main function which will be ran by the interface
 #define plugin_main(...)                PLUGIN_MAIN( __VA_ARGS__ )
+/// Generic plugin declaration of the from gambit_plugin(name, type, version)
 #define gambit_plugin(...)              GAMBIT_PLUGIN( __VA_ARGS__ )
+/// Runs when the plugin is loaded.
 #define plugin_constructor              PLUGIN_CONSTRUCTOR
+/// Runs when the plugin is destroyed.
 #define plugin_deconstructor            PLUGIN_DECONSTRUCTOR
+/// Sets the version number
 #define __PLUGIN_version(...)           __PLUGIN_VERSION( __VA_ARGS__ )
+/// Set version number to 0.0.0.
 #define __PLUGIN_no_version             __PLUGIN_VERSION()
+/// Tells ScannerBit that these tags are required
 #define reqd_inifile_entries(...) void reqd_inifile_entries()
+/// Tells ScannerBit that these libraries are requested
 #define reqd_libraries(...) void reqd_libraries()
+/// Tells ScannerBit that these include files must exist
 #define reqd_headers(...) void reqd_headers()
+/// Tells ScannerBit to set a flag
 #define set_flag(...) void set_flag()
 #define cxx_flags(...) void scc_flags()
+/// @}
 
 #define REQD_INIFILE_ENTRIES(...)
 #define REQD_LIRBARIES(...)
@@ -1107,4 +1140,4 @@ __GAMBIT_PLUGIN_NAMESPACE__(__VA_ARGS__)                                        
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:45 +0000
+Updated on 2022-08-02 at 23:34:55 +0000

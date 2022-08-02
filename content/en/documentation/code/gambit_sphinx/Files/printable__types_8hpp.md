@@ -127,6 +127,26 @@ Authors:
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Preprocessor sequence of functor types that
+///  should be allowed to print when using
+///  ScannerBit in standalone mode.  Add to
+///  this as necessary.
+///
+///  *********************************************
+///
+///  Authors:
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)
+///  \date 2015 Jun
+///
+///  \author Ben Farmer
+///          (benjamin.farmer@fysik.su.se)
+///  \date 2016 Feb
+///
+///  *********************************************
 
 #pragma once
 
@@ -191,4 +211,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:48 +0000

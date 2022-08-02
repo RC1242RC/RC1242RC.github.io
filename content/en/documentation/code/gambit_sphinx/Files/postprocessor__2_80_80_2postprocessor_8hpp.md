@@ -54,6 +54,20 @@ Authors (add name and date if you modify):
 ```
 //  GAMBIT: Global and Modular BSM Inference Tool
 //  *********************************************
+///  \file
+///
+///  "Postprocessing" scanner plugin.
+///  Header file
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Ben Farmer
+///          (b.farmer@imperial.ac.uk)
+///  \date 2018, Sep
+///
+///  *********************************************
 
 #include "gambit/ScannerBit/scanner_plugin.hpp"
 #include "gambit/ScannerBit/scanners/postprocessor_2.0.0/chunks.hpp"
@@ -66,6 +80,7 @@ extern template std::size_t Gambit::Printers::getTypeID<double>();
 
 namespace Gambit
 {
+  /// Forward declaration
   namespace Printers
   {
       class BaseBaseReader;
@@ -73,27 +88,40 @@ namespace Gambit
 
   namespace PostProcessor
   {
+      /// @{ Helper functions for performing resume related tasks
 
+      /// Answer queries as to whether a given dataset index has been postprocessed in a previous run or not
       bool point_done(const ChunkSet done_chunks, size_t index);
 
+      /// Get 'effective' start and end positions for a processing batch
+      /// i.e. simply divides up an integer into the most even parts possible
+      /// over a given number of processes
       Chunk get_effective_chunk(const std::size_t total_length, const unsigned int rank, const unsigned int numtasks);
 
+      /// Compute start/end indices for a given rank process, given previous "done_chunk" data.
       Chunk get_my_chunk(const std::size_t dset_length, const ChunkSet& done_chunks, const int rank, const int numtasks);
 
+      /// Read through resume data files and reconstruct which chunks of points have already been processed
       ChunkSet get_done_points(Gambit::Printers::BaseBaseReader& filebase);
 
+      /// Simplify a ChunkSet by merging chunks which overlap.
       ChunkSet merge_chunks(const ChunkSet&);
 
       // This chunk signals that the run is finished.
       const Chunk stopchunk = Chunk(0,0);
 
+      /// Write resume data files
+      /// These specify which chunks of points have been processed during this run
       void record_done_points(const ChunkSet& done_chunks, const Chunk& mydone, const std::string& filebase, unsigned int rank, unsigned int size);
 
       // Gather a bunch of ints from all processes (COLLECTIVE OPERATION)
       #ifdef WITH_MPI
       std::vector<int> allgather_int(int myval, GMPI::Comm& comm);
       #endif
+      /// @}
 
+      /// Options object for PPDriver
+      /// See matching options in PPDriver class for description
       struct PPOptions
       {
          std::set<std::string> all_params;
@@ -120,6 +148,7 @@ namespace Gambit
          bool verbose;
       };
 
+      /// Driver class to handle the actual postprocessing tasks
       class PPDriver
       {
          public:
@@ -137,62 +166,91 @@ namespace Gambit
             static const int REDIST_REQ = 0;
 
          private:
+            /// Safe accessors for pointer data
             Printers::BaseBaseReader& getReader();
             Printers::BaseBasePrinter& getPrinter();
             Scanner::like_ptr getLogLike();
 
+            /// The reader object in use for the scan
             Printers::BaseBaseReader* reader;
 
+            /// The printer for the primary output stream of the scan
             Printers::BaseBasePrinter* printer;
 
+            /// The likelihood container plugin
             Scanner::like_ptr LogLike;
 
+            /// Names of new output to be printed, i.e. output labels not present in the input file.
             std::set<std::string> new_params;
 
+            /// Models required by the scan
             std::map<std::string,std::vector<std::string>> req_models;
 
+            /// Map to retrieve the "model::parameter" version of the parameter name
             std::map<std::string,std::map<std::string,std::string>> longname;
 
+            /// Total length of input dataset
             unsigned long long total_length;
 
+            /// Next point scheduled to be distributed for processing
             unsigned long long next_point;
 
+            /// Size of chunks to distribute to worker processes
             unsigned long long chunksize;
 
+            /// Chunks describing the points that can be auto-skipped (because they have been processed previously)
             ChunkSet done_chunks;
 
+            /// Names of all output that the primary printer knows about at startup (things GAMBIT plans to print from the likelihood loop)
             std::set<std::string> all_params;
 
+            /// Labels of all output datasets
             std::set<std::string> data_labels;
 
+            /// Labels of output datasets to be copied
             std::set<std::string> data_labels_copy;
 
+            /// List of likelihoods in old output to be added to the newly computed likelihood
             std::vector<std::string> add_to_logl;
 
+            /// List of likelihoods in old output to be subtracted from the newly computed likelihood
             std::vector<std::string> subtract_from_logl;
 
+            /// Map for renaming old datasets in the new output
+            /// Keys are "in_label", values are "out_label"
             std::map<std::string,std::string> renaming_scheme;
 
+            /// Cut maps, for selecting only points in the input
+            /// datasets which pass certain criteria.
+            /// Keys are "in_label", values are the cut boundaries.
             std::map<std::string,double> cut_less_than;
             std::map<std::string,double> cut_greater_than;
 
+            /// Flag to throw away points that don't pass the cuts (rather than copying them un-processed)
             bool discard_points_outside_cuts;
 
+            /// Number of iterations between progress reports. '0' means no updates
             std::size_t update_interval;
 
+            /// Allow old likelihood components to be overwritten by newly calculated values?
             bool discard_old_logl;
 
+            /// Label assigned to the output of the likelihood container
             std::string logl_purpose_name;
 
+            /// The label to assign to the results of add_to_like and subtract_from_like operations.
             std::string reweighted_loglike_name;
 
+            /// Path to save resume files
             std::string root;
 
+            /// MPI variables (set manually rather than inferred, to allow for "virtual rank" settings
             unsigned int rank;
             #ifdef WITH_MPI
               GMPI::Comm* comm;
             #endif
 
+            /// If true, create lots of log messages explaining exactly what the postprocessor is doing
             bool verbose;
       };
 
@@ -218,4 +276,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:48 +0000

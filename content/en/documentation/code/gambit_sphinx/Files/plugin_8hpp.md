@@ -44,7 +44,19 @@ Authors (add name and date if you modify):
 ```
 //  GAMBIT: Global and Modular BSM Inference Tool
 //  *********************************************
+///  \file
+///
+///  declaration for scanner module
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
 //
+///  \author Gregory Martinez
+///          (gregory.david.martinez@gmail.com)
+///  \date Feb 2014
+///
+///  *********************************************
 
 #ifndef PLUGIN_PRIOR_HPP
 #define PLUGIN_PRIOR_HPP
@@ -110,4 +122,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:48 +0000

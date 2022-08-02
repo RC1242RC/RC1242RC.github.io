@@ -203,6 +203,40 @@ Get a specific Pythia hard-scattering sim as a generator-independent pointer-to-
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  ColliderBit event loop functions returning
+///  collider Monte Carlo event simulators.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Abram Krislock
+///          (a.m.b.krislock@fys.uio.no)
+///
+///  \author Aldo Saavedra
+///
+///  \author Andy Buckley
+///
+///  \author Chris Rogan
+///          (crogan@cern.ch)
+///  \date 2014 Aug
+///  \date 2015 May
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)
+///  \date 2015 Jul
+///  \date 2018 Jan
+///  \date 2019 Jan, Feb, May
+///
+///  \author Anders Kvellestad
+///          (anders.kvellestad@fys.uio.no)
+///  \date   2017 March
+///  \date   2018 Jan
+///  \date   2018 May
+///
+///  *********************************************
 
 
 #include "gambit/ColliderBit/ColliderBit_eventloop.hpp"
@@ -216,6 +250,7 @@ namespace Gambit
   namespace ColliderBit
   {
 
+    /// Retrieve a Pythia hard-scattering Monte Carlo simulation
     template<typename PythiaT, typename EventT, typename hepmc_writerT>
     void getPy8Collider(Py8Collider<PythiaT, EventT, hepmc_writerT>& result,
                         const MCLoopInfo& RunMC,
@@ -484,12 +519,14 @@ namespace Gambit
     }
 
 
+    /// Work out last template arg of Py8Collider depending on whether we are using HepMC
     #ifdef EXCLUDE_HEPMC
       #define HEPMC_TYPE(PYTHIA_NS) void
     #else
       #define HEPMC_TYPE(PYTHIA_NS) PYTHIA_NS::Pythia8::GAMBIT_hepmc_writer
     #endif
 
+    /// Retrieve a specific Pythia hard-scattering Monte Carlo simulation
     #define GET_SPECIFIC_PYTHIA(NAME, PYTHIA_NS, MODEL_EXTENSION)                     \
     void NAME(Py8Collider<PYTHIA_NS::Pythia8::Pythia,                                 \
                           PYTHIA_NS::Pythia8::Event,                                  \
@@ -510,6 +547,8 @@ namespace Gambit
     }
 
 
+    /// Retrieve a specific Pythia hard-scattering Monte Carlo simulation
+    /// from reading a SLHA file rather than getting a Spectrum + DecayTable
     #define GET_SPECIFIC_PYTHIA_SLHA(NAME, PYTHIA_NS, MODEL_EXTENSION)                \
     void NAME(Py8Collider<PYTHIA_NS::Pythia8::Pythia,                                 \
                           PYTHIA_NS::Pythia8::Event,                                  \
@@ -532,6 +571,7 @@ namespace Gambit
     }
 
 
+    /// Get a specific Pythia hard-scattering sim as a generator-independent pointer-to-BaseCollider
     #define GET_PYTHIA_AS_BASE_COLLIDER(NAME)           \
     void NAME(const BaseCollider* &result)              \
     {                                                   \
@@ -546,4 +586,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:46 +0000
+Updated on 2022-08-02 at 23:34:56 +0000

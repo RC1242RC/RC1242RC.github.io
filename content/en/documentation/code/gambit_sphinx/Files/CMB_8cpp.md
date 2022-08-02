@@ -73,6 +73,52 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  CosmoBit routines relating to the CMB.
+///
+///  Routines include extracting CMB spectra and 
+///  computing effects of energy injections.
+///
+///  Does *not* contain the Planck likelihoods; 
+///  these live in CosmoBit/src/Planck.cpp.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Selim C. Hotinli
+///          (selim.hotinli14@pimperial.ac.uk)
+///  \date 2017 Jul
+///  \date 2018 May
+///  \date 2018 Aug - Sep
+///
+///  \author Patrick Stoecker
+///          (stoecker@physik.rwth-aachen.de)
+///  \date 2017 Nov
+///  \date 2018 Jan - May
+///  \date 2019 Jan, Feb, June, Nov
+///
+///  \author Janina Renk
+///          (janina.renk@fysik.su.se)
+///  \date 2018 June
+///  \date 2019 Mar,June
+///
+///  \author Sanjay Bloor
+///          (sanjay.bloor12@imperial.ac.uk)
+///  \date 2019 June, Nov
+///
+///  \author Sebastian Hoof
+///          (hoof@uni-goettingen.de)
+///  \date 2020 Mar
+///
+///  \author Pat Scott
+///          (pat.scott@uq.edu.au)
+///  \date 2018 Mar
+///  \date 2019 Jul
+///  \date 2020 Apr
+///
+///  *********************************************
 
 #include <gsl/gsl_spline.h>
 
@@ -94,9 +140,11 @@ namespace Gambit
     /* Classy */
     /**********/
 
+    /// Getter functions for CL spectra from classy.
 
     /* UNLENSED SPECTRA */
 
+    /// Temperature autocorrelation 
     void class_get_unlensed_Cl_TT(std::vector<double>& result)
     {
       using namespace Pipes::class_get_unlensed_Cl_TT;
@@ -112,12 +160,14 @@ namespace Gambit
       }
     }
 
+    /// Temperature & E-mode cross-correlation
     void class_get_unlensed_Cl_TE(std::vector<double>& result)
     {
       using namespace Pipes::class_get_unlensed_Cl_TE;
       result = BEreq::class_get_unlensed_cl("te");
     }
 
+    /// E-mode autocorrelation 
     void class_get_unlensed_Cl_EE(std::vector<double>& result)
     {
       using namespace Pipes::class_get_unlensed_Cl_EE;
@@ -133,6 +183,7 @@ namespace Gambit
       }
     }
 
+    /// B-mode autocorrelation 
     void class_get_unlensed_Cl_BB(std::vector<double>& result)
     {
       using namespace Pipes::class_get_unlensed_Cl_BB;
@@ -148,6 +199,7 @@ namespace Gambit
       }
     }
 
+    /// Lensing (Phi) autocorrelation
     void class_get_unlensed_Cl_PhiPhi(std::vector<double>& result)
     {
       using namespace Pipes::class_get_unlensed_Cl_PhiPhi;
@@ -165,6 +217,7 @@ namespace Gambit
 
     /* LENSED SPECTRA */
 
+    /// Temperature autocorrelation
     void class_get_lensed_Cl_TT(std::vector<double>& result)
     {
       using namespace Pipes::class_get_lensed_Cl_TT;
@@ -180,12 +233,14 @@ namespace Gambit
       }
     }
 
+    /// Temperature & E-mode cross-correlation
     void class_get_lensed_Cl_TE(std::vector<double>& result)
     {
       using namespace Pipes::class_get_lensed_Cl_TE;
       result = BEreq::class_get_lensed_cl("te");
     }
 
+    /// E-mode autocorrelation
     void class_get_lensed_Cl_EE(std::vector<double>& result)
     {
       using namespace Pipes::class_get_lensed_Cl_EE;
@@ -201,6 +256,7 @@ namespace Gambit
       }
     }
 
+    /// B-mode autocorrelation
     void class_get_lensed_Cl_BB(std::vector<double>& result)
     {
       using namespace Pipes::class_get_lensed_Cl_BB;
@@ -216,6 +272,7 @@ namespace Gambit
       }
     }
 
+    /// Lensing (Phi) autocorrelation
     void class_get_lensed_Cl_PhiPhi(std::vector<double>& result)
     {
       using namespace Pipes::class_get_lensed_Cl_PhiPhi;
@@ -231,13 +288,21 @@ namespace Gambit
       }
     }
 
+    ////////////////
+    /// DarkAges ///
+    ////////////////
 
+    /// Get the energy injection efficiency table from DarkAges.
     void energy_injection_efficiency_func(DarkAges::Energy_injection_efficiency_table& result)
     {
       using namespace Pipes::energy_injection_efficiency_func;
       result = BEreq::get_energy_injection_efficiency_table();
     }
 
+    /// Calculate the effective energy injection efficiency by convulution
+    /// of f_eff(z) with a weighting function W(z) that takes the sensitivity
+    /// of the CMB for energy injection as a function of redshift into account.
+    /// [cf. https://arxiv.org/abs/1506.03811]
     void f_eff_weighted(double& result)
     {
       using namespace Pipes::f_eff_weighted;
@@ -305,6 +370,8 @@ namespace Gambit
       }
     }
 
+    /// Calculate the effective energy injection efficiency by taking the
+    /// value of f_eff(z) at given z.
     void f_eff_at_z(double& result)
     {
       using namespace Pipes::f_eff_at_z;
@@ -337,6 +404,7 @@ namespace Gambit
         const std::vector<double>& f_eff = fz.f_eff;
         const size_t npts = z.size();
 
+        /// Set-up, do the interpolation, and claen-up
         gsl_interp_accel *gsl_accel_ptr = gsl_interp_accel_alloc();
         gsl_spline *spline_ptr = gsl_spline_alloc(gsl_interp_cspline, npts);
         gsl_spline_init(spline_ptr, z.data(), f_eff.data(), npts);
@@ -351,11 +419,14 @@ namespace Gambit
       }
     }
 
+    /// Manually set the effective energy injection efficiency.
     void f_eff_constant(double& result)
     {
       result = Pipes::f_eff_constant::runOptions->getValueOrDef<double>(1.0,"f_eff");
     }
 
+    /// Calculate the annihilation rate p_ann = f_eff * f^2 * <sv>/m
+    /// (Unit of result is: cm^3 s^-1 GeV^-1)
     void p_ann(double& result)
     {
       using namespace Pipes::p_ann;
@@ -384,6 +455,7 @@ namespace Gambit
       result = Stats::gaussian_loglikelihood(p_ann28, -0.48, 0.0, 2.48/sqrt(2.), true);
     }
 
+    /// The energy injection spectrum from the AnnihilatingDM model hierarchy.
     void energy_injection_spectrum_AnnihilatingDM_mixture(DarkAges::Energy_injection_spectrum& spectrum)
     {
       using namespace Pipes::energy_injection_spectrum_AnnihilatingDM_mixture;
@@ -423,6 +495,7 @@ namespace Gambit
       spectrum.spec_ph.resize(1,BR_ph*2e9);
     }
 
+    /// The energy injection spectrum from the DecayingDM model hierarchy.
     void energy_injection_spectrum_DecayingDM_mixture(DarkAges::Energy_injection_spectrum& spectrum)
     {
       using namespace Pipes::energy_injection_spectrum_DecayingDM_mixture;
@@ -470,4 +543,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:49 +0000

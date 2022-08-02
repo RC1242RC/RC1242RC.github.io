@@ -56,6 +56,28 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Functions of ColliderBit LEP likelihoods.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Abram Krislock
+///          (a.m.b.krislock@fys.uio.no)
+///  \author Anders Kvellestad
+///          (anders.kvellestad@nordita.org)
+///
+///  \author Are Raklev
+///          (ahye@fys.uio.no)
+///  \date   2018 Feb
+///
+///  \author Tomas Gonzalo
+///          (t.e.gonzalo@fys.uio.no)
+///  \date   2018 Feb
+///
+///  *********************************************
 
 #include <cmath>
 #include <string>
@@ -85,7 +107,15 @@ namespace Gambit
 
 
 
+    /// LEP limit likelihood function
     double limit_LLike(double x, double x95, double sigma) {
+      /**
+         @brief Incorporate theoretical uncertainty in a 95% limit
+         @param x Predicted cross section
+         @param x95 Experimental 95% upper limit on cross section
+         @param sigma Theoretical uncertainty on predicted cross section
+         @returns Log-likelihood
+      */
       static double p95 = 1.;
       using std::erf;
       using std::sqrt;
@@ -118,6 +148,7 @@ namespace Gambit
     }
 
 
+        /// LEP limit debugging function
     bool is_xsec_sane(const triplet<double>& xsecWithError)
     {
       double xsec = xsecWithError.central;
@@ -136,6 +167,8 @@ namespace Gambit
 
 
 
+    /// ee --> selectron pair production cross-sections at 208 GeV
+    /// @{
     void LEP208_SLHA1_convention_xsec_selselbar(triplet<double>& result)
     {
       using namespace Pipes::LEP208_SLHA1_convention_xsec_selselbar;
@@ -208,7 +241,10 @@ namespace Gambit
       if (!is_xsec_sane(result))
         ColliderBit_error().raise(LOCAL_INFO, "Non-physical LEP cross section!");
     }
+    /// @}
 
+    /// ee --> smuon pair production cross-sections at 208 GeV
+    /// @{
     void LEP208_SLHA1_convention_xsec_smulsmulbar(triplet<double>& result)
     {
       using namespace Pipes::LEP208_SLHA1_convention_xsec_smulsmulbar;
@@ -281,7 +317,10 @@ namespace Gambit
       if (!is_xsec_sane(result))
         ColliderBit_error().raise(LOCAL_INFO, "Non-physical LEP cross section!");
     }
+    /// @}
 
+    /// ee --> stau pair production cross-sections at 208 GeV
+    /// @{
     void LEP208_SLHA1_convention_xsec_staulstaulbar(triplet<double>& result)
     {
       using namespace Pipes::LEP208_SLHA1_convention_xsec_staulstaulbar;
@@ -354,6 +393,7 @@ namespace Gambit
       if (!is_xsec_sane(result))
         ColliderBit_error().raise(LOCAL_INFO, "Non-physical LEP cross section!");
     }
+    /// @}
 
     // @brief \f[ee \to \chi_1\chi_1\f] pair production cross-section at 207 GeV
     void LEP207_SLHA1_convention_xsec_chi00_11(triplet<double>& result) {
@@ -366,6 +406,8 @@ namespace Gambit
       }
     }
 
+    /// ee --> neutralino pair production cross-sections at 208 GeV
+    /// @{
     void LEP208_SLHA1_convention_xsec_chi00_11(triplet<double>& result)
     {
       using namespace Pipes::LEP208_SLHA1_convention_xsec_chi00_11;
@@ -456,8 +498,11 @@ namespace Gambit
       if (!is_xsec_sane(result))
         ColliderBit_error().raise(LOCAL_INFO, "Non-physical LEP cross section!");
     }
+    /// @}
 
 
+    /// ee --> chargino pair production cross-sections at 208 GeV
+    /// @{
     void LEP208_SLHA1_convention_xsec_chipm_11(triplet<double>& result)
     {
       using namespace Pipes::LEP208_SLHA1_convention_xsec_chipm_11;
@@ -491,8 +536,11 @@ namespace Gambit
       if (!is_xsec_sane(result))
         ColliderBit_error().raise(LOCAL_INFO, "Non-physical LEP cross section!");
     }
+    /// @}
 
 
+    /// ee --> selectron pair production cross-sections at 205 GeV
+    /// @{
     void LEP205_SLHA1_convention_xsec_selselbar(triplet<double>& result)
     {
       using namespace Pipes::LEP205_SLHA1_convention_xsec_selselbar;
@@ -565,7 +613,10 @@ namespace Gambit
       if (!is_xsec_sane(result))
         ColliderBit_error().raise(LOCAL_INFO, "Non-physical LEP cross section!");
     }
+    /// @}
 
+    /// ee --> smuon pair production cross-sections at 205 GeV
+    /// @{
     void LEP205_SLHA1_convention_xsec_smulsmulbar(triplet<double>& result)
     {
       using namespace Pipes::LEP205_SLHA1_convention_xsec_smulsmulbar;
@@ -638,7 +689,10 @@ namespace Gambit
       if (!is_xsec_sane(result))
         ColliderBit_error().raise(LOCAL_INFO, "Non-physical LEP cross section!");
     }
+    /// @}
 
+    /// ee --> stau pair production cross-sections at 205 GeV
+    /// @{
     void LEP205_SLHA1_convention_xsec_staulstaulbar(triplet<double>& result)
     {
       using namespace Pipes::LEP205_SLHA1_convention_xsec_staulstaulbar;
@@ -711,8 +765,11 @@ namespace Gambit
       if (!is_xsec_sane(result))
         ColliderBit_error().raise(LOCAL_INFO, "Non-physical LEP cross section!");
     }
+    /// @}
 
 
+    /// ee --> neutralino pair production cross-sections at 205 GeV
+    /// @{
     void LEP205_SLHA1_convention_xsec_chi00_11(triplet<double>& result)
     {
       using namespace Pipes::LEP205_SLHA1_convention_xsec_chi00_11;
@@ -803,8 +860,11 @@ namespace Gambit
       if (!is_xsec_sane(result))
         ColliderBit_error().raise(LOCAL_INFO, "Non-physical LEP cross section!");
     }
+    /// @}
 
 
+    /// ee --> chargino pair production cross-sections at 205 GeV
+    /// @{
     void LEP205_SLHA1_convention_xsec_chipm_11(triplet<double>& result)
     {
       using namespace Pipes::LEP205_SLHA1_convention_xsec_chipm_11;
@@ -839,6 +899,8 @@ namespace Gambit
         ColliderBit_error().raise(LOCAL_INFO, "Non-physical LEP cross section!");
     }
 
+    /// ee --> selectron pair production cross-sections at 188.6 GeV
+    /// @{
     void LEP188_SLHA1_convention_xsec_selselbar(triplet<double>& result)
     {
       using namespace Pipes::LEP188_SLHA1_convention_xsec_selselbar;
@@ -911,7 +973,10 @@ namespace Gambit
       if (!is_xsec_sane(result))
         ColliderBit_error().raise(LOCAL_INFO, "Non-physical LEP cross section!");
     }
+    /// @}
 
+    /// ee --> smuon pair production cross-sections at 188.6 GeV
+    /// @{
     void LEP188_SLHA1_convention_xsec_smulsmulbar(triplet<double>& result)
     {
       using namespace Pipes::LEP188_SLHA1_convention_xsec_smulsmulbar;
@@ -984,7 +1049,10 @@ namespace Gambit
       if (!is_xsec_sane(result))
         ColliderBit_error().raise(LOCAL_INFO, "Non-physical LEP cross section!");
     }
+    /// @}
 
+    /// ee --> stau pair production cross-sections at 188.6 GeV
+    /// @{
     void LEP188_SLHA1_convention_xsec_staulstaulbar(triplet<double>& result)
     {
       using namespace Pipes::LEP188_SLHA1_convention_xsec_staulstaulbar;
@@ -1057,8 +1125,11 @@ namespace Gambit
       if (!is_xsec_sane(result))
         ColliderBit_error().raise(LOCAL_INFO, "Non-physical LEP cross section!");
     }
+    /// @}
 
 
+    /// ee --> neutralino pair production cross-sections at 188.6 GeV
+    /// @{
     void LEP188_SLHA1_convention_xsec_chi00_11(triplet<double>& result)
     {
       using namespace Pipes::LEP188_SLHA1_convention_xsec_chi00_11;
@@ -1149,8 +1220,11 @@ namespace Gambit
       if (!is_xsec_sane(result))
         ColliderBit_error().raise(LOCAL_INFO, "Non-physical LEP cross section!");
     }
+    /// @}
 
 
+    /// ee --> chargino pair production cross-sections at 188.6 GeV
+    /// @{
     void LEP188_SLHA1_convention_xsec_chipm_11(triplet<double>& result)
     {
       using namespace Pipes::LEP188_SLHA1_convention_xsec_chipm_11;
@@ -1184,8 +1258,11 @@ namespace Gambit
       if (!is_xsec_sane(result))
         ColliderBit_error().raise(LOCAL_INFO, "Non-physical LEP cross section!");
     }
+    /// @}
 
 
+    /// LEP Slepton Log-Likelihoods
+    /// @{
     void ALEPH_Selectron_Conservative_LLike(double& result)
     {
       using namespace Pipes::ALEPH_Selectron_Conservative_LLike;
@@ -1599,7 +1676,10 @@ namespace Gambit
       }
 
     }
+    /// @}
 
+    /// LEP Gaugino Log-Likelihoods
+    /// @{
     void L3_Neutralino_All_Channels_Conservative_LLike(double& result)
     {
       using namespace Pipes::L3_Neutralino_All_Channels_Conservative_LLike;
@@ -2577,8 +2657,21 @@ namespace Gambit
 
     }
 
+    /// @}
 
     void L3_Gravitino_LLike(double& result) {
+      /**
+         @brief L3 search for gravitinos at 207 GeV
+
+         We use a limit from Fig. 6c of
+         https://doi.org/10.1016/j.physletb.2004.01.010.
+
+         We use the 95% upper limit on
+         \f[
+         \sigma(ee \to \chi^0_1\chi^0_1) \textrm{BR}(\chi^0_1 \to \tilde{G}\gamma)^2
+         \f]
+      */
+
       // Unpack neutralino & gravitino mass
       using namespace Pipes::L3_Gravitino_LLike;
       const Spectrum& spectrum = *Dep::MSSM_spectrum;
@@ -2614,4 +2707,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:38 +0000
+Updated on 2022-08-02 at 23:34:55 +0000

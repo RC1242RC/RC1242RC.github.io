@@ -60,6 +60,24 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Templated class for holding and executing
+///  pointers to Mathematica backends.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Tomas Gonzalo
+///          (t.e.gonzalo@fys.uio.no)
+///  \date 2016 Sep
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)
+///  \date 2017 Dec
+///
+///  *********************************************
 
 #ifndef __mathematica_function_hpp__
 #define __mathematica_function_hpp__
@@ -80,6 +98,7 @@ namespace Gambit
 
   namespace Backends
   {
+    /// Holds the info about a Mathematica backend function, and defines conversion functions.
     template <typename TYPE, typename... ARGS>
     class mathematica_function
     {
@@ -87,12 +106,15 @@ namespace Gambit
       private:
 
         #ifdef HAVE_MATHEMATICA
+          /// Pointer to the Mathematica Kernel running the session that this backend is loaded up in
           WSLINK _WSlink;
         #endif
+        /// The name of the backend function
         str _symbol;
 
       public:
 
+        /// Constructor
         mathematica_function(const str& be, const str& ver, const str& symbol) :  _symbol(symbol)
         {
           try
@@ -119,6 +141,7 @@ namespace Gambit
         }
 
 
+        /// Operation (execute function and return value)
         TYPE operator()(ARGS&&... args)
         {
           #ifdef HAVE_MATHEMATICA
@@ -207,4 +230,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:55 +0000

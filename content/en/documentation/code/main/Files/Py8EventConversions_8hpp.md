@@ -50,6 +50,21 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //  *********************************************
+///  \file
+///
+///  Helper functions for converting between
+///  Pythia8 events and other event types.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Andy Buckley
+///  \author Anders Kvellestad
+///  \author Pat Scott
+///  \author Martin White
+///
+///  *********************************************
 
 #pragma once
 
@@ -66,6 +81,8 @@ namespace Gambit
 
     using namespace EventConversion;
 
+    /// Convert a hadron-level EventT into an unsmeared HEPUtils::Event
+    /// @todo Overlap between jets and prompt containers: need some isolation in MET calculation
     template<typename EventT>
     void convertParticleEvent(const EventT& pevt, HEPUtils::Event& result, double antiktR, double jet_pt_min)
     {
@@ -86,6 +103,7 @@ namespace Gambit
         //b, c and tau idenitification:
 
         // Find last b-hadrons in b decay chains as the best proxy for b-tagging
+        /// @todo Temporarily using quark-based tagging instead -- fix
         if (apid == 5)
         {
           bool isGoodB = true;
@@ -99,6 +117,7 @@ namespace Gambit
         }
 
         // Find last c-hadrons in decay chains as the best proxy for c-tagging
+        /// @todo Temporarily using quark-based tagging instead -- fix
         if (apid == 4)
         {
           bool isGoodC = true;
@@ -121,6 +140,7 @@ namespace Gambit
           for (int childID : childIDs)
           {
             // Veto leptonic taus
+            /// @todo What's wrong with having a W daughter? Doesn't that just mark a final tau?
             abschildID = abs(childID);
             if (abschildID == MCUtils::PID::ELECTRON || abschildID == MCUtils::PID::MUON ||
                 abschildID == MCUtils::PID::WPLUSBOSON || abschildID == MCUtils::PID::TAU)
@@ -150,6 +170,7 @@ namespace Gambit
         }
 
         // Add particle outside ATLAS/CMS acceptance to MET and then ignore said particle.
+        /// @todo Move out-of-acceptance MET contribution to BuckFast
         if (std::abs(get_unified_eta(p)) > 5.0)
         {
           pout += p4;
@@ -175,17 +196,23 @@ namespace Gambit
         }
       }
 
+      /// Jet finding
+      /// @todo Choose jet algorithm via detector _settings? Run several algs?
       const FJNS::JetDefinition jet_def(FJNS::antikt_algorithm, antiktR);
       FJNS::ClusterSequence cseq(jetparticles, jet_def);
       std::vector<FJNS::PseudoJet> pjets = sorted_by_pt(cseq.inclusive_jets(jet_pt_min));
 
+      /// Do jet b-tagging, etc. and add to the Event
+      /// @todo Use ghost tagging?
+      /// @note We need to _remove_ this b-tag in the detector sim if outside the tracker acceptance!
       for (auto& pj : pjets)
       {
         HEPUtils::P4 jetMom = HEPUtils::mk_p4(pj);
+        /// @todo Replace with HEPUtils::any(bhadrons, [&](const auto& pb){ pj.delta_R(pb) < 0.4 })
         bool isB = false;
         for (HEPUtils::Particle& pb : bpartons)
         {
-          if (jetMom.deltaR_eta(pb.mom()) < 0.4) 
+          if (jetMom.deltaR_eta(pb.mom()) < 0.4) ///< @todo Hard-coded radius!!!
           {
             isB = true;
             break;
@@ -195,7 +222,7 @@ namespace Gambit
         bool isC = false;
         for (HEPUtils::Particle& pc : cpartons)
         {
-          if (jetMom.deltaR_eta(pc.mom()) < 0.4) 
+          if (jetMom.deltaR_eta(pc.mom()) < 0.4) ///< @todo Hard-coded radius!!!
           {
             isC = true;
             break;
@@ -205,7 +232,7 @@ namespace Gambit
         bool isTau = false;
         for (HEPUtils::Particle& ptau : tauCandidates)
         {
-          if (jetMom.deltaR_eta(ptau.mom()) < 0.5) 
+          if (jetMom.deltaR_eta(ptau.mom()) < 0.5) ///< @todo Hard-coded radius!!!
           {
             isTau = true;
             break;
@@ -222,6 +249,7 @@ namespace Gambit
         result.add_jet(new HEPUtils::Jet(HEPUtils::mk_p4(pj), isB, isC));
       }
 
+      /// Calculate missing momentum
       //
       // From balance of all visible momenta (requires isolation)
       // const std::vector<Particle*> visibles = result.visible_particles();
@@ -256,6 +284,7 @@ namespace Gambit
     }
 
 
+    /// Convert a partonic (no hadrons) EventT into an unsmeared HEPUtils::Event
     template<typename EventT>
     void convertPartonEvent(const EventT& pevt, HEPUtils::Event& result, double antiktR, double jet_pt_min)
     {
@@ -302,6 +331,7 @@ namespace Gambit
         if (!p.isFinal()) continue;
 
         // Only consider partons within ATLAS/CMS acceptance
+        /// @todo We should leave this for the detector sim / analysis to deal with
         if (std::abs(p.eta()) > 5.0)
         {
           pout += mk_p4(p.p());
@@ -309,6 +339,8 @@ namespace Gambit
         }
 
         // Find electrons/muons/taus/photons to be treated as prompt (+ invisibles)
+        /// @todo *Some* photons should be included in jets!!! Ignore for now since no FSR
+        /// @todo Lepton dressing
         const bool prompt = isFinalPhoton(i, pevt) || (isFinalLepton(i, pevt)); // && std::abs(p.id()) != MCUtils::PID::TAU);
         const bool visible = MCUtils::PID::isStrongInteracting(p.id()) || MCUtils::PID::isEMInteracting(p.id());
         if (prompt || !visible)
@@ -319,6 +351,7 @@ namespace Gambit
         }
 
         // Everything other than invisibles and muons, including taus & partons are jet constituents
+        /// @todo Only include hadronic tau fraction?
         // if (visible && (isFinalParton(i, pevt) || isFinalTau(i, pevt))) {
         if (visible && p.idAbs() != MCUtils::PID::MUON)
         {
@@ -329,6 +362,8 @@ namespace Gambit
 
       }
 
+      /// Jet finding
+      /// @todo choose jet algorithm via _settings?
       const FJNS::JetDefinition jet_def(FJNS::antikt_algorithm, antiktR);
       FJNS::ClusterSequence cseq(jetparticles, jet_def);
       std::vector<FJNS::PseudoJet> pjets = sorted_by_pt(cseq.inclusive_jets(jet_pt_min));
@@ -337,6 +372,7 @@ namespace Gambit
       for (const FJNS::PseudoJet& pj : pjets)
       {
         // Do jet b-tagging, etc. by looking for b quark constituents (i.e. user index = |parton ID| = 5)
+        /// @note This b-tag is removed in the detector sim if outside the tracker acceptance!
         const bool isB = HEPUtils::any(pj.constituents(),
                  [](const FJNS::PseudoJet& c){ return c.user_index() == MCUtils::PID::BQUARK; });
         const bool isC = HEPUtils::any(pj.constituents(),
@@ -362,6 +398,7 @@ namespace Gambit
         }
       }
 
+      /// Calculate missing momentum
       //
       // From balance of all visible momenta (requires isolation)
       // const std::vector<Particle*> visibles = result.visible_particles();
@@ -387,4 +424,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:37 +0000
+Updated on 2022-08-02 at 23:34:54 +0000

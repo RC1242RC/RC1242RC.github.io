@@ -31,7 +31,11 @@ description: "[No description available]"
 ## Source code
 
 ```
-
+///
+///  \author Yang Zhang
+///  \date 2019 Jan
+///
+///  *********************************************
 
 // Based on http://cms-results.web.cern.ch/cms-results/public-results/publications/SUS-16-046/index.html
 // Search for gauge-mediated supersymmetry in events with at least one photon and missing transverse momentum in pp collisions at s√= 13 TeV
@@ -169,6 +173,7 @@ namespace Gambit {
 
       }
 
+      /// Combine the variables of another copy of this analysis (typically on another thread) into this one.
       void combine(const Analysis* other)
       {
         const Analysis_CMS_13TeV_Photon_GMSB_36invfb* specificOther
@@ -214,4 +219,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:38 +0000
+Updated on 2022-08-02 at 23:34:49 +0000

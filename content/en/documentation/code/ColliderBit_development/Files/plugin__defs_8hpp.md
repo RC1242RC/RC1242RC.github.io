@@ -65,6 +65,24 @@ Authors (add name and date if you modify):
 ```
 //  GAMBIT: Global and Modular BSM Inference Tool
 //  *********************************************
+///  \file
+///
+///  declaration for scanner module
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Gregory Martinez
+///          (gregory.david.martinez@gmail.com)
+///  \date 2013 August
+///        2014 Feb
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)   
+///  \date 2014 Dec
+///
+///  *********************************************
 
 #ifndef GAMBIT_PLUGIN_DEFS_HPP
 #define GAMBIT_PLUGIN_DEFS_HPP
@@ -95,6 +113,7 @@ namespace Gambit
     {
         typedef Priors::BasePrior prior_interface;
         
+        /// class to interface with the plugin manager resume functions.
         class resume_params_func
         {
         private:
@@ -159,6 +178,8 @@ namespace Gambit
         {
             using Gambit::type_index;
             
+            /// These classes are used by the plugins to load and save data
+            /// @{
             class factoryBase
             {
             public:
@@ -198,7 +219,9 @@ namespace Gambit
                         delete *it;
                 }
             };
+            /// @}
             
+            /// Structure that holds all the data provided by plugins about themselves.
             struct pluginData
             {
                 std::string name;
@@ -266,4 +289,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:37 +0000
+Updated on 2022-08-02 at 23:34:48 +0000

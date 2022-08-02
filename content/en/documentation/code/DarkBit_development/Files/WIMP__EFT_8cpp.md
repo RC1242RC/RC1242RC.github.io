@@ -100,6 +100,41 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Module functions associated with creating
+///  and translating WIMP-nucleon and WIMP-quark 
+///  effective operator couplings from GAMBIT
+///  ModelParameters. Functions which compute
+///  these EFT couplings for specific "UV" models 
+///  live in DarkBit sources files named after those
+///  models.
+///
+///  Includes module functions to compute
+///  non-relativistic operator couplings from
+///  relativistic ones using DirectDM.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Ben Farmer
+///          (b.farmer@imperial.ac.uk)
+///  \date 2019 Jul
+///
+///  \author Felix Kahlhofer
+///          (kahlhoefer@physik.rwth-aachen.de)
+///  \date 2020 May
+///
+///  \author Ankit Beniwal
+///          (ankit.beniwal@uclouvain.be)
+///  \date 2020 Dec
+///
+///  \author Tomas Gonzalo
+///          (gonzalo@physik.rwth-aachen.de)
+///  \date 2021 Sep
+///
+///  *********************************************
 
 #include <boost/make_shared.hpp>
 
@@ -121,6 +156,7 @@ namespace Gambit
     class WIMP_EFT_DM
     {
       public:
+        /// Initialize object (branching ratios etc)
         WIMP_EFT_DM(
             TH_ProcessCatalog* const catalog)
             : mh   (catalog->getParticleProperty("h0_1").mass)
@@ -132,6 +168,15 @@ namespace Gambit
             , mW   (catalog->getParticleProperty("W+").mass)
         {};
 
+        /*! \brief Returns <sigma v> in cm3/s for given channel, velocity and
+         *         model parameters.
+         *
+         * channel: bb, tautau, mumu, ss, cc, tt, gg, gammagamma, Zgamma, WW,
+         * ZZ, hh
+         *
+         * Parameterises <sigma v> as A + Bv^2, i.e. s + p wave annihilation
+         * with no resonances, subject to basic kinematic constraints. 
+         */
         double sv(std::string channel, double mass, double A, double B, double v)
         {
 
@@ -176,6 +221,7 @@ namespace Gambit
         double mh, mb, mc, mtau, mt, mZ0, mW;
     };
 
+    /// DarkMatter_ID string for generic EFT dark matter 
     void DarkMatter_ID_EFT(std::string& result)
     {
        using namespace Pipes::DarkMatter_ID_EFT;
@@ -184,6 +230,7 @@ namespace Gambit
        if(ModelInUse("NREO_DiracDM")) result = "chi";
     }
 
+    /// DarkMatterConj_ID string for generic EFT dark matter 
     void DarkMatterConj_ID_EFT(std::string& result)
     {
        using namespace Pipes::DarkMatterConj_ID_EFT;
@@ -192,9 +239,11 @@ namespace Gambit
        if(ModelInUse("NREO_DiracDM")) result = "chi~";
     }
 
+    //////////////////////////////////////////////////////////////////////////
     //
     //   Translation of NREO ModelParameters into NREO_DM_nucleon_couplings
     //
+    //////////////////////////////////////////////////////////////////////////
 
     void NREO_couplings_from_parameters(NREO_DM_nucleon_couplings& NREO_couplings)
     {
@@ -203,9 +252,11 @@ namespace Gambit
        NREO_couplings.CPTbasis = 0;
     }
 
+    //////////////////////////////////////////////////////////////////////////
     //
     //   Translation of DD_couplings into NREO_DM_nucleon_couplings
     //
+    //////////////////////////////////////////////////////////////////////////
 
     void NREO_from_DD_couplings(NREO_DM_nucleon_couplings& NREO_couplings)
     {
@@ -221,6 +272,9 @@ namespace Gambit
 
     /* Non-relativistic Wilson Coefficients, model independent */
 
+    /// Obtain the non-relativistic Wilson Coefficients from a set of model
+    /// specific relativistic Wilson Coefficients from DirectDM in the flavour
+    /// matching scheme (default 5 flavours). NR WCs defined at 2 GeV.
     void DD_nonrel_WCs_flavscheme(NREO_DM_nucleon_couplings &result)
     {
       using namespace Pipes::DD_nonrel_WCs_flavscheme;
@@ -260,6 +314,8 @@ namespace Gambit
       result = BEreq::get_NR_WCs_flav(relativistic_WCs, mDM, scheme, DM_type, inputs);
     }
 
+    /// Module function providing nuisance parameters for
+    /// to be passed to DirectDM directly from the model parameters.
     void ExtractDirectDMNuisanceParameters(map_str_dbl &result)
     {
       using namespace Pipes::ExtractDirectDMNuisanceParameters;
@@ -319,11 +375,14 @@ namespace Gambit
       result["rs2"]     = *Param["rs2"];
     }
 
+    //////////////////////////////////////////////////////////////////////////
     //
     //   Process catalog setup
     //
+    //////////////////////////////////////////////////////////////////////////
 
 
+    /// Set up process catalog for a generic parameterisation of (two body) WIMP dark matter decays and annihilations.
     void TH_ProcessCatalog_WIMP_EFT(DarkBit::TH_ProcessCatalog &result)
     {
       using namespace Pipes::TH_ProcessCatalog_WIMP_EFT;
@@ -346,6 +405,7 @@ namespace Gambit
       // factors of 1/2 where necessary
       process_ann.isSelfConj = Dep::WIMP_properties->sc;
 
+      /// Generic parameterisation of WIMP self-annihilation cross-section to various SM two-body final states
       WIMP_annihilation annihilationProps;
       std::vector<std::string> finalstates {"bb", "WW", "cc", "tautau", "ZZ", "tt", "hh"};
       for(auto channel = finalstates.begin(); channel!=finalstates.end(); ++channel)
@@ -356,7 +416,9 @@ namespace Gambit
         annihilationProps.setB(*channel,*Param[B+*channel]);
       }
 
+      ///////////////////////////////////////
       // Import particle masses and couplings
+      ///////////////////////////////////////
 
       // Convenience macros
       #define getSMmass(Name, spinX2)                                           \
@@ -431,7 +493,9 @@ namespace Gambit
       #undef getSMmass
       #undef addParticle
 
+      /////////////////////////////
       // Import Decay information
+      /////////////////////////////
 
       // Import decay table from DecayBit
       const DecayTable* tbl = &(*Dep::decay_rates);
@@ -511,4 +575,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:46 +0000
+Updated on 2022-08-02 at 23:34:56 +0000

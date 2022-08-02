@@ -50,6 +50,27 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Functions of module ObjectivesBit
+///
+///  Put your functions in files like this
+///  if you wish to add observables or likelihoods
+///  to this module.
+///
+///  See https://en.wikipedia.org/wiki/Test_functions_for_optimization
+///  https://arxiv.org/abs/2101.04525
+///  and https://arxiv.org/abs/1306.2144
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Andrew Fowlie
+///          (andrew.j.fowlie@qq.com)
+///  \date 2021 January
+///
+///  *********************************************
 
 
 #include <cmath>
@@ -114,6 +135,7 @@ namespace Gambit
       return r;
     }
 
+    /** @brief See https://en.wikipedia.org/wiki/Rosenbrock_function */
     void rosenbrock(double &loglike)
     {
       using namespace Pipes::rosenbrock;
@@ -121,6 +143,7 @@ namespace Gambit
       loglike = - rosenbrock(x);
     }
 
+    /** @brief See https://en.wikipedia.org/wiki/Himmelblau%27s_function */
     void himmelblau(double &loglike)
     {
       using namespace Pipes::himmelblau;
@@ -138,6 +161,7 @@ namespace Gambit
                 + 1.5 * x[0] - 2.5 * x[1] - 1.;
     }
 
+    /** @brief See https://en.wikipedia.org/wiki/Ackley_function */
     void ackley(double &loglike)
     {
       using namespace Pipes::ackley;
@@ -154,6 +178,7 @@ namespace Gambit
                 - M_E - 20.;
     }
 
+    /** @brief Test problem 2 from https://arxiv.org/abs/1306.2144 */
     void eggbox(double &loglike)
     {
       using namespace Pipes::eggbox;
@@ -166,6 +191,7 @@ namespace Gambit
       loglike = std::pow(prod + 2., 5.);
     }
 
+    /** @brief See https://en.wikipedia.org/wiki/Rastrigin_function */
     void rastrigin(double &loglike)
     {
       using namespace Pipes::rastrigin;
@@ -194,6 +220,7 @@ namespace Gambit
       return std::max(x, y) + std::log1p(std::exp(-std::abs(x - y)));
     }
 
+    /** @brief Test problem 1 from https://arxiv.org/abs/1306.2144 */
     void shells(double &loglike)
     {
       using namespace Pipes::shells;
@@ -240,6 +267,7 @@ namespace Gambit
                 std::exp(- (x[0] - M_PI) * (x[0] - M_PI) - (x[1] - M_PI) * (x[1] - M_PI));
     }
 
+    /** @brief Analytic function 1 from https://arxiv.org/abs/2101.04525 */
     void tf1(double &loglike)
     {
       using namespace Pipes::tf1;
@@ -264,6 +292,7 @@ namespace Gambit
       loglike = - std::exp(-sum_x6 / scale) + 2. * std::exp(-sum_x2) * prod_c2;
     }
 
+    /** @brief Analytic function 2 from https://arxiv.org/abs/2101.04525 */
     void tf2(double &loglike)
     {
       using namespace Pipes::tf2;
@@ -279,6 +308,7 @@ namespace Gambit
       }
     }
 
+    /** @brief Analytic function 3 from https://arxiv.org/abs/2101.04525 */
     void tf3(double &loglike)
     {
       using namespace Pipes::tf3;
@@ -296,6 +326,7 @@ namespace Gambit
       loglike = 1. / n * sum_s6;
     }
 
+    /** @brief Analytic function 4 from https://arxiv.org/abs/2101.04525 */
     void tf4(double &loglike)
     {
       using namespace Pipes::tf4;
@@ -319,4 +350,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:45 +0000
+Updated on 2022-08-02 at 23:34:56 +0000

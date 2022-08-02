@@ -691,6 +691,25 @@ fh_real scalefactor = 1.;
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file FeynHiggs.cpp
+///
+///  Frontend source for the FeynHiggs backend.
+///
+///  Actual implementation of FeynHiggs ini function.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Christopher S. Rogan
+///          (crogan@cern.ch)
+///  \date 2015 Sept
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)
+///  \date 2016 Aug
+///
+///  *********************************************
 
 #include "gambit/Backends/frontend_macros.hpp"
 #include "gambit/Backends/frontends/FeynHiggs_2_11_3.hpp"
@@ -948,4 +967,4 @@ END_BE_INI_FUNCTION
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:41 +0000
+Updated on 2022-08-02 at 23:34:51 +0000

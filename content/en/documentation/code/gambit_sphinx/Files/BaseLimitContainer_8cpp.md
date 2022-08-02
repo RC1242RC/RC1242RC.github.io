@@ -54,6 +54,23 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Base container class for LEP limits.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Abram Krislock
+///          (a.m.b.krislock@fys.uio.no)
+///  \date ????
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)
+///  \date 2016 Jan
+///
+///  *************************************
 
 #include "gambit/ColliderBit/limits/BaseLimitContainer.hpp"
 
@@ -158,6 +175,7 @@ namespace Gambit
         return average;
     }
   
+    /// @brief Dump limit average data into a file for average debugging
     void BaseLimitContainer::dumpPlotData(double xlow, double xhigh, double ylow,
                                           double yhigh, double mZ,
                                           std::string filename, int ngrid) const
@@ -174,6 +192,7 @@ namespace Gambit
       outFile.close();
     }
   
+    /// @brief Dump input limit contour data into a file for limit debugging
     void BaseLimitContainer::dumpLightPlotData(std::string filename, int nperLine) const
     {
       P2 point;
@@ -199,4 +218,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:40 +0000
+Updated on 2022-08-02 at 23:34:50 +0000

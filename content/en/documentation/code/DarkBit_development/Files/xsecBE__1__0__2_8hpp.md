@@ -90,6 +90,20 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Frontend header for the xsecBE backend
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Anders Kvellestad
+///          (a.kvellestad@imperial.ac.uk)
+///  \date 2019 Sep
+///  \date 2020 Dec
+///
+///  *********************************************
 
 
 #define BACKENDNAME xsecBE
@@ -146,4 +160,4 @@ BE_FUNCTION(get_xsection, PyDict, (iipair&), "get_xsection", "xsecBE_get_xsectio
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:48 +0000
+Updated on 2022-08-02 at 23:34:58 +0000

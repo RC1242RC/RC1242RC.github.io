@@ -39,6 +39,19 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Super Renormalizable Higgs Portal DM specific module functions for DarkBit
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Iñigo Saez Casares
+///          (inigo.saez_casares@ens-paris-saclay.fr)
+///  \date 2019 December
+///
+///  *********************************************
 
 // TODO: Temporarily disabled until project is ready
 /*
@@ -77,9 +90,11 @@ namespace Gambit
   namespace DarkBit
   {
 
+    ////////////////////////////////////////////////////////////////////
     //                                                                //
     //      General Functions and Classes for Higgs Portal DM         //
     //                                                                //
+    ////////////////////////////////////////////////////////////////////
 
     // \brief Supporting classes and functions for the Higgs Portal DM module.
     
@@ -128,7 +143,9 @@ namespace Gambit
 
 
 
+    ////////////////////////////////////////////////////////////////////
     //            Support class to handle Solar models                //
+    ////////////////////////////////////////////////////////////////////
 
     // gsl error handler
     void handler_Ls (const char * reason, const char * file, int line, int gsl_errno)
@@ -403,7 +420,9 @@ namespace Gambit
       return gsl_spline_eval(m_Ls_interp, mS, m_Ls_accel)*pow(me/v*theta, 2);
     }
 
+    ////////////////////////////////////////////////////////////////////
     //                   Capability functions                         //
+    ////////////////////////////////////////////////////////////////////
 
     //------------- Process catalogue -------------//
 
@@ -417,7 +436,9 @@ namespace Gambit
       TH_ProcessCatalog catalog;
       TH_Process process_dec("S");
 
+      ///////////////////////////////////////
       // Import particle masses and couplings
+      ///////////////////////////////////////
 
       // Convenience macros
       #define getSMmass(Name, spinX2)                                           \
@@ -515,7 +536,9 @@ namespace Gambit
       TH_Channel dec_channel_e2(daFunk::vec<string>("e-_2", "e+_2"), daFunk::cnst(gamma_e2));
       process_dec.channelList.push_back(dec_channel_e2);
 
+      //////////////////////////////
       // Import Decay information //
+      //////////////////////////////
 
       // Import decay table from DecayBit
       const DecayTable* tbl = &(*Dep::decay_rates);
@@ -815,4 +838,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:46 +0000
+Updated on 2022-08-02 at 23:34:56 +0000

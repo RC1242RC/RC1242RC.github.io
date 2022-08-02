@@ -39,6 +39,18 @@ Authors (add name and sate if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  A Mathematica backend example.
+///
+///  *********************************************
+///
+///  Authors (add name and sate if you modify):
+///
+///  \author Tomas Gonzalo
+///  \date 2016 Nov
+///
+///  *********************************************
 
 #include "gambit/Backends/frontend_macros.hpp"
 #include "gambit/Backends/frontends/LibMathematicaTest_1_0.hpp"
@@ -114,4 +126,4 @@ END_BE_INI_FUNCTION
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:40 +0000
+Updated on 2022-08-02 at 23:34:50 +0000

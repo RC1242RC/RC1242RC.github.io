@@ -46,6 +46,19 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Exception object declarations.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///   
+///  \author Pat Scott 
+///          (patscott@physics.mcgill.ca)
+///  \date 2014 Mar
+///
+///  *********************************************
 
 #ifndef __error_handlers_hpp__
 #define __error_handlers_hpp__
@@ -56,12 +69,16 @@ Authors (add name and date if you modify):
 namespace Gambit
 {
 
+  /// Core errors
   error& core_error();
+  /// Core warnings
   warning& core_warning();
 
   namespace DRes
   {
+    /// Dependency resolver errors
     error& dependency_resolver_error();
+    /// Dependency resolver warnings
     warning& dependency_resolver_warning();
   }
     
@@ -73,4 +90,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:49 +0000

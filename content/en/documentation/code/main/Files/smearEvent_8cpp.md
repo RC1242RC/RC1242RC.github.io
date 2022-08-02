@@ -89,6 +89,40 @@ Smear an event using a simulation of EXPERIMENT.
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  ColliderBit event loop functions returning
+///  events after detector simulation.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Abram Krislock
+///          (a.m.b.krislock@fys.uio.no)
+///
+///  \author Aldo Saavedra
+///
+///  \author Andy Buckley
+///
+///  \author Chris Rogan
+///          (crogan@cern.ch)
+///  \date 2014 Aug
+///  \date 2015 May
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)
+///  \date 2015 Jul
+///  \date 2018 Jan
+///  \date 2019 Jan
+///
+///  \author Anders Kvellestad
+///          (anders.kvellestad@fys.uio.no)
+///  \date   2017 March
+///  \date   2018 Jan
+///  \date   2018 May
+///
+///  *********************************************
 
 #include "gambit/ColliderBit/ColliderBit_eventloop.hpp"
 
@@ -98,6 +132,7 @@ namespace Gambit
   namespace ColliderBit
   {
 
+    /// Smear an event
     void smearEvent(HEPUtils::Event& result,
                     const HEPUtils::Event& HardScatteringEvent,
                     const BaseDetector& detector,
@@ -111,6 +146,7 @@ namespace Gambit
       detector.processEvent(result);
     }
 
+    /// Smear an event using a simulation of EXPERIMENT
     #define SMEAR_EVENT(NAME, EXPERIMENT)                                                \
     void NAME(HEPUtils::Event& result)                                                   \
     {                                                                                    \
@@ -131,4 +167,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:38 +0000
+Updated on 2022-08-02 at 23:34:55 +0000

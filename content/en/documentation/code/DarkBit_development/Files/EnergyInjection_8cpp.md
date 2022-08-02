@@ -79,6 +79,19 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Implementation of energy injection routines.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Patrick Stoecker
+///          (stoecker@physik.rwth-aachen.de)
+///  \date 2021 Mar
+///
+///  *********************************************
 
 #include "gambit/Elements/gambit_module_headers.hpp"
 #include "gambit/DarkBit/DarkBit_rollcall.hpp"
@@ -96,6 +109,7 @@ namespace Gambit
     void DarkMatter_ID_DecayingDM_mixture(std::string & result) { result = "DM"; }
     void DarkMatterConj_ID_DecayingDM_mixture(std::string & result) { result = "DM"; }
 
+    /// The energy injection spectrum from the ProcessCatalog and FCMC.
     void energy_injection_spectrum_ProcessCatalog(DarkAges::Energy_injection_spectrum& spectrum)
     {
       using namespace Pipes::energy_injection_spectrum_ProcessCatalog;
@@ -200,6 +214,7 @@ namespace Gambit
 
     }
 
+    /// Set up process catalog for AnnihilatingDM_mixture
     void TH_ProcessCatalog_AnnihilatingDM_mixture(TH_ProcessCatalog& result)
     {
       using namespace Pipes::TH_ProcessCatalog_AnnihilatingDM_mixture;
@@ -238,7 +253,9 @@ namespace Gambit
       // Explicitly state that DM particle is self-conjugate
       process_ann.isSelfConj = true;
 
+      ///////////////////////////////////////
       // Import particle masses and couplings
+      ///////////////////////////////////////
 
       #define addParticle(Name, Mass, spinX2) \
       catalog.particleProperties.insert(std::pair<std::string, TH_ParticleProperty> (Name , TH_ParticleProperty(Mass, spinX2)));
@@ -272,6 +289,7 @@ namespace Gambit
       result = catalog;
     }
 
+    /// Set up process catalog for DecayingDM_mixture
     void TH_ProcessCatalog_DecayingDM_mixture(TH_ProcessCatalog& result)
     {
       using namespace Pipes::TH_ProcessCatalog_DecayingDM_mixture;
@@ -307,7 +325,9 @@ namespace Gambit
       TH_ProcessCatalog catalog;
       TH_Process process_dec("DM");
 
+      ///////////////////////////////////////
       // Import particle masses and couplings
+      ///////////////////////////////////////
 
       #define addParticle(Name, Mass, spinX2) \
       catalog.particleProperties.insert(std::pair<std::string, TH_ParticleProperty> (Name , TH_ParticleProperty(Mass, spinX2)));
@@ -349,4 +369,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:46 +0000
+Updated on 2022-08-02 at 23:34:56 +0000

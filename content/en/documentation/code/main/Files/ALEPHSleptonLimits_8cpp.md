@@ -43,6 +43,7 @@ namespace Gambit {
 
     ALEPHSelectronLimitAt208GeV::ALEPHSelectronLimitAt208GeV()
     {
+      ///// Limit values /////
       _limitValuesSorted.push_back(0.02);
       _limitValuesSorted.push_back(0.04);
       _limitValuesSorted.push_back(0.06);
@@ -54,10 +55,12 @@ namespace Gambit {
       _limitValuesSorted.push_back(0.18);
       _limitValuesSorted.push_back(0.2);
 
+      ///// Limit Contours /////
       Corners corners;
       ContoursPointer contoursPointer;
       size_t oldSize;
 
+      ///// 0.02pb /////
       contoursPointer = new Contours();
 
       corners.clear();
@@ -264,6 +267,7 @@ namespace Gambit {
 
       _limitContours.insert(LimitContourEntry(0, contoursPointer));
 
+      ///// 0.04pb /////
       contoursPointer = new Contours();
 
       corners.clear();
@@ -487,6 +491,7 @@ namespace Gambit {
 
       _limitContours.insert(LimitContourEntry(1, contoursPointer));
 
+      ///// 0.06pb /////
       contoursPointer = new Contours();
 
       corners.clear();
@@ -703,6 +708,7 @@ namespace Gambit {
 
       _limitContours.insert(LimitContourEntry(2, contoursPointer));
 
+      ///// 0.08pb /////
       contoursPointer = new Contours();
 
       corners.clear();
@@ -1082,6 +1088,7 @@ namespace Gambit {
 
       _limitContours.insert(LimitContourEntry(3, contoursPointer));
 
+      ///// 0.10pb /////
       contoursPointer = new Contours();
 
       corners.clear();
@@ -1705,6 +1712,7 @@ namespace Gambit {
 
       _limitContours.insert(LimitContourEntry(4, contoursPointer));
 
+      ///// 0.12pb /////
       contoursPointer = new Contours();
 
       corners.clear();
@@ -2256,6 +2264,7 @@ namespace Gambit {
 
       _limitContours.insert(LimitContourEntry(5, contoursPointer));
 
+      ///// 0.14pb /////
       contoursPointer = new Contours();
 
       corners.clear();
@@ -2605,6 +2614,7 @@ namespace Gambit {
 
       _limitContours.insert(LimitContourEntry(6, contoursPointer));
 
+      ///// 0.16pb /////
       contoursPointer = new Contours();
 
       corners.clear();
@@ -2768,6 +2778,7 @@ namespace Gambit {
 
       _limitContours.insert(LimitContourEntry(7, contoursPointer));
 
+      ///// 0.18pb /////
       corners.clear();
       corners.push_back(convertPt(873.00,120.00));
       corners.push_back(convertPt(873.00,127.00));
@@ -2899,6 +2910,7 @@ namespace Gambit {
                      contoursPointer->begin(), makeLine);
       _limitContours.insert(LimitContourEntry(8, contoursPointer));
 
+      ///// 0.2pb /////
       corners.clear();
       corners.push_back(convertPt(936.00,53.00));
       corners.push_back(convertPt(936.00,806.0));
@@ -3042,6 +3054,7 @@ namespace Gambit {
       return (y <= x and x <= 208. / 2. and x > mZ / 2.);
     }
     ALEPHSmuonLimitAt208GeV::ALEPHSmuonLimitAt208GeV() {
+      ///// Limit values /////
       _limitValuesSorted.push_back(0.01);
       _limitValuesSorted.push_back(0.02);
       _limitValuesSorted.push_back(0.03);
@@ -3053,10 +3066,12 @@ namespace Gambit {
       _limitValuesSorted.push_back(0.09);
       _limitValuesSorted.push_back(0.1);
 
+      ///// Limit Contours /////
       Corners corners;
       ContoursPointer contoursPointer;
       size_t oldSize;
 
+      ///// 0.01pb /////
       corners.clear();
       corners.push_back(convertPt(317.00,456.00));
       corners.push_back(convertPt(317.00,464.00));
@@ -3110,6 +3125,7 @@ namespace Gambit {
                      contoursPointer->begin(), makeLine);
       _limitContours.insert(LimitContourEntry(0, contoursPointer));
 
+      ///// 0.02pb /////
       contoursPointer = new Contours();
 
       corners.clear();
@@ -3298,6 +3314,7 @@ namespace Gambit {
 
       _limitContours.insert(LimitContourEntry(1, contoursPointer));
 
+      ///// 0.03pb /////
       contoursPointer = new Contours();
 
       corners.clear();
@@ -3504,6 +3521,7 @@ namespace Gambit {
 
       _limitContours.insert(LimitContourEntry(2, contoursPointer));
 
+      ///// 0.04pb /////
       contoursPointer = new Contours();
 
       corners.clear();
@@ -3800,6 +3818,7 @@ namespace Gambit {
 
       _limitContours.insert(LimitContourEntry(3, contoursPointer));
 
+      ///// 0.05pb /////
       contoursPointer = new Contours();
 
       corners.clear();
@@ -4351,6 +4370,7 @@ namespace Gambit {
 
       _limitContours.insert(LimitContourEntry(4, contoursPointer));
 
+      ///// 0.06pb /////
       contoursPointer = new Contours();
 
       corners.clear();
@@ -5018,6 +5038,7 @@ namespace Gambit {
 
       _limitContours.insert(LimitContourEntry(5, contoursPointer));
 
+      ///// 0.07pb /////
       contoursPointer = new Contours();
 
       corners.clear();
@@ -5565,6 +5586,7 @@ namespace Gambit {
 
       _limitContours.insert(LimitContourEntry(6, contoursPointer));
 
+      ///// 0.08pb /////
       contoursPointer = new Contours();
 
       corners.clear();
@@ -5814,6 +5836,7 @@ namespace Gambit {
 
       _limitContours.insert(LimitContourEntry(7, contoursPointer));
 
+      ///// 0.09pb /////
       contoursPointer = new Contours();
 
       corners.clear();
@@ -6048,6 +6071,7 @@ namespace Gambit {
 
       _limitContours.insert(LimitContourEntry(8, contoursPointer));
 
+      ///// 0.1pb /////
       corners.clear();
       corners.push_back(convertPt(933.00,50.00));
       corners.push_back(convertPt(933.00,803.0));
@@ -6193,6 +6217,7 @@ namespace Gambit {
     
     ALEPHStauLimitAt208GeV::ALEPHStauLimitAt208GeV()
     {
+      ///// Limit values /////
       _limitValuesSorted.push_back(0.14);
       _limitValuesSorted.push_back(0.21);
       _limitValuesSorted.push_back(0.28);
@@ -6203,10 +6228,12 @@ namespace Gambit {
       _limitValuesSorted.push_back(0.63);
       _limitValuesSorted.push_back(0.7);
 
+      ///// Limit Contours /////
       Corners corners;
       ContoursPointer contoursPointer;
       size_t oldSize;
 
+      ///// 0.14pb /////
       contoursPointer = new Contours();
 
       corners.clear();
@@ -6854,6 +6881,7 @@ namespace Gambit {
 
       _limitContours.insert(LimitContourEntry(0, contoursPointer));
 
+      ///// 0.21pb /////
       contoursPointer = new Contours();
 
       corners.clear();
@@ -6997,6 +7025,7 @@ namespace Gambit {
 
       _limitContours.insert(LimitContourEntry(1, contoursPointer));
 
+      ///// 0.28pb /////
       contoursPointer = new Contours();
 
       corners.clear();
@@ -7210,6 +7239,7 @@ namespace Gambit {
 
       _limitContours.insert(LimitContourEntry(2, contoursPointer));
 
+      ///// 0.35pb /////
       contoursPointer = new Contours();
 
       corners.clear();
@@ -7357,6 +7387,7 @@ namespace Gambit {
 
       _limitContours.insert(LimitContourEntry(3, contoursPointer));
 
+      ///// 0.42pb /////
       corners.clear();
       corners.push_back(convertPt(874.00,134.00));
       corners.push_back(convertPt(874.00,141.00));
@@ -7474,6 +7505,7 @@ namespace Gambit {
                      contoursPointer->begin(), makeLine);
       _limitContours.insert(LimitContourEntry(4, contoursPointer));
 
+      ///// 0.49pb /////
       corners.clear();
       corners.push_back(convertPt(887.00,126.00));
       corners.push_back(convertPt(887.00,141.00));
@@ -7593,6 +7625,7 @@ namespace Gambit {
                      contoursPointer->begin(), makeLine);
       _limitContours.insert(LimitContourEntry(5, contoursPointer));
 
+      ///// 0.56pb /////
       corners.clear();
       corners.push_back(convertPt(887.00,119.00));
       corners.push_back(convertPt(887.00,133.00));
@@ -7726,6 +7759,7 @@ namespace Gambit {
                      contoursPointer->begin(), makeLine);
       _limitContours.insert(LimitContourEntry(6, contoursPointer));
 
+      ///// 0.63pb /////
       corners.clear();
       corners.push_back(convertPt(900.00,119.00));
       corners.push_back(convertPt(900.00,149.00));
@@ -7855,6 +7889,7 @@ namespace Gambit {
                      contoursPointer->begin(), makeLine);
       _limitContours.insert(LimitContourEntry(7, contoursPointer));
 
+      ///// 0.7pb /////
       corners.clear();
       corners.push_back(convertPt(925.00,52.00));
       corners.push_back(convertPt(925.00,805.0));
@@ -7993,4 +8028,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:38 +0000
+Updated on 2022-08-02 at 23:34:54 +0000

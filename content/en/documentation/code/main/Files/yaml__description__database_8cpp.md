@@ -47,6 +47,26 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Small wrapper object for parsing and emitting
+///  capability/model etc. database information
+///  using yaml-cpp
+///
+///  Also in this file are the definitions of
+///  structs for carrying around capability/model
+///  information, as well as YAML emitters/decoders
+///  for these structs.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///   
+///  \author Ben Farmer
+///          (ben.farmer@gmail.com)
+///  \date 2014 Aug,Sep
+///
+///  *********************************************
 
 #include <yaml-cpp/yaml.h>
 #include <vector>
@@ -60,6 +80,7 @@ Authors (add name and date if you modify):
 
 namespace Gambit
 {
+  /// Emitter for the capability_info struct
   YAML::Emitter& operator << (YAML::Emitter& out, const capability_info& info)
   {
     std::vector< std::pair<str, std::map<str, std::set<std::pair<str,str> > > > > origins;
@@ -88,6 +109,7 @@ namespace Gambit
     return out;
   }
   
+  /// Emitter for the model_info struct
   YAML::Emitter& operator << (YAML::Emitter& out, const model_info& info)
   {
     out << YAML::BeginMap;
@@ -119,18 +141,24 @@ namespace Gambit
     return out;
   }
 
+  /// Member functions for DescriptionDatabase class
 
+  /// Default constructor
   DescriptionDatabase::DescriptionDatabase() {}
 
+  /// Construct from file
   DescriptionDatabase::DescriptionDatabase(const str& filename)
   {
      loadFile(filename);
   }
 
+  /// Copy constructor
   DescriptionDatabase::DescriptionDatabase(const YAML::Node &desc) : descriptions(desc) {}
   
+  /// Move constructor
   DescriptionDatabase::DescriptionDatabase(YAML::Node &&desc) : descriptions(std::move(desc)) {}
 
+  /// Check 'descriptions' for duplicate keys
   std::map<str,int> DescriptionDatabase::check_for_duplicates()
   {
     std::set<str> found; //found keys
@@ -151,6 +179,7 @@ namespace Gambit
     return duplicates;
   }
   
+  /// Return vector of descriptions matching key (for retrieving values with non-unique keys)
   std::vector<str> DescriptionDatabase::get_all_values(str key)
   {
     std::vector<str> values;
@@ -169,4 +198,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:37 +0000
+Updated on 2022-08-02 at 23:34:54 +0000

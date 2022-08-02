@@ -70,6 +70,28 @@ Authors (add name and date if you modify):
 ```
 //  GAMBIT: Global and Modular BSM Inference Tool
 //  *********************************************
+///  \file
+///
+///  Loader singleton class for scanner plugins
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Gregory Martinez
+///          (gregory.david.martinez@gmail.com)
+///  \date 2013 August
+///  \date 2014 Feb
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)
+///  \date 2014 Dec
+///
+///  \author Ben Farmer
+///          (benjamin.farmer@fysik.su.se)
+///  \date 2016 Aug
+///
+///  *********************************************
 
 #ifndef __PLUGIN_LOADER_HPP
 #define __PLUGIN_LOADER_HPP
@@ -90,6 +112,7 @@ Authors (add name and date if you modify):
 
 namespace Gambit
 {
+    /// Forward declare MPI class
     namespace GMPI { class Comm; }
 
     namespace Scanner
@@ -97,6 +120,7 @@ namespace Gambit
 
         namespace Plugins
         {
+            ///Plugin info from inifile
             struct Proto_Plugin_Details
             {
                 std::string plugin;
@@ -106,6 +130,7 @@ namespace Gambit
                 Proto_Plugin_Details() : plugin(""), version(""), path("") {}
             };
 
+            ///Plugin info to be given to the interface class
             struct EXPORT_SYMBOLS Plugin_Interface_Details
             {
                 Plugin_Details &details;
@@ -118,6 +143,7 @@ namespace Gambit
                         : details(details), printer(printer), prior(prior), flags(details.flags), node(node) {}
             };
 
+            ///container class for the actual plugins detected by ScannerBit
             class EXPORT_SYMBOLS Plugin_Loader
             {
             private:
@@ -149,6 +175,7 @@ namespace Gambit
                 Plugin_Details &find (const std::string &, const std::string &, const std::string &, const std::string &) const;
             };
 
+            ///Virtual container base class to store plugin values for resume function
             class __plugin_resume_base__
             {
             public:
@@ -156,6 +183,7 @@ namespace Gambit
                 virtual ~__plugin_resume_base__() {}
             };
 
+            ///Container class to store plugin values for resume function
             template <typename T>
             class __plugin_resume__ : public __plugin_resume_base__
             {
@@ -173,6 +201,7 @@ namespace Gambit
                 ~__plugin_resume__(){}
             };
 
+            ///Container for all the plugin info from the inifile and Scannerbit
             class EXPORT_SYMBOLS pluginInfo
             {
             private:
@@ -191,6 +220,7 @@ namespace Gambit
                 GMPI::Comm* scannerComm;
                 bool MPIdata_is_init;
                 #endif
+                /// Flag to indicate if early shutdown is in progess (e.g. due to intercepted OS signal). When set to 'true' scanners should at minimum close off their output files, and if possible they should stop scanning and return control to GAMBIT (or whatever the host code might be).
                 bool earlyShutdownInProgress;
 
                 inline void set_resume(std::vector<__plugin_resume_base__ *> &){}
@@ -222,6 +252,7 @@ namespace Gambit
             public:
                 pluginInfo();
 
+                ///Enter plugin inifile
                 void iniFile(const Options &);
                 void printer_prior(printer_interface &, Priors::BasePrior &);
                 bool keep_running() const {return keepRunning;}
@@ -236,11 +267,13 @@ namespace Gambit
                 #ifdef WITH_MPI
                 // tags for messages sent via scannerComm
                 static const int MIN_LOGL_MSG = 0;
+                ///Initialise any MPI functionality (currently just used to provide a communicator object to ScannerBit)
                 void initMPIdata(GMPI::Comm* newcomm);
                 GMPI::Comm& scanComm();
                 #endif
                 int getRank() { return MPIrank; }
 
+                ///resume function
                 template <typename... T>
                 void resume(const std::string &name, T&... data)
                 {
@@ -266,22 +299,31 @@ namespace Gambit
                     set_resume(resume_data[name], data...);
                 }
 
+                ///Dump contents for resume.
                 void dump();
 
+                ///Dump contents for one plugin
                 void dump(const std::string &);
 
+                ///Save persistence file to record that the alternative min_LogL value is in use for this scan
                 void save_alt_min_LogL_state() const;
 
+                ///Delete the persistence file if it exists (e.g. when starting a new run)
                 void clear_alt_min_LogL_state() const;
 
+                ///Check persistence file to see if we should be using the alternative min_LogL value
                 bool check_alt_min_LogL_state() const;
 
+                ///Retrieve plugin data.
                 const Plugin_Loader &operator()() {return plugins;}
 
+                ///Get plugin data for single plugin.
                 Plugin_Interface_Details operator()(const std::string &, const std::string &);
                 ~pluginInfo();
             };
 
+            ///Access Functor for plugin info.  This will manage all the
+            ///plugins including stored and writing resume info.
             extern EXPORT_SYMBOLS pluginInfo plugin_info;
 
         }
@@ -296,4 +338,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:36 +0000
+Updated on 2022-08-02 at 23:34:53 +0000

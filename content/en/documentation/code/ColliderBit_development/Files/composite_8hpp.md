@@ -60,6 +60,25 @@ Authors (add name and date if you modify):
 ```
 //  GAMBIT: Global and Modular BSM Inference Tool
 //  *********************************************
+///  \file
+///
+///  Combine several priors to a prior for
+///  e.g. an entire model
+///  
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///   
+///  \author Ben Farmer
+///          (benjamin.farmer@monash.edu.au)
+///  \date 2013 Dec
+///
+///  \author Gregory Martinez
+///          (gregory.david.martinez@gmail.com)
+///  \date 2014 Feb
+///
+///  *********************************************
 
 #ifndef PRIOR_COMPOSITE_HPP
 #define PRIOR_COMPOSITE_HPP
@@ -80,6 +99,10 @@ namespace Gambit
 {
     namespace Priors 
     {
+        /// Special "build-a-prior" class
+        /// This is the class to use for setting simple 1D priors (from the library above) on individual parameters.
+        /// It actually also allows for any combination of MD priors to be set on any combination of subspaces of
+        /// the full prior.
 
         class CompositePrior : public BasePrior
         {
@@ -170,4 +193,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:37 +0000
+Updated on 2022-08-02 at 23:34:47 +0000

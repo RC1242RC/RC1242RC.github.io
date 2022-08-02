@@ -60,6 +60,22 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Definitions of the container structure
+///  for the SuperIso backend.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Nazila Mahmoudi
+///          (FIXME @blah.edu)
+///  \date 2013 Dec
+///  \auther Marcin Chrzaszcz
+///  \date 2016 Oct
+///
+///  *********************************************
 
 
 #ifndef __SuperIso_types_hpp__
@@ -492,4 +508,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:41 +0000
+Updated on 2022-08-02 at 23:34:50 +0000

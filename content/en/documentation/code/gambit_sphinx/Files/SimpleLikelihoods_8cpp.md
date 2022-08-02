@@ -58,6 +58,31 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Various simple likelihood functions.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Christoph Weniger
+///          (c.weniger@uva.nl)
+///  \date 2013 Jul - 2015 May
+///
+///  \author Sebastian Wild
+///          (sebastian.wild@ph.tum.de)
+///  \date 2016 Aug
+///
+///  \author Sanjay Bloor
+///          (sanjay.bloor12@imperial.ac.uk)
+///  \date 2020 Mar
+///
+///  \author Ankit Beniwal
+///          (ankit.beniwal@uclouvain.be)
+///  \date 2020 Dec
+///
+///  *********************************************
 
 #include "gambit/Elements/gambit_module_headers.hpp"
 #include "gambit/Utils/statistics.hpp"
@@ -172,6 +197,8 @@ namespace Gambit {
     }
 
 
+    /*! \brief Fermi LAT dwarf likelihoods, using gamLike backend.
+    */
     void lnL_FermiLATdwarfs_gamLike(double &result)
     {
       using namespace Pipes::lnL_FermiLATdwarfs_gamLike;
@@ -180,6 +207,7 @@ namespace Gambit {
       int mode = 0;
       result = 0;
 
+      /// Option version \code <string> \endcode : Set Fermi LAT dwarf likelihood version (default: pass8)
       std::string version = runOptions->getValueOrDef<std::string>("pass8", "version");
       if ( version == "pass8" ) mode = 1;
       else if ( version == "pass7" ) mode = 0;
@@ -220,6 +248,7 @@ namespace Gambit {
       int mode = 0;
       result = 0;
 
+      /// Option version \code <string> \endcode : Set HESS GC likelihood version (default: spectral_externalJ)
       std::string version = runOptions->getValueOrDef<std::string>("spectral_externalJ", "version");
       if ( version == "integral_fixedJ" ) mode = 6;
       else if ( version == "spectral_fixedJ" ) mode = 7;
@@ -288,6 +317,8 @@ namespace Gambit {
       logger() << LogTags::debug << "GamLike CTA GC likelihood is lnL = " << result << EOM;
     }
 
+    /*! \brief Fermi LAT galactic center likelihoods, using gamLike backend.
+    */
     void lnL_FermiGC_gamLike(double &result)
     {
       using namespace Pipes::lnL_FermiGC_gamLike;
@@ -296,6 +327,7 @@ namespace Gambit {
       int mode = 0;
       result = 0;
 
+      /// Option version \code <string> \endcode : Set Fermi LAT GC likelihood version (default: externalJ)
       std::string version = runOptions->getValueOrDef<std::string>("externalJ", "version");
       if ( version == "fixedJ" ) mode = 2;
       else if ( version == "margJ" ) mode = 3;
@@ -330,41 +362,71 @@ namespace Gambit {
       logger() << LogTags::debug << "GamLike Fermi GC likelihood is lnL = " << result << EOM;
     }
 
+    /// \brief Likelihood for cosmological relic density constraints.
+    /// Default data:
+    ///   Omega_c h^2 = 0.11933 +/- 0.00091 (1 sigma), Gaussian.  Planck TT,TE,EE+lowP+lensing+BAO 2018, arxiv:1807.06209
+    ///   theory error: 5%
+    /// S.B. 19/3/20 Updated with 2018 Planck results.
     void lnL_oh2_Simple(double &result)
     {
       using namespace Pipes::lnL_oh2_Simple;
       double oh2_theory = *Dep::RD_oh2;
+      /// option oh2_fractional_theory_err<double>: Relic density fractional 1 sigma theory
+      /// error (default: 0.05)
       double oh2_theoryerr = oh2_theory*runOptions->getValueOrDef<double>(0.05, "oh2_fractional_theory_err");
+      /// option oh2_obs<double>: Observed value of Omega h^2 (default: 0.11933)
       double oh2_obs = runOptions->getValueOrDef<double>(0.11933, "oh2_obs");
+      /// option oh2_obserr<double>: 1 sigma error on observed value of Omega h^2 (default: 0.00091)
       double oh2_obserr  = runOptions->getValueOrDef<double>(0.00091, "oh2_obserr");
+      /// Option profile_systematics<bool>: Use likelihood version that has been profiled over systematic errors (default false)
       bool profile = runOptions->getValueOrDef<bool>(false, "profile_systematics");
       result = Stats::gaussian_loglikelihood(oh2_theory, oh2_obs, oh2_theoryerr, oh2_obserr, profile);
       logger() << LogTags::debug << "lnL_oh2_Simple yields " << result << EOM;
     }
 
+    /// \brief Likelihood for cosmological relic density constraints, implemented as an upper limit only
+    /// Default data:
+    ///   Omega_c h^2 = 0.11933 +/- 0.00091 (1 sigma), Gaussian.  Planck TT,TE,EE+lowP+lensing+BAO 2018, arxiv:1807.06209
+    ///   theory error: 5%
+    /// S.B. 19/3/20 Updated with 2018 Planck results.
     void lnL_oh2_upperlimit(double &result)
     {
       using namespace Pipes::lnL_oh2_upperlimit;
       double oh2_theory = *Dep::RD_oh2;
+      /// option oh2_fractional_theory_err<double>: Relic density fractional 1 sigma theory
+      /// error (default: 0.05)
       double oh2_theoryerr = oh2_theory*runOptions->getValueOrDef<double>(0.05, "oh2_fractional_theory_err");
+      /// option oh2_obs<double>: Observed value of Omega h^2 (default: 0.11933)
       double oh2_obs = runOptions->getValueOrDef<double>(0.11933, "oh2_obs");
+      /// option oh2_obserr<double>: 1 sigma error on observed value of Omega h^2 (default: 0.00091)
       double oh2_obserr  = runOptions->getValueOrDef<double>(0.00091, "oh2_obserr");
+      /// Option profile_systematics<bool>: Use likelihood version that has been profiled over systematic errors (default false)
       bool profile = runOptions->getValueOrDef<bool>(false, "profile_systematics");
       result = Stats::gaussian_upper_limit(oh2_theory, oh2_obs, oh2_theoryerr, oh2_obserr, profile);
       logger() << LogTags::debug << "lnL_oh2_upperlimit yields " << result << EOM;
     }
 
 
+    /// \brief Likelihoods for spin independent nuclear parameters. Follows treatment
+    /// of Cline, et. al. Phys. Rev. D. 88, 055025 (2013)
+    /// Default data:
+    ///  sigma_s = 43 +/- 8 MeV arXiv:1112.2435v1
+    ///  sigma_l = 58 +/- 9 MeV
 
     void lnL_sigmas_sigmal(double &result)
     {
         using namespace Pipes::lnL_sigmas_sigmal;
         double sigmas = *Param["sigmas"];
         double sigmal = *Param["sigmal"];
+        /// Option sigmas_obs<double>: Experimental value of sigma_s (default 43.)
         double sigmas_obs = runOptions->getValueOrDef<double>(43., "sigmas_obs");
+        /// Option sigmas_obserr<double>: 1 sigma error on sigma_s (default 8.)
         double sigmas_obserr = runOptions->getValueOrDef<double>(8., "sigmas_obserr");
+        /// Option sigmal_obs<double>: Experimental value of sigma_l (default 58.)
         double sigmal_obs = runOptions->getValueOrDef<double>(58., "sigmal_obs");
+        /// Option sigmal_obserr<double>: 1 sigma error on sigma_l (default 9.)
         double sigmal_obserr = runOptions->getValueOrDef<double>(9., "sigmal_obserr");
+        /// Option profile_systematics<bool>: Use likelihood version that has been profiled over systematic errors (default false)
         bool profile = runOptions->getValueOrDef<bool>(false, "profile_systematics");
 
         result = Stats::gaussian_loglikelihood(sigmas, sigmas_obs, 0, sigmas_obserr, profile)
@@ -372,6 +434,15 @@ namespace Gambit {
         logger() << LogTags::debug << "lnL for SI nuclear parameters is " << result << EOM;
     }
 
+    /// \brief Likelihoods for spin dependent nuclear parameters. Follows treatment
+    /// of Akrami, et. al. JCAP04 (2011) 012. (Note that all deltaq are for proton.)
+    /// Default data:
+    ///  a3 = deltau - deltad = 1.2723 +/- 0.0023
+    ///     PDG 2015 lambda parameter from neutron beta decay
+    ///  a8 = deltau + deltad - 2*deltas = 0.585 +/- 0.025
+    ///     http://arxiv.org/abs/hep-ph/0001046
+    ///  deltas = -0.09 +/- 0.03
+    ///     COMPASS: https://arxiv.org/abs/hep-ex/0609038
     void lnL_deltaq(double &result)
     {
         using namespace Pipes::lnL_deltaq;
@@ -381,12 +452,19 @@ namespace Gambit {
         double a3 = deltau - deltad;
         double a8 = deltau + deltad - 2*deltas;
 
+        /// Option a3_obs<double>: Experimental value of a3 (default 1.2723)
         double a3_obs = runOptions->getValueOrDef<double>(1.2723, "a3_obs");
+        /// Option a3_obserr<double>: 1 sigma error on a3 (default 0.0023)
         double a3_obserr = runOptions->getValueOrDef<double>(0.0023, "a3_obserr");
+        /// Option a8_obs<double>: Experimental value of a8 (default 0.585)
         double a8_obs = runOptions->getValueOrDef<double>(0.585, "a8_obs");
+        /// Option a8_obserr<double>: 1 sigma error on a8 (default 0.025)
         double a8_obserr = runOptions->getValueOrDef<double>(0.025, "a8_obserr");
+        /// Option deltas_obs<double>: Experimental value of Delta_s (default -0.09)
         double deltas_obs = runOptions->getValueOrDef<double>(-0.09, "deltas_obs");
+        /// Option deltas_obserr<double>: 1 sigma error on Delta_s (default 0.03)
         double deltas_obserr = runOptions->getValueOrDef<double>(0.03, "deltas_obserr");
+        /// Option profile_systematics<bool>: Use likelihood version that has been profiled over systematic errors (default false)
         bool profile = runOptions->getValueOrDef<bool>(false, "profile_systematics");
 
         result = Stats::gaussian_loglikelihood(a3, a3_obs, 0, a3_obserr, profile) +
@@ -395,6 +473,12 @@ namespace Gambit {
     }
 
 
+    /// \brief Likelihoods for nuclear parameters (ChPT) as used in DirectDM v2.2.0
+    /// Default data:
+    ///  sigmapiN = 0.050  +/- 0.015 GeV
+    ///  Deltas   = -0.035 +/- 0.009
+    ///  gTs      = -0.027 +/- 0.016
+    ///  rs2      = -0.115 +/- 0.035 GeV^-2
 
     void lnL_sigmapiN_Deltas_gTs_rs2(double &result)
     {
@@ -417,6 +501,7 @@ namespace Gambit {
         double rs2_obs    = runOptions->getValueOrDef<double>(-0.115, "rs2_obs");
         double rs2_obserr = runOptions->getValueOrDef<double>(0.035, "rs2_obserr");
 
+        /// Use likelihood version that has been profiled over systematic errors (default false)
         bool profile = runOptions->getValueOrDef<bool>(false, "profile_systematics");
 
         result = Stats::gaussian_loglikelihood(sigmapiN, sigmapiN_obs, 0, sigmapiN_obserr, profile)
@@ -428,14 +513,21 @@ namespace Gambit {
     }
 
 
+    /// \brief Likelihoods for halo parameters. The likelihood for the local DM density follows a
+    /// log normal distribution while for the velocities the distribution is Gaussian.
+    /// For discussion of the default values for measured halo paramters and their errors,
+    /// see JCAP04(2011)012.
 
     void lnL_rho0_lognormal(double &result)
     {
         using namespace Pipes::lnL_rho0_lognormal;
         LocalMaxwellianHalo LocalHaloParameters = *Dep::LocalHalo;
         double rho0 = LocalHaloParameters.rho0;
+        /// Option rho0_obs<double>: Best fit value for local dark matter density (default .4)
         double rho0_obs = runOptions->getValueOrDef<double>(.4, "rho0_obs");
+        /// Option rho0_obserr<double>: Error on local dark matter density (default .15)
         double rho0_obserr = runOptions->getValueOrDef<double>(.15, "rho0_obserr");
+        /// Option profile_systematics<bool>: Use likelihood version that has been profiled over systematic errors (default false)
         bool profile = runOptions->getValueOrDef<bool>(false, "profile_systematics");
 
         result = Stats::lognormal_loglikelihood(rho0, rho0_obs, 0.,
@@ -448,8 +540,11 @@ namespace Gambit {
       using namespace Pipes::lnL_vrot_gaussian;
       LocalMaxwellianHalo LocalHaloParameters = *Dep::LocalHalo;
       double vrot = LocalHaloParameters.vrot;
+      /// Option vrot_obs<double>: Best fit value for local disk rotational speed (default 235)
       double vrot_obs = runOptions->getValueOrDef<double>(235, "vrot_obs");
+      /// Option vrot_obserr<double>: 1 sigma error on local disk rotational speed (default 20)
       double vrot_obserr  = runOptions->getValueOrDef<double>(20, "vrot_obserr");
+      /// Option profile_systematics<bool>: Use likelihood version that has been profiled over systematic errors (default false)
       bool profile = runOptions->getValueOrDef<bool>(false, "profile_systematics");
       result = Stats::gaussian_loglikelihood(vrot, vrot_obs, 0., vrot_obserr, profile);
       logger() << LogTags::debug << "lnL_vrot yields " << result << EOM;
@@ -460,8 +555,11 @@ namespace Gambit {
       using namespace Pipes::lnL_v0_gaussian;
       LocalMaxwellianHalo LocalHaloParameters = *Dep::LocalHalo;
       double v0 = LocalHaloParameters.v0;
+      /// Option v0_obs<double>: Best fit value for most-probable DM speed (default 235)
       double v0_obs = runOptions->getValueOrDef<double>(235, "v0_obs");
+      /// Option v0_obserr<double>: 1 sigma error on most-probable DM speed (default 20)
       double v0_obserr  = runOptions->getValueOrDef<double>(20, "v0_obserr");
+      /// Option profile_systematics<bool>: Use likelihood version that has been profiled over systematic errors (default false)
       bool profile = runOptions->getValueOrDef<bool>(false, "profile_systematics");
       result = Stats::gaussian_loglikelihood(v0, v0_obs, 0., v0_obserr, profile);
       logger() << LogTags::debug << "lnL_v0 yields " << result << EOM;
@@ -472,8 +570,11 @@ namespace Gambit {
       using namespace Pipes::lnL_vesc_gaussian;
       LocalMaxwellianHalo LocalHaloParameters = *Dep::LocalHalo;
       double vesc = LocalHaloParameters.vesc;
+      /// Option vesc_obs<double>: Best fit value for escape velocity (default 550)
       double vesc_obs = runOptions->getValueOrDef<double>(550, "vesc_obs");
+      /// Option vesc_obserr<double>: 1 sigma error on escape velocity (default 35)
       double vesc_obserr  = runOptions->getValueOrDef<double>(35, "vesc_obserr");
+      /// Option profile_systematics<bool>: Use likelihood version that has been profiled over systematic errors (default false)
       bool profile = runOptions->getValueOrDef<bool>(false, "profile_systematics");
       result = Stats::gaussian_loglikelihood(vesc, vesc_obs, 0., vesc_obserr, profile);
       logger() << LogTags::debug << "lnL_vesc yields " << result << EOM;
@@ -486,4 +587,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:49 +0000

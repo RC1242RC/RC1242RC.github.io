@@ -98,6 +98,29 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Implementation of VectorSingletDM routines.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Ankit Beniwal
+///          (ankit.beniwal@adelaide.edu.au)
+///  \date Oct 2016
+///  \date Jun 2017
+///  \date Mar 2018
+///
+///  \author Sanjay Bloor
+///          (sanjay.bloor12@imperial.ac.uk)
+///  \date Nov 2017
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)
+///  \date Sep 2018
+///
+///  *********************************************
 
 #include "gambit/Elements/gambit_module_headers.hpp"
 #include "gambit/Elements/virtual_higgs.hpp"
@@ -115,6 +138,7 @@ namespace Gambit
     class VectorSingletDM
     {
       public:
+        /// Initialize VectorSingletDM object (branching ratios etc)
         VectorSingletDM(
             TH_ProcessCatalog* const catalog,
             double gammaH,
@@ -133,11 +157,18 @@ namespace Gambit
         };
         ~VectorSingletDM() {}
 
+        /// Helper function (Breit-Wigner)
         double Dh2 (double s)
         {
           return 1/((s-mh*mh)*(s-mh*mh)+mh*mh*Gamma_mh*Gamma_mh);
         }
 
+        /*! \brief Returns <sigma v> in cm3/s for given channel, velocity and
+         *         model parameters.
+         *
+         * channel: bb, tautau, mumu, ss, cc, tt, gg, gammagamma, Zgamma, WW,
+         * ZZ, hh
+         */
         double sv(std::string channel, double lambda, double mass, double v)
         {
           // Note: Valid for mass > 45 GeV
@@ -229,6 +260,7 @@ namespace Gambit
             pow(mf,2)/12/M_PI*Xf*pow(vf,3) * Dh2(s) *GeV2tocm3s1;
         }
 
+        /// Annihilation into hh
         double sv_hh(double lambda, double mass, double v)
         {
           // Hardcode lower limit for velocity to avoid nan results.
@@ -258,6 +290,7 @@ namespace Gambit
     void DarkMatter_ID_VectorSingletDM(std::string& result) { result = "V"; }
     void DarkMatterConj_ID_VectorSingletDM(std::string& result) { result = "V"; }
 
+    /// Direct detection couplings for the VectorSingletDM_Z2 model.
     void DD_couplings_VectorSingletDM_Z2(DM_nucleon_couplings &result)
     {
       using namespace Pipes::DD_couplings_VectorSingletDM_Z2;
@@ -284,6 +317,7 @@ namespace Gambit
 
     } // function DD_couplings_VectorSingletDM_Z2
 
+    /// Set up process catalog for the VectorSingletDM_Z2 model.
     void TH_ProcessCatalog_VectorSingletDM_Z2(DarkBit::TH_ProcessCatalog &result)
     {
       using namespace Pipes::TH_ProcessCatalog_VectorSingletDM_Z2;
@@ -297,7 +331,9 @@ namespace Gambit
       // Explicitly state that Vector DM is self-conjugate
       process_ann.isSelfConj = true;
 
+      ///////////////////////////////////////
       // Import particle masses and couplings
+      ///////////////////////////////////////
 
       // Convenience macros
       #define getSMmass(Name, spinX2)                                           \
@@ -380,7 +416,9 @@ namespace Gambit
       #undef getSMmass
       #undef addParticle
 
+      /////////////////////////////
       // Import Decay information
+      /////////////////////////////
 
       // Import decay table from DecayBit
       const DecayTable* tbl = &(*Dep::decay_rates);
@@ -459,4 +497,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:37 +0000
+Updated on 2022-08-02 at 23:34:54 +0000

@@ -70,6 +70,37 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Frontend for AlterBBN backend
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+/// \author Janina Renk
+///         (janina.renk@fysik.su.se)
+/// \date 2018 Jun
+/// \date 2020 Jan
+/// \date 2020 May
+///
+/// \author Patrick Stöcker
+///         (stoecker@physik.rwth-achen.de)
+/// \date 2019 Sep
+///
+/// \author Will Handley
+///         (wh260@cam.ac.uk)
+/// \date 2020 Mar
+///
+///  \author Pat Scott
+///          (pat.scott@uq.edu.au)
+///  \date 2020 Apr
+///
+///  \author Tomas Gonzalo
+///          (gonzalo@physik.rwth-aachen.de)
+///  \date 2022 Jan
+///
+///  *********************************************
 
 #include <sstream>
 #include "gambit/Backends/frontend_macros.hpp"
@@ -90,8 +121,12 @@ BE_NAMESPACE
   static std::vector<double> prev_ratioH(0., NNUC+1);
   static std::vector<double> prev_cov_ratioH(0., (NNUC+1)*(NNUC+1));
 
+  /// string set containing the name of all members of the AlterBBN relicparam structures that can currently
+  /// be set with GAMBIT. If you add a new model and need to pass a different option to AlterBBN add e.g. "neutron_lifetime"
+  /// here and in the function fill_cosmomodel below to modify the lifetime of the neutron
   std::set<std::string> known_relicparam_options = {"eta0", "Nnu", "dNnu", "neutron_lifetime", "err","failsafe"};
 
+  /// Fill AlterBBN's relicparam with the entries from the AlterBBN_input
   void fill_cosmomodel(AlterBBN_2_2::relicparam * input_relicparam, map_str_dbl & AlterBBN_input)
   {
     // check that only options that are known to the interface, i.e. that they are one of the options
@@ -129,6 +164,8 @@ BE_NAMESPACE
     if (AlterBBN_input.count("err")){input_relicparam->err = (int)AlterBBN_input["err"];}
   }
 
+  /// calls the AlterBBN routine nucl_err with the filled relicparam structure. This will fill the array ratioH with
+  /// all computed element abundances, and cov_ratioH with their errors & covariances
   int call_nucl_err(map_str_dbl &AlterBBN_input, double* ratioH, double* cov_ratioH )
   {
     if (AlterBBN_input != prev_AlterBBN_input)
@@ -150,6 +187,8 @@ BE_NAMESPACE
     return nucl_err_res;
   }
 
+  /// calls the AlterBBN routine nucl_err with the filled relicparam structure. This will fill the array ratioH with
+  /// all computed element abundances, but without their errors & covariances
   int call_nucl(map_str_dbl &AlterBBN_input, double *ratioH)
   {
     AlterBBN_2_2::relicparam input_relicparam;
@@ -158,8 +197,14 @@ BE_NAMESPACE
     return !nucl(&input_relicparam, ratioH); // nucl returns 1 if there is an error and 0 otherwise, the opposite of nucl_err, so negate the return value
   }
 
+  /// return the NNUC -- global parameter of AlterBBN specifying the number of
+  /// elements for which abundances are calculated -> length of array ratioH is NNUC+1 (AlterBBN
+  /// starts filling @ position 1)
   size_t get_NNUC() { return NNUC; }
 
+  /// create a map that translates element name to position of element in ratioH vector
+  /// (holding the computed element abundances)
+  /// BE convinience function just in case it changes with a different version of AlterBBN
   map_str_int get_abund_map_AlterBBN()
   { return {{"H2",3},{"D",3},{"H3",4},{"He3",5},{"He4",6},{"Yp",6},{"Li6",7},{"Li7",8},{"Be7",9},{"Li8",10}}; }
 
@@ -170,4 +215,4 @@ END_BE_NAMESPACE
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:50 +0000

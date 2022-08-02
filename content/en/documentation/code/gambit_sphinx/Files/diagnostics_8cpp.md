@@ -56,6 +56,27 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  GAMBIT Core diagnostics implementation.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Pat Scott
+///  \date 2013 Aug
+///  \date 2014 Mar, Aug, Dec
+///
+///  \author Tomas Gonzalo
+///          (t.e.gonzalo@fys.uio.no)
+///  \date 2017 Jun
+///
+///  \author Markus Prim
+///          (markus.prim@cern.ch)
+///  \date 2020 Dec
+///
+///  *********************************************
 
 #include "gambit/Core/core.hpp"
 #include "gambit/Core/modelgraph.hpp"
@@ -72,6 +93,7 @@ Authors (add name and date if you modify):
 namespace Gambit
 {
 
+  /// Basic module diagnostic function
   void gambit_core::module_diagnostic()
   {
     YAML::Node gambit_bits_yaml = YAML::LoadFile(GAMBIT_DIR "/config/gambit_bits.yaml");
@@ -114,6 +136,7 @@ namespace Gambit
     print_to_screen(out.str(), "module");
   }
 
+  /// Basic backend diagnostic function
   void gambit_core::backend_diagnostic()
   {
     bool all_good = true;
@@ -177,6 +200,7 @@ namespace Gambit
     print_to_screen(out.str(), "backend");
   }
 
+  /// Basic model diagnostic function
   void gambit_core::model_diagnostic()
   {
     table_formatter table("Model", "Parent", "Parameters");
@@ -207,6 +231,7 @@ namespace Gambit
     print_to_screen(out.str(), "model");
   }
 
+  /// Basic capability diagnostic function
   void gambit_core::capability_diagnostic()
   {
 
@@ -254,6 +279,7 @@ namespace Gambit
     print_to_screen(out.str(), "capability");
   }
 
+  /// Basic scanner diagnostic function
   void gambit_core::scanner_diagnostic()
   {
     // Import scanner plugin info from ScannerBit
@@ -261,6 +287,7 @@ namespace Gambit
     print_to_screen(output, "scanners");
   }
 
+  /// Basic test function diagnostic function
   void gambit_core::test_function_diagnostic()
   {
     const std::string output = Scanner::Plugins::plugin_info().print_all("objective");
@@ -282,6 +309,7 @@ namespace Gambit
     }
   }
 
+  /// Free-form module diagnostic function
   void gambit_core::ff_module_diagnostic(const str &command)
   {
     std::stringstream out;
@@ -346,6 +374,7 @@ namespace Gambit
     print_to_screen(out.str(), command);
   }
 
+  /// Free-form backend diagnostic function
   void gambit_core::ff_backend_diagnostic(const str &command)
   {
     std::stringstream out;
@@ -442,6 +471,7 @@ namespace Gambit
     print_to_screen(out.str(), command);
   }
 
+  /// Free-form model diagnostic function
   void gambit_core::ff_model_diagnostic(const str &command)
   {
     std::stringstream out;
@@ -477,6 +507,7 @@ namespace Gambit
     print_to_screen(out.str(), command);
   }
 
+  /// Free-form capability diagnostic function
   void gambit_core::ff_capability_diagnostic(const str &command)
   {
     std::stringstream out;
@@ -519,12 +550,14 @@ namespace Gambit
     print_to_screen(out.str(), command);
   }
 
+  /// Free-form scanner diagnostic function
   void gambit_core::ff_scanner_diagnostic(const str &command)
   {
     const std::string output = Scanner::Plugins::plugin_info().print_plugin("scanner", command);
     print_to_screen(output, command);
   }
 
+  /// Free-form test function diagnostic function
   void gambit_core::ff_test_function_diagnostic(const str &command)
   {
     const std::string output = Scanner::Plugins::plugin_info().print_plugin("objective", command);
@@ -537,4 +570,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:49 +0000

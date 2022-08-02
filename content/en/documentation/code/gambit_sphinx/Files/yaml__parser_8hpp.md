@@ -68,6 +68,29 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Ini-file parser based on yaml-cpp
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Christoph Weniger
+///          (c.weniger@uva.nl)
+///  \date 2013 June
+///
+///  \author Gregory Martinez
+///          (gregory.david.martinez@gmail.com)
+///  \date 2014 Feb
+///
+///  \author Pat Scott
+///          (patscott@physics.mcgill.ca)
+///  \date 2014 Mar
+///  \date 2015 Mar
+///  \date 2020 Apr
+///
+///  *********************************************
 
 #ifndef __yaml_parser_hpp__
 #define __yaml_parser_hpp__
@@ -107,6 +130,7 @@ namespace Gambit
         std::vector<Observable> backends;
         std::vector<std::string> functionChain;
 
+        ///Default constructor, to ensure the default values are not gibberish
         Observable():
           purpose(),
           capability(),
@@ -129,6 +153,7 @@ namespace Gambit
     typedef Types::Observable ObservableType;
     typedef std::vector<ObservableType> ObservablesType;
 
+    /// Main inifile class
     class IniFile : public Parser
     {
 
@@ -137,10 +162,14 @@ namespace Gambit
         // Return the filename
         const str filename() const;
 
+        /// Read in the YAML file
         virtual void readFile(str);
 
+        /// Getters for private observable and rules entries
+        /// @{
         const ObservablesType & getObservables() const;
         const ObservablesType & getRules() const;
+        /// @}
 
       private:
 
@@ -174,4 +203,4 @@ namespace YAML
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:49 +0000

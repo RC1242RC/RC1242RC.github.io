@@ -39,6 +39,18 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Frontend for MicrOmegas ScalarSingletDM_Z3 3.6.9.2 backend
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+/// \author Jonathan Cornell
+/// \date April 2017
+///
+///  *********************************************
 
 #include "gambit/Backends/frontend_macros.hpp"
 #include "gambit/Backends/frontends/MicrOmegas_ScalarSingletDM_Z3_3_6_9_2.hpp"
@@ -252,4 +264,4 @@ END_BE_INI_FUNCTION
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:40 +0000
+Updated on 2022-08-02 at 23:34:50 +0000

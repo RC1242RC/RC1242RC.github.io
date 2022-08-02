@@ -76,6 +76,37 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Source code for types for module CosmoBit.
+///  For instructions on adding new types, see
+///  the corresponding header.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Patrick Stoecker
+///          (stoecker@physik.rwth-aachen.de)
+///  \date 2017 Nov
+///  \date 2021 Sep
+///
+///  \author Selim Hotinli
+///  \date 2018 Jan
+///
+///  \author Janina Renk
+///          (janina.renk@fysik.su.se)
+///  \date 2018 Oct
+///
+///  \author Sebastian Hoof
+///          (hoof@uni-goettingen.de)
+///  \date 2020 Mar
+///
+///  \author Pat Scott
+///          (pat.scott@uq.edu.au)
+///  \date 2020 Apr
+///
+///  *********************************************
 
 #include "gambit/CosmoBit/CosmoBit_types.hpp"
 
@@ -290,4 +321,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:38 +0000
+Updated on 2022-08-02 at 23:34:48 +0000

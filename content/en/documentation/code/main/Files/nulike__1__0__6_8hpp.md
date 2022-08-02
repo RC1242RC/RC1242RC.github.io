@@ -93,6 +93,24 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Frontend header for the nulike backend.
+///
+///  Compile-time registration of available
+///  functions and variables from this backend.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Pat Scott
+///          (patscott@physics.mcgill.ca)
+///  \date 2013 May
+///  \date 2014 March
+///  \date 2015 Aug
+///
+///  *********************************************
 
 #define BACKENDNAME nulike
 #define BACKENDLANG Fortran
@@ -113,4 +131,4 @@ LOAD_LIBRARY
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:55 +0000

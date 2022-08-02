@@ -47,6 +47,19 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Utility functions for DarkBit
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Torsten Bringmann
+///          (torsten.bringmann@fys.uio.no)
+///  \date 2015 May
+///
+///  *********************************************
 
 
 #ifndef __DarkBit_utils_hpp__
@@ -81,6 +94,14 @@ namespace Gambit
                         const DecayTable* tbl, double minBranching,
                         std::vector<std::string> excludeDecays = std::vector<std::string>());
 
+      /*! \brief Calculate kinematical limits for three-body final states.
+      *
+      * Notes:
+      * - m0 = 0, E0 = Eg
+      * - M_DM is half of center of mass energy
+      * - returns E1_low or E1_high, or 0 if kinematically forbidden
+      * - Template parameter 0(1) means lower (upper) limit of range.
+      */
       template <int i>
       double gamma3bdy_limits(double Eg, double M_DM, double m1, double m2);
     }
@@ -95,4 +116,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:37 +0000
+Updated on 2022-08-02 at 23:34:53 +0000

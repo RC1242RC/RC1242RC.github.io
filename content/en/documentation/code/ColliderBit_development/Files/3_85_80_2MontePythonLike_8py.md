@@ -463,18 +463,28 @@ class Likelihood(object):
 
 
 
+###################################
+#
+# END OF GENERIC LIKELIHOOD CLASS
+#
+###################################
 
 
 
-
-
+###################################
+# PRIOR TYPE LIKELIHOOD
+# --> H0,...
+###################################
 class Likelihood_prior(Likelihood):
 
     def loglkl(self):
         raise NotImplementedError('Must implement method loglkl() in your likelihood')
 
 
-
+###################################
+# NEWDAT TYPE LIKELIHOOD
+# --> spt,boomerang,etc.
+###################################
 class Likelihood_newdat(Likelihood):
 
     def __init__(self, path, data, command_line):
@@ -926,7 +936,10 @@ class Likelihood_newdat(Likelihood):
         return self.lkl
 
 
-
+###################################
+# CLIK TYPE LIKELIHOOD
+# --> clik_fake_planck,clik_wmap,etc.
+###################################
 class Likelihood_clik(Likelihood):
 
     def __init__(self, path, data, command_line):
@@ -1133,7 +1146,10 @@ class Likelihood_clik(Likelihood):
         return lkl
 
 
-
+###################################
+# MOCK CMB TYPE LIKELIHOOD
+# --> mock planck, cmbpol, etc.
+###################################
 class Likelihood_mock_cmb(Likelihood):
 
     def __init__(self, path, data, command_line):
@@ -1143,7 +1159,9 @@ class Likelihood_mock_cmb(Likelihood):
         self.need_cosmo_arguments(
             data, {'lensing': 'yes', 'output': 'tCl lCl pCl'})
 
-        
+        ################
+        # Noise spectrum
+        ################
 
         try:
             self.noise_from_file
@@ -1256,7 +1274,9 @@ class Likelihood_mock_cmb(Likelihood):
         #for l in range(self.l_min, self.l_max+1):
         #    test.write('%d  %e  %e\n'%(l,self.noise_T[l],self.noise_P[l]))
 
-        
+        ###########################################################################
+        # implementation of default settings for flags describing the likelihood: #
+        ###########################################################################
 
         # - ignore B modes by default:
         try:
@@ -1294,7 +1314,9 @@ class Likelihood_mock_cmb(Likelihood):
         except:
             self.ExcludeTTTEEE = False
 
-        
+        ##############################################
+        # Delensing noise: implemented by  S. Clesse #
+        ##############################################
 
         if self.delensing:
 
@@ -1335,7 +1357,9 @@ class Likelihood_mock_cmb(Likelihood):
                 #raise io_mp.LikelihoodError("Could not find file ",self.delensing_file)
                 print("Could not find file ",self.delensing_file)
 
-        
+        ###############################################################
+        # Read data for TT, EE, TE, [eventually BB or phi-phi, phi-T] #
+        ###############################################################
 
         # default:
         if not self.ExcludeTTTEEE:
@@ -1653,7 +1677,14 @@ class Likelihood_mock_cmb(Likelihood):
         return -chi2/2
 
 
-
+########################################
+# Spectral Distortions TYPE LIKELIHOOD
+# --> mock PIXIE, FIRAS, ...
+# Implemented by D.C. Hooper, M. Lucca
+# and N. Schoeneberg. Implementation
+# described in 1910.04619 (general) and
+# 2010.07814 (foregrounds)
+########################################
 class Likelihood_sd(Likelihood):
 
     def __init__(self, path, data, command_line):
@@ -1664,7 +1695,9 @@ class Likelihood_sd(Likelihood):
         self.need_cosmo_argumentsneed_cosmo_arguments(
             data, {'output': 'sd','modes':'s' })
 
-        
+        ################
+        # Noise spectrum
+        ################
 
         """The user can either pass an external noise file (as done for FIRAS), or compute it here automatically (as done for PIXIE)."""
 
@@ -2044,7 +2077,10 @@ class Likelihood_sd(Likelihood):
         return -chi2/2
 
 
-
+###################################
+# MPK TYPE LIKELIHOOD
+# --> sdss, wigglez, etc.
+###################################
 class Likelihood_mpk(Likelihood):
 
     def __init__(self, path, data, command_line, common=False, common_dict={}):
@@ -2408,6 +2444,7 @@ class Likelihood_mpk(Likelihood):
     def add_common_knowledge(self, common_dictionary):
         """
         Add to a class the content of a shared dictionary of attributes
+
         The purpose of this method is to set some attributes globally for a Pk
         likelihood, that are shared amongst all the redshift bins (in
         WiggleZ.data for instance, a few flags and numbers are defined that
@@ -2930,7 +2967,10 @@ class Likelihood_clocks(Likelihood):
 
         return -0.5 * chi2
 
-
+###################################
+# ISW-Likelihood
+# by B. Stoelzner
+###################################
 class Likelihood_isw(Likelihood):
     def __init__(self, path, data, command_line):
         # Initialize
@@ -3024,7 +3064,8 @@ class Data(object):
 
     def __init__(self, command_line, path, experiments):  
         """
-        The Data class holds the cosmological information, the parameters from        the MCMC run, the information coming from the likelihoods. It is a wide
+        The Data class holds the cosmological information, the parameters from
+        the MCMC run, the information coming from the likelihoods. It is a wide
         collections of information, with in particular two main dictionaries:
         cosmo_arguments and mcmc_parameters.
 
@@ -3409,4 +3450,4 @@ def get_available_likelihoods(backendDir):
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:50 +0000

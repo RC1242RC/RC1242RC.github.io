@@ -111,6 +111,9 @@ namespace Gambit {
 
       // Recursive jigsaw objects (using RestFrames)
 
+      ///////////////////////////////////////////////////////////////////////
+      /// 1. Create RJigsaw for C1N2 -> WZN1N1 -> 2L+2J+MET High mass region
+      ///////////////////////////////////////////////////////////////////////
 
       unique_ptr<RestFrames::LabRecoFrame>       LAB_2L2J;
       unique_ptr<RestFrames::DecayRecoFrame>     C1N2_2L2J;
@@ -135,6 +138,9 @@ namespace Gambit {
 
       unique_ptr<RestFrames::ContraBoostInvJigsaw> X1X1_contra_2L2J;
 
+      ///////////////////////////////////////////////////////////////////////
+      /// 2. Create RJigsaw for C1N2 -> WZN1N1 -> 3L + MET High mass region
+      ///////////////////////////////////////////////////////////////////////
 
       unique_ptr<RestFrames::LabRecoFrame>       LAB_3L;
       unique_ptr<RestFrames::DecayRecoFrame>     C1N2_3L;
@@ -339,7 +345,9 @@ namespace Gambit {
           }
 
 
+          //////////////////////////////
           //Setting the invisible
+          //////////////////////////////
           INV_2L2J.reset(new RestFrames::InvisibleGroup("INV_2L2J","#tilde{#chi}_{1}^{ 0} Jigsaws"));
           INV_2L2J->AddFrame(*X1a_2L2J);
           INV_2L2J->AddFrame(*X1b_2L2J);
@@ -434,6 +442,7 @@ namespace Gambit {
           }
 
 
+          /////////////////////////// INTERMEDIATE ///////////////////////////////////
           // RestFrames stuff
 
           // combinatoric (transverse) tree
@@ -530,6 +539,7 @@ namespace Gambit {
           }
 
 
+          ////////////// Jigsaw rules set-up /////////////////
 
           // combinatoric (transverse) tree
           // for jet assignment
@@ -665,6 +675,7 @@ namespace Gambit {
         vector<const HEPUtils::Jet*> nonBJets;
 
         // Get b jets
+        /// @note We assume that b jets have previously been 100% tagged
         const std::vector<double>  a = {0,10.};
         const std::vector<double>  b = {0,10000.};
         const std::vector<double> c = {0.77}; // set b-tag efficiency to 77%
@@ -768,6 +779,7 @@ namespace Gambit {
         // double m_pileUp_weight = -999;
 
 
+        //////Initialize variables
         // int m_nBaselineLeptons = -999;
         // int m_nSignalLeptons   = -999;
 
@@ -973,6 +985,7 @@ namespace Gambit {
         // double m_W_PP = -999;
         // double m_WZ_PP = -999;
 
+        ///Variables for the compressed/Intermediate tree
         double m_PTCM=-999;
         double m_PTISR=-999;
         double m_PTI=-999;
@@ -1177,6 +1190,7 @@ namespace Gambit {
           // m_dRjj = myJets[indexJ1].DeltaR(myJets[indexJ2]);
 
 
+          //////////////////////////////////////////////////////////////////////////////
           //Variables for the conventional approach
           // m_DPhi_METW = fabs((myJets[indexJ1]+myJets[indexJ2]).DeltaPhi(metLV));
           //for the comrpessed tree
@@ -1220,6 +1234,7 @@ namespace Gambit {
           //   // m_DPhi_METNonWJet = fabs(nonWjetsLV.DeltaPhi(metLV));
           //   // m_DPhi_METWonZ = fabs((myJets[WindexJ1]+myJets[WindexJ2]).DeltaPhi(metLV));
           // }
+          //////////////////////////////////////////////////////////////////////////////
 
 
           L1_2L2J->SetLabFrameFourVector(myLeptons[0].first); // Set lepton 4-vectors
@@ -1231,7 +1246,9 @@ namespace Gambit {
           INV_2L2J->SetLabFrameThreeVector(MET);                  // Set the MET in reco tree
           TLorentzVector lep1;
           TLorentzVector lep2;
+          //////////////////////////////////////////////////
           //Lotentz vectors have been set, now do the boosts
+          //////////////////////////////////////////////////
 
           // Analyze the event
           if(!LAB_2L2J->AnalyzeEvent())
@@ -1528,6 +1545,7 @@ namespace Gambit {
 
             //Variables w/ 4 objects
 
+            /// Defined in the PP-frame
             //Four vector sum of all visible objets + four vector sum of inv objects
 
             //Scalar sum of all visible objects + vector sum of invisible momenta
@@ -1544,6 +1562,7 @@ namespace Gambit {
             TLorentzVector p_Ib_Lab = X1b_3L->GetFourVector(*LAB_3L);
             TVector3 lab_to_pp = C1N2_3L->GetBoostInParentFrame();
 
+            /// Defined in the P-frame
             m_H2Pa = (vP_V1aPa).P() + (vP_I1aPa).P(); //H(1,1)P
             m_H2Pb = (vP_V1bPb + vP_V2bPb).P() + vP_I1bPb.P();//H(1,1)P
 
@@ -1562,6 +1581,7 @@ namespace Gambit {
             // double H2PPb = (vP_V1bPP+vP_V2bPP).P() + vP_I1bPP.P();
             // m_maxR_H1PPi_H2PPi = std::max(H1PPa/H2PPa,H1PPb/H2PPb);
 
+            ////Calculation of dRll_I_PP;
             //m_dRll_I_PP = (vP_V1bPP+vP_V1bPP).DeltaR(vP_I1bPP);
             //m_R_Ib_Ia = (vP_V1bPP + vP_V2bPP + vP_I1bPP).P()/(vP_V1aPP+vP_I1aPP).P();
 
@@ -2115,6 +2135,7 @@ namespace Gambit {
 
       } // end analyze method
 
+      /// Combine the variables of another copy of this analysis (typically on another thread) into this one.
       void combine(const Analysis* other)
       {
         const Analysis_ATLAS_13TeV_RJ3L_lowmass_36invfb* specificOther
@@ -2222,4 +2243,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:46 +0000
+Updated on 2022-08-02 at 23:34:57 +0000

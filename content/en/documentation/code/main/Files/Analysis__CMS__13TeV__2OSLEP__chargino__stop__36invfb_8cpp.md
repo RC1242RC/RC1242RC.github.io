@@ -34,7 +34,11 @@ description: "[No description available]"
 ## Source code
 
 ```
-
+///
+///  \author Yang Zhang
+///  \date 2018 Nov
+///
+///  *********************************************
 
 // Based on http://cms-results.web.cern.ch/cms-results/public-results/publications/SUS-17-010/index.html
 // Searches for pair production of charginos and top squarks in final states with two oppositely charged leptons in proton-proton collisions at √s= 13 TeV
@@ -607,6 +611,7 @@ namespace Gambit {
 
       }
 
+      /// Combine the variables of another copy of this analysis (typically on another thread) into this one.
       void combine(const Analysis* other)
       {
         const Analysis_CMS_13TeV_2OSLEP_chargino_stop_36invfb* specificOther
@@ -1161,4 +1166,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:38 +0000
+Updated on 2022-08-02 at 23:34:54 +0000

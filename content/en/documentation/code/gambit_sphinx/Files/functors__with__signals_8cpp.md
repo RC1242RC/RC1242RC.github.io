@@ -46,6 +46,22 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Functor member function definitions for 
+///  functions which are not needed in standlone
+///  compile units, because they use the core
+///  signal handling system.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Ben Farmer
+///          (benjamin.farmer@monash.edu.au)
+///  \date 2016 Mar
+///
+///  *********************************************
 
 #include "gambit/Elements/functors.hpp"
 #include "gambit/Utils/signal_handling.hpp" // Don't want this in standlone mode
@@ -54,7 +70,10 @@ Authors (add name and date if you modify):
 namespace Gambit
 {
 
+  /// @{ Definitions of friend functions from above
 
+    /// @{ Some helper functions for interacting with signals in the calculate() routine
+    ///    These don't exist in standalone compilations, are replaced with null functions
     namespace FunctorHelp {
        
        // Both OBSOLETE   
@@ -131,7 +150,9 @@ namespace Gambit
          }
        }
      }
+    /// @}
 
+  /// @}
 
 
 }
@@ -140,4 +161,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:49 +0000

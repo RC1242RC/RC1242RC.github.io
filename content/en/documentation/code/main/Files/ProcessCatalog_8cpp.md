@@ -46,6 +46,20 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Implementation file for DarkBit Process
+///  Catalog constituents types.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)
+///  \date 2015 Mar
+///
+///  *********************************************
 
 #include "gambit/Elements/gambit_module_headers.hpp"
 #include "gambit/DarkBit/DarkBit_rollcall.hpp"
@@ -66,6 +80,7 @@ namespace Gambit {
 
     // TH_Channel definitions
 
+    /// Constructor
     TH_Channel::TH_Channel(std::vector<str> finalStateIDs, daFunk::Funk genRate)
       :  finalStateIDs(finalStateIDs), nFinalStates(finalStateIDs.size()),
       genRate(genRate)
@@ -76,6 +91,7 @@ namespace Gambit {
       }
     }
 
+    /// Print information about this channel.
     void TH_Channel::printChannel() const
     {
       logger() << "Channel: ";
@@ -86,12 +102,18 @@ namespace Gambit {
       logger() << EOM;
     }
 
+    /*! \brief Indicate whether or not the final states of this channel contain
+     * a specific particle.
+     */
     bool TH_Channel::channelContains(str p) const
     {
       return std::find(finalStateIDs.begin(),
           finalStateIDs.end(), p) != finalStateIDs.end();
     }
 
+    /*! \brief Indicate whether or not this channel is the one defined by some
+     * specific final states.  Particle name version.
+     */
     bool TH_Channel::isChannel(str p0, str p1, str p2, str p3) const
     {
       str vals[] = {p0, p1};
@@ -101,6 +123,9 @@ namespace Gambit {
       return isChannel(inIDs);
     }
 
+    /*! \brief Indicate whether or not this channel is the one defined by some
+     * specific final states.  Particle vector version.
+     */
     bool TH_Channel::isChannel(std::vector<str> particles) const
     {
       if (particles.size() != finalStateIDs.size()) return false;
@@ -111,6 +136,7 @@ namespace Gambit {
 
     // TH_Process definitions
 
+    /// Constructor for decay process
     TH_Process::TH_Process(const str & particle1ID)
       : isAnnihilation (false),
       particle1ID    (particle1ID),
@@ -118,6 +144,7 @@ namespace Gambit {
       genRateMisc    (daFunk::zero())
     {}
 
+    /// Constructor for annihilation process
     TH_Process::TH_Process(const str & particle1ID, const str & particle2ID)
       : isAnnihilation (true),
       particle1ID(particle1ID),
@@ -131,6 +158,7 @@ namespace Gambit {
       }
     }
 
+    /// Compare initial states
     bool TH_Process::isProcess(const str & p1, const str & p2) const
     {
       sspair candidate_process(p1, p2);
@@ -138,6 +166,7 @@ namespace Gambit {
       return candidate_process == this_process;
     }
 
+    /// Check for given channel.  Return a pointer to it if found, NULL if not.
     const TH_Channel* TH_Process::find(std::vector<str> final_states) const
     {
       for (auto it = channelList.begin(); it != channelList.end(); ++it)
@@ -150,6 +179,7 @@ namespace Gambit {
 
     // TH_ProcessCatalog definitions
 
+    /// Retrieve a specific process from the catalog
     TH_Process TH_ProcessCatalog::getProcess(str id1, str id2) const
     {
       const TH_Process* temp = find(id1, id2);
@@ -161,6 +191,7 @@ namespace Gambit {
       return *temp;
     }
 
+    /// Check for a specific process in the catalog
     const TH_Process* TH_ProcessCatalog::find(str id1, str id2) const
     {
       for (std::vector<TH_Process>::const_iterator it = processList.begin();
@@ -171,6 +202,9 @@ namespace Gambit {
       return NULL;
     }
 
+    /*! \brief Retrieve properties of a given particle involved in one or more
+     * processes in this catalog
+     */
     TH_ParticleProperty TH_ProcessCatalog::getParticleProperty(str id) const
     {
       auto it = particleProperties.find(id);
@@ -353,4 +387,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:37 +0000
+Updated on 2022-08-02 at 23:34:54 +0000

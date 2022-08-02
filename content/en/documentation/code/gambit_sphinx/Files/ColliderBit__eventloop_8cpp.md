@@ -79,6 +79,39 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Functions of ColliderBit event loop.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Abram Krislock
+///          (a.m.b.krislock@fys.uio.no)
+///
+///  \author Aldo Saavedra
+///
+///  \author Andy Buckley
+///
+///  \author Chris Rogan
+///          (crogan@cern.ch)
+///  \date 2014 Aug
+///  \date 2015 May
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)
+///  \date 2015 Jul
+///  \date 2018 Jan
+///  \date 2019 Jan
+///
+///  \author Anders Kvellestad
+///          (anders.kvellestad@fys.uio.no)
+///  \date   2017 March
+///  \date   2018 Jan
+///  \date   2018 May
+///
+///  *********************************************
 
 #include "gambit/Elements/gambit_module_headers.hpp"
 #include "gambit/ColliderBit/ColliderBit_eventloop.hpp"
@@ -92,6 +125,7 @@ namespace Gambit
   namespace ColliderBit
   {
 
+    /// LHC Loop Manager
     void operateLHCLoop(MCLoopInfo& result)
     {
       using namespace Pipes::operateLHCLoop;
@@ -356,6 +390,7 @@ namespace Gambit
     }
 
 
+    /// Store some information about the event generation
     void getLHCEventLoopInfo(map_str_dbl& result)
     {
       using namespace Pipes::getLHCEventLoopInfo;
@@ -369,6 +404,7 @@ namespace Gambit
     }
 
 
+    /// Loop over all analyses and collect them in one place
     void CollectAnalyses(AnalysisDataPointers& result)
     {
       using namespace Pipes::CollectAnalyses;
@@ -434,4 +470,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:40 +0000
+Updated on 2022-08-02 at 23:34:50 +0000

@@ -54,6 +54,23 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  GAMBIT side of Cascade decay codes.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Christoph Weniger
+///          (c.weniger@uva.nl)
+///  \date 2013 Jul - 2015 May
+///
+///  \author Lars A. Dal
+///          (l.a.dal@fys.uio.no)
+///  \date 2014 Mar, Jul, Sep, Oct
+///
+///  *********************************************
 
 #include "gambit/Elements/gambit_module_headers.hpp"
 #include "gambit/DarkBit/DarkBit_rollcall.hpp"
@@ -65,11 +82,30 @@ namespace Gambit
   namespace DarkBit
   {
 
+    //////////////////////////////////////////////////////////////////////////
     //
     //                        Cascade Decays
     //
+    //////////////////////////////////////////////////////////////////////////
 
+    /// Special events for event loop
     enum cascadeMC_SpecialEvents {MC_INIT=-1, MC_NEXT_STATE=-2, MC_FINALIZE=-3};
+
+    /*! \brief Identification of hard-process final states for which yield tables do not exist.
+     *
+     * Structure
+     * ---------
+     *
+     * 1) Go through process catalog and find all hard-process final states that require
+     * yields to be calculated with the cascade code.  These will constitute initial states
+     * for the cascade code.  To this end, check whether yield tables exist for two-body channels,
+     * and whether one-particle decay yield tables exist for single particles.
+     *
+     * 2) Calculate via the cascade code the missing energy spectra.
+     *
+     * 3) Put together the full spectrum.
+     *
+     */
 
     void cascadeMC_InitialStates(std::set<std::string> &result)
     {
@@ -79,6 +115,7 @@ namespace Gambit
 
       result.clear();
 
+      /// Option ignore_all<bool>: Ignore all missing hard process final states (default false)
       if ( runOptions->getValueOrDef(false, "ignore_all") ) return;
 
       // What type of process are we dealing with?
@@ -93,6 +130,7 @@ namespace Gambit
         {
           if (channel.nFinalStates == 2)
           {
+            /// Option ignore_two_body<bool>: Ignore two-body missing final states (default false)
             if ( not runOptions->getValueOrDef(false, "ignore_two_body") )
             {
               #ifdef DARKBIT_DEBUG
@@ -109,6 +147,7 @@ namespace Gambit
           }
           else if (channel.nFinalStates == 3)
           {
+            /// Option ignore_three_body<bool>: Ignore three-body missing final states (default false)
             if (not runOptions->getValueOrDef(false, "ignore_three_body"))
             {
               #ifdef DARKBIT_DEBUG
@@ -149,6 +188,7 @@ namespace Gambit
       #endif
     }
 
+    /// Function for retrieving list of final states for cascade decays
     void cascadeMC_FinalStates(std::set<std::string> &states)
     {
       using namespace Pipes::cascadeMC_FinalStates;
@@ -169,6 +209,7 @@ namespace Gambit
       }
     }
 
+    /// Function setting up the decay table used in decay chains
     void cascadeMC_DecayTable(DarkBit::DecayChain::DecayTable &table)
     {
       using namespace DecayChain;
@@ -190,12 +231,14 @@ namespace Gambit
       #endif
     }
 
+    /// Loop manager for cascade decays
     void cascadeMC_LoopManager(std::string& result)
     {
       using namespace Pipes::cascadeMC_LoopManager;
       const std::set<std::string>& chainList = *Dep::cascadeMC_InitialStates;
       int cMC_minEvents = 2;  // runOptions->getValueOrDef<int>(2, "cMC_minEvents");
       // Get YAML options
+      /// Option cMC_maxEvents<int>: Maximum number of cascade MC runs (default 20000)
       int cMC_maxEvents = runOptions->getValueOrDef<int>(20000, "cMC_maxEvents");
 
       // Initialization run
@@ -247,6 +290,7 @@ namespace Gambit
       Loop::executeIteration(MC_FINALIZE);
     }
 
+    /// Event counter for cascade decays
     void cascadeMC_EventCount(std::map<std::string, int> &counts)
     {
       using namespace Pipes::cascadeMC_EventCount;
@@ -269,6 +313,7 @@ namespace Gambit
       }
     }
 
+    /// Function for generating decay chains
     void cascadeMC_GenerateChain(
         DarkBit::DecayChain::ChainContainer &chain)
     {
@@ -279,7 +324,9 @@ namespace Gambit
       switch(*Loop::iteration)
       {
         case MC_INIT:
+          /// Option cMC_maxChainLength<int>: Maximum chain length, -1 is infinite (default -1)
           cMC_maxChainLength = runOptions->getValueOrDef<int>    (-1, "cMC_maxChainLength");
+          /// Option cMC_Emin<double>: Cutoff energy for cascade particles (default 0)
           cMC_Emin = runOptions->getValueOrDef<double> (-1, "cMC_Emin");
           return;
         case MC_NEXT_STATE:
@@ -300,6 +347,9 @@ namespace Gambit
       chain=ChainContainer(chn);
     }
 
+    /** Function for sampling SimYieldTables (tabulated spectra).
+      * This is a convenience function used in cascadeMC_Histograms, and does
+      * not have an associated capability.  */
     void cascadeMC_sampleSimYield( const SimYieldTable &table,
         const DarkBit::DecayChain::ChainParticle* endpoint,
         std::string finalState,
@@ -427,6 +477,7 @@ namespace Gambit
       }
     }
 
+    /// Function responsible for histogramming, and evaluating end conditions for event loop
     void cascadeMC_Histograms(std::map<std::string, std::map<std::string,
         SimpleHist> > &result)
     {
@@ -448,17 +499,28 @@ namespace Gambit
       {
         case MC_INIT:
           // Initialization
+          /// Option cMC_numSpecSamples<int>: number of samples to draw from tabulated
+          /// spectra (default 25)
           cMC_numSpecSamples = runOptions->getValueOrDef<int>   (25, "cMC_numSpecSamples");
+          /// Option cMC_endCheckFrequency: number of events to wait between successive
+          /// checks of the convergence criteria (default 25)
           cMC_endCheckFrequency  =
             runOptions->getValueOrDef<int>   (25,     "cMC_endCheckFrequency");
+          /// Option cMC_gammaBGPower: power-law slope to assume for astrophysical
+          /// background (default -2.5)
           cMC_gammaBGPower       =
             runOptions->getValueOrDef<double>(-2.5,   "cMC_gammaBGPower");
+          /// Option cMC_gammaRelError: max allowed relative error in bin with highest
+          /// expected signal-to-background (default 0.20)
           cMC_gammaRelError      =
             runOptions->getValueOrDef<double>(0.20,   "cMC_gammaRelError");
 
           // Note: use same binning for all particle species
+          /// Option cMC_NhistBins<int>: Number of histogram bins (default 140)
           cMC_NhistBins = runOptions->getValueOrDef<int>   (140,     "cMC_NhistBins");
+          /// Option cMC_binLow<double>: Histogram min energy in GeV (default 0.001)
           cMC_binLow = runOptions->getValueOrDef<double>(0.001,  "cMC_binLow");
+          /// Option cMC_binHigh<double>: Histogram max energy in GeV (default 10000)
           cMC_binHigh = runOptions->getValueOrDef<double>(10000.0,"cMC_binHigh");
           histList.clear();
           return;
@@ -613,6 +675,7 @@ namespace Gambit
         for (const auto& state : *Dep::cascadeMC_FinalStates)
         {
           // End conditions currently only implemented for gamma final state
+          /// @TODO: consider implementing specific convergence criteria for other final states
           if (state == "gamma")
           {
             SimpleHist hist;
@@ -664,6 +727,10 @@ namespace Gambit
       }
     }
 
+    /** Convenience function for getting a daFunk::Funk object of a given spectrum.
+        This function has no associated capability.
+        Function retrieving specific spectra (like cascadeMC_gammaSpectra)
+        should call this function.*/
     void cascadeMC_fetchSpectra(std::map<std::string, daFunk::Funk> &spectra,
         std::string finalState,
         const std::set<std::string> &ini,
@@ -716,6 +783,7 @@ namespace Gambit
       }
     }
 
+    /// Debug print function for cascase spectra
     void print_spectrum_debug_info(const str& fs, const std::map<std::string, daFunk::Funk> & spectra)
     {
       std::cout << "Retrieving cascade spectra for " << fs << " final states" << std::endl;
@@ -732,6 +800,7 @@ namespace Gambit
       }
     }
 
+    /// Function requesting and returning gamma ray spectra from cascade decays.
     void cascadeMC_gammaSpectra(std::map<std::string, daFunk::Funk> &spectra)
     {
       using namespace Pipes::cascadeMC_gammaSpectra;
@@ -743,6 +812,7 @@ namespace Gambit
       #endif
     }
 
+    /// Function requesting and returning electron spectra from cascade decays.
     void cascadeMC_electronSpectra(std::map<std::string, daFunk::Funk> &spectra)
     {
       using namespace Pipes::cascadeMC_electronSpectra;
@@ -754,6 +824,7 @@ namespace Gambit
       #endif
     }
 
+    /// Function requesting and returning positron spectra from cascade decays.
     void cascadeMC_positronSpectra(std::map<std::string, daFunk::Funk> &spectra)
     {
       using namespace Pipes::cascadeMC_positronSpectra;
@@ -765,6 +836,7 @@ namespace Gambit
       #endif
     }
 
+    /// Function requesting and returning pbar spectra from cascade decays.
     void cascadeMC_antiprotonSpectra(std::map<std::string, daFunk::Funk> &spectra)
     {
       using namespace Pipes::cascadeMC_antiprotonSpectra;
@@ -776,6 +848,7 @@ namespace Gambit
       #endif
     }
 
+    /// Function requesting and returning Dbar spectra from cascade decays.
     void cascadeMC_antideuteronSpectra(std::map<std::string, daFunk::Funk> &spectra)
     {
       using namespace Pipes::cascadeMC_antideuteronSpectra;
@@ -831,4 +904,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:49 +0000

@@ -52,6 +52,22 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //  *********************************************
+///
+///  \file
+///  Functions that do super fast CMS detector
+///  simulation based on four-vector smearing.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Andy Buckley
+///  \author Abram Krislock
+///  \author Anders Kvellestad
+///  \author Matthias Danninger
+///  \author Rose Kudzman-Blais
+///
+///  *********************************************
 
 
 #pragma once
@@ -75,10 +91,14 @@ namespace Gambit
   {
 
 
+    /// CMS-specific efficiency and smearing functions for super fast detector simulation
     namespace CMS
     {
 
+      /// @name CMS detector efficiency functions
+      ///@{
 
+      /// Randomly filter the supplied particle list by parameterised electron tracking efficiency
       inline void applyElectronTrackingEff(std::vector<const HEPUtils::Particle*>& electrons) {
         static HEPUtils::BinnedFn2D<double> _elTrackEff2d({{0, 1.5, 2.5, DBL_MAX}}, //< |eta|
                                                           {{0, 0.1, 1.0, DBL_MAX}}, //< pT
@@ -89,6 +109,9 @@ namespace Gambit
       }
 
 
+      /// Randomly filter the supplied particle list by parameterised electron efficiency
+      /// @note Should be applied after the electron energy smearing
+      /// @note Eff values currently identical to those in ATLAS (AB, 2016-01-24)
       inline void applyElectronEff(std::vector<const HEPUtils::Particle*>& electrons) {
         static HEPUtils::BinnedFn2D<double> _elEff2d({{0, 1.5, 2.5, DBL_MAX}}, //< |eta|
                                                      {{0, 10., DBL_MAX}}, //< pT
@@ -99,6 +122,8 @@ namespace Gambit
       }
 
 
+      /// Randomly filter the supplied particle list by parameterised muon tracking efficiency
+      /// @note Eff values currently identical to those in ATLAS (AB, 2016-01-24)
       inline void applyMuonTrackEff(std::vector<const HEPUtils::Particle*>& muons) {
         static HEPUtils::BinnedFn2D<double> _muTrackEff2d({{0, 1.5, 2.5, DBL_MAX}}, //< |eta|
                                                           {{0, 0.1, 1.0, DBL_MAX}}, //< pT
@@ -109,6 +134,7 @@ namespace Gambit
       }
 
 
+      /// Randomly filter the supplied particle list by parameterised muon efficiency
       inline void applyMuonEff(std::vector<const HEPUtils::Particle*>& muons) {
         if(muons.empty()) return;
         auto keptMuonsEnd = std::remove_if(muons.begin(), muons.end(),
@@ -125,11 +151,17 @@ namespace Gambit
       }
 
 
+      /// @brief Randomly filter the supplied particle list by parameterised tau efficiency
+      /// @note No delete, because this should only ever be applied to copies of the Event Particle* vectors in Analysis routines
       inline void applyTauEfficiency(std::vector<const HEPUtils::Particle*>& taus) {
         filtereff(taus, 0.6);
       }
 
 
+      /// @brief Randomly smear the supplied electrons' momenta by parameterised resolutions
+      ///
+      /// Function that mimics the DELPHES electron energy resolution.
+      /// We need to smear E, then recalculate pT, then reset the 4-vector.
       inline void smearElectronEnergy(std::vector<HEPUtils::Particle*>& electrons) {
 
         // Now loop over the electrons and smear the 4-vectors
@@ -163,6 +195,10 @@ namespace Gambit
       }
 
 
+      /// @brief Randomly smear the supplied muons' momenta by parameterised resolutions
+      ///
+      /// Function that mimics the DELPHES muon momentum resolution.
+      /// We need to smear pT, then recalculate E, then reset the 4-vector.
       inline void smearMuonMomentum(std::vector<HEPUtils::Particle*>& muons) {
 
         // Now loop over the muons and smear the 4-vectors
@@ -195,9 +231,19 @@ namespace Gambit
       }
 
 
+      /// @brief Randomly smear the supplied jets' momenta by parameterised resolutions
+      ///
+      /// Function that mimics the DELPHES jet momentum resolution.
+      /// We need to smear pT, then recalculate E, then reset the 4-vector
+      ///
+      /// @todo Update cf. Matthias study for ATLAS
       inline void smearJets(std::vector<HEPUtils::Jet*>& jets) {
 
         // Const resolution for now
+        /// @todo This is the ATLAS number... I can't find values for the CMS parameterisation, cf.
+        ///   https://cds.cern.ch/record/1339945/files/JME-10-014-pas.pdf
+        ///   https://twiki.cern.ch/twiki/bin/view/CMSPublic/SWGuideJetResolution
+        ///   https://github.com/adrager/cmssw/blob/CMSSW_7_2_X/CondFormats/JetMETObjects/test/TestCorrections.C
         //const double resolution = 0.03;
 
         // Matthias jet smearing implemented roughly from https://arxiv.org/pdf/1607.03663.pdf
@@ -220,6 +266,12 @@ namespace Gambit
       }
 
 
+      /// @brief Randomly smear the supplied hadronic taus' momenta by parameterised resolutions
+      ///
+      /// We need to smear pT, then recalculate E, then reset the 4-vector.
+      /// Same as for jets, but on a vector of particles. (?)
+      ///
+      /// @todo Update cf. Matthias study for ATLAS
       inline void smearTaus(std::vector<HEPUtils::Particle*>& taus) {
 
         // Const resolution for now
@@ -230,10 +282,13 @@ namespace Gambit
         for (HEPUtils::Particle* p : taus) {
           // Smear by a Gaussian centered on 1 with width given by the (fractional) resolution
           double smear_factor = d(Random::rng());
+          /// @todo Is this the best way to smear? Should we preserve the mean jet energy, or pT, or direction?
           p->set_mom(HEPUtils::P4::mkXYZM(p->mom().px()*smear_factor, p->mom().py()*smear_factor, p->mom().pz()*smear_factor, p->mass()));
         }
       }
 
+      ///Apply efficiency function to CSVv2 medium WP b-tagged jets
+      ///@note Numbers digitized from https://twiki.cern.ch/twiki/pub/CMSPublic/SUSMoriond2017ObjectsEfficiency/btag_eff_CSVv2_DeepCSV.pdf
       inline void applyCSVv2MediumBtagEff(std::vector<const HEPUtils::Jet*>& bjets) {
         if (bjets.empty()) return;
 
@@ -256,6 +311,8 @@ namespace Gambit
         applyCSVv2MediumBtagEff(reinterpret_cast<std::vector<const HEPUtils::Jet*>&>(bjets));
       }
 
+      ///Apply efficiency function to CSVv2 loose WP b-tagged jets
+      ///@note Numbers digitized from https://twiki.cern.ch/twiki/pub/CMSPublic/SUSMoriond2017ObjectsEfficiency/btag_eff_CSVv2_DeepCSV.pdf
       inline void applyCSVv2LooseBtagEff(std::vector<const HEPUtils::Jet*>& bjets) {
         if (bjets.empty()) return;
 
@@ -279,6 +336,7 @@ namespace Gambit
       }
 
 
+      ///Apply user-specified b-tag misidentification rate (flat)
       inline void applyBtagMisId(double mis_id_prob, std::vector<const HEPUtils::Jet*>& jets, std::vector<const HEPUtils::Jet*>& bjets) {
         if (jets.empty()) return;
         for (const HEPUtils::Jet* jet : jets) {
@@ -292,6 +350,8 @@ namespace Gambit
       }
 
 
+      ///Apply b-tag misidentification rate for CSVv2 loose WP
+      ///@note Numbers from Table 2 in https://arxiv.org/pdf/1712.07158.pdf
       inline void applyCSVv2LooseBtagMisId(std::vector<const HEPUtils::Jet*>& jets, std::vector<const HEPUtils::Jet*>& bjets) {
         if (jets.empty()) return;
         // For now we apply the (pT-averaged) light-flavour misidentification rate to all jets.
@@ -305,6 +365,7 @@ namespace Gambit
       }
 
 
+      ///Apply both b-tag efficiency and misidentification rate for CSVv2 loose WP
       inline void applyCSVv2LooseBtagEffAndMisId(std::vector<const HEPUtils::Jet*>& jets, std::vector<const HEPUtils::Jet*>& bjets) {
         if (jets.empty() && bjets.empty()) return;
         // Apply b-tag efficiency
@@ -318,6 +379,8 @@ namespace Gambit
       }
 
 
+      ///Apply b-tag misidentification rate for CSVv2 medium WP
+      ///@note Numbers from Table 2 in https://arxiv.org/pdf/1712.07158.pdf
       inline void applyCSVv2MediumBtagMisId(std::vector<const HEPUtils::Jet*>& jets, std::vector<const HEPUtils::Jet*>& bjets) {
         if (jets.empty()) return;
         // For now we apply the (pT-averaged) light-flavour misidentification rate to all jets.
@@ -331,6 +394,7 @@ namespace Gambit
       }
 
 
+      ///Apply both b-tag efficiency and misidentification rate for CSVv2 medium WP
       inline void applyCSVv2MediumBtagEffAndMisId(std::vector<const HEPUtils::Jet*>& jets, std::vector<const HEPUtils::Jet*>& bjets) {
         if (jets.empty() && bjets.empty()) return;
         // Apply b-tag efficiency
@@ -343,6 +407,7 @@ namespace Gambit
         applyCSVv2MediumBtagEffAndMisId(reinterpret_cast<std::vector<const HEPUtils::Jet*>&>(jets), reinterpret_cast<std::vector<const HEPUtils::Jet*>&>(bjets));
       }
 
+      ///@}
 
     }
   }
@@ -352,4 +417,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:49 +0000

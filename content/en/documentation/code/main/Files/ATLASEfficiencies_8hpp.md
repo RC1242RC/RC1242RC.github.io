@@ -54,6 +54,24 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //  *********************************************
+///
+///  \file
+///  Functions that do super fast ATLAS detector
+///  simulation based on four-vector smearing.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Andy Buckley
+///  \author Abram Krislock
+///  \author Anders Kvellestad
+///  \author Matthias Danninger
+///  \author Rose Kudzman-Blais
+///  \author Pat Scott
+///  \author Tomas Gonzalo
+///
+///  *********************************************
 
 
 #pragma once
@@ -74,9 +92,12 @@ namespace Gambit
   {
 
 
+    /// ATLAS-specific efficiency and smearing functions for super fast detector simulation
     namespace ATLAS
     {
 
+      /// @name ATLAS detector efficiency functions
+      ///@{
 
         // /// Randomly filter the supplied particle list by parameterised electron tracking efficiency
         // /// @todo Remove? This is not the electron efficiency
@@ -90,6 +111,8 @@ namespace Gambit
         // }
 
 
+        /// Randomly filter the supplied particle list by parameterised electron efficiency
+        /// @note Should be applied after the electron energy smearing
         inline void applyElectronEff(std::vector<const HEPUtils::Particle*>& electrons) {
           static HEPUtils::BinnedFn2D<double> _elEff2d({{0,1.5,2.5,DBL_MAX}}, //< |eta|
                                                        {{0,10.,DBL_MAX}}, //< pT
@@ -112,6 +135,7 @@ namespace Gambit
         // }
 
 
+        /// Randomly filter the supplied particle list by parameterised muon efficiency
         inline void applyMuonEff(std::vector<const HEPUtils::Particle*>& muons) {
           static HEPUtils::BinnedFn2D<double> _muEff2d({{0,1.5,2.7,DBL_MAX}}, //< |eta|
                                                        {{0,10.0,DBL_MAX}}, //< pT
@@ -122,6 +146,7 @@ namespace Gambit
         }
 
 
+        /// Randomly filter the supplied particle list by parameterised muon efficiency
         inline void applyMuonEffR2(std::vector<const HEPUtils::Particle*>& muons) {
           static HEPUtils::BinnedFn2D<double> _muEff2d({0, 2.7, DBL_MAX}, //< |eta|
                                                        {0., 3.5, 4., 5., 6., 7., 8., 10., DBL_MAX}, //< pT
@@ -131,11 +156,17 @@ namespace Gambit
         }
 
 
+        /// Randomly filter the supplied particle list by parameterised Run 1 tau efficiency
+        /// @note From Delphes 3.1.2
+        /// @todo Use https://cds.cern.ch/record/1233743/files/ATL-PHYS-PUB-2010-001.pdf -- it is more accurate and has pT-dependence
         inline void applyTauEfficiencyR1(std::vector<const HEPUtils::Particle*>& taus) {
           filtereff(taus, 0.40);
         }
 
 
+        /// Randomly filter the supplied particle list by parameterised Run 2 tau efficiency
+        /// @note From Delphes 3.3.2 & ATL-PHYS-PUB-2015-045, 60% for 1-prong, 70% for multi-prong: this is *wrong*!!
+        /// @note No delete, because this should only ever be applied to copies of the Event Particle* vectors in Analysis routines
         inline void applyTauEfficiencyR2(std::vector<const HEPUtils::Particle*>& taus) {
 
           // Delphes 3.3.2 config:
@@ -187,6 +218,7 @@ namespace Gambit
         }
 
 
+        /// Randomly smear the supplied electrons' momenta by parameterised resolutions
         inline void smearElectronEnergy(std::vector<HEPUtils::Particle*>& electrons) {
           // Function that mimics the DELPHES electron energy resolution
           // We need to smear E, then recalculate pT, then reset 4 vector
@@ -229,6 +261,7 @@ namespace Gambit
         }
 
 
+        /// Randomly smear the supplied muons' momenta by parameterised resolutions
         inline void smearMuonMomentum(std::vector<HEPUtils::Particle*>& muons) {
           // Function that mimics the DELPHES muon momentum resolution
           // We need to smear pT, then recalculate E, then reset 4 vector
@@ -256,6 +289,7 @@ namespace Gambit
         }
 
 
+        /// Randomly smear the supplied jets' momenta by parameterised resolutions
         inline void smearJets(std::vector<HEPUtils::Jet*>& jets) {
           // Function that mimics the DELPHES jet momentum resolution.
           // We need to smear pT, then recalculate E, then reset the 4-vector.
@@ -276,11 +310,13 @@ namespace Gambit
             std::normal_distribution<> d(1., resolution);
             // Smear by a Gaussian centered on 1 with width given by the (fractional) resolution
             double smear_factor = d(Random::rng());
+            /// @todo Is this the best way to smear? Should we preserve the mean jet energy, or pT, or direction?
             jet->set_mom(HEPUtils::P4::mkXYZM(jet->mom().px()*smear_factor, jet->mom().py()*smear_factor, jet->mom().pz()*smear_factor, jet->mass()));
           }
         }
 
 
+        /// Randomly smear the MET vector by parameterised resolutions
         inline void smearMET(HEPUtils::P4& pmiss, double set) {
           // Smearing function from ATLAS Run 1 performance paper, converted from Rivet
           // cf. https://arxiv.org/pdf/1108.5602v2.pdf, Figs 14 and 15
@@ -299,6 +335,7 @@ namespace Gambit
         }
 
 
+        /// Randomly smear the supplied taus' momenta by parameterised resolutions
         inline void smearTaus(std::vector<HEPUtils::Particle*>& taus) {
           // We need to smear pT, then recalculate E, then reset the 4-vector.
           // Same as for jets, but on a vector of particles. (?)
@@ -310,11 +347,15 @@ namespace Gambit
           for (HEPUtils::Particle* p : taus) {
             // Smear by a Gaussian centered on 1 with width given by the (fractional) resolution
             double smear_factor = d(Random::rng());
+            /// @todo Is this the best way to smear? Should we preserve the mean jet energy, or pT, or direction?
             p->set_mom(HEPUtils::P4::mkXYZM(p->mom().px()*smear_factor, p->mom().py()*smear_factor, p->mom().pz()*smear_factor, p->mass()));
           }
         }
 
 
+        /// Efficiency function for Loose ID electrons
+        /// @note Numbers digitised from Fig 3 of 13 TeV note (ATL-PHYS-PUB-2015-041)
+        /// @todo What about faking by jets or non-electrons?
         inline void applyLooseIDElectronSelectionR2(std::vector<const HEPUtils::Particle*>& electrons) {
           if (electrons.empty()) return;
 
@@ -339,10 +380,13 @@ namespace Gambit
           electrons.erase(keptElectronsEnd, electrons.end());
         }
 
+        /// Alias to allow non-const particle vectors
         inline void applyLooseIDElectronSelectionR2(std::vector<HEPUtils::Particle*>& electrons) {
           applyLooseIDElectronSelectionR2(reinterpret_cast<std::vector<const HEPUtils::Particle*>&>(electrons));
         }
 
+        /// Efficiency function for Loose ID electrons
+        /// @note Numbers digitised from Fig 3 of 13 TeV note (ATL-PHYS-PUB-2015-041)
         inline void applyMediumIDElectronSelectionR2(std::vector<const HEPUtils::Particle*>& electrons) {
           if (electrons.empty()) return;
 
@@ -367,10 +411,13 @@ namespace Gambit
           electrons.erase(keptElectronsEnd, electrons.end());
         }
 
+        /// Alias to allow non-const particle vectors
         inline void applyMediumIDElectronSelectionR2(std::vector<HEPUtils::Particle*>& electrons) {
           applyMediumIDElectronSelectionR2(reinterpret_cast<std::vector<const HEPUtils::Particle*>&>(electrons));
         }
 
+        /// Efficiency function for Medium ID electrons
+        /// @note Numbers digitised from 8 TeV note (ATLAS-CONF-2014-032)
         inline void applyMediumIDElectronSelection(std::vector<const HEPUtils::Particle*>& electrons) {
           if (electrons.empty()) return;
 
@@ -419,6 +466,8 @@ namespace Gambit
           const static HEPUtils::BinnedFn1D<double> _eff_E80 = {binedges_E80, binvalues_E80};
 
           // Now loop over the electrons and only keep those that pass the random efficiency cut
+          /// @note No delete is necessary, because this should only ever be applied to a copy of the Event Particle* vectors
+          /// @todo This is an exact duplication of the below filtering code -- split into a single util fn (in unnamed namespace?) when binned fns are static
           auto keptElectronsEnd = std::remove_if(electrons.begin(), electrons.end(),
                                              [](const HEPUtils::Particle* electron) {
                                                const double e_pt = electron->pT();
@@ -440,11 +489,14 @@ namespace Gambit
         }
 
 
+        /// Alias to allow non-const particle vectors
         inline void applyMediumIDElectronSelection(std::vector<HEPUtils::Particle*>& electrons) {
           applyMediumIDElectronSelection(reinterpret_cast<std::vector<const HEPUtils::Particle*>&>(electrons));
         }
 
 
+        /// Efficiency function for Tight ID electrons
+        /// @note Numbers digitised from 8 TeV note (ATLAS-CONF-2014-032)
         inline void applyTightIDElectronSelection(std::vector<const HEPUtils::Particle*>& electrons) {
 
           const static std::vector<double> binedges_E10_15 = {0., 0.0485903, 0.458914, 1.10009, 1.46117, 1.78881, 2.27013, 2.5};
@@ -492,6 +544,8 @@ namespace Gambit
           const static HEPUtils::BinnedFn1D<double> _eff_E80 = {binedges_E80, binvalues_E80};
 
           // Now loop over the electrons and only keep those that pass the random efficiency cut
+          /// @note No delete is necessary, because this should only ever be applied to a copy of the Event Particle* vectors
+          /// @todo This is an exact duplication of the above filtering code -- split into a single util fn (in unnamed namespace?) when binned fns are static
           auto keptElectronsEnd = std::remove_if(electrons.begin(), electrons.end(),
                                              [](const HEPUtils::Particle* electron) {
                                                const double e_pt = electron->pT();
@@ -513,11 +567,14 @@ namespace Gambit
         }
 
 
+        /// Alias to allow non-const particle vectors
         inline void applyTightIDElectronSelection(std::vector<HEPUtils::Particle*>& electrons) {
           applyTightIDElectronSelection(reinterpret_cast<std::vector<const HEPUtils::Particle*>&>(electrons));
         }
 
 
+        /// Electron 2019 ID efficiency functions from https://arxiv.org/pdf/1902.04655.pdf
+        /// @note These efficiencies are 1D efficiencies so only pT is used
         inline void applyElectronIDEfficiency2019(std::vector<const HEPUtils::Particle*>& electrons, str operating_point)
         {
 
@@ -544,6 +601,8 @@ namespace Gambit
 
         }
 
+        /// Electron 2019 Isolation efficiency functions from https://arxiv.org/pdf/1902.04655.pdf
+        /// @note These efficiencies are 1D efficiencies so only pT is used
         inline void applyElectronIsolationEfficiency2019(std::vector<const HEPUtils::Particle*>& electrons, str operating_point)
         {
 
@@ -573,6 +632,7 @@ namespace Gambit
         }
 
 
+        ///@}
 
       }
    }
@@ -582,4 +642,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:37 +0000
+Updated on 2022-08-02 at 23:34:54 +0000

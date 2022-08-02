@@ -85,6 +85,19 @@ REGISTER_ELEM(__multi_functions__, typeid(__VA_ARGS__), name<__VA_ARGS__>)
 ```
 //  GAMBIT: Global and Modular BSM Inference Tool
 //  *********************************************
+///  \file
+///
+///  test functions implementations.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Gregory Martinez
+///          (gregory.david.martinez@gmail.com)
+///  \date Feb 2014
+///
+///  *********************************************
 
 #ifndef __plugin_factory_hpp__
 #define __plugin_factory_hpp__
@@ -132,6 +145,7 @@ namespace Gambit
         template <typename T>
         class Multi_Scanner_Plugin_Function;
 
+        /// Objective functor made up a single plugin.
         template <typename ret, typename... args>
         class Scanner_Plugin_Function<ret (args...)> : public Plugins::Plugin_Interface<ret (args...)>, public Function_Base<ret (args...)>
         {
@@ -164,6 +178,7 @@ namespace Gambit
             }
         };
 
+        /// Objective functor made up of multiple plugins.
         template <typename ret, typename... args>
         class Multi_Scanner_Plugin_Function <ret (args...)> : public Function_Base<ret (args...)>
         {
@@ -208,6 +223,7 @@ namespace Gambit
         LOAD_FUNC_TEMPLATE(Scanner_Plugin_Function, std::vector<double> (std::unordered_map<std::string, double> &));
         LOAD_MULTI_FUNC_TEMPLATE(Multi_Scanner_Plugin_Function, double(std::unordered_map<std::string, double> &));
 
+        /// Factory class to make objectives using objective plugins.
         class Plugin_Function_Factory : public Factory_Base
         {
         private:
@@ -267,4 +283,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:36 +0000
+Updated on 2022-08-02 at 23:34:53 +0000

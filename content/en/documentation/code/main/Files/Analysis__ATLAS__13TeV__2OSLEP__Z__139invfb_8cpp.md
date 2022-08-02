@@ -31,7 +31,10 @@ description: "[No description available]"
 ## Source code
 
 ```
-
+///
+///  \author Tomas Gonzalo
+///  \date 2019 June
+///  *********************************************
 
 // Based on https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2019-016/
 
@@ -477,6 +480,7 @@ namespace Gambit
         }
       }
 
+      /// Combine the variables of another copy of this analysis (typically on another thread) into this one.
       void combine(const Analysis* other)
       {
         const Analysis_ATLAS_13TeV_2OSLEP_Z_139invfb* specificOther
@@ -527,4 +531,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:37 +0000
+Updated on 2022-08-02 at 23:34:54 +0000

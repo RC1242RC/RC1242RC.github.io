@@ -121,6 +121,24 @@ Backend variable macro for Mathematica.
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Macros for creating Mathematica functions and
+///  sending and receiving packets through WSTP
+///
+///  *********************************************
+///
+///  Authos (add name and date if you modify):
+///
+///  \author Tomas Gonzalo
+///          (t.e.gonzalo@fys.uio.no)
+///  \date 2016 Oct
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)
+///  \date 2017 Dec
+///
+///  *********************************************
 
 #ifndef __MATHEMATICA_MACROS_HPP__
 #define __MATHEMATICA_MACROS_HPP__
@@ -130,6 +148,7 @@ Backend variable macro for Mathematica.
 #include "gambit/Backends/mathematica_function.hpp"
 #include "gambit/Backends/mathematica_variable.hpp"
 
+/// Backend function macro for mathematica
 #define BE_FUNCTION_I_MATH(NAME, TYPE, ARGLIST, SYMBOLNAME, CAPABILITY, MODELS)               \
 namespace Gambit                                                                              \
 {                                                                                             \
@@ -156,6 +175,7 @@ namespace Gambit                                                                
   }                                                                                           \
 }
 
+/// Backend variable macro for Mathematica
 #define BE_VARIABLE_I_MATH(NAME, TYPE, SYMBOLNAME, CAPABILITY, MODELS)                        \
 namespace Gambit                                                                              \
 {                                                                                             \
@@ -176,4 +196,4 @@ namespace Gambit                                                                
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:41 +0000
+Updated on 2022-08-02 at 23:34:51 +0000

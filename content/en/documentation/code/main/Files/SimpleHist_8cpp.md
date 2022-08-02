@@ -46,6 +46,20 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Implementation file for DarkBit SimpleHist
+///  types.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Lars A. Dal
+///          (l.a.dal@fys.uio.no)
+///  \date 2015 Feb
+///
+///  *********************************************
 
 #include "gambit/Elements/gambit_module_headers.hpp"
 #include "gambit/DarkBit/DarkBit_rollcall.hpp"
@@ -268,4 +282,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:37 +0000
+Updated on 2022-08-02 at 23:34:54 +0000

@@ -46,6 +46,18 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  GAMBIT backend info object accessor function.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///   
+///  \author Pat Scott
+///  \date 2014 Aug
+///
+///  *********************************************
 
 #ifndef __backend_singleton_hpp__
 #define __backend_singleton_hpp__
@@ -59,6 +71,7 @@ namespace Gambit
   namespace Backends
   {
 
+    /// Backend info accessor function
     backend_info& backendInfo();
 
   }
@@ -72,4 +85,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:41 +0000
+Updated on 2022-08-02 at 23:34:50 +0000

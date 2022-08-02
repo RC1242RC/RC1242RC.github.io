@@ -51,6 +51,21 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //  *********************************************
+///  \file
+///
+///  BuckFast smearing functions.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Andy Buckley
+///  \author Abram Krislock
+///  \author Anders Kvellestad
+///  \author Pat Scott
+///  \author Martin White
+///
+///  *********************************************
 
 #include "gambit/ColliderBit/detectors/BuckFast.hpp"
 
@@ -60,12 +75,15 @@ namespace Gambit
   namespace ColliderBit
   {
 
+    /// Process an event with BuckFast
     void BuckFast::processEvent(HEPUtils::Event& event) const
     {
       // Electron smearing
+      /// @todo Run-dependence?
       if (smearElectronEnergy != NULL) smearElectronEnergy(event.electrons());
 
       // Muon smearing
+      /// @todo Run-dependence?
       if (smearMuonMomentum != NULL) smearMuonMomentum(event.muons());
 
       // Smear taus
@@ -89,4 +107,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:38 +0000
+Updated on 2022-08-02 at 23:34:49 +0000

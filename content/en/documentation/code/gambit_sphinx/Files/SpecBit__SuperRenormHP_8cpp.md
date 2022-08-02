@@ -41,6 +41,22 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Functions of module SpecBit
+///
+///  SpecBit module functions related to the
+///  super-renormalizable Higgs portal model.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Inigo Saez Casares
+///          (inigo.saez_casares@ens-paris-saclay.fr)
+///    \date 2020 March
+///
+///  *********************************************
 
 // TODO: Temporarily disabled until project is ready
 /*
@@ -66,6 +82,7 @@ namespace Gambit
   {
     using namespace LogTags;
 
+    /// Get a (simple) Spectrum object wrapper for the SuperRenormHP model
     void get_SuperRenormHP_spectrum(Spectrum& result)
     {
       namespace myPipe = Pipes::get_SuperRenormHP_spectrum;
@@ -104,4 +121,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:48 +0000

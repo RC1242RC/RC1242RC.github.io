@@ -86,6 +86,18 @@ Authors (add name and sate if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Frontend for SUSYHD.
+///
+///  *********************************************
+///
+///  Authors (add name and sate if you modify):
+///
+///  \author Tomas Gonzalo
+///  \date 2016 Dec
+///
+///  *********************************************
 
 #define BACKENDNAME SUSYHD
 #define BACKENDLANG MATHEMATICA
@@ -114,4 +126,4 @@ BE_INI_DEPENDENCY(unimproved_MSSM_spectrum, Spectrum)
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:48 +0000
+Updated on 2022-08-02 at 23:34:58 +0000

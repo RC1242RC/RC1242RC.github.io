@@ -293,6 +293,7 @@ static constexpr const char* detector = "ATLAS";
             std::vector<const Jet*>* bJets,
             std::vector<const Jet*>* lightJets)
       {
+    /// @note We assume that b jets have previously been 100% tagged
     const std::vector<double> a = {0, 10.};
     const std::vector<double> b = {0, 10000.};
     const std::vector<double> c = {0.60};
@@ -312,12 +313,19 @@ static constexpr const char* detector = "ATLAS";
       }
 
 
+      /**
+       * The constructor that should initialize some variables
+       */
 Analysis_ATLAS_7TeV_1OR2LEPStop_4_7invfb()
       {
     set_analysis_name("ATLAS_7TeV_1OR2LEPStop_4_7invfb");
     set_luminosity(4.7);
       }
 
+      /**
+       * Performs the main part of the analysis
+       * @param event an event contain particle and jet information
+       */
       void run(const HEPUtils::Event* event)
       {
     // TODO: take log of plots and constrain the plot range
@@ -510,6 +518,12 @@ Analysis_ATLAS_7TeV_1OR2LEPStop_4_7invfb()
       }
       }
 
+/**
+       * Adds results from other threads if OMP_NUM_THREAD != 1
+       * @param other results from another thread
+       */
+
+      /// Combine the variables of another copy of this analysis (typically on another thread) into this one.
 void combine(const Analysis* other)
 {
   const Analysis_ATLAS_7TeV_1OR2LEPStop_4_7invfb* specificOther = dynamic_cast<const Analysis_ATLAS_7TeV_1OR2LEPStop_4_7invfb*>(other);
@@ -601,4 +615,4 @@ DEFINE_ANALYSIS_FACTORY(ATLAS_7TeV_1OR2LEPStop_4_7invfb)
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:38 +0000
+Updated on 2022-08-02 at 23:34:49 +0000

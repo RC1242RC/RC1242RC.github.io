@@ -52,6 +52,20 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Definitions of types
+///  for the HiggsBounds backend.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Christopher Rogan
+///          (crogan@cern.ch)
+///  \date 2015 Apr
+///
+///  *********************************************
 
 #ifndef __HiggsBounds_types_hpp__
 #define __HiggsBounds_types_hpp__
@@ -152,4 +166,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:41 +0000
+Updated on 2022-08-02 at 23:34:50 +0000

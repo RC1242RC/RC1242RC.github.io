@@ -73,6 +73,43 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Type definition header for module CosmoBit.
+///
+///  Compile-time registration of type definitions
+///  required for the rest of the code to
+///  communicate with CosmoBit.
+///
+///  Add to this if you want to define a new type
+///  for the functions in CosmoBit to return, but
+///  you don't expect that type to be needed by
+///  any other modules.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Patrick Stoecker
+///          (stoecker@physik.rwth-aachen.de)
+///  \date 2017 Nov
+///  \date 2018 May
+///  \date 2021 Sep
+///
+///  \author Janina Renk
+///          (janina.renk@fysik.su.se)
+///  \date 2018 Oct
+///  \date 2019 Mar
+///
+///  \author Sebastian Hoof
+///          (hoof@uni-goettingen.de)
+///  \date 2020 Mar
+///
+///  \author Pat Scott
+///          (pat.scott@uq.edu.au)
+///  \date 2020 Apr
+///
+///  *********************************************
 
 
 #ifndef __CosmoBit_types_hpp__
@@ -265,12 +302,19 @@ namespace Gambit
       }
     };
 
+    /// Class containing the primordial power spectrum.
+    /// Members:
+    /// - vector of modes k (1/Mpc)
+    /// - scalar power spectrum of these modes P_s(k) (dimensionless)
+    /// - tensor power spectrum of these modes P_t(k) (dimensionless)
+    /// - scalar power spectrum of isocurvature modes P_s_iso(k) (dimensionless)
     class Primordial_ps
     {
         public:
             Primordial_ps() {};
             ~Primordial_ps() {};
 
+            /// Fill k from an array of doubles
             void set_N_pivot(double npiv) { N_pivot = npiv; }
             void fill_k(double*, int);
             void fill_P_s(double*, int);
@@ -290,9 +334,15 @@ namespace Gambit
             std::vector<double> P_s;
             std::vector<double> P_s_iso;
             std::vector<double> P_t;
+            /// needed to pass vector length to CLASS; set in 'fill_k' method
             int vec_size;
     };
 
+    /// Class containing the *parametrised* primordial power spectrum.
+    /// Members:
+    /// - spectral tilt n_s
+    /// - amplitude of scalar perturbations A_s [as ln(10^{10}A_s)]
+    /// - scalar to tensor ratio r
     class Parametrised_ps
     {
         public:
@@ -309,6 +359,7 @@ namespace Gambit
             double get_ln10A_s() { return ln10A_s; }
             double get_r() { return r; }
 
+            /// return members as str to double map for printing
             map_str_dbl get_parametrised_ps_map();
 
         private:
@@ -326,4 +377,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:37 +0000
+Updated on 2022-08-02 at 23:34:54 +0000

@@ -47,6 +47,14 @@ namespace Gambit {
     using namespace HEPUtils;
 
 
+    /// @brief ATLAS Run 2 0-lepton jet+MET SUSY analysis, with 13/fb of data
+    ///
+    /// Based on:
+    ///   https://cds.cern.ch/record/2206252
+    ///   https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2016-078/
+    ///
+    /// Recursive jigsaw reconstruction signal regions are currently not included
+    ///
     class Analysis_ATLAS_13TeV_0LEP_13invfb : public Analysis {
     public:
 
@@ -106,6 +114,7 @@ namespace Gambit {
 
 
         // Get baseline jets
+        /// @todo Drop b-tag if pT < 50 GeV or |eta| > 2.5?
         vector<const Jet*> baselineJets;
         for (const Jet* jet : event->jets())
           if (jet->pT() > 20. && jet->abseta() < 2.8) {
@@ -140,12 +149,14 @@ namespace Gambit {
         //  - Loose electron selection
 
         // Remove any |eta| < 2.8 jet within dR = 0.2 of an electron
+        /// @todo Unless b-tagged (and pT > 50 && abseta < 2.5)
         vector<const Jet*> signalJets;
         for (const Jet* j : baselineJets)
           if (all_of(baselineElectrons, [&](const Particle* e){ return deltaR_rap(*e, *j) > 0.2; }))
             signalJets.push_back(j);
 
         // Remove electrons with dR = 0.4 of surviving |eta| < 2.8 jets
+        /// @todo Actually only within 0.2--0.4...
         vector<const Particle*> signalElectrons;
         for (const Particle* e : baselineElectrons)
           if (all_of(signalJets, [&](const Jet* j){ return deltaR_rap(*e, *j) > 0.4; }))
@@ -154,6 +165,8 @@ namespace Gambit {
         ATLAS::applyLooseIDElectronSelectionR2(signalElectrons);
 
         // Remove muons with dR = 0.4 of surviving |eta| < 2.8 jets
+        /// @todo Actually only within 0.2--0.4...
+        /// @note Within 0.2, discard the *jet* based on jet track vs. muon criteria... can't be done here
         vector<const Particle*> signalMuons;
         for (const Particle* m : baselineMuons)
           if (all_of(signalJets, [&](const Jet* j){ return deltaR_rap(*m, *j) > 0.4; }))
@@ -165,6 +178,7 @@ namespace Gambit {
           if (j->pT() > 50) signalJets50.push_back(j);
 
 
+        ////////////////////////////////
         // Calculate common variables and cuts
 
         // Multiplicities
@@ -234,6 +248,7 @@ namespace Gambit {
         const double aplanarity = 1.5 * mineigenvalue;
 
 
+        ////////////////////////////////
         // Fill signal regions
 
         const bool leptonCut = (nElectrons == 0 && nMuons == 0);
@@ -298,6 +313,7 @@ namespace Gambit {
         }
       }
 
+      /// Combine the variables of another copy of this analysis (typically on another thread) into this one.
       void combine(const Analysis* other)
       {
         const Analysis_ATLAS_13TeV_0LEP_13invfb* specificOther = dynamic_cast<const Analysis_ATLAS_13TeV_0LEP_13invfb*>(other);
@@ -305,6 +321,7 @@ namespace Gambit {
       }
 
 
+      /// Register results objects with the results for each SR; obs & bkg numbers from the CONF note
       void collect_results() {
         add_result(SignalRegionData(_counters.at("2j-0800"), 650, {610., 50.}));
         add_result(SignalRegionData(_counters.at("2j-1200"), 270, {297., 29.}));
@@ -345,4 +362,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:37 +0000
+Updated on 2022-08-02 at 23:34:54 +0000

@@ -84,6 +84,21 @@ scanner_plugin(
 ```
 //  GAMBIT: Global and Modular BSM Inference Tool
 //  *********************************************
+///  \file
+///
+///  ScannerBit interface to Minuit2
+///
+///  Header file
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Andrew Fowlie
+///          (andrew.j.fowlie@qq.com)
+///  \date 2020 August
+///
+///  *********************************************
 
 #ifdef WITH_MPI
 #include "gambit/Utils/begin_ignore_warnings_mpi.hpp"
@@ -106,6 +121,7 @@ scanner_plugin(
 #include "Math/Functor.h"
 
 
+/** @brief Check that a yaml node does not contain unexpected keys */
 void check_node_keys(YAML::Node node, std::vector<std::string> keys)
 {
   if (node)
@@ -121,6 +137,7 @@ void check_node_keys(YAML::Node node, std::vector<std::string> keys)
   }
 }
 
+/** @brief Get a particular key from a node */
 double get_node_value(YAML::Node node, std::string key, double default_)
 {
   if (node && node[key])
@@ -381,4 +398,4 @@ scanner_plugin(minuit2, version(6, 23, 01))
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:45 +0000
+Updated on 2022-08-02 at 23:34:55 +0000

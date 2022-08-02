@@ -94,6 +94,21 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Frontend for MicrOmegas DiracSingletDM_Z2 backend
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+/// \author Jonathan Cornell
+/// \date May 2015, April 2017
+///
+/// \author Ankit Beniwal
+/// \date Oct 2016, Jun 2017
+///
+///  *********************************************
 
 #define BACKENDNAME MicrOmegas_DiracSingletDM_Z2
 #define BACKENDLANG CC
@@ -116,4 +131,4 @@ BE_INI_DEPENDENCY(DiracSingletDM_Z2_spectrum, Spectrum)
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:50 +0000

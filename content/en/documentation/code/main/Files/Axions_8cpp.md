@@ -74,7 +74,27 @@ Authors (add name and date if you modify):
 ## Source code
 
 ```
-
+///  GAMBIT: Global and Modular BSM Inference Tool
+///  *********************************************
+///  \file
+///
+///  Axion-specific module functions for DarkBit.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Sebastian Hoof
+///          (hoof@uni-goettingen.de)
+///  \date 2016 Oct
+///  \date 2017 Jan, Feb, June, July, Sept - Dec
+///  \date 2018 Jan, Mar - May, Sept
+///  \date 2019 Feb, May - July
+///  \date 2020 Sept, Dec
+///  \date 2021 Jan
+///  \date 2022 May
+///
+///  *********************************************
 
 #include <algorithm>
 #include <cmath>
@@ -115,14 +135,24 @@ namespace Gambit
 {
   namespace DarkBit
   {
+    ////////////////////////////////////////////////////////////////////
     //                                                                //
     //            General Functions and Classes for Axions            //
     //                                                                //
+    ////////////////////////////////////////////////////////////////////
+
+    /*! \brief Supporting classes and functions for the axion module.
+     */
 
      const double gagg_conversion = 1.0E-9;
      const double gaee_conversion = 1.0E+13;
 
+    /////////////////////////////////////////////////////////////////
     //      Auxillary functions and classes for interpolation      //
+    /////////////////////////////////////////////////////////////////
+
+    /*! \brief Generic one-dimensional integration container for linear interpolation and cubic splines.
+     */
 
     enum class InterpolationOptions1D { linear, cspline };
     const std::map<InterpolationOptions1D, std::string> int_type_name = { { InterpolationOptions1D::linear, "linear" }, { InterpolationOptions1D::cspline, "cspline"} };
@@ -237,6 +267,9 @@ namespace Gambit
     double AxionInterpolator::lower() { return lo; }
     double AxionInterpolator::upper() { return up; }
 
+
+    /*! \brief Two-dimensional integration container for bilinear interpolation and bicubic splines.
+     */
 
      enum class InterpolationOptions2D { bilinear, bicubic };
      const std::map<InterpolationOptions2D, std::string> int_2d_type_name = { { InterpolationOptions2D::bilinear, "bilinear" }, { InterpolationOptions2D::bicubic, "bicubic"} };
@@ -388,6 +421,9 @@ namespace Gambit
     // Routine to check if a point is inside the interpolating box.
     bool AxionInterpolator2D::is_inside_box(double x, double y) { return ((x >= x_lo) && (x <= x_up) && (y >= y_lo) && (y <= y_up)); }
 
+     /*! \brief H.E.S.S.-likelihood-related interpolation routines.
+     */
+
     // Auxillary function for a parabola (needed for H.E.S.S. likelihood approximation).
     double parabola(double x, const double params[]) { return params[0]*x*x + params[1]*x + params[2]; }
 
@@ -529,7 +565,9 @@ namespace Gambit
     }
 
 
+    /////////////////////////////////////////////////////////////////////////////////////////////////
     //      Solar model and integration routines to calculate the expected Helioscope signals      //
+    /////////////////////////////////////////////////////////////////////////////////////////////////
 
     // SolarModel class: Provides a container to store a (tabulated) Solar model and functions to return its properties.
     class SolarModel
@@ -1095,11 +1133,20 @@ namespace Gambit
     // Use simplified version of Gaussian likelihood from GAMBIT Utils.
     double gaussian_nuisance_lnL(double theo, double obs, double sigma) { return Stats::gaussian_loglikelihood(theo, obs, 0, sigma, false); }
 
+    ////////////////////////////////////////////////////////
     //                                                    //
     //            Miscellaneous Theory Results            //
     //                                                    //
+    ////////////////////////////////////////////////////////
 
+    /*! \brief Various capabilities and functions to provide SM physics as well as QCD input for axions.
+     *
+     * Supported models: QCDAxion
+     */
+
+    ////////////////////////////////////////////////////////
     //      Effective relatvistic degrees of freedom      //
+    ////////////////////////////////////////////////////////
 
     // Function to provide the effective relativistic degrees of freedom (for the Standard Model).
     double gStar(double T)
@@ -1141,7 +1188,9 @@ namespace Gambit
       return res;
     }
 
+    ///////////////////////////////////////
     //      QCD-axion mass relation      //
+    ///////////////////////////////////////
 
     // Capability function to provide a simple Gaussian nuisance likelihood for
     // the zero-termperature mass of QCD axions.
@@ -1199,11 +1248,20 @@ namespace Gambit
        result = dummy;
      }
 
+    /////////////////////////////////////////////
     //                                         //
     //            Axion Experiments            //
     //                                         //
+    /////////////////////////////////////////////
 
+    /*! \brief Likelihoods for ALPS 1 (LSW), CAST (helioscopes), and ADMX, UF, RBF (haloscopes).
+     *
+     * Supported models: GeneralALP
+     */
+
+    /////////////////////////////////
     //      ALPS 1 experiment      //
+    /////////////////////////////////
 
     // Generic functions to calculate the expected signal per frame(!) for any data run.
     // Input: laser power, gas coefficient nm1 = n-1; result in no. of photons.
@@ -1285,7 +1343,9 @@ namespace Gambit
       result = l1 + l2 + l3;
     }
 
+    //////////////////////////////////////////////////
     //      CAST experiment (vacuum runs only)      //
+    //////////////////////////////////////////////////
 
     // Calculates the signal prediction for the CAST experiment (CCD detector 2004).
     void calc_CAST2007_signal_vac(std::vector<double> &result)
@@ -1455,7 +1515,9 @@ namespace Gambit
       result = result - norm;
     }
 
+    /////////////////////////////////////////////
     //      Various haloscope experiments      //
+    /////////////////////////////////////////////
 
     // Capability to provide generic haloscope "signal" prediction.
     // All current haloscope likelihoods are approximated. We only need the predicted signal power up to a constant of proportionality.
@@ -1473,6 +1535,9 @@ namespace Gambit
 
       result = s;
     }
+
+    /*! Approximated likelihood for the AxionDarkMatterEXperiment (ADMX).
+    */
 
     // ADMX approximated likelihood function for data from publications from 1998 to 2009.
     void calc_lnL_Haloscope_ADMX1(double &result)
@@ -1606,11 +1671,20 @@ namespace Gambit
       result = l;
     }
 
+    ///////////////////////////////////////////
     //                                       //
     //            Axion Cosmology            //
     //                                       //
+    ///////////////////////////////////////////
 
+    /*! \brief Capabilities relating to axion cosmology. Currently only provides the energy density in axions today due to the realignment mechanism.
+     *
+     * Supported models: GeneralALP
+     */
+
+    //////////////////////////////////////////////////////////
     //      Energy density in realignment axions today      //
+    //////////////////////////////////////////////////////////
 
     /* Some auxillary functions for solving the  necessary differential equations
      */
@@ -1857,11 +1931,20 @@ namespace Gambit
       }
     }
 
+    //////////////////////////////////////////////
     //                                          //
     //            Axion Astrophysics            //
     //                                          //
+    //////////////////////////////////////////////
 
+    /*! \brief Capabilities relating to astrophysical observations (R-parameter, H.E.S.S. telescope search, cooling hints).
+     *
+     * Supported models: GeneralALP
+     */
+
+     ///////////////////////////
      //      R-parameter      //
+     ///////////////////////////
 
      // Capability function to calculate the R-parameter (1512.08108).
      // Based and extending on Refs [11, 12, 13, 75] and 10.3204/DESY-PROC-2015-02/straniero_oscar in 1512.08108 .
@@ -1905,7 +1988,9 @@ namespace Gambit
        result = -0.5*gsl_pow_2(Rtheo - Robs)/(RobsErr*RobsErr+YobsErrContrib*YobsErrContrib);
      }
 
+    /////////////////////////////////////////
     //      White Dwarf cooling hints      //
+    /////////////////////////////////////////
 
     // White Dwarf interpolator class
     class WDInterpolator
@@ -2045,7 +2130,9 @@ namespace Gambit
       result = -0.5 * gsl_pow_2(obs - pred) / (obs_err2 + err2);
     }
 
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     //      SN 1987A limits (from axion-photon conversion in the B-field of the Milky Way or axion-photon decay)      //
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     // Capability function to calculate the likelihood for SN 1987A (based on data from 25 to 100 MeV photons, interpreted
     // by Chupp et al., Phys. Rev. Lett. 62, 505 (1989). Use 10 sec of data for conversion and 223 sec for decay.
@@ -2066,7 +2153,9 @@ namespace Gambit
       result = -0.5*ratio*ratio;
     }
 
+    //////////////////////////////////////////////////////////////////////////////////////////////////////
     //      SN 1987A photon fluence (from axion-photon conversion in the B-field of the Milky Way)      //
+    //////////////////////////////////////////////////////////////////////////////////////////////////////
 
     // Capability function to calculate the photon fluence from SN 1987A as a result of axion-photon
     // conversion in the B-field of the Milky Way (based on arXiv:1410.3747).
@@ -2080,7 +2169,9 @@ namespace Gambit
       if (m > 1.0) { result = result*pow(m, -4.021046); }
     }
 
+    ////////////////////////////////////////////////////////////////////////
     //       SN 1987A photon fluence (from axion decay into photons)      //
+    ////////////////////////////////////////////////////////////////////////
 
     // Capability function to calculate the photon fluence from SN 1987A as a result of axion decay.
     // Based on MC simulations by Marie Lecroq & Sebastian Hoof (following arXiv:1702.02964).
@@ -2097,7 +2188,9 @@ namespace Gambit
       if (fluence.is_inside_box(lgm,lgg)) { result = fluence.interpolate(lgm,lgg); };
     }
 
+    //////////////////////////////////////////////////////////////////
     //      Spectral distortions (H.E.S.S. telescope searches)      //
+    //////////////////////////////////////////////////////////////////
 
     // Calculate the likelihood for H.E.S.S. data assuming conversion in the galaxy cluster magnetic field (GCMF, "Conservative" limits, 1311.3148).
     void calc_lnL_HESS_GCMF (double &result)
@@ -2118,6 +2211,11 @@ namespace Gambit
       result = interp.lnL(epsilon, gamma);
     }
 
+    /**
+     * @brief Capability for the XENON1T likelihood from 2006.10035
+     *
+     * The signal model consists of 3 components: Primakoff, ABC, and Fe57.
+     */
     void calc_lnL_XENON1T_Anomaly(double &result)
     {
       using namespace Pipes::calc_lnL_XENON1T_Anomaly;
@@ -2328,4 +2426,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:37 +0000
+Updated on 2022-08-02 at 23:34:54 +0000

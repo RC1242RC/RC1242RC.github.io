@@ -54,6 +54,23 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Helper utilities for FlavBit
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Marcin Chrzaszcz
+///          (mchrzasz@cern.ch)
+///  \date 2016 August
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)
+///  \date 2017 Mar
+///
+///  *********************************************
 
 #ifndef __flav_utils_hpp__
 #define __flav_utils_hpp__
@@ -68,6 +85,7 @@ namespace Gambit
   namespace FlavBit
   {
 
+    /// Matrix inversion routine using Boost
     template<class T>
     bool InvertMatrix (const ublas::matrix<T>& input, ublas::matrix<T>& inverse)
     {
@@ -102,4 +120,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:48 +0000

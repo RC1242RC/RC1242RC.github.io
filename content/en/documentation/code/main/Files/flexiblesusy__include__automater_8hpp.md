@@ -59,7 +59,33 @@ We need to decide if we are going to do anything by checking whether GAMBIT was 
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  This file is part of a trick to perform
+///  tedious includes of FlexibleSUSY headers
+///  required to use particular models.
+///
+///  It doesn't have include guards on purpose,
+///  because in order to use it one has to include
+///  it several times, with model name macros 
+///  defined differently.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Ben Farmer
+///          (ben.farmer@gmail.com)
+///    \date 2015 Jan
+///  
+///  *********************************************
 
+/// We need to decide if we are going to do anything
+/// by checking whether GAMBIT was in fact configured
+/// to build FlexibleSUSY with whatever model is
+/// defined in MODELNAME. Fortunately there is a
+/// preprocessor variable defined by CMake which lists
+/// these for us.
 
 #define BUILD_THIS CAT_3(FS_MODEL_,MODELNAME,_IS_BUILT) 
 #if(BUILD_THIS) // If the model wasn't built then don't try to include any of these files!
@@ -84,4 +110,4 @@ MAKE_INTERFACE
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:36 +0000
+Updated on 2022-08-02 at 23:34:53 +0000

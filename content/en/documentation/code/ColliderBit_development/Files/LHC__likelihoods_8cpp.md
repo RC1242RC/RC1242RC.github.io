@@ -79,6 +79,39 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  ColliderBit LHC signal and likelihood functions.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Abram Krislock
+///          (a.m.b.krislock@fys.uio.no)
+///
+///  \author Aldo Saavedra
+///
+///  \author Andy Buckley
+///
+///  \author Chris Rogan
+///          (crogan@cern.ch)
+///  \date 2014 Aug
+///  \date 2015 May
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)
+///  \date 2015 Jul
+///  \date 2018 Jan
+///  \date 2019 Jan
+///
+///  \author Anders Kvellestad
+///          (anders.kvellestad@fys.uio.no)
+///  \date   2017 March
+///  \date   2018 Jan
+///  \date   2018 May
+///
+///  *********************************************
 
 #include <string>
 #include <sstream>
@@ -107,6 +140,7 @@ namespace Gambit
   {
 
 
+    /// Loop over all analyses and fill a map of predicted counts
     void calc_LHC_signals(map_str_dbl& result)
     {
       using namespace Pipes::calc_LHC_signals;
@@ -144,6 +178,9 @@ namespace Gambit
 
 
 
+    /// Loglike objective-function wrapper to provide the signature for GSL multimin
+    ///
+    /// @note Doesn't return a full log-like: the factorial term is missing since it's expensive, fixed and cancels in DLLs
     void _gsl_calc_Analysis_MinusLogLike(const size_t n, const double* unit_nuisances_dbl,
                                          void* fixedparamspack, double* fval)
     {
@@ -169,6 +206,7 @@ namespace Gambit
         loglike_tot += pnorm_j;
 
         // Then the Poisson bit (j = SR)
+        /// @note We've dropped the log(n_obs!) terms, since they're expensive and cancel in computing DLL
         const double lambda_j = std::max(n_preds(j), 1e-3); //< manually avoid <= 0 rates
         const double logfact_n_obs = 0; // gsl_sf_lngamma(n_obss(j) + 1); //< skipping log(n_obs!) computation
         const double loglike_j = n_obss(j)*log(lambda_j) - lambda_j - logfact_n_obs;
@@ -181,6 +219,7 @@ namespace Gambit
     }
 
 
+    /// Loglike gradient-function wrapper to provide the signature for GSL multimin
     void _gsl_calc_Analysis_MinusLogLikeGrad(const size_t n, const double* unit_nuisances_dbl,
                                              void* fixedparamspack, double* fgrad)
     {
@@ -243,6 +282,9 @@ namespace Gambit
     }
 
 
+    /// Return the best log likelihood
+    /// @note Return value is missing the log(n_obs!) terms (n_SR of them) which cancel in LLR calculation
+    /// @todo Pass in the cov, and compute the fixed evals, evecs, and corr matrix as fixed params in here? Via a helper function to reduce duplication
     double profile_loglike_cov(const Eigen::ArrayXd& n_preds,
                                const Eigen::ArrayXd& n_obss,
                                const Eigen::ArrayXd& sqrtevals,
@@ -395,10 +437,17 @@ namespace Gambit
         logfact_n_obss(j) = gsl_sf_lngamma(n_obss(j) + 1);
 
       // Check absolute difference between independent estimates
+      /// @todo Should also implement a check of relative difference
       while ((diff_abs > CONVERGENCE_TOLERANCE_ABS && diff_rel > CONVERGENCE_TOLERANCE_REL) || 1.0/sqrt(nsample) > CONVERGENCE_TOLERANCE_ABS)
       {
         long double lsum = 0;
 
+        /// @note How to correct negative rates? Discard (scales badly), set to
+        /// epsilon (= discontinuous & unphysical pdf), transform to log-space
+        /// (distorts the pdf quite badly), or something else (skew term)?
+        /// We're using the "set to epsilon" version for now.
+        /// Ben: I would vote for 'discard'. It can't be that inefficient, surely?
+        /// Andy: For a lot of signal regions, the probability of none having a negative sample is Prod_SR p(non-negative)_SR... which *can* get bad.
 
         #pragma omp parallel
         {
@@ -473,6 +522,8 @@ namespace Gambit
     }
 
 
+    /// For a given analysis, calculate per-SR loglikes and the overall analysis loglike.
+    /// Return the results as an AnalysLogLikes object.
     AnalysisLogLikes calc_loglikes_for_analysis(const AnalysisData& adata, bool USE_COVAR, bool USE_MARG,
                                                 bool combine_nocovar_SRs, bool set_zero_loglike=false)
     {
@@ -559,12 +610,25 @@ namespace Gambit
       double ana_dll = NAN;
       if (USE_COVAR && has_covar)
       {
+        /// If (simplified) SR-correlation info is available, so use the
+        /// covariance matrix to construct composite marginalised likelihood
+        /// Despite initial thoughts, we can't just do independent LL
+        /// calculations in a rotated basis, but have to sample from the
+        /// covariance matrix.
+        ///
+        /// @note This means we can't use the nulike LL functions, which
+        /// operate in 1D only.  Also, log-normal sampling in the diagonal
+        /// basis is not helpful, since the rotation will re-generate negative
+        /// rates.
+        ///
+        /// @todo Support NSL, i.e. skewness correction
         #ifdef COLLIDERBIT_DEBUG
         cout << DEBUG_PREFIX << "calc_LHC_LogLikes: Analysis " << analysis << " has a covariance matrix: computing composite loglike." << endl;
         #endif
 
 
         // Construct vectors of SR numbers
+        /// @todo Unify this for both cov and no-cov, feeding in one-element Eigen blocks as Ref<>s for the latter?
         Eigen::ArrayXd n_obs(nSR); // logfact_n_obs(nSR);
         Eigen::ArrayXd n_pred_b(nSR), n_pred_sb(nSR), abs_unc_s(nSR);
         for (size_t SR = 0; SR < nSR; ++SR)
@@ -588,6 +652,7 @@ namespace Gambit
         }
 
         // Diagonalise the background-only covariance matrix, extracting the correlation and rotation matrices
+        /// @todo Compute the background-only covariance decomposition and likelihood only once
         const Eigen::MatrixXd& srcov_b = adata.srcov;
         Eigen::MatrixXd srcorr_b = srcov_b; // start with cov, then make corr
         for (size_t SR = 0; SR < nSR; ++SR)
@@ -620,6 +685,7 @@ namespace Gambit
         // cout << "SB: " << srcorr_sb << " " << srcov_sb << endl;
 
         // Compute the single, correlated analysis-level DLL as the difference of s+b and b (partial) LLs
+        /// @todo Only compute this once per run
         const double ll_b = marg_prof_fn(n_pred_b, n_obs, sqrtEb, Vb);
         const double ll_sb = marg_prof_fn(n_pred_sb, n_obs, sqrtEsb, Vsb);
         const double dll = ll_sb - ll_b;
@@ -690,6 +756,7 @@ namespace Gambit
  
 
           // Construct dummy 1-element Eigen objects for passing to the general likelihood calculator
+          /// @todo Use newer (?) one-step Eigen constructors for (const) single-element arrays
           Eigen::ArrayXd n_obss(1);        n_obss(0) = n_obs;
           Eigen::ArrayXd n_preds_b_int(1); n_preds_b_int(0) = n_pred_b_int;
           Eigen::ArrayXd n_preds_b(1);     n_preds_b(0) = n_pred_b;
@@ -700,7 +767,10 @@ namespace Gambit
 
 
           // Compute this SR's DLLs as the differences of s+b and b (partial) LLs
+          /// @todo Or compute all the exp DLLs first, then only the best-expected SR's obs DLL?
+          /// @todo Only compute this once per run
           const double ll_b_exp = marg_prof_fn(n_preds_b, n_preds_b_int, sqrtevals_b, dummy);
+          /// @todo Only compute this once per run
           const double ll_b_obs = marg_prof_fn(n_preds_b, n_obss, sqrtevals_b, dummy);
           const double ll_sb_exp = marg_prof_fn(n_preds_sb, n_preds_b_int, sqrtevals_sb, dummy);
           const double ll_sb_obs = marg_prof_fn(n_preds_sb, n_obss, sqrtevals_sb, dummy);
@@ -804,6 +874,7 @@ namespace Gambit
     }
 
 
+    /// Loop over all analyses and fill a map of AnalysisLogLikes objects
     void calc_LHC_LogLikes(map_str_AnalysisLogLikes& result)
     {
       // Read options
@@ -866,6 +937,7 @@ namespace Gambit
 
 
 
+    /// Extract the combined log likelihood for each analysis
     void get_LHC_LogLike_per_analysis(map_str_dbl& result)
     {
       using namespace Pipes::get_LHC_LogLike_per_analysis;
@@ -886,6 +958,7 @@ namespace Gambit
     }
 
 
+    /// Extract the log likelihood for each SR
     void get_LHC_LogLike_per_SR(map_str_dbl& result)
     {
       using namespace Pipes::get_LHC_LogLike_per_SR;
@@ -920,6 +993,7 @@ namespace Gambit
     }
 
 
+    /// Extract the labels for the SRs used in the analysis loglikes
     void get_LHC_LogLike_SR_labels(map_str_str& result)
     {
       using namespace Pipes::get_LHC_LogLike_per_SR;
@@ -933,6 +1007,8 @@ namespace Gambit
     }
 
 
+    /// Extract the indices for the SRs used in the analysis loglikes
+    /// @todo Switch result type to map_str_int once we have implemented a printer for this type
     void get_LHC_LogLike_SR_indices(map_str_dbl& result)
     {
       using namespace Pipes::get_LHC_LogLike_per_SR;
@@ -954,6 +1030,7 @@ namespace Gambit
     }
 
 
+    /// Compute the total likelihood combining all analyses
     void calc_combined_LHC_LogLike(double& result)
     {
       using namespace Pipes::calc_combined_LHC_LogLike;
@@ -1051,6 +1128,8 @@ namespace Gambit
     }
 
 
+    /// A dummy log-likelihood that helps the scanner track a given 
+    /// range of collider log-likelihood values
     void calc_LHC_LogLike_scan_guide(double& result)
     {
       using namespace Pipes::calc_LHC_LogLike_scan_guide;
@@ -1082,4 +1161,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:38 +0000
+Updated on 2022-08-02 at 23:34:49 +0000

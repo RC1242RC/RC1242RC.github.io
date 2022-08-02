@@ -3,9 +3,8 @@ title: "Pages"
 
 menu:
   documentation:
-    parent: GAMBIT_VERSION_HERE
-identifier: "GAMBIT_VERSION_HEREPages"
-weight: 40
+    parent: 
+    identifier: "Pages" weight: 40
 ---
 
 
@@ -16,4 +15,4 @@ weight: 40
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:41 +0000
+Updated on 2022-08-02 at 23:34:51 +0000

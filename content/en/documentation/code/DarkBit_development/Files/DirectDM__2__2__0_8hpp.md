@@ -95,6 +95,24 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Frontend header for the DirectDM backend.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Sanjay Bloor
+///          (sanjay.bloor12@imperial.ac.uk)
+///  \date 2018 Sep, Oct
+///  \date 2020 Mar
+///
+///  \author Markus Prim
+///          (markus.prim@cern.ch)
+///  \date 2020 Dec
+///
+///  *********************************************
 
 #define BACKENDNAME DirectDM
 #define BACKENDLANG Python
@@ -120,4 +138,4 @@ LOAD_LIBRARY
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:48 +0000
+Updated on 2022-08-02 at 23:34:58 +0000

@@ -357,6 +357,7 @@ namespace Gambit {
 
       }
 
+      /// Combine the variables of another copy of this analysis (typically on another thread) into this one.
       void combine(const Analysis* other)
       {
         const Analysis_ATLAS_8TeV_0LEP_20invfb* specificOther
@@ -423,6 +424,7 @@ namespace Gambit {
       }
 
 
+      ///////////////////
 
 
       double SmallestdPhi(vector<const HEPUtils::Jet*> jets,double phi_met) {
@@ -471,4 +473,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:46 +0000
+Updated on 2022-08-02 at 23:34:57 +0000

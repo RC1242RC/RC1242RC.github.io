@@ -51,6 +51,29 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Frontend source for the exoclassy backend.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Janina Renk
+///          (janina.renk@fysik.su.se)
+///  \date 2019 June
+///
+///  \author Sanjay Bloor
+///          (sanjay.bloor12@imperial.ac.uk)
+///  \date 2019 June
+///
+///  \author Patrick Stoecker
+///          (stoecker@physik.rwth-aachen.de)
+///  \date 2019 July
+///  \date 2020 January
+///  \date 2021 January, March
+///
+///  *********************************************
 
 #include "gambit/Backends/frontend_macros.hpp"
 #include "gambit/Backends/frontends/classy_exo_2_7_2.hpp"
@@ -85,6 +108,8 @@ Authors (add name and date if you modify):
       return backendDir;
     }
 
+    /// test if two dictionaries contain exactly the same values for all keys
+    /// return true if so, false if there is at least one different value
     bool compare_dicts(pybind11::dict classy_input, pybind11::dict prev_input_dict)
     {
       for (auto it : classy_input)
@@ -103,6 +128,9 @@ Authors (add name and date if you modify):
       return true;
     }
 
+    /// routine to check class input for consistency. If a case is not treated here class will
+    ///  throw an error saying that one input parameter was not read. Checking for some specific cases
+    /// here allows us to give more informative error messages and fix suggestions
     void class_input_consistency_checks(pybind11::dict classy_input)
     {
 
@@ -547,4 +575,4 @@ END_BE_INI_FUNCTION
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:56 +0000

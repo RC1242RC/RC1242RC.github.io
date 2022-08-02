@@ -34,7 +34,10 @@ description: "[No description available]"
 ## Source code
 
 ```
-
+///
+///  \author Yang Zhang
+///  \date 2019 May
+///  *********************************************
 
 // Based on http://cdsweb.cern.ch/record/2668387/files/ATLAS-CONF-2019-008.pdf
 // Search for electroweak production of charginos and sleptons decaying in final states with two leptons and missing transverse momentum in √s = 13 TeV p p collisions using the ATLAS detector
@@ -405,6 +408,7 @@ namespace Gambit
 
       }
 
+      /// Combine the variables of another copy of this analysis (typically on another thread) into this one.
       void combine(const Analysis* other)
       {
         const Analysis_ATLAS_13TeV_2OSLEP_chargino_139invfb* specificOther
@@ -566,4 +570,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:37 +0000
+Updated on 2022-08-02 at 23:34:54 +0000

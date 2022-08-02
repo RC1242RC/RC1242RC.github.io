@@ -44,6 +44,17 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Andrew Fowlie
+///          (andrew.j.fowlie@qq.com)
+///  \date 2019 February
+///
+///  ********************************************
 
 
 #include "gambit/ColliderBit/limits/ImageLimit.hpp"
@@ -107,4 +118,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:40 +0000
+Updated on 2022-08-02 at 23:34:50 +0000

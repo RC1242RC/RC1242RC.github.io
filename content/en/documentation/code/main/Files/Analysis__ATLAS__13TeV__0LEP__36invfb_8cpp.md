@@ -49,6 +49,18 @@ namespace Gambit {
     using namespace HEPUtils;
 
 
+    /// @brief ATLAS Run 2 0-lepton jet+MET SUSY analysis, with 36/fb of data
+    ///
+    /// Recursive jigsaw reconstruction signal regions are currently not included
+    /// Boosted signal regions not currently used.
+    ///
+    /// Yang Zhang Feb 2020: For SR-3j-1300, SR-5j-1600, SR-5j-1700 and SR-6j-1200,
+    /// the cuts of signal regions are different to those of cut-flows.
+    /// We use the cuts described in Tab.2 of the paper
+    /// https://arxiv.org/pdf/1712.02332.pdf
+    /// for the signal regions, and use the cuts described in
+    /// https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-2016-07/tabaux_006.png
+    /// for cut-flows.
 
     class Analysis_ATLAS_13TeV_0LEP_36invfb : public Analysis {
     public:
@@ -134,6 +146,7 @@ namespace Gambit {
         const double met = event->met();
 
         // Get baseline jets
+        /// @todo Drop b-tag if pT < 50 GeV or |eta| > 2.5?
         vector<const Jet*> baselineJets;
         for (const Jet* jet : event->jets())
           if (jet->pT() > 20. && jet->abseta() < 2.8) {
@@ -168,12 +181,14 @@ namespace Gambit {
         //  - Loose electron selection
 
         // Remove any |eta| < 2.8 jet within dR = 0.2 of an electron
+        /// @todo Unless b-tagged (and pT > 50 && abseta < 2.5)
         vector<const Jet*> signalJets;
         for (const Jet* j : baselineJets)
           if (all_of(baselineElectrons, [&](const Particle* e){ return deltaR_rap(*e, *j) > 0.2; }))
             signalJets.push_back(j);
 
         // Remove electrons with dR = 0.4 of surviving |eta| < 2.8 jets
+        /// @todo Actually only within 0.2--0.4...
         vector<const Particle*> signalElectrons;
         for (const Particle* e : baselineElectrons)
           if (all_of(signalJets, [&](const Jet* j){ return deltaR_rap(*e, *j) > 0.4; }))
@@ -182,6 +197,8 @@ namespace Gambit {
         ATLAS::applyLooseIDElectronSelectionR2(signalElectrons);
 
         // Remove muons with dR = 0.4 of surviving |eta| < 2.8 jets
+        /// @todo Actually only within 0.2--0.4...
+        /// @note Within 0.2, discard the *jet* based on jet track vs. muon criteria... can't be done here
         vector<const Particle*> signalMuons;
         for (const Particle* m : baselineMuons)
           if (all_of(signalJets, [&](const Jet* j){ return deltaR_rap(*m, *j) > 0.4; }))
@@ -199,6 +216,7 @@ namespace Gambit {
         }
 
 
+        ////////////////////////////////
         // Calculate common variables and cuts
 
         // Multiplicities
@@ -291,6 +309,7 @@ namespace Gambit {
         } else pTjetOne = -1.0;
         */
 
+        ////////////////////////////////
         // Fill signal regions
 
 
@@ -419,6 +438,7 @@ namespace Gambit {
         }
       }
 
+      /// Combine the variables of another copy of this analysis (typically on another thread) into this one.
       void combine(const Analysis* other)
       {
         const Analysis_ATLAS_13TeV_0LEP_36invfb* specificOther = dynamic_cast<const Analysis_ATLAS_13TeV_0LEP_36invfb*>(other);
@@ -426,6 +446,7 @@ namespace Gambit {
       }
 
 
+      /// Register results objects with the results for each SR; obs & bkg numbers from the CONF note
       void collect_results() {
         add_result(SignalRegionData(_counters.at("2j-1200"), 611, {526., 31.}));
         add_result(SignalRegionData(_counters.at("2j-1600"), 216, {228., 19.}));
@@ -478,4 +499,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:37 +0000
+Updated on 2022-08-02 at 23:34:54 +0000

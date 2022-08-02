@@ -241,6 +241,65 @@ HEPLike single-observable likelihood.
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Functions of module FlavBit
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Nazila Mahmoudi
+///  \date 2013 Oct
+///  \date 2014
+///  \date 2015 Feb
+///  \date 2016 Jul
+///  \date 2018 Jan
+///  \date 2019 Aug
+///
+///  \author Marcin Chrzaszcz
+///  \date 2015 May
+///  \date 2015 July
+///  \date 2015 August
+///  \date 2016 July
+///  \date 2016 August
+///  \date 2016 October
+///  \date 2018 Jan
+///  \date 2020 Jan
+///  \date 2020 Feb
+///  \date 2020 May
+///
+///  \author Anders Kvellestad
+///          (anders.kvellestad@fys.uio.no)
+///  \date 2013 Nov
+///
+///  \author Pat Scott
+///          (pat.scott@uq.edu.au)
+///  \date 2015 May, June
+///  \date 2016 Aug
+///  \date 2017 March
+///  \date 2019 Oct
+///  \date 2020 Feb
+///
+///  \author Tomas Gonzalo
+///          (t.e.gonzalo@fys.uio.no)
+///  \date 2017 July
+///
+///  \author Jihyun Bhom
+///          (jihyun.bhom@ifj.edu.pl)
+///  \date 2019 July
+///  \date 2019 Nov
+///  \date 2019 Dec
+///  \date 2020 Jan
+///  \date 2020 Feb
+///
+///  \author Markus Prim
+///          (markus.prim@kit.edu)
+///  \date 2019 Aug
+///  \date 2019 Nov
+///  \date 2020 Jan
+///
+///  *********************************************
 
 #include <string>
 #include <iostream>
@@ -264,6 +323,7 @@ HEPLike single-observable likelihood.
 namespace YAML
 {
   template<>
+  /// YAML conversion structure for SuperIso SM nuisance data
   struct convert<Gambit::nuiscorr>
   {
     static Node encode(const Gambit::nuiscorr& rhs)
@@ -312,13 +372,16 @@ namespace Gambit
       false;
     #endif
 
+    /// FlavBit observable name translator
     Utils::translator translate_flav_obs(GAMBIT_DIR "/FlavBit/data/observables_key.yaml");
 
+    /// Some constants used in SuperIso likelihoods
     const int ncorrnuis = 463;
     const nuiscorr (&nuiscorr_help(nuiscorr (&arr)[ncorrnuis], const std::vector<nuiscorr>& v))[ncorrnuis] { std::copy(v.begin(), v.end(), arr); return arr; }
     nuiscorr arr[ncorrnuis];
     const nuiscorr (&corrnuis)[ncorrnuis] = nuiscorr_help(arr, YAML::LoadFile(GAMBIT_DIR "/FlavBit/data/SM_nuisance_correlations.yaml")["correlation_matrix"].as<std::vector<nuiscorr>>());
 
+    /// Print function for FlavBit predictions
     void print(flav_prediction prediction , vector<std::string > names)
     {
       for(unsigned i=0; i<names.size(); i++)
@@ -337,6 +400,7 @@ namespace Gambit
       }
     }
 
+    /// Translate B->K*ll observables from theory to LHCb convention
     void Kstarll_Theory2Experiment_translation(flav_observable_map& prediction, int generation)
     {
       // Only works for ll = ee and ll = mumu
@@ -354,6 +418,7 @@ namespace Gambit
       }
     }
 
+    /// Translate B->K*ll covariances from theory to LHCb convention
     void Kstarll_Theory2Experiment_translation(flav_covariance_map& prediction, int generation)
     {
       // Only works for ll = ee and ll = mumu
@@ -390,6 +455,7 @@ namespace Gambit
       }
     }
 
+    /// Find the path to the latest installed version of the HepLike data
     str path_to_latest_heplike_data()
     {
       std::vector<str> working_data = Backends::backendInfo().working_versions("HepLikeData");
@@ -398,6 +464,7 @@ namespace Gambit
       return Backends::backendInfo().corrected_path("HepLikeData", working_data.back());
     }
 
+    /// Fill SuperIso model info structure
     void SuperIso_fill(parameters &result)
     {
       using namespace Pipes::SuperIso_fill;
@@ -931,6 +998,7 @@ namespace Gambit
       if (flav_debug) cout<<"Finished SuperIso_fill"<<endl;
     }
 
+    /// Fill SuperIso nuisance structure
     void SuperIso_nuisance_fill(nuisance &nuislist)
     {
       using namespace Pipes::SuperIso_nuisance_fill;
@@ -947,6 +1015,7 @@ namespace Gambit
       if (flav_debug) cout<<"Finished SuperIso_nuisance_fill"<<endl;
     }
 
+    /// Reorder a FlavBit observables list to match ordering expected by HEPLike
     void update_obs_list(std::vector<str>& obs_list, const std::vector<str>& HL_obs_list)
     {
       std::vector<str> FB_obs_list = translate_flav_obs("HEPLike", "FlavBit", HL_obs_list);
@@ -961,6 +1030,7 @@ namespace Gambit
       obs_list = temp;
     }
 
+    /// Extract central values of the given observables from the central value map.
     std::vector<double> get_obs_theory(const flav_prediction& prediction, const std::vector<std::string>& observables)
     {
       if(flav_debug) std::cout<<"In get_obs_theory() function"<<std::endl;
@@ -974,6 +1044,7 @@ namespace Gambit
       return obs_theory;
     };
 
+    /// Extract covariance matrix of the given observables from the covariance map.
     boost::numeric::ublas::matrix<double> get_obs_covariance(const flav_prediction& prediction, const std::vector<std::string>& observables)
     {
       boost::numeric::ublas::matrix<double> obs_covariance(observables.size(), observables.size());
@@ -987,6 +1058,7 @@ namespace Gambit
       return obs_covariance;
     };
 
+    /// Helper function to avoid code duplication.
     void SuperIso_prediction_helper(const std::vector<std::string>& FB_obslist, const std::vector<std::string>& SI_obslist, flav_prediction& result,
                                     const parameters& param, const nuisance& nuislist,
                                     void (*get_predictions_nuisance)(char**, int*, double**, const parameters*, const nuisance*),
@@ -1258,6 +1330,7 @@ namespace Gambit
     #undef SI_MULTI_PREDICTION_FUNCTION_BINS
 
 
+    /// Br B->tau nu_tau decays
     void SuperIso_prediction_Btaunu(double &result)
     {
       using namespace Pipes::SuperIso_prediction_Btaunu;
@@ -1271,6 +1344,7 @@ namespace Gambit
     }
 
 
+    /// Br B->D_s tau nu
     void SuperIso_prediction_Dstaunu(double &result)
     {
       using namespace Pipes::SuperIso_prediction_Dstaunu;
@@ -1284,6 +1358,7 @@ namespace Gambit
     }
 
 
+    /// Br B->D_s mu nu
     void SuperIso_prediction_Dsmunu(double &result)
     {
       using namespace Pipes::SuperIso_prediction_Dsmunu;
@@ -1297,6 +1372,7 @@ namespace Gambit
     }
 
 
+    /// Br D -> mu nu
     void SuperIso_prediction_Dmunu(double &result)
     {
       using namespace Pipes::SuperIso_prediction_Dmunu;
@@ -1310,6 +1386,7 @@ namespace Gambit
     }
 
 
+    /// Br B -> D tau nu
     void SuperIso_prediction_BDtaunu(double &result)
     {
       using namespace Pipes::SuperIso_prediction_BDtaunu;
@@ -1331,6 +1408,7 @@ namespace Gambit
     }
 
 
+    /// Br B -> D mu nu
     void SuperIso_prediction_BDmunu(double &result)
     {
       using namespace Pipes::SuperIso_prediction_BDmunu;
@@ -1352,6 +1430,7 @@ namespace Gambit
     }
 
 
+    /// Br B -> D* tau nu
     void SuperIso_prediction_BDstartaunu(double &result)
     {
       using namespace Pipes::SuperIso_prediction_BDstartaunu;
@@ -1373,6 +1452,7 @@ namespace Gambit
     }
 
 
+    /// Br B -> D* mu nu
     void SuperIso_prediction_BDstarmunu(double &result)
     {
       using namespace Pipes::SuperIso_prediction_BDstarmunu;
@@ -1394,6 +1474,7 @@ namespace Gambit
     }
 
 
+    ///  B-> D tau nu / B-> D e nu decays
     void SuperIso_prediction_RD(double &result)
     {
       using namespace Pipes::SuperIso_prediction_RD;
@@ -1407,6 +1488,7 @@ namespace Gambit
     }
 
 
+    ///  B->D* tau nu / B-> D* e nu decays
     void SuperIso_prediction_RDstar(double &result)
     {
       using namespace Pipes::SuperIso_prediction_RDstar;
@@ -1420,6 +1502,7 @@ namespace Gambit
     }
 
 
+    /// B->K mu nu / B-> pi mu nu
     void SuperIso_prediction_Rmu(double &result)
     {
       using namespace Pipes::SuperIso_prediction_Rmu;
@@ -1433,6 +1516,7 @@ namespace Gambit
     }
 
 
+    /// 2-to-3-body decay ratio for semileptonic K and pi decays
     void SuperIso_prediction_Rmu23(double &result)
     {
       using namespace Pipes::SuperIso_prediction_Rmu23;
@@ -1446,6 +1530,7 @@ namespace Gambit
     }
 
 
+    /// Delta_0 (CP-averaged isospin asymmetry of B -> K* gamma)
     void SuperIso_prediction_delta0(double &result)
     {
       using namespace Pipes::SuperIso_prediction_delta0;
@@ -1459,6 +1544,7 @@ namespace Gambit
     }
 
 
+    /// Zero crossing of the forward-backward asymmetry of B -> X_s mu mu
     void SuperIso_prediction_A_BXsmumu_zero(double &result)
     {
       using namespace Pipes::SuperIso_prediction_A_BXsmumu_zero;
@@ -1472,6 +1558,7 @@ namespace Gambit
     }
 
 
+    /// Inclusive branching fraction B -> X_s tau tau at high q^2
     void SuperIso_prediction_BRBXstautau_highq2(double &result)
     {
       using namespace Pipes::SuperIso_prediction_BRBXstautau_highq2;
@@ -1485,6 +1572,7 @@ namespace Gambit
     }
 
 
+    /// Forward-backward asymmetry of B -> X_s tau tau at high q^2
     void SuperIso_prediction_A_BXstautau_highq2(double &result)
     {
       using namespace Pipes::SuperIso_prediction_A_BXstautau_highq2;
@@ -1569,6 +1657,7 @@ namespace Gambit
 
     }
 
+    /// RK for RHN
     void RHN_RK(double &result)
     {
       using namespace Pipes::RHN_RK;
@@ -1603,6 +1692,7 @@ namespace Gambit
       if (flav_debug) cout << "Finished RHN_RK" << endl;
     }
 
+    /// Isospin asymmetry of B-> K* mu mu
     void SuperIso_prediction_AI_BKstarmumu(double &result)
     {
       using namespace Pipes::SuperIso_prediction_AI_BKstarmumu;
@@ -1616,6 +1706,7 @@ namespace Gambit
     }
 
 
+    /// Zero crossing of isospin asymmetry of B-> K* mu mu
     void SuperIso_prediction_AI_BKstarmumu_zero(double &result)
     {
       using namespace Pipes::SuperIso_prediction_AI_BKstarmumu_zero;
@@ -1630,6 +1721,7 @@ namespace Gambit
     }
 
 
+    /// Flavour observables from FeynHiggs: B_s mass asymmetry, Br B_s -> mu mu, Br B -> X_s gamma
     void FeynHiggs_FlavourObs(fh_FlavourObs_container &result)
     {
       using namespace Pipes::FeynHiggs_FlavourObs;
@@ -1661,6 +1753,8 @@ namespace Gambit
     }
 
 
+    ///These functions extract observables from a FeynHiggs flavour result
+    ///@{
     void FeynHiggs_prediction_bsgamma(double &result)
     {
       result = Pipes::FeynHiggs_prediction_bsgamma::Dep::FlavourObs->Bsg_MSSM;
@@ -1673,7 +1767,9 @@ namespace Gambit
     {
       result = Pipes::FeynHiggs_prediction_DeltaMs::Dep::FlavourObs->deltaMs_MSSM;
     }
+    ///@}
 
+    /// Likelihood for Delta Ms
     void deltaMB_likelihood(double &result)
     {
       using namespace Pipes::deltaMB_likelihood;
@@ -1703,11 +1799,13 @@ namespace Gambit
       double theory_DeltaMs_err = th_err * (th_err_absolute ? 1.0 : std::abs(theory_prediction));
       if (flav_debug) cout<<"Theory prediction: "<<theory_prediction<<" +/- "<<theory_DeltaMs_err<<endl;
 
+      /// Option profile_systematics<bool>: Use likelihood version that has been profiled over systematic errors (default false)
       bool profile = runOptions->getValueOrDef<bool>(false, "profile_systematics");
 
       result = Stats::gaussian_loglikelihood(theory_prediction, exp_meas, theory_DeltaMs_err, exp_DeltaMs_err, profile);
     }
 
+    /// Measurements for tree-level leptonic and semileptonic B decays
     void SL_measurements(predictions_measurements_covariances &pmc)
     {
       using namespace Pipes::SL_measurements;
@@ -1804,6 +1902,7 @@ namespace Gambit
     }
 
 
+    /// Likelihood for tree-level leptonic and semileptonic B decays
     void SL_likelihood(double &result)
     {
       using namespace Pipes::SL_likelihood;
@@ -2297,6 +2396,7 @@ namespace Gambit
     }
 
 
+    /// Likelihood for l -> l gamma processes
     void l2lgamma_likelihood(double &result)
     {
       using namespace Pipes::l2lgamma_likelihood;
@@ -2344,6 +2444,7 @@ namespace Gambit
 
     }
 
+    /// Likelihood for l -> l l l processes
     void l2lll_likelihood(double &result)
     {
       using namespace Pipes::l2lll_likelihood;
@@ -2408,6 +2509,7 @@ namespace Gambit
 
     }
 
+    /// Likelihood for mu - e conversion in nuclei
     void mu2e_likelihood(double &result)
     {
       using namespace Pipes::mu2e_likelihood;
@@ -2457,6 +2559,7 @@ namespace Gambit
 
     }
 
+    /// HEPLike LogLikelihood RD RDstar
     // TODO: Recognised sub-capabilities:
     //    RD
     //    RDstar
@@ -2486,6 +2589,7 @@ namespace Gambit
       if (flav_debug) std::cout << "HEPLike_RDRDstar_LogLikelihood result: " << result << std::endl;
     }
 
+    /// HEPLike single-observable likelihood
     #define HEPLIKE_GAUSSIAN_1D_LIKELIHOOD(name, file)                            \
     void CAT_3(HEPLike_,name,_LogLikelihood)(double &result)                      \
     {                                                                             \
@@ -2515,6 +2619,10 @@ namespace Gambit
     HEPLIKE_GAUSSIAN_1D_LIKELIHOOD(B2Kstargamma, "/data/HFLAV_18/RD/B2Kstar_gamma_BR.yaml")
     HEPLIKE_GAUSSIAN_1D_LIKELIHOOD(B2taunu, "/data/PDG/Semileptonic/B2TauNu.yaml")
 
+    /// HEPLike LogLikelihood B -> ll (CMS)
+    /// Recognised sub-capabilities:
+    ///    BRuntag_Bsmumu
+    ///    BR_Bdmumu
     void HEPLike_B2mumu_LogLikelihood_CMS(double &result)
     {
       using namespace Pipes::HEPLike_B2mumu_LogLikelihood_CMS;
@@ -2539,6 +2647,10 @@ namespace Gambit
       if (flav_debug) std::cout << "HEPLike_B2mumu_LogLikelihood_CMS result: " << result << std::endl;
     }
 
+    /// HEPLike LogLikelihood B -> ll (ATLAS)
+    /// Recognised sub-capabilities:
+    ///    BRuntag_Bsmumu
+    ///    BR_Bdmumu
     void HEPLike_B2mumu_LogLikelihood_Atlas(double &result)
     {
       using namespace Pipes::HEPLike_B2mumu_LogLikelihood_Atlas;
@@ -2563,6 +2675,10 @@ namespace Gambit
       if (flav_debug) std::cout << "HEPLike_B2mumu_LogLikelihood_Atlas result: " << result << std::endl;
     }
 
+    /// HEPLike LogLikelihood B -> ll (LHCb)
+    /// Recognised sub-capabilities:
+    ///    BRuntag_Bsmumu
+    ///    BR_Bdmumu
     void HEPLike_B2mumu_LogLikelihood_LHCb(double &result)
     {
       using namespace Pipes::HEPLike_B2mumu_LogLikelihood_LHCb;
@@ -2587,6 +2703,14 @@ namespace Gambit
       if (flav_debug) std::cout << "HEPLike_B2mumu_LogLikelihood_LHCb result: " << result << std::endl;
     }
 
+    /// HEPLike LogLikelihood B -> K* mu mu Angluar (ATLAS)
+    /// Recognised sub-capabilities:
+    ///   FL
+    ///   S3
+    ///   S4
+    ///   S5
+    ///   S7
+    ///   S8
     void HEPLike_B2KstarmumuAng_LogLikelihood_Atlas(double &result)
     {
       using namespace Pipes::HEPLike_B2KstarmumuAng_LogLikelihood_Atlas;
@@ -2626,6 +2750,10 @@ namespace Gambit
       if (flav_debug) std::cout << "HEPLike_B2KstarmumuAng_LogLikelihood_Atlas result: " << result << std::endl;
     }
 
+    /// HEPLike LogLikelihood B -> K* mu mu Angular (CMS)
+    /// Recognised sub-capabilities:
+    ///   P1
+    ///   P5prime
     void HEPLike_B2KstarmumuAng_LogLikelihood_CMS(double &result)
     {
       using namespace Pipes::HEPLike_B2KstarmumuAng_LogLikelihood_CMS;
@@ -2675,6 +2803,10 @@ namespace Gambit
     }
 
 
+    /// HEPLike LogLikelihood B -> K* mu mu Angular (Belle)
+    /// Recognised sub-capabilities:
+    ///   P4prime
+    ///   P5prime
     void HEPLike_B2KstarmumuAng_LogLikelihood_Belle(double &result)
     {
       using namespace Pipes::HEPLike_B2KstarmumuAng_LogLikelihood_Belle;
@@ -2718,6 +2850,10 @@ namespace Gambit
       if (flav_debug) std::cout << "HEPLike_B2KstarmumuAng_LogLikelihood_Belle result: " << result << std::endl;
     }
 
+    /// HEPLike LogLikelihood B -> K* ell ell Angular (Belle)
+    /// Recognised sub-capabilities:
+    ///   P4prime
+    ///   P5prime
     void HEPLike_B2KstarellellAng_LogLikelihood_Belle(double &result)
     {
       using namespace Pipes::HEPLike_B2KstarellellAng_LogLikelihood_Belle;
@@ -2762,6 +2898,16 @@ namespace Gambit
       if (flav_debug) std::cout << "HEPLike_B2KstarellellAng_LogLikelihood_Belle result: " << result << std::endl;
     }
 
+    /// HEPLike LogLikelihood B -> K* mu mu Angular (LHCb)
+    /// Recognised sub-capabilities:
+    ///   FL
+    ///   AFB
+    ///   S3
+    ///   S4
+    ///   S5
+    ///   S7
+    ///   S8
+    ///   S9
     void HEPLike_B2KstarmumuAng_LogLikelihood_LHCb(double &result)
     {
       using namespace Pipes::HEPLike_B2KstarmumuAng_LogLikelihood_LHCb;
@@ -2808,6 +2954,16 @@ namespace Gambit
       if (flav_debug) std::cout << "HEPLike_B2KstarmumuAng_LogLikelihood_LHCb result: " << result << std::endl;
     }
 
+    /// HEPLike LogLikelihood B -> K* mu mu Angular (LHCb)
+    /// Recognised sub-capabilities:
+    ///   FL
+    ///   AFB
+    ///   S3
+    ///   S4
+    ///   S5
+    ///   S7
+    ///   S8
+    ///   S9
     void HEPLike_B2KstarmumuAng_LogLikelihood_LHCb_2020(double &result)
     {
       using namespace Pipes::HEPLike_B2KstarmumuAng_LogLikelihood_LHCb_2020;
@@ -2854,6 +3010,12 @@ namespace Gambit
       if (flav_debug) std::cout << "HEPLike_B2KstarmumuAng_LogLikelihood_LHCb 2020 result: " << result << std::endl;
     }
 
+    /// HEPLike LogLikelihood B -> K* e e Angular low q2 (LHCb)
+    /// Recognised sub-capabilities:
+    ///   FLee
+    ///   AT_Re
+    ///   AT_2
+    ///   AT_Im
     void HEPLike_B2KstareeAng_Lowq2_LogLikelihood_LHCb_2020(double &result)
     {
       using namespace Pipes::HEPLike_B2KstareeAng_Lowq2_LogLikelihood_LHCb_2020;
@@ -2883,6 +3045,16 @@ namespace Gambit
       if (flav_debug) std::cout << "HEPLike_B2KstareeAng_Lowq_LogLikelihood result: " << result << std::endl;
     }
 
+    /// HEPLike LogLikelihood Bu -> K*+ mu mu Angular (LHCb)
+    /// Recognised sub-capabilities:
+    ///   FL
+    ///   AFB
+    ///   S3
+    ///   S4
+    ///   S5
+    ///   S7
+    ///   S8
+    ///   S9
     void HEPLike_Bu2KstarmumuAng_LogLikelihood_LHCb_2020(double &result)
     {
       using namespace Pipes::HEPLike_Bu2KstarmumuAng_LogLikelihood_LHCb_2020;
@@ -2930,6 +3102,7 @@ namespace Gambit
       if (flav_debug) std::cout << "HEPLike_Bu2KstarmumuAng_LogLikelihood_LHCb 2020 result: " << result << std::endl;
     }
 
+    /// HEPLike LogLikelihood B -> K* mu mu Br (LHCb)
     void HEPLike_B2KstarmumuBr_LogLikelihood_LHCb(double &result)
     {
       using namespace Pipes::HEPLike_B2KstarmumuBr_LogLikelihood_LHCb;
@@ -2975,6 +3148,7 @@ namespace Gambit
       if (flav_debug) std::cout << "HEPLike_B2KstarmumuAng_LogLikelihood_LHCb result: " << result << std::endl;
     }
 
+    /// HEPLike LogLikelihood B -> K+ mu mu Br (LHCb)
     void HEPLike_B2KmumuBr_LogLikelihood_LHCb(double &result)
     {
       using namespace Pipes::HEPLike_B2KmumuBr_LogLikelihood_LHCb;
@@ -3131,4 +3305,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:37 +0000
+Updated on 2022-08-02 at 23:34:48 +0000

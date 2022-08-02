@@ -153,6 +153,50 @@ Defines functions to perform the DDCalc internal rate calculations, and extract 
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Routines for direct detection couplings and
+///  likelihoods.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Christopher Savage
+///          (chris@savage.name)
+///  \date 2014 Oct
+///  \date 2015 Jan, Feb, June
+///
+///  \author Jonathan Cornell
+///          (jcornell@ucsc.edu)
+///  \date 2015 Mar
+///
+///  \author Felix Kahlhoefer
+///          (felix.kahlhoefer@desy.de)
+///  \date 2016 August
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)
+///  \date 2015--2018
+///
+///  \author Sebastian Wild
+///          (sebastian.wild@desy.de)
+///  \date 2017 October, November
+///
+///  \author Ankit Beniwal
+///          (ankit.beniwal@adelaide.edu.au)
+///  \date 2018 August
+///
+///  \author Torsten Bringmann
+///          (torsten.bringmann@fys.uio.no)
+///  \date 2019 May
+///
+///  \author Sanjay Bloor
+///          (sanjay.bloor12@imperial.ac.uk)
+///  \date 2018 Sep
+///  \date 2020 Feb
+///
+///  *********************************************
 
 #include "gambit/Elements/gambit_module_headers.hpp"
 #include "gambit/DarkBit/DarkBit_rollcall.hpp"
@@ -162,10 +206,14 @@ namespace Gambit
   namespace DarkBit
   {
 
+    //////////////////////////////////////////////////////////////////////////
     //
     //                 Direct detection couplings
     //
+    //////////////////////////////////////////////////////////////////////////
 
+    /*! \brief Get direct detection couplings from initialized DarkSUSY 5.
+    */
     void DD_couplings_DarkSUSY_DS5(DM_nucleon_couplings &result)
     {
       using namespace Pipes::DD_couplings_DarkSUSY_DS5;
@@ -236,6 +284,7 @@ namespace Gambit
       // to set all four couplings.
       std::vector<double> DDcouplings=BEreq::get_DD_couplings();
       double factor =
+      /// Option rescale_couplings<double>: Rescaling factor for WIMP-nucleon couplings (default 1.)
       runOptions->getValueOrDef<double>(1., "rescale_couplings");
       result.gps = factor*DDcouplings[0];// *= factor;
       result.gns = factor*DDcouplings[1];// *= factor;
@@ -248,6 +297,8 @@ namespace Gambit
       logger() << LogTags::debug << " gna = " << result.gna << EOM;
     }
 
+    /*! \brief Get direct detection couplings from DarkSUSY 6 initialized with MSSM module.
+    */
     void DD_couplings_DarkSUSY_MSSM(DM_nucleon_couplings &result)
     {
       using namespace Pipes::DD_couplings_DarkSUSY_MSSM;
@@ -318,6 +369,7 @@ namespace Gambit
       // to set all four couplings.
       std::vector<double> DDcouplings=BEreq::get_DD_couplings();
       double factor =
+      /// Option rescale_couplings<double>: Rescaling factor for WIMP-nucleon couplings (default 1.)
       runOptions->getValueOrDef<double>(1., "rescale_couplings");
       result.gps = factor*DDcouplings[0];// *= factor;
       result.gns = factor*DDcouplings[1];// *= factor;
@@ -331,6 +383,8 @@ namespace Gambit
     }
 
 
+    /*! \brief Get direct detection couplings from initialized MicrOmegas.
+    */
     void DD_couplings_MicrOmegas(DM_nucleon_couplings &result)
     {
       using namespace Pipes::DD_couplings_MicrOmegas;
@@ -397,6 +451,7 @@ namespace Gambit
       logger() << LogTags::debug << " gna: " << result.gna << EOM;
     }
 
+    /// Simple calculator of the spin-independent WIMP-proton cross-section
     void sigma_SI_p_simple(double &result)
     {
       using namespace Pipes::sigma_SI_p_simple;
@@ -405,6 +460,7 @@ namespace Gambit
       result = gev2cm2/pi*pow(reduced_mass*gps,2.0);
     }
 
+    /// Simple calculator of the spin-independent WIMP-neutron cross-section
     void sigma_SI_n_simple(double &result)
     {
       using namespace Pipes::sigma_SI_n_simple;
@@ -413,6 +469,7 @@ namespace Gambit
       result = gev2cm2/pi*pow(reduced_mass*gns,2.0);
     }
 
+    /// Simple calculator of the spin-dependent WIMP-proton cross-section
     void sigma_SD_p_simple(double &result)
     {
       using namespace Pipes::sigma_SD_p_simple;
@@ -421,6 +478,7 @@ namespace Gambit
       result = 3.0*gev2cm2/pi*pow(reduced_mass*gpa,2.0);
     }
 
+    /// Simple calculator of the spin-dependent WIMP-neutron cross-section
     void sigma_SD_n_simple(double &result)
     {
       using namespace Pipes::sigma_SD_n_simple;
@@ -429,6 +487,9 @@ namespace Gambit
       result = 3.0*gev2cm2/pi*pow(reduced_mass*gna,2.0);
     }
 
+    /// Calculation of SI cross sections at a reference momentum q0
+    /// for the fermionic Higgs portal models
+    /// If required add equivalent function for spin-dependent cross section
     void sigma_SI_vnqn_FermionicHiggsPortal(map_intpair_dbl &result)
     {
       using namespace Pipes::sigma_SI_vnqn_FermionicHiggsPortal;
@@ -449,10 +510,15 @@ namespace Gambit
       result[std::make_pair(0,4)] =   0.0;
     }
 
+    /// Calculation of SD cross section at a reference momentum q0
+    /// for the fermionic Higgs portal models
     void sigma_SD_vnqn_FermionicHiggsPortal(map_intpair_dbl &result)
     {
       using namespace Pipes::sigma_SD_vnqn_FermionicHiggsPortal;
 
+      /// There is no SD contribution to fermionic Higgs portal models
+      /// So this is just set to 0 (or close enough)
+      /// Modify if needed
       result[std::make_pair(0,0)] =   0.0;
       result[std::make_pair(-2,0)] =  0.0;
       result[std::make_pair(2,0)] =   0.0;
@@ -462,6 +528,7 @@ namespace Gambit
       result[std::make_pair(0,4)] =   0.0;
     }
 
+    /// DDCalc initialisation.
 
     // Using spin-independent/spin-dependent interactions only
     void DDCalc_Couplings_WIMP_nucleon(DD_coupling_container &result)
@@ -479,10 +546,13 @@ namespace Gambit
       result.DD_nonrel_WCs = *Dep::DD_nonrel_WCs;
     }
 
+    //////////////////////////////////////////////////////////////////////////
     //
     //          Direct detection rate and likelihood routines
     //
+    //////////////////////////////////////////////////////////////////////////
 
+    /// Defines a prototypical DDCalc result extractor
     #define DDCALC_RESULT(EXPERIMENT, TYPE, NAME)                                  \
     void CAT_3(EXPERIMENT,_Get,NAME)(TYPE &result)                                 \
     {                                                                              \
@@ -509,6 +579,8 @@ namespace Gambit
         BEreq::CAT(DD_Bin,NAME)(BEreq::DD_Experiment(STRINGIFY(EXPERIMENT)),ibin)); } \
     }
 
+    /// Defines functions to perform the DDCalc internal rate calculations,
+    /// and extract the results and log likelihoods, for the designated experiment.
     #define DD_EX(EXPERIMENT)                                                      \
       /* Calculations */                                                           \
       void CAT(EXPERIMENT,_Calc)(bool &result)                                     \
@@ -565,4 +637,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:37 +0000
+Updated on 2022-08-02 at 23:34:48 +0000

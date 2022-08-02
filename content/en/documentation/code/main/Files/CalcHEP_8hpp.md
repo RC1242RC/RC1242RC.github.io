@@ -53,6 +53,19 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Helper types for CalcHEP backend.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Sanjay Bloor
+///          sanjay.bloor12@imperial.ac.uk
+///  \date 2017 May
+///
+///  *************************
 
 #ifndef __CalcHEP_types_hpp__
 #define __CalcHEP_types_hpp__
@@ -110,4 +123,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:38 +0000
+Updated on 2022-08-02 at 23:34:55 +0000

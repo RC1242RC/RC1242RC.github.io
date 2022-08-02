@@ -96,6 +96,26 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Frontend header for the Acropolis backend
+///
+///  Compile-time registration of available
+///  functions and variables from this backend.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Patrick Stoecker
+///          (stoecker@physik.rwth-aachen.de)
+///  \date 2021 Oct
+///
+///  \author Tomas Gonzalo
+///          (gonzalo@physik.rwth-aachen.de)
+///  \date 2021 Oct
+///
+///  *********************************************
 
 #define BACKENDNAME Acropolis
 #define BACKENDLANG Python3
@@ -119,4 +139,4 @@ LOAD_LIBRARY
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:41 +0000
+Updated on 2022-08-02 at 23:34:50 +0000

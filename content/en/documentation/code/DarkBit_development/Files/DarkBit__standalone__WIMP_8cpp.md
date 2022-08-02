@@ -195,6 +195,25 @@ DarkMatterConj_ID;
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Example of GAMBIT DarkBit standalone
+///  main program.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Christoph Weniger
+///  \date 2016 Feb
+///  \author Jonathan Cornell
+///  \date 2016 July
+///  \author Sebastian Wild
+///  \date 2016 Aug
+///  \date 2020
+///  \author Torsten Bringmann
+///
+///  *********************************************
 
 #include <iostream>
 #include <fstream>
@@ -304,16 +323,22 @@ namespace Gambit
       TH_Process process_dec1("phi1");
       TH_Process process_dec2("phi2");
 
+      ///////////////////////////////////////
       // Import particle masses and couplings
+      ///////////////////////////////////////
 
       #define addParticle(Name, Mass, spinX2)                                        \
         catalog.particleProperties.insert(std::pair<string, TH_ParticleProperty> \
         (Name , TH_ParticleProperty(Mass, spinX2)));
 
+        /// Option mWIMP<double>: WIMP mass in GeV (required)
         double mWIMP = *Dep::mwimp;
+        /// Option sv<double>: Cross-section in cm3/s (required)
         double sv = runOptions->getValue<double>("sv");
         double b = 0;  // defined as sv(v) = sv(v=0) + b*(sv=0)*v**2
+        /// Option brList<std::vector<double>>: List of branching ratios (required)
         auto brList = runOptions->getValue<std::vector<double>>("brList");
+        /// Option mWIMP<double>: WIMP mass in GeV (required)
         double mPhi = runOptions->getValueOrDef<double>(59.0, "mPhi");
 
         addParticle("gamma", 0.0, 2)
@@ -423,9 +448,13 @@ namespace Gambit
     void DD_couplings_WIMP(DM_nucleon_couplings& result)
     {
       using namespace Pipes::DD_couplings_WIMP;
+      /// Option gps<double>: gps (default 0)
       result.gps = runOptions->getValueOrDef<double>(0., "gps");
+      /// Option gns<double>: gns (default 0)
       result.gns = runOptions->getValueOrDef<double>(0., "gns");
+      /// Option gpa<double>: gpa (default 0)
       result.gpa = runOptions->getValueOrDef<double>(0., "gpa");
+      /// Option gna<double>: gna (default 0)
       result.gna = runOptions->getValueOrDef<double>(0., "gna");
     }
   }
@@ -1198,4 +1227,4 @@ int main(int argc, char* argv[])
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:46 +0000
+Updated on 2022-08-02 at 23:34:56 +0000

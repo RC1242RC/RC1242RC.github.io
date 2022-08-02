@@ -45,6 +45,10 @@ namespace Gambit {
     using namespace HEPUtils;
 
 
+    /// @brief CMS Run 2 monojet analysis (no W/Z region) with 36/fb of data
+    ///
+    /// @todo Add W/Z region with AKT8 jets and 2/1 n-subjettiness ratio cut
+    ///
     class Analysis_CMS_13TeV_MONOJET_36invfb : public Analysis {
     public:
 
@@ -152,6 +156,7 @@ namespace Gambit {
         }
       }
 
+      /// Combine the variables of another copy of this analysis (typically on another thread) into this one.
       void combine(const Analysis* other)
       {
         const Analysis_CMS_13TeV_MONOJET_36invfb* specificOther = dynamic_cast<const Analysis_CMS_13TeV_MONOJET_36invfb*>(other);
@@ -159,6 +164,7 @@ namespace Gambit {
       }
 
 
+      /// Register results objects with the results for each SR; obs & bkg numbers from the CONF note
       void collect_results() {
         //cout << _cutflow << endl;
 
@@ -217,6 +223,7 @@ namespace Gambit {
     protected:
       void analysis_specific_reset() {
         for (auto& pair : _counters) { pair.second.reset(); }
+        /// @todo Need to also clear/reset cutflow, but it currently has no method for that
       }
 
     };
@@ -233,4 +240,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:40 +0000
+Updated on 2022-08-02 at 23:34:49 +0000

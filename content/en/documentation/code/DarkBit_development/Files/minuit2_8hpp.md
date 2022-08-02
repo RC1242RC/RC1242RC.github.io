@@ -64,6 +64,21 @@ Authors (add name and date if you modify):
 ```
 //  GAMBIT: Global and Modular BSM Inference Tool
 //  *********************************************
+///  \file
+///
+///  ScannerBit interface to Minuit2
+///
+///  Header file
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Andrew Fowlie
+///          (andrew.j.fowlie@qq.com)
+///  \date 2020 August
+///
+///  *********************************************
 
 #ifndef __minuit2_hpp__
 #define __minuit2_hpp__
@@ -78,4 +93,4 @@ Authors (add name and date if you modify):
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:45 +0000
+Updated on 2022-08-02 at 23:34:55 +0000

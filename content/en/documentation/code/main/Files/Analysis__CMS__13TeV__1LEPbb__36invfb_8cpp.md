@@ -31,7 +31,11 @@ description: "[No description available]"
 ## Source code
 
 ```
-
+///
+///  \author Rose Kudzman-Blais
+///  \date 2017 May
+///
+///  *********************************************
 
 // Based on http://cms-results.web.cern.ch/cms-results/public-results/preliminary-results/SUS-16-043/index.html
 
@@ -314,6 +318,7 @@ namespace Gambit {
 
       }
 
+      /// Combine the variables of another copy of this analysis (typically on another thread) into this one.
       void combine(const Analysis* other)
       {
         const Analysis_CMS_13TeV_1LEPbb_36invfb* specificOther
@@ -359,4 +364,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:38 +0000
+Updated on 2022-08-02 at 23:34:54 +0000

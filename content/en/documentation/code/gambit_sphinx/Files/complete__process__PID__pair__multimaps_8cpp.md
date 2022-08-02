@@ -46,6 +46,22 @@ Authors (add name if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Source file for the function
+///  all_PID_pairs_to_process_codes(), which 
+///  returns a "reversed" version of the 
+///  all_process_codes_to_PID_pairs multimap
+///
+///  *********************************************
+///
+///  Authors (add name if you modify):
+///
+///  \author Anders Kvellestad
+///          (a.kvellestad@imperial.ac.uk)
+///  \date 2019 Sep
+///
+///  *********************************************
 
 #include "gambit/ColliderBit/complete_process_PID_pair_multimaps.hpp"
 
@@ -84,4 +100,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:40 +0000
+Updated on 2022-08-02 at 23:34:50 +0000

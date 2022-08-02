@@ -37,6 +37,7 @@ namespace Gambit {
                 100. + (y - 40.50) / (610.00 - 40.50) * (0. - 100.));
     }
 
+    /// @brief Check to see if the point is within the exclusion region
     bool L3SelectronLimitAt205GeV::isWithinExclusionRegion(double x, double y, double mZ) const
     {
       return (y <= x and x <= 205. / 2. and x > mZ / 2.);
@@ -44,14 +45,17 @@ namespace Gambit {
     
     L3SelectronLimitAt205GeV::L3SelectronLimitAt205GeV()
     {
+      ///// Limit values /////
       _limitValuesSorted.push_back(0.03);
       _limitValuesSorted.push_back(0.06);
       _limitValuesSorted.push_back(0.2);
 
+      ///// Limit Contours /////
       Corners corners;
       ContoursPointer contoursPointer;
       size_t oldSize;
 
+      ///// 0.03pb /////
       contoursPointer = new Contours();
 
       corners.clear();
@@ -105,6 +109,7 @@ namespace Gambit {
 
       _limitContours.insert(LimitContourEntry(0, contoursPointer));
 
+      ///// 0.06pb /////
       corners.clear();
       corners.push_back(convertPt(648.00,608.00));
       corners.push_back(convertPt(629.00,589.00));
@@ -184,6 +189,7 @@ namespace Gambit {
                      contoursPointer->begin(), makeLine);
       _limitContours.insert(LimitContourEntry(1, contoursPointer));
 
+      ///// 0.2pb /////
       corners.clear();
       corners.push_back(convertPt(159.00,378.00));
       corners.push_back(convertPt(330.00,282.00));
@@ -232,13 +238,16 @@ namespace Gambit {
 
     L3SmuonLimitAt205GeV::L3SmuonLimitAt205GeV()
     {
+      ///// Limit values /////
       _limitValuesSorted.push_back(0.04);
       _limitValuesSorted.push_back(0.07);
       _limitValuesSorted.push_back(0.15);
 
+      ///// Limit Contours /////
       Corners corners;
       ContoursPointer contoursPointer;
 
+      ///// 0.04pb /////
       corners.clear();
       corners.push_back(convertPt(1226.00,351.00));
       corners.push_back(convertPt(1414.00,235.00));
@@ -285,6 +294,7 @@ namespace Gambit {
                      contoursPointer->begin(), makeLine);
       _limitContours.insert(LimitContourEntry(0, contoursPointer));
 
+      ///// 0.07pb /////
       corners.clear();
       corners.push_back(convertPt(1094.00,444.00));
       corners.push_back(convertPt(1152.00,363.00));
@@ -350,6 +360,7 @@ namespace Gambit {
                      contoursPointer->begin(), makeLine);
       _limitContours.insert(LimitContourEntry(1, contoursPointer));
 
+      ///// 0.15pb /////
       corners.clear();
       corners.push_back(convertPt(1672.00,610.0));
       corners.push_back(convertPt(1092.00,610.0));
@@ -388,13 +399,16 @@ namespace Gambit {
     
     L3StauLimitAt205GeV::L3StauLimitAt205GeV()
     {
+      ///// Limit values /////
       _limitValuesSorted.push_back(0.1);
       _limitValuesSorted.push_back(0.15);
       _limitValuesSorted.push_back(0.2);
 
+      ///// Limit Contours /////
       Corners corners;
       ContoursPointer contoursPointer;
 
+      ///// 0.1pb /////
       corners.clear();
       corners.push_back(convertPt(835.00,1216.00));
       corners.push_back(convertPt(930.00,1168.00));
@@ -461,6 +475,7 @@ namespace Gambit {
                      contoursPointer->begin(), makeLine);
       _limitContours.insert(LimitContourEntry(0, contoursPointer));
 
+      ///// 0.15pb /////
       corners.clear();
       corners.push_back(convertPt(764.00,1518.00));
       corners.push_back(convertPt(766.00,1510.00));
@@ -556,6 +571,7 @@ namespace Gambit {
                      contoursPointer->begin(), makeLine);
       _limitContours.insert(LimitContourEntry(1, contoursPointer));
 
+      ///// 0.2pb /////
       corners.clear();
       corners.push_back(convertPt(1202.00,1518.0));
       corners.push_back(convertPt(625.00,1518.00));
@@ -605,4 +621,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:38 +0000
+Updated on 2022-08-02 at 23:34:49 +0000

@@ -99,6 +99,30 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Frontend header for the classy backend.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Janina Renk
+///          (janina.renk@fysik.su.se)
+///  \date 2019 June
+///  \date 2020 July
+///
+///  \author Sanjay Bloor
+///          (sanjay.bloor12@imperial.ac.uk)
+///  \date 2019 June
+///
+///  \author Patrick Stoecker
+///          (stoecker@physik.rwth-aachen.de)
+///  \date 2019 July
+///  \date 2020 January
+///  \date 2021 January
+///
+///  *********************************************
 
 #define BACKENDNAME classy
 #define BACKENDLANG Python
@@ -144,4 +168,4 @@ LOAD_LIBRARY
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:48 +0000
+Updated on 2022-08-02 at 23:34:58 +0000

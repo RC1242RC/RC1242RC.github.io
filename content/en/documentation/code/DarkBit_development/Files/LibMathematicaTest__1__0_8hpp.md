@@ -86,6 +86,18 @@ Authors (add name and sate if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  A Mathematica backend example.
+///
+///  *********************************************
+///
+///  Authors (add name and sate if you modify):
+///
+///  \author Tomas Gonzalo
+///  \date 2016 Sept
+///
+///  *********************************************
 
 #define BACKENDNAME libMathematicaTest
 #define BACKENDLANG MATHEMATICA
@@ -122,4 +134,4 @@ BE_CONV_FUNCTION(run_Mathematica_Test, double, (const int&, const int&), "MathTe
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:48 +0000
+Updated on 2022-08-02 at 23:34:58 +0000

@@ -169,6 +169,41 @@ bool mssm_result = false;
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Frontend for DarkSUSY 5.1.3 backend
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Anders Kvellestad
+///          (anders.kvellestad@fys.uio.no)
+///  \date 2013 Mar
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)
+///  \date 2013 Apr
+///        2015 Mar, Aug
+///        2016 Feb
+///
+///  \author Christoph Weniger
+///          (c.weniger@uva.nl)
+///  \date 2013 Jul
+///
+///  \author Torsten Bringmann
+///          (torsten.bringmann@fys.uio.no)
+///  \date 2013 Jul, 2014 Mar, 2015 May, 2019 May
+///
+///  \author Lars A. Dal
+///          (l.a.dal@fys.uio.no)
+///  \date 2014 Mar
+///
+///  \author Joakim Edsjo
+///          (edsjo@fysik.su.se)
+///  \date 2015 Aug, 2016 Mar
+///
+///  *********************************************
 
 #include "gambit/Backends/frontend_macros.hpp"
 #include "gambit/Backends/frontends/DarkSUSY_5_1_3.hpp"
@@ -235,6 +270,7 @@ BE_INI_FUNCTION
     logger() << LogTags::debug <<
       "Initializing DarkSUSY via debug_SLHA_filenames option." << EOM;
 
+    /// Option debug_SLHA_filenames<std::vector<std::string>>: Optional override list of SLHA filenames used for backend initialization default
     std::vector<str> filenames = runOptions->getValue<std::vector<str> >("debug_SLHA_filenames");
     const char * filename = filenames[counter].c_str();
     int len = filenames[counter].length();
@@ -248,6 +284,7 @@ BE_INI_FUNCTION
   }
 
   // CMSSM with DS-internal ISASUGRA (should be avoided, only for debugging)
+  /// Option use_DS_isasugra<bool>: Use DS internal isasugra for parameter running (false)
   else if (ModelInUse("CMSSM") and runOptions->getValueOrDef<bool>(false, "use_DS_isasugra"))
   {
     // Setup mSUGRA model from CMSSM parameters
@@ -294,6 +331,7 @@ BE_INI_FUNCTION
   else if (ModelInUse("MSSM63atQ") || ModelInUse("CMSSM"))
   {
     SLHAstruct mySLHA;
+    /// Option use_dsSLHAread<bool>: Use DS internal SLHA reader to initialize backend (false)
     bool use_dsSLHAread = runOptions->getValueOrDef<bool>(false, "use_dsSLHAread");
     int slha_version = 2;
     const Spectrum& mySpec = *Dep::MSSM_spectrum;
@@ -380,6 +418,7 @@ END_BE_INI_FUNCTION
 BE_NAMESPACE
 {
 
+  /// Shortcut for dealing with SLHA blocks
   void required_block(const std::string& name, const SLHAea::Coll& slha)
   {
     if (slha.find(name) != slha.end()) return;
@@ -388,6 +427,8 @@ BE_NAMESPACE
     "then sort out your SLHA file so that it is readable by DarkSUSY!                      ");
   }
 
+  /// Sets DarkSUSY's internal common blocks with some of the properties required to compute neutrino
+  /// yields for a generic WIMP. Remaining internal variables are internal to this frontend.
   void dsgenericwimp_nusetup(const double (&annihilation_bf)[29], const double (&Higgs_decay_BFs_neutral)[29][3],
    const double (&Higgs_decay_BFs_charged)[15], const double (&Higgs_masses_neutral)[3], const double &Higgs_mass_charged,
    const double &mwimp)
@@ -430,6 +471,12 @@ BE_NAMESPACE
 
   }
 
+  /// Returns neutrino yields at the top of the atmosphere,
+  /// in m^-2 GeV^-1 annihilation^-1.  Provided here for
+  /// interfacing with nulike.
+  ///   --> log10Enu log_10(neutrino energy/GeV)
+  ///   --> p        p=1 for neutrino yield, p=2 for nubar yield
+  ///   --> context  void pointer (ignored)
   double neutrino_yield(const double& log10E, const int& ptype, void*&)
   {
     int istat = 0;
@@ -456,6 +503,8 @@ BE_NAMESPACE
     return result;
   }
 
+  /// Translates GAMBIT string identifiers to the SUSY
+  /// particle codes used internally in DS (as stored in common block /pacodes/)
   // FIXME: add channel codes!
   int DSparticle_code(const str& particleID)
   {
@@ -566,6 +615,13 @@ BE_NAMESPACE
     return kpart;
   }
 
+  /// Initialise an MSSM model in DarkSUSY from an SLHAea object and a DecayTable.
+  /// Closely mimics the DarkSUSY routine in dsfromslha.F, except that it
+  /// hands over a better b pole mass, explicit decay info, and a better
+  /// approximation of the CKM matrix from Wolfenstein parameters.  Throughout
+  /// this routine, there are pieces of code commented out that would need to be
+  /// re-added to emulate dsfromslha.F exactly, if and only if the decays are not
+  /// set by GAMBIT.
   int init_diskless(const SLHAstruct &mySLHA, const DecayTable &myDecays)
   {
     using SLHAea::to;
@@ -1002,6 +1058,8 @@ BE_NAMESPACE
     return 0;  // everything OK (hah. maybe.)
   }
 
+  /// Returns direct detection couplings gps,gns,gpa,gna
+  /// (proton/neutron scalar/axial four-couplings)
   std::vector<double> DD_couplings()
   {
     double gps,gns,gpa,gna;
@@ -1015,6 +1073,7 @@ BE_NAMESPACE
     return couplings;
   }
 
+  /// Returns the vector of neutral Higgs decay channels in DarkSUSY
   std::vector< std::vector<str> > DS_neutral_h_decay_channels()
   {
     return initVector< std::vector<str> >
@@ -1052,6 +1111,7 @@ BE_NAMESPACE
      );
   }
 
+  /// Returns the vector of charged Higgs decay channels in DarkSUSY
   std::vector< std::vector<str> > DS_charged_h_decay_channels()
   {
     return initVector< std::vector<str> >
@@ -1079,4 +1139,4 @@ END_BE_NAMESPACE
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:48 +0000
+Updated on 2022-08-02 at 23:34:59 +0000

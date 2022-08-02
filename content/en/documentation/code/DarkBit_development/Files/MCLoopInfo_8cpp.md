@@ -46,6 +46,19 @@ Authors (add name if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Type for holding event loop information.
+///
+///  *********************************************
+///
+///  Authors (add name if you modify):
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)
+///  \date 2019 Jan
+///
+///  *********************************************
 
 
 #include "gambit/ColliderBit/MCLoopInfo.hpp"
@@ -58,6 +71,7 @@ namespace Gambit
   namespace ColliderBit
   {
 
+    /// Set exceeded_maxFailedEvents = true and decrement event counter by 1
     void MCLoopInfo::report_exceeded_maxFailedEvents() const
     {
       #pragma omp critical
@@ -68,6 +82,7 @@ namespace Gambit
       }
     }
 
+    /// Set end_of_event_file = true and decrement event counter by 1
     void MCLoopInfo::report_end_of_event_file() const
     {
       #pragma omp critical
@@ -78,6 +93,7 @@ namespace Gambit
       }
     }
 
+    /// Reset flags
     void MCLoopInfo::reset_flags()
     {
       end_of_event_file = false;
@@ -85,6 +101,7 @@ namespace Gambit
       exceeded_maxFailedEvents = false;
     }
 
+    /// Set the current collider
     void MCLoopInfo::set_current_collider(str& col)
     {
       // Save the current collider
@@ -189,4 +206,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:47 +0000
+Updated on 2022-08-02 at 23:34:57 +0000

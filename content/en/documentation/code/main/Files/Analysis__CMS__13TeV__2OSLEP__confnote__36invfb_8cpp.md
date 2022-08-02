@@ -33,7 +33,13 @@ description: "[No description available]"
 ## Source code
 
 ```
-
+///
+///  \author Rose Kudzman-Blais
+///  \date 2017 May
+///
+///  Checked and minor bug fixes by Martin White
+///  Feb 2018
+///  *********************************************
 
 // Based on http://cms-results.web.cern.ch/cms-results/public-results/superseded/SUS-16-034/index.html
 
@@ -294,6 +300,7 @@ namespace Gambit {
 
       }
 
+      /// Combine the variables of another copy of this analysis (typically on another thread) into this one.
       void combine(const Analysis* other)
       {
         const Analysis_CMS_13TeV_2OSLEP_confnote_36invfb* specificOther
@@ -429,4 +436,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:38 +0000
+Updated on 2022-08-02 at 23:34:54 +0000

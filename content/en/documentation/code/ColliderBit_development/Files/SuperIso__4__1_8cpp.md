@@ -84,12 +84,37 @@ Number of observables the SuperIso returns for B0 -> K(*) mu mu and Bs -> phi mu
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Frontend for SuperIso backend
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+/// \author Nazila Mahmoudi
+///         (nazila@cern.ch)
+/// \date 2016 Jul
+/// \date 2018 Jan
+/// \date 2019 Jul
+///
+/// \author Pat Scott
+///          (p.scott@imperial.ac.uk)
+/// \date 2017 Mar, Apr
+///
+/// \author Marcin Chrzaszcz
+///         (mchrzasz@cern.ch)
+/// \date 2016
+/// \date 2017
+///
+///  *********************************************
 
 #include <sstream>
 #include "gambit/Backends/frontend_macros.hpp"
 #include "gambit/Backends/frontends/SuperIso_4_1.hpp"
 #include "gambit/Backends/backend_types/SuperIso.hpp"
 
+/// Number of observables the SuperIso returns for B0 -> K(*) mu mu and Bs -> phi mu mu
 #define Nobs_BKll 2
 #define Nobs_BKsll 32
 #define Nobs_Bsphill 6
@@ -103,6 +128,10 @@ END_BE_INI_FUNCTION
 BE_NAMESPACE
 {
 
+  /// Helper functions to apply offsets to Wilson coefficients
+  /// @{
+  /// Note that we don't yet consider the impacts of modifying anything
+  /// except O_7, O_9, O_10, Q_1 and Q_2.
   void modify_WC(const parameters *param, std::complex<double> C0b[11])
   {
     C0b[7]+=std::complex<double>(param->Re_DeltaC7, param->Im_DeltaC7);
@@ -115,7 +144,9 @@ BE_NAMESPACE
     CQ0b[1]+=std::complex<double>(param->Re_DeltaCQ1, param->Im_DeltaCQ1);
     CQ0b[2]+=std::complex<double>(param->Re_DeltaCQ2, param->Im_DeltaCQ2);
   }
+  /// @}
 
+  /// Helper function to double-check that SuperIso can handle the model.
   void check_model(const parameters *param, const str& where)
   {
     bool known_model = false;
@@ -235,4 +266,4 @@ END_BE_NAMESPACE
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:40 +0000
+Updated on 2022-08-02 at 23:34:50 +0000

@@ -67,6 +67,36 @@ Analyses based on: arxiv:1711.03301 and [https://journals.aps.org/prd/abstract/1
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Functions for LHC analyses that use tabulated interpolations
+///  rather than direct MC simulation. For now this functionality
+///  is specific to the DMEFT model, but it will be turned into
+///  a general feature in ColliderBit.
+///  
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Martin White
+///          (martin.white@adelaide.edu.au)
+///
+///  \author Andre Scaffidi
+///          (andre.scaffidi@adelaide.edu.au)
+///  \date 2019 Aug
+///
+///  \author Tomas Gonzalo
+///          (gonzalo@physik.rwth-aachen.de)
+///  \date 2021 Apr
+///
+///  \author Anders Kvellestad
+///          (anders.kvellestad@fys.uio.no)
+///  \date 2021 May
+///
+///  Analyses based on: arxiv:1711.03301 and https://journals.aps.org/prd/abstract/10.1103/PhysRevD.97.092005
+///  139invfb analysis based on arXiv:2102.10874 
+///
+///  *********************************************
 
 // Needs GSL 2 
 #include <gsl/gsl_math.h>
@@ -100,6 +130,10 @@ namespace Gambit
 
     // =========== Useful stuff ===========
 
+    /// A minimal class with analysis info, maps for containing collections of 1D/2D interpolators
+    /// and some helper functions for adding and accessing the interpolators, and for 
+    /// adding a background covariance matrix. Currently this class is tailored specifically 
+    /// for the DMEFT model -- it will be generalized in the future.
     class DMEFT_analysis_info
     {
       public:
@@ -161,6 +195,7 @@ namespace Gambit
     };
   
 
+    /// A struct to contain parameters for the GSL optimiser target function
     struct _gsl_target_func_params
     {
       double lambda;
@@ -172,13 +207,18 @@ namespace Gambit
     };
 
 
+    /// A global map from analysis name to DMEFT_analysis_info instance.
+    /// This map is initialized by the function fill_analysis_info_map,
+    /// which is called the first time DMEFT_results run.
     std::map<str,DMEFT_analysis_info> analysis_info_map;
 
 
     // =========== Forward declarations ===========
 
+    /// Forward declaration of funtion in LHC_likelihoods
     AnalysisLogLikes calc_loglikes_for_analysis(const AnalysisData&, bool, bool, bool, bool);
 
+    /// Forward declarations of functions in this file
     void fill_analysis_info_map();
 
     void DMEFT_results(AnalysisDataPointers&);
@@ -206,6 +246,8 @@ namespace Gambit
 
     // =========== Functions ===========
 
+    /// A function for filling the analysis_info_map.
+    /// This is where all the analysis-specific numbers and file names go.
     void fill_analysis_info_map()
     {
 
@@ -360,6 +402,7 @@ namespace Gambit
     }
 
 
+    /// Results from DMEFT analyses before any modification of the MET spectrum
     void DMEFT_results(AnalysisDataPointers& result)
     { 
       using namespace Pipes::DMEFT_results;
@@ -453,6 +496,7 @@ namespace Gambit
     };
 
 
+    /// Fill the input vector with the total DMEFT signal prediction for each SR in the given LHC analysis
     void get_all_DMEFT_signal_yields(std::vector<double>& sr_nums, const DMEFT_analysis_info& analysis_info, const Spectrum& spec)
     {
 
@@ -507,6 +551,7 @@ namespace Gambit
     }
 
 
+    /// Fill the input vector with the DMEFT signal prediction for a given set of dim-6 operators
     void get_DMEFT_signal_yields_dim6_operator(std::vector<double>& signal_yields, const str operator_key, const DMEFT_analysis_info& analysis_info, double m, double O1, double O2, double lambda)
     {
 
@@ -621,6 +666,7 @@ namespace Gambit
     }
 
 
+    /// Fill the input vector with the DMEFT signal prediction for a given dim-7 operator
     void get_DMEFT_signal_yields_dim7_operator(std::vector<double>& signal_yields, const str operator_key, const DMEFT_analysis_info& analysis_info, double m, double O, double lambda)
     {
 
@@ -702,6 +748,7 @@ namespace Gambit
     }
 
 
+    /// Results from DMEFT analyses after profiling over the 'a' parameter in the smooth cut-off of the MET spectrum
     void DMEFT_results_profiled(AnalysisDataPointers& result)
     {
       using namespace Pipes::DMEFT_results_profiled;
@@ -728,6 +775,7 @@ namespace Gambit
     }
 
 
+    /// Results from DMEFT analyses after imposing a hard cut-off of the MET spectrum
     void DMEFT_results_cutoff(AnalysisDataPointers& result)
     {
       using namespace Pipes::DMEFT_results_cutoff;
@@ -751,6 +799,9 @@ namespace Gambit
     }
 
 
+    /// Function to modify the DMEFT LHC signal prediction for ETmiss bins where ETmiss > Lambda.
+    /// Alt 1: Gradually turn off the ETmiss spectrum above Lambda by multiplying 
+    /// the spectrum with (ETmiss/Lambda)^-a
     void signal_modifier_function(AnalysisData& adata, double lambda, double a)
     {
       // Check that we have analysis info for the given analysis
@@ -783,6 +834,8 @@ namespace Gambit
     }
 
 
+    /// Function to modify the DMEFT LHC signal prediction for ETmiss bins where ETmiss > Lambda.
+    /// Alt 2: Simply put a hard cut-off in the ETmiss spectrum for ETmiss > Lambda
     void signal_cutoff_function(AnalysisData& adata, double lambda)
     {
       // Check that we have analysis info for the given analysis
@@ -810,6 +863,7 @@ namespace Gambit
     }
 
 
+    /// A target function for the GSL optimiser
     void _gsl_target_func(const size_t /* n */ , const double* a, void* fparams, double* fval)
     {
       // Note: We don't use the first argument, it's just there for the GSL/multimin interface
@@ -1043,6 +1097,8 @@ namespace Gambit
     }
 
 
+    /// This makes an MCLoopInfo object for satisfying the ColliderBit dependency chain
+    /// (This will not be needed once we have a general system for simulation-less analyses.)
     void InterpolatedMCInfo(MCLoopInfo& result)
     {
       result.event_gen_BYPASS = true;
@@ -1058,4 +1114,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:47 +0000
+Updated on 2022-08-02 at 23:34:57 +0000

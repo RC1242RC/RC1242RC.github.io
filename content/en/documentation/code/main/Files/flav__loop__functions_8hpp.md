@@ -51,6 +51,20 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Loop functions for flavour violating decays of charged leptons (from hep-ph/9403398)
+///  And for RK from 1706.07570
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Tomas Gonzalo
+///          (t.e.gonzalo@fys.uio.no)
+///  \date 2017 Aug, 2018 Feb
+///
+///  *********************************************
 
 #ifndef __flav_loop_functions_hpp
 #define __flav_loop_functions_hpp
@@ -984,4 +998,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:37 +0000
+Updated on 2022-08-02 at 23:34:53 +0000

@@ -54,6 +54,23 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Relic density calculations.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Torsten Bringmann
+///          (torsten.bringmann@desy.de)
+///  \date 2013 Jun -- 2016 May, 2019
+///
+///  \author Christoph Weniger
+///          (c.weniger@uva.nl)
+///  \date 2013 Jul - 2015 May
+///
+///  *********************************************
 
 #include <chrono>
 
@@ -71,11 +88,16 @@ namespace Gambit
 //#define DARKBIT_DEBUG
 //#define DARKBIT_RD_DEBUG
 
+    //////////////////////////////////////////////////////////////////////////
     //
     //                    DarkSUSY Relic density routines
     //
+    //////////////////////////////////////////////////////////////////////////
 
 
+    /*! \brief Collects spectrum information about coannihilating particles,
+     *         resonances and threshold energies.
+     */
     void RD_spectrum_MSSM(RD_spectrum_type &result)
     {
       using namespace Pipes::RD_spectrum_MSSM;
@@ -102,12 +124,18 @@ namespace Gambit
       result.resonances.clear();
       result.threshold_energy.clear();
 
+      /// Option CoannCharginosNeutralinos<bool>: Specify whether charginos and
+      /// neutralinos are included in coannihilations (default: true)
       bool CoannCharginosNeutralinos = runOptions->getValueOrDef<bool>(true,
           "CoannCharginosNeutralinos");
 
+      /// Option CoannSfermions<bool>: Specify whether sfermions are included in
+      /// coannihilations (default: true)
       bool CoannSfermions = runOptions->getValueOrDef<bool>(true,
           "CoannSfermions");
 
+      /// Option CoannMaxMass<double>: Maximal sparticle mass to be included in
+      /// coannihilations, in units of DM mass (default: 1.6)
       double CoannMaxMass = runOptions->getValueOrDef<double>(1.6,
           "CoannMaxMass");
 
@@ -212,6 +240,9 @@ namespace Gambit
 
 
 
+    /*! \brief Collects spectrum information about coannihilating particles,
+     *         resonances and threshold energies -- directly from DarkSUSY 5.
+     */
     void RD_spectrum_SUSY_DS5(RD_spectrum_type &result)
     {
       using namespace Pipes::RD_spectrum_SUSY_DS5;
@@ -228,12 +259,18 @@ namespace Gambit
       result.resonances.clear();
       result.threshold_energy.clear();
 
+      /// Option CoannCharginosNeutralinos<bool>: Specify whether charginos and
+      /// neutralinos are included in coannihilations (default: true)
       bool CoannCharginosNeutralinos = runOptions->getValueOrDef<bool>(true,
           "CoannCharginosNeutralinos");
 
+      /// Option CoannSfermions<bool>: Specify whether sfermions are included in
+      /// coannihilations (default: true)
       bool CoannSfermions = runOptions->getValueOrDef<bool>(true,
           "CoannSfermions");
 
+      /// Option CoannMaxMass<double>: Maximal sparticle mass to be included in
+      /// coannihilations, in units of DM mass (default: 1.6)
       double CoannMaxMass = runOptions->getValueOrDef<double>(1.6,
           "CoannMaxMass");
 
@@ -312,6 +349,10 @@ namespace Gambit
     } // function RD_spectrum_SUSY_DS5
 
 
+   /*! \brief Collects information about resonances and threshold energies
+     *        directly from the ProcessCatalog
+     *        [NB: this assumes no coannihilating particles!]
+     */
     void RD_spectrum_from_ProcessCatalog(RD_spectrum_type &result)
     {
       using namespace Pipes::RD_spectrum_from_ProcessCatalog;
@@ -353,6 +394,8 @@ namespace Gambit
     } // function RD_spectrum_from_ProcessCatalog
 
 
+    /*! \brief Order RD_spectrum object and derive coannihilation thresholds.
+    */
     void RD_spectrum_ordered_func(RD_spectrum_type &result)
     {
       using namespace Pipes::RD_spectrum_ordered_func;
@@ -422,6 +465,9 @@ namespace Gambit
     } // function RD_spectrum_ordered_func
 
 
+    /*! \brief Some helper function to prepare evaluation of Weff from
+     *         DarkSUSY 5.
+     */
     void RD_annrate_DS5prep_func(int &result)
     {
       using namespace Pipes::RD_annrate_DS5prep_func;
@@ -482,6 +528,9 @@ namespace Gambit
     } // function RD_annrate_DS5prep_func
 
 
+    /*! \brief Some helper function to prepare evaluation of Weff from
+     *         DarkSUSY 6.
+     */
     void RD_annrate_DSprep_MSSM_func(int &result)
     {
       using namespace Pipes::RD_annrate_DSprep_MSSM_func;
@@ -525,6 +574,10 @@ namespace Gambit
     } // function RD_eff_annrate_DSprep_MSSM_func
 
 
+    /*! \brief Get Weff directly from initialized DarkSUSY.
+     * Note that these functions do not (and should not) correct Weff for
+     * non-self-conjugate dark matter.
+    */
     void RD_eff_annrate_DS_MSSM(double(*&result)(double&))
     {
       using namespace Pipes::RD_eff_annrate_DS_MSSM;
@@ -549,6 +602,8 @@ namespace Gambit
 
 
 
+    /*! \brief Infer Weff from process catalog.
+    */
     // Carries pointer to Weff
     DEF_FUNKTRAIT(RD_EFF_ANNRATE_FROM_PROCESSCATALOG_TRAIT)
       void RD_eff_annrate_from_ProcessCatalog(double(*&result)(double&))
@@ -585,6 +640,13 @@ namespace Gambit
       } // function RD_eff_annrate_from_ProcessCatalog
 
 
+    /*! \brief General routine for calculation of relic density, using DarkSUSY 6+
+     *         Boltzmann solver
+     *
+     *  Requires:
+     *  - RD_thresholds_resonances from RD_spectrum_ordered
+     *  - RD_eff_annrate (Weff)
+     */
     void RD_oh2_DS_general(double &result)
     {
       using namespace Pipes::RD_oh2_DS_general;
@@ -603,8 +665,12 @@ namespace Gambit
       BEreq::dsrdcom();
       DS_RDPARS *myrdpars = BEreq::rdpars.pointer();
 
+      /// Option fast<int>: Numerical performance of Boltzmann solver in DS
+      /// (default: 1) [NB: accurate is fast = 0 !]
       int fast = runOptions->getValueOrDef<int>(1, "fast");
 
+      /// Option timeout<double>: Maximum core time to allow for relic density
+      /// calculation, in seconds (default: 600s)
       BEreq::rdtime->rdt_max = runOptions->getValueOrDef<double>(600, "timeout");
 
       switch (fast)
@@ -700,6 +766,13 @@ namespace Gambit
 
 
 
+    /*! \brief General routine for calculation of relic density, using DarkSUSY 5
+     *         Boltzmann solver
+     *
+     *  Requires:
+     *  - RD_thresholds_resonances
+     *  - RD_eff_annrate (Weff)
+     */
     void RD_oh2_DS5_general(double &result)
     {
       using namespace Pipes::RD_oh2_DS5_general;
@@ -717,6 +790,8 @@ namespace Gambit
         bool tbtest=false;
       #endif
 
+      /// Option timeout<double>: Maximum core time to allow for relic density
+      /// calculation, in seconds (default: 600s)
       BEreq::rdtime->rdt_max = runOptions->getValueOrDef<double>(600, "timeout");
 
       // What follows below is the standard accurate calculation of oh2 in DS, in one of the
@@ -743,6 +818,8 @@ namespace Gambit
       //                for models with strong resonances or thresholds
 
       DS_RDPARS myrdpars;
+      /// Option fast<int>: Numerical performance of Boltzmann solver in DS
+      /// (default: 1) [NB: accurate is fast = 0 !]
       int fast = runOptions->getValueOrDef<int>(1, "fast");
       switch (fast)
       {
@@ -942,11 +1019,15 @@ namespace Gambit
 
 
 
+    //////////////////////////////////////////////////////////////////////////
     //
     //             Simple relic density routines for cross-checks
     //                      (MicrOmegas vs DarkSUSY)
     //
+    //////////////////////////////////////////////////////////////////////////
 
+    /*! \brief Relic density directly from a call of initialized MicrOmegas.
+    */
     void RD_oh2_Xf_MicrOmegas(ddpair &result)
     {
       using namespace Pipes::RD_oh2_Xf_MicrOmegas;
@@ -970,6 +1051,8 @@ namespace Gambit
       logger() << LogTags::debug << "X_f = " << Xf << " Omega h^2 = " << oh2 << EOM;
     }
 
+    /*! \brief Relic density directly from a call of initialized DarkSUSY 5.
+    */
     void RD_oh2_DarkSUSY_DS5(double &result)
     {
       using namespace Pipes::RD_oh2_DarkSUSY_DS5;
@@ -978,8 +1061,12 @@ namespace Gambit
       int fast;  // 0: standard; 1: fast; 2: dirty
 
       // Set options via ini-file
+      /// Option omtype<int>: 0 no coann, 1 all coann (default 1)
       omtype = runOptions->getValueOrDef<int>(1, "omtype");
+      /// Option fast<int>: 0 standard, 1 fast, 2 dirty (default 0)
       fast = runOptions->getValueOrDef<int>(0, "fast");
+      /// Option timeout<double>: Maximum core time to allow for relic density
+      /// calculation, in seconds (default: 600s)
       BEreq::rdtime->rdt_max = runOptions->getValueOrDef<double>(600, "timeout");
 
       // Output
@@ -1053,6 +1140,7 @@ namespace Gambit
 
     }
 
+    /// Return the thermally averaged cross-section at T_freezeout
     void vSigma_freezeout_MicrOmegas(double &result)
     {
       using namespace Pipes::vSigma_freezeout_MicrOmegas;
@@ -1072,9 +1160,11 @@ namespace Gambit
 
 
 
+    //////////////////////////////////////////////////////////////////////////
     //
     //   Infer fraction of Dark matter that is made up by scanned DM particles
     //
+    //////////////////////////////////////////////////////////////////////////
 
     void RD_fraction_one(double &result)
     {
@@ -1085,6 +1175,7 @@ namespace Gambit
     void RD_fraction_leq_one(double &result)
     {
       using namespace Pipes::RD_fraction_leq_one;
+      /// Option oh2_obs<double>: Set reference dark matter density (Oh2) for this module function (default 0.1188)
       double oh2_obs = runOptions->getValueOrDef<double>(0.1188, "oh2_obs");
       double oh2_theory = *Dep::RD_oh2;
       result = std::min(1., oh2_theory/oh2_obs);
@@ -1094,6 +1185,7 @@ namespace Gambit
     void RD_fraction_rescaled(double &result)
     {
       using namespace Pipes::RD_fraction_rescaled;
+      /// Option oh2_obs<double>: Set reference dark matter density (Oh2) for this module function (default 0.1188)
       double oh2_obs = runOptions->getValueOrDef<double>(0.1188, "oh2_obs");
       double oh2_theory = *Dep::RD_oh2;
       result = oh2_theory/oh2_obs;
@@ -1118,4 +1210,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:49 +0000

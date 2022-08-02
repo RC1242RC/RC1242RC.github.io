@@ -216,6 +216,40 @@ bool halo_changed = false;
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Frontend source for the DDCalc backend.
+///
+///  Actual implementation of DDCalc ini function.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Lars A. Dal
+///          (l.a.dal@fys.uio.no)
+///  \date 2014 Jul
+///
+///  \author Christopher Savage
+///          (chris@savage.name)
+///  \date 2014 Sept
+///  \date 2015 Jan,Feb,June
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)
+///  \date 2016 Apr, Aug
+///
+///  \author Felix Kahlhoefer
+///          (felix.kahlhoefer@desy.de)
+///  \date 2016 August
+///
+///  \author Sebastian Wild
+///          (felix.kahlhoefer@desy.de)
+///  \date 2016 Aug
+///
+///  *********************************************
 
 #include "gambit/Backends/frontend_macros.hpp"
 #include "gambit/Backends/frontends/DDCalc_1_2_0.hpp"
@@ -343,4 +377,4 @@ END_BE_NAMESPACE
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:41 +0000
+Updated on 2022-08-02 at 23:34:51 +0000

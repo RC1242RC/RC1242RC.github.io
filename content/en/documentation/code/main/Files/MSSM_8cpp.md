@@ -59,6 +59,30 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  MSSM specific module functions for DarkBit.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Torsten Bringmann
+///          (torsten.bringmann@desy.de)
+///  \date 2013 Jun
+///  \date 2014 Mar - 2015 May
+///  \date 2019 May (removed DarkSUSY_PointInit_MSSM, added TH_ProcessCatalog_DS_MSSM)
+///
+///  \author Christoph Weniger
+///          (c.weniger@uva.nl)
+///  \date 2013 Jul - 2015 May
+///
+///  \author Christopher Savage
+///          (chris@savage.name)
+///  \date 2014 Oct
+///  \date 2015 Jan, Feb
+///
+///  *********************************************
 
 #include "gambit/Elements/gambit_module_headers.hpp"
 #include "gambit/DarkBit/DarkBit_rollcall.hpp"
@@ -71,14 +95,28 @@ namespace Gambit
   namespace DarkBit
   {
 
+    //////////////////////////////////////////////////////////////////////////
     //
     //                    Backend point initialization
     //
+    //////////////////////////////////////////////////////////////////////////
 
+    /*! \brief Fully initialize DarkSUSY to the current model point.
+     *
+     * Only selected MSSM parameter spaces are implemented.  Returns bool
+     * indicating if point initialization was successful, which is essentially
+     * always true for models that satisfy the dependency resolver.
+     *
+     * Supported models: MSSM63atQ
+     */
+
+    //////////////////////////////////////////////////////////////////////////
     //
     //      General catalog for annihilation/decay process definition
     //
+    //////////////////////////////////////////////////////////////////////////
 
+    /// Wrapper around DarkSUSY kinematic functions
     double DSgamma3bdy(double(*IBfunc)(int&,double&,double&),
         int IBch, double Eg, double
         E1, double M_DM, double m_1, double m_2)
@@ -115,6 +153,9 @@ namespace Gambit
     }
 
 
+    /*! \brief Initialization of Process Catalog based on DarkSUSY 5
+     *         calculations.
+     */
     void TH_ProcessCatalog_DS5_MSSM(DarkBit::TH_ProcessCatalog &result)
     {
       using namespace Pipes::TH_ProcessCatalog_DS5_MSSM;
@@ -132,7 +173,9 @@ namespace Gambit
       TH_ProcessCatalog catalog;
 
 
+      ///////////////////////////
       // Import particle masses
+      ///////////////////////////
 
       // Import based on Spectrum objects
       const Spectrum& matched_spectra = *Dep::MSSM_spectrum;
@@ -266,7 +309,9 @@ namespace Gambit
       getMSSMmass("~nubar_3", 0);
 
 
+      /////////////////////////////////////////
       // Import two-body annihilation process
+      /////////////////////////////////////////
 
       // Set of possible final state particles. Used to determine which decays to import.
       std::set<string> annFinalStates;
@@ -335,7 +380,9 @@ namespace Gambit
       //        setup_ds_process(29, "Z0",     gamma,  1   );
 
 
+      ///////////////////////////////////////////
       // Import three-body annihilation process
+      ///////////////////////////////////////////
 
       using DarkBit_utils::str_flav_to_mass;
 
@@ -364,6 +411,7 @@ namespace Gambit
         };
       };
 
+      /// Option ignore_three_body<bool>: Ignore three-body final states (default false)
       if ( not runOptions->getValueOrDef<bool>(false, "ignore_three_body") )
       {
         // Set DarkSUSY DM mass parameter used in 3-body decays
@@ -387,7 +435,9 @@ namespace Gambit
       };
 
 
+      /////////////////////////////
       // Import Decay information
+      /////////////////////////////
 
       // Import based on decay table from DecayBit
       const DecayTable* tbl = &(*Dep::decay_rates);
@@ -427,6 +477,9 @@ namespace Gambit
     }
 
 
+    /*! \brief Initialization of Process Catalog based on DarkSUSY 6
+     *         calculations.
+     */
     void TH_ProcessCatalog_DS_MSSM(DarkBit::TH_ProcessCatalog &result)
     {
       using namespace Pipes::TH_ProcessCatalog_DS_MSSM;
@@ -444,7 +497,9 @@ namespace Gambit
       TH_ProcessCatalog catalog;
 
 
+      ///////////////////////////
       // Import particle masses
+      ///////////////////////////
 
       // Import based on Spectrum objects
       const Spectrum& matched_spectra = *Dep::MSSM_spectrum;
@@ -569,7 +624,9 @@ namespace Gambit
       getMSSMmass("~nu_3"   , 0);
       getMSSMmass("~nubar_3", 0);
 
+      /////////////////////////////////////////
       // Import two-body annihilation process
+      /////////////////////////////////////////
 
       // Set of possible final state particles. Used to determine which decays to import.
       std::set<string> annFinalStates;
@@ -638,7 +695,9 @@ namespace Gambit
       setup_DS6_process( 23,  22, "Z0",     "gamma",  1   );
 
 
+      ///////////////////////////////////////////
       // Import three-body annihilation process
+      ///////////////////////////////////////////
 
       using DarkBit_utils::str_flav_to_mass;
 
@@ -677,6 +736,7 @@ namespace Gambit
         }
       };
 
+      /// Option ignore_three_body<bool>: Ignore three-body final states (default false)
       if ( not runOptions->getValueOrDef<bool>(false, "ignore_three_body") )
       {
         // Set DarkSUSY DM mass parameter used in 3-body decays
@@ -701,7 +761,9 @@ namespace Gambit
       };
 
 
+      /////////////////////////////
       // Import Decay information
+      /////////////////////////////
 
       // Import based on decay table from DecayBit
       const DecayTable* tbl = &(*Dep::decay_rates);
@@ -803,4 +865,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:37 +0000
+Updated on 2022-08-02 at 23:34:54 +0000

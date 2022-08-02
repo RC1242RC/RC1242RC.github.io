@@ -87,6 +87,19 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///
+///  ColliderBit Solo: an event-based LHC recast
+///  tool using the GAMBIT ColliderBit module.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Pat Scott
+///  (p.scott@imperial.ac.uk)
+///  \date May 2019
+///
+///  *********************************************
 
 #include "gambit/Elements/standalone_module.hpp"
 #include "gambit/ColliderBit/ColliderBit_rollcall.hpp"
@@ -100,6 +113,7 @@ using namespace ColliderBit::Functown;
 using namespace BackendIniBit::Functown;
 using namespace CAT(Backends::nulike_,NULIKE_SAFE_VERSION)::Functown;
 
+/// ColliderBit Solo main program
 int main(int argc, char* argv[])
 {
 
@@ -327,4 +341,4 @@ int main(int argc, char* argv[])
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:49 +0000

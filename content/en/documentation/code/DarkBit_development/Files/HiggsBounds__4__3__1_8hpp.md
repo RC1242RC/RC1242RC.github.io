@@ -138,6 +138,21 @@ LOAD_LIBRARY double double double double double double double double higgsbounds
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+/// Frontend for HiggsBounds backend
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Christopher Rogan
+///  \date Aug 2014
+///
+///  \author Pat Scott
+///  \date Aug 2016
+///
+///  *****************************************
 
 
 #define BACKENDNAME HiggsBounds
@@ -192,4 +207,4 @@ BE_FUNCTION(HiggsBounds_charged_input, void, (double*, double*, double*, double*
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:48 +0000
+Updated on 2022-08-02 at 23:34:58 +0000

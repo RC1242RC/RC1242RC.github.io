@@ -48,6 +48,24 @@ Authors (add name if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  A big multimap connecting Pythia process codes
+///  to the PID numbers for the two final state
+///  particles. 
+///  
+///  This is needed to use external cross-section 
+///  calculators for weighting Pythia events.
+///
+///  *********************************************
+///
+///  Authors (add name if you modify):
+///
+///  \author Anders Kvellestad
+///          (a.kvellestad@imperial.ac.uk)
+///  \date 2019 Sep
+///
+///  *********************************************
 
 
 #ifndef __all_process_codes_to_PID_pairs_hpp__
@@ -595,4 +613,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:46 +0000
+Updated on 2022-08-02 at 23:34:56 +0000

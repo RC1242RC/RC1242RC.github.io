@@ -123,6 +123,26 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Implementation of scalar singlet DM routines.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Christoph Weniger
+///          (c.weniger@uva.nl)
+///  \date Oct 2014, Apr 2015
+///
+///  \author Torsten Bringmann
+///  \date May 2015
+///
+///  \author Pat Scott
+///          <p.scott@imperial.ac.uk>
+///  \date 2015 May, Jul
+///
+///  *********************************************
 
 #include "gambit/Elements/gambit_module_headers.hpp"
 #include "gambit/Elements/virtual_higgs.hpp"
@@ -141,6 +161,7 @@ namespace Gambit
     class ScalarSingletDM
     {
       public:
+        /// Initialize SingletDM object (branching ratios etc)
         ScalarSingletDM(
             TH_ProcessCatalog* const catalog,
             double gammaH,
@@ -161,11 +182,18 @@ namespace Gambit
         };
         ~ScalarSingletDM() {}
 
+        /// Helper function (Breit-Wigner)
         double Dh2 (double s)
         {
           return 1/((s-mh*mh)*(s-mh*mh)+mh*mh*Gamma_mh*Gamma_mh);
         }
 
+        /*! \brief Returns <sigma v> in cm3/s for given channel, velocity and
+         *         model parameters.
+         *
+         * channel: bb, tautau, mumu, ss, cc, tt, gg, gammagamma, Zgamma, WW,
+         * ZZ, hh
+         */
         double sv(std::string channel, double lambda, double mass, double v)
         {
 
@@ -261,6 +289,7 @@ namespace Gambit
             pow(mf,2)/4/M_PI*Xf*pow(vf,3) * Dh2(s) * GeV2tocm3s1;
         }
 
+        /// Annihilation into hh
         double sv_hh(double lambda, double mass, double v)
         {
 
@@ -290,6 +319,7 @@ namespace Gambit
     void DarkMatter_ID_ScalarSingletDM(std::string & result) { result = "S"; }
     void DarkMatterConj_ID_ScalarSingletDM(std::string & result) { result = "S"; }
 
+    /// Common code for different scalar singlet direct detection coupling routines
     void get_ScalarSingletDM_DD_couplings(const Spectrum &spec, DM_nucleon_couplings &result, Models::safe_param_map<safe_ptr<const double> > &Param)
     {
       const SubSpectrum& he = spec.get_HE();
@@ -313,6 +343,7 @@ namespace Gambit
       logger() << " gna = " << result.gna << EOM;
     }
 
+    /// Direct detection couplings for Z2 scalar singlet DM.
     void DD_couplings_ScalarSingletDM_Z2(DM_nucleon_couplings &result)
     {
       using namespace Pipes::DD_couplings_ScalarSingletDM_Z2;
@@ -320,6 +351,7 @@ namespace Gambit
       get_ScalarSingletDM_DD_couplings(spec, result, Param);
     }
 
+    /// Direct detection couplings for Z3 scalar singlet DM.
     void DD_couplings_ScalarSingletDM_Z3(DM_nucleon_couplings &result)
     {
       using namespace Pipes::DD_couplings_ScalarSingletDM_Z3;
@@ -328,6 +360,7 @@ namespace Gambit
     }
 
 
+    /// Set up process catalog for Z2 scalar singlet DM.
     void TH_ProcessCatalog_ScalarSingletDM_Z2(DarkBit::TH_ProcessCatalog &result)
     {
       using namespace Pipes::TH_ProcessCatalog_ScalarSingletDM_Z2;
@@ -341,7 +374,9 @@ namespace Gambit
       // Explicitly state that Z2 Scalar DM is self-conjugate
       process_ann.isSelfConj = true;
 
+      ///////////////////////////////////////
       // Import particle masses and couplings
+      ///////////////////////////////////////
 
       // Convenience macros
       #define getSMmass(Name, spinX2)                                           \
@@ -425,7 +460,9 @@ namespace Gambit
       #undef addParticle
 
 
+      /////////////////////////////
       // Import Decay information
+      /////////////////////////////
 
       // Import decay table from DecayBit
       const DecayTable* tbl = &(*Dep::decay_rates);
@@ -517,6 +554,7 @@ namespace Gambit
 
 
 
+    /// Set up process catalog for Z3 scalar singlet DM.
     void TH_ProcessCatalog_ScalarSingletDM_Z3(DarkBit::TH_ProcessCatalog &result)
     {
       using namespace Pipes::TH_ProcessCatalog_ScalarSingletDM_Z3;
@@ -588,7 +626,9 @@ namespace Gambit
       #endif
 
 
+      ///////////////////////////////////////
       // Import particle masses and couplings
+      ///////////////////////////////////////
 
       // Convenience macros
       #define getSMmass(Name, spinX2)                                           \
@@ -664,7 +704,9 @@ namespace Gambit
       #undef addParticle
 
 
+      /////////////////////////////
       // Import Decay information
+      /////////////////////////////
 
       // Import decay table from DecayBit
       const DecayTable* tbl = &(*Dep::decay_rates);
@@ -762,4 +804,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:49 +0000

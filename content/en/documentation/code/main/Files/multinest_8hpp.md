@@ -94,6 +94,21 @@ void run(
 ```
 //  GAMBIT: Global and Modular BSM Inference Tool
 //  *********************************************
+///  \file
+///
+///  ScannerBit interface to Multinest 3.10
+///
+///  Header file
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Ben Farmer
+///          (ben.farmer@gmail.com)
+///  \date 2015 January
+///
+///  *********************************************
 
 #ifndef __multinest_hpp__
 #define __multinest_hpp__
@@ -125,33 +140,44 @@ namespace Gambit
    namespace MultiNest
    {
 
+      /// Typedef for the ScannerBit pointer to the external loglikelihood function
       typedef Gambit::Scanner::like_ptr scanPtr;
 
+      /// Bring printer_interface and printer names into this scope
       using Gambit::Scanner::printer_interface;
       using Gambit::Scanner::printer;
 
+      /// Class to connect multinest log-likelihood function and ScannerBit likelihood function
       class LogLikeWrapper
       {
          private:
+            /// Scanner pointer (points to the ScannerBit provided log-likelihood function)
             scanPtr boundLogLike;
 
+            /// Reference to a printer_interface object
             printer_interface& boundPrinter;
 
+            /// Variable to indicate whether the dumper function has been run at least once
             bool dumper_runonce;
 
          public:
+            /// Constructor
             LogLikeWrapper(scanPtr, printer_interface&);
 
+            /// Main interface function from MultiNest to ScannerBit-supplied loglikelihood function
             double LogLike(double*, int, int);
 
+            /// Main interface to MultiNest dumper routine
             void dumper(int, int, int, double*, double*, double*, double, double, double);
       };
 
+      ///@{ Plain-vanilla C-functions to pass to Multinest for the callbacks
       // Note: we are using the c interface from cwrapper.f90, so the function
       // signature is a little different than in the multinest examples.
       double callback_loglike(double*, int, int, void*);
 
       void callback_dumper(int, int, int, double*, double*, double*, double, double, double, void*);
+      ///@}
 
    } // End Multinest namespace
 
@@ -163,4 +189,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:36 +0000
+Updated on 2022-08-02 at 23:34:53 +0000

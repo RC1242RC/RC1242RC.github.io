@@ -51,6 +51,33 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Frontend source for the DirectDM backend.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Sanjay Bloor
+///          (sanjay.bloor12@imperial.ac.uk)
+///  \date 2018 Sep, Oct
+///        2019 Dec
+///        2020 Mar
+///
+///  \author Ben Farmer
+///          (b.farmer@imperial.ac.uk)
+///  \date 2019 Jul
+///
+///  \author Felix Kahlhofer
+///          (kahlhoefer@physik.rwth-aachen.de)
+///  \date 2020 May
+///
+///  \author Markus Prim
+///          (markus.prim@cern.ch)
+///  \date 2020 Dec
+///
+///  *********************************************
 
 #include "gambit/Backends/frontend_macros.hpp"
 #include "gambit/Backends/frontends/DirectDM_2_2_0.hpp"
@@ -100,6 +127,10 @@ Authors (add name and date if you modify):
 
     /* Convenience functions */
 
+    /// Get Wilson Coefficients at 2 GeV in a quark flavour matching scheme.
+    /// Requires a dictionary of relativistic WCs, the DM mass, an integer specifying the number
+    /// of quark flavours to match onto, i.e. the 3, 4 or 5 quark flavour scheme, and
+    /// the DM type -- "D" for Dirac fermion; "M" for Majorana fermion; "C" for complex scalar; "R" for real scalar.
     NREO_DM_nucleon_couplings get_NR_WCs_flav(map_str_dbl& relativistic_WCs, double& mDM, 
                                               int& scheme, std::string& DM_type,
                                               map_str_dbl& input_dict)
@@ -178,4 +209,4 @@ END_BE_INI_FUNCTION
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:56 +0000

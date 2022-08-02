@@ -32,6 +32,10 @@ description: "[No description available]"
 
 ```
 // -*- C++ -*-
+///
+///  \author Anders Kvellestad
+///  \date 2020 June
+///  *********************************************
 #include "gambit/ColliderBit/analyses/Analysis.hpp"
 #include "gambit/ColliderBit/analyses/Cutflow.hpp"
 #include "gambit/ColliderBit/ATLASEfficiencies.hpp"
@@ -44,6 +48,16 @@ namespace Gambit {
     using namespace std;
     using namespace HEPUtils;
 
+    /// @brief ATLAS Run 2 search for same-sign leptons and jets, with 139/fb of data
+    ///
+    /// Based on:
+    ///   - https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-2018-09/
+    ///   - https://arxiv.org/pdf/1909.08457
+    ///   - https://www.hepdata.net/record/ins1754675
+    ///   - C++ code example and SLHA benchmark files available on HEPData (link above)
+    /// 
+    /// Cross-sections for cutflows taken from https://twiki.cern.ch/twiki/bin/view/LHCPhysics/SUSYCrossSections#Cross_sections_for_various_subpr
+    /// 
 
     /* 
       Notes on analysis logic:
@@ -160,6 +174,7 @@ namespace Gambit {
         #endif
 
         // Missing energy
+        /// @todo Compute from hard objects instead?
         // const P4 pmiss = event->missingmom();
         // const double met = event->met();
 
@@ -182,6 +197,7 @@ namespace Gambit {
         }
         ATLAS::applyElectronEff(baselineElectrons);
         ATLAS::applyElectronIDEfficiency2019(baselineElectrons, "Loose");
+        /// @todo Use applyElectronIsolationEfficiency2019 or something similar?
 
         // Get baseline muons and apply efficiency
         for (const Particle* muon : event->muons()) 
@@ -195,6 +211,7 @@ namespace Gambit {
 
 
         // Get baseline jets
+        /// @todo Drop b-tag if |eta| > 2.5?
         for (const Jet* jet : event->jets()) 
         {
           if (jet->pT() > 20. && jet->abseta() < 2.8) 
@@ -426,6 +443,7 @@ namespace Gambit {
       }
 
 
+      /// Combine the variables of another copy of this analysis (typically on another thread) into this one.
       void combine(const Analysis* other)
       {
         const Analysis_ATLAS_13TeV_MultiLEP_strong_139invfb* specificOther = dynamic_cast<const Analysis_ATLAS_13TeV_MultiLEP_strong_139invfb*>(other);
@@ -433,6 +451,7 @@ namespace Gambit {
       }
 
 
+      /// Register results objects with the results for each SR; obs & bkg numbers from the paper
       void collect_results() 
       {
         // Using average, symmetrized background errors 
@@ -473,4 +492,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:38 +0000
+Updated on 2022-08-02 at 23:34:48 +0000

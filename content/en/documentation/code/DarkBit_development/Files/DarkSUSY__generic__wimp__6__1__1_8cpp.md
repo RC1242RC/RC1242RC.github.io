@@ -106,6 +106,19 @@ END_BE_NAMESPACE BE_INI_FUNCTION {
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Frontend for DarkSUSY_generic_wimp_6.1.1 backend
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Torsten Bringmann
+///          (torsten.bringmann@fys.uio.no)
+///  \date 2020
+///
+///  *********************************************
 
 #include "gambit/Backends/frontend_macros.hpp"
 #include "gambit/Backends/frontends/DarkSUSY_generic_wimp_6_1_1.hpp"
@@ -139,6 +152,7 @@ BE_INI_FUNCTION
     dsinit();
     mylock.release_lock();
 
+    //// Initialize yield tables for use in cascade decays (initialize more if needed)
     // This makes sure that different processes later don't read the yield tables
     // from disk simultaneously
     int istat=0;
@@ -168,6 +182,8 @@ END_BE_INI_FUNCTION
 // Convenience functions (definitions)
 BE_NAMESPACE
 {
+  /// Sets DarkSUSY's internal common blocks with some of the properties required to compute neutrino
+  /// yields for a generic WIMP. Remaining internal variables are internal to this frontend.
   void dsgenericwimp_nusetup(const double (&annihilation_bf)[29], const double (&)[29][3],
    const double (&)[15], const double (&)[3], const double &,
    const double &mwimp)
@@ -264,6 +280,13 @@ BE_NAMESPACE
     } // for
   } // dsgenericwimp_nusetup
 
+  /// Returns neutrino yields at the top of the atmosphere,
+  /// in m^-2 GeV^-1 annihilation^-1.  Provided here for
+  /// interfacing with nulike.
+  ///   --> log10Enu log_10(neutrino energy/GeV)
+  ///   --> p        p=1 for neutrino yield, p=2 for nubar yield,
+  ///                p=3 for nu and nubar yields
+  ///   --> context  void pointer (ignored)
   double neutrino_yield(const double& log10E, const int& ptype, void*&)
   {
     int istat = 0;
@@ -352,6 +375,7 @@ BE_NAMESPACE
     return result;
   }
 
+  /// Returns the vector of neutral Higgs decay channels in DarkSUSY
   std::vector< std::vector<str> > DS_neutral_h_decay_channels()
   {
     return initVector< std::vector<str> >
@@ -389,6 +413,7 @@ BE_NAMESPACE
      );
   }
 
+  /// Returns the vector of charged Higgs decay channels in DarkSUSY
   std::vector< std::vector<str> > DS_charged_h_decay_channels()
   {
     return initVector< std::vector<str> >
@@ -416,4 +441,4 @@ END_BE_NAMESPACE
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:48 +0000
+Updated on 2022-08-02 at 23:34:59 +0000

@@ -75,6 +75,57 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Central module file of CosmoBit.
+///  Calculates cosmology-related observables.
+///
+///  Additionally, contains main routines for
+///  interfacing to CLASS and MontePython.
+///
+///  Most of the model- or observable-specific code is
+///  stored in separate source files.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Selim C. Hotinli
+///          (selim.hotinli14@pimperial.ac.uk)
+///  \date 2017 Jul
+///  \date 2018 May
+///  \date 2018 Aug - Sep
+///
+///  \author Patrick Stoecker
+///          (stoecker@physik.rwth-aachen.de)
+///  \date 2017 Nov
+///  \date 2018 Jan - May
+///  \date 2019 Jan, Feb, June, Nov
+///
+///  \author Janina Renk
+///          (janina.renk@fysik.su.se)
+///  \date 2018 June
+///  \date 2019 Mar,June
+///
+///  \author Sanjay Bloor
+///          (sanjay.bloor12@imperial.ac.uk)
+///  \date 2019 June, Nov
+///
+///  \author Sebastian Hoof
+///          (hoof@uni-goettingen.de)
+///  \date 2020 Mar
+///
+///  \author Pat Scott
+///          (pat.scott@uq.edu.au)
+///  \date 2018 Mar
+///  \date 2019 Jul
+///  \date 2020 Apr
+///
+///  \author Tomas Gonzalo
+///          (tomas.gonzalo@monash.edu)
+///  \date 2020 Sep
+///
+///  *********************************************
 
 #include <stdint.h> // save memory addresses as int
 #include <boost/algorithm/string/trim.hpp>
@@ -95,6 +146,8 @@ namespace Gambit
     /* General cosmological quantities */
     /***********************************/
 
+    /// Function for setting k_pivot in Mpc^-1 for consistent use within CosmoBit
+    /// (i.e. ensuring a consistent value is used by both CLASS and MultiModeCode)
     void set_k_pivot(double &result)
     {
       result = Pipes::set_k_pivot::runOptions->getValueOrDef<double>(0.05, "k_pivot");
@@ -189,6 +242,7 @@ namespace Gambit
       logger() << "N_ur calculated to be " << result << EOM;
     }
 
+    /// Temperature of non-CDM in the (cosmological) SM.
     void T_ncdm_SM(double &result)
     {
       using namespace Pipes::T_ncdm_SM;
@@ -202,6 +256,7 @@ namespace Gambit
       // result = runOptions->getValueOrDef<double>(0.71611,"T_ncdm");
     }
 
+    /// Temperature of non-CDM in non-standard theories.
     void T_ncdm(double &result)
     {
       using namespace Pipes::T_ncdm;
@@ -217,6 +272,7 @@ namespace Gambit
       result = rCMB*T_ncdm_SM;
     }
 
+    /// Baryon-to-photon ratio (today) in LCDM
     void eta0_LCDM(double &result)
     {
       using namespace Pipes::eta0_LCDM;
@@ -229,6 +285,7 @@ namespace Gambit
       logger() << "Baryon to photon ratio (eta) today computed to be " << result << EOM;
     }
 
+    /// The total baryon content today.
     void compute_Omega0_b(double &result)
     {
       using namespace Pipes::compute_Omega0_b;
@@ -237,6 +294,7 @@ namespace Gambit
       result =*Param["omega_b"]/h/h;
     }
 
+    /// The total cold dark matter content today.
     void compute_Omega0_cdm(double &result)
     {
       using namespace Pipes::compute_Omega0_cdm;
@@ -245,6 +303,7 @@ namespace Gambit
       result =*Param["omega_cdm"]/h/h;
     }
 
+    /// The total photon content today.
     void compute_Omega0_g(double &result)
     {
       using namespace Pipes::compute_Omega0_g;
@@ -253,6 +312,7 @@ namespace Gambit
       result = (4.*sigmaB_SI/c_SI*pow(*Param["T_cmb"],4.)) / (3.*c_SI*c_SI*1.e10*h*h/Mpc_SI/Mpc_SI/8./pi/GN_SI);
     }
 
+    /// Number density of photons today
     void compute_n0_g(double &result)
     {
       using namespace Pipes::compute_n0_g;
@@ -260,6 +320,7 @@ namespace Gambit
       result = 2./pi/pi*zeta3 *pow(*Param["T_cmb"]*kB_eV_over_K,3.)/pow(hP_eVs*c_SI/2./pi,3)/100/100/100; // result per cm^3
     }
 
+    /// The total ultrarelativistic content today.
     void compute_Omega0_ur(double &result)
     {
       using namespace Pipes::compute_Omega0_ur;
@@ -271,6 +332,7 @@ namespace Gambit
 
     /* Classy getter functions */
 
+    /// Hubble
     void get_H0_classy(double &result)
     {
       using namespace Pipes::get_H0_classy;
@@ -279,6 +341,7 @@ namespace Gambit
       result = c_SI*BEreq::class_get_H0()/1000;
     }
 
+    /// Functor that calculates Hubble rate at redshift z [km/s/Mpc]
     void get_H_at_z_classy(daFunk::Funk &result)
     {
       using  namespace Pipes::get_H_at_z_classy;
@@ -291,6 +354,7 @@ namespace Gambit
       result = result * daFunk::cnst(Gambit::c_SI / 1e3);
     }
 
+    /// Functor that calculates time since big bang at redshift z [s]
     void get_time_at_z_classy(daFunk::Funk &result)
     {
       using  namespace Pipes::get_time_at_z_classy;
@@ -303,6 +367,7 @@ namespace Gambit
       result = result * daFunk::cnst(Gambit::Mpc_SI / Gambit::c_SI);
     }
 
+    /// Age of the universe (time since big bang at z=0) [s]
     void get_age_universe_from_time_at_z(double &result)
     {
       using namespace Pipes::get_age_universe_from_time_at_z;
@@ -310,9 +375,11 @@ namespace Gambit
       result = (*Dep::time_at_z)->bind("z")->eval(0.0);
     }
 
+    /// Energy densities *today* (Omega0)
 
 // TODO: Temporarily disabled until project is ready
 /*
+    /// Dark Energy
     void get_Omega0_Lambda_classy(double& result)
     {
       using namespace Pipes::get_Omega0_Lambda_classy;
@@ -320,6 +387,7 @@ namespace Gambit
       result = BEreq::class_get_Omega0_Lambda();
     }
 */
+    /// Matter
     void get_Omega0_m_classy(double& result)
     {
       using namespace Pipes::get_Omega0_m_classy;
@@ -327,6 +395,7 @@ namespace Gambit
       result = BEreq::class_get_Omega0_m();
     }
 
+    /// Radiation
     void get_Omega0_r_classy(double& result)
     {
       using namespace Pipes::get_Omega0_r_classy;
@@ -334,6 +403,7 @@ namespace Gambit
       result = BEreq::class_get_Omega0_r();
     }
 
+    /// Ultra-relativistic
     void get_Omega0_ur_classy(double& result)
     {
       using namespace Pipes::get_Omega0_ur_classy;
@@ -341,6 +411,7 @@ namespace Gambit
       result = BEreq::class_get_Omega0_ur();
     }
 
+    /// Non-cold dark matter
     void get_Omega0_ncdm_classy(double& result)
     {
       using namespace Pipes::get_Omega0_ncdm_classy;
@@ -348,6 +419,9 @@ namespace Gambit
       result = BEreq::class_get_Omega0_ncdm_tot();
     }
 
+    /// returns S8 = sigma8 (Omega0_m/0.3)^0.5
+    /// (sigma8:root mean square fluctuations density fluctuations within
+    /// spheres of radius 8/h Mpc)
     void get_S8_classy(double& result)
     {
       using namespace Pipes::get_S8_classy;
@@ -358,6 +432,8 @@ namespace Gambit
       result = sigma8*pow(Omega0_m/0.3, 0.5);
     }
 
+    /// Effective number of neutrino species
+    /// (mostly for cross-checking!)
     void get_Neff_classy(double& result)
     {
       using namespace Pipes::get_Neff_classy;
@@ -365,6 +441,7 @@ namespace Gambit
       result = BEreq::class_get_Neff();
     }
 
+    /// Optical depth at reionisation
     void get_tau_reio_classy(double& result)
     {
       using namespace Pipes::get_tau_reio_classy;
@@ -372,6 +449,7 @@ namespace Gambit
       result = BEreq::class_get_tau_reio();
     }
 
+    /// redshift of reionisation
     void get_z_reio_classy(double& result)
     {
       using namespace Pipes::get_z_reio_classy;
@@ -379,6 +457,7 @@ namespace Gambit
       result = BEreq::class_get_z_reio();
     }
 
+    /// Comoving sound horizon at baryon drag epoch
     void get_rs_drag_classy(double& result)
     {
       using namespace Pipes::get_rs_drag_classy;
@@ -393,4 +472,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:37 +0000
+Updated on 2022-08-02 at 23:34:54 +0000

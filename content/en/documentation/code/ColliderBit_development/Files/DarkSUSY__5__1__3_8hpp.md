@@ -293,6 +293,43 @@ LOAD_LIBRARY double double double double double int dsrdeqn rdpth rderrors rdswi
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Fronted header for the DarkSUSY backend
+///
+///  Compile-time registration of available
+///  functions and variables from this backend.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Anders Kvellestad
+///          (anders.kvellestad@fys.uio.no)
+///  \date 2013 Mar
+///
+///  \author Pat Scott
+///          (patscott@physics.mcgill.ca)
+///  \date 2013 Apr
+///        2015 Mar
+///        2018 Sep
+///
+///  \author Christoph Weniger
+///          (c.weniger@uva.nl)
+///  \date 2013 Jul
+///
+///  \author Torsten Bringmann
+///          (torsten.bringmann@fys.uio.no)
+///  \date 2013 Jul, 2014 Mar, 2015 May, 2018 Sep, 2019 May
+///
+///  \author Lars A. Dal
+///          (l.a.dal@fys.uio.no)
+///  \date 2014 Mar
+///
+///  \author Joakim Edsjo
+///          (edsjo@fysik.su.se)
+///  \date 2015 May
+///  *********************************************
 
 #define BACKENDNAME DarkSUSY
 #define BACKENDLANG FORTRAN
@@ -413,4 +450,4 @@ BE_INI_CONDITIONAL_DEPENDENCY(decay_rates, DecayTable, MSSM63atQ, CMSSM)
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:49 +0000

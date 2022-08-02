@@ -38,6 +38,10 @@ namespace Gambit {
   namespace ColliderBit {
     using namespace std;
 
+      /// bjf> Experimental! But already useful for helping me convert the key
+      /// numbers from these analyses to Python for the p-value calculuations.
+      /// This is a dumb place to define this, but there is no cpp file for
+      /// AnalysisData and I can't be bothered making one.
       void AnalysisData::pythonize_me() const
       {
           static std::set<std::string> done; // Only want this printed out once for each analysis
@@ -92,11 +96,13 @@ namespace Gambit {
                  full << "if allow_corr: ";
              }
              full << "analyses += [a]" << std::endl << std::endl;
+             /// Could record or something, but for now just dump to stdout
              std::cout << full.str();
           }
       }
 
 
+    /// Dummy analysis code with a hard-coded return including a SR covariance matrix
     class Analysis_Covariance : public Analysis{
     private:
 
@@ -118,6 +124,7 @@ namespace Gambit {
 
       void run(const HEPUtils::Event*) {}
 
+      /// Combine the variables of another copy of this analysis (typically on another thread) into this one.
       void combine(const Analysis*) {}
 
       void collect_results()
@@ -145,6 +152,7 @@ namespace Gambit {
       }
 
 
+      ///////////////////
 
     };
 
@@ -157,4 +165,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:47 +0000
+Updated on 2022-08-02 at 23:34:57 +0000

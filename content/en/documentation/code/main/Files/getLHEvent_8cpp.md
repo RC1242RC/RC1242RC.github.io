@@ -46,6 +46,19 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Les Houches event file reader module function
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)
+///  \date 2019 May
+///
+///  *********************************************
 
 #include "gambit/cmake/cmake_variables.hpp"
 
@@ -70,6 +83,7 @@ namespace Gambit
   namespace ColliderBit
   {
 
+    /// A nested function that reads in Les Houches Event files and converts them to HEPUtils::Event format
     void getLHEvent(HEPUtils::Event& result)
     {
       using namespace Pipes::getLHEvent;
@@ -116,4 +130,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:38 +0000
+Updated on 2022-08-02 at 23:34:55 +0000

@@ -50,6 +50,16 @@ Utils for ColliderBit analyses.
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Utils for ColliderBit analyses.
+///
+///  *********************************************
+///
+///  \author Daniel Steiner
+///  \date 2018 Jul
+///
+///  *********************************************
 
 
 #include "gambit/ColliderBit/Utils.hpp"
@@ -231,4 +241,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:49 +0000

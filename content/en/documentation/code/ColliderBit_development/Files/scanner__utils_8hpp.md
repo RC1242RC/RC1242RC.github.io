@@ -184,6 +184,26 @@ Gambit::Scanner::Errors::_warn_()                               \
 ```
 //  GAMBIT: Global and Modular BSM Inference Tool
 //  *********************************************
+/// \file
+///  Utility Functions for the Gambit Scanner
+///
+///  *********************************************
+///
+///  Authors
+///  =======
+///
+///  (add name and date if you modify)
+///
+///  \author Gregory Martinez
+///          (gregory.david.martinez@gmail.com)
+///  \date 2013 July
+///  \date 2014 Feb
+///
+///  \author Pat Scott
+///          (patscott@physics.mcgill.ca)
+///  \date 2014 Mar, Dec
+///
+///  *********************************************
 
 #ifndef __scanner_utils_hpp__
 #define __scanner_utils_hpp__
@@ -211,10 +231,15 @@ Gambit::Scanner::Errors::_warn_()                               \
 #include "gambit/Utils/variadic_functions.hpp"
 #include "gambit/Utils/yaml_options.hpp"
 
+/// Defined to macros to output errors in the form:
+/// scan_err << "error" << scan_end;
+/// scan_warn << "warning" << scan_end;
+/// @{
 #define scan_err        SCAN_ERR
 #define scan_warn       SCAN_WARN
 #define scan_end        SCAN_END
 #define scan_flush      SCAN_FLUSH
+///@}
 
 #define SCAN_ERR                                                \
 Gambit::Scanner::Errors::_bool_() = true,                       \
@@ -270,13 +295,16 @@ namespace Gambit
                 return error;
             }
         }
+        /// Scanner errors
         EXPORT_SYMBOLS error& scan_error();
+        /// Scanner warnings
         EXPORT_SYMBOLS warning& scan_warning();
 
         /**********************************/
         /****** zip for range loop ********/
         /**********************************/
 
+        /// Use for combine container in a range loop:  for (auto &&x : zip(a, b)){...}.
         template <typename... T>
         inline auto zip(const T&... containers) -> boost::iterator_range<boost::zip_iterator<decltype(boost::make_tuple(std::begin(containers)...))>>
         {
@@ -289,6 +317,7 @@ namespace Gambit
         /****** demangle function ********/
         /*********************************/
 
+        /// Demangles gnu c++ name.
         inline std::string demangle(const std::string &in)
         {
 #ifdef __GNUG__
@@ -313,6 +342,10 @@ namespace Gambit
         /****** get_yaml_vector function ********/
         /****************************************/
 
+        /// Input a vector from the yaml file of the following forms:
+        /// vec: [a, b, ...]
+        /// vec: a, b, ...
+        /// vec: a; b; ...
         template <typename T>
         inline std::vector<T> get_yaml_vector(const YAML::Node &node)
         {
@@ -372,6 +405,8 @@ namespace Gambit
         /****** input_variadic_vector ********/
         /*************************************/
 
+        /// Inputs a varibadic pack into a vector
+        /// @{
         inline void input_variadic_vector(std::vector<void *> &){}
 
         template <typename T, typename... args>
@@ -380,11 +415,13 @@ namespace Gambit
             input.push_back((void *)&value);
             input_variadic_vector(input, params...);
         }
+        /// @}
 
         /*****************************/
         /****** String to Int ********/
         /*****************************/
 
+        /// Converts a string to an int
         inline int StringToInt(const std::string &str)
         {
             int ret;
@@ -395,6 +432,7 @@ namespace Gambit
                     return 0;
         }
 
+        /// Converts a int into a string
         inline std::string IntToString(const int &in)
         {
             std::stringstream ss;
@@ -406,12 +444,14 @@ namespace Gambit
         /********* pi function **********/
         /********************************/
 
+        /// Output pi.
         inline double pi() {return 3.14159265358979323846;}
 
         /***********************************/
         /********* convert_to_map **********/
         /***********************************/
 
+        /// Turns a vector with enters [model::parameter, ...] into a map with [{model, parameter}, ...].
         inline std::map<std::string, std::vector<std::string>> convert_to_map(const std::vector<std::string> &vec)
         {
             std::map<std::string, std::vector<std::string>> ret;
@@ -429,6 +469,8 @@ namespace Gambit
         /********* scanner_plugin_def_ret **********/
         /*******************************************/
 
+        /// Turns a type into an object.  If it's a floating point number, it replaces it with a big negative number.
+        /// @{
         template <typename ret>
         typename std::enable_if<!std::is_floating_point<ret>::value, ret>::type scanner_plugin_def_ret()
         {
@@ -440,11 +482,14 @@ namespace Gambit
         {
             return -std::pow(10.0, std::numeric_limits<double>::max_exponent10);
         };
+        /// @}
 
         /********************************/
         /******** pow function **********/
         /********************************/
 
+        /// Outputs a^i
+        /// @{
         template <int i>
         inline double pow(const double &a)
         {
@@ -480,6 +525,7 @@ namespace Gambit
         {
             return a;
         };
+        /// @}
 
         /********************************/
         /****** Remove All Func *********/
@@ -740,6 +786,8 @@ namespace Gambit
         /****** Stream Operators ********/
         /********************************/
 
+        /// Outputs containers to an output stream
+        /// @{
         template <typename T>
         inline typename std::enable_if <is_container<T>::value, std::ostream &>::type
         operator << (std::ostream &out, const T &in)
@@ -765,11 +813,14 @@ namespace Gambit
         {
             return out << "{" << in.first << " : " << in.second << "}";
         }
+        /// @}
 
         /********************************/
         /****** Output Functions ********/
         /********************************/
 
+        /// Functions to output data for the plugin resume functions
+        /// @{
         template<typename T>
         inline typename std::enable_if<!is_container<T>::value && !is_pair<T>::value, void>::type
         resume_file_output(std::ofstream &out, T &param)
@@ -857,6 +908,7 @@ namespace Gambit
         {
             return param.length();
         }
+        /// @}
     }
 }
 
@@ -866,4 +918,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:37 +0000
+Updated on 2022-08-02 at 23:34:48 +0000

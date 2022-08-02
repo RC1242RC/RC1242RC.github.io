@@ -53,6 +53,22 @@ Authors:
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  "Header" declarations for MDMSpec class
+///  (definitions in another header file due to
+///  this being a template class)
+///
+///  *********************************************
+///
+///  Authors:
+///  <!-- add name and date if you modify -->
+///
+///  \author James McKay
+///          j.mckay14@imperial.ac.uk
+///  \date 2018 Mar
+///
+///  *********************************************
 
 #ifndef MDMSPEC_HEAD_H
 #define MDMSPEC_HEAD_H
@@ -76,6 +92,8 @@ namespace Gambit
    // SpecBit/include/model_files_and_boxes.hpp,
    // MODELNAME_interface class
 
+   /// Specialisation of "traits" class used to inform Spec<T> class of what
+   /// "Model" and "Input" are for this derived class
    //template <>
    template <class MI>
    struct SpecTraits<SpecBit::MDMSpec<MI>>
@@ -97,6 +115,8 @@ namespace Gambit
             static const int _index_offset;
 
          public:
+            /// These typedefs are inherited, but the name lookup doesn't work so smoothly in
+            /// templated wrapper classes, so need to help them along:
             typedef MDMSpec<MI> Self;
             typedef typename Self::MTget MTget;
             typedef typename Self::MTset MTset;
@@ -105,6 +125,7 @@ namespace Gambit
             typedef typename SpecTraits<Self>::Model Model;
             typedef typename SpecTraits<Self>::Input Input;
 
+            /// Interface function overrides
             static int index_offset() {return _index_offset;}
             virtual double GetScale() const;
             virtual void SetScale(double scale);
@@ -157,6 +178,7 @@ namespace Gambit
               return;
             }
 
+            /// Map filler overrides
             static GetterMaps fill_getter_maps();
             static SetterMaps fill_setter_maps();
 
@@ -174,4 +196,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:38 +0000
+Updated on 2022-08-02 at 23:34:48 +0000

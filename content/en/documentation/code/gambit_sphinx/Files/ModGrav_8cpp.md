@@ -38,6 +38,17 @@ CosmoBit routines relating to modified gravity models. Currently includes solar 
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  CosmoBit routines relating to modified gravity models.
+///  Currently includes solar system tests.
+///
+///  *********************************************
+///  Authors (add name and date if you modify):
+///  \author Anna Liang
+///          (a.liang1@uqconnect.edu.au)
+///  \date 2021 Aug
+///  *********************************************
  
 // TODO: Temporarily disabled until project is ready
 /*
@@ -406,4 +417,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:49 +0000

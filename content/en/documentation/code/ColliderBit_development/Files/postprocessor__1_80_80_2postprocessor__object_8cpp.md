@@ -38,7 +38,21 @@ Authors (add name and date if you modify):
 ```
 //  GAMBIT: Global and Modular BSM Inference Tool
 //  *********************************************
+///  \file
+///
+///  Helper object for the postprocessor plugin,
+///  plus some auxilliary functions
+///
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
 //
+///  \author Ben Farmer
+///          (ben.farmer@gmail.com)
+///  \date 2016 Mar, 2017 Jan, Feb, Mar
+///
+///  *********************************************
 
 #include "gambit/ScannerBit/scanners/postprocessor_1.0.0/postprocessor.hpp"
 #include "gambit/Utils/new_mpi_datatypes.hpp"
@@ -52,7 +66,9 @@ namespace Gambit
    namespace PostProcessor
    {
 
+      /// @{ Helper functions for performing resume related tasks
 
+      /// Answer queries as to whether a given dataset index has been postprocessed in a previous run or not
       bool point_done(const ChunkSet done_chunks, size_t index)
       {
         bool answer = false;
@@ -68,6 +84,9 @@ namespace Gambit
         return answer;
       }
 
+      /// Get 'effective' start and end positions for a processing batch
+      /// i.e. simply divides up an integer into the most even parts possible
+      /// over a given number of processes
       Chunk get_effective_chunk(const std::size_t total_length, const unsigned int rank, const unsigned int numtasks)
       {
          // Compute which points this process is supposed to process. Divide total
@@ -90,8 +109,10 @@ namespace Gambit
          return Chunk(start,end);
       }
 
+      /// Compute start/end indices for a given rank process, given previous "done_chunk" data.
       Chunk get_my_chunk(const std::size_t dset_length, const ChunkSet& done_chunks, const int rank, const int numtasks)
       {
+        /// First compute number of points left to process
         std::size_t left_to_process = 0;
         std::size_t prev_chunk_end = 0;
         bool first_chunk = true;
@@ -267,6 +288,7 @@ namespace Gambit
         return realchunk;
       }
 
+      /// Read through resume data files and reconstruct which chunks of points have already been processed
       ChunkSet get_done_points(const std::string& filebase)
       {
         ChunkSet done_chunks;
@@ -328,6 +350,7 @@ namespace Gambit
         return merge_chunks(done_chunks); // Simplify the chunks and return them
       }
 
+      /// Simplify a ChunkSet by merging chunks which overlap.
       ChunkSet merge_chunks(const ChunkSet& input_chunks)
       {
         ChunkSet merged_chunks;
@@ -381,6 +404,8 @@ namespace Gambit
         return merged_chunks;
       }
 
+      /// Write resume data files
+      /// These specify which chunks of points have been processed during this run
       void record_done_points(const ChunkSet& done_chunks, const Chunk& mydone, const std::string& filebase, unsigned int rank, unsigned int size)
       {
         if(rank == 0)
@@ -469,8 +494,11 @@ namespace Gambit
           return all_vals;
       }
       #endif
+      /// @}
 
+      /// @{ PPDriver member function definitions
 
+      /// Default constructor
       PPDriver::PPDriver()
         : reader(NULL)
         , printer(NULL)
@@ -499,6 +527,7 @@ namespace Gambit
         #endif
       {}
 
+      /// Real constructor
       PPDriver::PPDriver(
            Printers::BaseBaseReader* const r
          , Printers::BaseBasePrinter* const p
@@ -555,6 +584,7 @@ namespace Gambit
          #endif
       }
 
+      /// @{ Safe(-ish) accessors for pointer data
       Printers::BaseBaseReader& PPDriver::getReader()
       {
          if(reader==NULL)
@@ -588,6 +618,7 @@ namespace Gambit
          // }
          return LogLike;
       }
+      /// @}
 
       bool PPDriver::check_for_redistribution_request()
       {
@@ -619,6 +650,7 @@ namespace Gambit
          #endif
       }
 
+      /// Check postprocessor settings for consistency and general validity
       void PPDriver::check_settings()
       {
          new_params = all_params; // Parameters not present in the input file; to be deduced here. Start from everything and cut out those in the input file.
@@ -641,6 +673,9 @@ namespace Gambit
             }
          }
 
+         /// Check if any of the output names selected in the renaming scheme are already claimed by functor output etc.
+         /// Also check if the requested input label actually exists in the input dataset
+         /// And check if the selected output name clashes with another input name that isn't selected for renaming
          for(std::map<std::string,std::string>::iterator it = renaming_scheme.begin(); it!=renaming_scheme.end(); ++it)
          {
             std::string in_label = it->first;
@@ -845,8 +880,10 @@ namespace Gambit
            }
          }
          if(rank==0) std::cout << "Copy analysis complete." <<std::endl;
+         /// @}
 
 
+         /// Check that we aren't accidentally throwing away any old likelihood components that we might want to keep.
          if(not discard_old_logl)
          {
             // Check if any of the likelihood components being added or subtracted from the likelihood
@@ -877,6 +914,7 @@ namespace Gambit
 
       }
 
+      /// The main run loop
       int PPDriver::run_main_loop(const ChunkSet& done_chunks)
       {
          // Compute which points this process is supposed to process. Divide up
@@ -963,6 +1001,7 @@ namespace Gambit
            unsigned long long pointID = current_point.pointID;
            //std::cout << "Rank: "<<rank<<", current iteration: "<<loopi<<", current point:" << MPIrank << ", " << pointID << std::endl;
 
+           /// @{ Retrieve the old parameter values from previous output
 
            // Storage for retrieved parameters
            std::unordered_map<std::string, double> outputMap;
@@ -978,6 +1017,7 @@ namespace Gambit
               continue;
            }
 
+           /// @}
 
            // Determine if model point passes the user-requested cuts
            // This is a little tricky because we don't know the type of the input dataset.
@@ -1115,9 +1155,24 @@ namespace Gambit
 
               }
 
+              ///  In the future would be nice if observables could be reconstructed from the
+              ///  output file, but that is a big job, need to automatically create functors
+              ///  for them which provide the capabilities they are supposed to correspond to,
+              ///  which is possible since this information is stored in the labels, but
+              ///  would take quite a bit of setting up I think...
+              ///  Would need the reader to provide virtual functions for retrieving all the
+              ///  observable metadata from the output files.
+              ///
+              ///  UPDATE: TODO: What happens in case of invalid point? Does this copying etc. just get skipped?
+              ///  Or do I need to check that the output LogL was valid somehow?
+              ///  Answer: Loglike function just returns a default low value in that case, scanner plugins do
+              ///  not see the invalid point exceptions, they are caught inside the likelihood container.
            }
            else if(not discard_points_outside_cuts)
            {
+              /// No postprocessing to be done, but we still should copy across the modelparameters
+              /// and point ID data, since the copying routines below assume that these were taken
+              /// care of by the likelihood routine, which we never ran.
               getPrinter().print(MPIrank, "MPIrank", MPIrank, pointID);
               getPrinter().print(pointID, "pointID", MPIrank, pointID);
               // Now the modelparameters
@@ -1134,6 +1189,7 @@ namespace Gambit
               }
            }
 
+           /// Copy selected data from input file
            if(not cuts_passed and discard_points_outside_cuts)
            {
               // Don't copy in this case, just discard the old data.
@@ -1203,6 +1259,7 @@ namespace Gambit
               }
            }
 
+           /// Go to next point
            if(not stop_loop) current_point = getReader().get_next_point();
          }
 
@@ -1253,6 +1310,7 @@ namespace Gambit
               valid_modelparams = false;
               //std::cout << "ModelParameters marked 'invalid' for model "<<model<<"; point will be skipped." << std::endl;
            }
+           /// @{ Debugging; show what was actually retrieved from the output file
            //std::cout << "Retrieved parameters for model '"<<model<<"' at point:" << std::endl;
            //std::cout << " ("<<MPIrank<<", "<<pointID<<")  (rank,pointID)" << std::endl;
            //const std::vector<std::string> names = modelparameters.getKeys();
@@ -1262,6 +1320,7 @@ namespace Gambit
            //{
            //  std::cout << "    " << *kt << " : " << modelparameters[*kt] << std::endl;
            //}
+           /// @}
 
            // Check that all the required parameters were retrieved
            // Could actually do this in the constructor for the scanner plugin, would be better, but a little more complicated. TODO: do this later.
@@ -1285,6 +1344,7 @@ namespace Gambit
          return valid_modelparams;
       }
 
+      /// @}
    }
 }
 ```
@@ -1292,4 +1352,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:37 +0000
+Updated on 2022-08-02 at 23:34:48 +0000

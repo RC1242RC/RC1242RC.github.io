@@ -58,6 +58,32 @@ Authors:
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  ScalarSingletDM_Z2 derived version of SubSpectrum class.
+///
+///  *********************************************
+///
+///  Authors:
+///  <!-- add name and date if you modify -->
+///
+///  \author Peter Athron
+///          (peter.athron@coepp.org.au)
+///  \date 2014, 2015 Jan, Feb, Mar
+///
+///  \author Ben Farmer
+///          (benjamin.farmer@fysik.su.se)
+///  \date 2014, 2015 Jan, Feb, Mar
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)
+///  \date 2015 Aug
+///
+///  \author James McKay
+///          (j.mckay14@imperial.ac.uk)
+///  \date 2016 Mar
+///
+///  *********************************************
 
 #ifndef ScalarSingletDM_Z2SPEC_H
 #define ScalarSingletDM_Z2SPEC_H
@@ -244,6 +270,7 @@ namespace Gambit
             // reinstating the Z and W getters as otherwise there is no
             // point in having the setters!
             tmp_map["Z0"] = &Model::get_MVZ_pole_slha;
+            //// //tmp_map["g"] = &Model::get_MGluon_pole_slha;
              tmp_map["g"] = &Model::get_MVG_pole_slha;
 
 
@@ -291,6 +318,7 @@ namespace Gambit
          static const int i012345v[] = {0,1,2,3,4,5};
          static const std::set<int> i012345(i012345v, Utils::endA(i012345v));
 
+         /// @{ mass2 - mass dimension 2 parameters
          //
          // Functions utilising the "plain-vanilla" function signature
          // (Zero index member functions of model object)
@@ -344,6 +372,7 @@ namespace Gambit
          return map_collection;
       }
 
+      /// @}
 
    } // end SpecBit namespace
 } // end Gambit namespace
@@ -354,4 +383,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:36 +0000
+Updated on 2022-08-02 at 23:34:53 +0000

@@ -39,6 +39,18 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Frontend for SUSY-HIT 1.5 backend
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+/// \author Pat Scott
+/// \date 2015 Jan-May
+///
+///  *********************************************
 
 #include <sstream>
 
@@ -52,6 +64,7 @@ Authors (add name and date if you modify):
 BE_NAMESPACE
 {
 
+  /// Shortcut for dealing with SLHA blocks
   void required_block(const str& name, SLHAea::Block& block, const SLHAea::Coll& slha)
   {
     if (slha.find(name) != slha.end()) block = slha.at(name);
@@ -63,7 +76,11 @@ BE_NAMESPACE
     " 1. a GAMBIT Spectrum object (see SpecBit::get_MSSM_spectrum_from_SLHAfile), or       \n"
     " 2. a GAMBIT DecayTable object (see DecayBit::all_decays_from_SLHA).                  \n");
   }
+  /// @}
 
+  /// Runs actual SUSY-HIT decay calculations.
+  /// Inputs: m_s_1GeV_msbar    strange mass in GeV, in MSbar scheme at an energy of 1GeV
+  ///         W_width, Z_width  EW gauge boson total widths in GeV
   void run_susy_hit(SLHAstruct slha, double W_width, double Z_width)
   {
     using SLHAea::to;
@@ -460,4 +477,4 @@ END_BE_INI_FUNCTION
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:41 +0000
+Updated on 2022-08-02 at 23:34:51 +0000

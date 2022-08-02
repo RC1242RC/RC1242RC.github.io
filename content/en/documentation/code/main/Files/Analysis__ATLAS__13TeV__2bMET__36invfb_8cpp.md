@@ -57,6 +57,7 @@ using namespace std;
 namespace Gambit {
   namespace ColliderBit {
 
+    /// A useful MT2 class for this module
     class MT2 {
     public:
       MT2(){
@@ -355,6 +356,7 @@ namespace Gambit {
         vector<const HEPUtils::Jet*> nonBJets;
 
         // Get b jets
+        /// @note We assume that b jets have previously been 100% tagged
 
         const std::vector<double>  a = {0,10.};
         const std::vector<double>  b = {0,10000.};
@@ -898,6 +900,7 @@ namespace Gambit {
 
       }
 
+      /// Combine the variables of another copy of this analysis (typically on another thread) into this one.
       void combine(const Analysis* other)
       {
         const Analysis_ATLAS_13TeV_2bMET_36invfb* specificOther
@@ -968,4 +971,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:37 +0000
+Updated on 2022-08-02 at 23:34:54 +0000

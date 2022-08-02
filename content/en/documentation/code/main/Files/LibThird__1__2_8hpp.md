@@ -86,6 +86,21 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Example of how to use the macros in
+///  'backend_macros.hpp' to set up a frontend for
+///  a Python library.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)
+///  \date 2017 Dec
+///
+///  *********************************************
 
 
 #define BACKENDNAME LibThird
@@ -165,4 +180,4 @@ BE_CONV_FUNCTION(awesomenessNotByAnders, double, (int), "awesomeness")
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:55 +0000

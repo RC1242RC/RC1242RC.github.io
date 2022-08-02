@@ -43,6 +43,10 @@ namespace Gambit {
     using namespace HEPUtils;
 
 
+    /// @brief CMS Run 2 0-lepton jet+MET SUSY analysis, with 36/fb of data
+    ///
+    /// Based on: https://arxiv.org/pdf/1704.07781.pdf
+    ///
     class Analysis_CMS_13TeV_0LEP_36invfb : public Analysis {
     public:
 
@@ -128,6 +132,7 @@ namespace Gambit {
         CMS::applyMuonEff(basemuons);
 
         // Electron isolation
+        /// @todo Sum should actually be over all non-e/mu calo particles
         vector<const Particle*> elecs;
         for (const Particle* e : baseelecs) {
           const double R = max(0.05, min(0.2, 10/e->pT()));
@@ -138,6 +143,7 @@ namespace Gambit {
         }
 
         // Muon isolation
+        /// @todo Sum should actually be over all non-e/mu calo particles
         vector<const Particle*> muons;
         for (const Particle* m : basemuons) {
           const double R = max(0.05, min(0.2, 10/m->pT()));
@@ -154,6 +160,7 @@ namespace Gambit {
         _cutflow.fill(5);
 
 
+        /// @todo Need access to charged hadrons to do this isolation
         // // Get isolated tracks
         // Particles trks25 = apply<ParticleFinder>(event, "Tracks").particles();
         // ifilter_discard(trks25, [&](const Particle& t) {
@@ -188,6 +195,7 @@ namespace Gambit {
         _cutflow.fill(10);
 
 
+        ////////
 
 
         // // Calculate a bin index for this event
@@ -250,6 +258,7 @@ namespace Gambit {
 
       }
 
+      /// Combine the variables of another copy of this analysis (typically on another thread) into this one.
       void combine(const Analysis* other)
       {
         const Analysis_CMS_13TeV_0LEP_36invfb* specificOther = dynamic_cast<const Analysis_CMS_13TeV_0LEP_36invfb*>(other);
@@ -257,6 +266,7 @@ namespace Gambit {
       }
 
 
+      /// Register results objects with the results for each SR; obs & bkg numbers from the CONF note
       void collect_results() {
 
         // The bkg errors are quad sums of upper limits
@@ -295,4 +305,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:38 +0000
+Updated on 2022-08-02 at 23:34:49 +0000

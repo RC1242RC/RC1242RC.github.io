@@ -88,6 +88,22 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Frontend header for the Prospino backend.
+///
+///  Compile-time registration of available
+///  functions and variables from this backend.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Anders Kvellestad
+///          (a.kvellestad@imperial.ac.uk)
+///  \date 2019 March, Nov
+///
+///  *********************************************
 
 #define BACKENDNAME Prospino
 #define BACKENDLANG Fortran
@@ -127,4 +143,4 @@ BE_CONV_FUNCTION(prospino_read_slha1_input, void, (const SLHAstruct&), "prospino
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:50 +0000

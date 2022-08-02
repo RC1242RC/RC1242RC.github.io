@@ -54,6 +54,37 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Declaration of the Classy_input class used for
+///  communicating with the backend classy.
+///  It has the attribute 'input_dict' which is a python
+///  dictionary containing the input parameters for CLASS
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Patrick Stoecker
+///          (stoecker@physik.rwth-aachen.de)
+///  \date 2017 Nov
+///  \date 2018 May
+///
+///  \author Janina Renk
+///          (janina.renk@fysik.su.se)
+///  \date 2018 Oct
+///  \date 2019 Mar
+///  \date 2020 Aug
+///
+///  \author Sebastian Hoof
+///          (hoof@uni-goettingen.de)
+///  \date 2020 Mar
+///
+///  \author Pat Scott
+///          (pat.scott@uq.edu.au)
+///  \date 2020 Apr
+///
+///  *********************************************
 
 #ifndef __classy_types_hpp__
 #define __classy_types_hpp__
@@ -124,4 +155,4 @@ Authors (add name and date if you modify):
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:38 +0000
+Updated on 2022-08-02 at 23:34:55 +0000

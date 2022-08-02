@@ -57,6 +57,32 @@ Pat Scott ([patscott@physics.mcgill.ca](mailto:patscott@physics.mcgill.ca))
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Library of ModelGraph methods.
+///  
+///  Duties:
+///  * Create and track a graph of the model hierarchy,
+///    for both visualisation and for relationship 
+///    checks
+///
+///  *********************************************
+///
+///  Authors
+///  =======
+///
+///  (add name and date if you modify)
+///
+///  \author Ben Farmer
+///          (benjamin.farmer@monash.edu.au)
+///  \date 2013 July 17
+///
+///  \author Pat Scott
+///          (patscott@physics.mcgill.ca)
+///  \date 2013 Aug, Sep
+///  \date 2014 Mar
+///
+///  *********************************************
 
 #include "gambit/Core/modelgraph.hpp"
 #include "gambit/Models/models.hpp"
@@ -73,13 +99,18 @@ Pat Scott ([patscott@physics.mcgill.ca](mailto:patscott@physics.mcgill.ca))
 namespace Gambit
 {
 
+  /// ModelHierarchy method definitions
+  /// Creates a graph of the model hierarchy for visualisation purposes.
+  /// @{
     
+    /// Constructor
     ModelHierarchy::ModelHierarchy(const Models::ModelFunctorClaw& claw, const primodel_vec& pmv, str file, bool talky)
      : boundClaw(&claw), filename(file), verbose(talky)
     {
       makeGraph(pmv);
     }
 
+    /// Figure out relationships between primary model functors    
     void ModelHierarchy::makeGraph(const primodel_vec& primaryModelFunctors)
     {
       boost::graph_traits<ModelGraphType>::vertex_iterator vi, vi_end;
@@ -159,6 +190,7 @@ namespace Gambit
 #endif
     }
 
+    /// Add model functors to the modelGraph
     void ModelHierarchy::addFunctorsToGraph(const primodel_vec& primaryModelFunctors)
     {
       // - model functors go into modelGraph
@@ -171,9 +203,13 @@ namespace Gambit
       }
     }
 
+  /// @}    
 
 
+  /// ModelHierarchy::labelWriter method definitions
+  /// @{
 
+    /// Constructor
     ModelHierarchy::labelWriter::labelWriter(const ModelGraphType * modelGraph) : myGraph(modelGraph) {}
 
     void ModelHierarchy::labelWriter::operator()(std::ostream& out, const ModelVertexID& v) const
@@ -202,4 +238,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:38 +0000
+Updated on 2022-08-02 at 23:34:48 +0000

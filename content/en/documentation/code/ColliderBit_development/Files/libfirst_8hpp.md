@@ -47,6 +47,19 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Typedefs for libfirst.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///  
+///  \author Pat Scott  
+///          (patscott@physics.mcgill.ca)
+///  \date 2014 May
+///
+///  *********************************************
 
 #ifndef __libfirst_types_hpp__
 #define __libfirst_types_hpp__
@@ -64,4 +77,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:49 +0000

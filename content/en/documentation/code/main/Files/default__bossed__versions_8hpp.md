@@ -79,6 +79,22 @@ Authors (add name and date if you modify):
 //  *********************************************
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Choices about the default versions of backends
+///  to use for loading types (specific versions
+///  of types can always be used by employing the
+///  qualified type BACKENDNAME_SAFEVERSION::TYPE)
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Pat Scott
+///          (patscott@physics.mcgill.ca)
+///  \date 2014 Nov
+///
+///  *********************************************
 
 #pragma once
 
@@ -95,4 +111,4 @@ Authors (add name and date if you modify):
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:55 +0000

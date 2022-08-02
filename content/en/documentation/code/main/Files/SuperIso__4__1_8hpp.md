@@ -200,6 +200,23 @@ LOAD_LIBRARY const parameters WC const parameters WC const parameters modified_d
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Frontend for SuperIso backend v4.1
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Nazila Mahmoudi
+///  \date   2016 Jul
+///  \date   2018 Jan
+///  \date   2019 Aug
+///
+///  \author Pat Scott
+///  \date   2015 May
+///
+///  *********************************************
 
 
 
@@ -287,4 +304,4 @@ BE_CONV_FUNCTION(modified_delta0, double, (const parameters*), "modified_delta0"
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:55 +0000

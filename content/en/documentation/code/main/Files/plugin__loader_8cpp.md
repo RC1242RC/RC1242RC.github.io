@@ -39,7 +39,29 @@ Authors (add name and date if you modify):
 ```
 //  GAMBIT: Global and Modular BSM Inference Tool
 //  *********************************************
+///  \file
+///
+///  Loader singleton class for scanner plugins
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
 //
+///  \author Gregory Martinez
+///          (gregory.david.martinez@gmail.com)
+///  \date 2013 August
+///  \date 2014 Feb
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)
+///  \date 2014 Dec
+///  \date 2017 Jun
+///
+///  \author Ben Farmer
+///          (benjamin.farmer@fysik.su.se)
+///  \date 2016 Aug
+///
+///  *********************************************
 
 #include <cstdlib>
 #include <iomanip>
@@ -117,6 +139,7 @@ namespace Gambit
                 }
             }
 
+            /// Check a plugin map and return a flag indicating if a candidate plugin is already in the map or not.
             bool is_new_plugin(std::map<str, std::map<str, std::vector<Plugin_Details>>>& pmap, Plugin_Details& cand)
             {
                 bool new_plugin_type = pmap.find(cand.type) == pmap.end();
@@ -658,6 +681,7 @@ namespace Gambit
                 }
             }
 
+            /// Save persistence file to record that the alternative min_LogL value is in use for this scan
             void pluginInfo::save_alt_min_LogL_state() const
             {
                 std::string state_fname(def_out_path+"/ALT_MIN_LOGL_IN_USE");
@@ -665,6 +689,7 @@ namespace Gambit
                 outfile.close();
             }
 
+            /// Delete the persistence file if it exists (e.g. when starting a new run)
             void pluginInfo::clear_alt_min_LogL_state() const
             {
                 if(check_alt_min_LogL_state())
@@ -675,6 +700,7 @@ namespace Gambit
                 }
             }
 
+            /// Check persistence file to see if we should be using the alternative min_LogL value
             bool pluginInfo::check_alt_min_LogL_state() const
             {
                 return Utils::file_exists(def_out_path+"/ALT_MIN_LOGL_IN_USE");
@@ -697,6 +723,7 @@ namespace Gambit
             {}
 
             #ifdef WITH_MPI
+            ///Initialise any MPI functionality (currently just used to provide a communicator object to ScannerBit)
             void pluginInfo::initMPIdata(GMPI::Comm* newcomm)
             {
                scannerComm = newcomm;
@@ -724,4 +751,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:37 +0000
+Updated on 2022-08-02 at 23:34:53 +0000

@@ -105,6 +105,19 @@ LOAD_LIBRARY BE_FUNCTION(
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  A fortran backend-frontend example, showing
+///  how to use the special GAMBIT fortran variable
+///  types, in particular fortran arrays.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+/// \author Lars A. Dal
+///
+///  *****************************************
 
 
 #define BACKENDNAME LibFarrayTest
@@ -160,4 +173,4 @@ END_BE_INI_FUNCTION
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:50 +0000

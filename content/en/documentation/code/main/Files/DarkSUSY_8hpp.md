@@ -113,6 +113,36 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Definitions of container classes
+///  for the DarkSUSY backend.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Christoph Weniger
+///          (christoph.weniger@gmail.com)
+///  \date 2012 Mar
+///
+///  \author Torsten Bringmann
+///          (torsten.bringmann@fys.uio.no)
+///  \date 2013 Jun, 2014 Mar, 2015 Apr, 2018 Sep, 2019 May
+///
+///  \author Pat Scott
+///          (patscott@physics.mcgill.ca)
+///  \date 2013 Oct
+///
+///  \author Jonathan Cornell
+///          (jcornell@ucsc.edu)
+///  \date 2014 Oct
+///
+///  \author Joakim Edsjo
+///          (edsjo@fysik.su.se)
+///  \date 2015 May, 2018 Sep
+///
+///  *********************************************
 
 #ifndef __DarkSUSY_types_hpp__
 #define __DarkSUSY_types_hpp__
@@ -563,4 +593,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:38 +0000
+Updated on 2022-08-02 at 23:34:55 +0000

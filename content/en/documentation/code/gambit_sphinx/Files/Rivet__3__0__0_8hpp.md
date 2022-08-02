@@ -78,6 +78,18 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Frontend for Rivet backend v3.0.0
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Tomas Gonzalo
+///  \date   2019 July
+///
+///  *********************************************
 
 #define BACKENDNAME Rivet
 #define BACKENDLANG CC
@@ -96,4 +108,4 @@ BE_INI_FUNCTION{} END_BE_INI_FUNCTION
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:41 +0000
+Updated on 2022-08-02 at 23:34:50 +0000

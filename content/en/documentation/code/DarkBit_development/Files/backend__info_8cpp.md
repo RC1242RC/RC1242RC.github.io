@@ -54,6 +54,25 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Container used for storing info about
+///  backends during initialisation time.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Pat Scott
+///          (patscott@physics.mcgill.ca)
+///  \date 2014 Dec
+///  \date 2017 Dec
+///
+///  \author Patrick Stoecker
+///          (stoecker@physik.rwth-aachen.de)
+///  \date 2019 Jun
+///
+///  *********************************************
 
 #include <dlfcn.h>
 
@@ -84,6 +103,7 @@ namespace Gambit
 
   // Public method definitions for backend_info class
 
+  /// Constructor
   Backends::backend_info::backend_info()
    : filename(GAMBIT_DIR "/config/backend_locations.yaml")
    , default_filename(GAMBIT_DIR "/config/backend_locations.yaml.default")
@@ -122,6 +142,7 @@ namespace Gambit
     }
   }
 
+  /// Destructor
   Backends::backend_info::~backend_info()
   {
     #ifdef HAVE_PYBIND11
@@ -138,21 +159,25 @@ namespace Gambit
     #endif
   }
 
+  /// Indicate whether a custom backend locations file exists
   bool Backends::backend_info::custom_locations_exist() const
   {
     return custom_bepathfile_exists;
   }
 
+  /// Return the path to any custom user backend locations file
   str Backends::backend_info::backend_locations() const
   {
     return filename;
   }
 
+  /// Return the path to the default backend locations file
   str Backends::backend_info::default_backend_locations() const
   {
     return default_filename;
   }
 
+  /// Return the path to a backend library, given a backend name and version.
   str Backends::backend_info::path(str be, str ver) const
   {
     const str default_path("no path in config/backend_locations.yaml.default");
@@ -207,6 +232,7 @@ namespace Gambit
     return p;
   }
 
+  /// Return the complete path to a backend library, given a backend name and version.
   str Backends::backend_info::corrected_path(str be, str ver) const
   {
     str p = path(be,ver);
@@ -217,6 +243,7 @@ namespace Gambit
     return p;
   }
 
+  /// Return the path to the folder in which a backend library resides
   str Backends::backend_info::path_dir(str be, str ver) const
   {
     str p = corrected_path(be,ver);
@@ -227,6 +254,7 @@ namespace Gambit
     return p;
   }
 
+  /// Return the bare name of the library of a backend library, with no path or extension
   str Backends::backend_info::lib_name(str be, str ver) const
   {
     str p = corrected_path(be,ver);
@@ -239,22 +267,26 @@ namespace Gambit
     return p.substr(i+1,end-i);
   }
 
+  /// Given a backend and a safe version (with no periods), return the true version
   str Backends::backend_info::version_from_safe_version (str be, str sv) const
   {
     return safe_version_map.at(be).first.at(sv);
   }
 
+  /// Given a backend and a true version (with periods), return the safe version
   str Backends::backend_info::safe_version_from_version (str be, str v) const
   {
     return safe_version_map.at(be).second.at(v);
   }
 
+  /// Link a backend's version and safe version
   void Backends::backend_info::link_versions(str be, str v, str sv)
   {
     safe_version_map[be].first[sv] = v;
     safe_version_map[be].second[v] = sv;
   }
 
+  /// Override a backend's config file location
   void Backends::backend_info::override_path(const str& be, const str& ver, str path)
   {
     int l = str(GAMBIT_DIR).length();
@@ -262,6 +294,7 @@ namespace Gambit
     bepathoverrides[be][ver] = path;
   }
 
+  /// Get the default version of a BOSSed backend.
   str Backends::backend_info::default_version(const str& be) const
   {
     if (default_safe_versions.find(be) == default_safe_versions.end())
@@ -274,6 +307,7 @@ namespace Gambit
     return version_from_safe_version(be,default_safe_versions.at(be));
   }
 
+  /// Get all versions of a given backend that are successfully loaded.
   std::vector<str> Backends::backend_info::working_versions(const str& be)
   {
     std::vector<str> working_versions;
@@ -294,6 +328,7 @@ namespace Gambit
   }
 
 
+  /// Get all safe versions of a given backend that are successfully loaded.
   std::vector<str> Backends::backend_info::working_safe_versions(const str& be)
   {
     // Get the working versions, then iterate over them and convert them to safe versions.
@@ -307,6 +342,7 @@ namespace Gambit
   }
 
 
+  /// Try to resolve a pointer to a partial path to a shared library and use it to override the stored backend path.
   void Backends::backend_info::attempt_backend_path_override(const str& be, const str& ver, const char* name)
   {
     char *fullname = realpath(name, NULL);
@@ -325,6 +361,7 @@ namespace Gambit
   }
 
 
+  /// Attempt to load a backend library.
   int Backends::backend_info::loadLibrary(const str& be, const str& ver, const str& sv, bool with_BOSS, const str& lang)
   {
     try
@@ -404,6 +441,7 @@ namespace Gambit
     return 0;
   }
 
+  /// Load a data-only backend library.
   void Backends::backend_info::loadLibrary_data(const str& be, const str& ver, const str& sv)
   {
     const str path = corrected_path(be,ver);
@@ -425,6 +463,7 @@ namespace Gambit
     }
   }
 
+  /// Load a backend library written in C, C++ or Fortran.
   void Backends::backend_info::loadLibrary_C_CXX_Fortran(const str& be, const str& ver, const str& sv, bool with_BOSS)
   {
     const str path = corrected_path(be,ver);
@@ -476,6 +515,7 @@ namespace Gambit
 
   #ifdef HAVE_MATHEMATICA
 
+    /// Load WSTP for Mathematica backends
     void Backends::backend_info::loadLibrary_Mathematica(const str& be, const str& ver, const str& sv)
     {
       const str path = corrected_path(be,ver);
@@ -564,6 +604,7 @@ namespace Gambit
 
   #ifdef HAVE_PYBIND11
 
+    /// Load a Python backend module
     void Backends::backend_info::loadLibrary_Python(const str& be, const str& ver, const str& sv, const str& lang)
     {
       // Set the internal info for this backend
@@ -670,6 +711,7 @@ namespace Gambit
       loaded_python_backends[be+ver] = new_module;
     }
 
+    /// Fire up the Python interpreter
     void Backends::backend_info::start_python()
     {
       // Create an instance of the interpreter.
@@ -699,4 +741,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:48 +0000
+Updated on 2022-08-02 at 23:34:59 +0000

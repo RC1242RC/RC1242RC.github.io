@@ -39,6 +39,7 @@ namespace Gambit {
     using namespace std;
 
 
+    /// Basic analysis code for copying
     class Analysis_Minimum : public Analysis {
     private:
 
@@ -112,6 +113,7 @@ namespace Gambit {
       }
 
 
+      /// Combine the variables of another copy of this analysis (typically on another thread) into this one.
       void combine(const Analysis* other)
       {
         const Analysis_Minimum* specificOther = dynamic_cast<const Analysis_Minimum*>(other);
@@ -135,6 +137,7 @@ namespace Gambit {
         _numSR = 0;
       }
 
+      ///////////////////
 
     };
 
@@ -147,4 +150,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:38 +0000
+Updated on 2022-08-02 at 23:34:54 +0000

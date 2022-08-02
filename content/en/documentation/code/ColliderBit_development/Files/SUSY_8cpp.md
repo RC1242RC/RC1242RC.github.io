@@ -54,6 +54,23 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  SUSY-specific sources for ColliderBit.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)
+///  \date 2019 Jan
+///
+///  \author Anders Kvellestad
+///          (anders.kvellestad@fys.uio.no)
+///  \date 2019
+///
+///  *********************************************
 
 #include "gambit/ColliderBit/getPy8Collider.hpp"
 #include "gambit/ColliderBit/generateEventPy8Collider.hpp"
@@ -80,4 +97,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:38 +0000
+Updated on 2022-08-02 at 23:34:49 +0000

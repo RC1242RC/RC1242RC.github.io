@@ -52,6 +52,20 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Templated class for holding and executing
+///  pointers to Python backends.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)
+///  \date 2017 Dec
+///
+///  *********************************************
 
 #ifndef __python_function_hpp__
 #define __python_function_hpp__
@@ -67,6 +81,7 @@ namespace Gambit
   namespace Backends
   {
 
+    /// Holds the info about a python backend function, and defines conversion functions.
     template <typename TYPE, typename... ARGS>
     class python_function
     {
@@ -75,14 +90,17 @@ namespace Gambit
 
         #ifdef HAVE_PYBIND11
 
+          /// Wrapper to the function
           pybind11::object func;
 
+          /// Indication of whether or not the function has been successfully loaded
           bool handle_works;
 
         #endif
 
       public:
 
+        /// Constructor
         #ifndef HAVE_PYBIND11
           python_function(const str&, const str&, const str&) {}
         #else
@@ -133,6 +151,7 @@ namespace Gambit
           }
         #endif
 
+        /// Operation (execute function and return value)
         #ifdef HAVE_PYBIND11
           TYPE operator()(ARGS&&... args)
           {
@@ -160,4 +179,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:50 +0000

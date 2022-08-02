@@ -55,6 +55,25 @@ BE_INI_FUNCTION {
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file HiggsBounds.cpp
+///
+///  Frontend source for the HiggsBounds backend.
+///
+///  Actual implementation of HiggsBounds ini function.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Christopher S. Rogan
+///          (crogan@cern.ch)
+///  \date 2015 Sept
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)
+///  \date 2016 Feb, Aug
+///
+///  *********************************************
 
 #include "gambit/Backends/frontend_macros.hpp"
 #include "gambit/Backends/frontends/HiggsBounds_4_3_1.hpp"
@@ -92,4 +111,4 @@ END_BE_INI_FUNCTION
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:56 +0000

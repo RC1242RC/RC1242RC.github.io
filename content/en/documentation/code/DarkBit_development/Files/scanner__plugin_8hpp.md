@@ -100,6 +100,28 @@ inline unsigned int &get_dimension() {return get_input_value<unsigned int>(0);} 
 ```
 //  GAMBIT: Global and Modular BSM Inference Tool
 //  *********************************************
+///  \file
+///
+///  declaration for scanner module
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Gregory Martinez
+///          (gregory.david.martinez@gmail.com)
+///  \date 2013 August
+///        2014 Feb
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)   
+///  \date 2014 Dec
+///
+///  \author Ben Farmer
+///          (benjamin.farmer@fysik.su.se)
+///  \date 2016 Jul
+///
+///  *********************************************
 
 #ifndef SCANNER_PLUGIN_HPP
 #define SCANNER_PLUGIN_HPP
@@ -113,7 +135,12 @@ inline unsigned int &get_dimension() {return get_input_value<unsigned int>(0);} 
 // function then feel free to change this.
 #include "gambit/ScannerBit/plugin_loader.hpp"
 
+///\name Scanner Plugin Macros 
+///Macros used by the scanner plugin
+///@{
+///Defines a scanner plugin.  Has the form:  scanner_plugin(name, version).
 #define scanner_plugin(...)             SCANNER_PLUGIN(__VA_ARGS__)
+///@}
 
 #define __SCANNER_SETUP__                                                                   \
 using namespace Gambit::Scanner;                                                            \
@@ -140,4 +167,4 @@ inline unsigned int &get_dimension() {return get_input_value<unsigned int>(0);} 
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:45 +0000
+Updated on 2022-08-02 at 23:34:55 +0000

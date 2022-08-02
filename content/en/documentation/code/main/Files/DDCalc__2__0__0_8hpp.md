@@ -103,6 +103,39 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Frontend header for the DDCalc backend.
+///
+///  Compile-time registration of available
+///  functions and variables from this backend.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Lars A. Dal
+///          (l.a.dal@fys.uio.no)
+///  \date 2014 Jul
+///
+///  \author Christopher Savage
+///          (chris@savage.name)
+///  \date 2014 Sept
+///  \date 2015 Jan,Feb,June
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)
+///  \date 2016 Apr
+///
+///  \author Sebastian Wild
+///          (sebastian.wild@ph.tum.de)
+///  \date 2016 Aug
+///
+///  \author Felix Kahlhoefer
+///          (felix.kahlhoefer@desy.de)
+///  \date 2016 Aug
+///
+///  *********************************************
 
 // Identify backend
 #define BACKENDNAME DDCalc
@@ -284,4 +317,4 @@ BE_CONV_FUNCTION(DDCalc_CalcRates_simple,  void, (const int&), "DD_CalcRates")
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:55 +0000

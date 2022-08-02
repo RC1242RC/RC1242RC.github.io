@@ -125,6 +125,38 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Rollcall header for SUSY models in
+///  ColliderBit.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Abram Krislock
+///          (a.m.b.krislock@fys.uio.no)
+///
+///  \author Aldo Saavedra
+///
+///  \author Christopher Rogan
+///          (christophersrogan@gmail.com)
+///  \date 2015 Apr
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)
+///  \date 2015 Jul
+///  \date 2018 Jan
+///
+///  \author Andy Buckley
+///          (andy.buckley@cern.ch)
+///  \date 2017 Jun
+///
+///  \author Anders Kvellestad
+///          (anders.kvellestad@fys.uio.no)
+///  \date 2019
+///
+///  *********************************************
 
 #pragma once
 
@@ -188,4 +220,4 @@ Authors (add name and date if you modify):
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:49 +0000

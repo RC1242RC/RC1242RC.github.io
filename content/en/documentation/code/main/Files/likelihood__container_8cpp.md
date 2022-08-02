@@ -61,6 +61,37 @@ Authors (add name and date if you modify):
 ```
 //  GAMBIT: Global and Modular BSM Inference Tool
 //  *********************************************
+///  \file
+///
+///  Likelihood container implementations.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Christoph Weniger
+///    (c.weniger@uva.nl)
+///  \date 2013 May, June, July
+///
+///  \author Gregory Martinez
+///    (gregory.david.martinez@gmail.com)
+///  \date 2013 July
+///  \date 2014 Feb
+///
+///  \author Pat Scott
+///    (patscott@physics.mcgill.ca)
+///  \date 2013 Aug
+///  \date 2014 May, June, onwards...
+///
+///  \author Tomas Gonzalo
+///          (tomas.gonzalo@monash.edu)
+///  \date 2019 May
+///
+///  \author Anders Kvellestad
+///          (anders.kvellestad@fys.uio.no
+///  \date 2021 Feb
+///
+///  *********************************************
 
 #include "gambit/Core/likelihood_container.hpp"
 #include "gambit/Utils/signal_helpers.hpp"
@@ -75,6 +106,7 @@ namespace Gambit
 
   // Methods for Likelihood_Container class.
 
+  /// Constructor
   Likelihood_Container::Likelihood_Container(const std::map<str, primary_model_functor *> &functorMap,
    DRes::DependencyResolver &dependencyResolver, IniParser::IniFile &iniFile,
    const str &purpose, Printers::BaseBasePrinter& printer)
@@ -126,6 +158,7 @@ namespace Gambit
     }
   }
 
+  /// Do the prior transformation and populate the parameter map
   void Likelihood_Container::setParameters (const std::unordered_map<std::string, double> &parameterMap)
   {
     // Set up a stream containing the parameter values, for diagnostic output
@@ -180,6 +213,7 @@ namespace Gambit
 
   }
 
+  /// Evaluate total likelihood function
   double Likelihood_Container::main(std::unordered_map<std::string, double> &in)
   {
     logger() << LogTags::core << LogTags::debug << "Entered Likelihood_Container::main" << EOM;
@@ -402,6 +436,7 @@ namespace Gambit
     return lnlike;
   }
 
+  /// Use this to modify the total likelihood function before passing it to the scanner
   double Likelihood_Container::purposeModifier(double lnlike)
   {
     return Utils::run_lnlike_modifier(lnlike, lnlike_modifier_name, lnlike_modifier_params);
@@ -413,4 +448,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:37 +0000
+Updated on 2022-08-02 at 23:34:54 +0000

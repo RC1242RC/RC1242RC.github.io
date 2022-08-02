@@ -101,6 +101,46 @@ Generate a hard scattering event with a specific Pythia,.
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  ColliderBit event loop functions returning
+///  collider Monte Carlo events.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Abram Krislock
+///          (a.m.b.krislock@fys.uio.no)
+///
+///  \author Aldo Saavedra
+///
+///  \author Andy Buckley
+///
+///  \author Chris Rogan
+///          (crogan@cern.ch)
+///  \date 2014 Aug
+///  \date 2015 May
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)
+///  \date 2015 Jul
+///  \date 2018 Jan
+///  \date 2019 Jan
+///  \date 2019 May
+///
+///  \author Anders Kvellestad
+///          (anders.kvellestad@fys.uio.no)
+///  \date   2017 March
+///  \date   2018 Jan
+///  \date   2018 May
+///  \date   2019 Sep
+///
+///  \author Tomas Gonzalo
+///          (tomas.gonzalo@monash.edu)
+///  \date 2019 Sep
+///
+///  *********************************************
 
 #include "gambit/ColliderBit/ColliderBit_eventloop.hpp"
 #include "gambit/ColliderBit/colliders/Pythia8/Py8EventConversions.hpp"
@@ -114,6 +154,7 @@ namespace Gambit
   namespace ColliderBit
   {
 
+    /// Drop a HepMC file for the event
     #ifndef EXCLUDE_HEPMC
       template<typename PythiaT, typename hepmc_writerT>
       void dropHepMCEventPy8Collider(const PythiaT* Pythia, const safe_ptr<Options>& runOptions)
@@ -144,6 +185,7 @@ namespace Gambit
       }
     #endif
 
+    /// Generate a hard scattering event with Pythia
     template<typename PythiaT, typename EventT, typename hepmc_writerT>
     void generateEventPy8Collider(HEPUtils::Event& event,
                                   const MCLoopInfo& RunMC,
@@ -256,6 +298,7 @@ namespace Gambit
       EventWeighterFunction(event, &HardScatteringSim);
     }
 
+    /// Generate a hard scattering event with a specific Pythia,
     #define GET_PYTHIA_EVENT(NAME)                               \
     void NAME(HEPUtils::Event& result)                           \
     {                                                            \
@@ -273,4 +316,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:46 +0000
+Updated on 2022-08-02 at 23:34:56 +0000

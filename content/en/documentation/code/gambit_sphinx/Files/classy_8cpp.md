@@ -60,6 +60,35 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Definitions of the Classy_input class used for
+///  communicating with the backend classy.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Patrick Stoecker
+///          (stoecker@physik.rwth-aachen.de)
+///  \date 2017 Nov
+///  \date 2018 May
+///
+///  \author Janina Renk
+///          (janina.renk@fysik.su.se)
+///  \date 2018 Oct
+///  \date 2019 Mar
+///  \date 2020 Aug
+///
+///  \author Sebastian Hoof
+///          (hoof@uni-goettingen.de)
+///  \date 2020 Mar
+///
+///  \author Pat Scott
+///          (pat.scott@uq.edu.au)
+///  \date 2020 Apr
+///
+///  *********************************************
 
 #include "gambit/Backends/backend_types/classy.hpp"
 #include "gambit/Utils/util_functions.hpp"
@@ -84,6 +113,15 @@ namespace Gambit
 
     bool Classy_input::has_key(str key){return input_dict.contains(key.c_str());}
 
+    /// CLASS specific function to merge python dictionary extra_dict into input_dict
+    /// (member of Classy_input). If both dictionaries have the same key it decides
+    /// on a case-by-case basis how to deal with that.
+    /// Some examples are already implemented, might have to be extended in the future
+    /// if more CLASS features are used.
+    /// typical example for this would be the key 'output':
+    ///    dict input_dict: 'output' : 'tCl nCl' and
+    ///    dict extra_dict: 'output' : 'tCl mPk' => mPk has to be added
+    ///    => results in    'output' : 'tCl nCl mPk'
     void Classy_input::merge_input_dicts(pybind11::dict extra_dict)
     {
       // Loop through extra_dict (should typically be the shorter one)
@@ -215,4 +253,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:41 +0000
+Updated on 2022-08-02 at 23:34:51 +0000

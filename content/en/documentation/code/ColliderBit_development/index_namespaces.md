@@ -3,9 +3,8 @@ title: "Namespaces"
 
 menu:
   documentation:
-    parent: GAMBIT_VERSION_HERE
-identifier: "GAMBIT_VERSION_HERENamespaces"
-weight: 50
+    parent: ColliderBit_development
+    identifier: "ColliderBit_developmentNamespaces" weight: 50
 ---
 
 
@@ -145,4 +144,4 @@ weight: 50
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:40 +0000
+Updated on 2022-08-02 at 23:34:50 +0000

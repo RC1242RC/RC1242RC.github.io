@@ -106,6 +106,45 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Function definitions of DecayBit.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)
+///  \date 2014 Aug
+///  \date 2015 Mar-May
+///
+///  \author Csaba Balazs
+///          (csaba.balazs@monash.edu)
+///  \date 2015 Jan-May
+///
+///  \author Peter Athron
+///          (peter.athron@coepp.org.au)
+///  \date 2015 Jun
+///
+///  \author Ankit Beniwal
+///          (ankit.beniwal@adelaide.edu.au)
+///  \date 2016 Oct
+///  \date 2017 Jun
+///
+///  \author Are Raklev
+///          (ahye@fys.uio.no)
+///  \date 2018 Jan
+///
+///  \author Anders Kvellestad
+///          (anders.kvellestad@fys.uio.no)
+///  \date 2018 Jan
+///
+///  \author Tomas Gonzalo
+///          (t.e.gonzalo@fys.uio.no)
+///  \date 2018 Feb
+///
+///  *********************************************
 
 #include "gambit/Elements/gambit_module_headers.hpp"
 #include "gambit/Elements/virtual_higgs.hpp"
@@ -141,9 +180,13 @@ namespace Gambit
 
     using namespace LogTags;
 
+    /// \name Helper functions for DecayBit
+    /// @{
 
+    /// Square root of the standard kinematic function lambda(a,b,c)
     double sqrt_lambda(double a, double b, double c) { return sqrt(pow2(a+b-c) - 4*a*b); }
 
+    /// Breit-Wigner pole (complex)
     std::complex<double> BW(double q2, double m2, double imag_term)
     {
       static const std::complex<double> i(0.0,1.0);
@@ -151,6 +194,7 @@ namespace Gambit
     }
 
 
+    /// Check if a width is negative or suspiciously large and raise an error.
     void check_width(const str& info, double& w, bool raise_invalid_pt_negative_width = false, bool raise_invalid_pt_large_width = false)
     {
       if (Utils::isnan(w)) DecayBit_error().raise(info, "Decay width is NaN!");
@@ -172,6 +216,7 @@ namespace Gambit
       }
     }
 
+    /// Populate SM Higgs decay channels for a higgs mass of m_h
     void compute_SM_higgs_decays(DecayTable::Entry& result, double mh)
     {
       // Just kill off the point if the Higgs is < 1 GeV in mass.
@@ -202,6 +247,7 @@ namespace Gambit
       result.set_BF(virtual_SMHiggs_widths("ZZ",mh), 0.0, "Z0", "Z0");
     }
 
+    /// Set neutral h decays computed by FeynHiggs
     void set_FH_neutral_h_decay(DecayTable::Entry& result, int iH, const fh_Couplings_container& FH_input, const mass_es_pseudonyms& psn, bool invalidate, bool SM)
     {
       // Set the array and its offset according to whether we want the SM or BSM decays
@@ -316,11 +362,17 @@ namespace Gambit
 
       check_width(LOCAL_INFO, result.width_in_GeV, invalidate);
     }
+    /// @}
 
 
+    /// \name DecayBit module functions
+    /// @{
 
 
+    /////////////// Standard Model ///////////////////
 
+    /// SM decays: W+
+    /// Reference: 2017 PDG
     void W_plus_decays (DecayTable::Entry& result)
     {
       result.calculator = "GAMBIT::DecayBit";
@@ -334,6 +386,8 @@ namespace Gambit
       result.set_BF(0.6741, 0.0027, "hadron", "hadron");
     }
 
+    /// SM decays: Z
+    /// Reference: 2017 PDG
     void Z_decays (DecayTable::Entry& result)
     {
       using namespace Pipes::Z_decays;
@@ -364,6 +418,8 @@ namespace Gambit
       */
     }
 
+    /// SM decays: t
+    /// Reference: 2017 PDG
     void t_decays (DecayTable::Entry& result)
     {
       result.calculator = "GAMBIT::DecayBit";
@@ -374,6 +430,8 @@ namespace Gambit
       result.set_BF(0.957, 0.034, "W+", "b"); //(Assuming 100% decay to Wq)
     }
 
+    /// SM decays: mu+
+    /// Reference: 2017 PDG
     void mu_plus_decays (DecayTable::Entry& result)
     {
       result.calculator = "GAMBIT::DecayBit";
@@ -384,6 +442,8 @@ namespace Gambit
       result.set_BF(1.0, 0.0, "e+", "nu_e", "nubar_mu");
     }
 
+    /// SM decays: tau+
+    /// Reference: 2017 PDG
     void tau_plus_decays (DecayTable::Entry& result)
     {
       result.calculator = "GAMBIT::DecayBit";
@@ -401,6 +461,8 @@ namespace Gambit
       result.set_BF(0.0462, 0.0005, "pi+", "pi+", "pi-", "pi0", "nubar_tau");
     }
 
+    /// SM decays: pi0
+    /// Reference: 2017 PDG
     void pi_0_decays (DecayTable::Entry& result)
     {
       result.calculator = "GAMBIT::DecayBit";
@@ -414,6 +476,8 @@ namespace Gambit
       result.set_BF(6.46e-8, 0.33e-8, "e+", "e-");
     }
 
+    /// SM decays: pi+
+    /// Reference: 2017 PDG
     void pi_plus_decays (DecayTable::Entry& result)
     {
       result.calculator = "GAMBIT::DecayBit";
@@ -425,6 +489,8 @@ namespace Gambit
       result.set_BF(1.230e-4, 0.004e-4, "e+", "nu_e");
     }
 
+    /// SM decays: eta
+    /// Reference: 2017 PDG
     void eta_decays (DecayTable::Entry& result)
     {
       result.calculator = "GAMBIT::DecayBit";
@@ -434,6 +500,8 @@ namespace Gambit
       result.negative_error = 5.0e-08;
     }
 
+    /// SM decays: rho0
+    /// Reference: 2017 PDG
     void rho_0_decays (DecayTable::Entry& result)
     {
       result.calculator = "GAMBIT::DecayBit";
@@ -443,6 +511,8 @@ namespace Gambit
       result.negative_error = 9.0e-04;
     }
 
+    /// SM decays: rho+
+    /// Reference: 2017 PDG
     void rho_plus_decays (DecayTable::Entry& result)
     {
       result.calculator = "GAMBIT::DecayBit";
@@ -452,6 +522,8 @@ namespace Gambit
       result.negative_error = 8.0e-04;
     }
 
+    /// SM decays: omega
+    /// Reference: 2017 PDG
     void omega_decays (DecayTable::Entry& result)
     {
       result.calculator = "GAMBIT::DecayBit";
@@ -461,6 +533,8 @@ namespace Gambit
       result.negative_error = 8.0e-05;
     }
 
+    /// SM decays: rho1450
+    /// Reference: 2017 PDG
     void rho1450_decays (DecayTable::Entry& result)
     {
       result.calculator = "GAMBIT::DecayBit";
@@ -470,15 +544,25 @@ namespace Gambit
       result.negative_error = 6.0e-02;
     }
 
+    /// SM decays: conjugates
+    /// @{
     void W_minus_decays (DecayTable::Entry& result)   { result = CP_conjugate(*Pipes::W_minus_decays::Dep::W_plus_decay_rates); }
     void tbar_decays (DecayTable::Entry& result)      { result = CP_conjugate(*Pipes::tbar_decays::Dep::t_decay_rates); }
     void mu_minus_decays (DecayTable::Entry& result)  { result = CP_conjugate(*Pipes::mu_minus_decays::Dep::mu_plus_decay_rates); }
     void tau_minus_decays (DecayTable::Entry& result) { result = CP_conjugate(*Pipes::tau_minus_decays::Dep::tau_plus_decay_rates); }
     void pi_minus_decays (DecayTable::Entry& result)  { result = CP_conjugate(*Pipes::pi_minus_decays::Dep::pi_plus_decay_rates); }
     void rho_minus_decays (DecayTable::Entry& result) { result = CP_conjugate(*Pipes::rho_minus_decays::Dep::rho_plus_decay_rates); }
+    /// @}
 
 
+    /// \brief Reference SM Higgs decays
+    ///
+    /// These functions are given a different capability to regular decay
+    /// functions, to allow other module functions to specifically depend
+    /// on the SM values for reference, even when scanning another model.
+    /// @{
 
+    /// Reference SM Higgs decays from LHCHiggsXSWG: most SM-like Higgs
     void Ref_SM_Higgs_decays_table(DecayTable::Entry& result)
     {
       using namespace Pipes::Ref_SM_Higgs_decays_table;
@@ -495,6 +579,7 @@ namespace Gambit
       }
       compute_SM_higgs_decays(result, mh);
     }
+    /// Reference SM Higgs decays from LHCHiggsXSWG: least SM-like Higgs
     void Ref_SM_other_Higgs_decays_table(DecayTable::Entry& result)
     {
       using namespace Pipes::Ref_SM_other_Higgs_decays_table;
@@ -503,6 +588,7 @@ namespace Gambit
       double m_other = Dep::MSSM_spectrum->get(Par::Pole_Mass, other_higgs, 0);
       compute_SM_higgs_decays(result, m_other);
     }
+    /// Reference SM Higgs decays from LHCHiggsXSWG: A0
     void Ref_SM_A0_decays_table(DecayTable::Entry& result)
     {
       using namespace Pipes::Ref_SM_A0_decays_table;
@@ -510,6 +596,7 @@ namespace Gambit
       compute_SM_higgs_decays(result, mA0);
     }
 
+    /// Reference SM Higgs decays from FeynHiggs: h0_1
     void Ref_SM_Higgs_decays_FeynHiggs(DecayTable::Entry& result)
     {
       using namespace Pipes::Ref_SM_Higgs_decays_FeynHiggs;
@@ -518,6 +605,7 @@ namespace Gambit
       bool invalidate = runOptions->getValueOrDef<bool>(false, "invalid_point_for_negative_width");
       set_FH_neutral_h_decay(result, higgs, *Dep::FH_Couplings_output, *(Dep::SLHA_pseudonyms), invalidate, true);
     }
+    /// Reference SM Higgs decays from FeynHiggs: h0_2
     void Ref_SM_other_Higgs_decays_FH(DecayTable::Entry& result)
     {
       using namespace Pipes::Ref_SM_other_Higgs_decays_FH;
@@ -526,21 +614,27 @@ namespace Gambit
       bool invalidate = runOptions->getValueOrDef<bool>(false, "invalid_point_for_negative_width");
       set_FH_neutral_h_decay(result, other_higgs, *Dep::FH_Couplings_output, *(Dep::SLHA_pseudonyms), invalidate, true);
     }
+    /// Reference SM Higgs decays from FeynHiggs: A0
     void Ref_SM_A0_decays_FH(DecayTable::Entry& result)
     {
       using namespace Pipes::Ref_SM_A0_decays_FH;
       bool invalidate = runOptions->getValueOrDef<bool>(false, "invalid_point_for_negative_width");
       set_FH_neutral_h_decay(result, 3, *Dep::FH_Couplings_output, *(Dep::SLHA_pseudonyms), invalidate, true);
     }
+    /// @}
 
 
+    /// SM decays: Higgs
     void SM_Higgs_decays (DecayTable::Entry& result)
     {
       result = *Pipes::SM_Higgs_decays::Dep::Reference_SM_Higgs_decay_rates;
     }
 
 
+    //////////// MSSM /////////////////////
 
+    /// FeynHiggs MSSM decays: t
+    /// Reference for total width: 2017 PDG
     void FeynHiggs_t_decays (DecayTable::Entry& result)
     {
       using namespace Pipes::FeynHiggs_t_decays;
@@ -555,6 +649,7 @@ namespace Gambit
       check_width(LOCAL_INFO, result.width_in_GeV, runOptions->getValueOrDef<bool>(false, "invalid_point_for_negative_width"));
     }
 
+    /// FeynHiggs MSSM decays: h0_1
     void FeynHiggs_MSSM_h0_1_decays (DecayTable::Entry& result)
     {
       using namespace Pipes::FeynHiggs_MSSM_h0_1_decays;
@@ -562,6 +657,7 @@ namespace Gambit
       set_FH_neutral_h_decay(result, 1, *Dep::FH_Couplings_output, *(Dep::SLHA_pseudonyms), invalidate, false);
     }
 
+    /// FeynHiggs MSSM decays: h0_2
     void FeynHiggs_h0_2_decays (DecayTable::Entry& result)
     {
       using namespace Pipes::FeynHiggs_h0_2_decays;
@@ -569,6 +665,7 @@ namespace Gambit
       set_FH_neutral_h_decay(result, 2, *Dep::FH_Couplings_output, *(Dep::SLHA_pseudonyms), invalidate, false);
     }
 
+    /// FeynHiggs MSSM decays: A0
     void FeynHiggs_A0_decays (DecayTable::Entry& result)
     {
       using namespace Pipes::FeynHiggs_A0_decays;
@@ -576,6 +673,7 @@ namespace Gambit
       set_FH_neutral_h_decay(result, 3, *Dep::FH_Couplings_output, *(Dep::SLHA_pseudonyms), invalidate, false);
     }
 
+    /// FeynHiggs MSSM decays: H+
     void FeynHiggs_H_plus_decays (DecayTable::Entry& result)
     {
       using namespace Pipes::FeynHiggs_H_plus_decays;
@@ -666,6 +764,7 @@ namespace Gambit
       check_width(LOCAL_INFO, result.width_in_GeV, runOptions->getValueOrDef<bool>(false, "invalid_point_for_negative_width"));
     }
 
+    /// SUSY-HIT MSSM decays: h0_1
     void MSSM_h0_1_decays (DecayTable::Entry& result)
     {
       using namespace Pipes::MSSM_h0_1_decays;
@@ -734,6 +833,7 @@ namespace Gambit
       check_width(LOCAL_INFO, result.width_in_GeV, runOptions->getValueOrDef<bool>(false, "invalid_point_for_negative_width"), true);
     }
 
+    /// SUSY-HIT MSSM decays: h0_2
     void h0_2_decays (DecayTable::Entry& result)
     {
       using namespace Pipes::h0_2_decays;
@@ -804,6 +904,7 @@ namespace Gambit
       check_width(LOCAL_INFO, result.width_in_GeV, runOptions->getValueOrDef<bool>(false, "invalid_point_for_negative_width"), true);
     }
 
+    /// SUSY-HIT MSSM decays: A0
     void A0_decays (DecayTable::Entry& result)
     {
       using namespace Pipes::A0_decays;
@@ -854,6 +955,7 @@ namespace Gambit
       check_width(LOCAL_INFO, result.width_in_GeV, runOptions->getValueOrDef<bool>(false, "invalid_point_for_negative_width"));
     }
 
+    /// SUSY-HIT MSSM decays: H_plus
     void H_plus_decays (DecayTable::Entry& result)
     {
       using namespace Pipes::H_plus_decays;
@@ -894,6 +996,7 @@ namespace Gambit
       check_width(LOCAL_INFO, result.width_in_GeV, runOptions->getValueOrDef<bool>(false, "invalid_point_for_negative_width"));
     }
 
+    /// SUSY-HIT MSSM decays: gluino
     void gluino_decays (DecayTable::Entry& result)
     {
       using namespace Pipes::gluino_decays;
@@ -975,6 +1078,7 @@ namespace Gambit
       check_width(LOCAL_INFO, result.width_in_GeV, runOptions->getValueOrDef<bool>(false, "invalid_point_for_negative_width"));
     }
 
+    /// SUSY-HIT MSSM decays: stop_1
     void stop_1_decays (DecayTable::Entry& result)
     {
       using namespace Pipes::stop_1_decays;
@@ -1052,6 +1156,7 @@ namespace Gambit
       check_width(LOCAL_INFO, result.width_in_GeV, runOptions->getValueOrDef<bool>(false, "invalid_point_for_negative_width"));
     }
 
+    /// SUSY-HIT MSSM decays: stop_2
     void stop_2_decays (DecayTable::Entry& result)
     {
       using namespace Pipes::stop_2_decays;
@@ -1124,6 +1229,7 @@ namespace Gambit
       check_width(LOCAL_INFO, result.width_in_GeV, runOptions->getValueOrDef<bool>(false, "invalid_point_for_negative_width"));
     }
 
+    /// SUSY-HIT MSSM decays: sbottom_1
     void sbottom_1_decays (DecayTable::Entry& result)
     {
       using namespace Pipes::sbottom_1_decays;
@@ -1171,6 +1277,7 @@ namespace Gambit
       check_width(LOCAL_INFO, result.width_in_GeV, runOptions->getValueOrDef<bool>(false, "invalid_point_for_negative_width"));
     }
 
+    /// SUSY-HIT MSSM decays: sbottom_2
     void sbottom_2_decays (DecayTable::Entry& result)
     {
       using namespace Pipes::sbottom_2_decays;
@@ -1235,6 +1342,7 @@ namespace Gambit
       check_width(LOCAL_INFO, result.width_in_GeV, runOptions->getValueOrDef<bool>(false, "invalid_point_for_negative_width"));
     }
 
+    /// SUSY-HIT MSSM decays: sup_l
     void sup_l_decays (DecayTable::Entry& result)
     {
       using namespace Pipes::sup_l_decays;
@@ -1254,6 +1362,7 @@ namespace Gambit
       check_width(LOCAL_INFO, result.width_in_GeV, runOptions->getValueOrDef<bool>(false, "invalid_point_for_negative_width"));
     }
 
+    /// SUSY-HIT MSSM decays: sup_r
     void sup_r_decays (DecayTable::Entry& result)
     {
       using namespace Pipes::sup_r_decays;
@@ -1270,6 +1379,7 @@ namespace Gambit
       check_width(LOCAL_INFO, result.width_in_GeV, runOptions->getValueOrDef<bool>(false, "invalid_point_for_negative_width"));
     }
 
+    /// SUSY-HIT MSSM decays: sdown_l
     void sdown_l_decays (DecayTable::Entry& result)
     {
       using namespace Pipes::sdown_l_decays;
@@ -1286,6 +1396,7 @@ namespace Gambit
       check_width(LOCAL_INFO, result.width_in_GeV, runOptions->getValueOrDef<bool>(false, "invalid_point_for_negative_width"));
     }
 
+    /// SUSY-HIT MSSM decays: sdown_r
     void sdown_r_decays (DecayTable::Entry& result)
     {
       using namespace Pipes::sdown_r_decays;
@@ -1302,6 +1413,7 @@ namespace Gambit
       check_width(LOCAL_INFO, result.width_in_GeV, runOptions->getValueOrDef<bool>(false, "invalid_point_for_negative_width"));
     }
 
+    /// SUSY-HIT MSSM decays: scharm_l
     void scharm_l_decays (DecayTable::Entry& result)
     {
       using namespace Pipes::scharm_l_decays;
@@ -1318,6 +1430,7 @@ namespace Gambit
       check_width(LOCAL_INFO, result.width_in_GeV, runOptions->getValueOrDef<bool>(false, "invalid_point_for_negative_width"));
     }
 
+    /// SUSY-HIT MSSM decays: scharm_r
     void scharm_r_decays (DecayTable::Entry& result)
     {
       using namespace Pipes::scharm_r_decays;
@@ -1334,6 +1447,7 @@ namespace Gambit
       check_width(LOCAL_INFO, result.width_in_GeV, runOptions->getValueOrDef<bool>(false, "invalid_point_for_negative_width"));
     }
 
+    /// SUSY-HIT MSSM decays: sstrange_l
     void sstrange_l_decays (DecayTable::Entry& result)
     {
       using namespace Pipes::sstrange_l_decays;
@@ -1350,6 +1464,7 @@ namespace Gambit
       check_width(LOCAL_INFO, result.width_in_GeV, runOptions->getValueOrDef<bool>(false, "invalid_point_for_negative_width"));
     }
 
+    /// SUSY-HIT MSSM decays: sstrange_r
     void sstrange_r_decays (DecayTable::Entry& result)
     {
       using namespace Pipes::sstrange_r_decays;
@@ -1366,6 +1481,7 @@ namespace Gambit
       check_width(LOCAL_INFO, result.width_in_GeV, runOptions->getValueOrDef<bool>(false, "invalid_point_for_negative_width"));
     }
 
+    /// SUSY-HIT MSSM decays: selectron_l
     void selectron_l_decays (DecayTable::Entry& result)
     {
       using namespace Pipes::selectron_l_decays;
@@ -1381,6 +1497,7 @@ namespace Gambit
       check_width(LOCAL_INFO, result.width_in_GeV, runOptions->getValueOrDef<bool>(false, "invalid_point_for_negative_width"));
     }
 
+    /// SUSY-HIT MSSM decays: selectron_r
     void selectron_r_decays (DecayTable::Entry& result)
     {
       using namespace Pipes::selectron_r_decays;
@@ -1396,6 +1513,7 @@ namespace Gambit
       check_width(LOCAL_INFO, result.width_in_GeV, runOptions->getValueOrDef<bool>(false, "invalid_point_for_negative_width"));
     }
 
+    /// SUSY-HIT MSSM decays: smuon_l
     void smuon_l_decays (DecayTable::Entry& result)
     {
       using namespace Pipes::smuon_l_decays;
@@ -1411,6 +1529,7 @@ namespace Gambit
       check_width(LOCAL_INFO, result.width_in_GeV, runOptions->getValueOrDef<bool>(false, "invalid_point_for_negative_width"));
     }
 
+    /// SUSY-HIT MSSM decays: smuon_r
     void smuon_r_decays (DecayTable::Entry& result)
     {
       using namespace Pipes::smuon_r_decays;
@@ -1426,6 +1545,7 @@ namespace Gambit
       check_width(LOCAL_INFO, result.width_in_GeV, runOptions->getValueOrDef<bool>(false, "invalid_point_for_negative_width"));
     }
 
+    /// MSSM decays: stau_1 (Uses SUSY-HIT results or dedicated DecayBit calculation for small mass splittings)
     void stau_1_decays (DecayTable::Entry& result)
     {
       using namespace Pipes::stau_1_decays;
@@ -1442,6 +1562,7 @@ namespace Gambit
       check_width(LOCAL_INFO, result.width_in_GeV, runOptions->getValueOrDef<bool>(false, "invalid_point_for_negative_width"));
     }
 
+    /// SUSY-HIT MSSM decays: stau_1
     void stau_1_decays_SH (DecayTable::Entry& result)
     {
       using namespace Pipes::stau_1_decays_SH;
@@ -1464,6 +1585,7 @@ namespace Gambit
       check_width(LOCAL_INFO, result.width_in_GeV, runOptions->getValueOrDef<bool>(false, "invalid_point_for_negative_width"));
     }
 
+    /// SUSY-HIT MSSM decays: stau_2
     void stau_2_decays (DecayTable::Entry& result)
     {
       using namespace Pipes::stau_2_decays;
@@ -1490,6 +1612,7 @@ namespace Gambit
 
     }
 
+    /// SUSY-HIT MSSM decays: snu_electronl
     void snu_electronl_decays (DecayTable::Entry& result)
     {
       using namespace Pipes::snu_electronl_decays;
@@ -1505,6 +1628,7 @@ namespace Gambit
       check_width(LOCAL_INFO, result.width_in_GeV, runOptions->getValueOrDef<bool>(false, "invalid_point_for_negative_width"));
     }
 
+    /// SUSY-HIT MSSM decays: snu_muonl
     void snu_muonl_decays (DecayTable::Entry& result)
     {
       using namespace Pipes::snu_muonl_decays;
@@ -1520,6 +1644,8 @@ namespace Gambit
       check_width(LOCAL_INFO, result.width_in_GeV, runOptions->getValueOrDef<bool>(false, "invalid_point_for_negative_width"));
     }
 
+    /// SUSY-HIT MSSM decays: snu_taul
+    /// Note that SUSY-HIT calls ~nu_tau_L "snutau1" even though it has no RH (~)nus.
     void snu_taul_decays (DecayTable::Entry& result)
     {
       using namespace Pipes::snu_taul_decays;
@@ -1543,6 +1669,7 @@ namespace Gambit
       check_width(LOCAL_INFO, result.width_in_GeV, runOptions->getValueOrDef<bool>(false, "invalid_point_for_negative_width"));
     }
 
+    /// MSSM decays: chargino_plus_1 (Uses SUSY-HIT results or dedicated DecayBit calculation for small mass splittings)
     void chargino_plus_1_decays (DecayTable::Entry& result)
     {
       using namespace Pipes::chargino_plus_1_decays;
@@ -1559,6 +1686,7 @@ namespace Gambit
       check_width(LOCAL_INFO, result.width_in_GeV, runOptions->getValueOrDef<bool>(false, "invalid_point_for_negative_width"));
     }
 
+    /// SUSY-HIT MSSM decays: chargino_plus_1
     void chargino_plus_1_decays_SH (DecayTable::Entry& result)
     {
       using namespace Pipes::chargino_plus_1_decays_SH;
@@ -1632,6 +1760,7 @@ namespace Gambit
       check_width(LOCAL_INFO, result.width_in_GeV, runOptions->getValueOrDef<bool>(false, "invalid_point_for_negative_width"));
     }
 
+    /// SUSY-HIT MSSM decays: chargino_plus_2
     void chargino_plus_2_decays (DecayTable::Entry& result)
     {
       using namespace Pipes::chargino_plus_2_decays;
@@ -1721,6 +1850,7 @@ namespace Gambit
       check_width(LOCAL_INFO, result.width_in_GeV, runOptions->getValueOrDef<bool>(false, "invalid_point_for_negative_width"));
     }
 
+    /// SUSY-HIT MSSM decays: neutralino_1
     void neutralino_1_decays (DecayTable::Entry& result)
     {
       using namespace Pipes::neutralino_1_decays;
@@ -1824,6 +1954,7 @@ namespace Gambit
       check_width(LOCAL_INFO, result.width_in_GeV, runOptions->getValueOrDef<bool>(false, "invalid_point_for_negative_width"));
     }
 
+    /// SUSY-HIT MSSM decays: neutralino_2
     void neutralino_2_decays (DecayTable::Entry& result)
     {
       using namespace Pipes::neutralino_2_decays;
@@ -1944,6 +2075,7 @@ namespace Gambit
       check_width(LOCAL_INFO, result.width_in_GeV, runOptions->getValueOrDef<bool>(false, "invalid_point_for_negative_width"));
     }
 
+    /// SUSY-HIT MSSM decays: neutralino_3
     void neutralino_3_decays (DecayTable::Entry& result)
     {
       using namespace Pipes::neutralino_3_decays;
@@ -2081,6 +2213,7 @@ namespace Gambit
       check_width(LOCAL_INFO, result.width_in_GeV, runOptions->getValueOrDef<bool>(false, "invalid_point_for_negative_width"));
     }
 
+    /// SUSY-HIT MSSM decays: neutralino_4
     void neutralino_4_decays (DecayTable::Entry& result)
     {
       using namespace Pipes::neutralino_4_decays;
@@ -2236,6 +2369,8 @@ namespace Gambit
     }
 
 
+    /// MSSM decays: chargino decays for small chargino--neutralino mass splitting.
+    /// Using results from hep-ph/9607421.
     void chargino_plus_1_decays_smallsplit(DecayTable::Entry& result)
     {
       using namespace Pipes::chargino_plus_1_decays_smallsplit;
@@ -2556,6 +2691,8 @@ namespace Gambit
     }
 
 
+    /// MSSM decays: stau decays for small stau--neutralino mass splitting.
+    /// Using results from T. Jittoh, J. Sato, T. Shimomura, M. Yamanaka, Phys. Rev. D73 (2006), hep-ph/0512197
     void stau_1_decays_smallsplit(DecayTable::Entry& result)
     {
       using namespace Pipes::stau_1_decays_smallsplit;
@@ -2775,6 +2912,8 @@ namespace Gambit
       check_width(LOCAL_INFO, result.width_in_GeV, runOptions->getValueOrDef<bool>(false, "invalid_point_for_negative_width"));
     }
 
+    /// MSSM decays: conjugates
+    /// @{
     void H_minus_decays (DecayTable::Entry& result)          { result = CP_conjugate(*Pipes::H_minus_decays::Dep::H_plus_decay_rates); }
     void stopbar_1_decays (DecayTable::Entry& result)        { result = CP_conjugate(*Pipes::stopbar_1_decays::Dep::stop_1_decay_rates); }
     void stopbar_2_decays (DecayTable::Entry& result)        { result = CP_conjugate(*Pipes::stopbar_2_decays::Dep::stop_2_decay_rates); }
@@ -2799,9 +2938,12 @@ namespace Gambit
     void snubar_taul_decays (DecayTable::Entry& result)      { result = CP_conjugate(*Pipes::snubar_taul_decays::Dep::snu_taul_decay_rates); }
     void chargino_minus_1_decays (DecayTable::Entry& result) { result = CP_conjugate(*Pipes::chargino_minus_1_decays::Dep::chargino_plus_1_decay_rates); }
     void chargino_minus_2_decays (DecayTable::Entry& result) { result = CP_conjugate(*Pipes::chargino_minus_2_decays::Dep::chargino_plus_2_decay_rates); }
+    /// @}
 
 
+    //////////// Scalar singlet DM /////////////////////
 
+    /// Add the decay of Higgs to singlets for the ScalarSingletDM models
     void ScalarSingletDM_Higgs_decays (DecayTable::Entry& result)
     {
       using namespace Pipes::ScalarSingletDM_Higgs_decays;
@@ -2851,7 +2993,9 @@ namespace Gambit
       check_width(LOCAL_INFO, result.width_in_GeV, runOptions->getValueOrDef<bool>(false, "invalid_point_for_negative_width"));
     }
 
+    //////////// Vector singlet DM /////////////////////
 
+    /// Add the decay of Higgs to vectors for the VectorSingletDM models (see arXiv:1512.06458v4)
     void VectorSingletDM_Higgs_decays (DecayTable::Entry& result)
     {
       using namespace Pipes::VectorSingletDM_Higgs_decays;
@@ -2891,7 +3035,9 @@ namespace Gambit
       check_width(LOCAL_INFO, result.width_in_GeV, runOptions->getValueOrDef<bool>(false, "invalid_point_for_negative_width"));
     }
 
+    //////////// Majorana fermion singlet DM /////////////////////
 
+    /// Add the decay of Higgs to Majorana fermions for the MajoranaSingletDM models (see arXiv:1512.06458v4)
     void MajoranaSingletDM_Higgs_decays (DecayTable::Entry& result)
     {
       using namespace Pipes::MajoranaSingletDM_Higgs_decays;
@@ -2932,7 +3078,9 @@ namespace Gambit
       check_width(LOCAL_INFO, result.width_in_GeV, runOptions->getValueOrDef<bool>(false, "invalid_point_for_negative_width"));
     }
 
+    //////////// Dirac fermion singlet DM /////////////////////
 
+    /// Add the decay of Higgs to Dirac fermions for the DiracSingletDM models (see arXiv:1512.06458v4)
     void DiracSingletDM_Higgs_decays (DecayTable::Entry& result)
     {
       using namespace Pipes::DiracSingletDM_Higgs_decays;
@@ -2974,7 +3122,9 @@ namespace Gambit
     }
 
 
+    //////////// Everything ///////////////////
 
+    /// Collect all the DecayTable entries into an actual DecayTable
     void all_decays (DecayTable &decays)
     {
       using namespace Pipes::all_decays;
@@ -3090,6 +3240,7 @@ namespace Gambit
         decays(psn.isnmulbar) = *Dep::snubar_muonl_decay_rates;  // Add the ~nu_mu decays.
         decays(psn.isntaulbar) = *Dep::snubar_taul_decay_rates;  // Add the ~nu_tau decays.
 
+        /// Spit out the full decay table as SLHA1 and SLHA2 files.
         if (runOptions->getValueOrDef<bool>(false, "drop_SLHA_file"))
         {
           // Spit out the full decay table in SLHA1 and SLHA2 formats.
@@ -3099,6 +3250,7 @@ namespace Gambit
           decays.writeSLHAfile(2,prefix+filename+".slha2",false,psn);
         }
 
+        /// Invalidate MSSM points that have a stable charged particle?
         if (not allow_stable_charged_particles)
         {
           static const double lifetime_universe = 4.35e17; // [seconds]
@@ -3130,6 +3282,7 @@ namespace Gambit
           }
         }
 
+        /// Check all particles for negative decay width
         for (auto& map_entry : decays.particles)
         {
           double width = map_entry.second.width_in_GeV;
@@ -3146,6 +3299,7 @@ namespace Gambit
       else
 
       {
+        /// Spit out the full decay table as an SLHA file.
         if (runOptions->getValueOrDef<bool>(false, "drop_SLHA_file"))
         {
           // Spit out the full decay table in SLHA1 and SLHA2 formats.
@@ -3157,6 +3311,8 @@ namespace Gambit
 
     }
 
+    /// Read an SLHA2 file in and use it to create a GAMBIT DecayTable.
+    ///  Note that creating a DecayTable from an SLHA1 file is not possible at present.
     void all_decays_from_SLHA(DecayTable& decays)
     {
       using namespace Pipes::all_decays_from_SLHA;
@@ -3176,6 +3332,7 @@ namespace Gambit
       decays = DecayTable(slha);
     }
 
+    /// Convert the DecayTable to a format where we can print each individual channel's BF
     void get_decaytable_as_map(map_str_dbl& map)
     {
       using namespace Pipes::get_decaytable_as_map;
@@ -3199,6 +3356,7 @@ namespace Gambit
         }
       }
 
+      /// Otherwise just print the specific, named channels
       else
       {
         std::vector<std::vector<str> > BFs; // Empty set of braching fractions.
@@ -3258,6 +3416,7 @@ namespace Gambit
     }
 
 
+    /// Get MSSM mass eigenstate pseudonyms for the gauge eigenstates
     void get_mass_es_pseudonyms(mass_es_pseudonyms& result)
     {
       using namespace Pipes::get_mass_es_pseudonyms;
@@ -3269,6 +3428,11 @@ namespace Gambit
       result.refill(mssm, tol, pt_error, debug);
     }
 
+    /// SLHA1 mixing check flag
+    /// This gets set non-zero if first or second generation left-right mixing
+    /// exceeds the specified tolerance (which means that SLHA1 is an invalid format for
+    /// this model point).
+    /// 1 = u, 2 = d, 3 = c, 4 = s, 5 = e, 6 = mu
     void check_first_sec_gen_mixing (int& result)
     {
       using namespace Pipes::check_first_sec_gen_mixing;
@@ -3302,6 +3466,7 @@ namespace Gambit
       if((max_mixing*max_mixing) <= 1-tol) result = 6;
     }
 
+    /// @}
 
     // Read and interpolate chi2 table
     daFunk::Funk get_Higgs_invWidth_chi2(std::string filename)
@@ -3315,6 +3480,19 @@ namespace Gambit
 
     void MSSM_inv_Higgs_BF(double &BF)
     {
+      /**
+         @brief Branching fraction for Higgs into pair of lightest neutralinos
+
+         @warning Tree-level formulas
+         @warning Assumes decoupling limit for Higgs mixing angle
+         \f[
+         \alpha = \beta - \frac12 \pi
+         \f]
+         @warning Only includes neutralinos, charginos and SM-like width in
+         total width
+
+         @param BF \f$\textrm{BR}(h\to\chi^0_1\chi^0_1)\f$
+      */
       using namespace Pipes::MSSM_inv_Higgs_BF;
       const Spectrum& spec = *Dep::MSSM_spectrum;
       const SubSpectrum& MSSM = Dep::MSSM_spectrum->get_HE();
@@ -3400,30 +3578,82 @@ namespace Gambit
 
     void ScalarSingletDM_inv_Higgs_BF(double& BF)
     {
+       /**
+          @brief Branching fraction for Higgs into scalar singlet DM
+          @param BF \f$\textrm{BR}(h\to S S)\f$
+       */
        using namespace Pipes::ScalarSingletDM_inv_Higgs_BF;
        BF = Dep::Higgs_decay_rates->BF("S", "S");
     }
 
     void VectorSingletDM_inv_Higgs_BF(double& BF)
     {
+       /**
+          @brief Branching fraction for Higgs into vector singlet DM
+          @param BF \f$\textrm{BR}(h\to V V)\f$
+       */
        using namespace Pipes::VectorSingletDM_inv_Higgs_BF;
        BF = Dep::Higgs_decay_rates->BF("V", "V");
     }
 
     void MajoranaSingletDM_inv_Higgs_BF(double& BF)
     {
+       /**
+          @brief Branching fraction for Higgs into Majorana singlet DM
+          @param BF \f$\textrm{BR}(h\to X X)\f$
+       */
        using namespace Pipes::MajoranaSingletDM_inv_Higgs_BF;
        BF = Dep::Higgs_decay_rates->BF("X", "X");
     }
 
     void DiracSingletDM_inv_Higgs_BF(double& BF)
     {
+       /**
+          @brief Branching fraction for Higgs into Dirac singlet DM
+          @param BF \f$\textrm{BR}(h\to F F)\f$
+       */
        using namespace Pipes::DiracSingletDM_inv_Higgs_BF;
        BF = Dep::Higgs_decay_rates->BF("F", "F");
     }
 
     void lnL_Higgs_invWidth_SMlike(double& lnL)
     {
+      /**
+         @brief Log-likelihood for Higgs invisible branching ratio
+
+         We use log-likelihoods extracted from e.g.,
+         <a href="http://cms-results.web.cern.ch/cms-results/public-results/
+         preliminary-results/HIG-17-023/CMS-PAS-HIG-17-023_Figure_007-b.png">
+         CMS-PAS-HIG-17-023</a>
+
+         There are scripts
+         @code
+         python ./DecayBit/data/convolve_with_theory.py <file> <frac_error> <min> <max>
+         @endcode
+         for convolving a data file with a fractional theory error, and
+         @code
+         python ./DecayBit/data/profile_theory.py <file> <frac_error> <min> <max>
+         @endcode
+         for profiling a fractional theory error.
+
+         There are a few data files, e.g.,
+         @code
+         ./DecayBit/data/arXiv_1306.2941_Figure_8.dat
+         ./DecayBit/data/CMS-PAS-HIG-17-023_Figure_7-b.dat
+         ./DecayBit/data/CMS-PAS-HIG-17-023_Figure_7-b_10_convolved.dat
+         ./DecayBit/data/CMS-PAS-HIG-17-023_Figure_7-b_10_profiled.dat
+         @endcode
+         The first one is the default. The third and fourth ones include a 10%
+         theory uncertainty in the branching fraction by convolving it and
+         profiling it, respectively. The data file is specified in
+         the YAML by the `BR_h_inv_chi2_data_file` option. The path is
+         relative to the GAMBIT directory, `GAMBIT_DIR`.
+
+         @warning This typically assumes that the Higgs is otherwise SM-like,
+         i.e., no changes to production cross sections or any other decays.
+
+         @param lnL Log-likelihood for Higgs invisible branching ratio
+      */
       using namespace Pipes::lnL_Higgs_invWidth_SMlike;
 
       const double BF = *Dep::inv_Higgs_BF;
@@ -3442,6 +3672,15 @@ namespace Gambit
 
     void lnL_Z_inv(double& lnL)
     {
+      /**
+         @brief Log-likelihood from LEP measurements of \f$Z\f$-boson invisible
+         width
+
+         @warning This is valid for SM, RHN models and for MSSM-like models with Z-boson invisible decays
+         to neutralinos and neutrinos
+
+         @param lnL Log-likelihood
+      */
       using namespace Pipes::lnL_Z_inv;
       const triplet<double> gamma_nu = *Dep::Z_gamma_nu;
       double gamma_inv = gamma_nu.central;
@@ -3464,6 +3703,15 @@ namespace Gambit
 
     void Z_gamma_nu_2l(triplet<double>& gamma)
     {
+      /**
+         @brief Calculate width of \f$Z\f$ decays to neutrinos (with RHN correction if present),
+         \f$\Gamma(Z\to\nu\nu)\f$ at two-loop in GeV
+
+         @warning This uses input \f$\alpha(M_Z)\f$ - does not include input
+         light-quark thresholds.
+
+         @param gamma \f$\Gamma(Z\to\chi\chi)\f$
+      */
       using namespace Pipes::Z_gamma_nu_2l;
 
       const SMInputs& SM = Dep::SM_spectrum->get_SMInputs();
@@ -3517,6 +3765,14 @@ namespace Gambit
 
     void Z_gamma_chi_0_MSSM_tree(triplet<double>& gamma)
     {
+      /**
+         @brief Calculate width of \f$Z\f$ decays to the lightest neutralinos,
+         \f$\Gamma(Z\to\chi^0_1\chi^0_1)\f$ in GeV
+
+         @warning Tree-level formula with 10% error
+
+         @param gamma \f$\Gamma(Z\to\chi^0_1\chi^0_1)\f$
+      */
       using namespace Pipes::Z_gamma_chi_0_MSSM_tree;
 
       const Spectrum& spec = *Dep::MSSM_spectrum;
@@ -3605,4 +3861,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:46 +0000
+Updated on 2022-08-02 at 23:34:56 +0000

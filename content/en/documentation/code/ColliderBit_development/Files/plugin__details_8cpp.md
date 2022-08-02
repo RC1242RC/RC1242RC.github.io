@@ -39,7 +39,25 @@ Authors (add name and date if you modify):
 ```
 //  GAMBIT: Global and Modular BSM Inference Tool
 //  *********************************************
+///  \file
+///
+///  Class to hold details of scanner plugins and
+///  define simple comparison operations on them.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
 //
+///  \author Gregory Martinez
+///          (gregory.david.martinez@gmail.com)
+///  \date 2013 August
+///  \date 2014 Feb
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)
+///  \date 2014 Dec
+///
+///  *********************************************
 
 #include <string>
 #include <ostream>
@@ -524,4 +542,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:37 +0000
+Updated on 2022-08-02 at 23:34:48 +0000

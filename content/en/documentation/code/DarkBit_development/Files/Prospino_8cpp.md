@@ -45,6 +45,19 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Definitions for the prospino_settings class
+///  used by the Prospino backend
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Anders Kvellestad
+///  \date 2020 Nov
+///
+///  *********************************************
 
 #include "gambit/Backends/backend_types/Prospino.hpp"
 
@@ -72,4 +85,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:48 +0000
+Updated on 2022-08-02 at 23:34:58 +0000

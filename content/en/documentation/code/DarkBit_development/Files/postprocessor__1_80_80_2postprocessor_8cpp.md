@@ -66,7 +66,24 @@ Determine what data needs to be copied from the input file to the new output dat
 ```
 //  GAMBIT: Global and Modular BSM Inference Tool
 //  *********************************************
+///  \file
+///
+///  "Postprocessing" scanner plugin. Reads points
+///  from old scan output and re-runs a likelihood
+///  containing plugin for those same point.
+///  Can perform some simple addition/subtraction
+///  operations of likelihood components from
+///  the new plugin output.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
 //
+///  \author Ben Farmer
+///          (ben.farmer@gmail.com)
+///  \date 2016 Mar, 2017 Jan, Feb, Mar
+///
+///  *********************************************
 
 // STL
 #include <vector>
@@ -94,15 +111,20 @@ scanner_plugin(postprocessor, version(1, 0, 0))
 {
   reqd_inifile_entries("like","reader");
 
+  /// The likelihood container plugin
   like_ptr LogLike;
 
+  /// MPI data
   unsigned int numtasks;
   unsigned int rank;
 
+  /// The reader object in use for the scan
   Gambit::Printers::BaseBaseReader* reader;
 
+  /// The main postprocessing driver object
   PPDriver driver;
 
+  /// Options for PPDriver;
   PPOptions settings;
 
   // Retrieve an integer from an environment variable
@@ -129,6 +151,7 @@ scanner_plugin(postprocessor, version(1, 0, 0))
      return x;
   }
 
+  /// The constructor to run when the plugin is loaded.
   plugin_constructor
   {
     int s_numtasks;
@@ -226,6 +249,7 @@ scanner_plugin(postprocessor, version(1, 0, 0))
     if(rank==0) std::cout << "root: " << settings.root << std::endl;
   }
 
+  /// Main run function
   int plugin_main()
   {
     if(rank==0) std::cout << "Running 'postprocessor' plugin for ScannerBit." << std::endl;
@@ -237,6 +261,7 @@ scanner_plugin(postprocessor, version(1, 0, 0))
     // Message tag definitons in PPDriver class:
     #endif
 
+    /// Determine what data needs to be copied from the input file to the new output dataset
     // Get labels of functors listed for printing from the primary printer.
     settings.all_params = get_printer().get_stream()->getPrintList();
     // There are some extra items that will also be automatically printed in all scans,
@@ -341,6 +366,7 @@ scanner_plugin(postprocessor, version(1, 0, 0))
        if(do_redistribution)
        {
           #ifdef WITH_MPI
+            /// @{ Gather all 'I_am_finished' flags to see if everyone is done
             int my_finished = (I_am_finished ? 1 : 0); // convert to int in a way that prevents unused-variable warnings
             std::vector<int> all_finished = allgather_int(my_finished, ppComm);
             bool everyone_finished = true;
@@ -354,6 +380,7 @@ scanner_plugin(postprocessor, version(1, 0, 0))
                }
                tmp_rank++;
             }
+            /// @}
 
             // All processes should now be synchronised; receive all the redistribution requests
             std::cout << "Rank "<<rank<<": Clearing redistribution request messages" << std::endl;
@@ -361,6 +388,7 @@ scanner_plugin(postprocessor, version(1, 0, 0))
 
             if(not everyone_finished)
             {
+               /// @{ Gather all quit flags, to see if we need to stop (COLLECTIVE OPERATION)
                int my_quit = (quit_flag_seen ? 1 : 0); // convert to int in a way that prevents unused-variable warnings
                std::vector<int> all_quit_flags = allgather_int(my_quit, ppComm);
                for(auto it=all_quit_flags.begin(); it!=all_quit_flags.end(); ++it)
@@ -370,8 +398,10 @@ scanner_plugin(postprocessor, version(1, 0, 0))
                      continue_processing = false; // If anyone has seen the quit flag, we must stop.
                   }
                }
+               /// @}
                if(continue_processing)
                {
+                  /// Not quitting; do the redistribution.
                   //if(rank==0) std::cout << "Some processes have finished their work, but others are still going. Redistributing remaining workload amongst all available cpus" << std::endl;
                   std::cout << "Rank "<<rank<<": Some processes have finished their work, but others are still going. Redistributing remaining workload amongst all available cpus" << std::endl;
                   resume = true; // Perform next loop as if we are resuming the scan.
@@ -406,4 +436,4 @@ scanner_plugin(postprocessor, version(1, 0, 0))
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:45 +0000
+Updated on 2022-08-02 at 23:34:55 +0000

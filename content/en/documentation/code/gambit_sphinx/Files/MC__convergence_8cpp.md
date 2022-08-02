@@ -55,6 +55,24 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  ColliderBit Monte Carlo convergence routines.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)
+///  \date 2018 Jan
+///  \date 2019 Jan
+///
+///  \author Anders Kvellestad
+///          (anders.kvellestad@fys.uio.no)
+///  \date 2018 May
+///
+///  *********************************************
 
 #include <omp.h>
 #include "gambit/ColliderBit/MC_convergence.hpp"
@@ -69,31 +87,37 @@ namespace Gambit
   namespace ColliderBit
   {
 
+    /// A map containing pointers to all instances of this class
     std::map<const MC_convergence_checker* const, bool> MC_convergence_checker::convergence_map;
 
+    /// Constructor
     MC_convergence_checker::MC_convergence_checker() : n_threads(omp_get_max_threads()), converged(false)
     {
       n_signals = new std::vector<int>[n_threads];
       convergence_map[this] = false;
     }
 
+    /// Deconstructor
     MC_convergence_checker::~MC_convergence_checker()
     {
       delete[] n_signals;
     }
 
+    /// Initialise (or re-initialise) the object
     void MC_convergence_checker::init(const convergence_settings& settings)
     {
       clear();
       set_settings(settings);
     }
 
+    /// Provide a pointer to the convergence settings
     void MC_convergence_checker::set_settings(const convergence_settings& settings)
     {
       if (omp_get_thread_num() > 0) utils_error().raise(LOCAL_INFO, "Cannot call this function from inside an OpenMP block.");
       _settings = &settings;
     }
 
+    /// Clear all convergence data (for all threads)
     void MC_convergence_checker::clear()
     {
       if (omp_get_thread_num() > 0) utils_error().raise(LOCAL_INFO, "Cannot call this function from inside an OpenMP block.");
@@ -106,6 +130,7 @@ namespace Gambit
     }
 
 
+    /// Update the convergence data.  This is the only routine meant to be called in parallel.
     void MC_convergence_checker::update(const AnalysisContainer& ac)
     {
       // Abort if the analysis container tracked by this object is already fully converged
@@ -128,6 +153,7 @@ namespace Gambit
     }
 
 
+    /// Check if convergence has been achieved across threads, and across all instances of this class
     bool MC_convergence_checker::achieved(const AnalysisContainer& ac)
     {
       if (not converged)
@@ -257,4 +283,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:40 +0000
+Updated on 2022-08-02 at 23:34:50 +0000

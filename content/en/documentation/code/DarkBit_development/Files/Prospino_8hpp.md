@@ -51,6 +51,18 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Options struct for the Prospino backend
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Anders Kvellestad
+///  \date 2019 Jun, Nov
+///
+///  *********************************************
 
 #include <map>
 #include "gambit/Utils/PID_pair.hpp"
@@ -107,4 +119,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:48 +0000
+Updated on 2022-08-02 at 23:34:58 +0000

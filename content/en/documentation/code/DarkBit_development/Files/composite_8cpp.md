@@ -54,6 +54,24 @@ Authors (add name and date if you modify):
 ```
 //  GAMBIT: Global and Modular BSM Inference Tool
 //  *********************************************
+///  \file
+///
+///  Prior object construction routines
+///  
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///   
+///  \author Ben Farmer
+///          (benjamin.farmer@monash.edu.au)
+///  \date 2013 Dec
+///
+///  \author Gregory Martinez
+///          (gregory.david.martinez@gmail.com)
+///  \date 2014 Feb
+///
+///  *********************************************
 
 #include <cmath>
 #include <vector>
@@ -125,6 +143,7 @@ namespace Gambit
             
             return param_names;
         }
+        /// Special "build-a-prior" classi
         // Combines prior objects together, so that the Scanner can deal with just one object in a standard way.
         // This is the class to use for setting simple 1D priors (from the library above) on individual parameters.
         // It also allows for any combination of MD priors to be set on any combination of subspaces of
@@ -664,4 +683,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:45 +0000
+Updated on 2022-08-02 at 23:34:55 +0000

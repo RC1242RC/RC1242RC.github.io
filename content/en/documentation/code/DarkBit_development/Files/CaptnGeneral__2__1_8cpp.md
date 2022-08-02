@@ -128,6 +128,19 @@ char solarmodel;
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Frontend for Capt'n General 1.0 backend
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  Aaron Vincent
+///  25/09/2017
+///  Neal Avis Kozar
+///  13/03/2021
+///  *********************************************
 
 #include "gambit/Backends/frontend_macros.hpp"
 #include "gambit/Backends/frontends/CaptnGeneral_2_1.hpp"
@@ -167,4 +180,4 @@ END_BE_INI_FUNCTION
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:48 +0000
+Updated on 2022-08-02 at 23:34:58 +0000

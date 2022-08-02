@@ -75,6 +75,25 @@ if (node[#NAME].IsDefined()) rhs.NAME = node[#NAME].as<std::string>();
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Ini-file parser based on yaml-cpp
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Christoph Weniger
+///          (c.weniger@uva.nl)
+///  \date 2013 May, June, July
+///
+///  \author Pat Scott
+///          (patscott@physics.mcgill.ca)
+///  \date 2014 Mar
+///  \date 2015 Mar
+///  \date 2020 Apr
+///
+///  *********************************************
 
 #include "gambit/Core/yaml_parser.hpp"
 
@@ -123,8 +142,11 @@ namespace Gambit
 
     }
 
+    /// Getters for private observable and rules entries
+    /// @{
     const ObservablesType& IniFile::getObservables() const { return observables; }
     const ObservablesType& IniFile::getRules() const { return rules; }
+    /// @}
 
   }
 
@@ -188,4 +210,4 @@ namespace YAML
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:37 +0000
+Updated on 2022-08-02 at 23:34:54 +0000

@@ -78,6 +78,18 @@ Shut down due receipt of MPI emergency shutdown message
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  GAMBIT executable.
+///
+///  *********************************************
+///
+///  Authors:
+///
+///  \author The GAMBIT Collaboration
+///  \date 2012 Oct onwards
+///
+///  *********************************************
 
 #include <csignal>
 
@@ -92,12 +104,14 @@ using namespace LogTags;
   bool use_mpi_abort = true; // Set later via inifile value
 #endif
 
+/// Cleanup function
 void do_cleanup()
 {
   Gambit::Scanner::Plugins::plugin_info.dump(); // Also calls printer finalise() routine
 }
 
 
+/// Main GAMBIT program
 int main(int argc, char* argv[])
 {
 
@@ -112,6 +126,8 @@ int main(int argc, char* argv[])
     GMPI::Init();
   #endif
 
+  /// Idea by Tom Fogal, for optionally preventing execution of code until debugger allows it
+  /// Source: http://www.sci.utah.edu/~tfogal/academic/Fogal-ParallelDebugging.pdf
   #ifdef WITH_MPI
   {
      GMPI::Comm temp_comm;
@@ -143,14 +159,17 @@ int main(int argc, char* argv[])
     signal(SIGUSR2, sighandler_soft);
 
     #ifdef WITH_MPI
+      /// Create an MPI communicator group for use by error handlers
       GMPI::Comm errorComm;
       errorComm.dup(MPI_COMM_WORLD,"errorComm"); // duplicates the COMM_WORLD context
       const int ERROR_TAG=1;         // Tag for error messages
       errorComm.mytag = ERROR_TAG;
       signaldata().set_MPI_comm(&errorComm); // Provide a communicator for signal handling routines to use.
+      /// Create an MPI communicator group for ScannerBit to use
       GMPI::Comm scanComm;
       scanComm.dup(MPI_COMM_WORLD,"scanComm"); // duplicates the COMM_WORLD context
       Scanner::Plugins::plugin_info.initMPIdata(&scanComm);
+      /// MPI rank for use in error messages;
       int rank = scanComm.Get_rank();
       int size = scanComm.Get_size();
      #else
@@ -298,11 +317,16 @@ int main(int argc, char* argv[])
 
     }
 
+    /// Special catch block for silent shutdown
+    /// This exception is designed to be thrown during diagnostic mode
     catch (const SilentShutdownException& e)
     {
       // No need to do anything, just let program shut down normally from here
     }
 
+    /// Special catch block for controlled shutdown
+    /// This exception should only be thrown if it is safe to call MPI_Finalise,
+    /// as this will occur once we leave the catch block.
     catch (const SoftShutdownException& e)
     {
       if (not logger().disabled())
@@ -316,6 +340,10 @@ int main(int argc, char* argv[])
       // Let program shutdown normally from here
     }
 
+    /// Special catch block for hard shutdown
+    /// No MPI_Finalise called, nor MPI_Abort. Should only be triggered when all
+    /// processes are supposed to be trying to shut themselves down quickly, for
+    /// example if synchronising for soft shutdown fails.
     catch (const HardShutdownException& e)
     {
       if (not logger().disabled())
@@ -329,6 +357,7 @@ int main(int argc, char* argv[])
       return EXIT_SUCCESS;
     }
 
+    /// Shut down due receipt of MPI emergency shutdown message
     catch (const MPIShutdownException& e)
     {
       if (not logger().disabled())
@@ -423,4 +452,4 @@ int main(int argc, char* argv[])
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:37 +0000
+Updated on 2022-08-02 at 23:34:54 +0000

@@ -73,6 +73,24 @@ REGISTER(prior_creators, tag, __VA_ARGS__)
 ```
 //  GAMBIT: Global and Modular BSM Inference Tool
 //  *********************************************
+///  \file
+///
+///  Prior object construction routines
+///  
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///   
+///  \author Ben Farmer
+///          (benjamin.farmer@monash.edu.au)
+///  \date 2013 Dec
+///
+///  \author Gregory Martinez
+///          (gregory.david.martinez@gmail.com)
+///  \date 2014 Feb
+///
+///  *********************************************
 
 #ifndef PRIORS_HPP
 #define PRIORS_HPP
@@ -87,6 +105,7 @@ REGISTER(prior_creators, tag, __VA_ARGS__)
 // This macro registers each prior.
 #define LOAD_PRIOR(tag, ...) REGISTER(prior_creators, tag, __VA_ARGS__)
 
+/// Map in which to keep factory functions for the priors (prior_creators)
 namespace Gambit
 {
     namespace Priors
@@ -105,4 +124,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:45 +0000
+Updated on 2022-08-02 at 23:34:55 +0000

@@ -107,6 +107,22 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Definitions of container classes
+///  for the SUSYHIT 1.4 backend.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+/// \author Peter Athron
+/// \author Csaba Balazs
+/// \author Anders Kvellestad
+/// \author Pat Scott
+/// \date 2015 Jan-Apr
+///
+///  *********************************************
 
 #ifndef __SUSYHIT_types_hpp__
 #define __SUSYHIT_types_hpp__
@@ -757,4 +773,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:48 +0000
+Updated on 2022-08-02 at 23:34:58 +0000

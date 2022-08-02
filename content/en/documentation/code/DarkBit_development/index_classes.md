@@ -3,9 +3,8 @@ title: "Classes"
 
 menu:
   documentation:
-    parent: GAMBIT_VERSION_HERE
-identifier: "GAMBIT_VERSION_HEREClasses"
-weight: 20
+    parent: DarkBit_development
+    identifier: "DarkBit_developmentClasses" weight: 20
 ---
 
 
@@ -681,4 +680,4 @@ weight: 20
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:48 +0000
+Updated on 2022-08-02 at 23:34:59 +0000

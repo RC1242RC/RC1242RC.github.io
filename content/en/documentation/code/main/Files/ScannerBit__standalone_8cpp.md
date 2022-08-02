@@ -165,6 +165,19 @@ Printers::PrinterManager * printerInterface = NULL;
 ```
 //  GAMBIT: Global and Modular BSM Inference Tool
 //  *********************************************
+///  \file
+///
+///  ScannerBit standalone example.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Gregory Martinez
+///          (gregory.david.martinez@gmail.com)
+///  \date 2015 Feb, Mar
+///
+///  *********************************************
 
 #include <map>
 #include <vector>
@@ -522,4 +535,4 @@ int main(int argc, char **argv)
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:36 +0000
+Updated on 2022-08-02 at 23:34:53 +0000

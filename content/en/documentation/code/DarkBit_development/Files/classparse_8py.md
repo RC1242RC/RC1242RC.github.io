@@ -25,7 +25,11 @@ description: "[No description available]"
 ## Source code
 
 ```
-
+############################
+#                          #
+#  Class parsing for BOSS  #
+#                          #
+############################
 
 from __future__ import print_function
 from collections import OrderedDict
@@ -940,4 +944,4 @@ def addWrapperTypedefs(class_name, namespaces):
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:48 +0000
+Updated on 2022-08-02 at 23:34:58 +0000

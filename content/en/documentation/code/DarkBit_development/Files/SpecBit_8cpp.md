@@ -56,6 +56,26 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Functions of module SpecBit
+///
+///  SpecBit module functions shared by several
+///  models, or otherwise generic.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Ben Farmer
+///          (ben.farmer@gmail.com)
+///  \date 2015 Aug
+///
+///  \author Tomas Gonzalo
+///          (tomas.gonzalo@monash.edu)
+///  \date 2020 Jul
+///
+///  *********************************************
 
 #include <string>
 #include <sstream>
@@ -77,11 +97,13 @@ namespace Gambit
     // bool Pipes::<fname>::ModelInUse(str model_name)
 
 
+    /// @{ Non-Gambit helper functions
     //  =======================================================================
     //  These are not known to Gambit, but they do basically all the real work.
     //  The Gambit module functions merely wrap the functions here and hook
     //  them up to their dependencies, and input parameters.
 
+    /// Initialise QedQcd object from SMInputs data
     void setup_QedQcd(softsusy::QedQcd& oneset /*output*/, const SMInputs& sminputs /*input*/)
     {
       // Set pole masses (to be treated specially)
@@ -89,17 +111,23 @@ namespace Gambit
       //oneset.setPoleMb(...);
       oneset.setPoleMtau(sminputs.mTau);
       oneset.setMbMb(sminputs.mBmB);
+      /// set running quark masses
       oneset.setMass(softsusy::mDown,    sminputs.mD);
       oneset.setMass(softsusy::mUp,      sminputs.mU);
       oneset.setMass(softsusy::mStrange, sminputs.mS);
       oneset.setMass(softsusy::mCharm,   sminputs.mCmC);
+      /// set QED and QCD structure constants
       oneset.setAlpha(softsusy::ALPHA, 1./sminputs.alphainv);
       oneset.setAlpha(softsusy::ALPHAS, sminputs.alphaS);
+      /// NOTE! These assume the input electron and muon pole masses are "close
+      /// enough" to MSbar masses at MZ. The object does the same with its
+      /// default values so I guess it is ok.
       oneset.setMass(softsusy::mElectron, sminputs.mE);
       oneset.setMass(softsusy::mMuon,     sminputs.mMu);
       oneset.setPoleMZ(sminputs.mZ);
     }
 
+    /// Check that the spectrum has a neutralino LSP.
     bool has_neutralino_LSP(const Spectrum& result)
     {
       double msqd  = result.get(Par::Pole_Mass, 1000001, 0);
@@ -117,17 +145,21 @@ namespace Gambit
              mchi0 < msqu  &&
              mchi0 < msqd;
     }
+    /// Helper to work with pointer
     bool has_neutralino_LSP(const Spectrum* result)
     {
       return has_neutralino_LSP(*result);
     }
 
+    /// @} End module convenience functions
 
 
+    /// @{ Gambit module functions
     //  =======================================================================
     //  These are wrapped up in Gambit functor objects according to the
     //  instructions in the rollcall header
 
+    /// Set SMINPUTS (SLHA2) struct to match StandardModel_SLHA2 parameters.
     //  Effectively just changes these model parameters into a more convenient form.
     //  But also opens up the possibility of rebuilding this struct from some other
     //  parameterisation.
@@ -202,6 +234,7 @@ namespace Gambit
       result = sminputs;
     }
 
+    /// @} End Gambit module functions
 
   } // end namespace SpecBit
 } // end namespace Gambit
@@ -210,4 +243,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:45 +0000
+Updated on 2022-08-02 at 23:34:55 +0000

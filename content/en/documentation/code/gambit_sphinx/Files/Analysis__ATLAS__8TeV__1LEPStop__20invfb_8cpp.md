@@ -41,6 +41,7 @@ description: "[No description available]"
 #include "gambit/ColliderBit/ATLASEfficiencies.hpp"
 #include "gambit/ColliderBit/mt2_bisect.h"
 
+/// @todo Remove the ROOT classes
 
 using namespace std;
 
@@ -62,6 +63,7 @@ using namespace std;
 namespace Gambit {
   namespace ColliderBit {
 
+    /// A useful MT2 class for this module
     class MT2 {
     public:
       MT2(){
@@ -772,6 +774,7 @@ namespace Gambit {
         return;
       }
 
+      /// Combine the variables of another copy of this analysis (typically on another thread) into this one.
       void combine(const Analysis* other)
       {
         const Analysis_ATLAS_8TeV_1LEPStop_20invfb* specificOther
@@ -833,4 +836,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:40 +0000
+Updated on 2022-08-02 at 23:34:49 +0000

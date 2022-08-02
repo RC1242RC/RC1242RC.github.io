@@ -43,6 +43,21 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Frontend for SPheno 3.3.8 backend
+///  (out of the box version)
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Tomas Gonzalo
+///          (tomas.gonzalo@monash.edu)
+///  \date 2016 Apr, May, June
+///  \date 2020 Apr
+///
+///  *********************************************
 
 #include "gambit/Backends/frontend_macros.hpp"
 #include "gambit/Backends/frontends/SPheno_3_3_8.hpp"
@@ -1374,4 +1389,4 @@ END_BE_INI_FUNCTION
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:40 +0000
+Updated on 2022-08-02 at 23:34:50 +0000

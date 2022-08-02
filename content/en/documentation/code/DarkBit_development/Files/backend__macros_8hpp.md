@@ -644,6 +644,42 @@ Supplementary backend variable macro.
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  General macros for loading a shared library
+///  and constructing pointers to the variables and
+///  functions within the library.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Anders Kvellestad
+///          (anders.kvellestad@fys.uio.no)
+///  \date 2013 Mar, Apr, Nov
+///
+///  \author Christoph Weniger
+///          (c.weniger@uva.nl)
+///  \date 2013 June
+///
+///  \author Pat Scott
+///          (patscott@physics.mcgill.ca)
+///  \date 2013 July
+///  \date 2014 Jan, Mar, May
+///  \date 2015 Feb
+///  \date 2017 Dec
+///
+///  \author Lars A. Dal
+///          (l.a.dal@fys.uio.no)
+///  \date 2014 Jan, Mar
+///  \date 2015 Jan, Feb
+///
+///  \author Tomas Gonzalo
+///          (t.e.gonzalo@fys.uio.no)
+///  \date 2016 Sep
+///  \date 2021 Sep
+///
+///  *********************************************
 
 #ifndef __BACKEND_MACROS_HPP__
 #define __BACKEND_MACROS_HPP__
@@ -676,26 +712,32 @@ Supplementary backend variable macro.
 #include <boost/preprocessor/seq/to_tuple.hpp>
 #include <boost/preprocessor/tuple/to_seq.hpp>
 
+/// Macros to add names to an argument list
 #define ARG_NAME(R,DATA,INDEX,ELEM) (ELEM arg##INDEX)
 #define FUNCTION_ARGS_SEQ(ARGLIST) BOOST_PP_IF(ISEMPTY(ARGLIST), (),                            \
         BOOST_PP_SEQ_FOR_EACH_I(ARG_NAME, , BOOST_PP_TUPLE_TO_SEQ(ARGLIST)))
 #define FUNCTION_ARGS(ARGLIST) BOOST_PP_SEQ_TO_TUPLE(FUNCTION_ARGS_SEQ(ARGLIST))
 
+/// Macros to get only the names corresponding to an argument list
 #define ARG_NAME_ONLY(R,DATA,INDEX,ELEM) (std::forward<ELEM>(arg##INDEX))
 #define FUNCTION_ARG_NAMES_SEQ(ARGLIST) BOOST_PP_IF(ISEMPTY(ARGLIST), (),                       \
         BOOST_PP_SEQ_FOR_EACH_I(ARG_NAME_ONLY, , BOOST_PP_TUPLE_TO_SEQ(ARGLIST)))
 #define FUNCTION_ARG_NAMES(ARGLIST) BOOST_PP_SEQ_TO_TUPLE(FUNCTION_ARG_NAMES_SEQ(ARGLIST))
 
+/// Declare the backend initialisation module BackendIniBit.
 #define MODULE BackendIniBit
   START_MODULE
 #undef MODULE
 
+/// Dependency macro for point-level backend initialisation functions (in BackendIniBit)
 #define BE_INI_DEPENDENCY(DEP, TYPE) CORE_DEPENDENCY(DEP, TYPE, BackendIniBit, CAT_5(BACKENDNAME,_,SAFE_VERSION,_,init), NOT_MODEL)
 
+/// Model-conditional dependency macro for point-level backend initialisation functions (in BackendIniBit)
 #define BE_INI_CONDITIONAL_DEPENDENCY(DEP, TYPE, ...)                                                                                             \
   CORE_START_CONDITIONAL_DEPENDENCY(BackendIniBit, CAT_5(BACKENDNAME,_,SAFE_VERSION,_,init), CAT_5(BACKENDNAME,_,SAFE_VERSION,_,init), DEP, TYPE, NOT_MODEL) \
   ACTIVATE_DEP_MODEL(BackendIniBit, CAT_5(BACKENDNAME,_,SAFE_VERSION,_,init), CAT_5(BACKENDNAME,_,SAFE_VERSION,_,init), DEP, NOT_MODEL, #__VA_ARGS__)
 
+/// Macro for assigning a single allowed model to an entire backend.
 #define BE_ALLOW_MODEL(MODEL)                                               \
 BE_NAMESPACE                                                                \
 {                                                                           \
@@ -709,10 +751,12 @@ END_BE_NAMESPACE                                                            \
 CORE_ALLOWED_MODEL(BackendIniBit,CAT_4(BACKENDNAME,_,SAFE_VERSION,_init),   \
  MODEL, NOT_MODEL)                                                          \
 
+/// Set all the allowed models for a given backend functor.
 #define SET_ALLOWED_MODELS(NAME, MODELS)                                    \
 int CAT(allowed_models_set_,NAME) =                                         \
  set_allowed_models(Functown::NAME, allowed_models, STRINGIFY(MODELS));
 
+/// Make the inUse pipe for a given backend functor.
 #define MAKE_INUSE_POINTER(NAME)                                            \
   namespace BackendIniBit                                                   \
   {                                                                         \
@@ -729,6 +773,7 @@ int CAT(allowed_models_set_,NAME) =                                         \
     }                                                                       \
   }                                                                         \
 
+/// Macro containing initialization code
 #define LOAD_LIBRARY                                                        \
 namespace Gambit                                                            \
 {                                                                           \
@@ -791,6 +836,7 @@ namespace Gambit                                                            \
 )
 
 
+/// Register this backend with the Core if not running in standalone mode.
 #ifndef STANDALONE
   #define REGISTER_BACKEND(BE, VER, SAFEVER, REF)                           \
    int CAT_4(BE,_,SAFEVER,_rego) =                                          \
@@ -799,9 +845,11 @@ namespace Gambit                                                            \
   #define REGISTER_BACKEND(BE, VER, SAFEVER, REF) DUMMYARG(BE, VER, SAFEVER, REF)
 #endif
 
+/// Load factory functions for classes provided by this backend
 #define LOAD_ALL_FACTORIES                                                                      \
  BOOST_PP_SEQ_FOR_EACH(LOAD_FACTORIES_FOR_TYPE, , CAT_4(BACKENDNAME,_,SAFE_VERSION,_all_data))
 
+/// Load all factory functions for a given type.
 #define LOAD_FACTORIES_FOR_TYPE(r,data,elem)                                                    \
 namespace Gambit                                                                                \
 {                                                                                               \
@@ -849,10 +897,12 @@ BOOST_PP_SEQ_FOR_EACH_I(LOAD_NTH_FACTORY_FOR_TYPE,                              
  BOOST_PP_SEQ_CAT(BOOST_PP_SEQ_TRANSFORM(APPEND_TOKEN, NS_SEP,                                  \
  BOOST_PP_TUPLE_ELEM(2,0,elem))), BOOST_PP_TUPLE_ELEM(2,1,elem))                                \
 
+/// Redirector from within BOOST_PP_SEQ_FOR_EACH_I to LOAD_SINGLE_FACTORY
 #define LOAD_NTH_FACTORY_FOR_TYPE(r,data,i,elem)                                                \
  LOAD_SINGLE_FACTORY(data, CAT_3(data,factory,i), BOOST_PP_TUPLE_ELEM(2,1,elem),                \
  BOOST_PP_TUPLE_ELEM(2,0,elem), CAT(data,abstract), CAT(data,wrapper)::CAT(__factory,i) )       \
 
+/// Load a single factory function from a backend
 #define LOAD_SINGLE_FACTORY(BARENAME, NAME, ARGS, SYMBOLNAMES, ABSTRACT, PTRNAME)               \
 namespace Gambit                                                                                \
 {                                                                                               \
@@ -933,6 +983,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)                                     
                   USING_PYTHON, BE_VARIABLE_I_PY,                                   \
                   BE_VARIABLE_I_OTHER)(NAME, TYPE, SYMBOLNAMES, CAPABILITY, MODELS)
 
+/// Backend variable macro for regular backends (C/C++/Fortran)
 #define BE_VARIABLE_I_OTHER(NAME, TYPE, SYMBOLNAMES, CAPABILITY, MODELS)      \
 namespace Gambit                                                              \
 {                                                                             \
@@ -951,6 +1002,7 @@ namespace Gambit                                                              \
   }                                                                           \
 }
 
+/// Main actual backend variable macro
 #define BE_VARIABLE_I_MAIN(NAME, TYPE, SYMBOLNAMES, CAPABILITY, MODELS, REF)  \
 namespace Gambit                                                              \
 {                                                                             \
@@ -988,6 +1040,7 @@ namespace Gambit                                                              \
                                                                               \
 } /* end namespace Gambit */                                                  \
 
+/// Supplementary backend variable macro
 #define BE_VARIABLE_I_SUPP(NAME)                                              \
 namespace Gambit                                                              \
 {                                                                             \
@@ -1001,6 +1054,16 @@ namespace Gambit                                                              \
 }                                                                             \
 
 
+/// \name Wrapping macros for backend-defined functions
+///
+/// BE_FUNCTION(NAME, TYPE, ARGSLIST, SYMBOLNAMES, CAPABILITY, [(MODELS)], [REF]) is the
+/// macro used for constructing pointers to library functions and
+/// wrapping function pointers in backend functors.
+///
+/// The sixth argument (MODELS) is optional, and contains a list of models that you want this function to be able
+/// to be used with.
+/// The seventh argument REF is optional, and contains a string of citation keys as references for the backend function
+/// @{
 
 #define BE_FUNCTION_5(NAME, TYPE, ARGSLIST, SYMBOLNAMES, CAPABILITY)                            \
   BE_FUNCTION_I(NAME, TYPE, ARGSLIST, SYMBOLNAMES, CAPABILITY, (), "")
@@ -1031,6 +1094,7 @@ namespace Gambit                                                              \
                   USING_PYTHON, BE_FUNCTION_I_PY,                                               \
                   BE_FUNCTION_I_OTHER)(NAME, TYPE, ARGLIST, SYMBOLNAMES, CAPABILITY, MODELS)
 
+/// Backend function macro for other backends (C/C++/Fortran)
 #define BE_FUNCTION_I_OTHER(NAME, TYPE, ARGLIST, SYMBOLNAMES, CAPABILITY, MODELS)               \
 namespace Gambit                                                                                \
 {                                                                                               \
@@ -1048,6 +1112,7 @@ namespace Gambit                                                                
   }                                                                                             \
 }
 
+/// Main actual backend function macro
 #define BE_FUNCTION_I_MAIN(NAME, TYPE, ARGLIST, SYMBOLNAMES, CAPABILITY, MODELS, REF)           \
 namespace Gambit                                                                                \
 {                                                                                               \
@@ -1088,6 +1153,7 @@ namespace Gambit                                                                
 } /* end namespace Gambit*/
 
 
+/// Supplemenentary backend function macro
 #define BE_FUNCTION_I_SUPP(NAME)                                                                \
 namespace Gambit                                                                                \
 {                                                                                               \
@@ -1112,6 +1178,9 @@ namespace Gambit                                                                
 #endif
 
 
+/// \name Main wrapping macro for convenience functions
+/// BE_CONV_FUNCTION(NAME, TYPE, ARGSLIST, CAPABILITY, [(MODELS)], [REF]) is the macro used
+/// for wrapping convenience functions in backend functors.
 #define BE_CONV_FUNCTION_MAIN(NAME, TYPE, ARGSLIST, CAPABILITY, MODELS, REF)                    \
 namespace Gambit                                                                                \
 {                                                                                               \
@@ -1149,6 +1218,7 @@ namespace Gambit                                                                
   MAKE_INUSE_POINTER(NAME)                                                                      \
 }                                                                                               \
 
+/// \name Supplementary wrapping macro for convenience functions
 #define BE_CONV_FUNCTION_SUPP(NAME)                                                             \
 namespace Gambit                                                                                \
 {                                                                                               \
@@ -1167,4 +1237,4 @@ namespace Gambit                                                                
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:48 +0000
+Updated on 2022-08-02 at 23:34:58 +0000

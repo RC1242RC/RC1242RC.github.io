@@ -56,6 +56,29 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Class for ColliderBit analyses.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Abram Krislock
+///          (a.m.b.krislock@fys.uio.no)
+///
+///  \author Andy Buckley
+///          (mostlikelytobefound@facebook.com)
+///
+///  \author Anders Kvellestad
+///          (anders.kvellestad@fys.uio.no)
+///  \date often
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)
+///  \date 2019 Feb
+///
+///  *********************************************
 
 #include <vector>
 #include "HEPUtils/Event.h"
@@ -72,6 +95,7 @@ namespace Gambit
                          , _needs_collection(true)
                          { }
 
+    /// Public method to reset this instance for reuse, avoiding the need for "new" or "delete".
     void Analysis::reset()
     {
       _is_scaled = false;
@@ -80,26 +104,33 @@ namespace Gambit
       analysis_specific_reset();
     }
 
+    /// Analyze the event (accessed by reference).
     void Analysis::analyze(const HEPUtils::Event& e) { analyze(&e); }
 
+    /// Analyze the event (accessed by pointer).
     void Analysis::analyze(const HEPUtils::Event* e)
     {
       _needs_collection = true;
       run(e);
     }
 
+    /// Return the integrated luminosity.
     double Analysis::luminosity() const { return _luminosity; }
 
+    /// Set the integrated luminosity.
     void Analysis::set_luminosity(double lumi) { _luminosity_is_set = true; _luminosity = lumi; }
 
+    /// Set the analysis name
     void Analysis::set_analysis_name(str aname)
     {
       _analysis_name = aname;
       _results.analysis_name = _analysis_name;
     }
 
+    /// Get the analysis name
     str Analysis::analysis_name() { return _analysis_name; }
 
+    /// Get the collection of SignalRegionData for likelihood computation.
     const AnalysisData& Analysis::get_results()
     {
       if (_needs_collection)
@@ -110,6 +141,7 @@ namespace Gambit
       return _results;
     }
 
+    /// An overload of get_results() with some additional consistency checks.
     const AnalysisData& Analysis::get_results(str& warning)
     {
       warning = "";
@@ -121,6 +153,7 @@ namespace Gambit
       return get_results();
     }
 
+    /// Get a (non-const!) pointer to _results.
     AnalysisData* Analysis::get_results_ptr()
     {
       // Call get_results() to make sure everything has been collected properly, but ignore the return value
@@ -129,6 +162,7 @@ namespace Gambit
       return &_results;
     }
 
+    /// An overload of get_results_ptr() with some additional consistency checks.
     AnalysisData* Analysis::get_results_ptr(str& warning)
     {
       // Call get_results() to make sure everything has been collected properly, but ignore the return value
@@ -137,10 +171,13 @@ namespace Gambit
       return &_results;
     }
 
+    /// Add the given result to the internal results list.
     void Analysis::add_result(const SignalRegionData& sr) { _results.add(sr); }
 
+    /// Set the covariance matrix, expressing SR correlations
     void Analysis::set_covariance(const Eigen::MatrixXd& srcov) { _results.srcov = srcov; }
 
+    /// A convenience function for setting the SR covariance from a nested vector/initialiser list
     void Analysis::set_covariance(const std::vector<std::vector<double>>& srcov)
     {
       Eigen::MatrixXd cov(srcov.size(), srcov.front().size());
@@ -154,6 +191,7 @@ namespace Gambit
       set_covariance(cov);
     }
 
+    /// Scale by xsec per event.
     void Analysis::scale(double xsec_per_event)
     {
       double factor = luminosity() * xsec_per_event;
@@ -165,11 +203,13 @@ namespace Gambit
       _is_scaled = true;
     }
 
+    /// Add the results of another analysis to this one. Argument is not const, because the other needs to be able to gather its results if necessary.
     void Analysis::add(Analysis* other)
     {
       if (_results.empty()) collect_results();
       if (this == other) return;
       const AnalysisData otherResults = other->get_results();
+      /// @todo Access by name, including merging disjoint region sets?
       assert(otherResults.size() == _results.size());
       for (size_t i = 0; i < _results.size(); ++i)
       {
@@ -185,4 +225,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:46 +0000
+Updated on 2022-08-02 at 23:34:56 +0000

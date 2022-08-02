@@ -88,6 +88,21 @@ Authors (add name and date if you modify): Aaron Vincent
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Fronted header for the CaptnGeneral backend
+///
+///  Compile-time registration of available
+///  functions and variables from this backend.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///  Aaron Vincent
+///  \date 2017 Sep-Nov
+///  Neal Avis Kozar
+///  \date 2019 Jan-2021 Mar
+///  *********************************************
 
 #define BACKENDNAME CaptnGeneral
 #define BACKENDLANG FORTRAN
@@ -117,4 +132,4 @@ BE_INI_DEPENDENCY(RD_fraction,double)
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:55 +0000

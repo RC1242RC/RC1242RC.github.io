@@ -39,6 +39,18 @@ Authors:
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Header for main GAMBIT executable.
+///
+///  *********************************************
+///
+///  Authors:
+///
+///  \author The GAMBIT Collaboration
+///  \date 2012 Oct -->
+///
+///  *********************************************
 
 #ifndef __gambit_main_hpp__
 #define __gambit_main_hpp__
@@ -66,4 +78,4 @@ Authors:
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:37 +0000
+Updated on 2022-08-02 at 23:34:54 +0000

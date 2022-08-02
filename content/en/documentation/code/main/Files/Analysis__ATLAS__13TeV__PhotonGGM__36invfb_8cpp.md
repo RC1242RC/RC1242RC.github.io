@@ -45,6 +45,21 @@ description: "[No description available]"
 
 using namespace std;
 
+/// @brief Simulation of "Search for photonic signatures of gauge-mediated supersymmetry in 13 TeV pp collisions with the ATLAS detector"
+///
+/// Based on:
+///  - https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-2016-27/
+///
+/// @author Martin White
+///
+/// Known issues:
+///
+/// 1) Photon isolation requirement is missing
+/// 2) They use a bizarre HT definition where they don't apply overlap removal
+///    between photons and jets. This might not work for us, since jets won't be
+///    made by photons in our events.
+///
+///
 
 namespace Gambit {
   namespace ColliderBit {
@@ -571,6 +586,7 @@ namespace Gambit {
 
       }
 
+      /// Combine the variables of another copy of this analysis (typically on another thread) into this one.
       void combine(const Analysis* other)
       {
         const Analysis_ATLAS_13TeV_PhotonGGM_36invfb* specificOther
@@ -642,4 +658,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:37 +0000
+Updated on 2022-08-02 at 23:34:54 +0000

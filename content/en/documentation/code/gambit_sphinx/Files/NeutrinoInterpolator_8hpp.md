@@ -57,6 +57,20 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Interpolator for neutrino likelihoods
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Tomas Gonzalo
+///          (tomas.gonzalo@monash.edu)
+///  \date 2019 Aug
+///  \date 2020 Apr
+///
+///  *********************************************
 
 #ifndef __NeutrinoInterpolator_hpp__
 #define __NeutrinoInterpolator_hpp__
@@ -247,4 +261,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:48 +0000

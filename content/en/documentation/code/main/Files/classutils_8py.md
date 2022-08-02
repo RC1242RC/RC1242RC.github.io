@@ -25,7 +25,12 @@ description: "[No description available]"
 ## Source code
 
 ```
-
+####################################
+#                                  #
+#  Utility functions for handling  # 
+#  C++ classes with BOSS           #
+#                                  #
+####################################
 
 from __future__ import print_function
 from collections import OrderedDict
@@ -2132,4 +2137,4 @@ def isAcceptedMemberVariable(mem_el):
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:55 +0000

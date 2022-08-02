@@ -112,6 +112,20 @@ Backend variable macro for Python.
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Macros for creating Python backend functions
+///  and variables.
+///
+///  *********************************************
+///
+///  Authos (add name and date if you modify):
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)
+///  \date 2017 Dec
+///
+///  *********************************************
 
 #ifndef __python_macros_hpp__
 #define __python_macros_hpp__
@@ -121,6 +135,7 @@ Backend variable macro for Python.
 #include "gambit/Backends/python_function.hpp"
 #include "gambit/Backends/python_variable.hpp"
 
+/// Backend function macro for Python backends
 #define BE_FUNCTION_I_PY(NAME, TYPE, ARGLIST, SYMBOLNAME, CAPABILITY, MODELS)                 \
 namespace Gambit                                                                              \
 {                                                                                             \
@@ -146,6 +161,7 @@ namespace Gambit                                                                
   }                                                                                           \
 }
 
+/// Backend variable macro for Python
 #define BE_VARIABLE_I_PY(NAME, TYPE, SYMBOLNAME, CAPABILITY, MODELS)                          \
 namespace Gambit                                                                              \
 {                                                                                             \
@@ -166,4 +182,4 @@ namespace Gambit                                                                
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:41 +0000
+Updated on 2022-08-02 at 23:34:51 +0000

@@ -35,6 +35,7 @@ namespace Gambit {
 
 
     bool random_bool(double eff) {
+      /// @todo Handle out-of-range eff values
       return Random::draw() < eff;
     }
 
@@ -51,6 +52,7 @@ namespace Gambit {
     }
 
 
+    /// Utility function for filtering a supplied particle vector by sampling wrt a binned 1D efficiency map in pT
     void filtereff(std::vector<const HEPUtils::Particle*>& particles, std::function<double(const HEPUtils::Particle*)> eff_fn, bool do_delete) {
       if (particles.empty()) return;
       auto keptParticlesEnd = std::remove_if(particles.begin(), particles.end(),
@@ -147,4 +149,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:40 +0000
+Updated on 2022-08-02 at 23:34:50 +0000

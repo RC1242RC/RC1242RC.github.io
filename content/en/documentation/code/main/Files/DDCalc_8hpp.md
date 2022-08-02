@@ -64,6 +64,27 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Helper types for DDCalc backend.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Pat Scott
+///          p.scott@imperial.ac.uk
+///  \date 2016 May
+///
+///  \author Ben Farmer
+///          (b.farmer@imperial.ac.uk)
+///  \date 2019 Jul
+///
+///  \author Felix Kahlhofer
+///          (kahlhoefer@physik.rwth-aachen.de)
+///  \date 2020 May
+///
+///  *************************
 
 #ifndef __DDCalc_types_hpp__
 #define __DDCalc_types_hpp__
@@ -87,6 +108,7 @@ namespace Gambit
     double gna;
   };
 
+  /// Container for effective non-relativistic DM-nucleon Wilson coefficients
   struct NREO_DM_nucleon_couplings
   {
       public:
@@ -99,6 +121,7 @@ namespace Gambit
           // CPTbasis = 1 for NREFT_CPT basis
           // CPTbasis = 0 for NREffectiveTheory basis
           int CPTbasis;
+          /// Store couplings in map for easier iteration
           std::map<int,double> c0;
           std::map<int,double> c1;
   };
@@ -121,4 +144,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:38 +0000
+Updated on 2022-08-02 at 23:34:55 +0000

@@ -78,6 +78,19 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Frontend header for the salami backend
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Anders Kvellestad
+///          (anders.kvellestad@fys.uio.no)
+///  \date 2019 Dec
+///
+///  *********************************************
 
 
 #define BACKENDNAME salami
@@ -133,4 +146,4 @@ BE_FUNCTION(get_xsection, PyDict, (iipair&, double&, double&), "get_xsection", "
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:55 +0000

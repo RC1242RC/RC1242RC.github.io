@@ -71,6 +71,23 @@ int main()
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Example of GAMBIT DarkBit standalone
+///  main program.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Christoph Weniger
+///  \date 2016 Feb
+///  \author Sebastian Wild
+///  \date 2016 Aug
+///  \author Jonathan Cornell
+///  \date 2016, 2020
+///
+///  *********************************************
 
 #include "gambit/Elements/standalone_module.hpp"
 #include "gambit/DarkBit/DarkBit_rollcall.hpp"
@@ -583,4 +600,4 @@ int main()
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:37 +0000
+Updated on 2022-08-02 at 23:34:48 +0000

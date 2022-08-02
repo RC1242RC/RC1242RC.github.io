@@ -54,6 +54,25 @@ Authors (add name and date if you modify):
 ```
 //  GAMBIT: Global and Modular BSM Inference Tool
 //  *********************************************
+///  \file
+///
+///  Prior function made up of two log priors
+///  (positive and negative branch) joined across
+///  zero by a flat region.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///   
+///  \author Ben Farmer
+///          (benjamin.farmer@fysik.su.se)
+///  \date 2016 Jun
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)
+///  \date 2016 Jun
+///
+///  *********************************************
 
 #include "gambit/ScannerBit/priors/doublelogflatjoin.hpp"
 
@@ -64,6 +83,7 @@ namespace Gambit
   namespace Priors
   {
 
+    /// Constructor
     DoubleLogFlatJoin::DoubleLogFlatJoin(const std::vector<std::string>& param, const Options& options) 
       : BasePrior(param, 1)
       , myparameter(param_names[0])
@@ -181,6 +201,7 @@ namespace Gambit
     }        
 
 
+    /// Try to get options for double log-flat joined prior
     double DoubleLogFlatJoin::get_option(const str& name, const Options& options)
     {
       if (options.hasKey(name))
@@ -196,6 +217,7 @@ namespace Gambit
     }
     
 
+    /// Transformation from unit interval to the double log + flat join
     void DoubleLogFlatJoin::transform(const std::vector <double> &unitpars, std::unordered_map <std::string, double> &output) const
     {
       // Only valid for 1D parameter transformation
@@ -307,4 +329,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:48 +0000

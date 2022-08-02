@@ -31,7 +31,11 @@ description: "[No description available]"
 ## Source code
 
 ```
-
+///
+///  \author Rose Kudzman-Blais
+///  \date 2017 May
+///
+///  *********************************************
 
 #include <iostream>
 #include <fstream>
@@ -159,4 +163,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:49 +0000

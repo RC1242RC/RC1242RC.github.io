@@ -87,6 +87,26 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Test functions for Spectrum object
+///
+///  These functions test various aspects of the
+///  Spectrum class and related classes. They are
+///  not dependent on any other parts of Gambit,
+///  so that Spectrum object test code can be
+///  compiled and run seperately from Gambit, but
+///  but also be run from inside Gambit.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Ben Farmer
+///          (benjamin.farmer@fysik.su.se)
+///    \date 2014 Dec, 2015 Jan - Mar
+///
+///  *********************************************
 
 #ifndef __SpecBit_tests_hpp__
 #define __SpecBit_tests_hpp__
@@ -164,6 +184,7 @@ namespace Gambit
       }
 
 
+      /// Module convenience functions
       // These are not known to Gambit
 
       template <class M>
@@ -1279,6 +1300,7 @@ namespace Gambit
          }
          OUTPUT << EOM;
 
+         /// Generate data for a plot of quark mass
          if(not SLHAonly) {
 
          double Qs[] = {
@@ -1332,6 +1354,7 @@ namespace Gambit
 
          } // endif
 
+         /// Testing copyability of Spectrum;
          // Copy to object to clone the hosted SubSpectrum objects.
          // i.e. all copies are deep copies.
          Spectrum nonconst_spectra(*matched_spectra);
@@ -1401,4 +1424,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:48 +0000

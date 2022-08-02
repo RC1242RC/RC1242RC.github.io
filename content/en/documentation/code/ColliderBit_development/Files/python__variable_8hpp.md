@@ -54,6 +54,24 @@ Pat Scott ([p.scott@imperial.ac.uk](mailto:p.scott@imperial.ac.uk))
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Class python_variable, needed to overload
+///  constructor and assignment operators to send
+///  messages through pybind11.
+///
+///  ***********************************************
+///
+///  Authors
+///  =======
+///
+///  (add name and date if you modify)
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)
+///  \date 2017 Dec
+///
+///  ***********************************************
 
 #ifndef __python_variable_hpp__
 #define __python_variable_hpp__
@@ -67,6 +85,7 @@ Pat Scott ([p.scott@imperial.ac.uk](mailto:p.scott@imperial.ac.uk))
 namespace Gambit
 {
 
+  /// Holds the info about a python backend variable, and defines conversion functions.
   template <typename TYPE>
   class python_variable
   {
@@ -75,16 +94,20 @@ namespace Gambit
 
       #ifdef HAVE_PYBIND11
 
+        /// Wrapper for the Python dictionary of internal module variables
         pybind11::dict _dict;
 
+        /// Name of the variable inside the Python module
         str _symbol;
 
+        /// Indication of whether or not the function has been successfully loaded
         bool handle_works;
 
       #endif
 
     public:
 
+      /// Constructor
       #ifndef HAVE_PYBIND11
         python_variable(const str&, const str&, const str&) {}
       #else
@@ -137,6 +160,7 @@ namespace Gambit
         }
       #endif
 
+      /// Assignment operator for python_variable from equivalent C++ type
       #ifdef HAVE_PYBIND11
         python_variable& operator=(const TYPE& val)
         {
@@ -152,6 +176,7 @@ namespace Gambit
         }
       #endif
 
+      /// Cast operator from python_variable to equivalent C++ type
       operator TYPE const()
       {
         #ifdef HAVE_PYBIND11
@@ -174,4 +199,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:50 +0000

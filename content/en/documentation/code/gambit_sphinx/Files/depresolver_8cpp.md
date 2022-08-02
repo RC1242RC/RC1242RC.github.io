@@ -104,6 +104,42 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Dependency resolution with boost graph library
+///
+///          unravels the un-unravelable
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Christoph Weniger
+///          (c.weniger@uva.nl)
+///  \date 2013 May, Jun, Jul, Sep
+///  \date 2014 Feb, Mar, Apr
+///
+///  \author Pat Scott
+///          (patscott@physics.mcgill.ca)
+///  \date 2013 May, Jul, Aug, Nov
+///        2014 Jan, Mar, Apr, Dec
+///        2018 Sep, Nov
+///
+///  \author Ben Farmer
+///          (benjamin.farmer@monash.edu)
+///  \date 2013 Sep
+///
+///  \author Tomas Gonzalo
+///          (gonzalo@physik.rwth-aachen.de)
+///  \date 2017 June
+///        2019 May
+///        2021 Sep
+///
+///  \author Patrick Stoecker
+///          (stoecker@physik.rwth-aachen.de)
+///  \date 2020 May
+///
+///  *********************************************
 
 #include "gambit/Core/depresolver.hpp"
 #include "gambit/Models/models.hpp"
@@ -146,7 +182,9 @@ namespace Gambit
   namespace DRes
   {
     using namespace LogTags;
+    ///////////////////////
     // Auxiliary functions
+    ///////////////////////
 
     //
     // Functions that act on a resolved dependency graph
@@ -307,6 +345,7 @@ namespace Gambit
     // Misc
     //
 
+    /// Global flag for regex use
     bool use_regex;
 
     // Return runtime estimate for a set of nodes
@@ -371,7 +410,9 @@ namespace Gambit
     }
 
 
+    ///////////////////////////////////////////////////
     // Public definitions of DependencyResolver class
+    ///////////////////////////////////////////////////
 
     // Constructor
     DependencyResolver::DependencyResolver(const gambit_core &core,
@@ -489,6 +530,7 @@ namespace Gambit
       // Done
     }
 
+    /// List of masterGraph content
     void DependencyResolver::printFunctorList()
     {
       // Activate functors compatible with model we scan over (and deactivate the rest)
@@ -835,6 +877,7 @@ namespace Gambit
       }
     }
 
+    /// Getter for print_timing flag (used by LikelihoodContainer)
     bool DependencyResolver::printTiming() { return print_timing; }
 
     // Get the functor corresponding to a single VertexID
@@ -902,7 +945,9 @@ namespace Gambit
     }
 
 
+    ////////////////////////////////////////////////////
     // Private definitions of DependencyResolver class
+    ////////////////////////////////////////////////////
 
     str DependencyResolver::printQuantityToBeResolved(const sspair & quantity, const DRes::VertexID & vertex)
     {
@@ -978,6 +1023,8 @@ namespace Gambit
       }
     }
 
+    /// Activate functors that are allowed to be used with one or more of the models being scanned.
+    /// Also activate the model-conditional dependencies and backend requirements of those functors.
     void DependencyResolver::makeFunctorsModelCompatible()
     {
       // Run just once
@@ -1016,6 +1063,7 @@ namespace Gambit
       already_run = true;
     }
 
+    /// Set up printer object
     // (i.e. give it the list of functors that need printing)
     void DependencyResolver::initialisePrinter()
     {
@@ -1102,6 +1150,7 @@ namespace Gambit
         return candidates;
     }
 
+    /// Collect ini options
     Options DependencyResolver::collectIniOptions(const DRes::VertexID & vertex)
     {
       YAML::Node nodes;
@@ -1153,6 +1202,7 @@ namespace Gambit
       return Options(nodes);
     }
 
+    /// Collect sub-capabilities
     Options DependencyResolver::collectSubCaps(const DRes::VertexID & vertex)
     {
       #ifdef DEPRES_DEBUG
@@ -1208,6 +1258,7 @@ namespace Gambit
       return Options(nodes);
     }
 
+    /// Resolve dependency
     // Can resolve:
     // - capability, type pair (requires toVertex)
     // Rules ordering:
@@ -1479,6 +1530,7 @@ namespace Gambit
       return 0;
     }
 
+    /// Resolve dependency
     boost::tuple<const IniParser::ObservableType *, DRes::VertexID>
         DependencyResolver::resolveDependency( DRes::VertexID toVertex, sspair quantity)
     {
@@ -1613,6 +1665,7 @@ namespace Gambit
       return boost::tie(depEntry, vertexCandidates[0]);
     }
 
+    /// Set up dependency tree
     void DependencyResolver::generateTree( std::queue<QueueEntry> parQueue)
     {
       OutputVertexInfo outInfo;
@@ -1863,6 +1916,7 @@ namespace Gambit
       }
     }
 
+    /// Push module function dependencies onto the parameter queue
     void DependencyResolver::fillParQueue( std::queue<QueueEntry> *parQueue,
             DRes::VertexID vertex)
     {
@@ -1901,6 +1955,7 @@ namespace Gambit
       logger() << EOM;
     }
 
+    /// Boost lib topological sort
     std::list<VertexID> DependencyResolver::run_topological_sort()
     {
       std::list<VertexID> topo_order;
@@ -1908,6 +1963,7 @@ namespace Gambit
       return topo_order;
     }
 
+    /// Find rules entry that matches vertex
     const IniParser::ObservableType * DependencyResolver::findIniEntry(DRes::VertexID toVertex,
      const IniParser::ObservablesType &entries, const str & errtag)
     {
@@ -1933,6 +1989,7 @@ namespace Gambit
       return auxEntryCandidates[0]; // auxEntryCandidates.size() == 1
     }
 
+    /// Find observable entry that matches capability/type
     const IniParser::ObservableType* DependencyResolver::findIniEntry(
             sspair quantity, const IniParser::ObservablesType & entries, const str & errtag)
     {
@@ -1955,6 +2012,7 @@ namespace Gambit
       return obsEntryCandidates[0]; // obsEntryCandidates.size() == 1
     }
 
+    /// Node-by-node backend resolution
     void DependencyResolver::resolveVertexBackend(VertexID vertex)
     {
       functor* solution;
@@ -2068,6 +2126,7 @@ namespace Gambit
 
     }
 
+    /// Find a backend function that matches any one of a vector of capability-type pairs.
     functor* DependencyResolver::solveRequirement(std::set<sspair> reqs,
      const IniParser::ObservableType * auxEntry, VertexID vertex, std::vector<functor*> previous_successes,
      bool allow_deferral, str group)
@@ -2392,6 +2451,7 @@ namespace Gambit
       return vertexCandidates[0];
     }
 
+    /// Resolve a backend requirement of a specific module function using a specific backend function.
     void DependencyResolver::resolveRequirement(functor* func, VertexID vertex)
     {
       (*masterGraph[vertex]).resolveBackendReq(func);
@@ -2516,4 +2576,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:49 +0000

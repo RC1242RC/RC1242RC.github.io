@@ -111,7 +111,9 @@ contains examples of how to use Spectrum objects.
 ## Source code
 
 ```
-
+/// contains examples of how to use Spectrum objects.  
+/// This is not really part of gambit and exists
+/// only for illustration.
 
 #include "gambit/SpecBit/MSSMSpec.hpp"
 
@@ -262,6 +264,8 @@ void spec_print(Gambit::SubSpectrum& spec){
    PRINTOUT << "me2(3,3) = " 
           << spec.get_mass2_parameter("mq2",3,3) << std::endl;
 
+   /// TODO: Ben: Used to be this, but "Mu" is in a no-index map so it's an error
+   /// Peter, was this this way for a reason?
    //PRINTOUT << "Mu = " 
    //       << spec.get_mass_parameter("Mu",3,3) << std::endl;
    PRINTOUT << "Mu = " 
@@ -428,4 +432,4 @@ void SM_checks(Gambit::SubSpectrum& SM) {
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:36 +0000
+Updated on 2022-08-02 at 23:34:53 +0000

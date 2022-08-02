@@ -60,6 +60,36 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Routines for the calculation of particle yields
+///  from dark matter annihilation / decay.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Christoph Weniger
+///          (c.weniger@uva.nl)
+///  \date 2013 Jul - 2015 May
+///
+///  \author Sebastian Wild
+///          (sebastian.wild@ph.tum.de)
+///  \date 2016 Aug
+///
+///  \author Sanjay Bloor
+///          (sanjay.bloor12@imperial.ac.uk)
+///  \date 2018 Aug
+///
+///  \author Pat Scott
+///          (pat.scott@uq.edu.au)
+///  \date 2020 Nov, Dec
+///
+///  \author Patrick Stoecker
+///          (stoecker@physik.rwth-aachen.de)
+///  \date 2021 Mar
+///
+///  *********************************************
 
 #include "gambit/Elements/gambit_module_headers.hpp"
 #include "gambit/DarkBit/DarkBit_rollcall.hpp"
@@ -73,6 +103,13 @@ namespace Gambit
   namespace DarkBit
   {
 
+    /*! \brief Boosts an energy spectrum of isotropic particles into another
+     *         frame (and isotropizes again).
+     *  Parameters:
+     *    gamma: Lorentz boost factor
+     *    dNdE: Spectrum
+     *    mass: mass of particle
+     */
     daFunk::Funk boost_dNdE(daFunk::Funk dNdE, double gamma, double mass)
     {
       if ( gamma < 1.0 + .02 )  // Ignore less than 2% boosts
@@ -98,6 +135,9 @@ namespace Gambit
     }
 
 
+    /*! \brief Helper function returning yield from
+     *         a given DM process.
+     */
     daFunk::Funk getYield(const str& yield, const bool is_annihilation, const str& DMid, const str& DMbarid,
       TH_ProcessCatalog catalog, SimYieldTable table, double line_width, stringFunkMap cascadeMC_spectra)
     {
@@ -293,96 +333,156 @@ namespace Gambit
 
     }
 
+    /// \brief General routine to derive gamma-ray annihilation yield.
+    /// This function returns
+    ///   k*dN/dE*(sv)/mDM**2 (E, v)  [cm^3/s/GeV^3]
+    /// the energy spectrum of photons times sigma*v/m^2, as function of energy (in GeV)
+    /// and velocity (as a fraction of c), multiplied by k=1 for self-conjugate DM or k=1/2
+    /// for non-self conjugate.  By default, only the v=0 component is calculated.
     void GA_AnnYield_General(daFunk::Funk &result)
     {
       using namespace Pipes::GA_AnnYield_General;
       std::string DMid= *Dep::DarkMatter_ID;
       std::string DMbarid = *Dep::DarkMatterConj_ID;
+      /// Option line_width<double>: Set relative line width used in gamma-ray spectra (default 0.03)
       const double line_width = runOptions->getValueOrDef<double>(0.03,  "line_width");
       result = getYield("gamma", true, DMid, DMbarid, *Dep::TH_ProcessCatalog, *Dep::GA_SimYieldTable,
                         line_width, *Dep::cascadeMC_gammaSpectra);
     }
 
+    /// \brief General routine to derive gamma-ray decay yield.
+    /// This function returns
+    ///   dN/dE*(Gamma)/mDM (E)  [1/s/GeV^2]
+    /// the energy spectrum of photons times Gamma/m, as function of energy (in GeV).
     void GA_DecayYield_General(daFunk::Funk &result)
     {
       using namespace Pipes::GA_DecayYield_General;
       std::string DMid = *Dep::DarkMatter_ID;
+      /// Option line_width<double>: Set relative line width used in gamma-ray spectra (default 0.03)
       const double line_width = runOptions->getValueOrDef<double>(0.03,  "line_width");
       result = getYield("gamma", false, DMid, "null", *Dep::TH_ProcessCatalog, *Dep::GA_SimYieldTable,
                         line_width, *Dep::cascadeMC_gammaSpectra);
     }
 
+    /// \brief General routine to derive electron annihilation yield.
+    /// This function returns
+    /// k*dN/dE*(sv)/mDM**2 (E, v)  [cm^3/s/GeV^3]
+    /// the energy spectrum of electrons times sigma*v/m^2, as function of energy (in GeV)
+    /// and velocity (as a fraction of c), multiplied by k=1 for self-conjugate DM or k=1/2
+    /// for non-self conjugate.  By default, only the v=0 component is calculated.
     void electron_AnnYield_General(daFunk::Funk &result)
     {
       using namespace Pipes::electron_AnnYield_General;
       std::string DMid= *Dep::DarkMatter_ID;
       std::string DMbarid = *Dep::DarkMatterConj_ID;
+      /// Option line_width<double>: Set relative line width used in gamma-ray spectra (default 0.03)
       const double line_width = runOptions->getValueOrDef<double>(0.03,  "line_width");
       result = getYield("e-_1", true, DMid, DMbarid, *Dep::TH_ProcessCatalog, *Dep::electron_SimYieldTable,
                         line_width, *Dep::cascadeMC_electronSpectra);
     }
 
+    /// \brief General routine to derive electron decay yield.
+    /// This function returns
+    ///   dN/dE*(Gamma)/mDM (E)  [1/s/GeV^2]
+    /// the energy spectrum of electrons times Gamma/m, as function of energy (in GeV).
     void electron_DecayYield_General(daFunk::Funk &result)
     {
       using namespace Pipes::electron_DecayYield_General;
       std::string DMid = *Dep::DarkMatter_ID;
+      /// Option line_width<double>: Set relative line width used in gamma-ray spectra (default 0.03)
       const double line_width = runOptions->getValueOrDef<double>(0.03,  "line_width");
       result = getYield("e-_1", false, DMid, "null", *Dep::TH_ProcessCatalog, *Dep::electron_SimYieldTable,
                         line_width, *Dep::cascadeMC_electronSpectra);
     }
 
+    /// \brief General routine to derive positron annihilation yield.
+    /// This function returns
+    /// k*dN/dE*(sv)/mDM**2 (E, v)  [cm^3/s/GeV^3]
+    /// the energy spectrum of positrons times sigma*v/m^2, as function of energy (in GeV)
+    /// and velocity (as a fraction of c), multiplied by k=1 for self-conjugate DM or k=1/2
+    /// for non-self conjugate.  By default, only the v=0 component is calculated.
     void positron_AnnYield_General(daFunk::Funk &result)
     {
       using namespace Pipes::positron_AnnYield_General;
       std::string DMid= *Dep::DarkMatter_ID;
       std::string DMbarid = *Dep::DarkMatterConj_ID;
+      /// Option line_width<double>: Set relative line width used in gamma-ray spectra (default 0.03)
       const double line_width = runOptions->getValueOrDef<double>(0.03,  "line_width");
       result = getYield("e+_1", true, DMid, DMbarid, *Dep::TH_ProcessCatalog, *Dep::positron_SimYieldTable,
                         line_width, *Dep::cascadeMC_positronSpectra);
     }
 
+    /// \brief General routine to derive positron decay yield.
+    /// This function returns
+    ///   dN/dE*(Gamma)/mDM (E)  [1/s/GeV^2]
+    /// the energy spectrum of positrons times Gamma/m, as function of energy (in GeV).
     void positron_DecayYield_General(daFunk::Funk &result)
     {
       using namespace Pipes::positron_DecayYield_General;
       std::string DMid = *Dep::DarkMatter_ID;
+      /// Option line_width<double>: Set relative line width used in gamma-ray spectra (default 0.03)
       const double line_width = runOptions->getValueOrDef<double>(0.03,  "line_width");
       result = getYield("e+_1", false, DMid, "null", *Dep::TH_ProcessCatalog, *Dep::positron_SimYieldTable,
                         line_width, *Dep::cascadeMC_positronSpectra);
     }
 
+    /// \brief General routine to derive antiproton annihilation yield.
+    /// This function returns
+    /// k*dN/dE*(sv)/mDM**2 (E, v)  [cm^3/s/GeV^3]
+    /// the energy spectrum of antiprotons times sigma*v/m^2, as function of energy (in GeV)
+    /// and velocity (as a fraction of c), multiplied by k=1 for self-conjugate DM or k=1/2
+    /// for non-self conjugate.  By default, only the v=0 component is calculated.
     void antiproton_AnnYield_General(daFunk::Funk &result)
     {
       using namespace Pipes::antiproton_AnnYield_General;
       std::string DMid= *Dep::DarkMatter_ID;
       std::string DMbarid = *Dep::DarkMatterConj_ID;
+      /// Option line_width<double>: Set relative line width used in gamma-ray spectra (default 0.03)
       const double line_width = runOptions->getValueOrDef<double>(0.03,  "line_width");
       result = getYield("pbar", true, DMid, DMbarid, *Dep::TH_ProcessCatalog, *Dep::antiproton_SimYieldTable,
                         line_width, *Dep::cascadeMC_antiprotonSpectra);
     }
 
+    /// \brief General routine to derive antiproton decay yield.
+    /// This function returns
+    ///   dN/dE*(Gamma)/mDM (E)  [1/s/GeV^2]
+    /// the energy spectrum of antiprotons times Gamma/m, as function of energy (in GeV).
     void antiproton_DecayYield_General(daFunk::Funk &result)
     {
       using namespace Pipes::antiproton_DecayYield_General;
       std::string DMid = *Dep::DarkMatter_ID;
+      /// Option line_width<double>: Set relative line width used in gamma-ray spectra (default 0.03)
       const double line_width = runOptions->getValueOrDef<double>(0.03,  "line_width");
       result = getYield("pbar", false, DMid, "null", *Dep::TH_ProcessCatalog, *Dep::antiproton_SimYieldTable,
                         line_width, *Dep::cascadeMC_antiprotonSpectra);
     }
 
+    /// \brief General routine to derive antideuteron annihilation yield.
+    /// This function returns
+    /// k*dN/dE*(sv)/mDM**2 (E, v)  [cm^3/s/GeV^3]
+    /// the energy spectrum of antideuterons times sigma*v/m^2, as function of energy (in GeV)
+    /// and velocity (as a fraction of c), multiplied by k=1 for self-conjugate DM or k=1/2
+    /// for non-self conjugate.  By default, only the v=0 component is calculated.
     void antideuteron_AnnYield_General(daFunk::Funk &result)
     {
       using namespace Pipes::antideuteron_AnnYield_General;
       std::string DMid= *Dep::DarkMatter_ID;
       std::string DMbarid = *Dep::DarkMatterConj_ID;
+      /// Option line_width<double>: Set relative line width used in gamma-ray spectra (default 0.03)
       const double line_width = runOptions->getValueOrDef<double>(0.03,  "line_width");
       result = getYield("Dbar", true, DMid, DMbarid, *Dep::TH_ProcessCatalog, *Dep::antideuteron_SimYieldTable,
                         line_width, *Dep::cascadeMC_antideuteronSpectra);
     }
 
+    /// \brief General routine to derive antideuteron decay yield.
+    /// This function returns
+    ///   dN/dE*(Gamma)/mDM (E)  [1/s/GeV^2]
+    /// the energy spectrum of antideuterons times Gamma/m, as function of energy (in GeV).
     void antideuteron_DecayYield_General(daFunk::Funk &result)
     {
       using namespace Pipes::antideuteron_DecayYield_General;
       std::string DMid = *Dep::DarkMatter_ID;
+      /// Option line_width<double>: Set relative line width used in gamma-ray spectra (default 0.03)
       const double line_width = runOptions->getValueOrDef<double>(0.03,  "line_width");
       result = getYield("Dbar", false, DMid, "null", *Dep::TH_ProcessCatalog, *Dep::antideuteron_SimYieldTable,
                         line_width, *Dep::cascadeMC_antideuteronSpectra);
@@ -392,6 +492,7 @@ namespace Gambit
     // SimYields =======================================================
 
 
+    /// Combined SimYieldTable containing final yields of all stable particles
     void Combine_SimYields(SimYieldTable& result)
     {
       using namespace Pipes::Combine_SimYields;
@@ -407,6 +508,7 @@ namespace Gambit
       }
     }
 
+    /// Gamma-ray SimYieldTable based on DarkSUSY5 tabulated results. (DS6 below)
     void GA_SimYieldTable_DS5(SimYieldTable& result)
     {
       using namespace Pipes::GA_SimYieldTable_DS5;
@@ -420,6 +522,7 @@ namespace Gambit
         using DarkBit_utils::str_flav_to_mass;
 
         double mDM_min, mDM_max;
+        /// Option allow_yield_extrapolation<bool>: Spectra extrapolated for masses beyond Pythia results (default false)
         bool allow_yield_extrapolation = runOptions->getValueOrDef(false, "allow_yield_extrapolation");
         if ( allow_yield_extrapolation )
         {
@@ -538,6 +641,7 @@ namespace Gambit
       }
     }
 
+    /// Construct a SimYieldTable based on DarkSUSY6 tabulated results.
     SimYieldTable SimYieldTable_DarkSUSY(const str& yield, const bool allow_yield_extrapolation, double(*dsanyield)(double&,double&,int&,char*,int&,int&,int&), safe_ptr<Options> runOptions)
     {
       using DarkBit_utils::str_flav_to_mass;
@@ -684,6 +788,7 @@ namespace Gambit
       return result;
     }
 
+    /// Gamma-ray SimYieldTable based on DarkSUSY6 tabulated results.
     void GA_SimYieldTable_DarkSUSY(SimYieldTable& result)
     {
       using namespace Pipes::GA_SimYieldTable_DarkSUSY;
@@ -691,12 +796,14 @@ namespace Gambit
       static bool initialized = false;
       if ( not initialized )
       {
+        /// Option allow_yield_extrapolation<bool>: Spectra extrapolated for masses beyond Pythia results (default false)
         bool allow_yield_extrapolation = runOptions->getValueOrDef(false, "allow_yield_extrapolation");
         result = SimYieldTable_DarkSUSY("gamma", allow_yield_extrapolation, BEreq::dsanyield_sim.pointer(), runOptions);
         initialized = true;
       }
     }
 
+    /// Positron SimYieldTable based on DarkSUSY6 tabulated results.
     void positron_SimYieldTable_DarkSUSY(SimYieldTable& result)
     {
       using namespace Pipes::positron_SimYieldTable_DarkSUSY;
@@ -704,12 +811,14 @@ namespace Gambit
       static bool initialized = false;
       if ( not initialized )
       {
+        /// Option allow_yield_extrapolation<bool>: Spectra extrapolated for masses beyond Pythia results (default false)
         bool allow_yield_extrapolation = runOptions->getValueOrDef(false, "allow_yield_extrapolation");
         result = SimYieldTable_DarkSUSY("e+_1", allow_yield_extrapolation, BEreq::dsanyield_sim.pointer(), runOptions);
         initialized = true;
       }
     }
 
+    /// Anti-proton SimYieldTable based on DarkSUSY6 tabulated results.
     void antiproton_SimYieldTable_DarkSUSY(SimYieldTable& result)
     {
       using namespace Pipes::antiproton_SimYieldTable_DarkSUSY;
@@ -717,12 +826,14 @@ namespace Gambit
       static bool initialized = false;
       if ( not initialized )
       {
+        /// Option allow_yield_extrapolation<bool>: Spectra extrapolated for masses beyond Pythia results (default false)
         bool allow_yield_extrapolation = runOptions->getValueOrDef(false, "allow_yield_extrapolation");
         result = SimYieldTable_DarkSUSY("pbar", allow_yield_extrapolation, BEreq::dsanyield_sim.pointer(), runOptions);
         initialized = true;
       }
     }
 
+    /// Anti-deuteron SimYieldTable based on DarkSUSY6 tabulated results.
     void antideuteron_SimYieldTable_DarkSUSY(SimYieldTable& result)
     {
       using namespace Pipes::antideuteron_SimYieldTable_DarkSUSY;
@@ -730,12 +841,14 @@ namespace Gambit
       static bool initialized = false;
       if ( not initialized )
       {
+        /// Option allow_yield_extrapolation<bool>: Spectra extrapolated for masses beyond Pythia results (default false)
         bool allow_yield_extrapolation = runOptions->getValueOrDef(false, "allow_yield_extrapolation");
         result = SimYieldTable_DarkSUSY("Dbar", allow_yield_extrapolation, BEreq::dsanyield_sim.pointer(), runOptions);
         initialized = true;
       }
     }
 
+    /// Gamma-ray SimYieldTable based on MicrOmegas tabulated results.
     void GA_SimYieldTable_MicrOmegas(SimYieldTable& result)
     {
       using namespace Pipes::GA_SimYieldTable_MicrOmegas;
@@ -855,6 +968,7 @@ namespace Gambit
       }
     }
 
+    /// Positron SimYieldTable based on MicrOmegas tabulated results.
     void positron_SimYieldTable_MicrOmegas(SimYieldTable& /*result*/)
     {
       using namespace Pipes::positron_SimYieldTable_MicrOmegas;
@@ -1007,6 +1121,7 @@ namespace Gambit
     double PPPC_dNdE_gamma(double m, double x, std::string channel);
     double PPPC_dNdE_positron(double m, double x, std::string channel);
 
+    /// Gamma-ray SimYieldTable based on PPPC4DMID Cirelli et al. 2010
     void GA_SimYieldTable_PPPC(SimYieldTable& result)
     {
       using namespace Pipes::GA_SimYieldTable_PPPC;
@@ -1014,6 +1129,7 @@ namespace Gambit
 
       if ( not initialized )
       {
+        /// Option allow_yield_extrapolation<bool>: Spectra extrapolated for masses beyond Pythia results (default false)
         //bool allow_yield_extrapolation = runOptions->getValueOrDef(false, "allow_yield_extrapolation");
         bool allow_yield_extrapolation = false;
         result = SimYieldTable_PPPC("gamma", allow_yield_extrapolation, &PPPC_dNdE_gamma, runOptions);
@@ -1021,6 +1137,7 @@ namespace Gambit
       }
     }
 
+    /// Positron SimYieldTable based on PPPC4DMID Cirelli et al. 2010
     void positron_SimYieldTable_PPPC(SimYieldTable& result)
     {
       using namespace Pipes::positron_SimYieldTable_PPPC;
@@ -1028,6 +1145,7 @@ namespace Gambit
 
       if ( not initialized )
       {
+        /// Option allow_yield_extrapolation<bool>: Spectra extrapolated for masses beyond Pythia results (default false)
         //bool allow_yield_extrapolation = runOptions->getValueOrDef(false, "allow_yield_extrapolation");
         bool allow_yield_extrapolation = false;
         result = SimYieldTable_PPPC("e+_1", allow_yield_extrapolation, &PPPC_dNdE_positron, runOptions);
@@ -1035,6 +1153,7 @@ namespace Gambit
       }
     }
 
+    /// Bypasses to skip specific yields in FullSimYieldTable
     void GA_SimYieldTable_empty(SimYieldTable& result)
     {
       static const SimYieldTable empty_table;
@@ -1059,6 +1178,7 @@ namespace Gambit
       result = empty_table;
     }
 
+    /// Electron SimYieldTable based on positron table
     void electron_SimYieldTable_from_positron_SimYieldTable(SimYieldTable& result)
     {
       static bool initialized = false;
@@ -1073,6 +1193,7 @@ namespace Gambit
 
     // Dumper functions ================================================
 
+    /// \brief Helper function to dump any spectra
     int dump(const str& filename, const daFunk::Funk& spectrum)
     {
       std::ofstream myfile (filename);
@@ -1093,6 +1214,7 @@ namespace Gambit
       return 1;
     }
 
+    /// \brief Helper function to dump gamma-ray spectra.
     void dump_gammaSpectrum(int &result)
     {
       using namespace Pipes::dump_gammaSpectrum;
@@ -1104,6 +1226,7 @@ namespace Gambit
       result = dump(filename, spectrum);
     }
 
+    /// \brief Helper function to dump electron spectra.
     void dump_electronSpectrum(int &result)
     {
       using namespace Pipes::dump_electronSpectrum;
@@ -1115,6 +1238,7 @@ namespace Gambit
       result = dump(filename, spectrum);
     }
 
+    /// \brief Helper function to dump positron spectra.
     void dump_positronSpectrum(int &result)
     {
       using namespace Pipes::dump_positronSpectrum;
@@ -1126,6 +1250,7 @@ namespace Gambit
       result = dump(filename, spectrum);
     }
 
+    /// \brief Helper function to dump anti-proton spectra.
     void dump_antiprotonSpectrum(int &result)
     {
       using namespace Pipes::dump_antiprotonSpectrum;
@@ -1137,6 +1262,7 @@ namespace Gambit
       result = dump(filename, spectrum);
     }
 
+    /// \brief Helper function to dump anti-deuteron spectra.
     void dump_antideuteronSpectrum(int &result)
     {
       using namespace Pipes::dump_antideuteronSpectrum;
@@ -1155,4 +1281,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:37 +0000
+Updated on 2022-08-02 at 23:34:48 +0000

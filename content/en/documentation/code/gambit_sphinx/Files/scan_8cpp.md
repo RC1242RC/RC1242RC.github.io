@@ -58,6 +58,29 @@ Authors (add name and date if you modify):
 ```
 //  GAMBIT: Global and Modular BSM Inference Tool
 //  *********************************************
+///  \file
+///
+///  Scanner factory method implementations.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///   
+///  \author Christoph Weniger
+///          (c.weniger@uva.nl)
+///  \date 2013 May, June, July
+///
+///  \author Gregory Martinez
+///          (gregory.david.martinez@gmail.com)
+///  \date 2013 July, Aug
+///  \date 2014 Feb
+///
+///  \author Pat Scott
+///          (patscott@physics.mcgill.ca)
+///  \date 2013 Aug
+///  \date 2014 Mar, Dec
+///
+///  *********************************************
 
 #include "gambit/ScannerBit/scan.hpp"
 #include "gambit/ScannerBit/plugin_interface.hpp"
@@ -260,4 +283,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:48 +0000

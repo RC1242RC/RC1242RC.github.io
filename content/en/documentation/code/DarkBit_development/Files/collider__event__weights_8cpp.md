@@ -71,6 +71,24 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  ColliderBit module functions for calculating 
+///  event weights
+///
+///  The weight functions in this file are
+///  independent of the particular Py8Collider type
+///  used in event generation.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Anders Kvellestad
+///          (a.kvellestad@imperial.ac.uk)
+///  \date   2019 Sep
+///
+///  *********************************************
 
 #include "gambit/ColliderBit/ColliderBit_eventloop.hpp"
 
@@ -83,12 +101,15 @@ namespace Gambit
   namespace ColliderBit
   {
 
+    /// A function that sets the event weight to unity, with zero uncertainty
     void _setEventWeight_unity(HEPUtils::Event& event, const BaseCollider*)  // <-- Ignoring second argument
     {
       event.set_weight(1.0);
       event.set_weight_err(0.0);
     }
 
+    /// Module function providing an instance of EventWeighterFunctionType
+    /// pointing to _setEventWeight_unity
     void setEventWeight_unity(EventWeighterFunctionType& result)
     {
       using namespace Pipes::setEventWeight_unity;
@@ -97,6 +118,7 @@ namespace Gambit
 
 
 
+    /// A function that sets the event weight based on the process cross-sections
     void _setEventWeight_fromCrossSection(HEPUtils::Event& event, const BaseCollider* HardScatteringSim_ptr, const map_int_process_xsec& ProcessCrossSectionsMap, const int use_trust_level)
     {
       // Initialize weight
@@ -170,6 +192,8 @@ namespace Gambit
       event.set_weight_err(weight_err);
     }
 
+    /// Module function providing an instance of EventWeighterFunctionType
+    /// pointing to _setEventWeight_fromCrossSection
     void setEventWeight_fromCrossSection(EventWeighterFunctionType& result)
     {
       using namespace Pipes::setEventWeight_fromCrossSection;
@@ -193,4 +217,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:47 +0000
+Updated on 2022-08-02 at 23:34:57 +0000

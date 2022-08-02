@@ -49,6 +49,19 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //  *********************************************
+///
+///  \file
+///  Utilities for working with Pythia8 events.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Andy Buckley
+///  \author Abram Krislock
+///  \author Anders Kvellestad
+///
+///  *********************************************
 
 
 #pragma once
@@ -68,6 +81,8 @@ namespace Gambit
 
 
 
+    /// @name Converters to/from Pythia8's native 4-vector
+    ///@{
 
     template<typename Vec4T>
     inline FJNS::PseudoJet mk_pseudojet(const Vec4T& p)
@@ -83,10 +98,14 @@ namespace Gambit
       return HEPUtils::P4::mkXYZM(p.px(), p.py(), p.pz(), (m > 0) ? m : 0);
     }
 
+    ///@}
 
 
+    /// @name Detailed Pythia8 event record walking/mangling functions
+    ///@{
 
 
+    /// @todo Rewrite using the Pythia > 8.176 particle-based methods
     template<typename EventT>
     inline bool fromBottom(int n, const EventT& evt)
     {
@@ -94,6 +113,7 @@ namespace Gambit
       if (n == 0) return false;
       const auto& p = evt[n];
       if (abs(p.id()) == 5 || MCUtils::PID::hasBottom(p.id())) return true;
+      /// @todo What about partonic decays?
       if (p.isParton()) return false; // stop the walking at hadron level
       for (int m : p.motherList()) {
         if (fromBottom(m, evt)) return true;
@@ -102,6 +122,7 @@ namespace Gambit
     }
 
 
+    /// @todo Rewrite using the Pythia > 8.176 particle-based methods
     template<typename EventT>
     inline bool fromTau(int n, const EventT& evt)
     {
@@ -117,6 +138,7 @@ namespace Gambit
     }
 
 
+    /// @todo Rewrite using the Pythia > 8.176 particle-based methods
     template<typename EventT>
     inline bool fromHadron(int n, const EventT& evt)
     {
@@ -220,6 +242,7 @@ namespace Gambit
       return evt.daughterList(n).empty();
     }
 
+    ///@}
 
   }
 }
@@ -228,4 +251,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:37 +0000
+Updated on 2022-08-02 at 23:34:54 +0000

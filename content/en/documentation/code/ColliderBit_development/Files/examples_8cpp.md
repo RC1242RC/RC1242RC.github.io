@@ -101,6 +101,19 @@ objective_plugin(
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Base functions objects for use in GAMBIT.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Gregory Martinez
+///           (gregory.david.martinez@gmail.com)
+///  \date 2014 MAY
+///
+///  *********************************************
 
 #include <iostream>
 #include <fstream>
@@ -279,4 +292,4 @@ objective_plugin(flat_prior, version(1, 0, 0))
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:37 +0000
+Updated on 2022-08-02 at 23:34:48 +0000

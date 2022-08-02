@@ -58,6 +58,29 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Implementation of reader class for FlavBit YAML
+///  database.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Marcin Chrzaszcz
+///  \date 2015 May
+///  \date 2016 July
+///  \date 2016 August
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)
+///  \date 2017 Mar
+///
+///  \author Tomas Gonzalo
+///          (t.e.gonzalo@fys.uio.no)
+///  \date 2017 Oct
+///
+///  *********************************************
 
 #include "gambit/Elements/gambit_module_headers.hpp"
 #include "gambit/FlavBit/FlavBit_rollcall.hpp"
@@ -72,6 +95,7 @@ namespace Gambit
 
     using namespace std;
 
+    /// Extraction operator for correlation
     void operator >> (const YAML::Node& node, Correlation& c)
     {
       // safety
@@ -82,6 +106,7 @@ namespace Gambit
       c.corr_val = node["value"].as<double>();
     }
 
+    /// Extraction operator for measurement
     void operator >> (const YAML::Node& node, Measurement& v)
     {
       v.name=node["name"].as<std::string>();
@@ -112,6 +137,7 @@ namespace Gambit
       }
     }
 
+    /// Constructor that takes the location of the database as an argument
     Flav_reader::Flav_reader(string loc)
     {
       measurements=vector< Measurement >(0);
@@ -122,6 +148,7 @@ namespace Gambit
       number_measurements=0;
     }
 
+    /// Read the entire database into memory
     void Flav_reader::read_yaml(string name)
     {
       string path=measurement_location+"/"+name;
@@ -139,6 +166,7 @@ namespace Gambit
       if (debug) cout<<"Number of measurements: "<<number_measurements<<endl;
     }
 
+    /// Read a single measurement from the database into memory
     void Flav_reader::read_yaml_measurement(string name, string measurement_name)
     {
       string path=measurement_location+"/"+name;
@@ -160,6 +188,7 @@ namespace Gambit
       if(debug) cout << "Number of measurements: " << number_measurements << endl;
     }
 
+    /// Print a measurement previously read in from the database
     void Flav_reader::print(Measurement mes)
     {
       cout<<"################### Mesurement"<<endl;
@@ -176,6 +205,7 @@ namespace Gambit
       cout<<"########## END"<<endl;
     }
 
+    /// Compute the covariance matrix and populate the measurement and theory error vectors
     void Flav_reader::initialise_matrices()
     {
       // Create the correlation matrix
@@ -231,6 +261,7 @@ namespace Gambit
 
     }
 
+    /// Find the second measurement that corresponds to a given correlation
     int Flav_reader::get_measurement_for_corr(string ss)
     {
       for(int i=0;i<number_measurements;++i)
@@ -241,6 +272,7 @@ namespace Gambit
       return -1;
     }
 
+    /// Print a boost ublas matrix
     void Flav_reader::print_matrix(boost::numeric::ublas::matrix<double>& M, str name, bool is_true_matrix)
     {
       int jmax = is_true_matrix ? number_measurements : 1;
@@ -252,6 +284,7 @@ namespace Gambit
       }
     }
 
+    /// Print a boost ublas matrix with a pair type
     void Flav_reader::print_matrix(boost::numeric::ublas::matrix< std::pair<double, bool> >& M, str name, bool is_true_matrix)
     {
       int jmax = is_true_matrix ? number_measurements : 1;
@@ -263,6 +296,7 @@ namespace Gambit
       }
     }
 
+    /// Check that a correlation matrix has 1s on the diagonal and is symmetric
     void Flav_reader::check_corr_matrix(boost::numeric::ublas::matrix<double>& M)
     {
       for( int i=0; i < number_measurements; ++i)
@@ -310,4 +344,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:37 +0000
+Updated on 2022-08-02 at 23:34:48 +0000

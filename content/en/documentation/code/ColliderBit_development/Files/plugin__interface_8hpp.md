@@ -48,7 +48,24 @@ Authors (add name and date if you modify):
 ```
 //  GAMBIT: Global and Modular BSM Inference Tool
 //  *********************************************
+///  \file
+///
+///  Interface details for scanner plugins
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
 //
+///  \author Gregory Martinez
+///          (gregory.david.martinez@gmail.com)
+///  \date 2013 August
+///  \date 2014 Feb
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)   
+///  \date 2014 Dec
+///
+///  *********************************************
 
 #ifndef __PLUGIN_INTERFACE_HPP
 #define __PLUGIN_INTERFACE_HPP
@@ -186,6 +203,9 @@ namespace Gambit
             /************ Plugin Interface ***************/
             /*********************************************/
             
+            /// Interface for a ScannerBit plugin.  Called like:
+            /// Plugins::Plugin_Interface<int ()> interface("scanner", pluginName, dim, *factory);
+            /// interface();
             template <typename... T> 
             class Plugin_Interface : public Plugin_Interface_Base, public Plugin_Main_Interface_Base<T>...
             {
@@ -238,4 +258,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:37 +0000
+Updated on 2022-08-02 at 23:34:48 +0000

@@ -58,6 +58,28 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Type definition header for module SpecBit.
+///
+///  Compile-time registration of type definitions
+///  required for the rest of the code to
+///  communicate with SpecBit.
+///
+///  Add to this if you want to define a new type
+///  for the functions in SpecBit to return, but
+///  you don't expect that type to be needed by
+///  any other modules.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Janina Renk
+///          (janina.renk@fysik.su.se)
+///  \date 2019 July, Dec
+///
+///  *********************************************
 
 
 #ifndef __SpecBit_types_hpp__
@@ -89,9 +111,18 @@ namespace Gambit
     // typdef to avoid having to use 'struct SpectrumEntry' every time
     typedef struct SpectrumEntry SpectrumEntry;
 
+    /// map mapping the name of a spectrum entry to the SpectrumEntry type.
+    /// In principle one could just use a vector instead of a map. However,
+    /// this requires a lot of caution to avoid filling up the vector with
+    /// more & more entries with the same name but different parameters
+    /// after one point is run so I thought this was the safer option
     typedef std::map<std::string,SpectrumEntry> map_str_SpectrumEntry;
 
 
+    /// class for setting & storing all spectrum entries of type SpectrumEntry
+    /// that need to be passed to vevacious (scale, input filenames & paths as
+    /// well as spectrum entries)
+    /// passed to vevacious before calling it
     class SpectrumEntriesForVevacious
     {
         public:
@@ -164,4 +195,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:48 +0000

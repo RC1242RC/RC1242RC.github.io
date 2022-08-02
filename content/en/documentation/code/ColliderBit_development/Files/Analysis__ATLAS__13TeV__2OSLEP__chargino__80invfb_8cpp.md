@@ -34,7 +34,10 @@ description: "[No description available]"
 ## Source code
 
 ```
-
+///
+///  \author Yang Zhang
+///  \date 2019 Jan
+///  *********************************************
 
 // Based on https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2018-042/
 // Search for direct chargino pair production with W-boson mediated decays in events with two leptons and missing transverse momentum at √s=13 TeV with the ATLAS detector
@@ -396,6 +399,7 @@ namespace Gambit
 
       }
 
+      /// Combine the variables of another copy of this analysis (typically on another thread) into this one.
       void combine(const Analysis* other)
       {
         const Analysis_ATLAS_13TeV_2OSLEP_chargino_80invfb* specificOther
@@ -553,4 +557,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:38 +0000
+Updated on 2022-08-02 at 23:34:48 +0000

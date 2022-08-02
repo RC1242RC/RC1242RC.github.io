@@ -48,6 +48,21 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Functions of module SpecBit
+///
+///  SpecBit module functions related to the
+///  scalar singlet DM model.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author James McKay
+///    \date 2018 March
+///
+///  *********************************************
 
 #include <string>
 #include <sstream>
@@ -357,6 +372,7 @@ namespace Gambit
         }
 
 
+    /// Print MDM spectrum out. Stripped down copy from MSSM version with variable names changed
     void fill_map_from_MDMspectrum(std::map<std::string,double>&, const Spectrum&);
 
     void get_MDM_spectrum_as_map (std::map<std::string,double>& specmap)
@@ -368,6 +384,7 @@ namespace Gambit
 
     void fill_map_from_MDMspectrum(std::map<std::string,double>& specmap, const Spectrum& mdmspec)
     {
+      /// Add everything... use spectrum contents routines to automate task
       static const SpectrumContents::MDM contents;
       static const std::vector<SpectrumParameter> required_parameters = contents.all_parameters();
 
@@ -378,6 +395,7 @@ namespace Gambit
          const std::string      name  = it->name();
          const std::vector<int> shape = it->shape();
 
+         /// Verification routine should have taken care of invalid shapes etc, so won't check for that here.
 
          // Check scalar case
          if(shape.size()==1 and shape[0]==1)
@@ -426,4 +444,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:45 +0000
+Updated on 2022-08-02 at 23:34:55 +0000

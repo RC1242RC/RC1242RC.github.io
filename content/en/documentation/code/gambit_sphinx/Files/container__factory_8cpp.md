@@ -56,6 +56,28 @@ Authors (add name and date if you modify):
 ```
 //  GAMBIT: Global and Modular BSM Inference Tool
 //  *********************************************
+///  \file
+///
+///  Likelihood container factory implementations.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Christoph Weniger
+///    (c.weniger@uva.nl)
+///  \date 2013 May, June, July
+///
+///  \author Gregory Martinez
+///    (gregory.david.martinez@gmail.com)
+///  \date 2013 July 2013 Feb 2014
+///
+///  \author Pat Scott
+///    (patscott@physics.mcgill.ca)
+///  \date 2013 Aug
+///  \date 2014 Mar, May
+///
+///  *********************************************
 
 #include "gambit/Core/likelihood_container.hpp"
 #include "gambit/Elements/type_equivalency.hpp"
@@ -120,4 +142,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:49 +0000

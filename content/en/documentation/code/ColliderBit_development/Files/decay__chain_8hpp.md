@@ -61,6 +61,20 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Type definition and function declaration header for decay chain setup.
+///
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Lars A. Dal
+///          (l.a.dal@fys.uio.no)
+///  \date 2014 Oct, Nov, Dec
+///  \date 2015 Jan
+///  *********************************************
 
 #ifndef __decay_chain_hpp__
 #define __decay_chain_hpp__
@@ -387,4 +401,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:37 +0000
+Updated on 2022-08-02 at 23:34:48 +0000

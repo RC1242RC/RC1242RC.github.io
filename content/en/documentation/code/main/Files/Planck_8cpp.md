@@ -63,6 +63,36 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Planck routines in CosmoBit.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Selim C. Hotinli
+///          (selim.hotinli14@pimperial.ac.uk)
+///  \date 2017 Jul
+///  \date 2018 May
+///  \date 2018 Aug - Sep
+///
+///  \author Patrick Stoecker
+///          (stoecker@physik.rwth-aachen.de)
+///  \date 2017 Nov
+///  \date 2018 Jan - May
+///  \date 2019 Jan, Feb, June, Nov
+///
+///  \author Janina Renk
+///          (janina.renk@fysik.su.se)
+///  \date 2018 June
+///  \date 2019 Mar,June
+///
+///  \author Sanjay Bloor
+///          (sanjay.bloor12@imperial.ac.uk)
+///  \date 2019 June, Nov
+///
+///  *********************************************
 #include <cmath>
 #include <iostream>
 #include <string>
@@ -92,6 +122,10 @@ namespace Gambit
       double T_cmb_FIRAS = 2.72548;
     }
 
+    /// Apply Gaussian priors on some of the Planck nuisance parameters (cf. table 16 of 1907.1287)
+    /// By default, the 2018 priors are used.
+    /// If the 2015 priors should be considered, set "version: 2015" in the rules of this function.
+    /// If needed, a custom file with the priors can be passed via the "prior_file" keyword in the rules.
     void compute_Planck_nuisance_prior_loglike(double& result)
     {
       using namespace Pipes::compute_Planck_nuisance_prior_loglike;
@@ -152,6 +186,7 @@ namespace Gambit
         logger() << LogTags::info << "Data for Planck nuisance priors read." << EOM;
       }
 
+      /// Loop over all parameters and apply the prior
       result = 0.0;
       for (auto iter = data.begin(); iter != data.end(); iter++)
       {
@@ -159,6 +194,9 @@ namespace Gambit
       }
     }
 
+    /// SZ- prior: Prior on the tSZ and kSZ amplitudes.
+    /// Correlation is unconstrained by Planck. Use prior based on SPT and ACT data.
+    /// (cf. https://arxiv.org/pdf/1507.02704.pdf -- eq. 32)
     void compute_Planck_sz_prior(double& result)
     {
       using namespace Pipes::compute_Planck_sz_prior;
@@ -171,6 +209,7 @@ namespace Gambit
 
     /*** 2018 ***/
 
+    /// Low-l TT likelihood (PR3 - 2018)
     void function_Planck_lowl_TT_2018_loglike(double& result)
     {
       using namespace Pipes::function_Planck_lowl_TT_2018_loglike;
@@ -227,6 +266,7 @@ namespace Gambit
 
     }
 
+    /// Low-l E-mode polarisation likelihood (PR3 - 2018)
     void function_Planck_lowl_EE_2018_loglike(double& result)
     {
       using namespace Pipes::function_Planck_lowl_EE_2018_loglike;
@@ -283,6 +323,7 @@ namespace Gambit
 
     }
 
+    /// Combined low-l TT and and E-mode polarisation likelihood (PR3 - 2018)
     void function_Planck_lowl_TTEE_2018_loglike(double& result)
     {
       using namespace Pipes::function_Planck_lowl_TTEE_2018_loglike;
@@ -369,6 +410,7 @@ namespace Gambit
 
     }
 
+    /// High-l TT likelihood (PR3 - 2018)
     void function_Planck_highl_TT_2018_loglike(double& result)
     {
       using namespace Pipes::function_Planck_highl_TT_2018_loglike;
@@ -445,6 +487,7 @@ namespace Gambit
 
     }
 
+    /// Marginalised version of the high-l TT likelihood (PR3 - 2018)
     void function_Planck_highl_TT_lite_2018_loglike(double& result)
     {
       using namespace Pipes::function_Planck_highl_TT_lite_2018_loglike;
@@ -502,6 +545,7 @@ namespace Gambit
 
     }
 
+    /// High-l TT and polarisation likelihood (PR3 - 2018)
     void function_Planck_highl_TTTEEE_2018_loglike(double& result)
     {
       using namespace Pipes::function_Planck_highl_TTTEEE_2018_loglike;
@@ -603,6 +647,7 @@ namespace Gambit
 
     }
 
+    /// Marginalised version of the high-l TT and polarisation likelihood (PR3 - 2018)
     void function_Planck_highl_TTTEEE_lite_2018_loglike(double& result)
     {
       using namespace Pipes::function_Planck_highl_TTTEEE_lite_2018_loglike;
@@ -670,6 +715,7 @@ namespace Gambit
 
     }
 
+    /// Lensing likelihood (PR3 - 2018)
     void function_Planck_lensing_2018_loglike(double& result)
     {
       using namespace Pipes::function_Planck_lensing_2018_loglike;
@@ -741,6 +787,7 @@ namespace Gambit
 
     }
 
+    /// Lensing Likelihood (marginalised over reference spectra for TT,EE, etc.) (PR3 - 2018)
     void function_Planck_lensing_marged_2018_loglike(double& result)
     {
       using namespace Pipes::function_Planck_lensing_marged_2018_loglike;
@@ -795,6 +842,7 @@ namespace Gambit
 
     /*** 2015 ***/
 
+    /// Low-l TT likelihood (PR2 - 2015)
     void function_Planck_lowl_TT_2015_loglike(double& result)
     {
       using namespace Pipes::function_Planck_lowl_TT_2015_loglike;
@@ -851,6 +899,7 @@ namespace Gambit
 
     }
 
+    /// Low-l polarisation likelihood (PR2 - 2015)
     void function_Planck_lowl_TEB_2015_loglike(double& result)
     {
       using namespace Pipes::function_Planck_lowl_TEB_2015_loglike;
@@ -923,6 +972,7 @@ namespace Gambit
 
     }
 
+    /// High-l TT likelihood (PR2 - 2015)
     void function_Planck_highl_TT_2015_loglike(double& result)
     {
       using namespace Pipes::function_Planck_highl_TT_2015_loglike;
@@ -997,6 +1047,7 @@ namespace Gambit
 
     }
 
+    /// Marginalised version of high-l TT likelihood (PR2 - 2015)
     void function_Planck_highl_TT_lite_2015_loglike(double& result)
     {
       using namespace Pipes::function_Planck_highl_TT_lite_2015_loglike;
@@ -1054,6 +1105,7 @@ namespace Gambit
 
     }
 
+    /// High-l TT and polarisation likelihood (PR2 - 2015)
     void function_Planck_highl_TTTEEE_2015_loglike(double& result)
     {
       using namespace Pipes::function_Planck_highl_TTTEEE_2015_loglike;
@@ -1155,6 +1207,7 @@ namespace Gambit
 
     }
 
+    /// Marginalised version of high-l TT and polarisation likelihood (PR2 - 2015)
     void function_Planck_highl_TTTEEE_lite_2015_loglike(double& result)
     {
       using namespace Pipes::function_Planck_highl_TTTEEE_lite_2015_loglike;
@@ -1222,6 +1275,7 @@ namespace Gambit
 
     }
 
+    /// Lensing likelihood (PR2 - 2015)
     void function_Planck_lensing_2015_loglike(double& result)
     {
       using namespace Pipes::function_Planck_lensing_2015_loglike;
@@ -1300,4 +1354,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:37 +0000
+Updated on 2022-08-02 at 23:34:54 +0000

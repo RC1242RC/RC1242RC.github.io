@@ -3,9 +3,8 @@ title: "Namespaces"
 
 menu:
   documentation:
-    parent: GAMBIT_VERSION_HERE
-identifier: "GAMBIT_VERSION_HERENamespaces"
-weight: 50
+    parent: main
+    identifier: "mainNamespaces" weight: 50
 ---
 
 
@@ -150,4 +149,4 @@ weight: 50
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:56 +0000

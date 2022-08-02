@@ -51,6 +51,21 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //  *********************************************
+///  \file
+///
+///  Helper functions for converting between
+///  different event types.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Andy Buckley
+///  \author Anders Kvellestad
+///  \author Pat Scott
+///  \author Martin White
+///
+///  *********************************************
 
 #pragma once
 
@@ -124,6 +139,8 @@ namespace Gambit
 
       #ifndef EXCLUDE_HEPMC
 
+        ///The MCUtils isParton function only checks for quarks/gluons, whereas the Pythia function used in Gambit
+        ///includes diquarks too, so we manually define this function using the isParton and isDiquark options in MCUtils.
         inline bool HEPMC3_isParton(int pid) { return (MCUtils::PID::isParton(pid) || MCUtils::PID::isDiquark(pid)); }
 
         inline int get_unified_pid(const HepMC3::GenParticlePtr &gp) { return gp->pid(); }
@@ -164,7 +181,9 @@ namespace Gambit
         inline int get_unified_mother1(const HepMC3::GenParticlePtr&) { return 0; }
         inline int get_unified_mother2(const HepMC3::GenParticlePtr&) { return 0; }
 
+        ///Shouldn't ever need to call a HepMC3 version of this, but for safety here's one that just returns 0.
         inline int get_unified_mother1_pid(const HepMC3::GenParticlePtr&, const std::vector<HepMC3::GenParticlePtr>&) { return 0; }
+        ///Shouldn't ever need to call a HepMC3 version of this, but for safety here's one that just returns 0.
         inline int get_unified_mother2_pid(const HepMC3::GenParticlePtr&, const std::vector<HepMC3::GenParticlePtr>&) { return 0; }
 
         inline void get_unified_child_ids(const HepMC3::GenParticlePtr &gp, const std::vector<HepMC3::GenParticlePtr>&, std::vector<int> &unified_child_id_results)
@@ -189,4 +208,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:37 +0000
+Updated on 2022-08-02 at 23:34:54 +0000

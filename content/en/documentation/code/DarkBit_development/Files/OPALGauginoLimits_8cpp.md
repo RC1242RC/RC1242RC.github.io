@@ -39,19 +39,24 @@ namespace Gambit {
     
     bool OPALCharginoHadronicLimitAt208GeV::isWithinExclusionRegion(double x, double y, double) const
     {
+      /// @note Plots only go down to 75 GeV
       return (y <= x and x <= 205. / 2. and x > 75.);
     }
     
     OPALCharginoHadronicLimitAt208GeV::OPALCharginoHadronicLimitAt208GeV()
     {
+      ///// Limit values /////
       _limitValuesSorted.push_back(0.1);
       _limitValuesSorted.push_back(1.0);
       _limitValuesSorted.push_back(2.0);
 
+      ///// Limit Contours /////
       Corners corners;
       ContoursPointer contoursPointer;
       size_t oldSize;
 
+      ///// 0.1pb /////
+      /// @note: This limit has multiple regions, so care must be taken below
       contoursPointer = new Contours();
 
       corners.clear();
@@ -155,6 +160,7 @@ namespace Gambit {
 
       _limitContours.insert(LimitContourEntry(0, contoursPointer));
 
+      ///// 1pb /////
       corners.clear();
       corners.push_back(convertPt(179.00,269.00));
       corners.push_back(convertPt(191.00,269.00));
@@ -209,6 +215,7 @@ namespace Gambit {
                      contoursPointer->begin(), makeLine);
       _limitContours.insert(LimitContourEntry(1, contoursPointer));
 
+      ///// 2pb /////
       corners.clear();
       corners.push_back(convertPt(179.00,269.00));
       corners.push_back(convertPt(191.00,269.00));
@@ -256,20 +263,25 @@ namespace Gambit {
     
     bool OPALCharginoSemiLeptonicLimitAt208GeV::isWithinExclusionRegion(double x, double y, double) const
     {
+      /// @note Plots only go down to 75 GeV
       return (y <= x and x <= 205. / 2. and x > 75.);
     }
     
     OPALCharginoSemiLeptonicLimitAt208GeV::OPALCharginoSemiLeptonicLimitAt208GeV()
     {
+      ///// Limit values /////
       _limitValuesSorted.push_back(0.05);
       _limitValuesSorted.push_back(0.1);
       _limitValuesSorted.push_back(1.0);
       _limitValuesSorted.push_back(2.0);
 
+      ///// Limit Contours /////
       Corners corners;
       ContoursPointer contoursPointer;
       size_t oldSize;
 
+      ///// 0.05pb /////
+      /// @note: This limit has multiple regions, so care must be taken below
       contoursPointer = new Contours();
 
       corners.clear();
@@ -296,6 +308,7 @@ namespace Gambit {
 
       _limitContours.insert(LimitContourEntry(0, contoursPointer));
 
+      ///// 0.1pb /////
       corners.clear();
       corners.push_back(convertPt(179.00,341.00));
       corners.push_back(convertPt(236.00,341.00));
@@ -333,6 +346,7 @@ namespace Gambit {
                      contoursPointer->begin(), makeLine);
       _limitContours.insert(LimitContourEntry(1, contoursPointer));
 
+      ///// 1pb /////
       corners.clear();
       corners.push_back(convertPt(810.00,700.00));
       corners.push_back(convertPt(810.00,689.00));
@@ -380,6 +394,7 @@ namespace Gambit {
                      contoursPointer->begin(), makeLine);
       _limitContours.insert(LimitContourEntry(2, contoursPointer));
 
+      ///// 2pb /////
       corners.clear();
       corners.push_back(convertPt(844.00,161.00));
       corners.push_back(convertPt(833.00,161.00));
@@ -445,19 +460,23 @@ namespace Gambit {
     
     bool OPALCharginoLeptonicLimitAt208GeV::isWithinExclusionRegion(double x, double y, double) const
     {
+      /// @note Plots only go down to 75 GeV
       return (y <= x and x <= 205. / 2. and x > 75.);
     }
     
     OPALCharginoLeptonicLimitAt208GeV::OPALCharginoLeptonicLimitAt208GeV()
     {
+      ///// Limit values /////
       _limitValuesSorted.push_back(0.05);
       _limitValuesSorted.push_back(0.1);
       _limitValuesSorted.push_back(1.0);
       _limitValuesSorted.push_back(2.0);
 
+      ///// Limit Contours /////
       Corners corners;
       ContoursPointer contoursPointer;
 
+      ///// 0.05pb /////
       corners.clear();
       corners.push_back(convertPt(185.00,473.00));
       corners.push_back(convertPt(185.00,281.00));
@@ -493,6 +512,7 @@ namespace Gambit {
                      contoursPointer->begin(), makeLine);
       _limitContours.insert(LimitContourEntry(0, contoursPointer));
 
+      ///// 0.1pb /////
       corners.clear();
       corners.push_back(convertPt(242.00,689.00));
       corners.push_back(convertPt(185.00,689.00));
@@ -532,6 +552,7 @@ namespace Gambit {
                      contoursPointer->begin(), makeLine);
       _limitContours.insert(LimitContourEntry(1, contoursPointer));
 
+      ///// 1pb /////
       corners.clear();
       corners.push_back(convertPt(816.00,689.00));
       corners.push_back(convertPt(816.00,665.00));
@@ -569,6 +590,7 @@ namespace Gambit {
                      contoursPointer->begin(), makeLine);
       _limitContours.insert(LimitContourEntry(2, contoursPointer));
 
+      ///// 2pb /////
       corners.clear();
       corners.push_back(convertPt(816.00,689.00));
       corners.push_back(convertPt(816.00,677.00));
@@ -620,19 +642,23 @@ namespace Gambit {
     
     bool OPALCharginoAllChannelsLimitAt208GeV::isWithinExclusionRegion(double x, double y, double) const
     {
+      /// @note Plots only go down to 75 GeV
       return (y <= x and x <= 205. / 2. and x > 75.);
     }
     
     OPALCharginoAllChannelsLimitAt208GeV::OPALCharginoAllChannelsLimitAt208GeV()
     {
+      ///// Limit values /////
       _limitValuesSorted.push_back(0.1);
       _limitValuesSorted.push_back(1.0);
       _limitValuesSorted.push_back(2.0);
 
+      ///// Limit Contours /////
       Corners corners;
       ContoursPointer contoursPointer;
       size_t oldSize;
 
+      ///// 0.1pb /////
       contoursPointer = new Contours();
 
       corners.clear();
@@ -700,6 +726,7 @@ namespace Gambit {
 
       _limitContours.insert(LimitContourEntry(0, contoursPointer));
 
+      ///// 1pb /////
       corners.clear();
       corners.push_back(convertPt(806.00,705.00));
       corners.push_back(convertPt(806.00,693.00));
@@ -749,6 +776,7 @@ namespace Gambit {
                      contoursPointer->begin(), makeLine);
       _limitContours.insert(LimitContourEntry(1, contoursPointer));
 
+      ///// 2pb /////
       corners.clear();
       corners.push_back(convertPt(806.00,705.00));
       corners.push_back(convertPt(806.00,693.00));
@@ -808,19 +836,23 @@ namespace Gambit {
 
     bool OPALNeutralinoHadronicLimitAt208GeV::isWithinExclusionRegion(double x, double y, double) const
     {
+      /// @note Plot caption explicitly mentions 100 GeV, rather than the Z mass
       return (y <= x and x + y <= 208. and x + y > 100.);
     }
     
     OPALNeutralinoHadronicLimitAt208GeV::OPALNeutralinoHadronicLimitAt208GeV()
     {
+      ///// Limit values /////
       _limitValuesSorted.push_back(0.051);
       _limitValuesSorted.push_back(0.15);
       _limitValuesSorted.push_back(0.5);
 
+      ///// Limit Contours /////
       Corners corners;
       ContoursPointer contoursPointer;
       size_t oldSize;
 
+      ///// 0.051pb /////
       contoursPointer = new Contours();
 
       corners.clear();
@@ -1144,6 +1176,7 @@ namespace Gambit {
 
       _limitContours.insert(LimitContourEntry(0, contoursPointer));
 
+      ///// 0.15pb /////
       contoursPointer = new Contours();
 
       corners.clear();
@@ -1390,6 +1423,7 @@ namespace Gambit {
 
       _limitContours.insert(LimitContourEntry(1, contoursPointer));
 
+      ///// 0.5pb /////
       corners.clear();
       corners.push_back(convertPt(434.00,73.00));
       corners.push_back(convertPt(434.00,97.00));
@@ -1489,6 +1523,7 @@ namespace Gambit {
     
     bool OPALNeutralinoHadronicViaZLimitAt208GeV::isWithinExclusionRegion(double x, double y, double) const
     {
+      /// @note Plot caption explicitly mentions 100 GeV, rather than the Z mass
       bool inHole = false;
       P2 holeCorner1 = convertPt(396.00,168.00);
       P2 holeCorner2 = convertPt(418.00,192.00);
@@ -1499,14 +1534,17 @@ namespace Gambit {
     
     OPALNeutralinoHadronicViaZLimitAt208GeV::OPALNeutralinoHadronicViaZLimitAt208GeV()
     {
+      ///// Limit values /////
       _limitValuesSorted.push_back(0.051);
       _limitValuesSorted.push_back(0.15);
       _limitValuesSorted.push_back(0.5);
 
+      ///// Limit Contours /////
       Corners corners;
       ContoursPointer contoursPointer;
       size_t oldSize;
 
+      ///// 0.051pb /////
       contoursPointer = new Contours();
 
       corners.clear();
@@ -1669,6 +1707,7 @@ namespace Gambit {
 
       _limitContours.insert(LimitContourEntry(0, contoursPointer));
 
+      ///// 0.15pb /////
       contoursPointer = new Contours();
 
       corners.clear();
@@ -1965,6 +2004,7 @@ namespace Gambit {
 
       _limitContours.insert(LimitContourEntry(1, contoursPointer));
 
+      ///// 0.5pb /////
       corners.clear();
       corners.push_back(convertPt(439.00,82.00));
       corners.push_back(convertPt(439.00,106.0));
@@ -2061,4 +2101,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:47 +0000
+Updated on 2022-08-02 at 23:34:57 +0000

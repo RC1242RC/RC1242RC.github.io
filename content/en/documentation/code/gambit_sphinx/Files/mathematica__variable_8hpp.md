@@ -58,6 +58,28 @@ Pat Scott ([p.scott@imperial.ac.uk](mailto:p.scott@imperial.ac.uk))
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Class mathematica_variable, needed to overload
+///  constructor and assignment operators to send
+///  messages throught WSTP
+///
+///  ***********************************************
+///
+///  Authors
+///  =======
+///
+///  (add name and date if you modify)
+///
+///  \author Tomas Gonzalo
+///          (t.e.gonzalo@fys.uio.no)
+///  \date 2016 Nov
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)
+///  \date 2017 Dec
+///
+///  ***********************************************
 
 #ifndef __mathematica_variable_hpp__
 #define __mathematica_variable_hpp__
@@ -366,4 +388,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:41 +0000
+Updated on 2022-08-02 at 23:34:51 +0000

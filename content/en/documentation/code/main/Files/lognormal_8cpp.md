@@ -56,6 +56,27 @@ Authors (add name and date if you modify):
 ```
 //  GAMBIT: Global and Modular BSM Inference Tool
 //  *********************************************
+///  \file
+///
+///  Multivariate Log-Normal prior
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Ben Farmer
+///    (benjamin.farmer@monash.edu.au)
+///  \date 2013 Dec
+///
+///  \author Gregory Martinez
+///    (gregory.david.martinez@gmail.com)
+///  \date Feb 2014
+///
+///  \author Andrew Fowlie
+///    (andrew.j.fowlie@qq.com)
+///  \date August 2020
+///
+///  *********************************************
 
 #include <cmath>
 #include "gambit/ScannerBit/priors/lognormal.hpp"
@@ -195,4 +216,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:36 +0000
+Updated on 2022-08-02 at 23:34:53 +0000

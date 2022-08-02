@@ -62,6 +62,25 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Definitions of container classes
+///  for the SPheno 3.3.8 backend.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Tomas Gonzalo
+///          (tomas.gonzalo@monash.edu)
+///  \date 2016 Apr
+///  \date 2020 Apr
+///
+///  \author Pat Scott
+///          (pat.scott@uq.edu.au)
+///  \date 2020 May
+///
+///  *********************************************
 
 #include "gambit/Utils/util_types.hpp"
 
@@ -156,4 +175,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:49 +0000

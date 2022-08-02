@@ -46,6 +46,19 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  SUSY-specific sources for ColliderBit.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Anders Kvellestad
+///          (anders.kvellestad@fys.uio.no)
+///  \date 2019 Dec
+///
+///  *********************************************
 
 #include "gambit/ColliderBit/getPy8Collider.hpp"
 #include "gambit/ColliderBit/generateEventPy8Collider.hpp"
@@ -150,6 +163,7 @@ namespace Gambit
       // Save result as a pair_str_SLHAstruct
       result = std::make_pair(filename_mod_ss.str(), new_content);
 
+      /// @todo Add option to save the new SLHA content to file
 
       counter++;
     }
@@ -336,4 +350,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:38 +0000
+Updated on 2022-08-02 at 23:34:49 +0000

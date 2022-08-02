@@ -78,6 +78,23 @@ scanner_plugin(
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Base functions objects for use in GAMBIT.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Gregory Martinez
+///          (gregory.david.martinez@gmail.com)
+///  \date 2014 May
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)
+///  \date 2018 June
+///
+///  *********************************************
 
 #ifdef WITH_MPI
 #include "gambit/Utils/begin_ignore_warnings_mpi.hpp"
@@ -509,4 +526,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:45 +0000
+Updated on 2022-08-02 at 23:34:55 +0000

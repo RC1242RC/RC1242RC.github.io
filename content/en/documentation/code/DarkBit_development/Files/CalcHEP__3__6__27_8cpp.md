@@ -102,6 +102,20 @@ scan_level = false;
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Frontend for CalcHEP Backend
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Sanjay Bloor
+///          (sanjay.bloor12@imperial.ac.uk)
+///  \date 2017 May, Oct
+///        2018 Sep
+///
+///  *****************************************
 
 #include <fstream>
 #include <boost/algorithm/string/replace.hpp>
@@ -226,6 +240,7 @@ END_BE_INI_FUNCTION
 
 BE_NAMESPACE
 {
+  /// Create matrix element code for a decay
   numout* generate_decay_code(str model, str in, std::vector<str> out)
   {
     // Generate process from in and out states
@@ -265,12 +280,14 @@ BE_NAMESPACE
     return cc;
   }
 
+  /// For cross-sections, just wrap the decay code
   numout* generate_xsec_code(str model, std::vector<str> in, std::vector<str> out)
   {
     str newin = in[0] + "," + in[1];
     return generate_decay_code(model, newin, out);
   }
 
+  /// Assigns gambit value to parameter, with error-checking.
   void Assign_Value(char *parameter, double value)
   {
     int error;
@@ -279,6 +296,8 @@ BE_NAMESPACE
           " in CalcHEP. CalcHEP error code: " + std::to_string(error) + ". Please check your model files.\n");
   }
 
+  /// Assigns gambit value to parameter, with error-checking, for parameters that may
+  /// have two different names in CalcHEP, such as alphainv : aEWM1 (FeynRules) / aEWinv (SARAH)
   void Assign_Value(char *parameter1, char *parameter2, double value)
   {
     int error;
@@ -293,6 +312,8 @@ BE_NAMESPACE
           " CalcHEP error code: " + std::to_string(error) + ". Please check your model files.\n");
   }
 
+  /// Takes all parameters in a model, and assigns them by
+  /// value to the appropriate CalcHEP parameter names.
   void Assign_All_Values(const Spectrum& spec, std::vector<SpectrumParameter> params)
   {
     // Iterate through the expected spectrum parameters of the model. Pass the value of pole masses
@@ -397,6 +418,8 @@ BE_NAMESPACE
     Assign_Value(pdg2mass(6), spec.get(Par::Pole_Mass, "u_3"));    // mT(mT) MSbar
   }
 
+  /// Passes the width of each BSM particle in the model, from DecayTable to CalcHEP.
+  /// Don't set the widths of anything SM, except the top, which can get BSM contributions.
   void Assign_Widths(const DecayTable& tbl)
   {
     // Obtain all generic pdg codes. We can't set these widths..
@@ -421,6 +444,7 @@ BE_NAMESPACE
     Assign_Value(pdg2width(6), tbl.at("t").width_in_GeV);
   }
 
+  /// Provides spin-averaged decay width for 2 body decay process in CM frame at tree-level.
   // TODO: remove dependence on g3 (for alphaS(mZ)).
   double CH_Decay_Width(str& model, str& in, std::vector<str>& out)
   {
@@ -518,6 +542,8 @@ BE_NAMESPACE
     return prefactor*matElement;
   }
 
+  /// Computes annihilation cross-section for 2->2 process, DM+DMbar -> X + Y at tree level.
+  /// Coannihilations not currently supported; we require the mass of both in states are equal.
   double CH_Sigma_V(str& model, std::vector<str>& in, std::vector<str>& out, double& v_rel, const DecayTable& decays)
   {
     // Check size of in and out states;
@@ -580,6 +606,7 @@ BE_NAMESPACE
     char *libname = new char[(model + "_" + DM + DMbar + "_to_" + out[0] + out[1]).length() + 1];
     strcpy(libname, (model + "_" + DM + DMbar + "_to_" + out[0] + out[1]).c_str());
 
+    /// TODO: are these options for the function..?
     char *excludeVirtual = NULL; // Exclude any internal particles
     char *excludeOut = NULL;     // Exclude any products
     int twidth = 0;              // T-channel propagator width
@@ -706,4 +733,4 @@ END_BE_NAMESPACE
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:48 +0000
+Updated on 2022-08-02 at 23:34:58 +0000

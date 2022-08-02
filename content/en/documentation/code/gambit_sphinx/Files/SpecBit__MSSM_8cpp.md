@@ -60,6 +60,35 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Functions of module SpecBit
+///
+///  These functions link ModelParameters to
+///  Spectrum objects in various ways (by running
+///  spectrum generators, etc.)
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Ben Farmer
+///          (benjamin.farmer@fysik.su.se)
+///    \date 2014 Sep - Dec, 2015 Jan - Mar
+///
+///  \author Christopher Rogan
+///          (christophersrogan@gmail.com)
+///  \date 2015 Apr
+///
+///  \author Tomas Gonzalo
+///          (t.e.gonzalo@fys.uio.no)
+///  \date 2016 June
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)
+///  \date 2015, 2016
+///
+///  *********************************************
 
 #include <string>
 #include <sstream>
@@ -102,11 +131,13 @@ namespace Gambit
     // To check if a model is currently being scanned:
     // bool Pipes::<fname>::ModelInUse(str model_name)
 
+    /// @{ Non-Gambit convenience functions
     //  =======================================================================
     //  These are not known to Gambit, but they do basically all the real work.
     //  The Gambit module functions merely wrap the functions here and hook
     //  them up to their dependencies, and input parameters.
 
+    /// Compute an MSSM spectrum using flexiblesusy
     // In GAMBIT there are THREE flexiblesusy MSSM spectrum generators currently in
     // use, for each of three possible boundary condition types:
     //   - GUT scale input
@@ -274,6 +305,8 @@ namespace Gambit
       {
          if( runOptions.getValueOrDef<bool>(false,"invalid_point_fatal") )
          {
+            ///TODO: Need to tell gambit that the spectrum is not viable somehow. For now
+            /// just die.
             std::ostringstream errmsg;
             errmsg << "A serious problem was encountered during spectrum generation!; ";
             errmsg << "Message from FlexibleSUSY below:" << std::endl;
@@ -283,6 +316,8 @@ namespace Gambit
          }
          else
          {
+            /// Check what the problem was
+            /// see: contrib/MassSpectra/flexiblesusy/src/problems.hpp
             std::ostringstream msg;
             //msg << "";
             //if( have_bad_mass()      ) msg << "bad mass " << std::endl; // TODO: check which one
@@ -296,6 +331,7 @@ namespace Gambit
             //if( no_rho_convergence() ) msg << "no rho converg." << std::endl;
             //if( msg.str()=="" ) msg << " Unrecognised problem! ";
 
+            /// Fast way for now:
             problems.print_problems(msg);
             invalid_point().raise(msg.str()); //TODO: This message isn't ending up in the logs.
          }
@@ -533,6 +569,7 @@ namespace Gambit
   //     return Spectrum(qedqcdspec,mssmspec,sminputs,&input_Param,mass_cut,mass_ratio_cut);
   //   }
 
+    /// Helper function for setting 3x3 matrix-valued parameters
     //  Names must conform to convention "<parname>_ij"
     Eigen::Matrix<double,3,3> fill_3x3_parameter_matrix(const std::string& rootname, const std::map<str, safe_ptr<const double> >& Param)
     {
@@ -544,6 +581,7 @@ namespace Gambit
        return output;
     }
 
+    /// As above, but for symmetric input (i.e. 6 entries, assumed to be the upper triangle)
     Eigen::Matrix<double,3,3> fill_3x3_symmetric_parameter_matrix(const std::string& rootname, const std::map<str, safe_ptr<const double> >& Param)
     {
        Eigen::Matrix<double,3,3> output;
@@ -555,6 +593,8 @@ namespace Gambit
        return output;
     }
 
+    /// Helper function for filling MSSM63-compatible input parameter objects
+    /// Leaves out mHu2, mHd2, SignMu, (mA, mu) because we use two different parameterisations of these
     template <class T>
     void fill_MSSM63_input(T& input, const std::map<str, safe_ptr<const double> >& Param )
     {
@@ -660,8 +700,10 @@ namespace Gambit
     }
 
 
+    /// @} End module convenience functions
 
 
+    /// @{ Gambit module functions
     //  =======================================================================
     //  These are wrapped up in Gambit functor objects according to the
     //  instructions in the rollcall header
@@ -1038,7 +1080,12 @@ namespace Gambit
       // Placeholder
     }
 
+    /// @{
+    /// Functions to decompose Spectrum object (of type MSSM_spectrum)
 
+    /// @}
+    /// Retrieve SubSpectrum* to SM LE model from Spectrum object
+    /// DEPENDENCY(MSSM_spectrum, Spectrum)
     void get_SM_SubSpectrum_from_MSSM_Spectrum (const SubSpectrum* &result)
     {
       namespace myPipe = Pipes::get_SM_SubSpectrum_from_MSSM_Spectrum;
@@ -1046,16 +1093,22 @@ namespace Gambit
       result = &matched_spectra.get_LE();
     }
 
+    /// Extract an SLHAea version of the spectrum contained in a Spectrum object, in SLHA1 format
     void get_MSSM_spectrum_as_SLHAea_SLHA1(SLHAstruct &result)
     {
       result = Pipes::get_MSSM_spectrum_as_SLHAea_SLHA1::Dep::unimproved_MSSM_spectrum->getSLHAea(1);
     }
 
+    /// Extract an SLHAea version of the spectrum contained in a Spectrum object, in SLHA2 format
     void get_MSSM_spectrum_as_SLHAea_SLHA2(SLHAstruct &result)
     {
       result = Pipes::get_MSSM_spectrum_as_SLHAea_SLHA2::Dep::unimproved_MSSM_spectrum->getSLHAea(2);
     }
 
+    /// Get an MSSMSpectrum object from an SLHA file
+    /// Wraps it up in MSSMSimpleSpec; i.e. no RGE running possible.
+    /// This is mainly for testing against benchmark points, but may be a useful last
+    /// resort for interacting with "difficult" spectrum generators.
     void get_MSSM_spectrum_from_SLHAfile(Spectrum &result)
     {
       // Static counter running in a loop over all filenames
@@ -1113,11 +1166,15 @@ namespace Gambit
       if (not has_neutralino_LSP(result)) invalid_point().raise("Neutralino is not LSP.");
     }
 
+    /// Get an MSSMSpectrum object from an SLHAstruct
+    /// Wraps it up in MSSMSimpleSpec; i.e. no RGE running possible.
+    /// This can be used as a poor-man's interface to backend spectrum generators
     void get_MSSM_spectrum_from_SLHAstruct(Spectrum& result)
     {
       namespace myPipe = Pipes::get_MSSM_spectrum_from_SLHAstruct;
       const SLHAstruct& input_slha_tmp = *myPipe::Dep::unimproved_MSSM_spectrum; // Retrieve dependency on SLHAstruct
 
+      /// @todo FIXME this needs to be fixed -- is it needed any more?  Where is this GAMBIT block supposed to be written?
       SLHAstruct input_slha(input_slha_tmp); // Copy struct (for demo adding of GAMBIT block only)
       // For example; add this to your input SLHAstruct:
       input_slha["GAMBIT"][""] << "BLOCK" << "GAMBIT";
@@ -1163,6 +1220,10 @@ namespace Gambit
       result.get_HE().set_override(Par::mass1,SLHAea::to<double>(input_slha.at("GAMBIT").at(1).at(1)), "high_scale", false);
     }
 
+    /// Get pre-computed MSSM spectrum from previous output file
+    /// This function ONLY works when the scan is driven by the postprocessor!
+    /// This is because it relies on the global reader object created by the
+    /// postprocessor to retrieve output.
     void get_MSSM_spectrum_from_postprocessor(Spectrum& result)
     {
        namespace myPipe = Pipes::get_MSSM_spectrum_from_postprocessor;
@@ -1215,6 +1276,7 @@ namespace Gambit
        result = Spectrum(le,he,sminputs,NULL,mass_cut,mass_ratio_cut);
     }
 
+    /// FeynHiggs SUSY masses and mixings
     void FeynHiggs_MSSMMasses(fh_MSSMMassObs_container &result)
     {
       using namespace Pipes::FeynHiggs_MSSMMasses;
@@ -1327,6 +1389,7 @@ namespace Gambit
     }
 
 
+    /// Higgs masses and mixings with theoretical uncertainties
     void FeynHiggs_AllHiggsMasses(fh_HiggsMassObs_container &result)
     {
       using namespace Pipes::FeynHiggs_AllHiggsMasses;
@@ -1403,7 +1466,11 @@ namespace Gambit
       result = HiggsMassObs;
     }
 
+////////////////////////
+//// Higgs routines ////
+////////////////////////
 
+    /// Call FHCouplings from FeynHiggs and collect the output
     void FeynHiggs_Couplings(fh_Couplings_container &result)
     {
       using namespace Pipes::FeynHiggs_Couplings;
@@ -1474,6 +1541,7 @@ namespace Gambit
     }
 
 
+    /// Helper function to work out if the LSP is invisible, and if so, which particle it is.
     std::vector<std::pair<str,str>> get_invisibles(const SubSpectrum& spec)
     {
       // Get the lighter of the lightest neutralino and the lightest sneutrino
@@ -1495,6 +1563,7 @@ namespace Gambit
       return std::vector<std::pair<str,str>>();
     }
 
+    /// Put together the Higgs couplings for the MSSM, from partial widths only
     void MSSM_higgs_couplings_pwid(HiggsCouplingsTable &result)
     {
       using namespace Pipes::MSSM_higgs_couplings_pwid;
@@ -1573,6 +1642,7 @@ namespace Gambit
     }
 
 
+    /// Put together the Higgs couplings for the MSSM, using FeynHiggs
     void MSSM_higgs_couplings_FeynHiggs(HiggsCouplingsTable &result)
     {
       using namespace Pipes::MSSM_higgs_couplings_FeynHiggs;
@@ -1670,10 +1740,15 @@ namespace Gambit
     }
 
 
+/////////////////////////////
+//// Map output routines ////
+/////////////////////////////
 
+    /// @{ Convert MSSM type Spectrum object into a map, so it can be printed
     template<class Contents>
     void fill_map_from_subspectrum(std::map<std::string,double>&, const SubSpectrum&);
 
+    /// Adds additional information from interesting combinations of MSSM parameters
     void add_extra_MSSM_parameter_combinations(std::map<std::string,double>& specmap, const SubSpectrum& mssm)
     {
       double At = 0;
@@ -1694,7 +1769,11 @@ namespace Gambit
 
       specmap["Xt"] = At - MuSUSY / tb;
       specmap["Xb"] = Ab - MuSUSY * tb;
+      /// Determine which states are the third gens then add them for printing
       str msf1, msf2;
+      /// Since this is for printing we only want to invalidate the point
+      /// if this is completely wrong.
+      /// We can also plot the mixing if we are suspicious.
       const static double tol = 0.5;
       const static bool pt_error = true;
       slhahelp::family_state_mix_matrix("~u", 3, msf1, msf2, mssm, tol,
@@ -1709,6 +1788,8 @@ namespace Gambit
                                         LOCAL_INFO, pt_error);
       specmap["mstau1"] =  mssm.get(Par::Pole_Mass, msf1);
       specmap["mstau2"] =  mssm.get(Par::Pole_Mass, msf2);
+      /// return mass eigenstate strings that best represent required gauge
+      /// eigenstate
       const str gs_suL = slhahelp::mass_es_from_gauge_es("~u_L", mssm, tol,
                                                          LOCAL_INFO, pt_error);
       specmap["msupL"] = mssm.get(Par::Pole_Mass,gs_suL);
@@ -1795,10 +1876,13 @@ namespace Gambit
       fill_map_from_subspectrum<SpectrumContents::MSSM>(specmap, mssmspec.get_HE());
       add_extra_MSSM_parameter_combinations(specmap, mssmspec.get_HE());
     }
+    /// @}
 
+    /// Extract all parameters from a subspectrum and put them into a map
     template<class Contents>
     void fill_map_from_subspectrum(std::map<std::string,double>& specmap, const SubSpectrum& subspec)
     {
+      /// Add everything... use spectrum contents routines to automate task (make sure to use correct template parameter!)
       static const Contents contents;
       static const std::vector<SpectrumParameter> required_parameters = contents.all_parameters();
 
@@ -1809,6 +1893,7 @@ namespace Gambit
          const std::string      name  = it->name();
          const std::vector<int> shape = it->shape();
 
+         /// Verification routine should have taken care of invalid shapes etc, so won't check for that here.
 
          // Check scalar case
          if(shape.size()==1 and shape[0]==1)
@@ -1971,6 +2056,7 @@ namespace Gambit
     }
 
 
+    /// @} End Gambit module functions
 
   } // end namespace SpecBit
 } // end namespace Gambit
@@ -1979,4 +2065,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:48 +0000

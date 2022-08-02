@@ -94,7 +94,31 @@ The main routine to run for the PolyChord scanner.
 ```
 //  GAMBIT: Global and Modular BSM Inference Tool
 //  *********************************************
+///  \file
+///
+///  ScannerBit interface to PolyChord 1.17.1
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
 //
+///  \author Ben Farmer
+///          (ben.farmer@gmail.com)
+///  \date October 2013 - Aug 2016
+///
+///  \author Will Handley
+///          (wh260@cam.ac.uk)
+///  \date May 2018
+///
+///  \author Patrick Stoecker
+///          (stoecker@physik.rwth-aachen.de)
+///  \date May 2020
+///
+///  \author Anders Kvellestad
+///          (anders.kvellestad@fys.uio.no)
+///  \date June 2022
+///
+///  *********************************************
 
 #include <vector>
 #include <string>
@@ -117,13 +141,18 @@ namespace Gambit
 {
    namespace PolyChord_1_17_1
    {
+      /// Global pointer to loglikelihood wrapper object, for use in the PolyChord callback functions
       LogLikeWrapper *global_loglike_object;
    }
 }
 
+/// Typedef for the ScannerBit pointer to the external loglikelihood function
 typedef Gambit::Scanner::like_ptr scanPtr;
 
 
+/// =================================================
+/// Interface to ScannerBit
+/// =================================================
 
 scanner_plugin(polychord, version(1, 17, 1))
 {
@@ -140,6 +169,7 @@ scanner_plugin(polychord, version(1, 17, 1))
    // Pointer to the (log)likelihood function
    scanPtr LogLike;
 
+   /// The constructor to run when the PolyChord plugin is loaded.
    plugin_constructor
    {
       // Retrieve the external likelihood calculator
@@ -147,9 +177,15 @@ scanner_plugin(polychord, version(1, 17, 1))
       if (LogLike->getRank() == 0) std::cout << "Loading PolyChord nested sampling plugin for ScannerBit." << std::endl;
    }
 
+   /// The main routine to run for the PolyChord scanner.
    int plugin_main (void)
    {
+      /// ************
+      /// TODO: Replace with some wrapper? Maybe not, this is already pretty straightforward,
+      /// though perhaps a little counterintuitive that the printer is the place to get this
+      /// information.
       bool resume_mode = get_printer().resume_mode();
+      /// ************
 
       // Retrieve the dimensionality of the scan.
       int ma = get_dimension();
@@ -307,11 +343,15 @@ scanner_plugin(polychord, version(1, 17, 1))
 }
 
 
+/// =================================================
+/// Function definitions
+/// =================================================
 
 namespace Gambit {
 
    namespace PolyChord_1_17_1 {
 
+      ///@{ Plain-vanilla functions to pass to PolyChord for the callback
       // Note: we are using the c interface from cwrapper.f90, so the function
       // signature is a little different than in the polychord examples.
       double callback_loglike(double *Cube, int ndim, double* phi, int nderived)
@@ -329,12 +369,27 @@ namespace Gambit {
          global_loglike_object->
             dumper(ndead, nlive, npars, live, dead, logweights, logZ, logZerr);
       }
+      ///@}
 
 
+      /// LogLikeWrapper Constructor
       LogLikeWrapper::LogLikeWrapper(scanPtr loglike, printer_interface& printer)
          : boundLogLike(loglike), boundPrinter(printer)
       { }
 
+      /// Main interface function from PolyChord to ScannerBit-supplied loglikelihood function
+      /// This is the function that will be passed to PolyChord as the
+      /// loglike callback routine
+      ///
+      /// Input arguments
+      /// ndim          = dimensionality (total number of free parameters) of the problem
+      /// nderived      = total number of derived parameters
+      /// Cube[ndim]    = ndim parameters
+      ///
+      /// Output arguments
+      /// phi[nderived] = nderived devired parameters
+      /// lnew          = loglikelihood
+      ///
       double LogLikeWrapper::LogLike(double *Cube, int ndim, double* phi, int nderived)
       {
          // Cached "below threshold" unitcube parameters of the previous point.
@@ -392,7 +447,24 @@ namespace Gambit {
          return lnew;
       }
 
+      /// Main interface to PolyChord dumper routine
+      /// The dumper routine will be called every time the live points compress by a factor compression_factor
+      /// PolyChord does not need to the user to do anything. User can use the arguments in whichever way they want
+      ///
+      /// Arguments:
+      ///
+      /// ndead                                                = total number of discarded points for posterior usage
+      /// nlive                                                = total number of live points
+      /// nPar                                                 = total number of parameters + 2 (free + derived + 2)
+      /// live[nlive*npars]                                    = 2D array containing the last set of live points
+      ///                                                        (physical parameters plus derived parameters + birth contour + death contour)
 
+      /// dead[ndead*npars]                                    = posterior distribution containing nSamples points.
+      ///                                                        Each sample has nPar parameters (physical + derived)
+      ///                                                        along with the their loglike value & posterior probability
+      /// logweights[ndead]                                    = log of posterior weighting of dead points. Use this to turn them into posterior weighted samples
+      /// logZ                                                 = log evidence value
+      /// logZerr                                              = error on log evidence value
       void LogLikeWrapper::dumper(int ndead, int nlive, int npars,
                                   double *live, double *dead, double* logweights,
                                   double /*logZ*/, double /*logZerr*/)
@@ -488,4 +560,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:37 +0000
+Updated on 2022-08-02 at 23:34:48 +0000

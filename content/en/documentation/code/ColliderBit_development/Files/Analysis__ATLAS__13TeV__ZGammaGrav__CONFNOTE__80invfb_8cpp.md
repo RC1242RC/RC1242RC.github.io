@@ -40,6 +40,18 @@ namespace Gambit {
   namespace ColliderBit {
 
 
+    /// @brief ATLAS ZH(->photon+gravitino) (79.8 fb^-1)
+    ///
+    /// Based on:
+    ///  - https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2018-019/
+    ///  - https://cds.cern.ch/record/2621481/files/ATLAS-CONF-2018-019.pdf
+    ///
+    /// @author Andy Buckley
+    ///
+    /// @note Conservative underestimate of yield in benchmark point cutflow 5.2 vs 8.7
+    /// passing all cuts: underestimation of MET and satisfaction of angular/balance cuts.
+    /// Adding MET smearing doesn't appear to have helped.
+    ///
     class Analysis_ATLAS_13TeV_ZGammaGrav_CONFNOTE_80invfb : public Analysis {
     public:
 
@@ -120,6 +132,7 @@ namespace Gambit {
         const double met = pmiss.pT();
 
 
+        /////////////////
 
         size_t ncut = 0;
 
@@ -161,6 +174,7 @@ namespace Gambit {
 
       }
 
+      /// Combine the variables of another copy of this analysis (typically on another thread) into this one.
       void combine(const Analysis* other)
       {
         const Analysis_ATLAS_13TeV_ZGammaGrav_CONFNOTE_80invfb* specificOther
@@ -218,4 +232,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:38 +0000
+Updated on 2022-08-02 at 23:34:49 +0000

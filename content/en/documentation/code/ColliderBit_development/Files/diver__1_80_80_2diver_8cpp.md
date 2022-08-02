@@ -70,6 +70,19 @@ scanner_plugin(
 ```
 //  GAMBIT: Global and Modular BSM Inference Tool
 //  *********************************************
+///  \file
+///
+///  ScannerBit interface to Diver 1.0.0
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)
+///  \date 2015 June
+///
+///  *********************************************
 
 #include <vector>
 #include <limits>
@@ -81,6 +94,9 @@ scanner_plugin(
 #include "gambit/Utils/util_functions.hpp"
 #include "gambit/Utils/variadic_functions.hpp"
 
+/// =================================================
+/// Interface to ScannerBit
+/// =================================================
 
 scanner_plugin(diver, version(1, 0, 0))
 {
@@ -223,6 +239,9 @@ scanner_plugin(diver, version(1, 0, 0))
 
 }
 
+/// =================================================
+/// Function definitions
+/// =================================================
 
 namespace Gambit
 {
@@ -261,4 +280,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:37 +0000
+Updated on 2022-08-02 at 23:34:48 +0000

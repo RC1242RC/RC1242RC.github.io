@@ -55,11 +55,24 @@ typedef std::set<Chunk,ChunkLess> ChunkSet;
 ```
 //  GAMBIT: Global and Modular BSM Inference Tool
 //  *********************************************
+///  \file
+///
+/// Chunk data objects for postprocessor
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
 //
+///  \author Ben Farmer
+///          (ben.farmer@gmail.com)
+///  \date 2016 Mar, 2017 Jan, Feb, Mar
+///
+///  *********************************************
 
 #ifndef __postprocessor_chunks_hpp__
 #define __postprocessor_chunks_hpp__
 
+/// Struct to describe start and end indices for a chunk of data
 struct Chunk
 {
   std::size_t start; // Index of first point in this chunk
@@ -127,4 +140,4 @@ typedef std::set<Chunk,ChunkLess> ChunkSet; // Actually I want ordered sets now
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:36 +0000
+Updated on 2022-08-02 at 23:34:53 +0000

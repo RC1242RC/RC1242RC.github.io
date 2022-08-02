@@ -111,4 +111,4 @@ Member [Gambit::SpecBit::get_MSSM_spectrum_from_SLHAstruct](/documentation/code/
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:40 +0000
+Updated on 2022-08-02 at 23:34:50 +0000

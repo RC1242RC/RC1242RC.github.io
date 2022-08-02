@@ -52,6 +52,18 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  The SetHooks.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Chris Chang
+///  \date Sep 2020
+///
+///  *********************************************
 
 #pragma once
 
@@ -68,6 +80,7 @@ namespace Gambit
   namespace ColliderBit
   {
 
+    /// A templated class specific for the UserHooks.
     template <typename PythiaT, typename EventT>
     class SetHooks
     {
@@ -92,4 +105,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:49 +0000

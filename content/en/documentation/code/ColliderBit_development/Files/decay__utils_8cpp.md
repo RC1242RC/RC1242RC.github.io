@@ -46,6 +46,20 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Function definitions for DecayBit decay
+///  utilities.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)
+///  \date 2015 May
+///
+///  *********************************************
 
 #include "gambit/DecayBit/decay_utils.hpp"
 
@@ -55,6 +69,7 @@ namespace Gambit
   namespace DecayBit
   {
 
+    /// Construct a decay table entry for a particle, from the entry for its antiparticle
     DecayTable::Entry CP_conjugate(const DecayTable::Entry& in)
     {
       DecayTable::Entry out;
@@ -99,4 +114,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:37 +0000
+Updated on 2022-08-02 at 23:34:48 +0000

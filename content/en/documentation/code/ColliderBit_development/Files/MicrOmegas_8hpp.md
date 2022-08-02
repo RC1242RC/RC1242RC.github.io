@@ -61,6 +61,24 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Definitions of container classes
+///  for the micrOMEGAs backend.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Jonathan Cornell
+///          (jcornell@ucsc.edu)
+///  \date 2014 Sep
+///
+///  \author Ankit Beniwal
+///          (ankit.beniwal@adelaide.edu.au)
+///  \date 2016 Aug
+///
+///  *********************************************
 
 #ifndef __MicrOmegas_types_hpp__
 #define __MicrOmegas_types_hpp__
@@ -80,4 +98,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:49 +0000

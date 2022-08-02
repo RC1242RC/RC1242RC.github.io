@@ -39,6 +39,21 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Implementations of helper functions for
+///  python_function and python_variable
+///  classes.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)
+///  \date 2017 Dec
+///
+///  *********************************************
 
 #include "gambit/cmake/cmake_variables.hpp"
 
@@ -53,9 +68,13 @@ namespace Gambit
   namespace Backends
   {
 
+    /// Helper functions to cast void result of python functions to voids for returning from the python_function object.
     template <>
     void return_cast<void>(pybind11::object o) { return static_cast<void>(o); }
 
+    /// Takes a function or variable name as a full path within a package, and returns the path to the containing submodule
+    /// and the bare name of the function or variable.  Returns an empty string for the path when the function or variable
+    /// is not inside a submodule.
     sspair split_qualified_python_name(str s, str m)
     {
       std::vector<str> split_s = Utils::delimiterSplit(s, ".");
@@ -79,4 +98,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:40 +0000
+Updated on 2022-08-02 at 23:34:50 +0000

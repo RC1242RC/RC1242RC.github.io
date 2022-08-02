@@ -62,6 +62,38 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Functions of module SpecBit
+///
+///  Vacuum stability functions,
+///  including interface to VevaciousPlusPlus.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author James McKay
+///           (j.mckay14@imperial.ac.uk)
+///  \date 2015 Nov - 2016 Mar
+///
+///  \author José Eliel Camargo-Molina
+///          (elielcamargomolina@gmail.com)
+///  \date Jun 2018++
+///
+///  \author Sanjay Bloor
+///          (sanjay.bloor12@imperial.ac.uk)
+///  \date Sep 2019
+///
+///  \author Janina Renk
+///          (janina.renk@fysik.su.se)
+///  \date 2019 July, Dec
+///
+///  \author Tomas Gonzalo
+///          (tomas.gonzalo@monash.edu)
+///  \date 2020 Sep
+///
+///  *********************************************
 
 #include <string>
 #include <sstream>
@@ -461,6 +493,9 @@ namespace Gambit
     /* Vacuum stability likelihoods & results */
     /******************************************/
 
+    /// Vacuum stability likelihood from a Vevacious run
+    /// calculating the lifetime of & tunneling probability to the
+    /// vacuua
     void get_likelihood_VS(double &result)
     {
         using namespace Pipes::get_likelihood_VS;
@@ -491,6 +526,7 @@ namespace Gambit
         result= -  1 / ( lifetime/conversion ) * exp(140) * (1/1.2e19)  ;
     }
 
+    /// get all results from VS as str to dbl map to easily print them
     void get_VS_results(map_str_dbl &result)
     {
         using namespace Pipes::get_VS_results;
@@ -512,6 +548,8 @@ namespace Gambit
     /* VEVACIOUS ROUTINES */
     /**********************/
 
+    /// Helper function that takes any YAML options and makes the vevacious input,
+    /// in the form of .xml files.
     void make_vpp_inputs(map_str_str &opts)
     {
         static bool firstrun = true;
@@ -932,6 +970,11 @@ namespace Gambit
     }
 
 
+    /// Create a string set containing a list with all likelihoods that vevacious
+    /// should calculate. The options are tunneling to
+    /// - the global minimum -> "global"
+    /// - the nearest minimum -> "nearest"
+    /// Default behaviour (if no sub-capabilities are set): calculate both
     void set_panic_vacua(std::set<std::string> & result)
     {
       using namespace Pipes::set_panic_vacua;
@@ -969,6 +1012,11 @@ namespace Gambit
       }
     }
 
+    /// Create a string set containing a list of the tunnelling strategies
+    /// that vevacious should use. This could be
+    /// - quantum (zero-T) tunnelling to new minimum -> "quantum"
+    /// - thermal (finiite-T) tunnelling to new minimum -> "thermal"
+    /// Default behaviour is both
     void set_tunnelling_strategy(std::set<std::string> &result)
     {
       using namespace Pipes::set_tunnelling_strategy;
@@ -1015,6 +1063,11 @@ namespace Gambit
       }
     }
 
+    /// Set tunnelling strategy for the different minima, either
+    /// - JustQuantum -> only quantum
+    /// - JustThermal -> only thermal or
+    /// - QuantumThenThermal -> both
+    /// depending on the strategy provided from the sub-capabilities
     str helper_set_tunnelingStrategy(std::set<std::string> tunnelling_strategy)
     {
 
@@ -1053,6 +1106,8 @@ namespace Gambit
       return "";
     }
 
+    /// Parses the YAML file for any settings, then passes to make_vpp_inputs to create
+    /// .xml files for vevacious to run with.
     void initialize_vevacious(std::string &inputspath)
     {
         using namespace Pipes::initialize_vevacious;
@@ -1093,6 +1148,11 @@ namespace Gambit
         // Done.
     }
 
+    /// Execute the passing of the spectrum object (as SLHAea) to vevacious. It is a helper function and not a
+    /// capability since this has to be executed before every single vevacious run. vevacious can run multiple times for
+    /// a single point in parameter space depending on settings:
+    ///   -> global and/or nearest minimum for tunneling requested?
+    ///   -> multiple attempts for one vevacious run allowed?
     vevacious_1_0::VevaciousPlusPlus::VevaciousPlusPlus exec_pass_spectrum_to_vevacious(SpectrumEntriesForVevacious &pass_spectrum )
     {
 
@@ -1115,6 +1175,8 @@ namespace Gambit
         return vevaciousPlusPlus;
       }
 
+    /// Call vevacious, the result is either "Stable", "Metastable" or "Inconclusive" in case
+    /// a vevacious run failed for some reason
     void helper_run_vevacious(vevacious_1_0::VevaciousPlusPlus::VevaciousPlusPlus &vevaciousPlusPlus,VevaciousResultContainer& result, std::string panic_vacuum, std::string inputPath)
     {
 
@@ -1210,6 +1272,8 @@ namespace Gambit
     }
 
 
+    /// Decide how to deal with a failed vevacious run --> set lifetime and thermalProbability
+    /// conservatively to a value easy to identify in analysis
     void helper_catch_vevacious(VevaciousResultContainer& result, std::string panic_vacuum)
     {
 
@@ -1227,6 +1291,9 @@ namespace Gambit
 
     }
 
+    /// If tunnelling to global and nearest vacuum are requested, this
+    /// capability compares if the two vacua are the same.
+    /// Return true if they coincide, false if not.
     void compare_panic_vacua(map_str_str &result)
     {
       using namespace Pipes::compare_panic_vacua;
@@ -1284,6 +1351,7 @@ namespace Gambit
     }
 
 
+    /// Check stability of global vacuum of the potential with vevacious
     void check_vacuum_stability_vevacious(VevaciousResultContainer &result)
     {
         using namespace Pipes::check_vacuum_stability_vevacious;
@@ -1339,6 +1407,7 @@ namespace Gambit
     /* MSSM */
     /********/
 
+    /// Tell GAMBIT which files to work with for the MSSM.
     void vevacious_file_location_MSSM(map_str_str &result)
     {
         namespace myPipe = Pipes::vevacious_file_location_MSSM;
@@ -1372,6 +1441,10 @@ namespace Gambit
         result["ModelFile"] = modelfilesPath + "ModelFile.vin";
     }
 
+    /// This function adds all entries of the spectrum object (as SLHAea) that need to be passed to vevacious
+    /// to an instance of type SpectrumEntriesForVevacious. The actual passing happens in the helper function
+    /// exec_pass_spectrum_to_vevacious which gets executed every time before a vevacious call.
+    /// Model dependent.
     void prepare_pass_MSSM_spectrum_to_vevacious(SpectrumEntriesForVevacious &result)
     {
         namespace myPipe = Pipes::prepare_pass_MSSM_spectrum_to_vevacious;
@@ -1637,4 +1710,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:45 +0000
+Updated on 2022-08-02 at 23:34:55 +0000

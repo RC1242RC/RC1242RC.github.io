@@ -368,6 +368,20 @@ LOAD_LIBRARY SPheno_internal Farray_Freal8_1_3 Farray_Freal8_1_3 Farray_Freal8_1
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Backend macros for SPheno 4.0.3
+///  (out of the box version)
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Tomas Gonzalo
+///          (tomas.gonzalo@monash.edu)
+///  \date 2020 Apr
+///
+///  *********************************************
 
 #define BACKENDNAME SPheno
 #define BACKENDLANG FORTRAN
@@ -679,4 +693,4 @@ BE_CONV_FUNCTION(ErrorHandling, void, (const int&), "SPheno_internal")
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:55 +0000

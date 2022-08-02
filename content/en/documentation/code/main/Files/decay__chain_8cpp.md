@@ -51,6 +51,23 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Implementation of classes and functions for decay chain setup
+///  Currently only accepts 2-body decays in each step,
+///  and assumes that particles decay isotropically in their CM system (like
+///  scalars).  Does not allow massless particles as intermediate states.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Lars A. Dal
+///          (l.a.dal@fys.uio.no)
+///  \date 2014 Oct, Nov, Dec
+///  \date 2015 Jan
+///
+///  *********************************************
 
 #include "gambit/Elements/gambit_module_headers.hpp"
 #include "gambit/DarkBit/DarkBit_rollcall.hpp"
@@ -1002,4 +1019,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:37 +0000
+Updated on 2022-08-02 at 23:34:54 +0000

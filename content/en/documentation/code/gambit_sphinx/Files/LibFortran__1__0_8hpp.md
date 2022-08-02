@@ -135,6 +135,17 @@ LOAD_LIBRARY double int average_;
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  A fortran backend-frontend example.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+/// \author Anders Kvellestad
+///
+///  *****************************************
 
 
 #define BACKENDNAME LibFortran
@@ -183,4 +194,4 @@ END_BE_INI_FUNCTION
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:41 +0000
+Updated on 2022-08-02 at 23:34:50 +0000

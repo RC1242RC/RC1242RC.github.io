@@ -83,6 +83,26 @@ BE_INI_FUNCTION {
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Frontend header for the gamLike backend.
+///
+///  Compile-time registration of available 
+///  functions and variables from this backend.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Christoph Weniger
+///          (c.weniger@uva.nl)
+///  \date 2016 Feb
+///
+///  \author Sebastian Wild
+///          (sebastian.wild@ph.tum.de)
+///  \date 2016 Aug
+///
+///  *********************************************
 
 #include "gambit/Backends/frontend_macros.hpp"
 #include "gambit/Backends/frontends/gamLike_1_0_0.hpp"
@@ -105,4 +125,4 @@ END_BE_INI_FUNCTION
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:56 +0000

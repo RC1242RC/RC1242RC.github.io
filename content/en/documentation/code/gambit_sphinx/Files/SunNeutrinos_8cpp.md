@@ -56,6 +56,28 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Solar neutrino likelihoods.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Pat Scott
+///          (pscott@imperial.ac.uk)
+///  \date 2015 Apr
+///        2018 Sep
+///
+///  \author Sebastian Wild
+///          (sebastian.wild@ph.tum.de)
+///  \date 2016 Aug
+///
+///  \author Ankit Beniwal
+///          (ankit.beniwal@adelaide.edu.au)
+///  \date 2018 Jan, Aug
+///
+///  *********************************************
 
 #include "gambit/Elements/gambit_module_headers.hpp"
 #include "gambit/DarkBit/DarkBit_rollcall.hpp"
@@ -69,10 +91,15 @@ namespace Gambit
   namespace DarkBit
   {
 
+    //////////////////////////////////////////////////////////////////////////
     //
     //            Neutrino telescope likelihoods and observables
     //
+    //////////////////////////////////////////////////////////////////////////
 
+    /*! \brief Capture rate of regular dark matter in the Sun (no v-dependent
+     *         or q-dependent cross-sections) (s^-1). DarkSUSY 5 version.
+     */
     void capture_rate_Sun_const_xsec_DS5(double &result)
     {
       using namespace Pipes::capture_rate_Sun_const_xsec_DS5;
@@ -89,6 +116,9 @@ namespace Gambit
 
     }
 
+    /*! \brief Capture rate of regular dark matter in the Sun (no v-dependent
+     *         or q-dependent cross-sections) (s^-1). DarkSUSY 6 version.
+     */
     void capture_rate_Sun_const_xsec(double &result)
     {
       using namespace Pipes::capture_rate_Sun_const_xsec;
@@ -109,6 +139,7 @@ namespace Gambit
 
     }
 
+    ///Alternative to the darkSusy fct, using captn_specific from capgen instead
     void capture_rate_Sun_const_xsec_capgen(double &result)
     {
       using namespace Pipes::capture_rate_Sun_const_xsec_capgen;
@@ -127,6 +158,10 @@ namespace Gambit
 
     }
 
+    ///Capture rate for v^n and q^n-dependent cross sections.
+    ///Isoscalar (same proton/neutron coupling)
+    ///SD only couples to Hydrogen.
+    ///See DirectDetection.cpp to see how to define the cross sections sigma_SD_p, sigma_SI_pi
     void capture_rate_Sun_vnqn(double &result)
     {
       using namespace Pipes::capture_rate_Sun_vnqn;
@@ -253,6 +288,9 @@ namespace Gambit
       }
     }
 
+    /*! \brief Equilibration time for capture and annihilation of dark matter
+     * in the Sun (s)
+     */
     void equilibration_time_Sun(double &result)
     {
       using namespace Pipes::equilibration_time_Sun;
@@ -291,6 +329,7 @@ namespace Gambit
       // std::cout << "capture_rate_Sun inside equilibration_time_Sun = " << *Dep::capture_rate_Sun << std::endl;
     }
 
+    /// Annihilation rate of dark matter in the Sun (s^-1)
     void annihilation_rate_Sun(double &result)
     {
       using namespace Pipes::annihilation_rate_Sun;
@@ -298,6 +337,7 @@ namespace Gambit
       result = *Dep::capture_rate_Sun * 0.5 * pow(tanh(tt_sun),2.0);
     }
 
+    /// Neutrino yield function pointer and setup
     void nuyield_from_DS(nuyield_info &result)
     {
 
@@ -555,7 +595,17 @@ namespace Gambit
 
     }
 
+    /// \brief Likelihood calculators for different IceCube event samples
+    /// These functions all include the likelihood of the background-only model for the respective sample.
+    /// We define the final log-likelihood as delta = sum over analyses of (lnL_model - lnL_BG), conservatively
+    /// forbidding delta > 0 in order to always just use the neutrino likelihood as a limit.  This ignores small
+    /// low-E excesses caused by impending breakdown of approximations used in IceCube response data and the nulike
+    /// likelihood at very low E. This implies conditioning on all but one parameter (e.g. the cross-section),
+    /// such that including any particular IC analysis adds just *one* additional degree of freedom to the fit.
+    /// @{
 
+    /// \brief 22-string IceCube sample: predicted signal and background
+    /// counts, observed counts and likelihoods.
     void IC22_full(nudata &result)
     {
       using namespace Pipes::IC22_full;
@@ -566,6 +616,7 @@ namespace Gambit
       char experiment[300] = "IC-22";
       void* context = NULL;
       double theoryError = (*Dep::mwimp > 100.0 ? 0.05*sqrt(*Dep::mwimp*0.01) : 0.05);
+      /// Option nulike_speed<int>: Speed setting for nulike backend (default 3)
       int speed = runOptions->getValueOrDef<int>(3,"nulike_speed");
       BEreq::nubounds(experiment[0], *Dep::mwimp, *Dep::annihilation_rate_Sun,
           byVal(Dep::nuyield_ptr->pointer), sigpred, bgpred, totobs, lnLike, pval, 4,
@@ -585,6 +636,8 @@ namespace Gambit
       }
     }
 
+    /// \brief 79-string IceCube WH sample: predicted signal and background
+    /// counts, observed counts and likelihoods.
     void IC79WH_full(nudata &result)
     {
       static bool first = true;
@@ -595,6 +648,7 @@ namespace Gambit
       char experiment[300] = "IC-79 WH";
       void* context = NULL;
       double theoryError = (*Dep::mwimp > 100.0 ? 0.05*sqrt(*Dep::mwimp*0.01) : 0.05);
+      /// Option nulike_speed<int>: Speed setting for nulike backend (default 3)
       int speed = runOptions->getValueOrDef<int>(3,"nulike_speed");
       BEreq::nubounds(experiment[0], *Dep::mwimp, *Dep::annihilation_rate_Sun,
           byVal(Dep::nuyield_ptr->pointer), sigpred, bgpred, totobs, lnLike, pval, 4,
@@ -614,6 +668,8 @@ namespace Gambit
       }
     }
 
+    /// \brief 79-string IceCube WL sample: predicted signal and background
+    /// counts, observed counts and likelihoods.
     void IC79WL_full(nudata &result)
     {
       static bool first = true;
@@ -624,6 +680,7 @@ namespace Gambit
       char experiment[300] = "IC-79 WL";
       void* context = NULL;
       double theoryError = (*Dep::mwimp > 100.0 ? 0.05*sqrt(*Dep::mwimp*0.01) : 0.05);
+      /// Option nulike_speed<int>: Speed setting for nulike backend (default 3)
       int speed = runOptions->getValueOrDef<int>(3,"nulike_speed");
       BEreq::nubounds(experiment[0], *Dep::mwimp, *Dep::annihilation_rate_Sun,
           byVal(Dep::nuyield_ptr->pointer), sigpred, bgpred, totobs, lnLike, pval, 4,
@@ -643,6 +700,8 @@ namespace Gambit
       }
     }
 
+    /// \brief 79-string IceCube SL sample: predicted signal and background
+    /// counts, observed counts and likelihoods.
     void IC79SL_full(nudata &result)
     {
       static bool first = true;
@@ -653,6 +712,7 @@ namespace Gambit
       char experiment[300] = "IC-79 SL";
       void* context = NULL;
       double theoryError = (*Dep::mwimp > 100.0 ? 0.05*sqrt(*Dep::mwimp*0.01) : 0.05);
+      /// Option nulike_speed<int>: Speed setting for nulike backend (default 3)
       int speed = runOptions->getValueOrDef<int>(3,"nulike_speed");
       BEreq::nubounds(experiment[0], *Dep::mwimp, *Dep::annihilation_rate_Sun,
           byVal(Dep::nuyield_ptr->pointer), sigpred, bgpred, totobs, lnLike, pval, 4,
@@ -671,7 +731,10 @@ namespace Gambit
         first = false;
       }
     }
+    /// @}
 
+    /// 22-string extractor module functions
+    /// @{
     void IC22_signal (double &result)   {
       result = Pipes::IC22_signal ::Dep::IC22_data->signal;      }
     void IC22_bg     (double &result)   {
@@ -684,7 +747,10 @@ namespace Gambit
       result = Pipes::IC22_bgloglike::Dep::IC22_data->bgloglike; }
     void IC22_pvalue (double &result)   {
       result = Pipes::IC22_pvalue ::Dep::IC22_data->pvalue;      }
+    /// @}
 
+    /// 79-string WH extractor module functions
+    /// @{
     void IC79WH_signal (double &result)   {
       result = Pipes::IC79WH_signal ::Dep::IC79WH_data->signal;      }
     void IC79WH_bg     (double &result)   {
@@ -697,7 +763,10 @@ namespace Gambit
       result = Pipes::IC79WH_bgloglike::Dep::IC79WH_data->bgloglike; }
     void IC79WH_pvalue (double &result)   {
       result = Pipes::IC79WH_pvalue ::Dep::IC79WH_data->pvalue;      }
+    /// @}
 
+    /// 79-string WL extractor module functions
+    /// @{
     void IC79WL_signal (double &result)   {
       result = Pipes::IC79WL_signal ::Dep::IC79WL_data->signal;      }
     void IC79WL_bg     (double &result)   {
@@ -710,7 +779,10 @@ namespace Gambit
       result = Pipes::IC79WL_bgloglike::Dep::IC79WL_data->bgloglike; }
     void IC79WL_pvalue (double &result)   {
       result = Pipes::IC79WL_pvalue ::Dep::IC79WL_data->pvalue;      }
+    /// @}
 
+    /// 79-string SL extractor module functions
+    /// @{
     void IC79SL_signal (double &result)   {
       result = Pipes::IC79SL_signal ::Dep::IC79SL_data->signal;      }
     void IC79SL_bg     (double &result)   {
@@ -723,7 +795,9 @@ namespace Gambit
       result = Pipes::IC79SL_bgloglike::Dep::IC79SL_data->bgloglike; }
     void IC79SL_pvalue (double &result)   {
       result = Pipes::IC79SL_pvalue ::Dep::IC79SL_data->pvalue;      }
+    /// @}
 
+    /// Composite IceCube 79-string likelihood function.
     void IC79_loglike(double &result)
     {
       using namespace Pipes::IC79_loglike;
@@ -733,6 +807,7 @@ namespace Gambit
       if (result > 0.0) result = 0.0;
     }
 
+    /// Complete composite IceCube likelihood function.
     void IC_loglike(double &result)
     {
       using namespace Pipes::IC_loglike;
@@ -750,6 +825,7 @@ namespace Gambit
 #endif
     }
 
+    /// Function to set Local Halo Parameters in DarkSUSY (DS5 only)
     void DarkSUSY5_PointInit_LocalHalo_func(bool &result)
     {
       using namespace Pipes::DarkSUSY5_PointInit_LocalHalo_func;
@@ -761,6 +837,7 @@ namespace Gambit
       double vrot = LocalHaloParameters.vrot;
       double vd_3d = sqrt(3./2.)*LocalHaloParameters.v0;
       double vesc = LocalHaloParameters.vesc;
+      /// Option v_earth<double>: Keplerian velocity of the Earth around the Sun in km/s (default 29.78)
       double v_earth = runOptions->getValueOrDef<double>(29.78, "v_earth");
 
       BEreq::dshmcom->rho0 = rho0;
@@ -790,6 +867,7 @@ namespace Gambit
       return;
     }
 
+    /// Function to set Local Halo Parameters in DarkSUSY (DS 6)
     void DarkSUSY_PointInit_LocalHalo_func(bool &result)
     {
       using namespace Pipes::DarkSUSY_PointInit_LocalHalo_func;
@@ -800,6 +878,7 @@ namespace Gambit
       double vrot = LocalHaloParameters.vrot;
       double vd_3d = sqrt(3./2.)*LocalHaloParameters.v0;
       double vesc = LocalHaloParameters.vesc;
+      /// Option v_earth<double>: Keplerian velocity of the Earth around the Sun in km/s (default 29.78)
       double v_earth = runOptions->getValueOrDef<double>(29.78, "v_earth");
 
       BEreq::dshmcom->rho0 = rho0;
@@ -834,4 +913,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:49 +0000

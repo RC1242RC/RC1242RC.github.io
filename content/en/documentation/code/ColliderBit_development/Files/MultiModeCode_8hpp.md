@@ -61,6 +61,24 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Helper types for MultiModeCode backend.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Selim C. Hotinli
+///          selim.hotinli14@imperial.ac.uk
+///  \date 2017 June
+///  \date 2017 Oct
+///
+///  \author Tomas Gonzalo
+///          (tomas.gonzalo@monash.edu)
+///  \date 2020 Feb
+///
+///  *************************
 
 #include "gambit/Utils/util_types.hpp"
 
@@ -98,6 +116,7 @@ namespace Gambit
         int err = 0;
     };
 
+    /// Class containing the inputs used for inputs to MultiModeCode
     class Multimode_inputs
     {
         public:
@@ -137,4 +156,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:49 +0000

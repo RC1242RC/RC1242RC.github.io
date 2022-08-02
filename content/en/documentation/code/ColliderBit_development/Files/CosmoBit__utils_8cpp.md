@@ -45,6 +45,18 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Source code for utilities needed in module CosmoBit.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Janina Renk
+///          (janina.renk@fysik.su.se)
+///  \date 20190 Mar, June
+///  *********************************************
 
 #include "gambit/CosmoBit/CosmoBit_utils.hpp"
 #include "gambit/Utils/numerical_constants.hpp"
@@ -75,4 +87,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:38 +0000
+Updated on 2022-08-02 at 23:34:48 +0000

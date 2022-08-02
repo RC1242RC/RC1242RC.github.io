@@ -106,6 +106,21 @@ void cdiver(
 ```
 //  GAMBIT: Global and Modular BSM Inference Tool
 //  *********************************************
+///  \file
+///
+///  ScannerBit interface to Diver 1.0.2
+///
+///  Header file
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)
+///  \date 2017 June
+///
+///  *********************************************
 
 #ifndef __diver_hpp__
 #define __diver_hpp__
@@ -124,12 +139,14 @@ namespace Gambit
   namespace Diver_1_0_2
   {
 
+    /// Structure for passing likelihood and printer data through Diver to the objective function.
     struct diverScanData
     {
       Scanner::like_ptr likelihood_function;
       Scanner::printer_interface* printer;
     };
 
+    /// Function to be minimised by Diver
     double objective(double params[], const int param_dim, int &fcall, bool &quit, const bool validvector, void*& context);
 
   }
@@ -142,4 +159,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:37 +0000
+Updated on 2022-08-02 at 23:34:47 +0000

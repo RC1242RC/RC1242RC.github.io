@@ -43,6 +43,10 @@ namespace Gambit {
     using namespace HEPUtils;
 
 
+    /// @brief CMS Run 2 0-lepton jet+MET SUSY analysis, with 137/fb of data
+    ///
+    /// Based on: http://cms-results.web.cern.ch/cms-results/public-results/publications/SUS-19-006/index.html
+    ///
     class Analysis_CMS_13TeV_0LEP_137invfb : public Analysis {
     public:
 
@@ -145,6 +149,7 @@ namespace Gambit {
 
 
         // Photon isolation
+        /// @todo Sum should actually be over all calo particles
         vector<const Particle*> photons;
         for (const Particle* y : basephotons) {
           const double R = 0.3;
@@ -155,6 +160,7 @@ namespace Gambit {
         }
 
         // Electron isolation
+        /// @todo Sum should actually be over all non-e/mu calo particles
         vector<const Particle*> elecs;
         for (const Particle* e : baseelecs) {
           const double R = max(0.05, min(0.2, 10/e->pT()));
@@ -165,6 +171,7 @@ namespace Gambit {
         }
 
         // Muon isolation
+        /// @todo Sum should actually be over all non-e/mu calo particles
         vector<const Particle*> muons;
         for (const Particle* m : basemuons) {
           const double R = max(0.05, min(0.2, 10/m->pT()));
@@ -220,6 +227,7 @@ namespace Gambit {
       }
 
 
+      /// Combine the variables of another copy of this analysis (typically on another thread) into this one.
       void combine(const Analysis* other)
       {
         const Analysis_CMS_13TeV_0LEP_137invfb* specificOther = dynamic_cast<const Analysis_CMS_13TeV_0LEP_137invfb*>(other);
@@ -227,6 +235,7 @@ namespace Gambit {
       }
 
 
+      /// Register results objects with the results for each SR; obs & bkg numbers from the CONF note
       void collect_results() {
 
         add_result(SignalRegionData(_counters.at("SR1"), 11281., {12319., add_quad(85., 450.)} ));
@@ -276,4 +285,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:38 +0000
+Updated on 2022-08-02 at 23:34:54 +0000

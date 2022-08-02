@@ -86,6 +86,19 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Frontend header for the HepLike data package.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)
+///  \date 2019 July
+///
+///  *********************************************
 
 #define BACKENDNAME HepLikeData
 #define BACKENDLANG Data
@@ -103,4 +116,4 @@ LOAD_LIBRARY
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:48 +0000
+Updated on 2022-08-02 at 23:34:58 +0000

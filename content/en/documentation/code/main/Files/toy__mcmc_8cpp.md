@@ -58,7 +58,19 @@ scanner_plugin(
 ```
 //  GAMBIT: Global and Modular BSM Inference Tool
 //  *********************************************
+///  \file
+///
+///  Toy MCMC sampler.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
 //
+///  \author Gregory Martinez
+///          (gregory.david.martinez@gmail.com)
+///  \date 2013 August
+///
+///  *********************************************
 
 #ifdef WITH_MPI
 #include "gambit/Utils/begin_ignore_warnings_mpi.hpp"
@@ -240,4 +252,4 @@ scanner_plugin(toy_mcmc, version(1, 0, 0))
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:37 +0000
+Updated on 2022-08-02 at 23:34:53 +0000

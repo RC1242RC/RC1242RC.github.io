@@ -46,6 +46,20 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Routines for the interpolation of the yield
+///  tables from PPPC4DMID.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Patrick Stoecker
+///          (stoecker@physik.rwth-aachen.de)
+///  \date 2021 Mar
+///
+///  *********************************************
 
 #include "gambit/Elements/gambit_module_headers.hpp"
 #include "gambit/DarkBit/DarkBit_rollcall.hpp"
@@ -217,12 +231,14 @@ namespace Gambit
       }
     }
 
+    /// Conveninence function to get the gamma yield from the interpolated PPPC tables
     double PPPC_dNdE_gamma(double m, double x, std::string channel)
     {
       static PPPC_interpolation PPPC_object(GAMBIT_DIR "/DarkBit/data/AtProduction_gammas.dat");
       return PPPC_object(channel, m, x);
     }
 
+    /// Conveninence function to get the positiron yield from the interpolated PPPC tables
     double PPPC_dNdE_positron(double m, double x, std::string channel)
     {
       static PPPC_interpolation PPPC_object(GAMBIT_DIR "/DarkBit/data/AtProduction_positrons.dat");
@@ -236,4 +252,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:37 +0000
+Updated on 2022-08-02 at 23:34:48 +0000

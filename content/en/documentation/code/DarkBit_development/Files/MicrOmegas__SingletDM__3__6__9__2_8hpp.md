@@ -48,6 +48,24 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Common frontend declarations for MicrOmegas
+///  SingletDM versions.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Jonathan Cornell
+///  \date 2015 May
+///  \date 2017 April
+///
+/// \author Pat Scott
+///         (pat.scott@uq.edu.au)
+///  \date 2020 Sep
+///
+///  *********************************************
 
 BE_FUNCTION(assignVal, int, (char*,double),"assignVal","assignVal")
 BE_FUNCTION(vSigma, double, (double, double, int), "vSigma","vSigma")
@@ -78,4 +96,4 @@ BE_INI_DEPENDENCY(decay_rates, DecayTable)
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:48 +0000
+Updated on 2022-08-02 at 23:34:58 +0000

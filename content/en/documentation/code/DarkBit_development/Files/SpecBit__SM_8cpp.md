@@ -48,6 +48,22 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Functions of module SpecBit
+///
+///  SpecBit module functions related to the
+///  Standard Model.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Ben Farmer
+///          (benjamin.farmer@fysik.su.se)
+///    \date 2014 Sep - Dec, 2015 Jan - Mar
+///
+///  *********************************************
 
 #include <string>
 #include <sstream>
@@ -74,6 +90,7 @@ namespace Gambit
   {
     using namespace LogTags;
 
+    /// Construct a SubSpectrum object from SMInputs using QedQcdWrapper
     void get_QedQcd_spectrum(const SubSpectrum* &result)
     {
       // Access the pipes for this function to get model and parameter information, and dependencies
@@ -103,6 +120,7 @@ namespace Gambit
       result = &qedqcdspec;
     }
 
+    /// Get a Spectrum object wrapper for Standard-Model-only information
     void get_SM_spectrum(Spectrum &result)
     {
       namespace myPipe = Pipes::get_SM_spectrum;
@@ -139,6 +157,7 @@ namespace Gambit
       result = Spectrum(qedqcdspec,higgsspec,sminputs,&myPipe::Param,mass_cut,mass_ratio_cut);
     }
 
+    /// Put together the SM Higgs couplings
     void SM_higgs_couplings(HiggsCouplingsTable &result)
     {
       using namespace Pipes::SM_higgs_couplings;
@@ -153,6 +172,7 @@ namespace Gambit
       // Leave all the effective couplings for all neutral higgses set to unity (done at construction).
     }
 
+    /// @} End Gambit module functions
 
   } // end namespace SpecBit
 } // end namespace Gambit
@@ -161,4 +181,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:45 +0000
+Updated on 2022-08-02 at 23:34:55 +0000

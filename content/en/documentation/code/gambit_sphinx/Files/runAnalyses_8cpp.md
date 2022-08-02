@@ -99,6 +99,40 @@ Run all analyses for EXPERIMENT.
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Accumulator functions for ColliderBit
+///  analyses.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Abram Krislock
+///          (a.m.b.krislock@fys.uio.no)
+///
+///  \author Aldo Saavedra
+///
+///  \author Andy Buckley
+///
+///  \author Chris Rogan
+///          (crogan@cern.ch)
+///  \date 2014 Aug
+///  \date 2015 May
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)
+///  \date 2015 Jul
+///  \date 2018 Jan
+///  \date 2019 Jan, Feb
+///
+///  \author Anders Kvellestad
+///          (anders.kvellestad@fys.uio.no)
+///  \date   2017 March
+///  \date   2018 Jan
+///  \date   2018 May
+///
+///  *********************************************
 
 #include "gambit/ColliderBit/ColliderBit_eventloop.hpp"
 #include "gambit/ColliderBit/analyses/Analysis.hpp"
@@ -112,6 +146,7 @@ namespace Gambit
   namespace ColliderBit
   {
 
+    /// Run all the analyses in a given container
     void runAnalyses(AnalysisDataPointers& result,
                      #ifdef COLLIDERBIT_DEBUG
                        const str& detname,
@@ -201,6 +236,7 @@ namespace Gambit
 
     }
 
+    /// Run all analyses for EXPERIMENT
     #define RUN_ANALYSES(NAME, EXPERIMENT, SMEARED_EVENT_DEP)                 \
     void NAME(AnalysisDataPointers& result)                                   \
     {                                                                         \
@@ -221,4 +257,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:40 +0000
+Updated on 2022-08-02 at 23:34:50 +0000

@@ -62,6 +62,27 @@ Authors (add name and date if you modify):
 ```
 //  GAMBIT: Global and Modular BSM Inference Tool
 //  *********************************************
+///  \file
+///
+///  Abstract base class for a prior
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Ben Farmer
+///      (benjamin.farmer@monash.edu.au)
+///  \date 2013 Dec
+///
+///  \author Gregory Martinez
+///      (gregory.david.martinez@gmail.com)
+///  \date 2014 Feb
+///
+///  \author Andrew Fowlie
+///    (andrew.j.fowlie@qq.com)
+///  \date August 2020
+///
+///  *********************************************
 
 #ifndef __BASE_PRIORS_HPP__
 #define __BASE_PRIORS_HPP__
@@ -75,6 +96,9 @@ namespace Gambit
 {
   namespace Priors
   {
+    /**
+     * @brief Abstract base class for priors
+     */
     class BasePrior
     {
      private:
@@ -97,10 +121,13 @@ namespace Gambit
       explicit BasePrior(const std::string &param_name, const int param_size = 0) :
         param_size(param_size), param_names(1, param_name) {}
 
+      /** @brief Transform from unit hypercube to parameter */
       virtual void transform(const std::vector<double> &, std::unordered_map<std::string, double> &) const = 0;
 
+      /** @brief Transform from parameter back to unit hypercube */
       virtual std::vector<double> inverse_transform(const std::unordered_map<std::string, double> &) const = 0;
 
+      /** @brief Log of PDF density */
       virtual double operator()(const std::vector<double> &) const
       {
         Scanner::scan_error().raise(LOCAL_INFO, "operator() not implemented");
@@ -127,4 +154,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:48 +0000

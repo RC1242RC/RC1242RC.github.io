@@ -54,6 +54,23 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  ColliderBit (production) cross-section class.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)
+///  \date 2019 Feb
+///
+///  \author Anders Kvellestad
+///          (a.kvellestad@imperial.ac.uk)
+///  \date 2019 Sep
+///
+///  *********************************************
 
 #include <algorithm>
 #include <cassert>
@@ -68,7 +85,11 @@ namespace Gambit
   {
 
 
+    /// 
+    /// Definitions of xsec members
+    ///
 
+    /// Constructor
     xsec_container::xsec_container() : 
       _xsec(0),
       _xsecerr(0),
@@ -76,6 +97,7 @@ namespace Gambit
       _trust_level(1)
     { }
 
+    /// Public method to reset this instance for reuse, avoiding the need for "new" or "delete".
     void xsec_container::reset()
     {
       _xsec = 0;
@@ -84,15 +106,20 @@ namespace Gambit
       _trust_level = 1;
     }
 
+    /// Return the cross-section (in fb).
     double xsec_container::operator()() const { return _xsec; }
     double xsec_container::xsec() const { return _xsec; }
 
+    /// Return the cross-section error (in fb).
     double xsec_container::xsec_err() const { return _xsecerr; }
 
+    /// Return the cross-section relative error.
     double xsec_container::xsec_relerr() const { return _xsec > 0 ? _xsecerr/_xsec : 0; }
 
+    /// Set the cross-section and its error (in fb).
     void xsec_container::set_xsec(double xs, double xserr) { _xsec = xs; _xsecerr = xserr; }
 
+    /// Average cross-sections and combine errors.
     void xsec_container::average_xsec(double other_xsec, double other_xsecerr)
     {
       if (other_xsec > 0)
@@ -116,6 +143,7 @@ namespace Gambit
       average_xsec(other(), other.xsec_err());
     }
 
+    /// Sum cross-sections and add errors in quadrature.
     void xsec_container::sum_xsecs(double other_xsec, double other_xsecerr)
     {
       if (other_xsec > 0)
@@ -137,6 +165,7 @@ namespace Gambit
       sum_xsecs(other(), other.xsec_err());
     }
 
+    /// Get content as a <string,double> map (for easy printing).
     std::map<std::string, double> xsec_container::get_content_as_map() const
     {
       std::map<std::string, double> content_map;
@@ -160,24 +189,34 @@ namespace Gambit
       return content_map;
     }
 
+    /// Set the info string
     void xsec_container::set_info_string(std::string info_string_in) { _info_string = info_string_in; }
 
+    /// Get the info string
     std::string xsec_container::info_string() const { return _info_string; }
 
+    /// Set the trust level
     void xsec_container::set_trust_level(int trust_level_in) { _trust_level = trust_level_in; }
 
+    /// Get the info string
     int xsec_container::trust_level() const { return _trust_level; }
 
+    /// Set the unit string
     const std::string xsec_container::unit = "fb";
 
 
 
+    /// 
+    /// Definitions of MC_xsec_container members
+    ///
 
+    /// Constructor
     MC_xsec_container::MC_xsec_container() : 
       xsec_container::xsec_container(),
       _ntot(0)
     { }
 
+    /// Public method to reset this instance for reuse, avoiding the need for "new" or "delete".
     void MC_xsec_container::reset()
     {
       xsec_container::reset();
@@ -194,14 +233,19 @@ namespace Gambit
       }
     }
 
+    /// Increment the number of events seen so far
     void MC_xsec_container::log_event() { _ntot += 1; }
 
+    /// Return the total number of events seen so far.
     long long MC_xsec_container::num_events() const { return _ntot; }
 
+    /// Return the cross-section per event seen (in fb).
     double MC_xsec_container::xsec_per_event() const { return (_xsec >= 0 && _ntot > 0) ? _xsec/_ntot : 0; }
 
+    /// Set the total number of events seen so far.
     void MC_xsec_container::set_num_events(long long n) { _ntot = n; }
 
+    /// Average cross-sections and combine errors.
     void MC_xsec_container::average_xsec(double other_xsec, double other_xsecerr, long long other_ntot)
     {
       // Run base class function
@@ -220,6 +264,7 @@ namespace Gambit
       MC_xsec_container::average_xsec(other(), other.xsec_err(), other.num_events());
     }
 
+    /// Sum cross-sections and add errors in quadrature.
     void MC_xsec_container::sum_xsecs(double other_xsec, double other_xsecerr, long long other_ntot)
     {
       // Run base class function
@@ -239,6 +284,7 @@ namespace Gambit
     }
 
 
+    /// Collect xsec predictions from other threads and do a weighted combination.
     void MC_xsec_container::gather_xsecs()
     {
       int this_thread = omp_get_thread_num();
@@ -250,6 +296,7 @@ namespace Gambit
       }
     }
 
+    /// Collect total events seen on all threads.
     void MC_xsec_container::gather_num_events()
     {
       int this_thread = omp_get_thread_num();
@@ -261,6 +308,7 @@ namespace Gambit
       }
     }
 
+    /// Get content as a <string,double> map (for easy printing).
     std::map<std::string, double> MC_xsec_container::get_content_as_map() const
     {
       // Get content from base class
@@ -281,11 +329,16 @@ namespace Gambit
       return content_map;
     }
 
+    /// A map with pointers to all instances of this class. The key is the thread number.
     std::map<int, const MC_xsec_container*> MC_xsec_container::instances_map;
 
 
 
+    /// 
+    /// Definitions of process_xsec_container members
+    ///
 
+    /// Constructor
     process_xsec_container::process_xsec_container() : 
       xsec_container::xsec_container(),
       _process_code(-1),
@@ -293,6 +346,7 @@ namespace Gambit
       _related_pid_pairs(std::vector<PID_pair>())
     { }
 
+    /// Public method to reset this instance for reuse, avoiding the need for "new" or "delete".
     void process_xsec_container::reset()
     {
       xsec_container::reset();
@@ -301,6 +355,7 @@ namespace Gambit
       _related_pid_pairs.clear();
     }
 
+    /// Average cross-sections and combine errors.
     void process_xsec_container::average_xsec(double other_xsec, double other_xsecerr)
     {
       // Run base class function
@@ -317,6 +372,7 @@ namespace Gambit
       process_xsec_container::average_xsec(other.xsec(), other.xsec_err());
     }
 
+    /// Sum cross-sections and add errors in quadrature.
     void process_xsec_container::sum_xsecs(double other_xsec, double other_xsecerr)
     {
       // Run base class function
@@ -334,15 +390,21 @@ namespace Gambit
     }
 
 
+    /// Return the process code
     int process_xsec_container::process_code() const 
     { return _process_code; }
 
+    /// Set the process code
     void process_xsec_container::set_process_code(int process_code_in) 
     { _process_code = process_code_in; } 
 
+    /// Return the list of process codes that share this cross-section 
+    /// (This is due to the many-to-many mapping between Pythia process 
+    /// codes and the PID pairs we use as basis for external cross-section calculations)
     const std::vector<int>& process_xsec_container::processes_sharing_xsec() const 
     { return _processes_sharing_xsec; }
 
+    /// Add a process code to the list of processes sharing this cross-section, 
     void process_xsec_container::register_process_sharing_xsec(int process_code_in) 
     { 
       if(std::find(_processes_sharing_xsec.begin(), _processes_sharing_xsec.end(), process_code_in) == _processes_sharing_xsec.end())
@@ -351,9 +413,11 @@ namespace Gambit
       }
     }
 
+    /// Return the list of PID pairs related to this cross-section
     const std::vector<PID_pair>& process_xsec_container::related_pid_pairs() const 
     { return _related_pid_pairs; } 
 
+    /// Add a PID pair to the list of PID pairs related to this cross-section
     void process_xsec_container::register_related_pid_pair(PID_pair pid_pair_in) 
     { 
       if(std::find(_related_pid_pairs.begin(), _related_pid_pairs.end(), pid_pair_in) == _related_pid_pairs.end())
@@ -364,7 +428,11 @@ namespace Gambit
 
 
 
+    /// 
+    /// Definitions of PID_pair_xsec_container members
+    ///
 
+    /// Constructor
     PID_pair_xsec_container::PID_pair_xsec_container() : 
       xsec_container::xsec_container(),
       _pid_pair(PID_pair()),
@@ -372,6 +440,7 @@ namespace Gambit
       _related_processes(std::vector<int>())
     { }
 
+    /// Public method to reset this instance for reuse, avoiding the need for "new" or "delete".
     void PID_pair_xsec_container::reset()
     {
       xsec_container::reset();
@@ -380,6 +449,7 @@ namespace Gambit
       _related_processes.clear();
     }
 
+    /// Average cross-sections and combine errors.
     void PID_pair_xsec_container::average_xsec(double other_xsec, double other_xsecerr)
     {
       // Run base class function
@@ -396,6 +466,7 @@ namespace Gambit
       PID_pair_xsec_container::average_xsec(other.xsec(), other.xsec_err());
     }
 
+    /// Sum cross-sections and add errors in quadrature.
     void PID_pair_xsec_container::sum_xsecs(double other_xsec, double other_xsecerr)
     {
       // Run base class function
@@ -412,15 +483,21 @@ namespace Gambit
       PID_pair_xsec_container::sum_xsecs(other.xsec(), other.xsec_err());
     }
 
+    /// Return the PID pair
     const PID_pair& PID_pair_xsec_container::pid_pair() const 
     { return _pid_pair; }
 
+    /// Set the PID pair
     void PID_pair_xsec_container::set_pid_pair(const PID_pair& pid_pair_in) 
     { _pid_pair = pid_pair_in; } 
 
+    /// Return the list of PID pairs that share this cross-section 
+    /// (This is due to the many-to-many mapping between Pythia process 
+    /// codes and the PID pairs we use as basis for external cross-section calculations)
     const std::vector<PID_pair>& PID_pair_xsec_container::pid_pairs_sharing_xsec() const 
     { return _pid_pairs_sharing_xsec; }
 
+    /// Add a PID pair to the list of PID pairs sharing this cross-section 
     void PID_pair_xsec_container::register_pid_pair_sharing_xsec(PID_pair pid_pair_in) 
     { 
       if(std::find(_pid_pairs_sharing_xsec.begin(), _pid_pairs_sharing_xsec.end(), pid_pair_in) == _pid_pairs_sharing_xsec.end())
@@ -429,9 +506,11 @@ namespace Gambit
       }
     }
 
+    /// Return the list of process codes related to this cross-section
     const std::vector<int>& PID_pair_xsec_container::related_processes() const 
     { return _related_processes; } 
 
+    /// Add a process code to the list of processes related to this cross-section
     void PID_pair_xsec_container::register_related_process(int process_code_in) 
     { 
       if(std::find(_related_processes.begin(), _related_processes.end(), process_code_in) == _related_processes.end())
@@ -448,4 +527,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:38 +0000
+Updated on 2022-08-02 at 23:34:49 +0000

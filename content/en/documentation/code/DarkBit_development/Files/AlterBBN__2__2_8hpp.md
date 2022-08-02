@@ -98,6 +98,31 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Frontend for AlterBBN v 2.2
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Janina Renk
+///          (janina.renk@fysik.su.se)
+///  \date   2018 Jun
+///
+///  \author Patrick Stöcker
+///          (stoecker@physik.rwth-aachen.de)
+///  \date 2019 Sep
+///
+///  \author Pat Scott
+///          (pat.scott@uq.edu.au)
+///  \date 2020 Apr
+///
+///  \author Tomas Gonzalo
+///          (gonzalo@physik.rwth-aachen.de)
+///  \date 2022 Jan
+///
+///  *********************************************
 
 
 #define BACKENDNAME AlterBBN
@@ -125,4 +150,4 @@ BE_CONV_FUNCTION(call_nucl, int, (map_str_dbl&,double*), "call_nucl")
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:48 +0000
+Updated on 2022-08-02 at 23:34:58 +0000

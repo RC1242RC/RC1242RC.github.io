@@ -72,6 +72,57 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Source code for types for module DarkBit.
+///  For instructions on adding new types, see
+///  the corresponding header.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Christoph Weniger
+///          (c.weniger@uva.nl)
+///  \date 2012 Mar, 2014 Jan
+///
+///  \author Torsten Bringmann
+///          (torsten.bringmann@fys.uio.no)
+///  \date 2013 Jun
+///
+///  \author Pat Scott
+///          (pat.scott@uq.edu.au)
+///  \date 2013 Oct
+///  \date 2014 Jan, Apr
+///  \date 2015 Mar
+///  \date 2020 Dec
+///
+///  \author Lars A. Dal
+///          (l.a.dal@fys.uio.no)
+///  \date 2014 Mar, Jul, Sep, Oct, Dec
+///  \date 2015 Jan
+///
+///  \author Christopher Savage
+///          (chris@savage.name)
+///  \date 2015 Jan
+///
+///  \author Jonathan Cornell
+///          (jcornell@ucsc.edu)
+///  \date 2014
+///
+///  \author Sebastian Wild
+///          (sebastian.wild@ph.tum.de)
+///  \date 2016 Aug
+///
+///  \author Ben Farmer
+///          (benjamin.farmer@imperial.ac.uk)
+///  \date 2019 Jul
+///
+///  \author Tomas Gonzalo
+///          (gonzalo@physik.rwth-aachen.de)
+///  \date 2021 Sep
+///
+///  *********************************************
 
 
 #include <cmath>
@@ -98,6 +149,7 @@ namespace Gambit
 
     namespace
     {
+      /// Helper function to convert a "finalState" in the SimYield channel to its conjugated state.
       std::string get_conjugated_finalState(const std::string& finalState)
       {
         if (finalState=="e+_1") return "e-_1";
@@ -109,6 +161,7 @@ namespace Gambit
       }
     }
 
+    /// Helper function to get the mass of a given final state particle
     double get_finalState_mass(const std::string& finalState)
     {
       // Current "massive" final states that can occur in SimYieldTables.
@@ -120,6 +173,7 @@ namespace Gambit
       return 0.0;
     }
 
+    /// General annihilation/decay channel for sim yield tables
     SimYieldChannel::SimYieldChannel(daFunk::Funk dNdE, const std::string& p1, const std::string& p2, const std::string& finalState, double Ecm_min, double Ecm_max, safe_ptr<Options> runOptions)
     : dNdE(dNdE)
     , p1(p1)
@@ -183,6 +237,7 @@ namespace Gambit
       dNdE_bound = this->dNdE->bind("E", "Ecm");
     }
 
+    /// Sim yield table dummy constructor
     SimYieldTable::SimYieldTable() : dummy_channel(daFunk::zero("E", "Ecm"), "", "", "", 0.0, 0.0, safe_ptr<Options>()) {}
 
     void SimYieldTable::addChannel(daFunk::Funk dNdE, const std::string& p1, const std::string& p2, const std::string& finalState, double Ecm_min, double Ecm_max, safe_ptr<Options> runOptions)
@@ -254,16 +309,19 @@ namespace Gambit
       return channel_list[index];
     }
 
+    /// Retrieve simyield table entries at given center of mass energy (GeV)
     daFunk::Funk SimYieldTable::operator()(const std::string& p1, const std::string& p2, const std::string& finalState, double Ecm) const
     {
       return this->operator()(p1, p2, finalState)->set("Ecm", Ecm);
     }
 
+    /// Retrieve simyield table entries at given center of mass energy (GeV)
     daFunk::Funk SimYieldTable::operator()(const std::string& p1, const std::string& finalState, double Ecm) const
     {
       return this->operator()(p1,finalState)->set("Ecm", Ecm);
     }
 
+    /// Retrieve simyield table entries at given center of mass energy (GeV)
     daFunk::Funk SimYieldTable::operator()(const std::string& p1, const std::string& p2, const std::string& finalState) const
     {
       int index = findChannel(p1, p2, finalState);
@@ -327,4 +385,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:37 +0000
+Updated on 2022-08-02 at 23:34:48 +0000

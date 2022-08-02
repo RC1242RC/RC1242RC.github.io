@@ -58,6 +58,28 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Functions of module SpecBit
+///
+///  SpecBit module functions related to the
+///  VectorSingletDM model.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Ankit Beniwal
+///          (ankit.beniwal@adelaide.edu.au)
+///  \date 2016 Oct, Nov
+///  \date 2017 Jun, Sep
+///  \date 2018 Feb
+///
+///  \author Sanjay Bloor
+///          (sanjay.bloor12@imperial.ac.uk)
+///  \date 2018 Aug
+///
+///  *********************************************
 
 #include <string>
 #include <sstream>
@@ -85,6 +107,7 @@ namespace Gambit
     using namespace LogTags;
     using namespace flexiblesusy;
 
+    /// Get a (simple) Spectrum object wrapper for the VectorSingletDM_Z2 model
     void get_VectorSingletDM_Z2_spectrum(Spectrum& result)
     {
       namespace myPipe = Pipes::get_VectorSingletDM_Z2_spectrum;
@@ -169,6 +192,7 @@ namespace Gambit
 
     void fill_map_from_VectorSingletDM_Z2spectrum(std::map<std::string,double>& specmap, const Spectrum& vectordmspec)
     {
+      /// Add everything... use spectrum contents routines to automate task
       static const SpectrumContents::VectorSingletDM_Z2 contents;
       static const std::vector<SpectrumParameter> required_parameters = contents.all_parameters();
 
@@ -179,6 +203,7 @@ namespace Gambit
          const std::string      name  = it->name();
          const std::vector<int> shape = it->shape();
 
+         /// Verification routine should have taken care of invalid shapes etc, so won't check for that here.
 
          // Check scalar case
          if(shape.size()==1 and shape[0]==1)
@@ -227,4 +252,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:37 +0000
+Updated on 2022-08-02 at 23:34:47 +0000

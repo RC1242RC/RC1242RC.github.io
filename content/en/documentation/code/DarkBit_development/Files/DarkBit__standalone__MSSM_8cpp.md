@@ -102,6 +102,37 @@ int main(
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Example of GAMBIT DarkBit standalone
+///  main program.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Christoph Weniger
+///  \date 2016 Feb
+///
+///  \author Sebastian Wild
+///  \date 2016 Aug
+///
+///  \author Pat Scott
+///  \date 2016 Nov
+///
+///  \author Jonathan Cornell
+///  \date 2016-2017
+///
+///  \author Torsten Bringmann
+///  \date 2019 May, October
+///
+///  \author Anders Kvellestad
+///  \date 2020 Feb
+///
+///  \author Ankit Beniwal
+///  \date 2020
+///
+///  *********************************************
 
 #include "gambit/Elements/standalone_module.hpp"
 #include "gambit/DarkBit/DarkBit_rollcall.hpp"
@@ -134,6 +165,7 @@ namespace Gambit
     void createSpectrum(Spectrum& outSpec)
     {
       using namespace Pipes::createSpectrum;
+      /// Option inputFileName<std::string>: Input SLHA (required)
       std::string inputFileName = runOptions->getValue<std::string>("filename");
       std::cout << "Loading spectrum from: " << inputFileName << std::endl;
       outSpec = spectrum_from_SLHA<MSSMSimpleSpec>(inputFileName, Spectrum::mc_info(), Spectrum::mr_info());
@@ -143,6 +175,7 @@ namespace Gambit
     void createDecays(DecayTable& outDecays)
     {
       using namespace Pipes::createDecays;
+      /// Option inputFileName<std::string>: Input SLHA (required)
       std::string inputFileName = runOptions->getValue<std::string>("filename");
       std::cout << "Loading decays from: " << inputFileName << std::endl;
       outDecays = DecayTable(inputFileName, 0, true);
@@ -1838,4 +1871,4 @@ int main(int argc, char* argv[])
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:46 +0000
+Updated on 2022-08-02 at 23:34:56 +0000

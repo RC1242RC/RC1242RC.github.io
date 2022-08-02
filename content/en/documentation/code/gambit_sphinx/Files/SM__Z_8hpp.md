@@ -43,6 +43,28 @@ I refer to tables and equations in v1 ([https://arxiv.org/pdf/1804.10236v1](http
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  The \f$Z\f$-boson observables at two-loop from
+///
+///  Complete electroweak two-loop corrections to \f$Z\f$ boson production and
+///  decay
+///  Ievgen Dubovyk, Ayres Freitas, Janusz Gluza, Tord Riemann, Johann Usovitsch
+///  arXiv:1804.10236
+///
+///  I refer to tables and equations in v1 (https://arxiv.org/pdf/1804.10236v1).
+///
+///  \example SM_Z.cpp
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Andrew Fowlie
+///          (andrew.fowlie@monash.edu)
+///  \date 2018 May
+///
+///  *********************************************
 
 #ifndef DECAYBIT_INCLUDE_GAMBIT_DECAYBIT_SM_Z_HPP_
 #define DECAYBIT_INCLUDE_GAMBIT_DECAYBIT_SM_Z_HPP_
@@ -54,12 +76,18 @@ namespace Gambit {
   namespace DecayBit {
     namespace SM_Z {
 
+      /** 
+         @brief <ahref="
+         http://pdglive.lbl.gov/BranchingRatio.action?desig=9&parCode=S044
+         ">PDG</a> measurement of invisible width of \f$Z\f$ boson in GeV
+      */
       constexpr struct {
         const double mu = 499.0e-3;
         const double sigma = 1.5e-3;
       } gamma_inv;
 
 
+      /** @brief The central values of nuisances from eq. 13 */
       constexpr struct {
         const double mh_OS = 125.7;  // GeV
         const double mt_OS = 173.2;
@@ -70,6 +98,7 @@ namespace Gambit {
 
       constexpr int kRows = 12;
       constexpr int kCols = 9;
+      /** @brief Coefficient data in Table 5 with MeV converted to GeV */
       constexpr double table_5[kRows][kCols] = {
         {83.983e-3, -0.061e-3, 0.810e-3, -0.096e-3, -0.01e-3, 0.25e-3, -1.1e-3, 286e-3, 0.001e-3},
         {83.793e-3, -0.060e-3, 0.810e-3, -0.095e-3, -0.01e-3, 0.25e-3, -1.1e-3, 285.e-3, 0.001e-3},
@@ -85,11 +114,23 @@ namespace Gambit {
         {41489.6, 1.6, 60.0, -579.6, 38., 7.3, 85., 0.1},
       };
 
+      /**
+         @brief  Data in Table 6, though re-arranged to match columns in Table 5
+         with MeV converted to GeV
+         
+         The final entry isn't in the table and instead comes from the text below
+         eq. 16.
+      */
       constexpr double table_6[kRows] =
         {0.018e-3, 0.018e-3, 0.016e-3, 0.11e-3, 0.11e-3, 0.08e-3, 0.18e-3, 0.4e-3, 6.e-3, 5.e-5, 1.e-4, 6.};
 
 
       class TwoLoop {
+        /**
+           @brief \f$Z\f$-boson observables at two-loop and the residual theory errors
+           
+           @warning Do not apply any corrections outside the range of validity in p5
+        */
        public:
         // Partial widths in GeV
         double gamma_e() const {return observable(0);}
@@ -177,6 +218,10 @@ namespace Gambit {
         double delta_alpha_OS;
 
         bool nuisances_outside_ranges() {
+          /**
+             @returns Whether nuisance parameters are outside the ranges of validity
+             in p5
+          */
           return !((std::fabs(mh_OS - 125.1) < 5.) &&
                    (std::fabs(mt_OS - 173.2) < 4.) &&
                    (std::fabs(alpha_s_MSbar_MZ - 0.1184) < 0.005) &&
@@ -195,6 +240,13 @@ namespace Gambit {
           alpha_s_MSbar_MZ{alpha_s_MSbar_MZ},
           delta_alpha_OS{delta_alpha_OS}
           {
+          /**
+             @param mh_OS Higgs mass in OS scheme
+             @param mt_OS Top quark mass in OS scheme
+             @param MZ_OS \f$Z\f$-mass in OS scheme
+             @param alpha_s_MSbar_MZ Strong coupling in MS-bar scheme at \f$Q = M_Z\f$
+             @param delta_alpha_OS \f$\Delta\alpha\f$ parameter in OS scheme. Defined on p9
+          */
           if (nuisances_outside_ranges()) {
             std::cerr << "SM nuisance parameters outside range of validity for "
                          "two-loop Z formulas. Not accounting for variation in "
@@ -221,10 +273,23 @@ namespace Gambit {
         double delta_delta_alpha;
 
         double error(int row) const {
+          /**
+             @brief Error in observable calculated from eq. 13
+             
+             We add the error from the parametric formula and theory error in
+             quadrature.
+             
+             @param row Row number of Table 5 corresponding to quantity
+             @returns Error in quantity
+          */
           return std::sqrt(pow(table_5[row][8], 2) + pow(table_6[row], 2));
         }
 
         double observable(int row) const {
+          /**
+             @returns The observable calculated from eq. 13
+             @param row Row number of Table 5 corresponding to quantity
+          */    
           return table_5[row][0] +
                  table_5[row][1] * L_H +
                  table_5[row][2] * delta_t +
@@ -244,6 +309,15 @@ namespace Gambit {
         }
 
         double error_BR(int row) const {
+          /**
+             @warning We propagate an error in \f$f = x / y\f$. In fact, though, we
+             should propagate an error in \f$f = x / (x + y)\f$, since the partial
+             width in the numerator contributes to the total width. Thus this formula
+             is reliable only for small branching ratios.
+
+             @param row Row number of Table 7 corresponding to quantity
+             @returns Error in a branching ratio found by propagating errors
+          */
           const double frac_error_sq = pow(error_gamma_total() / gamma_total(), 2)
             + pow(error(row) / observable(row), 2);
           return std::sqrt(frac_error_sq) * BR(row);
@@ -260,4 +334,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:48 +0000

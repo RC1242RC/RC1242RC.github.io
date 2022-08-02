@@ -100,6 +100,33 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Implementation of DiracSingletDM routines.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Ankit Beniwal
+///          (ankit.beniwal@adelaide.edu.au)
+///  \date Oct 2016
+///  \date Jun, Sep 2017
+///  \date Mar 2018
+///
+///  \author Sanjay Bloor
+///          (sanjay.bloor12@imperial.ac.uk)
+///  \date Nov 2017, Aug 2018
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)
+///  \date Sep 2018
+///
+///  \author Felix Kahlhofer
+///          (kahlhoefer@physik.rwth-aachen.de)
+///  \date 2020 May
+///
+///  *********************************************
 
 #include "gambit/Elements/gambit_module_headers.hpp"
 #include "gambit/Elements/virtual_higgs.hpp"
@@ -117,6 +144,7 @@ namespace Gambit
     class DiracSingletDM
     {
       public:
+        /// Initialize DiracSingletDM object (branching ratios etc)
         DiracSingletDM(
             TH_ProcessCatalog* const catalog,
             double gammaH,
@@ -135,11 +163,18 @@ namespace Gambit
         };
         ~DiracSingletDM() {}
 
+        /// Helper function (Breit-Wigner)
         double Dh2 (double s)
         {
           return 1/((s-mh*mh)*(s-mh*mh)+mh*mh*Gamma_mh*Gamma_mh);
         }
 
+        /*! \brief Returns <sigma v> in cm3/s for given channel, velocity and
+         *         model parameters.
+         *
+         * channel: bb, tautau, mumu, ss, cc, tt, gg, gammagamma, Zgamma, WW,
+         * ZZ, hh
+         */
         double sv(std::string channel, double lambda, double mass, double cosXi, double v)
         {
           // Note: Valid for mass > 45 GeV
@@ -243,6 +278,7 @@ namespace Gambit
             pow(mf,2)/8/M_PI*Xf*pow(vf,3)*Dh2(s)*numerator*GeV2tocm3s1;
         }
 
+        /// Annihilation into hh
         double sv_hh(double lambda, double mass, double v, double cosXi)
         {
           double s = 4*mass*mass/(1-v*v/4);  // v is relative velocity
@@ -270,6 +306,7 @@ namespace Gambit
     void DarkMatter_ID_DiracSingletDM(std::string & result) { result = "F"; }
     void DarkMatterConj_ID_DiracSingletDM(std::string & result) { result = "F"; }
 
+    /// Direct detection couplings for the DiracSingletDM_Z2 model.
     void DD_nonrel_WCs_DiracSingletDM_Z2(NREO_DM_nucleon_couplings &result)
     {
       using namespace Pipes::DD_nonrel_WCs_DiracSingletDM_Z2;
@@ -299,6 +336,8 @@ namespace Gambit
       
     }
     
+    /// Relativistic Wilson Coefficients for direct detection, 
+    /// defined in the flavour scheme
     void DD_rel_WCs_flavscheme_DiracSingletDM_Z2(map_str_dbl &result)
     {
       using namespace Pipes::DD_rel_WCs_flavscheme_DiracSingletDM_Z2;
@@ -332,6 +371,7 @@ namespace Gambit
       result["C76b"]  = -prefactor*std::sin(xi);
     }
 
+    /// Set up process catalog for the DiracSingletDM_Z2 model.
     void TH_ProcessCatalog_DiracSingletDM_Z2(DarkBit::TH_ProcessCatalog &result)
     {
       using namespace Pipes::TH_ProcessCatalog_DiracSingletDM_Z2;
@@ -346,7 +386,9 @@ namespace Gambit
       // factors of 1/2 where necessary
       process_ann.isSelfConj = false;
 
+      ///////////////////////////////////////
       // Import particle masses and couplings
+      ///////////////////////////////////////
 
       // Convenience macros
       #define getSMmass(Name, spinX2)                                           \
@@ -430,7 +472,9 @@ namespace Gambit
       #undef getSMmass
       #undef addParticle
 
+      /////////////////////////////
       // Import Decay information
+      /////////////////////////////
 
       // Import decay table from DecayBit
       const DecayTable* tbl = &(*Dep::decay_rates);
@@ -511,4 +555,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:37 +0000
+Updated on 2022-08-02 at 23:34:48 +0000

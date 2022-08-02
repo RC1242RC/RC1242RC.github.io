@@ -98,6 +98,25 @@ inline void print_parameters(std::unordered_map<std::string, double> &key_map)  
 ```
 //  GAMBIT: Global and Modular BSM Inference Tool
 //  *********************************************
+///  \file
+///
+///  Macros and related classes for declaring
+///  scanner test functions.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Gregory Martinez
+///          (gregory.david.martinez@gmail.com)
+///  \date 2013 August
+///        2014 Feb
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)   
+///  \date 2014 Dec
+///
+///  *********************************************
 
 #ifndef OBJECTIVE_PLUGIN_HPP
 #define OBJECTIVE_PLUGIN_HPP
@@ -106,7 +125,12 @@ inline void print_parameters(std::unordered_map<std::string, double> &key_map)  
 #include "gambit/ScannerBit/plugin_defs.hpp"
 #include "gambit/ScannerBit/plugin_macros.hpp"
 
+///\name Objective Plugin Macros
+///Macros used by the objective plugins.
+///@{
+///Objective plugin declaration.  Is of the form:  objective_plugin(name, version)
 #define objective_plugin(...)           OBJECTIVE_PLUGIN( __VA_ARGS__ )
+///@}
 
 #define __OBJECTIVE_SETUP__                                                                                     \
 using namespace Gambit::Scanner;                                                                                \
@@ -133,4 +157,4 @@ inline void print_parameters(std::unordered_map<std::string, double> &key_map)  
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:36 +0000
+Updated on 2022-08-02 at 23:34:53 +0000

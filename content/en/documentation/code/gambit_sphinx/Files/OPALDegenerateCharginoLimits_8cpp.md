@@ -77,11 +77,13 @@ namespace Gambit
 
     bool OPALDegenerateCharginoLimitAt208GeV::isWithinExclusionRegion(double x, double y, double) const
     {
+      /// @note Plots only go down to 45 GeV
       return (x <= 95. and x >= 45. and y <= 5. and y >= 0.320);
     }
     
     OPALDegenerateCharginoLimitAt208GeV::OPALDegenerateCharginoLimitAt208GeV()
     {
+      ///// Limit values /////
       std::vector<double> limitValues = {0.66, 1.00, 1.33, 1.66, 2.00, 2.33, 2.66, 3.00, 3.33, 3.66, 4.00};
       _limitValuesSorted.push_back(0.66); // dark blue
       _limitValuesSorted.push_back(1.00); // light blue
@@ -95,11 +97,14 @@ namespace Gambit
       _limitValuesSorted.push_back(3.66); // black
       _limitValuesSorted.push_back(4.00); // white
 
+      ///// Limit Contours /////
       Corners corners;
       ContoursPointer contoursPointer;
 
+      ///// Data structure ////
       std::vector<P2> data;
 
+      //// Iterate over limits ////
       for(unsigned int i = 0; i < limitValues.size(); i++)
       {
         data = dataFromLimit(limitValues[i]);
@@ -126,4 +131,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:40 +0000
+Updated on 2022-08-02 at 23:34:50 +0000

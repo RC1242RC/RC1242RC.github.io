@@ -91,6 +91,42 @@ const double abserr_sinW2eff = 12e-5;
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Function definitions of PrecisionBit.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)
+///  \date 2014 Nov
+///
+///  \author Chris Rogan
+///          (crogan@cern.ch)
+///  \date 2014 Aug
+///  \date 2018 June
+///
+///  \author Tomas Gonzalo
+///          (t.e.gonzalo@fys.uio.no)
+///  \date 2018 Jan
+///
+///  \author Marcin Chrzaszcz
+///          (mchrzasz@cern.ch)
+///  \date 2018
+///
+///  \author Chrisotph Weniger
+///          (c.weniger@uva.nl)
+///  \date 2018 Jun
+///
+///  \author Ankit Beniwal
+///         (ankit.beniwal@adelaide.edu.au)
+///  \date 2016 Oct
+///  \date 2020 Dec
+///  \date 2021 Jan, Mar
+///
+///  *********************************************
 
 #include <algorithm>
 
@@ -103,8 +139,11 @@ const double abserr_sinW2eff = 12e-5;
 
 //#define PRECISIONBIT_DEBUG
 
+/// EWPO theoretical uncertainties on FeynHiggs calculations; based on hep-ph/0412214 Eq 3.1.
+/// @{
 const double abserr_mw = 1e-2; //10 MeV
 const double abserr_sinW2eff = 12e-5;
+/// @}
 
 namespace Gambit
 {
@@ -201,6 +240,8 @@ namespace Gambit
       result = PrecisionObs;
     }
 
+    /// FeynHiggs precision extractors
+    /// @{
     void FeynHiggs_precision_edm_e   (double &result) { result = Pipes::FeynHiggs_precision_edm_e::Dep::Precision->edm_ele;     }
     void FeynHiggs_precision_edm_n   (double &result) { result = Pipes::FeynHiggs_precision_edm_n::Dep::Precision->edm_neu;     }
     void FeynHiggs_precision_edm_hg  (double &result) { result = Pipes::FeynHiggs_precision_edm_hg::Dep::Precision->edm_Hg;     }
@@ -231,7 +272,9 @@ namespace Gambit
       result.upper = abserr_sinW2eff;
       result.lower = result.upper;
     }
+    /// @}
 
+    /// Helper function to set W masses
     void update_W_masses(SubSpectrum& HE, SubSpectrum& LE, const triplet<double>& prec_mw, bool allow_fallback)
     {
       if (prec_mw.central <= 0.0 or Utils::isnan(prec_mw.central))
@@ -248,6 +291,7 @@ namespace Gambit
       LE.set_override(Par::Pole_Mass_1srd_low, prec_mw.lower/prec_mw.central, "W+", true);
     }
 
+    /// Helper function to set arbitrary number of H masses
     void update_H_masses(SubSpectrum& HE, int n_higgs, const str* higgses, int central, int error, std::vector<triplet<double> >& MH, bool allow_fallback)
     {
 
@@ -535,6 +579,7 @@ namespace Gambit
       #endif
     }
 
+    /// Precision MSSM spectrum manufacturer that does nothing but relabel the unimproved spectrum
     void make_MSSM_precision_spectrum_none(Spectrum& improved_spec /*(result)*/)
     {
       using namespace Pipes::make_MSSM_precision_spectrum_none;
@@ -542,6 +587,7 @@ namespace Gambit
       improved_spec.drop_SLHAs_if_requested(runOptions, "GAMBIT_spectrum");
     }
 
+    /// Precision MSSM spectrum manufacturer with precision W mass only
     void make_MSSM_precision_spectrum_W(Spectrum& improved_spec /*(result)*/)
     {
       using namespace Pipes::make_MSSM_precision_spectrum_W;
@@ -551,6 +597,7 @@ namespace Gambit
       improved_spec.drop_SLHAs_if_requested(runOptions, "GAMBIT_spectrum");
     }
 
+    /// Precision MSSM spectrum manufacturer with precision SM-like Higgs mass
     void make_MSSM_precision_spectrum_H(Spectrum& improved_spec /*(result)*/)
     {
       using namespace Pipes::make_MSSM_precision_spectrum_H;
@@ -588,6 +635,7 @@ namespace Gambit
 
     }
 
+    /// Precision MSSM spectrum manufacturer with precision W and SM-like Higgs masses
     void make_MSSM_precision_spectrum_H_W(Spectrum& improved_spec /*(result)*/)
     {
       using namespace Pipes::make_MSSM_precision_spectrum_H_W;
@@ -629,6 +677,7 @@ namespace Gambit
 
     }
 
+    /// Precision MSSM spectrum manufacturer with precision W and 2HDM (4x) Higgs masses
     void make_MSSM_precision_spectrum_4H_W(Spectrum& improved_spec /*(result)*/)
     {
       using namespace Pipes::make_MSSM_precision_spectrum_4H_W;
@@ -684,6 +733,8 @@ namespace Gambit
     }
 
 
+    /// Basic mass extractors for different types of spectra, for use with precision likelihoods and other things not needing a whole spectrum object.
+    /// @{
     void mw_from_SM_spectrum(triplet<double> &result)
     {
       using namespace Pipes::mw_from_SM_spectrum;
@@ -773,21 +824,38 @@ namespace Gambit
       result.upper = result.central * HE.get(Par::Pole_Mass_1srd_high, smlike_pdg, 0);
       result.lower = result.central * HE.get(Par::Pole_Mass_1srd_low, smlike_pdg, 0);
     }
+    /// @}
 
+    /// Z boson mass likelihood
+    /// M_Z (Breit-Wigner mass parameter ~ pole) = 91.1876 +/- 0.0021 GeV (1 sigma), Gaussian.
+    /// Reference: http://pdg.lbl.gov/2016/reviews/rpp2016-rev-qcd.pdf = C. Patrignani et al. (Particle Data Group), Chin. Phys. C, 40, 100001 (2016).
     void lnL_Z_mass(double &result)
     {
       using namespace Pipes::lnL_Z_mass;
+      /// Option profile_systematics<bool>: Use likelihood version that has been profiled over systematic errors (default false)
       bool profile = runOptions->getValueOrDef<bool>(false, "profile_systematics");
       result = Stats::gaussian_loglikelihood(Dep::SMINPUTS->mZ, 91.1876, 0.0, 0.0021, profile);
     }
 
+    /// t quark mass likelihood
+    /// m_t (pole) = 173.34 +/- 0.76 GeV (1 sigma), Gaussian.
+    /// Reference: http://arxiv.org/abs/1403.4427
     void lnL_t_mass(double &result)
     {
       using namespace Pipes::lnL_t_mass;
+      /// Option profile_systematics<bool>: Use likelihood version that has been profiled over systematic errors (default false)
       bool profile = runOptions->getValueOrDef<bool>(false, "profile_systematics");
       result = Stats::gaussian_loglikelihood(Dep::SMINPUTS->mT, 173.34, 0.0, 0.76, profile);
     }
 
+    /**
+     * @brief Running top mass MS-bar likelihood
+     *
+     * This uses a special running MS-bar top mass input parameter at the scale mtop from ATLAS.
+     * Reference: https://arxiv.org/pdf/1905.02302.pdf (see table 2, page 14)
+     *
+     * The asymmetric errors are averaged.
+     */
     void lnL_mtrun(double &result)
     {
       using namespace Pipes::lnL_mtrun;
@@ -800,20 +868,34 @@ namespace Gambit
       result = Stats::gaussian_loglikelihood(mtrun, mtrun_obs, 0.0, mtrun_obserr, profile);
     }
 
+    /// b quark mass likelihood
+    /// m_b (mb)^MSbar = 4.18 +/- 0.03 GeV (1 sigma), Gaussian.
+    /// Reference: http://pdg.lbl.gov/2016/reviews/rpp2016-rev-qcd.pdf = C. Patrignani et al. (Particle Data Group), Chin. Phys. C, 40, 100001 (2016).
     void lnL_mbmb(double &result)
     {
       using namespace Pipes::lnL_mbmb;
+      /// Option profile_systematics<bool>: Use likelihood version that has been profiled over systematic errors (default false)
       bool profile = runOptions->getValueOrDef<bool>(false, "profile_systematics");
       result = Stats::gaussian_loglikelihood(Dep::SMINPUTS->mBmB, 4.18, 0.0, 0.03, profile);
     }
 
+    /// c quark mass likelihood
+    /// m_c (mc)^MSbar = 1.28 +/- 0.03 GeV (1 sigma), Gaussian.
+    ///  Reference: http://pdg.lbl.gov/2016/reviews/rpp2016-rev-qcd.pdf = C. Patrignani et al. (Particle Data Group), Chin. Phys. C, 40, 100001 (2016).
     void lnL_mcmc(double &result)
     {
       using namespace Pipes::lnL_mcmc;
+      /// Option profile_systematics<bool>: Use likelihood version that has been profiled over systematic errors (default false)
       bool profile = runOptions->getValueOrDef<bool>(false, "profile_systematics");
       result = Stats::gaussian_loglikelihood(Dep::SMINPUTS->mCmC, 1.28, 0.0, 0.03, profile);
     }
 
+    /// \brief Likelihoods for light quark mass ratios. At the moment, all are just gaussians.
+    /// Default data from PDG http://PDG.LBL.GOV 26/06/2017.
+    /// Likelihoods apply to MSbar masses at the scale mu = 2 GeV.
+    /// m_u/m_d = 0.38-0.58
+    /// m_s / ((m_u + m_d)/2) = 27.3 +/- 0.7
+    /// m_s = (96 +/- 4) MeV
     void lnL_light_quark_masses (double &result)
     {
         using namespace Pipes::lnL_light_quark_masses;
@@ -826,6 +908,7 @@ namespace Gambit
         double ms_obs = runOptions->getValueOrDef<double>(96.E-03, "ms_obs");
         double ms_obserror = runOptions->getValueOrDef<double>(4.E-03, "ms_obserr");
 
+        /// Option profile_systematics<bool>: Use likelihood version that has been profiled over systematic errors (default false)
         bool profile = runOptions->getValueOrDef<bool>(false, "profile_systematics");
 
         result = Stats::gaussian_loglikelihood(SM.mU/SM.mD, mud_obs, 0., mud_obserror, profile)
@@ -834,74 +917,105 @@ namespace Gambit
         logger() << LogTags::debug << "Combined lnL for light quark mass ratios and s-quark mass is " << result << EOM;
     }
 
+    /// alpha^{-1}(mZ)^MSbar likelihood
+    /// alpha^{-1}(mZ)^MSbar = 127.950 +/- 0.017 (1 sigma), Gaussian.  (PDG global SM fit)
+    /// Reference: http://pdg.lbl.gov/2016/reviews/rpp2016-rev-standard-model.pdf = C. Patrignani et al. (Particle Data Group), Chin. Phys. C, 40, 100001 (2016).
     void lnL_alpha_em(double &result)
     {
       using namespace Pipes::lnL_alpha_em;
+      /// Option profile_systematics<bool>: Use likelihood version that has been profiled over systematic errors (default false)
       bool profile = runOptions->getValueOrDef<bool>(false, "profile_systematics");
       result = Stats::gaussian_loglikelihood(Dep::SMINPUTS->alphainv, 127.950, 0.0, 0.017, profile);
     }
 
+    /// alpha_s(mZ)^MSbar likelihood
+    /// alpha_s(mZ)^MSbar = 0.1181 +/- 0.0011 (1 sigma), Gaussian.
+    /// Reference: http://pdg.lbl.gov/2016/reviews/rpp2016-rev-qcd.pdf = C. Patrignani et al. (Particle Data Group), Chin. Phys. C, 40, 100001 (2016).
     void lnL_alpha_s(double &result)
     {
       using namespace Pipes::lnL_alpha_s;
+      /// Option profile_systematics<bool>: Use likelihood version that has been profiled over systematic errors (default false)
       bool profile = runOptions->getValueOrDef<bool>(false, "profile_systematics");
       result = Stats::gaussian_loglikelihood(Dep::SMINPUTS->alphaS, 0.1181, 0.0, 0.0011, profile);
     }
 
+    /// G_Fermi likelihood
+    /// G_Fermi = (1.1663787 +/- 0.0000006) * 10^-5 GeV^-2 (1 sigma), Gaussian.
+    ///  Reference: http://pdg.lbl.gov/2016/reviews/rpp2016-rev-qcd.pdf = C. Patrignani et al. (Particle Data Group), Chin. Phys. C, 40, 100001 (2016).
     void lnL_GF(double &result)
     {
       using namespace Pipes::lnL_GF;
+      /// Option profile_systematics<bool>: Use likelihood version that has been profiled over systematic errors (default false)
       bool profile = runOptions->getValueOrDef<bool>(false, "profile_systematics");
       result = Stats::gaussian_loglikelihood(Dep::SMINPUTS->GF, 1.1663787E-05, 0.0, 0.0000006E-05, profile);
     }
 
+    /// W boson mass likelihood
     void lnL_W_mass(double &result)
     {
       using namespace Pipes::lnL_W_mass;
       double theory_uncert = std::max(Dep::mw->upper, Dep::mw->lower);
+      /// Option profile_systematics<bool>: Use likelihood version that has been profiled over systematic errors (default false)
       bool profile = runOptions->getValueOrDef<bool>(false, "profile_systematics");
       result = Stats::gaussian_loglikelihood(Dep::mw->central, mw_central_observed, theory_uncert, mw_err_observed, profile);
     }
 
+    /// Simple, naive h boson mass likelihood
+    /// Reference: D. Aad et al arxiv:1503.07589, Phys.Rev.Lett. 114 (2015) 191803 (ATLAS + CMS combination)
+    /// Also used dierctly in http://pdg.lbl.gov/2016/tables/rpp2016-sum-gauge-higgs-bosons.pdf = C. Patrignani et al. (Particle Data Group), Chin. Phys. C, 40, 100001 (2016).
     void lnL_h_mass(double &result)
     {
       using namespace Pipes::lnL_h_mass;
       double theory_uncert = std::max(Dep::mh->upper, Dep::mh->lower);
+      /// Option profile_systematics<bool>: Use likelihood version that has been profiled over systematic errors (default false)
       bool profile = runOptions->getValueOrDef<bool>(false, "profile_systematics");
       result = Stats::gaussian_loglikelihood(Dep::mh->central, 125.09, theory_uncert, 0.24, profile);
     }
 
+    /// Effective leptonic sin^2(theta_W) likelihood
+    /// sin^2theta_W^leptonic_effective~ sin^2theta_W(mZ)^MSbar + 0.00029 = 0.23155 +/- 0.00005    (1 sigma), Gaussian.  (PDG global SM fit)
+   ///  Reference: http://pdg.lbl.gov/2016/reviews/rpp2016-rev-qcd.pdf = C. Patrignani et al. (Particle Data Group), Chin. Phys. C, 40, 100001 (2016).
     void lnL_sinW2_eff(double &result)
     {
       using namespace Pipes::lnL_sinW2_eff;
       double theory_uncert = std::max(Dep::prec_sinW2_eff->upper, Dep::prec_sinW2_eff->lower);
+      /// Option profile_systematics<bool>: Use likelihood version that has been profiled over systematic errors (default false)
       bool profile = runOptions->getValueOrDef<bool>(false, "profile_systematics");
       result = Stats::gaussian_loglikelihood(Dep::prec_sinW2_eff->central, 0.23155, theory_uncert, 0.00005, profile);
     }
 
+    /// Delta rho likelihood
+    /// Delta rho = 0.00037 +/- 0.00023 (1 sigma), Gaussian.  (PDG global SM fit)
+    ///  Reference: http://pdg.lbl.gov/2016/reviews/rpp2016-rev-qcd.pdf = C. Patrignani et al. (Particle Data Group), Chin. Phys. C, 40, 100001 (2016).
     void lnL_deltarho(double &result)
     {
       using namespace Pipes::lnL_deltarho;
       double theory_uncert = std::max(Dep::deltarho->upper, Dep::deltarho->lower);
+      /// Option profile_systematics<bool>: Use likelihood version that has been profiled over systematic errors (default false)
       bool profile = runOptions->getValueOrDef<bool>(false, "profile_systematics");
       result = Stats::gaussian_loglikelihood(Dep::deltarho->central, 0.00037, theory_uncert, 0.00023, profile);
     }
 
 
+    /// g-2 in SM from e+e- data
     void gm2_SM_ee(triplet<double> &result)
     {
+      /// Values taken from prediction in arXiv:1010.4180 (Eq 22)
       result.central = 2.0 * 11659180.2e-10;
       result.upper = 2.0 * 4.9e-10;
       result.lower = result.upper;
     }
 
+    /// g-2 in SM from tau+tau- data
     void gm2_SM_tautau(triplet<double> &result)
     {
+      /// Values taken from prediction in arXiv:1010.4180, based on tau data
       result.central = 2.0 * 11659189.4e-10;
       result.upper = 2.0 * 5.4e-10;
       result.lower = result.upper;
     }
 
+    /// g-2 likelihood
     void lnL_gm2(double &result)
     {
       using namespace Pipes::lnL_gm2;
@@ -914,10 +1028,12 @@ namespace Gambit
       // From hep-ex/0602035, as updated in PDG 2016 (C. Patrignani et al, Chin. Phys. C, 40, 100001 (2016). ). Error combines statistical (5.4) and systematic (3.3) uncertainties in quadrature.
       double amu_exp = 11659209.1e-10;
       double amu_exp_error = 6.3e-10;
+      /// Option profile_systematics<bool>: Use likelihood version that has been profiled over systematic errors (default false)
       bool profile = runOptions->getValueOrDef<bool>(false, "profile_systematics");
       result = Stats::gaussian_loglikelihood(amu_theory, amu_exp, amu_theory_err, amu_exp_error, profile);
     }
 
+    /// Calculate a_mu_SUSY using the gm2calc backend.
     void GM2C_SUSY(triplet<double> &result)
     {
       using namespace Pipes::GM2C_SUSY;
@@ -927,6 +1043,9 @@ namespace Gambit
 
       try
       {
+        /// fill pole masses.
+        /// note: that the indices start from 0 in gm2calc,
+        /// gambit indices start from 1, hence the offsets here
         model.get_physical().MSvmL = mssm.get(Par::Pole_Mass, "~nu", 2); // 1L
         str msm1, msm2;
         // PA: todo: I think we shouldn't be too sensitive to mixing in this case.
@@ -998,6 +1117,8 @@ namespace Gambit
         model.get_physical().MFu =smin.mU; //MSbar
         model.get_physical().MFc =smin.mCmC; // MSbar
 
+        /// alpha_MZ := alpha(0) (1 - \Delta^{OS}(M_Z) ) where
+        /// \Delta^{OS}(M_Z) = quark and lepton contributions to
         // on-shell renormalized photon vacuum polarization
         // default value recommended by GM2calc from arxiv:1105.3149
         const double alpha_MZ = runOptions->getValueOrDef
@@ -1013,14 +1134,18 @@ namespace Gambit
 
         model.set_scale(mssm.GetScale());                   // 2L
 
+        /// convert DR-bar parameters to on-shell
         model.convert_to_onshell();
 
+        /// need to hook up errors properly
+        /// check for problems
         if( model.get_problems().have_problem() == true) {
           std::ostringstream err;
           err << "gm2calc routine convert_to_onshell raised error: "
               << model.get_problems().get_problems() << ".";
           invalid_point().raise(err.str());
         }
+        /// check for warnings
         if( model.get_problems().have_warning() == true) {
           std::ostringstream err;
           err << "gm2calc routine convert_to_onshell raised warning: "
@@ -1059,6 +1184,7 @@ namespace Gambit
     }
 
 
+    /// Calculation of g-2 with SuperIso
     void SuperIso_muon_gm2(triplet<double> &result)
     {
       using namespace Pipes::SuperIso_muon_gm2;
@@ -1089,6 +1215,8 @@ namespace Gambit
     }
 
 
+    /// Precision observables from SUSY-POPE
+    /// This function is unfinished because SUSY-POPE is buggy.
     void SP_PrecisionObs(double &result)
     {
       using namespace Pipes::SP_PrecisionObs;
@@ -1150,16 +1278,20 @@ namespace Gambit
 
     // Neutron lifetime measurements
 
+    /// Beam method: Phys. Rev. Lett. 111, 222501 (2013) https://arxiv.org/abs/1309.2623
     void lnL_neutron_lifetime_beam_Yue(double &result)
     {
       using namespace Pipes::lnL_neutron_lifetime_beam_Yue;
+      /// Option profile_systematics<bool>: Use likelihood version that has been profiled over systematic errors (default false)
       bool profile = runOptions->getValueOrDef<bool>(false, "profile_systematics");
       result = Stats::gaussian_loglikelihood(*Param["neutron_lifetime"], 887.7, 1.9, 1.2, profile);
     }
 
+    /// Bottle method: average recommended by PDG 2019 http://pdg.lbl.gov/2019/listings/rpp2019-list-n.pdf
     void lnL_neutron_lifetime_bottle_PDG19(double &result)
     {
       using namespace Pipes::lnL_neutron_lifetime_bottle_PDG19;
+      /// Option profile_systematics<bool>: Use likelihood version that has been profiled over systematic errors (default false)
       bool profile = runOptions->getValueOrDef<bool>(false, "profile_systematics");
       result = Stats::gaussian_loglikelihood(*Param["neutron_lifetime"], 879.4, 0, 0.6, profile);
     }
@@ -1171,4 +1303,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:48 +0000

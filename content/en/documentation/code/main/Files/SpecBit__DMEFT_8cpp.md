@@ -43,6 +43,18 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Implementation of SpecBit routines for 
+///  DMEFT.
+///
+///  Authors (add name and date if you modify):    
+///       *** Automatically created by GUM ***     
+///                                                
+///  \author The GAMBIT Collaboration             
+///  \date 12:32PM on October 15, 2019
+///                                                
+///  ********************************************* 
 
 #include "gambit/Elements/gambit_module_headers.hpp"
 #include "gambit/Elements/spectrum.hpp"
@@ -61,6 +73,7 @@ namespace Gambit
   {
     using namespace LogTags;
     
+    /// Get a simple wrapper for Spectrum object.
     void get_DMEFT_spectrum(Spectrum& result)
     {
       namespace myPipe = Pipes::get_DMEFT_spectrum;
@@ -177,6 +190,7 @@ namespace Gambit
     
     void fill_map_from_DMEFT_spectrum(std::map<std::string, double>& specmap, const Spectrum& spec)
     {
+      /// Use SpectrumContents routines to automate
       static const SpectrumContents::DMEFT contents;
       static const std::vector<SpectrumParameter> required_parameters = contents.all_parameters();
       
@@ -241,4 +255,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:36 +0000
+Updated on 2022-08-02 at 23:34:53 +0000

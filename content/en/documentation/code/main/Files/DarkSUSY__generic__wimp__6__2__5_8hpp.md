@@ -96,6 +96,26 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Fronted header for the DarkSUSY backend
+///
+///  Compile-time registration of available
+///  functions and variables from this backend.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Torsten Bringmann
+///          (torsten.bringmann@fys.uio.no)
+///  \date 2020 February
+///
+///  \author Pat Scott
+///          (pat.scott@uq.edu.au)
+///  \date 2020 September
+///
+///  *********************************************
 
 #define BACKENDNAME DarkSUSY_generic_wimp
 #define BACKENDLANG FORTRAN
@@ -116,4 +136,4 @@ LOAD_LIBRARY
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:55 +0000

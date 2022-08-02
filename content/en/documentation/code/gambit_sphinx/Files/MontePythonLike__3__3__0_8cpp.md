@@ -49,6 +49,27 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Frontend source for the MontePython backend.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Janina Renk
+///          (janina.renk@fysik.su.se)
+///  \date 2019 June, 2020 May
+///
+///  \author Sanjay Bloor
+///          (sanjay.bloor12@imperial.ac.uk)
+///  \date 2019 June
+///
+///  \author Pat Scott
+///          (pat.scott@uq.edu.au)
+///  \date 2020 Apr
+///
+///  *********************************************
 
 #include "gambit/Backends/frontend_macros.hpp"
 #include "gambit/Backends/frontends/MontePythonLike_3_3_0.hpp"
@@ -67,12 +88,16 @@ Authors (add name and date if you modify):
 
     static map_str_dbl chached_likelihoods; // string double map to save likelihood calculation from previous param point
 
+    /// calls the function "get_available_likelihoods" in the patched MontePythonLike.py file of MontePython backend.
+    /// This returns a list containing strings with the names of all likelihoods available in the MontePythonLike backend
     std::vector<str> get_MP_available_likelihoods()
     {
       pybind11::list avail_likes = MontePythonLike.attr("get_available_likelihoods")(backendDir);
       return avail_likes.cast<std::vector<str>>();
     }
 
+    /// convenience function to check compatibility of likelihoods and CLASS version in use
+    /// add further rules for incompatibilities here.
     void check_likelihood_classy_combi(std::string& likelihood, std::string& classy_backendDir)
     {
 
@@ -105,6 +130,8 @@ Authors (add name and date if you modify):
       }
     }
 
+    /// convenience function to check if the chosen likelihood is supported
+    /// add further rules for incompatibilities here.
     void check_likelihood_support(std::string& likelihood)
     {
       // There are two different reasons why the support for a likelihood is
@@ -155,6 +182,8 @@ Authors (add name and date if you modify):
       }
     }
 
+    /// convenience function to compute the loglike from a given experiment, given a MontePython likelihood-data container
+    /// mplike, using the CLASS Python object cosmo.
     double get_MP_loglike(const MPLike_data_container& mplike, pybind11::object& cosmo, std::string& experiment)
     {
 
@@ -211,6 +240,8 @@ Authors (add name and date if you modify):
       return result;
     }
 
+    /// Creates a MontePython 'Data' object.
+    /// This is initialised with a list of the relevant experimental limits to import.
     pybind11::object create_MP_data_object(map_str_str& experiments)
     {
 
@@ -248,6 +279,11 @@ Authors (add name and date if you modify):
       return data;
     }
 
+    /// Returns a map of string to Python objects. These Python objects from MontePython are the initialised
+    /// "Likelihood" objects used internal to MontePython. GAMBIT interfaces to these by requesting the
+    /// loglike methods of these Python objects.
+    /// Note that this is only executed once before the likelihoods for the first point in parameter space
+    /// are calculated. -> time expensive loading up of all modules and data files is just done once.
     map_str_pyobj create_MP_likelihood_objects(pybind11::object& data, map_str_str& experiments)
     {
       // in stand-alone MP the command line contains some information for the sampler (how many points, restart..)
@@ -309,4 +345,4 @@ END_BE_INI_FUNCTION
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:41 +0000
+Updated on 2022-08-02 at 23:34:51 +0000

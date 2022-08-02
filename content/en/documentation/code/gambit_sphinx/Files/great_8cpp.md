@@ -74,6 +74,20 @@ scanner_plugin(
 ```
 //  GAMBIT: Global and Modular BSM Inference Tool
 //  *********************************************
+///  \file
+///
+///  ScannerBit interface to GreAT 1.0.0
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Antje Putze
+///          (putze@lapth.cnrs.fr)
+///  \date 2015 Nov
+///  \date 2016 Apr
+///
+///  *********************************************
 
 #include <vector>
 #include <limits>
@@ -100,6 +114,9 @@ namespace Gambit
 }
 
 
+/// =================================================
+/// Interface to ScannerBit
+/// =================================================
 
 scanner_plugin(great, version(1, 0, 0))
 {
@@ -288,4 +305,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:48 +0000

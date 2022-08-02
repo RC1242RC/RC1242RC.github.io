@@ -78,6 +78,34 @@ Determine what data needs to be copied from the input file to the new output dat
 ```
 //  GAMBIT: Global and Modular BSM Inference Tool
 //  *********************************************
+///  \file
+///
+///  "Postprocessing" scanner plugin. Reads points
+///  from old scan output and re-runs a likelihood
+///  containing plugin for those same point.
+///  Can perform some simple addition/subtraction
+///  operations of likelihood components from
+///  the new plugin output.
+///
+///  This is version 2 of the postproccessor; it
+///  distributes the postprocessing workload by
+///  a completely different algorithm to version 1.
+///  This version employs a master/worker model,
+///  with the master processes distributing points
+///  in batches to the worker processes on request.
+///  Batch size can be set via options (use batch
+///  size of 1 for very slow likelihoods, use
+///  large batch size for very fast likelihoods).
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Ben Farmer
+///          (b.farmer@imperial.ac.uk)
+///  \date 2018, Sep
+///
+///  *********************************************
 
 // STL
 #include <vector>
@@ -106,21 +134,28 @@ scanner_plugin(postprocessor, version(2, 0, 0))
 {
   reqd_inifile_entries("like","reader");
 
+  /// The likelihood container plugin
   like_ptr LogLike;
 
+  /// MPI data
   int numtasks;
   int rank;
 
   #ifdef WITH_MPI
+    /// Tag for messages
     const int request_work_tag=10;
   #endif
 
+  /// The reader object in use for the scan
   Gambit::Printers::BaseBaseReader* reader;
 
+  /// The main postprocessing driver object
   PPDriver driver;
 
+  /// Options for PPDriver;
   PPOptions settings;
 
+  /// Allow extra log output for this process (need to restrict master process since it loops a lot)
   bool this_rank_verbose;
   
   // Retrieve an integer from an environment variable
@@ -147,6 +182,7 @@ scanner_plugin(postprocessor, version(2, 0, 0))
      return x;
   }
 
+  /// The constructor to run when the plugin is loaded.
   plugin_constructor
   {
     int s_numtasks;
@@ -260,6 +296,7 @@ scanner_plugin(postprocessor, version(2, 0, 0))
 
   }
 
+  /// Main run function
   int plugin_main()
   {
     if(rank==0) std::cout << "Running 'postprocessor' plugin for ScannerBit." << std::endl;
@@ -271,6 +308,7 @@ scanner_plugin(postprocessor, version(2, 0, 0))
     // Message tag definitons in PPDriver class:
     #endif
 
+    /// Determine what data needs to be copied from the input file to the new output dataset
     // Get labels of functors listed for printing from the primary printer.
     settings.all_params = get_printer().get_stream()->getPrintList();
     // There are some extra items that will also be automatically printed in all scans,
@@ -664,4 +702,4 @@ scanner_plugin(postprocessor, version(2, 0, 0))
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:48 +0000

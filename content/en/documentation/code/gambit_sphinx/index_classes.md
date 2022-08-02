@@ -3,9 +3,8 @@ title: "Classes"
 
 menu:
   documentation:
-    parent: GAMBIT_VERSION_HERE
-identifier: "GAMBIT_VERSION_HEREClasses"
-weight: 20
+    parent: 
+    identifier: "Classes" weight: 20
 ---
 
 
@@ -704,4 +703,4 @@ weight: 20
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:41 +0000
+Updated on 2022-08-02 at 23:34:51 +0000

@@ -67,6 +67,24 @@ Authors (add name and date if you modify):
 ```
 //  GAMBIT: Global and Modular BSM Inference Tool
 //  *********************************************
+///  \file
+///
+///  Prior object construction routines
+///
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Ben Farmer
+///          (benjamin.farmer@monash.edu.au)
+///  \date 2013 Dec
+///
+///  \author Gregory Martinez
+///          (gregory.david.martinez@gmail.com)
+///  \date Feb 2014
+///
+///  *********************************************
 
 #ifndef PRIOR_DEFS_HPP
 #define PRIOR_DEFS_HPP
@@ -74,6 +92,10 @@ Authors (add name and date if you modify):
 #include <cmath>
 #include "gambit/ScannerBit/priors.hpp"
 
+   /// Registry of priors
+   /// Here we specify mappings from strings to prior objects.
+   /// We need this so that strings in the inifile can be used to choose
+   /// which prior objects and which combinations of them we want.
 
 
    // let us imagine that the user wants to specify something like this in the inifile:
@@ -121,6 +143,7 @@ Authors (add name and date if you modify):
    // (which wraps a YAML::Node object). They have to extract the options they need
    // from this structure. The options present there are passed directly from the inifile,
 
+   /// Map in which to keep factory functions for the priors
    // Whenever you add a new prior, you need to add an entry here in order to
    // have it accessible via the inifile (by whatever name you specify here).
 
@@ -189,6 +212,7 @@ namespace Gambit
             static double prior(double x) { return 1.0/std::sqrt(1-SQR(x));}
         };
 
+        /// Template class for 1d priors which need only a "range" option in their constructor
         // See factory function map to see how to use this class to quickly create new priors of this kind
         template <class T>
         class RangePrior1D : public BasePrior
@@ -289,4 +313,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:36 +0000
+Updated on 2022-08-02 at 23:34:53 +0000

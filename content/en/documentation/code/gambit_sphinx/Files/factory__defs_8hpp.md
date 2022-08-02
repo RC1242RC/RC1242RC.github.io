@@ -68,6 +68,31 @@ Authors (add name and date if you modify):
 ```
 //  GAMBIT: Global and Modular BSM Inference Tool
 //  *********************************************
+///  \file
+///
+///  declaration for scanner module
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Gregory Martinez
+///          (gregory.david.martinez@gmail.com)
+///  \date 2015 Feb, Mar
+///
+///  \author Tomas Gonzalo
+///          (tomas.gonzalo@monash.edu
+///  \date 2019 May
+///
+///  \author Patrick Stoecker
+///          (stoecker@physik.rwth-aachen.de)
+///  \date 2020 May
+///
+///  \author Anders Kvellestad
+///          (anders.kvellestad@fys.uio.no
+///  \date 2021 Feb
+///
+///  *********************************************
 
 #ifndef __FACTORY_DEFS_HPP__
 #define __FACTORY_DEFS_HPP__
@@ -103,15 +128,19 @@ namespace Gambit
         using boost::enable_shared_from_this;
 #endif
 
+        /// Generic function base used by the scanner.  Can be Likelihood, observables, etc.
         template<typename T>
         class Function_Base;
 
+        /// Functor that deletes a Function_Base functor
         template<typename T>
         class Function_Deleter;
 
+        /// Generic ptr that takes ownership of a Function_Base.  This is how a plugin will call a function.
         template<typename T>
         class scan_ptr;
 
+        /// Base function for the object that is upputed by "set_purpose".
         template<typename ret, typename... args>
         class Function_Base <ret (args...)> : public enable_shared_from_this<Function_Base <ret (args...)>>
         {
@@ -124,10 +153,13 @@ namespace Gambit
             std::string purpose;
             int myRealRank; // the actual MPI rank of the process, use for process dependent setup etc. getRank() is for printing only.
 
+            /// Variable to store some offset to be removed when printing out the return value of the function.
             double purpose_offset;
 
+            /// Variable to store state of affairs regarding use of alternate min_LogL
             bool use_alternate_min_LogL;
 
+            /// Variable to specify whether the scanner plugin should control the shutdown process
             bool _scanner_can_quit;
 
             virtual void deleter(Function_Base <ret (args...)> *in) const
@@ -193,15 +225,23 @@ namespace Gambit
             void setPtID(unsigned long long int pID) {Gambit::Printers::get_point_id() = pID;} // Needed by postprocessor; should not use otherwise.
             unsigned long long int getNextPtID() const {return getPtID()+1;} // Needed if PtID required by plugin *before* operator() is called. See e.g. GreAT plugin.
 
+            /// Tell ScannerBit that we are aborting the scan and it should tell the scanner plugin to stop, and return control to the calling code.
             void tell_scanner_early_shutdown_in_progress()
             {
                 Gambit::Scanner::Plugins::plugin_info.set_early_shutdown_in_progress();
             }
 
+            /// Tells log-likelihood function (defined by driver code) not to use its own shutdown system (e.g the
+            /// GAMBIT soft shutdown procedure) and instead to trust that the scanner plugin will safely terminate
+            /// executions upon checking that shutdown is in progress (via the shutdown_in_progress flag set in
+            /// plugin_info)
             void disable_external_shutdown() { _scanner_can_quit = true; }
 
+            /// Check whether likelihood container is supposed to control early shutdown of scan
             bool scanner_can_quit() { return _scanner_can_quit; }
 
+            /// Tell log-likelihood function (defined by driver code) to switch to an alternate value for the minimum
+            /// log-likelihood. Called by e.g. MultiNest scanner plugin.
             void switch_to_alternate_min_LogL()
             {
                 use_alternate_min_LogL = true;
@@ -215,6 +255,7 @@ namespace Gambit
                 Gambit::Scanner::Plugins::plugin_info.save_alt_min_LogL_state(); // Write a file to disk so that upon startup we can check if the alternate min LogL is supposed to be used.
             }
 
+            /// Checks if some process has triggered the 'switch_to_alternate_min_LogL' function
             bool check_for_switch_to_alternate_min_LogL()
             {
                 if(not use_alternate_min_LogL)
@@ -242,6 +283,7 @@ namespace Gambit
                 }
                 return use_alternate_min_LogL;
             }
+            /// @}
 
        };
 
@@ -267,6 +309,7 @@ namespace Gambit
             }
         };
 
+        /// Container class that hold the output of the "get_purpose" function.
         template<typename ret, typename... args>
         class scan_ptr<ret (args...)> : public shared_ptr< Function_Base< ret (args...)> >
         {
@@ -337,6 +380,7 @@ namespace Gambit
         // happen. So we need to change something here so that they only get printed once
         // per point, no matter how many like_ptr's may be "active" at once.
 
+        /// likelihood container for scanner plugins.
         class like_ptr : public scan_ptr<double (std::unordered_map<std::string, double> &)>
         {
         private:
@@ -409,6 +453,7 @@ namespace Gambit
             }
         };
 
+        /// Pure Base class of a plugin Factory function.
         class Factory_Base
         {
         public:
@@ -424,4 +469,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:48 +0000

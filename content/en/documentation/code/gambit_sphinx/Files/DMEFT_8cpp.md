@@ -89,6 +89,22 @@ catalog.particleProperties.insert(std::pair<string, TH_ParticleProperty> (Name, 
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Implementation of DMEFT
+///  DarkBit routines.
+///
+///  Authors (add name and date if you modify):    
+///       *** Automatically created by GUM ***     
+///                                                
+///  \author The GAMBIT Collaboration             
+///  \date 12:32PM on October 15, 2019
+///
+///  \author Sanjay Bloor
+///         (sanjay.bloor12@imperial.ac.uk)
+///  \date Oct 2019
+///                                                  
+///  ********************************************* 
 
 #include "boost/make_shared.hpp"
 
@@ -104,12 +120,14 @@ namespace Gambit
     class DMEFT
     {
       public:
+      /// Initialize DMEFT object (branching ratios etc)
       DMEFT() {};
       ~DMEFT() {};
       
       // Annihilation cross-section. sigmav is a pointer to a CalcHEP backend function.
       double sv(str channel, DecayTable& tbl, double (*sigmav)(str&, std::vector<str>&, std::vector<str>&, double&, const DecayTable&), double v_rel)
       {
+        /// Returns sigma*v for a given channel.
         double GeV2tocm3s1 = gev2cm2*s2cm;
         
         // CalcHEP args
@@ -275,6 +293,8 @@ namespace Gambit
 
     void DarkMatterConj_ID_DMEFT(std::string& result){ result = "chi~"; }
 
+    /// Relativistic Wilson Coefficients for direct detection
+    /// DMEFT basis is the same as that used in DirectDM
     void DD_rel_WCs_flavscheme_DMEFT(map_str_dbl& result)
     {
       using namespace Pipes::DD_rel_WCs_flavscheme_DMEFT;
@@ -434,4 +454,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:49 +0000

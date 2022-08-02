@@ -62,6 +62,35 @@ Authors
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Module function definitions for NeutrinoBit 
+///  exclusive for right-handed neutrinos
+///
+///  *********************************************
+/// 
+///  Authors
+/// 
+///  \author Suraj Krishnamurthy
+///          (S.Krishnamurthy@uva.nl) 
+///  \date 2017 February
+///
+///  \author Tomas Gonzalo
+///          (t.e.gonzalo@fys.uio.no)
+///  \date 2017 Oct
+///  \date 2018
+///  \date 2019
+///  \date 2020
+///
+///  \author Marcin Chrzaszcz
+///          (mchrzasz@cern.ch)
+///  \date 2018
+///
+///  \author Julia Harz
+///          (jharz@lpthe.jussieu.fr)
+///  \date 2018 May
+///
+///  *********************************************
 
 #include <cmath>
 #include <iomanip>
@@ -2391,4 +2420,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:37 +0000
+Updated on 2022-08-02 at 23:34:48 +0000

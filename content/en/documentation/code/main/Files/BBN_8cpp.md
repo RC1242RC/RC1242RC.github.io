@@ -72,6 +72,51 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  CosmoBit routines relating to BBN.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Selim C. Hotinli
+///          (selim.hotinli14@pimperial.ac.uk)
+///  \date 2017 Jul
+///  \date 2018 May
+///  \date 2018 Aug - Sep
+///
+///  \author Patrick Stoecker
+///          (stoecker@physik.rwth-aachen.de)
+///  \date 2017 Nov
+///  \date 2018 Jan - May
+///  \date 2019 Jan, Feb, June, Nov
+///
+///  \author Janina Renk
+///          (janina.renk@fysik.su.se)
+///  \date 2018 June
+///  \date 2019 Mar,June
+///
+///  \author Sanjay Bloor
+///          (sanjay.bloor12@imperial.ac.uk)
+///  \date 2019 June, Nov
+///
+///  \author Sebastian Hoof
+///          (hoof@uni-goettingen.de)
+///  \date 2020 Mar
+///
+///  \author Pat Scott
+///          (pat.scott@uq.edu.au)
+///  \date 2018 Mar
+///  \date 2019 Jul
+///  \date 2020 Apr
+///
+///  \author Tomas Gonzalo
+///          (tomas.gonzalo@monash.edu)
+///  \date 2020 Sep
+///  \date 2022 Jan
+///
+///  *********************************************
 
 #include <memory>  // make_unique pointers
 #include <stdint.h> // save memory addresses as int
@@ -91,6 +136,11 @@ namespace Gambit
   {
     using namespace LogTags;
 
+    /// Add parameters of relicparam structure that should be set to non-default values
+    /// to the AlterBBN_input map.
+    /// If you want to modify a parameter which has not been used in CosmoBit before, simply
+    /// add it to the function 'fill_cosmomodel' in 'AlterBBN_<version>.cpp' and to the
+    /// set of 'known' parameters 'known_relicparam_options'.
     void AlterBBN_Input(map_str_dbl &result)
     {
       using namespace Pipes::AlterBBN_Input;
@@ -152,6 +202,7 @@ namespace Gambit
     }
 
 
+    /// Check the validity of a correlation matrix for AlterBBN likelihood calculations given in the YAML file, and use it to populate a correlation matrix object
     void populate_correlation_matrix(const std::map<std::string, int>& abund_map, std::vector<std::vector<double>>& corr,
                                      std::vector<double>& errors, bool has_errors, const Options& runOptions)
     {
@@ -272,6 +323,7 @@ namespace Gambit
       }
     }
 
+    /// Compute elemental abundances from BBN
     void compute_primordial_abundances_BBN(BBN_container &result)
     {
       using namespace Pipes::compute_primordial_abundances_BBN;
@@ -600,12 +652,14 @@ namespace Gambit
       }
     }
 
+    /// Extract helium-4 abundance from BBN abundance container
     void extract_helium_abundance(double &result)
     {
       using namespace Pipes::extract_helium_abundance;
       result = Dep::primordial_abundances->get_BBN_abund("He4");
     }
 
+    /// Compute the overall log-likelihood from BBN
     void compute_BBN_LogLike(double &result)
     {
       using namespace Pipes::compute_BBN_LogLike;
@@ -779,4 +833,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:37 +0000
+Updated on 2022-08-02 at 23:34:54 +0000

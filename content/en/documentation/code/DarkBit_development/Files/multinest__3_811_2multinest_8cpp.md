@@ -94,7 +94,19 @@ The main routine to run for the MultiNest scanner.
 ```
 //  GAMBIT: Global and Modular BSM Inference Tool
 //  *********************************************
+///  \file
+///
+///  ScannerBit interface to Multinest 3.11
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
 //
+///  \author Ben Farmer
+///          (ben.farmer@gmail.com)
+///  \date October 2013 - Aug 2016
+///
+///  *********************************************
 
 #include <vector>
 #include <string>
@@ -115,13 +127,18 @@ namespace Gambit
 {
    namespace MultiNest
    {
+      /// Global pointer to loglikelihood wrapper object, for use in the MultiNest callback functions
       LogLikeWrapper *global_loglike_object;
    }
 }
 
+/// Typedef for the ScannerBit pointer to the external loglikelihood function
 typedef Gambit::Scanner::like_ptr scanPtr;
 
 
+/// =================================================
+/// Interface to ScannerBit
+/// =================================================
 
 scanner_plugin(multinest, version(3, 11))
 {
@@ -134,6 +151,7 @@ scanner_plugin(multinest, version(3, 11))
    // Pointer to the (log)likelihood function
    scanPtr LogLike;
 
+   /// The constructor to run when the MultiNest plugin is loaded.
    plugin_constructor
    {
       // Retrieve the external likelihood calculator
@@ -141,9 +159,15 @@ scanner_plugin(multinest, version(3, 11))
       if (LogLike->getRank() == 0) std::cout << "Loading MultiNest nested sampling plugin for ScannerBit." << std::endl;
    }
 
+   /// The main routine to run for the MultiNest scanner.
    int plugin_main (void)
    {
+      /// ************
+      /// TODO: Replace with some wrapper? Maybe not, this is already pretty straightforward,
+      /// though perhaps a little counterintuitive that the printer is the place to get this
+      /// information.
       bool resume_mode = get_printer().resume_mode();
+      /// ************
 
       // Retrieve the dimensionality of the scan.
       int ma = get_dimension();
@@ -243,11 +267,15 @@ scanner_plugin(multinest, version(3, 11))
 }
 
 
+/// =================================================
+/// Function definitions
+/// =================================================
 
 namespace Gambit {
 
    namespace MultiNest {
 
+      ///@{ Plain-vanilla functions to pass to Multinest for the callback
       // Note: we are using the c interface from cwrapper.f90, so the function
       // signature is a little different than in the multinest examples.
       double callback_loglike(double *Cube, int ndim, int npars, void*)
@@ -267,12 +295,31 @@ namespace Gambit {
             dumper(nSamples, nlive, nPar, physLive, posterior, paramConstr,
                    maxLogLike, logZ, logZerr);
       }
+      ///@}
 
 
+      /// LogLikeWrapper Constructor
       LogLikeWrapper::LogLikeWrapper(scanPtr loglike, printer_interface& printer)
         : boundLogLike(loglike), boundPrinter(printer), dumper_runonce(false)
       { }
 
+      /// Main interface function from MultiNest to ScannerBit-supplied loglikelihood function
+      /// This is the function that will be passed to Multinest as the
+      /// loglike callback routine
+      ///
+      /// Input arguments
+      /// ndim    = dimensionality (total number of free parameters) of the problem
+      /// npars   = total number of free plus derived parameters
+      /// context = void pointer, any additional information
+      ///
+      /// Input/Output arguments
+      /// Cube[npars]  = on entry has the ndim parameters in unit-hypercube
+      ///                on exit, the physical parameters plus copy any derived parameters
+      ///                you want to store with the free parameters
+      ///
+      /// Output arguments
+      /// lnew = loglikelihood
+      ///
       double LogLikeWrapper::LogLike(double *Cube, int ndim, int)
       {
          //convert C style array to C++ vector class
@@ -293,7 +340,32 @@ namespace Gambit {
          return lnew;
       }
 
+      /// Main interface to MultiNest dumper routine
+      /// The dumper routine will be called every updInt*10 iterations
+      /// MultiNest does not need to the user to do anything. User can use the arguments in whichever way he/she wants
+      ///
+      /// Arguments:
+      ///
+      /// nSamples                                             = total number of samples in posterior distribution
+      /// nlive                                                = total number of live points
+      /// nPar                                                 = total number of parameters (free + derived)
+      /// physLive[1][nlive * (nPar + 1)]                      = 2D array containing the last set of live points
+      ///                                                        (physical parameters plus derived parameters) along
+      ///                                                        with their loglikelihood values
+      /// TODO: Multinest uses the likelihood of the lowest live point as the "threshold" for iterating, i.e. it throws out the live point if it finds a better one. So we can use this number to update the GAMBIT 'cutoff' threshold when evaluating the likelihood function.
 
+      /// posterior[1][nSamples * (nPar + 2)]                  = posterior distribution containing nSamples points.
+      ///                                                        Each sample has nPar parameters (physical + derived)
+      ///                                                        along with the their loglike value & posterior probability
+      /// paramConstr[0][0] to paramConstr[0][nPar - 1]        = mean values of the parameters
+      /// paramConstr[0][nPar] to paramConstr[0][2*nPar - 1]   = standard deviation of the parameters
+      /// paramConstr[0][nPar*2] to paramConstr[0][3*nPar - 1] = best-fit (maxlike) parameters
+      /// paramConstr[0][nPar*4] to paramConstr[0][4*nPar - 1] = MAP (maximum-a-posteriori) parameters
+      /// paramConstr[1][4*nPar]                               = ????
+      /// maxLogLike                                           = maximum loglikelihood value
+      /// logZ                                                 = log evidence value
+      /// logZerr                                              = error on log evidence value
+      /// context                                              = void pointer, any additional information
       void LogLikeWrapper::dumper(int nSamples, int nlive, int nPar, double *physLive, double *posterior, double* /*paramConstr*/,
        double /*maxLogLike*/, double /*logZ*/, double /*logZerr*/)
       {
@@ -396,4 +468,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:45 +0000
+Updated on 2022-08-02 at 23:34:55 +0000

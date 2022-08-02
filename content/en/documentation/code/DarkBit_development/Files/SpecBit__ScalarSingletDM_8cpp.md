@@ -48,6 +48,22 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Functions of module SpecBit
+///
+///  SpecBit module functions related to the
+///  scalar singlet DM model.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Ben Farmer
+///          (benjamin.farmer@fysik.su.se)
+///    \date 2015 May
+///
+///  *********************************************
 
 #include <string>
 #include <sstream>
@@ -84,6 +100,7 @@ namespace Gambit
     using namespace LogTags;
     using namespace flexiblesusy;
 
+    /// Get a (simple) Spectrum object wrapper for the ScalarSingletDM_Z2 model
     void get_ScalarSingletDM_Z2_spectrum(Spectrum& result)
     {
       namespace myPipe = Pipes::get_ScalarSingletDM_Z2_spectrum;
@@ -143,6 +160,7 @@ namespace Gambit
 
     }
 
+    /// Get a (simple) Spectrum object wrapper for the ScalarSingletDM_Z3 model
     void get_ScalarSingletDM_Z3_spectrum(Spectrum& result)
     {
       namespace myPipe = Pipes::get_ScalarSingletDM_Z3_spectrum;
@@ -594,6 +612,7 @@ namespace Gambit
         }
     #endif
 
+    /// Put together the Higgs couplings for the ScalarSingletDM models, from partial widths only
     void ScalarSingletDM_higgs_couplings_pwid(HiggsCouplingsTable &result)
     {
       using namespace Pipes::ScalarSingletDM_higgs_couplings_pwid;
@@ -626,6 +645,7 @@ namespace Gambit
       // Leave all the effective couplings for all neutral higgses set to unity (done at construction).
     }
 
+    /// Print ScalarSingletDM spectra out. Stripped down copy of MSSM version with variable names changed
     void fill_map_from_ScalarSingletDM_spectrum(std::map<std::string,double>& specmap, const Spectrum& singletdmspec,
                                          const std::vector<SpectrumParameter>& required_parameters)
     {
@@ -636,6 +656,7 @@ namespace Gambit
          const std::string      name  = it->name();
          const std::vector<int> shape = it->shape();
 
+         /// Verification routine should have taken care of invalid shapes etc, so won't check for that here.
 
          // Check scalar case
          if(shape.size()==1 and shape[0]==1)
@@ -702,4 +723,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:45 +0000
+Updated on 2022-08-02 at 23:34:55 +0000

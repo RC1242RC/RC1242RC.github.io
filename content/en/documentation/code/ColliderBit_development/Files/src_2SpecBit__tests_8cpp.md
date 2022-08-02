@@ -251,6 +251,25 @@ BOOST_PP_SEQ_FOR_EACH_PRODUCT(GET_M2_MATRIX_EL, ((NAME))((BLOCK))(BOOST_PP_TUPLE
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Tests to verify that Spectrum objects are
+///  working correctly.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Ben Farmer
+///          (ben.farmer@gmail.com)
+///    \date 2015 Aug
+///
+///  \author Tomas Gonzalo
+///          (t.e.gonzalo@fys.uio.no_)
+///     \date 2016 Apr - Sep
+///
+///
+///  *********************************************
 
 #include <string>
 #include <sstream>
@@ -329,6 +348,8 @@ namespace Gambit
       result = 0;
     }
 
+    /// Verify consistency of the contents of a Spectrum object of capability MSSMspectrum.
+    /// (derived from old 'exampleRead' function)
     void MSSMspectrum_test (bool &result)
     {
 
@@ -866,6 +887,8 @@ namespace Gambit
 
          cout << endl;
 
+         /// NEW! Tests of override setters
+         /// These cannot be run on a const spectrum object, so we need to clone it first
          std::unique_ptr<SubSpectrum> clonedspec = spec.clone();
 
          cout << "Testing set_override functions" << endl;
@@ -898,16 +921,20 @@ namespace Gambit
          cout << "Original ml2(1,1) via no_overrides:" << clonedspec->get(Par::mass2,"ml2",1,1,ignore_overrides) << endl;
 
 
+         /// Now add some entry that didn't exist before
          cout << "has 'new_entry'? " << clonedspec->has(Par::mass1,"new_entry") << endl;
          cout << "..." << endl;
+         /// Note: if we try to do it like this, it should fail:
          //clonedspec->set_override(Par::mass2,-1234,"new_entry"); // incorrect: "allow_new" false by default
          clonedspec->set_override(Par::mass1,-1234,"new_entry",true); // correct: "allow_new" = true
          cout << "has 'new_entry'? " << clonedspec->has(Par::mass1,"new_entry") << endl;
          cout << "new_entry = " << clonedspec->get(Par::mass1,"new_entry") << endl;
          cout << endl;
 
+         /// TODO: Tests of ordinary 'setter' functions (these actually replace data in the wrapped object)
 
 
+         /// Tests of spectrum/particle database antiparticle getters/setters interaction
          cout << "Test retrieval of antiparticle entries" << endl;
 
          cout << "has '~e+' pole mass? " << clonedspec->has(Par::Pole_Mass,"~e+",1) << endl;
@@ -960,6 +987,7 @@ namespace Gambit
 
          cout << "Test report:" << std::endl << report.str();
 
+         /// Turn SpecBit warnings to 'fatal' in order to trigger stop after this function runs.
          SpecBit_warning().raise(LOCAL_INFO,"\n *** Finished examining spectrum contents ***");
          result = 0;
       }
@@ -976,6 +1004,7 @@ namespace Gambit
        // Check light quark mass ratios
        logger() << "Checking light quark mass ratios:" << EOM;
 
+       /// Generate data for a plot of quark mass
        double Qs[] = {
        1.00000000e-02,   1.25892541e-02,   1.58489319e-02,
        1.99526231e-02,   2.51188643e-02,   3.16227766e-02,
@@ -1055,4 +1084,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:37 +0000
+Updated on 2022-08-02 at 23:34:47 +0000

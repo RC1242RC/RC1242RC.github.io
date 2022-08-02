@@ -64,6 +64,40 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  ColliderBit event loop functions returning
+///  detector simulations.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Abram Krislock
+///          (a.m.b.krislock@fys.uio.no)
+///
+///  \author Aldo Saavedra
+///
+///  \author Andy Buckley
+///
+///  \author Chris Rogan
+///          (crogan@cern.ch)
+///  \date 2014 Aug
+///  \date 2015 May
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)
+///  \date 2015 Jul
+///  \date 2018 Jan
+///  \date 2019 Jan
+///
+///  \author Anders Kvellestad
+///          (anders.kvellestad@fys.uio.no)
+///  \date   2017 March
+///  \date   2018 Jan
+///  \date   2018 May
+///
+///  *********************************************
 
 #include <memory>
 
@@ -81,6 +115,7 @@ namespace Gambit
   namespace ColliderBit
   {
 
+    /// Retrieve a BuckFast sim of ATLAS
     void getBuckFastATLAS(BaseDetector* &result)
     {
       using namespace Pipes::getBuckFastATLAS;
@@ -95,6 +130,7 @@ namespace Gambit
       }
     }
 
+    /// Retrieve a BuckFast sim of CMS
     void getBuckFastCMS(BaseDetector* &result)
     {
       using namespace Pipes::getBuckFastCMS;
@@ -109,6 +145,7 @@ namespace Gambit
       }
     }
 
+    /// Retrieve an Identity BuckFast sim (no sim)
     void getBuckFastIdentity(BaseDetector* &result)
     {
       using namespace Pipes::getBuckFastIdentity;
@@ -124,4 +161,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:47 +0000
+Updated on 2022-08-02 at 23:34:57 +0000

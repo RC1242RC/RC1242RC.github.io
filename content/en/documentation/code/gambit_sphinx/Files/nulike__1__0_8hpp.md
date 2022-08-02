@@ -46,6 +46,24 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Frontend header for the nulike backend.
+///
+///  Compile-time registration of available
+///  functions and variables from this backend.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Pat Scott
+///          (patscott@physics.mcgill.ca)
+///  \date 2013 May
+///  \date 2014 March
+///  \date 2015 Aug
+///
+///  *********************************************
 
 // Import functions
 BE_FUNCTION(nulike_init, void, (const char&, const char&, const char&, const char&, const char&, double&, bool&, bool&), "nulike_init_", "nulike_init")
@@ -67,4 +85,4 @@ BE_FUNCTION(nulike_lnpin,  double, (const int&, const double&, const double&, co
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:41 +0000
+Updated on 2022-08-02 at 23:34:50 +0000

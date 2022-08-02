@@ -133,6 +133,18 @@ Farray< Fdouble, 1, 2, 1, 2 > msl_in;
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Frontend for Prospino 2.1 backend
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Anders Kvellestad
+///  \date 2019 Apr, Nov
+///
+///  *********************************************
 
 #include "gambit/Backends/backend_singleton.hpp"
 #include "gambit/Backends/frontend_macros.hpp"
@@ -691,4 +703,4 @@ END_BE_NAMESPACE
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:48 +0000
+Updated on 2022-08-02 at 23:34:59 +0000

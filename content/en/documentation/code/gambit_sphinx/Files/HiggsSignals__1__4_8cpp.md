@@ -54,6 +54,21 @@ BE_INI_FUNCTION {
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file HiggsSignals.cpp
+///
+///  Frontend source for the HiggsSignals backend.
+///
+///  Actual implementation of HiggsSignals ini function.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Christopher S. Rogan
+///          (crogan@cern.ch)
+///  \date 2015 Sept
+///
+///  *********************************************
 
 #include "gambit/Backends/frontend_macros.hpp"
 #include "gambit/Backends/backend_singleton.hpp"
@@ -105,4 +120,4 @@ END_BE_INI_FUNCTION
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:41 +0000
+Updated on 2022-08-02 at 23:34:51 +0000

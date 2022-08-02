@@ -115,7 +115,7 @@ def main(argv):
     scanbit_cxx_flags = dict()
     #scanbit_static_links = dict()
 
-    
+    ## begin adding scannerbit files to CMakeLists.txt ##
     scanbit_srcs = [ name for name in os.listdir("./ScannerBit/src") if os.path.isfile('./ScannerBit/src/' + name) if name.endswith(".cpp") or name.endswith(".c") or name.endswith(".cc") or name.endswith(".cxx") ]
     scanbit_hdrs = [ name for name in os.listdir("./ScannerBit/include/gambit/ScannerBit") if os.path.isfile('./ScannerBit/include/gambit/ScannerBit/' + name) if name.endswith(".hpp") or name.endswith(".h") ]
     prior_srcs = []
@@ -144,9 +144,9 @@ def main(argv):
     cmakelist_txt_out += ")\n\nadd_gambit_library( ScannerBit OPTION OBJECT SOURCES ${scannerbit_sources} HEADERS ${scannerbit_headers} )\n\n"
 
     prior_txt_out += "\n#endif\n"
-    
+    ## end adding scannerbit files to CMakeLists.txt ##
 
-    
+    ## begin adding scanlibs to CMakeLists.txt ##
     scan_helper_srcs = []
     scan_helper_hdrs = []
 
@@ -165,7 +165,7 @@ def main(argv):
     for header in sorted(scan_helper_hdrs):
         cmakelist_txt_out += " "*16 + "include/gambit/ScannerBit/" + header.split('/ScannerBit/include/gambit/ScannerBit/')[1] + "\n"
     cmakelist_txt_out += ")\n\n"
-    
+    ## end adding scanlibs to CMakeLists.txt ##
 
     # loop through the different plugin types
     for i in range(len(plug_type)):
@@ -580,6 +580,7 @@ endif()
 add_dependencies(scanlibs yaml-cpp)
 target_link_libraries(scanlibs yaml-cpp)
 set_target_properties(scanlibs PROPERTIES RUNTIME_OUTPUT_DIRECTORY \"${PROJECT_SOURCE_DIR}/ScannerBit/bin\")
+
 # Specify known plugin include paths
 set( PLUGIN_INCLUDE_DIRECTORIES
                 ${PROJECT_BINARY_DIR}
@@ -984,4 +985,4 @@ if __name__ == "__main__":
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:45 +0000
+Updated on 2022-08-02 at 23:34:55 +0000

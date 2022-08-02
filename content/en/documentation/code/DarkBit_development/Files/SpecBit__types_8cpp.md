@@ -44,6 +44,20 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Source code for types for module SpecBit.
+///  For instructions on adding new types, see
+///  the corresponding header.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Janina Renk
+///          (janina.renk@fysik.su.se)
+///  \date 2019 July, Dec
+///  *********************************************
 
 #include "gambit/SpecBit/SpecBit_types.hpp"
 
@@ -53,6 +67,10 @@ namespace Gambit
   namespace SpecBit
   {
 
+    /// delete all entries of the vevacious results map and set
+    /// lifetime, probability and all entries of bounceActionThreshould vectors
+    /// to -1 to be able to easily filter out points for which vevacious
+    /// did not run successfully
     void VevaciousResultContainer::clear_results(const str panic_vacuum, int pathFinder_number)
     {
 
@@ -84,6 +102,7 @@ namespace Gambit
       }
     }
 
+    /// add entries to vevacious result map
     void VevaciousResultContainer::set_results(str panic_vaccum, str name, double val)
     {
         // for thermalProbability entry check if
@@ -100,6 +119,8 @@ namespace Gambit
         result_map[panic_vaccum][name]=val;
     }
 
+    /// add information to vevacious result map whether the action of drawing a straight path between the
+    /// physical & panic vacuum is already below the action threshold.
     void VevaciousResultContainer::add_straightPathGoodEnough(str panic_vacuum)
     {
         // action threshold and action of straight path
@@ -128,6 +149,8 @@ namespace Gambit
         }
     }
 
+    /// add a SpectrumEntry type to the 'spec_entry_map' map. GAMBIT will iterate through it and
+    /// pass all contents to vevacious before it is called.
     void SpectrumEntriesForVevacious::add_entry (std::string name, vec_pair_int_dbl parameters, int dimension)
     {
         // create spectrum entry
@@ -146,4 +169,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:45 +0000
+Updated on 2022-08-02 at 23:34:55 +0000

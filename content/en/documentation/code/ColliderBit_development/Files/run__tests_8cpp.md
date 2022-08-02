@@ -47,6 +47,7 @@ using namespace Gambit;
 using namespace SpecBit;
 using namespace flexiblesusy;
 
+/// Main GAMBIT program
 int main(int argc, char* argv[])
 {
    std::cout << "Running Spectrum tests..." << std::endl;
@@ -101,4 +102,4 @@ int main(int argc, char* argv[])
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:36 +0000
+Updated on 2022-08-02 at 23:34:47 +0000

@@ -52,6 +52,27 @@ TodoBug in HEPUtils::get_jets means that constituent info is lost for now...
 // -*- C++ -*-
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///
+///  lhef2heputils: a Les Houches Event Format (LHEF)
+///  -> HEPUtils::Event MC generator event file
+///  converter, based on lhef2hepmc.
+///
+///  Hat tip: Leif Lönnblad for writing the LHEF
+///  parser that actually makes this possible!
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Andy Buckley
+///  (andy.buckley@cern.ch)
+///  \date May 2019
+///
+///  \author Pat Scott
+///  (p.scott@imperial.ac.uk)
+///  \date May 2019
+///
+///  *********************************************
 
 #include "gambit/cmake/cmake_variables.hpp"
 
@@ -74,6 +95,7 @@ using namespace std;
 using namespace HEPUtils;
 using namespace FJNS;
 
+/// Extract an LHE event as a HEPUtils::Event
 void get_HEPUtils_event(const LHEF::Reader& lhe, Event& evt, double jet_pt_min)
 {
 
@@ -97,6 +119,7 @@ void get_HEPUtils_event(const LHEF::Reader& lhe, Event& evt, double jet_pt_min)
     const P4 p4 = P4::mkXYZM(lhe.hepeup.PUP[i][0], lhe.hepeup.PUP[i][1], lhe.hepeup.PUP[i][2], lhe.hepeup.PUP[i][4]);
 
     // Store interacting prompt particles
+    /// @todo Dress leptons?
     if (apid == 22 || apid == 11 || apid == 13 || apid == 15)
     {
       Particle* p = new Particle(p4, pid); // the event will take ownership of this pointer
@@ -133,6 +156,7 @@ void get_HEPUtils_event(const LHEF::Reader& lhe, Event& evt, double jet_pt_min)
   for (const PseudoJet& pj : jets)
   {
     bool hasC = false, hasB = false;
+    /// @todo Bug in HEPUtils::get_jets means that constituent info is lost for now...
     // for (const PseudoJet& c : pj.constituents()) {
     //   if (c.user_index() == 4) hasC = true;
     //   if (c.user_index() == 5) hasB = true;
@@ -159,4 +183,4 @@ void get_HEPUtils_event(const LHEF::Reader& lhe, Event& evt, double jet_pt_min)
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:38 +0000
+Updated on 2022-08-02 at 23:34:49 +0000

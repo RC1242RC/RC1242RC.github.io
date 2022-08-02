@@ -69,6 +69,23 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Module functions for computing cross-sections
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)
+///  \date 2019 Feb, May
+///
+///  \author Anders Kvellestad
+///          (a.kvellestad@imperial.ac.uk)
+///  \date 2019 Sep, Oct, Nov
+///
+///  *********************************************
 
 #include "gambit/ColliderBit/ColliderBit_eventloop.hpp"
 #include "gambit/ColliderBit/complete_process_PID_pair_multimaps.hpp"
@@ -85,6 +102,9 @@ namespace Gambit
     // ======= Utility functions =======
 
 
+    /// Helper function that takes a cross-section value in fb or pb, 
+    /// along with an absolute or relative uncertainty, and returns the 
+    /// xsec and absolute uncertainty in fb.
     std::pair<double,double> convert_xsecs_to_fb(double input_xsec, double input_xsec_uncert, str input_unit, bool input_fractional_uncert)
     {
       double xsec_fb;
@@ -124,6 +144,8 @@ namespace Gambit
 
 
     #ifdef HAVE_PYBIND11
+      /// WORK IN PROGRESS
+      /// Get a cross-section from the xsecBE backend
       void getPIDPairCrossSectionsMap_xsecBE(map_PID_pair_PID_pair_xsec& result)
       {
         using namespace Pipes::getPIDPairCrossSectionsMap_xsecBE;
@@ -194,6 +216,8 @@ namespace Gambit
     #endif
 
     #ifdef HAVE_PYBIND11
+      /// WORK IN PROGRESS
+      /// Get a cross-section from the salami backend (using Prospino for LO)
       void getPIDPairCrossSectionsMap_salami(map_PID_pair_PID_pair_xsec& result)
       {
         using namespace Pipes::getPIDPairCrossSectionsMap_salami;
@@ -364,6 +388,8 @@ namespace Gambit
     #endif
 
 
+    /// Get a cross-section from Prospino
+    /// WORK IN PROGRESS
     void getPIDPairCrossSectionsMap_prospino(map_PID_pair_PID_pair_xsec& result)
     {
       using namespace Pipes::getPIDPairCrossSectionsMap_prospino;
@@ -469,6 +495,7 @@ namespace Gambit
 
 
 
+    /// Test functions for provding PIDPairCrossSectionsMap (cross-sections in fb)
     PID_pair_xsec_container silly_pid_xsec_constructor(PID_pair pid_pair, double xsec_val)
     {
       PID_pair_xsec_container result;
@@ -946,6 +973,7 @@ namespace Gambit
 
 
 
+    /// Get a map between Pythia process codes and cross-sections
     void getProcessCrossSectionsMap(map_int_process_xsec& result)
     {
       using namespace Pipes::getProcessCrossSectionsMap;
@@ -1077,6 +1105,7 @@ namespace Gambit
     }
 
 
+    /// Compute a cross-section from Monte Carlo
     void getEvGenCrossSection(MC_xsec_container& result)
     {
       using namespace Pipes::getEvGenCrossSection;
@@ -1206,6 +1235,7 @@ namespace Gambit
 
     }
 
+    /// Return MC_xsec_container as the base xsec_container
     void getEvGenCrossSection_as_base(xsec_container& result)
     {
       using namespace Pipes::getEvGenCrossSection_as_base;
@@ -1213,6 +1243,7 @@ namespace Gambit
     }
 
 
+    /// Get a cross-section from NLL-FAST
     void getNLLFastCrossSection(xsec_container& result)
     {
       using namespace Pipes::getNLLFastCrossSection;
@@ -1252,6 +1283,7 @@ namespace Gambit
     }
 
 
+    /// A helper function to check the YAML options for getYAMLCrossSection and getYAMLCrossSection_SLHA
     bool checkOptions_getYAMLCrossSection(const Options& runOptions, const str calling_function, std::pair<str,str>& xsec_pnames, str& input_unit, bool& input_fractional_uncert, str& errmsg)
     {
 
@@ -1313,6 +1345,7 @@ namespace Gambit
     }
 
 
+    /// A function that reads the total cross-section from the input file, but builds up the number of events from the event loop
     void getYAMLCrossSection(xsec_container& result)
     {
       using namespace Pipes::getYAMLCrossSection;
@@ -1378,6 +1411,7 @@ namespace Gambit
     }
 
 
+    /// A function that reads a list of (SLHA file, total cross-section) pairs from the input YAML file
     void getYAMLCrossSection_SLHA(xsec_container& result)
     {
       using namespace Pipes::getYAMLCrossSection_SLHA;
@@ -1458,6 +1492,8 @@ namespace Gambit
 
 
 
+    /// A function that assigns a total cross-sections directly from the scan parameters
+    /// (for model ColliderBit_SLHA_scan_model)
     void getYAMLCrossSection_param(xsec_container& result)
     {
       using namespace Pipes::getYAMLCrossSection_param;
@@ -1568,6 +1604,7 @@ namespace Gambit
 
     }
 
+    /// Get cross-section info as map_str_dbl (for simple printing)
     void getTotalCrossSectionAsMap(map_str_dbl& result)
     {
       using namespace Pipes::getTotalCrossSectionAsMap;
@@ -1598,6 +1635,7 @@ namespace Gambit
     }  // end getXsecInfoMap
 
 
+    /// Output PID pair cross-sections as a str-dbl map, for easy printing
     void getPIDPairCrossSectionsInfo(map_str_dbl& result)
     {
       using namespace Pipes::getPIDPairCrossSectionsInfo;
@@ -1622,6 +1660,9 @@ namespace Gambit
 
     }
 
+    /// A consistency check that ensures that if each event is weighted
+    /// by a process-level cross-section from an external calculator, then
+    /// the total cross-section is taken from the event generator
     void doCrossSectionConsistencyCheck(bool& result)
     {
       using namespace Pipes::doCrossSectionConsistencyCheck;
@@ -1650,4 +1691,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:47 +0000
+Updated on 2022-08-02 at 23:34:57 +0000

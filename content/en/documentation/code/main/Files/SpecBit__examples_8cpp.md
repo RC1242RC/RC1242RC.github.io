@@ -251,6 +251,20 @@ BOOST_PP_SEQ_FOR_EACH_PRODUCT(GET_M2_MATRIX_EL, ((NAME))((BLOCK))(BOOST_PP_TUPLE
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Example retrieval of data from Spectrum
+///  object.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Ben Farmer
+///          (ben.farmer@gmail.com)
+///    \date 2014 Dec
+///
+///  *********************************************
 
 #include <string>
 #include <sstream>
@@ -828,6 +842,7 @@ namespace Gambit
 
          cout << endl;
 
+         /// NEW! Tests of override setters
 
          cout << "Testing set_override functions" << endl;
 
@@ -843,8 +858,10 @@ namespace Gambit
          spec->set_override_mass2_parameter(-668,"ml2",1,1);
          cout << "Override ml2(1,1):" << spec->get_mass2_parameter("ml2",1,1) << endl;
 
+         /// Now add some entry that didn't exist before
          cout << "has 'new_entry'? " << spec->has_mass_parameter("new_entry") << endl;
          cout << "..." << endl;
+         /// Note: if we try to do it like this, it should fail:
          //spec->set_override_mass2_parameter(-1234,"new_entry"); // incorrect: safety still on
          spec->set_override_mass_parameter(-1234,"new_entry",false); // correct: safety check turned off
          cout << "has 'new_entry'? " << spec->has_mass_parameter("new_entry") << endl;
@@ -886,4 +903,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:36 +0000
+Updated on 2022-08-02 at 23:34:53 +0000

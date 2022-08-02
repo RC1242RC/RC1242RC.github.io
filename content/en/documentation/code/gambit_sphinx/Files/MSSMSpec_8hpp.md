@@ -56,6 +56,31 @@ Authors:
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  MSSM derived version of SubSpectrum class. Designed
+///  for easy interface to FlexibleSUSY, but also
+///  works with SoftSUSY as the backend with an
+///  appropriately designed intermediate later.
+///
+///  *********************************************
+///
+///  Authors:
+///  <!-- add name and date if you modify -->
+///
+///  \author Peter Athron
+///          (peter.athron@coepp.org.au)
+///  \date 2014, 2015 Jan, Feb, Mar
+///
+///  \author Ben Farmer
+///          (benjamin.farmer@fysik.su.se)
+///  \date 2014, 2015 Jan, Feb, Mar
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)
+///  \date 2015 Aug
+///
+///  *********************************************
 
 #ifndef MSSMSPEC_H
 #define MSSMSPEC_H
@@ -150,6 +175,7 @@ namespace Gambit
          particle_type = 0;
          row = 0;
 
+         /// sneutrinos 1
          double temp = model_interface.model.get_physical().MSv(0);
          if (temp < mlsp) {
             mlsp = temp;
@@ -157,6 +183,7 @@ namespace Gambit
             row=0;
          }
 
+         /// up squarks 2
          temp = model_interface.model.get_physical().MSu(0);
          if (temp < mlsp) {
             mlsp = temp;
@@ -164,6 +191,7 @@ namespace Gambit
             row=0;
          }
 
+         /// down squarks 3
          temp = model_interface.model.get_physical().MSd(0);
          if (temp < mlsp) {
             mlsp = temp;
@@ -171,6 +199,7 @@ namespace Gambit
             row=0;
          }
 
+         /// sleptons 4
          temp = model_interface.model.get_physical().MSe(0);
          if (temp < mlsp) {
             mlsp = temp;
@@ -178,6 +207,7 @@ namespace Gambit
             row=0;
          }
 
+         /// charginos 5
          temp = fabs(model_interface.model.get_physical().MCha(0));
          if (temp < mlsp) {
             mlsp = temp;
@@ -185,6 +215,7 @@ namespace Gambit
             row=0;
          }
 
+         /// gluino 6
          temp = fabs(model_interface.model.get_physical().MGlu);
          if (temp < mlsp) {
             mlsp = temp;
@@ -448,6 +479,7 @@ namespace Gambit
 
 
 
+      /// @{ Fillers for "Running" parameters
 
       // Filler function for getter function pointer maps
       template <class MI>
@@ -464,6 +496,7 @@ namespace Gambit
          static const std::set<int> i0123 = initSet(0,1,2,3);
          static const std::set<int> i012345 = initSet(0,1,2,3,4,5);
 
+         /// @{ mass2 - mass dimension 2 parameters
          //
          // Functions utilising the "plain-vanilla" function signature
          // (Zero index member functions of model object)
@@ -498,6 +531,8 @@ namespace Gambit
             map_collection[Par::mass2].map2 = tmp_map;
          }
 
+         /// @}
+         /// @{ mass1 - mass dimension 1 parameters
          //
          // Functions utilising the "plain-vanilla" function signature
          // (Zero index member functions of model object)
@@ -527,6 +562,7 @@ namespace Gambit
             map_collection[Par::mass1].map2 = tmp_map;
          }
 
+         /// @}
 
          // @{ dimensionless - mass dimension 0 parameters
          //
@@ -561,13 +597,19 @@ namespace Gambit
 
             map_collection[Par::dimensionless].map2 = tmp_map;
          }
+         /// @}
 
+         /// @{ Pole_Mass - Pole mass parameters
          //
          // Functions utilising the "plain-vanilla" function signature
          // (Zero index member functions of model object)
          {
             typename MTget::fmap0 tmp_map;
 
+        /// PA: W mass is a prediction in most spectrum generators
+        /// so we need this.  One tricky question is how to interface
+        /// spectrum generators which have different input / outputs
+        /// *may* be ok to still mimic the FS way
             tmp_map["W+"] = &Model::get_MVWm_pole_slha;
             tmp_map["~g"] = &Model::get_MGlu_pole_slha;
 
@@ -610,7 +652,9 @@ namespace Gambit
             map_collection[Par::Pole_Mass].map1 = tmp_map;
          }
 
+         /// @}
 
+         /// @{ Pole_Mixing - Pole mass parameters
          //
          // Functions utilising the two-index "plain-vanilla" function signature
          // (Two-index member functions of model object)
@@ -630,6 +674,7 @@ namespace Gambit
 
             map_collection[Par::Pole_Mixing].map2 = tmp_map;
          }
+         /// @}
 
          return map_collection;
       }
@@ -651,6 +696,7 @@ namespace Gambit
          static const std::set<int> i0123 = initSet(0,1,2,3);
          static const std::set<int> i012345 = initSet(0,1,2,3,4,5);
 
+         /// @{ mass2 - mass dimension 2 parameters
          //
          // Functions utilising the "plain-vanilla" function signature
          // (Zero index member functions of model object)
@@ -676,7 +722,9 @@ namespace Gambit
 
             map_collection[Par::mass2].map2 = tmp_map;
          }
+         /// @}
 
+         /// @{ mass1 - mass dimension 1 parameters
          //
          // Functions utilising the "plain-vanilla" function signature
          // (Zero index member functions of model object)
@@ -706,6 +754,7 @@ namespace Gambit
             map_collection[Par::mass1].map2 = tmp_map;
          }
 
+         /// @}
 
          // @{ dimensionless - mass dimension 0 parameters
          //
@@ -737,10 +786,15 @@ namespace Gambit
           tmp_map["~g"] = &set_MGluino_pole_slha<Model>;
           tmp_map["A0"] = &set_MAh1_pole_slha<Model>;
           tmp_map["H+"] = &set_MHpm1_pole_slha<Model>;
+          /// Note; these aren't in the particle database, so no
+          /// conversion between particle/antiparticle.
           tmp_map["Goldstone0"] = &set_neutral_goldstone_pole_slha<Model>;
           tmp_map["Goldstone+"] = &set_charged_goldstone_pole_slha<Model>;
           tmp_map["Goldstone-"] = &set_charged_goldstone_pole_slha<Model>;
 
+          /// PA: MW is a prediction in FS and most spectrum generators
+      /// so this belongs in the HE object.
+      /// MZ is not and so belongs in LE object
           tmp_map["W+"] = &set_MW_pole_slha<Model>;
 
           map_collection[Par::Pole_Mass].map0_extraM = tmp_map;
@@ -762,6 +816,7 @@ namespace Gambit
         }
 
 
+        /// @{ Pole_Mixing - Pole mass parameters
         //
         // Functions utilising the two-index "plain-vanilla" function signature
         // (Two-index member functions of model object)
@@ -786,6 +841,7 @@ namespace Gambit
          return map_collection;
       }
 
+      /// @}
 
 
    } // end SpecBit namespace
@@ -797,4 +853,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:48 +0000

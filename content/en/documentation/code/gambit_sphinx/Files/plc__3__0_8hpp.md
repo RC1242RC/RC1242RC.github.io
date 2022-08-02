@@ -284,6 +284,23 @@ LOAD_LIBRARY double cosmo_nuisance_Planck_TT double cosmo_nuisance_Planck_lite d
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Frontend header for the plc backend.
+///
+///  Compile-time registration of available
+///  functions and variables from this backend.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Patrick Stoecker
+///          (stoecker@physik.rwth-aachen.de)
+///  \date 2019 Aug, Nov
+///  \date 2020 Feb
+///
+///  *********************************************
 
 #define BACKENDNAME plc
 #define BACKENDLANG CC
@@ -337,4 +354,4 @@ BE_CONV_FUNCTION(plc_loglike_lensing_marged_2018,double,(double*),"plc_loglike_l
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:41 +0000
+Updated on 2022-08-02 at 23:34:50 +0000

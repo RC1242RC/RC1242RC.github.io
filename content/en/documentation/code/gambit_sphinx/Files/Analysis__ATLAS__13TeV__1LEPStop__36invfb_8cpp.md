@@ -467,6 +467,7 @@ namespace Gambit {
         vector<const HEPUtils::Jet*> trueBJets; //for debugging
 
         // Get b jets
+        /// @note We assume that b jets have previously been 100% tagged
         const std::vector<double>  a = {0,10.};
         const std::vector<double>  b = {0,10000.};
         const std::vector<double> c = {0.77}; // set b-tag efficiency to 77%
@@ -1386,6 +1387,7 @@ namespace Gambit {
 
       }
 
+      /// Combine the variables of another copy of this analysis (typically on another thread) into this one.
       void combine(const Analysis* other)
       {
         const Analysis_ATLAS_13TeV_1LEPStop_36invfb* specificOther
@@ -1421,6 +1423,7 @@ namespace Gambit {
         // }
         // cout << "------------------------------------------------------------------------------------------------------------------------------ "<<endl;
 
+        /// Register results objects with the results for each SR; obs & bkg numbers from the paper
 
         add_result(SignalRegionData(_counters.at("tN_med"), 50., { 36.3, 6.6}));
         add_result(SignalRegionData(_counters.at("tN_high"), 8., { 3.8, 1.0}));
@@ -1461,4 +1464,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:40 +0000
+Updated on 2022-08-02 at 23:34:49 +0000

@@ -155,6 +155,34 @@ double double double int int int dsrdens rdtime_;
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Compile-time registration of common available
+///  functions and variables in all versions of the
+///  DarkSUSY 6 backend.
+///
+///  If you need to make version-specific changes,
+///  you will need to make copies of this header
+///  differentiated by a more specific version
+///  number than just the major revision (6).
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Torsten Bringmann
+///          (torsten.bringmann@fys.uio.no)
+///  \date 2018 September, 2019
+///
+///  \author Joakim Edsjo
+///          (edsjo@fysik.su.se)
+///  \date 2018 September
+///
+///  \author Pat Scott
+///          (pat.scott@uq.edu.au)
+///  \date 2020 September
+///
+///  *********************************************
 
 // Functions used in DS frontend
 BE_FUNCTION(dsinit, void, (), "dsinit_", "dsinit")
@@ -195,4 +223,4 @@ BE_CONV_FUNCTION(dsgenericwimp_nusetup, void, (const double(&)[29], const double
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:41 +0000
+Updated on 2022-08-02 at 23:34:50 +0000

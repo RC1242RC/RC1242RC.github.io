@@ -77,6 +77,39 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  HepMC event file reader module function
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Andy Buckley
+///          (andy.buckley@cern.ch)
+///  \date 2019 June
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)
+///  \date 2019 June
+///
+///  \author Anders Kvellestad
+///          (a.kvellestad@imperial.ac.uk)
+///  \date 2019 June
+///
+///  \author Tomas Gonzalo
+///          (tomas.gonzalo@monash.edu)
+///  \date 2019 Sep
+///
+///  \author Tomek Procter
+///           (tsp116@ic.ac.uk)
+///  \date 2019 October
+///
+///  \author Yang Zhang
+///           (tsp116@ic.ac.uk)
+///  \date 2020 June
+///
+///  *********************************************
 
 #include "gambit/cmake/cmake_variables.hpp"
 
@@ -99,6 +132,7 @@ namespace Gambit
   namespace ColliderBit
   {
 
+    /// A nested function that reads in HepMC event files and converts them to HEPUtils::Event format
     void getHepMCEvent(HEPUtils::Event& result)
     {
       using namespace Pipes::getHepMCEvent;
@@ -223,4 +257,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:47 +0000
+Updated on 2022-08-02 at 23:34:57 +0000

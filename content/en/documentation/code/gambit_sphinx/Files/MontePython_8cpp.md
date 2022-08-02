@@ -69,6 +69,46 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  CosmoBit routines relating to MontePython interface.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Selim C. Hotinli
+///          (selim.hotinli14@pimperial.ac.uk)
+///  \date 2017 Jul
+///  \date 2018 May
+///  \date 2018 Aug - Sep
+///
+///  \author Patrick Stoecker
+///          (stoecker@physik.rwth-aachen.de)
+///  \date 2017 Nov
+///  \date 2018 Jan - May
+///  \date 2019 Jan, Feb, June, Nov
+///
+///  \author Janina Renk
+///          (janina.renk@fysik.su.se)
+///  \date 2018 June
+///  \date 2019 Mar,June
+///
+///  \author Sanjay Bloor
+///          (sanjay.bloor12@imperial.ac.uk)
+///  \date 2019 June, Nov
+///
+///  \author Sebastian Hoof
+///          (hoof@uni-goettingen.de)
+///  \date 2020 Mar
+///
+///  \author Pat Scott
+///          (pat.scott@uq.edu.au)
+///  \date 2018 Mar
+///  \date 2019 Jul
+///  \date 2020 Apr
+///
+///  *********************************************
 
 #include "gambit/Elements/gambit_module_headers.hpp"
 #include "gambit/CosmoBit/CosmoBit_rollcall.hpp"
@@ -89,6 +129,8 @@ namespace Gambit
       /* MontePython */
       /***************/
 
+      /// Function to fill the mcmc_parameters dictionary of MontePython's Data object
+      /// with current values of nuisance parameters.
       void set_parameter_dict_for_MPLike(pybind11::dict & result)
       {
         using namespace Pipes::set_parameter_dict_for_MPLike;
@@ -123,6 +165,9 @@ namespace Gambit
         }
       }
 
+      /// Function to fill the mcmc_parameters dictionary of MontePython's Data object with an empty dictionary.
+      /// This version of the capability 'parameter_dict_for_MPLike' is used when no Likelihood with nuisance
+      /// parameters are in use, and just passes an empty Python dictionary
       void pass_empty_parameter_dict_for_MPLike(pybind11::dict & result)
       {
         using namespace Pipes::pass_empty_parameter_dict_for_MPLike;
@@ -137,6 +182,7 @@ namespace Gambit
         // Nothing to do here.
       }
 
+      /// Create the MontePython data and likelihood objects, determining which experiments are in use in the process
       void create_MP_objects(MPLike_objects_container &result)
       {
         using namespace Pipes::create_MP_objects;
@@ -210,6 +256,7 @@ namespace Gambit
         }
       }
 
+      /// Computes lnL for each experiment initialised in MontePython
       void compute_MP_LogLikes(map_str_dbl & result)
       {
         using namespace Pipes::compute_MP_LogLikes;
@@ -261,6 +308,8 @@ namespace Gambit
         first_run = false;
       }
 
+      /// Computes the combined lnL from the set of experiments
+      /// given to MontePython.
       void compute_MP_combined_LogLike(double& result)
       {
         using namespace Pipes::compute_MP_combined_LogLike;
@@ -287,6 +336,9 @@ namespace Gambit
         result = lnL;
       }
 
+      /// Get correlation coefficients and uncorrelated likelihood
+      /// of MP likelihood "bao_correlations".
+      /// Warning: this routine is specific to this likelihood, don't use for anything else!
       void get_bao_like_correlation(map_str_dbl& result)
       {
         using namespace Pipes::get_bao_like_correlation;
@@ -332,4 +384,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:49 +0000

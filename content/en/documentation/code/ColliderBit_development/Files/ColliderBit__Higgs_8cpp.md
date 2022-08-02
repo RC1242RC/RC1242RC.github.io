@@ -62,6 +62,38 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Functions of ColliderBit that deal exclusively with Higgs physics
+///  some functions were originally in CollderBit.cpp
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Chris Rogan
+///          (crogan@cern.ch)
+///  \date 2014 Aug
+///  \date 2015 May
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)
+///  \date 2015 Jul
+///  \date 2016 Sep
+///
+///  \author James McKay
+///          (j.mckay14@imperial.ac.uk)
+///  \date 2016 Sep
+///
+///  \author Sanjay Bloor
+///          (sanjay.bloor12@imperial.ac.uk)
+///  \date 2020 Mar
+///
+///  \author Tomas Gonzalo
+///          (tomas.gonzalo@monash.edu)
+///  \date 2020 Mar
+///
+///  *********************************************
 
 #include <cmath>
 #include <string>
@@ -85,6 +117,7 @@ namespace Gambit
   namespace ColliderBit
   {
 
+    /// Helper function to set HiggsBounds/Signals parameters cross-section ratios from a GAMBIT HiggsCouplingsTable
     void set_CS(hb_ModelParameters &result, const HiggsCouplingsTable& couplings, int n_neutral_higgses)
     {
       for(int i = 0; i < n_neutral_higgses; i++)
@@ -127,6 +160,7 @@ namespace Gambit
       result.CS_lep_HpjHmi_ratio[0] = 1.;
     }
 
+    /// Helper function for populating a HiggsBounds/Signals ModelParameters object for SM-like Higgs.
     void set_SMLikeHiggs_ModelParameters(const SubSpectrum& spec, const HiggsCouplingsTable& couplings, hb_ModelParameters &result)
     {
       // Retrieve the decays
@@ -231,6 +265,7 @@ namespace Gambit
       result.CS_lep_HpjHmi_ratio[0] = 0.;
     }
 
+    /// SM-like (SM + possible invisibles) Higgs model parameters for HiggsBounds/Signals
     void SMLikeHiggs_ModelParameters(hb_ModelParameters &result)
     {
       using namespace Pipes::SMLikeHiggs_ModelParameters;
@@ -243,6 +278,7 @@ namespace Gambit
       set_SMLikeHiggs_ModelParameters(spec, *Dep::Higgs_Couplings, result);
     }
 
+    /// MSSM-like (MSSM + NMSSM + ...) Higgs model parameters for HiggsBounds/Signals
     void MSSMLikeHiggs_ModelParameters(hb_ModelParameters &result)
     {
       using namespace Pipes::MSSMLikeHiggs_ModelParameters;
@@ -336,6 +372,7 @@ namespace Gambit
       set_CS(result, *Dep::Higgs_Couplings, n_neutral_higgses);
     }
 
+    /// Get a LEP chisq from HiggsBounds
     void calc_HB_LEP_LogLike(double &result)
     {
       using namespace Pipes::calc_HB_LEP_LogLike;
@@ -416,6 +453,7 @@ namespace Gambit
       result = -0.5*chisq_withouttheory;
     }
 
+    /// Get an LHC chisq from HiggsSignals
     void calc_HS_LHC_LogLike(double &result)
     {
       using namespace Pipes::calc_HS_LHC_LogLike;
@@ -577,6 +615,7 @@ namespace Gambit
 
     }
 
+    /// Higgs production cross-sections from FeynHiggs.
     void FeynHiggs_HiggsProd(fh_HiggsProd_container &result)
     {
       using namespace Pipes::FeynHiggs_HiggsProd;
@@ -635,4 +674,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:38 +0000
+Updated on 2022-08-02 at 23:34:49 +0000

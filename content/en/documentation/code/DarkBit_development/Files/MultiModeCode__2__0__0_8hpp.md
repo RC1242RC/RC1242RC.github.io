@@ -148,6 +148,26 @@ LOAD_LIBRARY int int int int double double double double double double int int i
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Frontend header for the MultiModeCode backend.
+///
+///  Compile-time registration of available
+///  functions and variables from this backend.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Selim C. Hotinli
+///          (selim.hotinli14@pimperial.ac.uk)
+///  \date 2017 Jul
+///
+///  \author Tomas Gonzalo
+///          (tomas.gonzalo@monash.edu)
+///  \date 2020 Feb
+///
+///  *********************************************
 
 #define BACKENDNAME MultiModeCode
 #define BACKENDLANG FORTRAN
@@ -180,4 +200,4 @@ BE_VARIABLE(SilenceOutput, Flogical, ("__multimodecode_gambit_MOD_silenceoutput"
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:48 +0000
+Updated on 2022-08-02 at 23:34:58 +0000

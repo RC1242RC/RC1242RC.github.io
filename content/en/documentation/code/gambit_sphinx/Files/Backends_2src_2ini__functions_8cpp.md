@@ -52,6 +52,27 @@ Tomas Gonzalo ([t.e.gonzalo@fys.uio.no](mailto:t.e.gonzalo@fys.uio.no))
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Functions specifically for triggering
+///  backend initialisation code.
+///
+///  *********************************************
+///
+///  Authors
+///  =======
+///
+///  (add name and date if you modify)
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)
+///  \date 2015 Feb
+///
+///  \author Tomas Gonzalo
+///          (t.e.gonzalo@fys.uio.no)
+///  \date 2016 Sep
+///
+///  *********************************************
 
 #include <regex>
 
@@ -74,6 +95,7 @@ Tomas Gonzalo ([t.e.gonzalo@fys.uio.no](mailto:t.e.gonzalo@fys.uio.no))
 namespace Gambit
 {
 
+  /// Get back the "::" from things that use NS_SEP instead
   str fixns(str s)
   {
     str ns = STRINGIFY(NS_SEP);
@@ -86,6 +108,7 @@ namespace Gambit
     return s;
   }
 
+  /// Call push back on a vector of strings
   int vectorstr_push_back(std::vector<str>& vec, str s)
   {
     try
@@ -96,6 +119,7 @@ namespace Gambit
     return 0;
   }
 
+  /// Notify a backend functor of which models it can be used with
   int set_allowed_models(functor& be_functor, std::vector<str>& allowed_at_be_level, str models_string)
   {
     try
@@ -152,6 +176,7 @@ namespace Gambit
     return 0;
   }
 
+  /// Register a backend with the logging system
   int register_backend_with_log(str s)
   {
     try
@@ -164,6 +189,7 @@ namespace Gambit
     return 0;
   }
 
+  /// Register a bossed type with the rollcall system
   int register_type(str bever, str classname)
   {
     try
@@ -175,6 +201,7 @@ namespace Gambit
     return 0;
   }
 
+  /// Disable a C, C++ or Fortran backend functor if its library is missing or the symbol cannot be found.
   void set_backend_functor_status_C_CXX_Fortran(functor& be_functor, const std::vector<str>& symbol_names)
   {
     bool present = Backends::backendInfo().works.at(be_functor.origin() + be_functor.version());
@@ -196,6 +223,7 @@ namespace Gambit
   }
 
   #ifdef HAVE_MATHEMATICA
+  /// Disable a Mathematica backend functor if its package is missing or the function is not found in the package
   void set_backend_functor_status_Mathematica(functor& be_functor, str symbol_name)
   {
     const str be = be_functor.origin() + be_functor.version();
@@ -258,6 +286,7 @@ namespace Gambit
   #endif
 
   #ifdef HAVE_PYBIND11
+  /// Disable a Python backend functor if its module is missing or the function is not found in the module
   void set_backend_functor_status_Python(functor& be_functor, const str& symbol_name)
   {
     const str be = be_functor.origin() + be_functor.version();
@@ -274,6 +303,7 @@ namespace Gambit
   #endif
 
 
+  /// Disable a backend functor if its library is missing or the symbol cannot be found.
   int set_backend_functor_status(functor& be_functor, const std::vector<str>& symbol_names)
   {
     // Extract the backend that we're dealing with from the functor metadata.
@@ -322,6 +352,7 @@ namespace Gambit
   }
 
 
+  /// Disable a backend initialisation function if the backend is missing.
   int set_BackendIniBit_functor_status(functor& ini_functor, str be, str v)
   {
     bool present = Backends::backendInfo().works.at(be + v);
@@ -336,6 +367,7 @@ namespace Gambit
     return 0;
   }
 
+  /// Get the status of a factory pointer to a BOSSed type's wrapper constructor.
   int get_ctor_status(str be, str ver, str name, str barename, str args, const std::vector<str>& symbol_names)
   {
     bool present = Backends::backendInfo().works.at(be+ver);
@@ -376,6 +408,7 @@ namespace Gambit
   }
 
 
+  /// Set a backend rule for one or more models.
   int set_backend_rule_for_model(module_functor_common& f, str models, str tags)
   {
     try
@@ -387,6 +420,7 @@ namespace Gambit
   }
 
 
+  /// Set the classloading requirements of a given functor.
   int set_classload_requirements(module_functor_common& f, str be, str verstr, str default_ver)
   {
     try
@@ -414,4 +448,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:41 +0000
+Updated on 2022-08-02 at 23:34:51 +0000

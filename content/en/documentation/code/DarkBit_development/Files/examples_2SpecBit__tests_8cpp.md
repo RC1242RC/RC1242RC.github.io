@@ -75,6 +75,22 @@ Quick macro to simplify the check of Pipe::Models.
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Functions of module SpecBit
+///
+///  These functions link ModelParameters to
+///  Spectrum objects in various ways.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Ben Farmer
+///          (benjamin.farmer@fysik.su.se)
+///    \date 2014 Sep - Dec, 2015 Jan - Mar
+///
+///  *********************************************
 
 #include "gambit/Utils/gambit_module_headers.hpp"
 #include "gambit/SpecBit/SpecBit_rollcall.hpp"
@@ -96,8 +112,10 @@ namespace Gambit
     using namespace LogTags;
     using namespace flexiblesusy;
 
+    /// Quick macro to simplify the check of Pipe::Models
     #define QUERYMODELS(MODEL) std::find(Pipe::Models->begin(), Pipe::Models->end(), MODEL) != Pipe::Models->end()
 
+    /// Create a spectrum object for testing purposes
     void make_test_spectrum(SubSpectrum* &result)
     {
       typedef CMSSM_interface<ALGORITHM1> MI;
@@ -138,6 +156,7 @@ namespace Gambit
       result = &mssm;
     }
 
+    /// Function to test out SpecBit features
     void specbit_test_func1 (double &result)
     {
       // Access the pipes for this function to get model and parameter information
@@ -153,6 +172,7 @@ namespace Gambit
        spec_manipulate(*spec2); //function can manipulate without knowing model.
     }
 
+    /// Function to test out SpecBit features
     void specbit_test_func2 (double &result)
     {
       std::cout << "Running specbit_test_func2" << std::endl;
@@ -201,6 +221,7 @@ namespace Gambit
 
     }
 
+    /// Function to test out SpecBit features
     void specbit_test_func3 (double &result)
     {
       // Requests a SubSpectrum object of capability SM_spectrum; test what we can retrieve from this
@@ -214,6 +235,7 @@ namespace Gambit
       result = 0;
     }
 
+    /// Test out consistency of Spectrum object (and pre-extracted SM SubSpectrum*)
     void specbit_test_Spectrum (double &result)
     {
       using namespace Pipes::specbit_test_Spectrum;
@@ -227,6 +249,7 @@ namespace Gambit
       result = 0;
     }
 
+    /// Display SMInputs values
     void specbit_test_show_SMInputs(double &result)
     {
       using namespace Pipes::specbit_test_show_SMInputs;
@@ -252,6 +275,7 @@ namespace Gambit
       result = 0;
     }
 
+    /// Check that the SingletDM spectrum object is working
     void test_Singlet_spectrum(bool &result)
     {
       using namespace Pipes::test_Singlet_spectrum;
@@ -279,4 +303,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:45 +0000
+Updated on 2022-08-02 at 23:34:55 +0000

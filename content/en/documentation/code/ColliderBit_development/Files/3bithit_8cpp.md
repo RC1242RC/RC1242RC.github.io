@@ -88,6 +88,27 @@ const std::string filename_out = {"3bithit.out.slha1", "3bithit.out.slha2"};
 ```
 //   3-BIT-HIT: Calculate MSSM spectra, decays and EWPO.
 //   *************************************************
+///  \file
+///
+///  A simple program that uses SpecBit, DecayBit and
+///  PrecisionBit in standalone mode.  Basically
+///  does the same thing SUSY-HIT, but
+///  - uses SPheno for spectrum generation
+///    instead of SuSpect
+///  - uses FeynHiggs for MSSM Higgs decays instead
+///    of SDECAY
+///  - also computes electroweak precision
+///    observables, using FeynHiggs and GM2Calc.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Pat Scott
+///  \date 2016 June
+///        2020 Apr (switched from FlexibleSUSY to SPheno)
+///
+///  *********************************************
 
 #include <stdexcept>
 
@@ -702,4 +723,4 @@ int main()
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:37 +0000
+Updated on 2022-08-02 at 23:34:48 +0000

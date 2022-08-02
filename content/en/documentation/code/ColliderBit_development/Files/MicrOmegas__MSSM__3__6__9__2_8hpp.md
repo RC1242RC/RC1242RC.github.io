@@ -255,6 +255,21 @@ LOAD_LIBRARY char MSSM63atQ double MSSM63atQ char MSSM63atQ MSSM63atQ FeScLoop;
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Frontend for MicrOmegas MSSM backend
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+/// \author Jonathan Cornell
+/// \date Oct 2013
+///
+/// \author Sebastian Wild
+/// \date Aug 2016
+///
+///  *****************************************
 
 #define BACKENDNAME MicrOmegas_MSSM
 #define BACKENDLANG CC
@@ -302,4 +317,4 @@ BE_INI_DEPENDENCY(decay_rates, DecayTable)
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:50 +0000

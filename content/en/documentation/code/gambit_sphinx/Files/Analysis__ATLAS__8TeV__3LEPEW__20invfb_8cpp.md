@@ -823,6 +823,7 @@ namespace Gambit {
         return;
       }
 
+      /// Combine the variables of another copy of this analysis (typically on another thread) into this one.
       void combine(const Analysis* other)
       {
         const Analysis_ATLAS_8TeV_3LEPEW_20invfb* specificOther
@@ -936,4 +937,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:40 +0000
+Updated on 2022-08-02 at 23:34:49 +0000

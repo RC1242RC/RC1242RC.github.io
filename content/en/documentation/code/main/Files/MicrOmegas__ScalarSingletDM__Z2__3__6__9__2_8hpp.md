@@ -86,6 +86,18 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Frontend for MicrOmegas ScalarSingletDM_Z2 backend
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+/// \author Jonathan Cornell
+/// \date May 2015, April 2017
+///
+///  *********************************************
 
 #define BACKENDNAME MicrOmegas_ScalarSingletDM_Z2
 #define BACKENDLANG CC
@@ -108,4 +120,4 @@ BE_INI_DEPENDENCY(ScalarSingletDM_Z2_spectrum, Spectrum)
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:55 +0000

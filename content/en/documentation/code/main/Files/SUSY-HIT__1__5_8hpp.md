@@ -135,6 +135,20 @@ LOAD_LIBRARY s_hit_unlikely_;
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Frontend for SUSY-HIT 1.5 backend
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+/// \author Peter Athron
+/// \author Csaba Balazs
+/// \author Pat Scott
+/// \date 2015 Jan-May
+///
+///  *********************************************
 
 #define BACKENDNAME SUSY_HIT
 #define BACKENDLANG FORTRAN
@@ -222,4 +236,4 @@ BE_INI_DEPENDENCY(Z_decay_rates, DecayTable::Entry)
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:55 +0000

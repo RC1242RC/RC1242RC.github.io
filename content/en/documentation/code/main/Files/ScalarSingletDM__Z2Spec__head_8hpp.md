@@ -63,6 +63,30 @@ Authors:
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  "Header" declarations for ScalarSingletDM_Z2Spec class
+///  (definitions in another header file due to
+///  this being a template class)
+///
+///  *********************************************
+///
+///  Authors:
+///  <!-- add name and date if you modify -->
+///
+///  \author Peter Athron
+///          (peter.athron@coepp.org.au)
+///  \date 2014, 2015 Jan, Feb, Mar
+///
+///  \author Ben Farmer
+///          (benjamin.farmer@fysik.su.se)
+///  \date 2014, 2015 Jan, Feb, Mar
+///
+///  \author James McKay
+///          j.mckay14@imperial.ac.uk
+///  \date 2015 Mar (edited original for use with ScalarSingletDM_Z2)
+///
+///  *********************************************
 
 #ifndef ScalarSingletDM_Z2SPEC_HEAD_H
 #define ScalarSingletDM_Z2SPEC_HEAD_H
@@ -86,6 +110,8 @@ namespace Gambit
    // SpecBit/include/model_files_and_boxes.hpp,
    // MODELNAME_interface class
 
+   /// Specialisation of "traits" class used to inform Spec<T> class of what
+   /// "Model" and "Input" are for this derived class
    template <class MI>
    struct SpecTraits<SpecBit::ScalarSingletDM_Z2Spec<MI>>
    {
@@ -106,6 +132,8 @@ namespace Gambit
             static const int _index_offset;
 
          public:
+            /// These typedefs are inherited, but the name lookup doesn't work so smoothly in
+            /// templated wrapper classes, so need to help them along:
             typedef ScalarSingletDM_Z2Spec<MI> Self;
             typedef typename Self::MTget MTget;
             typedef typename Self::MTset MTset;
@@ -114,6 +142,7 @@ namespace Gambit
             typedef typename SpecTraits<Self>::Model Model;
             typedef typename SpecTraits<Self>::Input Input;
 
+            /// Interface function overrides
             static int index_offset() {return _index_offset;}
             virtual double GetScale() const;
             virtual void SetScale(double scale);
@@ -166,6 +195,7 @@ namespace Gambit
               return;
             }
 
+            /// Map filler overrides
             static GetterMaps fill_getter_maps();
             static SetterMaps fill_setter_maps();
 
@@ -183,4 +213,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:36 +0000
+Updated on 2022-08-02 at 23:34:53 +0000

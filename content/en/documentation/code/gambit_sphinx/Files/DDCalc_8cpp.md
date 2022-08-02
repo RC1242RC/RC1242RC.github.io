@@ -53,6 +53,23 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Helper types for DDCalc backend.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Ben Farmer
+///          (b.farmer@imperial.ac.uk)
+///  \date 2019 Jul
+///
+///  \author Felix Kahlhofer
+///          (kahlhoefer@physik.rwth-aachen.de)
+///  \date 2020 May
+///
+///  *************************
 
 #include "gambit/Backends/backend_types/DDCalc.hpp"
 #include "gambit/Utils/model_parameters.hpp"
@@ -62,11 +79,13 @@ Authors (add name and date if you modify):
 
 namespace Gambit
 {
+    /// Default NREO_DM_nucleon_couplings constructor
     NREO_DM_nucleon_couplings::NREO_DM_nucleon_couplings()
     {
       CPTbasis = 0;
     }
 
+    /// Default NREO_DM_nucleon_couplings constructor
     NREO_DM_nucleon_couplings::NREO_DM_nucleon_couplings(int CPT)
     {
       if(CPT)
@@ -105,6 +124,7 @@ namespace Gambit
 
     }
 
+    /// NREO_DM_nucleon_couplings constuctor from ModelParameters object
     NREO_DM_nucleon_couplings::NREO_DM_nucleon_couplings(const ModelParameters& pars)
     {
        for(int i=1; i<=15; i++)
@@ -127,6 +147,7 @@ namespace Gambit
        } 
     }
 
+    /// NREO_DM_nucleon_couplings constuctor from functor 'Params', i.e. 'safe_param_map' used to hold collected model parameters 
     NREO_DM_nucleon_couplings::NREO_DM_nucleon_couplings(const Models::safe_param_map<safe_ptr<const double>>& pars)
     {
        for(int i=1; i<=15; i++)
@@ -156,4 +177,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:41 +0000
+Updated on 2022-08-02 at 23:34:51 +0000

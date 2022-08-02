@@ -35,7 +35,16 @@ description: "[No description available]"
 ## Source code
 
 ```
-
+///
+///  \author Rose Kudzman-Blais
+///  \date 2017 May
+///
+///  \author Anders Kvellestad
+///  \date 2018 June, December
+///
+///  \author Martin White
+///  \date 2018 July
+///  *********************************************
 
 
 #include <vector>
@@ -649,6 +658,7 @@ namespace Gambit {
 
       }
 
+      /// Combine the variables of another copy of this analysis (typically on another thread) into this one.
       void combine(const Analysis* other)
       {
         const Analysis_CMS_13TeV_MultiLEP_Full_36invfb* specificOther
@@ -1209,4 +1219,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:38 +0000
+Updated on 2022-08-02 at 23:34:54 +0000

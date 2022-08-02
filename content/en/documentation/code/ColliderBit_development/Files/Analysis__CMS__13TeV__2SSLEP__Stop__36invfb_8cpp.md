@@ -34,7 +34,10 @@ description: "[No description available]"
 ## Source code
 
 ```
-
+///
+///  \author Yang Zhang
+///  \date 2019 July
+///  *********************************************
 
 // Based on http://cms-results.web.cern.ch/cms-results/public-results/publications/SUS-16-035/index.html
 //          https://arxiv.org/abs/1704.07323
@@ -642,6 +645,7 @@ namespace Gambit {
             return;
         }
 
+        /// Combine the variables of another copy of this analysis (typically on another thread) into this one.
         void combine(const Analysis* other)
         {
             const Analysis_CMS_13TeV_2SSLEP_Stop_36invfb* specificOther
@@ -874,4 +878,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:38 +0000
+Updated on 2022-08-02 at 23:34:49 +0000

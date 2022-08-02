@@ -55,6 +55,22 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Routines for the interpolation of the yield
+///  tables from PPPC4DMID.
+///
+///  Class decalrations
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Patrick Stoecker
+///          (stoecker@physik.rwth-aachen.de)
+///  \date 2021 Mar
+///
+///  *********************************************
 
 #ifndef __PPPC_hpp__
 #define __PPPC_hpp__
@@ -128,4 +144,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:48 +0000

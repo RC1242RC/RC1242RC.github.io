@@ -270,6 +270,26 @@ All the includes and Model_interface definitions Have now moved the MAKE_INTERFA
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Flexiblesusy model header includes for
+///  SpecBit.
+///
+///  As new models are used in SpecBit, the new
+///  required headers should be added here.
+///
+///  The definitions of the MODELbox structs are
+///  also here.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Ben Farmer
+///          (ben.farmer@gmail.com)
+///    \date 2014 Dec, 2015 Jan
+///
+///  *********************************************
 
 #ifndef MODELFILES_HPP
 #define MODELFILES_HPP
@@ -361,10 +381,15 @@ All the includes and Model_interface definitions Have now moved the MAKE_INTERFA
   }
 
 
+/// All the includes and Model_interface definitions
+/// Have now moved the MAKE_INTERFACE command inside the include automater, because that
+/// has some automagic stuff to prevent it doing anything when the corresponding FlexibleSUSY
+/// model has not been compiled.
 #define MODELNAME CMSSM
 #include "gambit/SpecBit/flexiblesusy_include_automater.hpp" // Automatically includes necessary CMSSM model headers
 #undef MODELNAME
 
+/// {@ Versions of MSSM spectrum generators that take
 #define MODELNAME MSSM
 #include "gambit/SpecBit/flexiblesusy_include_automater.hpp" // Automatically includes necessary MSSM model headers etc.
 #undef MODELNAME
@@ -372,7 +397,9 @@ All the includes and Model_interface definitions Have now moved the MAKE_INTERFA
 #define MODELNAME MSSMatMGUT
 #include "gambit/SpecBit/flexiblesusy_include_automater.hpp" // Automatically includes necessary MSSMatMGUT model headers etc.
 #undef MODELNAME
+/// @}
 
+/// {@ Versions of MSSM spectrum generators that take mA and mu as inputs
 #define MODELNAME MSSM_mAmu
 #include "gambit/SpecBit/flexiblesusy_include_automater.hpp" // Automatically includes necessary MSSMatMGUT model headers etc.
 #undef MODELNAME
@@ -384,26 +411,32 @@ All the includes and Model_interface definitions Have now moved the MAKE_INTERFA
 #define MODELNAME MSSMatMGUT_mAmu
 #include "gambit/SpecBit/flexiblesusy_include_automater.hpp" // Automatically includes necessary MSSMatMGUT model headers etc.
 #undef MODELNAME
+/// @}
 
 #define MODELNAME MSSMEFTHiggs
 #include "gambit/SpecBit/flexiblesusy_include_automater.hpp"// Automatically includes necessary MSSMEFTHiggs model headers etc.
 #undef MODELNAME
+/// @}
 
 #define MODELNAME MSSMEFTHiggs_mAmu
 #include "gambit/SpecBit/flexiblesusy_include_automater.hpp"// Automatically includes necessary MSSMEFTHiggs_mAmu model headers etc.
 #undef MODELNAME
+/// @}
 
 #define MODELNAME MSSMatMSUSYEFTHiggs_mAmu
 #include "gambit/SpecBit/flexiblesusy_include_automater.hpp"// Automatically includes necessary MSSMatMSUSYEFTHiggs_mAmu model headers etc.
 #undef MODELNAME
+/// @}
 
 #define MODELNAME MSSMatMGUTEFTHiggs
 #include "gambit/SpecBit/flexiblesusy_include_automater.hpp"// Automatically includes necessary MSSMatMGUTEFTHiggs model headers etc.
 #undef MODELNAME
+/// @}
 
 #define MODELNAME MSSMatMGUTEFTHiggs_mAmu
 #include "gambit/SpecBit/flexiblesusy_include_automater.hpp"// Automatically includes necessary MSSMatMGUTEFTHiggs_mAmu model headers etc.
 #undef MODELNAME
+/// @}
 
 #define MODELNAME ScalarSingletDM_Z2
 #include "gambit/SpecBit/flexiblesusy_include_automater.hpp" // Automatically includes necessary ScalarSingletDM_Z2 model headers etc.
@@ -423,4 +456,4 @@ All the includes and Model_interface definitions Have now moved the MAKE_INTERFA
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:37 +0000
+Updated on 2022-08-02 at 23:34:47 +0000

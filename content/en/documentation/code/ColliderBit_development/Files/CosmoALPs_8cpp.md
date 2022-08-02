@@ -109,6 +109,48 @@ SM_time_evo * SM_quantities;
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  CosmoBit routines relating to axions and
+///  axion-like particles.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Selim C. Hotinli
+///          (selim.hotinli14@pimperial.ac.uk)
+///  \date 2017 Jul
+///  \date 2018 May
+///  \date 2018 Aug - Sep
+///
+///  \author Patrick Stoecker
+///          (stoecker@physik.rwth-aachen.de)
+///  \date 2017 Nov
+///  \date 2018 Jan - May
+///  \date 2019 Jan, Feb, June, Nov
+///  \date 2021 Sep
+///
+///  \author Janina Renk
+///          (janina.renk@fysik.su.se)
+///  \date 2018 June
+///  \date 2019 Mar,June
+///
+///  \author Sanjay Bloor
+///          (sanjay.bloor12@imperial.ac.uk)
+///  \date 2019 June, Nov
+///
+///  \author Sebastian Hoof
+///          (hoof@uni-goettingen.de)
+///  \date 2020 Mar
+///
+///  \author Pat Scott
+///          (pat.scott@uq.edu.au)
+///  \date 2018 Mar
+///  \date 2019 Jul
+///  \date 2020 Apr
+///
+///  *********************************************
 
 #include <gsl/gsl_odeiv2.h>
 
@@ -126,6 +168,7 @@ namespace Gambit
   {
     using namespace LogTags;
 
+    /// Lifetime (in s) of an ALP if only the decay a -> g g is open.
     void lifetime_ALP_agg(double& result)
     {
       using namespace Pipes::lifetime_ALP_agg;
@@ -155,6 +198,7 @@ namespace Gambit
       }
     }
 
+    /// Compute the abundance of ALPs expected from thermal production via Primakoff processes
     void minimum_abundance_ALP_analytical(double& result)
     {
       using namespace Pipes::minimum_abundance_ALP_analytical;
@@ -170,6 +214,7 @@ namespace Gambit
 
     }
 
+    /// Abundance of ALPs expected from thermal production via Primakoff processes as calculated by micrOMEGAs
     void minimum_abundance_ALP_numerical(double& result)
     {
       using namespace Pipes::minimum_abundance_ALP_numerical;
@@ -232,6 +277,7 @@ namespace Gambit
       result = rho0_a / m_a_in_eV / ssm0; // Ya0 = n0_a / ssm0 = rho0_a / (ma * ssm0)
     }
 
+    /// Compute the minimal fraction of dark matter in ALPs expected from thermal production via Primakoff processes
     void minimum_fraction_ALP(double& result)
     {
       using namespace Pipes::minimum_fraction_ALP;
@@ -249,6 +295,7 @@ namespace Gambit
       result = rho0_min / rho0_cdm;
     }
 
+    /// The fraction of dark matter in decaying ALPs at the time of production
     void DM_fraction_ALP(double& result)
     {
       using namespace Pipes::DM_fraction_ALP;
@@ -287,6 +334,8 @@ namespace Gambit
       result = xi_ini;
     }
 
+    /// Return the total abundance (Y = n/s) of ALPs
+    /// We assume non relativistic ALPs such that rho = n * m
     void total_DM_abundance_ALP(double& result)
     {
       using namespace Pipes::total_DM_abundance_ALP;
@@ -340,6 +389,7 @@ namespace Gambit
       }
     }
 
+    /// @TODO function definition needed
     void compute_dNeff_etaBBN_ALP(map_str_dbl &result)
     {
       using namespace Pipes::compute_dNeff_etaBBN_ALP;
@@ -492,4 +542,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:38 +0000
+Updated on 2022-08-02 at 23:34:48 +0000

@@ -49,7 +49,25 @@ Authors (add name and date if you modify):
 ## Source code
 
 ```
-
+///  GAMBIT: Global and Modular BSM Inference Tool
+///  *********************************************
+///  \file
+///
+///  Xray likelihoods for DarkBit.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Patrick Stöcker
+///          (stoecker@physik.rwth-aachen.de)
+///  \date 2019 Sep
+///
+///  \author Iñigo Saez Casares
+///          (inigo.saez_casares@ens-paris-saclay.fr)
+///  \date 2021 April, May
+///
+///  *********************************************
 
 // TODO: Temporarily disabled until project is ready
 /*
@@ -71,7 +89,9 @@ namespace Gambit
 {
   namespace DarkBit
   {
+    /////////////////////////////////////////////////////////////////
     //      Auxillary functions and classes for interpolation      //
+    /////////////////////////////////////////////////////////////////
 
     // \brief Generic one-dimensional integration container for linear interpolation and cubic splines.
 
@@ -195,8 +215,10 @@ namespace Gambit
     double XrayInterpolator::lower() { return lo; };
     double XrayInterpolator::upper() { return up; };
 
+    ////////////////////////////////////////////////////
     //               Xray likelihoods                 //
     // -- based on likehoods for sterile neutrinos -- //
+    ////////////////////////////////////////////////////
 
     void compute_lnL_Xray_WISPy(double& result)
     {
@@ -361,7 +383,9 @@ namespace Gambit
     // Minimum finite result returnable from log(double x);
     const double logmin = log(std::numeric_limits<double>::min());
 
+    ////////////////////////////////////////////////////////////////////
     //         Support class to handle X-ray experiments              //
+    ////////////////////////////////////////////////////////////////////
 
     //------------- Class declaration -------------//
 
@@ -1252,4 +1276,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:37 +0000
+Updated on 2022-08-02 at 23:34:54 +0000

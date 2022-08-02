@@ -138,6 +138,29 @@ For the string-based analysis checker and detector retriever getDetector.
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Class for holding ColliderBit analyses.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Abram Krislock
+///          (a.m.b.krislock@fys.uio.no)
+///
+///  \author Andy Buckley
+///          (mostlikelytobefound@facebook.com)
+///
+///  \author Anders Kvellestad
+///          (anders.kvellestad@fys.uio.no)
+///  \date often
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)
+///  \date 2019 Feb
+///
+///  *********************************************
 
 #include <stdexcept>
 
@@ -249,10 +272,12 @@ namespace Gambit
       F(CMS_8TeV_MultiLEP_4Lep_20invfb)              \
       F(CMS_8TeV_MONOJET_20invfb)                    \
 
+    /// For analysis factory function declaration
     #define DECLARE_ANALYSIS_FACTORY(ANAME)          \
       Analysis* create_Analysis_ ## ANAME();         \
       std::string getDetector_ ## ANAME();
 
+    /// Forward declarations using DECLARE_ANALYSIS_FACTORY(ANAME)
     #ifndef EXCLUDE_ROOT
       #ifndef EXCLUDE_RESTFRAMES
         MAP_ANALYSES_WITH_ROOT_RESTFRAMES(DECLARE_ANALYSIS_FACTORY)
@@ -261,10 +286,11 @@ namespace Gambit
     #endif
     MAP_ANALYSES(DECLARE_ANALYSIS_FACTORY)
 
-    
+    /// For the string-based factory function mkAnalysis()
     #define IF_X_RTN_CREATE_ANA_X(A)                                           \
       if (name == #A) return create_Analysis_ ## A();
 
+    /// Factory definition
     Analysis* mkAnalysis(const str& name)
     {
       #ifndef EXCLUDE_ROOT
@@ -280,9 +306,11 @@ namespace Gambit
       return nullptr;
     }
 
+    /// For the string-based analysis checker and detector retriever getDetector
     #define IF_X_RTN_DETECTOR(A)                                               \
       if (name == #A) return getDetector_ ## A();
 
+    /// Return the detector to be used for a given analysis name (and check that the analysis exists).
     str getDetector(const str& name)
     {
       #ifndef EXCLUDE_ROOT
@@ -298,8 +326,10 @@ namespace Gambit
       return "";
     }
 
+    /// A map with pointers to all instances of this class. The key is the thread number.
     std::map<str,std::map<int,AnalysisContainer*> > AnalysisContainer::instances_map;
 
+    /// Constructor
     AnalysisContainer::AnalysisContainer() : current_collider(""),
                                              is_registered(false),
                                              n_threads(omp_get_max_threads()),
@@ -311,12 +341,14 @@ namespace Gambit
     }
 
 
+    /// Destructor
     AnalysisContainer::~AnalysisContainer()
     {
       clear();
     }
 
 
+    /// Add container to instances map
     void AnalysisContainer::register_thread(str base_key_in)
     {
       base_key = base_key_in;
@@ -350,8 +382,10 @@ namespace Gambit
     }
 
 
+    /// Delete and clear the analyses contained within this instance.
     void AnalysisContainer::clear()
     {
+      /// @todo Storing smart ptrs to Analysis would make this way easier
       // Loop through double map and delete the analysis pointers
       for(auto& collider_map_pair : analyses_map)
       {
@@ -367,18 +401,21 @@ namespace Gambit
     }
 
 
+    /// Set name of the current collider
     void AnalysisContainer::set_current_collider(str collider_name)
     {
       current_collider = collider_name;
     }
 
 
+    /// Get the name of the current collider
     str AnalysisContainer::get_current_collider() const
     {
       return current_collider;
     }
 
 
+    /// Does this instance contain analyses for the given collider
     bool AnalysisContainer::has_analyses(str collider_name) const
     {
       bool result = false;
@@ -394,12 +431,14 @@ namespace Gambit
       return result;
     }
 
+    /// Does this instance contain analyses for the current collider
     bool AnalysisContainer::has_analyses() const
     {
       return has_analyses(current_collider);
     }
 
 
+    /// Initialize analyses (by names) for a specified collider
     void AnalysisContainer::init(const std::vector<str>& analysis_names, str collider_name)
     {
       // If a map of analyses already exist for this collider, clear it
@@ -415,17 +454,20 @@ namespace Gambit
       }
     }
 
+    /// Initialize analyses (by names) for the current collider
     void AnalysisContainer::init(const std::vector<str>& analysis_names)
     {
       init(analysis_names, current_collider);
     }
 
 
+    /// Reset specific analysis
     void AnalysisContainer::reset(str collider_name, str analysis_name)
     {
       analyses_map[collider_name][analysis_name]->reset();
     }
 
+    /// Reset all analyses for given collider
     void AnalysisContainer::reset(str collider_name)
     {
       for (auto& analysis_pointer_pair : analyses_map[collider_name])
@@ -434,11 +476,13 @@ namespace Gambit
       }
     }
 
+    /// Reset all analyses for the current collider
     void AnalysisContainer::reset()
     {
       reset(current_collider);
     }
 
+    /// Reset all analyses for all colliders
     void AnalysisContainer::reset_all()
     {
       for(auto& collider_map_pair : analyses_map)
@@ -448,31 +492,37 @@ namespace Gambit
     }
 
 
+    /// Get pointer to specific analysis
     const Analysis* AnalysisContainer::get_analysis_pointer(str collider_name, str analysis_name) const
     {
       return analyses_map.at(collider_name).at(analysis_name);
     }
 
+    /// Get analyses map for a specific collider
     const std::map<str,Analysis*>& AnalysisContainer::get_collider_analyses_map(str collider_name) const
     {
       return analyses_map.at(collider_name);
     }
 
+    /// Get analyses map for the current collider
     const std::map<str,Analysis*>& AnalysisContainer::get_current_analyses_map() const
     {
       return analyses_map.at(current_collider);
     }
 
+    /// Get the full analyses map
     const std::map<str,std::map<str,Analysis*> >& AnalysisContainer::get_full_analyses_map() const
     {
       return analyses_map;
     }
 
+    /// Pass event through specific analysis
     void AnalysisContainer::analyze(const HEPUtils::Event& event, str collider_name, str analysis_name) const
     {
       analyses_map.at(collider_name).at(analysis_name)->analyze(event);
     }
 
+    /// Pass event through all analyses for a specific collider
     void AnalysisContainer::analyze(const HEPUtils::Event& event, str collider_name) const
     {
       for (auto& analysis_pointer_pair : analyses_map.at(collider_name))
@@ -481,11 +531,14 @@ namespace Gambit
       }
     }
 
+    /// Pass event through all analysis for the current collider
     void AnalysisContainer::analyze(const HEPUtils::Event& event) const
     {
       analyze(event, current_collider);
     }
 
+    /// Collect signal predictions from other threads and add to this one,
+    /// for specific analysis. Note: Analysis::add will not add analyses to themselves.
     void AnalysisContainer::collect_and_add_signal(str collider_name, str analysis_name)
     {
       for (auto& thread_container_pair : instances_map.at(base_key))
@@ -496,6 +549,8 @@ namespace Gambit
       }
     }
 
+    /// Collect signal predictions from other threads and add to this one,
+    /// for all analyses for given collider
     void AnalysisContainer::collect_and_add_signal(str collider_name)
     {
       for (auto& analysis_pointer_pair : analyses_map[collider_name])
@@ -505,16 +560,20 @@ namespace Gambit
       }
     }
 
+    /// Collect signal predictions from other threads and add to this one,
+    /// for all analyses for the current collider
     void AnalysisContainer::collect_and_add_signal()
     {
       collect_and_add_signal(current_collider);
     }
 
+    /// Scale results for specific analysis
     void AnalysisContainer::scale(str collider_name, str analysis_name, double xsec_per_event)
     {
       analyses_map[collider_name][analysis_name]->scale(xsec_per_event);
     }
 
+    /// Scale results for all analyses for given collider
     void AnalysisContainer::scale(str collider_name, double xsec_per_event)
     {
       for (auto& analysis_pointer_pair : analyses_map[collider_name])
@@ -524,11 +583,13 @@ namespace Gambit
       }
     }
 
+    /// Scale results for all analyses for the current collider
     void AnalysisContainer::scale(double xsec_per_event)
     {
       scale(current_collider, xsec_per_event);
     }
 
+    /// Scale results for all analyses across all colliders
     void AnalysisContainer::scale_all(double xsec_per_event)
     {
       for (auto& collider_map_pair : analyses_map)
@@ -545,4 +606,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:38 +0000
+Updated on 2022-08-02 at 23:34:54 +0000

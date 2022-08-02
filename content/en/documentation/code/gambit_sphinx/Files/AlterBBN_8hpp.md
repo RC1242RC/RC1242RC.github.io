@@ -89,6 +89,28 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Declarations of containers for BBN
+///  calculations.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Janina Renk
+///          (janina.renk@fysik.su.se)
+///  \date 2019 Mar
+///
+///  \author Pat Scott
+///          (pat.scott@uq.edu.au)
+///  \date 2020 Apr
+///
+///  \author Tomas Gonzalo
+///          (gonzalo@physik.rwth-aachen.de)
+///  \date 2022 Jan
+///
+///  *********************************************
 
 #ifndef __AlterBBN_types_hpp__
 #define __AlterBBN_types_hpp__
@@ -107,12 +129,21 @@ Authors (add name and date if you modify):
 namespace Gambit
 {
 
+  /// Class to store all results from an AlterBBN run.
+  /// This class needs to be fully defined in the header in order to prevent
+  /// linking problems when building the ScannerBit standalone.
+  /// -> element abundances stored in BBN_nuc (length NNUC+1),
+  /// -> covariance matrix in BBN_covmat ( dim NNUC+1 x NNUC+1)
+  /// -> abund_map maps name of element to position in BBN_abundance vector
+  ///    see constructor of BBN_container
   class BBN_container
   {
     public:
+      /// Constructor
       BBN_container() : abund_map{{"H2",3}, {"D",3}, {"H3",4}, {"He3",5}, {"He4",6}, {"Yp",6}, {"Li6",7}, {"Li7",8}, {"Be7",9}, {"Li8",10}}
       {}
 
+      /// Initialize sizes of vectors (get NNUC, number of computed element abundances, from AlterBBN)
       void init_arr_size(size_t nnuc)
       {
         NNUC = nnuc;
@@ -120,27 +151,36 @@ namespace Gambit
         BBN_covmat.resize(NNUC+1, std::vector<double>(NNUC+1,0.));
       }
 
+      /// Initialise the translation map from element name to position in abundance vector
       void set_abund_map(map_str_int map_in) {abund_map = map_in;}
 
+      /// Setter functions for abundance vector
       void set_BBN_abund(int pos, double val) {BBN_abund[pos].central = val;}
       void set_BBN_abund(int pos, triplet<double> val) {BBN_abund[pos] = val;}
 
+      /// Setter function for covariance matrix
       void set_BBN_covmat(int row, int col, double val) {BBN_covmat[row][col] = val;}
 
+      /// Global parameter in AlterBBN; holds number of computed element abundances
       size_t get_NNUC() const {return NNUC;};
 
+      /// Getter for map from isotope names to position in BBN_abundance vector
       const std::map<std::string,int>& get_abund_map() const {return abund_map;};
 
+      /// Getter for abundance
       double get_BBN_abund(int pos) const {return BBN_abund[pos].central;}
       double get_BBN_abund_upper(int pos) const {return BBN_abund[pos].upper;}
       double get_BBN_abund_lower(int pos) const {return BBN_abund[pos].lower;}
 
+      /// Getter for abundance
       double get_BBN_abund(str iso) const {return BBN_abund[abund_map.at(iso)].central;}
       double get_BBN_abund_upper(str iso) const {return BBN_abund[abund_map.at(iso)].upper;}
       double get_BBN_abund_lower(str iso) const {return BBN_abund[abund_map.at(iso)].lower;}
 
+      /// Getter for covariance matrix
       double get_BBN_covmat(int row, int col) const {return BBN_covmat[row][col];}
 
+      /// Setter for active isotopes
       void set_active_isotopes(std::set<str> isos)
       {
         active_isotopes.clear();
@@ -155,10 +195,13 @@ namespace Gambit
         }
       }
 
+      /// Getter for active isotopes
       const std::set<str>& get_active_isotopes() const {return active_isotopes;}
 
+      /// Getter for indices of active isotopes in BBN_abundance vector
       const std::set<int>& get_active_isotope_indices() const {return active_isotope_indices;}
 
+      /// Check whether there is any non-zero upper or lower abundance
       bool has_BBN_abund_upper() const {return std::any_of(BBN_abund.begin(), BBN_abund.end(), [](triplet<double> i){return i.upper > 0;});}
       bool has_BBN_abund_lower() const {return std::any_of(BBN_abund.begin(), BBN_abund.end(), [](triplet<double> i){return i.lower > 0;});}
 
@@ -277,4 +320,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:41 +0000
+Updated on 2022-08-02 at 23:34:50 +0000

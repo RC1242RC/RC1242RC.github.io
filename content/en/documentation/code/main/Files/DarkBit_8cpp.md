@@ -69,6 +69,50 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Central module file of DarkBit.  Calculates dark matter
+///  related observables.
+///
+///  Most of the model- or observable-specific code is
+///  stored in separate source files.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Torsten Bringmann
+///          (torsten.bringmann@desy.de)
+///  \date 2013 Jun
+///  \date 2014 Mar
+///
+///  \author Christoph Weniger
+///          (c.weniger@uva.nl)
+///  \date 2013 Jul - 2015 May
+///
+///  \author Lars A. Dal
+///          (l.a.dal@fys.uio.no)
+///  \date 2014 Mar, Jul, Sep, Oct
+///
+///  \author Christopher Savage
+///          (chris@savage.name)
+///  \date 2014 Oct
+///  \date 2015 Jan, Feb
+///
+///  \author Pat Scott
+///          (pscott@imperial.ac.uk)
+///  \date 2014 Mar
+///  \date 2015 Mar
+///
+///  \author Sebastian Wild
+///          (sebastian.wild@ph.tum.de)
+///  \date 2016 Aug
+///
+///  \author Tomas Gonzalo
+///          (gonzalo@physik.rwth-aachen.de)
+///  \date 2021 Sep
+///
+///  *********************************************
 
 #include "gambit/Elements/gambit_module_headers.hpp"
 #include "gambit/DarkBit/DarkBit_rollcall.hpp"
@@ -79,10 +123,13 @@ namespace Gambit
   namespace DarkBit
   {
 
+    //////////////////////////////////////////////////////////////////////////
     //
     //                 Simple DM property extractors
     //
+    //////////////////////////////////////////////////////////////////////////
 
+    /// Retrieve the struct of WIMP properties
     void WIMP_properties(WIMPprops &props)
     {
       using namespace Pipes::WIMP_properties;
@@ -118,6 +165,7 @@ namespace Gambit
         props.mass = Dep::DMEFT_spectrum->get(Par::Pole_Mass, props.name);
     }
 
+    /// Retrieve the DM mass in GeV for generic models (GeV)
     void mwimp_generic(double &result)
     {
       using namespace Pipes::mwimp_generic;
@@ -125,18 +173,23 @@ namespace Gambit
       if (result < 0.0) DarkBit_error().raise(LOCAL_INFO, "Negative WIMP mass detected.");
     }
 
+    /// Retrieve the DM spin (times two) generic models
     void spinwimpx2_generic(unsigned int &result)
     {
       using namespace Pipes::spinwimpx2_generic;
       result = Dep::WIMP_properties->spinx2;
     }
 
+    /// Retrieve whether or not the DM is self conjugate or not.
     void wimp_sc_generic(bool &result)
     {
       using namespace Pipes::wimp_sc_generic;
       result = Dep::WIMP_properties->sc;
     }
 
+    /*! \brief Retrieve the total thermally-averaged annihilation cross-section
+     * for indirect detection (cm^3 / s).
+     */
     void sigmav_late_universe(double &result)
     {
       using namespace Pipes::sigmav_late_universe;
@@ -179,6 +232,8 @@ namespace Gambit
 
     }
 
+    /// Information about the nature of the DM process in question (i.e. decay or annihilation) 
+    /// to use the correct scaling for ID in terms of the DM density, phase space, etc.
     void DM_process_from_ProcessCatalog(std::string &result)
     {
       using namespace Pipes::DM_process_from_ProcessCatalog;
@@ -200,17 +255,22 @@ namespace Gambit
     }
 
 
+    //////////////////////////////////////////////////////////////////////////
     //
     //        Extraction of local and global dark matter halo properties
     //
+    //////////////////////////////////////////////////////////////////////////
 
 
+    /// Generalized NFW dark matter halo profile function
     double profile_gNFW(double rhos, double rs, double alpha, double beta, double gamma, double r)
     { return pow(2, (beta-gamma)/alpha)*rhos/pow(r/rs, gamma)/pow(1+pow(r/rs, alpha), (beta-gamma)/alpha); }
 
+    /// Einasto dark matter halo profile function
     double profile_Einasto(double rhos, double rs, double alpha, double r)
     { return rhos*exp((-2.0/alpha)*(pow(r/rs, alpha)-1)); }
 
+    /// Module function to generate GalacticHaloProperties for gNFW profile
     void GalacticHalo_gNFW(GalacticHaloProperties &result)
     {
       using namespace Pipes::GalacticHalo_gNFW;
@@ -224,6 +284,7 @@ namespace Gambit
       result.r_sun = r_sun;
     }
 
+    /// Module function to generate GalacticHaloProperties for Einasto profile
     void GalacticHalo_Einasto(GalacticHaloProperties &result)
     {
       using namespace Pipes::GalacticHalo_Einasto;
@@ -235,6 +296,7 @@ namespace Gambit
       result.r_sun = r_sun;
     }
 
+    /// Module function providing local density and velocity dispersion parameters
     void ExtractLocalMaxwellianHalo(LocalMaxwellianHalo &result)
     {
       using namespace Pipes::ExtractLocalMaxwellianHalo;
@@ -248,12 +310,15 @@ namespace Gambit
       result.vrot = vrot;
     }
 
+    //////////////////////////////////////////////////////////////////////////
     //
     //                        Decaying dark matter
     //
+    //////////////////////////////////////////////////////////////////////////
 
 // TODO: Temporarily disabled until project is ready
 /*
+    /// Module function providing the branching ratio of the decay S -> e-_1 e+_1
     void DecDM_branching_el(double &result)
     {
       using namespace Pipes::DecDM_branching_el;
@@ -274,6 +339,7 @@ namespace Gambit
       }
     }
 
+    /// Module function providing the branching ratio of the decay S -> gamma gamma
     void DecDM_branching_ph(double &result)
     {
       using namespace Pipes::DecDM_branching_ph;
@@ -294,10 +360,16 @@ namespace Gambit
       }
     }
 */
+    //////////////////////////////////////////////////////////////////////////
     //
     //                          DarkBit Unit Test
     //
+    //////////////////////////////////////////////////////////////////////////
 
+    /*! \brief Central unit test routine.
+     *
+     * Dumps various DM related results into yaml files for later inspection.
+     */
     void UnitTest_DarkBit(int &result)
     {
       using namespace Pipes::UnitTest_DarkBit;
@@ -328,6 +400,7 @@ namespace Gambit
       filename << "_" << counter << ".yml";
       counter++;
       */
+      /// Option filename<std::string>: Output filename (default UnitTest.yaml)
       filename << runOptions->getValueOrDef<std::string>("UnitTest.yaml", "filename");
 
       std::ofstream os;
@@ -353,9 +426,12 @@ namespace Gambit
 
         // Output gamma-ray spectrum (grid be set in YAML file).
         double x_min =
+          /// Option GA_AnnYield::Emin<double>: Minimum energy in GeV (default 0.1)
           runOptions->getValueOrDef<double>(0.1, "GA_AnnYield", "Emin");
         double x_max =
+          /// Option GA_AnnYield::Emax<double>: Maximum energy in GeV (default 1e4)
           runOptions->getValueOrDef<double>(10000, "GA_AnnYield", "Emax");
+          /// Option GA_AnnYield::nbins<int>: Number of energy bins (default 26)
         int n = runOptions->getValueOrDef<double>(26, "GA_AnnYield", "nbins");
         // from 0.1 to 500 GeV
         std::vector<double> x = daFunk::logspace(log10(x_min), log10(x_max), n);
@@ -423,4 +499,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:37 +0000
+Updated on 2022-08-02 at 23:34:54 +0000

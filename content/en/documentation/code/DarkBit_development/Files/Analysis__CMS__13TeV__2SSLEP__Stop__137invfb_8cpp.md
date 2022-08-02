@@ -32,7 +32,10 @@ description: "[No description available]"
 ## Source code
 
 ```
-
+///
+///  \author Yang Zhang
+///  \date 2019 June
+///  *********************************************
 
 // Based on http://cms-results.web.cern.ch/cms-results/public-results/preliminary-results/SUS-19-008/index.html
 // Search for physics beyond the standard model in events with two same-sign leptons or at least three leptons and jets in proton-proton collisions at 13 TeV
@@ -728,6 +731,7 @@ namespace Gambit {
             return;
         }
 
+        /// Combine the variables of another copy of this analysis (typically on another thread) into this one.
         void combine(const Analysis* other)
         {
             const Analysis_CMS_13TeV_2SSLEP_Stop_137invfb* specificOther
@@ -944,4 +948,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:47 +0000
+Updated on 2022-08-02 at 23:34:57 +0000

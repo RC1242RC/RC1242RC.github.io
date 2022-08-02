@@ -61,6 +61,20 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  ColliderBit module function for obtaining the 
+///  list of the active collider processes
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Anders Kvellestad
+///          (a.kvellestad@imperial.ac.uk)
+///  \date   2019 Sep
+///
+///  *********************************************
 
 #include "gambit/ColliderBit/ColliderBit_eventloop.hpp"
 
@@ -73,6 +87,7 @@ namespace Gambit
   namespace ColliderBit
   {
 
+    /// Get the list of active collider process codes
     void getActiveProcessCodes(std::vector<int>& result)
     {
       using namespace Pipes::getActiveProcessCodes;
@@ -102,4 +117,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:38 +0000
+Updated on 2022-08-02 at 23:34:49 +0000

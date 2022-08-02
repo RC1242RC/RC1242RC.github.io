@@ -79,6 +79,31 @@ int main(
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///
+///  Example of GAMBIT FlavBit standalone
+///  main program.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Martin White
+///          (martin.white@adelaide.edu.au)
+///  \date Jan 2016
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)
+///  \date Sep 2016
+///
+///  \author Nazila Mahmoudi
+///          (nazila@cern.ch)
+///  \date Aug 2019
+///
+///  \author Markus Prim
+///          (markus.prim@cern.ch)
+///  \date Oct 2020
+///
+///  *********************************************
 
 // Always required in any standalone module main file
 #include "gambit/Elements/standalone_module.hpp"
@@ -104,21 +129,25 @@ namespace Gambit
   namespace FlavBit
   {
 
+    /// Make an unimproved GAMBIT spectrum object from an SLHA file
     void createSpectrum(Spectrum& outSpec)
     {
       outSpec = spectrum_from_SLHA<MSSMSimpleSpec>(infile, Spectrum::mc_info(), Spectrum::mr_info());
     }
 
+    /// Relabel it as a complete spectrum
     void relabelSpectrum(Spectrum& outSpec)
     {
       outSpec = *Pipes::relabelSpectrum::Dep::unimproved_MSSM_spectrum;
     }
 
+    /// W decays -- only need the total width for SuperIso
     void GammaW(DecayTable::Entry& result)
     {
       result.width_in_GeV = 2.085;
     }
 
+    /// Z decays -- only need the total width for SuperIso
     void GammaZ(DecayTable::Entry& result)
     {
       result.width_in_GeV = 2.4952;
@@ -440,4 +469,4 @@ int main(int argc, char** argv)
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:37 +0000
+Updated on 2022-08-02 at 23:34:48 +0000

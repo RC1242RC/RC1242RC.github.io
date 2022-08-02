@@ -86,6 +86,20 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Frontend for CalcHEP Backend
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Sanjay Bloor
+///          (sanjay.bloor12@imperial.ac.uk)
+///  \date 2017 May, Oct
+///        2018 Sep
+///
+///  *****************************************
 
 #define BACKENDNAME CalcHEP
 #define BACKENDLANG CC
@@ -129,4 +143,4 @@ BE_INI_CONDITIONAL_DEPENDENCY(DMEFT_spectrum, Spectrum, DMEFT)
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:49 +0000

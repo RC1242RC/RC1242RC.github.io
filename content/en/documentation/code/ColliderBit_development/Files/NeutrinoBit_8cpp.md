@@ -70,6 +70,24 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Function definitions of NeutrinoBit.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Tomas Gonzalo
+///          (tomas.gonzalo@monash.edu)
+///  \date 2017 July
+///  \date 2018, 2019, 2020
+///
+///  \author Julia Harz
+///          (jharz@lpthe.jussieu.fr)
+///  \date 2018 April
+///
+///  *********************************************
 
 #define _USE_MATH_DEFINES
 
@@ -999,4 +1017,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:37 +0000
+Updated on 2022-08-02 at 23:34:48 +0000

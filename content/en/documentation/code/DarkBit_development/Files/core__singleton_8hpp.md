@@ -45,6 +45,18 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  GAMBIT Core object accessor function.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///   
+///  \author Pat Scott
+///  \date 2014 Aug
+///
+///  *********************************************
 
 #ifndef __core_singleton_hpp__
 #define __core_singleton_hpp__
@@ -55,6 +67,7 @@ Authors (add name and date if you modify):
 namespace Gambit
 {
 
+  /// Core accessor function
   gambit_core& Core();
 
 }
@@ -66,4 +79,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:46 +0000
+Updated on 2022-08-02 at 23:34:56 +0000

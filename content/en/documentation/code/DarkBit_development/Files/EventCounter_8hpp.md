@@ -52,6 +52,19 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  EventCounter class
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Anders Kvellestad
+///          (anders.kvellestad@fys.uio.no)
+///  \date 2019 Nov
+///
+///  *********************************************
 
 #pragma once
 
@@ -61,6 +74,7 @@ Authors (add name and date if you modify):
 namespace Gambit {
   namespace ColliderBit {
 
+    /// A simple class for counting events of type HEPUtils::Event
     class EventCounter
     {
 
@@ -182,4 +196,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:46 +0000
+Updated on 2022-08-02 at 23:34:56 +0000

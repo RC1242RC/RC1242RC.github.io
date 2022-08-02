@@ -88,6 +88,64 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Type definition header for module DarkBit.
+///
+///  Compile-time registration of type definitions
+///  required for the rest of the code to
+///  communicate with DarkBit.
+///
+///  Add to this if you want to define a new type
+///  for the functions in DarkBit to return, but
+///  you don't expect that type to be needed by
+///  any other modules.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Christoph Weniger
+///          (c.weniger@uva.nl)
+///  \date 2012 Mar, 2014 Jan
+///
+///  \author Torsten Bringmann
+///          (torsten.bringmann@fys.uio.no)
+///  \date 2013 Jun
+///
+///  \author Pat Scott
+///          (pat.scott@uq.edu.au)
+///  \date 2013 Oct
+///  \date 2014 Jan, Apr
+///  \date 2015 Mar
+///  \date 2020 Dec
+///
+///  \author Lars A. Dal
+///          (l.a.dal@fys.uio.no)
+///  \date 2014 Mar, Jul, Sep, Oct, Dec
+///  \date 2015 Jan
+///
+///  \author Christopher Savage
+///          (chris@savage.name)
+///  \date 2015 Jan
+///
+///  \author Jonathan Cornell
+///          (jcornell@ucsc.edu)
+///  \date 2014
+///
+///  \author Sebastian Wild
+///          (sebastian.wild@ph.tum.de)
+///  \date 2016 Aug
+///
+///  \author Inigo Saez Casares
+///          (inigo.saez_casares@ens-paris-saclay.fr)
+///  \date 2020 March
+///
+///  \author Ben Farmer
+///          (benjamin.farmer@imperial.ac.uk)
+///  \date 2019 Jul
+///
+///  *********************************************
 
 
 #ifndef __DarkBit_types_hpp__
@@ -153,8 +211,11 @@ namespace Gambit
       bool isSelfConj;
     };
 
+    //////////////////////////////////////////////
     // Neutrino telescope data structures
+    //////////////////////////////////////////////
 
+    /// Neutrino telescope yield info container
     struct nuyield_info
     {
       public:
@@ -162,6 +223,7 @@ namespace Gambit
         nuyield_function_pointer pointer;
     };
 
+    /// Neutrino telescope data container
     struct nudata
     {
       public:
@@ -173,6 +235,7 @@ namespace Gambit
         double pvalue;
     };
 
+    /// Annihilation/decay channel
     struct SimYieldChannel
     {
         SimYieldChannel(daFunk::Funk dNdE, const std::string& p1, const std::string& p2,
@@ -187,6 +250,7 @@ namespace Gambit
         double Ecm_max;
     };
 
+    /// Result of SimYieldTable::checkChannel
     enum class SimYieldChannelCheck
     {
       success,            // The check succeeded.
@@ -194,6 +258,8 @@ namespace Gambit
       monochromatic_line  // The channel is a monochromatic line (pi==finalState)
     };
 
+    /// \brief Channel container
+    /// Object containing tabularized yields for particle decay and two-body final states.
     class SimYieldTable
     {
         public:
@@ -230,4 +296,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:37 +0000
+Updated on 2022-08-02 at 23:34:53 +0000

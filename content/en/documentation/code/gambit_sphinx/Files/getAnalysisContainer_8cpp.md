@@ -97,6 +97,40 @@ Retrieve a container for analyses with EXPERIMENT.
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Initialisation functions for ColliderBit
+///  analyses.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Abram Krislock
+///          (a.m.b.krislock@fys.uio.no)
+///
+///  \author Aldo Saavedra
+///
+///  \author Andy Buckley
+///
+///  \author Chris Rogan
+///          (crogan@cern.ch)
+///  \date 2014 Aug
+///  \date 2015 May
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)
+///  \date 2015 Jul
+///  \date 2018 Jan
+///  \date 2019 Jan, Feb
+///
+///  \author Anders Kvellestad
+///          (anders.kvellestad@fys.uio.no)
+///  \date   2017 March
+///  \date   2018 Jan
+///  \date   2018 May
+///
+///  *********************************************
 
 #include "gambit/ColliderBit/ColliderBit_eventloop.hpp"
 
@@ -109,6 +143,7 @@ namespace Gambit
   namespace ColliderBit
   {
 
+    /// Retrieve an analysis container for a specific detector
     void getAnalysisContainer(AnalysisContainer& result,
                               const str& detname,
                               const MCLoopInfo& RunMC,
@@ -163,6 +198,7 @@ namespace Gambit
 
     }
 
+    /// Retrieve a container for analyses with EXPERIMENT
     #define GET_ANALYSIS_CONTAINER(NAME, EXPERIMENT)               \
     void NAME(AnalysisContainer& result)                           \
     {                                                              \
@@ -183,4 +219,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:40 +0000
+Updated on 2022-08-02 at 23:34:50 +0000

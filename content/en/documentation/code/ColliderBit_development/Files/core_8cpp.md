@@ -80,6 +80,28 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  GAMBIT Core driver class implementation.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Pat Scott
+///  \date 2013 Aug
+///  \date 2014 Mar, Aug, Dec
+///
+///  \author Tomas Gonzalo
+///          (t.e.gonzalo@fys.uio.no)
+///  \date 2017 Jun
+///  \date 2021 Sep
+///
+///  \author Markus Prim
+///          (markus.prim@kit.edu)
+///  \date 2020 Jun, Dec
+///
+///  *********************************************
 
 #include <algorithm>
 #include <fstream>
@@ -116,7 +138,9 @@ Authors (add name and date if you modify):
 
 namespace Gambit
 {
+  /// Definitions of public methods in GAMBIT core class.
 
+  /// Constructor
   gambit_core::gambit_core(const Models::ModelFunctorClaw &claw, const Backends::backend_info &beinfo)
       : modelInfo(&claw), backendData(&beinfo), input_capability_descriptions(GAMBIT_DIR "/config/capabilities.dat"), input_model_descriptions(GAMBIT_DIR "/config/models.dat"),
         outprec(8)
@@ -126,8 +150,10 @@ namespace Gambit
   {
   }
 
+  /// Getter for precision to use for cout
   int gambit_core::get_outprec() const { return outprec; }
 
+  /// Inform the user of the ways to invoke GAMBIT, then die.
   void gambit_core::bail(int mpirank)
   {
     if (mpirank < 0) mpirank = GET_RANK;
@@ -176,12 +202,14 @@ namespace Gambit
     throw SilentShutdownException();
   }
 
+  /// Process default mode command line options and return filename
   str gambit_core::process_primary_options(int argc, char **argv)
   {
     int index;
     int iarg = 0;
     str filename;
 
+    /// Gambit 'standard mode' command line option definitions (needed by getopt)
     // Basically this is a clone of the example in the getopt_long documentation
     // (http://www.gnu.org/savannah-checkouts/gnu/libc/manual/html_node/Getopt-Long-Option-Example.html#Getopt-Long-Option-Example)
     //
@@ -252,6 +280,7 @@ namespace Gambit
     return filename;
   }
 
+  /// Add a new module to modules list
   void gambit_core::registerModule(str module, str ref)
   {
     modules.insert(module);
@@ -261,20 +290,24 @@ namespace Gambit
       module_citation_keys[module] = ref;
   }
 
+  /// Add a new module functor to functorList
   void gambit_core::registerModuleFunctor(functor &f)
   {
     functorList.push_back(&f);
     capabilities.insert(f.capability());
   }
 
+  /// Add a new module functor to nestFunctorList
   void gambit_core::registerNestedModuleFunctor(functor &f) { nestedFunctorList.push_back(&f); }
 
+  /// Add a new backend functor to backendFunctorList
   void gambit_core::registerBackendFunctor(functor &f)
   {
     backendFunctorList.push_back(&f);
     capabilities.insert(f.capability());
   }
 
+  /// Register a new backend
   void gambit_core::registerBackend(str be, str version, str ref)
   {
      backend_versions[be].insert(version);
@@ -284,31 +317,43 @@ namespace Gambit
        backend_citation_keys[sspair(be,version)] = ref;
   }
 
+  /// Add a new primary model functor to primaryModelFunctorList
   void gambit_core::registerPrimaryModelFunctor(primary_model_functor &f)
   {
     primaryModelFunctorList.push_back(&f);
     capabilities.insert(f.capability());
   }
 
+  /// Add entries to the map of activated primary model functors
   void gambit_core::registerActiveModelFunctors(const gambit_core::pmfVec &fvec)
   {
     for (const auto &f : fvec) { activeModelFunctorList[f->origin()] = f; }
   }
 
+  /// Get a reference to the list of module functors
   const gambit_core::fVec &gambit_core::getModuleFunctors() const { return functorList; }
 
+  /// Get a reference to the list of nested module functors
   const gambit_core::fVec &gambit_core::getNestedModuleFunctors() const { return nestedFunctorList; }
 
+  /// Get a reference to the list of backend functors
   const gambit_core::fVec &gambit_core::getBackendFunctors() const { return backendFunctorList; }
 
+  /// Get a reference to the list of primary model functors
   const gambit_core::pmfVec &gambit_core::getPrimaryModelFunctors() const { return primaryModelFunctorList; }
 
+  /// Get a reference to the map of all user-activated primary model functors
   const gambit_core::pmfMap &gambit_core::getActiveModelFunctors() const { return activeModelFunctorList; }
 
+  /// Get a reference to the map of module citaton keys
   const std::map<str,str> &gambit_core::getModuleCitationKeys() const {  return module_citation_keys; }
 
+  /// Get a reference to the map of backend citation keys
   const std::map<sspair, str> &gambit_core::getBackendCitationKeys() const { return backend_citation_keys; }
 
+  /// Tell the module functors which backends are actually present,
+  /// so that they can deactivate themselves if they require a class
+  /// that is supposed to be provided by a backend that is AWOL.
   void gambit_core::accountForMissingClasses() const
   {
     // Create a map of all the registered backends that are connected and fully functional (including factories for classloading)
@@ -337,6 +382,7 @@ namespace Gambit
     for (const auto &functor : functorList) { functor->notifyOfBackends(working_bes); }
   }
 
+  /// Check the capability and model databases for conflicts and missing descriptions
   void gambit_core::check_databases()
   {
     // Loop through registered capabilities and try to find their descriptions (potentially from many files, but for now just checking one)
@@ -549,6 +595,7 @@ namespace Gambit
     }
   }
 
+  /// Get the description of the named capability from the description database
   capability_info gambit_core::get_capability_info(const str &name) const
   {
     for (const auto &capability : capability_dbase)
@@ -587,6 +634,7 @@ namespace Gambit
     return model_info();
   }
 
+  /// Compute the status of a given backend
   str gambit_core::backend_status(const str &be, const str &version, bool &no_failures)
   {
     const str OK = "OK";
@@ -624,6 +672,7 @@ namespace Gambit
     return status;
   }
 
+  /// Launch non-interactive command-line diagnostic mode, for printing info about current GAMBIT configuration.
   str gambit_core::run_diagnostic(int argc, char **argv)
   {
     const int mpirank = GET_RANK; // Get MPI rank (assume MPI already initialised)
@@ -755,4 +804,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:38 +0000
+Updated on 2022-08-02 at 23:34:48 +0000

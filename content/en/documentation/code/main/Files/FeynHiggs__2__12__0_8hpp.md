@@ -218,6 +218,22 @@ LOAD_LIBRARY int fh_creal fh_creal fh_creal fh_creal fh_creal fh_creal fh_creal 
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+/// Frontend for FeynHiggs backend
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Christopher Rogan
+///  \date Sep 2015
+///
+///  \author Pat Scott
+///  \date Dec 2015
+///        Aug 2016
+///
+///  *****************************************
 
 
 #define BACKENDNAME FeynHiggs
@@ -291,4 +307,4 @@ BE_INI_DEPENDENCY(unimproved_MSSM_spectrum, Spectrum)   // Need MSSM spectrum in
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:55 +0000

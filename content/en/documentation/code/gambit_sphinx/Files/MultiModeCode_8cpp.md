@@ -55,6 +55,27 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Definitions of the Classy_input class used for
+///  communicating with the backend classy.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Selim Hotinli
+///  \date 2018 Jan
+///
+///  \author Janina Renk
+///          (janina.renk@fysik.su.se)
+///  \date 2020 Sep
+///
+///  \author Sebastian Hoof
+///          (hoof@uni-goettingen.de)
+///  \date 2020 Mar
+///
+///  *********************************************
 
 #include "gambit/Backends/backend_types/MultiModeCode.hpp"
 
@@ -90,4 +111,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:41 +0000
+Updated on 2022-08-02 at 23:34:51 +0000

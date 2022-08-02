@@ -48,6 +48,12 @@ namespace Gambit {
     using namespace HEPUtils;
 
 
+    /// @brief ATLAS Run 2 0-lepton jet+MET SUSY analysis, with 139/fb of data
+    ///
+    /// Based on:
+    ///   https://cds.cern.ch/record/2686254
+    ///   https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2019-040/
+    ///
     class Analysis_ATLAS_13TeV_0LEP_139invfb : public Analysis {
     public:
 
@@ -107,11 +113,13 @@ namespace Gambit {
         //cout << "PROCESSING EVENT!!!" << endl;
 
         // Missing energy
+        /// @todo Compute from hard objects instead?
         const P4 pmiss = event->missingmom();
         const double met = event->met();
 
 
         // Get baseline jets
+        /// @todo Drop b-tag if pT < 50 GeV or |eta| > 2.5?
         vector<const Jet*> baselineJets;
         for (const Jet* jet : event->jets()) {
           if (jet->pT() > 20. && jet->abseta() < 2.8) {
@@ -120,6 +128,7 @@ namespace Gambit {
         }
 
 
+        /// @todo Apply a random 9% loss / 0.91 reweight for jet quality criteria?
 
         // Get baseline electrons and apply efficiency
         vector<const Particle*> baselineElectrons;
@@ -150,12 +159,15 @@ namespace Gambit {
             signalElectrons.push_back(e);
         // Apply electron ID selection
         ATLAS::applyLooseIDElectronSelectionR2(signalElectrons);
+        /// @todo And tight ID for high purity... used where?
 
         // Remove muons with dR = 0.4 of surviving |eta| < 2.8 jets
+        /// @note Within 0.2, discard the *jet* based on jet track vs. muon criteria... can't be done yet
         vector<const Particle*> signalMuons;
         for (const Particle* m : baselineMuons)
           if (all_of(signalJets, [&](const Jet* j){ return deltaR_rap(*m, *j) > min(0.4, 0.04+10/m->pT()); }))
             signalMuons.push_back(m);
+        /// @todo And tight ID for high purity... used where?
 
         // The subset of jets with pT > 50 GeV is used for several calculations
         vector<const Jet*> signalJets50;
@@ -163,6 +175,7 @@ namespace Gambit {
           if (j->pT() > 50) signalJets50.push_back(j);
 
 
+        ////////////////////////////////
         // Calculate common variables and cuts
 
         // Multiplicities
@@ -232,6 +245,7 @@ namespace Gambit {
         const double aplanarity = 1.5 * mineigenvalue;
 
 
+        ////////////////////////////////
         // Fill signal regions and cutflows
 
         const double w = event->weight();
@@ -250,6 +264,7 @@ namespace Gambit {
         _cutflows.fillnext(w);
 
         // Cleaning emulation
+        /// @todo Use weighting instead
         if (random_bool(0.02)) return;
         _cutflows.fillnext(w);
 
@@ -323,6 +338,7 @@ namespace Gambit {
       }
 
 
+      /// Combine the variables of another copy of this analysis (typically on another thread) into this one.
       void combine(const Analysis* other)
       {
         const Analysis_ATLAS_13TeV_0LEP_139invfb* specificOther = dynamic_cast<const Analysis_ATLAS_13TeV_0LEP_139invfb*>(other);
@@ -330,6 +346,7 @@ namespace Gambit {
       }
 
 
+      /// Register results objects with the results for each SR; obs & bkg numbers from the CONF note
       void collect_results() {
         add_result(SignalRegionData(_counters.at("2j-1600"), 2111, {2190., 130.}));
         add_result(SignalRegionData(_counters.at("2j-2200"),  971, { 980.,  50.}));
@@ -382,4 +399,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:37 +0000
+Updated on 2022-08-02 at 23:34:54 +0000

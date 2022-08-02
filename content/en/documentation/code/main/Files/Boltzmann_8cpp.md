@@ -71,6 +71,49 @@ Authors (add name and date if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  CosmoBit routines relating to setting input parameters
+///    for the Boltzmann solvers.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Selim C. Hotinli
+///          (selim.hotinli14@pimperial.ac.uk)
+///  \date 2017 Jul
+///  \date 2018 May
+///  \date 2018 Aug - Sep
+///
+///  \author Patrick Stoecker
+///          (stoecker@physik.rwth-aachen.de)
+///  \date 2017 Nov
+///  \date 2018 Jan - May
+///  \date 2019 Jan, Feb, June, Nov
+///  \date 2021 Jan, Mar
+///
+///  \author Janina Renk
+///          (janina.renk@fysik.su.se)
+///  \date 2018 June
+///  \date 2019 Mar,June
+///  \date 2020 July
+///
+///  \author Sanjay Bloor
+///          (sanjay.bloor12@imperial.ac.uk)
+///  \date 2019 June, Nov
+///
+///  \author Sebastian Hoof
+///          (hoof@uni-goettingen.de)
+///  \date 2020 Mar
+///
+///  \author Pat Scott
+///          (pat.scott@uq.edu.au)
+///  \date 2018 Mar
+///  \date 2019 Jul
+///  \date 2020 Apr
+///
+///  *********************************************
 
 #include <boost/algorithm/string/trim.hpp>
 
@@ -93,6 +136,8 @@ namespace Gambit
       /* Classy inputs */
       /*****************/
 
+      /// Create a Python dictionary with the inputs that have to be passed to class.
+      /// Setting parameters related to (massive) neutrinos & non-CDM components.
       void set_classy_NuMasses_Nur_input(pybind11::dict &result)
       {
         using namespace Pipes::set_classy_NuMasses_Nur_input;
@@ -147,6 +192,7 @@ namespace Gambit
         }
       }
 
+      /// Set the classy parameters for an LCDM run with a parametrised primordial power spectrum.
       void set_classy_parameters_parametrised_ps(pybind11::dict& result)
       {
         using namespace Pipes::set_classy_parameters_parametrised_ps;
@@ -179,6 +225,7 @@ namespace Gambit
         result["YHe"] = *Dep::helium_abundance;
       }
 
+      /// Set the classy parameters for an LCDM run with an explicit non-parametric primordial power spectrum.
       void set_classy_parameters_primordial_ps(pybind11::dict& result)
       {
         using namespace Pipes::set_classy_parameters_primordial_ps;
@@ -203,6 +250,10 @@ namespace Gambit
         result["YHe"] = *Dep::helium_abundance;
       }
 
+      /// Create a Python dictionary with the standard inputs that have to be passed
+      /// to CLASS: cosmological parameters ([H0/100*theta_s],omega_b,tau_reio,omega_cdm) & add
+      /// model-dependent results for N_ur, neutrino masses & helium abundance.
+      /// Also read in any extra input options from the YAML file to pass to CLASS.
       void set_classy_input_params(Classy_input &result)
       {
         using namespace Pipes::set_classy_input_params;
@@ -345,6 +396,10 @@ namespace Gambit
 
       }
 
+      /// Initialises the container within CosmoBit from classy. This holds
+      /// an instance of the classy class Class() (Yep, I know...)
+      /// which can be handed over to MontePython, or just used to compute
+      /// some observables.
       void set_classy_input_no_MPLike(pybind11::dict& result)
       {
         using namespace Pipes::set_classy_input_no_MPLike;
@@ -366,6 +421,13 @@ namespace Gambit
         result = r;
       }
 
+      /// Initialises the container within CosmoBit from classy, but designed specifically
+      /// to be used when MontePython is in use. This will ensure additional outputs are
+      /// computed by classy CLASS to be passed to MontePython:
+      /// When initialising the MontePython Likelihood objects they add the output that needs to be computed by class
+      /// to the input dictionary. We need to get these before starting the class run
+      /// e.g. for Planck_SZ likelihood the entries {'output': ' mPk ', 'P_k_max_h/Mpc': '1.'} need to be added
+      /// to compute all needed observables, these entries are collected here.
       void set_classy_input_with_MPLike(pybind11::dict& result)
       {
         using namespace Pipes::set_classy_input_with_MPLike;
@@ -391,6 +453,7 @@ namespace Gambit
         }
       }
 
+      /// Set the parameters for exoCLASS for a scenario with annihilating dark matter.
       void set_classy_parameters_EnergyInjection_AnnihilatingDM(pybind11::dict &result)
       {
         using namespace Pipes::set_classy_parameters_EnergyInjection_AnnihilatingDM;
@@ -481,6 +544,7 @@ namespace Gambit
         if (!(*Param["sigmav"] > 0.0  && f_eff > 0.0)) result.clear();
       }
 
+      /// Set the parameters for exoCLASS for a scenario with decaying dark matter.
       void set_classy_parameters_EnergyInjection_DecayingDM(pybind11::dict &result)
       {
         using namespace Pipes::set_classy_parameters_EnergyInjection_DecayingDM;
@@ -548,6 +612,7 @@ namespace Gambit
         if (!(*Param["fraction"] > 0.0)) result.clear();
       }
 
+      /// Set the parameters for exoCLASS for a scenario with decaying dark matter.
       void set_classy_parameters_EnergyInjection_DecayingDM_onSpot(pybind11::dict &result)
       {
         using namespace Pipes::set_classy_parameters_EnergyInjection_DecayingDM_onSpot;
@@ -571,6 +636,8 @@ namespace Gambit
         if (!(*Param["fraction"] > 0.0  && f_eff > 0.0)) result.clear();
       }
 
+      /// Add all inputs for CLASS needed to produce the correct output to be
+      /// able to compute the Planck CMB likelihoods
       void set_classy_PlanckLike_input(pybind11::dict &result)
       {
         using namespace Pipes::set_classy_PlanckLike_input;
@@ -622,4 +689,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:37 +0000
+Updated on 2022-08-02 at 23:34:54 +0000

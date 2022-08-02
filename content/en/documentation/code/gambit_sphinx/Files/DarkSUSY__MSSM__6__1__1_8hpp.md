@@ -141,6 +141,30 @@ LOAD_LIBRARY ddmssmcom_;
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Fronted header for the DarkSUSY backend
+///
+///  Compile-time registration of available
+///  functions and variables from this backend.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Torsten Bringmann
+///          (torsten.bringmann@fys.uio.no)
+///  \date 2018 September, 2019
+///
+///  \author Joakim Edsjo
+///          (edsjo@fysik.su.se)
+///  \date 2018 September
+///
+///  \author Pat Scott
+///          (pat.scott@uq.edu.au)
+///  \date 2020 September
+///
+///  *********************************************
 
 #define BACKENDNAME DarkSUSY_MSSM
 #define BACKENDLANG FORTRAN
@@ -223,4 +247,4 @@ BE_INI_CONDITIONAL_DEPENDENCY(decay_rates, DecayTable, MSSM63atQ, CMSSM)
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:41 +0000
+Updated on 2022-08-02 at 23:34:50 +0000

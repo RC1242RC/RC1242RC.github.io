@@ -39,6 +39,18 @@ Authors (add name and sate if you modify):
 ```
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
+///  \file
+///
+///  Frontend for SUSYHD 1.0.2 backend
+///
+///  *********************************************
+///
+///  Authors (add name and sate if you modify):
+///
+///  \author Tomas Gonzalo
+///  \date 2017 Jan
+///
+///  *********************************************
 
 #include "gambit/Backends/frontend_macros.hpp"
 #include "gambit/Backends/frontends/SUSYHD_1_0_2.hpp"
@@ -79,4 +91,4 @@ END_BE_INI_FUNCTION
 
 -------------------------------
 
-Updated on 2022-08-02 at 18:18:39 +0000
+Updated on 2022-08-02 at 23:34:56 +0000
