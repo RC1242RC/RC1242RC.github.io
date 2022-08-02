@@ -134,7 +134,8 @@ jobs:
 
   deploy:
     runs-on: ubuntu-latest
-    needs: [document_repos, document_branches, download_docs]
+    needs: [download_docs]
+    if: ${{ always() }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
