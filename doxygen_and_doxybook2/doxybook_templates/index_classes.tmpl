@@ -10,8 +10,9 @@ summary: "{{summary}}"
 {% include "meta" %}
 menu:
   documentation:
-    parent: GAMBIT_VERSION_HERE
-    identifier: {% if exists("title") -%} "GAMBIT_VERSION_HERE{{title}}" {% else if exists("name") -%} "GAMBIT_VERSION_HERE{{name}}"{% endif -%}
+    parent: "GAMBIT_VERSION_HERE"
+    identifier: {% if exists("title") -%} "GAMBIT_VERSION_HERE{{title}}" {% else if exists("name") -%} "GAMBIT_VERSION_HERE{{name}}"
+{% endif -%}
 weight: 20
 ---
 
