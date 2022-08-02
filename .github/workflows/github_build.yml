@@ -71,11 +71,11 @@ jobs:
         run: mkdir ${{ matrix.branches }}
           && ./doxybook2/bin/doxybook2 --input ./xml --output ./${{ matrix.branches }} --config ./doxygen_and_doxybook2/config.json --templates ./doxygen_and_doxybook2/doxybook_templates
       - name: Copy index template into branch folder to act as parent menu
-        run: cp version_index_template.md ./content/documentation/code/${{ matrix.branches }}/_index.md
+        run: cp version_index_template.md ./${{ matrix.branches }}/_index.md
       - name: Add gambit version (and type) into index files to reference parent menu
         run: sed -i -- 's+GAMBIT_VERSION_HERE+${{ matrix.branches }}+g' *.md
           && sed -i -- 's+VERSION_TYPE_HERE+development+g' _index.md
-        working-directory: ./content/en/documentation/code/${{ matrix.branches }}
+        working-directory: ./${{ matrix.branches }}
       - name: Upload branch code md as artifact
         uses: actions/upload-artifact@v3
         with:
@@ -115,11 +115,11 @@ jobs:
         run: mkdir ${{ env.folder }}
           && ./doxybook2/bin/doxybook2 --input ./xml --output ./${{ env.folder }} --config ./doxygen_and_doxybook2/config.json --templates ./doxygen_and_doxybook2/doxybook_templates
       - name: Copy index template into repo folder to act as parent menu
-        run: cp version_index_template.md ./content/documentation/code/${{ env.folder }}/_index.md
+        run: cp version_index_template.md ./${{ env.folder }}/_index.md
       - name: Add gambit version (and type) into index files to reference parent menu
         run: sed -i -- 's+GAMBIT_VERSION_HERE+${{ matrix.env.folder }}+g' *.md
           && sed -i -- 's+VERSION_TYPE_HERE+release+g' _index.md
-        working-directory: ./content/en/documentation/code/${{ env.folder }}
+        working-directory: ./${{ env.folder }}
       - name: Upload repo code md as artifact
         uses: actions/upload-artifact@v3
         with:
