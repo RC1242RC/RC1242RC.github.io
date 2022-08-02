@@ -3,22 +3,28 @@ name: Build and deploy doc versions
 on:
   workflow_dispatch:
     inputs:
+      deploy_only:
+        description: 'Redeploy site without rebuilding documentation'
+        type: boolean
+        required: true
+        default: false
       dev_repo:
-        description: 'Dev repo'
+        description: 'Development repo'
         required: true
         default: 'https://github.com/RC1242RC/gambit_sphinx.git'
       dev_branches_to_document:
-        description: 'Branches of the GAMBIT dev repo to document'
+        description: 'Branches of the GAMBIT development repo to document'
         required: true
         default: "['main', 'ColliderBit_development', 'DarkBit_development']"
       repos_to_document:
-        description: 'Standalone repos (e.g. releases) to document'
+        description: 'Standalone repos (GAMBIT releases) to document'
         required: true
         default: "['https://github.com/RC1242RC/gambit_sphinx.git']"
 
 jobs:
   
   setup:
+    if: ${{ inputs.deploy_only }} == false
     runs-on: ubuntu-latest
     outputs:
       branches: ${{ steps.setVariables.outputs.branches }}
@@ -32,6 +38,7 @@ jobs:
           repos_temp: ${{ inputs.repos_to_document }}
 
   document_branches:
+    if: ${{ inputs.deploy_only }} == false
     needs: setup
     runs-on: ubuntu-latest
     strategy:
@@ -66,6 +73,7 @@ jobs:
       
         
   document_repos:
+    if: ${{ inputs.deploy_only }} == false
     needs: setup
     runs-on: ubuntu-latest
     strategy:
@@ -102,17 +110,13 @@ jobs:
           name: ${{ env.folder }}
           path: ./${{ env.folder }}
 
-  upload_and_deploy:
+  upload:
+    if: ${{ inputs.deploy_only }} == false
     needs: [document_repos, document_branches]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-      - name: Cache npm packages
-        uses: actions/setup-node@v2
-        with:
-          node-version: '16'
-          # cache: 'npm'
       - name: Wipe code dir
         run: rm -r code
           && mkdir code
@@ -127,6 +131,15 @@ jobs:
           && git add --all
           && git commit -m "Documentation rebuild"
           && git push
+
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cache npm packages
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+          # cache: 'npm'
       - name: Install npm dependencies and build site
         run: npm install
           && npm run build
