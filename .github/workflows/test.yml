@@ -1,0 +1,17 @@
+on:
+  workflow_dispatch:
+    inputs:
+      deploy_only:
+        description: 'Redeploy site without rebuilding documentation'
+        type: boolean
+        required: true
+        default: false
+
+jobs:
+  
+  setup:
+    if: ${{ inputs.deploy_only }}
+    runs-on: ubuntu-latest
+    steps:
+      - test:
+        run: echo "test"
