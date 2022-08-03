@@ -1,5 +1,5 @@
 ---
-name: "GAMBIT_VERSION_HERE"
+title: "GAMBIT_VERSION_HERE"
 menu:
   documentation:
     parent: "code"
