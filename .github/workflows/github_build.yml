@@ -126,32 +126,9 @@ jobs:
           name: ${{ env.folder }}
           path: ./${{ env.folder }}
 
-  download_docs:
-    if: ${{ always() }} && ${{ inputs.rebuild_all }}
-    needs: [document_repos_and_build_menu, document_branches_and_build_menu]
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-      - name: Wipe code dir
-        if: ${{ inputs.clear_code_dir }}
-        run: rm -r code
-          && mkdir code
-        working-directory: ./content/en/documentation
-      - name: Download docs artifacts into code dir
-        uses: actions/download-artifact@v3
-        with:
-          path: ./content/en/documentation/code
-      - name: Commit changes
-        run: git config --local user.email "test@github.com"
-          && git config --local user.name "GitHub Action test"
-          && git add --all
-          && git commit -m "Documentation rebuild"
-          && git push
-
   deploy:
     runs-on: ubuntu-latest
-    needs: [download_docs]
+    needs: [document_repos_and_build_menu, document_branches_and_build_menu]
     if: ${{ always() }}
     steps:
       - name: Checkout code
@@ -161,6 +138,23 @@ jobs:
         with:
           node-version: '16'
           # cache: 'npm'
+      - name: Wipe code dir
+        if: ${{ inputs.clear_code_dir }} && ${{ inputs.rebuild_all }}
+        run: rm -r code
+          && mkdir code
+        working-directory: ./content/en/documentation
+      - name: Download docs artifacts into code dir
+        if: ${{ inputs.rebuild_all }}
+        uses: actions/download-artifact@v3
+        with:
+          path: ./content/en/documentation/code
+      - name: Commit changes
+        if: ${{ inputs.rebuild_all }}
+        run: git config --local user.email "test@github.com"
+          && git config --local user.name "GitHub Action test"
+          && git add --all
+          && git commit -m "Documentation rebuild"
+          && git push
       - name: Install npm dependencies and build site
         run: npm install
           && npm run build
