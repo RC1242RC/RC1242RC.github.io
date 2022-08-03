@@ -1,0 +1,1289 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="ie=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><link rel=preload as=font href=https://rc1242rc.github.io/fonts/vendor/jost/jost-v4-latin-regular.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://rc1242rc.github.io/fonts/vendor/jost/jost-v4-latin-500.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://rc1242rc.github.io/fonts/vendor/jost/jost-v4-latin-700.woff2 type=font/woff2 crossorigin><script>(()=>{var e=localStorage.getItem("theme");e==="dark"&&document.documentElement.setAttribute("data-dark-mode","")})()</script><link rel=stylesheet href=https://rc1242rc.github.io/main.f12f7e04ea768acebec10c86baf049d74d6a79f24bc0dfb7ed77aa60462432916dd1ce8f41c78b69496adf650b3039a28a210183cce598f09b95d6fecb5ff999.css integrity="sha512-8S9+BOp2is6+wQyGuvBJ101qefJLwN+37XeqYEYkMpFt0c6PQceLaUlq32ULMDmiiiEBg8zlmPCbldb+y1/5mQ==" crossorigin=anonymous><noscript><style>img.lazyload{display:none}</style></noscript><meta name=robots content="index, follow"><meta name=googlebot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><meta name=bingbot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><title>file DecayBit/DecayBit_rollcall.hpp - GAMBIT</title><meta name=description content="[No description available]"><link rel=canonical href=https://rc1242rc.github.io/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/><meta property="og:locale" content="en_US"><meta property="og:type" content="article"><meta property="og:title" content="file DecayBit/DecayBit_rollcall.hpp"><meta property="og:description" content="[No description available]"><meta property="og:url" content="https://rc1242rc.github.io/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/"><meta property="og:site_name" content="GAMBIT"><meta property="og:image" content="https://rc1242rc.github.io/gambit_logo.png"><meta property="og:image:alt" content="GAMBIT"><meta name=twitter:card content="summary_large_image"><meta name=twitter:site content><meta name=twitter:creator content><meta name=twitter:title content="file DecayBit/DecayBit_rollcall.hpp"><meta name=twitter:description content="[No description available]"><meta name=twitter:image content="https://rc1242rc.github.io/gambit_logo.png"><meta name=twitter:image:alt content="file DecayBit/DecayBit_rollcall.hpp"><script type=application/ld+json>{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://rc1242rc.github.io/#/schema/organization/1","name":"Doks","url":"https://rc1242rc.github.io/","sameAs":["https://github.com/GambitBSM"],"logo":{"@type":"ImageObject","@id":"https://rc1242rc.github.io/#/schema/image/1","url":"https://rc1242rc.github.io/logo-doks.png","width":450,"height":416,"caption":"Doks"},"image":{"@id":"https://rc1242rc.github.io/#/schema/image/1"}},{"@type":"WebSite","@id":"https://rc1242rc.github.io/#/schema/website/1","url":"https://rc1242rc.github.io/","name":"GAMBIT","description":"Documentation for the Global And Modular BSM Inference Tool","publisher":{"@id":"https://rc1242rc.github.io/#/schema/organization/1"}},{"@type":"WebPage","@id":"https://rc1242rc.github.io/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/","url":"https://rc1242rc.github.io/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/","name":"file DecayBit\/DecayBit_rollcall.hpp","description":"[No description available]","isPartOf":{"@id":"https://rc1242rc.github.io/#/schema/website/1"},"about":{"@id":"https://rc1242rc.github.io/#/schema/organization/1"},"datePublished":"0001-01-01T00:00:00CET","dateModified":"0001-01-01T00:00:00CET","breadcrumb":{"@id":"https://rc1242rc.github.io/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#/schema/breadcrumb/1"},"primaryImageOfPage":{"@id":"https://rc1242rc.github.io/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#/schema/image/2"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://rc1242rc.github.io/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/"]}]},{"@type":"BreadcrumbList","@id":"https://rc1242rc.github.io/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#/schema/breadcrumb/1","name":"Breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/","url":"https://rc1242rc.github.io/","name":"Home"}},{"@type":"ListItem","position":2,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/documentation/","url":"https://rc1242rc.github.io/documentation/","name":"Documentation"}},{"@type":"ListItem","position":3,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/documentation/code/","url":"https://rc1242rc.github.io/documentation/code/","name":"Code"}},{"@type":"ListItem","position":4,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/documentation/code/gambit_2/","url":"https://rc1242rc.github.io/documentation/code/gambit_2/","name":"Gambit 2"}},{"@type":"ListItem","position":5,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/documentation/code/gambit_2/files/","url":"https://rc1242rc.github.io/documentation/code/gambit_2/files/","name":"Files"}},{"@type":"ListItem","position":6,"item":{"@id":"https://rc1242rc.github.io/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/"}}]},{"@context":"https://schema.org","@graph":[{"@type":"ImageObject","@id":"https://rc1242rc.github.io/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#/schema/image/2","url":"https://rc1242rc.github.io/gambit_logo.png","contentUrl":"https://rc1242rc.github.io/gambit_logo.png","caption":"file DecayBit\/DecayBit_rollcall.hpp"}]}]}</script><meta name=theme-color content="#fff"><link rel=icon href=https://rc1242rc.github.io/favicon.ico sizes=any><link rel=icon type=image/svg+xml href=https://rc1242rc.github.io/favicon.svg><link rel=apple-touch-icon sizes=180x180 href=https://rc1242rc.github.io/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=https://rc1242rc.github.io/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=https://rc1242rc.github.io/favicon-16x16.png><link rel=manifest crossorigin=use-credentials href=https://rc1242rc.github.io/site.webmanifest></head><body class="documentation single light"><div class=sticky-top><div class=header-bar></div><header class="navbar navbar-expand-md navbar-light doks-navbar"><nav class="container-xxl flex-wrap flex-md-nowrap" aria-label="Main navigation"><a class="navbar-brand p-0 me-auto" href=https://rc1242rc.github.io/ aria-label=GAMBIT><img class=logo-light src=https://rc1242rc.github.io//images/gambit_logo.png width=50px>
+<img class="logo-dark d-none" src=https://rc1242rc.github.io//images/gambit_logo.png width=50px>
+GAMBIT</a>
+<button class="btn btn-menu order-2 d-block d-lg-none" type=button data-bs-toggle=offcanvas data-bs-target=#offcanvasDoks aria-controls=offcanvasDoks aria-label="Open main menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button><div class="offcanvas offcanvas-end border-0 py-lg-1" tabindex=-1 id=offcanvasDoks data-bs-backdrop=true aria-labelledby=offcanvasDoksLabel><div class="header-bar d-lg-none"></div><div class="offcanvas-header d-lg-none"><h2 class="h5 offcanvas-title ps-2" id=offcanvasDoksLabel><a class=text-dark href=/>GAMBIT</a></h2><button type=button class="btn-close text-reset me-2" data-bs-dismiss=offcanvas aria-label="Close main menu"></button></div><div class="offcanvas-body p-4 p-lg-0"><ul class="nav flex-column flex-lg-row align-items-lg-center mt-2 mt-lg-0 ms-lg-2 me-lg-auto"><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Documentation
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=/documentation/installation/introduction/>Installation</a></li><li><a class=dropdown-item href=/documentation/examples/colliderbit_example>Examples</a></li><li><a class=dropdown-item href=/documentation/help/faqs/>Help</a></li><li><a class=dropdown-item href=/documentation/code/gambit_sphinx/index_classes>Code Reference</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Community
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=/community/publications/>Publications</a></li><li><a class=dropdown-item href=/community/talks/>Talks</a></li><li><a class=dropdown-item href=/community/members/>Members</a></li><li><a class=dropdown-item href=/community/code_of_conduct/>Code of Conduct</a></li><li><a class=dropdown-item href=/community/contact/>Contact</a></li></ul></li></ul><hr class="text-black-50 my-4 d-lg-none"><form class="doks-search position-relative flex-grow-1 ms-lg-auto me-lg-2"><input id=search class="form-control is-search" type=search placeholder="Search site..." aria-label="Search site..." autocomplete=off><div id=suggestions class="shadow bg-white rounded d-none"></div></form><hr class="text-black-50 my-4 d-lg-none"><ul class="nav flex-column flex-lg-row"><li class=nav-item><a class="nav-link social-link" href=https://github.com/GambitBSM><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37.0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44.0 0020 4.77 5.07 5.07.0 0019.91 1S18.73.65 16 2.48a13.38 13.38.0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07.0 005 4.77 5.44 5.44.0 003.5 8.55c0 5.42 3.3 6.61 6.44 7A3.37 3.37.0 009 18.13V22"/></svg><small class="ms-2 d-lg-none">GitHub</small></a></li></ul><hr class="text-black-50 my-4 d-lg-none"><div class=dropdown><button class="btn btn-doks-light dropdown-toggle" id=doks-versions data-bs-toggle=dropdown aria-expanded=false data-bs-display=static aria-label="Toggle version menu">
+<span class=d-none>Doks</span>
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></button><ul class="dropdown-menu dropdown-menu-lg-end me-lg-2 shadow rounded border-0" aria-labelledby=doks-versions></ul></div></div></div></nav></header></div><div class="wrap container-xxl" role=document><div class=content><div class="row flex-xl-nowrap"><div class="col-lg-5 col-xl-4 docs-sidebar"><nav class=docs-links aria-label="Main navigation"><ul class="list-unstyled collapsible-sidebar"><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-installation aria-expanded=false>
+Installation</button><div class=collapse id=section-installation><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/installation/introduction/>Getting Started</a></li><li><a class="docs-link rounded" href=/documentation/installation/docker_usage/>Docker Usage</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_linux/>Installation for Linux</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_windows/>Installation for Windows</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_macos/>Installation for macOS</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-examples aria-expanded=false>
+Examples</button><div class=collapse id=section-examples><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/examples/colliderbit_example/>ColliderBit Example</a></li><li><a class="docs-link rounded" href=/documentation/examples/anotherbit/>AnotherBit</a></li><li><a class="docs-link rounded" href=/documentation/examples/anotherbit2/>AnotherBit2</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-help aria-expanded=false>
+Help</button><div class=collapse id=section-help><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/help/faqs/>FAQs</a></li><li><a class="docs-link rounded" href=/documentation/help/compiler_matrix/>Compiler Matrix</a></li><li><a class="docs-link rounded" href=/documentation/help/known_issues/>Known Issues</a></li><li><a class="docs-link rounded" href=/documentation/help/configuration_examples/>Configuration Examples</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-code aria-expanded=true>
+Code Reference</button><div class="collapse show" id=section-code><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li class="my-1 ms-3"><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-gambit_2 aria-expanded=true>
+<font style="color: #5d2f86;" size=-6>release</font> &nbsp; gambit_2</button><div class="collapse show" id=section-gambit_2><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/code/gambit_2/index_classes/>Classes</a></li><li><a class="docs-link rounded" href=/documentation/code/gambit_2/index_files/>Files</a></li><li><a class="docs-link rounded" href=/documentation/code/gambit_2/index_pages/>Pages</a></li><li><a class="docs-link rounded" href=/documentation/code/gambit_2/index_namespaces/>Namespaces</a></li></ul></div></li></ul></div></li></ul></nav></div><nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation"><div class=d-xl-none><button class="btn btn-outline-primary btn-sm doks-toc-toggle collapsed" type=button data-bs-toggle=collapse data-bs-target=#onThisPage aria-controls=doks-docs-nav aria-expanded=false aria-label="Toggle On this page navigation">
+<span>On this page</span>
+<span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg></span></button><div class=collapse id=onThisPage><div class="card card-body mt-3 py-1"><div class=page-links><nav id=TableOfContents><ul><li><ul><li><a href=#functions>Functions</a></li><li><a href=#attributes>Attributes</a></li><li><a href=#defines>Defines</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#functions-documentation>Functions Documentation</a><ul><li><a href=#function-backend_option>function BACKEND_OPTION</a></li><li><a href=#function-quick_function>function QUICK_FUNCTION</a></li><li><a href=#function-quick_function-1>function QUICK_FUNCTION</a></li><li><a href=#function-quick_function-2>function QUICK_FUNCTION</a></li><li><a href=#function-quick_function-3>function QUICK_FUNCTION</a></li><li><a href=#function-quick_function-4>function QUICK_FUNCTION</a></li><li><a href=#function-quick_function-5>function QUICK_FUNCTION</a></li><li><a href=#function-quick_function-6>function QUICK_FUNCTION</a></li><li><a href=#function-quick_function-7>function QUICK_FUNCTION</a></li><li><a href=#function-quick_function-8>function QUICK_FUNCTION</a></li><li><a href=#function-quick_function-9>function QUICK_FUNCTION</a></li><li><a href=#function-quick_function-10>function QUICK_FUNCTION</a></li><li><a href=#function-quick_function-11>function QUICK_FUNCTION</a></li><li><a href=#function-quick_function-12>function QUICK_FUNCTION</a></li><li><a href=#function-quick_function-13>function QUICK_FUNCTION</a></li><li><a href=#function-quick_function-14>function QUICK_FUNCTION</a></li></ul></li><li><a href=#attributes-documentation>Attributes Documentation</a><ul><li><a href=#variable-tbar_decay_rates>variable tbar_decay_rates</a></li><li><a href=#variable-new_capability>variable NEW_CAPABILITY</a></li><li><a href=#variable-tbar_decays>variable tbar_decays</a></li><li><a href=#variable-t_decay_rates>variable t_decay_rates</a></li><li><a href=#variable-tau_minus_decay_rates>variable tau_minus_decay_rates</a></li><li><a href=#variable-tau_minus_decays>variable tau_minus_decays</a></li><li><a href=#variable-tau_plus_decay_rates>variable tau_plus_decay_rates</a></li><li><a href=#variable-rho_minus_decay_rates>variable rho_minus_decay_rates</a></li><li><a href=#variable-rho_minus_decays>variable rho_minus_decays</a></li><li><a href=#variable-rho_plus_decay_rates>variable rho_plus_decay_rates</a></li><li><a href=#variable-stopbar_1_decay_rates>variable stopbar_1_decay_rates</a></li><li><a href=#variable-stopbar_1_decays>variable stopbar_1_decays</a></li><li><a href=#variable-mssm63atq>variable MSSM63atQ</a></li><li><a href=#variable-mssm63atmgut>variable MSSM63atMGUT</a></li><li><a href=#variable-stop_1_decay_rates>variable stop_1_decay_rates</a></li><li><a href=#variable-sbottombar_1_decay_rates>variable sbottombar_1_decay_rates</a></li><li><a href=#variable-sbottombar_1_decays>variable sbottombar_1_decays</a></li><li><a href=#variable-sbottom_1_decay_rates>variable sbottom_1_decay_rates</a></li><li><a href=#variable-supbar_l_decay_rates>variable supbar_l_decay_rates</a></li><li><a href=#variable-supbar_l_decays>variable supbar_l_decays</a></li><li><a href=#variable-sup_l_decay_rates>variable sup_l_decay_rates</a></li><li><a href=#variable-sdownbar_l_decay_rates>variable sdownbar_l_decay_rates</a></li><li><a href=#variable-sdownbar_l_decays>variable sdownbar_l_decays</a></li><li><a href=#variable-sdown_l_decay_rates>variable sdown_l_decay_rates</a></li><li><a href=#variable-scharmbar_l_decay_rates>variable scharmbar_l_decay_rates</a></li><li><a href=#variable-scharmbar_l_decays>variable scharmbar_l_decays</a></li><li><a href=#variable-scharm_l_decay_rates>variable scharm_l_decay_rates</a></li><li><a href=#variable-sstrangebar_l_decay_rates>variable sstrangebar_l_decay_rates</a></li><li><a href=#variable-sstrangebar_l_decays>variable sstrangebar_l_decays</a></li><li><a href=#variable-sstrange_l_decay_rates>variable sstrange_l_decay_rates</a></li><li><a href=#variable-selectronbar_l_decay_rates>variable selectronbar_l_decay_rates</a></li><li><a href=#variable-selectronbar_l_decays>variable selectronbar_l_decays</a></li><li><a href=#variable-selectron_l_decay_rates>variable selectron_l_decay_rates</a></li><li><a href=#variable-smuonbar_l_decay_rates>variable smuonbar_l_decay_rates</a></li><li><a href=#variable-smuonbar_l_decays>variable smuonbar_l_decays</a></li><li><a href=#variable-smuon_l_decay_rates>variable smuon_l_decay_rates</a></li><li><a href=#variable-staubar_1_decay_rates>variable staubar_1_decay_rates</a></li><li><a href=#variable-staubar_1_decays>variable staubar_1_decays</a></li><li><a href=#variable-stau_1_decay_rates>variable stau_1_decay_rates</a></li><li><a href=#variable-snubar_electronl_decay_rates>variable snubar_electronl_decay_rates</a></li><li><a href=#variable-snubar_electronl_decays>variable snubar_electronl_decays</a></li><li><a href=#variable-snu_electronl_decay_rates>variable snu_electronl_decay_rates</a></li><li><a href=#variable-snubar_taul_decay_rates>variable snubar_taul_decay_rates</a></li><li><a href=#variable-snubar_taul_decays>variable snubar_taul_decays</a></li><li><a href=#variable-snu_taul_decay_rates>variable snu_taul_decay_rates</a></li><li><a href=#variable-chargino_minus_2_decay_rates>variable chargino_minus_2_decay_rates</a></li><li><a href=#variable-chargino_minus_2_decays>variable chargino_minus_2_decays</a></li><li><a href=#variable-chargino_plus_2_decay_rates>variable chargino_plus_2_decay_rates</a></li></ul></li><li><a href=#macros-documentation>Macros Documentation</a><ul><li><a href=#define-module>define MODULE</a></li><li><a href=#define-reference>define REFERENCE</a></li><li><a href=#define-capability>define CAPABILITY</a></li><li><a href=#define-function>define FUNCTION</a></li><li><a href=#define-function-1>define FUNCTION</a></li><li><a href=#define-capability-1>define CAPABILITY</a></li><li><a href=#define-function-2>define FUNCTION</a></li><li><a href=#define-function-3>define FUNCTION</a></li><li><a href=#define-capability-2>define CAPABILITY</a></li><li><a href=#define-function-4>define FUNCTION</a></li><li><a href=#define-function-5>define FUNCTION</a></li><li><a href=#define-capability-3>define CAPABILITY</a></li><li><a href=#define-function-6>define FUNCTION</a></li><li><a href=#define-function-7>define FUNCTION</a></li><li><a href=#define-capability-4>define CAPABILITY</a></li><li><a href=#define-function-8>define FUNCTION</a></li><li><a href=#define-function-9>define FUNCTION</a></li><li><a href=#define-function-10>define FUNCTION</a></li><li><a href=#define-function-11>define FUNCTION</a></li><li><a href=#define-function-12>define FUNCTION</a></li><li><a href=#define-function-13>define FUNCTION</a></li><li><a href=#define-function-14>define FUNCTION</a></li><li><a href=#define-capability-5>define CAPABILITY</a></li><li><a href=#define-function-15>define FUNCTION</a></li><li><a href=#define-function-16>define FUNCTION</a></li><li><a href=#define-capability-6>define CAPABILITY</a></li><li><a href=#define-function-17>define FUNCTION</a></li><li><a href=#define-function-18>define FUNCTION</a></li><li><a href=#define-capability-7>define CAPABILITY</a></li><li><a href=#define-function-19>define FUNCTION</a></li><li><a href=#define-function-20>define FUNCTION</a></li><li><a href=#define-capability-8>define CAPABILITY</a></li><li><a href=#define-function-21>define FUNCTION</a></li><li><a href=#define-capability-9>define CAPABILITY</a></li><li><a href=#define-function-22>define FUNCTION</a></li><li><a href=#define-capability-10>define CAPABILITY</a></li><li><a href=#define-function-23>define FUNCTION</a></li><li><a href=#define-capability-11>define CAPABILITY</a></li><li><a href=#define-function-24>define FUNCTION</a></li><li><a href=#define-capability-12>define CAPABILITY</a></li><li><a href=#define-function-25>define FUNCTION</a></li><li><a href=#define-capability-13>define CAPABILITY</a></li><li><a href=#define-function-26>define FUNCTION</a></li><li><a href=#define-capability-14>define CAPABILITY</a></li><li><a href=#define-function-27>define FUNCTION</a></li><li><a href=#define-capability-15>define CAPABILITY</a></li><li><a href=#define-function-28>define FUNCTION</a></li><li><a href=#define-capability-16>define CAPABILITY</a></li><li><a href=#define-function-29>define FUNCTION</a></li><li><a href=#define-capability-17>define CAPABILITY</a></li><li><a href=#define-function-30>define FUNCTION</a></li><li><a href=#define-capability-18>define CAPABILITY</a></li><li><a href=#define-function-31>define FUNCTION</a></li><li><a href=#define-capability-19>define CAPABILITY</a></li><li><a href=#define-function-32>define FUNCTION</a></li><li><a href=#define-capability-20>define CAPABILITY</a></li><li><a href=#define-function-33>define FUNCTION</a></li><li><a href=#define-capability-21>define CAPABILITY</a></li><li><a href=#define-function-34>define FUNCTION</a></li><li><a href=#define-capability-22>define CAPABILITY</a></li><li><a href=#define-function-35>define FUNCTION</a></li><li><a href=#define-capability-23>define CAPABILITY</a></li><li><a href=#define-function-36>define FUNCTION</a></li><li><a href=#define-capability-24>define CAPABILITY</a></li><li><a href=#define-function-37>define FUNCTION</a></li><li><a href=#define-capability-25>define CAPABILITY</a></li><li><a href=#define-function-38>define FUNCTION</a></li><li><a href=#define-capability-26>define CAPABILITY</a></li><li><a href=#define-function-39>define FUNCTION</a></li><li><a href=#define-capability-27>define CAPABILITY</a></li><li><a href=#define-function-40>define FUNCTION</a></li><li><a href=#define-capability-28>define CAPABILITY</a></li><li><a href=#define-function-41>define FUNCTION</a></li><li><a href=#define-capability-29>define CAPABILITY</a></li><li><a href=#define-function-42>define FUNCTION</a></li><li><a href=#define-capability-30>define CAPABILITY</a></li><li><a href=#define-function-43>define FUNCTION</a></li><li><a href=#define-capability-31>define CAPABILITY</a></li><li><a href=#define-function-44>define FUNCTION</a></li><li><a href=#define-capability-32>define CAPABILITY</a></li><li><a href=#define-function-45>define FUNCTION</a></li><li><a href=#define-capability-33>define CAPABILITY</a></li><li><a href=#define-function-46>define FUNCTION</a></li><li><a href=#define-capability-34>define CAPABILITY</a></li><li><a href=#define-function-47>define FUNCTION</a></li><li><a href=#define-capability-35>define CAPABILITY</a></li><li><a href=#define-function-48>define FUNCTION</a></li><li><a href=#define-capability-36>define CAPABILITY</a></li><li><a href=#define-function-49>define FUNCTION</a></li><li><a href=#define-capability-37>define CAPABILITY</a></li><li><a href=#define-function-50>define FUNCTION</a></li><li><a href=#define-capability-38>define CAPABILITY</a></li><li><a href=#define-function-51>define FUNCTION</a></li><li><a href=#define-capability-39>define CAPABILITY</a></li><li><a href=#define-function-52>define FUNCTION</a></li><li><a href=#define-capability-40>define CAPABILITY</a></li><li><a href=#define-function-53>define FUNCTION</a></li><li><a href=#define-function-54>define FUNCTION</a></li><li><a href=#define-capability-41>define CAPABILITY</a></li><li><a href=#define-function-55>define FUNCTION</a></li><li><a href=#define-capability-42>define CAPABILITY</a></li><li><a href=#define-function-56>define FUNCTION</a></li><li><a href=#define-capability-43>define CAPABILITY</a></li><li><a href=#define-function-57>define FUNCTION</a></li><li><a href=#define-capability-44>define CAPABILITY</a></li><li><a href=#define-function-58>define FUNCTION</a></li><li><a href=#define-capability-45>define CAPABILITY</a></li><li><a href=#define-function-59>define FUNCTION</a></li><li><a href=#define-capability-46>define CAPABILITY</a></li><li><a href=#define-function-60>define FUNCTION</a></li><li><a href=#define-capability-47>define CAPABILITY</a></li><li><a href=#define-function-61>define FUNCTION</a></li><li><a href=#define-capability-48>define CAPABILITY</a></li><li><a href=#define-function-62>define FUNCTION</a></li><li><a href=#define-capability-49>define CAPABILITY</a></li><li><a href=#define-function-63>define FUNCTION</a></li><li><a href=#define-capability-50>define CAPABILITY</a></li><li><a href=#define-function-64>define FUNCTION</a></li><li><a href=#define-function-65>define FUNCTION</a></li><li><a href=#define-function-66>define FUNCTION</a></li><li><a href=#define-function-67>define FUNCTION</a></li><li><a href=#define-function-68>define FUNCTION</a></li></ul></li><li><a href=#source-code>Source code</a></li></ul></li></ul></nav></div></div></div></div><div class="page-links d-none d-xl-block"><h3>On this page</h3><nav id=TableOfContents><ul><li><ul><li><a href=#functions>Functions</a></li><li><a href=#attributes>Attributes</a></li><li><a href=#defines>Defines</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#functions-documentation>Functions Documentation</a><ul><li><a href=#function-backend_option>function BACKEND_OPTION</a></li><li><a href=#function-quick_function>function QUICK_FUNCTION</a></li><li><a href=#function-quick_function-1>function QUICK_FUNCTION</a></li><li><a href=#function-quick_function-2>function QUICK_FUNCTION</a></li><li><a href=#function-quick_function-3>function QUICK_FUNCTION</a></li><li><a href=#function-quick_function-4>function QUICK_FUNCTION</a></li><li><a href=#function-quick_function-5>function QUICK_FUNCTION</a></li><li><a href=#function-quick_function-6>function QUICK_FUNCTION</a></li><li><a href=#function-quick_function-7>function QUICK_FUNCTION</a></li><li><a href=#function-quick_function-8>function QUICK_FUNCTION</a></li><li><a href=#function-quick_function-9>function QUICK_FUNCTION</a></li><li><a href=#function-quick_function-10>function QUICK_FUNCTION</a></li><li><a href=#function-quick_function-11>function QUICK_FUNCTION</a></li><li><a href=#function-quick_function-12>function QUICK_FUNCTION</a></li><li><a href=#function-quick_function-13>function QUICK_FUNCTION</a></li><li><a href=#function-quick_function-14>function QUICK_FUNCTION</a></li></ul></li><li><a href=#attributes-documentation>Attributes Documentation</a><ul><li><a href=#variable-tbar_decay_rates>variable tbar_decay_rates</a></li><li><a href=#variable-new_capability>variable NEW_CAPABILITY</a></li><li><a href=#variable-tbar_decays>variable tbar_decays</a></li><li><a href=#variable-t_decay_rates>variable t_decay_rates</a></li><li><a href=#variable-tau_minus_decay_rates>variable tau_minus_decay_rates</a></li><li><a href=#variable-tau_minus_decays>variable tau_minus_decays</a></li><li><a href=#variable-tau_plus_decay_rates>variable tau_plus_decay_rates</a></li><li><a href=#variable-rho_minus_decay_rates>variable rho_minus_decay_rates</a></li><li><a href=#variable-rho_minus_decays>variable rho_minus_decays</a></li><li><a href=#variable-rho_plus_decay_rates>variable rho_plus_decay_rates</a></li><li><a href=#variable-stopbar_1_decay_rates>variable stopbar_1_decay_rates</a></li><li><a href=#variable-stopbar_1_decays>variable stopbar_1_decays</a></li><li><a href=#variable-mssm63atq>variable MSSM63atQ</a></li><li><a href=#variable-mssm63atmgut>variable MSSM63atMGUT</a></li><li><a href=#variable-stop_1_decay_rates>variable stop_1_decay_rates</a></li><li><a href=#variable-sbottombar_1_decay_rates>variable sbottombar_1_decay_rates</a></li><li><a href=#variable-sbottombar_1_decays>variable sbottombar_1_decays</a></li><li><a href=#variable-sbottom_1_decay_rates>variable sbottom_1_decay_rates</a></li><li><a href=#variable-supbar_l_decay_rates>variable supbar_l_decay_rates</a></li><li><a href=#variable-supbar_l_decays>variable supbar_l_decays</a></li><li><a href=#variable-sup_l_decay_rates>variable sup_l_decay_rates</a></li><li><a href=#variable-sdownbar_l_decay_rates>variable sdownbar_l_decay_rates</a></li><li><a href=#variable-sdownbar_l_decays>variable sdownbar_l_decays</a></li><li><a href=#variable-sdown_l_decay_rates>variable sdown_l_decay_rates</a></li><li><a href=#variable-scharmbar_l_decay_rates>variable scharmbar_l_decay_rates</a></li><li><a href=#variable-scharmbar_l_decays>variable scharmbar_l_decays</a></li><li><a href=#variable-scharm_l_decay_rates>variable scharm_l_decay_rates</a></li><li><a href=#variable-sstrangebar_l_decay_rates>variable sstrangebar_l_decay_rates</a></li><li><a href=#variable-sstrangebar_l_decays>variable sstrangebar_l_decays</a></li><li><a href=#variable-sstrange_l_decay_rates>variable sstrange_l_decay_rates</a></li><li><a href=#variable-selectronbar_l_decay_rates>variable selectronbar_l_decay_rates</a></li><li><a href=#variable-selectronbar_l_decays>variable selectronbar_l_decays</a></li><li><a href=#variable-selectron_l_decay_rates>variable selectron_l_decay_rates</a></li><li><a href=#variable-smuonbar_l_decay_rates>variable smuonbar_l_decay_rates</a></li><li><a href=#variable-smuonbar_l_decays>variable smuonbar_l_decays</a></li><li><a href=#variable-smuon_l_decay_rates>variable smuon_l_decay_rates</a></li><li><a href=#variable-staubar_1_decay_rates>variable staubar_1_decay_rates</a></li><li><a href=#variable-staubar_1_decays>variable staubar_1_decays</a></li><li><a href=#variable-stau_1_decay_rates>variable stau_1_decay_rates</a></li><li><a href=#variable-snubar_electronl_decay_rates>variable snubar_electronl_decay_rates</a></li><li><a href=#variable-snubar_electronl_decays>variable snubar_electronl_decays</a></li><li><a href=#variable-snu_electronl_decay_rates>variable snu_electronl_decay_rates</a></li><li><a href=#variable-snubar_taul_decay_rates>variable snubar_taul_decay_rates</a></li><li><a href=#variable-snubar_taul_decays>variable snubar_taul_decays</a></li><li><a href=#variable-snu_taul_decay_rates>variable snu_taul_decay_rates</a></li><li><a href=#variable-chargino_minus_2_decay_rates>variable chargino_minus_2_decay_rates</a></li><li><a href=#variable-chargino_minus_2_decays>variable chargino_minus_2_decays</a></li><li><a href=#variable-chargino_plus_2_decay_rates>variable chargino_plus_2_decay_rates</a></li></ul></li><li><a href=#macros-documentation>Macros Documentation</a><ul><li><a href=#define-module>define MODULE</a></li><li><a href=#define-reference>define REFERENCE</a></li><li><a href=#define-capability>define CAPABILITY</a></li><li><a href=#define-function>define FUNCTION</a></li><li><a href=#define-function-1>define FUNCTION</a></li><li><a href=#define-capability-1>define CAPABILITY</a></li><li><a href=#define-function-2>define FUNCTION</a></li><li><a href=#define-function-3>define FUNCTION</a></li><li><a href=#define-capability-2>define CAPABILITY</a></li><li><a href=#define-function-4>define FUNCTION</a></li><li><a href=#define-function-5>define FUNCTION</a></li><li><a href=#define-capability-3>define CAPABILITY</a></li><li><a href=#define-function-6>define FUNCTION</a></li><li><a href=#define-function-7>define FUNCTION</a></li><li><a href=#define-capability-4>define CAPABILITY</a></li><li><a href=#define-function-8>define FUNCTION</a></li><li><a href=#define-function-9>define FUNCTION</a></li><li><a href=#define-function-10>define FUNCTION</a></li><li><a href=#define-function-11>define FUNCTION</a></li><li><a href=#define-function-12>define FUNCTION</a></li><li><a href=#define-function-13>define FUNCTION</a></li><li><a href=#define-function-14>define FUNCTION</a></li><li><a href=#define-capability-5>define CAPABILITY</a></li><li><a href=#define-function-15>define FUNCTION</a></li><li><a href=#define-function-16>define FUNCTION</a></li><li><a href=#define-capability-6>define CAPABILITY</a></li><li><a href=#define-function-17>define FUNCTION</a></li><li><a href=#define-function-18>define FUNCTION</a></li><li><a href=#define-capability-7>define CAPABILITY</a></li><li><a href=#define-function-19>define FUNCTION</a></li><li><a href=#define-function-20>define FUNCTION</a></li><li><a href=#define-capability-8>define CAPABILITY</a></li><li><a href=#define-function-21>define FUNCTION</a></li><li><a href=#define-capability-9>define CAPABILITY</a></li><li><a href=#define-function-22>define FUNCTION</a></li><li><a href=#define-capability-10>define CAPABILITY</a></li><li><a href=#define-function-23>define FUNCTION</a></li><li><a href=#define-capability-11>define CAPABILITY</a></li><li><a href=#define-function-24>define FUNCTION</a></li><li><a href=#define-capability-12>define CAPABILITY</a></li><li><a href=#define-function-25>define FUNCTION</a></li><li><a href=#define-capability-13>define CAPABILITY</a></li><li><a href=#define-function-26>define FUNCTION</a></li><li><a href=#define-capability-14>define CAPABILITY</a></li><li><a href=#define-function-27>define FUNCTION</a></li><li><a href=#define-capability-15>define CAPABILITY</a></li><li><a href=#define-function-28>define FUNCTION</a></li><li><a href=#define-capability-16>define CAPABILITY</a></li><li><a href=#define-function-29>define FUNCTION</a></li><li><a href=#define-capability-17>define CAPABILITY</a></li><li><a href=#define-function-30>define FUNCTION</a></li><li><a href=#define-capability-18>define CAPABILITY</a></li><li><a href=#define-function-31>define FUNCTION</a></li><li><a href=#define-capability-19>define CAPABILITY</a></li><li><a href=#define-function-32>define FUNCTION</a></li><li><a href=#define-capability-20>define CAPABILITY</a></li><li><a href=#define-function-33>define FUNCTION</a></li><li><a href=#define-capability-21>define CAPABILITY</a></li><li><a href=#define-function-34>define FUNCTION</a></li><li><a href=#define-capability-22>define CAPABILITY</a></li><li><a href=#define-function-35>define FUNCTION</a></li><li><a href=#define-capability-23>define CAPABILITY</a></li><li><a href=#define-function-36>define FUNCTION</a></li><li><a href=#define-capability-24>define CAPABILITY</a></li><li><a href=#define-function-37>define FUNCTION</a></li><li><a href=#define-capability-25>define CAPABILITY</a></li><li><a href=#define-function-38>define FUNCTION</a></li><li><a href=#define-capability-26>define CAPABILITY</a></li><li><a href=#define-function-39>define FUNCTION</a></li><li><a href=#define-capability-27>define CAPABILITY</a></li><li><a href=#define-function-40>define FUNCTION</a></li><li><a href=#define-capability-28>define CAPABILITY</a></li><li><a href=#define-function-41>define FUNCTION</a></li><li><a href=#define-capability-29>define CAPABILITY</a></li><li><a href=#define-function-42>define FUNCTION</a></li><li><a href=#define-capability-30>define CAPABILITY</a></li><li><a href=#define-function-43>define FUNCTION</a></li><li><a href=#define-capability-31>define CAPABILITY</a></li><li><a href=#define-function-44>define FUNCTION</a></li><li><a href=#define-capability-32>define CAPABILITY</a></li><li><a href=#define-function-45>define FUNCTION</a></li><li><a href=#define-capability-33>define CAPABILITY</a></li><li><a href=#define-function-46>define FUNCTION</a></li><li><a href=#define-capability-34>define CAPABILITY</a></li><li><a href=#define-function-47>define FUNCTION</a></li><li><a href=#define-capability-35>define CAPABILITY</a></li><li><a href=#define-function-48>define FUNCTION</a></li><li><a href=#define-capability-36>define CAPABILITY</a></li><li><a href=#define-function-49>define FUNCTION</a></li><li><a href=#define-capability-37>define CAPABILITY</a></li><li><a href=#define-function-50>define FUNCTION</a></li><li><a href=#define-capability-38>define CAPABILITY</a></li><li><a href=#define-function-51>define FUNCTION</a></li><li><a href=#define-capability-39>define CAPABILITY</a></li><li><a href=#define-function-52>define FUNCTION</a></li><li><a href=#define-capability-40>define CAPABILITY</a></li><li><a href=#define-function-53>define FUNCTION</a></li><li><a href=#define-function-54>define FUNCTION</a></li><li><a href=#define-capability-41>define CAPABILITY</a></li><li><a href=#define-function-55>define FUNCTION</a></li><li><a href=#define-capability-42>define CAPABILITY</a></li><li><a href=#define-function-56>define FUNCTION</a></li><li><a href=#define-capability-43>define CAPABILITY</a></li><li><a href=#define-function-57>define FUNCTION</a></li><li><a href=#define-capability-44>define CAPABILITY</a></li><li><a href=#define-function-58>define FUNCTION</a></li><li><a href=#define-capability-45>define CAPABILITY</a></li><li><a href=#define-function-59>define FUNCTION</a></li><li><a href=#define-capability-46>define CAPABILITY</a></li><li><a href=#define-function-60>define FUNCTION</a></li><li><a href=#define-capability-47>define CAPABILITY</a></li><li><a href=#define-function-61>define FUNCTION</a></li><li><a href=#define-capability-48>define CAPABILITY</a></li><li><a href=#define-function-62>define FUNCTION</a></li><li><a href=#define-capability-49>define CAPABILITY</a></li><li><a href=#define-function-63>define FUNCTION</a></li><li><a href=#define-capability-50>define CAPABILITY</a></li><li><a href=#define-function-64>define FUNCTION</a></li><li><a href=#define-function-65>define FUNCTION</a></li><li><a href=#define-function-66>define FUNCTION</a></li><li><a href=#define-function-67>define FUNCTION</a></li><li><a href=#define-function-68>define FUNCTION</a></li></ul></li><li><a href=#source-code>Source code</a></li></ul></li></ul></nav></div></nav><main class="docs-content col-lg-11 col-xl-9 mx-xl-auto"><nav aria-label=breadcrumb><ol class=breadcrumb><li class=breadcrumb-item><a href=/>Home</a></li><li class=breadcrumb-item><a href=/documentation/>Documentation</a></li><li class=breadcrumb-item><a href=/documentation/code/>Code Reference</a></li><li class=breadcrumb-item><a href=/documentation/code/gambit_2/>gambit_2</a></li><li class="breadcrumb-item active" aria-current=page>file DecayBit/DecayBit_rollcall.hpp</li></ol></nav><h1>file DecayBit/DecayBit_rollcall.hpp</h1><p class=lead></p><p>[No description available] <a href=#detailed-description>More&mldr;</a></p><h2 id=functions>Functions <a href=#functions class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th></th><th>Name</th></tr></thead><tbody><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#function-backend-option>BACKEND_OPTION</a></strong>((SUSY_HIT) , (sh_reqd) )</td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#function-quick-function>QUICK_FUNCTION</a></strong>(DecayBit , W_minus_decay_rates , NEW_CAPABILITY , W_minus_decays , DecayTable::Entry , () , (W_plus_decay_rates, DecayTable::Entry) )</td></tr><tr><td>DecayTable::Entry</td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#function-quick-function>QUICK_FUNCTION</a></strong>(DecayBit , mu_minus_decay_rates , NEW_CAPABILITY , mu_minus_decays , DecayTable::Entry , () , (mu_plus_decay_rates, DecayTable::Entry) )</td></tr><tr><td>DecayTable::Entry DecayTable::Entry</td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#function-quick-function>QUICK_FUNCTION</a></strong>(DecayBit , pi_minus_decay_rates , NEW_CAPABILITY , pi_minus_decays , DecayTable::Entry , () , (pi_plus_decay_rates, DecayTable::Entry) )</td></tr><tr><td>DecayTable::Entry DecayTable::Entry DecayTable::Entry</td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#function-quick-function>QUICK_FUNCTION</a></strong>(DecayBit , H_minus_decay_rates , NEW_CAPABILITY , H_minus_decays , DecayTable::Entry , (MSSM63atQ, MSSM63atMGUT) , (H_plus_decay_rates, DecayTable::Entry) )</td></tr><tr><td>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry</td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#function-quick-function>QUICK_FUNCTION</a></strong>(DecayBit , stopbar_2_decay_rates , NEW_CAPABILITY , stopbar_2_decays , DecayTable::Entry , (MSSM63atQ, MSSM63atMGUT) , (stop_2_decay_rates, DecayTable::Entry) )</td></tr><tr><td>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry</td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#function-quick-function>QUICK_FUNCTION</a></strong>(DecayBit , sbottombar_2_decay_rates , NEW_CAPABILITY , sbottombar_2_decays , DecayTable::Entry , (MSSM63atQ, MSSM63atMGUT) , (sbottom_2_decay_rates, DecayTable::Entry) )</td></tr><tr><td>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry</td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#function-quick-function>QUICK_FUNCTION</a></strong>(DecayBit , supbar_r_decay_rates , NEW_CAPABILITY , supbar_r_decays , DecayTable::Entry , (MSSM63atQ, MSSM63atMGUT) , (sup_r_decay_rates, DecayTable::Entry) )</td></tr><tr><td>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry</td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#function-quick-function>QUICK_FUNCTION</a></strong>(DecayBit , sdownbar_r_decay_rates , NEW_CAPABILITY , sdownbar_r_decays , DecayTable::Entry , (MSSM63atQ, MSSM63atMGUT) , (sdown_r_decay_rates, DecayTable::Entry) )</td></tr><tr><td>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry</td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#function-quick-function>QUICK_FUNCTION</a></strong>(DecayBit , scharmbar_r_decay_rates , NEW_CAPABILITY , scharmbar_r_decays , DecayTable::Entry , (MSSM63atQ, MSSM63atMGUT) , (scharm_r_decay_rates, DecayTable::Entry) )</td></tr><tr><td>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry</td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#function-quick-function>QUICK_FUNCTION</a></strong>(DecayBit , sstrangebar_r_decay_rates , NEW_CAPABILITY , sstrangebar_r_decays , DecayTable::Entry , (MSSM63atQ, MSSM63atMGUT) , (sstrange_r_decay_rates, DecayTable::Entry) )</td></tr><tr><td>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry</td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#function-quick-function>QUICK_FUNCTION</a></strong>(DecayBit , selectronbar_r_decay_rates , NEW_CAPABILITY , selectronbar_r_decays , DecayTable::Entry , (MSSM63atQ, MSSM63atMGUT) , (selectron_r_decay_rates, DecayTable::Entry) )</td></tr><tr><td>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry</td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#function-quick-function>QUICK_FUNCTION</a></strong>(DecayBit , smuonbar_r_decay_rates , NEW_CAPABILITY , smuonbar_r_decays , DecayTable::Entry , (MSSM63atQ, MSSM63atMGUT) , (smuon_r_decay_rates, DecayTable::Entry) )</td></tr><tr><td>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry</td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#function-quick-function>QUICK_FUNCTION</a></strong>(DecayBit , staubar_2_decay_rates , NEW_CAPABILITY , staubar_2_decays , DecayTable::Entry , (MSSM63atQ, MSSM63atMGUT) , (stau_2_decay_rates, DecayTable::Entry) )</td></tr><tr><td>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry</td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#function-quick-function>QUICK_FUNCTION</a></strong>(DecayBit , snubar_muonl_decay_rates , NEW_CAPABILITY , snubar_muonl_decays , DecayTable::Entry , (MSSM63atQ, MSSM63atMGUT) , (snu_muonl_decay_rates, DecayTable::Entry) )</td></tr><tr><td>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry</td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#function-quick-function>QUICK_FUNCTION</a></strong>(DecayBit , chargino_minus_1_decay_rates , NEW_CAPABILITY , chargino_minus_1_decays , DecayTable::Entry , (MSSM63atQ, MSSM63atMGUT) , (chargino_plus_1_decay_rates, DecayTable::Entry) )</td></tr></tbody></table><h2 id=attributes>Attributes <a href=#attributes class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th></th><th>Name</th></tr></thead><tbody><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#variable-tbar-decay-rates>tbar_decay_rates</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#variable-new-capability>NEW_CAPABILITY</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#variable-tbar-decays>tbar_decays</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#variable-t-decay-rates>t_decay_rates</a></strong></td></tr><tr><td>DecayTable::Entry</td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#variable-tau-minus-decay-rates>tau_minus_decay_rates</a></strong></td></tr><tr><td>DecayTable::Entry</td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#variable-tau-minus-decays>tau_minus_decays</a></strong></td></tr><tr><td>DecayTable::Entry</td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#variable-tau-plus-decay-rates>tau_plus_decay_rates</a></strong></td></tr><tr><td>DecayTable::Entry DecayTable::Entry</td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#variable-rho-minus-decay-rates>rho_minus_decay_rates</a></strong></td></tr><tr><td>DecayTable::Entry DecayTable::Entry</td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#variable-rho-minus-decays>rho_minus_decays</a></strong></td></tr><tr><td>DecayTable::Entry DecayTable::Entry</td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#variable-rho-plus-decay-rates>rho_plus_decay_rates</a></strong></td></tr><tr><td>DecayTable::Entry DecayTable::Entry DecayTable::Entry</td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#variable-stopbar-1-decay-rates>stopbar_1_decay_rates</a></strong></td></tr><tr><td>DecayTable::Entry DecayTable::Entry DecayTable::Entry</td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#variable-stopbar-1-decays>stopbar_1_decays</a></strong></td></tr><tr><td>DecayTable::Entry DecayTable::Entry DecayTable::Entry</td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#variable-mssm63atq>MSSM63atQ</a></strong></td></tr><tr><td>DecayTable::Entry DecayTable::Entry DecayTable::Entry</td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#variable-mssm63atmgut>MSSM63atMGUT</a></strong></td></tr><tr><td>DecayTable::Entry DecayTable::Entry DecayTable::Entry</td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#variable-stop-1-decay-rates>stop_1_decay_rates</a></strong></td></tr><tr><td>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry</td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#variable-sbottombar-1-decay-rates>sbottombar_1_decay_rates</a></strong></td></tr><tr><td>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry</td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#variable-sbottombar-1-decays>sbottombar_1_decays</a></strong></td></tr><tr><td>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry</td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#variable-sbottom-1-decay-rates>sbottom_1_decay_rates</a></strong></td></tr><tr><td>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry</td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#variable-supbar-l-decay-rates>supbar_l_decay_rates</a></strong></td></tr><tr><td>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry</td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#variable-supbar-l-decays>supbar_l_decays</a></strong></td></tr><tr><td>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry</td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#variable-sup-l-decay-rates>sup_l_decay_rates</a></strong></td></tr><tr><td>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry</td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#variable-sdownbar-l-decay-rates>sdownbar_l_decay_rates</a></strong></td></tr><tr><td>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry</td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#variable-sdownbar-l-decays>sdownbar_l_decays</a></strong></td></tr><tr><td>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry</td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#variable-sdown-l-decay-rates>sdown_l_decay_rates</a></strong></td></tr><tr><td>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry</td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#variable-scharmbar-l-decay-rates>scharmbar_l_decay_rates</a></strong></td></tr><tr><td>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry</td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#variable-scharmbar-l-decays>scharmbar_l_decays</a></strong></td></tr><tr><td>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry</td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#variable-scharm-l-decay-rates>scharm_l_decay_rates</a></strong></td></tr><tr><td>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry</td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#variable-sstrangebar-l-decay-rates>sstrangebar_l_decay_rates</a></strong></td></tr><tr><td>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry</td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#variable-sstrangebar-l-decays>sstrangebar_l_decays</a></strong></td></tr><tr><td>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry</td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#variable-sstrange-l-decay-rates>sstrange_l_decay_rates</a></strong></td></tr><tr><td>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry</td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#variable-selectronbar-l-decay-rates>selectronbar_l_decay_rates</a></strong></td></tr><tr><td>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry</td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#variable-selectronbar-l-decays>selectronbar_l_decays</a></strong></td></tr><tr><td>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry</td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#variable-selectron-l-decay-rates>selectron_l_decay_rates</a></strong></td></tr><tr><td>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry</td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#variable-smuonbar-l-decay-rates>smuonbar_l_decay_rates</a></strong></td></tr><tr><td>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry</td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#variable-smuonbar-l-decays>smuonbar_l_decays</a></strong></td></tr><tr><td>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry</td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#variable-smuon-l-decay-rates>smuon_l_decay_rates</a></strong></td></tr><tr><td>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry</td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#variable-staubar-1-decay-rates>staubar_1_decay_rates</a></strong></td></tr><tr><td>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry</td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#variable-staubar-1-decays>staubar_1_decays</a></strong></td></tr><tr><td>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry</td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#variable-stau-1-decay-rates>stau_1_decay_rates</a></strong></td></tr><tr><td>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry</td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#variable-snubar-electronl-decay-rates>snubar_electronl_decay_rates</a></strong></td></tr><tr><td>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry</td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#variable-snubar-electronl-decays>snubar_electronl_decays</a></strong></td></tr><tr><td>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry</td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#variable-snu-electronl-decay-rates>snu_electronl_decay_rates</a></strong></td></tr><tr><td>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry</td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#variable-snubar-taul-decay-rates>snubar_taul_decay_rates</a></strong></td></tr><tr><td>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry</td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#variable-snubar-taul-decays>snubar_taul_decays</a></strong></td></tr><tr><td>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry</td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#variable-snu-taul-decay-rates>snu_taul_decay_rates</a></strong></td></tr><tr><td>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry</td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#variable-chargino-minus-2-decay-rates>chargino_minus_2_decay_rates</a></strong></td></tr><tr><td>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry</td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#variable-chargino-minus-2-decays>chargino_minus_2_decays</a></strong></td></tr><tr><td>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry</td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#variable-chargino-plus-2-decay-rates>chargino_plus_2_decay_rates</a></strong></td></tr></tbody></table><h2 id=defines>Defines <a href=#defines class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th></th><th>Name</th></tr></thead><tbody><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-module>MODULE</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-reference>REFERENCE</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-capability>CAPABILITY</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-capability>CAPABILITY</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-capability>CAPABILITY</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-capability>CAPABILITY</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-capability>CAPABILITY</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-capability>CAPABILITY</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-capability>CAPABILITY</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-capability>CAPABILITY</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-capability>CAPABILITY</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-capability>CAPABILITY</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-capability>CAPABILITY</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-capability>CAPABILITY</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-capability>CAPABILITY</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-capability>CAPABILITY</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-capability>CAPABILITY</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-capability>CAPABILITY</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-capability>CAPABILITY</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-capability>CAPABILITY</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-capability>CAPABILITY</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-capability>CAPABILITY</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-capability>CAPABILITY</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-capability>CAPABILITY</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-capability>CAPABILITY</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-capability>CAPABILITY</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-capability>CAPABILITY</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-capability>CAPABILITY</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-capability>CAPABILITY</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-capability>CAPABILITY</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-capability>CAPABILITY</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-capability>CAPABILITY</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-capability>CAPABILITY</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-capability>CAPABILITY</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-capability>CAPABILITY</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-capability>CAPABILITY</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-capability>CAPABILITY</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-capability>CAPABILITY</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-capability>CAPABILITY</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-capability>CAPABILITY</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-capability>CAPABILITY</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-capability>CAPABILITY</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-capability>CAPABILITY</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-capability>CAPABILITY</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-capability>CAPABILITY</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-capability>CAPABILITY</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-capability>CAPABILITY</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-capability>CAPABILITY</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-capability>CAPABILITY</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-capability>CAPABILITY</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-capability>CAPABILITY</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-capability>CAPABILITY</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-capability>CAPABILITY</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2/files/decaybit__rollcall_8hpp/#define-function>FUNCTION</a></strong></td></tr></tbody></table><h2 id=detailed-description>Detailed Description <a href=#detailed-description class=anchor aria-hidden=true>#</a></h2><p><strong>Author</strong>:</p><ul><li>Pat Scott (<a href=mailto:p.scott@imperial.ac.uk>p.scott@imperial.ac.uk</a>)</li><li>Csaba Balazs</li><li>Ankit Beniwal (<a href=mailto:ankit.beniwal@adelaide.edu.au>ankit.beniwal@adelaide.edu.au</a>)</li><li>Tomas Gonzalo (<a href=mailto:t.e.gonzalo@fys.uio.no>t.e.gonzalo@fys.uio.no</a>)</li><li>Andrew Fowlie</li><li>Peter Athron</li></ul><p><strong>Date</strong>:</p><ul><li>2014 Aug</li><li>2015 Jan-May</li><li>2016 Aug</li><li>2018 Feb</li><li>2018 May</li><li>2018 May</li></ul><p>Rollcall header for DecayBit.</p><p>Compile-time registration of available observables and likelihoods for calculating particle decay rates and branching fractions, along with their dependencies.</p><p>Don&rsquo;t put typedefs or other type definitions in this file; see Core/include/types_rollcall.hpp for further instructions on how to add new types.</p><hr><p>Authors (add name and date if you modify):</p><hr><h2 id=functions-documentation>Functions Documentation <a href=#functions-documentation class=anchor aria-hidden=true>#</a></h2><h3 id=function-backend_option>function BACKEND_OPTION <a href=#function-backend_option class=anchor aria-hidden=true>#</a></h3><pre><code>BACKEND_OPTION(
+    (SUSY_HIT) ,
+    (sh_reqd) 
+)
+</code></pre><h3 id=function-quick_function>function QUICK_FUNCTION <a href=#function-quick_function class=anchor aria-hidden=true>#</a></h3><pre><code>QUICK_FUNCTION(
+    DecayBit ,
+    W_minus_decay_rates ,
+    NEW_CAPABILITY ,
+    W_minus_decays ,
+    DecayTable::Entry ,
+    () ,
+    (W_plus_decay_rates, DecayTable::Entry) 
+)
+</code></pre><h3 id=function-quick_function-1>function QUICK_FUNCTION <a href=#function-quick_function-1 class=anchor aria-hidden=true>#</a></h3><pre><code>DecayTable::Entry QUICK_FUNCTION(
+    DecayBit ,
+    mu_minus_decay_rates ,
+    NEW_CAPABILITY ,
+    mu_minus_decays ,
+    DecayTable::Entry ,
+    () ,
+    (mu_plus_decay_rates, DecayTable::Entry) 
+)
+</code></pre><h3 id=function-quick_function-2>function QUICK_FUNCTION <a href=#function-quick_function-2 class=anchor aria-hidden=true>#</a></h3><pre><code>DecayTable::Entry DecayTable::Entry QUICK_FUNCTION(
+    DecayBit ,
+    pi_minus_decay_rates ,
+    NEW_CAPABILITY ,
+    pi_minus_decays ,
+    DecayTable::Entry ,
+    () ,
+    (pi_plus_decay_rates, DecayTable::Entry) 
+)
+</code></pre><h3 id=function-quick_function-3>function QUICK_FUNCTION <a href=#function-quick_function-3 class=anchor aria-hidden=true>#</a></h3><pre><code>DecayTable::Entry DecayTable::Entry DecayTable::Entry QUICK_FUNCTION(
+    DecayBit ,
+    H_minus_decay_rates ,
+    NEW_CAPABILITY ,
+    H_minus_decays ,
+    DecayTable::Entry ,
+    (MSSM63atQ, MSSM63atMGUT) ,
+    (H_plus_decay_rates, DecayTable::Entry) 
+)
+</code></pre><h3 id=function-quick_function-4>function QUICK_FUNCTION <a href=#function-quick_function-4 class=anchor aria-hidden=true>#</a></h3><pre><code>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry QUICK_FUNCTION(
+    DecayBit ,
+    stopbar_2_decay_rates ,
+    NEW_CAPABILITY ,
+    stopbar_2_decays ,
+    DecayTable::Entry ,
+    (MSSM63atQ, MSSM63atMGUT) ,
+    (stop_2_decay_rates, DecayTable::Entry) 
+)
+</code></pre><h3 id=function-quick_function-5>function QUICK_FUNCTION <a href=#function-quick_function-5 class=anchor aria-hidden=true>#</a></h3><pre><code>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry QUICK_FUNCTION(
+    DecayBit ,
+    sbottombar_2_decay_rates ,
+    NEW_CAPABILITY ,
+    sbottombar_2_decays ,
+    DecayTable::Entry ,
+    (MSSM63atQ, MSSM63atMGUT) ,
+    (sbottom_2_decay_rates, DecayTable::Entry) 
+)
+</code></pre><h3 id=function-quick_function-6>function QUICK_FUNCTION <a href=#function-quick_function-6 class=anchor aria-hidden=true>#</a></h3><pre><code>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry QUICK_FUNCTION(
+    DecayBit ,
+    supbar_r_decay_rates ,
+    NEW_CAPABILITY ,
+    supbar_r_decays ,
+    DecayTable::Entry ,
+    (MSSM63atQ, MSSM63atMGUT) ,
+    (sup_r_decay_rates, DecayTable::Entry) 
+)
+</code></pre><h3 id=function-quick_function-7>function QUICK_FUNCTION <a href=#function-quick_function-7 class=anchor aria-hidden=true>#</a></h3><pre><code>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry QUICK_FUNCTION(
+    DecayBit ,
+    sdownbar_r_decay_rates ,
+    NEW_CAPABILITY ,
+    sdownbar_r_decays ,
+    DecayTable::Entry ,
+    (MSSM63atQ, MSSM63atMGUT) ,
+    (sdown_r_decay_rates, DecayTable::Entry) 
+)
+</code></pre><h3 id=function-quick_function-8>function QUICK_FUNCTION <a href=#function-quick_function-8 class=anchor aria-hidden=true>#</a></h3><pre><code>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry QUICK_FUNCTION(
+    DecayBit ,
+    scharmbar_r_decay_rates ,
+    NEW_CAPABILITY ,
+    scharmbar_r_decays ,
+    DecayTable::Entry ,
+    (MSSM63atQ, MSSM63atMGUT) ,
+    (scharm_r_decay_rates, DecayTable::Entry) 
+)
+</code></pre><h3 id=function-quick_function-9>function QUICK_FUNCTION <a href=#function-quick_function-9 class=anchor aria-hidden=true>#</a></h3><pre><code>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry QUICK_FUNCTION(
+    DecayBit ,
+    sstrangebar_r_decay_rates ,
+    NEW_CAPABILITY ,
+    sstrangebar_r_decays ,
+    DecayTable::Entry ,
+    (MSSM63atQ, MSSM63atMGUT) ,
+    (sstrange_r_decay_rates, DecayTable::Entry) 
+)
+</code></pre><h3 id=function-quick_function-10>function QUICK_FUNCTION <a href=#function-quick_function-10 class=anchor aria-hidden=true>#</a></h3><pre><code>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry QUICK_FUNCTION(
+    DecayBit ,
+    selectronbar_r_decay_rates ,
+    NEW_CAPABILITY ,
+    selectronbar_r_decays ,
+    DecayTable::Entry ,
+    (MSSM63atQ, MSSM63atMGUT) ,
+    (selectron_r_decay_rates, DecayTable::Entry) 
+)
+</code></pre><h3 id=function-quick_function-11>function QUICK_FUNCTION <a href=#function-quick_function-11 class=anchor aria-hidden=true>#</a></h3><pre><code>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry QUICK_FUNCTION(
+    DecayBit ,
+    smuonbar_r_decay_rates ,
+    NEW_CAPABILITY ,
+    smuonbar_r_decays ,
+    DecayTable::Entry ,
+    (MSSM63atQ, MSSM63atMGUT) ,
+    (smuon_r_decay_rates, DecayTable::Entry) 
+)
+</code></pre><h3 id=function-quick_function-12>function QUICK_FUNCTION <a href=#function-quick_function-12 class=anchor aria-hidden=true>#</a></h3><pre><code>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry QUICK_FUNCTION(
+    DecayBit ,
+    staubar_2_decay_rates ,
+    NEW_CAPABILITY ,
+    staubar_2_decays ,
+    DecayTable::Entry ,
+    (MSSM63atQ, MSSM63atMGUT) ,
+    (stau_2_decay_rates, DecayTable::Entry) 
+)
+</code></pre><h3 id=function-quick_function-13>function QUICK_FUNCTION <a href=#function-quick_function-13 class=anchor aria-hidden=true>#</a></h3><pre><code>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry QUICK_FUNCTION(
+    DecayBit ,
+    snubar_muonl_decay_rates ,
+    NEW_CAPABILITY ,
+    snubar_muonl_decays ,
+    DecayTable::Entry ,
+    (MSSM63atQ, MSSM63atMGUT) ,
+    (snu_muonl_decay_rates, DecayTable::Entry) 
+)
+</code></pre><h3 id=function-quick_function-14>function QUICK_FUNCTION <a href=#function-quick_function-14 class=anchor aria-hidden=true>#</a></h3><pre><code>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry QUICK_FUNCTION(
+    DecayBit ,
+    chargino_minus_1_decay_rates ,
+    NEW_CAPABILITY ,
+    chargino_minus_1_decays ,
+    DecayTable::Entry ,
+    (MSSM63atQ, MSSM63atMGUT) ,
+    (chargino_plus_1_decay_rates, DecayTable::Entry) 
+)
+</code></pre><h2 id=attributes-documentation>Attributes Documentation <a href=#attributes-documentation class=anchor aria-hidden=true>#</a></h2><h3 id=variable-tbar_decay_rates>variable tbar_decay_rates <a href=#variable-tbar_decay_rates class=anchor aria-hidden=true>#</a></h3><pre><code>tbar_decay_rates;
+</code></pre><h3 id=variable-new_capability>variable NEW_CAPABILITY <a href=#variable-new_capability class=anchor aria-hidden=true>#</a></h3><pre><code>NEW_CAPABILITY;
+</code></pre><h3 id=variable-tbar_decays>variable tbar_decays <a href=#variable-tbar_decays class=anchor aria-hidden=true>#</a></h3><pre><code>tbar_decays;
+</code></pre><h3 id=variable-t_decay_rates>variable t_decay_rates <a href=#variable-t_decay_rates class=anchor aria-hidden=true>#</a></h3><pre><code>t_decay_rates;
+</code></pre><h3 id=variable-tau_minus_decay_rates>variable tau_minus_decay_rates <a href=#variable-tau_minus_decay_rates class=anchor aria-hidden=true>#</a></h3><pre><code>DecayTable::Entry tau_minus_decay_rates;
+</code></pre><h3 id=variable-tau_minus_decays>variable tau_minus_decays <a href=#variable-tau_minus_decays class=anchor aria-hidden=true>#</a></h3><pre><code>DecayTable::Entry tau_minus_decays;
+</code></pre><h3 id=variable-tau_plus_decay_rates>variable tau_plus_decay_rates <a href=#variable-tau_plus_decay_rates class=anchor aria-hidden=true>#</a></h3><pre><code>DecayTable::Entry tau_plus_decay_rates;
+</code></pre><h3 id=variable-rho_minus_decay_rates>variable rho_minus_decay_rates <a href=#variable-rho_minus_decay_rates class=anchor aria-hidden=true>#</a></h3><pre><code>DecayTable::Entry DecayTable::Entry rho_minus_decay_rates;
+</code></pre><h3 id=variable-rho_minus_decays>variable rho_minus_decays <a href=#variable-rho_minus_decays class=anchor aria-hidden=true>#</a></h3><pre><code>DecayTable::Entry DecayTable::Entry rho_minus_decays;
+</code></pre><h3 id=variable-rho_plus_decay_rates>variable rho_plus_decay_rates <a href=#variable-rho_plus_decay_rates class=anchor aria-hidden=true>#</a></h3><pre><code>DecayTable::Entry DecayTable::Entry rho_plus_decay_rates;
+</code></pre><h3 id=variable-stopbar_1_decay_rates>variable stopbar_1_decay_rates <a href=#variable-stopbar_1_decay_rates class=anchor aria-hidden=true>#</a></h3><pre><code>DecayTable::Entry DecayTable::Entry DecayTable::Entry stopbar_1_decay_rates;
+</code></pre><h3 id=variable-stopbar_1_decays>variable stopbar_1_decays <a href=#variable-stopbar_1_decays class=anchor aria-hidden=true>#</a></h3><pre><code>DecayTable::Entry DecayTable::Entry DecayTable::Entry stopbar_1_decays;
+</code></pre><h3 id=variable-mssm63atq>variable MSSM63atQ <a href=#variable-mssm63atq class=anchor aria-hidden=true>#</a></h3><pre><code>DecayTable::Entry DecayTable::Entry DecayTable::Entry MSSM63atQ;
+</code></pre><h3 id=variable-mssm63atmgut>variable MSSM63atMGUT <a href=#variable-mssm63atmgut class=anchor aria-hidden=true>#</a></h3><pre><code>DecayTable::Entry DecayTable::Entry DecayTable::Entry MSSM63atMGUT;
+</code></pre><h3 id=variable-stop_1_decay_rates>variable stop_1_decay_rates <a href=#variable-stop_1_decay_rates class=anchor aria-hidden=true>#</a></h3><pre><code>DecayTable::Entry DecayTable::Entry DecayTable::Entry stop_1_decay_rates;
+</code></pre><h3 id=variable-sbottombar_1_decay_rates>variable sbottombar_1_decay_rates <a href=#variable-sbottombar_1_decay_rates class=anchor aria-hidden=true>#</a></h3><pre><code>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry sbottombar_1_decay_rates;
+</code></pre><h3 id=variable-sbottombar_1_decays>variable sbottombar_1_decays <a href=#variable-sbottombar_1_decays class=anchor aria-hidden=true>#</a></h3><pre><code>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry sbottombar_1_decays;
+</code></pre><h3 id=variable-sbottom_1_decay_rates>variable sbottom_1_decay_rates <a href=#variable-sbottom_1_decay_rates class=anchor aria-hidden=true>#</a></h3><pre><code>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry sbottom_1_decay_rates;
+</code></pre><h3 id=variable-supbar_l_decay_rates>variable supbar_l_decay_rates <a href=#variable-supbar_l_decay_rates class=anchor aria-hidden=true>#</a></h3><pre><code>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry supbar_l_decay_rates;
+</code></pre><h3 id=variable-supbar_l_decays>variable supbar_l_decays <a href=#variable-supbar_l_decays class=anchor aria-hidden=true>#</a></h3><pre><code>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry supbar_l_decays;
+</code></pre><h3 id=variable-sup_l_decay_rates>variable sup_l_decay_rates <a href=#variable-sup_l_decay_rates class=anchor aria-hidden=true>#</a></h3><pre><code>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry sup_l_decay_rates;
+</code></pre><h3 id=variable-sdownbar_l_decay_rates>variable sdownbar_l_decay_rates <a href=#variable-sdownbar_l_decay_rates class=anchor aria-hidden=true>#</a></h3><pre><code>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry sdownbar_l_decay_rates;
+</code></pre><h3 id=variable-sdownbar_l_decays>variable sdownbar_l_decays <a href=#variable-sdownbar_l_decays class=anchor aria-hidden=true>#</a></h3><pre><code>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry sdownbar_l_decays;
+</code></pre><h3 id=variable-sdown_l_decay_rates>variable sdown_l_decay_rates <a href=#variable-sdown_l_decay_rates class=anchor aria-hidden=true>#</a></h3><pre><code>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry sdown_l_decay_rates;
+</code></pre><h3 id=variable-scharmbar_l_decay_rates>variable scharmbar_l_decay_rates <a href=#variable-scharmbar_l_decay_rates class=anchor aria-hidden=true>#</a></h3><pre><code>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry scharmbar_l_decay_rates;
+</code></pre><h3 id=variable-scharmbar_l_decays>variable scharmbar_l_decays <a href=#variable-scharmbar_l_decays class=anchor aria-hidden=true>#</a></h3><pre><code>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry scharmbar_l_decays;
+</code></pre><h3 id=variable-scharm_l_decay_rates>variable scharm_l_decay_rates <a href=#variable-scharm_l_decay_rates class=anchor aria-hidden=true>#</a></h3><pre><code>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry scharm_l_decay_rates;
+</code></pre><h3 id=variable-sstrangebar_l_decay_rates>variable sstrangebar_l_decay_rates <a href=#variable-sstrangebar_l_decay_rates class=anchor aria-hidden=true>#</a></h3><pre><code>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry sstrangebar_l_decay_rates;
+</code></pre><h3 id=variable-sstrangebar_l_decays>variable sstrangebar_l_decays <a href=#variable-sstrangebar_l_decays class=anchor aria-hidden=true>#</a></h3><pre><code>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry sstrangebar_l_decays;
+</code></pre><h3 id=variable-sstrange_l_decay_rates>variable sstrange_l_decay_rates <a href=#variable-sstrange_l_decay_rates class=anchor aria-hidden=true>#</a></h3><pre><code>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry sstrange_l_decay_rates;
+</code></pre><h3 id=variable-selectronbar_l_decay_rates>variable selectronbar_l_decay_rates <a href=#variable-selectronbar_l_decay_rates class=anchor aria-hidden=true>#</a></h3><pre><code>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry selectronbar_l_decay_rates;
+</code></pre><h3 id=variable-selectronbar_l_decays>variable selectronbar_l_decays <a href=#variable-selectronbar_l_decays class=anchor aria-hidden=true>#</a></h3><pre><code>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry selectronbar_l_decays;
+</code></pre><h3 id=variable-selectron_l_decay_rates>variable selectron_l_decay_rates <a href=#variable-selectron_l_decay_rates class=anchor aria-hidden=true>#</a></h3><pre><code>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry selectron_l_decay_rates;
+</code></pre><h3 id=variable-smuonbar_l_decay_rates>variable smuonbar_l_decay_rates <a href=#variable-smuonbar_l_decay_rates class=anchor aria-hidden=true>#</a></h3><pre><code>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry smuonbar_l_decay_rates;
+</code></pre><h3 id=variable-smuonbar_l_decays>variable smuonbar_l_decays <a href=#variable-smuonbar_l_decays class=anchor aria-hidden=true>#</a></h3><pre><code>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry smuonbar_l_decays;
+</code></pre><h3 id=variable-smuon_l_decay_rates>variable smuon_l_decay_rates <a href=#variable-smuon_l_decay_rates class=anchor aria-hidden=true>#</a></h3><pre><code>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry smuon_l_decay_rates;
+</code></pre><h3 id=variable-staubar_1_decay_rates>variable staubar_1_decay_rates <a href=#variable-staubar_1_decay_rates class=anchor aria-hidden=true>#</a></h3><pre><code>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry staubar_1_decay_rates;
+</code></pre><h3 id=variable-staubar_1_decays>variable staubar_1_decays <a href=#variable-staubar_1_decays class=anchor aria-hidden=true>#</a></h3><pre><code>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry staubar_1_decays;
+</code></pre><h3 id=variable-stau_1_decay_rates>variable stau_1_decay_rates <a href=#variable-stau_1_decay_rates class=anchor aria-hidden=true>#</a></h3><pre><code>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry stau_1_decay_rates;
+</code></pre><h3 id=variable-snubar_electronl_decay_rates>variable snubar_electronl_decay_rates <a href=#variable-snubar_electronl_decay_rates class=anchor aria-hidden=true>#</a></h3><pre><code>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry snubar_electronl_decay_rates;
+</code></pre><h3 id=variable-snubar_electronl_decays>variable snubar_electronl_decays <a href=#variable-snubar_electronl_decays class=anchor aria-hidden=true>#</a></h3><pre><code>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry snubar_electronl_decays;
+</code></pre><h3 id=variable-snu_electronl_decay_rates>variable snu_electronl_decay_rates <a href=#variable-snu_electronl_decay_rates class=anchor aria-hidden=true>#</a></h3><pre><code>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry snu_electronl_decay_rates;
+</code></pre><h3 id=variable-snubar_taul_decay_rates>variable snubar_taul_decay_rates <a href=#variable-snubar_taul_decay_rates class=anchor aria-hidden=true>#</a></h3><pre><code>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry snubar_taul_decay_rates;
+</code></pre><h3 id=variable-snubar_taul_decays>variable snubar_taul_decays <a href=#variable-snubar_taul_decays class=anchor aria-hidden=true>#</a></h3><pre><code>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry snubar_taul_decays;
+</code></pre><h3 id=variable-snu_taul_decay_rates>variable snu_taul_decay_rates <a href=#variable-snu_taul_decay_rates class=anchor aria-hidden=true>#</a></h3><pre><code>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry snu_taul_decay_rates;
+</code></pre><h3 id=variable-chargino_minus_2_decay_rates>variable chargino_minus_2_decay_rates <a href=#variable-chargino_minus_2_decay_rates class=anchor aria-hidden=true>#</a></h3><pre><code>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry chargino_minus_2_decay_rates;
+</code></pre><h3 id=variable-chargino_minus_2_decays>variable chargino_minus_2_decays <a href=#variable-chargino_minus_2_decays class=anchor aria-hidden=true>#</a></h3><pre><code>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry chargino_minus_2_decays;
+</code></pre><h3 id=variable-chargino_plus_2_decay_rates>variable chargino_plus_2_decay_rates <a href=#variable-chargino_plus_2_decay_rates class=anchor aria-hidden=true>#</a></h3><pre><code>DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry chargino_plus_2_decay_rates;
+</code></pre><h2 id=macros-documentation>Macros Documentation <a href=#macros-documentation class=anchor aria-hidden=true>#</a></h2><h3 id=define-module>define MODULE <a href=#define-module class=anchor aria-hidden=true>#</a></h3><pre><code>#define MODULE DecayBit
+</code></pre><h3 id=define-reference>define REFERENCE <a href=#define-reference class=anchor aria-hidden=true>#</a></h3><pre><code>#define REFERENCE GAMBITModelsWorkgroup:2017ilg
+</code></pre><h3 id=define-capability>define CAPABILITY <a href=#define-capability class=anchor aria-hidden=true>#</a></h3><pre><code>#define CAPABILITY t_decay_rates
+</code></pre><h3 id=define-function>define FUNCTION <a href=#define-function class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-function-1>define FUNCTION <a href=#define-function-1 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-capability-1>define CAPABILITY <a href=#define-capability-1 class=anchor aria-hidden=true>#</a></h3><pre><code>#define CAPABILITY t_decay_rates
+</code></pre><h3 id=define-function-2>define FUNCTION <a href=#define-function-2 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-function-3>define FUNCTION <a href=#define-function-3 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-capability-2>define CAPABILITY <a href=#define-capability-2 class=anchor aria-hidden=true>#</a></h3><pre><code>#define CAPABILITY t_decay_rates
+</code></pre><h3 id=define-function-4>define FUNCTION <a href=#define-function-4 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-function-5>define FUNCTION <a href=#define-function-5 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-capability-3>define CAPABILITY <a href=#define-capability-3 class=anchor aria-hidden=true>#</a></h3><pre><code>#define CAPABILITY t_decay_rates
+</code></pre><h3 id=define-function-6>define FUNCTION <a href=#define-function-6 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-function-7>define FUNCTION <a href=#define-function-7 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-capability-4>define CAPABILITY <a href=#define-capability-4 class=anchor aria-hidden=true>#</a></h3><pre><code>#define CAPABILITY t_decay_rates
+</code></pre><h3 id=define-function-8>define FUNCTION <a href=#define-function-8 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-function-9>define FUNCTION <a href=#define-function-9 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-function-10>define FUNCTION <a href=#define-function-10 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-function-11>define FUNCTION <a href=#define-function-11 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-function-12>define FUNCTION <a href=#define-function-12 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-function-13>define FUNCTION <a href=#define-function-13 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-function-14>define FUNCTION <a href=#define-function-14 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-capability-5>define CAPABILITY <a href=#define-capability-5 class=anchor aria-hidden=true>#</a></h3><pre><code>#define CAPABILITY t_decay_rates
+</code></pre><h3 id=define-function-15>define FUNCTION <a href=#define-function-15 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-function-16>define FUNCTION <a href=#define-function-16 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-capability-6>define CAPABILITY <a href=#define-capability-6 class=anchor aria-hidden=true>#</a></h3><pre><code>#define CAPABILITY t_decay_rates
+</code></pre><h3 id=define-function-17>define FUNCTION <a href=#define-function-17 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-function-18>define FUNCTION <a href=#define-function-18 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-capability-7>define CAPABILITY <a href=#define-capability-7 class=anchor aria-hidden=true>#</a></h3><pre><code>#define CAPABILITY t_decay_rates
+</code></pre><h3 id=define-function-19>define FUNCTION <a href=#define-function-19 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-function-20>define FUNCTION <a href=#define-function-20 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-capability-8>define CAPABILITY <a href=#define-capability-8 class=anchor aria-hidden=true>#</a></h3><pre><code>#define CAPABILITY t_decay_rates
+</code></pre><h3 id=define-function-21>define FUNCTION <a href=#define-function-21 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-capability-9>define CAPABILITY <a href=#define-capability-9 class=anchor aria-hidden=true>#</a></h3><pre><code>#define CAPABILITY t_decay_rates
+</code></pre><h3 id=define-function-22>define FUNCTION <a href=#define-function-22 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-capability-10>define CAPABILITY <a href=#define-capability-10 class=anchor aria-hidden=true>#</a></h3><pre><code>#define CAPABILITY t_decay_rates
+</code></pre><h3 id=define-function-23>define FUNCTION <a href=#define-function-23 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-capability-11>define CAPABILITY <a href=#define-capability-11 class=anchor aria-hidden=true>#</a></h3><pre><code>#define CAPABILITY t_decay_rates
+</code></pre><h3 id=define-function-24>define FUNCTION <a href=#define-function-24 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-capability-12>define CAPABILITY <a href=#define-capability-12 class=anchor aria-hidden=true>#</a></h3><pre><code>#define CAPABILITY t_decay_rates
+</code></pre><h3 id=define-function-25>define FUNCTION <a href=#define-function-25 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-capability-13>define CAPABILITY <a href=#define-capability-13 class=anchor aria-hidden=true>#</a></h3><pre><code>#define CAPABILITY t_decay_rates
+</code></pre><h3 id=define-function-26>define FUNCTION <a href=#define-function-26 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-capability-14>define CAPABILITY <a href=#define-capability-14 class=anchor aria-hidden=true>#</a></h3><pre><code>#define CAPABILITY t_decay_rates
+</code></pre><h3 id=define-function-27>define FUNCTION <a href=#define-function-27 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-capability-15>define CAPABILITY <a href=#define-capability-15 class=anchor aria-hidden=true>#</a></h3><pre><code>#define CAPABILITY t_decay_rates
+</code></pre><h3 id=define-function-28>define FUNCTION <a href=#define-function-28 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-capability-16>define CAPABILITY <a href=#define-capability-16 class=anchor aria-hidden=true>#</a></h3><pre><code>#define CAPABILITY t_decay_rates
+</code></pre><h3 id=define-function-29>define FUNCTION <a href=#define-function-29 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-capability-17>define CAPABILITY <a href=#define-capability-17 class=anchor aria-hidden=true>#</a></h3><pre><code>#define CAPABILITY t_decay_rates
+</code></pre><h3 id=define-function-30>define FUNCTION <a href=#define-function-30 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-capability-18>define CAPABILITY <a href=#define-capability-18 class=anchor aria-hidden=true>#</a></h3><pre><code>#define CAPABILITY t_decay_rates
+</code></pre><h3 id=define-function-31>define FUNCTION <a href=#define-function-31 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-capability-19>define CAPABILITY <a href=#define-capability-19 class=anchor aria-hidden=true>#</a></h3><pre><code>#define CAPABILITY t_decay_rates
+</code></pre><h3 id=define-function-32>define FUNCTION <a href=#define-function-32 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-capability-20>define CAPABILITY <a href=#define-capability-20 class=anchor aria-hidden=true>#</a></h3><pre><code>#define CAPABILITY t_decay_rates
+</code></pre><h3 id=define-function-33>define FUNCTION <a href=#define-function-33 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-capability-21>define CAPABILITY <a href=#define-capability-21 class=anchor aria-hidden=true>#</a></h3><pre><code>#define CAPABILITY t_decay_rates
+</code></pre><h3 id=define-function-34>define FUNCTION <a href=#define-function-34 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-capability-22>define CAPABILITY <a href=#define-capability-22 class=anchor aria-hidden=true>#</a></h3><pre><code>#define CAPABILITY t_decay_rates
+</code></pre><h3 id=define-function-35>define FUNCTION <a href=#define-function-35 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-capability-23>define CAPABILITY <a href=#define-capability-23 class=anchor aria-hidden=true>#</a></h3><pre><code>#define CAPABILITY t_decay_rates
+</code></pre><h3 id=define-function-36>define FUNCTION <a href=#define-function-36 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-capability-24>define CAPABILITY <a href=#define-capability-24 class=anchor aria-hidden=true>#</a></h3><pre><code>#define CAPABILITY t_decay_rates
+</code></pre><h3 id=define-function-37>define FUNCTION <a href=#define-function-37 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-capability-25>define CAPABILITY <a href=#define-capability-25 class=anchor aria-hidden=true>#</a></h3><pre><code>#define CAPABILITY t_decay_rates
+</code></pre><h3 id=define-function-38>define FUNCTION <a href=#define-function-38 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-capability-26>define CAPABILITY <a href=#define-capability-26 class=anchor aria-hidden=true>#</a></h3><pre><code>#define CAPABILITY t_decay_rates
+</code></pre><h3 id=define-function-39>define FUNCTION <a href=#define-function-39 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-capability-27>define CAPABILITY <a href=#define-capability-27 class=anchor aria-hidden=true>#</a></h3><pre><code>#define CAPABILITY t_decay_rates
+</code></pre><h3 id=define-function-40>define FUNCTION <a href=#define-function-40 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-capability-28>define CAPABILITY <a href=#define-capability-28 class=anchor aria-hidden=true>#</a></h3><pre><code>#define CAPABILITY t_decay_rates
+</code></pre><h3 id=define-function-41>define FUNCTION <a href=#define-function-41 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-capability-29>define CAPABILITY <a href=#define-capability-29 class=anchor aria-hidden=true>#</a></h3><pre><code>#define CAPABILITY t_decay_rates
+</code></pre><h3 id=define-function-42>define FUNCTION <a href=#define-function-42 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-capability-30>define CAPABILITY <a href=#define-capability-30 class=anchor aria-hidden=true>#</a></h3><pre><code>#define CAPABILITY t_decay_rates
+</code></pre><h3 id=define-function-43>define FUNCTION <a href=#define-function-43 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-capability-31>define CAPABILITY <a href=#define-capability-31 class=anchor aria-hidden=true>#</a></h3><pre><code>#define CAPABILITY t_decay_rates
+</code></pre><h3 id=define-function-44>define FUNCTION <a href=#define-function-44 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-capability-32>define CAPABILITY <a href=#define-capability-32 class=anchor aria-hidden=true>#</a></h3><pre><code>#define CAPABILITY t_decay_rates
+</code></pre><h3 id=define-function-45>define FUNCTION <a href=#define-function-45 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-capability-33>define CAPABILITY <a href=#define-capability-33 class=anchor aria-hidden=true>#</a></h3><pre><code>#define CAPABILITY t_decay_rates
+</code></pre><h3 id=define-function-46>define FUNCTION <a href=#define-function-46 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-capability-34>define CAPABILITY <a href=#define-capability-34 class=anchor aria-hidden=true>#</a></h3><pre><code>#define CAPABILITY t_decay_rates
+</code></pre><h3 id=define-function-47>define FUNCTION <a href=#define-function-47 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-capability-35>define CAPABILITY <a href=#define-capability-35 class=anchor aria-hidden=true>#</a></h3><pre><code>#define CAPABILITY t_decay_rates
+</code></pre><h3 id=define-function-48>define FUNCTION <a href=#define-function-48 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-capability-36>define CAPABILITY <a href=#define-capability-36 class=anchor aria-hidden=true>#</a></h3><pre><code>#define CAPABILITY t_decay_rates
+</code></pre><h3 id=define-function-49>define FUNCTION <a href=#define-function-49 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-capability-37>define CAPABILITY <a href=#define-capability-37 class=anchor aria-hidden=true>#</a></h3><pre><code>#define CAPABILITY t_decay_rates
+</code></pre><h3 id=define-function-50>define FUNCTION <a href=#define-function-50 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-capability-38>define CAPABILITY <a href=#define-capability-38 class=anchor aria-hidden=true>#</a></h3><pre><code>#define CAPABILITY t_decay_rates
+</code></pre><h3 id=define-function-51>define FUNCTION <a href=#define-function-51 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-capability-39>define CAPABILITY <a href=#define-capability-39 class=anchor aria-hidden=true>#</a></h3><pre><code>#define CAPABILITY t_decay_rates
+</code></pre><h3 id=define-function-52>define FUNCTION <a href=#define-function-52 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-capability-40>define CAPABILITY <a href=#define-capability-40 class=anchor aria-hidden=true>#</a></h3><pre><code>#define CAPABILITY t_decay_rates
+</code></pre><h3 id=define-function-53>define FUNCTION <a href=#define-function-53 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-function-54>define FUNCTION <a href=#define-function-54 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-capability-41>define CAPABILITY <a href=#define-capability-41 class=anchor aria-hidden=true>#</a></h3><pre><code>#define CAPABILITY t_decay_rates
+</code></pre><h3 id=define-function-55>define FUNCTION <a href=#define-function-55 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-capability-42>define CAPABILITY <a href=#define-capability-42 class=anchor aria-hidden=true>#</a></h3><pre><code>#define CAPABILITY t_decay_rates
+</code></pre><h3 id=define-function-56>define FUNCTION <a href=#define-function-56 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-capability-43>define CAPABILITY <a href=#define-capability-43 class=anchor aria-hidden=true>#</a></h3><pre><code>#define CAPABILITY t_decay_rates
+</code></pre><h3 id=define-function-57>define FUNCTION <a href=#define-function-57 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-capability-44>define CAPABILITY <a href=#define-capability-44 class=anchor aria-hidden=true>#</a></h3><pre><code>#define CAPABILITY t_decay_rates
+</code></pre><h3 id=define-function-58>define FUNCTION <a href=#define-function-58 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-capability-45>define CAPABILITY <a href=#define-capability-45 class=anchor aria-hidden=true>#</a></h3><pre><code>#define CAPABILITY t_decay_rates
+</code></pre><h3 id=define-function-59>define FUNCTION <a href=#define-function-59 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-capability-46>define CAPABILITY <a href=#define-capability-46 class=anchor aria-hidden=true>#</a></h3><pre><code>#define CAPABILITY t_decay_rates
+</code></pre><h3 id=define-function-60>define FUNCTION <a href=#define-function-60 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-capability-47>define CAPABILITY <a href=#define-capability-47 class=anchor aria-hidden=true>#</a></h3><pre><code>#define CAPABILITY t_decay_rates
+</code></pre><h3 id=define-function-61>define FUNCTION <a href=#define-function-61 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-capability-48>define CAPABILITY <a href=#define-capability-48 class=anchor aria-hidden=true>#</a></h3><pre><code>#define CAPABILITY t_decay_rates
+</code></pre><h3 id=define-function-62>define FUNCTION <a href=#define-function-62 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-capability-49>define CAPABILITY <a href=#define-capability-49 class=anchor aria-hidden=true>#</a></h3><pre><code>#define CAPABILITY t_decay_rates
+</code></pre><h3 id=define-function-63>define FUNCTION <a href=#define-function-63 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-capability-50>define CAPABILITY <a href=#define-capability-50 class=anchor aria-hidden=true>#</a></h3><pre><code>#define CAPABILITY t_decay_rates
+</code></pre><h3 id=define-function-64>define FUNCTION <a href=#define-function-64 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-function-65>define FUNCTION <a href=#define-function-65 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-function-66>define FUNCTION <a href=#define-function-66 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-function-67>define FUNCTION <a href=#define-function-67 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h3 id=define-function-68>define FUNCTION <a href=#define-function-68 class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTION t_decays
+</code></pre><h2 id=source-code>Source code <a href=#source-code class=anchor aria-hidden=true>#</a></h2><pre><code>//   GAMBIT: Global and Modular BSM Inference Tool
+//   *********************************************
+///  \file
+///
+///  Rollcall header for DecayBit.
+///
+///  Compile-time registration of available
+///  observables and likelihoods for calculating
+///  particle decay rates and branching fractions,
+///  along with their dependencies.
+///
+///  Don't put typedefs or other type definitions
+///  in this file; see
+///  Core/include/types_rollcall.hpp for further
+///  instructions on how to add new types.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)
+///  \date 2014 Aug
+///
+///  \author Csaba Balazs
+///  \date 2015 Jan-May
+///
+///  \author Ankit Beniwal
+///          (ankit.beniwal@adelaide.edu.au)
+///  \date 2016 Aug
+///
+///   \author Tomas Gonzalo
+///           (t.e.gonzalo@fys.uio.no)
+///  \date 2018 Feb
+///  \author Andrew Fowlie
+///  \date 2018 May
+///  \author Peter Athron
+///  \date 2018 May
+///
+///  *********************************************
+
+
+#ifndef __DecayBit_rollcall_hpp__
+#define __DecayBit_rollcall_hpp__
+
+
+#define MODULE DecayBit
+#define REFERENCE GAMBITModelsWorkgroup:2017ilg
+START_MODULE
+
+  #define CAPABILITY t_decay_rates
+  START_CAPABILITY
+
+    #define FUNCTION t_decays
+    START_FUNCTION(DecayTable::Entry)
+    #undef FUNCTION
+
+    #define FUNCTION FeynHiggs_t_decays
+    START_FUNCTION(DecayTable::Entry)
+    DEPENDENCY(FH_Couplings_output, fh_Couplings_container)
+    ALLOW_MODELS(MSSM63atQ, MSSM63atMGUT)
+    #undef FUNCTION
+
+  #undef CAPABILITY
+
+
+  #define CAPABILITY Reference_SM_Higgs_decay_rates
+  START_CAPABILITY
+
+    #define FUNCTION Ref_SM_Higgs_decays_table
+    START_FUNCTION(DecayTable::Entry)
+    DEPENDENCY(mh, triplet&lt;double&gt;)
+    #undef FUNCTION
+
+    #define FUNCTION Ref_SM_Higgs_decays_FeynHiggs
+    START_FUNCTION(DecayTable::Entry)
+    DEPENDENCY(MSSM_spectrum, Spectrum)
+    DEPENDENCY(FH_Couplings_output, fh_Couplings_container)
+    DEPENDENCY(SLHA_pseudonyms, mass_es_pseudonyms)
+    ALLOW_MODELS(MSSM63atQ, MSSM63atMGUT)
+    #undef FUNCTION
+
+  #undef CAPABILITY
+
+
+  #define CAPABILITY Reference_SM_other_Higgs_decay_rates
+  START_CAPABILITY
+
+    #define FUNCTION Ref_SM_other_Higgs_decays_table
+    START_FUNCTION(DecayTable::Entry)
+    DEPENDENCY(MSSM_spectrum, Spectrum)
+    ALLOW_MODELS(MSSM63atQ, MSSM63atMGUT)
+    #undef FUNCTION
+
+    #define FUNCTION Ref_SM_other_Higgs_decays_FH
+    START_FUNCTION(DecayTable::Entry)
+    DEPENDENCY(MSSM_spectrum, Spectrum)
+    DEPENDENCY(FH_Couplings_output, fh_Couplings_container)
+    DEPENDENCY(SLHA_pseudonyms, mass_es_pseudonyms)
+    ALLOW_MODELS(MSSM63atQ, MSSM63atMGUT)
+    #undef FUNCTION
+
+  #undef CAPABILITY
+
+
+  #define CAPABILITY Reference_SM_A0_decay_rates
+  START_CAPABILITY
+
+    #define FUNCTION Ref_SM_A0_decays_table
+    START_FUNCTION(DecayTable::Entry)
+    DEPENDENCY(MSSM_spectrum, Spectrum)
+    ALLOW_MODELS(MSSM63atQ, MSSM63atMGUT)
+    #undef FUNCTION
+
+    #define FUNCTION Ref_SM_A0_decays_FH
+    START_FUNCTION(DecayTable::Entry)
+    DEPENDENCY(FH_Couplings_output, fh_Couplings_container)
+    DEPENDENCY(SLHA_pseudonyms, mass_es_pseudonyms)
+    ALLOW_MODELS(MSSM63atQ, MSSM63atMGUT)
+    #undef FUNCTION
+
+  #undef CAPABILITY
+
+
+  #define CAPABILITY Higgs_decay_rates
+  START_CAPABILITY
+
+    #define FUNCTION SM_Higgs_decays
+    START_FUNCTION(DecayTable::Entry)
+    DEPENDENCY(Reference_SM_Higgs_decay_rates, DecayTable::Entry)
+    #undef FUNCTION
+
+    #define FUNCTION ScalarSingletDM_Higgs_decays
+    START_FUNCTION(DecayTable::Entry)
+    DEPENDENCY(Reference_SM_Higgs_decay_rates, DecayTable::Entry)
+    MODEL_CONDITIONAL_DEPENDENCY(ScalarSingletDM_Z2_spectrum, Spectrum, ScalarSingletDM_Z2, ScalarSingletDM_Z2_running)
+    MODEL_CONDITIONAL_DEPENDENCY(ScalarSingletDM_Z3_spectrum, Spectrum, ScalarSingletDM_Z3, ScalarSingletDM_Z3_running)
+    ALLOW_MODELS(ScalarSingletDM_Z2, ScalarSingletDM_Z2_running, ScalarSingletDM_Z3, ScalarSingletDM_Z3_running)
+    #undef FUNCTION
+
+    #define FUNCTION VectorSingletDM_Higgs_decays
+    START_FUNCTION(DecayTable::Entry)
+    DEPENDENCY(Reference_SM_Higgs_decay_rates, DecayTable::Entry)
+    DEPENDENCY(VectorSingletDM_Z2_spectrum, Spectrum)
+    ALLOW_MODELS(VectorSingletDM_Z2)
+    #undef FUNCTION
+
+    #define FUNCTION MajoranaSingletDM_Higgs_decays
+    START_FUNCTION(DecayTable::Entry)
+    DEPENDENCY(Reference_SM_Higgs_decay_rates, DecayTable::Entry)
+    DEPENDENCY(MajoranaSingletDM_Z2_spectrum, Spectrum)
+    ALLOW_MODELS(MajoranaSingletDM_Z2)
+    #undef FUNCTION
+
+    #define FUNCTION DiracSingletDM_Higgs_decays
+    START_FUNCTION(DecayTable::Entry)
+    DEPENDENCY(Reference_SM_Higgs_decay_rates, DecayTable::Entry)
+    DEPENDENCY(DiracSingletDM_Z2_spectrum, Spectrum)
+    ALLOW_MODELS(DiracSingletDM_Z2)
+    #undef FUNCTION
+
+    #define FUNCTION MSSM_h0_1_decays
+    START_FUNCTION(DecayTable::Entry)
+    DEPENDENCY(SLHA_pseudonyms, mass_es_pseudonyms)
+    BACKEND_REQ(cb_widthhl_hdec, (sh_reqd), widthhl_hdec_type)
+    BACKEND_REQ(cb_wisusy_hdec, (sh_reqd), wisusy_hdec_type)
+    BACKEND_REQ(cb_wisfer_hdec, (sh_reqd), wisfer_hdec_type)
+    BACKEND_OPTION( (SUSY_HIT), (sh_reqd) )
+    ALLOW_MODELS(MSSM63atQ, MSSM63atMGUT)
+    #undef FUNCTION
+
+    #define FUNCTION FeynHiggs_MSSM_h0_1_decays
+    START_FUNCTION(DecayTable::Entry)
+    DEPENDENCY(FH_Couplings_output, fh_Couplings_container)
+    DEPENDENCY(SLHA_pseudonyms, mass_es_pseudonyms)
+    ALLOW_MODELS(MSSM63atQ, MSSM63atMGUT)
+    #undef FUNCTION
+
+  #undef CAPABILITY
+
+  #define CAPABILITY h0_2_decay_rates
+  START_CAPABILITY
+
+    #define FUNCTION h0_2_decays
+    START_FUNCTION(DecayTable::Entry)
+    DEPENDENCY(SLHA_pseudonyms, mass_es_pseudonyms)
+    BACKEND_REQ(cb_widthhh_hdec, (sh_reqd), widthhh_hdec_type)
+    BACKEND_REQ(cb_wisusy_hdec, (sh_reqd), wisusy_hdec_type)
+    BACKEND_REQ(cb_wisfer_hdec, (sh_reqd), wisfer_hdec_type)
+    BACKEND_OPTION( (SUSY_HIT), (sh_reqd) )
+    ALLOW_MODELS(MSSM63atQ, MSSM63atMGUT)
+    #undef FUNCTION
+
+    #define FUNCTION FeynHiggs_h0_2_decays
+    START_FUNCTION(DecayTable::Entry)
+    DEPENDENCY(SLHA_pseudonyms, mass_es_pseudonyms)
+    DEPENDENCY(FH_Couplings_output, fh_Couplings_container)
+    ALLOW_MODELS(MSSM63atQ, MSSM63atMGUT)
+    #undef FUNCTION
+
+  #undef CAPABILITY
+
+  #define CAPABILITY A0_decay_rates
+  START_CAPABILITY
+
+    #define FUNCTION A0_decays
+    START_FUNCTION(DecayTable::Entry)
+    DEPENDENCY(SLHA_pseudonyms, mass_es_pseudonyms)
+    BACKEND_REQ(cb_widtha_hdec, (sh_reqd), widtha_hdec_type)
+    BACKEND_REQ(cb_wisusy_hdec, (sh_reqd), wisusy_hdec_type)
+    BACKEND_OPTION( (SUSY_HIT), (sh_reqd) )
+    ALLOW_MODELS(MSSM63atQ, MSSM63atMGUT)
+    #undef FUNCTION
+
+    #define FUNCTION FeynHiggs_A0_decays
+    START_FUNCTION(DecayTable::Entry)
+    DEPENDENCY(FH_Couplings_output, fh_Couplings_container)
+    DEPENDENCY(SLHA_pseudonyms, mass_es_pseudonyms)
+    ALLOW_MODELS(MSSM63atQ, MSSM63atMGUT)
+    #undef FUNCTION
+
+  #undef CAPABILITY
+
+  #define CAPABILITY H_plus_decay_rates
+  START_CAPABILITY
+
+    #define FUNCTION H_plus_decays
+    START_FUNCTION(DecayTable::Entry)
+    DEPENDENCY(SLHA_pseudonyms, mass_es_pseudonyms)
+    BACKEND_REQ(cb_widthhc_hdec, (sh_reqd), widthhc_hdec_type)
+    BACKEND_REQ(cb_wisusy_hdec, (sh_reqd), wisusy_hdec_type)
+    BACKEND_REQ(cb_wisfer_hdec, (sh_reqd), wisfer_hdec_type)
+    BACKEND_OPTION( (SUSY_HIT), (sh_reqd) )
+    ALLOW_MODELS(MSSM63atQ, MSSM63atMGUT)
+    #undef FUNCTION
+
+    #define FUNCTION FeynHiggs_H_plus_decays
+    START_FUNCTION(DecayTable::Entry)
+    DEPENDENCY(SLHA_pseudonyms, mass_es_pseudonyms)
+    DEPENDENCY(FH_Couplings_output, fh_Couplings_container)
+    ALLOW_MODELS(MSSM63atQ, MSSM63atMGUT)
+    #undef FUNCTION
+
+  #undef CAPABILITY
+
+  #define CAPABILITY gluino_decay_rates
+  START_CAPABILITY
+
+    #define FUNCTION gluino_decays
+    START_FUNCTION(DecayTable::Entry)
+    DEPENDENCY(SLHA_pseudonyms, mass_es_pseudonyms)
+    BACKEND_REQ(cb_sd_gluiwidth, (sh_reqd), sd_gluiwidth_type)
+    BACKEND_REQ(cb_sd_glui2body, (sh_reqd), sd_glui2body_type)
+    BACKEND_REQ(cb_sd_gluiloop, (sh_reqd), sd_gluiloop_type)
+    BACKEND_REQ(cb_sd_glui3body, (sh_reqd), sd_glui3body_type)
+    BACKEND_OPTION( (SUSY_HIT), (sh_reqd) )
+    ALLOW_MODELS(MSSM63atQ, MSSM63atMGUT)
+    #undef FUNCTION
+
+  #undef CAPABILITY
+
+  #define CAPABILITY stop_1_decay_rates
+  START_CAPABILITY
+
+    #define FUNCTION stop_1_decays
+    START_FUNCTION(DecayTable::Entry)
+    DEPENDENCY(SLHA_pseudonyms, mass_es_pseudonyms)
+    BACKEND_REQ(cb_sd_stopwidth, (sh_reqd), sd_stopwidth_type)
+    BACKEND_REQ(cb_sd_stop2body, (sh_reqd), sd_stop2body_type)
+    BACKEND_REQ(cb_sd_stoploop, (sh_reqd), sd_stoploop_type)
+    BACKEND_REQ(cb_sd_stop3body, (sh_reqd), sd_stop3body_type)
+    BACKEND_REQ(cb_sd_stop4body, (sh_reqd), sd_stop4body_type)
+    BACKEND_OPTION( (SUSY_HIT), (sh_reqd) )
+    ALLOW_MODELS(MSSM63atQ, MSSM63atMGUT)
+    #undef FUNCTION
+
+  #undef CAPABILITY
+
+  #define CAPABILITY stop_2_decay_rates
+  START_CAPABILITY
+
+    #define FUNCTION stop_2_decays
+    START_FUNCTION(DecayTable::Entry)
+    DEPENDENCY(SLHA_pseudonyms, mass_es_pseudonyms)
+    BACKEND_REQ(cb_sd_stopwidth, (sh_reqd), sd_stopwidth_type)
+    BACKEND_REQ(cb_sd_stop2body, (sh_reqd), sd_stop2body_type)
+    BACKEND_REQ(cb_sd_stop3body, (sh_reqd), sd_stop3body_type)
+    BACKEND_OPTION( (SUSY_HIT), (sh_reqd) )
+    ALLOW_MODELS(MSSM63atQ, MSSM63atMGUT)
+    #undef FUNCTION
+
+  #undef CAPABILITY
+
+  #define CAPABILITY sbottom_1_decay_rates
+  START_CAPABILITY
+
+    #define FUNCTION sbottom_1_decays
+    START_FUNCTION(DecayTable::Entry)
+    DEPENDENCY(SLHA_pseudonyms, mass_es_pseudonyms)
+    BACKEND_REQ(cb_sd_sbotwidth, (sh_reqd), sd_sbotwidth_type)
+    BACKEND_REQ(cb_sd_sbot2body, (sh_reqd), sd_sbot2body_type)
+    BACKEND_REQ(cb_sd_sbot3body, (sh_reqd), sd_sbot3body_type)
+    BACKEND_OPTION( (SUSY_HIT), (sh_reqd) )
+    ALLOW_MODELS(MSSM63atQ, MSSM63atMGUT)
+    #undef FUNCTION
+
+  #undef CAPABILITY
+
+  #define CAPABILITY sbottom_2_decay_rates
+  START_CAPABILITY
+
+    #define FUNCTION sbottom_2_decays
+    START_FUNCTION(DecayTable::Entry)
+    DEPENDENCY(SLHA_pseudonyms, mass_es_pseudonyms)
+    BACKEND_REQ(cb_sd_sbotwidth, (sh_reqd), sd_sbotwidth_type)
+    BACKEND_REQ(cb_sd_sbot2body, (sh_reqd), sd_sbot2body_type)
+    BACKEND_REQ(cb_sd_sbot3body, (sh_reqd), sd_sbot3body_type)
+    BACKEND_OPTION( (SUSY_HIT), (sh_reqd) )
+    ALLOW_MODELS(MSSM63atQ, MSSM63atMGUT)
+    #undef FUNCTION
+
+  #undef CAPABILITY
+
+  #define CAPABILITY sup_l_decay_rates
+  START_CAPABILITY
+
+    #define FUNCTION sup_l_decays
+    START_FUNCTION(DecayTable::Entry)
+    BACKEND_REQ(cb_sd_supwidth, (sh_reqd), sd_supwidth_type)
+    BACKEND_REQ(cb_sd_sup2body, (sh_reqd), sd_sup2body_type)
+    BACKEND_OPTION( (SUSY_HIT), (sh_reqd) )
+    ALLOW_MODELS(MSSM63atQ, MSSM63atMGUT)
+    #undef FUNCTION
+
+  #undef CAPABILITY
+
+  #define CAPABILITY sup_r_decay_rates
+  START_CAPABILITY
+
+    #define FUNCTION sup_r_decays
+    START_FUNCTION(DecayTable::Entry)
+    BACKEND_REQ(cb_sd_supwidth, (sh_reqd), sd_supwidth_type)
+    BACKEND_REQ(cb_sd_sup2body, (sh_reqd), sd_sup2body_type)
+    BACKEND_OPTION( (SUSY_HIT), (sh_reqd) )
+    ALLOW_MODELS(MSSM63atQ, MSSM63atMGUT)
+    #undef FUNCTION
+
+  #undef CAPABILITY
+
+  #define CAPABILITY sdown_l_decay_rates
+  START_CAPABILITY
+
+    #define FUNCTION sdown_l_decays
+    START_FUNCTION(DecayTable::Entry)
+    BACKEND_REQ(cb_sd_sdownwidth, (sh_reqd), sd_sdownwidth_type)
+    BACKEND_REQ(cb_sd_sdown2body, (sh_reqd), sd_sdown2body_type)
+    BACKEND_OPTION( (SUSY_HIT), (sh_reqd) )
+    ALLOW_MODELS(MSSM63atQ, MSSM63atMGUT)
+    #undef FUNCTION
+
+  #undef CAPABILITY
+
+  #define CAPABILITY sdown_r_decay_rates
+  START_CAPABILITY
+
+    #define FUNCTION sdown_r_decays
+    START_FUNCTION(DecayTable::Entry)
+    BACKEND_REQ(cb_sd_sdownwidth, (sh_reqd), sd_sdownwidth_type)
+    BACKEND_REQ(cb_sd_sdown2body, (sh_reqd), sd_sdown2body_type)
+    BACKEND_OPTION( (SUSY_HIT), (sh_reqd) )
+    ALLOW_MODELS(MSSM63atQ, MSSM63atMGUT)
+    #undef FUNCTION
+
+  #undef CAPABILITY
+
+  #define CAPABILITY scharm_l_decay_rates
+  START_CAPABILITY
+
+    #define FUNCTION scharm_l_decays
+    START_FUNCTION(DecayTable::Entry)
+    BACKEND_REQ(cb_sd_supwidth, (sh_reqd), sd_supwidth_type)
+    BACKEND_REQ(cb_sd_sup2body, (sh_reqd), sd_sup2body_type)
+    BACKEND_OPTION( (SUSY_HIT), (sh_reqd) )
+    ALLOW_MODELS(MSSM63atQ, MSSM63atMGUT)
+    #undef FUNCTION
+
+  #undef CAPABILITY
+
+  #define CAPABILITY scharm_r_decay_rates
+  START_CAPABILITY
+
+    #define FUNCTION scharm_r_decays
+    START_FUNCTION(DecayTable::Entry)
+    BACKEND_REQ(cb_sd_supwidth, (sh_reqd), sd_supwidth_type)
+    BACKEND_REQ(cb_sd_sup2body, (sh_reqd), sd_sup2body_type)
+    BACKEND_OPTION( (SUSY_HIT), (sh_reqd) )
+    ALLOW_MODELS(MSSM63atQ, MSSM63atMGUT)
+    #undef FUNCTION
+
+  #undef CAPABILITY
+
+  #define CAPABILITY sstrange_l_decay_rates
+  START_CAPABILITY
+
+    #define FUNCTION sstrange_l_decays
+    START_FUNCTION(DecayTable::Entry)
+    BACKEND_REQ(cb_sd_sdownwidth, (sh_reqd), sd_sdownwidth_type)
+    BACKEND_REQ(cb_sd_sdown2body, (sh_reqd), sd_sdown2body_type)
+    BACKEND_OPTION( (SUSY_HIT), (sh_reqd) )
+    ALLOW_MODELS(MSSM63atQ, MSSM63atMGUT)
+    #undef FUNCTION
+
+  #undef CAPABILITY
+
+  #define CAPABILITY sstrange_r_decay_rates
+  START_CAPABILITY
+
+    #define FUNCTION sstrange_r_decays
+    START_FUNCTION(DecayTable::Entry)
+    BACKEND_REQ(cb_sd_sdownwidth, (sh_reqd), sd_sdownwidth_type)
+    BACKEND_REQ(cb_sd_sdown2body, (sh_reqd), sd_sdown2body_type)
+    BACKEND_OPTION( (SUSY_HIT), (sh_reqd) )
+    ALLOW_MODELS(MSSM63atQ, MSSM63atMGUT)
+    #undef FUNCTION
+
+  #undef CAPABILITY
+
+  #define CAPABILITY selectron_l_decay_rates
+  START_CAPABILITY
+
+    #define FUNCTION selectron_l_decays
+    START_FUNCTION(DecayTable::Entry)
+    BACKEND_REQ(cb_sd_selwidth, (sh_reqd), sd_selwidth_type)
+    BACKEND_REQ(cb_sd_sel2body, (sh_reqd), sd_sel2body_type)
+    BACKEND_OPTION( (SUSY_HIT), (sh_reqd) )
+    ALLOW_MODELS(MSSM63atQ, MSSM63atMGUT)
+    #undef FUNCTION
+
+  #undef CAPABILITY
+
+  #define CAPABILITY selectron_r_decay_rates
+  START_CAPABILITY
+
+    #define FUNCTION selectron_r_decays
+    START_FUNCTION(DecayTable::Entry)
+    BACKEND_REQ(cb_sd_selwidth, (sh_reqd), sd_selwidth_type)
+    BACKEND_REQ(cb_sd_sel2body, (sh_reqd), sd_sel2body_type)
+    BACKEND_OPTION( (SUSY_HIT), (sh_reqd) )
+    ALLOW_MODELS(MSSM63atQ, MSSM63atMGUT)
+    #undef FUNCTION
+
+  #undef CAPABILITY
+
+  #define CAPABILITY smuon_l_decay_rates
+  START_CAPABILITY
+
+    #define FUNCTION smuon_l_decays
+    START_FUNCTION(DecayTable::Entry)
+    BACKEND_REQ(cb_sd_selwidth, (sh_reqd), sd_selwidth_type)
+    BACKEND_REQ(cb_sd_sel2body, (sh_reqd), sd_sel2body_type)
+    BACKEND_OPTION( (SUSY_HIT), (sh_reqd) )
+    ALLOW_MODELS(MSSM63atQ, MSSM63atMGUT)
+    #undef FUNCTION
+
+  #undef CAPABILITY
+
+  #define CAPABILITY smuon_r_decay_rates
+  START_CAPABILITY
+
+    #define FUNCTION smuon_r_decays
+    START_FUNCTION(DecayTable::Entry)
+    BACKEND_REQ(cb_sd_selwidth, (sh_reqd), sd_selwidth_type)
+    BACKEND_REQ(cb_sd_sel2body, (sh_reqd), sd_sel2body_type)
+    BACKEND_OPTION( (SUSY_HIT), (sh_reqd) )
+    ALLOW_MODELS(MSSM63atQ, MSSM63atMGUT)
+    #undef FUNCTION
+
+  #undef CAPABILITY
+
+  #define CAPABILITY stau_1_decay_rates
+  START_CAPABILITY
+
+    #define FUNCTION stau_1_decays
+    START_FUNCTION(DecayTable::Entry)
+    DEPENDENCY(stau_1_decay_rates_SH, DecayTable::Entry)
+    DEPENDENCY(stau_1_decay_rates_smallsplit, DecayTable::Entry)
+    ALLOW_MODELS(MSSM63atQ, MSSM63atMGUT)
+    #undef FUNCTION
+
+  #undef CAPABILITY
+
+  #define CAPABILITY stau_1_decay_rates_SH
+  START_CAPABILITY
+
+    #define FUNCTION stau_1_decays_SH
+    START_FUNCTION(DecayTable::Entry)
+    DEPENDENCY(SLHA_pseudonyms, mass_es_pseudonyms)
+    BACKEND_REQ(cb_sd_stauwidth, (sh_reqd), sd_stauwidth_type)
+    BACKEND_REQ(cb_sd_stau2body, (sh_reqd), sd_stau2body_type)
+    BACKEND_REQ(cb_sd_stau2bodygrav, (sh_reqd), sd_stau2bodygrav_type)
+    BACKEND_OPTION( (SUSY_HIT), (sh_reqd) )
+    ALLOW_MODELS(MSSM63atQ, MSSM63atMGUT)
+    #undef FUNCTION
+
+  #undef CAPABILITY
+
+  #define CAPABILITY stau_1_decay_rates_smallsplit
+  START_CAPABILITY
+
+    #define FUNCTION stau_1_decays_smallsplit
+    START_FUNCTION(DecayTable::Entry)
+    DEPENDENCY(SLHA_pseudonyms, mass_es_pseudonyms)
+    DEPENDENCY(MSSM_spectrum, Spectrum)
+    DEPENDENCY(tau_minus_decay_rates, DecayTable::Entry)
+    ALLOW_MODEL_DEPENDENCE(MSSM63atQ, MSSM63atMGUT, StandardModel_SLHA2)
+    MODEL_GROUP(group1, (StandardModel_SLHA2))
+    MODEL_GROUP(group2, (MSSM63atQ, MSSM63atMGUT))
+    ALLOW_MODEL_COMBINATION(group1,group2)
+    #undef FUNCTION
+
+  #undef CAPABILITY
+
+
+
+  #define CAPABILITY stau_2_decay_rates
+  START_CAPABILITY
+
+    #define FUNCTION stau_2_decays
+    START_FUNCTION(DecayTable::Entry)
+    DEPENDENCY(SLHA_pseudonyms, mass_es_pseudonyms)
+    BACKEND_REQ(cb_sd_stauwidth, (sh_reqd), sd_stauwidth_type)
+    BACKEND_REQ(cb_sd_stau2body, (sh_reqd), sd_stau2body_type)
+    BACKEND_OPTION( (SUSY_HIT), (sh_reqd) )
+    ALLOW_MODELS(MSSM63atQ, MSSM63atMGUT)
+    #undef FUNCTION
+
+  #undef CAPABILITY
+
+  #define CAPABILITY snu_electronl_decay_rates
+  START_CAPABILITY
+
+    #define FUNCTION snu_electronl_decays
+    START_FUNCTION(DecayTable::Entry)
+    BACKEND_REQ(cb_sd_snelwidth, (sh_reqd), sd_snelwidth_type)
+    BACKEND_REQ(cb_sd_snel2body, (sh_reqd), sd_snel2body_type)
+    BACKEND_OPTION( (SUSY_HIT), (sh_reqd) )
+    ALLOW_MODELS(MSSM63atQ, MSSM63atMGUT)
+    #undef FUNCTION
+
+  #undef CAPABILITY
+
+  #define CAPABILITY snu_muonl_decay_rates
+  START_CAPABILITY
+
+    #define FUNCTION snu_muonl_decays
+    START_FUNCTION(DecayTable::Entry)
+    BACKEND_REQ(cb_sd_snelwidth, (sh_reqd), sd_snelwidth_type)
+    BACKEND_REQ(cb_sd_snel2body, (sh_reqd), sd_snel2body_type)
+    BACKEND_OPTION( (SUSY_HIT), (sh_reqd) )
+    ALLOW_MODELS(MSSM63atQ, MSSM63atMGUT)
+    #undef FUNCTION
+
+  #undef CAPABILITY
+
+  #define CAPABILITY snu_taul_decay_rates
+  START_CAPABILITY
+
+    #define FUNCTION snu_taul_decays
+    START_FUNCTION(DecayTable::Entry)
+    DEPENDENCY(SLHA_pseudonyms, mass_es_pseudonyms)
+    BACKEND_REQ(cb_sd_sntauwidth, (sh_reqd), sd_sntauwidth_type)
+    BACKEND_REQ(cb_sd_sntau2body, (sh_reqd), sd_sntau2body_type)
+    BACKEND_OPTION( (SUSY_HIT), (sh_reqd) )
+    ALLOW_MODELS(MSSM63atQ, MSSM63atMGUT)
+    #undef FUNCTION
+
+  #undef CAPABILITY
+
+  #define CAPABILITY chargino_plus_1_decay_rates
+  START_CAPABILITY
+
+    #define FUNCTION chargino_plus_1_decays
+    START_FUNCTION(DecayTable::Entry)
+    DEPENDENCY(chargino_plus_1_decay_rates_SH, DecayTable::Entry)
+    DEPENDENCY(chargino_plus_1_decay_rates_smallsplit, DecayTable::Entry)
+    ALLOW_MODELS(MSSM63atQ, MSSM63atMGUT)
+    #undef FUNCTION
+
+  #undef CAPABILITY
+
+  #define CAPABILITY chargino_plus_1_decay_rates_SH
+  START_CAPABILITY
+
+    #define FUNCTION chargino_plus_1_decays_SH
+    START_FUNCTION(DecayTable::Entry)
+    DEPENDENCY(SLHA_pseudonyms, mass_es_pseudonyms)
+    BACKEND_REQ(cb_sd_charwidth, (sh_reqd), sd_charwidth_type)
+    BACKEND_REQ(cb_sd_char2body, (sh_reqd), sd_char2body_type)
+    BACKEND_REQ(cb_sd_char2bodygrav, (sh_reqd), sd_char2bodygrav_type)
+    BACKEND_REQ(cb_sd_char3body, (sh_reqd), sd_char3body_type)
+    BACKEND_OPTION( (SUSY_HIT), (sh_reqd) )
+    ALLOW_MODELS(MSSM63atQ, MSSM63atMGUT)
+    #undef FUNCTION
+
+  #undef CAPABILITY
+
+  #define CAPABILITY chargino_plus_1_decay_rates_smallsplit
+  START_CAPABILITY
+
+    #define FUNCTION chargino_plus_1_decays_smallsplit
+    START_FUNCTION(DecayTable::Entry)
+    DEPENDENCY(SLHA_pseudonyms, mass_es_pseudonyms)
+    DEPENDENCY(MSSM_spectrum, Spectrum)
+    DEPENDENCY(rho_0_decay_rates, DecayTable::Entry)
+    DEPENDENCY(rho1450_decay_rates, DecayTable::Entry)
+    ALLOW_MODEL_DEPENDENCE(MSSM63atQ, MSSM63atMGUT, StandardModel_SLHA2)
+    MODEL_GROUP(group1, (StandardModel_SLHA2))
+    MODEL_GROUP(group2, (MSSM63atQ, MSSM63atMGUT))
+    ALLOW_MODEL_COMBINATION(group1,group2)
+    #undef FUNCTION
+
+  #undef CAPABILITY
+
+  #define CAPABILITY chargino_plus_2_decay_rates
+  START_CAPABILITY
+
+    #define FUNCTION chargino_plus_2_decays
+    START_FUNCTION(DecayTable::Entry)
+    DEPENDENCY(SLHA_pseudonyms, mass_es_pseudonyms)
+    BACKEND_REQ(cb_sd_charwidth, (sh_reqd), sd_charwidth_type)
+    BACKEND_REQ(cb_sd_char2body, (sh_reqd), sd_char2body_type)
+    BACKEND_REQ(cb_sd_char2bodygrav, (sh_reqd), sd_char2bodygrav_type)
+    BACKEND_REQ(cb_sd_char3body, (sh_reqd), sd_char3body_type)
+    BACKEND_OPTION( (SUSY_HIT), (sh_reqd) )
+    ALLOW_MODELS(MSSM63atQ, MSSM63atMGUT)
+    #undef FUNCTION
+
+  #undef CAPABILITY
+
+  #define CAPABILITY neutralino_1_decay_rates
+  START_CAPABILITY
+
+    #define FUNCTION neutralino_1_decays
+    START_FUNCTION(DecayTable::Entry)
+    DEPENDENCY(SLHA_pseudonyms, mass_es_pseudonyms)
+    BACKEND_REQ(cb_sd_neutwidth, (sh_reqd), sd_neutwidth_type)
+    BACKEND_REQ(cb_sd_neut2body, (sh_reqd), sd_neut2body_type)
+    BACKEND_REQ(cb_sd_neut2bodygrav, (sh_reqd), sd_neut2bodygrav_type)
+    BACKEND_REQ(cb_sd_neut3body, (sh_reqd), sd_neut3body_type)
+    BACKEND_OPTION( (SUSY_HIT), (sh_reqd) )
+    ALLOW_MODELS(MSSM63atQ, MSSM63atMGUT)
+    #undef FUNCTION
+
+  #undef CAPABILITY
+
+  #define CAPABILITY neutralino_2_decay_rates
+  START_CAPABILITY
+
+    #define FUNCTION neutralino_2_decays
+    START_FUNCTION(DecayTable::Entry)
+    DEPENDENCY(SLHA_pseudonyms, mass_es_pseudonyms)
+    BACKEND_REQ(cb_sd_neutwidth, (sh_reqd), sd_neutwidth_type)
+    BACKEND_REQ(cb_sd_neut2body, (sh_reqd), sd_neut2body_type)
+    BACKEND_REQ(cb_sd_neut2bodygrav, (sh_reqd), sd_neut2bodygrav_type)
+    BACKEND_REQ(cb_sd_neutloop, (sh_reqd), sd_neutloop_type)
+    BACKEND_REQ(cb_sd_neut3body, (sh_reqd), sd_neut3body_type)
+    BACKEND_OPTION( (SUSY_HIT), (sh_reqd) )
+    ALLOW_MODELS(MSSM63atQ, MSSM63atMGUT)
+    #undef FUNCTION
+
+  #undef CAPABILITY
+
+  #define CAPABILITY neutralino_3_decay_rates
+  START_CAPABILITY
+
+    #define FUNCTION neutralino_3_decays
+    START_FUNCTION(DecayTable::Entry)
+    DEPENDENCY(SLHA_pseudonyms, mass_es_pseudonyms)
+    BACKEND_REQ(cb_sd_neutwidth, (sh_reqd), sd_neutwidth_type)
+    BACKEND_REQ(cb_sd_neut2body, (sh_reqd), sd_neut2body_type)
+    BACKEND_REQ(cb_sd_neut2bodygrav, (sh_reqd), sd_neut2bodygrav_type)
+    BACKEND_REQ(cb_sd_neutloop, (sh_reqd), sd_neutloop_type)
+    BACKEND_REQ(cb_sd_neut3body, (sh_reqd), sd_neut3body_type)
+    BACKEND_OPTION( (SUSY_HIT), (sh_reqd) )
+    ALLOW_MODELS(MSSM63atQ, MSSM63atMGUT)
+    #undef FUNCTION
+
+  #undef CAPABILITY
+
+  #define CAPABILITY neutralino_4_decay_rates
+  START_CAPABILITY
+
+    #define FUNCTION neutralino_4_decays
+    START_FUNCTION(DecayTable::Entry)
+    DEPENDENCY(SLHA_pseudonyms, mass_es_pseudonyms)
+    BACKEND_REQ(cb_sd_neutwidth, (sh_reqd), sd_neutwidth_type)
+    BACKEND_REQ(cb_sd_neut2body, (sh_reqd), sd_neut2body_type)
+    BACKEND_REQ(cb_sd_neut2bodygrav, (sh_reqd), sd_neut2bodygrav_type)
+    BACKEND_REQ(cb_sd_neutloop, (sh_reqd), sd_neutloop_type)
+    BACKEND_REQ(cb_sd_neut3body, (sh_reqd), sd_neut3body_type)
+    BACKEND_OPTION( (SUSY_HIT), (sh_reqd) )
+    ALLOW_MODELS(MSSM63atQ, MSSM63atMGUT)
+    #undef FUNCTION
+
+
+  #undef CAPABILITY
+
+  #define CAPABILITY decay_rates
+  START_CAPABILITY
+
+    #define FUNCTION all_decays_from_SLHA
+    START_FUNCTION(DecayTable)
+    #undef FUNCTION
+
+    #define FUNCTION all_decays
+    START_FUNCTION(DecayTable)
+    DEPENDENCY(Higgs_decay_rates, DecayTable::Entry)
+    DEPENDENCY(W_minus_decay_rates, DecayTable::Entry)
+    DEPENDENCY(W_plus_decay_rates, DecayTable::Entry)
+    DEPENDENCY(Z_decay_rates, DecayTable::Entry)
+    DEPENDENCY(t_decay_rates, DecayTable::Entry)
+    DEPENDENCY(tbar_decay_rates, DecayTable::Entry)
+    DEPENDENCY(mu_minus_decay_rates, DecayTable::Entry)
+    DEPENDENCY(mu_plus_decay_rates, DecayTable::Entry)
+    DEPENDENCY(tau_minus_decay_rates, DecayTable::Entry)
+    DEPENDENCY(tau_plus_decay_rates, DecayTable::Entry)
+    DEPENDENCY(pi_0_decay_rates, DecayTable::Entry)
+    DEPENDENCY(pi_minus_decay_rates, DecayTable::Entry)
+    DEPENDENCY(pi_plus_decay_rates, DecayTable::Entry)
+    DEPENDENCY(eta_decay_rates, DecayTable::Entry)
+    DEPENDENCY(rho_0_decay_rates, DecayTable::Entry)
+    DEPENDENCY(rho_minus_decay_rates, DecayTable::Entry)
+    DEPENDENCY(rho_plus_decay_rates, DecayTable::Entry)
+    DEPENDENCY(omega_decay_rates, DecayTable::Entry)
+    DEPENDENCY(rho1450_decay_rates, DecayTable::Entry)
+    MODEL_CONDITIONAL_DEPENDENCY(MSSM_spectrum, Spectrum, MSSM63atQ, MSSM63atMGUT)
+    MODEL_CONDITIONAL_DEPENDENCY(SLHA_pseudonyms, mass_es_pseudonyms, MSSM63atQ, MSSM63atMGUT)
+    MODEL_CONDITIONAL_DEPENDENCY(h0_2_decay_rates, DecayTable::Entry, MSSM63atQ, MSSM63atMGUT)
+    MODEL_CONDITIONAL_DEPENDENCY(A0_decay_rates, DecayTable::Entry, MSSM63atQ, MSSM63atMGUT)
+    MODEL_CONDITIONAL_DEPENDENCY(H_plus_decay_rates, DecayTable::Entry, MSSM63atQ, MSSM63atMGUT)
+    MODEL_CONDITIONAL_DEPENDENCY(H_minus_decay_rates, DecayTable::Entry, MSSM63atQ, MSSM63atMGUT)
+    MODEL_CONDITIONAL_DEPENDENCY(gluino_decay_rates, DecayTable::Entry, MSSM63atQ, MSSM63atMGUT)
+    MODEL_CONDITIONAL_DEPENDENCY(stop_1_decay_rates, DecayTable::Entry, MSSM63atQ, MSSM63atMGUT)
+    MODEL_CONDITIONAL_DEPENDENCY(stop_2_decay_rates, DecayTable::Entry, MSSM63atQ, MSSM63atMGUT)
+    MODEL_CONDITIONAL_DEPENDENCY(sbottom_1_decay_rates, DecayTable::Entry, MSSM63atQ, MSSM63atMGUT)
+    MODEL_CONDITIONAL_DEPENDENCY(sbottom_2_decay_rates, DecayTable::Entry, MSSM63atQ, MSSM63atMGUT)
+    MODEL_CONDITIONAL_DEPENDENCY(sup_l_decay_rates, DecayTable::Entry, MSSM63atQ, MSSM63atMGUT)
+    MODEL_CONDITIONAL_DEPENDENCY(sup_r_decay_rates, DecayTable::Entry, MSSM63atQ, MSSM63atMGUT)
+    MODEL_CONDITIONAL_DEPENDENCY(sdown_l_decay_rates, DecayTable::Entry, MSSM63atQ, MSSM63atMGUT)
+    MODEL_CONDITIONAL_DEPENDENCY(sdown_r_decay_rates, DecayTable::Entry, MSSM63atQ, MSSM63atMGUT)
+    MODEL_CONDITIONAL_DEPENDENCY(scharm_l_decay_rates, DecayTable::Entry, MSSM63atQ, MSSM63atMGUT)
+    MODEL_CONDITIONAL_DEPENDENCY(scharm_r_decay_rates, DecayTable::Entry, MSSM63atQ, MSSM63atMGUT)
+    MODEL_CONDITIONAL_DEPENDENCY(sstrange_l_decay_rates, DecayTable::Entry, MSSM63atQ, MSSM63atMGUT)
+    MODEL_CONDITIONAL_DEPENDENCY(sstrange_r_decay_rates, DecayTable::Entry, MSSM63atQ, MSSM63atMGUT)
+    MODEL_CONDITIONAL_DEPENDENCY(selectron_l_decay_rates, DecayTable::Entry, MSSM63atQ, MSSM63atMGUT)
+    MODEL_CONDITIONAL_DEPENDENCY(selectron_r_decay_rates, DecayTable::Entry, MSSM63atQ, MSSM63atMGUT)
+    MODEL_CONDITIONAL_DEPENDENCY(smuon_l_decay_rates, DecayTable::Entry, MSSM63atQ, MSSM63atMGUT)
+    MODEL_CONDITIONAL_DEPENDENCY(smuon_r_decay_rates, DecayTable::Entry, MSSM63atQ, MSSM63atMGUT)
+    MODEL_CONDITIONAL_DEPENDENCY(stau_1_decay_rates, DecayTable::Entry, MSSM63atQ, MSSM63atMGUT)
+    MODEL_CONDITIONAL_DEPENDENCY(stau_2_decay_rates, DecayTable::Entry, MSSM63atQ, MSSM63atMGUT)
+    MODEL_CONDITIONAL_DEPENDENCY(snu_electronl_decay_rates, DecayTable::Entry, MSSM63atQ, MSSM63atMGUT)
+    MODEL_CONDITIONAL_DEPENDENCY(snu_muonl_decay_rates, DecayTable::Entry, MSSM63atQ, MSSM63atMGUT)
+    MODEL_CONDITIONAL_DEPENDENCY(snu_taul_decay_rates, DecayTable::Entry, MSSM63atQ, MSSM63atMGUT)
+    MODEL_CONDITIONAL_DEPENDENCY(stopbar_1_decay_rates, DecayTable::Entry, MSSM63atQ, MSSM63atMGUT)
+    MODEL_CONDITIONAL_DEPENDENCY(stopbar_2_decay_rates, DecayTable::Entry, MSSM63atQ, MSSM63atMGUT)
+    MODEL_CONDITIONAL_DEPENDENCY(sbottombar_1_decay_rates, DecayTable::Entry, MSSM63atQ, MSSM63atMGUT)
+    MODEL_CONDITIONAL_DEPENDENCY(sbottombar_2_decay_rates, DecayTable::Entry, MSSM63atQ, MSSM63atMGUT)
+    MODEL_CONDITIONAL_DEPENDENCY(supbar_l_decay_rates, DecayTable::Entry, MSSM63atQ, MSSM63atMGUT)
+    MODEL_CONDITIONAL_DEPENDENCY(supbar_r_decay_rates, DecayTable::Entry, MSSM63atQ, MSSM63atMGUT)
+    MODEL_CONDITIONAL_DEPENDENCY(sdownbar_l_decay_rates, DecayTable::Entry, MSSM63atQ, MSSM63atMGUT)
+    MODEL_CONDITIONAL_DEPENDENCY(sdownbar_r_decay_rates, DecayTable::Entry, MSSM63atQ, MSSM63atMGUT)
+    MODEL_CONDITIONAL_DEPENDENCY(scharmbar_l_decay_rates, DecayTable::Entry, MSSM63atQ, MSSM63atMGUT)
+    MODEL_CONDITIONAL_DEPENDENCY(scharmbar_r_decay_rates, DecayTable::Entry, MSSM63atQ, MSSM63atMGUT)
+    MODEL_CONDITIONAL_DEPENDENCY(sstrangebar_l_decay_rates, DecayTable::Entry, MSSM63atQ, MSSM63atMGUT)
+    MODEL_CONDITIONAL_DEPENDENCY(sstrangebar_r_decay_rates, DecayTable::Entry, MSSM63atQ, MSSM63atMGUT)
+    MODEL_CONDITIONAL_DEPENDENCY(selectronbar_l_decay_rates, DecayTable::Entry, MSSM63atQ, MSSM63atMGUT)
+    MODEL_CONDITIONAL_DEPENDENCY(selectronbar_r_decay_rates, DecayTable::Entry, MSSM63atQ, MSSM63atMGUT)
+    MODEL_CONDITIONAL_DEPENDENCY(smuonbar_l_decay_rates, DecayTable::Entry, MSSM63atQ, MSSM63atMGUT)
+    MODEL_CONDITIONAL_DEPENDENCY(smuonbar_r_decay_rates, DecayTable::Entry, MSSM63atQ, MSSM63atMGUT)
+    MODEL_CONDITIONAL_DEPENDENCY(staubar_1_decay_rates, DecayTable::Entry, MSSM63atQ, MSSM63atMGUT)
+    MODEL_CONDITIONAL_DEPENDENCY(staubar_2_decay_rates, DecayTable::Entry, MSSM63atQ, MSSM63atMGUT)
+    MODEL_CONDITIONAL_DEPENDENCY(snubar_electronl_decay_rates, DecayTable::Entry, MSSM63atQ, MSSM63atMGUT)
+    MODEL_CONDITIONAL_DEPENDENCY(snubar_muonl_decay_rates, DecayTable::Entry, MSSM63atQ, MSSM63atMGUT)
+    MODEL_CONDITIONAL_DEPENDENCY(snubar_taul_decay_rates, DecayTable::Entry, MSSM63atQ, MSSM63atMGUT)
+    MODEL_CONDITIONAL_DEPENDENCY(chargino_plus_1_decay_rates, DecayTable::Entry, MSSM63atQ, MSSM63atMGUT)
+    MODEL_CONDITIONAL_DEPENDENCY(chargino_minus_1_decay_rates, DecayTable::Entry, MSSM63atQ, MSSM63atMGUT)
+    MODEL_CONDITIONAL_DEPENDENCY(chargino_plus_2_decay_rates, DecayTable::Entry, MSSM63atQ, MSSM63atMGUT)
+    MODEL_CONDITIONAL_DEPENDENCY(chargino_minus_2_decay_rates, DecayTable::Entry, MSSM63atQ, MSSM63atMGUT)
+    MODEL_CONDITIONAL_DEPENDENCY(neutralino_1_decay_rates, DecayTable::Entry, MSSM63atQ, MSSM63atMGUT)
+    MODEL_CONDITIONAL_DEPENDENCY(neutralino_2_decay_rates, DecayTable::Entry, MSSM63atQ, MSSM63atMGUT)
+    MODEL_CONDITIONAL_DEPENDENCY(neutralino_3_decay_rates, DecayTable::Entry, MSSM63atQ, MSSM63atMGUT)
+    MODEL_CONDITIONAL_DEPENDENCY(neutralino_4_decay_rates, DecayTable::Entry, MSSM63atQ, MSSM63atMGUT)
+    #undef FUNCTION
+
+  #undef CAPABILITY
+
+  #define CAPABILITY all_BFs
+  START_CAPABILITY
+    #define FUNCTION get_decaytable_as_map
+    START_FUNCTION(map_str_dbl)
+    DEPENDENCY(decay_rates, DecayTable)
+    #undef FUNCTION
+  #undef CAPABILITY
+
+  #define CAPABILITY SLHA1_violation
+  START_CAPABILITY
+    #define FUNCTION check_first_sec_gen_mixing
+    START_FUNCTION(int)
+    DEPENDENCY(MSSM_spectrum, Spectrum)
+    #undef FUNCTION
+  #undef CAPABILITY
+
+
+  #define CAPABILITY SLHA_pseudonyms
+  START_CAPABILITY
+    #define FUNCTION get_mass_es_pseudonyms
+    START_FUNCTION(mass_es_pseudonyms)
+    DEPENDENCY(MSSM_spectrum, Spectrum)
+    #undef FUNCTION
+  #undef CAPABILITY
+
+  #define CAPABILITY Z_gamma_nu
+  START_CAPABILITY
+    #define FUNCTION Z_gamma_nu_2l
+    START_FUNCTION(triplet&lt;double&gt;)
+    DEPENDENCY(SM_spectrum, Spectrum)
+    MODEL_CONDITIONAL_DEPENDENCY(SeesawI_Theta, Eigen::Matrix3cd, RightHandedNeutrinos)
+    MODEL_CONDITIONAL_DEPENDENCY(SeesawI_Vnu, Eigen::Matrix3cd, RightHandedNeutrinos)
+    ALLOW_MODELS(StandardModel_SLHA2,RightHandedNeutrinos)
+    #undef FUNCTION
+  #undef CAPABILITY
+
+  #define CAPABILITY Z_gamma_chi_0
+  START_CAPABILITY
+    #define FUNCTION Z_gamma_chi_0_MSSM_tree
+    START_FUNCTION(triplet&lt;double&gt;)
+    DEPENDENCY(MSSM_spectrum, Spectrum)
+    ALLOW_MODELS(MSSM63atQ, MSSM63atMGUT)
+    #undef FUNCTION
+  #undef CAPABILITY
+
+  #define CAPABILITY lnL_Z_inv
+  START_CAPABILITY
+    #define FUNCTION lnL_Z_inv
+    START_FUNCTION(double)
+    DEPENDENCY(Z_gamma_nu, triplet&lt;double&gt;)
+    MODEL_CONDITIONAL_DEPENDENCY(Z_gamma_chi_0, triplet&lt;double&gt;, MSSM63atQ, MSSM63atMGUT)
+    #undef FUNCTION
+  #undef CAPABILITY
+
+  #define CAPABILITY W_to_l_decays
+  START_CAPABILITY
+    #define FUNCTION RHN_W_to_l_decays
+    START_FUNCTION(std::vector&lt;double&gt;)
+    DEPENDENCY(SMINPUTS, SMInputs)
+    DEPENDENCY(mw, triplet&lt;double&gt;)
+    DEPENDENCY(SeesawI_Theta, Eigen::Matrix3cd)
+    ALLOW_MODEL(RightHandedNeutrinos)
+    #undef FUNCTION
+  #undef CAPABILITY
+
+  #define CAPABILITY lnL_W_decays
+  START_CAPABILITY
+    #define FUNCTION lnL_W_decays_chi2
+    START_FUNCTION(double)
+    DEPENDENCY(W_to_l_decays, std::vector&lt;double&gt;)
+    DEPENDENCY(W_plus_decay_rates, DecayTable::Entry)
+    #undef FUNCTION
+  #undef CAPABILITY
+
+  #define CAPABILITY lnL_Higgs_invWidth
+  START_CAPABILITY
+    #define FUNCTION lnL_Higgs_invWidth_SMlike
+    START_FUNCTION(double)
+    DEPENDENCY(inv_Higgs_BF, double)
+    #undef FUNCTION
+  #undef CAPABILITY
+
+  #define CAPABILITY inv_Higgs_BF
+  START_CAPABILITY
+
+    #define FUNCTION ScalarSingletDM_inv_Higgs_BF
+    START_FUNCTION(double)
+    DEPENDENCY(Higgs_decay_rates, DecayTable::Entry)
+    ALLOW_MODELS(ScalarSingletDM_Z2, ScalarSingletDM_Z2_running, ScalarSingletDM_Z3, ScalarSingletDM_Z3_running)
+    #undef FUNCTION
+
+    #define FUNCTION VectorSingletDM_inv_Higgs_BF
+    START_FUNCTION(double)
+    DEPENDENCY(Higgs_decay_rates, DecayTable::Entry)
+    ALLOW_MODELS(VectorSingletDM_Z2)
+    #undef FUNCTION
+
+    #define FUNCTION MajoranaSingletDM_inv_Higgs_BF
+    START_FUNCTION(double)
+    DEPENDENCY(Higgs_decay_rates, DecayTable::Entry)
+    ALLOW_MODELS(MajoranaSingletDM_Z2)
+    #undef FUNCTION
+
+    #define FUNCTION DiracSingletDM_inv_Higgs_BF
+    START_FUNCTION(double)
+    DEPENDENCY(Higgs_decay_rates, DecayTable::Entry)
+    ALLOW_MODELS(DiracSingletDM_Z2)
+    #undef FUNCTION
+
+    #define FUNCTION MSSM_inv_Higgs_BF
+    START_FUNCTION(double)
+    DEPENDENCY(MSSM_spectrum, Spectrum)
+    ALLOW_MODELS(MSSM63atQ, MSSM63atMGUT)
+    #undef FUNCTION
+
+  #undef CAPABILITY
+
+#undef REFERENCE
+#undef MODULE
+
+// SM decay rate functions
+QUICK_FUNCTION(DecayBit, W_plus_decay_rates,    NEW_CAPABILITY, W_plus_decays,    DecayTable::Entry)
+QUICK_FUNCTION(DecayBit, W_minus_decay_rates ,  NEW_CAPABILITY, W_minus_decays,   DecayTable::Entry, (), (W_plus_decay_rates,   DecayTable::Entry))
+QUICK_FUNCTION(DecayBit, Z_decay_rates,         OLD_CAPABILITY, Z_decays,         DecayTable::Entry)
+QUICK_FUNCTION(DecayBit, tbar_decay_rates,      NEW_CAPABILITY, tbar_decays,      DecayTable::Entry, (), (t_decay_rates,        DecayTable::Entry))
+QUICK_FUNCTION(DecayBit, mu_plus_decay_rates,   NEW_CAPABILITY, mu_plus_decays,   DecayTable::Entry)
+QUICK_FUNCTION(DecayBit, mu_minus_decay_rates,  NEW_CAPABILITY, mu_minus_decays,  DecayTable::Entry, (), (mu_plus_decay_rates,  DecayTable::Entry))
+QUICK_FUNCTION(DecayBit, tau_plus_decay_rates,  NEW_CAPABILITY, tau_plus_decays,  DecayTable::Entry)
+QUICK_FUNCTION(DecayBit, tau_minus_decay_rates, NEW_CAPABILITY, tau_minus_decays, DecayTable::Entry, (), (tau_plus_decay_rates, DecayTable::Entry))
+QUICK_FUNCTION(DecayBit, pi_0_decay_rates,      NEW_CAPABILITY, pi_0_decays,      DecayTable::Entry)
+QUICK_FUNCTION(DecayBit, pi_plus_decay_rates,   NEW_CAPABILITY, pi_plus_decays,   DecayTable::Entry)
+QUICK_FUNCTION(DecayBit, pi_minus_decay_rates,  NEW_CAPABILITY, pi_minus_decays,  DecayTable::Entry, (), (pi_plus_decay_rates,  DecayTable::Entry))
+QUICK_FUNCTION(DecayBit, eta_decay_rates,       NEW_CAPABILITY, eta_decays,       DecayTable::Entry)
+QUICK_FUNCTION(DecayBit, rho_0_decay_rates,     NEW_CAPABILITY, rho_0_decays,     DecayTable::Entry)
+QUICK_FUNCTION(DecayBit, rho_plus_decay_rates,  NEW_CAPABILITY, rho_plus_decays,  DecayTable::Entry)
+QUICK_FUNCTION(DecayBit, rho_minus_decay_rates, NEW_CAPABILITY, rho_minus_decays, DecayTable::Entry, (), (rho_plus_decay_rates, DecayTable::Entry))
+QUICK_FUNCTION(DecayBit, omega_decay_rates,     NEW_CAPABILITY, omega_decays,     DecayTable::Entry)
+QUICK_FUNCTION(DecayBit, rho1450_decay_rates,   NEW_CAPABILITY, rho1450_decays,   DecayTable::Entry)
+
+// CP-conserving MSSM antiparticle decay rate functions
+QUICK_FUNCTION(DecayBit, H_minus_decay_rates,          NEW_CAPABILITY, H_minus_decays,          DecayTable::Entry, (MSSM63atQ, MSSM63atMGUT), (H_plus_decay_rates,          DecayTable::Entry))
+QUICK_FUNCTION(DecayBit, stopbar_1_decay_rates,        NEW_CAPABILITY, stopbar_1_decays,        DecayTable::Entry, (MSSM63atQ, MSSM63atMGUT), (stop_1_decay_rates,         DecayTable::Entry))
+QUICK_FUNCTION(DecayBit, stopbar_2_decay_rates,        NEW_CAPABILITY, stopbar_2_decays,        DecayTable::Entry, (MSSM63atQ, MSSM63atMGUT), (stop_2_decay_rates,         DecayTable::Entry))
+QUICK_FUNCTION(DecayBit, sbottombar_1_decay_rates,     NEW_CAPABILITY, sbottombar_1_decays,     DecayTable::Entry, (MSSM63atQ, MSSM63atMGUT), (sbottom_1_decay_rates,      DecayTable::Entry))
+QUICK_FUNCTION(DecayBit, sbottombar_2_decay_rates,     NEW_CAPABILITY, sbottombar_2_decays,     DecayTable::Entry, (MSSM63atQ, MSSM63atMGUT), (sbottom_2_decay_rates,      DecayTable::Entry))
+QUICK_FUNCTION(DecayBit, supbar_l_decay_rates,         NEW_CAPABILITY, supbar_l_decays,         DecayTable::Entry, (MSSM63atQ, MSSM63atMGUT), (sup_l_decay_rates,          DecayTable::Entry))
+QUICK_FUNCTION(DecayBit, supbar_r_decay_rates,         NEW_CAPABILITY, supbar_r_decays,         DecayTable::Entry, (MSSM63atQ, MSSM63atMGUT), (sup_r_decay_rates,          DecayTable::Entry))
+QUICK_FUNCTION(DecayBit, sdownbar_l_decay_rates,       NEW_CAPABILITY, sdownbar_l_decays,       DecayTable::Entry, (MSSM63atQ, MSSM63atMGUT), (sdown_l_decay_rates,        DecayTable::Entry))
+QUICK_FUNCTION(DecayBit, sdownbar_r_decay_rates,       NEW_CAPABILITY, sdownbar_r_decays,       DecayTable::Entry, (MSSM63atQ, MSSM63atMGUT), (sdown_r_decay_rates,        DecayTable::Entry))
+QUICK_FUNCTION(DecayBit, scharmbar_l_decay_rates,      NEW_CAPABILITY, scharmbar_l_decays,      DecayTable::Entry, (MSSM63atQ, MSSM63atMGUT), (scharm_l_decay_rates,       DecayTable::Entry))
+QUICK_FUNCTION(DecayBit, scharmbar_r_decay_rates,      NEW_CAPABILITY, scharmbar_r_decays,      DecayTable::Entry, (MSSM63atQ, MSSM63atMGUT), (scharm_r_decay_rates,       DecayTable::Entry))
+QUICK_FUNCTION(DecayBit, sstrangebar_l_decay_rates,    NEW_CAPABILITY, sstrangebar_l_decays,    DecayTable::Entry, (MSSM63atQ, MSSM63atMGUT), (sstrange_l_decay_rates,     DecayTable::Entry))
+QUICK_FUNCTION(DecayBit, sstrangebar_r_decay_rates,    NEW_CAPABILITY, sstrangebar_r_decays,    DecayTable::Entry, (MSSM63atQ, MSSM63atMGUT), (sstrange_r_decay_rates,     DecayTable::Entry))
+QUICK_FUNCTION(DecayBit, selectronbar_l_decay_rates,   NEW_CAPABILITY, selectronbar_l_decays,   DecayTable::Entry, (MSSM63atQ, MSSM63atMGUT), (selectron_l_decay_rates,    DecayTable::Entry))
+QUICK_FUNCTION(DecayBit, selectronbar_r_decay_rates,   NEW_CAPABILITY, selectronbar_r_decays,   DecayTable::Entry, (MSSM63atQ, MSSM63atMGUT), (selectron_r_decay_rates,    DecayTable::Entry))
+QUICK_FUNCTION(DecayBit, smuonbar_l_decay_rates,       NEW_CAPABILITY, smuonbar_l_decays,       DecayTable::Entry, (MSSM63atQ, MSSM63atMGUT), (smuon_l_decay_rates,        DecayTable::Entry))
+QUICK_FUNCTION(DecayBit, smuonbar_r_decay_rates,       NEW_CAPABILITY, smuonbar_r_decays,       DecayTable::Entry, (MSSM63atQ, MSSM63atMGUT), (smuon_r_decay_rates,        DecayTable::Entry))
+QUICK_FUNCTION(DecayBit, staubar_1_decay_rates,        NEW_CAPABILITY, staubar_1_decays,        DecayTable::Entry, (MSSM63atQ, MSSM63atMGUT), (stau_1_decay_rates,         DecayTable::Entry))
+QUICK_FUNCTION(DecayBit, staubar_2_decay_rates,        NEW_CAPABILITY, staubar_2_decays,        DecayTable::Entry, (MSSM63atQ, MSSM63atMGUT), (stau_2_decay_rates,         DecayTable::Entry))
+QUICK_FUNCTION(DecayBit, snubar_electronl_decay_rates, NEW_CAPABILITY, snubar_electronl_decays, DecayTable::Entry, (MSSM63atQ, MSSM63atMGUT), (snu_electronl_decay_rates,  DecayTable::Entry))
+QUICK_FUNCTION(DecayBit, snubar_muonl_decay_rates,     NEW_CAPABILITY, snubar_muonl_decays,     DecayTable::Entry, (MSSM63atQ, MSSM63atMGUT), (snu_muonl_decay_rates,      DecayTable::Entry))
+QUICK_FUNCTION(DecayBit, snubar_taul_decay_rates,      NEW_CAPABILITY, snubar_taul_decays,      DecayTable::Entry, (MSSM63atQ, MSSM63atMGUT), (snu_taul_decay_rates,       DecayTable::Entry))
+QUICK_FUNCTION(DecayBit, chargino_minus_1_decay_rates, NEW_CAPABILITY, chargino_minus_1_decays, DecayTable::Entry, (MSSM63atQ, MSSM63atMGUT), (chargino_plus_1_decay_rates,DecayTable::Entry))
+QUICK_FUNCTION(DecayBit, chargino_minus_2_decay_rates, NEW_CAPABILITY, chargino_minus_2_decays, DecayTable::Entry, (MSSM63atQ, MSSM63atMGUT), (chargino_plus_2_decay_rates,DecayTable::Entry))
+
+#endif /* defined(__DecayBit_rollcall_hpp__) */
+</code></pre><hr><p>Updated on 2022-08-03 at 06:57:09 +0000</p><div class=edit-page><a href=https://github.com/RC1242RC/gambit_gh_pages/blob/master/content/en/documentation/code/gambit_2/Files/DecayBit__rollcall_8hpp.md><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2"><path d="M17 3a2.828 2.828.0 114 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></svg>Edit this page on GitHub</a></div></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a class=text-muted href=https://www.netlify.com/>Netlify</a>, <a class=text-muted href=https://gohugo.io/>Hugo</a>, and <a class=text-muted href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.54bf0932b8a36d0e152b1635b099a6ef1394d35327e2437550a075c9c8ed1bd8aed5847c21b36fc02ed24014c031d9ca24017b0c78b1639d7e2fa8329898b842.js integrity="sha512-VL8JMrijbQ4VKxY1sJmm7xOU01Mn4kN1UKB1ycjtG9iu1YR8IbNvwC7SQBTAMdnKJAF7DHixY51+L6gymJi4Qg==" crossorigin=anonymous defer></script>
+<script src=/js/highlight.min.5b48bc253dc75aeea5fb366ecf700f4925e2b6eb1a1466f2124b722d68148d67bc0a9365d2b8ad9c585161b46372d23b08509a16f1fd518542b894756d4752d0.js integrity="sha512-W0i8JT3HWu6l+zZuz3APSSXitusaFGbyEktyLWgUjWe8CpNl0ritnFhRYbRjctI7CFCaFvH9UYVCuJR1bUdS0A==" crossorigin=anonymous defer></script>
+<script src=/main.min.40265e9a032aeba5eaf67baac3cbbc22667a7533215d326eeb3e9f4d5e4be40f9ff4dcd22949db73ae527ca26a19d7998091a8973c82af760b2c0daa335190ed.js integrity="sha512-QCZemgMq66Xq9nuqw8u8ImZ6dTMhXTJu6z6fTV5L5A+f9NzSKUnbc65SfKJqGdeZgJGolzyCr3YLLA2qM1GQ7Q==" crossorigin=anonymous defer></script>
+<script src=https://rc1242rc.github.io/index.min.6647562b63f638e12a98b3d934c77e007cba5fb3df1cd7915ff76ce485bc2c07c7b57aae6bfae67c2b613d5b2cd510c1dae90e4b8834ed7c4916569fbe3b22c7.js integrity="sha512-ZkdWK2P2OOEqmLPZNMd+AHy6X7PfHNeRX/ds5IW8LAfHtXqua/rmfCthPVss1RDB2ukOS4g07XxJFlafvjsixw==" crossorigin=anonymous defer></script></body></html>
