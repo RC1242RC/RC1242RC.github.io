@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="{{ .Site.LanguageCode | default "en" }}">
-  {{ partial "head/head.html" . }}
+  {{ partialCached "head/head.html" . }}
   {{ if eq .Kind "home" -}}
     {{ .Scratch.Set "class" "home" -}}
   {{ else if eq .Kind "404" -}}
@@ -13,7 +13,7 @@
     {{ .Scratch.Add "class" " list" -}}
   {{ end -}}
   <body class="{{ .Scratch.Get "class" }} light">
-    {{ partial "header/header.html" . }}
+    {{ partialCached "header/header.html" . }}
     <div class="wrap container-{{ if .Site.Params.options.fullWidth }}fluid{{ else }}xxl{{ end }}" role="document">
       <div class="content">
         {{ block "main" . }}{{ end }}

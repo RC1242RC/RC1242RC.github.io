@@ -11700,7 +11700,7 @@ figure.wide .figure-caption {
 
 #suggestions span {
   display: flex;
-  font-size: 1rem; }
+  font-size: 0.875rem; }
 
 .suggestion__title {
   font-weight: 700;
@@ -11710,6 +11710,10 @@ figure.wide .figure-caption {
 .suggestion__no-results {
   color: #495057; }
 
+.suggestion__permalink {
+  font-family: sfmono-regular, menlo, monaco, consolas, "Liberation Mono", "Courier New", monospace;
+  color: #495057; }
+
 @media (min-width: 992px) {
   #suggestions {
     width: 70rem;
@@ -11717,14 +11721,21 @@ figure.wide .figure-caption {
   #suggestions a {
     display: flex; }
   .suggestion__title {
-    width: 34rem;
+    width: 24rem;
     padding-right: 1rem;
     border-right: 1px solid #e9ecef;
     display: inline-block;
-    text-align: right; }
+    text-align: left; }
   .suggestion__description {
     width: 34rem;
-    padding-left: 1rem; } }
+    padding-left: 1rem; }
+  .suggestion__permalink {
+    width: 38rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-right: 1px solid #e9ecef;
+    display: inline-block;
+    text-align: left; } }
 
 table {
   margin: 3rem 0; }
