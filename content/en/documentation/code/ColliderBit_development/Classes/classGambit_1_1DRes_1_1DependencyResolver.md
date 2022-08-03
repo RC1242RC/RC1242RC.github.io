@@ -215,4 +215,4 @@ Helper function that returns a new graph with all inactive vertices removed.
 
 -------------------------------
 
-Updated on 2022-08-02 at 23:34:47 +0000
+Updated on 2022-08-03 at 00:01:09 +0000
