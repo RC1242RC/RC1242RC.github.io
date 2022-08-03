@@ -154,10 +154,9 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           path: ./content/en/documentation/code
-      - name: add _index file to act as code menu
+      - name: Move and rename _index file to act as code menu
         if: ${{ inputs.rebuild_all }}
-        run: touch _index.md
-        working-directory: ./content/en/documentation/code
+        run: cp code_index_template.md ./content/en/documentation/code/_index.md
       - name: Commit changes
         if: ${{ inputs.rebuild_all }}
         run: git config --local user.email "test@github.com"
