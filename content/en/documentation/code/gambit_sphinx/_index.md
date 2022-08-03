@@ -1,9 +1,9 @@
 ---
-title: ""
+title: "gambit_sphinx"
 menu:
   documentation:
     parent: "code"
-    identifier: ""
+    identifier: "gambit_sphinx"
     params:
       version: "release"
 ---

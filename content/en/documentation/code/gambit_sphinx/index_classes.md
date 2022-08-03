@@ -2,8 +2,8 @@
 title: "Classes"
 menu:
   documentation:
-    parent: ""
-    identifier: "Classes" 
+    parent: "gambit_sphinx"
+    identifier: "gambit_sphinxClasses" 
 weight: 20
 ---
 
@@ -703,4 +703,4 @@ weight: 20
 
 -------------------------------
 
-Updated on 2022-08-03 at 02:29:34 +0000
+Updated on 2022-08-03 at 03:17:00 +0000

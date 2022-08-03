@@ -3,8 +3,8 @@ title: "Pages"
 
 menu:
   documentation:
-    parent: ""
-    identifier: "Pages" 
+    parent: "gambit_sphinx"
+    identifier: "gambit_sphinxPages" 
 weight: 40
 ---
 
@@ -16,4 +16,4 @@ weight: 40
 
 -------------------------------
 
-Updated on 2022-08-03 at 02:29:34 +0000
+Updated on 2022-08-03 at 03:17:00 +0000
