@@ -58,29 +58,33 @@ jobs:
           && unzip doxybook2-linux-amd64-v1.4.0.zip -d ./doxybook2
       - name: Install sed
         run: sudo apt-get install sed
+      - name: Set folder variable
+        run: str=${{ matrix.branches }}
+          && echo "folder2=${str%_*}" >> $GITHUB_ENV
       - name: Shallow clone branch
-        run: git clone --depth 1 ${{ inputs.dev_repo }} --branch ${{ matrix.branches }} ${{ matrix.branches }}_source
+        run: git clone --depth 1 ${{ inputs.dev_repo }} --branch ${{ env.folder2 }} ${{ env.folder2 }}_source
       - name: Generate doxygen xml
         uses: mattnotmitt/doxygen-action@v1.9.4
         with:
-          working-directory: ./${{ matrix.branches }}_source
+          working-directory: ./${{ env.folder2 }}_source
           doxyfile-path: ../doxygen_and_doxybook2/Doxyfile
       - name: Change baseURL for md output
-        run: sed -i -e 's+/documentation/code/+/documentation/code/${{ matrix.branches }}/+g' ./doxygen_and_doxybook2/config.json
+        run: sed -i -e 's+/documentation/code/+/documentation/code/${{ env.folder2 }}/+g' ./doxygen_and_doxybook2/config.json
       - name: Convert xml to md using doxybook2
-        run: mkdir ${{ matrix.branches }}
-          && ./doxybook2/bin/doxybook2 --input ./xml --output ./${{ matrix.branches }} --config ./doxygen_and_doxybook2/config.json --templates ./doxygen_and_doxybook2/doxybook_templates
+        run: mkdir ${{ env.folder2 }}
+          && ./doxybook2/bin/doxybook2 --input ./xml --output ./${{ env.folder2 }} --config ./doxygen_and_doxybook2/config.json --templates ./doxygen_and_doxybook2/doxybook_templates
       - name: Copy index template into branch folder to act as parent menu
-        run: cp version_index_template.md ./${{ matrix.branches }}/_index.md
-      - name: Add gambit version (and type) into index files to reference parent menu
-        run: sed -i -- 's+GAMBIT_VERSION_HERE+${{ matrix.branches }}+g' *.md
+        run: cp version_index_template.md ./${{ env.folder2 }}/_index.md
+      - name: Add gambit version, type, and weights into index files to reference parent menu
+        run: sed -i -- 's+GAMBIT_VERSION_HERE+${{ env.folder2 }}+g' *.md
           && sed -i -- 's+VERSION_TYPE_HERE+development+g' _index.md
-        working-directory: ./${{ matrix.branches }}
+          && sed -i -- 's+WEIGHT_HERE+20+g' _index.md
+        working-directory: ./${{ env.folder2 }}
       - name: Upload branch code md as artifact
         uses: actions/upload-artifact@v3
         with:
-          name: ${{ matrix.branches }}
-          path: ./${{ matrix.branches }}
+          name: ${{ env.folder2 }}
+          path: ./${{ env.folder2 }}
         
   document_repos_and_build_menu:
     if: ${{ inputs.rebuild_all }}
@@ -116,9 +120,10 @@ jobs:
           && ./doxybook2/bin/doxybook2 --input ./xml --output ./${{ env.folder }} --config ./doxygen_and_doxybook2/config.json --templates ./doxygen_and_doxybook2/doxybook_templates
       - name: Copy index template into repo folder to act as parent menu
         run: cp version_index_template.md ./${{ env.folder }}/_index.md
-      - name: Add gambit version (and type) into index files to reference parent menu
+      - name: Add gambit version, type, and weights into index files to reference parent menu
         run: sed -i -- 's+GAMBIT_VERSION_HERE+${{ env.folder }}+g' *.md
           && sed -i -- 's+VERSION_TYPE_HERE+release+g' _index.md
+          && sed -i -- 's+WEIGHT_HERE+10+g' _index.md
         working-directory: ./${{ env.folder }}
       - name: Upload repo code md as artifact
         uses: actions/upload-artifact@v3
