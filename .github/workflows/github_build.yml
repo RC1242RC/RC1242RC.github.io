@@ -117,7 +117,7 @@ jobs:
       - name: Copy index template into repo folder to act as parent menu
         run: cp version_index_template.md ./${{ env.folder }}/_index.md
       - name: Add gambit version (and type) into index files to reference parent menu
-        run: sed -i -- 's+GAMBIT_VERSION_HERE+${{ matrix.env.folder }}+g' *.md
+        run: sed -i -- 's+GAMBIT_VERSION_HERE+${{ env.folder }}+g' *.md
           && sed -i -- 's+VERSION_TYPE_HERE+release+g' _index.md
         working-directory: ./${{ env.folder }}
       - name: Upload repo code md as artifact
