@@ -1,0 +1,1402 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="ie=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><link rel=preload as=font href=https://rc1242rc.github.io/fonts/vendor/jost/jost-v4-latin-regular.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://rc1242rc.github.io/fonts/vendor/jost/jost-v4-latin-500.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://rc1242rc.github.io/fonts/vendor/jost/jost-v4-latin-700.woff2 type=font/woff2 crossorigin><script>(()=>{var e=localStorage.getItem("theme");e==="dark"&&document.documentElement.setAttribute("data-dark-mode","")})()</script><link rel=stylesheet href=https://rc1242rc.github.io/main.f12f7e04ea768acebec10c86baf049d74d6a79f24bc0dfb7ed77aa60462432916dd1ce8f41c78b69496adf650b3039a28a210183cce598f09b95d6fecb5ff999.css integrity="sha512-8S9+BOp2is6+wQyGuvBJ101qefJLwN+37XeqYEYkMpFt0c6PQceLaUlq32ULMDmiiiEBg8zlmPCbldb+y1/5mQ==" crossorigin=anonymous><noscript><style>img.lazyload{display:none}</style></noscript><meta name=robots content="index, follow"><meta name=googlebot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><meta name=bingbot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><title>file simple/simple/random_tools.hpp - GAMBIT</title><meta name=description content="[No description available]"><link rel=canonical href=https://rc1242rc.github.io/documentation/code/colliderbit/files/simple_2random__tools_8hpp/><meta property="og:locale" content="en_US"><meta property="og:type" content="article"><meta property="og:title" content="file simple/simple/random_tools.hpp"><meta property="og:description" content="[No description available]"><meta property="og:url" content="https://rc1242rc.github.io/documentation/code/colliderbit/files/simple_2random__tools_8hpp/"><meta property="og:site_name" content="GAMBIT"><meta property="og:image" content="https://rc1242rc.github.io/gambit_logo.png"><meta property="og:image:alt" content="GAMBIT"><meta name=twitter:card content="summary_large_image"><meta name=twitter:site content><meta name=twitter:creator content><meta name=twitter:title content="file simple/simple/random_tools.hpp"><meta name=twitter:description content="[No description available]"><meta name=twitter:image content="https://rc1242rc.github.io/gambit_logo.png"><meta name=twitter:image:alt content="file simple/simple/random_tools.hpp"><script type=application/ld+json>{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://rc1242rc.github.io/#/schema/organization/1","name":"Doks","url":"https://rc1242rc.github.io/","sameAs":["https://github.com/GambitBSM"],"logo":{"@type":"ImageObject","@id":"https://rc1242rc.github.io/#/schema/image/1","url":"https://rc1242rc.github.io/logo-doks.png","width":450,"height":416,"caption":"Doks"},"image":{"@id":"https://rc1242rc.github.io/#/schema/image/1"}},{"@type":"WebSite","@id":"https://rc1242rc.github.io/#/schema/website/1","url":"https://rc1242rc.github.io/","name":"GAMBIT","description":"Documentation for the Global And Modular BSM Inference Tool","publisher":{"@id":"https://rc1242rc.github.io/#/schema/organization/1"}},{"@type":"WebPage","@id":"https://rc1242rc.github.io/documentation/code/colliderbit/files/simple_2random__tools_8hpp/","url":"https://rc1242rc.github.io/documentation/code/colliderbit/files/simple_2random__tools_8hpp/","name":"file simple\/simple\/random_tools.hpp","description":"[No description available]","isPartOf":{"@id":"https://rc1242rc.github.io/#/schema/website/1"},"about":{"@id":"https://rc1242rc.github.io/#/schema/organization/1"},"datePublished":"0001-01-01T00:00:00CET","dateModified":"0001-01-01T00:00:00CET","breadcrumb":{"@id":"https://rc1242rc.github.io/documentation/code/colliderbit/files/simple_2random__tools_8hpp/#/schema/breadcrumb/1"},"primaryImageOfPage":{"@id":"https://rc1242rc.github.io/documentation/code/colliderbit/files/simple_2random__tools_8hpp/#/schema/image/2"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://rc1242rc.github.io/documentation/code/colliderbit/files/simple_2random__tools_8hpp/"]}]},{"@type":"BreadcrumbList","@id":"https://rc1242rc.github.io/documentation/code/colliderbit/files/simple_2random__tools_8hpp/#/schema/breadcrumb/1","name":"Breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/","url":"https://rc1242rc.github.io/","name":"Home"}},{"@type":"ListItem","position":2,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/documentation/","url":"https://rc1242rc.github.io/documentation/","name":"Documentation"}},{"@type":"ListItem","position":3,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/documentation/code/","url":"https://rc1242rc.github.io/documentation/code/","name":"Code"}},{"@type":"ListItem","position":4,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/documentation/code/colliderbit/","url":"https://rc1242rc.github.io/documentation/code/colliderbit/","name":"Colliderbit"}},{"@type":"ListItem","position":5,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/documentation/code/colliderbit/files/","url":"https://rc1242rc.github.io/documentation/code/colliderbit/files/","name":"Files"}},{"@type":"ListItem","position":6,"item":{"@id":"https://rc1242rc.github.io/documentation/code/colliderbit/files/simple_2random__tools_8hpp/"}}]},{"@context":"https://schema.org","@graph":[{"@type":"ImageObject","@id":"https://rc1242rc.github.io/documentation/code/colliderbit/files/simple_2random__tools_8hpp/#/schema/image/2","url":"https://rc1242rc.github.io/gambit_logo.png","contentUrl":"https://rc1242rc.github.io/gambit_logo.png","caption":"file simple\/simple\/random_tools.hpp"}]}]}</script><meta name=theme-color content="#fff"><link rel=icon href=https://rc1242rc.github.io/favicon.ico sizes=any><link rel=icon type=image/svg+xml href=https://rc1242rc.github.io/favicon.svg><link rel=apple-touch-icon sizes=180x180 href=https://rc1242rc.github.io/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=https://rc1242rc.github.io/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=https://rc1242rc.github.io/favicon-16x16.png><link rel=manifest crossorigin=use-credentials href=https://rc1242rc.github.io/site.webmanifest></head><body class="documentation single light"><div class=sticky-top><div class=header-bar></div><header class="navbar navbar-expand-md navbar-light doks-navbar"><nav class="container-xxl flex-wrap flex-md-nowrap" aria-label="Main navigation"><a class="navbar-brand p-0 me-auto" href=https://rc1242rc.github.io/ aria-label=GAMBIT><img class=logo-light src=https://rc1242rc.github.io//images/gambit_logo.png width=50px>
+<img class="logo-dark d-none" src=https://rc1242rc.github.io//images/gambit_logo.png width=50px>
+GAMBIT</a>
+<button class="btn btn-menu order-2 d-block d-lg-none" type=button data-bs-toggle=offcanvas data-bs-target=#offcanvasDoks aria-controls=offcanvasDoks aria-label="Open main menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button><div class="offcanvas offcanvas-end border-0 py-lg-1" tabindex=-1 id=offcanvasDoks data-bs-backdrop=true aria-labelledby=offcanvasDoksLabel><div class="header-bar d-lg-none"></div><div class="offcanvas-header d-lg-none"><h2 class="h5 offcanvas-title ps-2" id=offcanvasDoksLabel><a class=text-dark href=/>GAMBIT</a></h2><button type=button class="btn-close text-reset me-2" data-bs-dismiss=offcanvas aria-label="Close main menu"></button></div><div class="offcanvas-body p-4 p-lg-0"><ul class="nav flex-column flex-lg-row align-items-lg-center mt-2 mt-lg-0 ms-lg-2 me-lg-auto"><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Documentation
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=/documentation/installation/introduction/>Installation</a></li><li><a class=dropdown-item href=/documentation/examples/colliderbit_example>Examples</a></li><li><a class=dropdown-item href=/documentation/help/faqs/>Help</a></li><li><a class=dropdown-item href=/documentation/code/gambit_sphinx/index_classes>Code Reference</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Community
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=/community/publications/>Publications</a></li><li><a class=dropdown-item href=/community/talks/>Talks</a></li><li><a class=dropdown-item href=/community/members/>Members</a></li><li><a class=dropdown-item href=/community/code_of_conduct/>Code of Conduct</a></li><li><a class=dropdown-item href=/community/contact/>Contact</a></li></ul></li></ul><hr class="text-black-50 my-4 d-lg-none"><form class="doks-search position-relative flex-grow-1 ms-lg-auto me-lg-2"><input id=search class="form-control is-search" type=search placeholder="Search site..." aria-label="Search site..." autocomplete=off><div id=suggestions class="shadow bg-white rounded d-none"></div></form><hr class="text-black-50 my-4 d-lg-none"><ul class="nav flex-column flex-lg-row"><li class=nav-item><a class="nav-link social-link" href=https://github.com/GambitBSM><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37.0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44.0 0020 4.77 5.07 5.07.0 0019.91 1S18.73.65 16 2.48a13.38 13.38.0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07.0 005 4.77 5.44 5.44.0 003.5 8.55c0 5.42 3.3 6.61 6.44 7A3.37 3.37.0 009 18.13V22"/></svg><small class="ms-2 d-lg-none">GitHub</small></a></li></ul><hr class="text-black-50 my-4 d-lg-none"><div class=dropdown><button class="btn btn-doks-light dropdown-toggle" id=doks-versions data-bs-toggle=dropdown aria-expanded=false data-bs-display=static aria-label="Toggle version menu">
+<span class=d-none>Doks</span>
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></button><ul class="dropdown-menu dropdown-menu-lg-end me-lg-2 shadow rounded border-0" aria-labelledby=doks-versions></ul></div></div></div></nav></header></div><div class="wrap container-xxl" role=document><div class=content><div class="row flex-xl-nowrap"><div class="col-lg-5 col-xl-4 docs-sidebar"><nav class=docs-links aria-label="Main navigation"><ul class="list-unstyled collapsible-sidebar"><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-installation aria-expanded=false>
+Installation</button><div class=collapse id=section-installation><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/installation/introduction/>Getting Started</a></li><li><a class="docs-link rounded" href=/documentation/installation/docker_usage/>Docker Usage</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_linux/>Installation for Linux</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_windows/>Installation for Windows</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_macos/>Installation for macOS</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-examples aria-expanded=false>
+Examples</button><div class=collapse id=section-examples><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/examples/colliderbit_example/>ColliderBit Example</a></li><li><a class="docs-link rounded" href=/documentation/examples/anotherbit/>AnotherBit</a></li><li><a class="docs-link rounded" href=/documentation/examples/anotherbit2/>AnotherBit2</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-help aria-expanded=false>
+Help</button><div class=collapse id=section-help><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/help/faqs/>FAQs</a></li><li><a class="docs-link rounded" href=/documentation/help/compiler_matrix/>Compiler Matrix</a></li><li><a class="docs-link rounded" href=/documentation/help/known_issues/>Known Issues</a></li><li><a class="docs-link rounded" href=/documentation/help/configuration_examples/>Configuration Examples</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-code aria-expanded=true>
+Code Reference</button><div class="collapse show" id=section-code><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li class="my-1 ms-3"><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-gambit_sphinx aria-expanded=true>
+<font style="color: #5d2f86;" size=-6>release</font> &nbsp; gambit sphinx</button><div class="collapse show" id=section-gambit_sphinx><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/code/gambit_sphinx/index_classes/>Classes</a></li><li><a class="docs-link rounded" href=/documentation/code/gambit_sphinx/index_files/>Files</a></li><li><a class="docs-link rounded" href=/documentation/code/gambit_sphinx/index_pages/>Pages</a></li><li><a class="docs-link rounded" href=/documentation/code/gambit_sphinx/index_namespaces/>Namespaces</a></li></ul></div></li><li class="my-1 ms-3"><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-ColliderBit aria-expanded=true>
+<font style="color: #5d2f86;" size=-6>development</font> &nbsp; ColliderBit</button><div class="collapse show" id=section-ColliderBit><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/code/colliderbit/index_classes/>Classes</a></li><li><a class="docs-link rounded" href=/documentation/code/colliderbit/index_files/>Files</a></li><li><a class="docs-link rounded" href=/documentation/code/colliderbit/index_pages/>Pages</a></li><li><a class="docs-link rounded" href=/documentation/code/colliderbit/index_namespaces/>Namespaces</a></li></ul></div></li><li class="my-1 ms-3"><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-DarkBit aria-expanded=true>
+<font style="color: #5d2f86;" size=-6>development</font> &nbsp; DarkBit</button><div class="collapse show" id=section-DarkBit><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/code/darkbit/index_classes/>Classes</a></li><li><a class="docs-link rounded" href=/documentation/code/darkbit/index_files/>Files</a></li><li><a class="docs-link rounded" href=/documentation/code/darkbit/index_pages/>Pages</a></li><li><a class="docs-link rounded" href=/documentation/code/darkbit/index_namespaces/>Namespaces</a></li></ul></div></li><li class="my-1 ms-3"><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-main aria-expanded=true>
+<font style="color: #5d2f86;" size=-6>development</font> &nbsp; main</button><div class="collapse show" id=section-main><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/code/main/index_classes/>Classes</a></li><li><a class="docs-link rounded" href=/documentation/code/main/index_files/>Files</a></li><li><a class="docs-link rounded" href=/documentation/code/main/index_pages/>Pages</a></li><li><a class="docs-link rounded" href=/documentation/code/main/index_namespaces/>Namespaces</a></li></ul></div></li></ul></div></li></ul></nav></div><nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation"><div class=d-xl-none><button class="btn btn-outline-primary btn-sm doks-toc-toggle collapsed" type=button data-bs-toggle=collapse data-bs-target=#onThisPage aria-controls=doks-docs-nav aria-expanded=false aria-label="Toggle On this page navigation">
+<span>On this page</span>
+<span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg></span></button><div class=collapse id=onThisPage><div class="card card-body mt-3 py-1"><div class=page-links><nav id=TableOfContents><ul><li><ul><li><a href=#classes>Classes</a></li><li><a href=#functions>Functions</a></li><li><a href=#functions-documentation>Functions Documentation</a><ul><li><a href=#function-matrix>function matrix</a></li><li><a href=#function-matrix-1>function matrix</a></li><li><a href=#function-matrix-2>function matrix</a></li><li><a href=#function-matrix-3>function matrix</a></li><li><a href=#function-matrix-4>function matrix</a></li><li><a href=#function-matrix-5>function matrix</a></li><li><a href=#function-matrix-6>function matrix</a></li><li><a href=#function-matrix-7>function matrix</a></li><li><a href=#function-matrix-8>function matrix</a></li><li><a href=#function-del>function del</a></li><li><a href=#function-del-1>function del</a></li><li><a href=#function-del-2>function del</a></li><li><a href=#function-sq>function SQ</a></li><li><a href=#function-sqr>function SQR</a></li></ul></li><li><a href=#source-code>Source code</a></li></ul></li></ul></nav></div></div></div></div><div class="page-links d-none d-xl-block"><h3>On this page</h3><nav id=TableOfContents><ul><li><ul><li><a href=#classes>Classes</a></li><li><a href=#functions>Functions</a></li><li><a href=#functions-documentation>Functions Documentation</a><ul><li><a href=#function-matrix>function matrix</a></li><li><a href=#function-matrix-1>function matrix</a></li><li><a href=#function-matrix-2>function matrix</a></li><li><a href=#function-matrix-3>function matrix</a></li><li><a href=#function-matrix-4>function matrix</a></li><li><a href=#function-matrix-5>function matrix</a></li><li><a href=#function-matrix-6>function matrix</a></li><li><a href=#function-matrix-7>function matrix</a></li><li><a href=#function-matrix-8>function matrix</a></li><li><a href=#function-del>function del</a></li><li><a href=#function-del-1>function del</a></li><li><a href=#function-del-2>function del</a></li><li><a href=#function-sq>function SQ</a></li><li><a href=#function-sqr>function SQR</a></li></ul></li><li><a href=#source-code>Source code</a></li></ul></li></ul></nav></div></nav><main class="docs-content col-lg-11 col-xl-9 mx-xl-auto"><nav aria-label=breadcrumb><ol class=breadcrumb><li class=breadcrumb-item><a href=/>Home</a></li><li class=breadcrumb-item><a href=/documentation/>Documentation</a></li><li class=breadcrumb-item><a href=/documentation/code/>Code Reference</a></li><li class=breadcrumb-item><a href=/documentation/code/colliderbit/>ColliderBit</a></li><li class="breadcrumb-item active" aria-current=page>file simple/simple/random_tools.hpp</li></ol></nav><h1>file simple/simple/random_tools.hpp</h1><p class=lead></p><p>[No description available]</p><h2 id=classes>Classes <a href=#classes class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th></th><th>Name</th></tr></thead><tbody><tr><td>class</td><td><strong><a href=/documentation/code/colliderbit/classes/classcholesky/>Cholesky</a></strong></td></tr><tr><td>class</td><td><strong><a href=/documentation/code/colliderbit/classes/classran__old/>Ran_old</a></strong></td></tr><tr><td>class</td><td><strong><a href=/documentation/code/colliderbit/classes/classran/>Ran</a></strong></td></tr><tr><td>class</td><td><strong><a href=/documentation/code/colliderbit/classes/classexpondev/>ExponDev</a></strong></td></tr><tr><td>class</td><td><strong><a href=/documentation/code/colliderbit/classes/classnormaldev/>NormalDev</a></strong></td></tr><tr><td>class</td><td><strong><a href=/documentation/code/colliderbit/classes/classbasicdevs/>BasicDevs</a></strong></td></tr><tr><td>class</td><td><strong><a href=/documentation/code/colliderbit/classes/classmultinormaldev/>MultiNormalDev</a></strong></td></tr><tr><td>class</td><td><strong><a href=/documentation/code/colliderbit/classes/classadvancedevs/>AdvanceDevs</a></strong></td></tr><tr><td>class</td><td><strong><a href=/documentation/code/colliderbit/classes/classrandomplane/>RandomPlane</a></strong></td></tr><tr><td>class</td><td><strong><a href=/documentation/code/colliderbit/classes/classrandombasis/>RandomBasis</a></strong></td></tr><tr><td>class</td><td><strong><a href=/documentation/code/colliderbit/classes/classtransformrandombasis/>TransformRandomBasis</a></strong></td></tr><tr><td>class</td><td><strong><a href=/documentation/code/colliderbit/classes/classmultinormdev/>MultiNormDev</a></strong></td></tr></tbody></table><h2 id=functions>Functions <a href=#functions class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th></th><th>Name</th></tr></thead><tbody><tr><td>template &lt;typename T ><br>T *</td><td><strong><a href=/documentation/code/colliderbit/files/simple_2random__tools_8hpp/#function-matrix>matrix</a></strong>(const int xN)</td></tr><tr><td>template &lt;typename T ><br>T **</td><td><strong><a href=/documentation/code/colliderbit/files/simple_2random__tools_8hpp/#function-matrix>matrix</a></strong>(const int xN, const int yN)</td></tr><tr><td>template &lt;typename T ><br>T ***</td><td><strong><a href=/documentation/code/colliderbit/files/simple_2random__tools_8hpp/#function-matrix>matrix</a></strong>(const int xN, const int yN, const int zN)</td></tr><tr><td>template &lt;typename T ><br>T *</td><td><strong><a href=/documentation/code/colliderbit/files/simple_2random__tools_8hpp/#function-matrix>matrix</a></strong>(const int xN, T in)</td></tr><tr><td>template &lt;typename T ><br>T **</td><td><strong><a href=/documentation/code/colliderbit/files/simple_2random__tools_8hpp/#function-matrix>matrix</a></strong>(const int xN, const int yN, T in)</td></tr><tr><td>template &lt;typename T ><br>T ***</td><td><strong><a href=/documentation/code/colliderbit/files/simple_2random__tools_8hpp/#function-matrix>matrix</a></strong>(const int xN, const int yN, const int zN, T in)</td></tr><tr><td>template &lt;typename T ><br>T *</td><td><strong><a href=/documentation/code/colliderbit/files/simple_2random__tools_8hpp/#function-matrix>matrix</a></strong>(const int xN, T * in)</td></tr><tr><td>template &lt;typename T ><br>T **</td><td><strong><a href=/documentation/code/colliderbit/files/simple_2random__tools_8hpp/#function-matrix>matrix</a></strong>(const int xN, const int yN, T ** in)</td></tr><tr><td>template &lt;typename T ><br>T ***</td><td><strong><a href=/documentation/code/colliderbit/files/simple_2random__tools_8hpp/#function-matrix>matrix</a></strong>(const int xN, const int yN, const int zN, T *** in)</td></tr><tr><td>template &lt;typename T ><br>void</td><td><strong><a href=/documentation/code/colliderbit/files/simple_2random__tools_8hpp/#function-del>del</a></strong>(T * temp)</td></tr><tr><td>template &lt;typename T ><br>void</td><td><strong><a href=/documentation/code/colliderbit/files/simple_2random__tools_8hpp/#function-del>del</a></strong>(T ** temp, int xN)</td></tr><tr><td>template &lt;typename T ><br>void</td><td><strong><a href=/documentation/code/colliderbit/files/simple_2random__tools_8hpp/#function-del>del</a></strong>(T *** temp, int xN, int yN)</td></tr><tr><td>template &lt;class T ><br>const T</td><td><strong><a href=/documentation/code/colliderbit/files/simple_2random__tools_8hpp/#function-sq>SQ</a></strong>(const T a)</td></tr><tr><td>template &lt;class T ><br>const T</td><td><strong><a href=/documentation/code/colliderbit/files/simple_2random__tools_8hpp/#function-sqr>SQR</a></strong>(const T a)</td></tr></tbody></table><h2 id=functions-documentation>Functions Documentation <a href=#functions-documentation class=anchor aria-hidden=true>#</a></h2><h3 id=function-matrix>function matrix <a href=#function-matrix class=anchor aria-hidden=true>#</a></h3><pre><code>template &lt;typename T &gt;
+T * matrix(
+    const int xN
+)
+</code></pre><h3 id=function-matrix-1>function matrix <a href=#function-matrix-1 class=anchor aria-hidden=true>#</a></h3><pre><code>template &lt;typename T &gt;
+T ** matrix(
+    const int xN,
+    const int yN
+)
+</code></pre><h3 id=function-matrix-2>function matrix <a href=#function-matrix-2 class=anchor aria-hidden=true>#</a></h3><pre><code>template &lt;typename T &gt;
+T *** matrix(
+    const int xN,
+    const int yN,
+    const int zN
+)
+</code></pre><h3 id=function-matrix-3>function matrix <a href=#function-matrix-3 class=anchor aria-hidden=true>#</a></h3><pre><code>template &lt;typename T &gt;
+T * matrix(
+    const int xN,
+    T in
+)
+</code></pre><h3 id=function-matrix-4>function matrix <a href=#function-matrix-4 class=anchor aria-hidden=true>#</a></h3><pre><code>template &lt;typename T &gt;
+T ** matrix(
+    const int xN,
+    const int yN,
+    T in
+)
+</code></pre><h3 id=function-matrix-5>function matrix <a href=#function-matrix-5 class=anchor aria-hidden=true>#</a></h3><pre><code>template &lt;typename T &gt;
+T *** matrix(
+    const int xN,
+    const int yN,
+    const int zN,
+    T in
+)
+</code></pre><h3 id=function-matrix-6>function matrix <a href=#function-matrix-6 class=anchor aria-hidden=true>#</a></h3><pre><code>template &lt;typename T &gt;
+T * matrix(
+    const int xN,
+    T * in
+)
+</code></pre><h3 id=function-matrix-7>function matrix <a href=#function-matrix-7 class=anchor aria-hidden=true>#</a></h3><pre><code>template &lt;typename T &gt;
+T ** matrix(
+    const int xN,
+    const int yN,
+    T ** in
+)
+</code></pre><h3 id=function-matrix-8>function matrix <a href=#function-matrix-8 class=anchor aria-hidden=true>#</a></h3><pre><code>template &lt;typename T &gt;
+T *** matrix(
+    const int xN,
+    const int yN,
+    const int zN,
+    T *** in
+)
+</code></pre><h3 id=function-del>function del <a href=#function-del class=anchor aria-hidden=true>#</a></h3><pre><code>template &lt;typename T &gt;
+void del(
+    T * temp
+)
+</code></pre><h3 id=function-del-1>function del <a href=#function-del-1 class=anchor aria-hidden=true>#</a></h3><pre><code>template &lt;typename T &gt;
+void del(
+    T ** temp,
+    int xN
+)
+</code></pre><h3 id=function-del-2>function del <a href=#function-del-2 class=anchor aria-hidden=true>#</a></h3><pre><code>template &lt;typename T &gt;
+void del(
+    T *** temp,
+    int xN,
+    int yN
+)
+</code></pre><h3 id=function-sq>function SQ <a href=#function-sq class=anchor aria-hidden=true>#</a></h3><pre><code>template &lt;class T &gt;
+inline const T SQ(
+    const T a
+)
+</code></pre><h3 id=function-sqr>function SQR <a href=#function-sqr class=anchor aria-hidden=true>#</a></h3><pre><code>template &lt;class T &gt;
+inline const T SQR(
+    const T a
+)
+</code></pre><h2 id=source-code>Source code <a href=#source-code class=anchor aria-hidden=true>#</a></h2><pre><code>#ifndef RANDOM_TOOLS_HPP
+#define RANDOM_TOOLS_HPP
+#include &lt;iostream&gt;
+#include &lt;cstdio&gt;
+
+#include &quot;gambit/Utils/threadsafe_rng.hpp&quot;
+
+template &lt;typename T&gt;
+T *matrix(const int xN)
+{
+     T *temp = new T[xN];
+     
+     return temp;
+}
+
+template &lt;typename T&gt;
+T **matrix(const int xN, const int yN)
+{
+     T **temp = new T*[xN];
+     
+     for (int i = 0; i &lt; xN; i++)
+          temp[i] = new T[yN];
+     
+     return temp;
+}
+
+template &lt;typename T&gt;
+T ***matrix(const int xN, const int yN, const int zN)
+{
+     T ***temp = new T**[xN];
+     
+     for (int i = 0; i &lt; xN; i++)
+     {
+          temp[i] = new T*[yN];
+          for (int j = 0; j &lt; yN; j++)
+               temp[i][j] = new T[zN];
+     }
+     return temp;
+}
+
+template &lt;typename T&gt;
+T *matrix(const int xN, T in)
+{
+        T *temp = new T[xN];
+
+        for (int i = 0; i &lt; xN; i++)
+                temp[i] = in;
+
+        return temp;
+}
+
+template &lt;typename T&gt;
+T **matrix(const int xN, const int yN, T in)
+{
+        T **temp = new T*[xN];
+     
+        for (int i = 0; i &lt; xN; i++)
+        {
+                temp[i] = new T[yN];
+                for (int j = 0; j &lt; yN; j++)
+                        temp[i][j] = in;
+        }
+     
+        return temp;
+}
+
+template &lt;typename T&gt;
+T ***matrix(const int xN, const int yN, const int zN, T in)
+{
+        T ***temp = new T**[xN];
+     
+        for (int i = 0; i &lt; xN; i++)
+        {
+                temp[i] = new T*[yN];
+                for (int j = 0; j &lt; yN; j++)
+                {
+                        temp[i][j] = new T[zN];
+                        for (int k = 0; k &lt; zN; k++)
+                                temp[i][j][k] = in;
+                }
+        }
+        return temp;
+}
+
+template &lt;typename T&gt;
+                T *matrix(const int xN, T *in)
+{
+        T *temp = new T[xN];
+        for (int i = 0; i &lt; xN; i++)
+                temp[i] = in[i];
+     
+        return temp;
+}
+
+template &lt;typename T&gt;
+                T **matrix(const int xN, const int yN, T **in)
+{
+        T **temp = new T*[xN];
+     
+        for (int i = 0; i &lt; xN; i++)
+        {
+                temp[i] = new T[yN];
+                for (int j = 0; j &lt; yN; j++)
+                        temp[i][j] = in[i][j];
+        }
+     
+        return temp;
+}
+
+template &lt;typename T&gt;
+                T ***matrix(const int xN, const int yN, const int zN, T ***in)
+{
+        T ***temp = new T**[xN];
+     
+        for (int i = 0; i &lt; xN; i++)
+        {
+                temp[i] = new T*[yN];
+                for (int j = 0; j &lt; yN; j++)
+                {
+                        temp[i][j] = new T[zN];
+                        for (int k = 0; k &lt; zN; k++)
+                                temp[i][j][k] = in[i][j][k];
+                }
+        }
+        return temp;
+}
+
+
+template &lt;typename T&gt;
+void del(T *temp)
+{
+     delete[] temp;
+     temp = NULL;
+}
+
+template &lt;typename T&gt;
+void del(T **temp, int xN)
+{
+     for (int i = 0; i &lt; xN; i++)
+          delete[] temp[i];
+     
+     delete[] temp;
+     temp = NULL;
+}
+
+template &lt;typename T&gt;
+void del(T ***temp, int xN, int yN)
+{
+     for (int i = 0; i &lt; xN; i++)
+     {
+          for (int j = 0; j &lt; yN; j++)
+               delete[] temp[i][j];
+          delete[] temp[i];
+     }
+     
+     delete[] temp;
+     temp = NULL;
+}
+
+template&lt;class T&gt;
+inline const T SQ(const T a) {return a*a;}
+
+template&lt;class T&gt;
+inline const T SQR(const T a) {return a*a;}
+
+class Cholesky
+{
+    private:
+        double **el;
+                
+        protected:
+                int num;
+        
+        
+    public:
+        Cholesky(const int nin) : num(nin)
+        {
+            el = matrix &lt;double&gt; (num, num);
+        }
+        
+        Cholesky(double **a, const int nin) : num(nin)
+        {
+            el = matrix &lt;double&gt; (num, num);
+            double sum = 0;
+            int i, j, k;
+            
+            for (i = 0; i &lt; num; i++)
+                for (j = 0; j &lt; num; j++)
+                    el[i][j] = a[i][j];
+
+            for (i = 0; i &lt; num; i++)
+            {
+                for (j = i; j &lt; num; j++)
+                {
+                    for(sum = el[i][j], k = i - 1; k &gt;= 0; k--)
+                        sum -= el[i][k]*el[j][k];
+                    if(i ==j)
+                    {
+                        if(sum &lt;= 0.0)
+                        {
+                                                        std::cout &lt;&lt; &quot;Cholesky failed &quot; &lt;&lt; sum &lt;&lt; std::endl;
+                            getchar();
+                        }
+                        el[i][i] = sqrt(sum);
+                    }
+                    else
+                        el[j][i] = sum/el[i][i];
+                }
+            }
+            for (i = 0; i &lt; num; i++)
+                for (j = 0; j &lt; i; j++)
+                    el[j][i] = 0.0;
+        }
+        
+        bool EnterMatM(double **a, const int min)
+        {
+            double sum = 0;
+            int i, j, k;
+            //ofstream out1(&quot;cov.dat&quot;);
+            for (i = 0; i &lt; num; i++)
+            {
+                for (j = 0; j &lt; num; j++)
+                {
+                    el[i][j] = a[i][j];
+                    //out1 &lt;&lt; el[i][j] &lt;&lt; &quot;   &quot; &lt;&lt; endl;
+                }
+                //out1 &lt;&lt; endl;
+            }
+            
+            if (num &gt;= min)
+            {
+                k = min -1;
+                int l = num - min + 1;
+                for (i = 0; i &lt; l; i++)
+                {
+                    for (j = k+i; j &lt; num; j++)
+                        el[i][j] = el[j][i] = 0.0;
+                }
+            }
+            
+            for (i = 0; i &lt; num; i++)
+            {
+                for (j = i; j &lt; num; j++)
+                {
+                    for(sum = el[i][j], k = i - 1; k &gt;= 0; k--)
+                        sum -= el[i][k]*el[j][k];
+                    if(i ==j)
+                    {
+                        if(sum &lt;= 0.0)
+                            return true;
+                        el[i][i] = sqrt(sum);
+                    }
+                    else
+                        el[j][i] = sum/el[i][i];
+                }
+            }
+            for (i = 0; i &lt; num; i++)
+                for (j = 0; j &lt; i; j++)
+                    el[j][i] = 0.0;
+                
+//                      ofstream out2(&quot;cov2.dat&quot;);
+//          double **ct = matrix &lt;double&gt; (n, n, 0.0);
+//          for (i = 0; i &lt; num; i++)
+//              for (j = 0; j &lt; n; j++)
+//                  for (k = 0; k &lt; num; k++)
+//                      ct[i][j] += el[i][k]*el[j][k];
+//          for (i = 0; i &lt; num; i++)
+//          {
+//              for (j = 0; j &lt; num; j++)
+//                  out2 &lt;&lt; ct[i][j] &lt;&lt; &quot;   &quot;;
+//              out2 &lt;&lt; endl;
+//          }
+//          cout &lt;&lt; &quot;finished&quot; &lt;&lt; endl;
+//          getchar();
+                
+            return false;
+        }
+        
+        bool EnterMat(double **a)
+        {
+            double sum = 0;
+            int i, j, k;
+            
+            for (i = 0; i &lt; num; i++)
+            {
+                for (j = 0; j &lt; num; j++)
+                {
+                    el[i][j] = a[i][j];
+                }
+            }
+            
+            for (i = 0; i &lt; num; i++)
+            {
+                for (j = i; j &lt; num; j++)
+                {
+                    for(sum = el[i][j], k = i - 1; k &gt;= 0; k--)
+                        sum -= el[i][k]*el[j][k];
+                    if(i ==j)
+                    {
+                        if(sum &lt;= 0.0)
+                            return false;
+                        el[i][i] = sqrt(sum);
+                    }
+                    else
+                        el[j][i] = sum/el[i][i];
+                }
+            }
+            for (i = 0; i &lt; num; i++)
+                for (j = 0; j &lt; i; j++)
+                    el[j][i] = 0.0;
+                                
+                        return true;
+        }
+        
+        void EnterMat(double **a, int nin)
+        {
+            del &lt;double&gt; (el, num);
+            num = nin;
+            el = matrix &lt;double&gt; (num, num);
+            EnterMat(a);
+        }
+        
+        void ElMult (double *y, double *b)
+        {
+            int i, j;
+            for(i = 0; i &lt; num; i++)
+            {
+                b[i] = 0.0;
+                for (j = 0; j &lt;= i; j++)
+                    b[i] += el[i][j]*y[j];
+            }
+        }
+        
+        void ElMult (double *y)
+        {
+            int i, j;
+            double *b = new double[num];
+            for(i = 0; i &lt; num; i++)
+            {
+                b[i] = 0.0;
+                for (j = 0; j &lt;= i; j++)
+                {
+                    b[i] += el[i][j]*y[j];
+                }
+            }
+            for (i = 0; i &lt; num; i++)
+            {
+                y[i] = b[i];
+            }
+            delete[] b;
+        }
+        
+        void Solve (double *b, double *x)
+        {
+            int i, k;
+            double sum;
+            
+            for (i = 0; i &lt; num; i++)
+            {
+                for (sum = b[i], k=i-1; k &gt;=0; k--)
+                    sum -= el[i][k]*x[k];
+                x[i]=sum/el[i][i];
+            }
+            
+            for (i = num-1; i &gt;=0; i--)
+            {
+                for (sum = x[i], k=i+1; k&lt;num; k++)
+                    sum -= el[k][i]*x[k];
+                x[i]=sum/el[i][i];
+            }
+        }
+        
+        double Square(double *y, double *y0)
+        {
+            int i, j;
+            double sum;
+            double *x = new double[num];
+            
+            for (i = 0; i &lt; num; i++)
+            {
+                for (sum = (y[i]-y0[i]), j=0; j &lt; i; j++)
+                    sum -= el[i][j]*x[j];
+                x[i]=sum/el[i][i];
+            }
+            
+            sum = 0.0;
+            for (i = 0; i &lt; num; i++)
+                sum += x[i]*x[i];
+            
+            delete[] x;
+            
+            return sum;
+        }
+        
+        double Square(double *y, double *y0, int *map)
+        {
+            int i, j;
+            double sum;
+            double *x = new double[num];
+            
+            for (i = 0; i &lt; num; i++)
+            {
+                for (sum = (y[map[i]]-y0[i]), j=0; j &lt; i; j++)
+                    sum -= el[i][j]*x[j];
+                x[i]=sum/el[i][i];
+            }
+            
+            sum = 0.0;
+            for (i = 0; i &lt; num; i++)
+                sum += x[i]*x[i];
+            
+            delete[] x;
+            
+            return sum;
+        }
+        
+        void Inverse(double **ainv)
+        {
+            double sum;
+            
+            for (int i = 0; i &lt; num; i++)
+                for (int j = 0; j &lt;= i; j++)
+                {
+                    sum = (i == j ? 1.0 : 0.0);
+                    for (int k = i-1; k &gt;= j; k--)
+                        sum -= el[i][k]*ainv[j][k];
+                    ainv[j][i] = sum/el[i][i];
+                }
+
+            for (int i = num - 1; i &gt;= 0; i--)
+                for (int j = 0; j &lt;= i; j++)
+                {
+                    sum = (i &lt; j ? 0.0 : ainv[j][i]);
+                    for (int k = i + 1; k &lt; num; k++)
+                        sum -= el[k][i]*ainv[j][k];
+                    ainv[i][j] = ainv[j][i] = sum/el[i][i];
+                }
+        }
+
+        double DetSqrt()
+        {
+            double temp = 1.0;
+            for (int i = 0; i &lt; num; i++)
+                temp *= el[i][i];
+            return temp;
+        }
+        ~Cholesky()
+        {
+            del &lt;double&gt; (el, num);
+        }
+};
+
+class Ran_old
+{
+    private:
+        unsigned long long int u, v, w;
+        
+    public:
+        Ran_old(unsigned long long int j) : v(4101842887655102017LL), w(1)
+        {
+            u = j ^ v; int64();
+            v = u; int64(); int64();
+            w = v; int64(); int64();
+        }
+        inline unsigned long long int int64()
+        {
+            u = u * 2862933555777941757LL + 7046029254386353087LL;
+            v ^= v &gt;&gt; 17; v ^= v &lt;&lt; 31; v ^= v &gt;&gt; 8;
+            w = 4294957665U*(w &amp; 0xffffffff) + (w &gt;&gt; 32);
+            unsigned long long int x = u ^ (u &lt;&lt; 21); x ^= x &gt;&gt; 35; x ^= x &lt;&lt; 4;
+            return (x + v) ^ w;
+        }
+        inline double Doub(){return 5.42101086242752217E-20 * int64();}
+        inline unsigned int int32(){return (unsigned int)int64();}
+};
+
+class Ran
+{
+public:
+        Ran(unsigned long long int){}
+        inline double Doub(){return Gambit::Random::draw();}
+};
+
+class ExponDev : public Ran
+{
+    private:
+        double beta;
+    public:
+        ExponDev(double din, unsigned long long ii) : Ran(ii), beta(din){}
+        double Dev()
+        {
+            double u;
+            do
+            {
+                u = Doub();
+            }
+            while(u == 0);
+            
+            return -log(u)/beta;
+        }
+};
+
+class NormalDev : public Ran
+{
+    private:
+        double mu, sig;
+        
+    public:
+        NormalDev(double mmu, double ssig, unsigned long long i) : Ran(i), mu(mmu), sig(ssig){}
+        double  Dev()
+        {
+            double u, v, x, y, q;
+            do
+            {
+                u = Doub();
+                v = 1.7156*(Doub() - 0.5);
+                x = u - 0.449871;
+                y = fabs(v) + 0.386595;
+                q = x*x + y*(0.19600*y-0.25472*x);
+            }
+            while(q &gt; 0.27597 &amp;&amp; (q &gt; 0.27846 || v*v &gt; -4.0*log(u)*u*u));
+            
+            return mu + sig*v/u;
+        }
+};
+
+class BasicDevs : public Ran
+{
+    private:
+        
+    public:
+        BasicDevs(unsigned long long i) : Ran(i) {}
+
+        double  Dev()
+        {
+            double u, v, x, y, q;
+            do
+            {
+                u = Doub();
+                v = 1.7156*(Doub() - 0.5);
+                x = u - 0.449871;
+                y = fabs(v) + 0.386595;
+                q = x*x + y*(0.19600*y-0.25472*x);
+            }
+            while(q &gt; 0.27597 &amp;&amp; (q &gt; 0.27846 || v*v &gt; -4.0*log(u)*u*u));
+            
+            return v/u;
+        }
+        
+        double ExpDev()
+        {
+            double u;
+            do
+            {
+                u = Doub();
+            }
+            while(u == 0);
+            
+            return -log(u);
+        }
+};
+
+class MultiNormalDev : public Ran, public Cholesky
+{
+    private:
+        int mm;
+        double f;
+        double *spt;
+        
+    public:
+        MultiNormalDev (double **vvar, double fin, unsigned long long int j, int nin) : Ran(j), Cholesky(vvar, nin), mm(nin), f(fin)
+        {
+            spt = matrix &lt;double&gt; (mm);
+        }
+        void Dev(double *pt, double *mean)
+        {
+            double u, v, x, y, q;
+            for (int i = 0; i &lt; mm; i++)
+            {
+                do
+                {
+                    u = Doub();
+                    v = 1.7156*(Doub() - 0.5);
+                    x = u - 0.449871;
+                    y = fabs(v) + 0.386595;
+                    q = x*x + y*(0.19600*y-0.25472*x);
+                }
+                while(q &gt; 0.27597 &amp;&amp; (q &gt; 0.27846 || v*v &gt; -4.0*log(u)*u*u));
+                spt[i] = v/u;
+            }
+            ElMult(spt, pt);
+            for (int i = 0; i &lt; mm; i++)
+                pt[i] = f*pt[i] + mean[i];
+        }
+        void Dev(double **cvar, double *pt, double *mean)
+        {
+            double u, v, x, y, q;
+            for (int i = 0; i &lt; mm; i++)
+            {
+                do
+                {
+                    u = Doub();
+                    v = 1.7156*(Doub() - 0.5);
+                    x = u - 0.449871;
+                    y = fabs(v) + 0.386595;
+                    q = x*x + y*(0.19600*y-0.25472*x);
+                }
+                while(q &gt; 0.27597 &amp;&amp; (q &gt; 0.27846 || v*v &gt; -4.0*log(u)*u*u));
+                spt[i] = v/u;
+            }
+            EnterMat(cvar);
+            ElMult(spt, pt);
+            for (int i = 0; i &lt; mm; i++)
+                pt[i] = f*pt[i] + mean[i];
+        }
+        ~MultiNormalDev()
+        {
+            del &lt;double&gt; (spt);
+        }
+};
+
+class AdvanceDevs : public BasicDevs, public Cholesky
+{
+    private:
+        double fac;
+        
+    public:
+        AdvanceDevs(int nin, double din, unsigned long long iin) :  BasicDevs(iin), Cholesky(nin), fac(din)
+        {
+        }
+        
+        AdvanceDevs(double **vvar, const int nin, double din, unsigned long long iin) :  BasicDevs(iin), Cholesky(vvar, nin), fac(din)
+        {
+        }
+        
+        void MultiDev(double *pin, double *p0)
+        {
+            int i;
+            double dist = 0.0;
+
+            double vec[num];
+            double norm = 0.0;
+            for (i = 0; i &lt; num; i++)
+            {
+                vec[i] = Dev();
+                norm += vec[i]*vec[i];
+            }
+            norm = sqrt(norm);
+            
+            if(Doub() &lt; 0.33)
+                dist = ExpDev();
+            else
+            {
+                double temp;
+                for (i = 0; i &lt; 2; i++)
+                {
+                    temp = Dev();
+                    dist += temp*temp;
+                }
+                dist = sqrt(dist/2.0);
+            }
+
+            ElMult(vec, pin);
+            for (i = 0; i &lt; num; i++)
+            {
+                pin[i] = fac*dist*pin[i]/norm + p0[i];
+            }
+
+            return;
+        }
+        
+        void MultiDev(double **cvar, double *pin, double *p0)
+        {
+            int i;
+            double dist = 0.0;
+
+            double vec[num];
+            double norm = 0.0;
+            for (i = 0; i &lt; num; i++)
+            {
+                vec[i] = Dev();
+                norm += vec[i]*vec[i];
+            }
+            norm = sqrt(norm);
+            
+            if(Doub() &lt; 0.33)
+                dist = ExpDev();
+            else
+            {
+                double temp;
+                for (i = 0; i &lt; 2; i++)
+                {
+                    temp = Dev();
+                    dist += temp*temp;
+                }
+                dist = sqrt(dist/2.0);
+            }
+
+            EnterMat(cvar);
+            ElMult(vec, pin);
+            for (i = 0; i &lt; num; i++)
+            {
+                pin[i] = fac*dist*pin[i]/norm + p0[i];
+            }
+
+            return;
+        }
+        
+        void EllipseDev(double *pin, double *p0, double fin)
+        {
+            int i;
+            double dist = 0.0;
+            
+            double vec[num];
+            double norm = 0.0;
+            for (i = 0; i &lt; num; i++)
+            {
+                vec[i] = Dev();
+                norm += vec[i]*vec[i];
+            }
+            norm = sqrt(norm);
+            
+            dist = pow(Doub(), 1.0/num);
+            
+            ElMult(vec, pin);
+            for (i = 0; i &lt; num; i++)
+            {
+                pin[i] = fin*dist*pin[i] + p0[i];
+            }
+
+            return;
+        }
+        
+        void EllipseDev(double **cvar, double *pin, double *p0, double fin)
+        {
+            int i;
+            double dist = 0.0;
+
+            double vec[num];
+            double norm = 0.0;
+            for (i = 0; i &lt; num; i++)
+            {
+                vec[i] = Dev();
+                norm += vec[i]*vec[i];
+            }
+            norm = sqrt(norm);
+            
+            dist = pow(Doub(), 1.0/num);
+            
+            EnterMat(cvar);
+            ElMult(vec, pin);
+            for (i = 0; i &lt; num; i++)
+            {
+                pin[i] = fin*dist*pin[i] + p0[i];
+            }
+
+            return;
+        }
+};
+
+class RandomPlane : public AdvanceDevs
+{
+private:
+        double **rotVec;
+        double **currentVec;
+        double **endVec;
+        double **endEndVec;
+        double **sEndVec;
+        int proj, extra;
+        double alim, alimt;
+        double sqrtAlim, powAlim, ratioAlim, ratioAlimt;
+        
+public:
+        RandomPlane(const int projin, const int nin, const double din, const double alim, const double alimt, unsigned long long iin) : AdvanceDevs(nin, din, iin), proj(projin), alim(alim), alimt(alimt)
+        {
+                rotVec = matrix &lt;double&gt; (nin, nin);
+                RandRot();
+                if (proj &gt; num) proj = num;
+                extra = num % proj;
+                endVec = currentVec + num - extra;
+                endEndVec = currentVec + num;
+                sEndVec = currentVec + num - proj;
+                sqrtAlim = sqrt(alim);
+                powAlim = pow(alim, 0.5 - proj);
+                double vol1 = 2.0*(sqrt(alim) - 1.0);
+                double vol2 = (1.0 - pow(alim, 0.5 - proj))/(proj - 0.5);
+                ratioAlim = vol1/(vol1 + vol2);
+                ratioAlimt = (alimt - 1.0)/(2.0*alimt + proj - 2.0);
+        }
+        
+        double WalkDev()
+        {
+                if (Doub() &lt;= ratioAlim)
+                        return SQ(1.0 + Doub()*(sqrtAlim - 1.0));
+                else
+                        return pow(powAlim + Doub()*(1.0 - powAlim), 1.0/(proj - 0.5));
+        }
+        
+        double TransDev()
+        {
+                if (Doub() &lt; ratioAlimt)
+                {
+                        return -pow(Doub(), 1.0/(alimt + proj - 1.0));
+                }
+                else
+                {
+                        return -pow(Doub(), 1.0/(1.0 - alimt));
+                }
+        }
+        
+        double KWalkDev()
+        {
+                if (Doub() &lt; 0.5)
+                {
+                        if (Doub() &lt;= ratioAlim)
+                        {
+                                return SQ(1.0 + Doub()*(sqrtAlim - 1.0));
+                        }
+                        else
+                        {
+                                return pow(powAlim + Doub()*(1.0 - powAlim), 1.0/(proj - 0.5));
+                        }
+                }
+                else
+                {
+                        if (Doub() &lt; ratioAlimt)
+                        {
+                                return -pow(Doub(), 1.0/(alimt + proj - 1.0));
+                        }
+                        else
+                        {
+                                return -pow(Doub(), 1.0/(1.0 - alimt));
+                        }
+                }
+        }
+        
+        bool KWalkDev(double &amp;Z)
+        {
+                if (Doub() &lt; 0.5)
+                {
+                        Z = SQ(1.0/sqrtAlim + Doub()*(sqrtAlim - 1.0/sqrtAlim));
+                        
+                        return pow(Z, proj - 1) &gt; Doub();
+                }
+                else
+                {
+                        if (Doub() &lt; (alimt - 1.0)/(2.0*alimt))
+                        {
+                                Z = -pow(Doub(), 1.0/(alimt + 1.0));
+                        }
+                        else
+                        {
+                                Z = -pow(Doub(), 1.0/(1.0 - alimt));
+                        }
+                        
+                        return pow(Z, proj - 2) &gt; Doub();
+                }
+        }
+        
+        double WalkDev(double *ptrOut, double *ptr, double *ptr0)
+        {
+                double Z;
+   
+                Z = SQ(1.0/sqrtAlim + Doub()*(sqrtAlim - 1.0/sqrtAlim));
+                
+                Mult(ptrOut, ptr, ptr0, Z);
+                
+                return (proj - 1.0)*log(Z);
+        }
+        
+        double TransDev(double *ptrOut, double *ptr, double *ptr0)
+        {
+                double Z;
+                
+                if (Doub() &lt; (alimt - 1.0)/(2.0*alimt))
+                {
+                        Z = -pow(Doub(), 1.0/(alimt + 1.0));
+                }
+                else
+                {
+                        Z = -pow(Doub(), 1.0/(1.0 - alimt));
+                }
+                
+                Mult(ptrOut, ptr, ptr0, Z);
+                
+                return (proj - 1.0)*log(-Z);
+        }
+        
+        void Mult(double *ptrOut, double *ptr, double *ptr0, const double Z)
+        {
+                double z[proj];
+                for (int i = 0; i &lt; proj; i++)
+                {
+                        z[i] = 0.0;
+                        for (int j = 0; j &lt; num; j++)
+                        {
+                                z[i] += (Z-1.0)*(ptr[j] - ptr0[j])*currentVec[i][j];
+                        }
+                }
+                
+                for (int j = 0; j &lt; num; j++)
+                {
+                        ptrOut[j] = ptr[j];
+                        for (int i = 0; i &lt; proj; i++)
+                        {
+                                ptrOut[j] += z[i]*currentVec[i][j];
+                        }
+                }
+
+                currentVec++;// += proj;
+                if (currentVec == sEndVec)
+                {
+                        for (double **vec = currentVec, **vec2 = rotVec; vec != endEndVec; vec++, vec2++)
+                        {
+                                double *temp = *vec2;
+                                *vec2 = *vec;
+                                *vec = temp;
+                        }
+                        RandRot(extra);
+                }
+        }
+        
+        void Mult2(double *ptrOut, double *ptr, double *ptr0, const double Z)
+        {
+                RandRot(0, proj);
+                
+                double z[proj];
+                for (int i = 0; i &lt; proj; i++)
+                {
+                        z[i] = 0.0;
+                        for (int j = 0; j &lt; num; j++)
+                        {
+                                z[i] += (Z-1.0)*(ptr[j] - ptr0[j])*currentVec[i][j];
+                        }
+                }
+                
+                for (int j = 0; j &lt; num; j++)
+                {
+                        ptrOut[j] = ptr[j];
+                        for (int i = 0; i &lt; proj; i++)
+                        {
+                                ptrOut[j] += z[i]*currentVec[i][j];
+                        }
+                }
+        }
+        
+        void RandRot(const int start = 0)
+        {
+                double temp;
+                double vec[num];
+                int i, j, k;
+                        
+                for (i = start; i &lt; num; i++)
+                {
+                        for (j = 0; j &lt; num; j++)
+                                vec[j] = Dev();
+                        for (j = 0; j &lt; i; j++)
+                        {
+                                temp = 0.0;
+                                for (k = 0; k &lt; num; k++)
+                                        temp += vec[k]*rotVec[j][k];
+                                for (k = 0; k &lt; num; k++)
+                                        vec[k] -= temp*rotVec[j][k];
+                        }
+                        temp = 0.0;
+                        for (j = 0; j &lt; num; j++)
+                                temp += vec[j]*vec[j];
+                        temp = sqrt(temp);
+                        for (j = 0; j &lt; num; j++)
+                                rotVec[i][j] = vec[j]/temp;
+                }
+                
+                currentVec = rotVec;
+        }
+        
+        void RandRot(const int start, const int end)
+        {
+                double temp;
+                double vec[num];
+                int i, j, k;
+                        
+                for (i = start; i &lt; end; i++)
+                {
+                        for (j = 0; j &lt; num; j++)
+                                vec[j] = Dev();
+                        for (j = 0; j &lt; i; j++)
+                        {
+                                temp = 0.0;
+                                for (k = 0; k &lt; num; k++)
+                                        temp += vec[k]*rotVec[j][k];
+                                for (k = 0; k &lt; num; k++)
+                                        vec[k] -= temp*rotVec[j][k];
+                        }
+                        temp = 0.0;
+                        for (j = 0; j &lt; num; j++)
+                                temp += vec[j]*vec[j];
+                        temp = sqrt(temp);
+                        for (j = 0; j &lt; num; j++)
+                                rotVec[i][j] = vec[j]/temp;
+                }
+                
+                currentVec = rotVec;
+        }
+        
+        int Dim() const {return proj;}
+        
+        ~RandomPlane()
+        {
+                del &lt;double&gt; (rotVec, num);
+        }
+};
+
+class RandomBasis : public BasicDevs
+{
+    private:
+        double **rotVec;
+        
+    protected:
+        int num;
+        double **currentVec;
+        double **endVec;
+
+    public:
+        RandomBasis(int nin, unsigned long long iin) : BasicDevs(iin), num(nin)
+        {
+            rotVec = matrix &lt;double&gt; (nin, nin);
+            RandRot();
+            endVec = currentVec + num;
+        }
+        
+        void ChangeDim(const int nin)
+        {
+            del &lt;double&gt; (rotVec, num);
+            num = nin;
+            rotVec = matrix &lt;double&gt; (nin, nin);
+            RandRot();
+            endVec = currentVec + num;
+        }
+            
+        void RandRot()
+        {
+            double temp;
+            double vec[num];
+            int i, j, k;
+                
+            for (i = 0; i &lt; num; i++)
+            {
+                for (j = 0; j &lt; num; j++)
+                    vec[j] = Dev();
+                for (j = 0; j &lt; i; j++)
+                {
+                    temp = 0.0;
+                    for (k = 0; k &lt; num; k++)
+                        temp += vec[k]*rotVec[j][k];
+                    for (k = 0; k &lt; num; k++)
+                        vec[k] -= temp*rotVec[j][k];
+                }
+                temp = 0.0;
+                for (j = 0; j &lt; num; j++)
+                    temp += vec[j]*vec[j];
+                temp = sqrt(temp);
+                for (j = 0; j &lt; num; j++)
+                    rotVec[i][j] = vec[j]/temp;
+            }
+            
+            currentVec = rotVec;
+        }
+            
+        double RanMult(double **cin)
+        {
+            int i, j;
+            double temp = 0.0;
+            
+            for (i = 0; i &lt; num; i++)
+            {
+                for (j = 0; j &lt; num; j++)
+                {
+                    temp += (*currentVec)[i]*cin[i][j]*(*currentVec)[j];
+                }
+            }
+            return temp;
+        }
+            
+        void RanMult(const double in, double *out)
+        {
+            int i;
+            double *ptr = *currentVec;
+            
+            for (i = 0; i &lt; num; i++)
+            {
+                *out++ = in*(*ptr++);
+                    
+            }
+            return;
+        }
+            
+        void RanMult(double *in, const double w, double *out)
+        {
+            int i;
+            double *ptr = *currentVec;
+            
+            for (i = 0; i &lt; num; i++)
+            {
+                *out++ = *in++ + w*(*ptr++);
+            }
+            return;
+        }
+            
+        double Mag(double *a, double *a0)
+        {
+            double temp = 0.0;
+            int i;
+            double *ptr = *currentVec;
+            
+            for (i = 0; i &lt; num; i++)
+                temp += (*a++-*a0++)*(*ptr++);
+                
+            return temp;
+        }
+            
+        void Adjust(double *a, const double lim, const int iin)
+        {
+            double temp = (lim - a[iin])/(*currentVec)[iin];
+            double *ptr = *currentVec;
+            
+            for (int i = 0; i &lt; num; i++)
+                a[i] += temp*(*ptr++);
+            return;
+        }
+            
+        virtual void operator ++ (int)
+        {
+            if (++currentVec == endVec)
+            {
+                RandRot();
+            }
+        }
+        
+        virtual ~RandomBasis()
+        {
+            del &lt;double&gt; (rotVec, num);
+        }
+};
+
+class TransformRandomBasis : public RandomBasis, public Cholesky
+{
+    private:
+                int num;
+                
+    public:
+        TransformRandomBasis(double **vvar, int nin, unsigned long long iin) : RandomBasis(nin, iin), Cholesky(vvar, nin), num(nin)
+        {
+            double **ptr = currentVec;
+            for (int i = 0; i &lt; num; i++)
+            {
+                ElMult(*ptr++);
+            }
+        }
+    
+        void operator ++ (int)
+        {
+            if (++currentVec == endVec)
+            {
+                RandRot();
+                double **ptr = currentVec;
+                for (int i = 0; i &lt; num; i++)
+                {
+                    ElMult(*ptr++);
+                }
+            }
+        }
+};
+
+class MultiNormDev : public RandomBasis, public Cholesky
+{
+    private:
+        double fac;
+                int num;
+        
+    public:
+        MultiNormDev(int nin, double din, unsigned long long iin) : RandomBasis(nin, iin), Cholesky(nin), fac(din), num(nin)
+        {
+        }
+        
+        MultiNormDev(double **vvar, const int nin, double din, unsigned long long iin) : RandomBasis(nin, iin), Cholesky(vvar, nin), fac(din), num(nin)
+        {
+        }
+        
+        void MultiDev(double *pin, double *p0)
+        {
+            int i;
+            double dist = 0.0;
+
+            if(Doub() &lt; 0.33)
+                dist = ExpDev();
+            else
+            {
+                double temp;
+                for (i = 0; i &lt; 2; i++)
+                {
+                    temp = Dev();
+                    dist += temp*temp;
+                }
+                dist = sqrt(dist/2.0);
+            }
+
+            ElMult(*currentVec, pin);
+            for (i = 0; i &lt; num; i++)
+            {
+                pin[i] = fac*dist*pin[i] + p0[i];
+            }
+            (*this)++;
+
+            return;
+        }
+        
+        void MultiDev(double **cvar, double *pin, double *p0)
+        {
+            int i;
+            double dist = 0.0;
+
+            if(Doub() &lt; 0.33)
+                dist = ExpDev();
+            else
+            {
+                double temp;
+                for (i = 0; i &lt; 2; i++)
+                {
+                    temp = Dev();
+                    dist += temp*temp;
+                }
+                dist = sqrt(dist/2.0);
+            }
+
+            EnterMat(cvar);
+            ElMult(*currentVec, pin);
+            for (i = 0; i &lt; num; i++)
+            {
+                pin[i] = fac*dist*pin[i] + p0[i];
+            }
+            (*this)++;
+
+            return;
+        }
+        
+        void MultiDevGauss(double **cvar, double *pin, double *p0)
+        {
+            int i;
+            double dist = 0.0;
+
+            double temp;
+            for (i = 0; i &lt; 2; i++)
+            {
+                temp = Dev();
+                dist += temp*temp;
+            }
+            dist = sqrt(dist/2.0);
+            
+
+            EnterMat(cvar);
+            ElMult(*currentVec, pin);
+            for (i = 0; i &lt; num; i++)
+            {
+                pin[i] = fac*dist*pin[i] + p0[i];
+            }
+            (*this)++;
+
+            return;
+        }
+        
+        void EllipseDev(double *pin, double *p0, double fin)
+        {
+            int i;
+            double dist = 0.0;
+
+            dist = pow(Doub(), 1.0/num);
+            
+            ElMult(*currentVec, pin);
+            for (i = 0; i &lt; num; i++)
+            {
+                pin[i] = fin*dist*pin[i] + p0[i];
+            }
+            (*this)++;
+
+            return;
+        }
+        
+        void EllipseDev(double **cvar, double *pin, double *p0, double fin)
+        {
+            int i;
+            double dist = 0.0;
+
+            dist = pow(Doub(), 1.0/num);
+            
+            EnterMat(cvar);
+            ElMult(*currentVec, pin);
+            for (i = 0; i &lt; num; i++)
+            {
+                pin[i] = fin*dist*pin[i] + p0[i];
+            }
+            (*this)++;
+
+            return;
+        }
+};
+
+#endif
+</code></pre><hr><p>Updated on 2022-08-03 at 12:58:18 +0000</p><div class=edit-page><a href=https://github.com/RC1242RC/gambit_gh_pages/blob/master/content/en/documentation/code/ColliderBit/Files/simple_2random__tools_8hpp.md><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2"><path d="M17 3a2.828 2.828.0 114 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></svg>Edit this page on GitHub</a></div></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a class=text-muted href=https://www.netlify.com/>Netlify</a>, <a class=text-muted href=https://gohugo.io/>Hugo</a>, and <a class=text-muted href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.54bf0932b8a36d0e152b1635b099a6ef1394d35327e2437550a075c9c8ed1bd8aed5847c21b36fc02ed24014c031d9ca24017b0c78b1639d7e2fa8329898b842.js integrity="sha512-VL8JMrijbQ4VKxY1sJmm7xOU01Mn4kN1UKB1ycjtG9iu1YR8IbNvwC7SQBTAMdnKJAF7DHixY51+L6gymJi4Qg==" crossorigin=anonymous defer></script>
+<script src=/js/highlight.min.5b48bc253dc75aeea5fb366ecf700f4925e2b6eb1a1466f2124b722d68148d67bc0a9365d2b8ad9c585161b46372d23b08509a16f1fd518542b894756d4752d0.js integrity="sha512-W0i8JT3HWu6l+zZuz3APSSXitusaFGbyEktyLWgUjWe8CpNl0ritnFhRYbRjctI7CFCaFvH9UYVCuJR1bUdS0A==" crossorigin=anonymous defer></script>
+<script src=/main.min.40265e9a032aeba5eaf67baac3cbbc22667a7533215d326eeb3e9f4d5e4be40f9ff4dcd22949db73ae527ca26a19d7998091a8973c82af760b2c0daa335190ed.js integrity="sha512-QCZemgMq66Xq9nuqw8u8ImZ6dTMhXTJu6z6fTV5L5A+f9NzSKUnbc65SfKJqGdeZgJGolzyCr3YLLA2qM1GQ7Q==" crossorigin=anonymous defer></script>
+<script src=https://rc1242rc.github.io/index.min.cb3cfc52c7c54bd8c25d1fbd0a5de239406787c3dcdce4c8c0c6a90e32667d32f427e033d04af1c0f2c4a86667aa8d3df23f54c6a7873d639d2ca7c2edf7146d.js integrity="sha512-yzz8UsfFS9jCXR+9Cl3iOUBnh8Pc3OTIwMapDjJmfTL0J+Az0ErxwPLEqGZnqo098j9UxqeHPWOdLKfC7fcUbQ==" crossorigin=anonymous defer></script></body></html>

@@ -1,0 +1,440 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="ie=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><link rel=preload as=font href=https://rc1242rc.github.io/fonts/vendor/jost/jost-v4-latin-regular.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://rc1242rc.github.io/fonts/vendor/jost/jost-v4-latin-500.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://rc1242rc.github.io/fonts/vendor/jost/jost-v4-latin-700.woff2 type=font/woff2 crossorigin><script>(()=>{var e=localStorage.getItem("theme");e==="dark"&&document.documentElement.setAttribute("data-dark-mode","")})()</script><link rel=stylesheet href=https://rc1242rc.github.io/main.f12f7e04ea768acebec10c86baf049d74d6a79f24bc0dfb7ed77aa60462432916dd1ce8f41c78b69496adf650b3039a28a210183cce598f09b95d6fecb5ff999.css integrity="sha512-8S9+BOp2is6+wQyGuvBJ101qefJLwN+37XeqYEYkMpFt0c6PQceLaUlq32ULMDmiiiEBg8zlmPCbldb+y1/5mQ==" crossorigin=anonymous><noscript><style>img.lazyload{display:none}</style></noscript><meta name=robots content="index, follow"><meta name=googlebot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><meta name=bingbot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><title>file frontends/FeynHiggs_2_11_2.cpp - GAMBIT</title><meta name=description content="[No description available]"><link rel=canonical href=https://rc1242rc.github.io/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/><meta property="og:locale" content="en_US"><meta property="og:type" content="article"><meta property="og:title" content="file frontends/FeynHiggs_2_11_2.cpp"><meta property="og:description" content="[No description available]"><meta property="og:url" content="https://rc1242rc.github.io/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/"><meta property="og:site_name" content="GAMBIT"><meta property="og:image" content="https://rc1242rc.github.io/gambit_logo.png"><meta property="og:image:alt" content="GAMBIT"><meta name=twitter:card content="summary_large_image"><meta name=twitter:site content><meta name=twitter:creator content><meta name=twitter:title content="file frontends/FeynHiggs_2_11_2.cpp"><meta name=twitter:description content="[No description available]"><meta name=twitter:image content="https://rc1242rc.github.io/gambit_logo.png"><meta name=twitter:image:alt content="file frontends/FeynHiggs_2_11_2.cpp"><script type=application/ld+json>{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://rc1242rc.github.io/#/schema/organization/1","name":"Doks","url":"https://rc1242rc.github.io/","sameAs":["https://github.com/GambitBSM"],"logo":{"@type":"ImageObject","@id":"https://rc1242rc.github.io/#/schema/image/1","url":"https://rc1242rc.github.io/logo-doks.png","width":450,"height":416,"caption":"Doks"},"image":{"@id":"https://rc1242rc.github.io/#/schema/image/1"}},{"@type":"WebSite","@id":"https://rc1242rc.github.io/#/schema/website/1","url":"https://rc1242rc.github.io/","name":"GAMBIT","description":"Documentation for the Global And Modular BSM Inference Tool","publisher":{"@id":"https://rc1242rc.github.io/#/schema/organization/1"}},{"@type":"WebPage","@id":"https://rc1242rc.github.io/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/","url":"https://rc1242rc.github.io/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/","name":"file frontends\/FeynHiggs_2_11_2.cpp","description":"[No description available]","isPartOf":{"@id":"https://rc1242rc.github.io/#/schema/website/1"},"about":{"@id":"https://rc1242rc.github.io/#/schema/organization/1"},"datePublished":"0001-01-01T00:00:00CET","dateModified":"0001-01-01T00:00:00CET","breadcrumb":{"@id":"https://rc1242rc.github.io/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#/schema/breadcrumb/1"},"primaryImageOfPage":{"@id":"https://rc1242rc.github.io/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#/schema/image/2"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://rc1242rc.github.io/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/"]}]},{"@type":"BreadcrumbList","@id":"https://rc1242rc.github.io/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#/schema/breadcrumb/1","name":"Breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/","url":"https://rc1242rc.github.io/","name":"Home"}},{"@type":"ListItem","position":2,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/documentation/","url":"https://rc1242rc.github.io/documentation/","name":"Documentation"}},{"@type":"ListItem","position":3,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/documentation/code/","url":"https://rc1242rc.github.io/documentation/code/","name":"Code"}},{"@type":"ListItem","position":4,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/documentation/code/darkbit/","url":"https://rc1242rc.github.io/documentation/code/darkbit/","name":"Darkbit"}},{"@type":"ListItem","position":5,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/documentation/code/darkbit/files/","url":"https://rc1242rc.github.io/documentation/code/darkbit/files/","name":"Files"}},{"@type":"ListItem","position":6,"item":{"@id":"https://rc1242rc.github.io/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/"}}]},{"@context":"https://schema.org","@graph":[{"@type":"ImageObject","@id":"https://rc1242rc.github.io/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#/schema/image/2","url":"https://rc1242rc.github.io/gambit_logo.png","contentUrl":"https://rc1242rc.github.io/gambit_logo.png","caption":"file frontends\/FeynHiggs_2_11_2.cpp"}]}]}</script><meta name=theme-color content="#fff"><link rel=icon href=https://rc1242rc.github.io/favicon.ico sizes=any><link rel=icon type=image/svg+xml href=https://rc1242rc.github.io/favicon.svg><link rel=apple-touch-icon sizes=180x180 href=https://rc1242rc.github.io/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=https://rc1242rc.github.io/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=https://rc1242rc.github.io/favicon-16x16.png><link rel=manifest crossorigin=use-credentials href=https://rc1242rc.github.io/site.webmanifest></head><body class="documentation single light"><div class=sticky-top><div class=header-bar></div><header class="navbar navbar-expand-md navbar-light doks-navbar"><nav class="container-xxl flex-wrap flex-md-nowrap" aria-label="Main navigation"><a class="navbar-brand p-0 me-auto" href=https://rc1242rc.github.io/ aria-label=GAMBIT><img class=logo-light src=https://rc1242rc.github.io//images/gambit_logo.png width=50px>
+<img class="logo-dark d-none" src=https://rc1242rc.github.io//images/gambit_logo.png width=50px>
+GAMBIT</a>
+<button class="btn btn-menu order-2 d-block d-lg-none" type=button data-bs-toggle=offcanvas data-bs-target=#offcanvasDoks aria-controls=offcanvasDoks aria-label="Open main menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button><div class="offcanvas offcanvas-end border-0 py-lg-1" tabindex=-1 id=offcanvasDoks data-bs-backdrop=true aria-labelledby=offcanvasDoksLabel><div class="header-bar d-lg-none"></div><div class="offcanvas-header d-lg-none"><h2 class="h5 offcanvas-title ps-2" id=offcanvasDoksLabel><a class=text-dark href=/>GAMBIT</a></h2><button type=button class="btn-close text-reset me-2" data-bs-dismiss=offcanvas aria-label="Close main menu"></button></div><div class="offcanvas-body p-4 p-lg-0"><ul class="nav flex-column flex-lg-row align-items-lg-center mt-2 mt-lg-0 ms-lg-2 me-lg-auto"><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Documentation
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=/documentation/installation/introduction/>Installation</a></li><li><a class=dropdown-item href=/documentation/examples/colliderbit_example>Examples</a></li><li><a class=dropdown-item href=/documentation/help/faqs/>Help</a></li><li><a class=dropdown-item href=/documentation/code/gambit_sphinx/index_classes>Code Reference</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Community
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=/community/publications/>Publications</a></li><li><a class=dropdown-item href=/community/talks/>Talks</a></li><li><a class=dropdown-item href=/community/members/>Members</a></li><li><a class=dropdown-item href=/community/code_of_conduct/>Code of Conduct</a></li><li><a class=dropdown-item href=/community/contact/>Contact</a></li></ul></li></ul><hr class="text-black-50 my-4 d-lg-none"><form class="doks-search position-relative flex-grow-1 ms-lg-auto me-lg-2"><input id=search class="form-control is-search" type=search placeholder="Search site..." aria-label="Search site..." autocomplete=off><div id=suggestions class="shadow bg-white rounded d-none"></div></form><hr class="text-black-50 my-4 d-lg-none"><ul class="nav flex-column flex-lg-row"><li class=nav-item><a class="nav-link social-link" href=https://github.com/GambitBSM><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37.0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44.0 0020 4.77 5.07 5.07.0 0019.91 1S18.73.65 16 2.48a13.38 13.38.0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07.0 005 4.77 5.44 5.44.0 003.5 8.55c0 5.42 3.3 6.61 6.44 7A3.37 3.37.0 009 18.13V22"/></svg><small class="ms-2 d-lg-none">GitHub</small></a></li></ul><hr class="text-black-50 my-4 d-lg-none"><div class=dropdown><button class="btn btn-doks-light dropdown-toggle" id=doks-versions data-bs-toggle=dropdown aria-expanded=false data-bs-display=static aria-label="Toggle version menu">
+<span class=d-none>Doks</span>
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></button><ul class="dropdown-menu dropdown-menu-lg-end me-lg-2 shadow rounded border-0" aria-labelledby=doks-versions></ul></div></div></div></nav></header></div><div class="wrap container-xxl" role=document><div class=content><div class="row flex-xl-nowrap"><div class="col-lg-5 col-xl-4 docs-sidebar"><nav class=docs-links aria-label="Main navigation"><ul class="list-unstyled collapsible-sidebar"><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-installation aria-expanded=false>
+Installation</button><div class=collapse id=section-installation><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/installation/introduction/>Getting Started</a></li><li><a class="docs-link rounded" href=/documentation/installation/docker_usage/>Docker Usage</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_linux/>Installation for Linux</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_windows/>Installation for Windows</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_macos/>Installation for macOS</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-examples aria-expanded=false>
+Examples</button><div class=collapse id=section-examples><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/examples/colliderbit_example/>ColliderBit Example</a></li><li><a class="docs-link rounded" href=/documentation/examples/anotherbit/>AnotherBit</a></li><li><a class="docs-link rounded" href=/documentation/examples/anotherbit2/>AnotherBit2</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-help aria-expanded=false>
+Help</button><div class=collapse id=section-help><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/help/faqs/>FAQs</a></li><li><a class="docs-link rounded" href=/documentation/help/compiler_matrix/>Compiler Matrix</a></li><li><a class="docs-link rounded" href=/documentation/help/known_issues/>Known Issues</a></li><li><a class="docs-link rounded" href=/documentation/help/configuration_examples/>Configuration Examples</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-code aria-expanded=true>
+Code Reference</button><div class="collapse show" id=section-code><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li class="my-1 ms-3"><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-gambit_sphinx aria-expanded=true>
+<font style="color: #5d2f86;" size=-6>release</font> &nbsp; gambit sphinx</button><div class="collapse show" id=section-gambit_sphinx><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/code/gambit_sphinx/index_classes/>Classes</a></li><li><a class="docs-link rounded" href=/documentation/code/gambit_sphinx/index_files/>Files</a></li><li><a class="docs-link rounded" href=/documentation/code/gambit_sphinx/index_pages/>Pages</a></li><li><a class="docs-link rounded" href=/documentation/code/gambit_sphinx/index_namespaces/>Namespaces</a></li></ul></div></li><li class="my-1 ms-3"><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-ColliderBit aria-expanded=true>
+<font style="color: #5d2f86;" size=-6>development</font> &nbsp; ColliderBit</button><div class="collapse show" id=section-ColliderBit><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/code/colliderbit/index_classes/>Classes</a></li><li><a class="docs-link rounded" href=/documentation/code/colliderbit/index_files/>Files</a></li><li><a class="docs-link rounded" href=/documentation/code/colliderbit/index_pages/>Pages</a></li><li><a class="docs-link rounded" href=/documentation/code/colliderbit/index_namespaces/>Namespaces</a></li></ul></div></li><li class="my-1 ms-3"><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-DarkBit aria-expanded=true>
+<font style="color: #5d2f86;" size=-6>development</font> &nbsp; DarkBit</button><div class="collapse show" id=section-DarkBit><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/code/darkbit/index_classes/>Classes</a></li><li><a class="docs-link rounded" href=/documentation/code/darkbit/index_files/>Files</a></li><li><a class="docs-link rounded" href=/documentation/code/darkbit/index_pages/>Pages</a></li><li><a class="docs-link rounded" href=/documentation/code/darkbit/index_namespaces/>Namespaces</a></li></ul></div></li><li class="my-1 ms-3"><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-main aria-expanded=true>
+<font style="color: #5d2f86;" size=-6>development</font> &nbsp; main</button><div class="collapse show" id=section-main><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/code/main/index_classes/>Classes</a></li><li><a class="docs-link rounded" href=/documentation/code/main/index_files/>Files</a></li><li><a class="docs-link rounded" href=/documentation/code/main/index_pages/>Pages</a></li><li><a class="docs-link rounded" href=/documentation/code/main/index_namespaces/>Namespaces</a></li></ul></div></li></ul></div></li></ul></nav></div><nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation"><div class=d-xl-none><button class="btn btn-outline-primary btn-sm doks-toc-toggle collapsed" type=button data-bs-toggle=collapse data-bs-target=#onThisPage aria-controls=doks-docs-nav aria-expanded=false aria-label="Toggle On this page navigation">
+<span>On this page</span>
+<span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg></span></button><div class=collapse id=onThisPage><div class="card card-body mt-3 py-1"><div class=page-links><nav id=TableOfContents><ul><li><ul><li><a href=#functions>Functions</a></li><li><a href=#attributes>Attributes</a></li><li><a href=#functions-documentation>Functions Documentation</a><ul><li><a href=#function-if>function if</a></li><li><a href=#function-if-1>function if</a></li><li><a href=#function-k3>function k3</a></li><li><a href=#function-k4>function k4</a></li><li><a href=#function-if-2>function if</a></li><li><a href=#function-fhsetsmpara>function FHSetSMPara</a></li><li><a href=#function-if-3>function if</a></li><li><a href=#function-fhsetpara>function FHSetPara</a></li></ul></li><li><a href=#attributes-documentation>Attributes Documentation</a><ul><li><a href=#variable-be_ini_function>variable BE_INI_FUNCTION</a></li><li><a href=#variable-scan_level>variable scan_level</a></li><li><a href=#variable-fullspectrum>variable fullspectrum</a></li><li><a href=#variable-sminputs>variable sminputs</a></li><li><a href=#variable-spec>variable spec</a></li><li><a href=#variable-slhaea>variable slhaea</a></li><li><a href=#variable-spinfo>variable spinfo</a></li><li><a href=#variable-invalfa>variable invAlfa</a></li><li><a href=#variable-alfasmz>variable AlfasMZ</a></li><li><a href=#variable-gf>variable GF</a></li><li><a href=#variable-me>variable ME</a></li><li><a href=#variable-mu>variable MU</a></li><li><a href=#variable-md>variable MD</a></li><li><a href=#variable-mm>variable MM</a></li><li><a href=#variable-mc>variable MC</a></li><li><a href=#variable-ms>variable MS</a></li><li><a href=#variable-ml>variable ML</a></li><li><a href=#variable-mb>variable MB</a></li><li><a href=#variable-mw>variable MW</a></li><li><a href=#variable-mz>variable MZ</a></li><li><a href=#variable-ckmlambda>variable CKMlambda</a></li><li><a href=#variable-ckma>variable CKMA</a></li><li><a href=#variable-ckmrhobar>variable CKMrhobar</a></li><li><a href=#variable-ckmetabar>variable CKMetabar</a></li><li><a href=#variable-error>variable error</a></li><li><a href=#variable-mt>variable MT</a></li><li><a href=#variable-tb>variable TB</a></li><li><a href=#variable-ma0>variable MA0</a></li><li><a href=#variable-mhp>variable MHp</a></li><li><a href=#variable-m1sl>variable M1SL</a></li><li><a href=#variable-m2sl>variable M2SL</a></li><li><a href=#variable-m3sl>variable M3SL</a></li><li><a href=#variable-m1se>variable M1SE</a></li><li><a href=#variable-m2se>variable M2SE</a></li><li><a href=#variable-m3se>variable M3SE</a></li><li><a href=#variable-m1sq>variable M1SQ</a></li><li><a href=#variable-m2sq>variable M2SQ</a></li><li><a href=#variable-m3sq>variable M3SQ</a></li><li><a href=#variable-m1su>variable M1SU</a></li><li><a href=#variable-m2su>variable M2SU</a></li><li><a href=#variable-m3su>variable M3SU</a></li><li><a href=#variable-m1sd>variable M1SD</a></li><li><a href=#variable-m2sd>variable M2SD</a></li><li><a href=#variable-m3sd>variable M3SD</a></li><li><a href=#variable-af>variable Af</a></li><li><a href=#variable-re>variable re</a></li><li><a href=#variable-im>variable im</a></li><li><a href=#variable-at>variable At</a></li><li><a href=#variable-ac>variable Ac</a></li><li><a href=#variable-au>variable Au</a></li><li><a href=#variable-ab>variable Ab</a></li><li><a href=#variable-as>variable As</a></li><li><a href=#variable-ad>variable Ad</a></li><li><a href=#variable-atau>variable Atau</a></li><li><a href=#variable-amu>variable Amu</a></li><li><a href=#variable-ae>variable Ae</a></li><li><a href=#variable-mue>variable MUE</a></li><li><a href=#variable-m_1>variable M_1</a></li><li><a href=#variable-m_2>variable M_2</a></li><li><a href=#variable-m_3>variable M_3</a></li><li><a href=#variable-scale>variable SCALE</a></li><li><a href=#variable-qtau>variable Qtau</a></li><li><a href=#variable-qt>variable Qt</a></li><li><a href=#variable-qb>variable Qb</a></li><li><a href=#variable-scalefactor>variable scalefactor</a></li></ul></li><li><a href=#source-code>Source code</a></li></ul></li></ul></nav></div></div></div></div><div class="page-links d-none d-xl-block"><h3>On this page</h3><nav id=TableOfContents><ul><li><ul><li><a href=#functions>Functions</a></li><li><a href=#attributes>Attributes</a></li><li><a href=#functions-documentation>Functions Documentation</a><ul><li><a href=#function-if>function if</a></li><li><a href=#function-if-1>function if</a></li><li><a href=#function-k3>function k3</a></li><li><a href=#function-k4>function k4</a></li><li><a href=#function-if-2>function if</a></li><li><a href=#function-fhsetsmpara>function FHSetSMPara</a></li><li><a href=#function-if-3>function if</a></li><li><a href=#function-fhsetpara>function FHSetPara</a></li></ul></li><li><a href=#attributes-documentation>Attributes Documentation</a><ul><li><a href=#variable-be_ini_function>variable BE_INI_FUNCTION</a></li><li><a href=#variable-scan_level>variable scan_level</a></li><li><a href=#variable-fullspectrum>variable fullspectrum</a></li><li><a href=#variable-sminputs>variable sminputs</a></li><li><a href=#variable-spec>variable spec</a></li><li><a href=#variable-slhaea>variable slhaea</a></li><li><a href=#variable-spinfo>variable spinfo</a></li><li><a href=#variable-invalfa>variable invAlfa</a></li><li><a href=#variable-alfasmz>variable AlfasMZ</a></li><li><a href=#variable-gf>variable GF</a></li><li><a href=#variable-me>variable ME</a></li><li><a href=#variable-mu>variable MU</a></li><li><a href=#variable-md>variable MD</a></li><li><a href=#variable-mm>variable MM</a></li><li><a href=#variable-mc>variable MC</a></li><li><a href=#variable-ms>variable MS</a></li><li><a href=#variable-ml>variable ML</a></li><li><a href=#variable-mb>variable MB</a></li><li><a href=#variable-mw>variable MW</a></li><li><a href=#variable-mz>variable MZ</a></li><li><a href=#variable-ckmlambda>variable CKMlambda</a></li><li><a href=#variable-ckma>variable CKMA</a></li><li><a href=#variable-ckmrhobar>variable CKMrhobar</a></li><li><a href=#variable-ckmetabar>variable CKMetabar</a></li><li><a href=#variable-error>variable error</a></li><li><a href=#variable-mt>variable MT</a></li><li><a href=#variable-tb>variable TB</a></li><li><a href=#variable-ma0>variable MA0</a></li><li><a href=#variable-mhp>variable MHp</a></li><li><a href=#variable-m1sl>variable M1SL</a></li><li><a href=#variable-m2sl>variable M2SL</a></li><li><a href=#variable-m3sl>variable M3SL</a></li><li><a href=#variable-m1se>variable M1SE</a></li><li><a href=#variable-m2se>variable M2SE</a></li><li><a href=#variable-m3se>variable M3SE</a></li><li><a href=#variable-m1sq>variable M1SQ</a></li><li><a href=#variable-m2sq>variable M2SQ</a></li><li><a href=#variable-m3sq>variable M3SQ</a></li><li><a href=#variable-m1su>variable M1SU</a></li><li><a href=#variable-m2su>variable M2SU</a></li><li><a href=#variable-m3su>variable M3SU</a></li><li><a href=#variable-m1sd>variable M1SD</a></li><li><a href=#variable-m2sd>variable M2SD</a></li><li><a href=#variable-m3sd>variable M3SD</a></li><li><a href=#variable-af>variable Af</a></li><li><a href=#variable-re>variable re</a></li><li><a href=#variable-im>variable im</a></li><li><a href=#variable-at>variable At</a></li><li><a href=#variable-ac>variable Ac</a></li><li><a href=#variable-au>variable Au</a></li><li><a href=#variable-ab>variable Ab</a></li><li><a href=#variable-as>variable As</a></li><li><a href=#variable-ad>variable Ad</a></li><li><a href=#variable-atau>variable Atau</a></li><li><a href=#variable-amu>variable Amu</a></li><li><a href=#variable-ae>variable Ae</a></li><li><a href=#variable-mue>variable MUE</a></li><li><a href=#variable-m_1>variable M_1</a></li><li><a href=#variable-m_2>variable M_2</a></li><li><a href=#variable-m_3>variable M_3</a></li><li><a href=#variable-scale>variable SCALE</a></li><li><a href=#variable-qtau>variable Qtau</a></li><li><a href=#variable-qt>variable Qt</a></li><li><a href=#variable-qb>variable Qb</a></li><li><a href=#variable-scalefactor>variable scalefactor</a></li></ul></li><li><a href=#source-code>Source code</a></li></ul></li></ul></nav></div></nav><main class="docs-content col-lg-11 col-xl-9 mx-xl-auto"><nav aria-label=breadcrumb><ol class=breadcrumb><li class=breadcrumb-item><a href=/>Home</a></li><li class=breadcrumb-item><a href=/documentation/>Documentation</a></li><li class=breadcrumb-item><a href=/documentation/code/>Code Reference</a></li><li class=breadcrumb-item><a href=/documentation/code/darkbit/>DarkBit</a></li><li class="breadcrumb-item active" aria-current=page>file frontends/FeynHiggs_2_11_2.cpp</li></ol></nav><h1>file frontends/FeynHiggs_2_11_2.cpp</h1><p class=lead></p><p>[No description available]</p><h2 id=functions>Functions <a href=#functions class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th></th><th>Name</th></tr></thead><tbody><tr><td></td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#function-if>if</a></strong>(scan_level )</td></tr><tr><td></td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#function-if>if</a></strong>(slhaea. find"SPINFO" ==slhaea.end())</td></tr><tr><td>std::vector&lt; std::string ></td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#function-k3>k3</a></strong>(1 , &ldquo;3&rdquo; )</td></tr><tr><td>std::vector&lt; std::string ></td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#function-k4>k4</a></strong>(1 , &ldquo;4&rdquo; )</td></tr><tr><td></td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#function-if>if</a></strong>(spinfo.find(k3) ! =spinfo.end()</td></tr><tr><td></td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#function-fhsetsmpara>FHSetSMPara</a></strong>(error , invAlfa , AlfasMZ , GF , ME , MU , MD , MM , MC , MS , ML , MB , MW , MZ , CKMlambda , CKMA , CKMrhobar , CKMetabar )</td></tr><tr><td></td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#function-if>if</a></strong>(MA0&lt;= 0.)</td></tr><tr><td></td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#function-fhsetpara>FHSetPara</a></strong>(error , scalefactor , MT , TB , MA0 , MHp , M3SL , M3SE , M3SQ , M3SU , M3SD , M2SL , M2SE , M2SQ , M2SU , M2SD , M1SL , M1SE , M1SQ , M1SU , M1SD , MUE , Atau , At , Ab , Amu , Ac , As , Ae , Au , Ad , M_1 , M_2 , M_3 , Qtau , Qt , Qb )</td></tr></tbody></table><h2 id=attributes>Attributes <a href=#attributes class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th></th><th>Name</th></tr></thead><tbody><tr><td></td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#variable-be-ini-function>BE_INI_FUNCTION</a></strong></td></tr><tr><td>bool</td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#variable-scan-level>scan_level</a></strong></td></tr><tr><td>const Spectrum &</td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#variable-fullspectrum>fullspectrum</a></strong></td></tr><tr><td>const SMInputs &</td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#variable-sminputs>sminputs</a></strong></td></tr><tr><td>const SubSpectrum &</td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#variable-spec>spec</a></strong></td></tr><tr><td>SLHAea::Coll</td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#variable-slhaea>slhaea</a></strong></td></tr><tr><td>SLHAea::Block</td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#variable-spinfo>spinfo</a></strong></td></tr><tr><td>fh_real</td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#variable-invalfa>invAlfa</a></strong></td></tr><tr><td>fh_real</td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#variable-alfasmz>AlfasMZ</a></strong></td></tr><tr><td>fh_real</td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#variable-gf>GF</a></strong></td></tr><tr><td>fh_real</td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#variable-me>ME</a></strong></td></tr><tr><td>fh_real</td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#variable-mu>MU</a></strong></td></tr><tr><td>fh_real</td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#variable-md>MD</a></strong></td></tr><tr><td>fh_real</td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#variable-mm>MM</a></strong></td></tr><tr><td>fh_real</td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#variable-mc>MC</a></strong></td></tr><tr><td>fh_real</td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#variable-ms>MS</a></strong></td></tr><tr><td>fh_real</td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#variable-ml>ML</a></strong></td></tr><tr><td>fh_real</td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#variable-mb>MB</a></strong></td></tr><tr><td>fh_real</td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#variable-mw>MW</a></strong></td></tr><tr><td>fh_real</td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#variable-mz>MZ</a></strong></td></tr><tr><td>fh_real</td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#variable-ckmlambda>CKMlambda</a></strong></td></tr><tr><td>fh_real</td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#variable-ckma>CKMA</a></strong></td></tr><tr><td>fh_real</td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#variable-ckmrhobar>CKMrhobar</a></strong></td></tr><tr><td>fh_real</td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#variable-ckmetabar>CKMetabar</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#variable-error>error</a></strong></td></tr><tr><td>fh_real</td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#variable-mt>MT</a></strong></td></tr><tr><td>fh_real</td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#variable-tb>TB</a></strong></td></tr><tr><td>fh_real</td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#variable-ma0>MA0</a></strong></td></tr><tr><td>fh_real</td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#variable-mhp>MHp</a></strong></td></tr><tr><td>fh_real</td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#variable-m1sl>M1SL</a></strong></td></tr><tr><td>fh_real</td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#variable-m2sl>M2SL</a></strong></td></tr><tr><td>fh_real</td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#variable-m3sl>M3SL</a></strong></td></tr><tr><td>fh_real</td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#variable-m1se>M1SE</a></strong></td></tr><tr><td>fh_real</td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#variable-m2se>M2SE</a></strong></td></tr><tr><td>fh_real</td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#variable-m3se>M3SE</a></strong></td></tr><tr><td>fh_real</td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#variable-m1sq>M1SQ</a></strong></td></tr><tr><td>fh_real</td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#variable-m2sq>M2SQ</a></strong></td></tr><tr><td>fh_real</td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#variable-m3sq>M3SQ</a></strong></td></tr><tr><td>fh_real</td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#variable-m1su>M1SU</a></strong></td></tr><tr><td>fh_real</td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#variable-m2su>M2SU</a></strong></td></tr><tr><td>fh_real</td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#variable-m3su>M3SU</a></strong></td></tr><tr><td>fh_real</td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#variable-m1sd>M1SD</a></strong></td></tr><tr><td>fh_real</td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#variable-m2sd>M2SD</a></strong></td></tr><tr><td>fh_real</td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#variable-m3sd>M3SD</a></strong></td></tr><tr><td>fh_complex</td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#variable-af>Af</a></strong></td></tr><tr><td>Af</td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#variable-re>re</a></strong></td></tr><tr><td>Af</td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#variable-im>im</a></strong></td></tr><tr><td>fh_complex</td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#variable-at>At</a></strong></td></tr><tr><td>fh_complex</td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#variable-ac>Ac</a></strong></td></tr><tr><td>fh_complex</td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#variable-au>Au</a></strong></td></tr><tr><td>fh_complex</td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#variable-ab>Ab</a></strong></td></tr><tr><td>fh_complex</td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#variable-as>As</a></strong></td></tr><tr><td>fh_complex</td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#variable-ad>Ad</a></strong></td></tr><tr><td>fh_complex</td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#variable-atau>Atau</a></strong></td></tr><tr><td>fh_complex</td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#variable-amu>Amu</a></strong></td></tr><tr><td>fh_complex</td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#variable-ae>Ae</a></strong></td></tr><tr><td>fh_complex</td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#variable-mue>MUE</a></strong></td></tr><tr><td>fh_complex</td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#variable-m-1>M_1</a></strong></td></tr><tr><td>fh_complex</td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#variable-m-2>M_2</a></strong></td></tr><tr><td>fh_complex</td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#variable-m-3>M_3</a></strong></td></tr><tr><td>double</td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#variable-scale>SCALE</a></strong></td></tr><tr><td>fh_real</td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#variable-qtau>Qtau</a></strong></td></tr><tr><td>fh_real</td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#variable-qt>Qt</a></strong></td></tr><tr><td>fh_real</td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#variable-qb>Qb</a></strong></td></tr><tr><td>fh_real</td><td><strong><a href=/documentation/code/darkbit/files/feynhiggs__2__11__2_8cpp/#variable-scalefactor>scalefactor</a></strong></td></tr></tbody></table><h2 id=functions-documentation>Functions Documentation <a href=#functions-documentation class=anchor aria-hidden=true>#</a></h2><h3 id=function-if>function if <a href=#function-if class=anchor aria-hidden=true>#</a></h3><pre><code>if(
+    scan_level 
+)
+</code></pre><h3 id=function-if-1>function if <a href=#function-if-1 class=anchor aria-hidden=true>#</a></h3><pre><code>if(
+    slhaea. find&quot;SPINFO&quot; ==slhaea.end()
+)
+</code></pre><h3 id=function-k3>function k3 <a href=#function-k3 class=anchor aria-hidden=true>#</a></h3><pre><code>std::vector&lt; std::string &gt; k3(
+    1 ,
+    &quot;3&quot; 
+)
+</code></pre><h3 id=function-k4>function k4 <a href=#function-k4 class=anchor aria-hidden=true>#</a></h3><pre><code>std::vector&lt; std::string &gt; k4(
+    1 ,
+    &quot;4&quot; 
+)
+</code></pre><h3 id=function-if-2>function if <a href=#function-if-2 class=anchor aria-hidden=true>#</a></h3><pre><code>if(
+    spinfo.find(k3) !  =spinfo.end()||spinfo.find(k4) !=spinfo.end()
+)
+</code></pre><h3 id=function-fhsetsmpara>function FHSetSMPara <a href=#function-fhsetsmpara class=anchor aria-hidden=true>#</a></h3><pre><code>FHSetSMPara(
+    error ,
+    invAlfa ,
+    AlfasMZ ,
+    GF ,
+    ME ,
+    MU ,
+    MD ,
+    MM ,
+    MC ,
+    MS ,
+    ML ,
+    MB ,
+    MW ,
+    MZ ,
+    CKMlambda ,
+    CKMA ,
+    CKMrhobar ,
+    CKMetabar 
+)
+</code></pre><h3 id=function-if-3>function if <a href=#function-if-3 class=anchor aria-hidden=true>#</a></h3><pre><code>if(
+    MA0&lt;= 0.
+)
+</code></pre><h3 id=function-fhsetpara>function FHSetPara <a href=#function-fhsetpara class=anchor aria-hidden=true>#</a></h3><pre><code>FHSetPara(
+    error ,
+    scalefactor ,
+    MT ,
+    TB ,
+    MA0 ,
+    MHp ,
+    M3SL ,
+    M3SE ,
+    M3SQ ,
+    M3SU ,
+    M3SD ,
+    M2SL ,
+    M2SE ,
+    M2SQ ,
+    M2SU ,
+    M2SD ,
+    M1SL ,
+    M1SE ,
+    M1SQ ,
+    M1SU ,
+    M1SD ,
+    MUE ,
+    Atau ,
+    At ,
+    Ab ,
+    Amu ,
+    Ac ,
+    As ,
+    Ae ,
+    Au ,
+    Ad ,
+    M_1 ,
+    M_2 ,
+    M_3 ,
+    Qtau ,
+    Qt ,
+    Qb 
+)
+</code></pre><h2 id=attributes-documentation>Attributes Documentation <a href=#attributes-documentation class=anchor aria-hidden=true>#</a></h2><h3 id=variable-be_ini_function>variable BE_INI_FUNCTION <a href=#variable-be_ini_function class=anchor aria-hidden=true>#</a></h3><pre><code>BE_INI_FUNCTION {
+
+  int error = 1;
+</code></pre><h3 id=variable-scan_level>variable scan_level <a href=#variable-scan_level class=anchor aria-hidden=true>#</a></h3><pre><code>static bool scan_level = true;
+</code></pre><h3 id=variable-fullspectrum>variable fullspectrum <a href=#variable-fullspectrum class=anchor aria-hidden=true>#</a></h3><pre><code>const Spectrum &amp; fullspectrum = *Dep::unimproved_MSSM_spectrum;
+</code></pre><h3 id=variable-sminputs>variable sminputs <a href=#variable-sminputs class=anchor aria-hidden=true>#</a></h3><pre><code>const SMInputs &amp; sminputs = fullspectrum.get_SMInputs();
+</code></pre><h3 id=variable-spec>variable spec <a href=#variable-spec class=anchor aria-hidden=true>#</a></h3><pre><code>const SubSpectrum &amp; spec = fullspectrum.get_HE();
+</code></pre><h3 id=variable-slhaea>variable slhaea <a href=#variable-slhaea class=anchor aria-hidden=true>#</a></h3><pre><code>SLHAea::Coll slhaea = fullspectrum.getSLHAea(2);
+</code></pre><h3 id=variable-spinfo>variable spinfo <a href=#variable-spinfo class=anchor aria-hidden=true>#</a></h3><pre><code>SLHAea::Block spinfo = slhaea.at(&quot;SPINFO&quot;);
+</code></pre><h3 id=variable-invalfa>variable invAlfa <a href=#variable-invalfa class=anchor aria-hidden=true>#</a></h3><pre><code>fh_real invAlfa = sminputs.alphainv;
+</code></pre><h3 id=variable-alfasmz>variable AlfasMZ <a href=#variable-alfasmz class=anchor aria-hidden=true>#</a></h3><pre><code>fh_real AlfasMZ = sminputs.alphaS;
+</code></pre><h3 id=variable-gf>variable GF <a href=#variable-gf class=anchor aria-hidden=true>#</a></h3><pre><code>fh_real GF = sminputs.GF;
+</code></pre><h3 id=variable-me>variable ME <a href=#variable-me class=anchor aria-hidden=true>#</a></h3><pre><code>fh_real ME = sminputs.mE;
+</code></pre><h3 id=variable-mu>variable MU <a href=#variable-mu class=anchor aria-hidden=true>#</a></h3><pre><code>fh_real MU = sminputs.mU;
+</code></pre><h3 id=variable-md>variable MD <a href=#variable-md class=anchor aria-hidden=true>#</a></h3><pre><code>fh_real MD = sminputs.mD;
+</code></pre><h3 id=variable-mm>variable MM <a href=#variable-mm class=anchor aria-hidden=true>#</a></h3><pre><code>fh_real MM = sminputs.mMu;
+</code></pre><h3 id=variable-mc>variable MC <a href=#variable-mc class=anchor aria-hidden=true>#</a></h3><pre><code>fh_real MC = sminputs.mCmC;
+</code></pre><h3 id=variable-ms>variable MS <a href=#variable-ms class=anchor aria-hidden=true>#</a></h3><pre><code>fh_real MS = sminputs.mS;
+</code></pre><h3 id=variable-ml>variable ML <a href=#variable-ml class=anchor aria-hidden=true>#</a></h3><pre><code>fh_real ML = sminputs.mTau;
+</code></pre><h3 id=variable-mb>variable MB <a href=#variable-mb class=anchor aria-hidden=true>#</a></h3><pre><code>fh_real MB = sminputs.mBmB;
+</code></pre><h3 id=variable-mw>variable MW <a href=#variable-mw class=anchor aria-hidden=true>#</a></h3><pre><code>fh_real MW = fullspectrum.get(Par::Pole_Mass,&quot;W+&quot;);
+</code></pre><h3 id=variable-mz>variable MZ <a href=#variable-mz class=anchor aria-hidden=true>#</a></h3><pre><code>fh_real MZ = sminputs.mZ;
+</code></pre><h3 id=variable-ckmlambda>variable CKMlambda <a href=#variable-ckmlambda class=anchor aria-hidden=true>#</a></h3><pre><code>fh_real CKMlambda = sminputs.CKM.lambda;
+</code></pre><h3 id=variable-ckma>variable CKMA <a href=#variable-ckma class=anchor aria-hidden=true>#</a></h3><pre><code>fh_real CKMA = sminputs.CKM.A;
+</code></pre><h3 id=variable-ckmrhobar>variable CKMrhobar <a href=#variable-ckmrhobar class=anchor aria-hidden=true>#</a></h3><pre><code>fh_real CKMrhobar = sminputs.CKM.rhobar;
+</code></pre><h3 id=variable-ckmetabar>variable CKMetabar <a href=#variable-ckmetabar class=anchor aria-hidden=true>#</a></h3><pre><code>fh_real CKMetabar = sminputs.CKM.etabar;
+</code></pre><h3 id=variable-error>variable error <a href=#variable-error class=anchor aria-hidden=true>#</a></h3><pre><code>error = 1;
+</code></pre><h3 id=variable-mt>variable MT <a href=#variable-mt class=anchor aria-hidden=true>#</a></h3><pre><code>fh_real MT = fullspectrum.get(Par::Pole_Mass,&quot;t&quot;);
+</code></pre><h3 id=variable-tb>variable TB <a href=#variable-tb class=anchor aria-hidden=true>#</a></h3><pre><code>fh_real TB = SLHAea::to&lt;double&gt;( slhaea.at(&quot;MINPAR&quot;).at(3).at(1) );
+</code></pre><h3 id=variable-ma0>variable MA0 <a href=#variable-ma0 class=anchor aria-hidden=true>#</a></h3><pre><code>fh_real MA0 = fullspectrum.get(Par::Pole_Mass,&quot;A0&quot;);
+</code></pre><h3 id=variable-mhp>variable MHp <a href=#variable-mhp class=anchor aria-hidden=true>#</a></h3><pre><code>fh_real MHp = -1.;
+</code></pre><h3 id=variable-m1sl>variable M1SL <a href=#variable-m1sl class=anchor aria-hidden=true>#</a></h3><pre><code>fh_real M1SL = SLHAea::to&lt;double&gt;( slhaea.at(&quot;MSOFT&quot;).at(31).at(1) );
+</code></pre><h3 id=variable-m2sl>variable M2SL <a href=#variable-m2sl class=anchor aria-hidden=true>#</a></h3><pre><code>fh_real M2SL = SLHAea::to&lt;double&gt;( slhaea.at(&quot;MSOFT&quot;).at(32).at(1) );
+</code></pre><h3 id=variable-m3sl>variable M3SL <a href=#variable-m3sl class=anchor aria-hidden=true>#</a></h3><pre><code>fh_real M3SL = SLHAea::to&lt;double&gt;( slhaea.at(&quot;MSOFT&quot;).at(33).at(1) );
+</code></pre><h3 id=variable-m1se>variable M1SE <a href=#variable-m1se class=anchor aria-hidden=true>#</a></h3><pre><code>fh_real M1SE = SLHAea::to&lt;double&gt;( slhaea.at(&quot;MSOFT&quot;).at(34).at(1) );
+</code></pre><h3 id=variable-m2se>variable M2SE <a href=#variable-m2se class=anchor aria-hidden=true>#</a></h3><pre><code>fh_real M2SE = SLHAea::to&lt;double&gt;( slhaea.at(&quot;MSOFT&quot;).at(35).at(1) );
+</code></pre><h3 id=variable-m3se>variable M3SE <a href=#variable-m3se class=anchor aria-hidden=true>#</a></h3><pre><code>fh_real M3SE = SLHAea::to&lt;double&gt;( slhaea.at(&quot;MSOFT&quot;).at(36).at(1) );
+</code></pre><h3 id=variable-m1sq>variable M1SQ <a href=#variable-m1sq class=anchor aria-hidden=true>#</a></h3><pre><code>fh_real M1SQ = SLHAea::to&lt;double&gt;( slhaea.at(&quot;MSOFT&quot;).at(41).at(1) );
+</code></pre><h3 id=variable-m2sq>variable M2SQ <a href=#variable-m2sq class=anchor aria-hidden=true>#</a></h3><pre><code>fh_real M2SQ = SLHAea::to&lt;double&gt;( slhaea.at(&quot;MSOFT&quot;).at(42).at(1) );
+</code></pre><h3 id=variable-m3sq>variable M3SQ <a href=#variable-m3sq class=anchor aria-hidden=true>#</a></h3><pre><code>fh_real M3SQ = SLHAea::to&lt;double&gt;( slhaea.at(&quot;MSOFT&quot;).at(43).at(1) );
+</code></pre><h3 id=variable-m1su>variable M1SU <a href=#variable-m1su class=anchor aria-hidden=true>#</a></h3><pre><code>fh_real M1SU = SLHAea::to&lt;double&gt;( slhaea.at(&quot;MSOFT&quot;).at(44).at(1) );
+</code></pre><h3 id=variable-m2su>variable M2SU <a href=#variable-m2su class=anchor aria-hidden=true>#</a></h3><pre><code>fh_real M2SU = SLHAea::to&lt;double&gt;( slhaea.at(&quot;MSOFT&quot;).at(45).at(1) );
+</code></pre><h3 id=variable-m3su>variable M3SU <a href=#variable-m3su class=anchor aria-hidden=true>#</a></h3><pre><code>fh_real M3SU = SLHAea::to&lt;double&gt;( slhaea.at(&quot;MSOFT&quot;).at(46).at(1) );
+</code></pre><h3 id=variable-m1sd>variable M1SD <a href=#variable-m1sd class=anchor aria-hidden=true>#</a></h3><pre><code>fh_real M1SD = SLHAea::to&lt;double&gt;( slhaea.at(&quot;MSOFT&quot;).at(47).at(1) );
+</code></pre><h3 id=variable-m2sd>variable M2SD <a href=#variable-m2sd class=anchor aria-hidden=true>#</a></h3><pre><code>fh_real M2SD = SLHAea::to&lt;double&gt;( slhaea.at(&quot;MSOFT&quot;).at(48).at(1) );
+</code></pre><h3 id=variable-m3sd>variable M3SD <a href=#variable-m3sd class=anchor aria-hidden=true>#</a></h3><pre><code>fh_real M3SD = SLHAea::to&lt;double&gt;( slhaea.at(&quot;MSOFT&quot;).at(49).at(1) );
+</code></pre><h3 id=variable-af>variable Af <a href=#variable-af class=anchor aria-hidden=true>#</a></h3><pre><code>fh_complex Af;
+</code></pre><h3 id=variable-re>variable re <a href=#variable-re class=anchor aria-hidden=true>#</a></h3><pre><code>Af re = 0.;
+</code></pre><h3 id=variable-im>variable im <a href=#variable-im class=anchor aria-hidden=true>#</a></h3><pre><code>Af im = 0.;
+</code></pre><h3 id=variable-at>variable At <a href=#variable-at class=anchor aria-hidden=true>#</a></h3><pre><code>fh_complex At = Af;
+</code></pre><h3 id=variable-ac>variable Ac <a href=#variable-ac class=anchor aria-hidden=true>#</a></h3><pre><code>fh_complex Ac = Af;
+</code></pre><h3 id=variable-au>variable Au <a href=#variable-au class=anchor aria-hidden=true>#</a></h3><pre><code>fh_complex Au = Af;
+</code></pre><h3 id=variable-ab>variable Ab <a href=#variable-ab class=anchor aria-hidden=true>#</a></h3><pre><code>fh_complex Ab = Af;
+</code></pre><h3 id=variable-as>variable As <a href=#variable-as class=anchor aria-hidden=true>#</a></h3><pre><code>fh_complex As = Af;
+</code></pre><h3 id=variable-ad>variable Ad <a href=#variable-ad class=anchor aria-hidden=true>#</a></h3><pre><code>fh_complex Ad = Af;
+</code></pre><h3 id=variable-atau>variable Atau <a href=#variable-atau class=anchor aria-hidden=true>#</a></h3><pre><code>fh_complex Atau = Af;
+</code></pre><h3 id=variable-amu>variable Amu <a href=#variable-amu class=anchor aria-hidden=true>#</a></h3><pre><code>fh_complex Amu = Af;
+</code></pre><h3 id=variable-ae>variable Ae <a href=#variable-ae class=anchor aria-hidden=true>#</a></h3><pre><code>fh_complex Ae = Af;
+</code></pre><h3 id=variable-mue>variable MUE <a href=#variable-mue class=anchor aria-hidden=true>#</a></h3><pre><code>fh_complex MUE;
+</code></pre><h3 id=variable-m_1>variable M_1 <a href=#variable-m_1 class=anchor aria-hidden=true>#</a></h3><pre><code>fh_complex M_1;
+</code></pre><h3 id=variable-m_2>variable M_2 <a href=#variable-m_2 class=anchor aria-hidden=true>#</a></h3><pre><code>fh_complex M_2;
+</code></pre><h3 id=variable-m_3>variable M_3 <a href=#variable-m_3 class=anchor aria-hidden=true>#</a></h3><pre><code>fh_complex M_3;
+</code></pre><h3 id=variable-scale>variable SCALE <a href=#variable-scale class=anchor aria-hidden=true>#</a></h3><pre><code>double SCALE = spec.GetScale();
+</code></pre><h3 id=variable-qtau>variable Qtau <a href=#variable-qtau class=anchor aria-hidden=true>#</a></h3><pre><code>fh_real Qtau = SCALE;
+</code></pre><h3 id=variable-qt>variable Qt <a href=#variable-qt class=anchor aria-hidden=true>#</a></h3><pre><code>fh_real Qt = SCALE;
+</code></pre><h3 id=variable-qb>variable Qb <a href=#variable-qb class=anchor aria-hidden=true>#</a></h3><pre><code>fh_real Qb = SCALE;
+</code></pre><h3 id=variable-scalefactor>variable scalefactor <a href=#variable-scalefactor class=anchor aria-hidden=true>#</a></h3><pre><code>fh_real scalefactor = 1.;
+</code></pre><h2 id=source-code>Source code <a href=#source-code class=anchor aria-hidden=true>#</a></h2><pre><code>//   GAMBIT: Global and Modular BSM Inference Tool
+//   *********************************************
+///  \file FeynHiggs.cpp
+///
+///  Frontend source for the FeynHiggs backend.
+///
+///  Actual implementation of FeynHiggs ini function.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Christopher S. Rogan
+///          (crogan@cern.ch)
+///  \date 2015 Sept
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)
+///  \date 2016 Aug
+///
+///  *********************************************
+
+#include &quot;gambit/Backends/frontend_macros.hpp&quot;
+#include &quot;gambit/Backends/frontends/FeynHiggs_2_11_2.hpp&quot;
+
+//#define FEYNHIGGS_DEBUG
+
+BE_INI_FUNCTION
+{
+
+  int error = 1;
+
+  // Scan-level initialisation
+  static bool scan_level = true;
+  if(scan_level)
+  {
+    // initialize FeynHiggs flags
+    int mssmpart = 4;  // scope of calculation (4 -&gt; full MSSM, recommended)
+    int fieldren = 0;  // one-loop field-renormalization constants (0 -&gt; DRbar, strongly recommended))
+    int tanbren = 0;   // one-loop one-loop tanBeta counter-term (0 -&gt; DRbar, strongly recommended))
+    int higgsmix = 2;  // mixing in Higgs sector (3 -&gt; full 3 x 3 in neutral sector) -&gt; HB says 2
+    int p2approx = 4;  // 1-loop approximation (4 -&gt; none, UHiggs eval. at p^2=0, recommended) -&gt; HB says 0
+    int looplevel = 2; // higher-order corrections? (2 -&gt; various 2-loop contrib., recommended)
+    int runningMT = 1; // top mass for 1/2-loop corr. (1 -&gt; m_t^{run}, recommended)
+    int botResum = 1;  // O(tan^n Beta) corr. ressummed? (1 -&gt; yes, recommended)
+    int tlCplxApprox = 0; // determines how 2-loop corr. are treated with complex param (0 for rMSSM, &gt; 0 for cMSSM)
+
+    #ifdef FEYNHIGGS_DEBUG
+      cout &lt;&lt; &quot;****** calling FHSetFlags ******&quot; &lt;&lt; endl;
+    #endif
+
+    FHSetFlags(error, mssmpart, fieldren, tanbren, higgsmix,
+         p2approx, looplevel, runningMT, botResum, tlCplxApprox);
+  }
+  scan_level = false;
+
+  // retrieve MSSM_spectrum dependency
+  const Spectrum&amp; fullspectrum = *Dep::unimproved_MSSM_spectrum;
+  const SMInputs&amp; sminputs = fullspectrum.get_SMInputs();
+  const SubSpectrum&amp; spec = fullspectrum.get_HE();
+  SLHAea::Coll slhaea = fullspectrum.getSLHAea(2);
+
+  if (slhaea.find(&quot;SPINFO&quot;) == slhaea.end())
+  {
+    cout &lt;&lt; slhaea &lt;&lt; endl;
+    backend_error().raise(LOCAL_INFO, &quot;SPINFO block missing from SLHAea object.&quot;);
+  }
+  SLHAea::Block spinfo = slhaea.at(&quot;SPINFO&quot;);
+  std::vector&lt;std::string&gt; k3(1, &quot;3&quot;);
+  std::vector&lt;std::string&gt; k4(1, &quot;4&quot;);
+  if(spinfo.find(k3) != spinfo.end() || spinfo.find(k4) != spinfo.end())
+  {
+    backend_error().raise(LOCAL_INFO, &quot;Entry 3 or 4 missing in SPINFO block.&quot;);
+  }
+
+  //
+  // SM input parameters: -1 gives default value
+  //
+  fh_real invAlfa = sminputs.alphainv; // 1/alpha_{QED}
+  fh_real AlfasMZ = sminputs.alphaS;   // alpha_s @ MZ
+  fh_real GF = sminputs.GF;            // Fermi constant
+
+  fh_real ME = sminputs.mE;      // electron mass
+  fh_real MU = sminputs.mU;      // up quark mass @ 2 GeV
+  fh_real MD = sminputs.mD;      // down quark mass @ 2 GeV
+  fh_real MM = sminputs.mMu;     // muon mass
+  fh_real MC = sminputs.mCmC;    // charm mass at m_c
+  fh_real MS = sminputs.mS;      // stange mass @ 2 GeV
+  fh_real ML = sminputs.mTau;    // tau mass
+  fh_real MB = sminputs.mBmB;    // bottom mass at m_b
+
+  fh_real MW = fullspectrum.get(Par::Pole_Mass,&quot;W+&quot;);  // W boson mass
+  fh_real MZ = sminputs.mZ;                        // Z boson mass
+
+  // CKM input parameters in Wolfenstein parameterization
+  fh_real CKMlambda = sminputs.CKM.lambda;
+  fh_real CKMA = sminputs.CKM.A;
+  fh_real CKMrhobar = sminputs.CKM.rhobar;
+  fh_real CKMetabar = sminputs.CKM.etabar;
+
+  #ifdef FEYNHIGGS_DEBUG
+    cout &lt;&lt; &quot;****** calling FHSetSMPara ******&quot; &lt;&lt; endl;
+  #endif
+
+  error = 1;
+  FHSetSMPara(error, invAlfa, AlfasMZ, GF,
+        ME, MU, MD, MM, MC, MS, ML, MB,
+        MW, MZ,
+        CKMlambda, CKMA, CKMrhobar, CKMetabar);
+
+  fh_real MT = fullspectrum.get(Par::Pole_Mass,&quot;t&quot;);                      // top quark mass
+  fh_real TB = SLHAea::to&lt;double&gt;( slhaea.at(&quot;MINPAR&quot;).at(3).at(1) ); // tan Beta
+  fh_real MA0 = fullspectrum.get(Par::Pole_Mass,&quot;A0&quot;);   // masses of CP-odd and
+  fh_real MHp = -1.;                                                  // charged Higgs (only one should be given)
+  if(MA0 &lt;= 0.){
+    MA0 = -1.;
+    MHp = fullspectrum.get(Par::Pole_Mass,&quot;H+&quot;);
+  }
+
+  // cout &lt;&lt; &quot;** Top Mass: &quot; &lt;&lt; MT &lt;&lt; endl;
+  // cout &lt;&lt; &quot;** Tan beta: &quot; &lt;&lt; TB &lt;&lt; endl;
+  // cout &lt;&lt; &quot;** MA0: &quot; &lt;&lt; MA0 &lt;&lt; endl;
+  // cout &lt;&lt; &quot;** MHp: &quot; &lt;&lt; MHp &lt;&lt; endl;
+
+  // soft-SUSY breaking parameters for g=1,2,3 generation sfermions
+  // slepton doublet
+  fh_real M1SL = SLHAea::to&lt;double&gt;( slhaea.at(&quot;MSOFT&quot;).at(31).at(1) );
+  fh_real M2SL = SLHAea::to&lt;double&gt;( slhaea.at(&quot;MSOFT&quot;).at(32).at(1) );
+  fh_real M3SL = SLHAea::to&lt;double&gt;( slhaea.at(&quot;MSOFT&quot;).at(33).at(1) );
+  // slepton singlet
+  fh_real M1SE = SLHAea::to&lt;double&gt;( slhaea.at(&quot;MSOFT&quot;).at(34).at(1) );
+  fh_real M2SE = SLHAea::to&lt;double&gt;( slhaea.at(&quot;MSOFT&quot;).at(35).at(1) );
+  fh_real M3SE = SLHAea::to&lt;double&gt;( slhaea.at(&quot;MSOFT&quot;).at(36).at(1) );
+  // squark doublet
+  fh_real M1SQ = SLHAea::to&lt;double&gt;( slhaea.at(&quot;MSOFT&quot;).at(41).at(1) );
+  fh_real M2SQ = SLHAea::to&lt;double&gt;( slhaea.at(&quot;MSOFT&quot;).at(42).at(1) );
+  fh_real M3SQ = SLHAea::to&lt;double&gt;( slhaea.at(&quot;MSOFT&quot;).at(43).at(1) );
+  // up-type squark singlet
+  fh_real M1SU = SLHAea::to&lt;double&gt;( slhaea.at(&quot;MSOFT&quot;).at(44).at(1) );
+  fh_real M2SU = SLHAea::to&lt;double&gt;( slhaea.at(&quot;MSOFT&quot;).at(45).at(1) );
+  fh_real M3SU = SLHAea::to&lt;double&gt;( slhaea.at(&quot;MSOFT&quot;).at(46).at(1) );
+  // down-type squark singlet
+  fh_real M1SD = SLHAea::to&lt;double&gt;( slhaea.at(&quot;MSOFT&quot;).at(47).at(1) );
+  fh_real M2SD = SLHAea::to&lt;double&gt;( slhaea.at(&quot;MSOFT&quot;).at(48).at(1) );
+  fh_real M3SD = SLHAea::to&lt;double&gt;( slhaea.at(&quot;MSOFT&quot;).at(49).at(1) );
+
+  // cout &lt;&lt; &quot;** soft-SUSY breaking parameters for g=1,2,3 sfermions:&quot; &lt;&lt; endl;
+  // cout &lt;&lt; &quot;  ** M1SL = &quot; &lt;&lt; M1SL &lt;&lt; endl;
+  // cout &lt;&lt; &quot;  ** M2SL = &quot; &lt;&lt; M2SL &lt;&lt; endl;
+  // cout &lt;&lt; &quot;  ** M3SL = &quot; &lt;&lt; M3SL &lt;&lt; endl &lt;&lt; endl;
+  // cout &lt;&lt; &quot;  ** M1SE = &quot; &lt;&lt; M1SE &lt;&lt; endl;
+  // cout &lt;&lt; &quot;  ** M2SE = &quot; &lt;&lt; M2SE &lt;&lt; endl;
+  // cout &lt;&lt; &quot;  ** M3SE = &quot; &lt;&lt; M3SE &lt;&lt; endl &lt;&lt; endl;
+  // cout &lt;&lt; &quot;  ** M1SQ = &quot; &lt;&lt; M1SQ &lt;&lt; endl;
+  // cout &lt;&lt; &quot;  ** M2SQ = &quot; &lt;&lt; M2SQ &lt;&lt; endl;
+  // cout &lt;&lt; &quot;  ** M3SQ = &quot; &lt;&lt; M3SQ &lt;&lt; endl &lt;&lt; endl;
+  // cout &lt;&lt; &quot;  ** M1SU = &quot; &lt;&lt; M1SU &lt;&lt; endl;
+  // cout &lt;&lt; &quot;  ** M2SU = &quot; &lt;&lt; M2SU &lt;&lt; endl;
+  // cout &lt;&lt; &quot;  ** M3SU = &quot; &lt;&lt; M3SU &lt;&lt; endl &lt;&lt; endl;
+  // cout &lt;&lt; &quot;  ** M1SD = &quot; &lt;&lt; M1SD &lt;&lt; endl;
+  // cout &lt;&lt; &quot;  ** M2SD = &quot; &lt;&lt; M2SD &lt;&lt; endl;
+  // cout &lt;&lt; &quot;  ** M3SD = &quot; &lt;&lt; M3SD &lt;&lt; endl &lt;&lt; endl;
+
+  // soft-SUSY breaking parameters
+  fh_complex Af;
+  Af.re = 0.;
+  Af.im = 0.;
+  fh_complex At = Af, Ac = Af, Au = Af;
+  fh_complex Ab = Af, As = Af, Ad = Af;
+  fh_complex Atau = Af, Amu = Af, Ae = Af;
+
+  Au.re   = SLHAea::to&lt;double&gt;(slhaea.at(&quot;TU&quot;).at(1,1).at(2))/SLHAea::to&lt;double&gt;(slhaea.at(&quot;YU&quot;).at(1,1).at(2));
+  Ac.re   = SLHAea::to&lt;double&gt;(slhaea.at(&quot;TU&quot;).at(2,2).at(2))/SLHAea::to&lt;double&gt;(slhaea.at(&quot;YU&quot;).at(2,2).at(2));
+  At.re   = SLHAea::to&lt;double&gt;(slhaea.at(&quot;TU&quot;).at(3,3).at(2))/SLHAea::to&lt;double&gt;(slhaea.at(&quot;YU&quot;).at(3,3).at(2));
+  Ad.re   = SLHAea::to&lt;double&gt;(slhaea.at(&quot;TD&quot;).at(1,1).at(2))/SLHAea::to&lt;double&gt;(slhaea.at(&quot;YD&quot;).at(1,1).at(2));
+  As.re   = SLHAea::to&lt;double&gt;(slhaea.at(&quot;TD&quot;).at(2,2).at(2))/SLHAea::to&lt;double&gt;(slhaea.at(&quot;YD&quot;).at(2,2).at(2));
+  Ab.re   = SLHAea::to&lt;double&gt;(slhaea.at(&quot;TD&quot;).at(3,3).at(2))/SLHAea::to&lt;double&gt;(slhaea.at(&quot;YD&quot;).at(3,3).at(2));
+  Ae.re   = SLHAea::to&lt;double&gt;(slhaea.at(&quot;TE&quot;).at(1,1).at(2))/SLHAea::to&lt;double&gt;(slhaea.at(&quot;YE&quot;).at(1,1).at(2));
+  Amu.re  = SLHAea::to&lt;double&gt;(slhaea.at(&quot;TE&quot;).at(2,2).at(2))/SLHAea::to&lt;double&gt;(slhaea.at(&quot;YE&quot;).at(2,2).at(2));
+  Atau.re = SLHAea::to&lt;double&gt;(slhaea.at(&quot;TE&quot;).at(3,3).at(2))/SLHAea::to&lt;double&gt;(slhaea.at(&quot;YE&quot;).at(3,3).at(2));
+
+  // cout &lt;&lt; &quot;** Au =&quot; &lt;&lt; endl;
+  // cout &lt;&lt; Au.re &lt;&lt; &quot; &quot; &lt;&lt; Ac.re &lt;&lt; &quot; &quot; &lt;&lt; At.re &lt;&lt; endl;
+  // cout &lt;&lt; &quot;** Ad =&quot; &lt;&lt; endl;
+  // cout &lt;&lt; Ad.re &lt;&lt; &quot; &quot; &lt;&lt; As.re &lt;&lt; &quot; &quot; &lt;&lt; Ab.re &lt;&lt; endl;
+  // cout &lt;&lt; &quot;** Ae =&quot; &lt;&lt; endl;
+  // cout &lt;&lt; Ae.re &lt;&lt; &quot; &quot; &lt;&lt; Amu.re &lt;&lt; &quot; &quot; &lt;&lt; Atau.re &lt;&lt; endl;
+
+  fh_complex MUE;  // Higgs mixing parameter mu
+  MUE.re = spec.get(Par::mass1,&quot;Mu&quot;);
+  MUE.im = 0;
+
+  // cout &lt;&lt; &quot;** MU = &quot; &lt;&lt; MUE.re &lt;&lt; endl;
+
+  // gaugino mass parameters. M_1 == 0 =&gt; GUT relation is used
+  fh_complex M_1, M_2, M_3;
+  M_1.re = spec.get(Par::mass1,&quot;M1&quot;);
+  M_1.im = 0;
+  M_2.re = spec.get(Par::mass1,&quot;M2&quot;);
+  M_2.im = 0;
+  M_3.re = spec.get(Par::mass1,&quot;M3&quot;);
+  M_3.im = 0;
+
+  // cout &lt;&lt; &quot;** M1 = &quot; &lt;&lt; M_1.re &lt;&lt; endl;
+  // cout &lt;&lt; &quot;** M2 = &quot; &lt;&lt; M_2.re &lt;&lt; endl;
+  // cout &lt;&lt; &quot;** M3 = &quot; &lt;&lt; M_3.re &lt;&lt; endl;
+
+  // the scales at which the sfermion input parameters M3S are given
+  // 0 indicates on-shell parameters
+  double SCALE = spec.GetScale();
+
+  // cout &lt;&lt; &quot;** SCALE = &quot; &lt;&lt; SCALE &lt;&lt; endl;
+
+  fh_real Qtau = SCALE;
+  fh_real Qt = SCALE;
+  fh_real Qb = SCALE;
+
+  // the renormalization scale is Mtop times the 'scalefactor'
+  fh_real scalefactor = 1.;
+
+  #ifdef FEYNHIGGS_DEBUG
+    cout &lt;&lt; &quot;****** calling FHSetPara ******&quot; &lt;&lt; endl;
+  #endif
+
+  error = 1;
+  FHSetPara(error, scalefactor, MT, TB, MA0, MHp,
+      M3SL, M3SE, M3SQ, M3SU, M3SD,
+      M2SL, M2SE, M2SQ, M2SU, M2SD,
+      M1SL, M1SE, M1SQ, M1SU, M1SD,
+      MUE,
+      Atau, At, Ab,
+      Amu,  Ac, As,
+      Ae,   Au, Ad,
+      M_1, M_2, M_3,
+      Qtau, Qt, Qb);
+
+  //
+  // Set NMFV parameters
+  //
+  /*
+  fh_ccomplex deltaQLL12, deltaQLL23, deltaQLL13;
+  fh_ccomplex deltaULR12, deltaULR23, deltaULR13;
+  fh_ccomplex deltaURL12, deltaURL23, deltaURL13;
+  fh_ccomplex deltaURR12, deltaURR23, deltaURR13;
+  fh_ccomplex deltaDLR12, deltaDLR23, deltaDLR13;
+  fh_ccomplex deltaDRL12, deltaDRL23, deltaDRL13;
+  fh_ccomplex deltaDRR12, deltaDRR23, deltaDRR13;
+  FHSetNMFV(error,
+      deltaQLL12, deltaQLL23, deltaQLL13,
+      deltaULR12, deltaULR23, deltaULR13,
+      deltaURL12, deltaURL23, deltaURL13,
+      deltaURR12, deltaURR23, deltaURR13,
+      deltaDLR12, deltaDLR23, deltaDLR13,
+      deltaDRL12, deltaDRL23, deltaDRL13,
+      deltaDRR12, deltaDRR23, deltaDRR13);
+  */
+  //
+  // Set LFV parameters
+  //
+  /*
+  fh_ccomplex deltaLLL12, deltaLLL23, deltaLLL13;
+  fh_ccomplex deltaELR12, deltaELR23, deltaELR13;
+  fh_ccomplex deltaERL12, deltaERL23, deltaERL13;
+  fh_ccomplex deltaERR12, deltaERR23, deltaERR13;
+  FHSetLFV(error,
+     deltaLLL12, deltaLLL23, deltaLLL13,
+     deltaELR12, deltaELR23, deltaELR13,
+     deltaERL12, deltaERL23, deltaERL13,
+     deltaERR12, deltaERR23, deltaERR13);
+  */
+
+}
+END_BE_INI_FUNCTION
+</code></pre><hr><p>Updated on 2022-08-03 at 12:58:06 +0000</p><div class=edit-page><a href=https://github.com/RC1242RC/gambit_gh_pages/blob/master/content/en/documentation/code/DarkBit/Files/FeynHiggs__2__11__2_8cpp.md><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2"><path d="M17 3a2.828 2.828.0 114 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></svg>Edit this page on GitHub</a></div></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a class=text-muted href=https://www.netlify.com/>Netlify</a>, <a class=text-muted href=https://gohugo.io/>Hugo</a>, and <a class=text-muted href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.54bf0932b8a36d0e152b1635b099a6ef1394d35327e2437550a075c9c8ed1bd8aed5847c21b36fc02ed24014c031d9ca24017b0c78b1639d7e2fa8329898b842.js integrity="sha512-VL8JMrijbQ4VKxY1sJmm7xOU01Mn4kN1UKB1ycjtG9iu1YR8IbNvwC7SQBTAMdnKJAF7DHixY51+L6gymJi4Qg==" crossorigin=anonymous defer></script>
+<script src=/js/highlight.min.5b48bc253dc75aeea5fb366ecf700f4925e2b6eb1a1466f2124b722d68148d67bc0a9365d2b8ad9c585161b46372d23b08509a16f1fd518542b894756d4752d0.js integrity="sha512-W0i8JT3HWu6l+zZuz3APSSXitusaFGbyEktyLWgUjWe8CpNl0ritnFhRYbRjctI7CFCaFvH9UYVCuJR1bUdS0A==" crossorigin=anonymous defer></script>
+<script src=/main.min.40265e9a032aeba5eaf67baac3cbbc22667a7533215d326eeb3e9f4d5e4be40f9ff4dcd22949db73ae527ca26a19d7998091a8973c82af760b2c0daa335190ed.js integrity="sha512-QCZemgMq66Xq9nuqw8u8ImZ6dTMhXTJu6z6fTV5L5A+f9NzSKUnbc65SfKJqGdeZgJGolzyCr3YLLA2qM1GQ7Q==" crossorigin=anonymous defer></script>
+<script src=https://rc1242rc.github.io/index.min.cb3cfc52c7c54bd8c25d1fbd0a5de239406787c3dcdce4c8c0c6a90e32667d32f427e033d04af1c0f2c4a86667aa8d3df23f54c6a7873d639d2ca7c2edf7146d.js integrity="sha512-yzz8UsfFS9jCXR+9Cl3iOUBnh8Pc3OTIwMapDjJmfTL0J+Az0ErxwPLEqGZnqo098j9UxqeHPWOdLKfC7fcUbQ==" crossorigin=anonymous defer></script></body></html>

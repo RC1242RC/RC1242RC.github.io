@@ -1,0 +1,2023 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="ie=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><link rel=preload as=font href=https://rc1242rc.github.io/fonts/vendor/jost/jost-v4-latin-regular.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://rc1242rc.github.io/fonts/vendor/jost/jost-v4-latin-500.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://rc1242rc.github.io/fonts/vendor/jost/jost-v4-latin-700.woff2 type=font/woff2 crossorigin><script>(()=>{var e=localStorage.getItem("theme");e==="dark"&&document.documentElement.setAttribute("data-dark-mode","")})()</script><link rel=stylesheet href=https://rc1242rc.github.io/main.f12f7e04ea768acebec10c86baf049d74d6a79f24bc0dfb7ed77aa60462432916dd1ce8f41c78b69496adf650b3039a28a210183cce598f09b95d6fecb5ff999.css integrity="sha512-8S9+BOp2is6+wQyGuvBJ101qefJLwN+37XeqYEYkMpFt0c6PQceLaUlq32ULMDmiiiEBg8zlmPCbldb+y1/5mQ==" crossorigin=anonymous><noscript><style>img.lazyload{display:none}</style></noscript><meta name=robots content="index, follow"><meta name=googlebot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><meta name=bingbot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><title>file src/SpecBit_MSSM.cpp - GAMBIT</title><meta name=description content="[No description available]"><link rel=canonical href=https://rc1242rc.github.io/documentation/code/darkbit/files/specbit__mssm_8cpp/><meta property="og:locale" content="en_US"><meta property="og:type" content="article"><meta property="og:title" content="file src/SpecBit_MSSM.cpp"><meta property="og:description" content="[No description available]"><meta property="og:url" content="https://rc1242rc.github.io/documentation/code/darkbit/files/specbit__mssm_8cpp/"><meta property="og:site_name" content="GAMBIT"><meta property="og:image" content="https://rc1242rc.github.io/gambit_logo.png"><meta property="og:image:alt" content="GAMBIT"><meta name=twitter:card content="summary_large_image"><meta name=twitter:site content><meta name=twitter:creator content><meta name=twitter:title content="file src/SpecBit_MSSM.cpp"><meta name=twitter:description content="[No description available]"><meta name=twitter:image content="https://rc1242rc.github.io/gambit_logo.png"><meta name=twitter:image:alt content="file src/SpecBit_MSSM.cpp"><script type=application/ld+json>{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://rc1242rc.github.io/#/schema/organization/1","name":"Doks","url":"https://rc1242rc.github.io/","sameAs":["https://github.com/GambitBSM"],"logo":{"@type":"ImageObject","@id":"https://rc1242rc.github.io/#/schema/image/1","url":"https://rc1242rc.github.io/logo-doks.png","width":450,"height":416,"caption":"Doks"},"image":{"@id":"https://rc1242rc.github.io/#/schema/image/1"}},{"@type":"WebSite","@id":"https://rc1242rc.github.io/#/schema/website/1","url":"https://rc1242rc.github.io/","name":"GAMBIT","description":"Documentation for the Global And Modular BSM Inference Tool","publisher":{"@id":"https://rc1242rc.github.io/#/schema/organization/1"}},{"@type":"WebPage","@id":"https://rc1242rc.github.io/documentation/code/darkbit/files/specbit__mssm_8cpp/","url":"https://rc1242rc.github.io/documentation/code/darkbit/files/specbit__mssm_8cpp/","name":"file src\/SpecBit_MSSM.cpp","description":"[No description available]","isPartOf":{"@id":"https://rc1242rc.github.io/#/schema/website/1"},"about":{"@id":"https://rc1242rc.github.io/#/schema/organization/1"},"datePublished":"0001-01-01T00:00:00CET","dateModified":"0001-01-01T00:00:00CET","breadcrumb":{"@id":"https://rc1242rc.github.io/documentation/code/darkbit/files/specbit__mssm_8cpp/#/schema/breadcrumb/1"},"primaryImageOfPage":{"@id":"https://rc1242rc.github.io/documentation/code/darkbit/files/specbit__mssm_8cpp/#/schema/image/2"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://rc1242rc.github.io/documentation/code/darkbit/files/specbit__mssm_8cpp/"]}]},{"@type":"BreadcrumbList","@id":"https://rc1242rc.github.io/documentation/code/darkbit/files/specbit__mssm_8cpp/#/schema/breadcrumb/1","name":"Breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/","url":"https://rc1242rc.github.io/","name":"Home"}},{"@type":"ListItem","position":2,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/documentation/","url":"https://rc1242rc.github.io/documentation/","name":"Documentation"}},{"@type":"ListItem","position":3,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/documentation/code/","url":"https://rc1242rc.github.io/documentation/code/","name":"Code"}},{"@type":"ListItem","position":4,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/documentation/code/darkbit/","url":"https://rc1242rc.github.io/documentation/code/darkbit/","name":"Darkbit"}},{"@type":"ListItem","position":5,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/documentation/code/darkbit/files/","url":"https://rc1242rc.github.io/documentation/code/darkbit/files/","name":"Files"}},{"@type":"ListItem","position":6,"item":{"@id":"https://rc1242rc.github.io/documentation/code/darkbit/files/specbit__mssm_8cpp/"}}]},{"@context":"https://schema.org","@graph":[{"@type":"ImageObject","@id":"https://rc1242rc.github.io/documentation/code/darkbit/files/specbit__mssm_8cpp/#/schema/image/2","url":"https://rc1242rc.github.io/gambit_logo.png","contentUrl":"https://rc1242rc.github.io/gambit_logo.png","caption":"file src\/SpecBit_MSSM.cpp"}]}]}</script><meta name=theme-color content="#fff"><link rel=icon href=https://rc1242rc.github.io/favicon.ico sizes=any><link rel=icon type=image/svg+xml href=https://rc1242rc.github.io/favicon.svg><link rel=apple-touch-icon sizes=180x180 href=https://rc1242rc.github.io/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=https://rc1242rc.github.io/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=https://rc1242rc.github.io/favicon-16x16.png><link rel=manifest crossorigin=use-credentials href=https://rc1242rc.github.io/site.webmanifest></head><body class="documentation single light"><div class=sticky-top><div class=header-bar></div><header class="navbar navbar-expand-md navbar-light doks-navbar"><nav class="container-xxl flex-wrap flex-md-nowrap" aria-label="Main navigation"><a class="navbar-brand p-0 me-auto" href=https://rc1242rc.github.io/ aria-label=GAMBIT><img class=logo-light src=https://rc1242rc.github.io//images/gambit_logo.png width=50px>
+<img class="logo-dark d-none" src=https://rc1242rc.github.io//images/gambit_logo.png width=50px>
+GAMBIT</a>
+<button class="btn btn-menu order-2 d-block d-lg-none" type=button data-bs-toggle=offcanvas data-bs-target=#offcanvasDoks aria-controls=offcanvasDoks aria-label="Open main menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button><div class="offcanvas offcanvas-end border-0 py-lg-1" tabindex=-1 id=offcanvasDoks data-bs-backdrop=true aria-labelledby=offcanvasDoksLabel><div class="header-bar d-lg-none"></div><div class="offcanvas-header d-lg-none"><h2 class="h5 offcanvas-title ps-2" id=offcanvasDoksLabel><a class=text-dark href=/>GAMBIT</a></h2><button type=button class="btn-close text-reset me-2" data-bs-dismiss=offcanvas aria-label="Close main menu"></button></div><div class="offcanvas-body p-4 p-lg-0"><ul class="nav flex-column flex-lg-row align-items-lg-center mt-2 mt-lg-0 ms-lg-2 me-lg-auto"><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Documentation
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=/documentation/installation/introduction/>Installation</a></li><li><a class=dropdown-item href=/documentation/examples/colliderbit_example>Examples</a></li><li><a class=dropdown-item href=/documentation/help/faqs/>Help</a></li><li><a class=dropdown-item href=/documentation/code/gambit_sphinx/index_classes>Code Reference</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Community
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=/community/publications/>Publications</a></li><li><a class=dropdown-item href=/community/talks/>Talks</a></li><li><a class=dropdown-item href=/community/members/>Members</a></li><li><a class=dropdown-item href=/community/code_of_conduct/>Code of Conduct</a></li><li><a class=dropdown-item href=/community/contact/>Contact</a></li></ul></li></ul><hr class="text-black-50 my-4 d-lg-none"><form class="doks-search position-relative flex-grow-1 ms-lg-auto me-lg-2"><input id=search class="form-control is-search" type=search placeholder="Search site..." aria-label="Search site..." autocomplete=off><div id=suggestions class="shadow bg-white rounded d-none"></div></form><hr class="text-black-50 my-4 d-lg-none"><ul class="nav flex-column flex-lg-row"><li class=nav-item><a class="nav-link social-link" href=https://github.com/GambitBSM><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37.0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44.0 0020 4.77 5.07 5.07.0 0019.91 1S18.73.65 16 2.48a13.38 13.38.0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07.0 005 4.77 5.44 5.44.0 003.5 8.55c0 5.42 3.3 6.61 6.44 7A3.37 3.37.0 009 18.13V22"/></svg><small class="ms-2 d-lg-none">GitHub</small></a></li></ul><hr class="text-black-50 my-4 d-lg-none"><div class=dropdown><button class="btn btn-doks-light dropdown-toggle" id=doks-versions data-bs-toggle=dropdown aria-expanded=false data-bs-display=static aria-label="Toggle version menu">
+<span class=d-none>Doks</span>
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></button><ul class="dropdown-menu dropdown-menu-lg-end me-lg-2 shadow rounded border-0" aria-labelledby=doks-versions></ul></div></div></div></nav></header></div><div class="wrap container-xxl" role=document><div class=content><div class="row flex-xl-nowrap"><div class="col-lg-5 col-xl-4 docs-sidebar"><nav class=docs-links aria-label="Main navigation"><ul class="list-unstyled collapsible-sidebar"><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-installation aria-expanded=false>
+Installation</button><div class=collapse id=section-installation><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/installation/introduction/>Getting Started</a></li><li><a class="docs-link rounded" href=/documentation/installation/docker_usage/>Docker Usage</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_linux/>Installation for Linux</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_windows/>Installation for Windows</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_macos/>Installation for macOS</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-examples aria-expanded=false>
+Examples</button><div class=collapse id=section-examples><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/examples/colliderbit_example/>ColliderBit Example</a></li><li><a class="docs-link rounded" href=/documentation/examples/anotherbit/>AnotherBit</a></li><li><a class="docs-link rounded" href=/documentation/examples/anotherbit2/>AnotherBit2</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-help aria-expanded=false>
+Help</button><div class=collapse id=section-help><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/help/faqs/>FAQs</a></li><li><a class="docs-link rounded" href=/documentation/help/compiler_matrix/>Compiler Matrix</a></li><li><a class="docs-link rounded" href=/documentation/help/known_issues/>Known Issues</a></li><li><a class="docs-link rounded" href=/documentation/help/configuration_examples/>Configuration Examples</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-code aria-expanded=true>
+Code Reference</button><div class="collapse show" id=section-code><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li class="my-1 ms-3"><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-gambit_sphinx aria-expanded=true>
+<font style="color: #5d2f86;" size=-6>release</font> &nbsp; gambit sphinx</button><div class="collapse show" id=section-gambit_sphinx><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/code/gambit_sphinx/index_classes/>Classes</a></li><li><a class="docs-link rounded" href=/documentation/code/gambit_sphinx/index_files/>Files</a></li><li><a class="docs-link rounded" href=/documentation/code/gambit_sphinx/index_pages/>Pages</a></li><li><a class="docs-link rounded" href=/documentation/code/gambit_sphinx/index_namespaces/>Namespaces</a></li></ul></div></li><li class="my-1 ms-3"><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-ColliderBit aria-expanded=true>
+<font style="color: #5d2f86;" size=-6>development</font> &nbsp; ColliderBit</button><div class="collapse show" id=section-ColliderBit><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/code/colliderbit/index_classes/>Classes</a></li><li><a class="docs-link rounded" href=/documentation/code/colliderbit/index_files/>Files</a></li><li><a class="docs-link rounded" href=/documentation/code/colliderbit/index_pages/>Pages</a></li><li><a class="docs-link rounded" href=/documentation/code/colliderbit/index_namespaces/>Namespaces</a></li></ul></div></li><li class="my-1 ms-3"><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-DarkBit aria-expanded=true>
+<font style="color: #5d2f86;" size=-6>development</font> &nbsp; DarkBit</button><div class="collapse show" id=section-DarkBit><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/code/darkbit/index_classes/>Classes</a></li><li><a class="docs-link rounded" href=/documentation/code/darkbit/index_files/>Files</a></li><li><a class="docs-link rounded" href=/documentation/code/darkbit/index_pages/>Pages</a></li><li><a class="docs-link rounded" href=/documentation/code/darkbit/index_namespaces/>Namespaces</a></li></ul></div></li><li class="my-1 ms-3"><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-main aria-expanded=true>
+<font style="color: #5d2f86;" size=-6>development</font> &nbsp; main</button><div class="collapse show" id=section-main><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/code/main/index_classes/>Classes</a></li><li><a class="docs-link rounded" href=/documentation/code/main/index_files/>Files</a></li><li><a class="docs-link rounded" href=/documentation/code/main/index_pages/>Pages</a></li><li><a class="docs-link rounded" href=/documentation/code/main/index_namespaces/>Namespaces</a></li></ul></div></li></ul></div></li></ul></nav></div><nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation"><div class=d-xl-none><button class="btn btn-outline-primary btn-sm doks-toc-toggle collapsed" type=button data-bs-toggle=collapse data-bs-target=#onThisPage aria-controls=doks-docs-nav aria-expanded=false aria-label="Toggle On this page navigation">
+<span>On this page</span>
+<span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg></span></button><div class=collapse id=onThisPage><div class="card card-body mt-3 py-1"><div class=page-links><nav id=TableOfContents><ul><li><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#source-code>Source code</a></li></ul></li></ul></nav></div></div></div></div><div class="page-links d-none d-xl-block"><h3>On this page</h3><nav id=TableOfContents><ul><li><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#source-code>Source code</a></li></ul></li></ul></nav></div></nav><main class="docs-content col-lg-11 col-xl-9 mx-xl-auto"><nav aria-label=breadcrumb><ol class=breadcrumb><li class=breadcrumb-item><a href=/>Home</a></li><li class=breadcrumb-item><a href=/documentation/>Documentation</a></li><li class=breadcrumb-item><a href=/documentation/code/>Code Reference</a></li><li class=breadcrumb-item><a href=/documentation/code/darkbit/>DarkBit</a></li><li class="breadcrumb-item active" aria-current=page>file src/SpecBit_MSSM.cpp</li></ol></nav><h1>file src/SpecBit_MSSM.cpp</h1><p class=lead></p><p>[No description available] <a href=#detailed-description>More&mldr;</a></p><h2 id=namespaces>Namespaces <a href=#namespaces class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th>Name</th></tr></thead><tbody><tr><td><strong><a href=/documentation/code/darkbit/namespaces/namespacegambit/>Gambit</a></strong><br>TODO: see if we can use this one:</td></tr><tr><td><strong><a href=/documentation/code/darkbit/namespaces/namespacegambit_1_1specbit/>Gambit::SpecBit</a></strong></td></tr></tbody></table><h2 id=detailed-description>Detailed Description <a href=#detailed-description class=anchor aria-hidden=true>#</a></h2><p><strong>Author</strong>:</p><ul><li>Ben Farmer (<a href=mailto:benjamin.farmer@fysik.su.se>benjamin.farmer@fysik.su.se</a>)</li><li>Christopher Rogan (<a href=mailto:christophersrogan@gmail.com>christophersrogan@gmail.com</a>)</li><li>Tomas Gonzalo (<a href=mailto:t.e.gonzalo@fys.uio.no>t.e.gonzalo@fys.uio.no</a>)</li><li>Pat Scott (<a href=mailto:p.scott@imperial.ac.uk>p.scott@imperial.ac.uk</a>)</li></ul><p><strong>Date</strong>:</p><ul><li>2014 Sep - Dec, 2015 Jan - Mar</li><li>2015 Apr</li><li>2016 June</li><li>2015, 2016</li></ul><p>Functions of module SpecBit</p><p>These functions link ModelParameters to Spectrum objects in various ways (by running spectrum generators, etc.)</p><hr><p>Authors (add name and date if you modify):</p><hr><h2 id=source-code>Source code <a href=#source-code class=anchor aria-hidden=true>#</a></h2><pre><code>//   GAMBIT: Global and Modular BSM Inference Tool
+//   *********************************************
+///  \file
+///
+///  Functions of module SpecBit
+///
+///  These functions link ModelParameters to
+///  Spectrum objects in various ways (by running
+///  spectrum generators, etc.)
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Ben Farmer
+///          (benjamin.farmer@fysik.su.se)
+///    \date 2014 Sep - Dec, 2015 Jan - Mar
+///
+///  \author Christopher Rogan
+///          (christophersrogan@gmail.com)
+///  \date 2015 Apr
+///
+///  \author Tomas Gonzalo
+///          (t.e.gonzalo@fys.uio.no)
+///  \date 2016 June
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)
+///  \date 2015, 2016
+///
+///  *********************************************
+
+#include &lt;string&gt;
+#include &lt;sstream&gt;
+#include &lt;cmath&gt;
+#include &lt;complex&gt;
+
+#include &quot;gambit/Elements/gambit_module_headers.hpp&quot;
+#include &quot;gambit/Elements/spectrum_factories.hpp&quot;
+#include &quot;gambit/Elements/smlike_higgs.hpp&quot;
+#include &quot;gambit/Elements/slhaea_spec_helpers.hpp&quot;
+#include &quot;gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp&quot;
+#include &quot;gambit/Utils/stream_overloads.hpp&quot; // Just for more convenient output to logger
+#include &quot;gambit/Utils/util_macros.hpp&quot;
+#include &quot;gambit/SpecBit/SpecBit_rollcall.hpp&quot;
+#include &quot;gambit/SpecBit/SpecBit_helpers.hpp&quot;
+#include &quot;gambit/SpecBit/QedQcdWrapper.hpp&quot;
+#include &quot;gambit/SpecBit/MSSMSpec.hpp&quot;
+#include &quot;gambit/SpecBit/model_files_and_boxes.hpp&quot; // #includes lots of flexiblesusy headers and defines interface classes
+#include &quot;gambit/Printers/printermanager.hpp&quot; // Needed by get_MSSM_spectrum_from_postprocessor to access reader object
+#include &quot;gambit/Printers/baseprinter.hpp&quot; // Needed by get_MSSM_spectrum_from_postprocessor to use reader object
+
+// Flexible SUSY stuff (should not be needed by the rest of gambit)
+#include &quot;flexiblesusy/src/ew_input.hpp&quot;
+#include &quot;flexiblesusy/src/lowe.h&quot; // From softsusy; used by flexiblesusy
+#include &quot;flexiblesusy/src/numerics2.hpp&quot;
+//#include &quot;flexiblesusy/src/mssm_twoloophiggs.hpp&quot;
+#include &quot;flexiblesusy/src/spectrum_generator_settings.hpp&quot;
+
+// Switch for debug mode
+//#define SPECBIT_DEBUG
+
+namespace Gambit
+{
+
+  namespace SpecBit
+  {
+    using namespace LogTags;
+    using namespace flexiblesusy;
+
+    // To check if a model is currently being scanned:
+    // bool Pipes::&lt;fname&gt;::ModelInUse(str model_name)
+
+    /// @{ Non-Gambit convenience functions
+    //  =======================================================================
+    //  These are not known to Gambit, but they do basically all the real work.
+    //  The Gambit module functions merely wrap the functions here and hook
+    //  them up to their dependencies, and input parameters.
+
+    /// Compute an MSSM spectrum using flexiblesusy
+    // In GAMBIT there are THREE flexiblesusy MSSM spectrum generators currently in
+    // use, for each of three possible boundary condition types:
+    //   - GUT scale input
+    //   - Electroweak symmetry breaking scale input
+    //   - Intermediate scale Q input
+    // These each require slightly different setup, but once that is done the rest
+    // of the code required to run them is the same; this is what is contained in
+    // the below template function.
+    // MI for Model Interface, as defined in model_files_and_boxes.hpp
+    template &lt;class MI&gt;
+    Spectrum run_FS_spectrum_generator
+        ( const typename MI::InputParameters&amp; input
+        , const SMInputs&amp; sminputs
+        , const Options&amp; runOptions
+        , const std::map&lt;str, safe_ptr&lt;const double&gt; &gt;&amp; input_Param
+        )
+    {
+      // SoftSUSY object used to set quark and lepton masses and gauge
+      // couplings in QEDxQCD effective theory
+      // Will be initialised by default using values in lowe.h, which we will
+      // override next.
+      softsusy::QedQcd oneset;
+
+      // Fill QedQcd object with SMInputs values
+      setup_QedQcd(oneset,sminputs);
+
+      // Run everything to Mz
+      //oneset.toMz();
+
+      // Create spectrum generator object
+      typename MI::SpectrumGenerator spectrum_generator;
+
+      // Spectrum generator settings
+      // Default options copied from flexiblesusy/src/spectrum_generator_settings.hpp
+      //
+      // | enum                             | possible values              | default value   |
+      // |----------------------------------|------------------------------|-----------------|
+      // | precision                        | any positive double          | 1.0e-4          |
+      // | max_iterations                   | any positive double          | 0 (= automatic) |
+      // | algorithm                        | 0 (two-scale) or 1 (lattice) | 0 (= two-scale) |
+      // | calculate_sm_masses              | 0 (no) or 1 (yes)            | 0 (= no)        |
+      // | pole_mass_loop_order             | 0, 1, 2                      | 2 (= 2-loop)    |
+      // | ewsb_loop_order                  | 0, 1, 2                      | 2 (= 2-loop)    |
+      // | beta_loop_order                  | 0, 1, 2                      | 2 (= 2-loop)    |
+      // | threshold_corrections_loop_order | 0, 1                         | 1 (= 1-loop)    |
+      // | higgs_2loop_correction_at_as     | 0, 1                         | 1 (= enabled)   |
+      // | higgs_2loop_correction_ab_as     | 0, 1                         | 1 (= enabled)   |
+      // | higgs_2loop_correction_at_at     | 0, 1                         | 1 (= enabled)   |
+      // | higgs_2loop_correction_atau_atau | 0, 1                         | 1 (= enabled)   |
+
+      Spectrum_generator_settings settings;
+      settings.set(Spectrum_generator_settings::precision, runOptions.getValueOrDef&lt;double&gt;(1.0e-4,&quot;precision_goal&quot;));
+      settings.set(Spectrum_generator_settings::max_iterations, runOptions.getValueOrDef&lt;double&gt;(0,&quot;max_iterations&quot;));
+      settings.set(Spectrum_generator_settings::calculate_sm_masses, runOptions.getValueOrDef&lt;bool&gt; (false, &quot;calculate_sm_masses&quot;));
+      settings.set(Spectrum_generator_settings::pole_mass_loop_order, runOptions.getValueOrDef&lt;int&gt;(2,&quot;pole_mass_loop_order&quot;));
+      settings.set(Spectrum_generator_settings::pole_mass_loop_order, runOptions.getValueOrDef&lt;int&gt;(2,&quot;ewsb_loop_order&quot;));
+      settings.set(Spectrum_generator_settings::beta_loop_order, runOptions.getValueOrDef&lt;int&gt;(2,&quot;beta_loop_order&quot;));
+      settings.set(Spectrum_generator_settings::threshold_corrections_loop_order, runOptions.getValueOrDef&lt;int&gt;(2,&quot;threshold_corrections_loop_order&quot;));
+      settings.set(Spectrum_generator_settings::higgs_2loop_correction_at_as, runOptions.getValueOrDef&lt;int&gt;(1,&quot;higgs_2loop_correction_at_as&quot;));
+      settings.set(Spectrum_generator_settings::higgs_2loop_correction_ab_as, runOptions.getValueOrDef&lt;int&gt;(1,&quot;higgs_2loop_correction_ab_as&quot;));
+      settings.set(Spectrum_generator_settings::higgs_2loop_correction_at_at, runOptions.getValueOrDef&lt;int&gt;(1,&quot;higgs_2loop_correction_at_at&quot;));
+      settings.set(Spectrum_generator_settings::higgs_2loop_correction_atau_atau, runOptions.getValueOrDef&lt;int&gt;(1,&quot;higgs_2loop_correction_atau_atau&quot;));
+      settings.set(Spectrum_generator_settings::top_pole_qcd_corrections, runOptions.getValueOrDef&lt;int&gt;(1,&quot;top_pole_qcd_corrections&quot;));
+      settings.set(Spectrum_generator_settings::beta_zero_threshold, runOptions.getValueOrDef&lt;double&gt;(1.000000000e-14,&quot;beta_zero_threshold&quot;));
+      settings.set(Spectrum_generator_settings::eft_matching_loop_order_up, runOptions.getValueOrDef&lt;int&gt;(1,&quot;eft_matching_loop_order_up&quot;));
+      settings.set(Spectrum_generator_settings::eft_matching_loop_order_down, runOptions.getValueOrDef&lt;int&gt;(1,&quot;eft_matching_loop_order_down&quot;));
+      settings.set(Spectrum_generator_settings::threshold_corrections, runOptions.getValueOrDef&lt;int&gt;(123111321,&quot;threshold_corrections&quot;));
+
+
+      spectrum_generator.set_settings(settings);
+
+      // Generate spectrum
+      spectrum_generator.run(oneset, input);
+
+      // Extract report on problems...
+      const typename MI::Problems&amp; problems = spectrum_generator.get_problems();
+
+      // Create Model_interface to carry the input and results, and know
+      // how to access the flexiblesusy routines.
+      // Note: Output of spectrum_generator.get_model() returns type, e.g. CMSSM.
+      // Need to convert it to type CMSSM_slha (which alters some conventions of
+      // parameters into SLHA format)
+      MI model_interface(spectrum_generator,oneset,input);
+
+      // Create SubSpectrum object to wrap flexiblesusy data
+      // THIS IS STATIC so that it lives on once we leave this module function. We
+      // therefore cannot run the same spectrum generator twice in the same loop and
+      // maintain the spectrum resulting from both. But we should never want to do
+      // this.
+      // A pointer to this object is what gets turned into a SubSpectrum pointer and
+      // passed around Gambit.
+      //
+      // This object will COPY the interface data members into itself, so it is now the
+      // one-stop-shop for all spectrum information, including the model interface object.
+      MSSMSpec&lt;MI&gt; mssmspec(model_interface, &quot;FlexibleSUSY&quot;, &quot;2.0.beta&quot;);
+
+      // Add extra information about the scales used to the wrapper object
+      // (last parameter turns on the 'allow_new' option for the override setter, which allows
+      //  us to set parameters that don't previously exist)
+      mssmspec.set_override(Par::mass1,spectrum_generator.get_high_scale(),&quot;high_scale&quot;,true);
+      mssmspec.set_override(Par::mass1,spectrum_generator.get_susy_scale(),&quot;susy_scale&quot;,true);
+      mssmspec.set_override(Par::mass1,spectrum_generator.get_low_scale(), &quot;low_scale&quot;, true);
+
+
+      // Has the user chosen to override any pole mass values?
+      // This will typically break consistency, but may be useful in some special cases
+      if (runOptions.hasKey(&quot;override_FS_pole_masses&quot;))
+      {
+        std::vector&lt;str&gt; particle_names = runOptions.getNames(&quot;override_FS_pole_masses&quot;);
+        for (auto&amp; name : particle_names)
+        {
+          double mass = runOptions.getValue&lt;double&gt;(&quot;override_FS_pole_masses&quot;, name);
+          mssmspec.set_override(Par::Pole_Mass, mass, name);
+        }
+      }
+
+      // Add theory errors
+      static const MSSM_strs ms;
+
+      static const std::vector&lt;int&gt; i12     = initVector(1,2);
+      static const std::vector&lt;int&gt; i123    = initVector(1,2,3);
+      static const std::vector&lt;int&gt; i1234   = initVector(1,2,3,4);
+      static const std::vector&lt;int&gt; i123456 = initVector(1,2,3,4,5,6);
+
+      // 3% theory &quot;error&quot;
+      mssmspec.set_override_vector(Par::Pole_Mass_1srd_high, 0.03, ms.pole_mass_pred, true);
+      mssmspec.set_override_vector(Par::Pole_Mass_1srd_low,  0.03, ms.pole_mass_pred, true);
+      mssmspec.set_override_vector(Par::Pole_Mass_1srd_high, 0.03, ms.pole_mass_strs_1_6, i123456, true);
+      mssmspec.set_override_vector(Par::Pole_Mass_1srd_low,  0.03, ms.pole_mass_strs_1_6, i123456, true);
+      mssmspec.set_override_vector(Par::Pole_Mass_1srd_high, 0.03, &quot;~chi0&quot;, i1234, true);
+      mssmspec.set_override_vector(Par::Pole_Mass_1srd_low,  0.03, &quot;~chi0&quot;, i1234, true);
+      mssmspec.set_override_vector(Par::Pole_Mass_1srd_high, 0.03, ms.pole_mass_strs_1_3, i123, true);
+      mssmspec.set_override_vector(Par::Pole_Mass_1srd_low,  0.03, ms.pole_mass_strs_1_3, i123, true);
+      mssmspec.set_override_vector(Par::Pole_Mass_1srd_high, 0.03, ms.pole_mass_strs_1_2, i12,  true);
+      mssmspec.set_override_vector(Par::Pole_Mass_1srd_low,  0.03, ms.pole_mass_strs_1_2, i12,  true);
+
+      // Do the lightest Higgs mass separately.  The default in most codes is 3 GeV. That seems like
+      // an underestimate if the stop masses are heavy enough, but an overestimate for most points.
+      double rd_mh1 = 2.0 / mssmspec.get(Par::Pole_Mass, ms.h0, 1);
+      mssmspec.set_override(Par::Pole_Mass_1srd_high, rd_mh1, ms.h0, 1, true);
+      mssmspec.set_override(Par::Pole_Mass_1srd_low,  rd_mh1, ms.h0, 1, true);
+
+      // Do the W mass separately.  Here we use 10 MeV based on the size of corrections from two-loop papers and advice from Dominik Stockinger.
+      double rd_mW = 0.01 / mssmspec.get(Par::Pole_Mass, &quot;W+&quot;);
+      mssmspec.set_override(Par::Pole_Mass_1srd_high, rd_mW, &quot;W+&quot;, true);
+      mssmspec.set_override(Par::Pole_Mass_1srd_low,  rd_mW, &quot;W+&quot;, true);
+
+      // Save the input value of TanBeta
+      // Probably need to make it a full requirement of the MSSM SpectrumContents
+      if(input_Param.find(&quot;TanBeta&quot;) != input_Param.end())
+      {
+        mssmspec.set_override(Par::dimensionless, *input_Param.at(&quot;TanBeta&quot;), &quot;tanbeta(mZ)&quot;, true);
+      }
+
+      // Create a second SubSpectrum object to wrap the qedqcd object used to initialise the spectrum generator
+      // Attach the sminputs object as well, so that SM pole masses can be passed on (these aren't easily
+      // extracted from the QedQcd object, so use the values that we put into it.)
+      QedQcdWrapper qedqcdspec(oneset,sminputs);
+
+      // Deal with points where spectrum generator encountered a problem
+      #ifdef SPECBIT_DEBUG
+        std::cout&lt;&lt;&quot;Problem? &quot;&lt;&lt;problems.have_problem()&lt;&lt;std::endl;
+      #endif
+      if( problems.have_problem() )
+      {
+         if( runOptions.getValueOrDef&lt;bool&gt;(false,&quot;invalid_point_fatal&quot;) )
+         {
+            ///TODO: Need to tell gambit that the spectrum is not viable somehow. For now
+            /// just die.
+            std::ostringstream errmsg;
+            errmsg &lt;&lt; &quot;A serious problem was encountered during spectrum generation!; &quot;;
+            errmsg &lt;&lt; &quot;Message from FlexibleSUSY below:&quot; &lt;&lt; std::endl;
+            problems.print_problems(errmsg);
+            problems.print_warnings(errmsg);
+            SpecBit_error().raise(LOCAL_INFO,errmsg.str());
+         }
+         else
+         {
+            /// Check what the problem was
+            /// see: contrib/MassSpectra/flexiblesusy/src/problems.hpp
+            std::ostringstream msg;
+            //msg &lt;&lt; &quot;&quot;;
+            //if( have_bad_mass()      ) msg &lt;&lt; &quot;bad mass &quot; &lt;&lt; std::endl; // TODO: check which one
+            //if( have_tachyon()       ) msg &lt;&lt; &quot;tachyon&quot; &lt;&lt; std::endl;
+            //if( have_thrown()        ) msg &lt;&lt; &quot;error&quot; &lt;&lt; std::endl;
+            //if( have_non_perturbative_parameter()   ) msg &lt;&lt; &quot;non-perturb. param&quot; &lt;&lt; std::endl; // TODO: check which
+            //if( have_failed_pole_mass_convergence() ) msg &lt;&lt; &quot;fail pole mass converg.&quot; &lt;&lt; std::endl; // TODO: check which
+            //if( no_ewsb()            ) msg &lt;&lt; &quot;no ewsb&quot; &lt;&lt; std::endl;
+            //if( no_convergence()     ) msg &lt;&lt; &quot;no converg.&quot; &lt;&lt; std::endl;
+            //if( no_perturbative()    ) msg &lt;&lt; &quot;no pertub.&quot; &lt;&lt; std::endl;
+            //if( no_rho_convergence() ) msg &lt;&lt; &quot;no rho converg.&quot; &lt;&lt; std::endl;
+            //if( msg.str()==&quot;&quot; ) msg &lt;&lt; &quot; Unrecognised problem! &quot;;
+
+            /// Fast way for now:
+            problems.print_problems(msg);
+            invalid_point().raise(msg.str()); //TODO: This message isn't ending up in the logs.
+         }
+      }
+
+      if( problems.have_warning() )
+      {
+         std::ostringstream msg;
+         problems.print_warnings(msg);
+         SpecBit_warning().raise(LOCAL_INFO,msg.str()); //TODO: Is a warning the correct thing to do here?
+      }
+
+      // Write SLHA file (for debugging purposes...)
+      #ifdef SPECBIT_DEBUG
+         typename MI::SlhaIo slha_io;
+         slha_io.set_spinfo(problems);
+         slha_io.set_sminputs(oneset);
+         slha_io.set_minpar(input);
+         slha_io.set_extpar(input);
+         slha_io.set_spectrum(mssmspec.model_interface.model);
+         slha_io.write_to_file(&quot;SpecBit/initial_CMSSM_spectrum-&gt;slha&quot;);
+      #endif
+
+      // Retrieve any mass cuts
+      static const Spectrum::mc_info mass_cut = runOptions.getValueOrDef&lt;Spectrum::mc_info&gt;(Spectrum::mc_info(), &quot;mass_cut&quot;);
+      static const Spectrum::mr_info mass_ratio_cut = runOptions.getValueOrDef&lt;Spectrum::mr_info&gt;(Spectrum::mr_info(), &quot;mass_ratio_cut&quot;);
+
+      // Package QedQcd SubSpectrum object, MSSM SubSpectrum object, and SMInputs struct into a 'full' Spectrum object
+      return Spectrum(qedqcdspec,mssmspec,sminputs,&amp;input_Param,mass_cut,mass_ratio_cut);
+    }
+
+  //Version for 1.5.1 commented out because we should make it possible to support FS versions in parallel.
+
+  // template &lt;class MI&gt;
+  //   Spectrum run_FS1_5_1_spectrum_generator
+  //       ( const typename MI::InputParameters&amp; input
+  //       , const SMInputs&amp; sminputs
+  //       , const Options&amp; runOptions
+  //       , const std::map&lt;str, safe_ptr&lt;const double&gt; &gt;&amp; input_Param
+  //       )
+  //   {
+  //     // SoftSUSY object used to set quark and lepton masses and gauge
+  //     // couplings in QEDxQCD effective theory
+  //     // Will be initialised by default using values in lowe.h, which we will
+  //     // override next.
+  //     softsusy::QedQcd oneset;
+
+  //     // Fill QedQcd object with SMInputs values
+  //     setup_QedQcd(oneset,sminputs);
+
+  //     // Run everything to Mz
+  //     oneset.toMz();
+
+  //     // Create spectrum generator object
+  //     typename MI::SpectrumGenerator spectrum_generator;
+
+  //     // Spectrum generator settings
+  //     // Default options copied from flexiblesusy/src/spectrum_generator_settings.hpp
+  //     //
+  //     // | enum                             | possible values              | default value   |
+  //     // |----------------------------------|------------------------------|-----------------|
+  //     // | precision                        | any positive double          | 1.0e-4          |
+  //     // | max_iterations                   | any positive double          | 0 (= automatic) |
+  //     // | algorithm                        | 0 (two-scale) or 1 (lattice) | 0 (= two-scale) |
+  //     // | calculate_sm_masses              | 0 (no) or 1 (yes)            | 0 (= no)        |
+  //     // | pole_mass_loop_order             | 0, 1, 2                      | 2 (= 2-loop)    |
+  //     // | ewsb_loop_order                  | 0, 1, 2                      | 2 (= 2-loop)    |
+  //     // | beta_loop_order                  | 0, 1, 2                      | 2 (= 2-loop)    |
+  //     // | threshold_corrections_loop_order | 0, 1                         | 1 (= 1-loop)    |
+  //     // | higgs_2loop_correction_at_as     | 0, 1                         | 1 (= enabled)   |
+  //     // | higgs_2loop_correction_ab_as     | 0, 1                         | 1 (= enabled)   |
+  //     // | higgs_2loop_correction_at_at     | 0, 1                         | 1 (= enabled)   |
+  //     // | higgs_2loop_correction_atau_atau | 0, 1                         | 1 (= enabled)   |
+
+  //     spectrum_generator.set_precision_goal                  (runOptions.getValueOrDef&lt;double&gt;(1.0e-4,&quot;precision_goal&quot;));
+  //     spectrum_generator.set_max_iterations                  (runOptions.getValueOrDef&lt;double&gt;(0,     &quot;max_iterations&quot;));
+  //     spectrum_generator.set_calculate_sm_masses             (runOptions.getValueOrDef&lt;bool&gt;  (false, &quot;calculate_sm_masses&quot;));
+  //     spectrum_generator.set_pole_mass_loop_order            (runOptions.getValueOrDef&lt;int&gt;   (2,     &quot;pole_mass_loop_order&quot;));
+  //     spectrum_generator.set_ewsb_loop_order                 (runOptions.getValueOrDef&lt;int&gt;   (2,     &quot;ewsb_loop_order&quot;));
+  //     spectrum_generator.set_beta_loop_order                 (runOptions.getValueOrDef&lt;int&gt;   (2,     &quot;beta_loop_order&quot;));
+  //     spectrum_generator.set_threshold_corrections_loop_order(runOptions.getValueOrDef&lt;int&gt;   (2,     &quot;threshold_corrections_loop_order&quot;));
+
+  //     // Higgs loop corrections are a little different... sort them out now
+  //     Two_loop_corrections two_loop_settings;
+
+  //     // alpha_t alpha_s
+  //     // alpha_b alpha_s
+  //     // alpha_t^2 + alpha_t alpha_b + alpha_b^2
+  //     // alpha_tau^2
+  //     two_loop_settings.higgs_at_as = runOptions.getValueOrDef&lt;bool&gt;(true,&quot;use_higgs_2loop_at_as&quot;);
+  //     two_loop_settings.higgs_ab_as = runOptions.getValueOrDef&lt;bool&gt;(true,&quot;use_higgs_2loop_ab_as&quot;);
+  //     two_loop_settings.higgs_at_at = runOptions.getValueOrDef&lt;bool&gt;(true,&quot;use_higgs_2loop_at_at&quot;);
+  //     two_loop_settings.higgs_atau_atau = runOptions.getValueOrDef&lt;bool&gt;(true,&quot;use_higgs_2loop_atau_atau&quot;);
+
+  //     spectrum_generator.set_two_loop_corrections(two_loop_settings);
+
+  //     // Generate spectrum
+  //     spectrum_generator.run(oneset, input);
+
+  //     // Extract report on problems...
+  //     const typename MI::Problems&amp; problems = spectrum_generator.get_problems();
+
+  //     // Create Model_interface to carry the input and results, and know
+  //     // how to access the flexiblesusy routines.
+  //     // Note: Output of spectrum_generator.get_model() returns type, e.g. CMSSM.
+  //     // Need to convert it to type CMSSM_slha (which alters some conventions of
+  //     // parameters into SLHA format)
+  //     MI model_interface(spectrum_generator,oneset,input);
+
+  //     // Create SubSpectrum object to wrap flexiblesusy data
+  //     // THIS IS STATIC so that it lives on once we leave this module function. We
+  //     // therefore cannot run the same spectrum generator twice in the same loop and
+  //     // maintain the spectrum resulting from both. But we should never want to do
+  //     // this.
+  //     // A pointer to this object is what gets turned into a SubSpectrum pointer and
+  //     // passed around Gambit.
+  //     //
+  //     // This object will COPY the interface data members into itself, so it is now the
+  //     // one-stop-shop for all spectrum information, including the model interface object.
+  //     MSSMSpec&lt;MI&gt; mssmspec(model_interface, &quot;FlexibleSUSY&quot;, &quot;1.5.1&quot;);
+
+  //     // Add extra information about the scales used to the wrapper object
+  //     // (last parameter turns on the 'allow_new' option for the override setter, which allows
+  //     //  us to set parameters that don't previously exist)
+  //     mssmspec.set_override(Par::mass1,spectrum_generator.get_high_scale(),&quot;high_scale&quot;,true);
+  //     mssmspec.set_override(Par::mass1,spectrum_generator.get_susy_scale(),&quot;susy_scale&quot;,true);
+  //     mssmspec.set_override(Par::mass1,spectrum_generator.get_low_scale(), &quot;low_scale&quot;, true);
+
+  //     // Add theory errors
+  //     static const MSSM_strs ms;
+
+  //     static const std::vector&lt;int&gt; i12     = initVector(1,2);
+  //     static const std::vector&lt;int&gt; i123    = initVector(1,2,3);
+  //     static const std::vector&lt;int&gt; i1234   = initVector(1,2,3,4);
+  //     static const std::vector&lt;int&gt; i123456 = initVector(1,2,3,4,5,6);
+
+  //     // 3% theory &quot;error&quot;
+  //     mssmspec.set_override_vector(Par::Pole_Mass_1srd_high, 0.03, ms.pole_mass_pred, true);
+  //     mssmspec.set_override_vector(Par::Pole_Mass_1srd_low,  0.03, ms.pole_mass_pred, true);
+  //     mssmspec.set_override_vector(Par::Pole_Mass_1srd_high, 0.03, ms.pole_mass_strs_1_6, i123456, true);
+  //     mssmspec.set_override_vector(Par::Pole_Mass_1srd_low,  0.03, ms.pole_mass_strs_1_6, i123456, true);
+  //     mssmspec.set_override_vector(Par::Pole_Mass_1srd_high, 0.03, &quot;~chi0&quot;, i1234, true);
+  //     mssmspec.set_override_vector(Par::Pole_Mass_1srd_low,  0.03, &quot;~chi0&quot;, i1234, true);
+  //     mssmspec.set_override_vector(Par::Pole_Mass_1srd_high, 0.03, ms.pole_mass_strs_1_3, i123, true);
+  //     mssmspec.set_override_vector(Par::Pole_Mass_1srd_low,  0.03, ms.pole_mass_strs_1_3, i123, true);
+  //     mssmspec.set_override_vector(Par::Pole_Mass_1srd_high, 0.03, ms.pole_mass_strs_1_2, i12,  true);
+  //     mssmspec.set_override_vector(Par::Pole_Mass_1srd_low,  0.03, ms.pole_mass_strs_1_2, i12,  true);
+
+  //     // Do the lightest Higgs mass separately.  The default in most codes is 3 GeV. That seems like
+  //     // an underestimate if the stop masses are heavy enough, but an overestimate for most points.
+  //     double rd_mh1 = 2.0 / mssmspec.get(Par::Pole_Mass, ms.h0, 1);
+  //     mssmspec.set_override(Par::Pole_Mass_1srd_high, rd_mh1, ms.h0, 1, true);
+  //     mssmspec.set_override(Par::Pole_Mass_1srd_low,  rd_mh1, ms.h0, 1, true);
+
+  //     // Do the W mass separately.  Here we use 10 MeV based on the size of corrections from two-loop papers and advice from Dominik Stockinger.
+  //     double rd_mW = 0.01 / mssmspec.get(Par::Pole_Mass, &quot;W+&quot;);
+  //     mssmspec.set_override(Par::Pole_Mass_1srd_high, rd_mW, &quot;W+&quot;, true);
+  //     mssmspec.set_override(Par::Pole_Mass_1srd_low,  rd_mW, &quot;W+&quot;, true);
+
+  //     // Save the input value of TanBeta
+  //     // Probably need to make it a full requirement of the MSSM SpectrumContents
+  //     if(input_Param.find(&quot;TanBeta&quot;) != input_Param.end())
+  //     {
+  //       mssmspec.set_override(Par::dimensionless, *input_Param.at(&quot;TanBeta&quot;), &quot;tanbeta(mZ)&quot;, true);
+  //     }
+
+  //     // Create a second SubSpectrum object to wrap the qedqcd object used to initialise the spectrum generator
+  //     // Attach the sminputs object as well, so that SM pole masses can be passed on (these aren't easily
+  //     // extracted from the QedQcd object, so use the values that we put into it.)
+  //     QedQcdWrapper qedqcdspec(oneset,sminputs);
+
+  //     // Deal with points where spectrum generator encountered a problem
+  //     #ifdef SPECBIT_DEBUG
+  //       std::cout&lt;&lt;&quot;Problem? &quot;&lt;&lt;problems.have_problem()&lt;&lt;std::endl;
+  //     #endif
+  //     if( problems.have_problem() )
+  //     {
+  //        if( runOptions.getValueOrDef&lt;bool&gt;(false,&quot;invalid_point_fatal&quot;) )
+  //        {
+  //           ///TODO: Need to tell gambit that the spectrum is not viable somehow. For now
+  //           /// just die.
+  //           std::ostringstream errmsg;
+  //           errmsg &lt;&lt; &quot;A serious problem was encountered during spectrum generation!; &quot;;
+  //           errmsg &lt;&lt; &quot;Message from FlexibleSUSY below:&quot; &lt;&lt; std::endl;
+  //           problems.print_problems(errmsg);
+  //           problems.print_warnings(errmsg);
+  //           SpecBit_error().raise(LOCAL_INFO,errmsg.str());
+  //        }
+  //        else
+  //        {
+  //           /// Check what the problem was
+  //           /// see: contrib/MassSpectra/flexiblesusy/src/problems.hpp
+  //           std::ostringstream msg;
+  //           //msg &lt;&lt; &quot;&quot;;
+  //           //if( have_bad_mass()      ) msg &lt;&lt; &quot;bad mass &quot; &lt;&lt; std::endl; // TODO: check which one
+  //           //if( have_tachyon()       ) msg &lt;&lt; &quot;tachyon&quot; &lt;&lt; std::endl;
+  //           //if( have_thrown()        ) msg &lt;&lt; &quot;error&quot; &lt;&lt; std::endl;
+  //           //if( have_non_perturbative_parameter()   ) msg &lt;&lt; &quot;non-perturb. param&quot; &lt;&lt; std::endl; // TODO: check which
+  //           //if( have_failed_pole_mass_convergence() ) msg &lt;&lt; &quot;fail pole mass converg.&quot; &lt;&lt; std::endl; // TODO: check which
+  //           //if( no_ewsb()            ) msg &lt;&lt; &quot;no ewsb&quot; &lt;&lt; std::endl;
+  //           //if( no_convergence()     ) msg &lt;&lt; &quot;no converg.&quot; &lt;&lt; std::endl;
+  //           //if( no_perturbative()    ) msg &lt;&lt; &quot;no pertub.&quot; &lt;&lt; std::endl;
+  //           //if( no_rho_convergence() ) msg &lt;&lt; &quot;no rho converg.&quot; &lt;&lt; std::endl;
+  //           //if( msg.str()==&quot;&quot; ) msg &lt;&lt; &quot; Unrecognised problem! &quot;;
+
+  //           /// Fast way for now:
+  //           problems.print_problems(msg);
+  //           invalid_point().raise(msg.str()); //TODO: This message isn't ending up in the logs.
+  //        }
+  //     }
+
+  //     if( problems.have_warning() )
+  //     {
+  //        std::ostringstream msg;
+  //        problems.print_warnings(msg);
+  //        SpecBit_warning().raise(LOCAL_INFO,msg.str()); //TODO: Is a warning the correct thing to do here?
+  //     }
+
+  //     // Write SLHA file (for debugging purposes...)
+  //     #ifdef SPECBIT_DEBUG
+  //        typename MI::SlhaIo slha_io;
+  //        slha_io.set_spinfo(problems);
+  //        slha_io.set_sminputs(oneset);
+  //        slha_io.set_minpar(input);
+  //        slha_io.set_extpar(input);
+  //        slha_io.set_spectrum(mssmspec.model_interface.model);
+  //        slha_io.write_to_file(&quot;SpecBit/initial_CMSSM_spectrum-&gt;slha&quot;);
+  //     #endif
+
+  //     // Retrieve any mass cuts
+  //     static const Spectrum::mc_info mass_cut = runOptions.getValueOrDef&lt;Spectrum::mc_info&gt;(Spectrum::mc_info(), &quot;mass_cut&quot;);
+  //     static const Spectrum::mr_info mass_ratio_cut = runOptions.getValueOrDef&lt;Spectrum::mr_info&gt;(Spectrum::mr_info(), &quot;mass_ratio_cut&quot;);
+
+  //     // Package QedQcd SubSpectrum object, MSSM SubSpectrum object, and SMInputs struct into a 'full' Spectrum object
+  //     return Spectrum(qedqcdspec,mssmspec,sminputs,&amp;input_Param,mass_cut,mass_ratio_cut);
+  //   }
+
+    /// Helper function for setting 3x3 matrix-valued parameters
+    //  Names must conform to convention &quot;&lt;parname&gt;_ij&quot;
+    Eigen::Matrix&lt;double,3,3&gt; fill_3x3_parameter_matrix(const std::string&amp; rootname, const std::map&lt;str, safe_ptr&lt;const double&gt; &gt;&amp; Param)
+    {
+       Eigen::Matrix&lt;double,3,3&gt; output;
+       for(int i=0; i&lt;3; ++i) for(int j=0; j&lt;3; ++j)
+       {
+          output(i,j) = *Param.at(rootname + &quot;_&quot; + std::to_string(i+1) + std::to_string(j+1));
+       }
+       return output;
+    }
+
+    /// As above, but for symmetric input (i.e. 6 entries, assumed to be the upper triangle)
+    Eigen::Matrix&lt;double,3,3&gt; fill_3x3_symmetric_parameter_matrix(const std::string&amp; rootname, const std::map&lt;str, safe_ptr&lt;const double&gt; &gt;&amp; Param)
+    {
+       Eigen::Matrix&lt;double,3,3&gt; output;
+       for(int i=0; i&lt;3; ++i) for(int j=0; j&lt;3; ++j)
+       {
+         str parname = rootname + &quot;_&quot; + ( i &lt; j ? std::to_string(i+1) + std::to_string(j+1) : std::to_string(j+1) + std::to_string(i+1));
+         output(i,j) = *Param.at(parname);
+       }
+       return output;
+    }
+
+    /// Helper function for filling MSSM63-compatible input parameter objects
+    /// Leaves out mHu2, mHd2, SignMu, (mA, mu) because we use two different parameterisations of these
+    template &lt;class T&gt;
+    void fill_MSSM63_input(T&amp; input, const std::map&lt;str, safe_ptr&lt;const double&gt; &gt;&amp; Param )
+    {
+      //double valued parameters
+      input.TanBeta     = *Param.at(&quot;TanBeta&quot;);
+      input.MassBInput  = *Param.at(&quot;M1&quot;);
+      input.MassWBInput = *Param.at(&quot;M2&quot;);
+      input.MassGInput  = *Param.at(&quot;M3&quot;);
+
+      // Sanity checks
+      if(input.TanBeta&lt;0)
+      {
+         std::ostringstream msg;
+         msg &lt;&lt; &quot;Tried to set TanBeta parameter to a negative value (&quot;&lt;&lt;input.TanBeta&lt;&lt;&quot;)! This parameter must be positive. Please check your inifile and try again.&quot;;
+         SpecBit_error().raise(LOCAL_INFO,msg.str());
+      }
+
+      //3x3 matrices; filled with the help of a convenience function
+      input.mq2Input = fill_3x3_symmetric_parameter_matrix(&quot;mq2&quot;, Param);
+      input.ml2Input = fill_3x3_symmetric_parameter_matrix(&quot;ml2&quot;, Param);
+      input.md2Input = fill_3x3_symmetric_parameter_matrix(&quot;md2&quot;, Param);
+      input.mu2Input = fill_3x3_symmetric_parameter_matrix(&quot;mu2&quot;, Param);
+      input.me2Input = fill_3x3_symmetric_parameter_matrix(&quot;me2&quot;, Param);
+      input.Aeij = fill_3x3_parameter_matrix(&quot;Ae&quot;, Param);
+      input.Adij = fill_3x3_parameter_matrix(&quot;Ad&quot;, Param);
+      input.Auij = fill_3x3_parameter_matrix(&quot;Au&quot;, Param);
+
+      #ifdef SPECBIT_DEBUG
+        #define INPUT(p) input.p
+        #define ostr std::cout
+        #define oend std::endl
+        ostr &lt;&lt; &quot;TanBeta = &quot; &lt;&lt; INPUT(TanBeta) &lt;&lt; &quot;, &quot; &lt;&lt; oend ;
+        ostr &lt;&lt; &quot;mq2Input = &quot; &lt;&lt; oend &lt;&lt; INPUT(mq2Input) &lt;&lt; &quot;, &quot; &lt;&lt; oend;
+        ostr &lt;&lt; &quot;ml2Input = &quot; &lt;&lt; oend &lt;&lt; INPUT(ml2Input) &lt;&lt; &quot;, &quot; &lt;&lt; oend;
+        ostr &lt;&lt; &quot;md2Input = &quot; &lt;&lt; oend &lt;&lt; INPUT(md2Input) &lt;&lt; &quot;, &quot; &lt;&lt; oend;
+        ostr &lt;&lt; &quot;mu2Input = &quot; &lt;&lt; oend &lt;&lt; INPUT(mu2Input) &lt;&lt; &quot;, &quot; &lt;&lt; oend;
+        ostr &lt;&lt; &quot;me2Input = &quot; &lt;&lt; oend &lt;&lt; INPUT(me2Input) &lt;&lt; &quot;, &quot; &lt;&lt; oend;
+        ostr &lt;&lt; &quot;MassBInput = &quot; &lt;&lt; INPUT(MassBInput) &lt;&lt; &quot;, &quot; &lt;&lt; oend;
+        ostr &lt;&lt; &quot;MassWBInput = &quot; &lt;&lt; INPUT(MassWBInput) &lt;&lt; &quot;, &quot; &lt;&lt; oend;
+        ostr &lt;&lt; &quot;MassGInput = &quot; &lt;&lt; INPUT(MassGInput) &lt;&lt; &quot;, &quot; &lt;&lt; oend;
+        ostr &lt;&lt; &quot;Aeij = &quot; &lt;&lt; oend &lt;&lt; INPUT(Aeij) &lt;&lt; &quot;, &quot; &lt;&lt; oend;
+        ostr &lt;&lt; &quot;Adij = &quot; &lt;&lt; oend &lt;&lt; INPUT(Adij) &lt;&lt; &quot;, &quot; &lt;&lt; oend;
+        ostr &lt;&lt; &quot;Auij = &quot; &lt;&lt; oend &lt;&lt; INPUT(Auij) &lt;&lt; &quot;, &quot; &lt;&lt; oend;
+        #undef INPUT
+        #undef ostr
+        #undef oend
+      #endif
+    }
+
+
+  // Similar to above, except this is for MSSMEFTHiggs spectrum
+  // generator and a few others where different names for inputs for many
+  // parameters are used. This should be standardised.
+
+    template &lt;class T&gt;
+    void fill_MSSM63_input_altnames(T&amp; input, const std::map&lt;str, safe_ptr&lt;const double&gt; &gt;&amp; Param )
+    {
+      //double valued parameters
+      input.TanBeta     = *Param.at(&quot;TanBeta&quot;);
+      input.M1Input  = *Param.at(&quot;M1&quot;);
+      input.M2Input = *Param.at(&quot;M2&quot;);
+      input.M3Input  = *Param.at(&quot;M3&quot;);
+
+      // Sanity checks
+      if(input.TanBeta&lt;0)
+      {
+         std::ostringstream msg;
+         msg &lt;&lt; &quot;Tried to set TanBeta parameter to a negative value (&quot;&lt;&lt;input.TanBeta&lt;&lt;&quot;)! This parameter must be positive. Please check your inifile and try again.&quot;;
+         SpecBit_error().raise(LOCAL_INFO,msg.str());
+      }
+
+      //3x3 matrices; filled with the help of a convenience function
+      input.mq2Input = fill_3x3_symmetric_parameter_matrix(&quot;mq2&quot;, Param);
+      input.ml2Input = fill_3x3_symmetric_parameter_matrix(&quot;ml2&quot;, Param);
+      input.md2Input = fill_3x3_symmetric_parameter_matrix(&quot;md2&quot;, Param);
+      input.mu2Input = fill_3x3_symmetric_parameter_matrix(&quot;mu2&quot;, Param);
+      input.me2Input = fill_3x3_symmetric_parameter_matrix(&quot;me2&quot;, Param);
+      input.AeInput = fill_3x3_parameter_matrix(&quot;Ae&quot;, Param);
+      input.AdInput= fill_3x3_parameter_matrix(&quot;Ad&quot;, Param);
+      input.AuInput = fill_3x3_parameter_matrix(&quot;Au&quot;, Param);
+
+      #ifdef SPECBIT_DEBUG
+        #define INPUT(p) input.p
+        #define ostr std::cout
+        #define oend std::endl
+        ostr &lt;&lt; &quot;TanBeta = &quot; &lt;&lt; INPUT(TanBeta) &lt;&lt; &quot;, &quot; &lt;&lt; oend ;
+        ostr &lt;&lt; &quot;mq2Input = &quot; &lt;&lt; oend &lt;&lt; INPUT(mq2Input) &lt;&lt; &quot;, &quot; &lt;&lt; oend;
+        ostr &lt;&lt; &quot;ml2Input = &quot; &lt;&lt; oend &lt;&lt; INPUT(ml2Input) &lt;&lt; &quot;, &quot; &lt;&lt; oend;
+        ostr &lt;&lt; &quot;md2Input = &quot; &lt;&lt; oend &lt;&lt; INPUT(md2Input) &lt;&lt; &quot;, &quot; &lt;&lt; oend;
+        ostr &lt;&lt; &quot;mu2Input = &quot; &lt;&lt; oend &lt;&lt; INPUT(mu2Input) &lt;&lt; &quot;, &quot; &lt;&lt; oend;
+        ostr &lt;&lt; &quot;me2Input = &quot; &lt;&lt; oend &lt;&lt; INPUT(me2Input) &lt;&lt; &quot;, &quot; &lt;&lt; oend;
+        ostr &lt;&lt; &quot;M1Input = &quot; &lt;&lt; INPUT(M1Input) &lt;&lt; &quot;, &quot; &lt;&lt; oend;
+        ostr &lt;&lt; &quot;M2Input = &quot; &lt;&lt; INPUT(M2Input) &lt;&lt; &quot;, &quot; &lt;&lt; oend;
+        ostr &lt;&lt; &quot;M3Input = &quot; &lt;&lt; INPUT(M3Input) &lt;&lt; &quot;, &quot; &lt;&lt; oend;
+        ostr &lt;&lt; &quot;AeInput = &quot; &lt;&lt; oend &lt;&lt; INPUT(AeInput) &lt;&lt; &quot;, &quot; &lt;&lt; oend;
+        ostr &lt;&lt; &quot;AdInput = &quot; &lt;&lt; oend &lt;&lt; INPUT(AdInput) &lt;&lt; &quot;, &quot; &lt;&lt; oend;
+        ostr &lt;&lt; &quot;AuInput = &quot; &lt;&lt; oend &lt;&lt; INPUT(AuInput) &lt;&lt; &quot;, &quot; &lt;&lt; oend;
+        #undef INPUT
+        #undef ostr
+        #undef oend
+      #endif
+
+    }
+
+
+    /// @} End module convenience functions
+
+
+    /// @{ Gambit module functions
+    //  =======================================================================
+    //  These are wrapped up in Gambit functor objects according to the
+    //  instructions in the rollcall header
+
+    // Functions to change the capability associated with a Spectrum object to &quot;SM_spectrum&quot;
+    void convert_MSSM_to_SM   (Spectrum &amp;result) {result = *Pipes::convert_MSSM_to_SM::Dep::MSSM_spectrum;}
+    void convert_NMSSM_to_SM  (Spectrum &amp;result) {result = *Pipes::convert_NMSSM_to_SM::Dep::NMSSM_spectrum;}
+    void convert_E6MSSM_to_SM (Spectrum &amp;result) {result = *Pipes::convert_E6MSSM_to_SM::Dep::E6MSSM_spectrum;}
+
+    void get_MSSM_spectrum_SPheno (Spectrum&amp; spectrum)
+    {
+      namespace myPipe = Pipes::get_MSSM_spectrum_SPheno;
+      const SMInputs &amp;sminputs = *myPipe::Dep::SMINPUTS;
+
+      // Set up the input structure
+      Finputs inputs;
+      inputs.sminputs = sminputs;
+      inputs.param = myPipe::Param;
+      inputs.options = myPipe::runOptions;
+
+      // Retrieve any mass cuts
+      static const Spectrum::mc_info mass_cut = myPipe::runOptions-&gt;getValueOrDef&lt;Spectrum::mc_info&gt;(Spectrum::mc_info(), &quot;mass_cut&quot;);
+      static const Spectrum::mr_info mass_ratio_cut = myPipe::runOptions-&gt;getValueOrDef&lt;Spectrum::mr_info&gt;(Spectrum::mr_info(), &quot;mass_ratio_cut&quot;);
+
+      // Get the spectrum from the Backend
+      myPipe::BEreq::SPheno_MSSMspectrum(spectrum, inputs);
+
+      // Only allow neutralino LSPs.
+      if (not has_neutralino_LSP(spectrum)) invalid_point().raise(&quot;Neutralino is not LSP.&quot;);
+
+      // Drop SLHA files if requested
+      spectrum.drop_SLHAs_if_requested(myPipe::runOptions, &quot;GAMBIT_unimproved_spectrum&quot;);
+
+    }
+
+
+  // Runs FlexibleSUSY MSSMEFTHiggs model spectrum generator with SUSY
+  // scale boundary conditions, ie accepts MSSM parameters at MSUSY,
+  // and has DRbar mA and mu as an input and mHu2 and mHd2 as EWSB
+  // outputs, so it is for the MSSMatMSUSY_mA model.
+  #if(FS_MODEL_MSSMatMSUSYEFTHiggs_mAmu_IS_BUILT)
+  void get_MSSMatMSUSY_mA_spectrum_FlexibleEFTHiggs (Spectrum&amp; result)
+  {
+     // Access the pipes for this function to get model and parameter information
+     namespace myPipe = Pipes::get_MSSMatMSUSY_mA_spectrum_FlexibleEFTHiggs;
+
+     // Get SLHA2 SMINPUTS values
+     const SMInputs&amp; sminputs = *myPipe::Dep::SMINPUTS;
+
+     // Get input parameters (from flexiblesusy namespace)
+     MSSMatMSUSYEFTHiggs_mAmu_input_parameters input;
+     input.MuInput  = *myPipe::Param.at(&quot;mu&quot;);
+     // This FS spectrum generator has mA as the parameter
+     input.mAInput = *myPipe::Param.at(&quot;mA&quot;);
+     fill_MSSM63_input_altnames(input,myPipe::Param); // Fill the rest
+     result = run_FS_spectrum_generator&lt;MSSMatMSUSYEFTHiggs_mAmu_interface&lt;ALGORITHM1&gt;&gt;(input,sminputs,*myPipe::runOptions,myPipe::Param);
+
+     // Only allow neutralino LSPs.
+     if (not has_neutralino_LSP(result)) invalid_point().raise(&quot;Neutralino is not LSP.&quot;);
+
+     // Drop SLHA files if requested
+     result.drop_SLHAs_if_requested(myPipe::runOptions, &quot;GAMBIT_unimproved_spectrum&quot;);
+
+  }
+  #endif
+
+  // Runs FlexibleSUSY MSSMEFTHiggs model spectrum generator
+  // and has m3^2 and mu as EWSB outputs, so it is for the
+  // MSSMatQ_model.
+  #if(FS_MODEL_MSSMEFTHiggs_IS_BUILT)
+  void get_MSSMatQ_spectrum_FlexibleEFTHiggs (Spectrum&amp; result)
+  {
+     // Access the pipes for this function to get model and parameter information
+     namespace myPipe = Pipes::get_MSSMatQ_spectrum_FlexibleEFTHiggs;
+
+     // Get SLHA2 SMINPUTS values
+     const SMInputs&amp; sminputs = *myPipe::Dep::SMINPUTS;
+
+     // Get input parameters (from flexiblesusy namespace)
+     MSSMEFTHiggs_input_parameters input;
+     // MSSMatQ also requires input scale to be supplied with name MSUSY
+     input.MSUSY  = *myPipe::Param.at(&quot;Qin&quot;);
+     input.mHu2IN = *myPipe::Param.at(&quot;mHu2&quot;);
+     input.mHd2IN = *myPipe::Param.at(&quot;mHd2&quot;);
+     input.SignMu = *myPipe::Param.at(&quot;SignMu&quot;);
+     fill_MSSM63_input_altnames(input,myPipe::Param); // Fill the rest
+     result = run_FS_spectrum_generator&lt;MSSMEFTHiggs_interface&lt;ALGORITHM1&gt;&gt;(input,sminputs,*myPipe::runOptions,myPipe::Param);
+
+     // Only allow neutralino LSPs.
+     if (not has_neutralino_LSP(result)) invalid_point().raise(&quot;Neutralino is not LSP.&quot;);
+
+     // Drop SLHA files if requested
+     result.drop_SLHAs_if_requested(myPipe::runOptions, &quot;GAMBIT_unimproved_spectrum&quot;);
+
+   }
+   #endif
+
+   // Runs FlexibleSUSY MSSMEFTHiggs_mAmu spectrum generator with
+   // boundary conditions at a user specified scale, ie accepts MSSM
+   // parameters at Q, and has DRbar mA and mu as an input and mHu2
+   // and mHd2 as EWSB outputs, so it is for the MSSMatMSUSY_mA model.
+   #if(FS_MODEL_MSSMEFTHiggs_mAmu_IS_BUILT)
+   void get_MSSMatQ_mA_spectrum_FlexibleEFTHiggs (Spectrum&amp; result)
+   {
+     // Access the pipes for this function to get model and parameter information
+     namespace myPipe = Pipes::get_MSSMatQ_mA_spectrum_FlexibleEFTHiggs;
+
+     // Get SLHA2 SMINPUTS values
+     const SMInputs&amp; sminputs = *myPipe::Dep::SMINPUTS;
+
+     // Get input parameters (from flexiblesusy namespace)
+     MSSMEFTHiggs_mAmu_input_parameters input;
+     input.MuInput  = *myPipe::Param.at(&quot;mu&quot;);
+     // This FS spectrum generator has mA as the parameter
+     input.mAInput = *myPipe::Param.at(&quot;mA&quot;);
+     // Note: Qin has been named MSUSY inside the spectrum generator
+     // but it is a user-input scale in this case.
+     input.MSUSY = *myPipe::Param.at(&quot;Qin&quot;);
+     // Fill the rest.
+     // Note: This particular spectrum generator has been created with
+     // different names for parameter inputs.  We should standardise this
+     fill_MSSM63_input_altnames(input,myPipe::Param);
+     result = run_FS_spectrum_generator&lt;MSSMEFTHiggs_mAmu_interface&lt;ALGORITHM1&gt;&gt;(input,sminputs,*myPipe::runOptions,myPipe::Param);
+
+     // Only allow neutralino LSPs.
+     if (not has_neutralino_LSP(result)) invalid_point().raise(&quot;Neutralino is not LSP.&quot;);
+
+     // Drop SLHA files if requested
+     result.drop_SLHAs_if_requested(myPipe::runOptions, &quot;GAMBIT_unimproved_spectrum&quot;);
+
+   }
+   #endif
+
+
+
+    // Runs FlexibleSUSY MSSM spectrum generator with CMSSM (GUT scale) boundary conditions
+    // In principle an identical spectrum can be obtained from the function
+    // get_MSSMatGUT_spectrum_FS
+    // by setting the input parameters to match the CMSSM assumptions
+    #if(FS_MODEL_CMSSM_IS_BUILT)
+    void get_CMSSM_spectrum_FS (Spectrum&amp; result)
+    {
+
+      // Access the pipes for this function to get model and parameter information
+      namespace myPipe = Pipes::get_CMSSM_spectrum_FS;
+
+      // Get SLHA2 SMINPUTS values
+      const SMInputs&amp; sminputs = *myPipe::Dep::SMINPUTS;
+
+      // Get input parameters (from flexiblesusy namespace)
+      CMSSM_input_parameters input;
+
+      input.m0      = *myPipe::Param[&quot;M0&quot;];
+      input.m12     = *myPipe::Param[&quot;M12&quot;];
+      input.TanBeta = *myPipe::Param[&quot;TanBeta&quot;];
+      input.SignMu  = *myPipe::Param[&quot;SignMu&quot;];
+      input.Azero   = *myPipe::Param[&quot;A0&quot;];
+
+      // Sanity checks
+      if(input.TanBeta&lt;0)
+      {
+         std::ostringstream msg;
+         msg &lt;&lt; &quot;Tried to set TanBeta parameter to a negative value (&quot;&lt;&lt;input.TanBeta&lt;&lt;&quot;)! This parameter must be positive. Please check your inifile and try again.&quot;;
+         SpecBit_error().raise(LOCAL_INFO,msg.str());
+      }
+      if(input.SignMu!=-1 and input.SignMu!=1)
+      {
+         std::ostringstream msg;
+         msg &lt;&lt; &quot;Tried to set SignMu parameter to a value that is not a sign! (&quot;&lt;&lt;input.SignMu&lt;&lt;&quot;)! This parameter must be set to either 1 or -1. Please check your inifile and try again.&quot;;
+         SpecBit_error().raise(LOCAL_INFO,msg.str());
+      }
+
+      // Run spectrum generator
+      result = run_FS_spectrum_generator&lt;CMSSM_interface&lt;ALGORITHM1&gt;&gt;(input,sminputs,*myPipe::runOptions,myPipe::Param);
+
+      // Only allow neutralino LSPs.
+      if (not has_neutralino_LSP(result)) invalid_point().raise(&quot;Neutralino is not LSP.&quot;);
+
+      // Drop SLHA files if requested
+      result.drop_SLHAs_if_requested(myPipe::runOptions, &quot;GAMBIT_unimproved_spectrum&quot;);
+
+    }
+    #endif
+
+    // Runs FlexibleSUSY MSSM spectrum generator with EWSB scale input (boundary conditions)
+    #if(FS_MODEL_MSSM_IS_BUILT)
+    void get_MSSMatQ_spectrum_FS (Spectrum&amp; result)
+    {
+      using namespace softsusy;
+      namespace myPipe = Pipes::get_MSSMatQ_spectrum_FS;
+      const SMInputs&amp; sminputs = *myPipe::Dep::SMINPUTS;
+      MSSM_input_parameters input;
+      input.Qin    = *myPipe::Param.at(&quot;Qin&quot;); // MSSMatQ also requires input scale to be supplied
+      input.mHu2IN = *myPipe::Param.at(&quot;mHu2&quot;);
+      input.mHd2IN = *myPipe::Param.at(&quot;mHd2&quot;);
+      input.SignMu = *myPipe::Param.at(&quot;SignMu&quot;);
+      if(input.SignMu!=-1 and input.SignMu!=1)
+      {
+         std::ostringstream msg;
+         msg &lt;&lt; &quot;Tried to set SignMu parameter to a value that is not a sign! (&quot;&lt;&lt;input.SignMu&lt;&lt;&quot;)! This parameter must be set to either 1 or -1. Please check your inifile and try again.&quot;;
+         SpecBit_error().raise(LOCAL_INFO,msg.str());
+      }
+      fill_MSSM63_input(input,myPipe::Param);
+      result = run_FS_spectrum_generator&lt;MSSM_interface&lt;ALGORITHM1&gt;&gt;(input,sminputs,*myPipe::runOptions,myPipe::Param);
+      if (not has_neutralino_LSP(result)) invalid_point().raise(&quot;Neutralino is not LSP.&quot;);
+      result.drop_SLHAs_if_requested(myPipe::runOptions, &quot;GAMBIT_unimproved_spectrum&quot;);
+    }
+    #endif
+
+    // Runs FlexibleSUSY MSSM spectrum generator with EWSB scale input (boundary conditions)
+    // but with mA and mu as parameters instead of mHu2 and mHd2
+    #if(FS_MODEL_MSSM_mAmu_IS_BUILT)
+    void get_MSSMatQ_mA_spectrum_FS (Spectrum&amp; result)
+    {
+      using namespace softsusy;
+      namespace myPipe = Pipes::get_MSSMatQ_mA_spectrum_FS;
+      const SMInputs&amp; sminputs = *myPipe::Dep::SMINPUTS;
+      MSSM_mAmu_input_parameters input;
+      input.Qin      = *myPipe::Param.at(&quot;Qin&quot;); // MSSMatQ also requires input scale to be supplied
+      input.MuInput  = *myPipe::Param.at(&quot;mu&quot;);
+      // Note this spectrum generator mA2 is the parameter.
+      // However this freedom is not used in GAMBIT
+      // and not needed as mA is a DRbar mass eigenstate for a scalar
+      double mA = *myPipe::Param.at(&quot;mA&quot;);
+      input.mA2Input = mA*mA;
+      fill_MSSM63_input(input,myPipe::Param); // Fill the rest
+      result = run_FS_spectrum_generator&lt;MSSM_mAmu_interface&lt;ALGORITHM1&gt;&gt;(input,sminputs,*myPipe::runOptions,myPipe::Param);
+      if (not has_neutralino_LSP(result)) invalid_point().raise(&quot;Neutralino is not LSP.&quot;);
+      result.drop_SLHAs_if_requested(myPipe::runOptions, &quot;GAMBIT_unimproved_spectrum&quot;);
+    }
+    #endif
+
+    // Runs FlexibleSUSY MSSM spectrum generator with GUT scale input (boundary conditions)
+    #if(FS_MODEL_MSSMatMGUT_IS_BUILT)
+    void get_MSSMatMGUT_spectrum_FS (Spectrum&amp; result)
+    {
+      using namespace softsusy;
+      namespace myPipe = Pipes::get_MSSMatMGUT_spectrum_FS;
+      const SMInputs&amp; sminputs = *myPipe::Dep::SMINPUTS;
+      MSSMatMGUT_input_parameters input;
+      input.mHu2IN = *myPipe::Param.at(&quot;mHu2&quot;);
+      input.mHd2IN = *myPipe::Param.at(&quot;mHd2&quot;);
+      input.SignMu = *myPipe::Param.at(&quot;SignMu&quot;);
+      if(input.SignMu!=-1 and input.SignMu!=1)
+      {
+         std::ostringstream msg;
+         msg &lt;&lt; &quot;Tried to set SignMu parameter to a value that is not a sign! (&quot;&lt;&lt;input.SignMu&lt;&lt;&quot;)! This parameter must be set to either 1 or -1. Please check your inifile and try again.&quot;;
+         SpecBit_error().raise(LOCAL_INFO,msg.str());
+      }
+      fill_MSSM63_input(input,myPipe::Param);
+      result = run_FS_spectrum_generator&lt;MSSMatMGUT_interface&lt;ALGORITHM1&gt;&gt;(input,sminputs,*myPipe::runOptions,myPipe::Param);
+      if (not has_neutralino_LSP(result)) invalid_point().raise(&quot;Neutralino is not LSP.&quot;);
+      result.drop_SLHAs_if_requested(myPipe::runOptions, &quot;GAMBIT_unimproved_spectrum&quot;);
+    }
+    #endif
+
+  // Runs FlexibleSUSY MSSMatMGUTEFTHiggs model spectrum generator
+  // and has m3^2 and mu as EWSB outputs, so it is for the
+  // MSSMatMGUT_model.
+  #if(FS_MODEL_MSSMatMGUTEFTHiggs_IS_BUILT)
+  void get_MSSMatMGUT_spectrum_FlexibleEFTHiggs (Spectrum&amp; result)
+  {
+     // Access the pipes for this function to get model and parameter information
+     namespace myPipe = Pipes::get_MSSMatMGUT_spectrum_FlexibleEFTHiggs;
+
+     // Get SLHA2 SMINPUTS values
+     const SMInputs&amp; sminputs = *myPipe::Dep::SMINPUTS;
+
+     // Get input parameters (from flexiblesusy namespace)
+     MSSMatMGUTEFTHiggs_input_parameters input;
+     input.mHu2IN = *myPipe::Param.at(&quot;mHu2&quot;);
+     input.mHd2IN = *myPipe::Param.at(&quot;mHd2&quot;);
+     input.SignMu = *myPipe::Param.at(&quot;SignMu&quot;);
+     if(input.SignMu!=-1 and input.SignMu!=1)
+      {
+         std::ostringstream msg;
+         msg &lt;&lt; &quot;Tried to set SignMu parameter to a value that is not a sign! (&quot;&lt;&lt;input.SignMu&lt;&lt;&quot;)! This parameter must be set to either 1 or -1. Please check your inifile and try again.&quot;;
+         SpecBit_error().raise(LOCAL_INFO,msg.str());
+      }
+
+     fill_MSSM63_input(input,myPipe::Param); // Fill the rest
+     result = run_FS_spectrum_generator&lt;MSSMatMGUTEFTHiggs_interface&lt;ALGORITHM1&gt;&gt;(input,sminputs,*myPipe::runOptions,myPipe::Param);
+
+     // Only allow neutralino LSPs.
+     if (not has_neutralino_LSP(result)) invalid_point().raise(&quot;Neutralino is not LSP.&quot;);
+
+     // Drop SLHA files if requested
+     result.drop_SLHAs_if_requested(myPipe::runOptions, &quot;GAMBIT_unimproved_spectrum&quot;);
+
+   }
+   #endif
+
+
+    // Runs FlexibleSUSY MSSM spectrum generator with GUT scale input (boundary conditions)
+    // but with mA and mu as parameters instead of mHu2 and mHd2
+    #if(FS_MODEL_MSSMatMGUT_mAmu_IS_BUILT)
+    void get_MSSMatMGUT_mA_spectrum_FS (Spectrum&amp; result)
+    {
+      using namespace softsusy;
+      namespace myPipe = Pipes::get_MSSMatMGUT_mA_spectrum_FS;
+      const SMInputs&amp; sminputs = *myPipe::Dep::SMINPUTS;
+      MSSMatMGUT_mAmu_input_parameters input;
+      input.MuInput  = *myPipe::Param.at(&quot;mu&quot;);
+      // Note this spectrum generator mA2 is the parameter.
+      // However this freedom is not used in GAMBIT
+      // and not needed as mA is a DRbar mass eigenstate for a scalar
+      double mA = *myPipe::Param.at(&quot;mA&quot;);
+      input.mA2Input = mA*mA;
+      fill_MSSM63_input(input,myPipe::Param); // Fill the rest
+      result = run_FS_spectrum_generator&lt;MSSMatMGUT_mAmu_interface&lt;ALGORITHM1&gt;&gt;(input,sminputs,*myPipe::runOptions,myPipe::Param);
+      if (not has_neutralino_LSP(result)) invalid_point().raise(&quot;Neutralino is not LSP.&quot;);
+      result.drop_SLHAs_if_requested(myPipe::runOptions, &quot;GAMBIT_unimproved_spectrum&quot;);
+    }
+    #endif
+
+  // Runs FlexibleSUSY MSSMatMGUTEFTHiggs model spectrum generator
+  // and has m3^2 and mu as EWSB outputs, so it is for the
+  // MSSMatMGUT_model.
+  #if(FS_MODEL_MSSMatMGUTEFTHiggs_mAmu_IS_BUILT)
+  void get_MSSMatMGUT_mA_spectrum_FlexibleEFTHiggs (Spectrum&amp; result)
+  {
+     // Access the pipes for this function to get model and parameter information
+     namespace myPipe = Pipes::get_MSSMatMGUT_mA_spectrum_FlexibleEFTHiggs;
+
+     // Get SLHA2 SMINPUTS values
+     const SMInputs&amp; sminputs = *myPipe::Dep::SMINPUTS;
+
+     // Get input parameters (from flexiblesusy namespace)
+     MSSMatMGUTEFTHiggs_mAmu_input_parameters input;
+     input.MuInput  = *myPipe::Param.at(&quot;mu&quot;);
+     // Note this spectrum generator mA2 is the parameter.
+     // However this freedom is not used in GAMBIT
+     // and not needed as mA is a DRbar mass eigenstate for a scalar
+     double mA = *myPipe::Param.at(&quot;mA&quot;);
+     input.mA2Input = mA*mA;
+
+     fill_MSSM63_input(input,myPipe::Param); // Fill the rest
+     result = run_FS_spectrum_generator&lt;MSSMatMGUTEFTHiggs_mAmu_interface&lt;ALGORITHM1&gt;&gt;(input,sminputs,*myPipe::runOptions,myPipe::Param);
+
+     // Only allow neutralino LSPs.
+     if (not has_neutralino_LSP(result)) invalid_point().raise(&quot;Neutralino is not LSP.&quot;);
+
+     // Drop SLHA files if requested
+     result.drop_SLHAs_if_requested(myPipe::runOptions, &quot;GAMBIT_unimproved_spectrum&quot;);
+
+   }
+   #endif
+
+
+    // Runs FlexibleSUSY MSSM spectrum generator with SUSY scale input (boundary conditions)
+    // but with mA and mu as parameters instead of mHu2 and mHd2
+    #if(FS_MODEL_MSSMatMSUSY_mAmu_IS_BUILT)
+    void get_MSSMatMSUSY_mA_spectrum_FS (Spectrum&amp; result)
+    {
+      using namespace softsusy;
+      namespace myPipe = Pipes::get_MSSMatMSUSY_mA_spectrum_FS;
+      const SMInputs&amp; sminputs = *myPipe::Dep::SMINPUTS;
+      MSSMatMSUSY_mAmu_input_parameters input;
+      input.MuInput  = *myPipe::Param.at(&quot;mu&quot;);
+      // Note this spectrum generator mA2 is the parameter.
+      // However this freedom is not used in GAMBIT
+      // and not needed as mA is a DRbar mass eigenstate for a scalar
+      double mA = *myPipe::Param.at(&quot;mA&quot;);
+      input.mA2Input = mA*mA;    // FS has mA^2 as the parameter
+      fill_MSSM63_input(input,myPipe::Param); // Fill the rest
+      result = run_FS_spectrum_generator&lt;MSSMatMSUSY_mAmu_interface&lt;ALGORITHM1&gt;&gt;(input,sminputs,*myPipe::runOptions,myPipe::Param);
+      if (not has_neutralino_LSP(result)) invalid_point().raise(&quot;Neutralino is not LSP.&quot;);
+      result.drop_SLHAs_if_requested(myPipe::runOptions, &quot;GAMBIT_unimproved_spectrum&quot;);
+    }
+    #endif
+
+    void get_GUTMSSMB_spectrum (Spectrum &amp;/*result*/)
+    {
+      // Placeholder
+    }
+
+    /// @{
+    /// Functions to decompose Spectrum object (of type MSSM_spectrum)
+
+    /// @}
+    /// Retrieve SubSpectrum* to SM LE model from Spectrum object
+    /// DEPENDENCY(MSSM_spectrum, Spectrum)
+    void get_SM_SubSpectrum_from_MSSM_Spectrum (const SubSpectrum* &amp;result)
+    {
+      namespace myPipe = Pipes::get_SM_SubSpectrum_from_MSSM_Spectrum;
+      const Spectrum&amp; matched_spectra(*myPipe::Dep::unimproved_MSSM_spectrum);
+      result = &amp;matched_spectra.get_LE();
+    }
+
+    /// Extract an SLHAea version of the spectrum contained in a Spectrum object, in SLHA1 format
+    void get_MSSM_spectrum_as_SLHAea_SLHA1(SLHAstruct &amp;result)
+    {
+      result = Pipes::get_MSSM_spectrum_as_SLHAea_SLHA1::Dep::unimproved_MSSM_spectrum-&gt;getSLHAea(1);
+    }
+
+    /// Extract an SLHAea version of the spectrum contained in a Spectrum object, in SLHA2 format
+    void get_MSSM_spectrum_as_SLHAea_SLHA2(SLHAstruct &amp;result)
+    {
+      result = Pipes::get_MSSM_spectrum_as_SLHAea_SLHA2::Dep::unimproved_MSSM_spectrum-&gt;getSLHAea(2);
+    }
+
+    /// Get an MSSMSpectrum object from an SLHA file
+    /// Wraps it up in MSSMSimpleSpec; i.e. no RGE running possible.
+    /// This is mainly for testing against benchmark points, but may be a useful last
+    /// resort for interacting with &quot;difficult&quot; spectrum generators.
+    void get_MSSM_spectrum_from_SLHAfile(Spectrum &amp;result)
+    {
+      // Static counter running in a loop over all filenames
+      static unsigned int counter = 0;
+      static long int ncycle = 1;
+      SLHAstruct input_slha;
+
+      namespace myPipe = Pipes::get_MSSM_spectrum_from_SLHAfile;
+
+      // Read filename from yaml file
+      std::vector&lt;std::string&gt; filenames =
+        myPipe::runOptions-&gt;getValue&lt;std::vector&lt;std::string&gt;&gt;(&quot;filenames&quot;);
+
+      // Check how many loop over the input files we are doing.
+      long int cycles = myPipe::runOptions-&gt;getValueOrDef&lt;int&gt;(-1,&quot;cycles&quot;);
+
+      // Check if we have completed the requested number of cycles
+      if(cycles&gt;0 and ncycle&gt;cycles)
+      {
+         std::ostringstream msg;
+         msg &lt;&lt; &quot;Preset number of loops through input files reached! Stopping. (tried to start cycle &quot;&lt;&lt;ncycle&lt;&lt;&quot; of &quot;&lt;&lt;cycles&lt;&lt;&quot;)&quot;;
+         SpecBit_error().raise(LOCAL_INFO,msg.str());
+      }
+
+      std::string filename = filenames[counter];
+
+      logger() &lt;&lt; &quot;Reading SLHA file: &quot; &lt;&lt; filename &lt;&lt; EOM;
+      std::ifstream ifs(filename.c_str());
+      if(!ifs.good()){ SpecBit_error().raise(LOCAL_INFO,&quot;ERROR: SLHA file not found.&quot;); }
+      ifs &gt;&gt; input_slha;
+      ifs.close();
+      counter++;
+      if( counter &gt;= filenames.size() )
+      {
+        logger() &lt;&lt; &quot;Returning to start of input SLHA file list (finished &quot;&lt;&lt;ncycle&lt;&lt;&quot; cycles)&quot; &lt;&lt; EOM;
+        counter = 0;
+        ncycle++;
+      }
+
+      // Retrieve any mass cuts
+      static const Spectrum::mc_info mass_cut = myPipe::runOptions-&gt;getValueOrDef&lt;Spectrum::mc_info&gt;(Spectrum::mc_info(), &quot;mass_cut&quot;);
+      static const Spectrum::mr_info mass_ratio_cut = myPipe::runOptions-&gt;getValueOrDef&lt;Spectrum::mr_info&gt;(Spectrum::mr_info(), &quot;mass_ratio_cut&quot;);
+
+      // Create Spectrum object from the slhaea object
+      result = spectrum_from_SLHAea&lt;MSSMSimpleSpec, SLHAstruct&gt;(input_slha, input_slha, mass_cut, mass_ratio_cut);
+
+      // Add getter for susy scale if option set for this
+      bool add_susy_scale = myPipe::runOptions-&gt;getValueOrDef&lt;bool&gt;(false,&quot;assume_Q_is_MSUSY&quot;);
+      if(add_susy_scale)
+      {
+         result.get_HE().set_override(Par::mass1,result.get_HE().GetScale(),&quot;susy_scale&quot;,true);
+      }
+
+      // No sneaking in charged LSPs via SLHA, jävlar.
+      if (not has_neutralino_LSP(result)) invalid_point().raise(&quot;Neutralino is not LSP.&quot;);
+    }
+
+    /// Get an MSSMSpectrum object from an SLHAstruct
+    /// Wraps it up in MSSMSimpleSpec; i.e. no RGE running possible.
+    /// This can be used as a poor-man's interface to backend spectrum generators
+    void get_MSSM_spectrum_from_SLHAstruct(Spectrum&amp; result)
+    {
+      namespace myPipe = Pipes::get_MSSM_spectrum_from_SLHAstruct;
+      const SLHAstruct&amp; input_slha_tmp = *myPipe::Dep::unimproved_MSSM_spectrum; // Retrieve dependency on SLHAstruct
+
+      /// @todo FIXME this needs to be fixed -- is it needed any more?  Where is this GAMBIT block supposed to be written?
+      SLHAstruct input_slha(input_slha_tmp); // Copy struct (for demo adding of GAMBIT block only)
+      // For example; add this to your input SLHAstruct:
+      input_slha[&quot;GAMBIT&quot;][&quot;&quot;] &lt;&lt; &quot;BLOCK&quot; &lt;&lt; &quot;GAMBIT&quot;;
+      input_slha[&quot;GAMBIT&quot;][&quot;&quot;] &lt;&lt;      1  &lt;&lt; 1e99 &lt;&lt; &quot;# Input scale&quot;;
+
+      // Retrieve any mass cuts
+      static const Spectrum::mc_info mass_cut = myPipe::runOptions-&gt;getValueOrDef&lt;Spectrum::mc_info&gt;(Spectrum::mc_info(), &quot;mass_cut&quot;);
+      static const Spectrum::mr_info mass_ratio_cut = myPipe::runOptions-&gt;getValueOrDef&lt;Spectrum::mr_info&gt;(Spectrum::mr_info(), &quot;mass_ratio_cut&quot;);
+
+      // Create Spectrum object from the slhaea object
+      result = spectrum_from_SLHAea&lt;MSSMSimpleSpec, SLHAstruct&gt;(input_slha, input_slha, mass_cut, mass_ratio_cut);
+
+      // No sneaking in charged LSPs via SLHA, jävlar.
+      if (not has_neutralino_LSP(result)) invalid_point().raise(&quot;Neutralino is not LSP.&quot;);
+
+      // In order to translate from e.g. MSSM63atMGUT to MSSM63atQ, we need
+      // to know that input scale Q. This is generally not stored in SLHA format,
+      // but we need it, so if you want to produce a Spectrum object this way you
+      // will need to add this information to your SLHAstruct:
+      // BLOCK GAMBIT
+      //   1     &lt;high_scale&gt;    # Input scale of (upper) boundary conditions, e.g. GUT scale
+
+      // Need to check if this information exists:
+      SLHAstruct::const_iterator block = input_slha.find(&quot;GAMBIT&quot;);
+      std::vector&lt;std::string&gt; key(1, &quot;1&quot;);
+      if(block == input_slha.end() or block-&gt;find(key) == block-&gt;end())
+      {
+        // Big problem
+        std::ostringstream errmsg;
+        errmsg &lt;&lt; &quot;Error constructing Spectrum object from a pre-existing SLHAstruct!    &quot; &lt;&lt; endl
+               &lt;&lt; &quot;The supplied SLHAstruct did not have the special GAMBIT block added.  &quot; &lt;&lt; endl
+               &lt;&lt; &quot;This block carries extra information from the spectrum generator      &quot; &lt;&lt; endl
+               &lt;&lt; &quot;that is usually thrown away, but which is needed for properly creating&quot; &lt;&lt; endl
+               &lt;&lt; &quot;a Spectrum object. In whatever module function created the SLHAstruct &quot; &lt;&lt; endl
+               &lt;&lt; &quot;that you want to use, please add code that adds the following         &quot; &lt;&lt; endl
+               &lt;&lt; &quot;information to the SLHAstruct (SLHAea::Coll):                         &quot; &lt;&lt; endl
+               &lt;&lt; &quot;  BLOCK GAMBIT                                                        &quot; &lt;&lt; endl
+               &lt;&lt; &quot; 1 &lt;high_scale&gt;  # Input scale of (upper) boundary conditions, e.g. GUT scale\n&quot;;
+        SpecBit_error().raise(LOCAL_INFO,errmsg.str());
+      }
+
+      // OK the GAMBIT block exists, add the data to the MSSM SubSpectrum object.
+      result.get_HE().set_override(Par::mass1,SLHAea::to&lt;double&gt;(input_slha.at(&quot;GAMBIT&quot;).at(1).at(1)), &quot;high_scale&quot;, false);
+    }
+
+    /// Get pre-computed MSSM spectrum from previous output file
+    /// This function ONLY works when the scan is driven by the postprocessor!
+    /// This is because it relies on the global reader object created by the
+    /// postprocessor to retrieve output.
+    void get_MSSM_spectrum_from_postprocessor(Spectrum&amp; result)
+    {
+       namespace myPipe = Pipes::get_MSSM_spectrum_from_postprocessor;
+       const SMInputs&amp; sminputs = *myPipe::Dep::SMINPUTS; // Retrieve dependency on SLHAstruct
+
+       // Retrieve the spectrum from whatever the point the global reader object is pointed at.
+       // This should be the same point that the postprocessor has retrieved the
+       // current set of ModelParameters from.
+       // Will throw an error if no reader object exists, i.e. if the postprocessor is not
+       // driving this scan.
+
+       // Retrieve MSSM spectrum info into an SLHAea object
+       MSSM_SLHAstruct mssm_in; // Special type to trigger specialised MSSM retrieve routine
+       bool mssm_is_valid = get_pp_reader().retrieve(mssm_in,&quot;MSSM_spectrum&quot;);
+
+       // Retrieve SM spectrum info into an SLHAea object
+       // (should really match SMINPUTS, but better to use what is actually in the reported output spectrum)
+       SMslha_SLHAstruct sm_in;
+       bool sm_is_valid = get_pp_reader().retrieve(sm_in,&quot;MSSM_spectrum&quot;);
+
+       // Check if a valid spectrum was retrived
+       // (if the required datasets don't exist an error will be thrown,
+       //  so this is just checking that the spectrum was computed for
+       //  the current input point)
+       if(not (mssm_is_valid and sm_is_valid)) invalid_point().raise(&quot;Postprocessor: precomputed spectrum was set 'invalid' for this point&quot;);
+
+       // Dump spectrum to output for testing
+       SLHAstruct mssm = mssm_in; // Only this type has stream overloads etc. defined
+       SLHAstruct sm = sm_in;
+
+       // Turns out we don't generically save tan_beta(mZ)_DRbar, so need to extract
+       // this from model parameters (it is always an input, so we should have it in those)
+       double tbmZ = *myPipe::Param.at(&quot;TanBeta&quot;);
+       SLHAea_add(mssm, &quot;MINPAR&quot;, 3, tbmZ, &quot;tan beta (mZ)_DRbar&quot;);
+       SLHAea_add(sm, &quot;MINPAR&quot;, 3, tbmZ, &quot;tan beta (mZ)_DRbar&quot;);
+
+       // Retrieve any mass cuts (could just cut with postprocessor, but I
+       // guess can leave this feature in for compatibility with usage
+       // of other Spectrum objects.
+       static const Spectrum::mc_info mass_cut = myPipe::runOptions-&gt;getValueOrDef&lt;Spectrum::mc_info&gt;(Spectrum::mc_info(), &quot;mass_cut&quot;);
+       static const Spectrum::mr_info mass_ratio_cut = myPipe::runOptions-&gt;getValueOrDef&lt;Spectrum::mr_info&gt;(Spectrum::mr_info(), &quot;mass_ratio_cut&quot;);
+
+       // Create HE simple SubSpectrum object from the SLHAea object
+       MSSMSimpleSpec he(mssm);
+
+       // Create SMSimpleSpec SubSpectrum object from SMInputs
+       SMSimpleSpec le(sm);
+
+       // Create full Spectrum object
+       result = Spectrum(le,he,sminputs,NULL,mass_cut,mass_ratio_cut);
+    }
+
+    /// FeynHiggs SUSY masses and mixings
+    void FeynHiggs_MSSMMasses(fh_MSSMMassObs_container &amp;result)
+    {
+      using namespace Pipes::FeynHiggs_MSSMMasses;
+
+      #ifdef SPECBIT_DEBUG
+        cout &lt;&lt; &quot;****** calling FeynHiggs_MSSMMasses ******&quot; &lt;&lt; endl;
+      #endif
+
+      // zero if minimal, non-zero if non-minimal flavour violation
+      int nmfv;
+
+      // MSf(s,t,g) MFV squark masses with indices
+      // s = 1..2   sfermion index
+      // t = 1..5   sfermion type nu,e,u,d,?
+      // g = 1..3   generation index
+      Farray&lt;fh_real, 1,2, 1,5, 1,3&gt; MSf;
+
+      // USf(s1,s2,t,g) MFV squark mixing matrices with indices
+      // s1 = 1..2  sfermion index (mass eigenstates)
+      // s2 = 1..2  sfermion index (gauge eigenstates, L/R)
+      // t  = 1..5  sfermion type nu,e,u,d,?
+      // g  = 1..3  generation index
+      Farray&lt;fh_complex, 1,2, 1,2, 1,5, 1,3&gt; USf;
+
+      // NMFV squark masses, with indices
+      // a = 1..6   extended sfermion index
+      // t = 1..5   sfermion type
+      Farray&lt;fh_real, 1,6, 1,5&gt; MASf;
+
+      // NMFV squark mixing matrices, with indices
+      // a1 = 1..6  extended sfermion index (mass eigenstates)
+      // a2 = 1..6  extended sfermion index (gauge eigenstates)
+      //  t = 1..5  sftermion type nu,e,u,d,?
+      Farray&lt;fh_complex, 1,36, 1,5&gt; UASf;
+
+      // chargino masses
+      Farray&lt;fh_real, 1,2&gt; MCha;
+
+      // chargino mixing matrices (mass,gauge) eigenstates (2 x 2)
+      Farray&lt;fh_complex, 1,4&gt; UCha;
+      Farray&lt;fh_complex, 1,4&gt; VCha;
+
+      // neutralino masses
+      Farray&lt;fh_real, 1,4&gt; MNeu;
+
+      // neutralino mixing matrices (mass,gauge) eigenstates (4 x 4)
+      Farray&lt;fh_complex, 1,16&gt; ZNeu;
+
+      // correction to bottom Yukawa coupling
+      fh_complex DeltaMB;
+
+      // gluino mass
+      fh_real MGl;
+
+      // tree-level Higgs masses (Mh, MH, MA, MHpm)
+      Farray&lt;fh_real, 1,4&gt; MHtree;
+
+      // tree-level Higgs mixing parameters sin alpha
+      fh_real SAtree;
+
+      #ifdef SPECBIT_DEBUG
+        cout &lt;&lt; &quot;****** calling FHGetPara ******&quot; &lt;&lt; endl;
+      #endif
+
+      int error = 1;
+      BEreq::FHGetPara(error, nmfv, MSf, USf, MASf, UASf,
+           MCha, UCha, VCha, MNeu, ZNeu,
+           DeltaMB, MGl, MHtree, SAtree);
+      if (error != 0)
+      {
+        std::ostringstream err;
+        err &lt;&lt; &quot;BEreq::FHGetPara raised error flag: &quot; &lt;&lt; error &lt;&lt; &quot;.&quot;;
+        invalid_point().raise(err.str());
+      }
+
+      fh_MSSMMassObs_container MassObs;
+      for(int i = 0; i &lt; 2; i++)
+        for(int j = 0; j &lt; 5; j++)
+          for(int k = 0; k &lt; 3; k++)
+            MassObs.MSf[i][j][k] = MSf(i+1,j+1,k+1);
+      for(int i = 0; i &lt; 2; i++)
+        for(int j = 0; j &lt; 2; j++)
+          for(int k = 0; k &lt; 5; k++)
+            for(int l = 0; l &lt; 3; l++)
+              MassObs.USf[i][j][k][l] = USf(i+1,j+1,k+1,l+1);
+      for(int i = 0; i &lt; 6; i++)
+        for(int j = 0; j &lt; 5; j++)
+          MassObs.MASf[i][j] = MASf(i+1,j+1);
+      for(int i = 0; i &lt; 36; i++)
+        for(int j = 0; j &lt; 5; j++)
+          MassObs.UASf[i][j] = UASf(i+1,j+1);
+      for(int i = 0; i &lt; 2; i++)
+        MassObs.MCha[i] = MCha(i+1);
+      for(int i = 0; i &lt; 4; i++)
+      {
+        MassObs.UCha[i] = UCha(i+1);
+        MassObs.VCha[i] = VCha(i+1);
+      }
+      for(int i = 0; i &lt; 4; i++)
+        MassObs.MNeu[i] = MNeu(i+1);
+      for(int i = 0; i &lt; 16; i++)
+        MassObs.ZNeu[i] = ZNeu(i+1);
+      MassObs.deltaMB = DeltaMB;
+      MassObs.MGl = MGl;
+      for(int i = 0; i &lt; 4; i++)
+        MassObs.MHtree[i] = MHtree(i+1);
+      MassObs.SinAlphatree = SAtree;
+
+      result = MassObs;
+    }
+
+
+    /// Higgs masses and mixings with theoretical uncertainties
+    void FeynHiggs_AllHiggsMasses(fh_HiggsMassObs_container &amp;result)
+    {
+      using namespace Pipes::FeynHiggs_AllHiggsMasses;
+
+      #ifdef SPECBIT_DEBUG
+        cout &lt;&lt; &quot;****** calling FeynHiggs_HiggsMasses ******&quot; &lt;&lt; endl;
+      #endif
+
+      // Higgs mass with
+      // 0 - m1 (Mh in rMSSM)
+      // 1 - m2 (MH in rMSSM)
+      // 2 - m3 (MA in rMSSM)
+      // 3 - MHpm
+      Farray&lt;fh_real, 1,4&gt; MHiggs;
+      Farray&lt;fh_real, 1,4&gt; DeltaMHiggs;
+
+      // sine of effective Higgs mixing angle, alpha_eff
+      fh_complex SAeff;
+      fh_complex DeltaSAeff;
+
+      // matrix needed to rotate Higgs
+      // mass matrix to diagonal form
+      Farray&lt;fh_complex, 1,3, 1,3&gt; UHiggs;
+      Farray&lt;fh_complex, 1,3, 1,3&gt; DeltaUHiggs;
+
+      // matrix of Z-factors needed to combine
+      // amplitudes involving on-shell Higgs
+      Farray&lt;fh_complex, 1,3, 1,3&gt; ZHiggs;
+      Farray&lt;fh_complex, 1,3, 1,3&gt; DeltaZHiggs;
+
+      #ifdef SPECBIT_DEBUG
+        cout &lt;&lt; &quot;****** calling FHHiggsCorr ******&quot; &lt;&lt; endl;
+      #endif
+
+      int error = 1;
+      BEreq::FHHiggsCorr(error, MHiggs, SAeff, UHiggs, ZHiggs);
+      if (error != 0)
+      {
+        std::ostringstream err;
+        err &lt;&lt; &quot;BEreq::FHHiggsCorr raised error flag: &quot; &lt;&lt; error &lt;&lt; &quot;.&quot;;
+        invalid_point().raise(err.str());
+      }
+
+      #ifdef SPECBIT_DEBUG
+        cout &lt;&lt; &quot;****** calling FHUncertainties ******&quot; &lt;&lt; endl;
+      #endif
+
+      error = 1;
+      BEreq::FHUncertainties(error, DeltaMHiggs, DeltaSAeff, DeltaUHiggs, DeltaZHiggs);
+      if (error != 0)
+      {
+        std::ostringstream err;
+        err &lt;&lt; &quot;BEreq::FHUncertainties raised error flag: &quot; &lt;&lt; error &lt;&lt; &quot;.&quot;;
+        invalid_point().raise(err.str());
+      }
+
+      fh_HiggsMassObs_container HiggsMassObs;
+      for(int i = 0; i &lt; 4; i++)
+      {
+        HiggsMassObs.MH[i] = MHiggs(i+1);
+        HiggsMassObs.deltaMH[i] = DeltaMHiggs(i+1);
+      }
+      HiggsMassObs.SinAlphaEff = SAeff;
+      HiggsMassObs.deltaSinAlphaEff = DeltaSAeff;
+      for(int i = 0; i &lt; 3; i++)
+        for(int j = 0; j &lt; 3; j++)
+        {
+          HiggsMassObs.UH[i][j] = UHiggs(i+1,j+1);
+          HiggsMassObs.deltaUH[i][j] = DeltaUHiggs(i+1,j+1);
+          HiggsMassObs.ZH[i][j] = ZHiggs(i+1,j+1);
+          HiggsMassObs.deltaZH[i][j] = DeltaZHiggs(i+1,j+1);
+        }
+
+      result = HiggsMassObs;
+    }
+
+////////////////////////
+//// Higgs routines ////
+////////////////////////
+
+    /// Call FHCouplings from FeynHiggs and collect the output
+    void FeynHiggs_Couplings(fh_Couplings_container &amp;result)
+    {
+      using namespace Pipes::FeynHiggs_Couplings;
+
+      #ifdef SPECBIT_DEBUG
+        cout &lt;&lt; &quot;****** calling FeynHiggs_Couplings ******&quot; &lt;&lt; endl;
+      #endif
+
+      // what to use for internal Higgs mixing
+      // (ex. in couplings)
+      // (default = 1)
+      // 0 - no mixing
+      // 1 - UHiggs
+      // 2 - ZHiggs
+      int uzint = 2;
+      // what to use for external Higgs mixing
+      // (ex. in decays)
+      // (default = 2)
+      // 0 - no mixing
+      // 1 - UHiggs
+      // 2 - ZHiggs
+      int uzext = 2;
+      // which effective bottom mass to use
+      int mfeff = 1;
+
+      #ifdef SPECBIT_DEBUG
+        cout &lt;&lt; &quot;****** calling FHSelectUZ ******&quot; &lt;&lt; endl;
+      #endif
+
+      int error = 1;
+      BEreq::FHSelectUZ(error, uzint, uzext, mfeff);
+      if (error != 0)
+      {
+        std::ostringstream err;
+        err &lt;&lt; &quot;BEreq::FHSelectUZ raised error flag: &quot; &lt;&lt; error &lt;&lt; &quot;.&quot;;
+        invalid_point().raise(err.str());
+      }
+
+      Farray&lt;fh_complex, 1,ncouplings&gt; couplings;        // MSSM Higgs couplings
+      Farray&lt;fh_complex, 1,ncouplingsms&gt; couplings_sm;  // SM Higgs couplings
+      Farray&lt;fh_real, 1,ngammas&gt; gammas;                // Higgs decay widths and BR's (MSSM)
+      Farray&lt;fh_real, 1,ngammasms&gt; gammas_sm;           // Higgs decay widths and BR's (SM)
+      int fast = 1;  // include off-diagonal fermion decays? (1 = no)
+
+      #ifdef SPECBIT_DEBUG
+        cout &lt;&lt; &quot;****** calling FHCouplings ******&quot; &lt;&lt; endl;
+      #endif
+
+      error = 1;
+      BEreq::FHCouplings(error, couplings, couplings_sm,
+                         gammas, gammas_sm, fast);
+      if (error != 0)
+      {
+        std::ostringstream err;
+        err &lt;&lt; &quot;BEreq::FHCouplings raised error flag: &quot; &lt;&lt; error &lt;&lt; &quot;.&quot;;
+        invalid_point().raise(err.str());
+      }
+
+      fh_Couplings_container Couplings;
+      for(int i = 0; i &lt; ncouplings; i++) Couplings.couplings[i] = couplings(i+1);
+      for(int i = 0; i &lt; ncouplingsms; i++) Couplings.couplings_sm[i] = couplings_sm(i+1);
+      for(int i = 0; i &lt; ngammas; i++) Couplings.gammas[i] = gammas(i+1);
+      for(int i = 0; i &lt; ngammasms; i++) Couplings.gammas_sm[i] = gammas_sm(i+1);
+      Couplings.calculator = BEreq::FHCouplings.origin();
+      Couplings.calculator_version = BEreq::FHCouplings.version();
+
+      result = Couplings;
+    }
+
+
+    /// Helper function to work out if the LSP is invisible, and if so, which particle it is.
+    std::vector&lt;std::pair&lt;str,str&gt;&gt; get_invisibles(const SubSpectrum&amp; spec)
+    {
+      // Get the lighter of the lightest neutralino and the lightest sneutrino
+      std::pair&lt;str,double&gt; neutralino(&quot;~chi0_1&quot;, spec.get(Par::Pole_Mass,&quot;~chi0&quot;,1));
+      std::pair&lt;str,double&gt; sneutrino(&quot;~nu_1&quot;, spec.get(Par::Pole_Mass,&quot;~nu&quot;,1));
+      std::pair&lt;str,double&gt; lnp = (neutralino.second &lt; sneutrino.second ? neutralino : sneutrino);
+
+      // Work out if this is indeed the LSP, and if decays of at least one neutral higgs to it are kinematically possible.
+      bool inv_lsp = spec.get(Par::Pole_Mass,&quot;~chi+&quot;,1) &gt; lnp.second and
+                     spec.get(Par::Pole_Mass,&quot;~g&quot;) &gt; lnp.second and
+                     spec.get(Par::Pole_Mass,&quot;~d&quot;,1) &gt; lnp.second and
+                     spec.get(Par::Pole_Mass,&quot;~u&quot;,1) &gt; lnp.second and
+                     spec.get(Par::Pole_Mass,&quot;~e-&quot;,1) &gt; lnp.second and
+                     (spec.get(Par::Pole_Mass,&quot;h0&quot;,2) &gt; 2.*lnp.second or
+                      spec.get(Par::Pole_Mass,&quot;A0&quot;) &gt; 2.*lnp.second);
+
+      // Create a vector containing all invisible products of higgs decays.
+      if (inv_lsp) return initVector&lt;std::pair&lt;str,str&gt;&gt;(std::make_pair(lnp.first,lnp.first));
+      return std::vector&lt;std::pair&lt;str,str&gt;&gt;();
+    }
+
+    /// Put together the Higgs couplings for the MSSM, from partial widths only
+    void MSSM_higgs_couplings_pwid(HiggsCouplingsTable &amp;result)
+    {
+      using namespace Pipes::MSSM_higgs_couplings_pwid;
+
+      // Retrieve spectrum contents
+      const SubSpectrum&amp; spec = Dep::MSSM_spectrum-&gt;get_HE();
+
+      // Set up neutral Higgses
+      static const std::vector&lt;str&gt; sHneut = initVector&lt;str&gt;(&quot;h0_1&quot;, &quot;h0_2&quot;, &quot;A0&quot;);
+      result.set_n_neutral_higgs(3);
+
+      // Set up charged Higgses
+      result.set_n_charged_higgs(1);
+
+      // Set the CP of the Higgs states.  Note that this would need to be more sophisticated to deal with the complex MSSM!
+      result.CP[0] = 1;  //h0_1
+      result.CP[1] = 1;  //h0_2
+      result.CP[2] = -1; //A0
+
+      // Work out which SM values correspond to which SUSY Higgs
+      int higgs = (SMlike_higgs_PDG_code(spec) == 25 ? 0 : 1);
+      int other_higgs = (higgs == 0 ? 1 : 0);
+
+      // Set the decays
+      result.set_neutral_decays_SM(higgs, sHneut[higgs], *Dep::Reference_SM_Higgs_decay_rates);
+      result.set_neutral_decays_SM(other_higgs, sHneut[other_higgs], *Dep::Reference_SM_other_Higgs_decay_rates);
+      result.set_neutral_decays_SM(2, sHneut[2], *Dep::Reference_SM_A0_decay_rates);
+      result.set_neutral_decays(0, sHneut[0],  *Dep::Higgs_decay_rates);
+      result.set_neutral_decays(1, sHneut[1], *Dep::h0_2_decay_rates);
+      result.set_neutral_decays(2, sHneut[2], *Dep::A0_decay_rates);
+      result.set_charged_decays(0, &quot;H+&quot;, *Dep::H_plus_decay_rates);
+      result.set_t_decays(*Dep::t_decay_rates);
+
+      // Use them to compute effective couplings for all neutral higgses, except for hhZ.
+      for (int i = 0; i &lt; 3; i++)
+      {
+        result.C_WW2[i] = result.compute_effective_coupling(i, std::pair&lt;int,int&gt;(24, 0), std::pair&lt;int,int&gt;(-24, 0));
+        result.C_ZZ2[i] = result.compute_effective_coupling(i, std::pair&lt;int,int&gt;(23, 0), std::pair&lt;int,int&gt;(23, 0));
+        result.C_tt2[i] = result.compute_effective_coupling(i, std::pair&lt;int,int&gt;(6, 1), std::pair&lt;int,int&gt;(-6, 1));
+        result.C_bb2[i] = result.compute_effective_coupling(i, std::pair&lt;int,int&gt;(5, 1), std::pair&lt;int,int&gt;(-5, 1));
+        result.C_cc2[i] = result.compute_effective_coupling(i, std::pair&lt;int,int&gt;(4, 1), std::pair&lt;int,int&gt;(-4, 1));
+        result.C_tautau2[i] = result.compute_effective_coupling(i, std::pair&lt;int,int&gt;(15, 1), std::pair&lt;int,int&gt;(-15, 1));
+        result.C_gaga2[i] = result.compute_effective_coupling(i, std::pair&lt;int,int&gt;(22, 0), std::pair&lt;int,int&gt;(22, 0));
+        result.C_gg2[i] = result.compute_effective_coupling(i, std::pair&lt;int,int&gt;(21, 0), std::pair&lt;int,int&gt;(21, 0));
+        result.C_mumu2[i] = result.compute_effective_coupling(i, std::pair&lt;int,int&gt;(13, 1), std::pair&lt;int,int&gt;(-13, 1));
+        result.C_Zga2[i] = result.compute_effective_coupling(i, std::pair&lt;int,int&gt;(23, 0), std::pair&lt;int,int&gt;(21, 0));
+        result.C_ss2[i] = result.compute_effective_coupling(i, std::pair&lt;int,int&gt;(3, 1), std::pair&lt;int,int&gt;(-3, 1));
+      }
+
+      // Calculate hhZ effective couplings.  Here we scale out the kinematic prefactor
+      // of the decay width, assuming we are well above threshold if the channel is open.
+      // If not, we simply assume SM couplings.
+      const double mZ = Dep::MSSM_spectrum-&gt;get(Par::Pole_Mass,23,0);
+      const double scaling = 8.*sqrt(2.)*pi/Dep::MSSM_spectrum-&gt;get_SMInputs().GF;
+      for(int i = 0; i &lt; 3; i++)
+      for(int j = 0; j &lt; 3; j++)
+      {
+        double mhi = spec.get(Par::Pole_Mass, sHneut[i]);
+        double mhj = spec.get(Par::Pole_Mass, sHneut[j]);
+        if (mhi &gt; mhj + mZ and result.get_neutral_decays(i).has_channel(sHneut[j], &quot;Z0&quot;))
+        {
+          double gamma = result.get_neutral_decays(i).width_in_GeV*result.get_neutral_decays(i).BF(sHneut[j], &quot;Z0&quot;);
+          double k[2] = {(mhj + mZ)/mhi, (mhj - mZ)/mhi};
+          for (int l = 0; l &lt; 2; l++) k[l] = (1.0 - k[l]) * (1.0 + k[l]);
+          double K = mhi*sqrt(k[0]*k[1]);
+          result.C_hiZ2[i][j] = scaling / (K*K*K) * gamma;
+        }
+        else // If the channel is missing from the decays or kinematically disallowed, just return the SM result.
+        {
+          result.C_hiZ2[i][j] = 1.;
+        }
+      }
+
+      // Work out which invisible decays are possible
+      result.invisibles = get_invisibles(spec);
+    }
+
+
+    /// Put together the Higgs couplings for the MSSM, using FeynHiggs
+    void MSSM_higgs_couplings_FeynHiggs(HiggsCouplingsTable &amp;result)
+    {
+      using namespace Pipes::MSSM_higgs_couplings_FeynHiggs;
+
+      // Retrieve spectrum contents
+      const SubSpectrum&amp; spec = Dep::MSSM_spectrum-&gt;get_HE();
+      const SMInputs&amp; sminputs = Dep::MSSM_spectrum-&gt;get_SMInputs();
+
+      // Set up neutral Higgses
+      static const std::vector&lt;str&gt; sHneut = initVector&lt;str&gt;(&quot;h0_1&quot;, &quot;h0_2&quot;, &quot;A0&quot;);
+
+      // Work out which SM values correspond to which SUSY Higgs
+      int higgs = (SMlike_higgs_PDG_code(spec) == 25 ? 0 : 1);
+      int other_higgs = (higgs == 0 ? 1 : 0);
+
+      // Set the decays
+      result.set_neutral_decays_SM(higgs, sHneut[higgs], *Dep::Reference_SM_Higgs_decay_rates);
+      result.set_neutral_decays_SM(other_higgs, sHneut[other_higgs], *Dep::Reference_SM_other_Higgs_decay_rates);
+      result.set_neutral_decays_SM(2, sHneut[2], *Dep::Reference_SM_A0_decay_rates);
+      result.set_neutral_decays(0, sHneut[0], *Dep::Higgs_decay_rates);
+      result.set_neutral_decays(1, sHneut[1], *Dep::h0_2_decay_rates);
+      result.set_neutral_decays(2, sHneut[2], *Dep::A0_decay_rates);
+      result.set_charged_decays(0, &quot;H+&quot;, *Dep::H_plus_decay_rates);
+      result.set_t_decays(*Dep::t_decay_rates);
+
+      // Use the branching fractions to compute gluon, gamma/Z and second generation fermionic effective couplings
+      for (int i = 0; i &lt; 3; i++)
+      {
+        result.C_gg2[i] = result.compute_effective_coupling(i, std::pair&lt;int,int&gt;(21, 0), std::pair&lt;int,int&gt;(21, 0));
+        result.C_gaga2[i] = result.compute_effective_coupling(i, std::pair&lt;int,int&gt;(22, 0), std::pair&lt;int,int&gt;(22, 0));
+        result.C_Zga2[i] = result.compute_effective_coupling(i, std::pair&lt;int,int&gt;(23, 0), std::pair&lt;int,int&gt;(22, 0));
+        result.C_mumu2[i] = result.compute_effective_coupling(i, std::pair&lt;int,int&gt;(13, 1), std::pair&lt;int,int&gt;(-13, 1));
+        result.C_ss2[i] = result.compute_effective_coupling(i, std::pair&lt;int,int&gt;(3, 1), std::pair&lt;int,int&gt;(-3, 1));
+        result.C_cc2[i] = result.compute_effective_coupling(i, std::pair&lt;int,int&gt;(4, 1), std::pair&lt;int,int&gt;(-4, 1));
+      }
+
+      // Use couplings to get effective third-generation couplings
+      for(int i = 0; i &lt; 3; i++)
+      {
+        // Compute effective couplings
+        double g2_s[3], g2_p[3];
+        for (int j = 0; j &lt; 3; j++) // j=0,1,2 =&gt; tau, t, b
+        {
+          fh_complex fh_L = Dep::FH_Couplings_output-&gt;couplings[H0FF(i+1,j+2,3,3)-1];
+          fh_complex fh_R = Dep::FH_Couplings_output-&gt;couplings[H0FF(i+1,j+2,3,3)+Roffset-1];
+          fh_complex fh_SM_L = Dep::FH_Couplings_output-&gt;couplings_sm[H0FF(i+1,j+2,3,3)-1];
+          fh_complex fh_SM_R = Dep::FH_Couplings_output-&gt;couplings_sm[H0FF(i+1,j+2,3,3)+RSMoffset-1];
+          std::complex&lt;double&gt; L(fh_L.re,fh_L.im);
+          std::complex&lt;double&gt; R(fh_R.re,fh_R.im);
+          std::complex&lt;double&gt; SM_L(fh_SM_L.re,fh_SM_L.im);
+          std::complex&lt;double&gt; SM_R(fh_SM_R.re,fh_SM_R.im);
+          g2_s[j] = 0.25*pow(std::abs(R/SM_R + L/SM_L), 2.);
+          g2_p[j] = 0.25*pow(std::abs(R/SM_R - L/SM_L), 2.);
+        }
+        result.C_tautau2[i] = g2_s[0] + g2_p[0];
+        result.C_tt2[i]     = g2_s[1] + g2_p[1];
+        result.C_bb2[i]     = g2_s[2] + g2_p[2];
+
+        // Calculate CP of state
+        if(g2_p[2] &lt; 1e-10)
+          result.CP[i] = 1;
+        else if(g2_s[2] &lt; 1e-10)
+          result.CP[i] = -1;
+        else
+          result.CP[i] = 0.;
+      }
+
+      // Use couplings to get di-boson effective couplings
+      for(int i = 0; i &lt; 3; i++)
+      {
+        fh_complex c_gWW = Dep::FH_Couplings_output-&gt;couplings[H0VV(i+1,4)-1];
+        fh_complex c_gWW_SM = Dep::FH_Couplings_output-&gt;couplings_sm[H0VV(i+1,4)-1];
+        fh_complex c_gZZ = Dep::FH_Couplings_output-&gt;couplings[H0VV(i+1,3)-1];
+        fh_complex c_gZZ_SM = Dep::FH_Couplings_output-&gt;couplings_sm[H0VV(i+1,3)-1];
+        std::complex&lt;double&gt; WW(c_gWW.re,c_gWW.im);
+        std::complex&lt;double&gt; WW_SM(c_gWW_SM.re,c_gWW_SM.im);
+        std::complex&lt;double&gt; ZZ(c_gZZ.re,c_gZZ.im);
+        std::complex&lt;double&gt; ZZ_SM(c_gZZ_SM.re,c_gZZ_SM.im);
+        result.C_WW2[i] = pow(std::abs(WW/WW_SM), 2.);
+        result.C_ZZ2[i] = pow(std::abs(ZZ/ZZ_SM), 2.);
+      }
+
+      // Use couplings to get hhZ effective couplings
+      double norm = sminputs.GF*sqrt(2.)*sminputs.mZ*sminputs.mZ;
+      for(int i = 0; i &lt; 3; i++)
+      for(int j = 0; j &lt; 3; j++)
+      {
+        fh_complex c_gHV = Dep::FH_Couplings_output-&gt;couplings[H0HV(i+1,j+1)-1];
+        double g2HV = c_gHV.re*c_gHV.re+c_gHV.im*c_gHV.im;
+        result.C_hiZ2[i][j] = g2HV/norm;
+      }
+
+      // Work out which invisible decays are possible
+      result.invisibles = get_invisibles(spec);
+    }
+
+
+/////////////////////////////
+//// Map output routines ////
+/////////////////////////////
+
+    /// @{ Convert MSSM type Spectrum object into a map, so it can be printed
+    template&lt;class Contents&gt;
+    void fill_map_from_subspectrum(std::map&lt;std::string,double&gt;&amp;, const SubSpectrum&amp;);
+
+    /// Adds additional information from interesting combinations of MSSM parameters
+    void add_extra_MSSM_parameter_combinations(std::map&lt;std::string,double&gt;&amp; specmap, const SubSpectrum&amp; mssm)
+    {
+      double At = 0;
+      double Ab = 0;
+      const double Yt = mssm.get(Par::dimensionless, &quot;Yu&quot;, 3, 3);
+      const double Yb = mssm.get(Par::dimensionless, &quot;Yd&quot;, 3, 3);
+      if(std::abs(Yt) &gt; 1e-12)
+      {
+        At = mssm.get(Par::mass1, &quot;TYu&quot;, 3, 3) / Yt;
+      }
+      if(std::abs(Yb) &gt; 1e-12)
+      {
+        Ab = mssm.get(Par::mass1, &quot;TYd&quot;, 3, 3) / Yb;
+      }
+
+      const double MuSUSY = mssm.get(Par::mass1, &quot;Mu&quot;);
+      const double tb = mssm.get(Par::dimensionless, &quot;tanbeta&quot;);
+
+      specmap[&quot;Xt&quot;] = At - MuSUSY / tb;
+      specmap[&quot;Xb&quot;] = Ab - MuSUSY * tb;
+      /// Determine which states are the third gens then add them for printing
+      str msf1, msf2;
+      /// Since this is for printing we only want to invalidate the point
+      /// if this is completely wrong.
+      /// We can also plot the mixing if we are suspicious.
+      const static double tol = 0.5;
+      const static bool pt_error = true;
+      slhahelp::family_state_mix_matrix(&quot;~u&quot;, 3, msf1, msf2, mssm, tol,
+                                        LOCAL_INFO, pt_error);
+      specmap[&quot;mstop1&quot;] =  mssm.get(Par::Pole_Mass, msf1);
+      specmap[&quot;mstop2&quot;] =  mssm.get(Par::Pole_Mass, msf2);
+      slhahelp::family_state_mix_matrix(&quot;~d&quot;, 3, msf1, msf2, mssm, tol,
+                                        LOCAL_INFO, pt_error);
+      specmap[&quot;msbottom1&quot;] =  mssm.get(Par::Pole_Mass, msf1);
+      specmap[&quot;msbottom2&quot;] =  mssm.get(Par::Pole_Mass, msf2);
+      slhahelp::family_state_mix_matrix(&quot;~e-&quot;, 3, msf1, msf2, mssm, tol,
+                                        LOCAL_INFO, pt_error);
+      specmap[&quot;mstau1&quot;] =  mssm.get(Par::Pole_Mass, msf1);
+      specmap[&quot;mstau2&quot;] =  mssm.get(Par::Pole_Mass, msf2);
+      /// return mass eigenstate strings that best represent required gauge
+      /// eigenstate
+      const str gs_suL = slhahelp::mass_es_from_gauge_es(&quot;~u_L&quot;, mssm, tol,
+                                                         LOCAL_INFO, pt_error);
+      specmap[&quot;msupL&quot;] = mssm.get(Par::Pole_Mass,gs_suL);
+      const str gs_scL = slhahelp::mass_es_from_gauge_es(&quot;~c_L&quot;, mssm, tol,
+                                                         LOCAL_INFO, pt_error);
+      specmap[&quot;mscharmL&quot;] = mssm.get(Par::Pole_Mass,gs_scL);
+      const str gs_sdL = slhahelp::mass_es_from_gauge_es(&quot;~d_L&quot;, mssm, tol,
+                                                         LOCAL_INFO, pt_error);
+      specmap[&quot;msdownL&quot;] = mssm.get(Par::Pole_Mass,gs_sdL);
+      const str gs_ssL = slhahelp::mass_es_from_gauge_es(&quot;~s_L&quot;, mssm, tol,
+                                                         LOCAL_INFO, pt_error);
+      specmap[&quot;msstrangeL&quot;] = mssm.get(Par::Pole_Mass,gs_ssL);
+      const str gs_suR = slhahelp::mass_es_from_gauge_es(&quot;~u_R&quot;, mssm, tol,
+                                                         LOCAL_INFO, pt_error);
+      specmap[&quot;msupR&quot;] = mssm.get(Par::Pole_Mass,gs_suR);
+      const str gs_scR = slhahelp::mass_es_from_gauge_es(&quot;~c_R&quot;, mssm, tol,
+                                                         LOCAL_INFO, pt_error);
+      specmap[&quot;mscharmR&quot;] = mssm.get(Par::Pole_Mass,gs_scR);
+      const str gs_sdR = slhahelp::mass_es_from_gauge_es(&quot;~d_R&quot;, mssm, tol,
+                                                         LOCAL_INFO, pt_error);
+      specmap[&quot;msdownR&quot;] = mssm.get(Par::Pole_Mass,gs_sdR);
+      const str gs_ssR = slhahelp::mass_es_from_gauge_es(&quot;~s_R&quot;, mssm, tol,
+                                                         LOCAL_INFO, pt_error);
+      specmap[&quot;msstrangeR&quot;] = mssm.get(Par::Pole_Mass,gs_ssR);
+      const str gs_seL = slhahelp::mass_es_from_gauge_es(&quot;~e_L&quot;, mssm, tol,
+                                                         LOCAL_INFO, pt_error);
+      specmap[&quot;mselectronL&quot;] = mssm.get(Par::Pole_Mass,gs_seL);
+      const str gs_sMuL = slhahelp::mass_es_from_gauge_es(&quot;~mu_L&quot;, mssm, tol,
+                                                         LOCAL_INFO, pt_error);
+      specmap[&quot;msmuonL&quot;] = mssm.get(Par::Pole_Mass,gs_sMuL);
+      const str gs_seR = slhahelp::mass_es_from_gauge_es(&quot;~e_R&quot;, mssm, tol,
+                                                         LOCAL_INFO, pt_error);
+      specmap[&quot;mselectronR&quot;] = mssm.get(Par::Pole_Mass,gs_seR);
+      const str gs_sMuR = slhahelp::mass_es_from_gauge_es(&quot;~mu_R&quot;, mssm, tol,
+                                                         LOCAL_INFO, pt_error);
+      specmap[&quot;msmuonR&quot;] = mssm.get(Par::Pole_Mass,gs_sMuR);
+      const str gs_snu1 = slhahelp::mass_es_from_gauge_es(&quot;~nu_e_L&quot;, mssm, tol,
+                                                         LOCAL_INFO, pt_error);
+      specmap[&quot;msnue&quot;] = mssm.get(Par::Pole_Mass,gs_snu1);
+      const str gs_snu2 = slhahelp::mass_es_from_gauge_es(&quot;~nu_mu_L&quot;, mssm, tol,
+                                                         LOCAL_INFO, pt_error);
+      specmap[&quot;msnumu&quot;] = mssm.get(Par::Pole_Mass,gs_snu2);
+      const str gs_snu3 = slhahelp::mass_es_from_gauge_es(&quot;~nu_tau_L&quot;, mssm, tol,
+                                                         LOCAL_INFO, pt_error);
+      specmap[&quot;msnutau&quot;] = mssm.get(Par::Pole_Mass,gs_snu3);
+
+    }
+
+    void get_MSSM_spectrum_as_map (std::map&lt;std::string,double&gt;&amp; specmap)
+    {
+      namespace myPipe = Pipes::get_MSSM_spectrum_as_map;
+      const Spectrum&amp; mssmspec(*myPipe::Dep::MSSM_spectrum);
+      try
+      {
+         fill_map_from_subspectrum&lt;SpectrumContents::SM&gt;  (specmap, mssmspec.get_LE());
+      }
+      catch(const Gambit::exception&amp;)
+      {
+         // The above will fail for the SimpleSpectrum versions of the MSSM spectrum
+         // because it uses SM_slha rather than SM for the LE subspectrum
+         // TODO: Would be better to do this in a more elegant way than with exception
+         // handling
+         fill_map_from_subspectrum&lt;SpectrumContents::SM_slha&gt;  (specmap, mssmspec.get_LE());
+      }
+      fill_map_from_subspectrum&lt;SpectrumContents::MSSM&gt;(specmap, mssmspec.get_HE());
+      add_extra_MSSM_parameter_combinations(specmap, mssmspec.get_HE());
+    }
+    void get_unimproved_MSSM_spectrum_as_map (std::map&lt;std::string,double&gt;&amp; specmap)
+    {
+      namespace myPipe = Pipes::get_unimproved_MSSM_spectrum_as_map;
+      const Spectrum&amp; mssmspec(*myPipe::Dep::unimproved_MSSM_spectrum);
+      try
+      {
+         fill_map_from_subspectrum&lt;SpectrumContents::SM&gt;  (specmap, mssmspec.get_LE());
+      }
+      catch(const Gambit::exception&amp;)
+      {
+         // The above will fail for the SimpleSpectrum versions of the MSSM spectrum
+         // because it uses SM_slha rather than SM for the LE subspectrum
+         // TODO: Would be better to do this in a more elegant way than with exception
+         // handling
+         fill_map_from_subspectrum&lt;SpectrumContents::SM_slha&gt;  (specmap, mssmspec.get_LE());
+      }
+      fill_map_from_subspectrum&lt;SpectrumContents::MSSM&gt;(specmap, mssmspec.get_HE());
+      add_extra_MSSM_parameter_combinations(specmap, mssmspec.get_HE());
+    }
+    /// @}
+
+    /// Extract all parameters from a subspectrum and put them into a map
+    template&lt;class Contents&gt;
+    void fill_map_from_subspectrum(std::map&lt;std::string,double&gt;&amp; specmap, const SubSpectrum&amp; subspec)
+    {
+      /// Add everything... use spectrum contents routines to automate task (make sure to use correct template parameter!)
+      static const Contents contents;
+      static const std::vector&lt;SpectrumParameter&gt; required_parameters = contents.all_parameters();
+
+      for(std::vector&lt;SpectrumParameter&gt;::const_iterator it = required_parameters.begin();
+           it != required_parameters.end(); ++it)
+      {
+         const Par::Tags        tag   = it-&gt;tag();
+         const std::string      name  = it-&gt;name();
+         const std::vector&lt;int&gt; shape = it-&gt;shape();
+
+         /// Verification routine should have taken care of invalid shapes etc, so won't check for that here.
+
+         // Check scalar case
+         if(shape.size()==1 and shape[0]==1)
+         {
+           std::ostringstream label;
+           label &lt;&lt; name &lt;&lt;&quot; &quot;&lt;&lt; Par::toString.at(tag);
+           specmap[label.str()] = subspec.get(tag,name);
+           // Check again ignoring overrides (if the value has an override defined)
+           if(subspec.has(tag,name,overrides_only) and
+              subspec.has(tag,name,ignore_overrides))
+           {
+             label &lt;&lt; &quot; (unimproved)&quot;;
+             specmap[label.str()] = subspec.get(tag,name,ignore_overrides);
+           }
+         }
+         // Check vector case
+         else if(shape.size()==1 and shape[0]&gt;1)
+         {
+           for(int i = 1; i&lt;=shape[0]; ++i) {
+             std::ostringstream label;
+             label &lt;&lt; name &lt;&lt;&quot;_&quot;&lt;&lt;i&lt;&lt;&quot; &quot;&lt;&lt; Par::toString.at(tag);
+             specmap[label.str()] = subspec.get(tag,name,i);
+             // Check again ignoring overrides
+             if(subspec.has(tag,name,i,overrides_only) and
+                subspec.has(tag,name,i,ignore_overrides))
+             {
+               label &lt;&lt; &quot; (unimproved)&quot;;
+               specmap[label.str()] = subspec.get(tag,name,i,ignore_overrides);
+             }
+           }
+         }
+         // Check matrix case
+         else if(shape.size()==2)
+         {
+           for(int i = 1; i&lt;=shape[0]; ++i) {
+             for(int j = 1; j&lt;=shape[0]; ++j) {
+               std::ostringstream label;
+               label &lt;&lt; name &lt;&lt;&quot;_(&quot;&lt;&lt;i&lt;&lt;&quot;,&quot;&lt;&lt;j&lt;&lt;&quot;) &quot;&lt;&lt;Par::toString.at(tag);
+               specmap[label.str()] = subspec.get(tag,name,i,j);
+               // Check again ignoring overrides
+               if(subspec.has(tag,name,i,j,overrides_only) and
+                  subspec.has(tag,name,i,j,ignore_overrides))
+               {
+                 label &lt;&lt; &quot; (unimproved)&quot;;
+                 specmap[label.str()] = subspec.get(tag,name,i,j,ignore_overrides);
+               }
+             }
+           }
+         }
+         // Deal with all other cases
+         else
+         {
+           // ERROR
+           std::ostringstream errmsg;
+           errmsg &lt;&lt; &quot;Error, invalid parameter received while converting SubSpectrum with contents \&quot;&quot;&lt;&lt;contents.getName()&lt;&lt;&quot;\&quot; to map of strings! This should no be possible if the spectrum content verification routines were working correctly; they must be buggy, please report this.&quot;;
+           errmsg &lt;&lt; &quot;Problematic parameter was: &quot;&lt;&lt; tag &lt;&lt;&quot;, &quot; &lt;&lt; name &lt;&lt; &quot;, shape=&quot;&lt;&lt; shape;
+           SpecBit_error().forced_throw(LOCAL_INFO,errmsg.str());
+         }
+      }
+      // add the scale!
+      specmap[&quot;scale(Q)&quot;] = subspec.GetScale();
+    }
+
+    void FeynHiggs_HiggsMass(triplet&lt;double&gt;&amp; result)
+    {
+      using namespace Pipes::FeynHiggs_HiggsMass;
+      //FH indices: 0=h0_1, 1=h0_2
+      int i = 0;
+      const SubSpectrum&amp; spec = Dep::unimproved_MSSM_spectrum-&gt;get_HE();
+      int higgs = SMlike_higgs_PDG_code(spec);
+      if (higgs == 25) i = 0;
+      else if (higgs == 35) i = 1;
+      else SpecBit_error().raise(LOCAL_INFO, &quot;Urecognised SM-like Higgs PDG code!&quot;);
+      result.central = Dep::HiggsMasses-&gt;MH[i];
+      result.upper = Dep::HiggsMasses-&gt;deltaMH[i];
+      result.lower = Dep::HiggsMasses-&gt;deltaMH[i];
+    }
+
+    void FeynHiggs_HeavyHiggsMasses(map_int_triplet_dbl&amp; result)
+    {
+      using namespace Pipes::FeynHiggs_HeavyHiggsMasses;
+      const int neutrals[2] = {25, 35};
+      int i = -1;
+      const SubSpectrum&amp; spec = Dep::unimproved_MSSM_spectrum-&gt;get_HE();
+      int higgs = SMlike_higgs_PDG_code(spec);
+      if (higgs == neutrals[0]) i = 1;
+      else if (higgs == neutrals[1]) i = 0;
+      else SpecBit_error().raise(LOCAL_INFO, &quot;Urecognised SM-like Higgs PDG code!&quot;);
+      result.clear();
+      result[neutrals[i]].central = Dep::HiggsMasses-&gt;MH[i];
+      result[neutrals[i]].upper = Dep::HiggsMasses-&gt;deltaMH[i];
+      result[neutrals[i]].lower = Dep::HiggsMasses-&gt;deltaMH[i];
+      result[36].central = Dep::HiggsMasses-&gt;MH[2];
+      result[36].upper = Dep::HiggsMasses-&gt;deltaMH[2];
+      result[36].lower = Dep::HiggsMasses-&gt;deltaMH[2];
+      result[37].central = Dep::HiggsMasses-&gt;MH[3];
+      result[37].upper = Dep::HiggsMasses-&gt;deltaMH[3];
+      result[37].lower = Dep::HiggsMasses-&gt;deltaMH[3];
+    }
+
+    void SUSYHD_HiggsMass(triplet&lt;double&gt;&amp; result)
+    {
+      using namespace Pipes::SUSYHD_HiggsMass;
+
+      const Spectrum&amp; fullspectrum = *Dep::unimproved_MSSM_spectrum;
+      SLHAea::Coll slhaea = fullspectrum.getSLHAea(1);
+
+      #ifdef SPECBIT_DEBUG
+        cout &lt;&lt; &quot;****** calling SUSYHD_HiggsMass ******&quot; &lt;&lt; endl;
+      #endif
+
+      MList&lt;MReal&gt; parameterList = {
+        SLHAea::to&lt;double&gt;(slhaea.at(&quot;HMIX&quot;).at(2).at(1)), // tanbeta
+        SLHAea::to&lt;double&gt;(slhaea.at(&quot;MSOFT&quot;).at(1).at(1)), // M1
+        SLHAea::to&lt;double&gt;(slhaea.at(&quot;MSOFT&quot;).at(2).at(1)), // M2
+        SLHAea::to&lt;double&gt;(slhaea.at(&quot;MSOFT&quot;).at(3).at(1)), // M3
+        SLHAea::to&lt;double&gt;(slhaea.at(&quot;HMIX&quot;).at(1).at(1)), // mu
+        SLHAea::to&lt;double&gt;(slhaea.at(&quot;AU&quot;).at(3).at(2)), // At
+        SLHAea::to&lt;double&gt;(slhaea.at(&quot;MSOFT&quot;).at(43).at(1)), // mQ3
+        SLHAea::to&lt;double&gt;(slhaea.at(&quot;MSOFT&quot;).at(46).at(1)), // mU3
+        SLHAea::to&lt;double&gt;(slhaea.at(&quot;MSOFT&quot;).at(49).at(1)), // mD3
+        SLHAea::to&lt;double&gt;(slhaea.at(&quot;MSOFT&quot;).at(42).at(1)), // mQ2
+        SLHAea::to&lt;double&gt;(slhaea.at(&quot;MSOFT&quot;).at(45).at(1)), // mU2
+        SLHAea::to&lt;double&gt;(slhaea.at(&quot;MSOFT&quot;).at(48).at(1)), // mD2
+        SLHAea::to&lt;double&gt;(slhaea.at(&quot;MSOFT&quot;).at(41).at(1)), // mQ1
+        SLHAea::to&lt;double&gt;(slhaea.at(&quot;MSOFT&quot;).at(44).at(1)), // mU1
+        SLHAea::to&lt;double&gt;(slhaea.at(&quot;MSOFT&quot;).at(47).at(1)), // mD1
+        SLHAea::to&lt;double&gt;(slhaea.at(&quot;MSOFT&quot;).at(33).at(1)), // mL3
+        SLHAea::to&lt;double&gt;(slhaea.at(&quot;MSOFT&quot;).at(36).at(1)), // mE3
+        SLHAea::to&lt;double&gt;(slhaea.at(&quot;MSOFT&quot;).at(32).at(1)), // mL2
+        SLHAea::to&lt;double&gt;(slhaea.at(&quot;MSOFT&quot;).at(35).at(1)), // mE2
+        SLHAea::to&lt;double&gt;(slhaea.at(&quot;MSOFT&quot;).at(31).at(1)), // mL1
+        SLHAea::to&lt;double&gt;(slhaea.at(&quot;MSOFT&quot;).at(34).at(1)), // mE1
+        sqrt(SLHAea::to&lt;double&gt;(slhaea.at(&quot;HMIX&quot;).at(4).at(1))) // mA
+      };
+
+      MReal MHiggs = BEreq::SUSYHD_MHiggs(parameterList);
+
+      #ifdef SPECBIT_DEBUG
+        cout &lt;&lt; &quot;****** calling SUSYHD_DeltaHiggsMass ******&quot; &lt;&lt; endl;
+      #endif
+
+      MReal DeltaMHiggs = BEreq::SUSYHD_DeltaMHiggs(parameterList);
+
+      result.central = MHiggs;
+
+      bool use_SHD_uncertainty = runOptions-&gt;getValueOrDef&lt;bool&gt;(true, &quot;use_SUSYHD_uncertainty&quot;);
+
+      if(use_SHD_uncertainty)
+      {
+        result.upper = DeltaMHiggs;
+        result.lower = DeltaMHiggs;
+      }
+      else
+      {
+        result.upper = 0.0;
+        result.lower = 0.0;
+      }
+
+    }
+
+
+    /// @} End Gambit module functions
+
+  } // end namespace SpecBit
+} // end namespace Gambit
+</code></pre><hr><p>Updated on 2022-08-03 at 12:58:03 +0000</p><div class=edit-page><a href=https://github.com/RC1242RC/gambit_gh_pages/blob/master/content/en/documentation/code/DarkBit/Files/SpecBit__MSSM_8cpp.md><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2"><path d="M17 3a2.828 2.828.0 114 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></svg>Edit this page on GitHub</a></div></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a class=text-muted href=https://www.netlify.com/>Netlify</a>, <a class=text-muted href=https://gohugo.io/>Hugo</a>, and <a class=text-muted href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.54bf0932b8a36d0e152b1635b099a6ef1394d35327e2437550a075c9c8ed1bd8aed5847c21b36fc02ed24014c031d9ca24017b0c78b1639d7e2fa8329898b842.js integrity="sha512-VL8JMrijbQ4VKxY1sJmm7xOU01Mn4kN1UKB1ycjtG9iu1YR8IbNvwC7SQBTAMdnKJAF7DHixY51+L6gymJi4Qg==" crossorigin=anonymous defer></script>
+<script src=/js/highlight.min.5b48bc253dc75aeea5fb366ecf700f4925e2b6eb1a1466f2124b722d68148d67bc0a9365d2b8ad9c585161b46372d23b08509a16f1fd518542b894756d4752d0.js integrity="sha512-W0i8JT3HWu6l+zZuz3APSSXitusaFGbyEktyLWgUjWe8CpNl0ritnFhRYbRjctI7CFCaFvH9UYVCuJR1bUdS0A==" crossorigin=anonymous defer></script>
+<script src=/main.min.40265e9a032aeba5eaf67baac3cbbc22667a7533215d326eeb3e9f4d5e4be40f9ff4dcd22949db73ae527ca26a19d7998091a8973c82af760b2c0daa335190ed.js integrity="sha512-QCZemgMq66Xq9nuqw8u8ImZ6dTMhXTJu6z6fTV5L5A+f9NzSKUnbc65SfKJqGdeZgJGolzyCr3YLLA2qM1GQ7Q==" crossorigin=anonymous defer></script>
+<script src=https://rc1242rc.github.io/index.min.cb3cfc52c7c54bd8c25d1fbd0a5de239406787c3dcdce4c8c0c6a90e32667d32f427e033d04af1c0f2c4a86667aa8d3df23f54c6a7873d639d2ca7c2edf7146d.js integrity="sha512-yzz8UsfFS9jCXR+9Cl3iOUBnh8Pc3OTIwMapDjJmfTL0J+Az0ErxwPLEqGZnqo098j9UxqeHPWOdLKfC7fcUbQ==" crossorigin=anonymous defer></script></body></html>

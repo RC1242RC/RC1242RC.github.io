@@ -1,0 +1,396 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="ie=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><link rel=preload as=font href=https://rc1242rc.github.io/fonts/vendor/jost/jost-v4-latin-regular.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://rc1242rc.github.io/fonts/vendor/jost/jost-v4-latin-500.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://rc1242rc.github.io/fonts/vendor/jost/jost-v4-latin-700.woff2 type=font/woff2 crossorigin><script>(()=>{var e=localStorage.getItem("theme");e==="dark"&&document.documentElement.setAttribute("data-dark-mode","")})()</script><link rel=stylesheet href=https://rc1242rc.github.io/main.f12f7e04ea768acebec10c86baf049d74d6a79f24bc0dfb7ed77aa60462432916dd1ce8f41c78b69496adf650b3039a28a210183cce598f09b95d6fecb5ff999.css integrity="sha512-8S9+BOp2is6+wQyGuvBJ101qefJLwN+37XeqYEYkMpFt0c6PQceLaUlq32ULMDmiiiEBg8zlmPCbldb+y1/5mQ==" crossorigin=anonymous><noscript><style>img.lazyload{display:none}</style></noscript><meta name=robots content="index, follow"><meta name=googlebot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><meta name=bingbot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><title>file src/mt2w_bisect.cpp - GAMBIT</title><meta name=description content="[No description available]"><link rel=canonical href=https://rc1242rc.github.io/documentation/code/colliderbit/files/mt2w__bisect_8cpp/><meta property="og:locale" content="en_US"><meta property="og:type" content="article"><meta property="og:title" content="file src/mt2w_bisect.cpp"><meta property="og:description" content="[No description available]"><meta property="og:url" content="https://rc1242rc.github.io/documentation/code/colliderbit/files/mt2w__bisect_8cpp/"><meta property="og:site_name" content="GAMBIT"><meta property="og:image" content="https://rc1242rc.github.io/gambit_logo.png"><meta property="og:image:alt" content="GAMBIT"><meta name=twitter:card content="summary_large_image"><meta name=twitter:site content><meta name=twitter:creator content><meta name=twitter:title content="file src/mt2w_bisect.cpp"><meta name=twitter:description content="[No description available]"><meta name=twitter:image content="https://rc1242rc.github.io/gambit_logo.png"><meta name=twitter:image:alt content="file src/mt2w_bisect.cpp"><script type=application/ld+json>{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://rc1242rc.github.io/#/schema/organization/1","name":"Doks","url":"https://rc1242rc.github.io/","sameAs":["https://github.com/GambitBSM"],"logo":{"@type":"ImageObject","@id":"https://rc1242rc.github.io/#/schema/image/1","url":"https://rc1242rc.github.io/logo-doks.png","width":450,"height":416,"caption":"Doks"},"image":{"@id":"https://rc1242rc.github.io/#/schema/image/1"}},{"@type":"WebSite","@id":"https://rc1242rc.github.io/#/schema/website/1","url":"https://rc1242rc.github.io/","name":"GAMBIT","description":"Documentation for the Global And Modular BSM Inference Tool","publisher":{"@id":"https://rc1242rc.github.io/#/schema/organization/1"}},{"@type":"WebPage","@id":"https://rc1242rc.github.io/documentation/code/colliderbit/files/mt2w__bisect_8cpp/","url":"https://rc1242rc.github.io/documentation/code/colliderbit/files/mt2w__bisect_8cpp/","name":"file src\/mt2w_bisect.cpp","description":"[No description available]","isPartOf":{"@id":"https://rc1242rc.github.io/#/schema/website/1"},"about":{"@id":"https://rc1242rc.github.io/#/schema/organization/1"},"datePublished":"0001-01-01T00:00:00CET","dateModified":"0001-01-01T00:00:00CET","breadcrumb":{"@id":"https://rc1242rc.github.io/documentation/code/colliderbit/files/mt2w__bisect_8cpp/#/schema/breadcrumb/1"},"primaryImageOfPage":{"@id":"https://rc1242rc.github.io/documentation/code/colliderbit/files/mt2w__bisect_8cpp/#/schema/image/2"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://rc1242rc.github.io/documentation/code/colliderbit/files/mt2w__bisect_8cpp/"]}]},{"@type":"BreadcrumbList","@id":"https://rc1242rc.github.io/documentation/code/colliderbit/files/mt2w__bisect_8cpp/#/schema/breadcrumb/1","name":"Breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/","url":"https://rc1242rc.github.io/","name":"Home"}},{"@type":"ListItem","position":2,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/documentation/","url":"https://rc1242rc.github.io/documentation/","name":"Documentation"}},{"@type":"ListItem","position":3,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/documentation/code/","url":"https://rc1242rc.github.io/documentation/code/","name":"Code"}},{"@type":"ListItem","position":4,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/documentation/code/colliderbit/","url":"https://rc1242rc.github.io/documentation/code/colliderbit/","name":"Colliderbit"}},{"@type":"ListItem","position":5,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/documentation/code/colliderbit/files/","url":"https://rc1242rc.github.io/documentation/code/colliderbit/files/","name":"Files"}},{"@type":"ListItem","position":6,"item":{"@id":"https://rc1242rc.github.io/documentation/code/colliderbit/files/mt2w__bisect_8cpp/"}}]},{"@context":"https://schema.org","@graph":[{"@type":"ImageObject","@id":"https://rc1242rc.github.io/documentation/code/colliderbit/files/mt2w__bisect_8cpp/#/schema/image/2","url":"https://rc1242rc.github.io/gambit_logo.png","contentUrl":"https://rc1242rc.github.io/gambit_logo.png","caption":"file src\/mt2w_bisect.cpp"}]}]}</script><meta name=theme-color content="#fff"><link rel=icon href=https://rc1242rc.github.io/favicon.ico sizes=any><link rel=icon type=image/svg+xml href=https://rc1242rc.github.io/favicon.svg><link rel=apple-touch-icon sizes=180x180 href=https://rc1242rc.github.io/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=https://rc1242rc.github.io/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=https://rc1242rc.github.io/favicon-16x16.png><link rel=manifest crossorigin=use-credentials href=https://rc1242rc.github.io/site.webmanifest></head><body class="documentation single light"><div class=sticky-top><div class=header-bar></div><header class="navbar navbar-expand-md navbar-light doks-navbar"><nav class="container-xxl flex-wrap flex-md-nowrap" aria-label="Main navigation"><a class="navbar-brand p-0 me-auto" href=https://rc1242rc.github.io/ aria-label=GAMBIT><img class=logo-light src=https://rc1242rc.github.io//images/gambit_logo.png width=50px>
+<img class="logo-dark d-none" src=https://rc1242rc.github.io//images/gambit_logo.png width=50px>
+GAMBIT</a>
+<button class="btn btn-menu order-2 d-block d-lg-none" type=button data-bs-toggle=offcanvas data-bs-target=#offcanvasDoks aria-controls=offcanvasDoks aria-label="Open main menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button><div class="offcanvas offcanvas-end border-0 py-lg-1" tabindex=-1 id=offcanvasDoks data-bs-backdrop=true aria-labelledby=offcanvasDoksLabel><div class="header-bar d-lg-none"></div><div class="offcanvas-header d-lg-none"><h2 class="h5 offcanvas-title ps-2" id=offcanvasDoksLabel><a class=text-dark href=/>GAMBIT</a></h2><button type=button class="btn-close text-reset me-2" data-bs-dismiss=offcanvas aria-label="Close main menu"></button></div><div class="offcanvas-body p-4 p-lg-0"><ul class="nav flex-column flex-lg-row align-items-lg-center mt-2 mt-lg-0 ms-lg-2 me-lg-auto"><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Documentation
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=/documentation/installation/introduction/>Installation</a></li><li><a class=dropdown-item href=/documentation/examples/colliderbit_example>Examples</a></li><li><a class=dropdown-item href=/documentation/help/faqs/>Help</a></li><li><a class=dropdown-item href=/documentation/code/gambit_sphinx/index_classes>Code Reference</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Community
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=/community/publications/>Publications</a></li><li><a class=dropdown-item href=/community/talks/>Talks</a></li><li><a class=dropdown-item href=/community/members/>Members</a></li><li><a class=dropdown-item href=/community/code_of_conduct/>Code of Conduct</a></li><li><a class=dropdown-item href=/community/contact/>Contact</a></li></ul></li></ul><hr class="text-black-50 my-4 d-lg-none"><form class="doks-search position-relative flex-grow-1 ms-lg-auto me-lg-2"><input id=search class="form-control is-search" type=search placeholder="Search site..." aria-label="Search site..." autocomplete=off><div id=suggestions class="shadow bg-white rounded d-none"></div></form><hr class="text-black-50 my-4 d-lg-none"><ul class="nav flex-column flex-lg-row"><li class=nav-item><a class="nav-link social-link" href=https://github.com/GambitBSM><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37.0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44.0 0020 4.77 5.07 5.07.0 0019.91 1S18.73.65 16 2.48a13.38 13.38.0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07.0 005 4.77 5.44 5.44.0 003.5 8.55c0 5.42 3.3 6.61 6.44 7A3.37 3.37.0 009 18.13V22"/></svg><small class="ms-2 d-lg-none">GitHub</small></a></li></ul><hr class="text-black-50 my-4 d-lg-none"><div class=dropdown><button class="btn btn-doks-light dropdown-toggle" id=doks-versions data-bs-toggle=dropdown aria-expanded=false data-bs-display=static aria-label="Toggle version menu">
+<span class=d-none>Doks</span>
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></button><ul class="dropdown-menu dropdown-menu-lg-end me-lg-2 shadow rounded border-0" aria-labelledby=doks-versions></ul></div></div></div></nav></header></div><div class="wrap container-xxl" role=document><div class=content><div class="row flex-xl-nowrap"><div class="col-lg-5 col-xl-4 docs-sidebar"><nav class=docs-links aria-label="Main navigation"><ul class="list-unstyled collapsible-sidebar"><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-installation aria-expanded=false>
+Installation</button><div class=collapse id=section-installation><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/installation/introduction/>Getting Started</a></li><li><a class="docs-link rounded" href=/documentation/installation/docker_usage/>Docker Usage</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_linux/>Installation for Linux</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_windows/>Installation for Windows</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_macos/>Installation for macOS</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-examples aria-expanded=false>
+Examples</button><div class=collapse id=section-examples><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/examples/colliderbit_example/>ColliderBit Example</a></li><li><a class="docs-link rounded" href=/documentation/examples/anotherbit/>AnotherBit</a></li><li><a class="docs-link rounded" href=/documentation/examples/anotherbit2/>AnotherBit2</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-help aria-expanded=false>
+Help</button><div class=collapse id=section-help><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/help/faqs/>FAQs</a></li><li><a class="docs-link rounded" href=/documentation/help/compiler_matrix/>Compiler Matrix</a></li><li><a class="docs-link rounded" href=/documentation/help/known_issues/>Known Issues</a></li><li><a class="docs-link rounded" href=/documentation/help/configuration_examples/>Configuration Examples</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-code aria-expanded=true>
+Code Reference</button><div class="collapse show" id=section-code><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li class="my-1 ms-3"><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-gambit_sphinx aria-expanded=true>
+<font style="color: #5d2f86;" size=-6>release</font> &nbsp; gambit sphinx</button><div class="collapse show" id=section-gambit_sphinx><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/code/gambit_sphinx/index_classes/>Classes</a></li><li><a class="docs-link rounded" href=/documentation/code/gambit_sphinx/index_files/>Files</a></li><li><a class="docs-link rounded" href=/documentation/code/gambit_sphinx/index_pages/>Pages</a></li><li><a class="docs-link rounded" href=/documentation/code/gambit_sphinx/index_namespaces/>Namespaces</a></li></ul></div></li><li class="my-1 ms-3"><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-ColliderBit aria-expanded=true>
+<font style="color: #5d2f86;" size=-6>development</font> &nbsp; ColliderBit</button><div class="collapse show" id=section-ColliderBit><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/code/colliderbit/index_classes/>Classes</a></li><li><a class="docs-link rounded" href=/documentation/code/colliderbit/index_files/>Files</a></li><li><a class="docs-link rounded" href=/documentation/code/colliderbit/index_pages/>Pages</a></li><li><a class="docs-link rounded" href=/documentation/code/colliderbit/index_namespaces/>Namespaces</a></li></ul></div></li><li class="my-1 ms-3"><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-DarkBit aria-expanded=true>
+<font style="color: #5d2f86;" size=-6>development</font> &nbsp; DarkBit</button><div class="collapse show" id=section-DarkBit><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/code/darkbit/index_classes/>Classes</a></li><li><a class="docs-link rounded" href=/documentation/code/darkbit/index_files/>Files</a></li><li><a class="docs-link rounded" href=/documentation/code/darkbit/index_pages/>Pages</a></li><li><a class="docs-link rounded" href=/documentation/code/darkbit/index_namespaces/>Namespaces</a></li></ul></div></li><li class="my-1 ms-3"><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-main aria-expanded=true>
+<font style="color: #5d2f86;" size=-6>development</font> &nbsp; main</button><div class="collapse show" id=section-main><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/code/main/index_classes/>Classes</a></li><li><a class="docs-link rounded" href=/documentation/code/main/index_files/>Files</a></li><li><a class="docs-link rounded" href=/documentation/code/main/index_pages/>Pages</a></li><li><a class="docs-link rounded" href=/documentation/code/main/index_namespaces/>Namespaces</a></li></ul></div></li></ul></div></li></ul></nav></div><nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation"><div class=d-xl-none><button class="btn btn-outline-primary btn-sm doks-toc-toggle collapsed" type=button data-bs-toggle=collapse data-bs-target=#onThisPage aria-controls=doks-docs-nav aria-expanded=false aria-label="Toggle On this page navigation">
+<span>On this page</span>
+<span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg></span></button><div class=collapse id=onThisPage><div class="card card-body mt-3 py-1"><div class=page-links><nav id=TableOfContents><ul><li><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#source-code>Source code</a></li></ul></li></ul></nav></div></div></div></div><div class="page-links d-none d-xl-block"><h3>On this page</h3><nav id=TableOfContents><ul><li><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#source-code>Source code</a></li></ul></li></ul></nav></div></nav><main class="docs-content col-lg-11 col-xl-9 mx-xl-auto"><nav aria-label=breadcrumb><ol class=breadcrumb><li class=breadcrumb-item><a href=/>Home</a></li><li class=breadcrumb-item><a href=/documentation/>Documentation</a></li><li class=breadcrumb-item><a href=/documentation/code/>Code Reference</a></li><li class=breadcrumb-item><a href=/documentation/code/colliderbit/>ColliderBit</a></li><li class="breadcrumb-item active" aria-current=page>file src/mt2w_bisect.cpp</li></ol></nav><h1>file src/mt2w_bisect.cpp</h1><p class=lead></p><p>[No description available]</p><h2 id=namespaces>Namespaces <a href=#namespaces class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th>Name</th></tr></thead><tbody><tr><td><strong><a href=/documentation/code/colliderbit/namespaces/namespacemt2w__bisect/>mt2w_bisect</a></strong></td></tr></tbody></table><h2 id=source-code>Source code <a href=#source-code class=anchor aria-hidden=true>#</a></h2><pre><code>/***********************************************************************/
+/*                                                                     */
+/*              Finding MT2W                                           */
+/*              Reference:  arXiv:1203.4813 [hep-ph]                   */
+/*              Authors: Yang Bai, Hsin-Chia Cheng,                    */
+/*                       Jason Gallicchio, Jiayin Gu                   */
+/*              Based on MT2 by: Hsin-Chia Cheng, Zhenyu Han           */
+/*              May 8, 2012, v1.00a                                    */
+/*                                                                     */
+/***********************************************************************/
+
+/*******************************************************************************
+  Usage:
+
+  1. Define an object of type &quot;mt2w&quot;:
+
+     mt2w_bisect::mt2w mt2w_event;
+
+  2. Set momenta:
+
+     mt2w_event.set_momenta(pl,pb1,pb2,pmiss);
+
+     where array pl[0..3], pb1[0..3], pb2[0..3] contains (E,px,py,pz), pmiss[0..2] contains (0,px,py)
+     for the visible particles and the missing momentum. pmiss[0] is not used.
+     All quantities are given in double.
+
+     (Or use non-pointer method to do the same.)
+
+  3. Use mt2w::get_mt2w() to obtain the value of mt2w:
+
+     double mt2w_value = mt2w_event.get_mt2w();
+
+*******************************************************************************/
+
+#include &lt;iostream&gt;
+#include &lt;math.h&gt;
+#include &quot;gambit/ColliderBit/mt2w_bisect.h&quot;
+
+using namespace std;
+
+namespace mt2w_bisect
+{
+
+mt2w::mt2w(double upper_bound, double error_value, double scan_step)
+{
+   solved = false;
+   momenta_set = false;
+   mt2w_b  = 0.;  // The result field.  Start it off at zero.
+   this-&gt;upper_bound = upper_bound;  // the upper bound of search for MT2W, default value is 500 GeV
+   this-&gt;error_value = error_value;  // if we couldn't find any compatible region below the upper_bound, output mt2w = error_value;
+   this-&gt;scan_step = scan_step;    // if we need to scan to find the compatible region, this is the step of the scan
+}
+
+double mt2w::get_mt2w()
+{
+   if (!momenta_set)
+   {
+       cout &lt;&lt;&quot; Please set momenta first!&quot; &lt;&lt; endl;
+       return error_value;
+   }
+
+   if (!solved) mt2w_bisect();
+   return mt2w_b;
+}
+
+
+void mt2w::set_momenta(double *pl, double *pb1, double *pb2, double* pmiss)
+{
+   // Pass in pointers to 4-vectors {E, px, py, px} of doubles.
+   // and pmiss must have [1] and [2] components for x and y.  The [0] component is ignored.
+   set_momenta(pl[0],  pl[1],  pl[2],  pl[3],
+               pb1[0], pb1[1], pb1[2], pb1[3],
+               pb2[0], pb2[1], pb2[2], pb2[3],
+               pmiss[1], pmiss[2]);
+}
+
+
+
+void mt2w::set_momenta(double El,  double plx,  double ply,  double plz,
+                       double Eb1, double pb1x, double pb1y, double pb1z,
+                       double Eb2, double pb2x, double pb2y, double pb2z,
+                       double pmissx, double pmissy)
+{
+   solved = false;     //reset solved tag when momenta are changed.
+   momenta_set = true;
+
+  double msqtemp;   //used for saving the mass squared temporarily
+
+//l is the visible lepton
+
+  this-&gt;El  = El;
+  this-&gt;plx = plx;
+  this-&gt;ply = ply;
+  this-&gt;plz = plz;
+
+  Elsq = El*El;
+
+  msqtemp = El*El-plx*plx-ply*ply-plz*plz;
+  if (msqtemp &gt; 0.0) {mlsq = msqtemp;}
+  else {mlsq = 0.0;}                           //mass squared can not be negative
+  ml = sqrt(mlsq);                             // all the input masses are calculated from sqrt(p^2)
+
+//b1 is the bottom on the same side as the visible lepton
+
+  this-&gt;Eb1  = Eb1;
+  this-&gt;pb1x = pb1x;
+  this-&gt;pb1y = pb1y;
+  this-&gt;pb1z = pb1z;
+
+  Eb1sq = Eb1*Eb1;
+
+  msqtemp = Eb1*Eb1-pb1x*pb1x-pb1y*pb1y-pb1z*pb1z;
+  if (msqtemp &gt; 0.0) {mb1sq = msqtemp;}
+  else {mb1sq = 0.0;}                          //mass squared can not be negative
+  mb1 = sqrt(mb1sq);                           // all the input masses are calculated from sqrt(p^2)
+
+//b2 is the other bottom (paired with the invisible W)
+
+  this-&gt;Eb2  = Eb2;
+  this-&gt;pb2x = pb2x;
+  this-&gt;pb2y = pb2y;
+  this-&gt;pb2z = pb2z;
+
+  Eb2sq = Eb2*Eb2;
+
+  msqtemp = Eb2*Eb2-pb2x*pb2x-pb2y*pb2y-pb2z*pb2z;
+  if (msqtemp &gt; 0.0) {mb2sq = msqtemp;}
+  else {mb2sq = 0.0;}                          //mass squared can not be negative
+  mb2 = sqrt(mb2sq);                           // all the input masses are calculated from sqrt(p^2)
+
+
+//missing pt
+
+
+   this-&gt;pmissx = pmissx;
+   this-&gt;pmissy = pmissy;
+
+//set the values of masses
+
+  mv = 0.0;   //mass of neutrino
+  mw = 80.4;  //mass of W-boson
+
+
+//precision?
+
+   if (ABSOLUTE_PRECISION &gt; 100.*RELATIVE_PRECISION) precision = ABSOLUTE_PRECISION;
+   else precision = 100.*RELATIVE_PRECISION;
+}
+
+
+void mt2w::mt2w_bisect()
+{
+
+
+   solved = true;
+   cout.precision(11);
+
+  // In normal running, mtop_high WILL be compatible, and mtop_low will NOT.
+  double mtop_high = upper_bound; //set the upper bound of the search region
+  double mtop_low;                //the lower bound of the search region is best chosen as m_W + m_b
+
+  if (mb1 &gt;= mb2) {mtop_low = mw + mb1;}
+  else {mtop_low = mw + mb2;}
+
+  // The following if and while deal with the case where there might be a compatable region
+  // between mtop_low and 500 GeV, but it doesn't extend all the way up to 500.
+  //
+
+  // If our starting high guess is not compatible, start the high guess from the low guess...
+    if (teco(mtop_high)==0) {mtop_high = mtop_low;}
+
+  // .. and scan up until a compatible high bound is found.
+  //We can also raise the lower bound since we scaned over a region that is not compatible
+  while (teco(mtop_high)==0 &amp;&amp; mtop_high &lt; upper_bound + 2.*scan_step) {
+
+    mtop_low=mtop_high;
+    mtop_high = mtop_high + scan_step;
+  }
+
+  // if we can not find a compatible region under the upper bound, output the error value
+  if (mtop_high &gt; upper_bound) {
+    mt2w_b = error_value;
+    return;
+  }
+
+    // Once we have an compatible mtop_high, we can find mt2w using bisection method
+   while(mtop_high - mtop_low &gt; precision)
+   {
+      double mtop_mid,teco_mid;
+      //bisect
+      mtop_mid = (mtop_high+mtop_low)/2.;
+      teco_mid = teco(mtop_mid);
+
+     if(teco_mid == 0) {mtop_low  = mtop_mid;}
+     else {mtop_high  = mtop_mid;}
+
+   }
+   mt2w_b = mtop_high;   //output the value of mt2w
+   return;
+}
+
+
+// for a given event, teco ( mtop ) gives 1 if trial top mass mtop is compatible, 0 if mtop is not.
+
+int mt2w::teco(  double mtop)
+{
+
+//first test if mtop is larger than mb+mw
+
+  if (mtop &lt; mb1+mw || mtop &lt; mb2+mw) {return 0;}
+
+//define delta for convenience, note the definition is different from the one in mathematica code by 2*E^2_{b2}
+
+  double ETb2sq = Eb2sq - pb2z*pb2z;  //transverse energy of b2
+  double delta = (mtop*mtop-mw*mw-mb2sq)/(2.*ETb2sq);
+
+
+//del1 and del2 are \Delta'_1 and \Delta'_2 in the notes eq. 10,11
+
+  double del1 = mw*mw - mv*mv - mlsq;
+  double del2 = mtop*mtop - mw*mw - mb1sq - 2*(El*Eb1-plx*pb1x-ply*pb1y-plz*pb1z);
+
+// aa bb cc are A B C in the notes eq.15
+
+  double aa = (El*pb1x-Eb1*plx)/(Eb1*plz-El*pb1z);
+  double bb = (El*pb1y-Eb1*ply)/(Eb1*plz-El*pb1z);
+  double cc = (El*del2-Eb1*del1)/(2.*Eb1*plz-2.*El*pb1z);
+
+
+//calculate coefficients for the two quadratic equations (ellipses), which are
+//
+//  a1 x^2 + 2 b1 x y + c1 y^2 + 2 d1 x + 2 e1 y + f1 = 0 ,  from the 2 steps decay chain (with visible lepton)
+//
+//  a2 x^2 + 2 b2 x y + c2 y^2 + 2 d2 x + 2 e2 y + f2 &lt;= 0 , from the 1 stop decay chain (with W missing)
+//
+//  where x and y are px and py of the neutrino on the visible lepton chain
+
+  a1 = Eb1sq*(1.+aa*aa)-(pb1x+pb1z*aa)*(pb1x+pb1z*aa);
+  b1 = Eb1sq*aa*bb - (pb1x+pb1z*aa)*(pb1y+pb1z*bb);
+  c1 = Eb1sq*(1.+bb*bb)-(pb1y+pb1z*bb)*(pb1y+pb1z*bb);
+  d1 = Eb1sq*aa*cc - (pb1x+pb1z*aa)*(pb1z*cc+del2/2.0);
+  e1 = Eb1sq*bb*cc - (pb1y+pb1z*bb)*(pb1z*cc+del2/2.0);
+  f1 = Eb1sq*(mv*mv+cc*cc) - (pb1z*cc+del2/2.0)*(pb1z*cc+del2/2.0);
+
+//  First check if ellipse 1 is real (don't need to do this for ellipse 2, ellipse 2 is always real for mtop &gt; mw+mb)
+
+    double det1 = (a1*(c1*f1 - e1*e1) - b1*(b1*f1 - d1*e1) + d1*(b1*e1-c1*d1))/(a1+c1);
+
+  if (det1 &gt; 0.0) {return 0;}
+
+//coefficients of the ellptical region
+
+  a2 = 1-pb2x*pb2x/(ETb2sq);
+  b2 = -pb2x*pb2y/(ETb2sq);
+  c2 = 1-pb2y*pb2y/(ETb2sq);
+
+  // d2o e2o f2o are coefficients in the p2x p2y plane (p2 is the momentum of the missing W-boson)
+  // it is convenient to calculate them first and transfer the ellipse to the p1x p1y plane
+  d2o = -delta*pb2x;
+  e2o = -delta*pb2y;
+  f2o = mw*mw - delta*delta*ETb2sq;
+
+  d2 = -d2o -a2*pmissx -b2*pmissy;
+  e2 = -e2o -c2*pmissy -b2*pmissx;
+  f2 = a2*pmissx*pmissx + 2*b2*pmissx*pmissy + c2*pmissy*pmissy + 2*d2o*pmissx + 2*e2o*pmissy + f2o;
+
+//find a point in ellipse 1 and see if it's within the ellipse 2, define h0 for convenience
+    double x0, h0, y0, r0;
+  x0 = (c1*d1-b1*e1)/(b1*b1-a1*c1);
+    h0 = (b1*x0 + e1)*(b1*x0 + e1) - c1*(a1*x0*x0 + 2*d1*x0 + f1);
+  if (h0 &lt; 0.0) {return 0;}  // if h0 &lt; 0, y0 is not real and ellipse 1 is not real, this is a redundant check.
+  y0 = (-b1*x0 -e1 + sqrt(h0))/c1;
+  r0 = a2*x0*x0 + 2*b2*x0*y0 + c2*y0*y0 + 2*d2*x0 + 2*e2*y0 + f2;
+  if (r0 &lt; 0.0) {return 1;}  // if the point is within the 2nd ellipse, mtop is compatible
+
+
+//obtain the coefficients for the 4th order equation
+//devided by Eb1^n to make the variable dimensionless
+   long double A4, A3, A2, A1, A0;
+
+  A4 =
+  -4*a2*b1*b2*c1 + 4*a1*b2*b2*c1 +a2*a2*c1*c1 +
+  4*a2*b1*b1*c2 - 4*a1*b1*b2*c2 - 2*a1*a2*c1*c2 +
+  a1*a1*c2*c2;
+
+  A3 =
+  (-4*a2*b2*c1*d1 + 8*a2*b1*c2*d1 - 4*a1*b2*c2*d1 - 4*a2*b1*c1*d2 +
+   8*a1*b2*c1*d2 - 4*a1*b1*c2*d2 - 8*a2*b1*b2*e1 + 8*a1*b2*b2*e1 +
+   4*a2*a2*c1*e1 - 4*a1*a2*c2*e1 + 8*a2*b1*b1*e2 - 8*a1*b1*b2*e2 -
+     4*a1*a2*c1*e2 + 4*a1*a1*c2*e2)/Eb1;
+
+
+  A2 =
+  (4*a2*c2*d1*d1 - 4*a2*c1*d1*d2 - 4*a1*c2*d1*d2 + 4*a1*c1*d2*d2 -
+   8*a2*b2*d1*e1 - 8*a2*b1*d2*e1 + 16*a1*b2*d2*e1 +
+   4*a2*a2*e1*e1 + 16*a2*b1*d1*e2 - 8*a1*b2*d1*e2 -
+   8*a1*b1*d2*e2 - 8*a1*a2*e1*e2 + 4*a1*a1*e2*e2 - 4*a2*b1*b2*f1 +
+   4*a1*b2*b2*f1 + 2*a2*a2*c1*f1 - 2*a1*a2*c2*f1 +
+     4*a2*b1*b1*f2 - 4*a1*b1*b2*f2 - 2*a1*a2*c1*f2 + 2*a1*a1*c2*f2)/Eb1sq;
+
+  A1 =
+  (-8*a2*d1*d2*e1 + 8*a1*d2*d2*e1 + 8*a2*d1*d1*e2 - 8*a1*d1*d2*e2 -
+   4*a2*b2*d1*f1 - 4*a2*b1*d2*f1 + 8*a1*b2*d2*f1 + 4*a2*a2*e1*f1 -
+   4*a1*a2*e2*f1 + 8*a2*b1*d1*f2 - 4*a1*b2*d1*f2 - 4*a1*b1*d2*f2 -
+     4*a1*a2*e1*f2 + 4*a1*a1*e2*f2)/(Eb1sq*Eb1);
+
+  A0 =
+  (-4*a2*d1*d2*f1 + 4*a1*d2*d2*f1 + a2*a2*f1*f1 +
+   4*a2*d1*d1*f2 - 4*a1*d1*d2*f2 - 2*a1*a2*f1*f2 +
+     a1*a1*f2*f2)/(Eb1sq*Eb1sq);
+
+   long double B3, B2, B1, B0;
+   B3 = 4*A4;
+   B2 = 3*A3;
+   B1 = 2*A2;
+   B0 = A1;
+
+   long double C2, C1, C0;
+   C2 = -(A2/2 - 3*A3*A3/(16*A4));
+   C1 = -(3*A1/4. -A2*A3/(8*A4));
+   C0 = -A0 + A1*A3/(16*A4);
+
+   long double D1, D0;
+   D1 = -B1 - (B3*C1*C1/C2 - B3*C0 -B2*C1)/C2;
+   D0 = -B0 - B3 *C0 *C1/(C2*C2)+ B2*C0/C2;
+
+   long double E0;
+   E0 = -C0 - C2*D0*D0/(D1*D1) + C1*D0/D1;
+
+   long  double t1,t2,t3,t4,t5;
+//find the coefficients for the leading term in the Sturm sequence
+   t1 = A4;
+   t2 = A4;
+   t3 = C2;
+   t4 = D1;
+   t5 = E0;
+
+
+//The number of solutions depends on diffence of number of sign changes for x-&gt;Inf and x-&gt;-Inf
+   int nsol;
+   nsol = signchange_n(t1,t2,t3,t4,t5) - signchange_p(t1,t2,t3,t4,t5);
+
+//Cannot have negative number of solutions, must be roundoff effect
+   if (nsol &lt; 0) nsol = 0;
+
+    int out;
+  if (nsol == 0) {out = 0;}  //output 0 if there is no solution, 1 if there is solution
+  else {out = 1;}
+
+   return out;
+
+}
+
+inline int mt2w::signchange_n( long double t1, long double t2, long double t3, long double t4, long double t5)
+{
+   int nsc;
+   nsc=0;
+   if(t1*t2&gt;0) nsc++;
+   if(t2*t3&gt;0) nsc++;
+   if(t3*t4&gt;0) nsc++;
+   if(t4*t5&gt;0) nsc++;
+   return nsc;
+}
+inline int mt2w::signchange_p( long double t1, long double t2, long double t3, long double t4, long double t5)
+{
+   int nsc;
+   nsc=0;
+   if(t1*t2&lt;0) nsc++;
+   if(t2*t3&lt;0) nsc++;
+   if(t3*t4&lt;0) nsc++;
+   if(t4*t5&lt;0) nsc++;
+   return nsc;
+}
+
+}//end namespace mt2w_bisect
+</code></pre><hr><p>Updated on 2022-08-03 at 12:58:20 +0000</p><div class=edit-page><a href=https://github.com/RC1242RC/gambit_gh_pages/blob/master/content/en/documentation/code/ColliderBit/Files/mt2w__bisect_8cpp.md><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2"><path d="M17 3a2.828 2.828.0 114 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></svg>Edit this page on GitHub</a></div></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a class=text-muted href=https://www.netlify.com/>Netlify</a>, <a class=text-muted href=https://gohugo.io/>Hugo</a>, and <a class=text-muted href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.54bf0932b8a36d0e152b1635b099a6ef1394d35327e2437550a075c9c8ed1bd8aed5847c21b36fc02ed24014c031d9ca24017b0c78b1639d7e2fa8329898b842.js integrity="sha512-VL8JMrijbQ4VKxY1sJmm7xOU01Mn4kN1UKB1ycjtG9iu1YR8IbNvwC7SQBTAMdnKJAF7DHixY51+L6gymJi4Qg==" crossorigin=anonymous defer></script>
+<script src=/js/highlight.min.5b48bc253dc75aeea5fb366ecf700f4925e2b6eb1a1466f2124b722d68148d67bc0a9365d2b8ad9c585161b46372d23b08509a16f1fd518542b894756d4752d0.js integrity="sha512-W0i8JT3HWu6l+zZuz3APSSXitusaFGbyEktyLWgUjWe8CpNl0ritnFhRYbRjctI7CFCaFvH9UYVCuJR1bUdS0A==" crossorigin=anonymous defer></script>
+<script src=/main.min.40265e9a032aeba5eaf67baac3cbbc22667a7533215d326eeb3e9f4d5e4be40f9ff4dcd22949db73ae527ca26a19d7998091a8973c82af760b2c0daa335190ed.js integrity="sha512-QCZemgMq66Xq9nuqw8u8ImZ6dTMhXTJu6z6fTV5L5A+f9NzSKUnbc65SfKJqGdeZgJGolzyCr3YLLA2qM1GQ7Q==" crossorigin=anonymous defer></script>
+<script src=https://rc1242rc.github.io/index.min.cb3cfc52c7c54bd8c25d1fbd0a5de239406787c3dcdce4c8c0c6a90e32667d32f427e033d04af1c0f2c4a86667aa8d3df23f54c6a7873d639d2ca7c2edf7146d.js integrity="sha512-yzz8UsfFS9jCXR+9Cl3iOUBnh8Pc3OTIwMapDjJmfTL0J+Az0ErxwPLEqGZnqo098j9UxqeHPWOdLKfC7fcUbQ==" crossorigin=anonymous defer></script></body></html>

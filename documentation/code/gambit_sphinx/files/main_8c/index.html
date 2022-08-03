@@ -1,0 +1,694 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="ie=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><link rel=preload as=font href=https://rc1242rc.github.io/fonts/vendor/jost/jost-v4-latin-regular.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://rc1242rc.github.io/fonts/vendor/jost/jost-v4-latin-500.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://rc1242rc.github.io/fonts/vendor/jost/jost-v4-latin-700.woff2 type=font/woff2 crossorigin><script>(()=>{var e=localStorage.getItem("theme");e==="dark"&&document.documentElement.setAttribute("data-dark-mode","")})()</script><link rel=stylesheet href=https://rc1242rc.github.io/main.f12f7e04ea768acebec10c86baf049d74d6a79f24bc0dfb7ed77aa60462432916dd1ce8f41c78b69496adf650b3039a28a210183cce598f09b95d6fecb5ff999.css integrity="sha512-8S9+BOp2is6+wQyGuvBJ101qefJLwN+37XeqYEYkMpFt0c6PQceLaUlq32ULMDmiiiEBg8zlmPCbldb+y1/5mQ==" crossorigin=anonymous><noscript><style>img.lazyload{display:none}</style></noscript><meta name=robots content="index, follow"><meta name=googlebot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><meta name=bingbot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><title>file 3.6.27/main.c - GAMBIT</title><meta name=description content="[No description available]"><link rel=canonical href=https://rc1242rc.github.io/documentation/code/gambit_sphinx/files/main_8c/><meta property="og:locale" content="en_US"><meta property="og:type" content="article"><meta property="og:title" content="file 3.6.27/main.c"><meta property="og:description" content="[No description available]"><meta property="og:url" content="https://rc1242rc.github.io/documentation/code/gambit_sphinx/files/main_8c/"><meta property="og:site_name" content="GAMBIT"><meta property="og:image" content="https://rc1242rc.github.io/gambit_logo.png"><meta property="og:image:alt" content="GAMBIT"><meta name=twitter:card content="summary_large_image"><meta name=twitter:site content><meta name=twitter:creator content><meta name=twitter:title content="file 3.6.27/main.c"><meta name=twitter:description content="[No description available]"><meta name=twitter:image content="https://rc1242rc.github.io/gambit_logo.png"><meta name=twitter:image:alt content="file 3.6.27/main.c"><script type=application/ld+json>{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://rc1242rc.github.io/#/schema/organization/1","name":"Doks","url":"https://rc1242rc.github.io/","sameAs":["https://github.com/GambitBSM"],"logo":{"@type":"ImageObject","@id":"https://rc1242rc.github.io/#/schema/image/1","url":"https://rc1242rc.github.io/logo-doks.png","width":450,"height":416,"caption":"Doks"},"image":{"@id":"https://rc1242rc.github.io/#/schema/image/1"}},{"@type":"WebSite","@id":"https://rc1242rc.github.io/#/schema/website/1","url":"https://rc1242rc.github.io/","name":"GAMBIT","description":"Documentation for the Global And Modular BSM Inference Tool","publisher":{"@id":"https://rc1242rc.github.io/#/schema/organization/1"}},{"@type":"WebPage","@id":"https://rc1242rc.github.io/documentation/code/gambit_sphinx/files/main_8c/","url":"https://rc1242rc.github.io/documentation/code/gambit_sphinx/files/main_8c/","name":"file 3.6.27\/main.c","description":"[No description available]","isPartOf":{"@id":"https://rc1242rc.github.io/#/schema/website/1"},"about":{"@id":"https://rc1242rc.github.io/#/schema/organization/1"},"datePublished":"0001-01-01T00:00:00CET","dateModified":"0001-01-01T00:00:00CET","breadcrumb":{"@id":"https://rc1242rc.github.io/documentation/code/gambit_sphinx/files/main_8c/#/schema/breadcrumb/1"},"primaryImageOfPage":{"@id":"https://rc1242rc.github.io/documentation/code/gambit_sphinx/files/main_8c/#/schema/image/2"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://rc1242rc.github.io/documentation/code/gambit_sphinx/files/main_8c/"]}]},{"@type":"BreadcrumbList","@id":"https://rc1242rc.github.io/documentation/code/gambit_sphinx/files/main_8c/#/schema/breadcrumb/1","name":"Breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/","url":"https://rc1242rc.github.io/","name":"Home"}},{"@type":"ListItem","position":2,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/documentation/","url":"https://rc1242rc.github.io/documentation/","name":"Documentation"}},{"@type":"ListItem","position":3,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/documentation/code/","url":"https://rc1242rc.github.io/documentation/code/","name":"Code"}},{"@type":"ListItem","position":4,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/documentation/code/gambit_sphinx/","url":"https://rc1242rc.github.io/documentation/code/gambit_sphinx/","name":"Gambit Sphinx"}},{"@type":"ListItem","position":5,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/documentation/code/gambit_sphinx/files/","url":"https://rc1242rc.github.io/documentation/code/gambit_sphinx/files/","name":"Files"}},{"@type":"ListItem","position":6,"item":{"@id":"https://rc1242rc.github.io/documentation/code/gambit_sphinx/files/main_8c/"}}]},{"@context":"https://schema.org","@graph":[{"@type":"ImageObject","@id":"https://rc1242rc.github.io/documentation/code/gambit_sphinx/files/main_8c/#/schema/image/2","url":"https://rc1242rc.github.io/gambit_logo.png","contentUrl":"https://rc1242rc.github.io/gambit_logo.png","caption":"file 3.6.27\/main.c"}]}]}</script><meta name=theme-color content="#fff"><link rel=icon href=https://rc1242rc.github.io/favicon.ico sizes=any><link rel=icon type=image/svg+xml href=https://rc1242rc.github.io/favicon.svg><link rel=apple-touch-icon sizes=180x180 href=https://rc1242rc.github.io/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=https://rc1242rc.github.io/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=https://rc1242rc.github.io/favicon-16x16.png><link rel=manifest crossorigin=use-credentials href=https://rc1242rc.github.io/site.webmanifest></head><body class="documentation single light"><div class=sticky-top><div class=header-bar></div><header class="navbar navbar-expand-md navbar-light doks-navbar"><nav class="container-xxl flex-wrap flex-md-nowrap" aria-label="Main navigation"><a class="navbar-brand p-0 me-auto" href=https://rc1242rc.github.io/ aria-label=GAMBIT><img class=logo-light src=https://rc1242rc.github.io//images/gambit_logo.png width=50px>
+<img class="logo-dark d-none" src=https://rc1242rc.github.io//images/gambit_logo.png width=50px>
+GAMBIT</a>
+<button class="btn btn-menu order-2 d-block d-lg-none" type=button data-bs-toggle=offcanvas data-bs-target=#offcanvasDoks aria-controls=offcanvasDoks aria-label="Open main menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button><div class="offcanvas offcanvas-end border-0 py-lg-1" tabindex=-1 id=offcanvasDoks data-bs-backdrop=true aria-labelledby=offcanvasDoksLabel><div class="header-bar d-lg-none"></div><div class="offcanvas-header d-lg-none"><h2 class="h5 offcanvas-title ps-2" id=offcanvasDoksLabel><a class=text-dark href=/>GAMBIT</a></h2><button type=button class="btn-close text-reset me-2" data-bs-dismiss=offcanvas aria-label="Close main menu"></button></div><div class="offcanvas-body p-4 p-lg-0"><ul class="nav flex-column flex-lg-row align-items-lg-center mt-2 mt-lg-0 ms-lg-2 me-lg-auto"><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Documentation
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=/documentation/installation/introduction/>Installation</a></li><li><a class=dropdown-item href=/documentation/examples/colliderbit_example>Examples</a></li><li><a class=dropdown-item href=/documentation/help/faqs/>Help</a></li><li><a class=dropdown-item href=/documentation/code/gambit_sphinx/index_classes>Code Reference</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Community
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=/community/publications/>Publications</a></li><li><a class=dropdown-item href=/community/talks/>Talks</a></li><li><a class=dropdown-item href=/community/members/>Members</a></li><li><a class=dropdown-item href=/community/code_of_conduct/>Code of Conduct</a></li><li><a class=dropdown-item href=/community/contact/>Contact</a></li></ul></li></ul><hr class="text-black-50 my-4 d-lg-none"><form class="doks-search position-relative flex-grow-1 ms-lg-auto me-lg-2"><input id=search class="form-control is-search" type=search placeholder="Search site..." aria-label="Search site..." autocomplete=off><div id=suggestions class="shadow bg-white rounded d-none"></div></form><hr class="text-black-50 my-4 d-lg-none"><ul class="nav flex-column flex-lg-row"><li class=nav-item><a class="nav-link social-link" href=https://github.com/GambitBSM><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37.0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44.0 0020 4.77 5.07 5.07.0 0019.91 1S18.73.65 16 2.48a13.38 13.38.0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07.0 005 4.77 5.44 5.44.0 003.5 8.55c0 5.42 3.3 6.61 6.44 7A3.37 3.37.0 009 18.13V22"/></svg><small class="ms-2 d-lg-none">GitHub</small></a></li></ul><hr class="text-black-50 my-4 d-lg-none"><div class=dropdown><button class="btn btn-doks-light dropdown-toggle" id=doks-versions data-bs-toggle=dropdown aria-expanded=false data-bs-display=static aria-label="Toggle version menu">
+<span class=d-none>Doks</span>
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></button><ul class="dropdown-menu dropdown-menu-lg-end me-lg-2 shadow rounded border-0" aria-labelledby=doks-versions></ul></div></div></div></nav></header></div><div class="wrap container-xxl" role=document><div class=content><div class="row flex-xl-nowrap"><div class="col-lg-5 col-xl-4 docs-sidebar"><nav class=docs-links aria-label="Main navigation"><ul class="list-unstyled collapsible-sidebar"><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-installation aria-expanded=false>
+Installation</button><div class=collapse id=section-installation><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/installation/introduction/>Getting Started</a></li><li><a class="docs-link rounded" href=/documentation/installation/docker_usage/>Docker Usage</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_linux/>Installation for Linux</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_windows/>Installation for Windows</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_macos/>Installation for macOS</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-examples aria-expanded=false>
+Examples</button><div class=collapse id=section-examples><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/examples/colliderbit_example/>ColliderBit Example</a></li><li><a class="docs-link rounded" href=/documentation/examples/anotherbit/>AnotherBit</a></li><li><a class="docs-link rounded" href=/documentation/examples/anotherbit2/>AnotherBit2</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-help aria-expanded=false>
+Help</button><div class=collapse id=section-help><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/help/faqs/>FAQs</a></li><li><a class="docs-link rounded" href=/documentation/help/compiler_matrix/>Compiler Matrix</a></li><li><a class="docs-link rounded" href=/documentation/help/known_issues/>Known Issues</a></li><li><a class="docs-link rounded" href=/documentation/help/configuration_examples/>Configuration Examples</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-code aria-expanded=true>
+Code Reference</button><div class="collapse show" id=section-code><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li class="my-1 ms-3"><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-gambit_sphinx aria-expanded=true>
+<font style="color: #5d2f86;" size=-6>release</font> &nbsp; gambit sphinx</button><div class="collapse show" id=section-gambit_sphinx><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/code/gambit_sphinx/index_classes/>Classes</a></li><li><a class="docs-link rounded" href=/documentation/code/gambit_sphinx/index_files/>Files</a></li><li><a class="docs-link rounded" href=/documentation/code/gambit_sphinx/index_pages/>Pages</a></li><li><a class="docs-link rounded" href=/documentation/code/gambit_sphinx/index_namespaces/>Namespaces</a></li></ul></div></li><li class="my-1 ms-3"><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-ColliderBit aria-expanded=true>
+<font style="color: #5d2f86;" size=-6>development</font> &nbsp; ColliderBit</button><div class="collapse show" id=section-ColliderBit><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/code/colliderbit/index_classes/>Classes</a></li><li><a class="docs-link rounded" href=/documentation/code/colliderbit/index_files/>Files</a></li><li><a class="docs-link rounded" href=/documentation/code/colliderbit/index_pages/>Pages</a></li><li><a class="docs-link rounded" href=/documentation/code/colliderbit/index_namespaces/>Namespaces</a></li></ul></div></li><li class="my-1 ms-3"><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-DarkBit aria-expanded=true>
+<font style="color: #5d2f86;" size=-6>development</font> &nbsp; DarkBit</button><div class="collapse show" id=section-DarkBit><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/code/darkbit/index_classes/>Classes</a></li><li><a class="docs-link rounded" href=/documentation/code/darkbit/index_files/>Files</a></li><li><a class="docs-link rounded" href=/documentation/code/darkbit/index_pages/>Pages</a></li><li><a class="docs-link rounded" href=/documentation/code/darkbit/index_namespaces/>Namespaces</a></li></ul></div></li><li class="my-1 ms-3"><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-main aria-expanded=true>
+<font style="color: #5d2f86;" size=-6>development</font> &nbsp; main</button><div class="collapse show" id=section-main><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/code/main/index_classes/>Classes</a></li><li><a class="docs-link rounded" href=/documentation/code/main/index_files/>Files</a></li><li><a class="docs-link rounded" href=/documentation/code/main/index_pages/>Pages</a></li><li><a class="docs-link rounded" href=/documentation/code/main/index_namespaces/>Namespaces</a></li></ul></div></li></ul></div></li></ul></nav></div><nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation"><div class=d-xl-none><button class="btn btn-outline-primary btn-sm doks-toc-toggle collapsed" type=button data-bs-toggle=collapse data-bs-target=#onThisPage aria-controls=doks-docs-nav aria-expanded=false aria-label="Toggle On this page navigation">
+<span>On this page</span>
+<span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg></span></button><div class=collapse id=onThisPage><div class="card card-body mt-3 py-1"><div class=page-links><nav id=TableOfContents><ul><li><ul><li><a href=#classes>Classes</a></li><li><a href=#types>Types</a></li><li><a href=#functions>Functions</a></li><li><a href=#attributes>Attributes</a></li><li><a href=#types-documentation>Types Documentation</a><ul><li><a href=#typedef-procrec>typedef procRec</a></li></ul></li><li><a href=#functions-documentation>Functions Documentation</a><ul><li><a href=#function-prepareworkplace>function prepareWorkPlace</a></li><li><a href=#function-pdg2name>function pdg2name</a></li><li><a href=#function-pdg2mass>function pdg2mass</a></li><li><a href=#function-pdg2width>function pdg2width</a></li><li><a href=#function-checkworkplace>function checkWorkPlace</a></li><li><a href=#function-checkmtime>function checkMtime</a></li><li><a href=#function-newsymbol>function newSymbol</a></li><li><a href=#function-dclose>function dClose</a></li><li><a href=#function-varaddress>function varAddress</a></li><li><a href=#function-passparameters>function passParameters</a></li><li><a href=#function-delalllib>function delAllLib</a></li><li><a href=#function-cleandecaytable>function cleanDecayTable</a></li><li><a href=#function-ptabpos>function pTabPos</a></li><li><a href=#function-pmass>function pMass</a></li><li><a href=#function-pwidth>function pWidth</a></li><li><a href=#function-awidth>function aWidth</a></li><li><a href=#function-plisteq>function pListEq</a></li><li><a href=#function-loadlib>function loadLib</a></li><li><a href=#function-dload>function dLoad</a></li><li><a href=#function-getmecode>function getMEcode</a></li><li><a href=#function-findval>function findVal</a></li><li><a href=#function-findvalw>function findValW</a></li><li><a href=#function-procinfo2>function procInfo2</a></li></ul></li><li><a href=#attributes-documentation>Attributes Documentation</a><ul><li><a href=#variable-libdir>variable libDir</a></li><li><a href=#variable-modeldir>variable modelDir</a></li><li><a href=#variable-compdir>variable compDir</a></li><li><a href=#variable-calchepdir>variable calchepDir</a></li><li><a href=#variable-modelnum>variable modelNum</a></li><li><a href=#variable-forceug>variable ForceUG</a></li><li><a href=#variable-allproc>variable allProc</a></li><li><a href=#variable-decaytable>variable decayTable</a></li><li><a href=#variable-nprtcls_old>variable nPrtcls_old</a></li></ul></li><li><a href=#source-code>Source code</a></li></ul></li></ul></nav></div></div></div></div><div class="page-links d-none d-xl-block"><h3>On this page</h3><nav id=TableOfContents><ul><li><ul><li><a href=#classes>Classes</a></li><li><a href=#types>Types</a></li><li><a href=#functions>Functions</a></li><li><a href=#attributes>Attributes</a></li><li><a href=#types-documentation>Types Documentation</a><ul><li><a href=#typedef-procrec>typedef procRec</a></li></ul></li><li><a href=#functions-documentation>Functions Documentation</a><ul><li><a href=#function-prepareworkplace>function prepareWorkPlace</a></li><li><a href=#function-pdg2name>function pdg2name</a></li><li><a href=#function-pdg2mass>function pdg2mass</a></li><li><a href=#function-pdg2width>function pdg2width</a></li><li><a href=#function-checkworkplace>function checkWorkPlace</a></li><li><a href=#function-checkmtime>function checkMtime</a></li><li><a href=#function-newsymbol>function newSymbol</a></li><li><a href=#function-dclose>function dClose</a></li><li><a href=#function-varaddress>function varAddress</a></li><li><a href=#function-passparameters>function passParameters</a></li><li><a href=#function-delalllib>function delAllLib</a></li><li><a href=#function-cleandecaytable>function cleanDecayTable</a></li><li><a href=#function-ptabpos>function pTabPos</a></li><li><a href=#function-pmass>function pMass</a></li><li><a href=#function-pwidth>function pWidth</a></li><li><a href=#function-awidth>function aWidth</a></li><li><a href=#function-plisteq>function pListEq</a></li><li><a href=#function-loadlib>function loadLib</a></li><li><a href=#function-dload>function dLoad</a></li><li><a href=#function-getmecode>function getMEcode</a></li><li><a href=#function-findval>function findVal</a></li><li><a href=#function-findvalw>function findValW</a></li><li><a href=#function-procinfo2>function procInfo2</a></li></ul></li><li><a href=#attributes-documentation>Attributes Documentation</a><ul><li><a href=#variable-libdir>variable libDir</a></li><li><a href=#variable-modeldir>variable modelDir</a></li><li><a href=#variable-compdir>variable compDir</a></li><li><a href=#variable-calchepdir>variable calchepDir</a></li><li><a href=#variable-modelnum>variable modelNum</a></li><li><a href=#variable-forceug>variable ForceUG</a></li><li><a href=#variable-allproc>variable allProc</a></li><li><a href=#variable-decaytable>variable decayTable</a></li><li><a href=#variable-nprtcls_old>variable nPrtcls_old</a></li></ul></li><li><a href=#source-code>Source code</a></li></ul></li></ul></nav></div></nav><main class="docs-content col-lg-11 col-xl-9 mx-xl-auto"><nav aria-label=breadcrumb><ol class=breadcrumb><li class=breadcrumb-item><a href=/>Home</a></li><li class=breadcrumb-item><a href=/documentation/>Documentation</a></li><li class=breadcrumb-item><a href=/documentation/code/>Code Reference</a></li><li class=breadcrumb-item><a href=/documentation/code/gambit_sphinx/>gambit_sphinx</a></li><li class="breadcrumb-item active" aria-current=page>file 3.6.27/main.c</li></ol></nav><h1>file 3.6.27/main.c</h1><p class=lead></p><p>[No description available]</p><h2 id=classes>Classes <a href=#classes class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th></th><th>Name</th></tr></thead><tbody><tr><td>struct</td><td><strong><a href=/documentation/code/gambit_sphinx/classes/structprocrec/>procRec</a></strong></td></tr></tbody></table><h2 id=types>Types <a href=#types class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th></th><th>Name</th></tr></thead><tbody><tr><td>typedef struct <a href=/documentation/code/gambit_sphinx/classes/structprocrec/>procRec</a></td><td><strong><a href=/documentation/code/gambit_sphinx/files/main_8c/#typedef-procrec>procRec</a></strong></td></tr></tbody></table><h2 id=functions>Functions <a href=#functions class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th></th><th>Name</th></tr></thead><tbody><tr><td>int</td><td><strong><a href=/documentation/code/gambit_sphinx/files/main_8c/#function-prepareworkplace>prepareWorkPlace</a></strong>(void )</td></tr><tr><td>char *</td><td><strong><a href=/documentation/code/gambit_sphinx/files/main_8c/#function-pdg2name>pdg2name</a></strong>(int pdg)</td></tr><tr><td>char *</td><td><strong><a href=/documentation/code/gambit_sphinx/files/main_8c/#function-pdg2mass>pdg2mass</a></strong>(int pdg)</td></tr><tr><td>char *</td><td><strong><a href=/documentation/code/gambit_sphinx/files/main_8c/#function-pdg2width>pdg2width</a></strong>(int pdg)</td></tr><tr><td>int</td><td><strong><a href=/documentation/code/gambit_sphinx/files/main_8c/#function-checkworkplace>checkWorkPlace</a></strong>(void )</td></tr><tr><td>int</td><td><strong><a href=/documentation/code/gambit_sphinx/files/main_8c/#function-checkmtime>checkMtime</a></strong>(char * fname)</td></tr><tr><td>void *</td><td><strong><a href=/documentation/code/gambit_sphinx/files/main_8c/#function-newsymbol>newSymbol</a></strong>(void * handle, char * name)</td></tr><tr><td>void</td><td><strong><a href=/documentation/code/gambit_sphinx/files/main_8c/#function-dclose>dClose</a></strong>(void * handle)</td></tr><tr><td>REAL *</td><td><strong><a href=/documentation/code/gambit_sphinx/files/main_8c/#function-varaddress>varAddress</a></strong>(char * name)</td></tr><tr><td>int</td><td><strong><a href=/documentation/code/gambit_sphinx/files/main_8c/#function-passparameters>passParameters</a></strong>(numout * cc)</td></tr><tr><td>void</td><td><strong><a href=/documentation/code/gambit_sphinx/files/main_8c/#function-delalllib>delAllLib</a></strong>(void )</td></tr><tr><td>void</td><td><strong><a href=/documentation/code/gambit_sphinx/files/main_8c/#function-cleandecaytable>cleanDecayTable</a></strong>(void )</td></tr><tr><td>int</td><td><strong><a href=/documentation/code/gambit_sphinx/files/main_8c/#function-ptabpos>pTabPos</a></strong>(char * name)</td></tr><tr><td>double</td><td><strong><a href=/documentation/code/gambit_sphinx/files/main_8c/#function-pmass>pMass</a></strong>(char * name)</td></tr><tr><td>double</td><td><strong><a href=/documentation/code/gambit_sphinx/files/main_8c/#function-pwidth>pWidth</a></strong>(char * name, txtList * LL)</td></tr><tr><td>double</td><td><strong><a href=/documentation/code/gambit_sphinx/files/main_8c/#function-awidth>aWidth</a></strong>(char * name)</td></tr><tr><td>int</td><td><strong><a href=/documentation/code/gambit_sphinx/files/main_8c/#function-plisteq>pListEq</a></strong>(char * txt1, char * txt2)</td></tr><tr><td>numout *</td><td><strong><a href=/documentation/code/gambit_sphinx/files/main_8c/#function-loadlib>loadLib</a></strong>(void * handle, char * lib)</td></tr><tr><td>void *</td><td><strong><a href=/documentation/code/gambit_sphinx/files/main_8c/#function-dload>dLoad</a></strong>(char * libName)</td></tr><tr><td>numout *</td><td><strong><a href=/documentation/code/gambit_sphinx/files/main_8c/#function-getmecode>getMEcode</a></strong>(int twidth, int Gauge, char * Process, char * excludeVirtual, char * excludeOut, char * lib)</td></tr><tr><td>int</td><td><strong><a href=/documentation/code/gambit_sphinx/files/main_8c/#function-findval>findVal</a></strong>(char * name, double * val)</td></tr><tr><td>double</td><td><strong><a href=/documentation/code/gambit_sphinx/files/main_8c/#function-findvalw>findValW</a></strong>(char * name)</td></tr><tr><td>int</td><td><strong><a href=/documentation/code/gambit_sphinx/files/main_8c/#function-procinfo2>procInfo2</a></strong>(numout * cc, int nsub, char ** name, REAL * mass)</td></tr></tbody></table><h2 id=attributes>Attributes <a href=#attributes class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th></th><th>Name</th></tr></thead><tbody><tr><td>char *</td><td><strong><a href=/documentation/code/gambit_sphinx/files/main_8c/#variable-libdir>libDir</a></strong></td></tr><tr><td>char *</td><td><strong><a href=/documentation/code/gambit_sphinx/files/main_8c/#variable-modeldir>modelDir</a></strong></td></tr><tr><td>char *</td><td><strong><a href=/documentation/code/gambit_sphinx/files/main_8c/#variable-compdir>compDir</a></strong></td></tr><tr><td>char *</td><td><strong><a href=/documentation/code/gambit_sphinx/files/main_8c/#variable-calchepdir>calchepDir</a></strong></td></tr><tr><td>int</td><td><strong><a href=/documentation/code/gambit_sphinx/files/main_8c/#variable-modelnum>modelNum</a></strong></td></tr><tr><td>int</td><td><strong><a href=/documentation/code/gambit_sphinx/files/main_8c/#variable-forceug>ForceUG</a></strong></td></tr><tr><td><a href=/documentation/code/gambit_sphinx/classes/structprocrec/>procRec</a> *</td><td><strong><a href=/documentation/code/gambit_sphinx/files/main_8c/#variable-allproc>allProc</a></strong></td></tr><tr><td>decayTableStr *</td><td><strong><a href=/documentation/code/gambit_sphinx/files/main_8c/#variable-decaytable>decayTable</a></strong></td></tr><tr><td>int</td><td><strong><a href=/documentation/code/gambit_sphinx/files/main_8c/#variable-nprtcls-old>nPrtcls_old</a></strong></td></tr></tbody></table><h2 id=types-documentation>Types Documentation <a href=#types-documentation class=anchor aria-hidden=true>#</a></h2><h3 id=typedef-procrec>typedef procRec <a href=#typedef-procrec class=anchor aria-hidden=true>#</a></h3><pre><code>typedef struct procRec procRec;
+</code></pre><h2 id=functions-documentation>Functions Documentation <a href=#functions-documentation class=anchor aria-hidden=true>#</a></h2><h3 id=function-prepareworkplace>function prepareWorkPlace <a href=#function-prepareworkplace class=anchor aria-hidden=true>#</a></h3><pre><code>int prepareWorkPlace(
+    void 
+)
+</code></pre><h3 id=function-pdg2name>function pdg2name <a href=#function-pdg2name class=anchor aria-hidden=true>#</a></h3><pre><code>char * pdg2name(
+    int pdg
+)
+</code></pre><h3 id=function-pdg2mass>function pdg2mass <a href=#function-pdg2mass class=anchor aria-hidden=true>#</a></h3><pre><code>char * pdg2mass(
+    int pdg
+)
+</code></pre><h3 id=function-pdg2width>function pdg2width <a href=#function-pdg2width class=anchor aria-hidden=true>#</a></h3><pre><code>char * pdg2width(
+    int pdg
+)
+</code></pre><h3 id=function-checkworkplace>function checkWorkPlace <a href=#function-checkworkplace class=anchor aria-hidden=true>#</a></h3><pre><code>int checkWorkPlace(
+    void 
+)
+</code></pre><h3 id=function-checkmtime>function checkMtime <a href=#function-checkmtime class=anchor aria-hidden=true>#</a></h3><pre><code>int checkMtime(
+    char * fname
+)
+</code></pre><h3 id=function-newsymbol>function newSymbol <a href=#function-newsymbol class=anchor aria-hidden=true>#</a></h3><pre><code>static void * newSymbol(
+    void * handle,
+    char * name
+)
+</code></pre><h3 id=function-dclose>function dClose <a href=#function-dclose class=anchor aria-hidden=true>#</a></h3><pre><code>static void dClose(
+    void * handle
+)
+</code></pre><h3 id=function-varaddress>function varAddress <a href=#function-varaddress class=anchor aria-hidden=true>#</a></h3><pre><code>REAL * varAddress(
+    char * name
+)
+</code></pre><h3 id=function-passparameters>function passParameters <a href=#function-passparameters class=anchor aria-hidden=true>#</a></h3><pre><code>int passParameters(
+    numout * cc
+)
+</code></pre><h3 id=function-delalllib>function delAllLib <a href=#function-delalllib class=anchor aria-hidden=true>#</a></h3><pre><code>void delAllLib(
+    void 
+)
+</code></pre><h3 id=function-cleandecaytable>function cleanDecayTable <a href=#function-cleandecaytable class=anchor aria-hidden=true>#</a></h3><pre><code>void cleanDecayTable(
+    void 
+)
+</code></pre><h3 id=function-ptabpos>function pTabPos <a href=#function-ptabpos class=anchor aria-hidden=true>#</a></h3><pre><code>int pTabPos(
+    char * name
+)
+</code></pre><h3 id=function-pmass>function pMass <a href=#function-pmass class=anchor aria-hidden=true>#</a></h3><pre><code>double pMass(
+    char * name
+)
+</code></pre><h3 id=function-pwidth>function pWidth <a href=#function-pwidth class=anchor aria-hidden=true>#</a></h3><pre><code>double pWidth(
+    char * name,
+    txtList * LL
+)
+</code></pre><h3 id=function-awidth>function aWidth <a href=#function-awidth class=anchor aria-hidden=true>#</a></h3><pre><code>double aWidth(
+    char * name
+)
+</code></pre><h3 id=function-plisteq>function pListEq <a href=#function-plisteq class=anchor aria-hidden=true>#</a></h3><pre><code>static int pListEq(
+    char * txt1,
+    char * txt2
+)
+</code></pre><h3 id=function-loadlib>function loadLib <a href=#function-loadlib class=anchor aria-hidden=true>#</a></h3><pre><code>static numout * loadLib(
+    void * handle,
+    char * lib
+)
+</code></pre><h3 id=function-dload>function dLoad <a href=#function-dload class=anchor aria-hidden=true>#</a></h3><pre><code>static void * dLoad(
+    char * libName
+)
+</code></pre><h3 id=function-getmecode>function getMEcode <a href=#function-getmecode class=anchor aria-hidden=true>#</a></h3><pre><code>numout * getMEcode(
+    int twidth,
+    int Gauge,
+    char * Process,
+    char * excludeVirtual,
+    char * excludeOut,
+    char * lib
+)
+</code></pre><h3 id=function-findval>function findVal <a href=#function-findval class=anchor aria-hidden=true>#</a></h3><pre><code>int findVal(
+    char * name,
+    double * val
+)
+</code></pre><h3 id=function-findvalw>function findValW <a href=#function-findvalw class=anchor aria-hidden=true>#</a></h3><pre><code>double findValW(
+    char * name
+)
+</code></pre><h3 id=function-procinfo2>function procInfo2 <a href=#function-procinfo2 class=anchor aria-hidden=true>#</a></h3><pre><code>int procInfo2(
+    numout * cc,
+    int nsub,
+    char ** name,
+    REAL * mass
+)
+</code></pre><h2 id=attributes-documentation>Attributes Documentation <a href=#attributes-documentation class=anchor aria-hidden=true>#</a></h2><h3 id=variable-libdir>variable libDir <a href=#variable-libdir class=anchor aria-hidden=true>#</a></h3><pre><code>char * libDir =NULL;
+</code></pre><h3 id=variable-modeldir>variable modelDir <a href=#variable-modeldir class=anchor aria-hidden=true>#</a></h3><pre><code>char * modelDir =NULL;
+</code></pre><h3 id=variable-compdir>variable compDir <a href=#variable-compdir class=anchor aria-hidden=true>#</a></h3><pre><code>char * compDir = NULL;
+</code></pre><h3 id=variable-calchepdir>variable calchepDir <a href=#variable-calchepdir class=anchor aria-hidden=true>#</a></h3><pre><code>char * calchepDir =NULL;
+</code></pre><h3 id=variable-modelnum>variable modelNum <a href=#variable-modelnum class=anchor aria-hidden=true>#</a></h3><pre><code>int modelNum =0;
+</code></pre><h3 id=variable-forceug>variable ForceUG <a href=#variable-forceug class=anchor aria-hidden=true>#</a></h3><pre><code>int ForceUG =0;
+</code></pre><h3 id=variable-allproc>variable allProc <a href=#variable-allproc class=anchor aria-hidden=true>#</a></h3><pre><code>static procRec * allProc =NULL;
+</code></pre><h3 id=variable-decaytable>variable decayTable <a href=#variable-decaytable class=anchor aria-hidden=true>#</a></h3><pre><code>decayTableStr * decayTable =NULL;
+</code></pre><h3 id=variable-nprtcls_old>variable nPrtcls_old <a href=#variable-nprtcls_old class=anchor aria-hidden=true>#</a></h3><pre><code>static int nPrtcls_old =0;
+</code></pre><h2 id=source-code>Source code <a href=#source-code class=anchor aria-hidden=true>#</a></h2><pre><code>#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;sys/stat.h&gt;
+#include &lt;unistd.h&gt;
+
+#ifdef __hpux
+#include&lt;dl.h&gt;
+#else
+#include &lt;dlfcn.h&gt;
+#endif
+
+#include &quot;VandP.h&quot;
+#include &quot;dynamic_cs.h&quot;
+#include &quot;fcompare.h&quot;
+
+
+char  * libDir=NULL;
+char  * modelDir=NULL;
+char  * compDir = NULL;
+char  * calchepDir=NULL;
+int   modelNum=0;
+int ForceUG=0;
+
+int  prepareWorkPlace(void)
+{  char * command;
+   struct stat buf;
+   int err,len,mknew;
+
+   if(!compDir) return  -1;   
+   mknew=stat(compDir,&amp;buf);
+   len=strlen(compDir)+500;
+   if(modelDir) len+=strlen(modelDir);
+   command=malloc(len);  
+
+   if(mknew) 
+   { char * dir[3]={&quot;tmp&quot;,&quot;results&quot;,&quot;models&quot;};
+     int i;
+     if(mkdir(compDir, 00755)) return -3; 
+     for(i=0;i&lt;3;i++) 
+     { 
+        sprintf(command,&quot;%s/%s&quot;,compDir,dir[i]);
+        mkdir(command,00755);
+     } 
+     if(modelDir &amp;&amp; modelNum)
+     {
+       sprintf(command,
+       &quot;for FILE in vars func prtcls lgrng extlib\n do\n&quot;
+       &quot;  cp %s/\&quot;$FILE\&quot;%d.mdl %s/models/\&quot;$FILE\&quot;1.mdl\n&quot; 
+       &quot;done\n&quot;, modelDir,modelNum,  compDir);  
+       system(command);
+     } else { free(command); return -2;} 
+   } else 
+   {   
+     sprintf(command, &quot;dName=%s\n&quot;
+     &quot;for FILE in $dName/tmp/* $dName/results/*\n&quot;
+     &quot;do\n&quot;
+     &quot; if(test ! -d $FILE) then\n&quot;
+     &quot;   rm -f $FILE\n&quot;
+     &quot; fi\n&quot; 
+     &quot;done\n&quot;,compDir);     
+     system(command);
+   } 
+   free(command);
+   return mknew;
+}
+
+char * pdg2name(int pdg)
+{
+  int i;
+  if(pdg==0) return NULL;
+
+  for(i=0;i&lt;nModelParticles;i++)
+  {          if(ModelPrtcls[i].NPDG==pdg) return ModelPrtcls[i].name;
+     else  { if(ModelPrtcls[i].NPDG==-pdg) return ModelPrtcls[i].aname;}
+  }   
+  return NULL;
+} 
+
+// Return the name of the mass parameter for particle of given PDG code.
+char *pdg2mass(int pdg)
+{
+  int i;
+  if(pdg==0) return NULL;
+  
+  for (i=0; i&lt;nModelParticles; i++)
+  {
+    if (ModelPrtcls[i].NPDG==pdg) return ModelPrtcls[i].mass;
+    else if (ModelPrtcls[i].NPDG==-pdg) return ModelPrtcls[i].mass;
+  }
+  return NULL;
+}
+
+// Return the name of the width parameter for particle of given PDG code. 
+char *pdg2width(int pdg)
+{
+  int i;
+  if(pdg == 0) return NULL;
+  
+  for (i=0; i&lt;nModelParticles; i++)
+  {
+    if (ModelPrtcls[i].NPDG==pdg) return ModelPrtcls[i].width;
+    else if (ModelPrtcls[i].NPDG==-pdg) return ModelPrtcls[i].width;
+  }
+  return NULL;  
+}
+
+
+int  checkWorkPlace(void)
+{
+  char * n1=malloc(strlen(modelDir)+50);
+  char * n2=malloc(strlen(compDir)+50);
+  char *fList[5]= {&quot;vars&quot;,&quot;prtcls&quot;,&quot;extlib&quot;,&quot;func&quot;,&quot;lgrng&quot;,};
+  int i;
+  for(i=0;i&lt;5;i++)
+  { sprintf(n1,&quot;%s/%s%d.mdl&quot;,modelDir,fList[i],modelNum);
+    sprintf(n2,&quot;%s/models/%s1.mdl&quot;,compDir,fList[i]);
+    if(fcompare(n1,n2)) break;
+  }   
+  free(n1);
+  free(n2);
+  if(i==5) return 0;
+  if(modelDir &amp;&amp; modelNum)
+  { 
+     char* command=malloc(strlen(modelDir)+strlen(compDir)+200);
+     sprintf(command,
+     &quot;for FILE in vars func prtcls lgrng extlib\n do\n&quot;
+     &quot;  cp %s/\&quot;$FILE\&quot;%d.mdl %s/models/\&quot;$FILE\&quot;1.mdl\n&quot; 
+     &quot;done\n&quot;, modelDir,modelNum,  compDir);  
+     system(command);
+     free(command);
+     delAllLib();
+  }
+  return 1;
+}  
+
+int  checkMtime(char * fname)
+{ int i,L;
+  time_t tt;
+  struct stat buff;
+  char * mf[4]={&quot;vars&quot;,&quot;func&quot;,&quot;prtcls&quot;,&quot;lgrng&quot;};
+  char *mfname;
+  if(modelDir==NULL) return 0;
+  stat(fname,&amp;buff); tt=buff.st_mtime;
+  L=strlen(modelDir)+20;
+  mfname=malloc(strlen(modelDir)+20); 
+  
+  for(i=0;i&lt;4;i++)
+  { sprintf(mfname,&quot;%s/%s%d.mdl&quot;,modelDir,mf[i],modelNum);
+    stat(mfname,&amp;buff);
+    if(buff.st_mtime &gt; tt) break;
+  }
+  free(mfname);
+  if(i&lt;4) {unlink(fname); return 1;}
+  return 0;
+}
+
+typedef struct  procRec 
+{ struct procRec  * next;
+  char * libname;
+  numout * cc;
+}  procRec;   
+
+static  procRec* allProc=NULL;
+
+static void* newSymbol(void*handle,char *name)
+{
+#ifdef __hpux
+void * addr;
+     if(shl_findsym((shl_t*)&amp;handle,name,TYPE_UNDEFINED,&amp;addr)) return NULL;
+       else return addr;
+#else
+      return dlsym(handle, name);
+#endif
+}
+
+static void dClose(void * handle)
+{
+#ifdef __hpux
+       shl_unload(handle);
+#else
+       dlclose(handle);
+#endif
+}
+
+REAL * varAddress(char *name)
+{int i;
+ for(i=0;i&lt;nModelVars+nModelFunc;i++) if(!strcmp(name,varNames[i]))return varValues+i;
+ return NULL;
+}
+
+int passParameters(numout*cc)
+{
+   int i;
+   for(i=1;i&lt;=cc-&gt;interface-&gt;nvar;i++) 
+   { 
+     if(cc-&gt;link[i]) 
+     {
+       cc-&gt;interface-&gt;va[i]=*(cc-&gt;link[i]);
+     }
+   }
+   if(cc-&gt;interface-&gt;calcFunc()&gt;0) { printf(&quot;cannot calculate constr\n&quot;); return 1;}
+   return 0;
+}
+
+void delAllLib(void)
+{
+  procRec* curProc=allProc;
+  while(curProc)
+  {  procRec*tmp=curProc;
+     free(curProc-&gt;libname);
+     free(curProc-&gt;cc-&gt;link);
+     dClose(curProc-&gt;cc-&gt;handle);     
+     free(curProc-&gt;cc);
+     curProc=curProc-&gt;next;
+     free(tmp);
+  }
+  allProc=NULL;
+}
+
+decayTableStr* decayTable=NULL;
+static int nPrtcls_old=0; 
+void cleanDecayTable(void)
+ { int i,j;
+   if(decayTable) for(i=0;i&lt;nPrtcls_old;i++) for(j=0;j&lt;2;j++) if(decayTable[i].pdList[j]) 
+      cleanTxtList(decayTable[i].pdList[j]);    
+   decayTable=realloc(decayTable, nModelParticles*sizeof(decayTableStr));
+   nPrtcls_old=nModelParticles;
+   for(i=0;i&lt;nModelParticles;i++)
+   { for(j=0;j&lt;2;j++) decayTable[i].pdList[j]=NULL;
+     decayTable[i].width=0;
+     decayTable[i].status=0;
+   }
+}
+
+int pTabPos(char * name)
+{
+  int i;
+  for(i=0;i&lt;nModelParticles;i++)
+  { 
+    if(!strcmp(name,ModelPrtcls[i].name )) return   i+1;
+    if(!strcmp(name,ModelPrtcls[i].aname)) return -(i+1);
+  }
+  return 0;
+}
+
+double pMass(char * name)
+{
+  char *nm;
+  int n=pTabPos(name);
+  if(!n){printf(&quot;Wrong particle name '%s'\n&quot;,name); return 0;}
+  nm=ModelPrtcls[abs(n)-1].mass;
+  if(nm[0]=='0') return 0; else 
+  { REAL *ma=varAddress(nm);
+    return fabs(*ma);
+  }
+}
+
+double pWidth(char *name, txtList * LL)
+{
+  txtList L,l,Lout;
+  char libName[100];
+  double sum=0,width;
+  int i,i0,j,j0,nout;
+  REAL Qstat;
+  REAL*Q=NULL;
+
+  for(i=0;i&lt;nModelParticles;i++)
+  { char *pnames[2]={ModelPrtcls[i].name,ModelPrtcls[i].aname};
+    for(j=0;j&lt;2;j++) if(strcmp(name,pnames[j])==0) 
+    { 
+      if(decayTable[i].status==1)
+      {        
+        if(LL) *LL=decayTable[i].pdList[j];
+        return decayTable[i].width;
+      } else if(decayTable[i].status==-1)
+      { if(LL) *LL=NULL;
+        return 0;
+      }break;
+    } if(j!=2) break;    
+  }    
+
+  i0=i,j0=j;
+  if(i0==nModelParticles)
+  { printf(&quot;%s out of model particles\n&quot;,name);
+    if(LL) *LL=NULL;
+    return 0;
+  }  
+
+  {  int pdg,pdg0,Len,decay[10];
+     double br;
+     pdg0=ModelPrtcls[i0].NPDG;
+     if(j0) pdg0=-pdg0;
+     for(i=1; allDecays(i,0,&amp;pdg,&amp;Len,decay,&amp;width,&amp;br) ;i++)
+     {
+        if(abs(pdg)==abs(pdg0))
+        {  txtListStr*l,*L=NULL;
+           l=malloc(sizeof(txtListStr));
+           decayTable[i0].width=width;
+           decayTable[i0].status=1;  
+           for(j=1; allDecays(i,j,&amp;pdg,&amp;Len,decay,&amp;width,&amp;br) ;j++) if(br&gt;0)
+           { int k;
+             char*ch;  
+             l=malloc(sizeof(txtListStr));
+             l-&gt;txt=malloc(100); 
+             l-&gt;next=L;
+             ch=pdg2name(pdg);   if(ch) sprintf(l-&gt;txt,&quot;%E  %s -&gt; &quot;,br,ch); else sprintf(l-&gt;txt,&quot;%E  #%d -&gt; &quot;,br,pdg);
+             ch=pdg2name(decay[0]); if(ch)  sprintf(l-&gt;txt+strlen(l-&gt;txt),&quot;%s&quot;,ch); else  sprintf(l-&gt;txt+strlen(l-&gt;txt),&quot;#%d&quot;,decay[0]);
+             for(k=1;k&lt;Len;k++)
+             { ch=pdg2name(decay[k]);
+               if(ch)sprintf(l-&gt;txt+strlen(l-&gt;txt),&quot;, %s&quot;,ch); else sprintf(l-&gt;txt+strlen(l-&gt;txt),&quot;, #%d&quot;,decay[k]);
+             }    
+             L=l;
+           }
+           if(pdg0==pdg) 
+           {  decayTable[i0].pdList[j0]=L; 
+              if(strcmp(ModelPrtcls[i0].name,ModelPrtcls[i0].aname))
+                           decayTable[i0].pdList[1-j0]=conBrList(L);
+           } else 
+           { decayTable[i0].pdList[1-j0]=L;
+             if(strcmp(ModelPrtcls[i0].name,ModelPrtcls[i0].aname))
+                           decayTable[i0].pdList[j0]=conBrList(L);
+           }                
+           if(LL) *LL=decayTable[i0].pdList[j0];
+           return width;
+        }
+     }          
+  }
+  decayTable[i0].status=-1;
+  if(Q==NULL) for(i=0;i&lt;nModelVars;i++) if(strcmp(varNames[i],&quot;Q&quot;)==0){ Q= varValues+i; break;}
+  if(Q) { Qstat=*Q; setQforParticle(Q,name);}
+    
+  width=decay22List(name,&amp;L);
+
+  if(L) 
+  {
+    if(LL) *LL=L;
+    decayTable[i0].pdList[j0]=L;
+    if(strcmp(ModelPrtcls[i0].name,ModelPrtcls[i0].aname)) 
+                 decayTable[i0].pdList[1-j0]=conBrList(L); 
+    decayTable[i0].width=width;
+    decayTable[i0].status=1;
+    if(Q) {*Q=Qstat; calcMainFunc();}
+    return width;
+  }
+
+  Lout=NULL;
+  L= makeDecayList(name,3);
+  massFilter(pMass(name),&amp;L);
+  gammaGluFilter(&amp;L);
+  if(L==NULL) 
+  { L= makeDecayList(name,4);  
+    massFilter(pMass(name),&amp;L);
+    gammaGluFilter(&amp;L);
+    nout=4;
+  }  else nout=3;
+      
+  for(sum=0,l=L;l;l=l-&gt;next)  
+  { numout* cc;
+    int err=0;
+    txtList newr;
+    process2Lib(l-&gt;txt ,libName);
+    cc=getMEcode(0,ForceUG,l-&gt;txt,NULL,&quot;&quot;,libName);
+    if(!cc) continue;
+    if(nout==3) width=width13(cc, 1, &amp;err); else width=width14(cc, &amp;err);
+    if(width &gt;0)
+    {
+      sum+=width;
+      newr=malloc(sizeof(txtListStr));
+      newr-&gt;next=Lout;
+      Lout=newr;
+      newr-&gt;txt=malloc(strlen(l-&gt;txt)+20);
+      sprintf(newr-&gt;txt,&quot;%E  %s&quot;,width,l-&gt;txt);
+    }
+  }
+  cleanTxtList(L); 
+  if(Lout)
+  for(L=Lout;L;L=L-&gt;next)
+  { char buff[100];
+    sscanf(L-&gt;txt,&quot;%lf %[^\n]&quot;,&amp;width,buff);
+    sprintf(L-&gt;txt,&quot;%E %s&quot;,width/sum,buff);  
+  }   
+  if(LL) *LL=Lout;
+  decayTable[i0].pdList[j0]=Lout;
+  if(strcmp(ModelPrtcls[i0].name,ModelPrtcls[i0].aname)) 
+               decayTable[i0].pdList[1-j0]=conBrList(Lout);
+  decayTable[i0].width=sum;
+  decayTable[i0].status=1;
+  if(Q) { *Q=Qstat; calcMainFunc();}
+  return sum;
+}
+
+double aWidth(char *name) { return pWidth(name,NULL);}
+
+static int pListEq(char * txt1, char * txt2)  
+{  char buff[100];
+   char rd1[10][10];
+   char rd2[10][10];
+   int n1,n2,i1,i2;
+   char *ch;
+    
+   strcpy(buff,txt1); while((ch=strchr(buff,','))) ch[0]=' ';
+   
+   n1=sscanf(buff,&quot;%s %s %s %s %s %s %s %s %s %s&quot;,
+   rd1[0],rd1[1],rd1[2],rd1[3],rd1[4],rd1[5],rd1[6],rd1[7],rd1[8],rd1[9]); 
+   
+   strcpy(buff,txt2); while((ch=strchr(buff,','))) ch[0]=' ';
+   
+   n2=sscanf(buff,&quot;%s %s %s %s %s %s %s %s %s %s&quot;,
+   rd2[0],rd2[1],rd2[2],rd2[3],rd2[4],rd2[5],rd2[6],rd2[7],rd2[8],rd2[9]); 
+   
+   if(n1!=n2) return 0;
+   for(i1=0;i1&lt;n1;i1++)
+   { for(i2=0;i2&lt;n2;i2++) if(strcmp(rd1[i1],rd2[i2])==0){rd2[i2][0]=0; break;}
+     if(i2==n2) return 0;
+   } 
+   return 1;
+}      
+
+
+static numout* loadLib(void* handle, char * lib)
+{ numout * cc=malloc(sizeof(numout));
+  char name[100];
+  if(!handle) {free(cc); return NULL;}   
+  cc-&gt;handle=handle;
+  sprintf(name,&quot;interface_%s&quot;,lib);
+  cc-&gt;interface=newSymbol(handle, name);
+  if(!cc-&gt;interface || cc-&gt;interface-&gt;nprc==0){free(cc); return NULL;}
+  else
+  {  int i;
+     cc-&gt;init=0;
+     cc-&gt;Q=NULL, cc-&gt;SC=NULL;
+     cc-&gt;link=malloc(sizeof(double*)*(1+cc-&gt;interface-&gt;nvar));
+     cc-&gt;link[0]=NULL;
+     for(i=1;i&lt;=cc-&gt;interface-&gt;nvar;i++) 
+     { char *name=cc-&gt;interface-&gt;varName[i];
+       cc-&gt;link[i]=varAddress(name);
+if(cc-&gt;link==NULL) printf(&quot;No link for %s\n&quot;,name);       
+       if(strcmp(name,&quot;Q&quot;)==0) cc-&gt;Q=cc-&gt;interface-&gt;va+i; 
+       else if(strcmp(name,&quot;SC&quot;)==0) cc-&gt;SC=cc-&gt;interface-&gt;va+i;
+     }  
+     *(cc-&gt;interface-&gt;aWidth)=&amp;aWidth;
+  }
+  return cc;
+}
+
+static void * dLoad(char * libName)
+{
+void *q;
+
+if(access(libName,R_OK)) return NULL;
+
+#ifdef __hpux
+   return  shl_load(libName,0,0L);
+#else
+   q= dlopen(libName, RTLD_NOW);
+   if(!q) printf(&quot;%s\n&quot;,dlerror()); 
+   return q;
+#endif
+}
+
+numout*getMEcode(int twidth,int Gauge, char*Process, char*excludeVirtual, char*excludeOut,char*lib)
+{
+   char *proclibf,*command;
+   void * handle=NULL;
+   int new=0;
+   numout * cc;
+   procRec*test;
+   int Len;
+   char * lib_;
+
+   lib_=malloc(strlen(lib)+4);
+   
+   if(Gauge) sprintf(lib_,&quot;%s_u&quot;,lib);    else  strcpy(lib_,lib); 
+     
+   for(test=allProc;test; test=test-&gt;next)
+   { if(strcmp(lib_,test-&gt;libname)==0) return test-&gt;cc;}
+   
+   Len=strlen(compDir)+strlen(lib)+strlen(libDir)+300;
+   proclibf=malloc(Len);
+
+   if(Process) Len+=strlen(Process);
+   if(excludeVirtual) Len+=strlen(excludeVirtual);
+   if(excludeOut) Len+=strlen(excludeOut);
+   command=malloc(Len);
+ 
+
+   sprintf(proclibf,&quot;%s/%s.so&quot;,libDir,lib_);
+
+   if(access(proclibf,R_OK)==0 &amp;&amp; checkMtime(proclibf)==0) handle=dLoad(proclibf);
+   if(!handle)
+   {  int i;
+   
+      for(i=0;Process[i]==' ';i++); if(Process[i]==0)
+      {    
+        free(command); free(proclibf); free(lib_); 
+        return NULL;    
+      }      
+      if(!handle)
+      {
+        char options[20];
+        char GaugeCh[4];
+        int ret;  
+        int delWorkDir;
+        
+        if(twidth) strcpy(options,&quot;5[[{[{}&quot;);else strcpy(options,&quot;&quot;);
+        if(Gauge) strcpy(GaugeCh,&quot;U&quot;); else strcpy(GaugeCh,&quot;F&quot;);
+ 
+        delWorkDir=prepareWorkPlace();      
+
+        sprintf(command,&quot;cd %s; %s/sbin/newProcess %s %s \&quot;%s\&quot; %s \&quot;%s\&quot;&quot;,
+                       compDir, calchepDir, lib_, libDir,options,GaugeCh,Process);
+  
+        if(excludeVirtual) sprintf(command+strlen(command),&quot; \&quot;%s\&quot;&quot;,excludeVirtual);
+        else  sprintf(command+strlen(command),&quot; \&quot;\&quot;&quot;);            
+        if(excludeOut) sprintf(command+strlen(command),&quot; \&quot;%s\&quot;&quot;,excludeOut);       
+        ret=system(command);
+      
+        if(ret&lt;0 || WIFSIGNALED(ret)&gt;0 ) exit(10);
+        if(delWorkDir )cleanWorkPlace();
+        
+        if(ret==0) handle=dLoad(proclibf); else 
+        { printf(&quot; Can not compile %s \n&quot;, Process);
+          free(command); free(proclibf); free(lib_);
+          return NULL;
+        } 
+        if(!handle)
+        { printf(&quot; Can not load the compiled library %s \n&quot;,proclibf);
+           free(command); free(proclibf); free(lib_);
+          return NULL;
+        }         
+        new=1;   
+      }
+   }
+   cc=loadLib(handle,lib_);
+   if(!cc &amp;&amp; new) dClose(handle);
+   if(cc)
+   {  test=(procRec*)malloc(sizeof(procRec));
+      test-&gt;next=allProc; allProc=test;
+      test-&gt;libname=(char*) malloc(strlen(lib_)+1);
+      strcpy(test-&gt;libname,lib_);
+      test-&gt;cc=cc;
+   } else if(new) dClose(handle);  
+    free(command); free(proclibf); free(lib_);
+    return cc; 
+}
+
+int  findVal(char * name, double * val)
+{
+  int i;
+  for(i=0;i&lt;nModelVars+nModelFunc;i++)
+  { 
+    if(strcmp(name,varNames[i])) continue;
+    *val=varValues[i] ;
+    return 0;
+  }
+  return 2;
+}
+
+double  findValW(char*name)
+{ double val;
+  if(findVal(name,&amp;val)) {printf(&quot; %s not found\n&quot;,  name); return 0;}
+  else return val;
+}
+
+int procInfo2(numout*cc,int nsub,char**name,REAL*mass)
+{
+  int i;
+  int ntot=cc-&gt;interface-&gt;nin+cc-&gt;interface-&gt;nout;
+    
+  if(nsub&lt;1 || nsub&gt; cc-&gt;interface-&gt;nprc) return 2;
+
+  if(name)for(i=0;i&lt;ntot ;i++) 
+  name[i]=(cc-&gt;interface-&gt;pinf)(nsub,i+1,NULL,NULL);
+
+  if(mass)
+  {  
+    if(passParameters(cc)){ printf(&quot;cannot calculate constr\n&quot;); return 4;}
+    for(i=0;i&lt;ntot ;i++) cc-&gt;interface-&gt;pinf(nsub,i+1,mass+i,NULL);     
+  }
+  return 0;
+}
+</code></pre><hr><p>Updated on 2022-08-03 at 12:58:09 +0000</p><div class=edit-page><a href=https://github.com/RC1242RC/gambit_gh_pages/blob/master/content/en/documentation/code/gambit_sphinx/Files/main_8c.md><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2"><path d="M17 3a2.828 2.828.0 114 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></svg>Edit this page on GitHub</a></div></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a class=text-muted href=https://www.netlify.com/>Netlify</a>, <a class=text-muted href=https://gohugo.io/>Hugo</a>, and <a class=text-muted href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.54bf0932b8a36d0e152b1635b099a6ef1394d35327e2437550a075c9c8ed1bd8aed5847c21b36fc02ed24014c031d9ca24017b0c78b1639d7e2fa8329898b842.js integrity="sha512-VL8JMrijbQ4VKxY1sJmm7xOU01Mn4kN1UKB1ycjtG9iu1YR8IbNvwC7SQBTAMdnKJAF7DHixY51+L6gymJi4Qg==" crossorigin=anonymous defer></script>
+<script src=/js/highlight.min.5b48bc253dc75aeea5fb366ecf700f4925e2b6eb1a1466f2124b722d68148d67bc0a9365d2b8ad9c585161b46372d23b08509a16f1fd518542b894756d4752d0.js integrity="sha512-W0i8JT3HWu6l+zZuz3APSSXitusaFGbyEktyLWgUjWe8CpNl0ritnFhRYbRjctI7CFCaFvH9UYVCuJR1bUdS0A==" crossorigin=anonymous defer></script>
+<script src=/main.min.40265e9a032aeba5eaf67baac3cbbc22667a7533215d326eeb3e9f4d5e4be40f9ff4dcd22949db73ae527ca26a19d7998091a8973c82af760b2c0daa335190ed.js integrity="sha512-QCZemgMq66Xq9nuqw8u8ImZ6dTMhXTJu6z6fTV5L5A+f9NzSKUnbc65SfKJqGdeZgJGolzyCr3YLLA2qM1GQ7Q==" crossorigin=anonymous defer></script>
+<script src=https://rc1242rc.github.io/index.min.cb3cfc52c7c54bd8c25d1fbd0a5de239406787c3dcdce4c8c0c6a90e32667d32f427e033d04af1c0f2c4a86667aa8d3df23f54c6a7873d639d2ca7c2edf7146d.js integrity="sha512-yzz8UsfFS9jCXR+9Cl3iOUBnh8Pc3OTIwMapDjJmfTL0J+Az0ErxwPLEqGZnqo098j9UxqeHPWOdLKfC7fcUbQ==" crossorigin=anonymous defer></script></body></html>

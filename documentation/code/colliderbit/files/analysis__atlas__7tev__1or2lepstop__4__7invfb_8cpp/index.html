@@ -1,0 +1,551 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="ie=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><link rel=preload as=font href=https://rc1242rc.github.io/fonts/vendor/jost/jost-v4-latin-regular.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://rc1242rc.github.io/fonts/vendor/jost/jost-v4-latin-500.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://rc1242rc.github.io/fonts/vendor/jost/jost-v4-latin-700.woff2 type=font/woff2 crossorigin><script>(()=>{var e=localStorage.getItem("theme");e==="dark"&&document.documentElement.setAttribute("data-dark-mode","")})()</script><link rel=stylesheet href=https://rc1242rc.github.io/main.f12f7e04ea768acebec10c86baf049d74d6a79f24bc0dfb7ed77aa60462432916dd1ce8f41c78b69496adf650b3039a28a210183cce598f09b95d6fecb5ff999.css integrity="sha512-8S9+BOp2is6+wQyGuvBJ101qefJLwN+37XeqYEYkMpFt0c6PQceLaUlq32ULMDmiiiEBg8zlmPCbldb+y1/5mQ==" crossorigin=anonymous><noscript><style>img.lazyload{display:none}</style></noscript><meta name=robots content="index, follow"><meta name=googlebot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><meta name=bingbot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><title>file analyses/Analysis_ATLAS_7TeV_1OR2LEPStop_4_7invfb.cpp - GAMBIT</title><meta name=description content="[No description available]"><link rel=canonical href=https://rc1242rc.github.io/documentation/code/colliderbit/files/analysis__atlas__7tev__1or2lepstop__4__7invfb_8cpp/><meta property="og:locale" content="en_US"><meta property="og:type" content="article"><meta property="og:title" content="file analyses/Analysis_ATLAS_7TeV_1OR2LEPStop_4_7invfb.cpp"><meta property="og:description" content="[No description available]"><meta property="og:url" content="https://rc1242rc.github.io/documentation/code/colliderbit/files/analysis__atlas__7tev__1or2lepstop__4__7invfb_8cpp/"><meta property="og:site_name" content="GAMBIT"><meta property="og:image" content="https://rc1242rc.github.io/gambit_logo.png"><meta property="og:image:alt" content="GAMBIT"><meta name=twitter:card content="summary_large_image"><meta name=twitter:site content><meta name=twitter:creator content><meta name=twitter:title content="file analyses/Analysis_ATLAS_7TeV_1OR2LEPStop_4_7invfb.cpp"><meta name=twitter:description content="[No description available]"><meta name=twitter:image content="https://rc1242rc.github.io/gambit_logo.png"><meta name=twitter:image:alt content="file analyses/Analysis_ATLAS_7TeV_1OR2LEPStop_4_7invfb.cpp"><script type=application/ld+json>{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://rc1242rc.github.io/#/schema/organization/1","name":"Doks","url":"https://rc1242rc.github.io/","sameAs":["https://github.com/GambitBSM"],"logo":{"@type":"ImageObject","@id":"https://rc1242rc.github.io/#/schema/image/1","url":"https://rc1242rc.github.io/logo-doks.png","width":450,"height":416,"caption":"Doks"},"image":{"@id":"https://rc1242rc.github.io/#/schema/image/1"}},{"@type":"WebSite","@id":"https://rc1242rc.github.io/#/schema/website/1","url":"https://rc1242rc.github.io/","name":"GAMBIT","description":"Documentation for the Global And Modular BSM Inference Tool","publisher":{"@id":"https://rc1242rc.github.io/#/schema/organization/1"}},{"@type":"WebPage","@id":"https://rc1242rc.github.io/documentation/code/colliderbit/files/analysis__atlas__7tev__1or2lepstop__4__7invfb_8cpp/","url":"https://rc1242rc.github.io/documentation/code/colliderbit/files/analysis__atlas__7tev__1or2lepstop__4__7invfb_8cpp/","name":"file analyses\/Analysis_ATLAS_7TeV_1OR2LEPStop_4_7invfb.cpp","description":"[No description available]","isPartOf":{"@id":"https://rc1242rc.github.io/#/schema/website/1"},"about":{"@id":"https://rc1242rc.github.io/#/schema/organization/1"},"datePublished":"0001-01-01T00:00:00CET","dateModified":"0001-01-01T00:00:00CET","breadcrumb":{"@id":"https://rc1242rc.github.io/documentation/code/colliderbit/files/analysis__atlas__7tev__1or2lepstop__4__7invfb_8cpp/#/schema/breadcrumb/1"},"primaryImageOfPage":{"@id":"https://rc1242rc.github.io/documentation/code/colliderbit/files/analysis__atlas__7tev__1or2lepstop__4__7invfb_8cpp/#/schema/image/2"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://rc1242rc.github.io/documentation/code/colliderbit/files/analysis__atlas__7tev__1or2lepstop__4__7invfb_8cpp/"]}]},{"@type":"BreadcrumbList","@id":"https://rc1242rc.github.io/documentation/code/colliderbit/files/analysis__atlas__7tev__1or2lepstop__4__7invfb_8cpp/#/schema/breadcrumb/1","name":"Breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/","url":"https://rc1242rc.github.io/","name":"Home"}},{"@type":"ListItem","position":2,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/documentation/","url":"https://rc1242rc.github.io/documentation/","name":"Documentation"}},{"@type":"ListItem","position":3,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/documentation/code/","url":"https://rc1242rc.github.io/documentation/code/","name":"Code"}},{"@type":"ListItem","position":4,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/documentation/code/colliderbit/","url":"https://rc1242rc.github.io/documentation/code/colliderbit/","name":"Colliderbit"}},{"@type":"ListItem","position":5,"item":{"@type":"WebPage","@id":"https://rc1242rc.github.io/documentation/code/colliderbit/files/","url":"https://rc1242rc.github.io/documentation/code/colliderbit/files/","name":"Files"}},{"@type":"ListItem","position":6,"item":{"@id":"https://rc1242rc.github.io/documentation/code/colliderbit/files/analysis__atlas__7tev__1or2lepstop__4__7invfb_8cpp/"}}]},{"@context":"https://schema.org","@graph":[{"@type":"ImageObject","@id":"https://rc1242rc.github.io/documentation/code/colliderbit/files/analysis__atlas__7tev__1or2lepstop__4__7invfb_8cpp/#/schema/image/2","url":"https://rc1242rc.github.io/gambit_logo.png","contentUrl":"https://rc1242rc.github.io/gambit_logo.png","caption":"file analyses\/Analysis_ATLAS_7TeV_1OR2LEPStop_4_7invfb.cpp"}]}]}</script><meta name=theme-color content="#fff"><link rel=icon href=https://rc1242rc.github.io/favicon.ico sizes=any><link rel=icon type=image/svg+xml href=https://rc1242rc.github.io/favicon.svg><link rel=apple-touch-icon sizes=180x180 href=https://rc1242rc.github.io/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=https://rc1242rc.github.io/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=https://rc1242rc.github.io/favicon-16x16.png><link rel=manifest crossorigin=use-credentials href=https://rc1242rc.github.io/site.webmanifest></head><body class="documentation single light"><div class=sticky-top><div class=header-bar></div><header class="navbar navbar-expand-md navbar-light doks-navbar"><nav class="container-xxl flex-wrap flex-md-nowrap" aria-label="Main navigation"><a class="navbar-brand p-0 me-auto" href=https://rc1242rc.github.io/ aria-label=GAMBIT><img class=logo-light src=https://rc1242rc.github.io//images/gambit_logo.png width=50px>
+<img class="logo-dark d-none" src=https://rc1242rc.github.io//images/gambit_logo.png width=50px>
+GAMBIT</a>
+<button class="btn btn-menu order-2 d-block d-lg-none" type=button data-bs-toggle=offcanvas data-bs-target=#offcanvasDoks aria-controls=offcanvasDoks aria-label="Open main menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button><div class="offcanvas offcanvas-end border-0 py-lg-1" tabindex=-1 id=offcanvasDoks data-bs-backdrop=true aria-labelledby=offcanvasDoksLabel><div class="header-bar d-lg-none"></div><div class="offcanvas-header d-lg-none"><h2 class="h5 offcanvas-title ps-2" id=offcanvasDoksLabel><a class=text-dark href=/>GAMBIT</a></h2><button type=button class="btn-close text-reset me-2" data-bs-dismiss=offcanvas aria-label="Close main menu"></button></div><div class="offcanvas-body p-4 p-lg-0"><ul class="nav flex-column flex-lg-row align-items-lg-center mt-2 mt-lg-0 ms-lg-2 me-lg-auto"><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Documentation
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=/documentation/installation/introduction/>Installation</a></li><li><a class=dropdown-item href=/documentation/examples/colliderbit_example>Examples</a></li><li><a class=dropdown-item href=/documentation/help/faqs/>Help</a></li><li><a class=dropdown-item href=/documentation/code/gambit_sphinx/index_classes>Code Reference</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Community
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=/community/publications/>Publications</a></li><li><a class=dropdown-item href=/community/talks/>Talks</a></li><li><a class=dropdown-item href=/community/members/>Members</a></li><li><a class=dropdown-item href=/community/code_of_conduct/>Code of Conduct</a></li><li><a class=dropdown-item href=/community/contact/>Contact</a></li></ul></li></ul><hr class="text-black-50 my-4 d-lg-none"><form class="doks-search position-relative flex-grow-1 ms-lg-auto me-lg-2"><input id=search class="form-control is-search" type=search placeholder="Search site..." aria-label="Search site..." autocomplete=off><div id=suggestions class="shadow bg-white rounded d-none"></div></form><hr class="text-black-50 my-4 d-lg-none"><ul class="nav flex-column flex-lg-row"><li class=nav-item><a class="nav-link social-link" href=https://github.com/GambitBSM><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37.0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44.0 0020 4.77 5.07 5.07.0 0019.91 1S18.73.65 16 2.48a13.38 13.38.0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07.0 005 4.77 5.44 5.44.0 003.5 8.55c0 5.42 3.3 6.61 6.44 7A3.37 3.37.0 009 18.13V22"/></svg><small class="ms-2 d-lg-none">GitHub</small></a></li></ul><hr class="text-black-50 my-4 d-lg-none"><div class=dropdown><button class="btn btn-doks-light dropdown-toggle" id=doks-versions data-bs-toggle=dropdown aria-expanded=false data-bs-display=static aria-label="Toggle version menu">
+<span class=d-none>Doks</span>
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></button><ul class="dropdown-menu dropdown-menu-lg-end me-lg-2 shadow rounded border-0" aria-labelledby=doks-versions></ul></div></div></div></nav></header></div><div class="wrap container-xxl" role=document><div class=content><div class="row flex-xl-nowrap"><div class="col-lg-5 col-xl-4 docs-sidebar"><nav class=docs-links aria-label="Main navigation"><ul class="list-unstyled collapsible-sidebar"><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-installation aria-expanded=false>
+Installation</button><div class=collapse id=section-installation><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/installation/introduction/>Getting Started</a></li><li><a class="docs-link rounded" href=/documentation/installation/docker_usage/>Docker Usage</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_linux/>Installation for Linux</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_windows/>Installation for Windows</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_macos/>Installation for macOS</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-examples aria-expanded=false>
+Examples</button><div class=collapse id=section-examples><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/examples/colliderbit_example/>ColliderBit Example</a></li><li><a class="docs-link rounded" href=/documentation/examples/anotherbit/>AnotherBit</a></li><li><a class="docs-link rounded" href=/documentation/examples/anotherbit2/>AnotherBit2</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-help aria-expanded=false>
+Help</button><div class=collapse id=section-help><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/help/faqs/>FAQs</a></li><li><a class="docs-link rounded" href=/documentation/help/compiler_matrix/>Compiler Matrix</a></li><li><a class="docs-link rounded" href=/documentation/help/known_issues/>Known Issues</a></li><li><a class="docs-link rounded" href=/documentation/help/configuration_examples/>Configuration Examples</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-code aria-expanded=true>
+Code Reference</button><div class="collapse show" id=section-code><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li class="my-1 ms-3"><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-gambit_sphinx aria-expanded=true>
+<font style="color: #5d2f86;" size=-6>release</font> &nbsp; gambit sphinx</button><div class="collapse show" id=section-gambit_sphinx><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/code/gambit_sphinx/index_classes/>Classes</a></li><li><a class="docs-link rounded" href=/documentation/code/gambit_sphinx/index_files/>Files</a></li><li><a class="docs-link rounded" href=/documentation/code/gambit_sphinx/index_pages/>Pages</a></li><li><a class="docs-link rounded" href=/documentation/code/gambit_sphinx/index_namespaces/>Namespaces</a></li></ul></div></li><li class="my-1 ms-3"><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-ColliderBit aria-expanded=true>
+<font style="color: #5d2f86;" size=-6>development</font> &nbsp; ColliderBit</button><div class="collapse show" id=section-ColliderBit><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/code/colliderbit/index_classes/>Classes</a></li><li><a class="docs-link rounded" href=/documentation/code/colliderbit/index_files/>Files</a></li><li><a class="docs-link rounded" href=/documentation/code/colliderbit/index_pages/>Pages</a></li><li><a class="docs-link rounded" href=/documentation/code/colliderbit/index_namespaces/>Namespaces</a></li></ul></div></li><li class="my-1 ms-3"><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-DarkBit aria-expanded=true>
+<font style="color: #5d2f86;" size=-6>development</font> &nbsp; DarkBit</button><div class="collapse show" id=section-DarkBit><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/code/darkbit/index_classes/>Classes</a></li><li><a class="docs-link rounded" href=/documentation/code/darkbit/index_files/>Files</a></li><li><a class="docs-link rounded" href=/documentation/code/darkbit/index_pages/>Pages</a></li><li><a class="docs-link rounded" href=/documentation/code/darkbit/index_namespaces/>Namespaces</a></li></ul></div></li><li class="my-1 ms-3"><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-main aria-expanded=true>
+<font style="color: #5d2f86;" size=-6>development</font> &nbsp; main</button><div class="collapse show" id=section-main><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/code/main/index_classes/>Classes</a></li><li><a class="docs-link rounded" href=/documentation/code/main/index_files/>Files</a></li><li><a class="docs-link rounded" href=/documentation/code/main/index_pages/>Pages</a></li><li><a class="docs-link rounded" href=/documentation/code/main/index_namespaces/>Namespaces</a></li></ul></div></li></ul></div></li></ul></nav></div><nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation"><div class=d-xl-none><button class="btn btn-outline-primary btn-sm doks-toc-toggle collapsed" type=button data-bs-toggle=collapse data-bs-target=#onThisPage aria-controls=doks-docs-nav aria-expanded=false aria-label="Toggle On this page navigation">
+<span>On this page</span>
+<span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg></span></button><div class=collapse id=onThisPage><div class="card card-body mt-3 py-1"><div class=page-links><nav id=TableOfContents><ul><li><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#classes>Classes</a></li><li><a href=#defines>Defines</a></li><li><a href=#macros-documentation>Macros Documentation</a><ul><li><a href=#define-cutflowmap>define CUTFLOWMAP</a></li><li><a href=#define-f>define f</a></li><li><a href=#define-g>define g</a></li><li><a href=#define-varmap>define VARMAP</a></li><li><a href=#define-f-1>define f</a></li><li><a href=#define-g-1>define g</a></li></ul></li><li><a href=#source-code>Source code</a></li></ul></li></ul></nav></div></div></div></div><div class="page-links d-none d-xl-block"><h3>On this page</h3><nav id=TableOfContents><ul><li><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#classes>Classes</a></li><li><a href=#defines>Defines</a></li><li><a href=#macros-documentation>Macros Documentation</a><ul><li><a href=#define-cutflowmap>define CUTFLOWMAP</a></li><li><a href=#define-f>define f</a></li><li><a href=#define-g>define g</a></li><li><a href=#define-varmap>define VARMAP</a></li><li><a href=#define-f-1>define f</a></li><li><a href=#define-g-1>define g</a></li></ul></li><li><a href=#source-code>Source code</a></li></ul></li></ul></nav></div></nav><main class="docs-content col-lg-11 col-xl-9 mx-xl-auto"><nav aria-label=breadcrumb><ol class=breadcrumb><li class=breadcrumb-item><a href=/>Home</a></li><li class=breadcrumb-item><a href=/documentation/>Documentation</a></li><li class=breadcrumb-item><a href=/documentation/code/>Code Reference</a></li><li class=breadcrumb-item><a href=/documentation/code/colliderbit/>ColliderBit</a></li><li class="breadcrumb-item active" aria-current=page>file analyses/Analysis_ATLAS_7TeV_1OR2LEPStop_4_7invfb.cpp</li></ol></nav><h1>file analyses/Analysis_ATLAS_7TeV_1OR2LEPStop_4_7invfb.cpp</h1><p class=lead></p><p>[No description available]</p><h2 id=namespaces>Namespaces <a href=#namespaces class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th>Name</th></tr></thead><tbody><tr><td><strong><a href=/documentation/code/colliderbit/namespaces/namespacegambit/>Gambit</a></strong><br>Simulation of &ldquo;Search for photonic signatures of gauge-mediated supersymmetry in 13 TeV pp collisions with the ATLAS detector&rdquo;.</td></tr><tr><td><strong><a href=/documentation/code/colliderbit/namespaces/namespacegambit_1_1colliderbit/>Gambit::ColliderBit</a></strong></td></tr></tbody></table><h2 id=classes>Classes <a href=#classes class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th></th><th>Name</th></tr></thead><tbody><tr><td>class</td><td><strong><a href=/documentation/code/colliderbit/classes/classgambit_1_1colliderbit_1_1analysis__atlas__7tev__1or2lepstop__4__7invfb/>Gambit::ColliderBit::Analysis_ATLAS_7TeV_1OR2LEPStop_4_7invfb</a></strong></td></tr></tbody></table><h2 id=defines>Defines <a href=#defines class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th></th><th>Name</th></tr></thead><tbody><tr><td></td><td><strong><a href=/documentation/code/colliderbit/files/analysis__atlas__7tev__1or2lepstop__4__7invfb_8cpp/#define-cutflowmap>CUTFLOWMAP</a></strong>(X)</td></tr><tr><td></td><td><strong><a href=/documentation/code/colliderbit/files/analysis__atlas__7tev__1or2lepstop__4__7invfb_8cpp/#define-f>f</a></strong>(x)</td></tr><tr><td></td><td><strong><a href=/documentation/code/colliderbit/files/analysis__atlas__7tev__1or2lepstop__4__7invfb_8cpp/#define-g>g</a></strong>(x)</td></tr><tr><td></td><td><strong><a href=/documentation/code/colliderbit/files/analysis__atlas__7tev__1or2lepstop__4__7invfb_8cpp/#define-varmap>VARMAP</a></strong>(X)</td></tr><tr><td></td><td><strong><a href=/documentation/code/colliderbit/files/analysis__atlas__7tev__1or2lepstop__4__7invfb_8cpp/#define-f>f</a></strong>(x)</td></tr><tr><td></td><td><strong><a href=/documentation/code/colliderbit/files/analysis__atlas__7tev__1or2lepstop__4__7invfb_8cpp/#define-g>g</a></strong>(x)</td></tr></tbody></table><h2 id=macros-documentation>Macros Documentation <a href=#macros-documentation class=anchor aria-hidden=true>#</a></h2><h3 id=define-cutflowmap>define CUTFLOWMAP <a href=#define-cutflowmap class=anchor aria-hidden=true>#</a></h3><pre><code>#define CUTFLOWMAP(
+    X
+)
+      X(Total_events)				\
+      X(electron_eq_4_jets)			\
+      X(electron_met_gt_40)			\
+      X(electron_eq_2_bjets)			\
+      X(electron_sr)				\
+      X(muon_eq_4_jets)				\
+      X(muon_met_gt_40)				\
+      X(muon_eq_2_bjets)			\
+      X(muon_sr)				\
+      X(twoLep_met_gt_40)			\
+      X(twoLep_gt_1_bjet)			\
+      X(mll_lt_81)				\
+      X(mll_gt_30_lt_81)			\
+      X(num_2lsr1)				\
+      X(num_2lsr2)
+</code></pre><h3 id=define-f>define f <a href=#define-f class=anchor aria-hidden=true>#</a></h3><pre><code>#define f(
+    x
+)
+x,
+</code></pre><h3 id=define-g>define g <a href=#define-g class=anchor aria-hidden=true>#</a></h3><pre><code>#define g(
+    x
+)
+#x,
+</code></pre><h3 id=define-varmap>define VARMAP <a href=#define-varmap class=anchor aria-hidden=true>#</a></h3><pre><code>#define VARMAP(
+    X
+)
+      X(mTopHad)				\
+      X(oneLepSqrtS)				\
+      X(mllKey)					\
+      X(twoLepSqrtS)
+</code></pre><h3 id=define-f-1>define f <a href=#define-f-1 class=anchor aria-hidden=true>#</a></h3><pre><code>#define f(
+    x
+)
+x,
+</code></pre><h3 id=define-g-1>define g <a href=#define-g-1 class=anchor aria-hidden=true>#</a></h3><pre><code>#define g(
+    x
+)
+#x,
+</code></pre><h2 id=source-code>Source code <a href=#source-code class=anchor aria-hidden=true>#</a></h2><pre><code>//
+// Created by dsteiner on 31/07/18.
+// Amended by Martin White on 08/03/19.
+//
+// Based on https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-2012-10/ (arXiv:1209.2102)
+
+//#include &lt;gambit/ColliderBit/colliders/SpecializablePythia.hpp&gt;
+#include &quot;gambit/ColliderBit/analyses/Analysis.hpp&quot;
+#include &quot;gambit/ColliderBit/analyses/Cutflow.hpp&quot;
+#include &lt;gambit/ColliderBit/ATLASEfficiencies.hpp&gt;
+#include &quot;gambit/ColliderBit/analyses/AnalysisUtil.hpp&quot;
+
+namespace Gambit {
+  namespace ColliderBit {
+
+    using namespace std;
+    using namespace HEPUtils;
+
+    class Analysis_ATLAS_7TeV_1OR2LEPStop_4_7invfb : public Analysis {
+public:
+
+// Required detector sim
+static constexpr const char* detector = &quot;ATLAS&quot;;
+
+
+#define CUTFLOWMAP(X)               \
+      X(Total_events)               \
+      X(electron_eq_4_jets)         \
+      X(electron_met_gt_40)         \
+      X(electron_eq_2_bjets)            \
+      X(electron_sr)                \
+      X(muon_eq_4_jets)             \
+      X(muon_met_gt_40)             \
+      X(muon_eq_2_bjets)            \
+      X(muon_sr)                \
+      X(twoLep_met_gt_40)           \
+      X(twoLep_gt_1_bjet)           \
+      X(mll_lt_81)              \
+      X(mll_gt_30_lt_81)            \
+      X(num_2lsr1)              \
+      X(num_2lsr2)
+#define f(x) x,
+#define g(x) #x,
+      const std::vector&lt;std::string&gt; cutflowNames = {CUTFLOWMAP(g)};
+      enum cutflowEnum {CUTFLOWMAP(f)};
+#undef g
+#undef f
+#undef CUTFLOWMAP
+
+#define VARMAP(X)               \
+      X(mTopHad)                \
+      X(oneLepSqrtS)                \
+      X(mllKey)                 \
+      X(twoLepSqrtS)
+#define f(x) x,
+#define g(x) #x,
+      const std::vector&lt;std::string&gt; varNames = {VARMAP(g)};
+      enum varEnum {VARMAP(f)};
+#undef g
+#undef f
+#undef VARMAP
+
+      std::map&lt;std::string, std::vector&lt;double&gt;&gt; varResults;
+
+      std::map&lt;std::string, int&gt; cutflows;
+
+      double num1LSR=0;
+      double num2LSR1=0;
+      double num2LSR2=0;
+
+      std::vector&lt;double&gt; calcNuPz(double Mw, P4 metMom, P4 lepMom)
+      {
+    double mu = sqr(Mw) / 2.0 + metMom.px() * lepMom.px() + metMom.py() * lepMom.py();
+    double denom = lepMom.E2() - lepMom.pz2();
+    double a = mu * lepMom.pz() / denom;
+    double a2 = sqr(a);
+    double b = (lepMom.E2() * metMom.E2() - sqr(mu)) / denom;
+    double delta = a2 - b;
+    if (delta &lt; 0)
+      {
+        return {a};
+      }
+    else
+      {
+        return {a + std::sqrt(delta), a - std::sqrt(delta)};
+      }
+      }
+
+      P4 getBestHadronicTop(
+                std::vector&lt;const Jet *&gt; bJets,
+                std::vector&lt;const Jet *&gt; lightJets,
+                const P4&amp; leptonMom,
+                const P4&amp; metMom,
+                double width,
+                double mean
+                )
+      {
+    // gaussian probability density function
+    auto prob = [&amp;width, &amp;mean](P4 particle) {
+      return 1 - std::erf(1.0 * std::abs(particle.m() - mean) / (std::sqrt(2.0) * width));
+    };
+
+    double pTotal = 0.0;
+    P4 bestHadronicTop;
+    std::vector&lt;double&gt; nuPzChoices = calcNuPz(80.0, metMom, leptonMom);
+    P4 nu;
+    for (double nuPz : nuPzChoices)
+      {
+        double nuE = std::sqrt(sqr(metMom.px()) + sqr(metMom.py()) + sqr(nuPz));
+        nu.setPE(metMom.px(), metMom.py(), nuPz, nuE);
+        P4 WLep = leptonMom + nu;
+        // go through every bJet
+        for (const Jet* firstBJet : bJets)
+          {
+        for (const Jet* secondBJet : bJets)
+          {
+            if (firstBJet == secondBJet)
+              {
+            continue;
+              }
+            P4 topLep = *firstBJet + WLep;
+            // go through every combination of two light jets
+            for (const Jet* firstLightJet : lightJets)
+              {
+            for (const Jet* secondLightJet : lightJets)
+              {
+                // don't want to use a light jet with itself
+                if (firstLightJet == secondLightJet)
+                  {
+                continue;
+                  }
+                P4 WHad = *firstLightJet + *secondLightJet;
+                P4 topHad = *secondBJet + WHad;
+                // calculate a new probability
+                double newPTotal = prob(topHad) * prob(WHad) * prob(topLep) * prob(WLep);
+                if (newPTotal &gt; pTotal)
+                  {
+                // update the best values
+                pTotal = newPTotal;
+                bestHadronicTop = topHad;
+                  }
+              }
+              }
+          }
+          }
+      }
+    return bestHadronicTop;
+      }
+
+      double calcMt(P4 metVec, P4 lepVec)
+      {
+    double Met = metVec.pT();
+    double pTLep = lepVec.pT();
+    return std::sqrt(2 * pTLep * Met - 2 * AnalysisUtil::dot2D(lepVec, metVec));
+      }
+
+
+      double calcSqrtSSubMin(P4 visibleSubsystem, P4 invisbleSubsystem)
+      {
+    double visiblePart = std::sqrt(sqr(visibleSubsystem.m()) + sqr(visibleSubsystem.pT()));
+    double invisiblePart = invisbleSubsystem.pT();
+    double twoDimensionalVecSum =
+      sqr(visibleSubsystem.px() + invisbleSubsystem.px())
+      + sqr(visibleSubsystem.py() + invisbleSubsystem.py());
+    return std::sqrt(sqr(visiblePart + invisiblePart) - twoDimensionalVecSum);
+      }
+
+      void getBJets(
+            std::vector&lt;const Jet*&gt;&amp; jets,
+            std::vector&lt;const Jet*&gt;* bJets,
+            std::vector&lt;const Jet*&gt;* lightJets)
+      {
+    /// @note We assume that b jets have previously been 100% tagged
+    const std::vector&lt;double&gt; a = {0, 10.};
+    const std::vector&lt;double&gt; b = {0, 10000.};
+    const std::vector&lt;double&gt; c = {0.60};
+    BinnedFn2D&lt;double&gt; _eff2d(a,b,c);
+    for (const Jet* jet : jets)
+      {
+        bool hasTag = has_tag(_eff2d, jet-&gt;eta(), jet-&gt;pT());
+        if(jet-&gt;btag() &amp;&amp; hasTag &amp;&amp; jet-&gt;abseta() &lt; 2.5)
+          {
+        bJets-&gt;push_back(jet);
+          }
+        else
+          {
+        lightJets-&gt;push_back(jet);
+          }
+      }
+      }
+
+
+      /**
+       * The constructor that should initialize some variables
+       */
+Analysis_ATLAS_7TeV_1OR2LEPStop_4_7invfb()
+      {
+    set_analysis_name(&quot;ATLAS_7TeV_1OR2LEPStop_4_7invfb&quot;);
+    set_luminosity(4.7);
+      }
+
+      /**
+       * Performs the main part of the analysis
+       * @param event an event contain particle and jet information
+       */
+      void run(const HEPUtils::Event* event)
+      {
+    // TODO: take log of plots and constrain the plot range
+    //HEPUtilsAnalysis::analyze(event);
+    //cout &lt;&lt; &quot;Event number: &quot; &lt;&lt; num_events() &lt;&lt; endl;
+    incrementCut(Total_events);
+    std::vector&lt;const Particle*&gt; electrons = event-&gt;electrons();
+    std::vector&lt;const Particle*&gt; muons = event-&gt;muons();
+    std::vector&lt;const Jet*&gt; jets = event-&gt;jets();
+
+    electrons = AnalysisUtil::filterPtEta(electrons, 20, 2.47);
+    muons = AnalysisUtil::filterPtEta(muons, 10, 2.4);
+    jets = AnalysisUtil::filterPtEta(jets, 20, 4.5);
+
+    std::vector&lt;const Jet*&gt; bJets, lightJets;
+    getBJets(jets, &amp;bJets, &amp;lightJets);
+
+    jets = AnalysisUtil::jetLeptonOverlapRemoval(jets, electrons, 0.2);
+    electrons = AnalysisUtil::leptonJetOverlapRemoval(electrons, jets, 0.4);
+    muons = AnalysisUtil::leptonJetOverlapRemoval(muons, jets, 0.4);
+
+    jets = AnalysisUtil::filterMaxEta(jets, 2.5);
+
+    ATLAS::applyTightIDElectronSelection(electrons);
+
+    std::vector&lt;const Particle*&gt; leptons = AnalysisUtil::getSortedLeptons({electrons, muons});
+    std::sort(electrons.begin(), electrons.end(), AnalysisUtil::sortParticlesByPt);
+    std::sort(muons.begin(), muons.end(), AnalysisUtil::sortParticlesByPt);
+    std::sort(jets.begin(), jets.end(), AnalysisUtil::sortJetsByPt);
+    std::sort(bJets.begin(), bJets.end(), AnalysisUtil::sortJetsByPt);
+    std::sort(lightJets.begin(), lightJets.end(), AnalysisUtil::sortJetsByPt);
+
+    size_t
+      nLeptons = leptons.size(),
+      nJets = jets.size(),
+      nBJets = bJets.size(),
+      nLightJets = lightJets.size();
+
+    double Met = event-&gt;met();
+    const P4&amp; metVec = event-&gt;missingmom();
+
+    if (nLeptons == 1)
+      {
+        if (!AnalysisUtil::muonFilter7TeV(muons) &amp;&amp; muons.size() == 1)
+          {
+        return;
+          }
+        cutflowEnum a, b, c;
+        if (electrons.size() == 1) a = electron_eq_4_jets, b = electron_met_gt_40, c = electron_eq_2_bjets;
+        if (muons.size() == 1) a = muon_eq_4_jets, b = muon_met_gt_40, c = muon_eq_2_bjets;
+        if (nJets == 4)
+          {
+        incrementCut(a);
+        {
+          if (Met &gt; 40)
+            {
+              incrementCut(b);
+              if (nBJets == 2)
+            {
+              incrementCut(c);
+            }
+            }
+        }
+          }
+      }
+
+
+
+
+    // minimal selection requirements for single lepton
+    if (nLeptons == 1 &amp;&amp; nBJets &gt;= 2 &amp;&amp; nLightJets &gt;= 2 &amp;&amp; Met &gt; 40)
+      {
+        double mT = calcMt(metVec, leptons[0]-&gt;mom());
+
+        auto isValidTop = [](double mean, double width, double mass) {return mass &lt; mean - 0.5 * width;};
+
+        if (mT &gt; 30)
+          {
+        double mean = 0.0, width = 0.0;
+        P4 hadronicTop;
+
+        P4 visibleSubsystem = *leptons[0] + *lightJets[0] + *lightJets[1] + *bJets[0] + *bJets[1];
+        double sqrtSsubMin = calcSqrtSSubMin(visibleSubsystem, metVec);
+        bool isOneLep = false;
+        // e-channel
+        if (electrons.size() == 1 &amp;&amp; electrons[0]-&gt;pT() &gt; 25)
+          {
+            mean = 168.4, width = 18.0;
+            hadronicTop = getBestHadronicTop(bJets, lightJets, *electrons[0], metVec, width, mean);
+            isOneLep = true;
+          }
+
+        // mu-channel
+        if (muons.size() == 1 &amp;&amp; muons[0]-&gt;pT() &gt; 20)
+          {
+            mean = 168.2, width = 18.6;
+            hadronicTop = getBestHadronicTop(bJets, lightJets, *muons[0], metVec, width, mean);
+            isOneLep = true;
+          }
+
+
+        bool validTop = isValidTop(mean, width, hadronicTop.m());
+
+        if (isOneLep)
+          {
+            varResults[varNames[mTopHad]].push_back(hadronicTop.m());
+            varResults[varNames[oneLepSqrtS]].push_back(sqrtSsubMin);
+          }
+
+        // check if we are in the 1LSR signal region
+        if (isOneLep &amp;&amp; validTop &amp;&amp; sqrtSsubMin &lt; 250)
+          {
+            num1LSR += event-&gt;weight();
+            if (electrons.size() == 1) incrementCut(electron_sr);
+            if (muons.size() == 1) incrementCut(muon_sr);
+          }
+          }
+      }
+
+    if (nLeptons == 2 &amp;&amp; Met &gt; 40 &amp;&amp; AnalysisUtil::oppositeSign(leptons[0], leptons[1]) &amp;&amp; nJets &gt;= 2)
+      {
+        P4 ll = *leptons[0] + *leptons[1];
+        double mll = ll.m();
+        incrementCut(twoLep_met_gt_40);
+        {
+          if (nBJets &gt;= 1)
+        {
+          incrementCut(twoLep_gt_1_bjet);
+          if (mll &lt; 81)
+            {
+              incrementCut(mll_lt_81);
+            }
+          if (mll &lt; 81 &amp;&amp; mll &gt; 30)
+            {
+              incrementCut(mll_gt_30_lt_81);
+            }
+        }
+        }
+      }
+
+    if (nLeptons == 2 &amp;&amp; AnalysisUtil::oppositeSign(leptons[0], leptons[1]) &amp;&amp; Met &gt; 40 &amp;&amp; nJets &gt;= 2 &amp;&amp; nBJets &gt;= 1)
+      {
+        P4 ll = *leptons[0] + *leptons[1];
+        double mll = ll.m();
+
+        P4 visibleSubsystem = *leptons[0] + *leptons[1] + *jets[0] + *jets[1];
+
+        double sqrtSsubMin = calcSqrtSSubMin(visibleSubsystem, metVec);
+
+        double mlljj = visibleSubsystem.m();
+        varResults[varNames[mllKey]].push_back(mll);
+        if (mll &gt; 30 &amp;&amp; mll &lt; 81)
+          {
+        bool isTwoLeptonEvent = false;
+
+        // ee channel
+        if (electrons.size() == 2 &amp;&amp; electrons[0]-&gt;pT() &gt; 25)
+          {
+            isTwoLeptonEvent = true;
+          }
+
+        // mu-mu channel
+        if (muons.size() == 2 &amp;&amp; muons[0]-&gt;pT() &gt; 20)
+          {
+            isTwoLeptonEvent = true;
+          }
+
+        // e-mu channel
+        if (electrons.size() == 1 &amp;&amp; muons.size() == 1 &amp;&amp; (electrons[0]-&gt;pT() &gt; 25 || muons[0]-&gt;pT() &gt; 20))
+          {
+            isTwoLeptonEvent = true;
+          }
+
+        if (isTwoLeptonEvent)
+          {
+            varResults[varNames[twoLepSqrtS]].push_back(sqrtSsubMin);
+
+            if (sqrtSsubMin &lt; 225)
+              {
+            num2LSR1 += event-&gt;weight();
+            incrementCut(num_2lsr1);
+              }
+            if (sqrtSsubMin &lt; 235 &amp;&amp; mlljj &lt; 140)
+              {
+            num2LSR2 += event-&gt;weight();
+            incrementCut(num_2lsr2);
+              }
+          }
+          }
+      }
+      }
+
+/**
+       * Adds results from other threads if OMP_NUM_THREAD != 1
+       * @param other results from another thread
+       */
+
+      /// Combine the variables of another copy of this analysis (typically on another thread) into this one.
+void combine(const Analysis* other)
+{
+  const Analysis_ATLAS_7TeV_1OR2LEPStop_4_7invfb* specificOther = dynamic_cast&lt;const Analysis_ATLAS_7TeV_1OR2LEPStop_4_7invfb*&gt;(other);
+  num1LSR += specificOther-&gt;num1LSR;
+  num2LSR1 += specificOther-&gt;num2LSR1;
+  num2LSR2 += specificOther-&gt;num2LSR2;
+}
+
+
+      void collect_results()
+      {
+    //saveCutFlow();
+
+    add_result(SignalRegionData(&quot;1LSR&quot;, 50, {num1LSR, 0.}, {38., 7.}));
+    add_result(SignalRegionData(&quot;2LSR1&quot;, 123, {num2LSR1, 0.}, {115., 15.}));
+    add_result(SignalRegionData(&quot;2LSR2&quot;, 47, {num2LSR2, 0.}, {46., 7.}));
+
+    //cout &lt;&lt; &quot;1LSR: &quot; &lt;&lt; num1LSR &lt;&lt; &quot;, 2LSR1: &quot; &lt;&lt; num2LSR1 &lt;&lt; &quot;, 2LSR2: &quot; &lt;&lt; num2LSR2 &lt;&lt; endl;
+
+    /*for (std::pair&lt;std::string, std::vector&lt;double&gt;&gt; entry : varResults)
+      {
+        cout &lt;&lt; &quot;SAVE_START:&quot; &lt;&lt; entry.first &lt;&lt; endl;
+        for (double value : entry.second)
+          {
+        cout &lt;&lt; value &lt;&lt; endl;
+          }
+        cout &lt;&lt; &quot;SAVE_END&quot; &lt;&lt; endl;
+        }*/
+      }
+
+protected:
+
+void analysis_specific_reset()
+{
+  num1LSR = 0;
+  num2LSR1 = 0;
+  num2LSR2 = 0;
+  for (std::string varName : varNames)
+    {
+      varResults[varName] = {};
+    }
+}
+
+/*void scale(double factor)
+  {
+  HEPUtilsAnalysis::scale(factor);
+  cout &lt;&lt; &quot;SAVE_XSEC:&quot; &lt;&lt; xsec() &lt;&lt; endl;
+  auto save = [](double value, std::string name)
+  {
+  cout &lt;&lt; &quot;SAVE_START:&quot; &lt;&lt; name &lt;&lt; endl;
+  cout &lt;&lt; value &lt;&lt; endl;
+  cout &lt;&lt; &quot;SAVE_END&quot; &lt;&lt; endl;
+  };
+  save(num1LSR, &quot;num1LSR&quot;);
+  save(num2LSR1, &quot;num2LSR1&quot;);
+  save(num2LSR2, &quot;num2LSR2&quot;);
+  }*/
+
+
+void incrementCut(int cutIndex)
+{
+  cutflows[cutflowNames[cutIndex]]++;
+}
+
+void saveCutFlow()
+{
+  double scale_by = 1.0;
+  cout &lt;&lt; &quot;SAVE_START:cuts&quot; &lt;&lt; endl;
+  cout &lt;&lt; &quot;CUT;RAW;SCALED;%&quot; &lt;&lt; endl;
+  double initialCut = cutflows[cutflowNames[Total_events]];
+  double thisCut;
+  for (std::string name : cutflowNames) {
+    thisCut = cutflows[name];
+    cout &lt;&lt; name.c_str() &lt;&lt; &quot;;&quot;
+     &lt;&lt; thisCut &lt;&lt; &quot;;&quot;
+     &lt;&lt; thisCut * scale_by &lt;&lt; &quot;;&quot;
+     &lt;&lt; 100. * thisCut / initialCut
+     &lt;&lt; endl;
+  }
+  cout &lt;&lt; &quot;SAVE_END&quot; &lt;&lt; endl;
+}
+};
+
+DEFINE_ANALYSIS_FACTORY(ATLAS_7TeV_1OR2LEPStop_4_7invfb)
+}
+}
+</code></pre><hr><p>Updated on 2022-08-03 at 12:58:19 +0000</p><div class=edit-page><a href=https://github.com/RC1242RC/gambit_gh_pages/blob/master/content/en/documentation/code/ColliderBit/Files/Analysis__ATLAS__7TeV__1OR2LEPStop__4__7invfb_8cpp.md><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2"><path d="M17 3a2.828 2.828.0 114 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></svg>Edit this page on GitHub</a></div></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a class=text-muted href=https://www.netlify.com/>Netlify</a>, <a class=text-muted href=https://gohugo.io/>Hugo</a>, and <a class=text-muted href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.54bf0932b8a36d0e152b1635b099a6ef1394d35327e2437550a075c9c8ed1bd8aed5847c21b36fc02ed24014c031d9ca24017b0c78b1639d7e2fa8329898b842.js integrity="sha512-VL8JMrijbQ4VKxY1sJmm7xOU01Mn4kN1UKB1ycjtG9iu1YR8IbNvwC7SQBTAMdnKJAF7DHixY51+L6gymJi4Qg==" crossorigin=anonymous defer></script>
+<script src=/js/highlight.min.5b48bc253dc75aeea5fb366ecf700f4925e2b6eb1a1466f2124b722d68148d67bc0a9365d2b8ad9c585161b46372d23b08509a16f1fd518542b894756d4752d0.js integrity="sha512-W0i8JT3HWu6l+zZuz3APSSXitusaFGbyEktyLWgUjWe8CpNl0ritnFhRYbRjctI7CFCaFvH9UYVCuJR1bUdS0A==" crossorigin=anonymous defer></script>
+<script src=/main.min.40265e9a032aeba5eaf67baac3cbbc22667a7533215d326eeb3e9f4d5e4be40f9ff4dcd22949db73ae527ca26a19d7998091a8973c82af760b2c0daa335190ed.js integrity="sha512-QCZemgMq66Xq9nuqw8u8ImZ6dTMhXTJu6z6fTV5L5A+f9NzSKUnbc65SfKJqGdeZgJGolzyCr3YLLA2qM1GQ7Q==" crossorigin=anonymous defer></script>
+<script src=https://rc1242rc.github.io/index.min.cb3cfc52c7c54bd8c25d1fbd0a5de239406787c3dcdce4c8c0c6a90e32667d32f427e033d04af1c0f2c4a86667aa8d3df23f54c6a7873d639d2ca7c2edf7146d.js integrity="sha512-yzz8UsfFS9jCXR+9Cl3iOUBnh8Pc3OTIwMapDjJmfTL0J+Az0ErxwPLEqGZnqo098j9UxqeHPWOdLKfC7fcUbQ==" crossorigin=anonymous defer></script></body></html>
