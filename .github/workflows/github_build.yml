@@ -139,7 +139,7 @@ jobs:
           node-version: '16'
           # cache: 'npm'
       - name: Wipe code dir
-        if: ${{ inputs.clear_code_dir }} && ${{ inputs.rebuild_all }}
+        if: ${{ inputs.clear_code_dir && inputs.rebuild_all }}
         run: rm -r code
           && mkdir code
         working-directory: ./content/en/documentation
