@@ -1,11 +1,11 @@
 ---
+weight: 20
 title: "Classes"
 
 menu:
   documentation:
     parent: "main"
-    identifier: "mainClasses" weight: 20
----
+    identifier: "mainClasses" ---
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/main/classes/classabstractbase/>AbstractBase<a></b><br>
@@ -703,4 +703,4 @@ menu:
 
 -------------------------------
 
-Updated on 2022-08-03 at 00:39:24 +0000
+Updated on 2022-08-03 at 00:49:10 +0000

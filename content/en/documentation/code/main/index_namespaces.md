@@ -1,11 +1,11 @@
 ---
+weight: 50
 title: "Namespaces"
 
 menu:
   documentation:
     parent: "main"
-    identifier: "mainNamespaces" weight: 50
----
+    identifier: "mainNamespaces" ---
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/main/namespaces/namespacebackendinibit_1_1functown/>Functown<a></b><br>
@@ -149,4 +149,4 @@ menu:
 
 -------------------------------
 
-Updated on 2022-08-03 at 00:39:24 +0000
+Updated on 2022-08-03 at 00:49:10 +0000
