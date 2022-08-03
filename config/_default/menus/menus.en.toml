@@ -65,13 +65,13 @@
 [[documentation]]
   name = "Examples"
   identifier = "examples"
-  url = "/documentation/examples/colliderbit"
+  url = "/documentation/examples/colliderbit_example"
   weight = 20
 
 [[main]]
   name = "Examples"
   identifier = "examples"
-  url = "/documentation/examples/colliderbit"
+  url = "/documentation/examples/colliderbit_example"
   parent = "documentation"
   weight = 20
 

@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="{{ .Site.LanguageCode | default "en" }}">
-  {{ partialCached "head/head.html" . }}
+  {{ partial "head/head.html" . }}
   {{ if eq .Kind "home" -}}
     {{ .Scratch.Set "class" "home" -}}
   {{ else if eq .Kind "404" -}}
