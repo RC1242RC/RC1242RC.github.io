@@ -105,7 +105,7 @@ jobs:
       - name: Set folder variable
         run: str=${{ matrix.repos }}
           && str2=${str##*/}
-          && echo "folder=${str2%%.*}" >> $GITHUB_ENV
+          && echo "folder=${str2%.*}" >> $GITHUB_ENV
       - name: Shallow clone repo
         run: git clone --depth 1 ${{ matrix.repos }} ${{ env.folder }}_source
       - name: Generate doxygen xml
