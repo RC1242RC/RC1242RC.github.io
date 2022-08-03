@@ -1,5 +1,5 @@
 ---
-name: "main"
+title: "main"
 menu:
   documentation:
     parent: "code"

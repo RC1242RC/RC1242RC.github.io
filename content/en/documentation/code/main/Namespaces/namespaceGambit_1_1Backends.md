@@ -342,4 +342,4 @@ Helper function that indicates if a type is numerical or not.
 
 -------------------------------
 
-Updated on 2022-08-03 at 01:58:22 +0000
+Updated on 2022-08-03 at 02:29:31 +0000

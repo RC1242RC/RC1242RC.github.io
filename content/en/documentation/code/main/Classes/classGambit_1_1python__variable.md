@@ -66,4 +66,4 @@ Cast operator from [python_variable](/documentation/code/main/classes/classgambi
 
 -------------------------------
 
-Updated on 2022-08-03 at 01:58:22 +0000
+Updated on 2022-08-03 at 02:29:30 +0000
