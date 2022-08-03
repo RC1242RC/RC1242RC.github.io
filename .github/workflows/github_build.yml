@@ -65,6 +65,7 @@ jobs:
         run: git clone --depth 1 ${{ inputs.dev_repo }} --branch ${{ matrix.branches }} ${{ env.folder2 }}_source
       - name: Clone using personal access token if normal clone fails
         if: ${{ failure() }}
+        run: echo "yes"
       - name: Generate doxygen xml
         uses: mattnotmitt/doxygen-action@v1.9.4
         with:
