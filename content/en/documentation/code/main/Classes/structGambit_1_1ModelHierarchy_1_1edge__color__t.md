@@ -30,4 +30,4 @@ typedef boost::edge_property_tag Gambit::ModelHierarchy::edge_color_t::kind;
 
 -------------------------------
 
-Updated on 2022-08-03 at 01:03:18 +0000
+Updated on 2022-08-03 at 01:16:42 +0000

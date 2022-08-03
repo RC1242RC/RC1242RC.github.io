@@ -1,11 +1,14 @@
 ---
-weight: 40
 title: "Pages"
 
 menu:
   documentation:
     parent: "main"
     identifier: "mainPages" 
+weight: 40
+---
+
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>page <a href=/documentation/code/main/pages/deprecated/#page-deprecated>Deprecated List<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>page <a href=/documentation/code/main/pages/todo/#page-todo>Todo List<a></b><br>
 
@@ -13,4 +16,4 @@ menu:
 
 -------------------------------
 
-Updated on 2022-08-03 at 01:03:23 +0000
+Updated on 2022-08-03 at 01:16:47 +0000
