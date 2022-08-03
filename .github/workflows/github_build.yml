@@ -127,7 +127,7 @@ jobs:
           path: ./${{ env.folder }}
 
   download_docs:
-    if: ${{ inputs.rebuild_all }}
+    if: ${{ always() }} && ${{ inputs.rebuild_all }}
     needs: [document_repos_and_build_menu, document_branches_and_build_menu]
     runs-on: ubuntu-latest
     steps:
