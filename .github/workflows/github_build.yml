@@ -140,7 +140,8 @@ jobs:
           # cache: 'npm'
       - name: Wipe code dir
         if: ${{ inputs.clear_code_dir && inputs.rebuild_all }}
-        run: rm -r code
+        run: ls -a -l
+          && rm -r code
           && mkdir code
         working-directory: ./content/en/documentation
       - name: Download docs artifacts into code dir
