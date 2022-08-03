@@ -62,7 +62,7 @@ jobs:
         run: str=${{ matrix.branches }}
           && echo "folder2=${str%_*}" >> $GITHUB_ENV
       - name: Shallow clone branch
-        run: git clone --depth 1 ${{ inputs.dev_repo }} --branch ${{ env.folder2 }} ${{ env.folder2 }}_source
+        run: git clone --depth 1 ${{ inputs.dev_repo }} --branch ${{ matrix.branches }} ${{ env.folder2 }}_source
       - name: Generate doxygen xml
         uses: mattnotmitt/doxygen-action@v1.9.4
         with:
