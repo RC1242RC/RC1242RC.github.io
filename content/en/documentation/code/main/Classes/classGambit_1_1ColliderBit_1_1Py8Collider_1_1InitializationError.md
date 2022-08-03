@@ -20,4 +20,4 @@ Inherits from std::exception
 
 -------------------------------
 
-Updated on 2022-08-03 at 00:01:30 +0000
+Updated on 2022-08-03 at 00:39:20 +0000
