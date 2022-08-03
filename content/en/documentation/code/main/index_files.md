@@ -5,9 +5,7 @@ title: "Files"
 menu:
   documentation:
     parent: "main"
-    identifier: "mainFiles" ---
-
-
+    identifier: "mainFiles" 
 <details><summary><b>dir <a href=/documentation/code/main/files/dir_eee39d0a1034dd2852824887dab876b5/#dir-backends>Backends<a></b></summary>
 <details><summary><b>dir <a href=/documentation/code/main/files/dir_fd42a26dfd45720795ea78af8b797244/#dir-examples>examples<a></b></summary>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/main/files/libfarraytest_8f90/#file-libfarraytest.f90>examples/libFarrayTest.f90<a></b><br>
@@ -1041,4 +1039,4 @@ menu:
 
 -------------------------------
 
-Updated on 2022-08-03 at 00:49:10 +0000
+Updated on 2022-08-03 at 01:03:23 +0000

@@ -5,9 +5,7 @@ title: "Classes"
 menu:
   documentation:
     parent: "main"
-    identifier: "mainClasses" ---
-
-
+    identifier: "mainClasses" 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/main/classes/classabstractbase/>AbstractBase<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/main/classes/classadvancedevs/>AdvanceDevs<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/main/namespaces/namespacebackendinibit_1_1functown/>Functown<a></b><br>
@@ -703,4 +701,4 @@ menu:
 
 -------------------------------
 
-Updated on 2022-08-03 at 00:49:10 +0000
+Updated on 2022-08-03 at 01:03:23 +0000
