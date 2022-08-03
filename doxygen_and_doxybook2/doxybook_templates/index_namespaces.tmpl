@@ -1,4 +1,5 @@
 ---
+weight: 50
 {% if exists("title") -%}
 title: "{{title}}"
 {% else if exists("name") -%}
@@ -11,10 +12,7 @@ summary: "{{summary}}"
 menu:
   documentation:
     parent: "GAMBIT_VERSION_HERE"
-    identifier: {% if exists("title") -%} "GAMBIT_VERSION_HERE{{title}}" {% else if exists("name") -%} "GAMBIT_VERSION_HERE{{name}}"
-{% endif -%}
-
-weight: 50
+    identifier: {% if exists("title") -%} "GAMBIT_VERSION_HERE{{title}}" {% else if exists("name") -%} "GAMBIT_VERSION_HERE{{name}}" {% endif -%}
 ---
 
 {% include "custom_index.tmpl" %}
